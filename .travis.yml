@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+- 4.0
+- 6.0
+before_install:
+- npm install -g mocha
+install:
+- npm install
+script:
+- npm test
+after_success:
+- "./create-release-tag.sh"
+- "./update-release-branch.sh"
+deploy:
+  provider: heroku
+  api_key:
+    secure: h/9/Rcd41XVU4VYYeBoKKvG6uShEoDksCGGZ/2dgeY1f3tYnhGzzgL6TIkvhafwDbKk2Y4o6d/MI05K+s7lorf2uTKpr1To2o52hQqmb4YREPWruZtBqoRo5X4nCeN2oEdW+yJRH3jZDNUmwkPzjytqxkcUUUeDPHfz3+xCtSZk=
+  app: govuk-prototype-kit
+  on: master
+notifications:
+  email: false
+sudo: false
+env:
+  global:
+  - secure: esj3ut+TwKX25QzU1koJyTVIX+x1V55graI65X8LiYXKcOP040VPJ9lIC0HeRs5UViBM0Ur1F93rGdgW2zYVzu5MLZoH7KjpzMcG30x+FDqLChT0JfNcLLtLm/wIhx/OAAmsBxXlvjPp092BeEKd3Jug8d329TxwwK5G5XxAatg=
