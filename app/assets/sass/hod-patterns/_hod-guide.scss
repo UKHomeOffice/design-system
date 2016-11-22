@@ -25,24 +25,25 @@
 // Change pattern banner
 .phase-banner-pattern {
   @include phase-banner($state: pattern);
+	.phase-tag {
+		background-color: $turquoise;
+	}
 }
 
-@mixin phase-tag($state: alpha) {
-  @include inline-block;
-  margin: 0 8px 0 0;
-  padding: 2px 5px 0;
-
-  @include bold-16($line-height: 20 / 16);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-
-  color: $white;
-  @if $state == alpha {
-    background-color: $alpha-colour;
-  } @else if $state == beta {
-    background-color: $beta-colour;
-  } @else if $state == pattern {
-    background-color: $turquoise;
-  }
+// Let's make a colour row
+#hod-row {
+	background-color: lighten($turquoise, 50%);
+	width: 100vw;
+ 	position: relative;
+	margin-left: -50vw;
+	left: 50%;
+	margin-bottom: 0;
+	.grid-row {
+		@extend %site-width-container;
+		@extend %contain-floats;
+		div:first-child {
+			margin-left: -15px;
+			margin-top: -10px;
+		}
+	}
 }
