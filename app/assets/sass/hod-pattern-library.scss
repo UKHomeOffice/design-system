@@ -1,0 +1,10 @@
+// Home Office Digital
+// Add new patterns to the hod-patterns folder then add a link to compile 
+// Prefix any filies with `hod` this will help us keep structure to gov uk and hod design patterns
+
+// Import GOV.UK elements from /govuk-modules/, need to use to include variables
+@import 'govuk-elements';
+
+
+// Settings (variables)
+@import "hod-patterns/hod-guide";  	                               // Guide (this thing)
