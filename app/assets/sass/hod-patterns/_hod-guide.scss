@@ -5,6 +5,44 @@
 #global-header-bar {
 	background-color: $fuschia !important;
 }
+
 // Logo ID if we need to add style
 #ho-logo {
+	padding: 2em 0 .5em 0;
+}
+
+// Callout
+.hod-callout {
+ 	padding: 1em;
+    margin-top: 1.875em;
+	background-color: $highlight-colour;
+	border-top: .75em solid $fuschia;
+	*:first-child {
+		margin-top: 0;
+	}	
+}
+
+// Change pattern banner
+.phase-banner-pattern {
+  @include phase-banner($state: pattern);
+}
+
+@mixin phase-tag($state: alpha) {
+  @include inline-block;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+
+  @include bold-16($line-height: 20 / 16);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  color: $white;
+  @if $state == alpha {
+    background-color: $alpha-colour;
+  } @else if $state == beta {
+    background-color: $beta-colour;
+  } @else if $state == pattern {
+    background-color: $turquoise;
+  }
 }
