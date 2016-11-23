@@ -13,8 +13,8 @@
 
 // Callout
 .hod-callout {
- 	padding: 1em;
-    margin-top: 1.875em;
+	padding: 1em;
+	margin-top: 1.875em;
 	background-color: $highlight-colour;
 	border-top: .75em solid $fuschia;
 	*:first-child {
@@ -35,20 +35,22 @@
 @mixin hod-row ($color) {
 		background-color: lighten($color, 50%);
 		width: 100vw;
-	 	position: relative;
+		position: relative;
 		margin-left: -50vw;
 		left: 50%;
 		margin-bottom: 2em;
 		margin-top: 2em;
+		padding-bottom: 1em;
 		.grid-row {
 			@extend %site-width-container;
 			@extend %contain-floats;
 			div:first-child {
 				margin-left: -15px;
 				margin-top: -10px;
+				font-family: inherit;
 				@include media(mobile) {
 					padding-top: 10px;
-    				padding-bottom: 10px;
+					padding-bottom: 10px;
 				}
 			}
 		}
@@ -56,6 +58,29 @@
 #hod-row--purple {
 	@include hod-row($purple)
 }
+#hod-row--aqua {
+	@include hod-row($turquoise)
+}
 #hod-row--grey {
 	@include hod-row($grey-1)
+}
+
+
+// Header navigation button
+#global-header .header-proposition #proposition-menu {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: right;
+	.button {
+		background-color: $white !important;
+		color: $govuk-blue;
+		font-weight: bold;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-appearance: none;
+		-webkit-box-shadow: 0 2px 0 $grey-1;
+		-moz-box-shadow: 0 2px 0 $grey-1;
+		box-shadow: 0 2px 0 $grey-1;
+	}
 }
