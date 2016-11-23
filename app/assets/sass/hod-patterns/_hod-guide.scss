@@ -12,7 +12,7 @@
 }
 
 // Callout
-.hod-callout {
+.callout {
 	padding: 1em;
 	margin-top: 1.875em;
 	background-color: $highlight-colour;
@@ -20,6 +20,12 @@
 	*:first-child {
 		margin-top: 0;
 	}	
+}
+
+// Spacers
+.side-space {
+	&--right {
+	margin-right: .5em;
 }
 
 // Change pattern banner
