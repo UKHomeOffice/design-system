@@ -31,20 +31,22 @@
 }
 
 // Let's make a coloured row mixin
+// should we move mixins to somewhere else?
 @mixin hod-row ($color) {
 		background-color: lighten($color, 50%);
 		width: 100vw;
 	 	position: relative;
 		margin-left: -50vw;
 		left: 50%;
-		margin-bottom: 0;
+		margin-bottom: 2em;
+		margin-top: 2em;
 		.grid-row {
 			@extend %site-width-container;
 			@extend %contain-floats;
 			div:first-child {
 				margin-left: -15px;
 				margin-top: -10px;
-				@include media(tablet), @include media(mobile) {
+				@include media(mobile) {
 					padding-top: 10px;
     				padding-bottom: 10px;
 				}
@@ -53,4 +55,7 @@
 	}
 #hod-row--purple {
 	@include hod-row($purple)
+}
+#hod-row--grey {
+	@include hod-row($grey-1)
 }
