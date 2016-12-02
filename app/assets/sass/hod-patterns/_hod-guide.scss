@@ -5,10 +5,33 @@
 #global-header-bar {
 	background-color: $fuschia !important;
 }
+div.header-proposition {
+    padding-top: 0px !important;
+    display: inline-block;
+    float: right;
+}
+div.header-global {
+	display: inline-block ;
+	float: left;
+}
 
-// Logo ID if we need to add style
-#ho-logo {
-	padding: 2em 0 .5em 0;
+// Header navigation button
+#global-header .header-proposition #proposition-menu {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: right;
+	.button {
+		background-color: $white !important;
+		color: $govuk-blue;
+		font-weight: bold;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-appearance: none;
+		-webkit-box-shadow: 0 2px 0 $grey-1;
+		-moz-box-shadow: 0 2px 0 $grey-1;
+		box-shadow: 0 2px 0 $grey-1;
+	}
 }
 
 // Callout
@@ -31,9 +54,15 @@
 .phase-banner-pattern {
   @include phase-banner($state: pattern);
 	.phase-tag {
-		background-color: $turquoise;
+		background-color: lighten($turquoise, 50%);
+		color: $black;
 	}
 }
+// HO logo
+#ho-logo {
+	padding-top: 20px;
+}
+
 
 // Let's make a coloured row mixin
 // should we move mixins to somewhere else?
@@ -70,22 +99,90 @@
 	@include hod-row($grey-1)
 }
 
+// Footer
+#footer {
+    background-color: $grey-3;
+    border-top: 10px solid $grey-1;
+}
 
-// Header navigation button
-#global-header .header-proposition #proposition-menu {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	text-align: right;
-	.button {
-		background-color: $white !important;
-		color: $govuk-blue;
-		font-weight: bold;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
-		-webkit-appearance: none;
-		-webkit-box-shadow: 0 2px 0 $grey-1;
-		-moz-box-shadow: 0 2px 0 $grey-1;
-		box-shadow: 0 2px 0 $grey-1;
-	}
+
+// Download button
+.download-button {
+  @include bold-24;
+  background-image: file-url("download-button.png");
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  background-color: $link-colour;
+  -webkit-box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
+  -moz-box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
+  box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
+  padding: em(7) em(41) em(4) em(16);
+
+  &:hover, &:active, &:visited {
+    background-color: darken( $govuk-blue, 10% );
+  }
+
+  @include device-pixel-ratio {
+    background-image: file-url("download-button.png");
+    background-size: 14px 14px;
+	font-size: 16px;
+    background-position-x: 90%;
+    background-position-y: 50%;
+    &--large {
+	    background-image: file-url("download-button.png");
+	    background-size: 14px 14px;
+		font-size: 24px;
+	    background-position-x: 90%;
+	    background-position-y: 50%;
+    }
+  }
+
+  @include ie(6) {
+    background-image: file-url("download-button.png");
+  }
+}
+
+
+/* Additional styles for mockup */
+/* Tables */
+.table {
+  font-size: 16px !important;
+  @include media(tablet) {
+    font-size: 16px !important;
+    text-align: left !important;
+  }
+}
+.table-summary-title {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+  width: 30%;
+  &--last {
+	font-size: 16px;
+  	text-align: right;
+  }
+}
+.table-summary-content {
+  font-size: 16px;
+  font-weight: normal;
+}
+.table-summary-action {
+  padding-right: 0;
+  font-size: 16px;
+  text-align: right;
+}
+@media print {
+  tr, th, td {
+      /* font-family: "nta", Arial, sans-serif; */
+      /* font-weight: 400; */
+      text-transform: none;
+      font-size: 16px;
+      line-height: 1.25;
+      padding: 0.6315789474em 1.0526315789em 0.4736842105em 0;
+      text-align: left;
+      color: #0b0c0c;
+      border-bottom: 1px solid #bfc1c3;
+  }
 }

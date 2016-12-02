@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Home Office Digital design patterns
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+{% block alpha_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+{% endblock %}
+
+  <!-- h1 class="heading-xlarge">Home Office Digital design patterns</h1 -->
+  
+  <div id="hod-row--aqua">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <h2 class="heading-medium">Components</h2>
+        <p>These are parts that can be combined with other elements to create the interfaces and experiences for your projects.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <p><a href="#">Show all components</a> or go direct to</p>
+      <ul class="list list-bullet">
+        <li>
+          <a href="/components/icons">icons</a>
+        </li>
+        <li>
+          <a href="#">buttons</a>
+        </li>
+        <li>
+          <a href="#">notifications</a>
+        </li>
+        <li>
+          <a href="#">warnings</a>
+        </li>
+        <li>
+          <a href="#">calendar</a>
+        </li>
+        <li>
+          <a href="#">linked content</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
