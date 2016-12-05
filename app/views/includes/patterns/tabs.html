@@ -1,0 +1,313 @@
+<form action="" method="" enctype="multipart/form-data">
+
+  <div class="grid-row">
+    <div class="column-one-third">
+
+      <!-- < CONTENT NAVIGATION > -->
+      <ul class="tab-nav">
+        <li>
+          <a href="#0" class="active" data-target="applicant-details">
+            Applicant details
+            <span class="hod-checkmark side-space js-hidden"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#0" class="" data-target="course-details">
+            Course details
+            <span class="hod-checkmark side-space js-hidden"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#0" class="" data-target="financial-details">
+            Financial details
+            <span class="hod-checkmark side-space js-hidden"></span>
+          </a>
+        </li>
+        <li>
+          <hr style="margin:0">
+          <a href="#0" class="" data-target="barclays">
+            Check with Barclays (optional)
+          </a>
+        </li>
+      </ul>
+    </div><!-- </ CONTENT NAVIGATION > -->
+
+
+    <div class="column-two-thirds">
+
+      <!-- < APPLICANT DETAILS > -->
+
+      <div class="tab-content" id="applicant-details">
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-label-bold">Date of birth</legend>
+
+            <div class="form-date">
+              <div class="form-group form-group-day">
+                <label for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+              </div>
+
+              <div class="form-group form-group-month">
+                <label for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+
+              <div class="form-group form-group-year">
+                <label for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="dependants">
+            Number of dependants
+          </label>
+          <input type="text" class="form-control form-control-1-8" id="dependants">
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-label-bold">
+              Does the applicant live/reside in London?
+            </legend>
+           <label class="block-label" for="london-yes">
+             <input id="london-yes" type="radio" name="london-group" value="Yes">
+              Yes, in London
+            </label>
+           <label class="block-label" for="london-no">
+              <input id="london-no" type="radio" name="london-group" value="No">
+              No
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button js-button-next-tab" data-target="course-details" value="Continue">
+        </div>
+
+      </div>
+
+      <!-- < / APPLICANT DETAILS > -->
+
+      <!-- < COURSE DETAILS > -->
+
+      <div class="tab-content js-hidden" id="course-details">
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-label-bold">
+              Course type
+            </legend>
+           <label class="block-label" for="course-type-pre">
+             <input id="course-type-pre" type="radio" name="course-type-group" value="Pre-sessional">
+              Pre-sessional
+            </label>
+           <label class="block-label" for="course-type-main">
+              <input id="course-type-main" type="radio" name="course-type-group" value="Main course">
+              Main course
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-label-bold">Course start date</legend>
+
+            <div class="form-date">
+              <div class="form-group form-group-day">
+                <label for="course-start-day">Day</label>
+                <input class="form-control" id="course-start-day" type="number" pattern="[0-9]*" min="0" max="31">
+              </div>
+
+              <div class="form-group form-group-month">
+                <label for="course-start-month">Month</label>
+                <input class="form-control" id="course-start-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+
+              <div class="form-group form-group-year">
+                <label for="course-start-year">Year</label>
+                <input class="form-control" id="course-start-year" type="number" pattern="[0-9]*" min="0" max="2016">
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-label-bold">Course end date</legend>
+
+            <div class="form-date">
+              <div class="form-group form-group-day">
+                <label for="course-end-day">Day</label>
+                <input class="form-control" id="course-end-day" type="number" pattern="[0-9]*" min="0" max="31">
+              </div>
+
+              <div class="form-group form-group-month">
+                <label for="course-end-month">Month</label>
+                <input class="form-control" id="course-end-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+
+              <div class="form-group form-group-year">
+                <label for="course-end-year">Year</label>
+                <input class="form-control" id="course-end-year" type="number" pattern="[0-9]*" min="0" max="2016">
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-label-bold">
+              Is the course a continuation?
+            </legend>
+           <label class="block-label" for="continuation-yes" data-target="continuation">
+             <input id="continuation-yes" type="radio" name="continuation-group" value="Yes">
+              Yes, continuation
+            </label>
+           <label class="block-label" for="continuation-no">
+              <input id="continuation-no" type="radio" name="continuation-group" value="No">
+              No
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="panel panel-narrow js-hidden" id="continuation">
+
+          <div class="form-group">
+            <fieldset>
+              <legend class="form-label-bold">Original course start date</legend>
+
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="dob-day">Day</label>
+                  <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                </div>
+
+                <div class="form-group form-group-month">
+                  <label for="dob-month">Month</label>
+                  <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                </div>
+
+                <div class="form-group form-group-year">
+                  <label for="dob-year">Year</label>
+                  <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+         </div>
+
+        <div class="form-group">
+          <input type="submit" class="button js-button-next-tab" data-target="financial-details" value="Continue">
+        </div>
+
+      </div><!-- </ COURSE DETAILS > -->
+
+      <!-- < FINANCIAL DETAILS > -->
+
+      <div class="tab-content js-hidden" id="financial-details">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="totalfunds">
+            Total tuition fees for the first year
+          </label>
+          <input placeholder="£" type="text" class="form-control" id="totalfunds">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="feespaid">
+            Tuition fees already paid
+          </label>
+          <input placeholder="£" type="text" class="form-control" id="feespaid">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="accom">
+            Accommodation fees already paid
+          </label>
+          <input placeholder="£" type="text" class="form-control" id="accom">
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button js-button-next-tab" data-target="barclays" value="Continue">
+        </div>
+
+      </div><!-- </ FINANCIAL DETAILS > -->
+
+      <!-- < BARCLAYS > -->
+
+      <div class="tab-content js-hidden" id="barclays">
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-label-bold">Sort code</legend>
+
+            <div class="form-date">
+              <div class="form-group form-group-day">
+                <input class="form-control" id="dob-day" type="number" pattern="[0-99]*" min="0" max="99">
+              </div>
+
+              <div class="form-group form-group-day">
+                <input class="form-control" id="dob-day" type="number" pattern="[0-99]*" min="0" max="99">
+              </div>
+
+              <div class="form-group form-group-day">
+                <input class="form-control" id="dob-day" type="number" pattern="[0-99]*" min="0" max="99">
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="accnumber">
+            Account number
+          </label>
+          <input type="text" class="form-control" id="accnumber">
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-label-bold">Last date of the 28-day period to check</legend>
+
+            <div class="form-date">
+              <div class="form-group form-group-day">
+                <label for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+              </div>
+
+              <div class="form-group form-group-month">
+                <label for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+
+              <div class="form-group form-group-year">
+                <label for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button js-button-next-tab" data-target="barclays" value="Check financial status">
+        </div>
+
+      </div><!-- </ BARCLAYS > -->
+
+    </div>
+  </div>
+
+</div>
+
+</form>

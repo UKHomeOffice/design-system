@@ -1,0 +1,58 @@
+// Pattern: tabs
+// Problem: Grouping same-level content
+
+ul.tab-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-right: 1px solid #ccc;
+  float: left;
+  width: 100%;
+  font-size: 16px;
+
+    li {
+      margin-bottom: 0px;
+    }
+    li a {
+      display: inline-block;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      display: block;
+    }
+    li a:hover {
+        background-color: #dee0e2;
+        color: #005ea5;
+    }
+    .disabled {
+      color: #BFC1C3;
+    }
+}
+ul.tab-nav li a:focus, .active, ul.tab-nav li a.active:hover {
+  background-color: #005EA5;
+  color: #fff !important;
+  outline: 0;
+}
+
+.task-tag {
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 0;
+	padding: 2px 5px 0;
+	font-family: "nta", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: 700;
+	text-transform: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #0b0c0c;
+}
+
+.task-tag.done {
+	background-color: $govuk-blue;
+}
