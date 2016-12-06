@@ -183,6 +183,12 @@ div.header-global {
       padding: 0.6315789474em 1.0526315789em 0.4736842105em 0;
       text-align: left;
       color: #0b0c0c;
-      border-bottom: 1px solid #bfc1c3;
+      border-bottom: 1px solid $grey-3;
   }
+}
+
+.rule-above {
+	border-top: 1px solid $grey-3;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
 }
