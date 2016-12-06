@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Home Office Digital design patterns
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+{% block alpha_banner %}
+  {% include "includes/phase_banner_alpha.html" %}
+{% endblock %}
+
+<div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li>Contributing to the patterns library</li>
+    </ol>
+</div>
+
+  <!-- h1 class="heading-xlarge">Home Office Digital design patterns</h1 -->
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="header-logo">
+        <a href="#" class="content">
+          <img src="{{ asset_path }}images/Home_Office.png" id="ho-logo" width="200px" height="auto" alt="Home Office logo">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="hod-row--aqua">
+    <div class="grid-row">
+      <div class="column-full">
+        <h2 class="heading-medium">Contributing</h2>
+        <p>We encourage everyone from Home Office Digital to join the discussion on the design patterns.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">1. Talk about it (crit)</h2>
+      <ul class="list list-bullet">
+        <li>At least 3 people present</li>
+        <li>Bring along something to discuss at crit, something new, something you want feedback on</li>
+        <li>IxD wide crits are planned for once every 2 weeks but more informal ones should be held when possible</li>
+        <li>Collectively we can discuss and then you can make decisions on what changes are made</li>
+      </ul>
+      <p><a href="#">More details</a></p>
+
+      <div class="rule-above">
+        <h2 class="heading-medium">2. Add it to the trello board (patterns)</h2>
+        <ul class="list list-bullet">
+          <li>Include what the problem the pattern is trying to solve</li>
+          <li>Screenshots, with any personal data redacted</li>
+        </ul>
+        <p><a href="#">More details</a></p>       
+      </div>
+
+      <div class="rule-above">
+        <h2 class="heading-medium">3. Include in the pattern library</h2>
+        <ul class="list list-bullet">
+          <li>Add to the sketch file</li>
+          <li>Add to the code repository</li>
+        </ul>
+        <p><a href="#">More details</a></p>       
+      </div>
+
+      <div class="rule-above">
+        <h2 class="heading-medium">4. Let people know the changes</h2>
+        <p><a href="#">More details</a></p>       
+      </div>
+
+
+    </div>
+
+    <div class="column-one-third">
+      <div class="callout">
+        <h2 class="heading-medium">Processes</h2>
+        <ul class="list list-bullet">
+          <li><a href="/process/using">Using the patterns in your project</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+{% endblock %}
