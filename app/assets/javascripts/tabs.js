@@ -12,7 +12,7 @@ $('.js-button-next-tab').click(function(e){
     e.preventDefault();
     var target = $(this).data("target");
 
-    $('html,body').scrollTop(0);
+    window.location.href = "#example-component";    
     $('.tab-content').not("#" + target).addClass('js-hidden');
     $("#" +target).removeClass('js-hidden');
     $('ul.tab-nav li a[data-target="' + target + '"]').parent().prev().find('.hod-checkmark').removeClass('js-hidden');
