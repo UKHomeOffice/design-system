@@ -23,17 +23,22 @@
     <div class="grid-row">
       <div class="column-two-thirds">
         <h2 class="heading-large">Tabs</h2>
-        <p>Switching between views of grouped content</p>
+        <p>Switching between views of grouped content<br>OR<br>Hiding content that is not absolutely necessary to see</p>
       </div>
     </div>
   </div>
 
-  <h2 class="heading-medium">Content patterns</h2>
+  <h2 class="heading-medium" id="example-component">Example component</h2>
+  <p></p>
+
+{% include "includes/patterns/tabs.html" %}
+
+  <h2 class="heading-medium rule-above">Content principals</h2>
   <ul class="list">
     <li>The label should reflect the thing you need do with the content of that tab, not a description of what it is.</li>
   </ul>
 
-  <h2 class="heading-medium">Interaction patterns</h2>
+  <h2 class="heading-medium">Interaction principals</h2>
   <ul class="list">
     <li>Only one tab can be active at a time.</li>
     <li>The active tab should display the appropriate content for that tab.</li>
@@ -41,10 +46,10 @@
     <li>Inactive tabs should have a hover state that is distinguisable with minimum contrast ratio background:label.</li>
     <li>Focused tabs should be consistent with other focus states and distinguisable from active, inactive and hover states.</li>
     <li>Horizontal rules can be used to separate groups of tabs.</li>
-    <li>If using tabs to complete a series of tasks in a non-linear way, ensure that tabs are marked upon completion.</li>
+    <!-- <li>If using tabs to complete a series of tasks in a non-linear way, ensure that tabs are marked upon completion.</li> -->
   </ul>
 
-  <h2 class="heading-medium">Inclusive patterns</h2>
+  <h2 class="heading-medium">Accessibility principals</h2>
   <ul class="list">
     <li>The active tab should be clearly labelled as active.</li>
     <li>Only active tab content should be readable.</li>
@@ -55,12 +60,7 @@
     <li>Notes from user research go here.</li>
   </ul>
 
-  <h2 class="heading-medium rule-above" id="example-component">Example component</h2>
-  <p></p>
-
-{% include "includes/patterns/tabs.html" %}
-
-<h2 class="heading-medium">Prototype code</h2>
+<h2 class="heading-medium rule-above">Prototype code</h2>
 
 <ul>
   <li>Layout &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/tree/master/app/views/includes/patterns/tabs.html">tabs.html</a></li>
@@ -81,6 +81,8 @@
   <li>Responsive design needs work at narrower widths.</li>
   <li>Using tabs to complete a series of tasks in a non-linear way could be a separate pattern.</li>
   <li>Add notes from user research.</li>
+  <li>If this is really hiding content that is not absolutely necessary to see, why does it need to be a tab, and not another page?</li>
+  <li>More and more it seems that tabs should not be a substitute for a list of things you need to do (research notes required).</li>
 </ul>
 
 </main>
