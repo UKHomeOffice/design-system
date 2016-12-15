@@ -106,45 +106,6 @@ div.header-global {
 }
 
 
-// Download button
-.download-button {
-  @include bold-24;
-  background-image: file-url("download-button.png");
-  background-repeat: no-repeat;
-  background-size: 19px 19px;
-  background-position-x: 90%;
-  background-position-y: 50%;
-  background-color: $link-colour;
-  -webkit-box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
-  -moz-box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
-  box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
-  padding: em(7) em(41) em(4) em(16);
-
-  &:hover, &:active, &:visited {
-    background-color: darken( $govuk-blue, 10% );
-  }
-
-  @include device-pixel-ratio {
-    background-image: file-url("download-button.png");
-    background-size: 14px 14px;
-	font-size: 16px;
-    background-position-x: 90%;
-    background-position-y: 50%;
-    &--large {
-	    background-image: file-url("download-button.png");
-	    background-size: 14px 14px;
-		font-size: 24px;
-	    background-position-x: 90%;
-	    background-position-y: 50%;
-    }
-  }
-
-  @include ie(6) {
-    background-image: file-url("download-button.png");
-  }
-}
-
-
 /* Additional styles for mockup */
 /* Tables */
 .table {
