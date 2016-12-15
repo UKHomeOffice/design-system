@@ -7,7 +7,7 @@
   font-weight: 400;
   position: relative;
   display: inline-block;
-  border: none;
+  border: $green 1px solid;
   color: #fff;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +17,7 @@
   &:hover,
   &:focus {
     background-color: darken($green, 5%);
+    border: darken($green, 5%) 1px solid;
   }
 }
 
@@ -24,6 +25,7 @@
   padding: 6px 15px 5px;
   border-radius: 5px;
   font-weight: 400;
+  font-size: 18px;
   position: relative;
   display: inline-block;
   border: #333 1px solid;
@@ -44,17 +46,25 @@
   @include bold-24;
   background-image: file-url("download-button.png");
   background-repeat: no-repeat;
+  font-size: 18px !important;
   background-size: 19px 19px;
   background-position-x: 10%;
   background-position-y: 50%;
   background-color: $link-colour;
+  border: $link-colour 1px solid;
   -webkit-box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
   -moz-box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
   box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
-  padding: em(7) em(16) em(4) em(41);
+  //padding: em(7) em(16) em(4) em(41);
+  padding: 6px 15px 5px em(41);
+  &--large {
+      padding: em(7) em(16) em(4) em(41) !important;
+      font-size: 24px !important;
+  }
 
-  &:hover, &:active, &:visited {
+  &:hover, &:active {
     background-color: darken( $govuk-blue, 10% );
+    border: darken( $govuk-blue, 10% ) 1px solid;
   }
 
   @include device-pixel-ratio {
@@ -66,7 +76,8 @@
     &--large {
       background-image: file-url("download-button.png");
       background-size: 23px 23px;
-    font-size: 24px;
+      padding: em(7) em(16) em(4) em(41) !important;
+      font-size: 24px;
       background-position-x: 8%;
       background-position-y: 50%;
     }
