@@ -1,8 +1,8 @@
 /* tab navigation and content show/hide */
-$('ul.tab-nav li a').click(function(){
+$('ul.tab--nav li a').click(function(){
     var target = "#" + $(this).data("target");
-    $("ul.tab-nav li a").removeClass('active');
+    $("ul.tab--nav li a").removeClass('active');
     $(this).addClass('active');
-    $('.tab-content').not(target).addClass('js-hidden');
+    $('.tab--content').not(target).addClass('js-hidden');
     $(target).removeClass('js-hidden');
 });
