@@ -192,3 +192,37 @@ div.header-global {
     margin-top: 1.5em;
     padding-top: 1.5em;
 }
+
+code {
+    font-size: 16px;
+}
+
+.example {
+    padding-top: 45px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.example {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid $grey-3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 30px;
+	&:before {
+	    content: "EXAMPLE";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+	    font-family: "nta", Arial, sans-serif;
+	    font-weight: 400;
+	    text-transform: none;
+	    font-size: 12px;
+	    font-weight: bold;
+	    line-height: 1.25;
+	    background: #bfc1c3;
+	    color: white;
+	}
+}

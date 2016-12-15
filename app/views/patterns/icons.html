@@ -20,18 +20,20 @@
 </div>
   <!-- h1 class="heading-xlarge">Home Office Digital design patterns</h1 -->
 
-  <div id="hod-row--aqua">
-    <div class="grid-row">
-      <div class="column-two-thirds">
-        <h2 class="heading-large">Icons</h2>
-        <p>These are the full set of Home Office icons. If there is an icon you require or would like to contribute to the set, <a href="#">send a request</a>.</p>
-        <div class="block-space">
-          <a href="#" class="button download-button download-button--large" role="button">Download all</a>
-        </div>
-        <p></p>
+<div id="hod-row--aqua">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-large">Icons</h2>
+      <p>These are the full set of Home Office icons. If there is an icon you require or would like to contribute to the set, <a href="#">send a request</a>.</p>
+      <div class="block-space">
+        <a href="#" class="button download-button download-button--large" role="button">Download all</a>
       </div>
+      <p></p>
     </div>
   </div>
+</div>
+
+
 
 <div class="grid-row">
       <div class="column-full">
@@ -208,6 +210,52 @@
 </div>
 
 
+<div class="grid-row">
+  <div class="column-two-thirds">
+      <h2 class="heading-medium">Content patterns</h2>
+      <ul class="list">
+        <li>Any icon should use a visible and audible label to avoid confusion over what it is representing.</li>
+      </ul>
+
+      <h2 class="heading-medium">Interaction patterns</h2>
+      <ul class="list list-bullet">
+        <li>Minimum size for an icon is 16px</li>
+        <li>If it's part of a button the hit area should be 36px</li>
+        <li>The icon shouldn't change colour in a hover/active/focus states, only the background</li>
+      </ul>
+
+      <h2 class="heading-medium">Inclusive patterns</h2>
+      <ul class="list list-bullet">
+        <li>Icons should always have a label and use <code class="language-css">aria-hidden="true"</code></li>
+        <li>If an icon can't have a label, ensure it has screenreader only support<br>
+        <pre><code class="language-css">&ltspan class="visuallyhidden"&gtHome button&lt/span&gt</code></pre></li>
+      </ul>
+
+      <h2 class="heading-medium">User research</h2>
+      <ul class="list list-bullet">
+        <li>Icons have proved supportive with the deaf community, as BSL is a visual method of communication</li>
+      </ul>
+    </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <h2 class="heading-medium">Services using this pattern</h2>
+    <ul class="list list-bullet">
+      <li>SIP</li>
+      <li>Entity</li>
+    </ul>
+    <!-- TO DO
+    <h2 class="heading-medium rule-above">Things to do</h2>
+    <ul class="list">
+      <li>tabs.js is essential rather than enhanced &mdash; what is the no-js solution for this pattern.</li>
+      <li>Responsive design needs work at narrower widths.</li>
+      <li>Using tabs to complete a series of tasks in a non-linear way could be a separate pattern.</li>
+      <li>Add notes from user research.</li>
+    </ul>
+    -->
+  </div>
+</div>
 
 </main>
 

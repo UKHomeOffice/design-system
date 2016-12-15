@@ -1,0 +1,40 @@
+// Pattern: tabs
+// Problem: Switching between views of grouped content
+
+.button {
+  padding: 6px 15px 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #00823b;
+  box-shadow: 0 2px 0 #003618;
+
+  &:hover,
+  &:focus {
+    background-color: darken($colour, 5%);
+  }
+}
+
+.secondary-button {
+  padding: 6px 15px 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  border: #333 1px solid;
+  color: #000;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #FFF;
+  box-shadow: 0 2px 0 #333;
+
+  &:hover,
+  &:focus {
+    background-color: darken($colour, 5%);
+  }
+}
