@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hod-download-button:before {
+  content: "\e900";
+}
 .hod-home3:before {
   content: "\e902";
 }
@@ -39,6 +42,9 @@
 .hod-phone:before {
   content: "\e942";
 }
+.hod-location:before {
+  content: "\e947";
+}
 .hod-calendar:before {
   content: "\e953";
 }
@@ -53,6 +59,12 @@
 }
 .hod-key:before {
   content: "\e98d";
+}
+.hod-airplane:before {
+  content: "\e9af";
+}
+.hod-link:before {
+  content: "\e9cb";
 }
 .hod-cross:before {
   content: "\ea0f";
@@ -74,6 +86,9 @@
 }
 .hod-embed2:before {
   content: "\ea80";
+}
+.hod-share2:before {
+  content: "\ea82";
 }
 .hod-github:before {
   content: "\eab0";
