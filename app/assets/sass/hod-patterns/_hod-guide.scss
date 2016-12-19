@@ -2,6 +2,10 @@
 // A description of the contents of the file:
 // This file is to adjust the guide that the manages the pattern library change at your peril
 
+a {
+  text-decoration-skip: ink !important;
+}
+
 #global-header-bar {
 	background-color: $fuschia !important;
 }
