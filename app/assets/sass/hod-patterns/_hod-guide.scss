@@ -123,10 +123,11 @@ div.header-global {
   font-weight: 700;
   font-size: 16px;
   text-align: left;
-  width: 30%;
+  width: 25%;
   &--last {
 	font-size: 16px;
   	text-align: right;
+  	padding-right: 0;
   }
 }
 .table-summary-content {
@@ -135,6 +136,8 @@ div.header-global {
 }
 .table-summary-action {
   padding-right: 0;
+  width: 25%;
+  font-weight: normal;
   font-size: 16px;
   text-align: right;
 }
