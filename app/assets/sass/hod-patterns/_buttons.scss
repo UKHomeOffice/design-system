@@ -1,93 +1,16 @@
-// Pattern: tabs
-// Problem: Switching between views of grouped content
+// Pattern: buttons
+// Problem: Things need clicking
+
+.button-secondary {
+   @include button($white);
+   box-shadow: 0 2px 0 $black;
+   border: $black 1px solid;
+ }
+
+ .button-affordance {
+  @include button($govuk-blue);
+}
 
 .button {
-  padding: 6px 15px 5px;
-  border-radius: 5px;
-  font-weight: 400;
-  position: relative;
-  display: inline-block;
-  border: $green 1px solid;
-  color: #fff;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  background-color: #00823b;
-  box-shadow: 0 2px 0 #003618;
-
-  &:hover,
-  &:focus {
-    background-color: darken($green, 5%);
-    border: darken($green, 5%) 1px solid;
-  }
-}
-
-.secondary-button {
-  padding: 6px 15px 5px;
-  border-radius: 5px;
-  font-weight: 400;
-  font-size: 18px;
-  position: relative;
-  display: inline-block;
-  border: #333 1px solid;
-  color: #000;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  background-color: #FFF;
-  box-shadow: 0 2px 0 #333;
-
-  &:hover,
-  &:focus {
-    background-color: darken($grey-4, 5%);
-  }
-}
-
-// Download button
-.download-button {
-  @include bold-24;
-  //background-image: file-url("download-button.png");
-  background-repeat: no-repeat;
-  font-size: 18px !important;
-  background-size: 19px 19px;
-  background-position-x: 10%;
-  background-position-y: 50%;
-  background-color: $link-colour;
-  border: $link-colour 1px solid;
-  -webkit-box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
-  -moz-box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
-  box-shadow: 0 2px 0 darken( $govuk-blue, 10% );
-  //padding: em(7) em(16) em(4) em(41);
-  padding: 6px 15px 5px em(41);
-  &--large {
-      padding: em(7) em(16) em(4) em(41) !important;
-      font-size: 24px !important;
-  }
-  &:before {
-    font-family: 'hod';
-    font-size: 85%;
-    content: "\e900";
-    padding: 8px 15px 5px em(15);
-    text-align: left;
-  }
-  &:hover, &:active, &:focus {
-    background-color: darken( $govuk-blue, 10% );
-    border: darken( $govuk-blue, 10% ) 1px solid;
-  }
-  @include device-pixel-ratio {
-    background-size: 14px 14px;
-    font-size: 16px;
-    //background-image: file-url("download-button.png");
-    //background-position-x: 10%;
-    //background-position-y: 50%;
-    &--large {
-      background-size: 23px 23px;
-      font-size: 24px;
-      //background-image: file-url("download-button.png");
-      //padding: em(7) em(16) em(4) em(41) !important;
-      //background-position-x: 8%;
-      //background-position-y: 50%;
-    }
-  }
-  @include ie(6) {
-    background-image: file-url("download-button.png");
-  }
+	border-radius: 4px;
 }
