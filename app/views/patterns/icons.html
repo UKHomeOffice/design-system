@@ -200,12 +200,21 @@
         <li>minimum size for an icon is 16px</li>
         <li>if it's part of a button the hit area should be 36px</li>
         <li>the icon shouldn't change colour in a hover/active/focus states, only the background</li>
+        <li>in the normal state, the icon can be a different colour using the GOV.UK colour palette - both in solid and reversed out state - as long as the colour combination meets the minimum WCAG 2.0 AA colour contrast check</li>
       </ul>
+      <!--  -->
+      <div class="example example-images">
+        <div class="grid-row">
+          <img width="auto" height="auto" src="{{ asset_path }}/images/icon-colours.svg" alt="Form field contextual help">
+        </div>
+      </div>
+      <!--  -->
 
       <h2 class="heading-medium">Inclusive patterns</h2>
       <ul class="list list-bullet">
         <li>icons should always have a label and use <code class="language-css">aria-hidden="true"</code></li>
-        <li>if an icon can't have a label, ensure it has screenreader only support<br>
+        <li>if an icon can't have a label, ensure it has screenreader only support</br>
+
         <pre><code class="language-css">&ltspan class="visuallyhidden"&gtHome button&lt/span&gt</code></pre></li>
       </ul>
 
