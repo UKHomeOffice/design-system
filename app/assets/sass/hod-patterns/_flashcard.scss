@@ -1,0 +1,20 @@
+// Pattern: flash cards
+// Problem: interupt the user with important information
+
+.flash-card {
+    margin-top: 1.04167em;
+    padding: 30px;
+    background: #005ea5;
+    color: #fff;
+
+    .button {
+      color: #005ea5;
+      background-color: #fff;
+    }
+}
+
+@media (min-width: 769px) {
+  .flash-card {
+      margin-top: 1.25em;
+      padding: 60px;
+}
