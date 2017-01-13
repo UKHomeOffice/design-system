@@ -154,6 +154,18 @@
               <th class="table-summary-content">Down, Expand</th>
               <th class="table-summary-action"><code class="language-css">@hod-chevron-down</code></th>
             </tr>
+            <!-- hod-plus -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-plus side-space"></span></th>
+              <th class="table-summary-content">Add, Open</th>
+              <th class="table-summary-action"><code class="language-css">@hod-plus</code></th>
+            </tr>
+            <!-- hod-minus -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-minus side-space"></span></th>
+              <th class="table-summary-content">Minus, Close</th>
+              <th class="table-summary-action"><code class="language-css">@hod-minus</code></th>
+            </tr>
             <!-- hod-checkmark -->
             <tr>
               <th class="table-summary-content"><span class="hod-checkmark side-space"></span></th>
@@ -228,7 +240,7 @@
             <!-- hod-clock -->
             <tr>
               <th class="table-summary-content"><span class="hod-clock side-space"></span></th>
-              <th class="table-summary-content">Clock</th>
+              <th class="table-summary-content">Time</th>
               <th class="table-summary-action"><code class="language-css">@hod-clock</code></th>
             </tr>
             <!-- hod-calendar -->
@@ -249,12 +261,12 @@
               <th class="table-summary-content">Mobile</th>
               <th class="table-summary-action"><code class="language-css">@hod-mobile</code></th>
             </tr>
-            <!-- hod-airplane -->
+            <!-- hod-airplane>
             <tr>
               <th class="table-summary-content"><span class="hod-airplane side-space"></span></th>
               <th class="table-summary-content">Flight, Airplane</th>
               <th class="table-summary-action"><code class="language-css">@hod-airplane</code></th>
-            </tr>
+            </tr -->
             <!-- hod-link -->
             <tr>
               <th class="table-summary-content"><span class="hod-link side-space"></span></th>
@@ -288,26 +300,29 @@
 
 <div class="grid-row">
   <div class="column-two-thirds">
-      <h2 id="documentation" class="heading-medium">Content patterns</h2>
-      <ul class="list">
-        <li>Any icon should use a visible and audible label to avoid confusion over what it is representing.</li>
-      </ul>
+    <h2 id="documentation" class="heading-medium">Content patterns</h2>
+    <ul class="list">
+      <li>Any icon should use a visible and audible label to avoid confusion over what it is representing.</li>
+    </ul>
 
-      <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
-      <ul class="list list-bullet">
-        <li>minimum size for an icon is 16px</li>
-        <li>if it's part of a button the hit area should be 36px</li>
-        <li>the icon shouldn't change colour in a hover/active/focus states, only the background</li>
-        <li>in the normal state, the icon can be a different colour using the GOV.UK colour palette - both in solid and reversed out state - as long as the colour combination meets the minimum WCAG 2.0 AA colour contrast check</li>
-      </ul>
-      <!--  -->
-      <div class="example example-images">
-        <div class="grid-row">
-          <img width="auto" height="auto" src="{{ asset_path }}/images/icon-colours.svg" alt="Form field contextual help">
-        </div>
-      </div>
-      <!--  -->
-
+    <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
+    <ul class="list list-bullet">
+      <li>minimum size for an icon is 16px</li>
+      <li>if it's part of a button the hit area should be 36px</li>
+      <li>the icon shouldn't change colour in a hover/active/focus states, only the background</li>
+      <li>in the normal state, the icon can be a different colour using the GOV.UK colour palette - both in solid and reversed out state - as long as the colour combination meets the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></li>
+    </ul>
+  </div>
+</div>
+<div class="grid-row">
+  <div class="column-full">
+    <div class="example example-images">
+      <img width="100%" height="auto" src="{{ asset_path }}/images/icon-colours.svg" alt="Form field contextual help">
+    </div>
+  </div>
+</div>
+<div class="grid-row">
+  <div class="column-two-thirds">
       <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
       <ul class="list list-bullet">
         <li>icons should always have a label and use <code class="language-css">aria-hidden="true"</code></li>
