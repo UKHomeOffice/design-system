@@ -25,23 +25,23 @@
         border-left-color: $page-colour;
       }
     }
-    .button {
-      color: $link-colour;
-      background-color: $page-colour;
-      // Link styles
-      a {
-        color: $link-colour;
-      }
-      &:visited {
-        color: $link-visited-colour;
-      }
-      &:hover {
-        color: $link-hover-colour;
-      }
-      &:active {
-        color: $link-active-colour;
-      }    
-    }
+    // .button {
+    //   color: $link-colour;
+    //   background-color: $page-colour;
+    //   // Link styles
+    //   a {
+    //     color: $link-colour;
+    //   }
+    //   &:visited {
+    //     color: $link-visited-colour;
+    //   }
+    //   &:hover {
+    //     color: $link-hover-colour;
+    //   }
+    //   &:active {
+    //     color: $link-active-colour;
+    //   }
+    // }
 }
 
 @media (min-width: 769px) {
