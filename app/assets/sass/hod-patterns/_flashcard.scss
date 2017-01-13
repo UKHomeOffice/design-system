@@ -2,14 +2,40 @@
 // Problem: interupt the user with important information
 
 .flash-card {
-    margin-top: 1.04167em;
+    margin-top: 1em;
     padding: 30px;
-    background: #005ea5;
-    color: #fff;
-
+    background: $link-colour;
+    color: $page-colour;
+    a {
+      color: $page-colour;
+      &:visited, &:hover, &:active {
+        color: $page-colour; }
+    }
+    details {
+      margin-bottom: 1em;
+      summary {
+        color: $page-colour;
+      }
+      .panel {
+        border-left-color: $page-colour;
+      }
+    }
     .button {
-      color: #005ea5;
-      background-color: #fff;
+      color: $link-colour;
+      background-color: $page-colour;
+      // Link styles
+      a {
+        color: $link-colour;
+      }
+      &:visited {
+        color: $link-visited-colour;
+      }
+      &:hover {
+        color: $link-hover-colour;
+      }
+      &:active {
+        color: $link-active-colour;
+      }    
     }
 }
 
@@ -17,4 +43,5 @@
   .flash-card {
       margin-top: 1.25em;
       padding: 60px;
+  }
 }
