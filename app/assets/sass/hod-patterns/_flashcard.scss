@@ -6,6 +6,11 @@
     padding: 30px;
     background: $link-colour;
     color: $page-colour;
+    h1 {
+      &:first-of-type {
+        margin-top: 0 !important;
+      }
+    }
     a {
       color: $page-colour;
       &:visited, &:hover, &:active {

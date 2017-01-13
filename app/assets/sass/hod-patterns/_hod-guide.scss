@@ -6,6 +6,8 @@ a {
   text-decoration-skip: ink !important;
 }
 
+// General changes to prototype kit
+// Global Header
 #global-header-bar {
 	background-color: $fuschia !important;
 }
@@ -17,6 +19,9 @@ div.header-proposition {
 div.header-global {
 	display: inline-block ;
 	float: left;
+	#logo {
+		width: 100%;
+	}
 }
 
 // Header navigation button
