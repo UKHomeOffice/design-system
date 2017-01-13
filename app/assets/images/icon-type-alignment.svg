@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="169px" height="66px" viewBox="0 0 169 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon alignment - central</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-alignment---central">
+            <rect id="Rectangle-3" fill="#FFFFFF" x="0" y="0" width="169" height="66"></rect>
+            <rect id="Rectangle-2" fill="#DEE0E2" opacity="0.522796175" x="11" y="31" width="146" height="9"></rect>
+            <g id="download-button" transform="translate(21.000000, 26.000000)" fill="#000000">
+                <path d="M15.75,6.352875 L11.5149375,6.352875 L11.5149375,0 L5.1620625,0 L5.1620625,6.352875 L0.927,6.352875 L8.3385,13.764375 L15.75,6.352875 L15.75,6.352875 Z M0.927,15.8821875 L0.927,18 L15.7505625,18 L15.7505625,15.8821875 L0.927,15.8821875 L0.927,15.8821875 Z" id="Shape"></path>
+            </g>
+            <text id="Type-with-icon" font-family="GDSTransportWebsite, GDS Transport Website" font-size="16" font-weight="300" fill="#000000">
+                <tspan x="51" y="39.5">Type with icon</tspan>
+            </text>
+            <path d="M11.5,26.25 L156.531031,26.25" id="Line" stroke="#D53880" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M11.5,44.25 L156.531031,44.25" id="Line" stroke="#D53880" stroke-width="0.5" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>
