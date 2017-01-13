@@ -36,8 +36,28 @@
 
 
 <div class="grid-row">
-      <div class="column-full">
-        <h2 class="heading-medium">Navigation</h2>
+    <div class="column-full">
+        <h2 class="heading-medium">Quick links</h2>
+        <ul class="list-bullet">
+          <li><a href="#navigation-icons">Navigation icons (through the service)</a></li>
+          <li><a href="#controller-icons">Controller icons (sorting and filtering)</a></li>
+          <li><a href="#reference-icons">Quick reference icons (help identify options)</a></li>
+        </ul>
+
+        <p>
+          <details>
+            <summary><span class="summary">More about why we use icons</span></summary>
+            <div class="panel panel-border-narrow">
+              <p>The benefit of icons are to categorised as helping users navigate through the service. Controlers help users to sort, organise and adjust the information in the service – this can be a filter, closing modals or revealing addition content. Quick reference is the most subjective area and is relevant to the users, frequency of interaction with the service and reason for needing a quick reference icon/image.</p>
+
+              <p>The risk with using icons for quick reference is that users won't read/understand what the link is. The options are all very similar and the users clicks the wrong one. The options are similar and therefore either the same icons are used (which slows down interactions and increases cognitive load), or additional icons are needed with only slight changes which are hard to differentiate and increase cognitive load and reduce comprehension.</p>
+
+              <p>Identifying whether your icons fit into one of these uses will help to answer whether it's appropriate to use it.</p>
+            </div>
+          </details>
+        </p>
+
+        <h2 id="navigation-icons" class="heading-medium">Navigation icons</h2>
         <table>
           <tbody>
             <tr>
@@ -47,9 +67,21 @@
             </tr>
             <!-- hod-home-3 -->
             <tr>
-              <th class="table-summary-content"><span class="hod-home3 side-space"></span></th>
+              <th class="table-summary-content"><span class="hod-home side-space"></span></th>
               <th class="table-summary-content">Home</th>
-              <th class="table-summary-action"><code class="language-css">@hod-home-3</code></th>
+              <th class="table-summary-action"><code class="language-css">@hod-home</code></th>
+            </tr>
+            <!-- hod-search -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-search side-space"></span></th>
+              <th class="table-summary-content">Search</th>
+              <th class="table-summary-action"><code class="language-css">@hod-search</code></th>
+            </tr>
+            <!-- hod-key -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-key side-space"></span></th>
+              <th class="table-summary-content">Login</th>
+              <th class="table-summary-action"><code class="language-css">@hod-key</code></th>
             </tr>
             <!-- hod-arrow-left -->
             <tr>
@@ -75,28 +107,69 @@
               <th class="table-summary-content">Up</th>
               <th class="table-summary-action"><code class="language-css">@hod-arrow-up</code></th>
             </tr>
+          </tbody>
+        </table>
+
+        <h2 id="controller-icons" class="heading-medium">Controller icons</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th class="table-summary-title">Icon</th>
+              <th class="table-summary-title">Label</th>
+              <th class="table-summary-title--last">Variable</th>
+            </tr>
+            <!-- hod-search-plus -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-search-plus side-space"></span></th>
+              <th class="table-summary-content">Zoom in</th>
+              <th class="table-summary-action"><code class="language-css">@hod-search-plus</code></th>
+            </tr>
+            <!-- hod-search-minus -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-search-minus side-space"></span></th>
+              <th class="table-summary-content">Zoom out</th>
+              <th class="table-summary-action"><code class="language-css">@hod-search-minus</code></th>
+            </tr>
+            <!-- hod-chevron-left -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-chevron-left side-space"></span></th>
+              <th class="table-summary-content">Left, Back</th>
+              <th class="table-summary-action"><code class="language-css">@hod-chevron-left</code></th>
+            </tr>
+            <!-- hod-chevron-right -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-chevron-right side-space"></span></th>
+              <th class="table-summary-content">Right, Continue</th>
+              <th class="table-summary-action"><code class="language-css">@hod-chevron-right</code></th>
+            </tr>
+            <!-- hod-chevron-up -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-chevron-up side-space"></span></th>
+              <th class="table-summary-content">Up, Close</th>
+              <th class="table-summary-action"><code class="language-css">@hod-chevron-up</code></th>
+            </tr>
+            <!-- hod-chevron-down -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-chevron-down side-space"></span></th>
+              <th class="table-summary-content">Down, Expand</th>
+              <th class="table-summary-action"><code class="language-css">@hod-chevron-down</code></th>
+            </tr>
             <!-- hod-checkmark -->
             <tr>
               <th class="table-summary-content"><span class="hod-checkmark side-space"></span></th>
-              <th class="table-summary-content">Tick</th>
+              <th class="table-summary-content">Approved, Correct, Confirm</th>
               <th class="table-summary-action"><code class="language-css">@hod-checkmark</code></th>
             </tr>
             <!-- hod-cross -->
             <tr>
               <th class="table-summary-content"><span class="hod-cross side-space"></span></th>
-              <th class="table-summary-content">Cross</th>
+              <th class="table-summary-content">Close, Delete, Remove</th>
               <th class="table-summary-action"><code class="language-css">@hod-cross</code></th>
-            </tr>
-            <!-- hod-key -->
-            <tr>
-              <th class="table-summary-content"><span class="hod-key side-space"></span></th>
-              <th class="table-summary-content">Key</th>
-              <th class="table-summary-action"><code class="language-css">@hod-key</code></th>
             </tr>
           </tbody>
         </table>
 
-        <h2 class="heading-medium">Filetype or 3rd party</h2>
+        <h2 id="reference-icons" class="heading-medium">Quick reference icons</h2>
         <table>
           <tbody>
             <tr>
@@ -104,58 +177,71 @@
               <th class="table-summary-title">Label</th>
               <th class="table-summary-title--last">Variable</th>
             </tr>
-            <!-- hod-file-empty -->
+            <!-- hod-map-marker -->
             <tr>
-              <th class="table-summary-content"><span class="hod-file-empty side-space"></span></th>
-              <th class="table-summary-content">File</th>
-              <th class="table-summary-action"><code class="language-css">@hod-file-empty</code></th>
+              <th class="table-summary-content"><span class="hod-map-marker side-space"></span></th>
+              <th class="table-summary-content">Location</th>
+              <th class="table-summary-action"><code class="language-css">@hod-map-marker</code></th>
             </tr>
-            <!-- hod-film -->
+            <!-- hod-cog -->
             <tr>
-              <th class="table-summary-content"><span class="hod-film side-space"></span></th>
-              <th class="table-summary-content">Video</th>
-              <th class="table-summary-action"><code class="language-css">@hod-film</code></th>
+              <th class="table-summary-content"><span class="hod-cog side-space"></span></th>
+              <th class="table-summary-content">Settings</th>
+              <th class="table-summary-action"><code class="language-css">@hod-cog</code></th>
+            </tr>
+            <!-- hod-comment -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-comment side-space"></span></th>
+              <th class="table-summary-content">Message, Chat, Comment</th>
+              <th class="table-summary-action"><code class="language-css">@hod-comment</code></th>
+            </tr>
+            <!-- phone -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-phone side-space"></span></th>
+              <th class="table-summary-content">Call</th>
+              <th class="table-summary-action"><code class="language-css">@hod-phone</code></th>
+            </tr>
+            <!-- hod-trash -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-trash side-space"></span></th>
+              <th class="table-summary-content">Delete</th>
+              <th class="table-summary-action"><code class="language-css">@hod-trash</code></th>
             </tr>
             <!-- hod-image -->
             <tr>
               <th class="table-summary-content"><span class="hod-image side-space"></span></th>
-              <th class="table-summary-content">Image</th>
+              <th class="table-summary-content">Image, Photo</th>
               <th class="table-summary-action"><code class="language-css">@hod-image</code></th>
             </tr>
-            <!-- hod-file-pdf -->
+            <!-- hod-film -->
             <tr>
-              <th class="table-summary-content"><span class="hod-file-pdf side-space"></span></th>
-              <th class="table-summary-content">PDF</th>
-              <th class="table-summary-action"><code class="language-css">@hod-file-pdf</code></th>
+              <th class="table-summary-content"><span class="hod-film side-space"></span></th>
+              <th class="table-summary-content">Film, Video</th>
+              <th class="table-summary-action"><code class="language-css">@hod-film</code></th>
             </tr>
-            <!-- hod-embed2 -->
+            <!-- hod-file-empty -->
             <tr>
-              <th class="table-summary-content"><span class="hod-embed2 side-space"></span></th>
-              <th class="table-summary-content">Code</th>
-              <th class="table-summary-action"><code class="language-css">@hod-embed2</code></th>
+              <th class="table-summary-content"><span class="hod-file-empty side-space"></span></th>
+              <th class="table-summary-content">File, Document</th>
+              <th class="table-summary-action"><code class="language-css">@hod-file-empty</code></th>
             </tr>
-            <!-- hod-github -->
+            <!-- hod-clock -->
             <tr>
-              <th class="table-summary-content"><span class="hod-github side-space"></span></th>
-              <th class="table-summary-content">Github</th>
-              <th class="table-summary-action"><code class="language-css">@hod-github</code></th>
+              <th class="table-summary-content"><span class="hod-clock side-space"></span></th>
+              <th class="table-summary-content">Clock</th>
+              <th class="table-summary-action"><code class="language-css">@hod-clock</code></th>
             </tr>
-          </tbody>
-        </table>
-
-        <h2 class="heading-medium">Communication</h2>
-        <table>
-          <tbody>
+            <!-- hod-calendar -->
             <tr>
-              <th class="table-summary-title">Icon</th>
-              <th class="table-summary-title">Label</th>
-              <th class="table-summary-title--last">Variable</th>
+              <th class="table-summary-content"><span class="hod-calendar side-space"></span></th>
+              <th class="table-summary-content">Calendar, Date</th>
+              <th class="table-summary-action"><code class="language-css">@hod-calendar</code></th>
             </tr>
-            <!-- hod-bubbles2 -->
+            <!-- hod-printer -->
             <tr>
-              <th class="table-summary-content"><span class="hod-bubbles2 side-space"></span></th>
-              <th class="table-summary-content">Chat</th>
-              <th class="table-summary-action"><code class="language-css">@hod-bubbles2</code></th>
+              <th class="table-summary-content"><span class="hod-printer side-space"></span></th>
+              <th class="table-summary-content">Print</th>
+              <th class="table-summary-action"><code class="language-css">@hod-printer</code></th>
             </tr>
             <!-- hod-mobile -->
             <tr>
@@ -163,23 +249,35 @@
               <th class="table-summary-content">Mobile</th>
               <th class="table-summary-action"><code class="language-css">@hod-mobile</code></th>
             </tr>
-            <!-- hod-printer -->
+            <!-- hod-airplane -->
             <tr>
-              <th class="table-summary-content"><span class="hod-printer side-space"></span></th>
-              <th class="table-summary-content">Printer</th>
-              <th class="table-summary-action"><code class="language-css">@hod-printer</code></th>
+              <th class="table-summary-content"><span class="hod-airplane side-space"></span></th>
+              <th class="table-summary-content">Flight, Airplane</th>
+              <th class="table-summary-action"><code class="language-css">@hod-airplane</code></th>
             </tr>
-            <!-- hod-calendar -->
+            <!-- hod-link -->
             <tr>
-              <th class="table-summary-content"><span class="hod-calendar side-space"></span></th>
-              <th class="table-summary-content">Calendar</th>
-              <th class="table-summary-action"><code class="language-css">@hod-calendar</code></th>
+              <th class="table-summary-content"><span class="hod-link side-space"></span></th>
+              <th class="table-summary-content">Link</th>
+              <th class="table-summary-action"><code class="language-css">@hod-link</code></th>
             </tr>
-            <!-- phone -->
+            <!-- hod-warning -->
             <tr>
-              <th class="table-summary-content"><span class="hod-phone side-space"></span></th>
-              <th class="table-summary-content">Call</th>
-              <th class="table-summary-action"><code class="language-css">@hod-phone</code></th>
+              <th class="table-summary-content"><span class="hod-warning side-space"></span></th>
+              <th class="table-summary-content">Warning, Alert</th>
+              <th class="table-summary-action"><code class="language-css">@hod-warning</code></th>
+            </tr>
+            <!-- hod-info-circle -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-info-circle side-space"></span></th>
+              <th class="table-summary-content">Info, Information</th>
+              <th class="table-summary-action"><code class="language-css">@hod-info-circle</code></th>
+            </tr>
+            <!-- hod-pencil -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-pencil side-space"></span></th>
+              <th class="table-summary-content">Edit, Change</th>
+              <th class="table-summary-action"><code class="language-css">@hod-pencil</code></th>
             </tr>
           </tbody>
         </table>
@@ -190,26 +288,26 @@
 
 <div class="grid-row">
   <div class="column-two-thirds">
-      <h2 class="heading-medium">Content patterns</h2>
+      <h2 id="documentation" class="heading-medium">Content patterns</h2>
       <ul class="list">
-        <li>any icon should use a visible and audible label to avoid confusion over what it is representing.</li>
+        <li>Any icon should use a visible and audible label to avoid confusion over what it is representing.</li>
       </ul>
 
-      <h2 class="heading-medium">Interaction patterns</h2>
+      <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
       <ul class="list list-bullet">
         <li>minimum size for an icon is 16px</li>
         <li>if it's part of a button the hit area should be 36px</li>
         <li>the icon shouldn't change colour in a hover/active/focus states, only the background</li>
       </ul>
 
-      <h2 class="heading-medium">Inclusive patterns</h2>
+      <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
       <ul class="list list-bullet">
         <li>icons should always have a label and use <code class="language-css">aria-hidden="true"</code></li>
         <li>if an icon can't have a label, ensure it has screenreader only support<br>
         <pre><code class="language-css">&ltspan class="visuallyhidden"&gtHome button&lt/span&gt</code></pre></li>
       </ul>
 
-      <h2 class="heading-medium">User research</h2>
+      <h2 id="research" class="heading-medium">User research</h2>
       <ul class="list list-bullet">
         <li>icons have proved supportive with the deaf community, as BSL is a visual method of communication</li>
       </ul>
@@ -226,12 +324,13 @@
     <!-- TO DO -->
     <h2 class="heading-medium rule-above">Things to do</h2>
     <ul class="list list-bullet">
-      <li>greater knowledge on what and how icon libraries are currently being used</li>
-      <li>greater knowledge of what icons are used within these libraries (don't use them all)</li>
+      <li>more user research</li>
+      <li>more access needs research including cognition and comprehension</li>
+      <li>more research using icons as <code>:before</code> content on buttons</li>
+      <li>greater knowledge of what icons are used within icon libraries (don't use them all)</li>
       <li>feedback on designer/developer needs</li>
-      <li>add notes from user research</li>
-      <li>more research on access needs for <code>:before</code> content on buttons</li>
-      <li>considerations for icon usage with typography (alignment, font size, padding)</li>
+      <li>clarity on alignment, padding and size for touchscreen hit area</li>
+      <li>include in sketch file</li>
     </ul>
   </div>
 </div>

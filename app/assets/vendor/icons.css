@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'hod';
-  src:  url('../fonts/hod.eot?gua2kb');
-  src:  url('../fonts/hod.eot?gua2kb#iefix') format('embedded-opentype'),
-    url('../fonts/hod.ttf?gua2kb') format('truetype'),
-    url('../fonts/hod.woff?gua2kb') format('woff'),
-    url('../fonts/hod.svg?gua2kb#hod') format('svg');
+  src:  url('ie7/fonts/hod.eot?jmlbqj');
+  src:  url('ie7/fonts/hod.eot?jmlbqj#iefix') format('embedded-opentype'),
+    url('ie7/fonts/hod.ttf?jmlbqj') format('truetype'),
+    url('ie7/fonts/hod.woff?jmlbqj') format('woff'),
+    url('ie7/fonts/hod.svg?jmlbqj#hod') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,11 +24,56 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.hod-download-button:before {
+.hod-home:before {
   content: "\e900";
 }
-.hod-home3:before {
-  content: "\e902";
+.hod-search:before {
+  content: "\f002";
+}
+.hod-search-plus:before {
+  content: "\f00e";
+}
+.hod-search-minus:before {
+  content: "\f010";
+}
+.hod-cog:before {
+  content: "\f013";
+}
+.hod-gear:before {
+  content: "\f013";
+}
+.hod-pencil:before {
+  content: "\f040";
+}
+.hod-map-marker:before {
+  content: "\f041";
+}
+.hod-chevron-left:before {
+  content: "\f053";
+}
+.hod-chevron-right:before {
+  content: "\f054";
+}
+.hod-info-circle:before {
+  content: "\f05a";
+}
+.hod-comment:before {
+  content: "\f075";
+}
+.hod-chevron-up:before {
+  content: "\f077";
+}
+.hod-chevron-down:before {
+  content: "\f078";
+}
+.hod-phone:before {
+  content: "\f095";
+}
+.hod-file:before {
+  content: "\f15b";
+}
+.hod-trash:before {
+  content: "\f1f8";
 }
 .hod-image:before {
   content: "\e90d";
@@ -39,11 +84,8 @@
 .hod-file-empty:before {
   content: "\e924";
 }
-.hod-phone:before {
-  content: "\e942";
-}
-.hod-location:before {
-  content: "\e947";
+.hod-clock:before {
+  content: "\e94e";
 }
 .hod-calendar:before {
   content: "\e953";
@@ -54,9 +96,6 @@
 .hod-mobile:before {
   content: "\e958";
 }
-.hod-bubbles2:before {
-  content: "\e96d";
-}
 .hod-key:before {
   content: "\e98d";
 }
@@ -65,6 +104,15 @@
 }
 .hod-link:before {
   content: "\e9cb";
+}
+.hod-warning:before {
+  content: "\ea07";
+}
+.hod-plus:before {
+  content: "\ea0a";
+}
+.hod-minus:before {
+  content: "\ea0b";
 }
 .hod-cross:before {
   content: "\ea0f";
@@ -87,13 +135,7 @@
 .hod-embed2:before {
   content: "\ea80";
 }
-.hod-share2:before {
-  content: "\ea82";
-}
 .hod-github:before {
   content: "\eab0";
-}
-.hod-file-pdf:before {
-  content: "\eadf";
 }
 
