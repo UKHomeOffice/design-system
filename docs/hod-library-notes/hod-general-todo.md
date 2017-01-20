@@ -13,3 +13,9 @@ hod-general-todo.md
 # Package up sass and nunjucks to be included
 
 # Test an npm version of the sass files
+
+# add labels
+
+# add badges
+
+# add [overview page](https://design.atlassian.com/)
