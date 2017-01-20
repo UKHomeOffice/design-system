@@ -10,12 +10,16 @@ $path: "/public/images/";
 @import 'govuk-elements';
 
 // Settings (variables)
+@import "hod-patterns/variables";  	                               // Variables (setting measurements for HO patterns)
+// Guide (not a pattern)
 @import "hod-patterns/hod-guide";  	                               // Guide (this thing)
+// Components (patterns)
 @import "hod-patterns/navigation";  	                           // Navigation
 @import "hod-patterns/tabs";  	                                   // Tabs (grouping same-level content)
 @import "hod-patterns/buttons";  	                               // Buttons pattern
 @import "hod-patterns/flashcard";  	                               // Flashcard pattern
-@import "hod-patterns/tasks";  	                               // Tasks pattern
+@import "hod-patterns/tasks";  	                               	   // Tasks pattern
+@import "hod-patterns/labels";  	                               // Label
 
 // Icons
 //@import "vendor/style";		  	                               	   // Icons created in icomoon

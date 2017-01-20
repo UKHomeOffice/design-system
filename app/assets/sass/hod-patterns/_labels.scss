@@ -1,0 +1,25 @@
+// Pattern: labels
+// Problem: add classification or ownership
+
+
+@mixin label ($label-background: $panel-colour, $label-border: $secondary-text-colour, $label-text: $text-colour) {
+    background: $label-background;
+    border: 1px solid $label-border;
+    border-radius: $border-radius;
+    color: $label-text;
+    display: inline-block;
+    line-height: 1;
+    padding: 1px $space-sm;
+    margin: 0 calc(2 * #{$space-sm}) $space-sm $space-sm;
+    text-align: left;
+    text-decoration: none;
+}
+.label {
+    @include label
+}
+.label--blue {
+    @include label(lighten($link-colour, 60%), $link-colour)
+}
+.label--green {
+    @include label(lighten(#16a085, 40%), $green)
+}

@@ -11,4 +11,5 @@ hod-general-todo.md
 * Plans for research and what we are looking for
 
 # Package up sass and nunjucks to be included
-* Test an npm version of the sass files
+
+# Test an npm version of the sass files
