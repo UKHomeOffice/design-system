@@ -21,5 +21,8 @@
     @include label(lighten($link-colour, 60%), $link-colour)
 }
 .label--green {
-    @include label(lighten(#16a085, 40%), $green)
+    @include label(#D6E9D3, $green)
+}
+.label--yellow {
+    @include label(lighten($focus-colour, 20%), $focus-colour)
 }
