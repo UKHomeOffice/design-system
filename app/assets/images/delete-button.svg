@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="106px" height="41px" viewBox="0 0 106 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="2" width="104" height="37" rx="4"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="104" height="37" rx="4"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(2.000000, 1.000000)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="#B30717" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+            <text id="Delete" font-family="GDSTransportWebsite, GDS Transport Website" font-size="18" font-weight="300" fill="#FFFFFF">
+                <tspan x="12" y="24">Delete</tspan>
+            </text>
+            <g id="cross" transform="translate(75.000000, 11.000000)" fill="#FFFFFF">
+                <path d="M14.5338091,11.7836631 L14.5338091,11.7836631 L10.0840728,7.3339268 L14.5338091,2.8841905 L14.5338091,2.8841905 C14.5819367,2.83606294 14.6163135,2.78014331 14.638773,2.72055681 C14.6997346,2.55738148 14.6648994,2.36716304 14.5338091,2.23607275 L12.4317808,0.134044454 C12.3006906,0.00295415959 12.1100138,-0.031422666 11.9472968,0.029080547 C11.8877103,0.0510817153 11.8317906,0.0859168986 11.7836631,0.133586097 L11.7836631,0.133586097 L7.3339268,4.58332239 L2.8841905,0.133586097 L2.8841905,0.133586097 C2.83606294,0.0859168986 2.78014331,0.0510817153 2.72055681,0.029080547 C2.55738148,-0.0318810236 2.36716304,0.00295415959 2.23607275,0.134044454 L0.134044454,2.23607275 C0.00295415959,2.36716304 -0.031422666,2.55783983 0.029080547,2.72055681 C0.051540073,2.78014331 0.0859168986,2.83606294 0.134044454,2.8841905 L0.134044454,2.8841905 L4.58378075,7.3339268 L0.134044454,11.7836631 L0.134044454,11.7836631 C0.0863752562,11.8317906 0.051540073,11.8877103 0.029080547,11.9472968 C-0.0318810236,12.1100138 0.00295415959,12.3006906 0.134044454,12.4317808 L2.23607275,14.5338091 C2.36716304,14.6648994 2.55783983,14.6992763 2.72055681,14.638773 C2.78014331,14.6163135 2.83606294,14.5819367 2.8841905,14.5338091 L2.8841905,14.5338091 L7.3339268,10.0840728 L11.7836631,14.5338091 L11.7836631,14.5338091 C11.8317906,14.5819367 11.8877103,14.6163135 11.9472968,14.638773 C12.1104721,14.6997346 12.3006906,14.6648994 12.4317808,14.5338091 L14.5338091,12.4317808 C14.6648994,12.3006906 14.6997346,12.1100138 14.638773,11.9472968 C14.6163135,11.8877103 14.5819367,11.8317906 14.5338091,11.7836631 L14.5338091,11.7836631 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
