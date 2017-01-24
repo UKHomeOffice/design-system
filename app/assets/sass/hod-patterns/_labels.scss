@@ -17,6 +17,9 @@
 .label {
     @include label
 }
+.label--white {
+    @include label($page-colour, $text-colour)
+}
 .label--blue {
     @include label(lighten($link-colour, 60%), $link-colour)
 }
