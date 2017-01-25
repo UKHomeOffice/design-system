@@ -13,6 +13,8 @@
     margin: 0 calc(2 * #{$space-sm}) $space-sm $space-sm;
     text-align: left;
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 .label {
     @include label
