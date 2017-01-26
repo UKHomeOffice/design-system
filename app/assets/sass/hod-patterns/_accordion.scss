@@ -1,0 +1,47 @@
+// Pattern: accordion
+// Problem: extending the details markup for use as accordions
+
+.detail-extend {
+    details {
+        border-top: 1px solid $border-colour;
+        margin: 0 0 0 .4em;
+        &[open] {
+            background: $page-colour;
+        }
+        &:last-of-type {
+            border-bottom: 1px solid $border-colour;
+        }
+        summary {
+            @extend .heading-small;
+            margin: 0 0 0 0;
+            color: $govuk-blue;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 1.5rem 0 0 0;
+            position: relative;
+            width: 100%;
+            &:hover, [open] summary {
+                //background: $page-colour;
+            }
+            &::-webkit-details-marker {
+                display: none
+            }
+            &:before {
+                content: "+";
+                color: #363636;
+                display: block;
+                float: right;
+                font-size: 1.5em;
+                font-weight: bold;
+                margin: -6px 10px 6px 10px;
+                padding: 0;
+                text-align: center;
+                width: 20px;
+            }
+        }
+    }
+    [open] summary:before {
+        content: "–";
+        margin-top: -7px;
+    }
+}
