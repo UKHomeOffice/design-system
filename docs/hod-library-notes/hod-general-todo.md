@@ -14,8 +14,4 @@ hod-general-todo.md
 
 # Test an npm version of the sass files
 
-# add labels
-
-# add badges
-
-# add [overview page](https://design.atlassian.com/)
+# Consider adding alternative/progressive versions of details

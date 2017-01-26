@@ -9,7 +9,7 @@
     color: $label-text;
     display: inline-block;
     line-height: 1;
-    padding: 1px $space-sm;
+    padding: 4px $space-sm 3px $space-sm;
     margin: 0 calc(2 * #{$space-sm}) $space-sm $space-sm;
     text-align: left;
     text-decoration: none;
@@ -29,5 +29,8 @@
     @include label(#D6E9D3, $green)
 }
 .label--yellow {
-    @include label(lighten($focus-colour, 20%), $focus-colour)
+    @include label(lighten($focus-colour, 27%), $focus-colour)
+}
+.label--red {
+    @include label(lighten($red, 50%), $red)
 }
