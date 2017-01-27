@@ -1,7 +1,7 @@
 // Pattern: accordion
 // Problem: extending the details markup for use as accordions
 
-.detail-extend {
+@mixin accordion-detail($before-icon: "\f078", $before-icon-open: "\f077") {
     details {
         border-top: 1px solid $border-colour;
         margin: 0;
@@ -23,21 +23,19 @@
             padding: 1.5rem 0 0 0;
             position: relative;
             width: 100%;
-            &:hover, [open] summary {
-                //background: $highlight-colour;
-            }
             &::-webkit-details-marker {
                 display: none;
             }
             &:before {
-                content: "+";
+                font-family: "hod";
+                content: $before-icon;
                 color: $govuk-blue;
                 display: block;
                 float: right;
-                font-size: 1.5em;
+                font-size: 1em;
                 font-weight: bold;
-                margin: -6px 10px 6px 10px;
-                padding: 0 1rem 0 0;
+                margin: -3px 10px 6px 10px;
+                padding: 0 1rem 0.75rem 0;
                 text-align: center;
                 width: 20px;
             }
@@ -47,7 +45,16 @@
         }
     }
     [open] summary:before {
-        content: "–";
-        margin-top: -7px;
+        font-family: "hod";
+        content: $before-icon-open;
+        margin-top: -5px;
     }
+}
+
+.accordion-detail--arrows {
+    @include accordion-detail("\f078", "\f077")
+}
+
+.accordion-detail--plus {
+    @include accordion-detail("\ea0a", "\ea0b")
 }
