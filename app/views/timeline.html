@@ -14,8 +14,7 @@
 <div class="breadcrumbs">
     <ol>
       <li><a href="/">Home</a></li>
-      <li><a href="/patterns">Patterns</a></li>
-      <li>Accordion</li>
+      <li>Timeline</li>
     </ol>
 </div>
   <!-- h1 class="heading-xlarge">Home Office DDaT design patterns</h1 -->
@@ -23,12 +22,11 @@
 <div id="hod-row--aqua">
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h2 class="heading-large">Accordion</h2>
-      <p>Revealing additional content when required.</p>
+      <h2 class="heading-large">Timeline</h2>
+      <p>Time-ordered activity showing the history of a person or object with additional context.</p>
     </div>
   </div>
 </div>
-
 
 
 <div class="grid-row">
@@ -38,24 +36,27 @@
 
         <div class="example example-images">
           <div class="grid-row">
-            {% include "includes/accordion.html" %}
+            {% include "includes/timeline.html" %}
           </div>
         </div>
 
       </div>
 </div>
 
+  <pre class="language-markup"><code class="language-markup">{% include "includes/timeline-code.html" %}</code></pre>
+
 
 <div class="grid-row">
   <div class="column-two-thirds">
     <h2 id="documentation" class="heading-medium">Content patterns</h2>
     <ul class="list list-bullet">
-      <li></li>
+      <li>the time or date should follow <a href="https://www.gov.uk/service-manual/design/dates">GDS patterns on date and time format</a></li>
+      <li>secondary titles aren't mandatory</li>
     </ul>
 
     <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
     <ul class="list list-bullet">
-      <li></li>
+      <li>timelines are by default time ordered, if the timeline isn't time order or needs to be filtered, consider another approach</li>
     </ul>
   </div>
 </div>
@@ -68,7 +69,7 @@
 
       <h2 id="research" class="heading-medium">User research</h2>
       <ul class="list list-bullet">
-        <li></li>
+        <li>timelines aren't recommended for to-do lists</li>
       </ul>
     </div>
 </div>
@@ -77,12 +78,14 @@
   <div class="column-two-thirds">
     <h2 class="heading-medium">Services using this pattern</h2>
     <ul class="list list-bullet">
-      <li>Hercule</li>
+      <li>Application platform</li>
+      <li>Entities</li>
     </ul>
     <!-- TO DO -->
     <h2 class="heading-medium rule-above">Things to do</h2>
     <ul class="list list-bullet">
-      <li>add expand all button and js</li>
+      <li>research additional examples</li>
+      <li>research alternative for workflow management</li>
     </ul>
   </div>
 </div>
