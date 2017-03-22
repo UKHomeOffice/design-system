@@ -30,8 +30,7 @@
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h2 class="heading-large">Font</h2>
-      <p>A Helvetica/Arial font stack already exists in the frontend/prototype toolkit. Use Sass variable <code class="code">$helvetica-regular</code> which declares <code class="code">"HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;</code></p>
+      <p><a href="https://designnotes.blog.gov.uk/2015/03/11/can-i-use-the-gov-uk-fonts/">Find out if you can use the GOV.UK font</a>. If you can't, we recommend using a Helvetica/Arial font stack for consistency.</p>
     </div>
   </div>
 
@@ -46,18 +45,25 @@
     </div>
   </div>
 
+  <pre class="language-css"><code class="language-css">// GDS Transport // $nta-light Sass variable in prototype kit
+font-family: "nta", Arial, sans-serif;
 
-  <div class="grid-row">
+// Helvetica Regular // $helvetica-regular Sass variable in prototype kit
+font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+
+// Font reset for print // $print-reset Sass variable in prototype kit
+font-family: sans-serif;</code></pre>
+
+  <!-- <div class="grid-row">
     <div class="column-two-thirds">
       <h2 class="heading-large">Keep your line length between 45 and 75 characters</h2>
       <p>Line length is important for reading comfortably. You should be able to achieve this by keeping content to two thirds of the page container width using <code class="code">.column-two-thirds</code></p>
       <img width="100%" height="auto" style="margin-top:24px;margin-bottom:24px;" src="{{ asset_path }}/images/linelength.png" alt="Illustration of the optimal line lengths">
     </div>
-  </div>
+  </div> -->
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <p></p>
       <p>More guidance on typography can be found on <a href="http://govuk-elements.herokuapp.com/typography/" target="_blank">GOV.UK elements</a>.</p>
     </div>
   </div>
