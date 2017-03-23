@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Home Office Digital design patterns
+  Home Office DDaT design patterns
 {% endblock %}
 
 {% block content %}
@@ -18,17 +18,10 @@
     </ol>
 </div>
 
-  <!-- h1 class="heading-xlarge">Home Office Digital design patterns</h1 -->
+  <!-- h1 class="heading-xlarge">Home Office DDaT design patterns</h1 -->
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <div class="header-logo">
-        <a href="#" class="content">
-          <img src="{{ asset_path }}images/Home_Office.png" id="ho-logo" width="200px" height="auto" alt="Home Office logo">
-        </a>
-      </div>
-    </div>
-  </div>
+{% include "includes/home_office_logo.html" %}
+
 
   <div id="hod-row--aqua">
     <div class="grid-row">
@@ -47,8 +40,8 @@
       <div class="rule-above">
         <h3 class="heading-medium">Include in your html</h3>
         <p>You can the css file in your html designs, it's a quicker way to get a design started but is not for production and should only be used in the short term.</p><p>You can include using:</p>
-<pre>
-<code class="language-css">https://home-office-digital-patterns.herokuapp.com/public/stylesheets/application.css</code>
+<pre class="language-markup">
+<code class="language-markup">https://home-office-digital-patterns.herokuapp.com/public/stylesheets/application.css</code>
 </pre>
       </div>
       <div class="rule-above">
@@ -56,19 +49,19 @@
         <ul class="list list-bullet">
           <li>include this repository as node dependancy in the package.json file</li>
           <li>import the SASS files required</li>
-          <li>the styles and assets will then be available in <code class="language-css">node_modules/hod-patterns</code></li>
+          <li>the styles and assets will then be available in <code class="language-markup">node_modules/hod-patterns</code></li>
           <li>import the sass files required into your stylesheet</li>
         </ul>
 
-        <p>Example of how to include the package in <code class="language-css">package.json</code></p>
+        <p>Example of how to include the package in <code class="language-markup">package.json</code></p>
 
-<pre>
-<code class="language-css">{
+<pre class="language-markup">
+<code class="language-markup">{
   "devDependencies": {
     "hod-patterns": "https://github.com/hod/hod-patterns.git#v1.0.0",
   }
 }</code>
-</pre> 
+</pre>
       </div>
 
     </div>

@@ -23,10 +23,10 @@
     }
     &.active a,
     &.active a:hover {
-    color: $home-office-websafe;
-    -webkit-box-shadow: inset 0px -5px 0px 0px $home-office-websafe;
-    -moz-box-shadow: inset 0px -5px 0px 0px $home-office-websafe;
-    box-shadow: inset 0px -5px 0px 0px $home-office-websafe;
+    color: $govuk-blue;
+    -webkit-box-shadow: inset 0px -5px 0px 0px $govuk-blue;
+    -moz-box-shadow: inset 0px -5px 0px 0px $govuk-blue;
+    box-shadow: inset 0px -5px 0px 0px $govuk-blue;
     }
   }
 }

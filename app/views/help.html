@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Home Office Digital design patterns
+  Home Office DDaT design patterns
 {% endblock %}
 
 {% block content %}
@@ -14,7 +14,6 @@
 <div class="breadcrumbs">
     <ol>
       <li><a href="/">Home</a></li>
-      <li><a href="/patterns">Patterns</a></li>
       <li>Help</li>
     </ol>
 </div>
@@ -23,10 +22,20 @@
     <div class="grid-row">
       <div class="column-two-thirds">
         <h2 class="heading-large">Contextual help</h2>
-        <p>Guidance to help users with more complex interactions</p>
+        <p>Small overlays containing help content for complex interactions</p>
       </div>
     </div>
   </div>
+
+  <h2 class="heading-medium">Why have we created this pattern?</h2>
+  <ul class="list list-bullet">
+    <li>the GOV.UK pattern does not meet the user need</li>
+  </ul>
+
+  <h2 class="heading-medium">Relevant GOV.UK patterns</h2>
+  <ul class="list list-bullet">
+    <li><a href="https://www.gov.uk/service-manual/design/help-text" target="_blank">help text</a></li>
+  </ul>
 
   <h2 class="heading-medium" id="example-component">Example component</h2>
   <p></p>
@@ -43,26 +52,29 @@
     </div>
   </div>
 
-  <h2 class="heading-medium rule-above">Content principals</h2>
+  <h2 class="heading-medium">Interaction principles</h2>
   <ul class="list list-bullet">
-    <li>Help content should be easy to comprehend but descriptive.</li>
+    <li>help should be available to users without interfering in their current flow</li>
+    <li>help should be easy to close, move and minimise until the user needs it</li>
+    <li>links to more comprehensive help should be easy to find, if contextual help doesn't answer a users question</li>
   </ul>
 
-  <h2 class="heading-medium">Interaction principals</h2>
+  <h2 class="heading-medium rule-above">Content principles</h2>
   <ul class="list list-bullet">
-    <li>Help should be available to users without interfering in their current flow.</li>
-    <li>Help should be easy to close, move and minimise until the user needs it.</li>
-    <li>Links to more comprehensive help should be easy to find, if contextual help doesn't answer a users question.</li>
+    <li><a href="https://www.gov.uk/service-manual/design/help-text" target="_blank">refer to GOV.UK pattern</a></li>
   </ul>
 
-  <h2 class="heading-medium">Accessibility principals</h2>
-  <ul class="list list-bullet">
 
+
+  <h2 class="heading-medium">Accessibility principles</h2>
+  <ul class="list list-bullet">
+    <li>needs testing</li>
   </ul>
 
   <h2 class="heading-medium">User research</h2>
   <ul class="list list-bullet">
-    <li>Users find side-by-side guidance more helpful and easier to use. Small overlay windows achieve this while creating the smallest interference with the users flow. </li>
+    <li>users find side-by-side guidance more helpful and easier to use.</li>
+    <li>small overlay windows offer a smallest interference with the users flow</li>
   </ul>
 
 <h2 class="heading-medium rule-above">Prototype code</h2>
@@ -74,12 +86,12 @@
 <h2 class="heading-medium">Services using this pattern</h2>
 <ul class="list list-bullet">
   <li>Application platform</li>
-  <li>Entity search</li>
+  <li>Entities</li>
 </ul>
 
-<h2 class="heading-medium rule-above">Things to do</h2>
+<h2 class="heading-medium rule-above">Related patterns</h2>
 <ul class="list list-bullet">
-  <li>Code it up</li>
+  <li><a href="/patterns/modal.html">modals</a></li>
 </ul>
 
 </main>

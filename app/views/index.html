@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Home Office Digital design patterns
+  Home Office DDaT design patterns
 {% endblock %}
 
 {% block content %}
@@ -11,49 +11,71 @@
   {% include "includes/phase_banner_alpha.html" %}
 {% endblock %}
 
-  <!-- h1 class="heading-xlarge">Home Office Digital design patterns</h1 -->
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <div class="header-logo">
-        <a href="#" class="content">
-          <img src="{{ asset_path }}images/Home_Office.png" id="ho-logo" width="200px" height="auto" alt="Home Office logo">
-        </a>
-      </div>
-    </div>
-  </div>
+  <!-- h1 class="heading-xlarge">Home Office DDaT design patterns</h1 -->
+  {% include "includes/home_office_logo.html" %}
 
   <div id="hod-row--aqua">
     <div class="grid-row">
       <div class="column-full">
         <h2 class="heading-large">Digital design guide and patterns library</h2>
-        <p>This is the pattern library for the Home Office, Home Office Digital. It expands on the <a href="https://govuk-elements.herokuapp.com">GOV.UK design patterns</a>. Our audiences are both internal and external, this pattern library has been developed to be used for both audiences.</p>
+        <p>This is the design pattern library for Home Office DDaT, Data and Technology (DDaT). It extends the  <a href="https://govuk-elements.herokuapp.com">GOV.UK design patterns</a> with patterns for additional use cases and users, including internal services.</p>
+        <!-- <p><a href="/process/using">Use these patterns in your project</a></p> -->
       </div>
     </div>
   </div>
 
   <div class="grid-row">
-    <div class="column-one-half">
+    <div class="column-full">
       <h2 class="heading-medium">Patterns</h2>
-      <p>These patterns have been developed by the Home Office research and design teams to help develop and create consistent usable services.</p>
-      <p><a href="/patterns">See the design patterns</a></p>
-    </div>
+      <p>These patterns have been developed by the Home Office DDaT user research and design teams to help develop and create consistent, usable services. They include example components and guidance on usage.</p>
 
-    <div class="column-one-half">
-      <div class="callout">
-        <h2 class="heading-medium">Processes</h2>
-        <ul class="list list-bullet">
-          <li><a href="/process/contribute">Contributing to the patterns</a></li>
-          <li><a href="/process/using">Using the patterns in your project</a></li>
-        </ul>
-      </div>
+      <h3 class="heading-small">Beta</h3>
+      <ul class="list">
+
+        <li><a href="/flash-card">Flash cards</a></li>
+        <li><a href="/header">Header</a></li>
+        <li><a href="/icons">Icons</a></li>
+
+      </ul>
+
+      <h3 class="heading-small">Alpha</h3>
+      <ul class="list">
+
+        <li><a href="/buttons">Buttons</a></li>
+        <li><a href="/highlighting-matches">Highlighting matches</a></li>
+        <li><a href="/labels">Labels</a></li>
+        <li><a href="/modal">Modal</a></li>
+        <li><a href="/navigation">Navigation</a></li>
+        <li><a href="/tabs">Tabs</a></li>
+        <li><a href="/timeline">Timeline</a></li>
+
+      </ul>
+
+      <h3 class="heading-small">Discovery</h3>
+      <ul class="list">
+
+        <li><a href="/badges">Badges</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/tasks">Tasks</a></li>
+
+      </ul>
+
     </div>
   </div>
 
   <div class="grid-row">
-    <div class="column-two-thirds">
+    <div class="column-full">
+      <h2 class="heading-medium rule-above">Styles</h2>
+      <ul class="list">
+       <li><a href="/typography">Typography</a></li>
+     </ul>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
       <h2 class="heading-medium rule-above">Resources</h2>
-      <p>These resources are for help developing your design patterns. Always understand your users and always do research with them.</p>
+      <p>Resources to help interaction designers at the Home Office.</p>
     </div>
   </div>
 
@@ -62,58 +84,92 @@
       <h3 class="heading-small">Accessibility</h3>
       <ul class="list list-bullet">
         <li>
-          <a href="http://webaim.org/resources/contrastchecker/">
+          <a href="https://github.com/UKHomeOffice/posters/tree/master/accessibility" target="_blank">
+            Access needs posters
+          </a>
+        </li>
+        <li>
+          <a href="http://webaim.org/resources/contrastchecker/" target="_blank">
             Colour contrast checker
           </a>
         </li>
         <li>
-          <a href="http://wave.webaim.org/">
-            WAVE
-          </a>
-        </li>
-        <li>
+
           <a href="http://www.freedomscientific.com/Products/Blindness/JAWS">
-            <abbr title="Job Access With Speech">JAWS</abbr> screenreader
+            <abbr title="Job Access With Speech">JAWS</abbr> screenreader </a> </li>
+        <li>
+          <a href="https://help.apple.com/voiceover/info/guide/10.12/" target="_blank">
+            Guide to using VoiceOver, Apple's screenreader
+
           </a>
         </li>
         <li>
-          <a href="https://github.com/UKHomeOffice/posters/tree/master/accessibility">
-            Access needs posters
+          <a href="http://wave.webaim.org/" target="_blank">
+            WAVE accessibility evaluation tool
           </a>
         </li>
       </ul>
     </div>
 
     <div class="column-third">
-      <h3 class="heading-small">Design</h3>
+      <h3 class="heading-small">Prototyping</h3>
       <ul class="list list-bullet">
         <li>
-          <a href="http://semantic-ui.com/">
-            Semantic UI
+        	<a href="https://github.com/tsmorgan/shots" target="_blank">
+        	  Create PDFs of your prototype screens
+        	</a>
+        </li>
+        <li>
+          <a href="https://github.com/liam-betsworth/dvla_remember" target="_blank">
+            Persist data between prototype pages
           </a>
         </li>
         <li>
-        	<a href="http://patternlab.io/">
-        		Atomic Design
+        	<a href="https://github.com/abbott567/sketch_wireframing_kit" target="_blank">
+        	  Sketch wireframing tool for GOV.UK
         	</a>
         </li>
         <li>
-        	<a href="http://styleguides.io/">
-        	Style Guides
-        	</a>
+          <a href="https://github.com/abbott567/validation-for-prototypes" target="_blank">
+            Validation for prototypes
+          </a>
         </li>
       </ul>
     </div>
 
     <div class="column-third">
-      <h3 class="heading-small">Resources</h3>
+      <h3 class="heading-small">GOV.UK</h3>
       <ul class="list list-bullet">
         <li>
-          <a href="resources/logos">
-            Logos and guidelines
+          <a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style" target="_blank">
+            GOV.UK content style guide
+          </a>
+        </li>
+        <li>
+          <a href="http://govuk-elements.herokuapp.com/" target="_blank">
+            GOV.UK elements
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.uk/design-principles" target="_blank">
+            GOV.UK design principles
+          </a>
+        </li>
+        <li>
+          <a href="https://designpatterns.hackpad.com/" target="_blank">
+            HackPad discussing patterns used across GOV.UK
           </a>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="callout">
+        <h2 class="heading-medium">Contributing to the patterns</h2>
+        <p>For Home Office designers, we have a process for <a href="/process/contribute">contributing to these patterns</a>. We would be happy for feedback if the contribution process doesn't work for you.</p>
+      </div>
     </div>
   </div>
 

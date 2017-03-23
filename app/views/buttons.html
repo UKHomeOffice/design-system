@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Home Office Digital design patterns
+  Home Office DDaT design patterns
 {% endblock %}
 
 {% block content %}
@@ -14,7 +14,6 @@
 <div class="breadcrumbs">
     <ol>
       <li><a href="/">Home</a></li>
-      <li><a href="/patterns">Patterns</a></li>
       <li>Buttons</li>
     </ol>
 </div>
@@ -37,30 +36,36 @@
     </div>
   </div>
 
+  <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/buttons-code.html" %}</code></pre>
+
+
   </div>
 
   <div class="column-two-thirds">
-    <h2 class="heading-medium rule-above">Content principals</h2>
+    <h2 class="heading-medium rule-above">Content principles</h2>
     <ul class="list list-bullet">
-      <li>Label buttons with what they do</li>
+      <li>label buttons with what they do</li>
     </ul>
 
-      <h2 class="heading-medium">Interaction principals</h2>
+      <h2 class="heading-medium">Interaction principles</h2>
       <ul class="list list-bullet">
-        <li>Buttons should look like buttons</li>
-        <li>Buttons need to have a good level of affordance, so that users know that something meaningful will happen if they click a button</li>
-        <li>Don't make things that aren't buttons look like buttons</li>
+        <li>buttons should look like buttons</li>
+        <li>buttons need to have a good level of affordance, so that users know that something meaningful will happen if they click a button</li>
+        <li>buttons can have an icon to further support their action or state</li>
+        <li>don't make things that aren't buttons look like buttons</li>
+        <li>avoid secondary actions unless you see a need for one in research</li>
+        <li>primary actions should be aligned with input fields to increase completion rates</li>
       </ul>
 
-      <h2 class="heading-medium">Accessibility principals</h2>
+      <h2 class="heading-medium">Accessibility principles</h2>
       <ul class="list list-bullet">
-        <li>Buttons should have clear hover and focus states</li>
-        <li>Use a 'button' tag with a role='button'</li>
+        <li>buttons should have clear hover and focus states</li>
+        <li>use a 'button' tag with a role='button'</li>
       </ul>
 
       <h2 class="heading-medium">User research</h2>
       <ul class="list list-bullet">
-        <li>Users sometimes confuse grey buttons with disabled buttons. Grey buttons are best avoided</li>
+        <li>users sometimes confuse grey buttons with disabled buttons. Grey buttons are best avoided</li>
       </ul>
 
     <h2 class="heading-medium rule-above">Prototype code</h2>
@@ -73,10 +78,6 @@
       <li>Application platform</li>
     </ul>
 
-    <h2 class="heading-medium rule-above">Things to do</h2>
-    <ul class="list list-bullet">
-      <li>Do we need a third style button when a white one isn't obvious enough?</li>
-    </ul>
   </div>
 
 </main>

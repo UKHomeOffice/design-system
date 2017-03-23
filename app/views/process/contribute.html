@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Home Office Digital design patterns
+  Home Office DDaT design patterns
 {% endblock %}
 
 {% block content %}
@@ -18,23 +18,16 @@
     </ol>
 </div>
 
-  <!-- h1 class="heading-xlarge">Home Office Digital design patterns</h1 -->
+  <!-- h1 class="heading-xlarge">Home Office DDaT design patterns</h1 -->
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <div class="header-logo">
-        <a href="#" class="content">
-          <img src="{{ asset_path }}images/Home_Office.png" id="ho-logo" width="200px" height="auto" alt="Home Office logo">
-        </a>
-      </div>
-    </div>
-  </div>
+{% include "includes/home_office_logo.html" %}
+
 
   <div id="hod-row--aqua">
     <div class="grid-row">
       <div class="column-full">
         <h2 class="heading-medium">Contributing</h2>
-        <p>We encourage everyone from Home Office Digital to join the discussion on the design patterns.</p>
+        <p>We encourage everyone from Home Office DDaT to join the discussion on the design patterns.</p>
       </div>
     </div>
   </div>
@@ -42,7 +35,7 @@
   <div class="grid-row">
     <div class="column-two-thirds">
       <h2 class="heading-medium">1. Talk about it (crit)</h2>
-      <p>Crits are a good place to discuss work with other designers to help solve design issues. A larger crit session is organised once every two weeks but informal crits are recommended whenever the need arises, they should include at least 3 designers.</p>
+      <p>Crits are a good place to discuss work with other designers to help solve design issues, crits are recommended whenever the need arises, they should include at least 3 designers.</p>
       <ul class="list list-bullet">
         <li>If possible, share the designs before a crit</li>
         <li>Clarify the user need</li>
@@ -71,7 +64,8 @@
 
       <div class="rule-above">
         <h2 class="heading-medium">4. Share it, let people know the changes</h2>
-        <p>Add some detail around what the pattern does, and let others know (preferrably through slack) that a new pattern has been added.</p>       
+        <p>Add some detail around what the pattern does, and let others know (preferrably through slack) that a new pattern has been added.</p>
+        <p><a href="upstream">What happens next?</a></p>
       </div>
 
 
