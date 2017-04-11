@@ -3,7 +3,7 @@
 
 .button-secondary {
    @include button($white);
-   box-shadow: 0 2px 0 $black;
+   box-shadow: 0 1px 0 $black;
    border: $black 1px solid;
  }
 
@@ -12,5 +12,5 @@
 }
 
 .button {
-	border-radius: $border-radius;
+	// border-radius: $border-radius;
 }
