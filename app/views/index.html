@@ -6,24 +6,35 @@
 
 {% block content %}
 
-<main id="content" role="main">
-{% block alpha_banner %}
-  {% include "includes/phase_banner_alpha.html" %}
-{% endblock %}
+<div class="content-width">
+  {% block alpha_banner %}
+    {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+</div>
 
-  <!-- h1 class="heading-xlarge">Home Office DDaT design patterns</h1 -->
-  {% include "includes/home_office_logo.html" %}
-
-  <div id="hod-row--aqua">
-    <div class="grid-row">
-      <div class="column-full">
-        <h2 class="heading-large">Digital design guide and patterns library</h2>
-        <p>This is the design pattern library for Home Office DDaT, Data and Technology (DDaT). It extends the  <a href="https://govuk-elements.herokuapp.com">GOV.UK design patterns</a> with patterns for additional use cases and users, including internal services.</p>
-        <p>Read our guidance on <a href="/process/guidance">how to use these patterns</a>.</p>
-      </div>
-    </div>
+<div class="content-width">
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li>Patterns</li>
+    </ol>
   </div>
+</div>
 
+<div class="content-width">
+  {% include "includes/home_office_logo.html" %}
+</div>
+
+<section class="full-width">  
+  <div class="content-width">
+    <h2 class="heading-large">Digital design guide and patterns library</h2>
+    <p>This is the design pattern library for Home Office DDaT, Data and Technology (DDaT). It extends the  <a href="https://govuk-elements.herokuapp.com">GOV.UK design patterns</a> with patterns for additional use cases and users, including internal services.</p>
+    <p>Read our guidance on <a href="/process/guidance">how to use these patterns</a>.</p>
+  </div>
+</section>
+
+
+<main id="content" role="main">
   <div class="grid-row">
     <div class="column-full">
       <h2 class="heading-medium">Patterns</h2>
@@ -120,7 +131,7 @@
         </li>
         <li>
         	<a href="https://github.com/UKHomeOffice/design-patterns" target="_blank">
-        	  Sketch file for HO patterns
+        	  Sketch file for Home Office patterns
         	</a>
         </li>
         <li>
