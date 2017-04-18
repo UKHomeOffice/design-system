@@ -191,3 +191,29 @@ code {
 .block-space {
 	margin: em(30) em(0);
 }
+
+// Sections at the top pages
+
+.content-width {
+  @extend %site-width-container;
+  @extend %contain-floats;
+  //padding-bottom: $gutter;
+
+  @include media(desktop) {
+    //padding-bottom: $gutter * 3;
+  }
+  // Pressing enter when focus is on the skiplink sets focus on the #content area
+  // Remove the blue outline
+  outline: none;
+}
+
+.full-width {
+	width: 100%;
+	background-color: lighten($turquoise, 50%);
+	padding: 2.5em 0 1em 0;
+	h1, h2 {
+		margin-top: 0;
+	}
+}
+.wrap {
+}
