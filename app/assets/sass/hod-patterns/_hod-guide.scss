@@ -29,18 +29,6 @@ div.header-global {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	text-align: right;
-	.button {
-		background-color: $white !important;
-		color: $govuk-blue;
-		font-weight: bold;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
-		-webkit-appearance: none;
-		-webkit-box-shadow: 0 2px 0 $grey-1;
-		-moz-box-shadow: 0 2px 0 $grey-1;
-		box-shadow: 0 2px 0 $grey-1;
-	}
 }
 
 // Callout
