@@ -6,38 +6,38 @@
 
 {% block content %}
 
-<main id="content" role="main">
-{% block alpha_banner %}
-  {% include "includes/phase_banner_alpha.html" %}
-{% endblock %}
+<div class="content-width">
+  {% block alpha_banner %}
+    {% include "includes/phase_banner_alpha.html" %}
+  {% endblock %}
+</div>
 
-<div class="breadcrumbs">
+<div class="content-width">
+  <div class="breadcrumbs">
     <ol>
       <li><a href="/">Home</a></li>
       <li>Icons</li>
     </ol>
-</div>
-  <!-- h1 class="heading-xlarge">Home Office DDaT design patterns</h1 -->
-
-<div id="hod-row--aqua">
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <h2 class="heading-large">Icons</h2>
-      <p>This is the full set of Home Office icons. Add to the <a href="https://trello.com/b/RSG3pwzu/patterns">Trello board</a> if there is an icon you would like to contribute to the set.</p>
-      <div class="block-space">
-        <a href="{{ asset_path }}/download/hod-icons.zip" class="button download-button download-button--large" role="button">Download all</a>
-      </div>
-      <ul class="metadata">
-        <li>Usage: internal</li>
-        <li>Status: Beta</li>
-        <li>Last updated: 17 March 2017</li>
-      </ul>
-    </div>
   </div>
 </div>
 
+<section class="full-width">  
+  <div class="content-width">
+    <h2 class="heading-large">Icons</h2>
+    <p>This is the full set of Home Office icons. Add to the <a href="https://trello.com/b/RSG3pwzu/patterns">Trello board</a> if there is an icon you would like to contribute to the set.</p>
+    <div class="block-space">
+      <a href="{{ asset_path }}/download/hod-icons.zip" class="button download-button download-button--large" role="button">Download all</a>
+    </div>
+    <ul class="metadata">
+      <li>Usage: internal</li>
+      <li>Status: Beta</li>
+      <li>Last updated: 17 March 2017</li>
+    </ul>
+  </div>
+</section>
 
 
+<main id="content" role="main">
 <div class="grid-row">
     <div class="column-full">
         <h2 class="heading-medium">Quick links</h2>
