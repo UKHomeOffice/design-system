@@ -1,7 +1,7 @@
 // hod guide
 // A description of the contents of the file:
 // This file is to adjust the guide that the manages the pattern library change at your peril
-// But also please put any code that is purely for the guide and not for the kit in here 
+// But also please put any code that is purely for the guide and not for the kit in here
 
 a {
   text-decoration-skip: ink !important;
@@ -46,7 +46,7 @@ div.header-global {
 	border-top: .75em solid $fuschia;
 	*:first-child {
 		margin-top: 0;
-	}	
+	}
 }
 
 // Spacers
@@ -215,7 +215,8 @@ code {
 }
 
 .full-width {
-	width: 100%;
+  font-size: 19px;
+  width: 100%;
 	background-color: lighten($turquoise, 50%);
 	padding: 2.5em 0 1em 0;
 	h1, h2 {
@@ -235,6 +236,11 @@ code {
 }
 
 @media screen and (max-width: 640px ) {
+
+    .full-width {
+      font-size: 16px;
+    }
+
     .metadata {
         display: inline;
     }
