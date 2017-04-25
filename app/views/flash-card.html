@@ -44,36 +44,38 @@
     </div>
   </div>
 
-  <pre class="language-markup"><code class="language-markup">{% include "includes/flash_card-code.html" %}</code></pre>
-
+  <details>
+    <summary>Show code snippet</summary>
+    <pre class="language-markup"><code class="language-markup">{% include "includes/flash_card-code.html" %}</code></pre>
+  </details>
 
   </div>
 
   <div class="column-two-thirds">
-    <h2 class="heading-medium rule-above">Content principles</h2>
+    <h2 class="heading-medium">Interaction principles</h2>
+    <ul class="list list-bullet">
+      <li>should be used to draw the attention of the user to some important information</li>
+      <li>cards should have headings. You may want to visually hide the headings but as a general rule it's simpler not to</li>
+      <li>one thing per card</li>
+      <li>use larger text (24px) in cards</li>
+      <li>use "Continue" buttons to advance to the next card or page</li>
+      <li>don't use form elements (except buttons) within cards. Form elements will add extra complexity and you will need to deal with error states.</li>
+    </ul>
+
+    <h2 class="heading-medium">Content principles</h2>
     <ul class="list list-bullet">
       <li>as this replaces a page follow usual content guidance</li>
     </ul>
 
-      <h2 class="heading-medium">Interaction principles</h2>
-      <ul class="list list-bullet">
-        <li>should be used to draw the attention of the user to some important information</li>
-        <li>cards should have headings. You may want to visually hide the headings but as a general rule it's simpler not to</li>
-        <li>one thing per card</li>
-        <li>use larger text (24px) in cards</li>
-        <li>use "Continue" buttons to advance to the next card or page</li>
-        <li>don't use form elements (except buttons) within cards. Form elements will add extra complexity and you will need to deal with error states.</li>
-      </ul>
+    <h2 class="heading-medium">Accessibility principles</h2>
+    <ul class="list list-bullet">
+      <li>Need to add some user research findings</li>
+    </ul>
 
-      <h2 class="heading-medium">Accessibility principles</h2>
-      <ul class="list list-bullet">
-        <li>Need to add some user research findings</li>
-      </ul>
-
-      <h2 class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>we have found users can take information in more consistantly when we interupt their flow in this way</li>
-      </ul>
+    <h2 class="heading-medium">User research</h2>
+    <ul class="list list-bullet">
+      <li>we have found users can take information in more consistantly when we interupt their flow in this way</li>
+    </ul>
 
     <h2 class="heading-medium rule-above">Prototype code</h2>
     <ul class="list list-bullet">
