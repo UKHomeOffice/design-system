@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'hod';
-  src:  url('ie7/fonts/hod.eot?jmlbqj');
-  src:  url('ie7/fonts/hod.eot?jmlbqj#iefix') format('embedded-opentype'),
-    url('ie7/fonts/hod.ttf?jmlbqj') format('truetype'),
-    url('ie7/fonts/hod.woff?jmlbqj') format('woff'),
-    url('ie7/fonts/hod.svg?jmlbqj#hod') format('svg');
+  font-family: 'hod-font';
+  src:  url('ie7/fonts/hod-font.eot?es4fzg');
+  src:  url('ie7/fonts/hod-font.eot?es4fzg#iefix') format('embedded-opentype'),
+    url('ie7/fonts/hod-font.ttf?es4fzg') format('truetype'),
+    url('ie7/fonts/hod-font.woff?es4fzg') format('woff'),
+    url('ie7/fonts/hod-font.svg?es4fzg#hod-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="hod-"], [class*=" hod-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'hod' !important;
+  font-family: 'hod-font' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hod-download-button:before {
+  content: "\e901";
+}
+.hod-close-envelope:before {
+  content: "\e902";
+}
 .hod-home:before {
   content: "\e900";
 }
@@ -138,4 +144,3 @@
 .hod-github:before {
   content: "\eab0";
 }
-

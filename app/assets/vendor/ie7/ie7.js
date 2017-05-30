@@ -10,9 +10,11 @@
 (function() {
 	function addIcon(el, entity) {
 		var html = el.innerHTML;
-		el.innerHTML = '<span style="font-family: \'hod\'">' + entity + '</span>' + html;
+		el.innerHTML = '<span style="font-family: \'hod-font\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'hod-download-button': '&#xe901;',
+		'hod-close-envelope': '&#xe902;',
 		'hod-home': '&#xe900;',
 		'hod-search': '&#xf002;',
 		'hod-search-plus': '&#xf00e;',

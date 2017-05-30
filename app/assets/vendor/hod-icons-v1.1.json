@@ -1,10 +1,94 @@
 {
   "metadata": {
     "name": "hod icons",
-    "lastOpened": 1479899908410,
-    "created": 1479899399433
+    "lastOpened": 1492001820215,
+    "created": 1492001817990
   },
   "iconSets": [
+    {
+      "selection": [
+        {
+          "order": 61,
+          "id": 0,
+          "name": "download-button",
+          "prevSize": 20,
+          "code": 59649,
+          "tempChar": ""
+        }
+      ],
+      "id": 7,
+      "metadata": {
+        "name": "Download",
+        "importSize": {
+          "width": 434,
+          "height": 434
+        },
+        "designer": "Icon made by Google from www.flaticon.com"
+      },
+      "height": 1024,
+      "prevSize": 20,
+      "icons": [
+        {
+          "id": 0,
+          "paths": [
+            "M933.647 361.412h-240.941v-361.412h-361.412v361.412h-240.941l421.647 421.647 421.647-421.647zM90.353 903.529v120.471h843.294v-120.471h-843.294z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 0,
+          "tags": [
+            "download-button (1)"
+          ]
+        }
+      ],
+      "invisible": false,
+      "colorThemes": []
+    },
+    {
+      "selection": [
+        {
+          "order": 62,
+          "id": 0,
+          "name": "close-envelope",
+          "prevSize": 20,
+          "code": 59650,
+          "tempChar": ""
+        }
+      ],
+      "id": 6,
+      "metadata": {
+        "name": "Email",
+        "importSize": {
+          "width": 27,
+          "height": 27
+        },
+        "designer": "Icon made by Stephen Hutchings from www.flaticon.com"
+      },
+      "height": 1024,
+      "prevSize": 20,
+      "icons": [
+        {
+          "id": 0,
+          "paths": [
+            "M0 175.52v672.998h1024v-672.998h-1024zM938.654 707.25l-240.718-210.533 240.718-170.54c0 0 0 381.073 0 381.073zM85.308 322.566l243.835 172.859-243.835 216.311v-389.17zM514.395 522.226l-369.706-262.045h739.64l-369.934 262.045zM400.651 546.1l113.288 80.366 0.266 0.418 0.19-0.152 0.152 0.152 0.228-0.418 111.615-78.997 247.446 216.463h-718.769l245.584-217.832z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 0,
+          "tags": [
+            "close-envelope"
+          ]
+        }
+      ],
+      "invisible": false,
+      "colorThemes": []
+    },
     {
       "selection": [
         {
@@ -13,7 +97,7 @@
           "name": "home",
           "prevSize": 20,
           "code": 59648,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 5,
@@ -90,7 +174,7 @@
           "order": 52,
           "prevSize": 28,
           "code": 61442,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "envelope-o",
@@ -153,7 +237,7 @@
           "order": 53,
           "prevSize": 28,
           "code": 61454,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "search-minus",
@@ -161,7 +245,7 @@
           "order": 54,
           "prevSize": 28,
           "code": 61456,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "power-off",
@@ -179,7 +263,7 @@
           "order": 48,
           "prevSize": 28,
           "code": 61459,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "trash-o",
@@ -392,7 +476,7 @@
           "order": 45,
           "prevSize": 28,
           "code": 61504,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "map-marker",
@@ -400,7 +484,7 @@
           "order": 55,
           "prevSize": 28,
           "code": 61505,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "adjust",
@@ -488,7 +572,7 @@
           "order": 42,
           "prevSize": 28,
           "code": 61523,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "chevron-right",
@@ -496,7 +580,7 @@
           "order": 41,
           "prevSize": 28,
           "code": 61524,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "plus-circle",
@@ -529,7 +613,7 @@
           "order": 47,
           "prevSize": 28,
           "code": 61530,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "crosshairs",
@@ -642,7 +726,7 @@
           "order": 49,
           "prevSize": 28,
           "code": 61557,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "magnet",
@@ -655,7 +739,7 @@
           "order": 43,
           "prevSize": 28,
           "code": 61559,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "chevron-down",
@@ -663,7 +747,7 @@
           "order": 44,
           "prevSize": 28,
           "code": 61560,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "retweet",
@@ -801,7 +885,7 @@
           "order": 57,
           "prevSize": 28,
           "code": 61589,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "square-o",
@@ -1659,7 +1743,7 @@
           "order": 51,
           "prevSize": 28,
           "code": 61787,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "file-text",
@@ -2397,7 +2481,7 @@
           "order": 46,
           "prevSize": 28,
           "code": 61944,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "copyright",
@@ -13856,7 +13940,7 @@
           "id": 14,
           "prevSize": 32,
           "code": 59661,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "images, pictures",
@@ -13895,7 +13979,7 @@
           "id": 20,
           "prevSize": 32,
           "code": 59667,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "video-camera, video3",
@@ -14000,7 +14084,7 @@
           "id": 37,
           "prevSize": 32,
           "code": 59684,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "files-empty, files",
@@ -14261,7 +14345,7 @@
           "id": 79,
           "prevSize": 32,
           "code": 59726,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "clock2, time3",
@@ -14294,7 +14378,7 @@
           "id": 84,
           "prevSize": 32,
           "code": 59731,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "printer, print",
@@ -14303,7 +14387,7 @@
           "id": 85,
           "prevSize": 32,
           "code": 59732,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "keyboard, typing",
@@ -14330,7 +14414,7 @@
           "id": 89,
           "prevSize": 32,
           "code": 59736,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "mobile2, cell-phone2",
@@ -14660,7 +14744,7 @@
           "id": 142,
           "prevSize": 32,
           "code": 59789,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "key2, password2",
@@ -14870,7 +14954,7 @@
           "id": 176,
           "prevSize": 32,
           "code": 59823,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "truck, transit",
@@ -15041,7 +15125,7 @@
           "id": 204,
           "prevSize": 32,
           "code": 59851,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "flag, report",
@@ -15404,7 +15488,7 @@
           "id": 264,
           "prevSize": 32,
           "code": 59911,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "notification, warning2",
@@ -15425,7 +15509,7 @@
           "id": 267,
           "prevSize": 32,
           "code": 59914,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "minus, subtract",
@@ -15434,7 +15518,7 @@
           "id": 268,
           "prevSize": 32,
           "code": 59915,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "info, information",
@@ -15461,7 +15545,7 @@
           "id": 272,
           "prevSize": 32,
           "code": 59919,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "checkmark, tick",
@@ -15470,7 +15554,7 @@
           "id": 273,
           "prevSize": 32,
           "code": 59920,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "checkmark2, tick2",
@@ -15677,7 +15761,7 @@
           "id": 307,
           "prevSize": 32,
           "code": 59954,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "arrow-up-right, up-right",
@@ -15692,7 +15776,7 @@
           "id": 309,
           "prevSize": 32,
           "code": 59956,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "arrow-down-right, down-right",
@@ -15707,7 +15791,7 @@
           "id": 311,
           "prevSize": 32,
           "code": 59958,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "arrow-down-left, down-left",
@@ -15722,7 +15806,7 @@
           "id": 313,
           "prevSize": 32,
           "code": 59960,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "arrow-up-left2, up-left2",
@@ -16157,7 +16241,7 @@
           "id": 385,
           "prevSize": 32,
           "code": 60032,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "terminal, console",
@@ -16451,7 +16535,7 @@
           "id": 433,
           "prevSize": 32,
           "code": 60080,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "npm",
@@ -24308,13 +24392,13 @@
     "showGlyphs": true,
     "showQuickUse": true,
     "showQuickUse2": true,
-    "showSVGs": true,
+    "showSVGs": false,
     "fontPref": {
       "prefix": "hod-",
       "metadata": {
-        "fontFamily": "hod",
+        "fontFamily": "hod-font",
         "majorVersion": 1,
-        "minorVersion": 0
+        "minorVersion": 1
       },
       "metrics": {
         "emSize": 1024,
@@ -24333,7 +24417,7 @@
       "showVersion": true
     },
     "imagePref": {
-      "prefix": "icon-",
+      "prefix": "hod-font-",
       "png": true,
       "useClassSelector": true,
       "color": 0,
@@ -24342,7 +24426,9 @@
       "autoHost": true,
       "height": 32,
       "columns": 16,
-      "margin": 16
+      "margin": 16,
+      "minifyJs": true,
+      "overrideSize": true
     },
     "historySize": 100,
     "showCodes": true,
