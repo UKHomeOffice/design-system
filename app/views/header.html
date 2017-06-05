@@ -21,14 +21,15 @@
   </div>
 </div>
 
-<section class="full-width">  
+<section class="full-width">
   <div class="content-width">
       <h2 class="heading-large">Header</h2>
-      <p>Identify a common landmark at the top of every view</p>
+      <p>A familiar landmark that appears throughout the service at the top of every view.
+</p>
       <ul class="metadata">
         <li>Usage: internal</li>
         <li>Status: Beta</li>
-        <li>Last updated: 1 April 2017</li>
+        <li>Last updated: 4 May 2017</li>
       </ul>
   </div>
 </section>
@@ -44,50 +45,50 @@
     </div>
   </div>
 
-  <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/header-code.html" %}</code></pre>
+  <details>
+    <summary>Show code snippet</summary>
+    <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/header-code.html" %}</code></pre>
+  </details>
 
-  <h2 class="heading-medium rule-above">Content principles</h2>
+  <div class="column-two-thirds">
+    <h2 class="heading-medium">Why have we created this pattern?</h2>
+    <p>The <a href="https://www.gov.uk/service-manual/design/add-the-govuk-header-and-footer">GOV.UK header and footer pattern</a> does not meet the user need</p>
+    <h2 class="heading-medium">Interaction principles</h2>
+    <p>The service name should link to the logical starting page; usually the home page of the service.</p>
+    <p>If users need to sign in to the service under different roles, ensure the starting page is appropriate for them.</p>
+    <p>The header can be used for global actions, for example, Search and Sign out.</p>
+    <p>Do not add more than two global actions, unless there is a proven need.</p>
+
+
+    <h2 class="heading-medium">Content principles</h2>
+    <p>The header should be the name of the service. <a href="https://www.gov.uk/service-manual/design/naming-your-service">Find out more about naming your service.</a></p>
+    <p>For internal systems, you should only use the ‘Digital by default’ logo if your service has a public-facing element on GOV.UK.</p>
+    <p>For internal systems, there is no need to use the GOV.UK blue bar.</p>
+    <h2 class="heading-medium">Accessibility principles</h2>
+    <p>Label links correctly</p>
+
+    <h2 class="heading-medium">User research</h2>
+    <ul class="list list-bullet">
+      <li>[Add user research findings]</li>
+    </ul>
+
+  <h2 class="heading-medium">Pattern is missing</h2>
   <ul class="list list-bullet">
-    <li>pick a good service name. Find out more about <a href="https://www.gov.uk/service-manual/design/naming-your-service">naming your service</a> in the Service Manual</li>
-    <li>for internal systems, only use the 'Digital by default' logo if your service has a public-facing element on GOV.UK</li>
-    <li>for internal systems, there is no need to use th GOV.UK blue bar which is for "branding" only</li>
+    <li>research of username is important or whether a sign out link is enough</li>
   </ul>
 
-  <h2 class="heading-medium">Interaction principles</h2>
+  <h2 class="heading-medium rule-above">Prototype code</h2>
+
   <ul class="list list-bullet">
-    <li>the service name should link to the logical starting (home) page</li>
-    <li>if users need to sign in to the service under different roles, ensure the starting page is appropriate for them</li>
-    <li>the header can be used for global actions. For example, search and sign out</li>
-    <li>do not add more than two global actions, unless their is a proven need to do so</li>
+    <li>Layout &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/tree/master/app/views/includes/patterns/header.html">header.html</a></li>
   </ul>
 
-  <h2 class="heading-medium">Accessibility principles</h2>
-  <ul class="list list-bullet">
-    <li>correct link labelling</li>
-  </ul>
+  <!--h2 class="heading-medium">Services using this pattern</h2>
+  <ul class="list">
+    <li>Do all services use this pattern?</li>
+  </ul-->
 
-  <h2 class="heading-medium">User research</h2>
-  <ul class="list list-bullet">
-    <li>need to add some user research findings</li>
-  </ul>
-
-<h2 class="heading-medium rule-above">Prototype code</h2>
-
-<ul>
-  <li>Layout &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/tree/master/app/views/includes/patterns/header.html">header.html</a></li>
-</ul>
-
-<h2 class="heading-medium">Services using this pattern</h2>
-<ul class="list">
-  <li>Do all services use this pattern?</li>
-</ul>
-
-<h2 class="heading-medium rule-above">Things to do</h2>
-<ul class="list">
-  <li>Questions arose around placement of a username in top right of the header with additional options as a dropdown - we haven't got enough evidence to support a decision in terms of layout, but options shouldn't be hidden if we can avoid it as the user doesn't know what's there until they look.</li>
-  <li>The big question is, do users need to see their name, or do they just need to know how to sign out?</li>
-  <li>Add notes from user research.</li>
-</ul>
+</div>
 
 </main>
 

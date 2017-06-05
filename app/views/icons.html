@@ -21,49 +21,38 @@
   </div>
 </div>
 
-<section class="full-width">  
+<section class="full-width">
   <div class="content-width">
     <h2 class="heading-large">Icons</h2>
-    <p>This is the full set of Home Office icons. Add to the <a href="https://trello.com/b/RSG3pwzu/patterns">Trello board</a> if there is an icon you would like to contribute to the set.</p>
+    <p>This is the full set of Home Office icons.</p>
     <div class="block-space">
       <a href="{{ asset_path }}/download/hod-icons.zip" class="button download-button download-button--large" role="button">Download all</a>
     </div>
     <ul class="metadata">
       <li>Usage: internal</li>
       <li>Status: Beta</li>
-      <li>Last updated: 17 March 2017</li>
+      <li>Last updated: 30 May 2017</li>
     </ul>
   </div>
 </section>
 
 
 <main id="content" role="main">
-<div class="grid-row">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Types of icon</h2>
+      <p>The icons used here are grouped as follows:</p>
+      <ul class="list list-bullet">
+        <li><a href="#navigation-icons">Navigation icons</a> – help users navigate through a service</li>
+        <li><a href="#controller-icons">Controller icons</a> – help users to sort, organise or adjust the information, for example by filtering data, opening and closing modals or revealing additional content</li>
+        <li><a href="#reference-icons">Quick reference icons</a> – help users to understand options and context</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="grid-row">
     <div class="column-full">
-        <h2 class="heading-medium">Quick links</h2>
-        <ul class="list-bullet">
-          <li><a href="#navigation-icons">Navigation icons</a> (through the service)</li>
-          <li><a href="#controller-icons">Controller icons</a> (sorting and filtering)</li>
-          <li><a href="#reference-icons">Quick reference icons</a> (help identify options)</li>
-        </ul>
-
-        <p>
-          <details>
-            <summary><span class="summary">More about why we use icons</span></summary>
-            <div class="panel panel-border-narrow">
-              <p>The benefit of icons are categorised as</p>
-              <ul class="list-bullet">
-                <li>helping users navigate through the service</li>
-                <li>controllers to help users to sort, organise and adjust the information in the service, this can be a filter, closing modals or revealing addition content</li>
-                <li>quick reference is the most subjective area and is relevant to the users, frequency of interaction with the service and reason for needing a quick reference icon/image.</li>
-              </ul>
-              <p>The risk with using icons for quick reference is that users won't understand or misinterpret what the reference is. The options are similar and therefore either the same icons are used or additional icons are needed with only slight changes which are hard to differentiate and increase cognitive load and reduce comprehension.</p>
-
-              <p>Identifying whether your icons fit into one of these uses will help to answer whether it's appropriate to use it.</p>
-            </div>
-          </details>
-        </p>
-
         <h2 id="navigation-icons" class="heading-medium">Navigation icons</h2>
         <table>
           <tbody>
@@ -196,6 +185,18 @@
               <th class="table-summary-title">Label</th>
               <th class="table-summary-title--last">Variable</th>
             </tr>
+            <!-- hod-email -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-close-envelope side-space"></span></th>
+              <th class="table-summary-content">Email</th>
+              <th class="table-summary-action"><code class="language-markup">@hod-close-envelope</code></th>
+            </tr>
+            <!-- hod-download -->
+            <tr>
+              <th class="table-summary-content"><span class="hod-download-button side-space"></span></th>
+              <th class="table-summary-content">Download</th>
+              <th class="table-summary-action"><code class="language-markup">@hod-download-button</code></th>
+            </tr>
             <!-- hod-map-marker -->
             <tr>
               <th class="table-summary-content"><span class="hod-map-marker side-space"></span></th>
@@ -300,23 +301,37 @@
             </tr>
           </tbody>
         </table>
-
       </div>
-</div>
-
-<div class="block-space">
-  <pre class="language-markup"><code class="language-markup">&lt;span class="hod-pencil side-space"&gt;&lt;/span&gt;</code></pre>
-</div>
-
+  </div>
 
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h2 id="documentation" class="heading-medium">Content patterns</h2>
-    <ul class="list list-bullet">
-      <li>any icon should use a visible and audible label to avoid confusion over what it is representing</li>
-      <li>align icon in a central position in relation to any type</li>
-      <li>type can sit to the left or right hand side of the icon </li>
-    </ul>
+    <details style="margin-top: 20px;">
+      <summary>Show code snippet</summary>
+      <div class="block-space">
+        <pre class="language-markup"><code class="language-markup">&lt;span class="hod-pencil side-space"&gt;&lt;/span&gt;</code></pre>
+      </div>
+    </details>
+    <h2 id="interaction" class="heading-medium">Interaction principles</h2>
+    <p>The minimum size for an icon is 16px</p>
+    <p>If it's part of a button the hit area should be 36px</p>
+    <p>The icon shouldn't change colour in a hover/active/focus states, only the background.</p>
+    <p>In the normal state, the icon can be a different colour using the GOV.UK colour palette - both in solid and reversed out state - as long as the colour combination meets the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></p>
+
+
+    <div class="grid-row">
+      <div class="column-full">
+        <div class="example example-images">
+          <img width="100%" height="auto" src="{{ asset_path }}/images/icon-colours.svg" alt="Icon usage with colour">
+        </div>
+      </div>
+    </div>
+
+    <h2 id="documentation" class="heading-medium">Content principles</h2>
+    <p>Every icon should use a visible and audible label to avoid confusion over what it represents.</p>
+    <p>Align the icon in a central position in relation to any type.</p>
+    <p>Type can sit either to the left or to the right of the icon.</p>
+
     <div class="grid-row">
       <div class="column-full">
         <div class="example example-images">
@@ -325,57 +340,41 @@
       </div>
     </div>
 
-    <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
-    <ul class="list list-bullet">
-      <li>minimum size for an icon is 16px</li>
-      <li>if it's part of a button the hit area should be 36px</li>
-      <li>the icon shouldn't change colour in a hover/active/focus states, only the background</li>
-      <li>in the normal state, the icon can be a different colour using the GOV.UK colour palette - both in solid and reversed out state - as long as the colour combination meets the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></li>
-    </ul>
-  </div>
-</div>
-<div class="grid-row">
-  <div class="column-full">
-    <div class="example example-images">
-      <img width="100%" height="auto" src="{{ asset_path }}/images/icon-colours.svg" alt="Icon usage with colour">
-    </div>
   </div>
 </div>
 <div class="grid-row">
   <div class="column-two-thirds">
-      <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
-      <ul class="list list-bullet">
-        <li>icons should always have a label and use <code class="language-markup">aria-hidden="true"</code></li>
-        <li>if an icon can't have a label, ensure it has screenreader only support</br>
+      <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
+        <p>Icons should always have a label and use <code class="language-markup">aria-hidden="true"</code></p>
+        <p>if an icon can't have a label, ensure it has screenreader only support</br>
 
-        <pre><code class="language-markup">&ltspan class="visuallyhidden"&gtHome button&lt/span&gt</code></pre></li>
+        <pre><code class="language-markup">&ltspan class="visuallyhidden"&gtHome button&lt/span&gt</code></pre></p>
       </ul>
 
       <h2 id="research" class="heading-medium">User research</h2>
       <ul class="list list-bullet">
-        <li>icons have proved supportive with the deaf community, as BSL is a visual method of communication</li>
+        <li>[More detail needed here]</li>
       </ul>
     </div>
 </div>
 
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h2 class="heading-medium">Services using this pattern</h2>
+    <h2 class="heading-medium">Pattern is missing</h2>
     <ul class="list list-bullet">
-      <li>Application platform</li>
-      <li>Entities</li>
-    </ul>
-    <!-- TO DO -->
-    <h2 class="heading-medium rule-above">Things to do</h2>
-    <ul class="list list-bullet">
-      <li>more user research</li>
       <li>more access needs research including cognition and comprehension</li>
       <li>more research using icons as <code>:before</code> content on buttons</li>
       <li>greater knowledge of what icons are used within icon libraries (don't use them all)</li>
       <li>feedback on designer/developer needs</li>
       <li>clarity on alignment, padding and size for touchscreen hit area</li>
-      <li>include in sketch file</li>
     </ul>
+
+    <h2 class="heading-medium">Services using this pattern</h2>
+    <ul class="list list-bullet">
+      <li>Application platform [add link if available]</li>
+      <li>Entities [add link if available]</li>
+    </ul>
+
   </div>
 </div>
 

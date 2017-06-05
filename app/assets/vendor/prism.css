@@ -55,7 +55,7 @@ code[class*="language-"] ::selection {
 }
 
 pre[class*="language-"] {
-  border: 1px solid #bfc1c3;
+  border: 1px solid #dee0e2;
   padding: 1em;
   margin: 0 0 30px 0;
   overflow: auto;
