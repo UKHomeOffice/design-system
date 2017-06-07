@@ -21,10 +21,10 @@
   </div>
 </div>
 
-<section class="full-width">  
+<section class="full-width">
   <div class="content-width">
       <h2 class="heading-large">Tabs</h2>
-      <p>Switching between views of grouped content<br>OR<br>Hiding content that is not absolutely necessary to see</p>
+      <p>Switching between views of grouped content<br>Hiding content that is not absolutely necessary to see</p>
       <ul class="metadata">
         <li>Usage: external/internal</li>
         <li>Status: Alpha</li>
@@ -35,7 +35,7 @@
 
 
 <main id="content" role="main">
-  <h2 class="heading-medium" id="example-component">Example component</h2>
+  <h2 class="heading-medium" id="example-component">Example</h2>
   <p></p>
 
   <div class="example example-images">
@@ -44,6 +44,12 @@
     </div>
   </div>
 
+  <h2 class="heading-medium" id="example-component">Example when picking from a long list</h2>
+  <p></p>
+  <div class="example example-images">
+    <div class="grid-row">
+      {% include "includes/patterns/tabs-list.html" %}
+    </div>
   </div>
 
   <h2 class="heading-medium rule-above">Content principles</h2>
@@ -54,12 +60,10 @@
   <h2 class="heading-medium">Interaction principles</h2>
   <ul class="list list-bullet">
     <li>Only one tab can be active at a time.</li>
-    <li>The active tab should display the appropriate content for that tab.</li>
     <li>The active tab should be distinguishable from the inactive, with maximum contrast ratio background:label.</li>
     <li>Inactive tabs should have a hover state that is distinguisable with minimum contrast ratio background:label.</li>
     <li>Focused tabs should be consistent with other focus states and distinguisable from active, inactive and hover states.</li>
     <li>Horizontal rules can be used to separate groups of tabs.</li>
-    <!-- <li>If using tabs to complete a series of tasks in a non-linear way, ensure that tabs are marked upon completion.</li> -->
   </ul>
 
   <h2 class="heading-medium">Accessibility principles</h2>
@@ -70,7 +74,7 @@
 
   <h2 class="heading-medium">User research</h2>
   <ul class="list list-bullet">
-    <li>Notes from user research go here.</li>
+    <li>Syrian refugee resettlement found no problems with the pattern. Users have a good understanding of what to expect from the tabs</li>
   </ul>
 
 <h2 class="heading-medium rule-above">Prototype code</h2>
@@ -86,6 +90,7 @@
   <li>Syrian refugee resettlement</li>
   <li>Sponsoring people</li>
   <li>Proving things to government</li>
+  <li>Application platform</li>
 </ul>
 
 <h2 class="heading-medium rule-above">Things to do</h2>
@@ -93,9 +98,6 @@
   <li>tabs.js is essential rather than enhanced &mdash; what is the no-js solution for this pattern.</li>
   <li>The design needs improving for narrower views.</li>
   <li>Using tabs to complete a series of tasks in a non-linear way could be a separate pattern.</li>
-  <li>Add notes from user research.</li>
-  <li>If this is really hiding content that is not absolutely necessary to see, why does it need to be a tab, and not another page?</li>
-  <li>More and more it seems that tabs should not be a substitute for a list of things you need to do (research notes required).</li>
 </ul>
 
 </main>
