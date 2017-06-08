@@ -1,39 +1,34 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Home Office DDaT design patterns
+Home Office DDaT design patterns
 {% endblock %}
 
 {% block content %}
 
-<main id="content" role="main">
-{% block alpha_banner %}
-  {% include "includes/phase_banner_alpha.html" %}
-{% endblock %}
+<div class="content-width">
+  <nav id="nav">
 
-<div class="breadcrumbs">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li>Contributing to the patterns library</li>
-    </ol>
+    <div class="navbar">
+      <ul class="navbar__list-items">
+        <li><a href="/">About</a></li>
+        <li><a href="/patterns">Patterns</a></li>
+        <li><a href="/components">Components</a></li>
+        <li><a href="/typography">Styles</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li class="active"><a href="/process/contribute">Contributing</a></li>
+      </ul>
+    </div>
+
+  </nav>
 </div>
 
-  <!-- h1 class="heading-xlarge">Home Office DDaT design patterns</h1 -->
-
-{% include "includes/home_office_logo.html" %}
-
-
-  <div id="hod-row--aqua">
-    <div class="grid-row">
-      <div class="column-full">
-        <h2 class="heading-medium">Contributing</h2>
-        <p>We encourage everyone from Home Office DDaT to join the discussion on the design patterns.</p>
-      </div>
-    </div>
-  </div>
-
+<main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
+      <h1 class="heading-section">Contributing</h1>
+      <p>We encourage everyone from Home Office DDaT to join the discussion on the design patterns.</p>
+
       <p>You should first discuss the problem you’re trying to solve on the Interaction Design slack channel with the wider team. </p>
       <p>If you want to raise a new pattern you can do so via the <a href="https://trello.com/b/2bSO65iz/ho-design-pattern-requests">Trello board</a> (request to be added on the Interaction Design Slack channel). Add a new card to the Backlog column with the following information:</p>
       <ul class="list list-bullet">
@@ -47,16 +42,16 @@
       <p>If the Working Group agree that this pattern should be moved on it will move through the following stages:</p>
 
       <h3 class="heading-medium">Alpha pattern</h3>
-<p>We've seen this problem in an area and it is being peer reviewed by the team and iterated upon. The pattern may change quite a lot in alpha. Teams are ok to use this in early prototypes but should not use it in production.</p>
+      <p>We've seen this problem in an area and it is being peer reviewed by the team and iterated upon. The pattern may change quite a lot in alpha. Teams are ok to use this in early prototypes but should not use it in production.</p>
 
 
-<h3 class="heading-medium">Beta pattern</h3>
-<p>We're testing a proposed pattern with two or more delivery teams. The pattern is more mature and robust at this stage. Other teams are free to use this pattern in their own prototypes by adding a comment to say that they will be using it. They must also report back on their research findings. </p>
+      <h3 class="heading-medium">Beta pattern</h3>
+      <p>We're testing a proposed pattern with two or more delivery teams. The pattern is more mature and robust at this stage. Other teams are free to use this pattern in their own prototypes by adding a comment to say that they will be using it. They must also report back on their research findings. </p>
 
-<h3 class="heading-medium">Live pattern</h3>
-<p>It's in production and research has been evidenced to show it works. It still may be iterated and improved upon. Every team must use this version of the pattern.</p>
+      <h3 class="heading-medium">Live pattern</h3>
+      <p>It's in production and research has been evidenced to show it works. It still may be iterated and improved upon. Every team must use this version of the pattern.</p>
 
-<p>Over time we will probably further refine patterns. It’s important that you stay up to date with patterns by subscribe to card updates and checking with the Interaction Design slack channel.</p>
+      <p>Over time we will probably further refine patterns. It’s important that you stay up to date with patterns by subscribe to card updates and checking with the Interaction Design slack channel.</p>
 
     </div>
   </div>

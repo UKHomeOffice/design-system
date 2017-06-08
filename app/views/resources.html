@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Home Office DDaT design patterns
+{% endblock %}
+
+{% block content %}
+
+<div class="content-width">
+  <nav id="nav">
+
+    <div class="navbar">
+      <ul class="navbar__list-items">
+        <li><a href="/">About</a></li>
+        <li><a href="/patterns">Patterns</a></li>
+        <li><a href="/components">Components</a></li>
+        <li><a href="/typography">Styles</a></li>
+        <li class="active"><a href="/resources">Resources</a></li>
+        <li><a href="/process/contribute">Contributing</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Elements</h1>
+      <p>Helpful resources for interaction designers.</p>
+
+      <h2 class="heading-medium">Accessibility</h2>
+      <ul class="list list-bullet">
+        <li>
+          <a href="https://github.com/UKHomeOffice/posters/tree/master/accessibility" target="_blank">
+            Access needs posters
+          </a>
+        </li>
+        <li>
+          <a href="http://webaim.org/resources/contrastchecker/" target="_blank">
+            Colour contrast checker
+          </a>
+        </li>
+        <li>
+
+          <a href="http://www.freedomscientific.com/Products/Blindness/JAWS">
+            <abbr title="Job Access With Speech">JAWS</abbr> screenreader </a> </li>
+        <li>
+          <a href="https://help.apple.com/voiceover/info/guide/10.12/" target="_blank">
+            Guide for VoiceOver screenreader
+          </a>
+        </li>
+        <li>
+          <a href="http://wave.webaim.org/" target="_blank">
+            WAVE accessibility evaluation tool
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="heading-medium">Prototyping</h2>
+      <ul class="list list-bullet">
+        <li>
+        	<a href="https://github.com/tsmorgan/shots" target="_blank">
+        	  Create PDFs of your prototype screens
+        	</a>
+        </li>
+        <li>
+        	<a href="https://github.com/UKHomeOffice/design-patterns" target="_blank">
+        	  Sketch file for Home Office patterns
+        	</a>
+        </li>
+        <li>
+        	<a href="https://github.com/abbott567/sketch_wireframing_kit" target="_blank">
+        	  Sketch file for GOV.UK patterns
+        	</a>
+        </li>
+        <li>
+          <a href="https://github.com/abbott567/validation-for-prototypes" target="_blank">
+            Validation for prototypes
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="heading-medium">GOV.UK</h2>
+      <ul class="list list-bullet">
+        <li>
+          <a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style" target="_blank">
+            GOV.UK content style guide
+          </a>
+        </li>
+        <li>
+          <a href="http://govuk-elements.herokuapp.com/" target="_blank">
+            GOV.UK elements
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.uk/design-principles" target="_blank">
+            GOV.UK design principles
+          </a>
+        </li>
+        <li>
+          <a href="https://designpatterns.hackpad.com/" target="_blank">
+            HackPad discussing patterns used across GOV.UK
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
