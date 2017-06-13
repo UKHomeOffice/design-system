@@ -37,61 +37,44 @@
 <main id="content" role="main">
 <div class="grid-row">
     <div class="column-full">
-        <h2 class="heading-medium" id="example-component">Example component</h2>
-        <p></p>
-
-        <div class="example example-images">
-          <div class="grid-row">
-            {% include "includes/timeline.html" %}
-          </div>
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <p></p>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/timeline.html" %}
         </div>
-
       </div>
+    </div>
 </div>
 
-  <pre class="language-markup"><code class="language-markup">{% include "includes/timeline-code.html" %}</code></pre>
 
+<details>
+  <summary>Show code snippet</summary>
+  <pre class="language-markup"><code class="language-markup">{% include "includes/timeline-code.html" %}</code></pre>
+</details>
 
 <div class="grid-row">
   <div class="column-two-thirds">
+    <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
+    <ul class="list list-bullet">
+      <li>timelines are by default time ordered, if the timeline isn't time order or needs to be filtered, consider another approach</li>
+    </ul>
+
     <h2 id="documentation" class="heading-medium">Content patterns</h2>
     <ul class="list list-bullet">
       <li>the time or date should follow <a href="https://www.gov.uk/service-manual/design/dates">GDS patterns on date and time format</a></li>
       <li>secondary titles aren't mandatory</li>
     </ul>
 
-    <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
-    <ul class="list list-bullet">
-      <li>timelines are by default time ordered, if the timeline isn't time order or needs to be filtered, consider another approach</li>
-    </ul>
-  </div>
-</div>
-<!--div class="grid-row">
-  <div class="column-two-thirds">
-      <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
-      <ul class="list list-bullet">
-        <li></li>
-      </ul>
-
-      <h2 id="research" class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>timelines aren't recommended for to-do lists</li>
-      </ul>
-    </div>
-</div-->
-
-<div class="grid-row">
-  <div class="column-two-thirds">
     <h2 class="heading-medium">Services using this pattern</h2>
     <ul class="list list-bullet">
       <li>Application platform</li>
       <li>Entities</li>
     </ul>
     <!-- TO DO -->
-    <h2 class="heading-medium rule-above">Things to do</h2>
+    <h2 class="heading-medium">Things to do</h2>
     <ul class="list list-bullet">
-      <li>research additional examples</li>
-      <li>research alternative for workflow management</li>
+      <li>research accessibility</li>
     </ul>
   </div>
 </div>
