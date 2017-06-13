@@ -33,7 +33,10 @@
   </div>
 </section>
 
-
+<details>
+  <summary>Show code snippet</summary>
+  <pre class="language-markup"><code class="language-markup">{% include "includes/badges-code.html" %}</code></pre>
+</details>
 
 <main id="content" role="main">
 <div class="grid-row">
@@ -47,7 +50,14 @@
           </div>
         </div>
 
-        <pre class="language-markup"><code class="language-markup">{% include "includes/badges-code.html" %}</code></pre>
+        <h2 class="heading-medium">Examples of badges in context</h2>
+        <p></p>
+
+        <div class="example example-images">
+          <div class="grid-row">
+            {% include "includes/badges-account.html" %}
+          </div>
+        </div>
 
       </div>
 </div>
@@ -55,12 +65,6 @@
 
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h2 id="documentation" class="heading-medium">Content patterns</h2>
-    <ul class="list list-bullet">
-      <li>badges should only contain numbers</li>
-      <li>badges should always be on the left and at the start of content</li>
-      <li>the badge (a number) should work with any content that follows</li>
-    </ul>
 
     <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
     <ul class="list list-bullet">
@@ -68,37 +72,37 @@
       <li>badges are for giving insight</li>
       <li>badges shouldn't be permanent</li>
     </ul>
-  </div>
-</div>
-<div class="grid-row">
-  <div class="column-two-thirds">
-      <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
-      <ul class="list list-bullet">
-        <li>badges shouldn't be interactive and therefore do not need aria labelling</li>
-        <li>the content of the badge repeating</li>
-        <li>colour combinations must meet the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></li>
-        <li>badges should not use colour only to identify grouping or importance</li>
-      </ul>
 
-      <h2 id="research" class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>badges should only be used when a user needs to do an action</li>
-      </ul>
-    </div>
-</div>
+    <h2 id="documentation" class="heading-medium">Content patterns</h2>
+    <ul class="list list-bullet">
+      <li>badges should only contain numbers</li>
+      <li>badges should always be on the left and at the start of content</li>
+      <li>the badge (a number) should work with any content that follows</li>
+    </ul>
 
-<div class="grid-row">
-  <div class="column-two-thirds">
+    <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
+    <ul class="list list-bullet">
+      <li>badges shouldn't be interactive and therefore do not need aria labelling</li>
+      <li>the content of the badge repeating</li>
+      <li>colour combinations must meet the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></li>
+      <li>badges should not use colour only to identify grouping or importance</li>
+    </ul>
+
+    <h2 id="research" class="heading-medium">User research</h2>
+    <ul class="list list-bullet">
+      <li>badges should only be used when a user needs to do an action</li>
+    </ul>
+
     <h2 class="heading-medium">Services using this pattern</h2>
     <ul class="list list-bullet">
       <li>Syrian Refugee project</li>
     </ul>
+
     <!-- TO DO -->
     <h2 class="heading-medium rule-above">Things to do</h2>
     <ul class="list list-bullet">
       <li>examples for context</li>
-      <li>feedback on designer/developer needs</li>
-      <li>include in sketch file</li>
+      <li>user research</li>
     </ul>
   </div>
 </div>
