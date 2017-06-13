@@ -44,6 +44,12 @@
     </div>
   </div>
 
+  <details>
+    <summary>Show code snippet</summary>
+    <pre class="language-markup"><code class="language-markup">{% include "includes/tabs-code.html" %}</code></pre>
+  </details>
+
+
   <h2 class="heading-medium" id="example-component">Example when picking from a long list</h2>
   <p></p>
   <div class="example example-images">
@@ -52,11 +58,6 @@
     </div>
   </div>
 
-  <h2 class="heading-medium rule-above">Content principles</h2>
-  <ul class="list list-bullet">
-    <li>The label should reflect the thing you need do with the content of that tab, not a description of what it is.</li>
-  </ul>
-
   <h2 class="heading-medium">Interaction principles</h2>
   <ul class="list list-bullet">
     <li>Only one tab can be active at a time.</li>
@@ -64,6 +65,11 @@
     <li>Inactive tabs should have a hover state that is distinguisable with minimum contrast ratio background:label.</li>
     <li>Focused tabs should be consistent with other focus states and distinguisable from active, inactive and hover states.</li>
     <li>Horizontal rules can be used to separate groups of tabs.</li>
+  </ul>
+
+  <h2 class="heading-medium">Content principles</h2>
+  <ul class="list list-bullet">
+    <li>The label should reflect the thing you need do with the content of that tab, not a description of what it is.</li>
   </ul>
 
   <h2 class="heading-medium">Accessibility principles</h2>
@@ -78,14 +84,6 @@
     <li>Application platform uses the pattern for long lists. When combined with a search, the pattern performs very well when users don't know the contents of the list.</li>
   </ul>
 
-<h2 class="heading-medium rule-above">Prototype code</h2>
-
-<ul class="list list-bullet">
-  <li>Layout &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/tree/master/app/views/includes/patterns/tabs.html">tabs.html</a></li>
-  <li>Styles &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/blob/master/app/assets/sass/hod-patterns/_tabs.scss">tabs.scss</a></li>
-  <li>Enhanced functionality &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/blob/master/app/assets/javascripts/tabs.js">tabs.js</a></li>
-</ul>
-
 <h2 class="heading-medium">Services using this pattern</h2>
 <ul class="list list-bullet">
   <li>Syrian refugee resettlement</li>
@@ -94,7 +92,7 @@
   <li>Application platform</li>
 </ul>
 
-<h2 class="heading-medium rule-above">Things to do</h2>
+<h2 class="heading-medium">Things to do</h2>
 <ul class="list list-bullet">
   <li>tabs.js is essential rather than enhanced &mdash; what is the no-js solution for this pattern.</li>
   <li>The design needs improving for narrower views.</li>
