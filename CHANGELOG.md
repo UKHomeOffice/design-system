@@ -1,3 +1,49 @@
+# 6.1.0
+
+New features:
+- [#386 Add GOV.UK Notify client library to kit](https://github.com/alphagov/govuk_prototype_kit/pull/386)
+- [#383 Add .env file to support storing private data](https://github.com/alphagov/govuk_prototype_kit/pull/383)
+- [#347 Add ie8 elements support](https://github.com/alphagov/govuk_prototype_kit/pull/347)
+- [#349 Add IE 8 bind polyfill](https://github.com/alphagov/govuk_prototype_kit/pull/349)
+- [#373 add page_scripts block](https://github.com/alphagov/govuk_prototype_kit/pull/373)
+- [#371 Update README](https://github.com/alphagov/govuk_prototype_kit/pull/371)
+
+# 6.0.0
+
+New features:
+- [#369 Add template pages for content and questions](https://github.com/alphagov/govuk_prototype_kit/pull/369)
+- [#340 Auto data session 4](https://github.com/alphagov/govuk_prototype_kit/pull/340)
+- [#367 Added config to turn off browser sync](https://github.com/alphagov/govuk_prototype_kit/pull/367)
+- [#368 Update Travis deployment to be consistent with other govuk frontend repos](https://github.com/alphagov/govuk_prototype_kit/pull/368)
+- [#361 Add an example of the task list pattern](https://github.com/alphagov/govuk_prototype_kit/pull/361)
+- [#364 Use GOV.UK elements v3.0.1](https://github.com/alphagov/govuk_prototype_kit/pull/364)
+- [#360 Bump govuk_frontend_toolkit to 5.1.1](https://github.com/alphagov/govuk_prototype_kit/pull/360)
+- [#352 bump gulp-sass to increase node-sass dependency](https://github.com/alphagov/govuk_prototype_kit/pull/352)
+
+Bug fixes:
+- [#356 fix download link](https://github.com/alphagov/govuk_prototype_kit/pull/356)
+- [#357 fix docs links](https://github.com/alphagov/govuk_prototype_kit/pull/357)
+- [#354 Allow search indexing in promo mode](https://github.com/alphagov/govuk_prototype_kit/pull/354)
+
+# 5.1.0
+
+New features:
+- [#335 Add ability to override service name on a page](https://github.com/alphagov/govuk_prototype_kit/pull/335)
+
+Bug fixes:
+- [#350 Prevent asking users to authenticate twice](https://github.com/alphagov/govuk_prototype_kit/pull/350)
+- [#344 Removing links to route.js / updating example in branching.html](https://github.com/alphagov/govuk_prototype_kit/pull/344)
+- [#343 Remove the title attribute from the cookie message](https://github.com/alphagov/govuk_prototype_kit/pull/343)
+- [#341 fix css sourcemaps](https://github.com/alphagov/govuk_prototype_kit/pull/341)
+- [#337 Add Git step to Heroku guide](https://github.com/alphagov/govuk_prototype_kit/pull/337)
+- [#336 Use app.locals instead of app.use](https://github.com/alphagov/govuk_prototype_kit/pull/336)
+
+# 5.0.1
+
+- [#330 Update GOV.UK toolkit and StandardJS to latest](https://github.com/alphagov/govuk_prototype_kit/pull/330)
+- [#328 Update GOV.UK template to latest](https://github.com/alphagov/govuk_prototype_kit/pull/328)
+- [#324 Fix the example question page’s back link](https://github.com/alphagov/govuk_prototype_kit/pull/324)
+
 # 5.0.0
 
 Breaking changes:
