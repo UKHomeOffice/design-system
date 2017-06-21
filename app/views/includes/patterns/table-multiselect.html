@@ -1,15 +1,13 @@
 <!-- Set up some data to repeat in the table -->
 {% set users = [
-  { name: "Petra Russell" },
-  { name: "Meaghan Mac Diarmada" },
-  { name: "Kay Schnoor" },
-  { name: "Frannie Williamson" },
-  { name: "Yonca Taalay Rijnder" },
-  { name: "Bea Paternoster" },
-  { name: "Todd Stoddard" },
-  { name: "Noble Michaelson" },
-  { name: "George Justin Simpkin" },
-  { name: "Joyce Hormazd Nakajima" }
+  { name: "Spider-Man" },
+  { name: "Captain Marvel" },
+  { name: "Hulk" },
+  { name: "Thor" },
+  { name: "Iron Man" },
+  { name: "Luke Cage" },
+  { name: "Black Widow" },
+  { name: "Daredevil" }
 ] %}
 
 <table class="table-clickable">
@@ -37,10 +35,6 @@
             </label>
           </div>
         </td>
-        <td>{{ user.name }}</td>
-        <td>{{ user.name }}</td>
-        <td>{{ user.name }}</td>
-        <td>{{ user.name }}</td>
         <td>{{ user.name }}</td>
       </tr>
     {% endfor %}
