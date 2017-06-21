@@ -24,7 +24,7 @@
 <section class="full-width">
   <div class="content-width">
       <h2 class="heading-large">Table multi-select</h2>
-      <p>Allow the user to select multiple rows by clicking anywhere on the row.</p>
+      <p>Allow users to select all rows in a table. Allow them to interact with the whole row rather than just checkbox.</p>
       <ul class="metadata">
         <li>Usage: external/internal</li>
         <li>Status: Alpha</li>
@@ -47,45 +47,72 @@
 
   <details>
     <summary>Show code snippet</summary>
-    <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/buttons-code.html" %}</code></pre>
+    <pre class="language-markup">
+      <code class="language-markup">
+        &lt;table class=&quot;table-clickable&quot;&gt;
+
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th class=&quot;table-clickable__checkbox&quot;&gt;
+                &lt;div class=&quot;multiple-choice&quot;&gt;
+                  &lt;input type=&quot;checkbox&quot; class=&quot;jsCheckboxAll&quot; id=&quot;radio-all&quot;&gt;
+                  &lt;label for=&quot;radio-all&quot;&gt;
+                    &amp;nbsp;
+                  &lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/th&gt;
+              &lt;th&gt;Name&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+
+          &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td class=&quot;table-clickable__checkbox&quot;&gt;
+                  &lt;div class=&quot;multiple-choice&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot; class=&quot;jsCheckbox&quot; id=&quot;radio-1&quot;&gt;
+                    &lt;label for=&quot;radio-1&quot;&gt;
+                      &amp;nbsp;
+                    &lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Chris Hanson&lt;/td&gt;
+              &lt;/tr&gt;
+          &lt;/tbody&gt;
+
+        &lt;/table&gt;
+      </code>
+    </pre>
     </div>
   </details>
 
 
   <div class="column-two-thirds">
     <h2 class="heading-medium">Why have we created this pattern?</h2>
-    <p>Define buttons types and how to use multiple buttons on a single screen</p>
+    <p>There is no standard GDS pattern for selectable tables.</p>
 
-    <h2 class="heading-medium">Interaction principles</h2>
+    <!-- <h2 class="heading-medium">Interaction principles</h2>
     <ul class="list list-bullet">
-      <li>buttons should look like buttons</li>
-      <li>buttons need to have a good level of affordance, so that users know that something meaningful will happen if they click a button</li>
-      <li>buttons can have an icon to further support their action or state</li>
-      <li>don't make things that aren't buttons look like buttons</li>
-      <li>avoid secondary actions unless you see a need for one in research</li>
-      <li>primary actions should be aligned with input fields to increase completion rates</li>
+      <li></li>
     </ul>
 
     <h2 class="heading-medium">Content principles</h2>
     <ul class="list list-bullet">
-      <li>label buttons with what they do</li>
+      <li></li>
     </ul>
 
     <h2 class="heading-medium">Accessibility principles</h2>
     <ul class="list list-bullet">
-      <li>buttons should have clear hover and focus states</li>
-      <li>use a 'button' tag with a role='button'</li>
-    </ul>
+      <li></li>
+    </ul> -->
 
     <h2 class="heading-medium">User research</h2>
     <ul class="list list-bullet">
-      <li>users sometimes confuse grey buttons with disabled buttons</li>
-      <li>users sometimes confuse white buttons with input fields</li>
+      <li>Not researched yet</li>
     </ul>
 
     <h2 class="heading-medium">Services using this pattern</h2>
     <ul class="list list-bullet">
-      <li>Application platform</li>
+      <li>None</li>
     </ul>
 
   </div>
