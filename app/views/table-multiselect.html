@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div class="content-width">
+<!-- <div class="content-width">
   {% block alpha_banner %}
     {% include "includes/phase_banner_alpha.html" %}
   {% endblock %}
@@ -19,9 +19,12 @@
       <li>Table multi-select</li>
     </ol>
   </div>
-</div>
+</div> -->
 
-<section class="full-width">
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<section class="full-width mt-15">
   <div class="content-width">
       <h2 class="heading-large">Table multi-select</h2>
       <p>Allow users to select all rows in a table. Allow them to interact with the whole row rather than just checkbox.</p>

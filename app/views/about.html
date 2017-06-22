@@ -6,22 +6,8 @@
 
 {% block content %}
 
-<div class="content-width">
-  <nav id="nav">
-
-    <div class="navbar">
-      <ul class="navbar__list-items">
-        <li class="active"><a href="/">About</a></li>
-        <li><a href="/patterns">Patterns</a></li>
-        <li><a href="/components">Components</a></li>
-        <li><a href="/typography">Styles</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/process/contribute">Contributing</a></li>
-      </ul>
-    </div>
-
-  </nav>
-</div>
+{% set active = "about" %}
+{% include "includes/top_nav.html" %}
 
 
 <main id="content" role="main">
@@ -32,7 +18,7 @@
       <p>Read our guidance on <a href="/process/guidance">how to use these patterns</a>.</p>
 
       <h2 class="heading-medium">Contributing to the patterns</h2>
-      <p>For Home Office designers, we have a process for <a href="/process/contribute">contributing to these patterns</a>. We would be happy for feedback if the contribution process doesn't work for you.</p>
+      <p>For Home Office designers, we have a process for <a href="/process/contribute">contributing to these patterns</a>. We would be happy for feedback if the contribution process doesn&rsquo;t work for you.</p>
     </div>
   </div>
 

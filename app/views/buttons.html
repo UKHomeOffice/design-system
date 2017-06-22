@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div class="content-width">
+<!-- <div class="content-width">
   {% block alpha_banner %}
     {% include "includes/phase_banner_alpha.html" %}
   {% endblock %}
@@ -19,9 +19,12 @@
       <li>Buttons</li>
     </ol>
   </div>
-</div>
+</div> -->
 
-<section class="full-width">  
+{% set active = "components" %}
+{% include "includes/top_nav.html" %}
+
+<section class="full-width mt-15">
   <div class="content-width">
       <h2 class="heading-large">Buttons</h2>
       <p>Buttons should be used when a user needs to take an action, submit data, or make a change to the page. For navigation a text link is sufficient.</p>
