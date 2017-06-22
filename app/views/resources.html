@@ -6,22 +6,8 @@
 
 {% block content %}
 
-<div class="content-width">
-  <nav id="nav">
-
-    <div class="navbar">
-      <ul class="navbar__list-items">
-        <li><a href="/">About</a></li>
-        <li><a href="/patterns">Patterns</a></li>
-        <li><a href="/components">Components</a></li>
-        <li><a href="/typography">Styles</a></li>
-        <li class="active"><a href="/resources">Resources</a></li>
-        <li><a href="/process/contribute">Contributing</a></li>
-      </ul>
-    </div>
-
-  </nav>
-</div>
+{% set active = "resources" %}
+{% include "includes/top_nav.html" %}
 
 
 <main id="content" role="main">
