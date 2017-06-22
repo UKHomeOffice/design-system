@@ -16,14 +16,14 @@
   <div class="breadcrumbs">
     <ol>
       <li><a href="/">Home</a></li>
-      <li>Navigation</li>
+      <li>Subnavigation links</li>
     </ol>
   </div>
 </div>
 
-<section class="full-width">  
+<section class="full-width">
   <div class="content-width">
-    <h2 class="heading-large">Navigation</h2>
+    <h2 class="heading-large">Subnavigation links</h2>
     <p>Go to a different section at any time</p>
     <ul class="metadata">
       <li>Usage: external/internal</li>
@@ -44,48 +44,61 @@
     </div>
   </div>
 
-  <h2 class="heading-medium rule-above">Content principles</h2>
-  <ul class="list">
-    <li>The label should reflect the thing you need do at the destination, not a description of what it is.</li>
-  </ul>
+  <details>
+    <summary>Show code snippet</summary>
+    <div class="grid-row">
+      <div class="column-full">
+        <pre class="language-markup"><code class="language-markup">{% include "includes/navigation.html" %}</code></pre>
+      </div>
+    </div>
+  </details>
 
   <h2 class="heading-medium">Interaction principles</h2>
   <ul class="list list-bullet">
-    <li>Only one nav item can be active at a time.</li>
-    <li>The active nav item should be distinguishable from the inactive.</li>
-    <li>Inactive tabs should have a hover state.</li>
-    <li>Focused nav items should be consistent with other focus states.</li>
-    <li>Don't use animation unless there is a proven need to do so.</li>
+    <li>only one nav item can be active at a time.</li>
+    <li>the active nav item should be distinguishable from the inactive.</li>
+    <li>inactive tabs should have a hover state.</li>
+    <li>focused nav items should be consistent with other focus states.</li>
+    <li>don't use animation unless there is a proven need to do so.</li>
+  </ul>
+
+  <h2 class="heading-medium">Content principles</h2>
+  <ul class="list">
+    <li>the label should reflect the thing you need do at the destination, not a description of what it is.</li>
   </ul>
 
   <h2 class="heading-medium">Accessibility principles</h2>
   <ul class="list list-bullet">
-    <li>The active nav item should be labelled as active in the code.</li>
-    <li>The active nav item should be distinguishable from the inactive, using more than colour alone.</li>
+    <li>the active nav item should be labelled as active in the code.</li>
+    <li>the active nav item should be distinguishable from the inactive, using more than colour alone.</li>
   </ul>
 
+  <!-- Remove until user research included
   <h2 class="heading-medium">User research</h2>
   <ul class="list list-bullet">
     <li>Notes from user research go here.</li>
   </ul>
+  -->
 
-<h2 class="heading-medium rule-above">Prototype code</h2>
+  <!-- Removed as unsure we need to include in the kit
+  <h2 class="heading-medium">Prototype code</h2>
 
-<ul class="list list-bullet">
-  <li>Layout &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/tree/master/app/views/includes/patterns/navigation.html">navigation.html</a></li>
-  <li>Styles &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/blob/master/app/assets/sass/hod-patterns/_navigation.scss">navigation.scss</a></li>
-  <li>Enhanced functionality &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/blob/master/app/assets/javascripts/navigation.js">navigation.js</a></li>
-</ul>
+  <ul class="list list-bullet">
+    <li>Layout &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/tree/master/app/views/includes/patterns/navigation.html">navigation.html</a></li>
+    <li>Styles &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/blob/master/app/assets/sass/hod-patterns/_navigation.scss">navigation.scss</a></li>
+    <li>Enhanced functionality &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/blob/master/app/assets/javascripts/navigation.js">navigation.js</a></li>
+  </ul>
+  -->
 
 <h2 class="heading-medium">Services using this pattern</h2>
 <ul class="list list-bullet">
   <li>Sponsoring people</li>
 </ul>
 
-<h2 class="heading-medium rule-above">Things to do</h2>
+<h2 class="heading-medium">Things to do</h2>
 <ul class="list list-bullet">
-  <li>The design needs improving for narrower views.</li>
-  <li>Add notes from user research.</li>
+  <li>the design needs improving for narrower views.</li>
+  <li>add notes from user research.</li>
 </ul>
 
 </main>

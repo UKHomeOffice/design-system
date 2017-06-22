@@ -16,14 +16,14 @@
   <div class="breadcrumbs">
     <ol>
       <li><a href="/">Home</a></li>
-      <li>Modal</li>
+      <li>Modal window</li>
     </ol>
   </div>
 </div>
 
-<section class="full-width">  
+<section class="full-width">
   <div class="content-width">
-      <h2 class="heading-large">Modal/Dialog</h2>
+      <h2 class="heading-large">Modal window</h2>
       <p>Creating focus on a single interaction.</p>
       <ul class="metadata">
         <li>Usage: internal</li>
@@ -38,8 +38,6 @@
 <div class="grid-row">
     <div class="column-full">
         <h2 class="heading-medium" id="example-component">Example component</h2>
-        <p>Modals can be useful because they focus the user on completing a specific action, this is particularly beneficial on complicated interactions or when space is at a premium. They can be useful because, in a similar way to accordions, the interaction is conditional, the user has chosen to interact with the object. Modals or dialog boxes should be used very sparingly. They force the user away from the context of the page they are on and increase cognitive load.</p>
-
         <div class="example example-images">
           <div class="grid-row">
             {% include "includes/modal.html" %}
@@ -49,41 +47,42 @@
       </div>
 </div>
 
+<details>
+  <summary>Show code snippet</summary>
   <pre class="language-markup"><code class="language-markup">{% include "includes/modal-code.html" %}</code></pre>
-
+</details>
 
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h2 id="documentation" class="heading-medium">Content patterns</h2>
-    <ul class="list list-bullet">
-      <li>Content that opens the modal should explain to the user what will happen</li>
-      <li>The content of the modal should be focused on the single task and continue from the link/page</li>
-      <li>Include heading or title</li>
-    </ul>
 
     <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
     <ul class="list list-bullet">
-      <li>The modal should focus on a single task</li>
-      <li>Consider an alternative approach to modals on mobile</li>
+      <li>the modal should focus on a single task</li>
+      <li>consider an alternative approach to modals on mobile</li>
+      <li>could the interaction be handled on another screen</li>
+    </ul>
+
+    <h2 id="documentation" class="heading-medium">Content patterns</h2>
+    <ul class="list list-bullet">
+      <li>content that opens the modal should explain to the user what will happen</li>
+      <li>the content of the modal should be focused on the single task and continue from the link/page</li>
+      <li>include heading or title</li>
+    </ul>
+
+    <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
+    <ul class="list list-bullet">
+      <li>modals do not work well on mobile</li>
+      <li>screen readers do not automatically focus on modals which makes interactions confusing</li>
+    </ul>
+
+    <h2 id="research" class="heading-medium">User research</h2>
+    <ul class="list list-bullet">
+      <li>encourages focus</li>
+      <li>complicated interactions within the modal dissorientate</li>
+      <li>multiple modals create confusion</li>
+      <li>test this version (CSS only) with form content</li>
     </ul>
   </div>
-</div>
-<div class="grid-row">
-  <div class="column-two-thirds">
-      <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
-      <ul class="list list-bullet">
-        <li>Include `ARIA` tags</li>
-        <li>Include labels and tags</li>
-      </ul>
-
-      <h2 id="research" class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>Encourages focus</li>
-        <li>Complicated interactions within the modal dissorientate</li>
-        <li>Multiple modals create confusion</li>
-        <li>Test this version (CSS only) with form content</li>
-      </ul>
-    </div>
 </div>
 
 <div class="grid-row">
@@ -91,11 +90,17 @@
     <h2 class="heading-medium">Services using this pattern</h2>
     <ul class="list list-bullet">
       <li>Application</li>
+      <li>Employers Checking Service</li>
+      <li>Passport renewals (timeout)</li>
     </ul>
+
     <!-- TO DO -->
     <h2 class="heading-medium rule-above">Things to do</h2>
     <ul class="list list-bullet">
       <li>js for keydown</li>
+      <li>js for focus</li>
+      <li>include `ARIA` tags</li>
+      <li>include labels and tags</li>
     </ul>
   </div>
 </div>
