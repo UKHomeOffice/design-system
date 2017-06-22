@@ -6,22 +6,8 @@
 
 {% block content %}
 
-<div class="content-width">
-  <nav id="nav">
-
-    <div class="navbar">
-      <ul class="navbar__list-items">
-        <li><a href="/">About</a></li>
-        <li><a href="/patterns">Patterns</a></li>
-        <li><a href="/components">Components</a></li>
-        <li class="active"><a href="/typography">Styles</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/process/contribute">Contributing</a></li>
-      </ul>
-    </div>
-
-  </nav>
-</div>
+{% set active = "styles" %}
+{% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
 
@@ -31,7 +17,7 @@
       <p>Home Office services are designed with GOV.UK styles. If any styles differ, they can be found here.</p>
 
       <h2 class="heading-large">Typography</h2>
-      <p><a href="https://designnotes.blog.gov.uk/2015/03/11/can-i-use-the-gov-uk-fonts/">Find out if you can use the GOV.UK font</a>. <br />If you can't, use a Helvetica/Arial font stack for consistency.</p>
+      <p><a href="https://designnotes.blog.gov.uk/2015/03/11/can-i-use-the-gov-uk-fonts/">Find out if you can use the GOV.UK font</a>. <br />If you can&rsquo;t, use a Helvetica/Arial font stack for consistency.</p>
     </div>
   </div>
 
