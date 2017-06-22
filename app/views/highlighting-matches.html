@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div class="content-width">
+<!-- <div class="content-width">
   {% block alpha_banner %}
     {% include "includes/phase_banner_alpha.html" %}
   {% endblock %}
@@ -19,9 +19,12 @@
       <li>Highlighted search matches</li>
     </ol>
   </div>
-</div>
+</div> -->
 
-<section class="full-width">
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<section class="full-width mt-15">
   <div class="content-width">
     <h2 class="heading-large">Highlighted search matches</h2>
     <p>Highlighting helps users identify matching data.</p>
