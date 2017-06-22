@@ -44,41 +44,42 @@
     </div>
   </div>
 
-  <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/buttons-code.html" %}</code></pre>
+  <details>
+    <summary>Show code snippet</summary>
+    <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/buttons-code.html" %}</code></pre>
+    </div>
+  </details>
 
-
-  </div>
 
   <div class="column-two-thirds">
-    <h2 class="heading-medium rule-above">Content principles</h2>
+    <h2 class="heading-medium">Why have we created this pattern?</h2>
+    <p>Define buttons types and how to use multiple buttons on a single screen</p>
+
+    <h2 class="heading-medium">Interaction principles</h2>
+    <ul class="list list-bullet">
+      <li>buttons should look like buttons</li>
+      <li>buttons need to have a good level of affordance, so that users know that something meaningful will happen if they click a button</li>
+      <li>buttons can have an icon to further support their action or state</li>
+      <li>don't make things that aren't buttons look like buttons</li>
+      <li>avoid secondary actions unless you see a need for one in research</li>
+      <li>primary actions should be aligned with input fields to increase completion rates</li>
+    </ul>
+
+    <h2 class="heading-medium">Content principles</h2>
     <ul class="list list-bullet">
       <li>label buttons with what they do</li>
     </ul>
 
-      <h2 class="heading-medium">Interaction principles</h2>
-      <ul class="list list-bullet">
-        <li>buttons should look like buttons</li>
-        <li>buttons need to have a good level of affordance, so that users know that something meaningful will happen if they click a button</li>
-        <li>buttons can have an icon to further support their action or state</li>
-        <li>don't make things that aren't buttons look like buttons</li>
-        <li>avoid secondary actions unless you see a need for one in research</li>
-        <li>primary actions should be aligned with input fields to increase completion rates</li>
-      </ul>
-
-      <h2 class="heading-medium">Accessibility principles</h2>
-      <ul class="list list-bullet">
-        <li>buttons should have clear hover and focus states</li>
-        <li>use a 'button' tag with a role='button'</li>
-      </ul>
-
-      <h2 class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>users sometimes confuse grey buttons with disabled buttons. Grey buttons are best avoided</li>
-      </ul>
-
-    <h2 class="heading-medium rule-above">Prototype code</h2>
+    <h2 class="heading-medium">Accessibility principles</h2>
     <ul class="list list-bullet">
-      <li>Styles &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/blob/master/app/assets/sass/hod-patterns/_buttons.scss">buttons.scss</a></li>
+      <li>buttons should have clear hover and focus states</li>
+      <li>use a 'button' tag with a role='button'</li>
+    </ul>
+
+    <h2 class="heading-medium">User research</h2>
+    <ul class="list list-bullet">
+      <li>users sometimes confuse grey buttons with disabled buttons</li>
+      <li>users sometimes confuse white buttons with input fields</li>
     </ul>
 
     <h2 class="heading-medium">Services using this pattern</h2>

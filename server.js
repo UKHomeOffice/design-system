@@ -1,3 +1,5 @@
+require('dotenv').config()
+var crypto = require('crypto')
 var path = require('path')
 var express = require('express')
 var session = require('express-session')
@@ -19,11 +21,15 @@ var username = process.env.USERNAME
 var password = process.env.PASSWORD
 var env = process.env.NODE_ENV || 'development'
 var useAuth = process.env.USE_AUTH || config.useAuth
+var useAutoStoreData = process.env.USE_AUTO_STORE_DATA || config.useAutoStoreData
 var useHttps = process.env.USE_HTTPS || config.useHttps
+var useBrowserSync = config.useBrowserSync
+var analyticsId = process.env.ANALYTICS_TRACKING_ID
 
 env = env.toLowerCase()
 useAuth = useAuth.toLowerCase()
 useHttps = useHttps.toLowerCase()
+useBrowserSync = useBrowserSync.toLowerCase()
 
 var useDocumentation = (config.useDocumentation === 'true')
 
@@ -33,6 +39,17 @@ promoMode = promoMode.toLowerCase()
 
 // Disable promo mode if docs aren't enabled
 if (!useDocumentation) promoMode = 'false'
+
+// Force HTTPs on production connections. Do this before asking for basicAuth to
+// avoid making users fill in the username/password twice (once for `http`, and
+// once for `https`).
+
+var isSecure = (env === 'production' && useHttps === 'true')
+
+if (isSecure) {
+  app.use(utils.forceHttps)
+  app.set('trust proxy', 1) // needed for secure cookies on heroku
+}
 
 // Authenticate against the environment-provided credentials, if running
 // the app in production (Heroku, effectively)
@@ -88,30 +105,69 @@ app.use(bodyParser.urlencoded({
   extended: true
 }))
 
+// Add variables that are available in all views
+app.locals.analyticsId = analyticsId
+app.locals.asset_path = '/public/'
+app.locals.useAutoStoreData = (useAutoStoreData === 'true')
+app.locals.cookieText = config.cookieText
+app.locals.promoMode = promoMode
+app.locals.releaseVersion = 'v' + releaseVersion
+app.locals.serviceName = config.serviceName
+
 // Support session data
 app.use(session({
+  cookie: {
+    maxAge: 1000 * 60 * 60 * 4, // 4 hours
+    secure: isSecure
+  },
+  // use random name to avoid clashes with other prototypes
+  name: 'govuk-prototype-kit-' + crypto.randomBytes(64).toString('hex'),
   resave: false,
   saveUninitialized: false,
-  secret: Math.round(Math.random() * 100000).toString()
+  secret: crypto.randomBytes(64).toString('hex')
 }))
 
-// send assetPath to all views
-app.use(function (req, res, next) {
-  res.locals.asset_path = '/public/'
-  next()
-})
+// add nunjucks function called 'checked' to populate radios and checkboxes,
+// needs to be here as it needs access to req.session and nunjucks environment
+var addCheckedFunction = function (app, nunjucksEnv) {
+  app.use(function (req, res, next) {
+    nunjucksEnv.addGlobal('checked', function (name, value) {
+      // check session data exists
+      if (req.session.data === undefined) {
+        return ''
+      }
 
-// Add variables that are available in all views
-app.use(function (req, res, next) {
-  res.locals.serviceName = config.serviceName
-  res.locals.cookieText = config.cookieText
-  res.locals.releaseVersion = 'v' + releaseVersion
-  next()
-})
+      var storedValue = req.session.data[name]
 
-// Force HTTPs on production connections
-if (env === 'production' && useHttps === 'true') {
-  app.use(utils.forceHttps)
+      // check the requested data exists
+      if (storedValue === undefined) {
+        return ''
+      }
+
+      var checked = ''
+
+      // if data is an array, check it exists in the array
+      if (Array.isArray(storedValue)) {
+        if (storedValue.indexOf(value) !== -1) {
+          checked = 'checked'
+        }
+      } else {
+        // the data is just a simple value, check it matches
+        if (storedValue === value) {
+          checked = 'checked'
+        }
+      }
+      return checked
+    })
+
+    next()
+  })
+}
+
+if (useAutoStoreData === 'true') {
+  app.use(utils.autoStoreData)
+  addCheckedFunction(app, nunjucksAppEnv)
+  addCheckedFunction(documentationApp, nunjucksDocumentationEnv)
 }
 
 // Disallow search index idexing
@@ -126,11 +182,35 @@ app.get('/robots.txt', function (req, res) {
   res.send('User-agent: *\nDisallow: /')
 })
 
+app.get('/prototype-admin/clear-data', function (req, res) {
+  req.session.destroy()
+  res.render('prototype-admin/clear-data')
+})
+
 // Redirect root to /docs when in promo mode.
 if (promoMode === 'true') {
   console.log('Prototype kit running in promo mode')
+
   app.get('/', function (req, res) {
     res.redirect('/docs')
+  })
+
+  // allow search engines to index the prototype kit promo site
+  app.get('/robots.txt', function (req, res) {
+    res.type('text/plain')
+    res.send('User-agent: *\nAllow: /')
+  })
+} else {
+  // Disallow search index idexing
+  app.use(function (req, res, next) {
+    // Setting headers stops pages being indexed even if indexed pages link to them.
+    res.setHeader('X-Robots-Tag', 'noindex')
+    next()
+  })
+
+  app.get('/robots.txt', function (req, res) {
+    res.type('text/plain')
+    res.send('User-agent: *\nDisallow: /')
   })
 }
 
@@ -150,6 +230,9 @@ app.get('/prototype-admin/download-latest', function (req, res) {
 })
 
 if (useDocumentation) {
+  // Copy app locals to documentation app locals
+  documentationApp.locals = app.locals
+
   // Create separate router for docs
   app.use('/docs', documentationApp)
 
@@ -182,6 +265,11 @@ if (useDocumentation) {
   })
 }
 
+// redirect all POSTs to GETs - this allows users to use POST for autoStoreData
+app.post(/^\/([^.]+)$/, function (req, res) {
+  res.redirect('/' + req.params[0])
+})
+
 console.log('\nGOV.UK Prototype kit v' + releaseVersion)
 // Display warning not to use kit for production services.
 console.log('\nNOTICE: the kit is for building prototypes, do not use it for production services.')
@@ -189,7 +277,7 @@ console.log('\nNOTICE: the kit is for building prototypes, do not use it for pro
 // start the app
 utils.findAvailablePort(app, function (port) {
   console.log('Listening on port ' + port + '   url: http://localhost:' + port)
-  if (env === 'production') {
+  if (env === 'production' || useBrowserSync === 'false') {
     app.listen(port)
   } else {
     app.listen(port - 50, function () {
