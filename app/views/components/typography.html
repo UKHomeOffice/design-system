@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Home Office DDaT design patterns
+{% endblock %}
+
+{% block content %}
+
+{% set active = "components" %}
+{% include "includes/top_nav.html" %}
+
+<section class="full-width mt-15">
+  <div class="content-width">
+      <h2 class="heading-large">Typography</h2>
+      <p>Advice on typography choices</p>
+      <ul class="metadata">
+        <li>Usage: internal</li>
+        <li>Status: Live</li>
+        <li>Last updated: 27 June 2017</li>
+      </ul>
+  </div>
+</section>
+
+
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Typography choice</h2>
+      <p><a href="https://designnotes.blog.gov.uk/2015/03/11/can-i-use-the-gov-uk-fonts/">Find out if you can use the GOV.UK font</a>. <br />If you can&rsquo;t, use a Helvetica/Arial font stack for consistency.</p>
+    </div>
+  </div>
+
+
+  <div class="example example-images">
+    <div class="grid-row">
+      <p class="lede"><span class="bold-small">GDS Transport</span><br />
+        The quick brown fox jumps over the lazy dog</p>
+        <div class="unbranded">
+          <p class="lede"><span class="bold-small">Helvetica/Arial</span><br />
+            The quick brown fox jumps over the lazy dog</p>
+        </div>
+    </div>
+  </div>
+
+  <details>
+    <summary>Show code snippet</summary>
+    <pre class="language-css"><code class="language-css">// GDS Transport // $nta-light Sass variable in prototype kit
+    font-family: "nta", Arial, sans-serif;
+
+    // Helvetica Regular // $helvetica-regular Sass variable in prototype kit
+    font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+
+    // Font reset for print // $print-reset Sass variable in prototype kit
+    font-family: sans-serif;</code></pre>
+  </details>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Line length</h2>
+      <p>Line length should be between 45 and 75 characters to make reading comfortable. You should be able to achieve this by keeping content to two thirds of the page width using <code class="code">.column-two-thirds</code></p>
+      <img width="100%" height="auto" style="margin-top:24px;margin-bottom:24px;" src="{{ asset_path }}/images/linelength.png" alt="Illustration of the optimal line lengths">
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>More guidance on typography can be found on <a href="http://govuk-elements.herokuapp.com/typography/" target="_blank">GOV.UK elements</a>.</p>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
