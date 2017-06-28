@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Home Office DDaT design patterns
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<section class="full-width mt-15">
+  <div class="content-width">
+      <h2 class="heading-large">Interruption card</h2>
+      <p>An alert that interrupts the user flow with important information and must be acknowledged before continuing.</p>
+      <ul class="metadata">
+        <li>Usage: internal/external</li>
+        <li>Status: Beta</li>
+        <li>Last updated: 27 June 2017</li>
+      </ul>
+  </div>
+</section>
+
+
+<main id="content" role="main">
+  <h2 class="heading-medium" id="example-component">Example component</h2>
+
+  <div class="example example-images">
+    <div class="grid-row">
+      {% include "includes/patterns/flash_card.html" %}
+    </div>
+  </div>
+
+  <details>
+    <summary>Show code snippet</summary>
+    <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/flash_card-code.html" %}</code></pre>
+  </details>
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Why have we created this pattern?</h2>
+      <p>No GOV.UK pattern is available</p>
+      <h2 class="heading-medium">Interaction principles</h2>
+      <p>An interruption card should be used to draw the attention of the user to some important information specific to that point in their journey.</p>
+      <p>Cards should have headings. You may want to hide the heading but it's generally simpler not to.</p>
+      <p>One thing per card. If the user needs to do more than one thing, use extra cards.</p>
+      <p>Use larger text (24px) than in the rest of the journey.</p>
+      <p>Use a &ldquo;Continue&rdquo; button to advance to the next card or page.</p>
+      <p>Don't use form elements (except buttons) within cards. Form elements will add extra complexity and you will need to deal with error states.</p>
+
+      <h2 class="heading-medium">Content principles</h2>
+      <p>Follow the <a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GDS style guide</a>
+
+      <h2 class="heading-medium">Accessibility principles</h2>
+      <p>[Add research findings or link to GDS guidance if nothing specific available]</p>
+
+      <h2 class="heading-medium">User research</h2>
+      <p>Interrupting users’ flow in this way can increase their understanding and retention of important information. [link to research].
+      </p>
+
+      <h2 class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li><a href="https://www.gov.uk/apply-renew-passport">Passport renewals</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
