@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Home Office DDaT design patterns
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<section class="full-width mt-15">
+  <div class="content-width">
+      <h2 class="heading-large">Service name header</h2>
+      <p>A familiar landmark that appears throughout the service at the top of every view.</p>
+      <ul class="metadata">
+        <li>Usage: internal</li>
+        <li>Status: Beta</li>
+        <li>Last updated: 28 June 2017</li>
+      </ul>
+  </div>
+</section>
+
+<main id="content" role="main">
+  <h2 class="heading-medium" id="example-component">Example component</h2>
+  <p></p>
+
+  <div class="example example-images">
+    <div class="grid-row">
+      {% include "includes/patterns/header.html" %}
+    </div>
+  </div>
+
+  <details>
+    <summary>Show code snippet</summary>
+    <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/header-code.html" %}</code></pre>
+  </details>
+
+  <div class="column-two-thirds">
+    <h2 class="heading-medium">Why have we created this pattern?</h2>
+    <p>The <a href="https://www.gov.uk/service-manual/design/add-the-govuk-header-and-footer">GOV.UK header and footer pattern</a> does not meet the user need</p>
+    <h2 class="heading-medium">Interaction principles</h2>
+    <p>The service name should link to the logical starting page; usually the home page of the service.</p>
+    <p>If users need to sign in to the service under different roles, ensure the starting page is appropriate for them.</p>
+    <p>The header can be used for global actions, for example, Search and Sign out.</p>
+    <p>Do not add more than two global actions, unless there is a proven need.</p>
+
+
+    <h2 class="heading-medium">Content principles</h2>
+    <p>The header should be the name of the service. <a href="https://www.gov.uk/service-manual/design/naming-your-service">Find out more about naming your service.</a></p>
+    <p>For internal systems, you should only use the ‘Digital by default’ logo if your service has a public-facing element on GOV.UK.</p>
+    <p>For internal systems, there is no need to use the GOV.UK blue bar.</p>
+    <h2 class="heading-medium">Accessibility principles</h2>
+    <p>Label links correctly</p>
+
+    <h2 class="heading-medium">User research</h2>
+    <ul class="list list-bullet">
+      <li>[Add user research findings]</li>
+    </ul>
+
+  <h2 class="heading-medium">Pattern is missing</h2>
+  <ul class="list list-bullet">
+    <li>research of username is important or whether a sign out link is enough</li>
+  </ul>
+
+  <h2 class="heading-medium rule-above">Prototype code</h2>
+
+  <ul class="list list-bullet">
+    <li>Layout &mdash; <a href="https://github.com/eliothill/home-office-digital-patterns/tree/master/app/views/includes/patterns/header.html">header.html</a></li>
+  </ul>
+
+  <!--h2 class="heading-medium">Services using this pattern</h2>
+  <ul class="list">
+    <li>Do all services use this pattern?</li>
+  </ul-->
+
+</div>
+
+</main>
+
+{% endblock %}

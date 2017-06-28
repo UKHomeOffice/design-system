@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Home Office DDaT design patterns
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<section class="full-width mt-15">
+  <div class="content-width">
+      <h2 class="heading-large">Table multi-select</h2>
+      <p>Allow users to select all rows in a table. Allow them to interact with the whole row rather than just checkbox.</p>
+      <ul class="metadata">
+        <li>Usage: external/internal</li>
+        <li>Status: Alpha</li>
+        <li>Last updated: 21 June 2017</li>
+      </ul>
+  </div>
+</section>
+
+<main id="content" role="main">
+  <h2 class="heading-medium" id="example-component">Example component</h2>
+  <p></p>
+
+  <div class="example example-images">
+    <div class="grid-row">
+      {% include "includes/patterns/table-multiselect.html" %}
+    </div>
+  </div>
+
+  <details>
+    <summary>Show code snippet</summary>
+    <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/table-multiselect-code.html" %}</code></pre>
+    </div>
+  </details>
+
+  <div class="column-two-thirds">
+    <h2 class="heading-medium">Why have we created this pattern?</h2>
+    <p>There is no standard GDS pattern for selectable tables.</p>
+
+    <!-- <h2 class="heading-medium">Interaction principles</h2>
+    <ul class="list list-bullet">
+      <li></li>
+    </ul>
+
+    <h2 class="heading-medium">Content principles</h2>
+    <ul class="list list-bullet">
+      <li></li>
+    </ul>
+
+    <h2 class="heading-medium">Accessibility principles</h2>
+    <ul class="list list-bullet">
+      <li></li>
+    </ul> -->
+
+    <h2 class="heading-medium">User research</h2>
+    <ul class="list list-bullet">
+      <li>Not researched yet</li>
+    </ul>
+
+    <h2 class="heading-medium">Services using this pattern</h2>
+    <ul class="list list-bullet">
+      <li>None</li>
+    </ul>
+
+  </div>
+
+</main>
+
+{% endblock %}
