@@ -1,0 +1,12 @@
+// Pattern: buttons
+// Problem: Things need clicking
+
+.button-secondary {
+   @include button($white);
+   box-shadow: 0 1px 0 $black;
+   border: $black 1px solid;
+ }
+
+ .button-affordance {
+  @include button($govuk-blue);
+}
