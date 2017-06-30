@@ -6,7 +6,8 @@
   li {
     display: inline-block;
     a {
-      @include bold-19;
+      //@include bold-19;
+      @extend .bold-small;
       color: $text-colour;
       display: inline-block;
       padding: 15px 5px 10px 5px;
