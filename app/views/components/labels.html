@@ -9,66 +9,54 @@
 {% set active = "components" %}
 {% include "includes/top_nav.html" %}
 
-<section class="full-width mt-15">
-  <div class="content-width">
-      <h2 class="heading-large">Labels</h2>
-      <p>Labels are used to quickly identify commonly grouped or related items.</p>
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <div class="column-full">
+      <h1 class="heading-section">Labels</h1>
+      <p class="lede">Labels are used to quickly identify commonly grouped or related items.</p>
       <ul class="metadata">
         <li>Usage: internal</li>
         <li>Status: Alpha</li>
         <li>Last updated: 17 March 2017</li>
       </ul>
-  </div>
-</section>
 
+      <h2 class="heading-medium" id="example-component">Example component</h2>
 
-<main id="content" role="main">
-<div class="grid-row">
-    <div class="column-full">
-        <h2 class="heading-medium" id="example-component">Example component</h2>
-        <p></p>
-
-        <div class="example example-images">
-          <div class="grid-row">
-            {% include "includes/components/labels.html" %}
-          </div>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/labels.html" %}
         </div>
-
       </div>
-</div>
 
-  <details>
-    <summary>Show code snippet</summary>
-    <pre class="language-markup"><code class="language-markup">&lt;span class="label"&gt;sent&lt;/span&gt;</code></pre>
-    <pre class="language-markup"><code class="language-markup">&lt;span class="label--blue"&gt;completed&lt;/span&gt;</code></pre>
-    <pre class="language-markup"><code class="language-markup">&lt;span class="label--yellow"&gt;warning&lt;/span&gt;</code></pre>
-    <pre class="language-markup"><code class="language-markup">&lt;span class="label--green"&gt;completed&lt;/span&gt;</code></pre>
-    <pre class="language-markup"><code class="language-markup">&lt;span class="label--red"&gt;important&lt;/span&gt;</code></pre>
-  </details>
+      <details>
+        <summary>Show code snippet</summary>
+        <pre class="language-markup"><code class="language-markup">&lt;span class="label"&gt;sent&lt;/span&gt;</code></pre>
+        <pre class="language-markup"><code class="language-markup">&lt;span class="label--blue"&gt;completed&lt;/span&gt;</code></pre>
+        <pre class="language-markup"><code class="language-markup">&lt;span class="label--yellow"&gt;warning&lt;/span&gt;</code></pre>
+        <pre class="language-markup"><code class="language-markup">&lt;span class="label--green"&gt;completed&lt;/span&gt;</code></pre>
+        <pre class="language-markup"><code class="language-markup">&lt;span class="label--red"&gt;important&lt;/span&gt;</code></pre>
+      </details>
+    </div>
 
-<div class="grid-row">
-  <div class="column-two-thirds">
-    <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
-    <ul class="list list-bullet">
-      <li>labels shouldn't look like buttons</li>
-      <li>labels are for quick referencing</li>
-      <li>labels shouldn't be permanent</li>
-      <li>labels should appear at the end of the content that it labels</li>
-      <li>the margin to the right should be greater to indicate what it relates to</li>
-    </ul>
+    <div class="column-two-thirds">
+      <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
+      <ul class="list list-bullet">
+        <li>labels shouldn't look like buttons</li>
+        <li>labels are for quick referencing</li>
+        <li>labels shouldn't be permanent</li>
+        <li>labels should appear at the end of the content that it labels</li>
+        <li>the margin to the right should be greater to indicate what it relates to</li>
+      </ul>
 
-    <h2 id="documentation" class="heading-medium">Content patterns</h2>
-    <ul class="list list-bullet">
-      <li>labels should be single words</li>
-      <li>labels should be <a href="https://en.wiktionary.org/wiki/common_noun">common nouns</a></li>
-      <li>content on labels doesn't have to be descriptive</li>
-      <li>labels are recommended to be lowercase</li>
-    </ul>
+      <h2 id="documentation" class="heading-medium">Content patterns</h2>
+      <ul class="list list-bullet">
+        <li>labels should be single words</li>
+        <li>labels should be <a href="https://en.wiktionary.org/wiki/common_noun">common nouns</a></li>
+        <li>content on labels doesn't have to be descriptive</li>
+        <li>labels are recommended to be lowercase</li>
+      </ul>
 
-  </div>
-</div>
-<div class="grid-row">
-  <div class="column-two-thirds">
       <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
       <ul class="list list-bullet">
         <li>labels shouldn't be interactive and therefore do not need aria labelling</li>
@@ -80,26 +68,22 @@
       <ul class="list list-bullet">
         <li>adding labels to everything is counterintuative</li>
       </ul>
+
+      <h2 class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Home Office Communications (HOC)</li>
+        <li>Syrian Refugee Resettlement Service</li>
+      </ul>
+      <!-- TO DO -->
+      <h2 class="heading-medium rule-above">Things to do</h2>
+      <ul class="list list-bullet">
+        <li>examples of content</li>
+        <li>more access needs research including cognition and comprehension</li>
+        <li>clarity on alignment and positioning</li>
+      </ul>
     </div>
-</div>
 
-<div class="grid-row">
-  <div class="column-two-thirds">
-    <h2 class="heading-medium">Services using this pattern</h2>
-    <ul class="list list-bullet">
-      <li>Home Office Communications (HOC)</li>
-      <li>Syrian Refugee Resettlement Service</li>
-    </ul>
-    <!-- TO DO -->
-    <h2 class="heading-medium rule-above">Things to do</h2>
-    <ul class="list list-bullet">
-      <li>examples of content</li>
-      <li>more access needs research including cognition and comprehension</li>
-      <li>clarity on alignment and positioning</li>
-    </ul>
   </div>
-</div>
-
 </main>
 
 {% endblock %}
