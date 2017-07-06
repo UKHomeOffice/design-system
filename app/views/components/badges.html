@@ -9,38 +9,29 @@
 {% set active = "components" %}
 {% include "includes/top_nav.html" %}
 
-<section class="full-width mt-15">
-  <div class="content-width">
-      <h2 class="heading-large">Count badges</h2>
-      <p>Badges provide quick identification of numeric values like tallies or quantities.</p>
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Count badges</h1>
+      <p class="lede">Badges provide quick identification of numeric values like tallies or quantities.</p>
       <ul class="metadata">
         <li>Usage: internal</li>
         <li>Status: Discovery</li>
         <li>Last updated: 23 June2017</li>
       </ul>
-  </div>
-</section>
-
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
 
       <h2 class="heading-medium" id="example-component">Example component</h2>
-
       <div class="example example-images">
         <div class="grid-row">
           {% include "includes/components/badges.html" %}
         </div>
       </div>
-
       <details>
         <summary>Show code snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% include "includes/components/badges-code.html" %}</code></pre>
       </details>
 
       <h2 class="heading-medium">Examples of badges in context</h2>
-      <p></p>
-
       <div class="example example-images">
         <div class="grid-row">
           {% include "includes/components/badges-account.html" %}
@@ -48,53 +39,48 @@
       </div>
 
     </div>
+
+    <div class="column-two-thirds">
+      <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
+      <ul class="list list-bullet">
+        <li>badges shouldn't look or act like buttons</li>
+        <li>badges are for giving insight</li>
+        <li>badges shouldn't be permanent</li>
+      </ul>
+
+      <h2 id="documentation" class="heading-medium">Content patterns</h2>
+      <ul class="list list-bullet">
+        <li>badges should only contain numbers</li>
+        <li>badges should always be on the left and at the start of content</li>
+        <li>the badge (a number) should work with any content that follows</li>
+      </ul>
+
+      <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
+      <ul class="list list-bullet">
+        <li>badges shouldn't be interactive and therefore do not need aria labelling</li>
+        <li>the content of the badge repeating</li>
+        <li>colour combinations must meet the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></li>
+        <li>badges should not use colour only to identify grouping or importance</li>
+      </ul>
+
+      <h2 id="research" class="heading-medium">User research</h2>
+      <ul class="list list-bullet">
+        <li>badges should only be used when a user needs to do an action</li>
+      </ul>
+
+      <h2 class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Syrian Refugee project</li>
+      </ul>
+
+      <!-- TO DO -->
+      <h2 class="heading-medium rule-above">Things to do</h2>
+      <ul class="list list-bullet">
+        <li>examples for context</li>
+        <li>user research</li>
+      </ul>
+    </div>
   </div>
-
-
-<div class="grid-row">
-  <div class="column-two-thirds">
-
-    <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
-    <ul class="list list-bullet">
-      <li>badges shouldn't look or act like buttons</li>
-      <li>badges are for giving insight</li>
-      <li>badges shouldn't be permanent</li>
-    </ul>
-
-    <h2 id="documentation" class="heading-medium">Content patterns</h2>
-    <ul class="list list-bullet">
-      <li>badges should only contain numbers</li>
-      <li>badges should always be on the left and at the start of content</li>
-      <li>the badge (a number) should work with any content that follows</li>
-    </ul>
-
-    <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
-    <ul class="list list-bullet">
-      <li>badges shouldn't be interactive and therefore do not need aria labelling</li>
-      <li>the content of the badge repeating</li>
-      <li>colour combinations must meet the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></li>
-      <li>badges should not use colour only to identify grouping or importance</li>
-    </ul>
-
-    <h2 id="research" class="heading-medium">User research</h2>
-    <ul class="list list-bullet">
-      <li>badges should only be used when a user needs to do an action</li>
-    </ul>
-
-    <h2 class="heading-medium">Services using this pattern</h2>
-    <ul class="list list-bullet">
-      <li>Syrian Refugee project</li>
-    </ul>
-
-    <!-- TO DO -->
-    <h2 class="heading-medium rule-above">Things to do</h2>
-    <ul class="list list-bullet">
-      <li>examples for context</li>
-      <li>user research</li>
-    </ul>
-  </div>
-</div>
-
 </main>
 
 {% endblock %}

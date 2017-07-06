@@ -9,30 +9,26 @@
 {% set active = "patterns" %}
 {% include "includes/top_nav.html" %}
 
-<section class="full-width mt-15">
-  <div class="content-width">
-    <h2 class="heading-large">Task checklist</h2>
-    <p>A list of completed and still-to-do tasks.</p>
-    <ul class="metadata">
-      <li>Usage: internal</li>
-      <li>Status: Discovery</li>
-      <li>Last updated: 17 March 2017</li>
-    </ul>
-  </div>
-</section>
-
 <main id="content" role="main">
-  <h2 class="heading-medium" id="example-component">Example component</h2>
-
-  <div class="example example-images">
-    <div class="grid-row">
-      {% include "includes/patterns/tasks.html" %}
-    </div>
-  </div>
-
   <div class="grid-row">
-    <div class="column-two-thirds">
+    <div class="column-full">
+      <h1 class="heading-section">Task checklist</h1>
+      <p class="lede">A list of completed and still-to-do tasks.</p>
+      <ul class="metadata">
+        <li>Usage: internal</li>
+        <li>Status: Discovery</li>
+        <li>Last updated: 17 March 2017</li>
+      </ul>
 
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/patterns/tasks.html" %}
+        </div>
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
       <h2 class="heading-medium">Interaction principles</h2>
       <p>Incomplete tasks should not look like check boxes.</p>
 
@@ -53,7 +49,6 @@
 
     </div>
   </div>
-
 </main>
 
 {% endblock %}

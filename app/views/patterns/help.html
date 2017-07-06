@@ -9,38 +9,34 @@
 {% set active = "patterns" %}
 {% include "includes/top_nav.html" %}
 
-<section class="full-width mt-15">
-  <div class="content-width">
-    <h2 class="heading-large">Contextual help</h2>
-    <p>Small overlays containing help content for complex interactions</p>
-    <ul class="metadata">
-      <li>Usage: internal</li>
-      <li>Status: Discovery</li>
-      <li>Last updated: 28 June 2017</li>
-    </ul>
-  </div>
-</section>
-
 <main id="content" role="main">
-  <h2 class="heading-medium">Why have we created this pattern?</h2>
-  <p>The GDS pattern does not meet the user need.</p>
-
-  <h2 class="heading-medium" id="example-component">Example component</h2>
-
-  <div class="example example-images">
-    <div class="grid-row">
-      <img width="100%" height="auto" src="{{ asset_path }}/images/help1.png" alt="Form field contextual help">
-    </div>
-  </div>
-
-  <div class="example example-images">
-    <div class="grid-row">
-      <img width="100%" height="auto" src="{{ asset_path }}/images/help2.png" alt="Contextual help">
-    </div>
-  </div>
-
   <div class="grid-row">
+
+    <div class="column-full">
+      <h1 class="heading-section">Contextual help</h1>
+      <p class="lede">Small overlays containing help content for complex interactions.</p>
+      <ul class="metadata">
+        <li>Usage: internal</li>
+        <li>Status: Discovery</li>
+        <li>Last updated: 28 June 2017</li>
+      </ul>
+
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          <img width="100%" height="auto" src="{{ asset_path }}/images/help1.png" alt="Form field contextual help">
+        </div>
+      </div>
+      <div class="example example-images">
+        <div class="grid-row">
+          <img width="100%" height="auto" src="{{ asset_path }}/images/help2.png" alt="Contextual help">
+        </div>
+      </div>
+    </div>
+
     <div class="column-two-thirds">
+      <h2 class="heading-medium">Why have we created this pattern?</h2>
+      <p>The GDS pattern does not meet the user need.</p>
 
       <h2 class="heading-medium">Interaction principles</h2>
       <p>Help should be available to users without interrupting their current flow.</p>
@@ -74,7 +70,6 @@
 
     </div>
   </div>
-
 </main>
 
 {% endblock %}

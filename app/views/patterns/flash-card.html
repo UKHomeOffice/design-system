@@ -9,34 +9,29 @@
 {% set active = "patterns" %}
 {% include "includes/top_nav.html" %}
 
-<section class="full-width mt-15">
-  <div class="content-width">
-    <h2 class="heading-large">Interruption card</h2>
-    <p>An alert that interrupts the user flow with important information and must be acknowledged before continuing.</p>
-    <ul class="metadata">
-      <li>Usage: internal/external</li>
-      <li>Status: Beta</li>
-      <li>Last updated: 27 June 2017</li>
-    </ul>
-  </div>
-</section>
-
-
 <main id="content" role="main">
-  <h2 class="heading-medium" id="example-component">Example component</h2>
-
-  <div class="example example-images">
-    <div class="grid-row">
-      {% include "includes/patterns/flash_card.html" %}
-    </div>
-  </div>
-
-  <details>
-    <summary>Show code snippet</summary>
-    <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/flash_card-code.html" %}</code></pre>
-  </details>
-
   <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Interruption card</h1>
+      <p class="lede">An alert that interrupts the user flow with important information and must be acknowledged before continuing.</p>
+      <ul class="metadata">
+        <li>Usage: internal/external</li>
+        <li>Status: Beta</li>
+        <li>Last updated: 27 June 2017</li>
+      </ul>
+
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/patterns/flash_card.html" %}
+        </div>
+      </div>
+      <details>
+        <summary>Show code snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/flash_card-code.html" %}</code></pre>
+      </details>
+    </div>
+
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why have we created this pattern?</h2>
       <p>No GDS pattern is available</p>
@@ -65,7 +60,6 @@
 
     </div>
   </div>
-
 </main>
 
 {% endblock %}
