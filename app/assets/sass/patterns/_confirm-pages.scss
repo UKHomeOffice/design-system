@@ -26,25 +26,27 @@
 }
 
 // Checkmark icon styles, not included in .incomplete
-.hod-checkmark {
-  font-size: 35px;
-    display: block;
-    margin: 15px auto;
-    position: relative;
-    background: rgba(255, 255, 255, 0.1);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+.confirm-page {
+  .hod-checkmark {
+    font-size: 35px;
+      display: block;
+      margin: 15px auto;
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
 
-  &::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-  + .heading-large {
-    margin-top: 0;
+    + .heading-large {
+      margin-top: 0;
+    }
   }
 }
 
