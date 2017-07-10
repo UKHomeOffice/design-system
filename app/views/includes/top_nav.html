@@ -1,0 +1,28 @@
+<div class="content-width">
+  <nav id="nav">
+
+    <div class="navbar">
+      <ul class="navbar__list-items">
+        <li{% if active == "patterns" %} class="active"{% endif %}>
+          <a href="/patterns">Patterns</a>
+        </li>
+        <li{% if active == "components" %} class="active"{% endif %}>
+          <a href="/components">Components</a>
+        </li>
+        <!-- <li{% if active == "styles" %} class="active"{% endif %}>
+          <a href="/typography">Styles</a>
+        </li> -->
+        <li{% if active == "resources" %} class="active"{% endif %}>
+          <a href="/resources">Resources</a>
+        </li>
+        <li{% if active == "contributing" %} class="active"{% endif %}>
+          <a href="/contribute">Contributing</a>
+        </li>
+        <li{% if active == "about" %} class="active"{% endif %}>
+          <a href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</div>

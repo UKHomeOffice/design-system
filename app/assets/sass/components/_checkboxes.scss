@@ -1,0 +1,9 @@
+.multiple-choice [type=checkbox] + label::before {
+  width: 26px;
+  height: 26px;
+}
+
+.multiple-choice [type=checkbox] + label::after {
+  width: 10px;
+  height: 3px;
+}

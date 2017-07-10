@@ -1,0 +1,70 @@
+// Update colour of GOV.UK default to meet accessibility
+.govuk-box-highlight {
+  padding: 1em 2em 2em;
+  background-color: $green;
+
+  a, a:hover, a:visited {
+    color: white;
+    font-weight: 700;
+  }
+}
+
+// Differentiate if application isn't complete
+.govuk-box-highlight.incomplete {
+  background-color: $govuk-blue;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 30px;
+
+  .heading-medium {
+    margin-top: 0;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+// Checkmark icon styles, not included in .incomplete
+.confirm-page {
+  .hod-checkmark {
+    font-size: 35px;
+      display: block;
+      margin: 15px auto;
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    + .heading-large {
+      margin-top: 0;
+    }
+  }
+}
+
+// Document icon used on confirmation pages
+.doc-icon {
+  margin-top: 0;
+  margin-bottom: 60px;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    width: 2em;
+    height: 3em;
+    margin-right: 1em;
+    position: relative;
+    top: 1.3em;
+    display: inline-block;
+    background: $grey-2;
+    box-shadow: 3px -3px 0 #fff, 6px -6px 0 $grey-2;
+  }
+}

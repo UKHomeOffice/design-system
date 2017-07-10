@@ -1,0 +1,42 @@
+<!-- Set up some data to repeat in the table -->
+{% set users = [
+  { name: "Spider-Man" },
+  { name: "Captain Marvel" },
+  { name: "Hulk" },
+  { name: "Thor" },
+  { name: "Iron Man" },
+  { name: "Luke Cage" },
+  { name: "Black Widow" },
+  { name: "Daredevil" }
+] %}
+
+<table class="table-clickable">
+  <thead>
+    <tr>
+      <th class="table-clickable__checkbox">
+        <div class="multiple-choice">
+          <input type="checkbox" class="jsCheckboxAll" id="radio-all">
+          <label for="radio-all">
+            &nbsp;
+          </label>
+        </div>
+      </th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in users|sort(attribute='name') %}
+      <tr>
+        <td class="table-clickable__checkbox">
+          <div class="multiple-choice">
+            <input type="checkbox" class="jsCheckbox" id="radio-{{ loop.index }}">
+            <label for="radio-{{ loop.index }}">
+              &nbsp;
+            </label>
+          </div>
+        </td>
+        <td>{{ user.name }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
