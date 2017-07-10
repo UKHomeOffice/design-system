@@ -9,36 +9,300 @@ $path: "/public/images/";
 // Take a look at in app/assets/sass/unbranded/ to see which files are imported.
 @import 'unbranded';
 
-// Take a look at in app/assets/sass/patterns/ to see which files are imported.
-@import 'patterns/check-your-answers';
+// Variables (setting measurements for HO patterns)
+$space-sm:			5px;
+$border-radius:		4px;
+$box-shadow:	    0 2px 10px rgba($text-colour, 0.5);
+///////////
 
-// Related items
-// (These styles will be moved to GOV.UK elements, duplicating here for now.)
-.govuk-related-items {
-  margin-top: $gutter;
-  border-top: 10px solid $govuk-blue;
-  padding-top: 5px;
+// Copmonents
+@import "components/checkboxes";
+@import "components/radios";
+@import "components/badges";
+@import "components/buttons";
+@import "components/cards";
+@import "components/labels";
 
-  .heading-medium {
-    margin-top: 0.3em;
-    margin-bottom: 0.5em;
-  }
+// Patterns
+@import "patterns/confirm-pages";
+@import "patterns/flashcard";
+@import "patterns/highlights";
+@import "patterns/modal";
+@import "patterns/navigation";
+@import "patterns/table-multiselect";
+@import "patterns/tabs";
+@import "patterns/tasks";
+@import "patterns/timeline";
 
-  li {
-    margin-bottom: 10px;
-    list-style-type: none;
+
+// HOD GUIDE
+// Styles for the pattern library - change at your peril
+// Please put any code that is purely for the guide and not for the kit in here
+
+
+// Helpers
+.mt-15 {
+  margin-top: 15px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+//////////
+
+
+
+a {
+  text-decoration-skip: ink !important;
+}
+
+
+
+
+
+.heading-section {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.55556em;
+}
+
+
+
+
+// General changes to prototype kit
+// Global Header
+#global-header-bar {
+	background-color: #005ea5!important;
+}
+div.header-proposition {
+    padding-top: 0px !important;
+    display: inline-block;
+    float: right;
+}
+div.header-global {
+	display: inline-block ;
+	float: left;
+}
+
+
+
+
+
+// Header navigation button
+#global-header .header-proposition #proposition-menu {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: right;
+}
+@media (min-width: 769px) {
+	#global-header.with-proposition .header-wrapper .header-global {
+	    float: left;
+	    width: 100%;
+	}
+}
+
+// Callout
+.callout {
+	padding: 1em;
+	margin-top: 1.875em;
+	background-color: $highlight-colour;
+	border-top: .75em solid $fuschia;
+	*:first-child {
+		margin-top: 0;
+	}
+}
+
+// Spacers
+.side-space {
+	margin-right: .5em;
+}
+
+
+// HO logo
+#ho-logo {
+	padding-top: 20px;
+}
+
+
+// Let's make a coloured row mixin
+// should we move mixins to somewhere else?
+@mixin hod-row ($color) {
+		background-color: lighten($color, 50%);
+		width: 100vw;
+		position: relative;
+		margin-left: -50vw;
+		left: 50%;
+		margin-bottom: 2em;
+		margin-top: 2em;
+		padding-bottom: 1em;
+		.grid-row {
+			@extend %site-width-container;
+			@extend %contain-floats;
+			div:first-child {
+				margin-left: -15px;
+				margin-top: -10px;
+				font-family: inherit;
+				@include media(mobile) {
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+#hod-row--purple {
+	@include hod-row($purple)
+}
+#hod-row--aqua {
+	@include hod-row($turquoise)
+}
+#hod-row--grey {
+	@include hod-row($grey-1)
+}
+
+// Footer
+#footer {
+    background-color: $grey-3;
+    border-top: 10px solid $grey-1;
+}
+
+.footer-logo {
+  margin-top: 10px;
+}
+
+
+/* Additional styles for mockup */
+/* Tables */
+.table {
+  font-size: 16px !important;
+  @include media(tablet) {
+    font-size: 16px !important;
+    text-align: left !important;
   }
 }
+.table-summary-title {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+  width: 25%;
+  &--last {
+	font-size: 16px;
+  	text-align: right;
+  	padding-right: 0;
+  }
+}
+.table-summary-content {
+  font-size: 16px;
+  font-weight: normal;
+}
+.table-summary-action {
+  padding-right: 0;
+  width: 25%;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: right;
+}
+@media print {
+  tr, th, td {
+      /* font-family: "nta", Arial, sans-serif; */
+      /* font-weight: 400; */
+      text-transform: none;
+      font-size: 16px;
+      line-height: 1.25;
+      padding: 0.6315789474em 1.0526315789em 0.4736842105em 0;
+      text-align: left;
+      color: #0b0c0c;
+      border-bottom: 1px solid $grey-3;
+  }
+}
+
+.rule-above {
+	border-top: 1px solid $grey-3;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+}
+
+code {
+    font-size: 16px;
+}
+
+.example {
+    padding-top: 45px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.example {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid $grey-3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 30px;
+	&:before {
+	    content: "EXAMPLE";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+	    font-family: "nta", Arial, sans-serif;
+	    font-weight: 400;
+	    text-transform: none;
+	    font-size: 12px;
+	    font-weight: bold;
+	    line-height: 1.25;
+	    background: #bfc1c3;
+	    color: white;
+	}
+}
+
+.block-space {
+	margin: em(30) em(0);
+}
+
+// Sections at the top pages
+
+.content-width {
+  @extend %site-width-container;
+  @extend %contain-floats;
+  //padding-bottom: $gutter;
+
+  @include media(desktop) {
+    //padding-bottom: $gutter * 3;
+  }
+  // Pressing enter when focus is on the skiplink sets focus on the #content area
+  // Remove the blue outline
+  outline: none;
+}
+
+.full-width {
+  font-size: 19px;
+  width: 100%;
+	//background-color: lighten($turquoise, 50%);
+	padding: 2.5em 0 1em 0;
+	h1, h2 {
+		margin-top: 0;
+	}
+}
+
+// Metadata for the status of patterns
 
 .metadata {
   font-size: 16px;
   color: #555;
   display: flex;
-
   li {
     padding-right: 35px;
   }
-
 }
 
-// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+@media screen and (max-width: 640px ) {
+
+    .full-width {
+      font-size: 16px;
+    }
+
+    .metadata {
+        display: inline;
+    }
+}

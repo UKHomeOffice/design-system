@@ -1,0 +1,12 @@
+.multiple-choice [type=radio] + label::before {
+  width: 28px;
+  height: 28px;
+}
+
+.multiple-choice [type=radio] + label::after {
+  border: 7px solid;
+}
+
+.multiple-choice {
+  padding-bottom: 2px;
+}

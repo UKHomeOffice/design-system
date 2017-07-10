@@ -1,15 +1,8 @@
-# Home Office Digital Patterns
+# Home Office patterns library and design guide
 
-## What is this
-A pattern library is a collection of digital design styles that have been created to solve user needs. 
+This is the design pattern library for Home Office DDaT, Data and Technology (DDaT). It extends the GOV.UK design patterns with patterns and components for additional use cases and users, including internal services.
 
-These patterns complement the existing [GOV.UK design patterns](govuk-elements.herokuapp.com). This is a design pattern library for the Home Office Digital team created to share patterns that help designers and developers collaborate and develop reusable design patterns. 
 
-Current version is using 5.0.0 – see changelog on [GitHub](https://github.com/alphagov/govuk_prototype_kit/releases)
+### Powered by GOV.UK Prototype kit · [![Greenkeeper badge](https://badges.greenkeeper.io/alphagov/govuk_prototype_kit.svg)](https://greenkeeper.io/)
 
-```
-Thanks to:
-
-[GOV.UK Prototyping Kit](https://github.com/alphagov/govuk_prototype_kit)
-
-```
+Go to the [GOV.UK Prototype Kit site](https://govuk-prototype-kit.herokuapp.com/docs) to download the latest version and read the documentation.

@@ -14,13 +14,26 @@ describe('The prototype kit', function () {
       fs.accessSync(path.resolve(__dirname, '../../public/javascripts/application.js'))
       fs.accessSync(path.resolve(__dirname, '../../public/images/favicon.ico'))
       fs.accessSync(path.resolve(__dirname, '../../public/stylesheets/application.css'))
-      fs.accessSync(path.resolve(__dirname, '../../public/stylesheets/hod-pattern-library.css'))
     })
   })
 
   it('should send with a well formed response for the index page', function (done) {
     request(app)
       .get('/')
+      .expect('Content-Type', /text\/html/)
+      .expect(200)
+      .end(function (err, res) {
+        if (err) {
+          done(err)
+        } else {
+          done()
+        }
+      })
+  })
+
+  it('should send with a well formed response for the docs page', function (done) {
+    request(app)
+      .get('/docs')
       .expect('Content-Type', /text\/html/)
       .expect(200)
       .end(function (err, res) {

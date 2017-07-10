@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Home Office DDaT design patterns
+{% endblock %}
+
+{% block content %}
+
+{% set active = "contributing" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-section">Contributing</h1>
+      <p>We encourage everyone from Home Office DDaT to join the discussion on the design patterns.</p>
+
+      <p>You should first discuss the problem you&rsquo;re trying to solve on the Interaction Design slack channel with the wider team. </p>
+      <p>If you want to raise a new pattern you can do so via the <a href="https://trello.com/b/2bSO65iz/ho-design-pattern-requests">Trello board</a> (request to be added on the Interaction Design Slack channel). Add a new card to the Backlog column with the following information:</p>
+      <ul class="list list-bullet">
+        <li>a description of what the pattern is</li>
+        <li>why you need a new pattern</li>
+        <li>a link demonstrating the pattern</li>
+      </ul>
+
+      <p>The Design Patterns Working Group will move it into the under consideration column and then then review the pattern. They may decide that another pattern meets the need better. </p>
+
+      <p>If the Working Group agree that this pattern should be moved on it will move through the following stages:</p>
+
+      <h3 class="heading-medium">Alpha pattern</h3>
+      <p>We&rsquo;ve seen this problem in an area and it is being peer reviewed by the team and iterated upon. The pattern may change quite a lot in alpha. Teams are ok to use this in early prototypes but should not use it in production.</p>
+
+
+      <h3 class="heading-medium">Beta pattern</h3>
+      <p>We&rsquo;re testing a proposed pattern with two or more delivery teams. The pattern is more mature and robust at this stage. Other teams are free to use this pattern in their own prototypes by adding a comment to say that they will be using it. They must also report back on their research findings. </p>
+
+      <h3 class="heading-medium">Live pattern</h3>
+      <p>It&rsquo;s in production and research has been evidenced to show it works. It still may be iterated and improved upon. Every team must use this version of the pattern.</p>
+
+      <p>Over time we will probably further refine patterns. It&rsquo;s important that you stay up to date with patterns by subscribe to card updates and checking with the Interaction Design slack channel.</p>
+
+    </div>
+  </div>
+
+
+
+</main>
+
+{% endblock %}
