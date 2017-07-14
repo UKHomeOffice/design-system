@@ -98,7 +98,7 @@
             {% if pattern.label|lower == 'recommended' %}
               <tr>
                 <td><a href="{{ pattern.link }}">{{ pattern.name|capitalize  }}</a></td>
-                <td><span class="label--green">{{ pattern.label|lower }}</span></td>
+                <td><span class="label--blue">{{ pattern.label|lower }}</span></td>
                 <td>{{ pattern.desc|capitalize }}</td>
               </tr>
             {% endif %}
@@ -107,7 +107,7 @@
             {% if pattern.label|lower == 'experimental' %}
               <tr>
                 <td><a href="{{ pattern.link }}">{{ pattern.name|capitalize  }}</a></td>
-                <td><span class="label--yellow">{{ pattern.label|lower }}</span></td>
+                <td><span class="label">{{ pattern.label|lower }}</span></td>
                 <td>{{ pattern.desc|capitalize }}</td>
               </tr>
             {% endif %}
