@@ -80,7 +80,7 @@
             {% if component.label|lower == 'recommended' %}
               <tr>
                 <td><a href="{{ component.link }}">{{ component.name|capitalize  }}</a></td>
-                <td><span class="label--green">{{ component.label|lower }}</span></td>
+                <td><span class="label--blue">{{ component.label|lower }}</span></td>
                 <td>{{ component.desc|capitalize }}</td>
               </tr>
             {% endif %}
@@ -89,7 +89,7 @@
             {% if component.label|lower == 'experimental' %}
               <tr>
                 <td><a href="{{ component.link }}">{{ component.name|capitalize  }}</a></td>
-                <td><span class="label--yellow">{{ component.label|lower }}</span></td>
+                <td><span class="label">{{ component.label|lower }}</span></td>
                 <td>{{ component.desc|capitalize }}</td>
               </tr>
             {% endif %}
