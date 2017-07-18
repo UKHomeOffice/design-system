@@ -24,24 +24,11 @@ $selected-colour: #FFECC7;
   background-color: darken($selected-colour, 5%);
 }
 
-.table-clickable__checkbox {
-  padding-left: 1.05263em;
+.table-clickable {
+
+  .multiple-choice--hod {
+  padding: 0.4em 0 0 1.05263em;
+  margin: 0;
+
+  }
 }
-  .table-clickable__checkbox .multiple-choice {
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    margin: 0;
-  }
-  .table-clickable__checkbox .multiple-choice label::before,
-  .table-clickable__checkbox input {
-    width: 20px;
-    height: 20px;
-  }
-  .table-clickable__checkbox .multiple-choice label::after {
-    border-width: 0 0 3px 3px;
-    width: 12px;
-    height: 4px;
-    top: 7px;
-    left: 5px;
-  }

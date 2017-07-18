@@ -1,9 +1,20 @@
-.multiple-choice [type=checkbox] + label::before {
-  width: 26px;
-  height: 26px;
+.multiple-choice--hod {
+
+  .multiple-choice {
+  padding-top: 3px;
+  padding-bottom: 4px;
+  }
 }
 
-.multiple-choice [type=checkbox] + label::after {
-  width: 10px;
-  height: 3px;
+.multiple-choice--hod [type=checkbox] + label::before {
+  width: 21px;
+  height: 21px;
+}
+
+.multiple-choice--hod [type=checkbox] + label::after {
+  border-width: 0 0 3px 3px;
+  width: 11px;
+  height: 4px;
+  top: 8px;
+  left: 6px;
 }

@@ -13,7 +13,7 @@
 <table class="table-clickable">
   <thead>
     <tr>
-      <th class="table-clickable__checkbox">
+      <th class="multiple-choice--hod">
         <div class="multiple-choice">
           <input type="checkbox" class="jsCheckboxAll" id="radio-all">
           <label for="radio-all">
@@ -27,7 +27,7 @@
   <tbody>
     {% for user in users|sort(attribute='name') %}
       <tr>
-        <td class="table-clickable__checkbox">
+        <td class="multiple-choice--hod">
           <div class="multiple-choice">
             <input type="checkbox" class="jsCheckbox" id="radio-{{ loop.index }}">
             <label for="radio-{{ loop.index }}">
