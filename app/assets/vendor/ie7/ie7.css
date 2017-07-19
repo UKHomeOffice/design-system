@@ -1,3 +1,36 @@
+.hod-fast-forward-button {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;');
+}
+.hod-pause {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe904;');
+}
+.hod-play {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe905;');
+}
+.hod-rewind-button {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe906;');
+}
+.hod-skip-back {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe907;');
+}
+.hod-skip-forward {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe908;');
+}
+.hod-spinner {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe909;');
+}
+.hod-stop {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90a;');
+}
+.hod-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90b;');
+}
+.hod-info-blue {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90e;');
+}
+.hod-warning {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe911;');
+}
 .hod-download-button {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
 }
@@ -22,9 +55,6 @@
 .hod-gear {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf013;');
 }
-.hod-pencil {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf040;');
-}
 .hod-map-marker {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf041;');
 }
@@ -34,12 +64,6 @@
 .hod-chevron-right {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf054;');
 }
-.hod-info-circle {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05a;');
-}
-.hod-comment {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf075;');
-}
 .hod-chevron-up {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf077;');
 }
@@ -48,18 +72,6 @@
 }
 .hod-phone {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf095;');
-}
-.hod-file {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15b;');
-}
-.hod-trash {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1f8;');
-}
-.hod-image {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90d;');
-}
-.hod-film {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe913;');
 }
 .hod-file-empty {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe924;');
@@ -73,20 +85,8 @@
 .hod-printer {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe954;');
 }
-.hod-mobile {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe958;');
-}
 .hod-key {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe98d;');
-}
-.hod-airplane {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe9af;');
-}
-.hod-link {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe9cb;');
-}
-.hod-warning {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea07;');
 }
 .hod-plus {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea0a;');
@@ -111,11 +111,5 @@
 }
 .hod-arrow-left {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea38;');
-}
-.hod-embed2 {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea80;');
-}
-.hod-github {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeab0;');
 }
 
