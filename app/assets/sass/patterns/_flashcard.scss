@@ -1,20 +1,38 @@
 // Pattern: flash cards
 // Problem: interupt the user with important information
 
+.circle-white {
+  color: #005ea5;
+  background: #fff;
+  float: left;
+  margin-right: 10px;
+}
+
 .flash-card {
-    margin-top: 1em;
-    padding: 30px;
-    background: $link-colour;
-    color: $page-colour;
-    h1 {
-      &:first-of-type {
-        margin-top: 0 !important;
-      }
+  margin-top: 1em;
+  padding: 30px;
+  background: $link-colour;
+  color: $page-colour;
+
+  p {
+    margin-left: 32px;
+  }
+
+  h1 {
+    &:first-of-type {
+      margin-top: 0 !important;
     }
-    a {
-      color: $page-colour;
-      &:visited, &:hover, &:active {
-        color: $page-colour; }
+  }
+
+  h2 {
+    margin: 0.7em 0px 0.3em 0px;
+
+  }
+
+  a {
+    color: $page-colour;
+    &:visited, &:hover, &:active {
+      color: $page-colour; }
     }
     details {
       margin-bottom: 1em;
@@ -42,11 +60,11 @@
     //     color: $link-active-colour;
     //   }
     // }
-}
+  }
 
-@media (min-width: 769px) {
-  .flash-card {
+  @media (min-width: 769px) {
+    .flash-card {
       margin-top: 1.25em;
       padding: 60px;
+    }
   }
-}
