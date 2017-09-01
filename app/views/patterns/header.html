@@ -29,7 +29,7 @@
       </div>
       <details>
         <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/header-code.html" %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/header.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
