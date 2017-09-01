@@ -28,7 +28,7 @@
       </div>
       <details>
         <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/timeline-code.html" %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/timeline.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 

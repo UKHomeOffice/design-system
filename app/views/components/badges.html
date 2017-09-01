@@ -28,7 +28,7 @@
       </div>
       <details>
         <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% include "includes/components/badges-code.html" %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/badges.html" %}{% endfilter %}</code></pre>
       </details>
 
       <h2 class="heading-medium">Examples of badges in context</h2>
