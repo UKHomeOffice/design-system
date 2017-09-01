@@ -30,7 +30,7 @@
         <summary>Show code snippet</summary>
         <div class="grid-row">
           <div class="column-full">
-            <pre class="language-markup"><code class="language-markup">{% include "includes/patterns/navigation-code.html" %}</code></pre>
+            <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/navigation.html" %}{% endfilter %}</code></pre>
           </div>
         </div>
       </details>

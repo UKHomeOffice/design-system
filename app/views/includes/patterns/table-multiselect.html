@@ -1,14 +1,4 @@
-<!-- Set up some data to repeat in the table -->
-{% set users = [
-  { name: "Spider-Man" },
-  { name: "Captain Marvel" },
-  { name: "Hulk" },
-  { name: "Thor" },
-  { name: "Iron Man" },
-  { name: "Luke Cage" },
-  { name: "Black Widow" },
-  { name: "Daredevil" }
-] %}
+{% set users = [ { name: "Spider-Man" }, { name: "Captain Marvel" }, { name: "Hulk" }, { name: "Thor" }, { name: "Iron Man" }, { name: "Luke Cage" }, { name: "Black Widow" }, { name: "Daredevil" } ] %}
 
 <table class="table-clickable">
   <thead>
@@ -25,7 +15,7 @@
     </tr>
   </thead>
   <tbody>
-    {% for user in users|sort(attribute='name') %}
+    {% for user in users | sort(attribute = 'name') %}
       <tr>
         <td class="multiple-choice--hod">
           <div class="multiple-choice">

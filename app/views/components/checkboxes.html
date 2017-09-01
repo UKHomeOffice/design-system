@@ -28,7 +28,7 @@
       </div>
       <details>
         <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% include "includes/components/checkboxes-code.html" %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/checkboxes.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
