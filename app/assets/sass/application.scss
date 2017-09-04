@@ -120,6 +120,14 @@ div.header-global {
 	margin-right: .5em;
 }
 
+// Icon spacer
+.icon-medium {
+  font-size: 24px;
+  &:before {
+    vertical-align: bottom;
+    padding-bottom: 1em;
+  }
+}
 
 // HO logo
 #ho-logo {
@@ -196,6 +204,9 @@ div.header-global {
 .table-summary-content {
   font-size: 16px;
   font-weight: normal;
+  &--icons {
+    padding: 0.63158em 1.05263em 0.68em 0;
+  }
 }
 .table-summary-action {
   padding-right: 0;
