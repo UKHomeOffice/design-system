@@ -12,7 +12,6 @@
 [class^="hod-"], [class*=" hod-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'hod-font' !important;
-  font-size: 24px;
   speak: none;
   font-style: normal;
   font-weight: normal;
