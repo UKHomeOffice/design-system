@@ -12,12 +12,15 @@
  }
 
 .button-secondary {
-   @include button($panel-colour);
-   box-shadow: 0 1px 0 $black;
-   border: $black 1px solid;
- }
+  @include button($panel-colour);
+  box-shadow: 0 1px 0 $black;
+  border: $black 1px solid;
+  &[disabled]:active {
+    box-shadow: 0 0px 0 $black;    
+  }
+}
 
- .button-affordance {
+.button-affordance {
     @include button($panel-colour);
     padding: em(7) em(20) em(10) em(16);
     box-shadow: 0 1px 0 $black;
@@ -26,5 +29,8 @@
       &::before {
   		color: #555D5E;
   	}
+  }
+  &[disabled]:active {
+    box-shadow: 0 0px 0 $black;    
   }
 }
