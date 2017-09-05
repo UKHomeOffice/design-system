@@ -17,13 +17,23 @@
       <ul class="metadata">
         <li>Usage: internal</li>
         <li>Status: experimental</li>
-        <li>Last updated: 17 March 2017</li>
+        <li>Last updated: 5 September 2017</li>
       </ul>
 
       <h2 class="heading-medium" id="example-component">Example component</h2>
       <div class="example example-images">
         <div class="grid-row">
-          {% include "includes/components/buttons.html" %}
+          <div class="column-two-thirds">
+            <h3 class="heading-medium">Primary action</h3>
+            <p>Avoid using more than one button per page, where possible, use text links instead. </p>
+            {% include "includes/components/buttons.html" %}
+            <h3 class="heading-medium">Primary action (alternate)</h3>
+            <p>This is also a primary button, it should only be used on solid colour backgrounds when the level of contrast is strong enough (see <a href="../patterns/interruption-card">interruption card</a> and <a href="../patterns/confirm-pages">confirm pages</a>.)</p>
+            {% include "includes/components/button-primary-alt.html" %}
+            <h3 class="heading-medium">Secondary action</h3>
+            <p>Avoid using more than one button per page, where possible, use text links instead. </p>
+            {% include "includes/components/buttons-secondary.html" %}
+          </div>
         </div>
       </div>
       <details>
@@ -34,7 +44,7 @@
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>Define buttons types and how to use multiple buttons on a single screen</p>
+      <p>Define buttons types and how to use multiple buttons on a single screen. The affordance of <code>disabled</code> buttons was conflicting user expectations</p>
 
       <h2 class="heading-medium">Interaction principles</h2>
       <ul class="list list-bullet">
@@ -67,6 +77,8 @@
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
         <li>Application platform</li>
+        <li>Right to work</li>
+        <li>Home Office Communications</li>
       </ul>
 
     </div>
