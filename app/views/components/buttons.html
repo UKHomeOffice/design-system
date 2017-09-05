@@ -20,25 +20,49 @@
         <li>Last updated: 5 September 2017</li>
       </ul>
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <h2 class="heading-medium" id="example-component">Example components</h2>
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
             <h3 class="heading-medium">Primary action</h3>
             <p>Avoid using more than one button per page, where possible, use text links instead. </p>
             {% include "includes/components/buttons.html" %}
-            <h3 class="heading-medium">Primary action (alternate)</h3>
-            <p>This is also a primary button, it should only be used on solid colour backgrounds when the level of contrast is strong enough (see <a href="../patterns/interruption-card">interruption card</a> and <a href="../patterns/confirm-pages">confirm pages</a>.)</p>
-            {% include "includes/components/button-primary-alt.html" %}
-            <h3 class="heading-medium">Secondary action</h3>
-            <p>Avoid using more than one button per page, where possible, use text links instead. </p>
-            {% include "includes/components/buttons-secondary.html" %}
           </div>
         </div>
       </div>
       <details>
         <summary>Show code snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/buttons.html" %}{% endfilter %}</code></pre>
+      </details>
+
+      <div class="example example-images">
+        <div class="grid-row">
+          <div class="column-two-thirds">
+            <h3 class="heading-medium">Primary action (alternate)</h3>
+            <p>This is also a primary button, it should only be used on solid colour backgrounds when the level of contrast is strong enough (see <a href="../patterns/interruption-card">interruption card</a> and <a href="../patterns/confirm-pages">confirm pages</a>.)</p>
+            {% include "includes/components/button-primary-alt.html" %}
+          </div>
+        </div>
+      </div>
+      <details>
+        <summary>Show code snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/button-primary-alt.html" %}{% endfilter %}</code></pre>
+      </details>
+
+
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          <div class="column-two-thirds">
+            <h3 class="heading-medium">Secondary action</h3>
+            <p>Secondary buttons </p>
+            {% include "includes/components/buttons-secondary.html" %}
+          </div>
+        </div>
+      </div>
+      <details>
+        <summary>Show code snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/buttons-secondary.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
