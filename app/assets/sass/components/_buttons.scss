@@ -1,12 +1,30 @@
 // Pattern: buttons
 // Problem: Things need clicking
 
-.button-secondary {
+.button[disabled] {
+	box-shadow: 0 0px 0 #003618;
+}
+
+.button-white {
    @include button($white);
    box-shadow: 0 1px 0 $black;
    border: $black 1px solid;
  }
 
+.button-secondary {
+   @include button($panel-colour);
+   box-shadow: 0 1px 0 $black;
+   border: $black 1px solid;
+ }
+
  .button-affordance {
-  @include button($govuk-blue);
+    @include button($panel-colour);
+    padding: em(7) em(20) em(10) em(16);
+    box-shadow: 0 1px 0 $black;
+    border: $black 1px solid;
+    span[class^="hod-"] {
+      &::before {
+  		color: #555D5E;
+  	}
+  }
 }
