@@ -25,7 +25,7 @@
         <div class="grid-row">
           <div class="column-two-thirds">
             <h3 class="heading-medium">Primary action</h3>
-            <p>Avoid using more than one button per page, where possible, use text links instead. </p>
+            <p>This component continues from <a href="http://govuk-elements.herokuapp.com/buttons">GOV.UK elements</a>, the <code>disabled</code> button removes the affordance style.</p>
             {% include "includes/components/buttons.html" %}
           </div>
         </div>
@@ -55,7 +55,7 @@
         <div class="grid-row">
           <div class="column-two-thirds">
             <h3 class="heading-medium">Secondary action</h3>
-            <p>Secondary buttons </p>
+            <p>Services should avoid having multiple buttons on a page. Admin interfaces can occassionaly require additional actions on a screen, research with users to understand their needs.</p>
             {% include "includes/components/buttons-secondary.html" %}
           </div>
         </div>
@@ -68,7 +68,7 @@
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>Define buttons types and how to use multiple buttons on a single screen. The affordance of <code>disabled</code> buttons was conflicting user expectations</p>
+      <p>To define buttons types and when to use each type. We have included secondary buttons, for use on admin interfaces. Removing the affordance style from <code>disabled</code> buttons as well as adding opacity to show visually it can not be pressed.</p>
 
       <h2 class="heading-medium">Interaction principles</h2>
       <ul class="list list-bullet">
@@ -88,7 +88,7 @@
       <h2 class="heading-medium">Accessibility principles</h2>
       <ul class="list list-bullet">
         <li>buttons should have clear hover and focus states</li>
-        <li>use a 'button' tag with a role='button'</li>
+        <li>use a <code>button</code> tag with a <code>role='button'</code></li>
       </ul>
 
       <h2 class="heading-medium">User research</h2>
