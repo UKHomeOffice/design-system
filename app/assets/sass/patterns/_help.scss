@@ -59,3 +59,18 @@
     margin-bottom: 10px;
   }
 }
+
+
+@media (min-width: 641px) and (max-width: 916px) {
+  .help-wrapper {
+    left: 370px;
+  }
+
+}
+
+@media (max-width: 790px) {
+  .help-wrapper {
+    display: none;
+  }
+
+}
