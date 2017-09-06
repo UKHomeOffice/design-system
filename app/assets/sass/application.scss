@@ -70,6 +70,13 @@ a {
   margin-bottom: 0.55556em;
 }
 
+// footer
+
+
+.version {
+    padding-top: 15px;
+}
+
 // OVERRIDES
 // For service header pattern
 
@@ -232,11 +239,7 @@ div.header-global {
 // Footer
 #footer {
     background-color: $grey-3;
-    border-top: 10px solid $grey-1;
-}
-
-.footer-logo {
-  margin-top: 10px;
+    border-top: 8px solid $grey-1;
 }
 
 
