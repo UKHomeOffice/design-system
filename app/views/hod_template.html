@@ -69,25 +69,18 @@
     {% block content %}{% endblock %}
 
     <footer class="group js-footer" id="footer" role="contentinfo">
-
       <div class="footer-wrapper" style="padding:0;">
-        {% block footer_top %}{% include "includes/home_office_logo.html" %}{% endblock %}
+        <div class="version">
+          <p>Version 1.1 of the Home Office design system. Release notes can be found on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/releases" target="_blank">GitHub</a>.</p>
+        </div>
 
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
-            {% block footer_support_links %}{% endblock %}
+        <div>
+          {% include "includes/home_office_logo.html" %}
+        </div>
 
-            <div class="open-government-licence">
-              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
-
-                {% block licence_message %}<p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>{% endblock %}
-
-            </div>
-          </div>
-
-          <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">{{ crown_copyright_message|default('&copy; Crown copyright')|safe }}</a>
-          </div>
+        <div class="open-government-licence">
+          {% block footer_support_links %}{% endblock %}
+          {% block licence_message %}<p><a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">{{ crown_copyright_message|default('&copy; Crown copyright')|safe }}</a> - All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>{% endblock %}
         </div>
       </div>
     </footer>
