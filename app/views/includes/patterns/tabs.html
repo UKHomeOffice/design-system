@@ -1,76 +1,87 @@
 <form action="" method="" enctype="multipart/form-data">
-  <div class="grid-row">
-    <div class="column-one-third">
 
-      <!-- < CONTENT NAVIGATION > -->
-      <ul class="tab__nav">
-        <li>
-          <a href="#0" class="active" data-target="main-content">
-            Main content
-          </a>
-        </li>
-        <li>
-          <a href="#0" class="" data-target="hidden-content-1">
-            Hidden content #1
-          </a>
-        </li>
-        <li>
-          <a href="#0" class="" data-target="hidden-content-2">
-            Hidden content #2
-          </a>
-        </li>
-        <li class="locked">
-          Locked content (locked)
-        </li>
-        <li>
-          <hr style="margin:0">
-          <a href="#0" class="" data-target="hidden-content-3">
-            Hidden content of a different type
-          </a>
-        </li>
-      </ul>
-      <!-- </ CONTENT NAVIGATION > -->
-
+  <!-- Tab 1 -->
+  <div id="history" style="display:block;">
+    <div class="grid-row">
+      <div class="column-full">
+        <div class="section-tabs">
+          <ul>
+            <li class="active">
+              <a id="open-tab">Timeline</a>
+            </li>
+            <li>
+              <a id="closed-tab" onclick="show('application-form');hide('history');">Application</a>
+            </li>
+            <li>
+              <a id="closed-tab" onclick="show('options');hide('history');">Actions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="column-two-thirds">
-
-      <!-- < MAIN CONTENT > -->
-      <div class="tab__content" id="main-content">
-        <h3 class="bold-medium">Main content heading</h3>
-        <p>
-          A 19px body copy paragraph, maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
-        </p>
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <p>Timeline form</p>
       </div>
-      <!-- < / MAIN CONTENT > -->
+    </div>
 
-      <!-- < HIDDEN CONTENT 1 > -->
-      <div class="tab__content js-hidden" id="hidden-content-1">
-        <h3 class="bold-medium">Hidden content #1 heading</h3>
-        <p>
-          A 19px body copy paragraph, maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
-        </p>
+
+  </div>
+
+  <!-- Tab 2 -->
+  <div id="application-form" style="display:none;">
+
+    <div class="grid-row">
+      <div class="column-full">
+        <div class="section-tabs">
+          <ul>
+            <li>
+              <a id="closed-tab" onclick="hide('application-form');show('history');">Timeline</a>
+            </li>
+            <li class="active">
+              <a id="open-tab">Application</a>
+            </li>
+            <li>
+              <a id="closed-tab" onclick="show('options');hide('application-form');">Actions</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- </ HIDDEN CONTENT 1 > -->
+    </div>
 
-      <!-- < HIDDEN CONTENT 2 > -->
-      <div class="tab__content js-hidden" id="hidden-content-2">
-        <h3 class="bold-medium">Hidden content #2 heading</h3>
-        <p>
-          A 19px body copy paragraph, maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
-        </p>
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <p>Application form</p>
       </div>
-      <!-- </ HIDDEN CONTENT 2 > -->
-
-      <!-- < HIDDEN CONTENT OF A DIFFERENT TYPE > -->
-      <div class="tab__content js-hidden" id="hidden-content-3">
-        <h3 class="bold-medium">Hidden content of a different type heading</h3>
-        <p>
-          A 19px body copy paragraph, maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
-        </p>
-      </div>
-      <!-- </ HIDDEN CONTENT OF A DIFFERENT TYPE > -->
-
     </div>
   </div>
+
+  <!-- Tab 3 -->
+  <div id="options" style="display:none;">
+    <div class="grid-row">
+      <div class="column-full">
+        <div class="section-tabs">
+          <ul>
+            <li>
+              <a id="closed-tab" onclick="hide('options');show('history');">Timeline</a>
+            </li>
+            <li>
+              <a id="closed-tab" onclick="show('application-form');hide('options');">Application</a>
+            </li>
+            <li class="active">
+              <a id="open-tab">Actions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <p>Actions form</p>
+
+      </div>
+    </div>
+  </div>
+
 </form>

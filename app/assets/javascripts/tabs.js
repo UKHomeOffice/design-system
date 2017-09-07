@@ -15,3 +15,12 @@ $('ul.tab__nav--grey li a').click(function(){
     $('.tab__content').not(target).addClass('js-hidden');
     $(target).removeClass('js-hidden');
 });
+
+	function hide(id) {
+		var e = document.getElementById(id);
+		e.style.display = 'none';
+	}
+	function show(id) {
+		var e = document.getElementById(id);
+		e.style.display = 'block';
+	}
