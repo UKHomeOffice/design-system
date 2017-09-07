@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern - In-page tabs
+Pattern - In-page tabs
 {% endblock %}
 
 {% block content %}
@@ -20,7 +20,7 @@
         <li>Last updated: 28 June 2017</li>
       </ul>
 
-      <h2 class="heading-medium" id="example-component">Example</h2>
+      <h2 class="heading-medium" id="example-component">Horizontal tab</h2>
       <div class="example example-images">
         <div class="grid-row">
           {% include "includes/patterns/tabs.html" %}
@@ -31,12 +31,16 @@
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/tabs.html" %}{% endfilter %}</code></pre>
       </details>
 
-      <h2 class="heading-medium" id="example-component">Example when picking from a long list</h2>
+      <h2 class="heading-medium" id="example-component">Side tab</h2>
       <div class="example example-images">
         <div class="grid-row">
           {% include "includes/patterns/tabs-list.html" %}
         </div>
       </div>
+      <details>
+        <summary>Show code snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/tabs-list.html" %}{% endfilter %}</code></pre>
+      </details>
     </div>
 
     <div class="column-two-thirds">
@@ -57,6 +61,7 @@
       <h2 class="heading-medium">User research</h2>
       <p>Syrian refugee resettlement found no problems with the pattern. Users have a good understanding of what to expect from the tabs</p>
       <p>Application platform uses the pattern for long lists. When combined with a search, the pattern performs very well when users don't know the contents of the list.</p>
+      <p>Dyslexic users were ignoring the horizontal tab. So the line around the horizontal tabs were made thicker and the blue links were underlined to avoid this issue.</p>
 
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
