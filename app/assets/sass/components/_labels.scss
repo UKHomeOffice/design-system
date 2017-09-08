@@ -4,8 +4,6 @@
 
 @mixin label ($label-background: $panel-colour, $label-border: $secondary-text-colour, $label-text: $text-colour) {
     background: $label-background;
-    // border: 1px solid $label-border;
-    // border-radius: $border-radius;
     color: $white;
     display: inline-block;
     line-height: 1;
@@ -30,4 +28,10 @@
 
 .label--red {
     @include label($red, $red)
+}
+
+@media (max-width: 641px) {
+  .label, .label--white, .label--blue, .label--red {
+    font-size: 1.3rem;
+  }
 }
