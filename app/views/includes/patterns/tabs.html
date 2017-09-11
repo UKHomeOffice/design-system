@@ -1,55 +1,35 @@
 <form action="" method="" enctype="multipart/form-data">
 
-  <!-- Tab 1 -->
-  <div id="history" style="display:block;">
     <div class="grid-row">
       <div class="column-full">
         <div class="section-tabs">
-          <ul>
+          <ul class="tab__horizontal">
             <li class="active">
-              <a id="open-tab">Timeline</a>
+              <a data-target="timeline">Timeline</a>
             </li>
-            <li>
-              <a id="closed-tab" onclick="show('application-form');hide('history');">Application</a>
+            <li class="">
+              <a data-target="application">Application</a>
             </li>
-            <li>
-              <a id="closed-tab" onclick="show('options');hide('history');">Actions</a>
+            <li class="">
+              <a data-target="action">Actions</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="grid-row">
+  <!-- Tab 3 -->
+  <div id="timeline" class="tab__content-horizontal">
+    <div  class="grid-row">
       <div class="column-two-thirds">
         <p>Timeline form</p>
       </div>
     </div>
-
-
   </div>
 
-  <!-- Tab 2 -->
-  <div id="application-form" style="display:none;">
 
-    <div class="grid-row">
-      <div class="column-full">
-        <div class="section-tabs">
-          <ul>
-            <li>
-              <a id="closed-tab" onclick="hide('application-form');show('history');">Timeline</a>
-            </li>
-            <li class="active">
-              <a id="open-tab">Application</a>
-            </li>
-            <li>
-              <a id="closed-tab" onclick="show('options');hide('application-form');">Actions</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+  <!-- Tab 3 -->
+  <div id="application" class="tab__content-horizontal js-hidden">
     <div class="grid-row">
       <div class="column-two-thirds">
         <p>Application form</p>
@@ -58,28 +38,10 @@
   </div>
 
   <!-- Tab 3 -->
-  <div id="options" style="display:none;">
-    <div class="grid-row">
-      <div class="column-full">
-        <div class="section-tabs">
-          <ul>
-            <li>
-              <a id="closed-tab" onclick="hide('options');show('history');">Timeline</a>
-            </li>
-            <li>
-              <a id="closed-tab" onclick="show('application-form');hide('options');">Application</a>
-            </li>
-            <li class="active">
-              <a id="open-tab">Actions</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div id="action" class="tab__content-horizontal js-hidden">
     <div class="grid-row">
       <div class="column-two-thirds">
         <p>Actions form</p>
-
       </div>
     </div>
   </div>
