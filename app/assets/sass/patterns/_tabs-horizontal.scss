@@ -50,6 +50,7 @@
       background: $white;
       border: 2px solid $white;
       border-bottom: none;
+      cursor: pointer;
 
       &:hover, &:focus {
         background: $grey-3;
@@ -84,7 +85,6 @@
       border-color: $border-colour;
       color: $black;
       text-decoration: none;
-      cursor: hand;
 
       @include media(mobile) {
         border-bottom: 2px solid $border-colour;
@@ -106,7 +106,6 @@
       border-color: transparent;
       color: $grey-2;
       text-decoration: none;
-      cursor: hand;
     }
   }
 }
