@@ -18,13 +18,17 @@ ul.tab__nav {
     }
   }
 
+  a:visited {
+    color: $link-colour;
+  }
+
   .active:hover {
     background: $white;
     text-decoration: none;
   }
 
   li a:hover {
-    color: $link-hover-colour;
+    color: $link-colour;
     text-decoration: underline;
     background: $grey-3;
 
