@@ -67,7 +67,6 @@
           document.getElementById('enterEmail').style.display = "block";
           document.getElementById('confirmationSummary').style.display = "none";
         }
-
         function showDiv() {
           document.getElementById('sentEmail').style.display = "block";
           document.getElementById('confirmationSummary').style.display = "none";
@@ -77,18 +76,14 @@
           document.getElementById('enterEmail').style.display = "block";
           document.getElementById('yourEmail').value = "";
         }
-
         function whoYouSending(){
-            var product = document.getElementById("yourEmail").value;
-            document.getElementById('coolCompany').innerHTML = product;
+          var product = document.getElementById("yourEmail").value;
+          document.getElementById('coolCompany').innerHTML = product;
         }
-        whoYouSending();
-
-        function whoYouSending1(){
-            var product1 = document.getElementById("yourEmail").value;
-            document.getElementById('sentAddress').innerHTML = product1;
+        function whoYouSent(){
+          var product1 = document.getElementById("yourEmail").value;
+          document.getElementById('sentAddress').innerHTML = product1;
         }
-        whoYouSending1();
-
       </script>
+      
 {% endblock %}
