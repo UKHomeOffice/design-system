@@ -52,12 +52,6 @@
       border-bottom: none;
       cursor: pointer;
 
-      &:hover, &:focus {
-        background: $grey-3;
-        color:$link-colour;
-        text-decoration: underline;
-      }
-
       @include media(mobile) {
         @include core-16;
         border-bottom: 2px solid $border-colour;
