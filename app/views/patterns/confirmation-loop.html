@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pattern - Confirmation loop
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Confirmation loop</h1>
+      <p class="lede">An interaction that confirms the input a user has entered is correct.</p>
+      <ul class="metadata">
+        <li>Usage: internal/external</li>
+        <li>Status: experimental</li>
+        <li>Last updated: 11 September 2017</li>
+      </ul>
+
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/patterns/confirmation-loop.html" %}
+        </div>
+      </div>
+      <details>
+        <summary>Show code snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/confirmation-loop.html" %}{% endfilter %}</code></pre>
+      </details>
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Why have we created this pattern?</h2>
+      <p>A confirmation loop is a proposed solution to confirming a single piece of important information, for example, is this the right amount, is this the correct address, before allowing the user to complete.</p>
+
+      <h2 class="heading-medium">Interaction principles</h2>
+      <p>The field should have validation. Users shouldn't be asked to reinput the same information twice.</p>
+      <p>Only use the confirmation loop for a single input field. Only use the input when there is an immediate subsequent action, for instance the email will be sent straight away. Don't use if you are using task list or check your answers page.</p>
+
+
+      <h2 class="heading-medium">User research</h2>
+      <p>Research around interaction conducted, with no issues. No research on whether the process improves quality and accuracy of data input</p>
+
+      <h2 class="heading-medium">Accessibility principles</h2>
+      <p>Work has been done to make the confirmation loop accessible but it still relies on in page loading.</p>
+
+      <h2 class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Right to work</li>
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+<!-- End code share -->
+
+        <script>
+        function showConfirmation() {
+          document.getElementById('confirmationSummary').style.display = "block";
+          document.getElementById('enterEmail').style.display = "none";
+        }
+        function cancelConfirmation() {
+          document.getElementById('enterEmail').style.display = "block";
+          document.getElementById('confirmationSummary').style.display = "none";
+        }
+
+        function showDiv() {
+          document.getElementById('sentEmail').style.display = "block";
+          document.getElementById('confirmationSummary').style.display = "none";
+        }
+        function hideAlert() {
+          document.getElementById('sentEmail').style.display = "none";
+          document.getElementById('enterEmail').style.display = "block";
+          document.getElementById('yourEmail').value = "";
+        }
+
+        function whoYouSending(){
+            var product = document.getElementById("yourEmail").value;
+            document.getElementById('coolCompany').innerHTML = product;
+        }
+        whoYouSending();
+
+        function whoYouSending1(){
+            var product1 = document.getElementById("yourEmail").value;
+            document.getElementById('sentAddress').innerHTML = product1;
+        }
+        whoYouSending1();
+
+      </script>
+{% endblock %}
