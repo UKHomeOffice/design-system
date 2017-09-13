@@ -1,118 +1,118 @@
-// Pattern: horizontal tab
-
 .section-tabs {
 
-  a:visited {
-    color: $link-colour;
-  }
+        a:visited {
+            color: $link-colour;
+        }
 
-  a:hover{
-    color: $link-hover-colour;
-    text-decoration: underline;
-  }
+        a:hover{
+            color: $link-colour;
+            text-decoration: underline;
+        }
 
-  @extend %contain-floats;
-  border-bottom: 2px solid $border-colour;
-  margin: $gutter * 2 0 $gutter;
-
-  @include media(mobile) {
-    border-bottom: none;
-    margin: $gutter 0;
-  }
-
-  ul.tab__horizontal {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    zoom: 1;
-
-    li {
-      display: inline-block;
-      background-color: #fff;
-      border: 2px solid #fff;
-      border-radius: 0;
-      border-bottom: 0;
-      padding: 20px 20px;
-      margin: 0;
-      cursor: pointer;
-      float: left;
-      margin-right: 12px;
-      margin-top: 2px;
-      position: relative;
-
-      &:focus {
-        outline: 3px solid #ffbf47;
-      }
-
-      @include media(mobile) {
-        float: none;
-        display: block;
-      }
-    }
-
-    a {
-      @include core-19;
-      color:$link-colour;
-      font-weight: 300;
-      display: block;
-      overflow: hidden;
-      margin: 5px 2px 6px 0;
-      padding: 5px 0;
-      text-decoration: underline;
-      background: $white;
-      border: 2px solid $white;
-      border-bottom: none;
-      cursor: pointer;
-
-      @include media(mobile) {
-        @include core-16;
+        @extend %contain-floats;
         border-bottom: 2px solid $border-colour;
-        width: 98.5%;
-        @include calc(width, "100% - 10px");
-        margin: 5px 0 0 0;
-        padding: 5px 0 5px 5px;
-        text-decoration: underline;
-        font-weight: normal;
-      }
+        margin: $gutter * 2 0 $gutter;
 
-      @include media(tablet) {
-        padding: 10px 15px;
-      }
+        @include media(mobile) {
+            border-bottom: none;
+            margin: $gutter 0;
+        }
 
-      @include ie(6) {
-        float: left;
-      }
+        ul.tab__horizontal {
+            position: relative;
+            top: 2px;
+            margin: -2px 0 0 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 0;
+                float: left;
+                display: inline;
+                list-style: none;
+                outline: none;
+
+                &:focus {
+                  border: solid #ffbf47;
+                  border-width: 2px 2px 0 2px;
+                }
+
+                @include media(mobile) {
+                    float: none;
+                    display: block;
+                }
+            }
+
+            a {
+                @include core-19;
+                font-weight: 400;
+                display: block;
+                color: $link-colour;
+                overflow: hidden;
+                margin: 5px 2px 6px 0;
+                padding: 5px 0;
+                text-decoration: underline;
+                background: $white;
+                border: 2px solid $white;
+                border-bottom: none;
+                cursor: pointer;
+
+                &:hover, &:focus {
+                    background: $grey-3;
+                    color:$link-colour;
+                    text-decoration: underline;
+                }
+
+                @include media(mobile) {
+                    @include core-16;
+                    border-bottom: 2px solid $border-colour;
+                    width: 98.5%;
+                    @include calc(width, "100% - 10px");
+                    margin: 5px 0 0 0;
+                    padding: 5px 0 5px 5px;
+                    text-decoration: underline;
+                    font-weight: normal;
+                }
+
+                @include media(tablet) {
+                    padding: 10px 15px;
+                }
+
+                @include ie(6) {
+                    float: left;
+                }
+            }
+
+             li.active a {
+                background: $white;
+                margin: 0 2px 0 0;
+                border-color: $border-colour;
+                color: $black;
+                font-weight: 700;
+                text-decoration: none;
+                cursor: pointer;
+
+                @include media(mobile) {
+                    border-bottom: 2px solid $border-colour;
+                    width: 98.5%;
+                    @include calc(width, "100% - 10px");
+                    padding: 5px 0 5px 5px;
+                    margin: 5px 0 0 0;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                @include media(tablet) {
+                    padding: 15px 15px 16px ;
+                }
+            }
+
+            li.disabled a {
+                background: $white;
+                border-color: transparent;
+                color: $grey-2;
+                text-decoration: none;
+                cursor: default;
+            }
+        }
     }
-
-    li.active a {
-      background: $white;
-      margin: 0 2px 0 0;
-      font-weight: 700;
-      border-color: $border-colour;
-      color: $black;
-      text-decoration: none;
-
-      @include media(mobile) {
-        border-bottom: 2px solid $border-colour;
-        width: 98.5%;
-        @include calc(width, "100% - 10px");
-        padding: 5px 0 5px 5px;
-        margin: 5px 0 0 0;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      @include media(tablet) {
-        padding: 15px 15px 16px ;
-      }
-    }
-
-    li.disabled a {
-      background: $white;
-      border-color: transparent;
-      color: $grey-2;
-      text-decoration: none;
-    }
-  }
-}
