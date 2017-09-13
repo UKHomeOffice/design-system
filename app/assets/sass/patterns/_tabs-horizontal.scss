@@ -20,18 +20,26 @@
     margin: $gutter 0;
   }
 
-  ul {
-    position: relative;
-    top: 2px;
-    margin: -2px 0 0 0;
+  ul.tab__horizontal {
+    list-style: none;
+    margin: 0;
     padding: 0;
+    width: 100%;
+    zoom: 1;
 
     li {
+      display: inline-block;
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-radius: 0;
+      border-bottom: 0;
+      padding: 20px 20px;
       margin: 0;
-      padding: 0;
+      cursor: pointer;
       float: left;
-      display: inline;
-      list-style: none;
+      margin-right: 12px;
+      margin-top: 2px;
+      position: relative;
 
       &:focus {
         outline: 3px solid #ffbf47;
@@ -56,7 +64,7 @@
       border: 2px solid $white;
       border-bottom: none;
       cursor: pointer;
-      
+
       @include media(mobile) {
         @include core-16;
         border-bottom: 2px solid $border-colour;
