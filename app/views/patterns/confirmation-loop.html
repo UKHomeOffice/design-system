@@ -12,7 +12,7 @@
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">Confirmation loop</h1>
+      <h1 class="heading-section">Confirmation</h1>
       <p class="lede">An interaction that confirms the input a user has entered is correct.</p>
       <ul class="metadata">
         <li>Usage: internal/external</li>
@@ -20,70 +20,46 @@
         <li>Last updated: 11 September 2017</li>
       </ul>
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
-      <div class="example example-images">
-        <div class="grid-row">
-          {% include "includes/patterns/confirmation-loop.html" %}
-        </div>
+      <div class="example example-images confirmation">
+        <h2 class="heading-small" id="example-component">The pattern</h2>
+        <img src="{{ asset_path }}/images/confirmation-desktop.svg" class=" confirm-desktop" alt="A diagram of the confirmation pattern showing three steps. Step 1 shows an input field. Step 2 shows a confirmation box with the users input, a button to confirm and a link to cancel. Step 3 shows confirmation the interaction is complete.">
+        <img src="{{ asset_path }}/images/confirmation-mobile.svg" class="confirmation confirm-mobile" alt="A diagram of the confirmation pattern showing three steps. Step 1 shows an input field. Step 2 shows a confirmation box with the users input, a button to confirm and a link to cancel. Step 3 shows confirmation the interaction is complete.">
       </div>
-      <details>
-        <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/confirmation-loop.html" %}{% endfilter %}</code></pre>
-      </details>
     </div>
 
     <div class="column-two-thirds">
-      <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>A confirmation loop is a proposed solution to confirming a single piece of important information, for example, is this the right amount, is this the correct address, before allowing the user to complete.</p>
+      <h2 class="heading-medium">What is a confirmation?</h2>
+      <p>A confirmation loop is an interaction that asks the the user to confirm before completing an action or transaction.</p>
 
-      <h2 class="heading-medium">Interaction principles</h2>
-      <p>The field should have validation. Users shouldn't be asked to reinput the same information twice.</p>
-      <p>Only use the confirmation loop for a single input field. Only use the input when there is an immediate subsequent action, for instance the email will be sent straight away. Don't use if you are using task list or check your answers page.</p>
+      <p>Confirmation may be needed where the action is final and a mistake is not rectifiable leaving the user at a loss if the information/action is entered or chosen incorrectly.</p>
 
-
-      <h2 class="heading-medium">User research</h2>
-      <p>Research around interaction conducted, with no issues. No research on whether the process improves quality and accuracy of data input</p>
-
-      <h2 class="heading-medium">Accessibility principles</h2>
-      <p>Work has been done to make the confirmation loop accessible but it still relies on in page loading.</p>
-
-      <h2 class="heading-medium">Services using this pattern</h2>
+      <h2 class="heading-medium">Guidance</h2>
+      <h3 class="heading-small">It should </h3>
       <ul class="list list-bullet">
-        <li>Right to work</li>
+        <li>be used to confirm a single input or action</li>
+        <li>be used when the action is not rectifiable</li>
+        <li>be used when the completion immediately starts a process</li>
+        <li>not be used to agree to terms and conditions</li>
+        <li>not be used if you can change your action/input later</li>
+        <li>be entirely accessible</li>
+        <li>work without javascript being enabled</li>
+      </ul>
+
+      <h3 class="heading-small">The confirmation should be</h3>
+      <ul class="list list-bullet">
+        <li>meaningful</li>
+        <li>use the same language as the requested action</li>
+        <li>able to be cancelled and the input/action changed</li>
+      </ul>
+
+      <h2 class="heading-medium">Interactions using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Entering a recipients email address</li>
       </ul>
 
     </div>
   </div>
 </main>
 
-<!-- End code share -->
 
-        <script>
-        function showConfirmation() {
-          document.getElementById('confirmationSummary').style.display = "block";
-          document.getElementById('enterEmail').style.display = "none";
-        }
-        function cancelConfirmation() {
-          document.getElementById('enterEmail').style.display = "block";
-          document.getElementById('confirmationSummary').style.display = "none";
-        }
-        function showDiv() {
-          document.getElementById('sentEmail').style.display = "block";
-          document.getElementById('confirmationSummary').style.display = "none";
-        }
-        function hideAlert() {
-          document.getElementById('sentEmail').style.display = "none";
-          document.getElementById('enterEmail').style.display = "block";
-          document.getElementById('yourEmail').value = "";
-        }
-        function whoYouSending(){
-          var product = document.getElementById("yourEmail").value;
-          document.getElementById('coolCompany').innerHTML = product;
-        }
-        function whoYouSent(){
-          var product1 = document.getElementById("yourEmail").value;
-          document.getElementById('sentAddress').innerHTML = product1;
-        }
-      </script>
-      
 {% endblock %}
