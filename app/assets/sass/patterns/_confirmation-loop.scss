@@ -1,0 +1,25 @@
+// for new pattern style, media based image
+
+.confirmation {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.confirm-desktop{
+  display: block;
+}
+
+.confirm-mobile{
+   display: none;
+}
+
+@media screen and ( max-width: 640px ) {
+   .confirm-desktop{
+     display: none;
+   }
+
+   .confirm-mobile{
+     display: block;
+   }
+}
