@@ -50,29 +50,29 @@ $box-shadow:	    0 2px 10px rgba($text-colour, 0.5);
 .mb-30 {
   margin-bottom: 30px;
 }
-//////////
-
-
-
 a {
   text-decoration-skip: ink !important;
 }
 
-
-
-
-
 .heading-section {
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1.2;
   font-weight: 700;
   margin-top: 1em;
   margin-bottom: 0.55556em;
 }
 
+// Banner
+
+.banner {
+  margin: 40px 0 40px;
+
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+
 // footer
-
-
 .version {
     padding-top: 15px;
 }
@@ -136,8 +136,6 @@ a {
   }
 }
 
-
-
 // General changes to prototype kit
 // Global Header
 #global-header-bar {
@@ -152,10 +150,6 @@ div.header-global {
 	display: inline-block ;
 	float: left;
 }
-
-
-
-
 
 // Header navigation button
 #global-header .header-proposition #proposition-menu {
@@ -200,7 +194,6 @@ div.header-global {
 	padding-top: 20px;
 }
 
-
 // Let's make a coloured row mixin
 // should we move mixins to somewhere else?
 @mixin hod-row ($color) {
@@ -241,7 +234,6 @@ div.header-global {
     background-color: $grey-3;
     border-top: 8px solid $grey-1;
 }
-
 
 /* Additional styles for mockup */
 /* Tables */
@@ -336,7 +328,6 @@ code {
 }
 
 // Sections at the top pages
-
 .content-width {
   @extend %site-width-container;
   @extend %contain-floats;
@@ -361,10 +352,9 @@ code {
 }
 
 // Metadata for the status of patterns
-
 .metadata {
   font-size: 16px;
-  color: #555;
+  color: #454545;
   display: flex;
   li {
     padding-right: 35px;
@@ -373,11 +363,11 @@ code {
 
 @media screen and (max-width: 640px ) {
 
-    .full-width {
-      font-size: 16px;
-    }
+  .full-width {
+    font-size: 16px;
+  }
 
-    .metadata {
-        display: inline;
-    }
+  .metadata {
+      display: inline;
+  }
 }
