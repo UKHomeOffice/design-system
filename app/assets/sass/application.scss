@@ -65,7 +65,7 @@ a {
 // Banner
 
 .banner {
-  margin: 40px 0 40px;
+  margin: 40px 0 20px;
 
   p {
     margin-bottom: 0.5em;
@@ -359,6 +359,14 @@ code {
   li {
     padding-right: 35px;
   }
+}
+
+@media screen and (max-width: 640px ) {
+  .metadata {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
 }
 
 @media screen and (max-width: 640px ) {
