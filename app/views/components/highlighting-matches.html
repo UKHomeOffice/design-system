@@ -12,20 +12,30 @@
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">Highlighted search matches</h1>
-      <p class="lede">Highlighting helps users identify matching data.</p>
-      <ul class="metadata">
-        <li>Usage: external/internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 28 June 2017</li>
-      </ul>
+      <div class="banner" role="banner">
+        <h1 class="heading-section">Highlighted search matches</h1>
+        <p class="lede">Highlighting helps users identify matching data.</p>
+        <ul class="metadata">
+          <li>Usage: external/internal</li>
+          <li>Status: experimental</li>
+          <li>Last updated: 28 June 2017</li>
+        </ul>
+      </div>
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <h2 class="visually-hidden" id="example-component">Example highlighting component</h2>
       <div class="example example-images">
         <div class="grid-row">
           {% include "includes/components/highlighting.html" %}
         </div>
       </div>
+      <details>
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/highlighting.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details>
+        <summary>Show SCSS snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{{'./app/assets/sass/components/_highlights.scss' | fileInclude }}</code></pre>
+      </details>
     </div>
 
     <div class="column-two-thirds">
