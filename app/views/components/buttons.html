@@ -12,22 +12,21 @@
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">Buttons</h1>
-      <p class="lede">Use a button when a user needs to take an action, submit data, or make a change to the page.</p>
+      <div class="banner" role="banner">
+        <h1 class="heading-section">Buttons</h1>
+        <p class="lede">Use a button when a user needs to take an action, submit data, or make a change to the page. For navigation use a text link instead.</p>
+        <ul class="metadata">
+          <li>Usage: internal</li>
+          <li>Status: experimental</li>
+          <li>Last updated: 11 September 2017</li>
+        </ul>
+      </div>
 
-      For navigation use a text link instead.</p>
-      <ul class="metadata">
-        <li>Usage: internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 11 September 2017</li>
-      </ul>
-
-      <h2 class="heading-medium" id="example-component">Example components</h2>
+      <h2 class="heading-medium" id="example-component">Primary action</h2>
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            <h3 class="heading-medium">Primary action</h3>
-            <p>This component is taken from <a href="http://govuk-elements.herokuapp.com/buttons">GOV.UK elements</a>. The <code>disabled</code> button removes the affordance style.</p>
+            <!-- <p>This component is taken from <a href="http://govuk-elements.herokuapp.com/buttons">GOV.UK elements</a>. The <code>disabled</code> button removes the affordance style.</p> -->
             {% include "includes/components/buttons.html" %}
           </div>
         </div>
@@ -37,10 +36,10 @@
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/buttons.html" %}{% endfilter %}</code></pre>
       </details>
 
+      <h2 class="heading-medium" id="example-component">Primary action (solid colour background)</h2>
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            <h3 class="heading-medium">Primary action (alternate)</h3>
             <p>This is also a primary action button. It should be used only on solid colour backgrounds and when contrast is high enough to maintain accessibility (see <a href="../patterns/interruption-card">interruption card</a> and <a href="../patterns/confirm-pages">confirm pages</a>).</p>
             {% include "includes/components/button-primary-alt.html" %}
           </div>
@@ -52,11 +51,10 @@
       </details>
 
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <h2 class="heading-medium" id="example-component">Secondary action</h2>
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            <h3 class="heading-medium">Secondary action</h3>
             <p>Services should avoid having multiple buttons on a page. Admin interfaces occasionally need several actions on a single page: validate this requirement with user research.</p>
             {% include "includes/components/buttons-secondary.html" %}
           </div>
