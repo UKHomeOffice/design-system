@@ -1,7 +1,3 @@
-// Pattern: labels
-// Problem: add classification or ownership
-
-
 @mixin label ($label-background: $panel-colour, $label-border: $secondary-text-colour, $label-text: $text-colour) {
     background: $label-background;
     color: $white;
