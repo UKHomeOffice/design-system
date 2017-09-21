@@ -27,33 +27,20 @@
           {% include "includes/components/radios.html" %}
         </div>
       </div>
+      <details>
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/radios.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details>
+        <summary>Show SCSS snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{{'./app/assets/sass/components/_radios.scss' | fileInclude }}</code></pre>
+      </details>
 
     </div>
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why have we created this pattern?</h2>
       <p>GOV.UK styling for radio buttons might not always be appropriate for multi-use interfaces.</p>
-
-      <!-- <h2 class="heading-medium">Interaction principles</h2>
-      <ul class="list list-bullet">
-        <li>buttons should look like buttons</li>
-        <li>buttons need to have a good level of affordance, so that users know that something meaningful will happen if they click a button</li>
-        <li>buttons can have an icon to further support their action or state</li>
-        <li>don't make things that aren't buttons look like buttons</li>
-        <li>avoid secondary actions unless you see a need for one in research</li>
-        <li>primary actions should be aligned with input fields to increase completion rates</li>
-      </ul>
-
-      <h2 class="heading-medium">Content principles</h2>
-      <ul class="list list-bullet">
-        <li>label buttons with what they do</li>
-      </ul>
-
-      <h2 class="heading-medium">Accessibility principles</h2>
-      <ul class="list list-bullet">
-        <li>buttons should have clear hover and focus states</li>
-        <li>use a 'button' tag with a role='button'</li>
-      </ul> -->
 
       <h2 class="heading-medium">User research</h2>
       <ul class="list">
