@@ -23,6 +23,12 @@
           desc: "used when a user needs to take an action, submit data, or make a change to the page"
         },
         {
+          name: "Tabs",
+          link: "/components/tabs",
+          label: "experimental",
+          desc: "switch between views of grouped content or hide content that doesn't always need to be shown"
+        },
+        {
           name: "Confirmation pages",
           link: "/components/confirm-pages",
           label: "Experimental",
@@ -97,7 +103,7 @@
               </tr>
             {% endif %}
           {% endfor %}
-          {% for component in components|sort(attribute='label') %}
+          {% for component in components|sort(attribute='label')|sort(attribute='name') %}
             {% if component.label|lower == 'experimental' %}
               <tr>
                 <td><a href="{{ component.link }}">{{ component.name|capitalize  }}</a></td>
