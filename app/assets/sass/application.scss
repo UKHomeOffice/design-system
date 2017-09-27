@@ -293,6 +293,21 @@ code {
     font-size: 16px;
 }
 
+details {
+  background-color: #ebebeb;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+details summary {
+  padding-left: 10px;
+}
+
+pre.language-markup  {
+    border: 2px solid #ebebeb!important;
+    background: #FFF!important;
+}
+
 .example {
     padding-top: 45px;
     padding-right: 30px;
@@ -302,9 +317,9 @@ code {
 .example {
     position: relative;
     overflow: hidden;
-    border: 1px solid $grey-3;
+    border: 2px solid $grey-3;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 30px;
 	&:before {
 	    content: "EXAMPLE";
@@ -318,8 +333,8 @@ code {
 	    font-size: 12px;
 	    font-weight: bold;
 	    line-height: 1.25;
-	    background: #bfc1c3;
-	    color: white;
+	    background: $grey-3;
+	    color: black;
 	}
 }
 
