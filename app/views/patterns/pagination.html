@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern - Modal window
+  Pattern - Pagination
 {% endblock %}
 
 {% block content %}
@@ -13,11 +13,48 @@
   <div class="grid-row">
     <div class="column-full">
       <h1 class="heading-section">Pagination</h1>
-      <p class="lede">A control allowing you to navigate through multiple pages.Pagination can apply to content (as in guidance pages) or filtering search results.</p>
+      <p class="lede">A control to navigate through multiple pages when filtering search results.</p>
       <ul class="metadata">
-        <li>Usage: internal, external</li>
+        <li>Usage: internal</li>
         <li>Status: experimental</li>
-        <li>Last updated: 7 September 2017</li>
+        <li>Last updated: 8 September 2017</li>
+      </ul>
+
+
+
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Design it so you don’t need pagination</h2>
+      <p>Pagination  hides content from the user. It can display a lot of unhelpful information that gets in the way to what the users are looking for. This may indicate the design isn’t working.</p>
+
+      <h2 id="interaction" class="heading-medium">Interaction principles</h2>
+      <p>You can avoid pagination by:</p>
+      <ul class="list list-bullet">
+        <li>setting the default number of results per page (try 50 items per page, although do test with users to get it right for that service)</li>
+        <li>avoid infinite scrolling as this is problematic for keyboard-only users</li>
+      </ul>
+
+      <h2 id="documentation" class="heading-medium">Content principles</h2>
+      <p>Consider what the sorting order should be to make the search more relevant. The more specific it is to the user's search criteria, the better the search results.</p>
+
+      <h2 id="research" class="heading-medium">User research</h2>
+      [Do we have any user research?]
+
+      <h2 class="heading-medium">Services using non-paginated search results</h2>
+      <ul class="list list-bullet">
+        <li>Returns and movement</li>
+        <li>Passport application search</li>
+      </ul>
+
+      <h2 id="inclusive" class="heading-medium">If you do require pagination, ensure that:</h2>
+      <ul class="list list-bullet">
+        <li>there is good colour contrast</li>
+        <li>font size is legible</li>
+        <li>large clickable hit areas are provided and are clearly spaced out</li>
+        <li>current page is clearly identified</li>
+        <li>set a maximum list of 5 pages</li>
+        <li>provide 'previous' and 'next' links, don't rely on icons alone</li>
       </ul>
 
       <h2 class="heading-medium" id="example-component">Example component</h2>
@@ -28,60 +65,10 @@
       </div>
       <details>
         <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/modal.html" %}{% endfilter %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/pagination.html" %}{% endfilter %}</code></pre>
       </details>
 
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>This has been seen in a few internal and external services and we need to identify its purpose: either navigating between content or filtering search results and standardise it for the relevant usage. </p>
-
-      <h2 id="interaction" class="heading-medium">Interaction principles</h2>
-      <ul class="list list-bullet">
-        <li>try to make it so people don't need pagination either by setting the default number of results per page so that pagination is rarely needed (about 25-75 results per page).</li>
-        <li>identify what the sorting order should be: is it the most relevant/useful match at the top? What’s been recently modified?</li>
-        <li>provide large clickable hit areas and adequate spacing between pages</li>
-        <li>clearly identify current page</li>
-        <li>provide previous and next links, don’t rely on only arrows</li>
-      </ul>
-
-      <h2 id="documentation" class="heading-medium">Content principles</h2>
-      <p>The content that opens the modal window (for example, anchor text) should explain to the user what will happen.</p>
-      <p>The content of the modal window should be focused on the single task and should not add unnecessary detail.<p>
-      <p>The content should be consistent with the referring page so that the user is not confused. </p>
-      <p>The modal window should have a clear main heading.</p>
-
-
-      <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
-      <ul class="list list-bullet">
-        <li>ensure there is sufficient colour contrast</li>
-        <li>avoid infinite scrolling as this causes issues for keyboard only users</li>
-        <li>font size is legible</li>
-        <li>provide large clickable hit areas and adequate spacing between pages</li>
-        <li>clearly identify current page</li>
-        <li>provide previous and next links, don’t rely on only arrows</li>
-      </ul>
-
-      <h2 id="research" class="heading-medium">User research</h2>
-      [Do we have any user research?]
-      <!-- <p>encourages focus</p>
-      <p>complicated interactions within the modal dissorientate</p>
-      <p>multiple modals create confusion</p> -->
-      <p>test this version (CSS only) with form content</p>
-
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
-        <!-- <li>Application</li> What is Application?-->
-        <li>Employers Checking Service</li>
-        <li>Passport renewals (timeout)</li>
-      </ul>
-
-      <!-- TO DO -->
-      <h2 class="heading-medium rule-above">Things to do</h2>
-      <ul class="list list-bullet">
-        <li>standardise patterns for both content and search</li>
-      </ul>
     </div>
   </div>
 </main>
