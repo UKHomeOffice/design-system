@@ -30,3 +30,46 @@
 .padding {
   padding-left: 15px;
 }
+
+
+
+
+.pagination {
+  padding: 0;
+}
+  .pagination__item {
+    display: inline-block;
+    list-style: none;
+  }
+  .pagination__link {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid $border-colour;
+
+    &:hover, &:focus {
+      background: $highlight-colour;
+      outline: 3px solid $focus-colour;
+    }
+
+    &.current {
+      color: $text-colour;
+      font-weight: 700;
+      border: none;
+      pointer-events: none;
+      cursor: default;
+
+      &:hover, &:focus {
+        color: $text-colour;
+        background: none;
+      }
+    }
+  }
+
+  .pagination__summary {
+    padding: 8px 0  ;
+
+    @media (min-width: 642px) {
+      float: right;
+    }
+  }
