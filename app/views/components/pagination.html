@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern - Pagination
+  Components - Pagination
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
+{% set active = "components" %}
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
@@ -65,17 +65,18 @@
       <h2 class="heading-medium" id="example-component">Example component</h2>
       <div class="example example-images">
         <div class="grid-row">
-          {% include "includes/patterns/pagination.html" %}
+          {% include "includes/components/pagination.html" %}
         </div>
       </div>
       <details>
         <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/pagination.html" %}{% endfilter %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/pagination.html" %}{% endfilter %}</code></pre>
       </details>
 
 
     </div>
   </div>
 </main>
+
 
 {% endblock %}
