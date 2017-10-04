@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Components - Pagination
+{% endblock %}
+
+{% block content %}
+
+{% set active = "components" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Pagination</h1>
+      <p class="lede">A control to navigate through multiple pages when filtering search results.</p>
+      <ul class="metadata">
+        <li>Usage: internal</li>
+        <li>Status: experimental</li>
+        <li>Last updated: 4 October 2017</li>
+      </ul>
+
+
+
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Design it so you don’t need pagination</h2>
+      <p>Pagination  hides content from the user. It can display a lot of unhelpful information that gets in the way to what the users are looking for. This may indicate the design isn’t working.</p>
+
+      <h2 id="interaction" class="heading-medium">Interaction principles</h2>
+      <p>You can avoid pagination by:</p>
+      <ul class="list list-bullet">
+        <li>setting the default number of results per page (try 50 items per page, although do test with users to get it right for that service)</li>
+        <li>avoid infinite scrolling as this is problematic for keyboard-only users</li>
+      </ul>
+
+      <h2 id="documentation" class="heading-medium">Content principles</h2>
+      <p>Consider what the sorting order should be to make the search more relevant. The more specific it is to the user's search criteria, the better the search results.</p>
+
+      <h2 class="heading-medium">User research</h2>
+      <ul class="list list-bullet">
+        <li>No research done yet</li>
+      </ul>
+
+      <h2 class="heading-medium">Services using non-paginated search results</h2>
+      <ul class="list list-bullet">
+        <li>Returns and movement</li>
+        <li>Passport application search</li>
+      </ul>
+
+      <h2 id="inclusive" class="heading-medium">If you do require pagination, ensure that:</h2>
+      <ul class="list list-bullet">
+        <li>there is good colour contrast</li>
+        <li>font size is legible</li>
+        <li>large clickable hit areas are provided and are clearly spaced out</li>
+        <li>current page is clearly identified</li>
+        <li>set a maximum list of 5 pages</li>
+        <li>provide 'previous' and 'next' links, don't rely on icons alone</li>
+      </ul>
+    </div>
+
+    <div class="column-full">
+
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/pagination.html" %}
+        </div>
+      </div>
+      <details>
+        <summary>Show code snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/pagination.html" %}{% endfilter %}</code></pre>
+      </details>
+
+
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
