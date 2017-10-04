@@ -10,19 +10,21 @@ Pattern - Case summary
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Case summary</h1>
+    <p class="lede">A default view of a case in a caseworking system.</p>
+    <ul class="metadata">
+      <li>Usage: internal</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 1 September 2017</li>
+    </ul>
+  </div>
+
   <div class="grid-row">
 
     <div class="column-full">
-      <h1 class="heading-section">Case summary</h1>
-      <p class="lede">A default view of a case in a caseworking system.</p>
-      <ul class="metadata">
-        <li>Usage: internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 1 September 2017</li>
-      </ul>
-
-      <h2 class="heading-medium" id="example-component">Example component</h2>
-      <div class="example example-images">
+      <div class="example example-images" id="example-component">
         <div class="grid-row">
           {% include "includes/patterns/case-summary.html" %}
         </div>
@@ -44,6 +46,11 @@ Pattern - Case summary
         <li>Research</li>
       </ul>
 
+    </div>
+
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/37">Discuss this pattern on GitHub</a>
     </div>
   </div>
 </main>

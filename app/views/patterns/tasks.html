@@ -10,18 +10,21 @@
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Task checklist</h1>
+    <p class="lede">A list of completed and still-to-do tasks.</p>
+    <ul class="metadata">
+      <li>Usage: internal</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 17 July 2017</li>
+    </ul>
+  </div>
+
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">Task checklist</h1>
-      <p class="lede">A list of completed and still-to-do tasks.</p>
-      <ul class="metadata">
-        <li>Usage: internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 17 July 2017</li>
-      </ul>
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
-      <div class="example example-images">
+      <div class="example example-images" id="example-component">
         <div class="grid-row">
           {% include "includes/patterns/tasks.html" %}
         </div>
@@ -44,14 +47,15 @@
       <h2 class="heading-medium">Accessibility principles</h2>
       <p>A task checklist are tabular data so should be coded as a table.</p>
 
-      <h2 class="heading-medium">User research</h2>
-
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
         <li>HMPO</li>
-        <!-- Can we link to the HMPO service where it's used? -->
       </ul>
 
+    </div>
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/49">Discuss this pattern on GitHub</a>
     </div>
   </div>
 </main>

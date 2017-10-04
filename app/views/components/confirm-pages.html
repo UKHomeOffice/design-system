@@ -6,20 +6,22 @@
 
 {% block content %}
 
-{% set active = "patterns" %}
+{% set active = "components" %}
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
   <div class="grid-row">
 
     <div class="column-full">
-      <h1 class="heading-section">Confirmation pages</h1>
-      <p class="lede">Different confirmation pages based on different scenarios.</p>
-      <ul class="metadata">
-        <li>Usage: internal/external</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 30 June 2017</li>
-      </ul>
+      <div class="banner" role="banner">
+        <h1 class="heading-section">Confirmation pages</h1>
+        <p class="lede">Different confirmation pages based on different scenarios.</p>
+        <ul class="metadata">
+          <li>Usage: internal/external</li>
+          <li>Status: experimental</li>
+          <li>Last updated: 30 June 2017</li>
+        </ul>
+      </div>
     </div>
 
     <div class="column-two-thirds">
@@ -30,13 +32,13 @@
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            {% include "includes/patterns/conf--external.html" %}
+            {% include "includes/components/conf--external.html" %}
           </div>
         </div>
       </div>
       <details>
-        <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/conf--external.html" %}{% endfilter %}</code></pre>
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/conf--external.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
@@ -48,13 +50,13 @@
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            {% include "includes/patterns/conf--self-serve.html" %}
+            {% include "includes/components/conf--self-serve.html" %}
           </div>
         </div>
       </div>
       <details>
-        <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/conf--self-serve.html" %}{% endfilter %}</code></pre>
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/conf--self-serve.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
@@ -66,13 +68,13 @@
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            {% include "includes/patterns/conf--casework.html" %}
+            {% include "includes/components/conf--casework.html" %}
           </div>
         </div>
       </div>
       <details>
-        <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/conf--casework.html" %}{% endfilter %}</code></pre>
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/conf--casework.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
@@ -84,35 +86,32 @@
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            {% include "includes/patterns/conf--incomplete.html" %}
+            {% include "includes/components/conf--incomplete.html" %}
           </div>
         </div>
       </div>
       <details>
-        <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/conf--incomplete.html" %}{% endfilter %}</code></pre>
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/conf--incomplete.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why have we created this pattern?</h2>
       <p>The GDS pattern uses a lighter green which does not meet accessibility requirements for some smaller text.</p>
-      <p>The incomplete version was created following user evaluation where users were confused as to wether the task was complete or not.</p>
+      <p>The incomplete version was created because we observed users didn't know whether a task was complete or not.</p>
       <p>In general, the variations have been designed to make clearer at what stage the application now is and next steps for the user.</p>
-
-      <h2 class="heading-medium">Interaction principles</h2>
-
-      <h2 class="heading-medium">Content principles</h2>
-
-      <h2 class="heading-medium">Accessibility principles</h2>
-
-      <h2 class="heading-medium">User research</h2>
 
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
         <li>Sponsorship did the initial work but is now paused</li>
       </ul>
 
+    </div>
+
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/">Discuss this pattern on GitHub</a>
     </div>
   </div>
 </main>

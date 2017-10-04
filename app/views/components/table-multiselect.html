@@ -6,7 +6,7 @@
 
 {% block content %}
 
-{% set active = "patterns" %}
+{% set active = "components" %}
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
@@ -23,35 +23,25 @@
       <h2 class="heading-medium" id="example-component">Example component</h2>
       <div class="example example-images">
         <div class="grid-row">
-          {% include "includes/patterns/table-multiselect.html" %}
+          {% include "includes/components/table-multiselect.html" %}
         </div>
       </div>
       <details>
         <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/table-multiselect.html" %}{% endfilter %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/table-multiselect.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>There is no standard GDS pattern for selectable tables.</p>
+      <p>There is no standard GDS pattern for selectable tables. This was a pattern created for a service that has been paused. More research is required to see if it meets a need.</p>
 
-      <!-- <h2 class="heading-medium">Interaction principles</h2>
-      <p></p> -->
 
-      <!-- Not sure there are any content decisions or patterns here
-      <h2 class="heading-medium">Content principles</h2>
-      <p></p> -->
+    </div>
 
-      <!-- <h2 class="heading-medium">Accessibility principles</h2>
-      <p></p> -->
-
-      <h2 class="heading-medium">User research</h2>
-      <p>No research yet</p>
-
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <p>None</p>
-
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/42">Discuss this pattern on GitHub</a>
     </div>
   </div>
 </main>

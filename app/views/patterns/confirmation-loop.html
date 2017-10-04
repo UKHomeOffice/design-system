@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pattern - Confirmation loop
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Check and confirm</h1>
+    <p class="lede">An interaction that allows a user to check some information and to either submit it (if correct) or change it (if incorrect).</p>
+    <ul class="metadata">
+      <li>Usage: internal/external</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 20 September 2017</li>
+    </ul>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <div class="example example-images confirmation">
+        <h2 class="heading-small" id="example-component">Check and confirm pattern</h2>
+        <img src="{{ asset_path }}/images/confirmation-desktop.svg" class=" confirm-desktop" alt="A diagram of the confirmation pattern showing three steps. Step 1 shows an input field. Step 2 shows a confirmation box with the user's input, a button to confirm and a link to cancel. Step 3 shows confirmation the interaction is complete.">
+        <img src="{{ asset_path }}/images/confirmation-mobile.svg" class="confirmation confirm-mobile" alt="A diagram of the confirmation pattern showing three steps. Step 1 shows an input field. Step 2 shows a confirmation box with the user's input, a button to confirm and a link to cancel. Step 3 shows confirmation the interaction is complete.">
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">What is a confirmation?</h2>
+      <p>A confirmation gives users an opportunity to check information before completing an action, and to correct it if necessary.</p>
+
+      <p>Confirmation may be needed where the action is final and a mistake is not easy to correct.</p>
+
+      <h2 class="heading-medium">Guidance</h2>
+      <h3 class="heading-small">It can be used:</h3>
+      <ul class="list list-bullet">
+        <li>to confirm a single input or action</li>
+        <li>when the action is not easily reversible</li>
+        <li>when the completion immediately starts another process</li>
+      </ul>
+
+      <h3 class="heading-small">It should not be used:</h3>
+
+      <ul class="list list-bullet">
+        <li>to agree to terms and conditions</li>
+        <li>if the user can easily change their action or input later</li>
+      </ul>
+
+      <h3 class="heading-small">The confirmation should:</h3>
+      <ul class="list list-bullet">
+        <li>be meaningful</li>
+        <li>use the same language as the requested action</li>
+        <li>allow the user to cancel the action and change the input</li>
+      </ul>
+
+      <h2 class="heading-medium">Interactions using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Entering a recipient&rsquo;s email address</li>
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
