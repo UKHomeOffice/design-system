@@ -10,26 +10,29 @@
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Vertical timeline</h1>
+    <p class="lede">Time-ordered activity showing the history of a person or object with additional context.</p>
+    <ul class="metadata">
+      <li>Usage: internal</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 28 June 2017</li>
+    </ul>
+  </div>
+
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">Vertical timeline</h1>
-      <p class="lede">Time-ordered activity showing the history of a person or object with additional context.</p>
-      <ul class="metadata">
-        <li>Usage: internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 28 June 2017</li>
-      </ul>
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
-      <div class="example example-images">
+      <div class="example example-images" id="example-component">
         <div class="grid-row">
           {% include "includes/patterns/timeline.html" %}
         </div>
       </div>
-      <details>
+      <!-- <details>
         <summary>Show code snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/timeline.html" %}{% endfilter %}</code></pre>
-      </details>
+      </details> -->
     </div>
 
     <div class="column-two-thirds">
@@ -40,22 +43,17 @@
       <p>Times and dates should follow <a href="https://www.gov.uk/service-manual/design/dates">GDS patterns on date and time format</a></p>
       <p>Secondary titles aren't mandatory.</p>
 
-      <h2 class="heading-medium">Accessibility principles</h2>
-
-      <h2 class="heading-medium">User research</h2>
-
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
         <li>Application platform</li>
         <li>Entities</li>
       </ul>
 
-      <!-- TO DO -->
-      <h2 class="heading-medium">Things to do</h2>
-      <ul class="list list-bullet">
-        <li>research accessibility</li>
-      </ul>
+    </div>
 
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/46">Discuss this pattern on GitHub</a>
     </div>
   </div>
 </main>

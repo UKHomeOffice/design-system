@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pattern - Subnavigation links
+{% endblock %}
+
+{% block content %}
+
+{% set active = "components" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Sub-navigation links</h1>
+    <p class="lede">Navigation items that appear below the service name header.</p>
+    <ul class="metadata">
+      <li>Usage: external/internal</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 28 June 2017</li>
+    </ul>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <div class="example example-images" id="example-component">
+        <div class="grid-row">
+          {% include "includes/components/navigation.html" %}
+        </div>
+      </div>
+      <details>
+        <summary>Show HTML snippet</summary>
+        <div class="grid-row">
+          <div class="column-full">
+            <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/navigation.html" %}{% endfilter %}</code></pre>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <h2 class="heading-medium">Interaction principles</h2>
+      <p>Only one nav item can be active at a time and an active item should be distinguishable from inactive items.</p>
+      <p>Inactive items should have a hover state.</p>
+      <p>Focused nav items should be consistent with other focus states.</p>
+
+      <h2 class="heading-medium">Content principles</h2>
+      <p>The label should reflect the thing that the user will do at the destination, not describe the destination.</p>
+
+      <h2 class="heading-medium">Accessibility principles</h2>
+      <p>The active nav item should be labelled as active in the code.</p>
+      <p>Colour should not be the only way to distinguish active from inactive nav items.</p>
+
+      <h2 class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Design system</li>
+      </ul>
+
+
+      <h2 class="heading-medium">Things to do</h2>
+      <ul class="list list-bullet">
+        <li>The design needs improving for narrower views</li>
+        <li>Add notes from user research</li>
+        <li>Identify services using this pattern</li>
+      </ul>
+
+    </div>
+
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/45">Discuss this pattern on GitHub</a>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

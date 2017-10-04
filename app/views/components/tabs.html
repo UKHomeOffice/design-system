@@ -1,42 +1,55 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern - In-page tabs
+Pattern - In-page tabs
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
+{% set active = "components" %}
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">In-page tabs</h1>
+    <p class="lede">Switching between views of grouped content; hiding content that doesn&rsquo;t always need to be visible.</p>
+    <ul class="metadata">
+      <li>Usage: external/internal</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 20 September 2017</li>
+    </ul>
+  </div>
+
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">In-page tabs</h1>
-      <p class="lede">Switching between views of grouped content; hiding content that doesn&rsquo;t always need to be visible.</p>
-      <ul class="metadata">
-        <li>Usage: external/internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 28 June 2017</li>
-      </ul>
 
-      <h2 class="heading-medium" id="example-component">Example</h2>
-      <div class="example example-images">
+      <div class="example example-images" id="example-component">
         <div class="grid-row">
-          {% include "includes/patterns/tabs.html" %}
+          {% include "includes/components/tabs-list.html" %}
         </div>
       </div>
       <details>
         <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/tabs.html" %}{% endfilter %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/tabs-list.html" %}{% endfilter %}</code></pre>
       </details>
 
-      <h2 class="heading-medium" id="example-component">Example when picking from a long list</h2>
+      <h2 class="heading-medium" id="example-component">Horizontal tab</h2>
       <div class="example example-images">
         <div class="grid-row">
-          {% include "includes/patterns/tabs-list.html" %}
+          {% include "includes/components/tabs.html" %}
         </div>
       </div>
+      <details>
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/tabs.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details>
+        <summary>Show SCSS snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{{'./app/assets/sass/components/_tabs-horizontal.scss' | fileInclude }}</code></pre>
+      </details>
+
+
     </div>
 
     <div class="column-two-thirds">
@@ -56,23 +69,28 @@
 
       <h2 class="heading-medium">User research</h2>
       <p>Syrian refugee resettlement found no problems with the pattern. Users have a good understanding of what to expect from the tabs</p>
-      <p>Application platform uses the pattern for long lists. When combined with a search, the pattern performs very well when users don't know the contents of the list.</p>
+      <p>Application platform uses vertical tabs for long lists. When combined with a typeahead search, the pattern performs very well when users don't know the contents of the list.</p>
+      <p>Dyslexic users were ignoring the horizontal tab. So the line around the horizontal tabs were made thicker and the blue links were underlined to avoid this issue.</p>
+      <p>Returns and movements found users missed the inactive tab. They think that might be due to content but its worth keeping an eye on.</p>
 
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
         <li>Syrian refugee resettlement</li>
-        <!-- <li>Sponsoring people</li> -->
         <li>Proving things to government</li>
         <li>Application platform</li>
       </ul>
 
       <h2 class="heading-medium">Things to do</h2>
       <ul class="list list-bullet">
-        <li>tabs.js is essential rather than enhanced&thinsp;&mdash;&thinsp;what is the no-js solution for this pattern.</li>
         <li>The design needs improving for narrower views.</li>
         <li>Using tabs to complete a series of tasks in a non-linear way could be a separate pattern.</li>
       </ul>
 
+    </div>
+
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/35">Discuss this pattern on GitHub</a>
     </div>
   </div>
 </main>

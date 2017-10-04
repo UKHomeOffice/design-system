@@ -10,32 +10,32 @@
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Modal window</h1>
+    <p class="lede">Creating focus on a single interaction.</p>
+    <ul class="metadata">
+      <li>Usage: internal</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 28 June 2017</li>
+    </ul>
+  </div>
+
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">Modal window</h1>
-      <p class="lede">Creating focus on a single interaction.</p>
-      <ul class="metadata">
-        <li>Usage: internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 28 June 2017</li>
-      </ul>
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
-      <div class="example example-images">
+      <div class="example example-images" id="example-component">
         <div class="grid-row">
           {% include "includes/patterns/modal.html" %}
         </div>
       </div>
-      <details>
+      <!-- <details>
         <summary>Show code snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/modal.html" %}{% endfilter %}</code></pre>
-      </details>
-
+      </details> -->
     </div>
 
     <div class="column-two-thirds">
-      <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>No GDS pattern is available.</p>
 
       <h2 id="interaction" class="heading-medium">Interaction principles</h2>
       <p>The modal window should focus on a single task.</p>
@@ -52,16 +52,8 @@
       <p>Modal windows do not work well on mobile. Consider using an alternative approach.</p>
       <p>Screen readers do not automatically focus on modals, which makes interactions confusing.</p>
 
-      <h2 id="research" class="heading-medium">User research</h2>
-      [Do we have any user research?]
-      <!-- <p>encourages focus</p>
-      <p>complicated interactions within the modal dissorientate</p>
-      <p>multiple modals create confusion</p> -->
-      <p>test this version (CSS only) with form content</p>
-
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
-        <!-- <li>Application</li> What is Application?-->
         <li>Employers Checking Service</li>
         <li>Passport renewals (timeout)</li>
       </ul>
@@ -74,6 +66,11 @@
         <li>include `ARIA` tags</li>
         <li>include labels and tags</li>
       </ul>
+    </div>
+
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/44">Discuss this pattern on GitHub</a>
     </div>
   </div>
 </main>

@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+</p>{% extends "layout.html" %}
 
 {% block page_title %}
   Home Office DDaT design patterns
@@ -12,91 +12,87 @@
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">Buttons</h1>
-      <p class="lede">Buttons should be used when a user needs to take an action, submit data, or make a change to the page. For navigation a text link is sufficient.</p>
-      <ul class="metadata">
-        <li>Usage: internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 5 September 2017</li>
-      </ul>
+      <div class="banner" role="banner">
+        <h1 class="heading-section">Buttons</h1>
+        <p class="lede">Use a button when a user needs to take an action, submit data, or make a change to the page. For navigation use a text link instead.</p>
+        <ul class="metadata">
+          <li>Usage: internal</li>
+          <li>Status: experimental</li>
+          <li>Last updated: 11 September 2017</li>
+        </ul>
+      </div>
 
-      <h2 class="heading-medium" id="example-component">Example components</h2>
+      <h2 class="heading-medium" id="example-component">Primary action</h2>
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            <h3 class="heading-medium">Primary action</h3>
-            <p>This component continues from <a href="http://govuk-elements.herokuapp.com/buttons">GOV.UK elements</a>, the <code>disabled</code> button removes the affordance style.</p>
+            <!-- <p>This component is taken from <a href="http://govuk-elements.herokuapp.com/buttons">GOV.UK elements</a>. The <code>disabled</code> button removes the affordance style.</p> -->
             {% include "includes/components/buttons.html" %}
           </div>
         </div>
       </div>
       <details>
-        <summary>Show code snippet</summary>
+        <summary>Show HTML snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/buttons.html" %}{% endfilter %}</code></pre>
       </details>
 
+      <h2 class="heading-medium" id="example-component">Primary action (solid colour background)</h2>
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            <h3 class="heading-medium">Primary action (alternate)</h3>
-            <p>This is also a primary button, it should only be used on solid colour backgrounds when the level of contrast is strong enough (see <a href="../patterns/interruption-card">interruption card</a> and <a href="../patterns/confirm-pages">confirm pages</a>.)</p>
+            <p>This is also a primary action button. It should be used only on solid colour backgrounds and when contrast is high enough to maintain accessibility (see <a href="../patterns/interruption-card">interruption card</a> and <a href="../patterns/confirm-pages">confirm pages</a>).</p>
             {% include "includes/components/button-primary-alt.html" %}
           </div>
         </div>
       </div>
       <details>
-        <summary>Show code snippet</summary>
+        <summary>Show HTML snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/button-primary-alt.html" %}{% endfilter %}</code></pre>
       </details>
 
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <h2 class="heading-medium" id="example-component">Secondary action</h2>
       <div class="example example-images">
         <div class="grid-row">
           <div class="column-two-thirds">
-            <h3 class="heading-medium">Secondary action</h3>
-            <p>Services should avoid having multiple buttons on a page. Admin interfaces can occassionaly require additional actions on a screen, research with users to understand their needs.</p>
+            <p>Services should avoid having multiple buttons on a page. Admin interfaces occasionally need several actions on a single page: validate this requirement with user research.</p>
             {% include "includes/components/buttons-secondary.html" %}
           </div>
         </div>
       </div>
       <details>
-        <summary>Show code snippet</summary>
+        <summary>Show HTML snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/buttons-secondary.html" %}{% endfilter %}</code></pre>
       </details>
     </div>
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>To define buttons types and when to use each type. We have included secondary buttons, for use on admin interfaces. Removing the affordance style from <code>disabled</code> buttons as well as adding opacity to show visually it can not be pressed.</p>
+      <p>The GOV.UK pattern does not include secondary actions or disabled buttons, which may be required on admin interfaces.
 
       <h2 class="heading-medium">Interaction principles</h2>
-      <ul class="list list-bullet">
-        <li>buttons should look like buttons</li>
-        <li>buttons need to have a good level of affordance, so that users know that something meaningful will happen if they click a button</li>
-        <li>buttons can have an icon to further support their action or state</li>
-        <li>don't make things that aren't buttons look like buttons</li>
-        <li>avoid secondary actions unless you see a need for one in research</li>
-        <li>primary actions should be aligned with input fields to increase completion rates</li>
-      </ul>
+
+        <p>Buttons should look like buttons. </p>
+        <p>Don&rsquo;t make things that aren&rsquo;t buttons look like buttons.</p>
+        <p>So that users know something meaningful will happen if they click, buttons need to have a good level of <a href="https://www.interaction-design.org/literature/book/the-glossary-of-human-computer-interaction/affordances">affordance</a>.</p>
+        <p>Buttons can have an icon to further support their action or state.</p>
+        <p>Avoid secondary actions unless research has identified a need for one.</p>
+        <p>Primary actions should be aligned with input fields to increase completion rates.</p>
+
 
       <h2 class="heading-medium">Content principles</h2>
-      <ul class="list list-bullet">
-        <li>label buttons with what they do</li>
-      </ul>
+
+        <p>Label buttons with the outcome of the action: "Complete application" rather than "OK".</p>
+        <p>Be particularly careful when labelling "Cancel" buttons that the action is clear.
 
       <h2 class="heading-medium">Accessibility principles</h2>
-      <ul class="list list-bullet">
-        <li>buttons should have clear hover and focus states</li>
-        <li>use a <code>button</code> tag with a <code>role='button'</code></li>
-      </ul>
+        <p>Buttons should have clear hover and focus states.</p>
+        <p>Use a <code>button</code> tag with <code>role='button'</code>.</p>
 
       <h2 class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>users sometimes confuse grey buttons with disabled buttons</li>
-        <li>users sometimes confuse white buttons with input fields</li>
-        <li>white buttons worked better in <a href="../patterns/confirm-pages">confirmation pages</a> and <a href="../patterns/flash-card">interruption cards</a> </li>
-      </ul>
+        <p>Users sometimes confuse grey buttons with disabled buttons.</p>
+        <p>Users sometimes confuse white buttons with input fields.</p>
+        <p>White buttons have worked better in <a href="../patterns/confirm-pages">confirmation pages</a> and <a href="../patterns/flash-card">interruption cards.</a> </p>
 
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
@@ -105,6 +101,11 @@
         <li>Home Office Communications</li>
       </ul>
 
+    </div>
+
+    <div class="column-full">
+      <hr>
+      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/40">Discuss this pattern on GitHub</a>
     </div>
   </div>
 </main>

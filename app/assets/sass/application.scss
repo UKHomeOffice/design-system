@@ -15,20 +15,23 @@ $border-radius:		4px;
 $box-shadow:	    0 2px 10px rgba($text-colour, 0.5);
 ///////////
 
-// Copmonents
+// Components
 @import "components/checkboxes";
 @import "components/radios";
-@import "components/badges";
 @import "components/buttons";
 @import "components/cards";
 @import "components/labels";
+@import "components/highlights";
+@import "components/table-multiselect";
+@import "components/confirm-pages";
+@import "components/tabs-horizontal";
+@import "components/tabs";
+@import "components/navigation";
 
 // Patterns
-@import "patterns/confirm-pages";
 @import "patterns/case";
 @import "patterns/header";
 @import "patterns/flashcard";
-@import "patterns/highlights";
 @import "patterns/modal";
 @import "patterns/navigation";
 @import "patterns/pagination";
@@ -37,7 +40,7 @@ $box-shadow:	    0 2px 10px rgba($text-colour, 0.5);
 @import "patterns/tasks";
 @import "patterns/timeline";
 @import "patterns/help";
-
+@import "patterns/confirmation-loop";
 
 // HOD GUIDE
 // Styles for the pattern library - change at your peril
@@ -51,29 +54,29 @@ $box-shadow:	    0 2px 10px rgba($text-colour, 0.5);
 .mb-30 {
   margin-bottom: 30px;
 }
-//////////
-
-
-
 a {
   text-decoration-skip: ink !important;
 }
 
-
-
-
-
 .heading-section {
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1.2;
   font-weight: 700;
   margin-top: 1em;
   margin-bottom: 0.55556em;
 }
 
+// Banner
+
+.banner {
+  margin: 40px 0 40px;
+
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+
 // footer
-
-
 .version {
     padding-top: 15px;
 }
@@ -137,8 +140,6 @@ a {
   }
 }
 
-
-
 // General changes to prototype kit
 // Global Header
 #global-header-bar {
@@ -153,10 +154,6 @@ div.header-global {
 	display: inline-block ;
 	float: left;
 }
-
-
-
-
 
 // Header navigation button
 #global-header .header-proposition #proposition-menu {
@@ -201,7 +198,6 @@ div.header-global {
 	padding-top: 20px;
 }
 
-
 // Let's make a coloured row mixin
 // should we move mixins to somewhere else?
 @mixin hod-row ($color) {
@@ -242,7 +238,6 @@ div.header-global {
     background-color: $grey-3;
     border-top: 8px solid $grey-1;
 }
-
 
 /* Additional styles for mockup */
 /* Tables */
@@ -302,6 +297,21 @@ code {
     font-size: 16px;
 }
 
+details {
+  background-color: #ebebeb;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+details summary {
+  padding-left: 10px;
+}
+
+pre.language-markup  {
+    border: 2px solid #ebebeb!important;
+    background: #FFF!important;
+}
+
 .example {
     padding-top: 45px;
     padding-right: 30px;
@@ -311,9 +321,9 @@ code {
 .example {
     position: relative;
     overflow: hidden;
-    border: 1px solid $grey-3;
+    border: 2px solid $grey-3;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 30px;
 	&:before {
 	    content: "EXAMPLE";
@@ -327,8 +337,8 @@ code {
 	    font-size: 12px;
 	    font-weight: bold;
 	    line-height: 1.25;
-	    background: #bfc1c3;
-	    color: white;
+	    background: $grey-3;
+	    color: black;
 	}
 }
 
@@ -337,7 +347,6 @@ code {
 }
 
 // Sections at the top pages
-
 .content-width {
   @extend %site-width-container;
   @extend %contain-floats;
@@ -362,10 +371,9 @@ code {
 }
 
 // Metadata for the status of patterns
-
 .metadata {
   font-size: 16px;
-  color: #555;
+  color: #454545;
   display: flex;
   li {
     padding-right: 35px;
@@ -373,12 +381,20 @@ code {
 }
 
 @media screen and (max-width: 640px ) {
+  .metadata {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 
-    .full-width {
-      font-size: 16px;
-    }
+}
 
-    .metadata {
-        display: inline;
-    }
+@media screen and (max-width: 640px ) {
+
+  .full-width {
+    font-size: 16px;
+  }
+
+  .metadata {
+      display: inline;
+  }
 }
