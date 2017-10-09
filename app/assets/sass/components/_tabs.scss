@@ -1,63 +1,63 @@
-// Pattern: side tab
+.tabs ol, .tabs ul {
+  @extend %contain-floats;
+  list-style: none;
+  margin: 0 -16px;
+  padding: 0;
+  border-top: 1px solid $border-colour;
 
-ul.tab__nav {
-  @include core-19;
-  // border-right: 2px solid $border-colour;
-
-  li {
-    margin-bottom: 0;
-  }
-  li a {
-    padding: 10px 5px 15px;
-    text-decoration: none;
-    display: block;
-
-    &.active, &:hover.active {
-      @include bold-19;
-      color: $black;
-    }
-  }
-
-  a:visited {
-    color: $link-colour;
-  }
-
-  .active:hover {
-    background: $white;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    color: $link-colour;
-    text-decoration: underline;
-    background: $grey-3;
-
-    &.locked {
-      color: $black;
-      background-color: transparent;
-      cursor: default;
-    }
-  }
-  li a:focus {
-    color: $black;
-  }
-  .locked {
-    color: $grey-1;
-    padding: 10px 5px 15px;
-  }
-  hr {
-    height: 1px;
-    background-color: $border-colour;
+  @include media(tablet) {
     margin: 0;
+    border-top: 0;
+    border-bottom: 2px solid $border-colour;
   }
-
-  @media screen and (max-width: 640px ) {
-    margin-bottom: 15px;
-  }
-
 }
 
-.tab__content {
-  float: left;
-  width: 100%;
+.tabs li {
+  margin: 0;
+
+  @include media(tablet) {
+    float: left;
+    margin: 0 3px 0 0;
+  }
 }
+
+  .tabs li a {
+    display: block;
+    line-height: 3.5em;
+    padding: 0 16px;
+    text-align: left;
+    border-bottom: 1px solid $border-colour;
+
+    &:hover {
+      background-color: $highlight-colour;
+    }
+
+    @include media(tablet) {
+      border: solid 2px $white;
+      border-bottom: none;
+      float: left;
+      height: 2.25em;
+      line-height: 2.25em;
+      margin-bottom: -2px;
+      padding: 0 20px;
+    }
+  }
+
+    .tabs li.active a {
+      background-color: $white;
+      border-bottom: 1px solid $border-colour;
+      color: $text-colour;
+      text-decoration: none;
+      pointer-events: none;
+      cursor: default;
+
+      &:hover {
+        color: inherit;
+      }
+
+      @include media(tablet) {
+        border: solid 2px $border-colour;
+        border-bottom: none;
+        padding-bottom: 2px;
+      }
+    }
