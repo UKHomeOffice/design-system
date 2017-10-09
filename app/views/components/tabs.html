@@ -17,39 +17,30 @@ Pattern - In-page tabs
     <ul class="metadata">
       <li>Usage: external/internal</li>
       <li>Status: experimental</li>
-      <li>Last updated: 20 September 2017</li>
+      <li>Last updated: 5 October 2017</li>
     </ul>
   </div>
 
   <div class="grid-row">
+    
     <div class="column-full">
-
-      <div class="example example-images" id="example-component">
-        <div class="grid-row">
-          {% include "includes/components/tabs-list.html" %}
-        </div>
-      </div>
-      <details>
-        <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/tabs-list.html" %}{% endfilter %}</code></pre>
-      </details>
-
-      <h2 class="heading-medium" id="example-component">Horizontal tab</h2>
       <div class="example example-images">
         <div class="grid-row">
           {% include "includes/components/tabs.html" %}
         </div>
       </div>
       <details>
-        <summary>Show HTML snippet</summary>
+        <summary>Show HTML prototype snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/tabs.html" %}{% endfilter %}</code></pre>
       </details>
       <details>
-        <summary>Show SCSS snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{{'./app/assets/sass/components/_tabs-horizontal.scss' | fileInclude }}</code></pre>
+        <summary>Show Sass prototype snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_tabs.scss' | fileInclude }}</code></pre>
       </details>
-
-
+      <details>
+        <summary>Show JS prototype snippet</summary>
+        <pre class="language-javascript"><code class="language-javascript">{{'./app/assets/javascripts/tabs.js' | fileInclude }}</code></pre>
+      </details>
     </div>
 
     <div class="column-two-thirds">
