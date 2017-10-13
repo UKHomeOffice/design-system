@@ -208,7 +208,7 @@
                     <polygon id="Triangle" points="56 7.5 41 15 41 0"></polygon>
                 </g>
                 <text id="Continue-without-add" font-family="GDSTransportWebsite, GDS Transport Website" font-size="15" font-weight="300" fill="#005EA5">
-                    <tspan x="19" y="256">Continue without adding an image</tspan>
+                    <tspan x="19" y="256">Continue without adding a file</tspan>
                 </text>
                 <path d="M932.984375,423.890625 C932.984375,423.890625 796.191798,452.960938 540.84314,452.960938 C285.494482,452.960938 175,423.890625 175,423.890625" id="Path-2" stroke="#D9D9D9" stroke-width="3" stroke-dasharray="8"></path>
                 <path d="M1317.98437,419.890625 C1317.98437,419.890625 1106.32447,479.070312 706.286481,479.070312 C306.248497,479.070312 130.5,432.890625 130.5,432.890625" id="Path-2" stroke="#D9D9D9" stroke-width="3" stroke-dasharray="8"></path>

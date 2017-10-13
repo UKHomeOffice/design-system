@@ -102,7 +102,7 @@
                     <polygon id="Triangle" points="43 7.5 28 15 28 0"></polygon>
                 </g>
                 <text id="Continue-without-add" font-family="GDSTransportWebsite, GDS Transport Website" font-size="15" font-weight="300" fill="#005EA5">
-                    <tspan x="20" y="258">Continue without adding an image</tspan>
+                    <tspan x="20" y="258">Continue without adding a file</tspan>
                 </text>
                 <g id="Group" transform="translate(324.000000, 686.000000) scale(-1, 1) rotate(-270.000000) translate(-324.000000, -686.000000) translate(-62.000000, 666.000000)">
                     <path d="M771.984375,10.890625 C771.984375,10.890625 635.191798,39.9609375 379.84314,39.9609375 C124.494482,39.9609375 14,10.890625 14,10.890625" id="Path-2" stroke="#D9D9D9" stroke-width="3" stroke-dasharray="8"></path>
