@@ -29,15 +29,12 @@
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why have we created this pattern?</h2>
       <p>Expanding on GOV.UK <a href="http://govuk-elements.herokuapp.com/icons-images/#icons">guidance for icons</a> to include interactions that allow users to interrogate information. This is more relevant to internal users.</p>
-
-      <h2 class="heading-medium">Types of icons</h2>
       <p>The icons used here are grouped as follows:</p>
       <ul class="list list-bullet">
         <li><a href="#navigation-icons">Navigation icons</a> – help users navigate through a service</li>
         <li><a href="#controller-icons">Controller icons</a> – help users to sort, organise or adjust the information, for example by filtering data, opening and closing modals or revealing additional content</li>
         <li><a href="#reference-icons">Quick reference icons</a> – help users to understand options and context</li>
       </ul>
-
     </div>
 
     <div class="column-full">
@@ -297,14 +294,13 @@
 
         </tbody>
       </table>
+      <details style="margin-top: 20px;">
+        <summary>Show HTML example</summary>
+        <pre class="language-markup"><code class="language-markup">&lt;p&gt;&lt;span class="hod-printer side-space icon-medium"&gt;&lt;/span&gt;Print this page&lt;/p&gt;</code></pre>
+      </details>
     </div>
 
     <div class="column-two-thirds">
-      <details style="margin-top: 20px;">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">&lt;p&gt;&lt;span class="hod-printer side-space icon-medium"&gt;&lt;/span&gt;Print this page&lt;/p&gt;</code></pre>
-      </details>
-
       <h2 id="interaction" class="heading-medium">Interaction principles</h2>
       <ul class="list-bullet">
         <li>The minimum size for an icon is 16px</li>
@@ -312,30 +308,21 @@
         <li>The icon shouldn't change colour in a hover/active/focus states, only the background.</li>
         <li>In the normal state, the icon can be a different colour using the GOV.UK colour palette - both in solid and reversed out state - as long as the colour combination meets the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></li>
       </ul>
-    </div>
 
-    <div class="column-full">
       <div class="example example-images">
         <img width="100%" height="auto" src="{{ asset_path }}/images/icon-colours.svg" alt="Icon usage with colour">
       </div>
-    </div>
 
-    <div class="column-two-thirds">
       <h2 id="documentation" class="heading-medium">Content principles</h2>
       <ul class="list-bullet">
         <li>Every icon should use a visible and audible label to avoid confusion over what it represents.</p>
         <li>Align the icon in a central position in relation to any type</li>
         <li>Type can sit either to the left or to the right of the icon</li>
-    </div>
 
-
-    <div class="column-full">
       <div class="example example-images">
         <img width="100%" height="auto" src="{{ asset_path }}/images/icon-type-alignment.svg" alt="Icon alignment with type">
       </div>
-    </div>
 
-    <div class="column-two-thirds">
       <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
       <ul class="list-bullet">
         <li>icons should always have a label and use <code class="language-markup">aria-hidden="true"</code></li>
