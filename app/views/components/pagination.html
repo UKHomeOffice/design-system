@@ -19,9 +19,6 @@
         <li>Status: experimental</li>
         <li>Last updated: 4 October 2017</li>
       </ul>
-
-
-
     </div>
 
     <div class="column-two-thirds">
@@ -61,7 +58,6 @@
     </div>
 
     <div class="column-full">
-
       <h2 class="heading-medium" id="example-component">Example component</h2>
       <div class="example example-images">
         <div class="grid-row">
@@ -69,11 +65,13 @@
         </div>
       </div>
       <details>
-        <summary>Show code snippet</summary>
+        <summary>Show HTML snippet</summary>
         <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/pagination.html" %}{% endfilter %}</code></pre>
       </details>
-
-
+      <details>
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_pagination.scss' | fileInclude }}</code></pre>
+      </details>
     </div>
   </div>
 </main>

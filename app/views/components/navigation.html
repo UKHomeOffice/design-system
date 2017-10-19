@@ -31,11 +31,15 @@
       </div>
       <details>
         <summary>Show HTML snippet</summary>
-        <div class="grid-row">
-          <div class="column-full">
-            <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/navigation.html" %}{% endfilter %}</code></pre>
-          </div>
-        </div>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/navigation.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details>
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_navigation.scss' | fileInclude }}</code></pre>
+      </details>
+      <details>
+        <summary>Show JavaScript snippet</summary>
+        <pre class="language-javascript"><code class="language-javascript">{{'./app/assets/javascripts/navigation.js' | fileInclude }}</code></pre>
       </details>
     </div>
 

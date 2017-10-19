@@ -40,8 +40,8 @@ Home Office DDaT design patterns
     <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/labels.html" %}{% endfilter %}</code></pre>
   </details>
   <details>
-    <summary>Show SCSS snippet</summary>
-    <pre class="language-markup"><code class="language-markup">{{'./app/assets/sass/components/_labels.scss' | fileInclude }}</code></pre>
+    <summary>Show CSS snippet</summary>
+    <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_labels.scss' | fileInclude }}</code></pre>
   </details>
 
 </div>
@@ -49,20 +49,24 @@ Home Office DDaT design patterns
 <div class="grid-row">
   <div class="column-two-thirds">
     <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
-      <p>Labels shouldn't look like buttons</p>
-      <p>Labels are for quick referencing</p>
-      <p>Labels shouldn't be permanent</p>
-      <p>Labels should appear at the end of the content that it labels</p>
-      <p>The margin to the right should be greater to indicate what it relates to</p>
+    <ul class="list list-bullet">
+      <li>Labels shouldn't look like buttons</li>
+      <li>Labels are for quick referencing</li>
+      <li>Labels shouldn't be permanent</li>
+      <li>Labels should appear at the end of the content that it labels</li>
+      <li>The margin to the right should be greater to indicate what it relates to</li>
+    </ul>
 
     <h2 id="documentation" class="heading-medium">Content patterns</h2>
-      <p>Labels should be single words</p>
-      <p>Labels should be <a href="https://en.wiktionary.org/wiki/common_noun">common nouns</a></p>
-      <p>Content on labels doesn't have to be descriptive</p>
-      <p>Labels are recommended to be lowercase</p>
-
+    <ul class="list list-bullet">
+      <li>Labels should be single words</li>
+      <li>Labels should be <a href="https://en.wiktionary.org/wiki/common_noun">common nouns</a></li>
+      <li>Content on labels doesn't have to be descriptive</li>
+      <li>Labels are recommended to be lowercase</li>
+    </ul>
   </div>
 </div>
+
 <div class="grid-row">
   <div class="column-two-thirds">
     <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
@@ -72,27 +76,18 @@ Home Office DDaT design patterns
 
     <h2 id="research" class="heading-medium">User research</h2>
     <ul class="list list-bullet">
-      <li>adding labels to everything is counterintuative</li>
+      <li>Adding labels to everything is counterintuative</li>
     </ul>
-  </div>
-</div>
 
-<div class="grid-row">
-  <div class="column-two-thirds">
     <h2 class="heading-medium">Services using this pattern</h2>
     <ul class="list list-bullet">
       <li>Home Office Communications (HOC)</li>
       <li>Syrian Refugee Resettlement Service</li>
     </ul>
-
-    <h2 class="heading-medium rule-above">Things to do</h2>
-    <ul class="list list-bullet">
-      <li>examples of content</li>
-      <li>more access needs research including cognition and comprehension</li>
-      <li>clarity on alignment and positioning</li>
-    </ul>
   </div>
+</div>
 
+<div class="grid-row">
   <div class="column-full">
     <hr>
     <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/43">Discuss this pattern on GitHub</a>
