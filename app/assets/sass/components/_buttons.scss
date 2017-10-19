@@ -1,6 +1,3 @@
-// Pattern: buttons
-// Problem: Things need clicking
-
 .button[disabled] {
 	box-shadow: 0 0px 0 #003618;
 }
@@ -16,7 +13,7 @@
   box-shadow: 0 1px 0 $black;
   border: $black 1px solid;
   &[disabled]:active {
-    box-shadow: 0 0px 0 $black;    
+    box-shadow: 0 0px 0 $black;
   }
 }
 
@@ -31,6 +28,6 @@
   	}
   }
   &[disabled]:active {
-    box-shadow: 0 0px 0 $black;    
+    box-shadow: 0 0px 0 $black;
   }
 }

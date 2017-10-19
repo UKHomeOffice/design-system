@@ -1,10 +1,3 @@
-// Pattern: table multi-select
-// Problem: allow users to select multiple rows by clicking anywhere on row
-
-// .table-clickable tr th:first-of-type, .table-clickable tr td:first-of-type {
-//   padding-right: 0;
-// }
-
 // Highlight which row is being hovered
 .table-clickable tbody tr:hover {
   background-color: $highlight-colour;
