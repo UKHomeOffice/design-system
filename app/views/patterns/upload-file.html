@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern - Uploading files
+  Pattern - Add a file
 {% endblock %}
 
 {% block content %}
@@ -12,12 +12,12 @@
 <main id="content" role="main">
 
   <div class="banner" role="banner">
-    <h1 class="heading-section">Uploading (adding) files</h1>
-    <p class="lede">An interaction that allows a user to upload (add) one or more files.</p>
+    <h1 class="heading-section">Add a file</h1>
+    <p class="lede">An interaction that allows a user to add (upload) one or more files.</p>
     <ul class="metadata">
       <li>Usage: internal/external</li>
       <li>Status: experimental</li>
-      <li>Last updated: 17 October 2017</li>
+      <li>Last updated: 23 October 2017</li>
     </ul>
   </div>
 
@@ -25,12 +25,12 @@
     <div class="column-full">
 
       <div class="example example-images confirmation" style="margin-bottom: 2em;">
-        <h2 class="heading-small" id="example-component">Upload a single file</h2>
+        <h2 class="heading-small" id="example-component">Add a single file</h2>
         <img src="{{ asset_path }}/images/single-upload.svg" class=" confirm-desktop" alt="The flow a user would take to upload a file. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file.">
         <img src="{{ asset_path }}/images/single-upload-mobile.svg" class="confirmation confirm-mobile" alt="The flow a user would take to upload a file. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file.">
       </div>
       <div class="example example-images confirmation">
-        <h2 class="heading-small" id="example-component">Upload multiple files</h2>
+        <h2 class="heading-small" id="example-component">Add multiple files</h2>
         <img src="{{ asset_path }}/images/multi-upload.svg" class=" confirm-desktop" alt="The flow a user would take to upload multiple files. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file. Step 4 gives the user a choice to continue or add more files.">
         <img src="{{ asset_path }}/images/multi-upload-mobile.svg" class="confirmation confirm-mobile" alt="The flow a user would take to upload multiple files. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file. Step 4 gives the user a choice to continue or add more files.">
       </div>
@@ -43,8 +43,8 @@
       <h2 class="heading-medium">Guidance</h2>
       <h3 class="heading-small">It can be used:</h3>
       <ul class="list list-bullet">
-        <li>to upload single files</li>
-        <li>to upload multiple files</li>
+        <li>to add single files</li>
+        <li>to add multiple files</li>
         <li>for a range of file types</li>
       </ul>
 
@@ -54,12 +54,12 @@
         <li>in some internal services where there is a need for bulk uploading</li>
       </ul>
 
-      <h3 class="heading-small">The upload (add) pattern should:</h3>
+      <h3 class="heading-small">The Add file pattern should:</h3>
       <ul class="list list-bullet">
-        <li>avoid the word upload - we have seen in research that some users panic when asked to upload something - when the word upload was removed users found they could do what they needed to do</li>
-        <li>replay the file clearly to reduce user error</li>
+        <li>avoid the word &ldquo;upload&rdquo; - we have seen in research that some users panic when asked to upload something. When the word upload was removed users found they could do what they needed to do</li>
+        <li>replay the file details clearly to reduce user error</li>
         <li>show the progress of an upload so users know that something is happening</li>
-        <li>allow the user to skip the process if allowed</li>
+        <li>allow the user to skip the process if it is optional</li>
       </ul>
 
       <!-- <h2 class="heading-medium">Interactions using this pattern</h2>
