@@ -11,7 +11,7 @@ $('.tabs').each(function(){
 });
 
 // click function for tabs
-$('.tabs a').click(function(e){
+$('.tabs__link').click(function(e){
   e.preventDefault();
 
   var tabs = $(this).parents('.tabs');
@@ -31,5 +31,5 @@ $('.tabs a').click(function(e){
 // check for hash in url and open that tab if its there
 var hash = window.location.hash;
 if (hash) {
-  $('.tabs a[href="' + hash +'"]').click();
+  $('.tabs__link[href="' + hash +'"]').click();
 }
