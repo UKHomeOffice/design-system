@@ -296,6 +296,16 @@ code {
     font-size: 16px;
 }
 
+// Details
+
+details.details-interruption {
+  background-color: inherit;
+
+  summary {
+    padding-left: 0;
+  }
+}
+
 details {
   background-color: #ebebeb;
   padding-top: 10px;
