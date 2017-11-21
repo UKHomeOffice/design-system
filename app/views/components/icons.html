@@ -294,7 +294,7 @@
 
         </tbody>
       </table>
-      <details style="margin-top: 20px;">
+      <details class="code-details" style="margin-top: 20px;">
         <summary>Show HTML example</summary>
         <pre class="language-markup"><code class="language-markup">&lt;p&gt;&lt;span class="hod-printer side-space icon-medium"&gt;&lt;/span&gt;Print this page&lt;/p&gt;</code></pre>
       </details>
@@ -322,20 +322,24 @@
       <div class="example example-images">
         <img width="100%" height="auto" src="{{ asset_path }}/images/icon-type-alignment.svg" alt="Icon alignment with type">
       </div>
-
-      <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
-      <ul class="list-bullet">
-        <li>icons should always have a label and use <code class="language-markup">aria-hidden="true"</code></li>
-        <li>if an icon can't have a label, ensure it has screenreader only support</br></li>
-      </ul>
-      <p><pre><code class="language-markup">&ltspan class="visuallyhidden"&gtHome button&lt/span&gt</code></pre></p>
-
-      <h2 id="research" class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>users interpret icons differently so shouldn't be used without a label</li>
-        <li>don't use generic icons for specific labels, for example the calendar icon for a date of birth</li>
-      </ul>
     </div>
+
+      <div class="column-two-thirds">
+        <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
+        <ul class="list-bullet">
+          <li>icons should always have a label and use <code class="language-markup">aria-hidden="true"</code></li>
+          <li>if an icon can't have a label, ensure it has screenreader only support</br></li>
+        </ul>
+        <p>
+          <pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;visually-hidden&#x22;&#x3E;Home button&#x3C;/span&#x3E;</code></pre>
+        </p>
+
+        <h2 id="research" class="heading-medium">User research</h2>
+        <ul class="list list-bullet">
+          <li>users interpret icons differently so shouldn't be used without a label</li>
+          <li>don't use generic icons for specific labels, for example the calendar icon for a date of birth</li>
+        </ul>
+      </div>
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Pattern is missing</h2>
