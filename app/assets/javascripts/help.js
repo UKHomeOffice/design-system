@@ -26,10 +26,10 @@ function _destroy() {
 }
 
 // Bind the functions...
-document.getElementById('draggable-element').onmousedown = function () {
-    _drag_init(this);
-    return false;
-};
+// document.getElementById('draggable-element').onmousedown = function () {
+//     _drag_init(this);
+//     return false;
+// };
 
 document.onmousemove = _move_elem;
 document.onmouseup = _destroy;
