@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pattern - Confirmation loop
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Multiple loops</h1>
+    <p class="lede">An interaction that allows a user to add multiple items, check and add more if needed.</p>
+    <ul class="metadata">
+      <li>Usage: internal/external</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 21 November 2017</li>
+    </ul>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <div class="example example-images confirmation">
+        <h2 class="heading-small" id="example-component">Multiple loops pattern</h2>
+        <img src="{{ asset_path }}/images/multiple-loops.svg" class="confirm-desktop" alt="">
+        <img src="{{ asset_path }}/images/multiple-loops-mobile.svg" class="confirmation confirm-mobile" alt="">
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">What are multiple loops</h2>
+      <p>This interaction allows a user to add single or multiple items, check they are correct and an option to add more.</p>
+
+      <p>We have seen this pattern used for adding people to an application, items to a list and uploading files.</p>
+
+      <h2 class="heading-medium">Guidance</h2>
+      <h3 class="heading-small">It can be used:</h3>
+      <ul class="list list-bullet">
+        <li>to help confirm an action</li>
+        <li>to allow the user to change their minds</li>
+        <li>when the action is not easily reversible</li>
+        <li>when the completion immediately starts another process</li>
+      </ul>
+
+      <!-- <h3 class="heading-small">It should not be used:</h3>
+      <ul class="list list-bullet">
+        <li>to agree to terms and conditions</li>
+        <li>if the user can easily change their action or input later</li>
+      </ul> -->
+
+      <h3 class="heading-small">Multiple loops should:</h3>
+      <ul class="list list-bullet">
+        <li>remember previous choices</li>
+        <li>give clear guidance on the flexibility of choices</li>
+      </ul>
+
+      <h2 class="heading-medium">Interactions using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Entering a recipient&rsquo;s email address</li>
+        <li>Uploading multiple files</li>
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
