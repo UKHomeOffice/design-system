@@ -306,14 +306,14 @@ details.details-interruption {
   }
 }
 
-details {
-  background-color: #ebebeb;
-  padding-top: 10px;
-  margin-bottom: 10px;
-}
+details.code-details {
+    background-color: #ebebeb;
+    padding-top: 10px;
+    margin-bottom: 10px;
 
-details summary {
-  padding-left: 10px;
+    summary {
+      padding-left: 10px;
+    }
 }
 
 pre.language-markup  {
