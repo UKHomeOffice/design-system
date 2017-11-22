@@ -74,10 +74,14 @@ a {
   margin-top: 30px;
 
   a {
-    color: white;  
+    color: white;
   }
 
-  h2, p {
+  h2 {
+    margin: 0 0 10px 0;
+  }
+
+  p {
     margin: 0;
   }
 }

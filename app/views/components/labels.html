@@ -33,66 +33,66 @@ Home Office DDaT design patterns
         </div>
       </div>
 
+      <details class="code-details">
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/labels.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_labels.scss' | fileInclude }}</code></pre>
+      </details>
+
     </div>
   </div>
-  <details class="code-details">
-    <summary>Show HTML snippet</summary>
-    <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/labels.html" %}{% endfilter %}</code></pre>
-  </details>
-  <details class="code-details">
-    <summary>Show CSS snippet</summary>
-    <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_labels.scss' | fileInclude }}</code></pre>
-  </details>
 
-</div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
+      <ul class="list list-bullet">
+        <li>Labels shouldn't look like buttons</li>
+        <li>Labels are for quick referencing</li>
+        <li>Labels shouldn't be permanent</li>
+        <li>Labels should appear at the end of the content that it labels</li>
+        <li>The margin to the right should be greater to indicate what it relates to</li>
+      </ul>
 
-<div class="grid-row">
-  <div class="column-two-thirds">
-    <h2 id="interaction" class="heading-medium">Interaction patterns</h2>
-    <ul class="list list-bullet">
-      <li>Labels shouldn't look like buttons</li>
-      <li>Labels are for quick referencing</li>
-      <li>Labels shouldn't be permanent</li>
-      <li>Labels should appear at the end of the content that it labels</li>
-      <li>The margin to the right should be greater to indicate what it relates to</li>
-    </ul>
-
-    <h2 id="documentation" class="heading-medium">Content patterns</h2>
-    <ul class="list list-bullet">
-      <li>Labels should be single words</li>
-      <li>Labels should be <a href="https://en.wiktionary.org/wiki/common_noun">common nouns</a></li>
-      <li>Content on labels doesn't have to be descriptive</li>
-      <li>Labels are recommended to be lowercase</li>
-    </ul>
+      <h2 id="documentation" class="heading-medium">Content patterns</h2>
+      <ul class="list list-bullet">
+        <li>Labels should be single words</li>
+        <li>Labels should be <a href="https://en.wiktionary.org/wiki/common_noun">common nouns</a></li>
+        <li>Content on labels doesn't have to be descriptive</li>
+        <li>Labels are recommended to be lowercase</li>
+      </ul>
+    </div>
   </div>
-</div>
 
-<div class="grid-row">
-  <div class="column-two-thirds">
-    <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 id="inclusive" class="heading-medium">Inclusive patterns</h2>
       <p>Labels shouldn't be interactive and therefore do not need aria labelling</p>
       <p>Colour combinations must meet the minimum WCAG 2.0 AA <a href="http://contrastchecker.com/" target="_blank">colour contrast check</a></p>
       <p>Labels should not use colour only to identify grouping or importance</p>
 
-    <h2 id="research" class="heading-medium">User research</h2>
-    <ul class="list list-bullet">
-      <li>Adding labels to everything is counterintuative</li>
-    </ul>
+      <h2 id="research" class="heading-medium">User research</h2>
+      <ul class="list list-bullet">
+        <li>Adding labels to everything is counterintuative</li>
+      </ul>
 
-    <h2 class="heading-medium">Services using this pattern</h2>
-    <ul class="list list-bullet">
-      <li>Home Office Communications (HOC)</li>
-      <li>Syrian Refugee Resettlement Service</li>
-    </ul>
-  </div>
-</div>
+      <h2 class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Home Office Communications (HOC)</li>
+        <li>Syrian Refugee Resettlement Service</li>
+      </ul>
+    </div>
 
-<div class="grid-row">
-  <div class="column-full">
-    <hr>
-    <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/43">Discuss this pattern on GitHub</a>
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/43">GitHub</a>.</p>
+      </div>
+    </div>
+    
   </div>
-</div>
 
 </main>
 
