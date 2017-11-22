@@ -65,6 +65,23 @@ a {
   margin-bottom: 0.55556em;
 }
 
+// Contact us\
+
+.contact-us {
+  padding: 30px;
+  background-color: #005ea5;
+  color: white;
+  margin-top: 30px;
+
+  a {
+    color: white;  
+  }
+
+  h2, p {
+    margin: 0;
+  }
+}
+
 // Banner
 
 .banner {
@@ -77,7 +94,7 @@ a {
 
 // footer
 .version {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 // OVERRIDES
