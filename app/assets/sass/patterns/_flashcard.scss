@@ -34,7 +34,7 @@
       color: $page-colour; }
     }
     details {
-      margin-bottom: 1em;
+      // margin-bottom: 1em;
       summary {
         color: $page-colour;
       }
@@ -64,6 +64,6 @@
   @media (min-width: 769px) {
     .flash-card {
       margin-top: 1.25em;
-      padding: 60px;
+      padding: 35px 50px;
     }
   }
