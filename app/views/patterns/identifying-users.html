@@ -22,25 +22,29 @@
   </div>
 
   <div class="grid-row">
-    <!-- <div class="column-full">
-
-      <div class="example example-images confirmation">
-        <h2 class="heading-small" id="example-component">Multiple loops pattern</h2>
-        <img src="{{ asset_path }}/images/multiple-loops.svg" class="confirm-desktop" alt="">
-        <img src="{{ asset_path }}/images/multiple-loops-mobile.svg" class="confirmation confirm-mobile" alt="">
-      </div>
-    </div> -->
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Authenticating users</h4>
-      <p>This lets the system know that the user who did something earlier is the same user now. An example would be a user starting an application is the same user who returned to finish it later.</p>
-      <p>Authentication does not:</p>
+      <p>Authentication tells the system that a user who did something earlier is the same user. An example would be a user starting an application is the same user who returned to finish it later.</p>
+    </div>
+    <div class="column-full">
+      <div class="example example-images confirmation">
+        <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+        <img src="{{ asset_path }}/images/auth.svg" class="confirm-desktop" alt="">
+        <img src="{{ asset_path }}/images/auth-mobile.svg" class="confirmation confirm-mobile" alt="">
+      </div>
+    </div>
+    <div class="column-two-thirds">
+      <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails or third-party authentication.</p>
+      <p>Authentication has limits. It does not:</p>
       <ul class="list list-bullet">
         <li>confirm who the user is</li>
         <li>what the user can do</li>
         <li>if the user is who they say they are</li>
       </ul>
+    </div>
 
+    <div class="column-two-thirds">
       <h2 class="heading-medium">Identity assurance</h4>
       <p>Identity assurance confirms the true identity of a user. The checks are usually done before confirming a users suitability for something. The assurance can consist of:</p>
       <ul class="list list-bullet">
