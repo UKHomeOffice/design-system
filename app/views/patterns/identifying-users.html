@@ -27,14 +27,41 @@
       <h2 class="heading-medium">Authenticating users</h4>
       <p>Authentication tells the system that a user who did something earlier is the same user. An example would be a user starting an application is the same user who returned to finish it later.</p>
     </div>
+
     <div class="column-full">
-      <div class="example example-images confirmation">
-        <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
-        <img src="{{ asset_path }}/images/auth.svg" class="confirm-desktop" alt="">
-        <img src="{{ asset_path }}/images/auth-mobile.svg" class="confirmation confirm-mobile" alt="">
-      </div>
+      <details>
+        <summary>Example - authentication using a reference number</summary>
+        <div class="example example-images confirmation">
+          <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+          <img src="{{ asset_path }}/images/auth.svg" class="confirm-desktop" alt="">
+          <img src="{{ asset_path }}/images/auth-mobile.svg" class="confirmation confirm-mobile" alt="">
+        </div>
+      </details>
     </div>
-    <div class="column-two-thirds">
+
+    <div class="column-full">
+      <details>
+        <summary>Example - knowledge based authentication</summary>
+        <div class="example example-images confirmation">
+          <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+          <img src="{{ asset_path }}/images/auth-knowledge-based.svg" class="confirm-desktop" alt="">
+          <img src="{{ asset_path }}/images/auth-knowledge-based-mobile.svg" class="confirmation confirm-mobile" alt="">
+        </div>
+      </details>
+    </div>
+
+    <div class="column-full">
+      <details>
+        <summary>Example - two-factor authentication</summary>
+        <div class="example example-images confirmation">
+          <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+          <img src="{{ asset_path }}/images/auth.svg" class="confirm-desktop" alt="">
+          <img src="{{ asset_path }}/images/auth-mobile.svg" class="confirmation confirm-mobile" alt="">
+        </div>
+      </details>
+    </div>
+
+    <div class="column-two-thirds" style="margin-top:20px;">
       <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails or third-party authentication.</p>
       <p>Authentication has limits. It does not:</p>
       <ul class="list list-bullet">
@@ -54,19 +81,20 @@
         <li>checking for warnings about a user</li>
       </ul>
 
-      <h2 class="heading-medium">User account</h4>
-      <p>We should avoid user accounts where possible. Making users create accounts when not needed:</p>
+      <h2 class="heading-medium">User accounts</h4>
+      <p>Avoid user accounts where possible. Services should start in public so it is easier for users to find the right service. This is valuable when there are hundreds of services like in Government.</p>
+      <p>Making users create accounts when not needed:</p>
       <ul class="list list-bullet">
         <li>forces users to keep track of more logins then neccesary</li>
         <li>creates a barrier for users and can reduce completion rates</li>
-        <li>burdens teams with difficult to build and maintain</li>
+        <li>burdens teams with databases that are difficult to build and maintain</li>
         <li>grows the amount of redundant databases - which is expensive and a security risk</li>
       </ul>
 
       <p>Only make users create an account if:</p>
       <ul class="list list-bullet">
         <li>users access a service frequently</li>
-        <li>users need it - and don't force users to create an account until necessary</li>
+        <li>users need it - don't force users to create an account until necessary</li>
         <li>a service needs to audit user behaviour</li>
       </ul>
 
