@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern - Contextual help
+Pattern - Contextual help
 {% endblock %}
 
 {% block content %}
@@ -24,11 +24,10 @@
   <div class="grid-row">
 
     <div class="column-full">
-
-      <div class="example example-images" id="example-component">
-        <div class="grid-row">
-          {% include "includes/patterns/help.html" %}
-        </div>
+      <div class="example example-images confirmation">
+        <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+        <img src="{{ asset_path }}/images/help.svg" class="confirm-desktop" alt="The first page is a search page on Gov.uk. It shows a search heading and information followed by a search input and button. The second page is the same but has an overlay help box with answers to common questions and a link to full help.">
+        <img src="{{ asset_path }}/images/help-mobile.svg" class="confirmation confirm-mobile" alt="The first page is a search page on Gov.uk. It shows a search heading and information followed by a search input and button. The second page is the same but has an overlay help box with answers to common questions and a link to full help.">
       </div>
     </div>
 
@@ -42,34 +41,34 @@
       <h2 class="heading-medium">Content principles</h2>
       <p><a href="https://www.gov.uk/service-manual/design/help-text" target="_blank">GDS has guidance for help content</a>.</li>
 
-      <h2 class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>users find side-by-side guidance more helpful and easier to use.</li>
-        <li>small overlay windows offer the smallest interference with the users flow</li>
-        <li>this is a <a href="https://www.nngroup.com/articles/pop-up-adaptive-help/" target="_blank">good article on contextual help</a> from Nielsen Norman</li>
-      </ul>
+        <h2 class="heading-medium">User research</h2>
+        <ul class="list list-bullet">
+          <li>users find side-by-side guidance more helpful and easier to use.</li>
+          <li>small overlay windows offer the smallest interference with the users flow</li>
+          <li>this is a <a href="https://www.nngroup.com/articles/pop-up-adaptive-help/" target="_blank">good article on contextual help</a> from Nielsen Norman</li>
+        </ul>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
-        <li>Application platform</li>
-        <li>Entities</li>
-      </ul>
+        <h2 class="heading-medium">Services using this pattern</h2>
+        <ul class="list list-bullet">
+          <li>Application platform</li>
+          <li>Entities</li>
+        </ul>
 
-      <h2 class="heading-medium">Related patterns</h2>
-      <ul class="list list-bullet">
-        <li><a href="/patterns/modal.html">Modal windows</a></li>
-      </ul>
+        <h2 class="heading-medium">Related patterns</h2>
+        <ul class="list list-bullet">
+          <li><a href="/patterns/modal.html">Modal windows</a></li>
+        </ul>
 
-    </div>
-
-    <div class="column-full">
-      <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/50">GitHub</a>.</p>
       </div>
+
+      <div class="column-full">
+        <div class="contact-us">
+          <h2 class="heading-medium">Get in touch</h2>
+          <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/50">GitHub</a>.</p>
+        </div>
+      </div>
+
     </div>
+  </main>
 
-  </div>
-</main>
-
-{% endblock %}
+  {% endblock %}
