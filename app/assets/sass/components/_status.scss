@@ -1,0 +1,18 @@
+.status {
+  background-color: $govuk-blue;
+  padding: 20px;
+  color: $white;
+  display: flex;
+  align-items: center;
+
+  p {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .status-info {
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
