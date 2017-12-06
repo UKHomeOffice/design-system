@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Components - Pagination
+{% endblock %}
+
+{% block content %}
+
+{% set active = "components" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Status indicator</h1>
+      <p class="lede">An indication to the user that something has changed.</p>
+      <ul class="metadata">
+        <li>Usage: internal/external</li>
+        <li>Status: experimental</li>
+        <li>Last updated: 6 December 2017</li>
+      </ul>
+    </div>
+
+    <div class="column-full">
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/status.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/status.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_status.scss' | fileInclude }}</code></pre>
+      </details>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <h2 id="interaction" class="heading-medium">Interaction principles</h2>
+      <p>Only use status indicators when:</p>
+      <ul class="list list-bullet">
+        <li>to tell the user something important</li>
+        <li>to inform the user of a change</li>
+        <li>to inform the user that they need to do something</li>
+      </ul>
+
+      <h2 id="documentation" class="heading-medium">Content principles</h2>
+      <p>Clear content about the change and what it means for the user.</p>
+
+      <h2 class="heading-medium">User research</h2>
+      <ul class="list list-bullet">
+        <li></li>
+      </ul>
+
+      <h2 class="heading-medium">Services using statuses</h2>
+      <ul class="list list-bullet">
+        <li>Returns and movement</li>
+        <li>Passport renewals</li>
+        <li>Passport application search</li>
+      </ul>
+    </div>
+
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/53">GitHub</a>.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
