@@ -29,7 +29,16 @@
           {% include "includes/components/timeline.html" %}
         </div>
       </div>
+      <details class="code-details">
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/timeline.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_timeline.scss' | fileInclude }}</code></pre>
+      </details>
     </div>
+
 
     <div class="column-two-thirds">
       <h2 id="interaction" class="heading-medium">Interaction principles</h2>
