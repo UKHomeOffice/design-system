@@ -10,19 +10,20 @@
 {% include "includes/top_nav.html" %}
 
 <main id="content" role="main">
+
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Status indicator</h1>
+    <p class="lede">An indication to the user that something has changed.</p>
+    <ul class="metadata">
+      <li>Usage: internal/external</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 6 December 2017</li>
+    </ul>
+  </div>
+
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-section">Status indicator</h1>
-      <p class="lede">An indication to the user that something has changed.</p>
-      <ul class="metadata">
-        <li>Usage: internal/external</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 6 December 2017</li>
-      </ul>
-    </div>
-
-    <div class="column-full">
-      <h2 class="heading-medium" id="example-component">Example component</h2>
       <div class="example example-images">
         <div class="grid-row">
           {% include "includes/components/status.html" %}
@@ -47,6 +48,7 @@
         <li>to inform the user of a change</li>
         <li>to inform the user that they need to do something</li>
       </ul>
+      <p>For less prominent status indicators you could use <a href="labels">labels</a>.</p>
 
       <h2 id="documentation" class="heading-medium">Content principles</h2>
       <p>Clear content about the change and what it means for the user.</p>
