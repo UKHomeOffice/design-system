@@ -1,18 +1,30 @@
 .status {
   background-color: $govuk-blue;
-  padding: 20px;
   color: $white;
-  display: flex;
-  align-items: center;
+  padding: 20px;
 
   p {
     font-weight: 700;
-    font-size: 24px;
-    margin: 0;
   }
 
-  .status-info {
-    font-size: 18px;
+  .status-extra {
     font-weight: normal;
+  }
+}
+
+@include media(tablet) {
+  .status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .status-extra {
+      font-size: 18px;
+    }
   }
 }
