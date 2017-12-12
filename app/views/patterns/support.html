@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pattern - Support
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Support</h1>
+    <p class="lede">Provide information to users who encounter a problem and need help.</p>
+    <ul class="metadata">
+      <li>Usage: internal/external</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 12 December 2017</li>
+    </ul>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <img src="{{ asset_path }}/images/support.svg" class="confirm-desktop" alt="">
+        <img src="{{ asset_path }}/images/support-mobile.svg" class="confirmation confirm-mobile" alt="">
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <h2 class="heading-medium">Guidance</h2>
+      <h3 class="heading-small">It can be used:</h3>
+      <ul class="list list-bullet">
+        <li>as part of an error page</li>
+        <li>as part of feedback</li>
+      </ul>
+
+      <!-- <h3 class="heading-small">It should not be used:</h3>
+      <ul class="list list-bullet">
+        <li>if the address is needed as structured data</li>
+      </ul> -->
+
+      <h3 class="heading-small">The support pattern should:</h3>
+      <ul class="list list-bullet">
+        <li>give a number of options for how the user reports a problem</li>
+        <li>always be available to users</li>
+        <li>clearly say what time support is available</li>
+      </ul>
+
+
+    </div>
+
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/86">GitHub</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
