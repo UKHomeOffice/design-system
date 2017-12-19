@@ -2,9 +2,7 @@
 
 If you think a pattern or component should be included in the system, first discuss it with the design community on Slack or in GitHub.
 
-You can see our backlog of patterns and components on [GitHub](https://github.com/UKHomeOffice/home-office-digital-patterns/projects/1). To suggest a new pattern or component please [create an issue](https://github.com/UKHomeOffice/home-office-digital-patterns/issues).
-
-Add the following information to the issue:
+You can see our backlog of patterns and components on [GitHub](https://github.com/UKHomeOffice/home-office-digital-patterns/projects/1). To suggest a new pattern or component please [create an issue](https://github.com/UKHomeOffice/home-office-digital-patterns/issues). Add the following information to the issue:
 
 *   the need the pattern/component meets
 *   why you think it should be included in the design system
