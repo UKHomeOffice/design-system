@@ -1,5 +1,7 @@
 # Home Office design system
 
+Design system for Home Office services - an extension of the GOV.UK system. [Open backlog of patterns and components](https://github.com/UKHomeOffice/design-system/projects/1)
+
 ## Purpose
 Documenting common ways of solving problems - helping to reduce multiplied effort.
 Filling the gaps between GDS guidance and Home Office services.
