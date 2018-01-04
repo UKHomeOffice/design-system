@@ -14,7 +14,7 @@
     <div class="column-full">
       <div class="banner" role="banner">
         <h1 class="heading-section">Icons</h1>
-        <p class="lede">Full set of icons for use in Home Office services.</p>
+        <p class="lede">Full set of icons for use in Home Office services. Expanding on GOV.UK <a href="http://govuk-elements.herokuapp.com/icons-images/#icons">guidance for icons</a> to include interactions that allow users to better understand information.</p>
         <ul class="metadata">
           <li>Usage: internal</li>
           <li>Status: experimental</li>
@@ -23,37 +23,35 @@
       </div>
     </div>
 
-    <div class="column-full">
-      <h2 class="heading-medium">Use the icons</h2>
-      <div class="column-half">
-        <h3 class="heading-small">In the prototyping kit</h3>
-        <p>Download the zip. Unzip and move fonts and icons.css into <code>app > assets > vendor</code>.</p>
-        <div class="block-space">
-          <a href="{{ asset_path }}/download/kit-icons.zip" class="button download-button download-button--large" role="button">Download for kit</a>
-        </div>
+    <div class="column-two-thirds">
+      <h2 class="heading-medium" style="margin-top: 0.5em;">Use the icons</h2>
+
+      <div class="block-space">
+        <a href="/public//download/kit-icons.zip" class="button download-button download-button--large" role="button" style="margin-right:20px;margin-bottom:20px;">Download for prototyping kit</a>
+        <a href="/public//download/hod-icons.zip" class="button download-button download-button--large" role="button">Download for Sketch</a>
       </div>
-      <div class="column-half">
-        <h3 class="heading-small">In Sketch</h3>
-        <p>Download the zip which contains SVG and PNG versions of each icon.</p>
-        <div class="block-space">
-          <a href="{{ asset_path }}/download/hod-icons.zip" class="button download-button download-button--large" role="button">Download for Sketch</a>
-        </div>
-      </div>
+
+      <h3 class="heading-small">In the prototyping kit</h3>
+      <ol class="list-number list">
+        <li><a href="{{ asset_path }}/download/kit-icons.zip">Download the zip</a></li>
+        <li>Unzip and move the kit-icons folder into <code>app > assets</code></li>
+        <li>Go to <code>app > views > includes > head.html</code> and link to the new icons.css file</li>
+        <li>Add this code and change the class name to the icon you want <br><pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;hod-printer side-space icon-medium&#x22;&#x3E;&#x3C;/span&#x3E;</code></pre></li>
+      </ol>
+
+      <h3 class="heading-small">In Sketch</h3>
+      <ol class="list-number list">
+        <li><a href="{{ asset_path }}/download/hod-icons.zip" >Download the zip</a></li>
+        <li>The download contains SVG and PNG versions of each icon</li>
+        <li>Insert them into Sketch or your favourite graphics software</li>
+      </ol>
+
     </div>
 
     <div class="column-two-thirds">
-      <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>Expanding on GOV.UK <a href="http://govuk-elements.herokuapp.com/icons-images/#icons">guidance for icons</a> to include interactions that allow users to better understand information. This is more relevant to internal users.</p>
-      <p>The icons used here are grouped as follows:</p>
-      <ul class="list list-bullet">
-        <li><a href="#navigation-icons">Navigation icons</a> – help users navigate through a service</li>
-        <li><a href="#controller-icons">Controller icons</a> – help users to sort, organise or adjust the information, for example by filtering data, opening and closing modals or revealing additional content</li>
-        <li><a href="#reference-icons">Quick reference icons</a> – help users to understand options and context</li>
-      </ul>
-    </div>
-
-    <div class="column-full">
       <h2 id="navigation-icons" class="heading-medium">Navigation icons</h2>
+      <p>Helps users navigate through a service</p>
+
       <table>
         <tbody>
           <tr>
@@ -107,6 +105,7 @@
       </table>
 
       <h2 id="controller-icons" class="heading-medium">Controller icons</h2>
+      <p>Helps users to sort, organise or adjust the information, for example by filtering data, opening and closing modals or revealing additional content</p>
       <table>
         <tbody>
           <tr>
@@ -221,6 +220,7 @@
       </table>
 
       <h2 id="reference-icons" class="heading-medium">Quick reference icons</h2>
+      <p>Helps users to understand options and context</p>
       <table>
         <tbody>
           <tr>
@@ -309,10 +309,10 @@
 
         </tbody>
       </table>
-      <details class="code-details" style="margin-top: 20px;">
+      <!-- <details class="code-details" style="margin-top: 20px;">
         <summary>Show HTML example</summary>
         <pre class="language-markup"><code class="language-markup">&lt;p&gt;&lt;span class="hod-printer side-space icon-medium"&gt;&lt;/span&gt;Print this page&lt;/p&gt;</code></pre>
-      </details>
+      </details> -->
     </div>
 
     <div class="column-two-thirds">
@@ -330,40 +330,28 @@
 
       <h2 id="documentation" class="heading-medium">Content principles</h2>
       <ul class="list-bullet">
-        <li>Every icon should use a visible and audible label to avoid confusion over what it represents.</p>
+        <li>Every icon should use a visible and audible label to avoid confusion over what it represents.</li>
         <li>Align the icon in a central position in relation to any type</li>
-        <li>Type can sit either to the left or to the right of the icon</li>
+        <li>Content can sit either side of the icon</li>
+      </ul>
 
       <div class="example example-images">
         <img width="100%" height="auto" src="{{ asset_path }}/images/icon-type-alignment.svg" alt="Icon alignment with type">
       </div>
-    </div>
 
-      <div class="column-two-thirds">
-        <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
-        <ul class="list-bullet">
-          <li>icons should always have a label and use <code class="language-markup">aria-hidden="true"</code></li>
-          <li>if an icon can't have a label, ensure it has screenreader only support</br></li>
-        </ul>
-        <p>
-          <pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;visually-hidden&#x22;&#x3E;Home button&#x3C;/span&#x3E;</code></pre>
-        </p>
+      <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
+      <ul class="list-bullet">
+        <li>icons should always have a label and use <code class="language-markup">aria-hidden="true"</code></li>
+        <li>if an icon can't have a label, ensure it has screenreader only support</br></li>
+      </ul>
+      <p>
+        <pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;visually-hidden&#x22;&#x3E;Home button&#x3C;/span&#x3E;</code></pre>
+      </p>
 
-        <h2 id="research" class="heading-medium">User research</h2>
-        <ul class="list list-bullet">
-          <li>users interpret icons differently so shouldn't be used without a label</li>
-          <li>don't use generic icons for specific labels, for example the calendar icon for a date of birth</li>
-        </ul>
-      </div>
-
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">Pattern is missing</h2>
+      <h2 id="research" class="heading-medium">User research</h2>
       <ul class="list list-bullet">
-        <li>more access needs research including cognition and comprehension</li>
-        <li>more research using icons as <code>:before</code> content on buttons</li>
-        <li>greater knowledge of what icons are used within icon libraries (don't use them all)</li>
-        <li>feedback on designer/developer needs</li>
-        <li>clarity on alignment, padding and size for touchscreen hit area</li>
+        <li>users interpret icons differently so shouldn't be used without a label</li>
+        <li>don't use generic icons for specific labels, for example the calendar icon for a date of birth</li>
       </ul>
 
       <h2 class="heading-medium">Services using this pattern</h2>
