@@ -24,31 +24,6 @@
     </div>
 
     <div class="column-two-thirds">
-      <h2 class="heading-medium" style="margin-top: 0.5em;">Use the icons</h2>
-
-      <div class="block-space">
-        <a href="/public//download/kit-icons.zip" class="button download-button download-button--large" role="button" style="margin-right:20px;margin-bottom:20px;">Download for prototyping kit</a>
-        <a href="/public//download/hod-icons.zip" class="button download-button download-button--large" role="button">Download for Sketch</a>
-      </div>
-
-      <h3 class="heading-small">In the prototyping kit</h3>
-      <ol class="list-number list">
-        <li><a href="{{ asset_path }}/download/kit-icons.zip">Download the zip</a></li>
-        <li>Unzip and move the kit-icons folder into <code>app > assets</code></li>
-        <li>Go to <code>app > views > includes > head.html</code> and link to the new icons.css file <br><pre class="language-markup"><code class="language-markup">&#x3C;link href=&#x22;/public/kit-icons/icons.css&#x22; media=&#x22;screen&#x22; rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; /&#x3E;</code></pre></li>
-        <li>On a page add this code and change the class name to the icon you want <br><pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;hod-printer side-space icon-medium&#x22;&#x3E;&#x3C;/span&#x3E;</code></pre></li>
-      </ol>
-
-      <h3 class="heading-small">In Sketch</h3>
-      <ol class="list-number list">
-        <li><a href="{{ asset_path }}/download/hod-icons.zip" >Download the zip</a></li>
-        <li>The download contains SVG and PNG versions of each icon</li>
-        <li>Insert them into Sketch or your favourite graphics software</li>
-      </ol>
-
-    </div>
-
-    <div class="column-two-thirds">
       <h2 id="navigation-icons" class="heading-medium">Navigation icons</h2>
       <p>Helps users navigate through a service</p>
 
@@ -57,7 +32,7 @@
           <tr>
             <th class="table-summary-title">Icon</th>
             <th class="table-summary-title">Label</th>
-            <th class="table-summary-title--last">Variable</th>
+            <th class="table-summary-title--last">Class name</th>
           </tr>
           <!-- hod-home-3 -->
           <tr>
@@ -111,7 +86,7 @@
           <tr>
             <th class="table-summary-title">Icon</th>
             <th class="table-summary-title">Label</th>
-            <th class="table-summary-title--last">Variable</th>
+            <th class="table-summary-title--last">Class name</th>
           </tr>
           <!-- hod-search-plus -->
           <tr>
@@ -226,7 +201,7 @@
           <tr>
             <th class="table-summary-title">Icon</th>
             <th class="table-summary-title">Label</th>
-            <th class="table-summary-title--last">Variable</th>
+            <th class="table-summary-title--last">Class name</th>
           </tr>
           <!-- hod-email -->
           <tr>
@@ -316,14 +291,37 @@
     </div>
 
     <div class="column-two-thirds">
+      <h2 class="heading-medium">Using the icons</h2>
+
+      <div class="block-space">
+        <a href="/public//download/kit-icons.zip" class="button download-button download-button--large" role="button" style="margin-right:20px;margin-bottom:20px;">Download for prototyping kit</a>
+        <a href="/public//download/hod-icons.zip" class="button download-button download-button--large" role="button">Download for Sketch</a>
+      </div>
+
+      <h3 class="heading-small">In the prototyping kit</h3>
+      <ol class="list-number list">
+        <li><a href="{{ asset_path }}/download/kit-icons.zip">Download the zip</a></li>
+        <li>Unzip and move the kit-icons folder into <code>app > assets</code></li>
+        <li>Go to <code>app > views > includes > head.html</code> and link to the new icons.css file <br><pre class="language-markup"><code class="language-markup">&#x3C;link href=&#x22;/public/kit-icons/icons.css&#x22; media=&#x22;screen&#x22; rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; /&#x3E;</code></pre></li>
+        <li>On a page add this code and change the class name to the icon you want <br><pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;hod-printer side-space icon-medium&#x22;&#x3E;&#x3C;/span&#x3E;</code></pre></li>
+      </ol>
+
+      <h3 class="heading-small">In Sketch</h3>
+      <ol class="list-number list">
+        <li><a href="{{ asset_path }}/download/hod-icons.zip" >Download the zip</a></li>
+        <li>The download contains SVG and PNG versions of each icon</li>
+        <li>Insert them into Sketch or your favourite graphics software</li>
+      </ol>
+
+    </div>
+
+    <div class="column-two-thirds">
       <h2 id="interaction" class="heading-medium">Interaction principles</h2>
       <ul class="list-bullet">
-        <li>The minimum size for an icon is 16px</li>
-        <li>If it's part of a button the hit area should be 36px</li>
-        <li>The icon shouldn't change colour in a hover/active/focus states, only the background.</li>
-        <li>In the normal state, the icon can be a different colour using the GOV.UK colour palette - both in solid and reversed out state - as long as the colour combination meets the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a></li>
+        <li>The minimum icon size is 16px.</li>
+        <li>If an icon is part of a button the hit area should be 36px.</li>
+        <li>The icon shouldn't change colour in hover/active/focus states, only the background.</li>
       </ul>
-
       <div class="example example-images">
         <img width="100%" height="auto" src="{{ asset_path }}/images/icon-colours.svg" alt="Icon usage with colour">
       </div>
@@ -331,18 +329,18 @@
       <h2 id="documentation" class="heading-medium">Content principles</h2>
       <ul class="list-bullet">
         <li>Every icon should use a visible and audible label to avoid confusion over what it represents.</li>
-        <li>Align the icon in a central position in relation to any type</li>
-        <li>Content can sit either side of the icon</li>
+        <li>Align the icon in a central position in relation to any type.</li>
+        <li>Content can sit either side of the icon.</li>
       </ul>
-
       <div class="example example-images">
         <img width="100%" height="auto" src="{{ asset_path }}/images/icon-type-alignment.svg" alt="Icon alignment with type">
       </div>
 
       <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
       <ul class="list-bullet">
-        <li>icons should always have a label and use <code class="language-markup">aria-hidden="true"</code></li>
-        <li>if an icon can't have a label, ensure it has screenreader only support</br></li>
+        <li>Icons should always have a visible label and use <code class="language-markup">aria-hidden="true"</code>.</li>
+        <li>If an icon can't have a label, ensure it has screenreader support.</li>
+        <li>Make sure icon colour combinations meets the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a>.</li>
       </ul>
       <p>
         <pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;visually-hidden&#x22;&#x3E;Home button&#x3C;/span&#x3E;</code></pre>
@@ -350,8 +348,8 @@
 
       <h2 id="research" class="heading-medium">User research</h2>
       <ul class="list list-bullet">
-        <li>users interpret icons differently so shouldn't be used without a label</li>
-        <li>don't use generic icons for specific labels, for example the calendar icon for a date of birth</li>
+        <li>Users interpret icons differently so shouldn't be used without a label.</li>
+        <li>Don't use generic icons for specific labels, for example the calendar icon for a date of birth.</li>
       </ul>
 
       <h2 class="heading-medium">Services using this pattern</h2>
