@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Components - Back link
+{% endblock %}
+
+{% block content %}
+
+{% set active = "components" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Back link</h1>
+      <p class="lede">A control to navigate back to the previous page of a service.</p>
+      <ul class="metadata">
+        <li>Usage: external/internal</li>
+        <li>Status: experimental</li>
+        <li>Last updated: 8 January 2018</li>
+      </ul>
+    </div>
+
+    <div class="column-full">
+      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/back.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/back.html" %}{% endfilter %}</code></pre>
+      </details>
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Why create this pattern</h2>
+      <p>The current GOV.UK component isn't consistent with link styling and icons across Home Office services. Research has found confidence might increase by specifying the page it would naviate back to.</p>
+
+      <h2 id="interaction" class="heading-medium">Interaction principles</h2>
+      <ul class="list list-bullet">
+        <li>Always include a back link on question pages.</li>
+      </ul>
+
+      <h2 id="documentation" class="heading-medium">Content principles</h2>
+      <ul class="list list-bullet">
+        <li>Make content consistent with page titles</li>
+      </ul>
+
+      <h2 class="heading-medium">User research</h2>
+      <ul class="list list-bullet">
+        <li>Some users thought using the previous back link would undo work. And weren't confident where the back button would take them.</li>
+      </ul>
+
+    </div>
+
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/95">GitHub</a>.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
