@@ -352,18 +352,12 @@ pre.language-markup  {
 }
 
 .example {
-    padding-top: 45px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-}
-.example {
     position: relative;
     overflow: hidden;
     border: 2px solid $grey-3;
     margin-top: 10px;
     margin-bottom: 20px;
-    padding: 30px;
+    padding: 40px 30px 30px 30px;
 	&:before {
 	    content: "EXAMPLE";
 	    position: absolute;
