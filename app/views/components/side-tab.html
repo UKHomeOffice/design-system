@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Pattern - Side tab
+{% endblock %}
+
+{% block content %}
+
+{% set active = "components" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Side tab</h1>
+    <p class="lede">Switching between views of grouped content; hiding content that doesn&rsquo;t always need to be visible.</p>
+    <ul class="metadata">
+      <li>Usage: external/internal</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 15 January 2018</li>
+    </ul>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-full">
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/side-tab.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/side-tab.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_side-menu.scss' | fileInclude }}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>Show JavaScript snippet</summary>
+        <pre class="language-javascript"><code class="language-javascript">{{'./app/assets/javascripts/side-menu.js' | fileInclude }}</code></pre>
+      </details>
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Interaction principles</h2>
+      <p>Only one tab can be active at a time.</p>
+      <p>The active tab should be distinguishable from the inactive, with maximum contrast ratio.</p>
+      <p>Inactive tabs should have a hover state that is distinguisable with minimum contrast ratio.</p>
+      <p>Focused tabs should be consistent with other focus states and distinguisable from active, inactive and hover states.</p>
+      <p><a href="https://inclusive-components.design/tabbed-interfaces/">Inclusive components</a> has some really good guidance on tabs if you want to read more.</p>
+
+      <h2 class="heading-medium">Content principles</h2>
+      <p>The label should reflect the thing you need do with the content of that tab, not a description of what it is.</p>
+
+      <h2 class="heading-medium">Accessibility principles</h2>
+      <p>The active tab should be labelled as active in the code.</p>
+      <p>Only active tab content should be readable.</p>
+
+      <h2 class="heading-medium">User research</h2>
+      <p>Application platform uses vertical tabs for long lists. When combined with a typeahead search, the pattern performs very well when users don't know the contents of the list.</p>
+
+      <h2 class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Application platform</li>
+      </ul>
+
+    </div>
+
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/97">GitHub</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
