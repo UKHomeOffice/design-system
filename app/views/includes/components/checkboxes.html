@@ -1,4 +1,4 @@
-<h3 class="heading-medium">How do you travel to work?</h3>
+<h3 class="heading-medium" style="margin-top:0;">How do you travel to work?</h3>
 <p>Select all that apply</p>
 
 <form>
@@ -7,9 +7,13 @@
     <legend class="visually-hidden">How do you travel to work?</legend>
 
     <div class="multiple-choice--hod">
-      <div class="multiple-choice">
+      <div class="multiple-choice" data-target="public-transport">
         <input id="transport-type-1" name="transport-types" type="checkbox" value="Public transport">
-        <label for="transport-type-1">Public transport</label>
+        <label for="transport-type-1">Public transport - opens options</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="public-transport">
+        <label class="form-label" for="public-transport-type">What type of public transport did you use?</label>
+        <input class="form-control" name="public-transport-type" type="text" id="public-transport-type">
       </div>
 
       <div class="multiple-choice">
@@ -24,13 +28,9 @@
 
       <div class="multiple-choice">
         <input id="transport-type-4" name="transport-types" type="checkbox" value="Car/Bike">
-        <label for="transport-type-4">Car/Bike</label>
+        <label for="transport-type-4">Car/Motorbike</label>
       </div>
 
-      <div class="multiple-choice">
-        <input id="transport-type-5" name="transport-types" type="checkbox" value="Boat">
-        <label for="transport-type-5">Boat</label>
-      </div>
     </div>
 
   </fieldset>
