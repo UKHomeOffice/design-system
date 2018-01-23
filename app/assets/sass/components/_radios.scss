@@ -1,6 +1,7 @@
 .multiple-choice--hod [type=radio] + label::before {
   width: 24px;
   height: 24px;
+  background-color: #fff;
 }
 
 .multiple-choice--hod [type=radio] + label::after {
