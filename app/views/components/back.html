@@ -22,10 +22,15 @@
     </div>
 
     <div class="column-full">
-      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <h2 class="heading-medium" id="example-component">Example components</h2>
       <div class="example example-images">
         <div class="grid-row">
           {% include "includes/components/back.html" %}
+        </div>
+      </div>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/back-alt.html" %}
         </div>
       </div>
       <details class="code-details">
@@ -36,7 +41,7 @@
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">Why create this pattern</h2>
-      <p>The current GOV.UK component isn't consistent with link styling and icons across Home Office services. Research has found confidence might increase by specifying the page it would naviate back to.</p>
+      <p>The current GOV.UK component isn't consistent with link styling and icons across Government. Research has found some users are anxious using the back link. Confidence might increase by being more descriptive about the page it would naviate back to.</p>
 
       <h2 id="interaction" class="heading-medium">Interaction principles</h2>
       <ul class="list list-bullet">
@@ -45,7 +50,7 @@
 
       <h2 id="documentation" class="heading-medium">Content principles</h2>
       <ul class="list list-bullet">
-        <li>Make content consistent with page titles</li>
+        <li>Not all page titles will be suitable for the back link. </li>
       </ul>
 
       <h2 class="heading-medium">User research</h2>
