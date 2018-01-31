@@ -17,3 +17,12 @@
   top: 8px;
   left: 6px;
 }
+
+@media screen and (max-width: 640px) {
+  .multiple-choice--hod {
+    .multiple-choice {
+      margin-bottom: 15px;
+      padding-top: 4px;
+    }
+  }
+}
