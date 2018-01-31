@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pattern - Signing-out
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Signing-out</h1>
+    <p class="lede">Allow users to sign out at the right time in a service.</p>
+    <ul class="metadata">
+      <li>Usage: internal/external</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 01 February 2018</li>
+    </ul>
+  </div>
+
+  <div class="grid-row">
+    <!-- <div class="column-full">
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <img src="{{ asset_path }}/images/postcode-lookup.svg" class="confirm-desktop" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
+        <img src="{{ asset_path }}/images/postcode-lookup-mobile.svg" class="confirmation confirm-mobile" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
+      </div>
+    </div> -->
+
+    <div class="column-two-thirds">
+
+      <h2 class="heading-medium">Sign out in page</h2>
+      <h3 class="heading-small">When to use this pattern:</h3>
+      <p>When signing out at a certain point in your service is the most important action.</p>
+
+      <h2 class="heading-medium">Sign out in header</h2>
+      <h3 class="heading-small">When to use this pattern:</h3>
+      <p>When signing out of a service isn’t important but users might want to - for example they share a workspace.</p>
+
+      <h2 class="heading-medium">Sign out under header</h2>
+      <h3 class="heading-small">When to use this pattern:</h3>
+      <p>When signing out of a service is best practice but not crucial for the user.</p>
+
+    </div>
+
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/96">GitHub</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
