@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern - Signing-out
+  Pattern - Leaving a service
 {% endblock %}
 
 {% block content %}
@@ -11,40 +11,43 @@
 
 <main id="content" role="main">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Signing-out</h1>
-    <p class="lede">Allow users to sign out at the right time in a service.</p>
-    <ul class="metadata">
-      <li>Usage: internal/external</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 01 February 2018</li>
-    </ul>
-  </div>
-
   <div class="grid-row">
-    <!-- <div class="column-full">
-      <div class="example example-images confirmation" style="margin-bottom: 2em;">
-        <img src="{{ asset_path }}/images/postcode-lookup.svg" class="confirm-desktop" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
-        <img src="{{ asset_path }}/images/postcode-lookup-mobile.svg" class="confirmation confirm-mobile" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
+    <div class="column-full">
+      <div class="banner" role="banner">
+        <h1 class="heading-section">Leaving a service (sign out)</h1>
+        <p class="lede">Allow users to leave a service at the right time. Use research to understand at what point in a service a user will need to leave.</p>
+        <ul class="metadata">
+          <li>Usage: internal/external</li>
+          <li>Status: experimental</li>
+          <li>Last updated: 01 February 2018</li>
+        </ul>
       </div>
-    </div> -->
+    </div>
 
     <div class="column-two-thirds">
 
-      <p>Signing out of a service is a task, not a feature. Use research to understand your users needs and at what point in a service they will need to sign out.</p>
-
-      <h2 class="heading-medium">Sign out in page</h2>
+      <h2 class="heading-large">In page</h2>
       <h3 class="heading-small">When to use this pattern</h3>
-      <p>When signing out at a certain point in your service is the most important action. This can still be used with a persistant sign out link elsewhere.</p>
+      <p>When a user comes to a certain point in your service and the most important action is to leave. This can still be used with a persistant link elsewhere.</p>
+      <p>At the end of a service.</p>
       <p>When a user is likely to be working from a public space and is inputting sensitive data.</p>
+      <p>It may be better to describe this as leaving a service rather then signing out. Users might not feel they have signed in to a service.</p>
+      <img src="{{ asset_path }}/images/signout-inpage.svg" class="confirm-desktop" style="margin-bottom:3em;" alt="An example service page with a sign-out link in the main body of the page underneath a confirmation message. The sign out link is a button with the text 'Finish and leave service'.">
 
-      <h2 class="heading-medium">Sign out in header</h2>
-      <h3 class="heading-small">When to use this pattern</h3>
-      <p>When signing out of a service isn’t important but users might want to - for example they share a workspace.</p>
-
-      <h2 class="heading-medium">Sign out under header</h2>
+      <h2 class="heading-large">Under header</h2>
       <h3 class="heading-small">When to use this pattern</h3>
       <p>When signing out of a service is best practice but not crucial for the user.</p>
+      <p>Only give users the option to leave a service if they can save progress and carry on with the service at another time.</p>
+      <img src="{{ asset_path }}/images/signout-underheader.svg" class="confirm-desktop" style="margin-bottom:3em;" alt="An example service page with a sign-out link under the header on the right of a feedback link.">
+
+      <h2 class="heading-large">In header</h2>
+      <h3 class="heading-small">When to use this pattern</h3>
+      <p>When signing out of a service isn’t important but users might want to - for example they share a workspace.</p>
+      <p>This pattern is more likely to be used on multi-use and caseworking services.</p>
+      <img src="{{ asset_path }}/images/signout-inheader.svg" class="confirm-desktop" style="margin-bottom:3em;" alt="An example service page with a sign-out link in the header on the right of GOV.UK and the crown.">
+
+      <h2 class="heading-medium">User research</h2>
+      <p>Users are confident in using a 'leave the service' button at the end of a transaction. Users mention they want to make sure they leave a service securely.</p>
 
     </div>
 
