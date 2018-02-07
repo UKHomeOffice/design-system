@@ -17,40 +17,35 @@
     <ul class="metadata">
       <li>Usage: internal</li>
       <li>Status: experimental</li>
-      <li>Last updated: 28 June 2017</li>
+      <li>Last updated: 8 February 2018</li>
     </ul>
   </div>
 
   <div class="grid-row">
-    <div class="column-full">
-
-      <div class="example example-images" id="example-component">
-        <div class="grid-row">
-          {% include "includes/patterns/modal.html" %}
-        </div>
-      </div>
-      <!-- <details>
-        <summary>Show code snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/patterns/modal.html" %}{% endfilter %}</code></pre>
-      </details> -->
-    </div>
 
     <div class="column-two-thirds">
 
-      <h2 id="interaction" class="heading-medium">Interaction principles</h2>
-      <p>The modal window should focus on a single task.</p>
-      <p>Before using a modal window, consider whether the interaction could be handled on another screen.</p>
+      <h2 class="heading-medium">When to use this pattern</h2>
+      <p>Modals should be avoided in most cases. They are hard to make accessible and do not work well in mobile views.</p>
+      <p>Adding content to a new page instead of showing it in a modal should be the default approach.</p>
+      <p>Modals can be useful when you need to draw a users attention to something, for example timeout warnings. Please discuss with the wider community or email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> before using this pattern.</p>
 
-      <h2 id="documentation" class="heading-medium">Content principles</h2>
-      <p>The content that opens the modal window (for example, anchor text) should explain to the user what will happen.</p>
-      <p>The content of the modal window should be focused on the single task and should not add unnecessary detail.<p>
-      <p>The content should be consistent with the referring page so that the user is not confused. </p>
-      <p>The modal window should have a clear main heading.</p>
+      <h2 id="interaction" class="heading-medium">How modals work</h2>
+      <p>A modal should focus on a single task.</p>
+      <p>If the modal is user triggered, the content that opens the modal window (for example, a link or button) should explain to the user what will happen.</p>
+      <p>Modals should include a heading.</p>
+      <p>Extra attention should be made to make sure modals are accessible.</p>
 
+    </div>
 
-      <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
-      <p>Modal windows do not work well on mobile. Consider using an alternative approach.</p>
-      <p>Screen readers do not automatically focus on modals, which makes interactions confusing.</p>
+    <div class="column-two-thirds" style="margin-top: 2rem;">
+      <div class="example example-images confirmation">
+        <img src="{{ asset_path }}/images/modal-desktop.svg" class=" confirm-desktop" alt="A flow of 2 steps. The first screen shows a page of a service. The second screen shows a modal window overlayed on the page giving the user a timeout warning.">
+        <img src="{{ asset_path }}/images/modal-mobile.svg" class="confirmation confirm-mobile" alt="A flow of 2 steps. The first screen shows a page of a service. The second screen shows a modal window overlayed on the page giving the user a timeout warning.">
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
 
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
@@ -58,14 +53,6 @@
         <li>Passport renewals (timeout)</li>
       </ul>
 
-      <!-- TO DO -->
-      <h2 class="heading-medium rule-above">Things to do</h2>
-      <ul class="list list-bullet">
-        <li>js for keydown</li>
-        <li>js for focus</li>
-        <li>include `ARIA` tags</li>
-        <li>include labels and tags</li>
-      </ul>
     </div>
 
     <div class="column-full">
