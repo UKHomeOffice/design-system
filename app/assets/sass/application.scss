@@ -10,9 +10,9 @@ $path: "/public/images/";
 @import 'unbranded';
 
 // Variables (setting measurements for HO patterns)
-$space-sm:			5px;
-$border-radius:		4px;
-$box-shadow:	    0 2px 10px rgba($text-colour, 0.5);
+$space-sm: 5px;
+$border-radius: 4px;
+$box-shadow: 0 2px 10px rgba($text-colour, 0.5);
 ///////////
 
 // Components
@@ -106,20 +106,52 @@ a {
 // OVERRIDES
 // For service header pattern
 
+#global-header-pattern {
+  background-color: #0b0c0c;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  height: 35px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+}
+
+// #global-header.with-proposition .header-wrapper .header-global {
+//   float: left;
+//   width: 100%;
+// }
+
+.header-global {
+    padding-top: 3px;
+
+  a {
+    float: left;
+    overflow: visible;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
-  #global-header .header-wrapper {
+
+  #global-header-pattern .header-wrapper {
     padding-left: 10px;
     padding-right: 10px;
+
   }
 }
 
 @media (min-width: 769px) {
-  #global-header.with-proposition .header-wrapper .header-global {
+  #global-header-pattern.with-proposition .header-wrapper .header-global {
     display: inline-block;
     width: 66.6%!important;
   }
 
-  #global-header.with-proposition .header-wrapper .header-proposition  {
+  #global-header-pattern.with-proposition .header-wrapper .header-proposition  {
     width: 33.3%;
     text-align: right;
 
@@ -130,12 +162,12 @@ a {
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
-  #global-header.with-proposition .header-wrapper .header-global {
+  #global-header-pattern.with-proposition .header-wrapper .header-global {
     display: inline-block;
     width: 60%!important;
   }
 
-  #global-header.with-proposition .header-wrapper .header-proposition  {
+  #global-header-pattern.with-proposition .header-wrapper .header-proposition  {
     width: 40%;
     text-align: right;
 
@@ -146,12 +178,17 @@ a {
 }
 
 @media screen and (max-width: 640px) {
-  #global-header.with-proposition .header-wrapper .header-global {
+
+  #global-header-pattern {
+    height: 90px;
+  }
+
+  #global-header-pattern.with-proposition .header-wrapper .header-global {
     float: left;
     width: 100%;
   }
 
-  #global-header.with-proposition .header-wrapper .header-proposition  {
+  #global-header-pattern.with-proposition .header-wrapper .header-proposition  {
     float: left;
     display: inline-block;
     width: 100%;
