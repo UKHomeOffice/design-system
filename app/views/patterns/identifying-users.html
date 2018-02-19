@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern - Identifying users
+  Pattern - Authentication
 {% endblock %}
 
 {% block content %}
@@ -12,27 +12,47 @@
 <main id="content" role="main">
 
   <div class="banner" role="banner" style="margin-bottom:20px;">
-    <h1 class="heading-section">Identifying users</h1>
-    <p class="lede">Various forms of identifying and authenticating users</p>
+    <h1 class="heading-section">Authentication</h1>
+    <p class="lede">Enable users to access your service and keep their data secure</p>
     <ul class="metadata">
       <li>Usage: internal/external</li>
       <li>Status: experimental</li>
-      <li>Last updated: 30 November 2017</li>
+      <li>Last updated: 18 February 2018</li>
     </ul>
   </div>
 
   <div class="grid-row">
 
     <div class="column-two-thirds">
-      <h2 class="heading-medium">Authenticating users</h4>
-      <p>Authentication tells the system that a user who did something earlier is the same user. An example would be a user starting an application is the same user who returned to finish it later.</p>
+
+      <h2 class="heading-medium">When to use authentication</h2>
+      <p>Authentication enables users to verify who they say they are.</p>
+      <p>Most one-time services won't need to authenticate their users. When a service does need to verify a users identity, it needs to balance ease of access with keeping a service and user data secure.</p>
+      <p>You might want to authenticate users if:</p>
+      <ul class="list list-bullet">
+        <li>your service allows users to save and complete a transaction at another time</li>
+        <li>a user can check the status of a transaction</li>
+        <li>a user will use a service multiple times</li>
+      </ul>
+
+      <h3 class="heading-small">Authentication is not the same as identity assurance</h3>
+      <p>Identity assurance confirms the true identity of a user. The checks are usually done before confirming a users suitability for something. Identity assurance can consist of:</p>
+      <ul class="list list-bullet">
+        <li>confirming the user is a human</li>
+        <li>confirming the validaty of information and documents</li>
+        <li>fraud checks</li>
+        <li>checking for warnings about a user</li>
+      </ul>
+
+      <h2 class="heading-medium">Authentication examples</h2>
+      <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails, and using a third-party.</p>
     </div>
 
     <div class="column-full">
       <details>
         <summary>Example - authentication using a reference number</summary>
         <div class="example example-images confirmation">
-          <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+          <h2 class="visually-hidden" id="example-component">Authentication using a reference number</h2>
           <img src="{{ asset_path }}/images/auth.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
@@ -43,7 +63,7 @@
       <details>
         <summary>Example - knowledge based authentication</summary>
         <div class="example example-images confirmation">
-          <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+          <h2 class="visually-hidden" id="example-component">Knowledge based authentication</h2>
           <img src="{{ asset_path }}/images/auth-knowledge-based.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-knowledge-based-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
@@ -54,35 +74,17 @@
       <details>
         <summary>Example - two-factor authentication</summary>
         <div class="example example-images confirmation">
-          <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+          <h2 class="visually-hidden" id="example-component">Two-factor authentication</h2>
           <img src="{{ asset_path }}/images/auth-2factor.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-2factor-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
       </details>
     </div>
 
-    <div class="column-two-thirds" style="margin-top:20px;">
-      <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails or third-party authentication.</p>
-      <p>Authentication has limits. It does not:</p>
-      <ul class="list list-bullet">
-        <li>confirm who the user is</li>
-        <li>what the user can do</li>
-        <li>if the user is who they say they are</li>
-      </ul>
-    </div>
-
     <div class="column-two-thirds">
-      <h2 class="heading-medium">Identity assurance</h4>
-      <p>Identity assurance confirms the true identity of a user. The checks are usually done before confirming a users suitability for something. The assurance can consist of:</p>
-      <ul class="list list-bullet">
-        <li>confirming the user is a human</li>
-        <li>confirming the validaty of information and documents</li>
-        <li>fraud checks</li>
-        <li>checking for warnings about a user</li>
-      </ul>
 
       <h2 class="heading-medium">User accounts</h4>
-      <p>Avoid user accounts where possible. Services should start in public so it is easier for users to find the right service. This is valuable when there are hundreds of services like in Government.</p>
+      <p>User accounts are a form of authentication. Avoid them where possible. Services should start in public so users can find the right service. This is valuable when there are hundreds of services like in Government.</p>
       <p>Making users create accounts when not needed:</p>
       <ul class="list list-bullet">
         <li>forces users to keep track of more logins then neccesary</li>
