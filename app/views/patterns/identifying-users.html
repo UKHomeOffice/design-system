@@ -13,7 +13,7 @@
 
   <div class="banner" role="banner" style="margin-bottom:20px;">
     <h1 class="heading-section">Authentication</h1>
-    <p class="lede">Enable users to access your service in a secure way</p>
+    <p class="lede">Let users access your service in a secure way.</p>
     <ul class="metadata">
       <li>Usage: internal/external</li>
       <li>Status: experimental</li>
@@ -26,8 +26,8 @@
     <div class="column-two-thirds">
 
       <h2 class="heading-medium">When to use authentication</h2>
-      <p>Authentication enables users to verify who they are.</p>
-      <p>Most one-time services won't need to authenticate their users. When a service does need to verify a users identity, it needs to balance ease of access with keeping a service and user data secure.</p>
+      <p>Authentication lets users verify who they are.</p>
+      <p>Most one-time services won't need to authenticate their users. When a service does need to verify a user’s identity, it needs to balance ease of access with keeping a service and its user data secure. You should think about this early on when designing your service.</p>
       <p>You might want to authenticate users if:</p>
       <ul class="list list-bullet">
         <li>your service allows users to save and complete a transaction at another time</li>
@@ -36,7 +36,8 @@
       </ul>
 
       <h2 class="heading-medium">Authentication examples</h2>
-      <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails, and using a third-party.</p>
+      <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails, and by using a third-party. Don’t use National Insurance numbers to verify a user’s identity.</p>
+      <p>You should consult a Home Office security specialist as they can advise you on the type of authentication that’s right for your service.</p>
     </div>
 
     <div class="column-full">
@@ -84,28 +85,19 @@
       </ul>
 
       <h2 class="heading-medium">User accounts</h4>
-      <p>User accounts are a form of authentication that should be avoided in most cases. To help users find the right service, services should start in public. This is valuable when there are hundreds of services like in Government.</p>
-      <p>Making users create accounts when not needed:</p>
+      <p>User accounts are a form of authentication that you should try to avoid. Services should be public facing and not start behind a user log in. This is essential for users searching for the government service they need. Making users create accounts when not needed:</p>
       <ul class="list list-bullet">
-        <li>forces users to keep track of more logins then neccesary</li>
         <li>creates a barrier for users and can reduce completion rates</li>
+        <li>forces users to keep track of more logins then neccesary</li>
         <li>burdens teams with databases that are difficult to build and maintain</li>
-        <li>grows the amount of redundant databases - which is expensive and a security risk</li>
+        <li>increases the amount of redundant databases - which is expensive and a security risk</li>
       </ul>
 
       <p>Only make users create an account if:</p>
       <ul class="list list-bullet">
         <li>users access a service frequently</li>
-        <li>users need it - don't force users to create an account until necessary</li>
+        <li>users need it - don't force them to create an account until necessary</li>
         <li>a service needs to audit user behaviour</li>
-      </ul>
-
-      <h2 class="heading-medium">Considerations you should make</h2>
-      <ul class="list list-bullet">
-        <li>Balance frequency of use, security requirements and any convenience benefits to the user.</li>
-        <li>Consider security trade-offs and data storage early in the design of your service.</li>
-        <li>Consult security specilists where needed.</li>
-        <li>Don’t use National Insurance numbers to verify a user’s identity.</li>
       </ul>
 
     </div>
