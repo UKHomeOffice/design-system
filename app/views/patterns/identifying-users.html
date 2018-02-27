@@ -36,15 +36,17 @@
       </ul>
 
       <h2 class="heading-medium">Authentication examples</h2>
-      <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails, and by using a third-party. Don’t use National Insurance numbers to verify a user’s identity.</p>
+      <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails, and by using a third-party. Don’t use National Insurance numbers to verify a user’s identity. <a href="https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud#protecting-your-service-against-fraud">Further guidance on National Insurance numbers and fraud can be found in the service manual</a>.</p>
       <p>You should consult a Home Office security specialist as they can advise you on the type of authentication that’s right for your service.</p>
     </div>
 
     <div class="column-full">
       <details>
         <summary>Example - authentication using a reference number</summary>
+        <p></p>
         <div class="example example-images confirmation">
           <h2 class="visually-hidden" id="example-component">Authentication using a reference number</h2>
+          <p>A reference number is a simple way to let users access a service. For example when a user saves progress and needs to return to a service.</p>
           <img src="{{ asset_path }}/images/auth.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
@@ -56,6 +58,7 @@
         <summary>Example - knowledge based authentication</summary>
         <div class="example example-images confirmation">
           <h2 class="visually-hidden" id="example-component">Knowledge based authentication</h2>
+          <p>Use knowledge based authentication when you need to confirm a users identity.</p>
           <img src="{{ asset_path }}/images/auth-knowledge-based.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-knowledge-based-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
@@ -67,6 +70,7 @@
         <summary>Example - two-factor authentication</summary>
         <div class="example example-images confirmation">
           <h2 class="visually-hidden" id="example-component">Two-factor authentication</h2>
+          <p>Two-factor authentication should be used when you are storing user data and allowing users to access it. Two-factor protects both the user and your service. There are three types of authentication: something a user knows (password, pin), something a user has (phone, fob), and a biometric like a fingerprint or voice.</p>
           <img src="{{ asset_path }}/images/auth-2factor.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-2factor-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
