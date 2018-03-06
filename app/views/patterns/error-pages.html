@@ -11,7 +11,7 @@
 
 <main id="content" role="main">
 
-  <div class="banner" role="banner" style="margin-bottom:20px;">
+  <div class="banner" role="banner" style="margin-bottom:40px;">
     <h1 class="heading-section">Error patterns</h1>
     <p class="lede">Let users access your service in a secure way.</p>
     <ul class="metadata">
@@ -25,16 +25,24 @@
 
     <div class="column-two-thirds">
 
-      <p>When a user accesses a web page, the server responds with a HTTP status code. In most cases a users jounrney isn't affected unless there is an error. Errors are sorted into two groups of statuses - 400 to 499 are client-side errors and 500 - 599 are server-side errors.</p>
+      <p>When a user accesses a web page, the server responds with a HTTP status code. In most cases the user journey isn't affected - unless there is an error. Error statuses are sorted into two groups - 400 to 499 are client-side errors and 500 to 599 are server-side errors.</p>
+
+      <h2 class="heading-medium">Error pages should:</h2>
+      <ul class="list list-bullet">
+        <li>be avoided - do the hard work to make sure they don't happen</li>
+        <li>use plain English and avoid technical jargon</li>
+        <li>avoid listing the error code - a user shouldn't need to know the error code</li>
+        <li>make it clear how to get help</li>
+        <li>if possible tell the user if they can complete the transaction on another channel</li>
+      </ul>
 
       <h2 class="heading-large">404 page</h4>
-      <p>404 errors (sometimes known as 'page not found errors') tell a user the page they were trying to access is not there. Services should do the hard work so these errors don't happen.</p>
-      <p>Users encounter 404 errors when:</p>
+      <p>404 errors (sometimes known as 'page not found errors') tell a user the page they were trying to access is not there. Users encounter 404 errors when:</p>
       <ul class="list list-bullet">
         <li>we make a mistake - for example a user follows a link that is broken</li>
         <li>the user makes a mistake - inputting a link incorrectly</li>
       </ul>
-      <h4 class="heading-medium">Designing 404 pages</h4>
+      <h4 class="heading-medium">404 page examples</h4>
     </div>
 
     <div class="column-full">
@@ -48,23 +56,25 @@
     <div class="column-two-thirds">
 
       <h4 class="heading-large">500 page</h4>
-      <p></p>
+      <p>500 errors happen when something goes wrong on the server-side. Common causes are when the server is down or maintenance work is happening.</p>
 
+      <p>You do not need to show different error pages for different server problems. 500 pages should only be used for short periods of time. If there is going to be a disruption to users for an extended period use shutter pages like these <a href="http://hmrc-design-language-prototype.herokuapp.com/design-patterns/patterns/pages/shutter_pages/">HMRC examples</a>.</p>
 
-      <h2 class="heading-medium">Error pages should:</h2>
-      <ul class="list list-bullet">
-        <li>use plain English and avoid technical jargon</li>
-        <li>avoid listing the error code - a user shouldn't need to know the error code</li>
-        <li>make it clear how to get help</li>
-      </ul>
+      <h4 class="heading-medium">500 page example</h4>
+    </div>
 
-
+    <div class="column-full">
+      <div class="example example-images confirmation">
+        <h2 class="visually-hidden" id="example-component">404 error page examples</h2>
+        <img src="{{ asset_path }}/images/500-page.svg" class="confirm-desktop" alt="">
+        <img src="{{ asset_path }}/images/500-page.svg" class="confirmation confirm-mobile" alt="">
+      </div>
     </div>
 
     <div class="column-full">
       <div class="contact-us">
         <h2 class="heading-medium">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/34">GitHub</a>.</p>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/100">GitHub</a>.</p>
       </div>
     </div>
 
