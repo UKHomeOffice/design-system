@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="899px" height="373px" viewBox="0 0 899 373" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 3</title>
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <rect id="path-1" x="0" y="42" width="394" height="325"></rect>
@@ -18,8 +18,8 @@
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.197548687 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <rect id="path-5" x="0" y="0" width="201" height="220"></rect>
-        <filter x="-6.2%" y="-3.9%" width="112.4%" height="111.4%" filterUnits="objectBoundingBox" id="filter-6">
+        <rect id="path-5" x="676" y="96" width="201" height="206"></rect>
+        <filter x="-6.2%" y="-4.1%" width="112.4%" height="112.1%" filterUnits="objectBoundingBox" id="filter-6">
             <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
@@ -28,11 +28,9 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop" transform="translate(-57.000000, -104.000000)">
-            <g id="Group-3" transform="translate(61.000000, 104.000000)">
-                <g id="Group-4" transform="translate(418.000000, 221.000000)" fill="#A4A4A4">
-                    <rect id="Rectangle-6" x="0" y="5" width="49" height="5" rx="2.5"></rect>
-                    <polygon id="Triangle" points="56 7.5 41 15 41 0"></polygon>
-                </g>
+            <g id="Group" transform="translate(61.000000, 104.000000)">
+                <rect id="Rectangle-6" fill="#A4A4A4" x="418" y="226" width="49" height="5" rx="2.5"></rect>
+                <polygon id="Triangle" fill="#A4A4A4" points="474 228.5 459 236 459 221"></polygon>
                 <g id="Rectangle-Copy-3">
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
@@ -49,101 +47,82 @@
                 <image id="gov.uk_logotype_crown_invert_trans-copy-4" x="517" y="58" width="22" height="19" xlink:href="data:image/png;base64,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"></image>
                 <circle id="Oval-2" fill="#005EA5" cx="14.5" cy="14.5" r="14.5"></circle>
                 <circle id="Oval-2-Copy" fill="#005EA5" cx="513.5" cy="14.5" r="14.5"></circle>
-                <rect id="Rectangle-Copy" stroke="#000000" x="20.5" y="224.5" width="274" height="34"></rect>
-                <rect id="Rectangle-Copy-2" stroke="#000000" x="517.5" y="224.5" width="274" height="34"></rect>
+                <rect id="Rectangle-Copy" stroke="#000000" x="20.5" y="210.5" width="274" height="34"></rect>
+                <rect id="Rectangle-Copy-2" stroke="#000000" x="517.5" y="210.5" width="274" height="34"></rect>
                 <text id="1" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="18" font-weight="bold" fill="#FFFFFF">
                     <tspan x="11" y="20">1</tspan>
                 </text>
                 <text id="2" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="18" font-weight="bold" fill="#FFFFFF">
                     <tspan x="509" y="20">2</tspan>
                 </text>
+                <path d="M524.5,153.5 L718.523194,153.5" id="Line" stroke="#ADADAD" stroke-width="9" stroke-linecap="square"></path>
+                <path d="M524.5,173.5 L695.792148,173.5" id="Line" stroke="#ADADAD" stroke-width="9" stroke-linecap="square"></path>
                 <path d="M1.5,92 L391.020539,92" id="Line-Copy-3" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
                 <path d="M498.5,92 L888.020539,92" id="Line-Copy-4" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                <text id="Search" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="22.2399998" font-weight="bold" fill="#1A1918">
+                <text id="Search" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="22.2399998" font-weight="bold" fill="#1A1919">
                     <tspan x="21" y="131">Search</tspan>
                 </text>
-                <text id="Search-Copy" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="22.2399998" font-weight="bold" fill="#1A1918">
+                <text id="Search-Copy" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="22.2399998" font-weight="bold" fill="#1A1919">
                     <tspan x="518" y="131">Search</tspan>
                 </text>
-                <text id="You-can-add-multiple" font-family="GDSTransportWebsite, GDS Transport Website" font-size="15.2399998" font-weight="300" fill="#1A1918">
-                    <tspan x="20" y="161">You can add multiple search terms to make </tspan>
-                    <tspan x="20" y="182">your search more refined. </tspan>
+                <text id="Help" font-family="GDSTransportWebsite, GDS Transport Website" font-size="16.2399998" font-weight="300" fill="#1A1919">
+                    <tspan x="338" y="74">Help</tspan>
                 </text>
-                <text id="You-can-add-multiple-Copy" font-family="GDSTransportWebsite, GDS Transport Website" font-size="15.2399998" font-weight="300" fill="#1A1918">
-                    <tspan x="517" y="161">You can add multiple search terms to make </tspan>
-                    <tspan x="517" y="182">your search more refined. </tspan>
+                <text id="Help-Copy" font-family="GDSTransportWebsite, GDS Transport Website" font-size="16.2399998" font-weight="300" fill="#1A1919">
+                    <tspan x="834" y="74">Help</tspan>
                 </text>
-                <text id="Help" font-family="GDSTransportWebsite, GDS Transport Website" font-size="16.2399998" font-weight="300" fill="#1A1918">
-                    <tspan x="332" y="74">Help</tspan>
-                </text>
-                <text id="Help-Copy" font-family="GDSTransportWebsite, GDS Transport Website" font-size="16.2399998" font-weight="300" fill="#1A1918">
-                    <tspan x="829" y="74">Help</tspan>
-                </text>
-                <rect id="Rectangle-2-Copy-5" fill="#008337" x="21" y="291" width="148" height="32"></rect>
-                <rect id="Rectangle-2-Copy-6" fill="#008337" x="518" y="291" width="148" height="32"></rect>
+                <rect id="Rectangle-2-Copy-5" fill="#008337" x="21" y="281" width="148" height="32"></rect>
+                <rect id="Rectangle-2-Copy-6" fill="#008337" x="518" y="281" width="148" height="32"></rect>
                 <text id="Search" font-family="GDSTransportWebsite, GDS Transport Website" font-size="16.2399998" font-weight="300" fill="#FFFFFF">
-                    <tspan x="70.4853714" y="313">Search</tspan>
+                    <tspan x="70.4853714" y="303">Search</tspan>
                 </text>
                 <text id="Search-Copy-2" font-family="GDSTransportWebsite, GDS Transport Website" font-size="16.2399998" font-weight="300" fill="#FFFFFF">
-                    <tspan x="567.485371" y="313">Search</tspan>
+                    <tspan x="567.485371" y="303">Search</tspan>
                 </text>
-                <g id="Group" transform="translate(311.000000, 60.000000)">
-                    <circle id="Oval-3" fill="#000000" cx="8" cy="8" r="8"></circle>
-                    <text id="i" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="13.2399998" font-weight="bold" fill="#FFFFFF">
-                        <tspan x="6.29998779" y="13">i</tspan>
-                    </text>
+                <circle id="Oval-3" fill="#000000" cx="325" cy="68" r="8"></circle>
+                <text id="i" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="13.2399998" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="323.299988" y="73">i</tspan>
+                </text>
+                <circle id="Oval-3" fill="#000000" cx="821" cy="68" r="8"></circle>
+                <text id="i" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="13.2399998" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="819.299988" y="73">i</tspan>
+                </text>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <rect stroke="#D8D8D8" stroke-width="1" x="676.5" y="96.5" width="200" height="205"></rect>
                 </g>
-                <g id="Group-Copy" transform="translate(808.000000, 60.000000)">
-                    <circle id="Oval-3" fill="#000000" cx="8" cy="8" r="8"></circle>
-                    <text id="i" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="13.2399998" font-weight="bold" fill="#FFFFFF">
-                        <tspan x="6.29998779" y="13">i</tspan>
-                    </text>
-                </g>
-                <g id="Group-2" transform="translate(676.000000, 96.000000)">
-                    <g id="Rectangle">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
-                        <rect stroke="#D8D8D8" stroke-width="1" x="0.5" y="0.5" width="200" height="219"></rect>
-                    </g>
-                    <rect id="Rectangle-2" fill="#D8D8D8" x="1" y="1" width="199" height="30"></rect>
-                    <text id="Help" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="15.2399998" font-weight="bold" fill="#000000">
-                        <tspan x="9" y="21">Help</tspan>
-                    </text>
-                    <text id="Close" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="11" font-weight="bold" fill="#000000">
-                        <tspan x="164" y="20">Close</tspan>
-                    </text>
-                    <text id="Minimise" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="11" font-weight="bold" fill="#000000">
-                        <tspan x="100" y="20">Minimise</tspan>
-                    </text>
-                    <polygon id="x" fill="#000000" points="157.417697 16.9027556 155.246432 14 157.371075 14 158.463368 15.6448948 159.608944 14 161.753568 14 159.542341 16.9141389 162 20.0957867 159.828735 20.0957867 158.423406 18.2289164 157.144624 20.0957867 155 20.0957867"></polygon>
-                    <path d="M97.5,19 L90.5,19" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                    <text id="What-can-I-search?" font-family="GDSTransportWebsite, GDS Transport Website" font-size="11.5" font-weight="300" fill="#005EA5">
-                        <tspan x="19" y="49">What can I search?</tspan>
-                    </text>
-                    <text id="Search-terms" font-family="GDSTransportWebsite, GDS Transport Website" font-size="11.5" font-weight="300" fill="#005EA5">
-                        <tspan x="19" y="140">Search terms</tspan>
-                    </text>
-                    <text id="Advanced-search" font-family="GDSTransportWebsite, GDS Transport Website" font-size="11.5" font-weight="300" fill="#005EA5">
-                        <tspan x="19" y="163">Advanced search</tspan>
-                    </text>
-                    <polygon id="Triangle-2" fill="#005EA5" transform="translate(11.625000, 45.500000) rotate(-270.000000) translate(-11.625000, -45.500000) " points="14.25 45.5 9 49 9 42"></polygon>
-                    <polygon id="Triangle-2-Copy" fill="#005EA5" points="14.25 136.5 9 140 9 133"></polygon>
-                    <polygon id="Triangle-2-Copy-2" fill="#005EA5" points="14.25 159.5 9 163 9 156"></polygon>
-                    <path d="M7.56003078,124.25 L183.698392,124.25" id="Line" stroke="#C0C0C0" stroke-width="0.5" stroke-linecap="square"></path>
-                    <path d="M7.56003078,147.25 L183.698392,147.25" id="Line-Copy" stroke="#C0C0C0" stroke-width="0.5" stroke-linecap="square"></path>
-                    <path d="M7.56003078,170.25 L183.698392,170.25" id="Line-Copy" stroke="#C0C0C0" stroke-width="0.5" stroke-linecap="square"></path>
-                    <text id="Don't-see-the-help-y" font-family="GDSTransportWebsite, GDS Transport Website" font-size="11.5" font-weight="300" line-spacing="14">
-                        <tspan x="9" y="192" fill="#000000">Don't see the help you </tspan>
-                        <tspan x="9" y="206" fill="#000000">need. </tspan>
-                        <tspan x="39.0639648" y="206" fill="#005EA5" text-decoration="underline">Go to full help</tspan>
-                    </text>
-                    <text id="You-can-search-all-d" font-family="GDSTransportWebsite, GDS Transport Website" font-size="11.5" font-weight="300" line-spacing="15" fill="#000000">
-                        <tspan x="9" y="67">You can search all data across </tspan>
-                        <tspan x="9" y="82">reports. Start with a simple search </tspan>
-                        <tspan x="9" y="97">of one or two terms and then use </tspan>
-                        <tspan x="9" y="112">other terms to filter.</tspan>
-                    </text>
-                </g>
+                <rect id="Rectangle-2" fill="#D8D8D8" x="677" y="97" width="199" height="30"></rect>
+                <text id="Help" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="15.2399998" font-weight="bold" fill="#000000">
+                    <tspan x="685" y="117">Help</tspan>
+                </text>
+                <text id="Close" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="838" y="116">Close</tspan>
+                </text>
+                <text id="Minimise" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="11" font-weight="bold" fill="#000000">
+                    <tspan x="776" y="116">Minimise</tspan>
+                </text>
+                <polygon id="x" fill="#000000" points="831.417697 112.902756 829.246432 110 831.371075 110 832.463368 111.644895 833.608944 110 835.753568 110 833.542341 112.914139 836 116.095787 833.828735 116.095787 832.423406 114.228916 831.144624 116.095787 829 116.095787"></polygon>
+                <path d="M773.5,115 L766.5,115" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                <polygon id="Triangle-2" fill="#005EA5" transform="translate(687.625000, 141.500000) rotate(-270.000000) translate(-687.625000, -141.500000) " points="690.25 141.5 685 145 685 138"></polygon>
+                <polygon id="Triangle-2-Copy" fill="#005EA5" points="690.25 228.5 685 232 685 225"></polygon>
+                <polygon id="Triangle-2-Copy-2" fill="#005EA5" points="690.25 251.5 685 255 685 248"></polygon>
+                <path d="M683.560031,216.25 L859.698392,216.25" id="Line" stroke="#C0C0C0" stroke-width="0.5" stroke-linecap="square"></path>
+                <path d="M683.560031,239.25 L859.698392,239.25" id="Line-Copy" stroke="#C0C0C0" stroke-width="0.5" stroke-linecap="square"></path>
+                <path d="M683.560031,262.25 L859.698392,262.25" id="Line-Copy" stroke="#C0C0C0" stroke-width="0.5" stroke-linecap="square"></path>
+                <text id="Go-to-full-help" font-family="GDSTransportWebsite, GDS Transport Website" font-size="10.5" font-weight="300" line-spacing="16">
+                    <tspan x="684" y="281" fill="#000000"> </tspan>
+                    <tspan x="686.102051" y="281" fill="#005EA5" text-decoration="underline">Go to full help</tspan>
+                </text>
+                <path d="M24.5,153.5 L218.523194,153.5" id="Line" stroke="#ADADAD" stroke-width="9" stroke-linecap="square"></path>
+                <path d="M24.5,173.5 L195.792148,173.5" id="Line" stroke="#ADADAD" stroke-width="9" stroke-linecap="square"></path>
+                <path d="M689.441026,159.5 L860.579433,159.5" id="Line" stroke="#ADADAD" stroke-width="7" stroke-linecap="square"></path>
+                <path d="M700.441026,141.5 L800.504997,141.5" id="Line" stroke="#005EA5" stroke-width="7" stroke-linecap="square"></path>
+                <path d="M700.441026,228.5 L800.504997,228.5" id="Line" stroke="#005EA5" stroke-width="7" stroke-linecap="square"></path>
+                <path d="M700.441026,251.5 L822.504096,251.5" id="Line" stroke="#005EA5" stroke-width="7" stroke-linecap="square"></path>
+                <path d="M689.44186,173.5 L840.816317,173.5" id="Line" stroke="#ADADAD" stroke-width="7" stroke-linecap="square"></path>
+                <path d="M689.44186,187.5 L840.816317,187.5" id="Line" stroke="#ADADAD" stroke-width="7" stroke-linecap="square"></path>
+                <path d="M689.44186,201.5 L848.5,201.5" id="Line" stroke="#ADADAD" stroke-width="7" stroke-linecap="square"></path>
             </g>
         </g>
     </g>
