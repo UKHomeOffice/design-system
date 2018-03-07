@@ -313,41 +313,21 @@
     </div>
 
     <div class="column-two-thirds">
-      <h2 id="interaction" class="heading-medium">Interaction principles</h2>
+      <h2 id="interaction" class="heading-medium">When to use icons</h2>
+      <p>Icons can be used sparingly on frequent-use services. They are helpful at drawing users attention to actions. They also increase a users ability to scan a page and navigate a service.</p>
+
+      <h2 id="documentation" class="heading-medium">How to use icons</h2>
       <ul class="list-bullet">
-        <li>The minimum icon size is 16px.</li>
-        <li>If an icon is part of a button the hit area should be 36px.</li>
+        <li>The minimum icon size is 16px. If an icon is part of a button the hit area should be 36px.</li>
         <li>The icon shouldn't change colour in hover/active/focus states, only the background.</li>
-      </ul>
-      <div class="example example-images">
-        <img width="100%" height="auto" src="{{ asset_path }}/images/icon-colours.svg" alt="Icon usage with colour">
-      </div>
-
-      <h2 id="documentation" class="heading-medium">Content principles</h2>
-      <ul class="list-bullet">
-        <li>Every icon should use a visible and audible label to avoid confusion over what it represents.</li>
-        <li>Align the icon in a central position in relation to any type.</li>
-        <li>Content can sit either side of the icon.</li>
-      </ul>
-      <div class="example example-images">
-        <img width="100%" height="auto" src="{{ asset_path }}/images/icon-type-alignment.svg" alt="Icon alignment with type">
-      </div>
-
-      <h2 id="inclusive" class="heading-medium">Accessibility principles</h2>
-      <ul class="list-bullet">
-        <li>Icons should always have a visible label and use <code class="language-markup">aria-hidden="true"</code>.</li>
-        <li>If an icon can't have a label, ensure it has screenreader support.</li>
+        <li>Every icon should use a visible and audible label to avoid confusion over what it represents. And use <code class="language-markup">aria-hidden="true"</code>.</li>
+        <li>Align the icon in a central position in relation to any type. Content can sit either side.</li>
         <li>Make sure icon colour combinations meets the minimum <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">WCAG 2.0 AA</a> <a href="http://contrastchecker.com/">colour contrast check</a>.</li>
       </ul>
-      <p>
-        <pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;visually-hidden&#x22;&#x3E;Home button&#x3C;/span&#x3E;</code></pre>
-      </p>
 
       <h2 id="research" class="heading-medium">User research</h2>
-      <ul class="list list-bullet">
-        <li>Users interpret icons differently so shouldn't be used without a label.</li>
-        <li>Don't use generic icons for specific labels, for example the calendar icon for a date of birth.</li>
-      </ul>
+      <p>Users interpret icons differently so shouldn't be used without a label.</p>
+      <p>Don't use generic icons for specific labels, for example the calendar icon for a date of birth.</p>
 
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
