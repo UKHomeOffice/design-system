@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Performance
+{% endblock %}
+
+{% block content %}
+
+<section class="performance-header">
+  <div class="performance-wrapper">
+    <div class="performance-title">
+      <h1 class="heading-section">Performance dashboard</h1>
+    </div>
+    <div class="navbar">
+      <ul class="navbar__list-items">
+        <li class="active">
+          <a href="#general">General</a>
+        </li>
+        <li>
+          <a href="#useful">Useful</a>
+        </li>
+        <li>
+          <a href="#quality">Higher quality</a>
+        </li>
+        <li>
+          <a href="#consistent">Consistent</a>
+        </li>
+        <li>
+          <a href="#community">Community</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <section id="general">
+        <h2>General</h2>
+      </section>
+
+      <section id="useful" class="js-hidden">
+        <h2>Useful</h2>
+      </section>
+
+      <section id="quality" class="js-hidden">
+        <h2>Higher quality</h2>
+      </section>
+
+      <section id="consistent" class="js-hidden">
+        <h2>Consistent</h2>
+      </section>
+
+      <section id="community" class="js-hidden">
+        <h2>Community driven</h2>
+      </section>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
