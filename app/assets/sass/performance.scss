@@ -10,8 +10,33 @@
   max-width: 960px;
   margin: 0 auto;
   display: flex;
+  height: 30vh;
   flex-direction: column;
   justify-content: space-between;
+
+  .navbar .navbar__list-items {
+    li {
+      a {
+        &:hover {
+          -webkit-box-shadow: inset 0px -5px 0px 0px $panel-colour!important;
+          -moz-box-shadow: inset 0px -5px 0px 0px $panel-colour!important;
+          box-shadow: inset 0px -5px 0px 0px $panel-colour!important;
+        }
+      }
+
+      &.active a,
+      &.active a:hover {
+      color: $white!important;
+      -webkit-box-shadow: inset 0px -5px 0px 0px $white!important;
+      -moz-box-shadow: inset 0px -5px 0px 0px $white!important;
+      box-shadow: inset 0px -5px 0px 0px $white!important;
+      }
+    }
+  }
+
+  .navbar__list-items li a {
+    color: $white!important;
+  }
 }
 
 .performance-title {
