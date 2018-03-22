@@ -18,6 +18,22 @@
 
 }
 
+.performance-data {
+  .heading-large {
+    margin-bottom: 0;
+  }
+}
+
+.performance-month {
+  font-weight: 800;
+  color: #677;
+  font-size: 22px;
+}
+
+.data-section {
+  margin: 2em 0;
+}
+
 @media (max-width: 640px) {
   .performance-header {
     margin-top: -50px;
