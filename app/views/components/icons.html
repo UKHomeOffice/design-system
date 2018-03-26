@@ -297,8 +297,29 @@
       <a href="/public//download/kit-icons.zip" class="button download-button download-button--large" role="button" style="margin:15px 0;">Download for prototyping kit</a>
 
       <ol class="list-number list">
-        <li>Unzip the <a href="{{ asset_path }}/download/kit-icons.zip">download</a> and move the kit-icons folder into <code>app > assets</code></li>
-        <li>Go to <code>app > views > includes > head.html</code> and link to the new icons.css file <br><pre class="language-markup"><code class="language-markup">&#x3C;link href=&#x22;/public/kit-icons/icons.css&#x22; media=&#x22;screen&#x22; rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; /&#x3E;</code></pre></li>
+        <li>Unzip the <a href="{{ asset_path }}/download/kit-icons.zip">download</a> and move the kit-icons folder into <code>app > assets</code>.</li>
+        <li>Go to <code>app > views > includes > head.html</code> and link to the new icons.css fil.e <br><pre class="language-markup"><code class="language-markup">&#x3C;link href=&#x22;/public/kit-icons/icons.css&#x22; media=&#x22;screen&#x22; rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; /&#x3E;</code></pre></li>
+        <li>Add this code to <code>app > assets > sass > application.scss</code> to help with sizing and spacing.
+        <br><pre class="language-css"><code class="language-css">
+          .side-space {
+          	margin-right: .5em;
+          }
+          .icon-medium {
+            font-size: 24px;
+            &:before {
+              vertical-align: bottom;
+              padding-bottom: 1em;
+            }
+          }
+          .icon-small {
+            font-size: 18px;
+            &:before {
+              vertical-align: middle;
+              padding-bottom: 1em;
+            }
+          }
+        </code></pre>
+        </li>
         <li>On a page add this code and change the class name to the icon you want <br><pre class="language-markup"><code class="language-markup">&#x3C;span class=&#x22;hod-printer side-space icon-medium&#x22;&#x3E;&#x3C;/span&#x3E;</code></pre></li>
       </ol>
 
@@ -306,8 +327,8 @@
       <a href="/public//download/hod-icons.zip" class="button download-button download-button--large" role="button" style="margin:15px 0;">Download for Sketch</a>
 
       <ol class="list-number list">
-        <li>Unzip the <a href="{{ asset_path }}/download/hod-icons.zip">download</a>. It contains SVG and PNG versions of each icon</li>
-        <li>Insert them into Sketch or your favourite graphics software</li>
+        <li>Unzip the <a href="{{ asset_path }}/download/hod-icons.zip">download</a>. It contains SVG and PNG versions of each icon.</li>
+        <li>Insert them into Sketch or your preferred graphics software.</li>
       </ol>
 
     </div>
