@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Style guide - Colour
+{% endblock %}
+
+{% block content %}
+
+{% set active = "style_guide" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Colour</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <p class="lede"></p>
+
+      <section>
+        <h2 class="heading-large">Primary colours</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td colspan="3">
+                  <h3>Primary colours</h3>
+              </td>
+            </tr>
+            <tr>
+              <th class="colour-swatch"><span class="app-swatch " style="background-color:#0b0c0c"></span>$govuk-text-colour</th>
+            </tr>
+          </tbody>
+        </table>
+
+        <p></p>
+      </section>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
