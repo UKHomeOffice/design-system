@@ -2,6 +2,16 @@
 // in the govuk frontend toolkit's url-helpers partial
 $path: "/public/images/";
 
+// Import Inter UI font
+@import url('https://rsms.me/inter/inter-ui.css');
+
+// Inter UI
+
+main.font-ui, .font-ui {
+  font-family: 'Inter UI', sans-serif!important;
+  line-height: 1.45!important;
+}
+
 // Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
 // Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
 @import 'govuk-elements';
