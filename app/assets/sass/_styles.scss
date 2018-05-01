@@ -1,15 +1,46 @@
 .index li {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  font-family: 'Inter UI', sans-serif!important;
 }
 
 .style-guide-section {
   margin-top: 3em;
 }
 
+// Colours
+
+.colour-swatch {
+  display: flex;
+  // border-bottom: 1px solid $panel-colour;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.hex {
+  padding-left: 20px;
+  width: 15%;
+}
+
+.colour-info {
+  padding-left: 10px;
+  width: 70%;
+}
+
 .app-swatch {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border: 1px solid transparent;
     border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+  .colour-swatch {
+    flex-wrap: wrap;
+  }
+
+  .colour-info {
+    padding-top: 10px;
+    width: 70%;
+  }
 }
