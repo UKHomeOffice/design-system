@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Style guide - Typography
+{% endblock %}
+
+{% block content %}
+
+{% set active = "style_guide" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Typography</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <p class="lede"></p>
+
+      <section>
+        <h2 class="heading-large">Font</h2>
+        <p>Services should use Inter UI font in place of Transport. <a href="https://rsms.me/inter/">Inter UI</a> is an open source font, specifically designed for user interface legibility and readability.</p>
+        <p></p>
+      </section>
+
+      <section>
+        <h2 class="heading-large">Headings</h2>
+        <div class="example example-images">
+          <div class="grid-row">
+            <h1 class="heading-xlarge">Heading xlarge - 36 px / bold / black</h1>
+            <h2 class="heading-large">Heading large - 27 px / bold / black</h2>
+            <h3 class="heading-medium">Heading medium - 22 px / bold / black</h3>
+            <h4 class="heading-small">Heading small - 19 px / bold / black</h4>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="heading-large">Paragraphs</h2>
+        <p>The default font size should always start at 19px.</p>
+      </section>
+
+      <section>
+        <h2 class="heading-large">Scale</h2>
+        <p>Line height for 19px text using Inter UI is ...</p>
+      </section>
+      
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
