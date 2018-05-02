@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Style guide - Header
+{% endblock %}
+
+{% block content %}
+
+{% set active = "style_guide" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" class="font-ui" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Header</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <p class="font-ui lede"></p>
+
+      <section>
+        <h2 class="font-ui heading-medium"></h2>
+      </section>
+
+      <section>
+        <h2 class="font-ui heading-medium"></h2>
+        <p></p>
+      </section>
+
+      <section>
+        <h2 class="font-ui heading-medium">Line height
+      </section>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
