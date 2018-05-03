@@ -8,6 +8,10 @@
   font-size: 14px;
   font-family: 'Inter UI', sans-serif!important;
 
+  p {
+    margin-bottom: 0;
+  }
+
 }
 
 .footer-logo {
@@ -43,7 +47,7 @@
 }
 
 
-@media (max-width: 680px) {
+@media (max-width: 690px) {
 
   .wrapper-footer {
     padding: 20px 15px;
