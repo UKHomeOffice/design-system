@@ -1,0 +1,58 @@
+.wrapper-footer {
+  padding: 30px 20px;
+  background-color: $white;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: 'Inter UI', sans-serif!important;
+
+}
+
+.footer-logo {
+  display: block;
+  position: relative;
+  width: 220px;
+  height: auto;
+}
+
+.svg-logo {
+  display: inline-block;
+}
+
+.footer-menu {
+  align-items: flex-end;
+  display: flex;
+}
+
+.footer-menu ul {
+  display: flex;
+
+  li {
+    padding-left: 1.5em;
+  }
+
+  li a {
+    color: #3B3B3B;
+  }
+
+  li:first-child {
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 680px) {
+
+  .wrapper-footer {
+    padding: 20px 15px;
+    display: inherit;
+    font-size: 0.8em;
+  }
+
+  .footer-menu {
+    margin-top: 20px;
+  }
+
+}
