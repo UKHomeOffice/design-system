@@ -57,7 +57,7 @@ header, footer {
   background-color: $white;
 }
 
-main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .heading-small, .lede, .navbar, table td {
+main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .heading-small, .lede, .navbar, table td, .navbar .navbar__list-items li a {
   font-family: 'Inter UI', sans-serif;
   line-height: 1.45!important;
 }
