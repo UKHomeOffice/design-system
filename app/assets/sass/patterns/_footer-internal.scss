@@ -14,6 +14,31 @@
 
 }
 
+.wrapper-footer__library {
+  padding: 30px 20px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: 'Inter UI', sans-serif!important;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .version {
+    margin-bottom: 25px;
+  }
+
+  .open-government-licence {
+    margin: 20px 0;
+  }
+
+}
+
 .footer-logo {
   display: block;
   position: relative;
@@ -43,6 +68,18 @@
 
   li:first-child {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 1020px) {
+  .wrapper-footer__library {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper-footer__library {
+    margin: 0 15px;
   }
 }
 
