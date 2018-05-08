@@ -48,3 +48,26 @@
     width: 70%;
   }
 }
+
+// Switch controls
+
+.multiple-choice--switch {
+  display: flex;
+  justify-content: flex-end;
+
+  .multiple-choice {
+    padding-top: 1px;
+    padding-bottom: 2px;
+  }
+}
+
+.multiple-choice--switch [type=radio] + label::before {
+  width: 24px;
+  height: 24px;
+}
+
+.multiple-choice--switch [type=radio] + label::after {
+  border: 7px solid;
+  top: 7px;
+  left: 7px;
+}
