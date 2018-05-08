@@ -49,20 +49,22 @@
 
     <header role="banner">
       <div class="font-ui wrapper-header__library">
-        <div class="grid-row">
-          <div class="column-full">
-            <div class="header-title">
-              <a href="/" class="header-name">Home Office design system</a>
-            </div>
-          </div>
+        <div class="header-logo">
+          {% include "includes/home_office_logo-header.html" %}
         </div>
+        <div class="header-title">
+          <a href="/" class="header-name">Design system</a>
+        </div>
+        <!-- <div class="menu">
+          &nbsp;
+        </div> -->
       </div>
     </header>
 
 
     {% block after_header %}{% endblock %}
 
-    <div id="global-header-bar-internal"></div>
+    <!-- <div id="global-header-bar-internal"></div> -->
 
     {% block content %}{% endblock %}
 

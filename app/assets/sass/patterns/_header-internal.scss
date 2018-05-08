@@ -9,9 +9,11 @@
 }
 
 .wrapper-header__library {
-  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   background-color: $white;
-  padding: 10px 20px;
+  padding: 18px 20px 11px;
   align-items: center;
   max-width: 960px;
   margin: 0 auto;
@@ -33,9 +35,21 @@
 
 }
 
+.header-title {
+  align-self: self-end;
+}
+
+.header-logo {
+  display: block;
+  position: relative;
+  width: 125px;
+  height: auto;
+  margin-right: 75px;
+}
+
 .header-name {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .wrapper-header a:hover {
@@ -77,7 +91,7 @@
   .wrapper-header, .wrapper-header__library {
     display: inherit;
     margin: 0 15px;
-    padding: 5px 0;
+    padding: 10px 0;
   }
 
   .header-menu {
