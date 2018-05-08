@@ -47,24 +47,22 @@
     </div>
 
 
-    <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
-      <div class="header-wrapper">
-        <div class="header-global">
-          <div class="header-logo">
-            <a href="{{ homepage_url|default('https://www.gov.uk') }}" title="{{ logo_link_title|default('Go to the GOV.UK homepage') }}" id="logo" class="content">
-              <img src="{{ asset_path }}images/gov.uk_logotype_crown_invert_trans.png?0.18.3" width="36" height="32" alt=""> {{ global_header_text|default('GOV.UK') }}
-            </a>
+    <header role="banner">
+      <div class="font-ui wrapper-header__library">
+        <div class="grid-row">
+          <div class="column-full">
+            <div class="header-title">
+              <a href="/" class="header-name">Home Office design system</a>
+            </div>
           </div>
-          {% block inside_header %}{% endblock %}
         </div>
-        {% block proposition_header %}{% endblock %}
       </div>
     </header>
 
 
     {% block after_header %}{% endblock %}
 
-    <div id="global-header-bar"></div>
+    <div id="global-header-bar-internal"></div>
 
     {% block content %}{% endblock %}
 
