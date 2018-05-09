@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: flex-start;
   background-color: $white;
-  padding: 18px 20px 11px;
+  padding: 20px 20px;
   align-items: center;
   max-width: 960px;
   margin: 0 auto;
@@ -35,20 +35,18 @@
 
 }
 
-.header-title {
-  align-self: self-end;
-}
-
 .header-logo {
   display: block;
   position: relative;
-  width: 125px;
+  width: 150px;
   height: auto;
-  margin-right: 75px;
+  margin-left: -16px;
+  margin-right: 125px;
+  line-height:0;
 }
 
 .header-name {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 400;
 }
 
