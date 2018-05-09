@@ -72,6 +72,15 @@ body {
   background-color: rgba( $highlight-colour, .9 );
 }
 
+main, table td, .navbar .navbar__list-items li a {
+  font-size: 18px;
+}
+
+.lede {
+  font-size: 22px;
+  margin-bottom: 1.5em;
+}
+
 // Helpers
 .mt-15 {
   margin-top: 15px;
