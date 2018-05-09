@@ -72,17 +72,15 @@
       <div class="wrapper-footer__library" style="padding:0;">
         <div class="grid-row">
           <div class="column-full">
+            <div class="ddat-service">
+              <!-- <div class="footer-logo">
+                {% include "includes/home_office_logo.html" %}
+              </div> -->
+              <p>A Home Office Digital, Data and Technology service</p>
+            </div>
             <div class="version">
               <p><a href="https://github.com/UKHomeOffice/home-office-digital-patterns/releases" target="_blank">Version 1.5</a> of the Home Office design system.</p>
             </div>
-
-            <div>
-              <div class="footer-logo">
-                {% include "includes/home_office_logo.html" %}
-              </div>
-              <p>Built by Home Office Digital, Data and Technology</p>
-            </div>
-
             <div class="open-government-licence">
               {% block footer_support_links %}{% endblock %}
               {% block licence_message %}<p><a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">{{ crown_copyright_message|default('&copy; Crown copyright')|safe }}</a> - All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>{% endblock %}
