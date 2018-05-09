@@ -46,6 +46,7 @@
 
 .header-title {
   margin-right: auto;
+  align-self: center;
 }
 
 .header-name {
@@ -97,10 +98,14 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 720px) {
 
   .header-name {
-    font-size: 19px;
+    font-size: 20px;
+  }
+
+  .header-title {
+    margin-bottom: 5px;
   }
 
   .header-logo {
