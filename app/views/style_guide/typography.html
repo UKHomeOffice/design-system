@@ -15,7 +15,7 @@ Style guide - Typography
     <div class="column-full">
       <h1 class="heading-section">Typography</h1>
 
-      <p class="font-ui lede">New Transport, the typeface used on GOV.UK is restricted, by license, for use on gov.uk domains. Services for internal users cannot use New Transport. These services should instead use the open source <a href="https://rsms.me/inter/">Inter UI</a> typeface.</p>
+      <p class="font-ui lede">GDS Transport, the typeface used on GOV.UK is restricted, by license, for use on gov.uk domains. Services for internal users cannot use New Transport. These services should instead use the open source <a href="https://rsms.me/inter/">Inter UI</a> typeface.</p>
       <p class="font-ui lede">Inter UI is closely related to Helvetica and Arial, but offers improved legibility and readability for digital interfaces, particularly at smaller type sizes.</p>
     </div>
 
@@ -23,6 +23,7 @@ Style guide - Typography
 
       <section>
         <h2 class="font-ui heading-medium">Headings</h2>
+        <p>Markup headings semantically using the appropriate heading level and use a corresponding heading class to apply styling.</p>
         <div class="example example-images">
           <div class="grid-row">
             <h1 class="font-ui heading-xlarge" style="margin-bottom:30px;margin-top: 0;">Heading xlarge</h1>
@@ -35,18 +36,61 @@ Style guide - Typography
 
       <section>
         <h2 class="font-ui heading-medium">Body content</h2>
-        <p>Inter UI has a taller x-height and larger letter-spacing then New Transport. The default font size is 18px on large screens and 15px on smaller screens.</p>
+        <p>Inter UI has a taller x-height and larger letter-spacing then GDS Transport. The default font size is 18px on large screens and 15px on smaller screens.</p>
         <p>Multiuse caseworking services tend to be more complex and should be optimised for speed. Smaller body sizing is acceptable but the minimum font size on large screens should be 15px.</p>
       </section>
 
       <section>
         <h2 class="font-ui heading-medium">Links</h2>
-        <p>Links should be <a href="#0">blue and underlined</a>.</p>
+        <p>Links should be <span style="color:#005EA5;text-decoration:underline;">blue and underlined</span>.</p>
+      </section>
+
+      <section>
+        <h2 class="font-ui heading-medium">Typographic scale</h2>
+        <p>Scale helps to clearly define the hierarchy of your content.</p>
+
+        <table>
+          <thead>
+            <!-- <h3 class="heading-small">Our type scale</h3> -->
+            <tr>
+              <th scope="col">Element</th>
+              <th scope="col">Size</th>
+              <th scope="col">Font weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Heading-xlarge</th>
+              <td scope="row">40px</td>
+              <td scope="row">bold</td>
+            </tr>
+            <tr>
+              <td scope="row">Heading-xlarge</th>
+              <td scope="row">32px</td>
+              <td scope="row">bold</td>
+            </tr>
+            <tr>
+              <td scope="row">Heading-medium</th>
+              <td scope="row">24px</td>
+              <td scope="row">bold</td>
+            </tr>
+            <tr>
+              <td scope="row">Heading-small</th>
+              <td scope="row">18px</td>
+              <td scope="row">bold</td>
+            </tr>
+            <tr>
+              <td scope="row">Body</th>
+              <td scope="row">18px</td>
+              <td scope="row">regular</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section>
         <h2 class="font-ui heading-medium">Line height</h2>
-        <p>Inter UI requires a different line height to New Transport. Line height should be set to 1.45 on larger screens and 1.35 on smaller screens.</p>
+        <p>Inter UI requires a different line height to GDS Transport. Line height should be set to 1.45 on larger screens and 1.35 on smaller screens.</p>
       </section>
 
     </div>
