@@ -7,6 +7,17 @@
   margin-top: 3em;
 }
 
+.quote {
+  font-style: italic;
+  margin-left: 40px;
+}
+
+@media (max-width: 640px) {
+  .quote {
+    margin-left: 10px;
+  }
+}
+
 // Headers
 
 .heading-xlarge, .heading-section {
