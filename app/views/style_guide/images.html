@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Style guide - Images
+{% endblock %}
+
+{% block content %}
+
+{% set active = "style_guide" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" class="font-ui" role="main">
+
+  <div class="grid-row">
+
+    <div class="column-full">
+      <h1 class="font-ui heading-section">Images and image use</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <p>Images can add visual interest to a page. They should be used with consideration and add context to content. Images shouldn’t be used to fill space or as decoration. </p>
+      <p>Where images are used, the photographic style should focus on people, be inclusive and reflect diversity. Do not use clip art, staged or cliched stock photography. Do not place text on top of an image, use text as an image, or add unnecessary filters or effects.</p>
+      <p>All images must be free from usage restrictions and permissible for use. Please contact the central design team for advice.</p>
+
+    </div>
+
+    <div class="column-full" style="padding:0;margin-top:2em;">
+
+      <div class="column-half">
+        <span class="heading-small">Do this</span>
+        <div class="example example-images">
+          <div class="grid-row">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="column-half">
+        <span class="heading-small">Don't do this</span>
+        <div class="example example-images">
+          <div class="grid-row">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
