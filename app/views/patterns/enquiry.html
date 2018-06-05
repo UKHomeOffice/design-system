@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pattern - Enquiry
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Enquiry form</h1>
+    <p class="lede">Allow users to submit an enquiry to a service</p>
+    <ul class="metadata">
+      <li>Usage: internal/external</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 5 June 2018</li>
+    </ul>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="example example-images confirmation">
+        <form>
+          <div class="form-group">
+            <label class="heading-medium" for="textarea">
+              Your enquiry
+            </label>
+            <textarea class="form-control form-control-3-3" style="margin-top:20px;" name="textarea" id="textarea" rows="4"></textarea>
+          </div>
+          <fieldset>
+            <legend>
+              <h2 class="heading-medium" style="margin-bottom:20px;margin-top: 0.7em;">Your details so we can contact you</h2>
+            </legend>
+            <div class="form-group">
+              <label class="form-label" for="full-name">Full name</label>
+              <input class="form-control" id="full-name" name="full-name" type="text">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email-address">Email address</label>
+              <input class="form-control" id="email-address" name="email-address" type="text">
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Submit</button>
+        </form>
+        <!-- <img src="{{ asset_path }}/images/enquiry.svg" class="confirm-desktop" alt="A form giving users the option to submit an enquiry to a service. Includes a enquiry text box, a name field and email field.">
+        <img src="{{ asset_path }}/images/enquiry.svg" class="confirmation confirm-mobile" alt="A form giving users the option to submit an enquiry to a service. Includes a enquiry text box, a name field and email field."> -->
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">When to use this pattern</h2>
+      <p>This should always be available to a user.</p>
+      <p>If a user submits an application, include a link to the enquiry form in all follow up communications.</p>
+
+      <h2 class="heading-medium">Guidance</h2>
+      <h3 class="heading-small">It can be used:</h3>
+      <ul class="list list-bullet">
+        <li>with a variety of enquiry and support types</li>
+        <li>with optional contact details</li>
+      </ul>
+    </div>
+
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/101">GitHub</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+{% endblock %}
