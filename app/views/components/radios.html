@@ -38,6 +38,21 @@
         <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_radios.scss' | fileInclude }}</code></pre>
       </details>
 
+      <h2 class="heading-medium" id="example-component">Radio with conditional reveal</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/radios-progressive.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/radios-progressive.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_radios.scss' | fileInclude }}</code></pre>
+      </details>
+
     </div>
 
     <div class="column-two-thirds">

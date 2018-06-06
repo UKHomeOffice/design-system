@@ -1,0 +1,25 @@
+<h2 class="heading-medium" style="margin:0 0 20px 0;">Filter results</h2>
+
+<form>
+  <fieldset>
+    <legend style="margin-bottom:15px;">Identity document provided</legend>
+    <div class="multiple-choice--hod">
+      <div class="multiple-choice" data-target="passport-no">
+        <input id="passport" name="passport" type="checkbox" value="Passport">
+        <label for="passport">Passport</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="passport-no">
+        <label class="form-label" for="passport-number">Passport number</label>
+        <input class="form-control" type="text" id="passport-number" name="passport-number">
+      </div>
+      <div class="multiple-choice">
+        <input id="driving-licence" name="contract-length" type="checkbox" value="Driving licence">
+        <label for="driving-licence">Driving licence</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="birth-cert" name="contract-length" type="checkbox" value="Birth certificate">
+        <label for="birth-cert">Birth certificate</label>
+      </div>
+    </div>
+  </fieldset>
+</form>

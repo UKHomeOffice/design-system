@@ -1,0 +1,29 @@
+<h2 class="heading-medium" style="margin:0 0 20px 0;">Filter results</h2>
+
+<form>
+  <fieldset>
+    <legend style="margin-bottom:15px;">Find applicant by:</legend>
+    <div class="multiple-choice--hod">
+      <div class="multiple-choice" data-target="contact-by-email">
+        <input id="month-1" type="radio" name="radio-group" value="This month">
+        <label for="month-1">Email</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+        <label class="form-label" for="contact-email">Applicant email</label>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+      <div class="multiple-choice">
+        <input id="18-30" type="radio" name="radio-group" value="Age: 18 - 30">
+        <label for="18-30">18 - 30 years old</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="31-55" type="radio" name="radio-group" value="Age: 31 - 55">
+        <label for="31-55">31 - 55 years old</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="55" type="radio" name="radio-group" value="Age: over 55">
+        <label for="55">Over 55 years old</label>
+      </div>
+    </div>
+  </fieldset>
+</form>
