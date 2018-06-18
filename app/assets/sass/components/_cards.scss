@@ -33,3 +33,37 @@ a.card__body {
   background-color: $highlight-colour;
   padding: 1em;
 }
+
+
+// GOVUK card
+
+.govuk-card {
+    border-bottom: 3px solid #8F23B3;
+    box-sizing: border-box;
+}
+
+.govuk-card--contained {
+  background-color: #FFF;
+  padding-bottom: 30px;
+}
+
+.govuk-card__content {
+  padding-top: 10px;
+}
+
+.govuk-card--contained .govuk-card__content {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.govuk-card__actions {
+    padding-top: 0;
+}
+
+@media screen and (max-width: 640px) {
+
+  .govuk-card--contained {
+    margin-top: 20px;
+  }
+
+}
