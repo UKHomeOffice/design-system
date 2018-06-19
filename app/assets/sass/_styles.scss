@@ -89,6 +89,19 @@
     height: auto;
 }
 
+//
+
+.side-container {
+  border-top: 2px solid #8F23B3;
+  margin-top:20px;
+}
+
+@media (max-width: 640px) {
+  .side-container {
+    margin-top:40px;
+  }
+}
+
 // Switch controls
 
 .multiple-choice--switch {
