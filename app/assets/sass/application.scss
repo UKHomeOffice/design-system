@@ -61,7 +61,7 @@ header, footer {
   background-color: $white;
 }
 
-main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .heading-small, .lede, .navbar, table td, .navbar .navbar__list-items li a {
+main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .heading-small, .lede, .navbar, table td, .phase-tag, .navbar .navbar__list-items li a {
   font-family: 'Inter UI', sans-serif;
   line-height: 1.45!important;
 }
@@ -94,6 +94,21 @@ main, table td, .navbar .navbar__list-items li a {
   .lede {
     font-size: 17.5px;
     margin-bottom: 1.5em;
+  }
+}
+
+// Phase tag
+
+.phase-tag {
+  margin-left: 10px;
+  padding: 2px 8px 0px;
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  .phase-tag {
+    font-size: 14px;
+    padding: 1px 5px 0px 7px;
   }
 }
 
