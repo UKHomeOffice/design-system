@@ -56,11 +56,11 @@
       </div>
     </header>
 
-    <div class="phase-banner">
+    <div class="phase-banner" id="phase">
       <div class="content-width">
         <p>
           <strong class="phase-tag">ALPHA</strong>
-          <span>This is a new service – contact <a href="#">design@digital.homeoffice.gov.uk</a> to help us improve it.</span>
+          <span class="phase-banner-text">This is a new service – contact <a href="#">design@digital.homeoffice.gov.uk</a> to help us improve it.</span>
         </p>
       </div>
     </div>
@@ -71,11 +71,21 @@
     <!-- <div id="global-header-bar-internal"></div> -->
 
     {% block content %}{% endblock %}
+    <!-- Phase banner -->
+    <div class="content-width">
+      <div class="phase-banner-footer">
+        <p>
+          <strong class="phase-tag">ALPHA</strong>
+          <span>This is a new service – contact <a href="#">design@digital.homeoffice.gov.uk</a> to help us improve it.</span>
+        </p>
+      </div>
+    </div>
 
-    <footer role="contentinfo">
+    <footer role="contentinfo" id="footer-withphase">
       <div class="wrapper-footer__library">
         <div class="grid-row">
           <div class="column-full">
+
             <div class="ddat-service">
               <!-- <div class="footer-logo">
                 {% include "includes/home_office_logo.html" %}
@@ -111,6 +121,26 @@
 
       ga('create', 'UA-100424158-1', 'auto');
       ga('send', 'pageview');
+
+      // Phase banner stop float
+      var socialFloat = document.querySelector('#phase');
+      var footer = document.querySelector('#footer-withphase');
+
+      function checkOffset() {
+        function getRectTop(el){
+          var rect = el.getBoundingClientRect();
+          return rect.top;
+        }
+
+        if((getRectTop(socialFloat) + document.body.scrollTop) + socialFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 10)
+          socialFloat.style.position = 'absolute';
+        if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
+          socialFloat.style.position = 'fixed'; // restore when you scroll up
+      }
+
+      document.addEventListener("scroll", function(){
+        checkOffset();
+      });
 
     </script>
 
