@@ -103,6 +103,7 @@ main, table td, .navbar .navbar__list-items li a {
   background-color: $govuk-blue;
   border-bottom: none;
   position: fixed;
+  z-index: 1000;
   bottom: 0;
   width: 100%;
 
