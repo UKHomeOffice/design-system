@@ -9,7 +9,9 @@
 
 .quote {
   font-style: italic;
-  margin-left: 40px;
+  border-left: #8F23B3 solid 2px;
+  padding-left: 20px;
+  margin: 30px;
 }
 
 @media (max-width: 640px) {
