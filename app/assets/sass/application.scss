@@ -61,6 +61,10 @@ header, footer {
   background-color: $white;
 }
 
+footer {
+  box-shadow: 0 50vh 0 50vh #FFF;
+}
+
 main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .heading-small, .lede, .navbar, table td, .phase-tag, .navbar .navbar__list-items li a, .phase-banner-footer {
   font-family: 'Inter UI', sans-serif;
   line-height: 1.45!important;
