@@ -133,7 +133,7 @@
         }
 
         if((getRectTop(socialFloat) + document.body.scrollTop) + socialFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 10)
-          socialFloat.style.position = 'absolute';
+          socialFloat.style.position = 'relative';
         if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
           socialFloat.style.position = 'fixed'; // restore when you scroll up
       }
