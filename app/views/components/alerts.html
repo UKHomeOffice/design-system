@@ -13,8 +13,8 @@
   <div class="grid-row">
     <div class="column-full">
       <div class="banner" role="banner">
-        <h1 class="heading-section">Notifications</h1>
-        <p class="lede">Notify users of important information.</p>
+        <h1 class="heading-section">Alert</h1>
+        <p class="lede">Alert users to important information.</p>
         <!-- <ul class="metadata">
           <li>Usage: internal</li>
           <li>Status: experimental</li>
@@ -25,25 +25,27 @@
       <h2 class="visually-hidden" id="example-component">Example checkbox component</h2>
       <div class="example example-images">
         <div class="grid-row">
-          {% include "includes/components/notification.html" %}
+          {% include "includes/components/alerts.html" %}
         </div>
       </div>
       <details class="code-details">
         <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/notification.html" %}{% endfilter %}</code></pre>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/alerts.html" %}{% endfilter %}</code></pre>
       </details>
       <details class="code-details">
         <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_notification.scss' | fileInclude }}</code></pre>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_alerts.scss' | fileInclude }}</code></pre>
       </details>
     </div>
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">When to use this component</h2>
+      <p>Use alerts to inform users that something important has happened. Either an action they need to take or to notify them of a success/failure.</p>
 
       <h2 class="heading-medium">When not to use this component</h2>
+      <p>Only use when you have identified that users need alerting to certain content.</p>
 
-      <h2 class="heading-medium">User research</h2>
+      <!-- <h2 class="heading-medium">User research</h2> -->
 
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
