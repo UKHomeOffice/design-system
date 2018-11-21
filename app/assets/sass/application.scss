@@ -73,7 +73,7 @@ main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .headi
 body {
   font-family: 'Inter UI', sans-serif;
   line-height: 1.45!important;
-  background-color: #f3f3f3;
+  background-color: $base-grey;
 }
 
 main, table td, .navbar .navbar__list-items li a {
