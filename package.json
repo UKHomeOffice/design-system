@@ -18,7 +18,6 @@
     "browser-sync": "^2.11.1",
     "cross-spawn": "^5.0.0",
     "dotenv": "^4.0.0",
-    "event-stream": "^4.0.1",
     "express": "4.15.2",
     "express-session": "^1.13.0",
     "express-writer": "0.0.4",
