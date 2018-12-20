@@ -1,30 +1,30 @@
 {% set users = [ { name: "Spider-Man" }, { name: "Captain Marvel" }, { name: "Hulk" }, { name: "Thor" }, { name: "Iron Man" }, { name: "Luke Cage" }, { name: "Black Widow" }, { name: "Daredevil" } ] %}
-<table class="table-clickable">
-  <thead>
-    <tr>
-      <th class="multiple-choice--hod">
-        <div class="multiple-choice">
-          <input type="checkbox" class="jsCheckboxAll" id="radio-all">
-          <label for="radio-all">
+<table class="table-clickable govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header multiple-choice--hod">
+        <div class="govuk-checkboxes__item">
+          <input type="checkbox" class="govuk-checkboxes__input jsCheckboxAll" id="radio-all">
+          <label class="govuk-label govuk-checkboxes__label" for="radio-all">
             &nbsp;
           </label>
         </div>
       </th>
-      <th>Name</th>
+      <th class="govuk-table__header">Name</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="govuk-table__body">
     {% for user in users | sort(attribute = 'name') %}
-      <tr>
-        <td class="multiple-choice--hod">
-          <div class="multiple-choice">
-            <input type="checkbox" class="jsCheckbox" id="radio-{{ loop.index }}">
-            <label for="radio-{{ loop.index }}">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell multiple-choice--hod">
+          <div class="govuk-checkboxes__item">
+            <input type="checkbox" class="govuk-checkboxes__input jsCheckbox" id="radio-{{ loop.index }}">
+            <label class="govuk-label govuk-checkboxes__label" for="radio-{{ loop.index }}">
               &nbsp;
             </label>
           </div>
         </td>
-        <td>{{ user.name }}</td>
+        <td class="govuk-table__cell">{{ user.name }}</td>
       </tr>
     {% endfor %}
   </tbody>

@@ -1,0 +1,16 @@
+<div class="app-pane__subnav app-hide-mobile">
+  <nav class="app-subnav">
+    <ul class="app-subnav__section">
+      <li{% if activesub == "accessibility" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/resources/accessibility">Accessibility</a>
+      </li>
+      <li{% if activesub == "government" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/resources/government">GOV.UK</a>
+      </li>
+      <li{% if activesub == "prototyping" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/resources/prototyping">Prototyping</a>
+      </li>
+
+    </ul>
+  </nav>
+</div>

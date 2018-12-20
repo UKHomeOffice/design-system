@@ -1,0 +1,47 @@
+.app-content pre, .app-content code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+pre code {
+    display: block;
+    max-width: calc(100% - 3em);
+    overflow-x: auto;
+}
+
+// Details
+
+.details-margin-btm {
+  margin-bottom: 30px;
+}
+
+details.details-interruption {
+  background-color: inherit;
+
+  summary {
+    padding-left: 0;
+  }
+}
+
+details.code-details {
+    background-color: #FFF;
+    border: 1px solid $border-grey;
+    padding: 10px;
+    margin-top: -1px;
+
+    summary {
+      padding-left: 10px;
+    }
+}
+
+details summary {
+    display: inline-block;
+    color: #005ea5;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Inter UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.45;
+}

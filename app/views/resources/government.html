@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% set active = "resources" %}
+{% set activesub = "government" %}
+
+{% block pageTitle %}
+Resources - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__resources.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+
+    <div class="app-prose-scope">
+      <h1 class="heading-section">Guidance on GOV.UK</h1>
+
+      <p>Resources available across government.</p>
+      <ul class="resource-list">
+        <li>
+          <a href="https://design-system.service.gov.uk/">
+            GOV.UK design system
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.uk/design-principles">
+            GOV.UK design principles
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">
+            GOV.UK content style guide
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.uk/service-manual">
+            GOV.UK service manual
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

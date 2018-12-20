@@ -1,71 +1,60 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "postcode" %}
 
-{% block page_title %}
-  Pattern - Postcode lookup
+{% block pageTitle %}
+Postcode lookup - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Postcode lookup</h1>
-    <p class="lede">Allow users to find an address using a postcode lookup.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: internal/external</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 10 December 2017</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
-    <div class="column-full">
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Postcode lookup</h1>
+      <p class="govuk-body-l">Allow users to find an address using a postcode lookup.</p>
 
       <div class="example example-images confirmation" style="margin-bottom: 2em;">
         <img src="{{ asset_path }}/images/postcode-lookup.svg" class="confirm-desktop" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
         <img src="{{ asset_path }}/images/postcode-lookup-mobile.svg" class="confirmation confirm-mobile" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
       </div>
-    </div>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">Guidance</h2>
-      <h3 class="heading-small">It can be used:</h3>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Guidance</h2>
+      <h3 class="govuk-heading-s">It can be used:</h3>
+      <ul class="govuk-list govuk-list--bullet">
         <li>to find a single address</li>
         <li>to add an address manually</li>
         <li>as part of a loop to add multiple addresses</li>
       </ul>
 
-      <h3 class="heading-small">It should not be used:</h3>
-      <ul class="list list-bullet">
+      <h3 class="govuk-heading-s">It should not be used:</h3>
+      <ul class="govuk-list govuk-list--bullet">
         <li>if the address is needed as structured data</li>
       </ul>
 
-      <h3 class="heading-small">The postcode lookup pattern should:</h3>
-      <ul class="list list-bullet">
+      <h3 class="govuk-heading-s">The postcode lookup pattern should:</h3>
+      <ul class="govuk-list govuk-list--bullet">
         <li>replay the address options clearly</li>
         <li>give the user flexibility to add an address in different ways</li>
       </ul>
 
-      <h2 class="heading-medium">User research</h2>
+      <h2 class="govuk-heading-m">User research</h2>
       <ul class="list">
         <li>Users living in new-build accomodation who knew their address wouldn't be found had no problem with free text input.</li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/84">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

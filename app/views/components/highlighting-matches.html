@@ -1,67 +1,58 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "highlights" %}
 
-{% block page_title %}
-  Pattern - Highlighter search matches
+{% block pageTitle %}
+Highlighted search matches - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
-      <div class="banner" role="banner">
-        <h1 class="heading-section">Highlighted search matches</h1>
-        <p class="lede">Highlighting helps users identify matching data.</p>
-        <!-- <ul class="metadata">
-          <li>Usage: external/internal</li>
-          <li>Status: experimental</li>
-          <li>Last updated: 28 June 2017</li>
-        </ul> -->
-      </div>
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-      <h2 class="visually-hidden" id="example-component">Example highlighting component</h2>
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Components</span>
+      <h1 class="heading-section">Highlighted search matches</h1>
+      <p class="govuk-body-l">Highlighting helps users identify matching data.</p>
+
+      <h2 class="govuk-visually-hidden" id="example-component">Example highlighting component</h2>
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/highlighting.html" %}
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/highlighting.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/highlighting.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_highlights.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/highlights.css" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">When to use this component</h2>
+      <h2 class="govuk-heading-m">When to use this component</h2>
       <p>Highlighting is typically used in search or when comparing data sets.</p>
 
-      <h2 class="heading-medium">How to use this component</h2>
+      <h2 class="govuk-heading-m">How to use this component</h2>
       <p>Highlighting should not reduce colour contrast so much that it fails WCAG level AA. Highlighting should be clear but not distract from the content on the page.</p>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Passport caseworking</li>
         <li>Application platform</li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/41">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

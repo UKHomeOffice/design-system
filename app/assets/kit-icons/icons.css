@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'hod-font';
+  src:  url('fonts/fonts/hod-font.eot?vzqymy');
+  src:  url('fonts/fonts/hod-font.eot?vzqymy#iefix') format('embedded-opentype'),
+    url('fonts/fonts/hod-font.ttf?vzqymy') format('truetype'),
+    url('fonts/fonts/hod-font.woff?vzqymy') format('woff'),
+    url('fonts/fonts/hod-font.svg?vzqymy#hod-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="hod-"], [class*=" hod-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hod-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hod-fast-forward-button:before {
+  content: "\e903";
+}
+.hod-pause:before {
+  content: "\e904";
+}
+.hod-play:before {
+  content: "\e905";
+}
+.hod-rewind-button:before {
+  content: "\e906";
+}
+.hod-skip-back:before {
+  content: "\e907";
+}
+.hod-skip-forward:before {
+  content: "\e908";
+}
+.hod-spinner:before {
+  content: "\e909";
+}
+.hod-stop:before {
+  content: "\e90a";
+}
+.hod-circle:before {
+  content: "\e90b";
+}
+.hod-info-blue:before {
+  content: "\e90e";
+  color: #005ea5;
+}
+.hod-warning:before {
+  content: "\e911";
+}
+.hod-download-button:before {
+  content: "\e901";
+}
+.hod-close-envelope:before {
+  content: "\e902";
+}
+.hod-home:before {
+  content: "\e900";
+}
+.hod-search:before {
+  content: "\f002";
+}
+.hod-search-plus:before {
+  content: "\f00e";
+}
+.hod-search-minus:before {
+  content: "\f010";
+}
+.hod-cog:before {
+  content: "\f013";
+}
+.hod-gear:before {
+  content: "\f013";
+}
+.hod-map-marker:before {
+  content: "\f041";
+}
+.hod-chevron-left:before {
+  content: "\f053";
+}
+.hod-chevron-right:before {
+  content: "\f054";
+}
+.hod-chevron-up:before {
+  content: "\f077";
+}
+.hod-chevron-down:before {
+  content: "\f078";
+}
+.hod-phone:before {
+  content: "\f095";
+}
+.hod-file-empty:before {
+  content: "\e924";
+}
+.hod-clock:before {
+  content: "\e94e";
+}
+.hod-calendar:before {
+  content: "\e953";
+}
+.hod-printer:before {
+  content: "\e954";
+}
+.hod-key:before {
+  content: "\e98d";
+}
+.hod-plus:before {
+  content: "\ea0a";
+}
+.hod-minus:before {
+  content: "\ea0b";
+}
+.hod-cross:before {
+  content: "\ea0f";
+}
+.hod-checkmark:before {
+  content: "\ea10";
+}
+.hod-arrow-up:before {
+  content: "\ea32";
+}
+.hod-arrow-right:before {
+  content: "\ea34";
+}
+.hod-arrow-down:before {
+  content: "\ea36";
+}
+.hod-arrow-left:before {
+  content: "\ea38";
+}

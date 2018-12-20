@@ -5,7 +5,25 @@
   color: #005ea5;
   background: #fff;
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+
+.circle-step {
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+}
+
+.circle {
+    margin-top: 6px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .flash-card {
@@ -14,18 +32,36 @@
   background: $link-colour;
   color: $page-colour;
 
+  header {
+    background-color: inherit;
+  }
+
   p {
     margin-left: 32px;
   }
 
-  h1 {
-    &:first-of-type {
-      margin-top: 0 !important;
+  ul.how-to-renew {
+    padding-left: 0;
+    list-style: none;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 0;
+      padding: 0;
+      color: white;
+      font-size: 28px;
+    }
+
+    li {
+      margin-bottom: 22px;
     }
   }
 
-  h2 {
-    margin: 0.7em 0px 0.3em 0px !important;
+  h1 {
+    color: white;
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
   }
 
   a {
@@ -42,23 +78,6 @@
         border-left-color: $page-colour;
       }
     }
-    // .button {
-    //   color: $link-colour;
-    //   background-color: $page-colour;
-    //   // Link styles
-    //   a {
-    //     color: $link-colour;
-    //   }
-    //   &:visited {
-    //     color: $link-visited-colour;
-    //   }
-    //   &:hover {
-    //     color: $link-hover-colour;
-    //   }
-    //   &:active {
-    //     color: $link-active-colour;
-    //   }
-    // }
   }
 
   @media (min-width: 769px) {

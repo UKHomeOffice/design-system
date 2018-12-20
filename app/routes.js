@@ -1,11 +1,10 @@
-var express = require('express')
-var router = express.Router()
+const express = require('express')
+const router = express.Router()
 
-// Route index page
+// Add your routes here - above the module.exports line
+
 router.get('/', function (req, res) {
   res.redirect('/patterns')
 })
-
-// add your routes here
 
 module.exports = router

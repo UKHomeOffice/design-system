@@ -3,31 +3,56 @@
 }
 
 .button-white {
-   @include button($white);
-   box-shadow: 0 1px 0 $black;
-   border: $black 1px solid;
- }
+  box-shadow: 0 1px 0 $text-colour;
+  border: $text-colour 1px solid;
+	background-color: white;
+	color: $text-colour;
+	&[disabled]{
+		background-color: white;
+	}
+}
+
+.button-white:hover {
+	background-color: darken(white, 5%);
+	color: $text-colour;
+	&[disabled]{
+		background-color: white;
+	}
+}
 
 .button-secondary {
-  @include button($panel-colour);
-  box-shadow: 0 1px 0 $black;
-  border: $black 1px solid;
+	background-color: $panel-colour;
+  box-shadow: 0 1px 0 $text-colour;
+	color: $text-colour;
+  border: $text-colour 1px solid;
   &[disabled]:active {
+		background-color: $border-colour;
     box-shadow: 0 0px 0 $black;
   }
 }
 
+.button-secondary:hover {
+	background-color: darken($panel-colour, 5%);
+	color: $text-colour;
+}
+
 .button-affordance {
-    @include button($panel-colour);
-    padding: em(7) em(20) em(10) em(16);
-    box-shadow: 0 1px 0 $black;
-    border: $black 1px solid;
-    span[class^="hod-"] {
+	background-color: $panel-colour;
+	color: $text-colour;
+  box-shadow: 0 1px 0 $text-colour;
+  border: $black 1px solid;
+  span[class^="hod-"] {
       &::before {
   		color: #555D5E;
   	}
   }
   &[disabled]:active {
-    box-shadow: 0 0px 0 $black;
+		background-color: $panel-colour;
+    box-shadow: 0 0px 0 $text-colour;
   }
+}
+
+.button-affordance:hover {
+	background-color: darken($panel-colour, 5%);
+	color: $text-colour;
 }
