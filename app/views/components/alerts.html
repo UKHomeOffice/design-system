@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Home Office DDaT design patterns
+{% endblock %}
+
+{% block content %}
+
+{% set active = "components" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="banner" role="banner">
+        <h1 class="heading-section">Alerts</h1>
+        <p class="lede">Alert users to important information.</p>
+        <!-- <ul class="metadata">
+          <li>Usage: internal</li>
+          <li>Status: experimental</li>
+          <li>Last updated: 24 May 2018</li>
+        </ul> -->
+      </div>
+
+      <h2 class="visually-hidden" id="example-component">Example checkbox component</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/alerts.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/alerts.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_alerts.scss' | fileInclude }}</code></pre>
+      </details>
+    </div>
+
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">When to use this component</h2>
+      <p>Use alerts to inform users that something important has happened. Either an action they need to take or to notify them of a success/failure.</p>
+
+      <h2 class="heading-medium">When not to use this component</h2>
+      <p>Only use when you have identified that users need alerting to certain content.</p>
+
+      <h2 class="heading-medium">User research</h2>
+      <p>Passport renewals found this component worked better then the confirmation pattern for a payment success page. They observed users engaged with the next steps on the page, rather than thinking they were finished.</p>
+
+      <h2 class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li>Passport renewals</li>
+
+      </ul>
+
+    </div>
+
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/102">GitHub</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}

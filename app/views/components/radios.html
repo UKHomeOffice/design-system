@@ -15,12 +15,12 @@
 
       <div class="banner" role="banner">
         <h1 class="heading-section">Radio buttons</h1>
-        <p class="lede">A variation of <a href="http://govuk-elements.herokuapp.com/form-elements/#form-radio-buttons">GOV.UK radios</a> more suited to multi-use and caseworking services.</p>
-        <ul class="metadata">
+        <p class="lede">A variation of <a href="http://govuk-elements.herokuapp.com/form-elements/#form-radio-buttons">GOV.UK radios</a> for higher density interfaces.</p>
+        <!-- <ul class="metadata">
           <li>Usage: internal</li>
           <li>Status: experimental</li>
-          <li>Last updated: 19 July 2017</li>
-        </ul>
+          <li>Last updated: 24 May 2018</li>
+        </ul> -->
       </div>
 
       <h2 class="visually-hidden" id="example-component">Example radio component</h2>
@@ -38,22 +38,44 @@
         <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_radios.scss' | fileInclude }}</code></pre>
       </details>
 
+      <h2 class="heading-medium" id="example-component">Radio with conditional reveal</h2>
+      <div class="example example-images">
+        <div class="grid-row">
+          {% include "includes/components/radios-progressive.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>Show HTML snippet</summary>
+        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/radios-progressive.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details">
+        <summary>Show CSS snippet</summary>
+        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_radios.scss' | fileInclude }}</code></pre>
+      </details>
+
     </div>
 
     <div class="column-two-thirds">
       <h2 class="heading-medium">When to use this component</h2>
-      <p>On more complex interfaces when there is more then one thing on a page.</p>
-      <p>When the component is not part of the primary action on a page.</p>
+      <p>This component is a variation of the <a href="https://design-system.service.gov.uk/components/radios/">GOVUK radio buttons</a>.</p>
+      <p>Use this component when the form is not the most important element on a page. Or when the size of the GOVUK radio buttons creates a false hierarchy of content.</p>
       <p>A common use would be filtering search results.</p>
 
+      <h2 class="heading-medium">When not to use this component</h2>
+      <p>Always start with the <a href="https://design-system.service.gov.uk/components/radios/">GOVUK radio buttons</a>. Don't use this component as part of a 'one thing per page' pattern.</p>
+
       <h2 class="heading-medium">User research</h2>
-      <p>From the research we have, we haven't identified any issues with the size or usability of the smaller radios.</p>
+      <p>A number of services are using this pattern in the Home Office. From the research we have, we haven't identified any issues with the size or usability of the smaller radios.</p>
       <p>Component needs further research on mobile devices.</p>
 
       <h2 class="heading-medium">Services using this pattern</h2>
       <ul class="list list-bullet">
-        <li>Application platform</li>
         <li>DAP</li>
+        <li>Resettlement services</li>
+        <li>General Aviation</li>
+        <li>ASRU</li>
+        <li>Application platform</li>
+        <li>Data services</li>
       </ul>
 
     </div>

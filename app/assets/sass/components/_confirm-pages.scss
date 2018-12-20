@@ -1,4 +1,3 @@
-// Update colour of GOV.UK default to meet accessibility
 .govuk-box-highlight {
   padding: 1em 2em 2em;
   background-color: $green;
@@ -9,7 +8,6 @@
   }
 }
 
-// Differentiate if application isn't complete
 .govuk-box-highlight.incomplete {
   background-color: $govuk-blue;
   text-align: left;
@@ -25,7 +23,6 @@
   }
 }
 
-// Checkmark icon styles, not included in .incomplete
 .confirm-page {
   .hod-checkmark {
     font-size: 35px;
@@ -50,7 +47,6 @@
   }
 }
 
-// Document icon used on confirmation pages
 .doc-icon {
   margin-top: 0;
   margin-bottom: 60px;

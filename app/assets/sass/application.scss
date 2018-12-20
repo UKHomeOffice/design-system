@@ -25,6 +25,7 @@ $box-shadow: 0 2px 10px rgba($text-colour, 0.5);
 
 // Components
 @import "components/checkboxes";
+@import "components/alerts";
 @import "components/radios";
 @import "components/buttons";
 @import "components/cards";
@@ -154,7 +155,7 @@ a {
   line-height: 1.2;
   font-weight: 700;
   margin-top: 1em;
-  margin-bottom: 0.55556em;
+  margin-bottom: 0.3em;
 }
 
 @media (max-width: 640px) {

@@ -13,21 +13,21 @@
 
   <div class="banner" role="banner" style="margin-bottom:40px;">
     <h1 class="heading-section">Error pages</h1>
-    <p class="lede">Inform a user when something goes wrong</p>
-    <ul class="metadata">
+    <p class="lede">Inform a user when something goes wrong.</p>
+    <!-- <ul class="metadata">
       <li>Usage: internal/external</li>
       <li>Status: experimental</li>
       <li>Last updated: 05 March 2018</li>
-    </ul>
+    </ul> -->
   </div>
 
   <div class="grid-row">
 
     <div class="column-two-thirds">
 
-      <p>When a user accesses a web page, the server responds with a HTTP status code. In most cases the user journey isn't affected - unless there is an error. Error statuses are sorted into two groups - 400 to 499 are client-side errors and 500 to 599 are server-side errors.</p>
+      <p>When a user visits a web page, the server responds with a HTTP status code. In most cases the user journey isn't affected - unless there is an error. Error statuses are sorted into two groups - 400 to 499 are client-side errors and 500 to 599 are server-side errors.</p>
 
-      <h2 class="heading-medium">Error pages should:</h2>
+      <h3 class="heading-medium">Error pages should:</h3>
       <ul class="list list-bullet">
         <li>be avoided - do the hard work to make sure they don't happen</li>
         <li>use plain English and avoid technical jargon</li>
@@ -36,38 +36,38 @@
         <li>if possible tell the user if they can complete the transaction on another channel</li>
       </ul>
 
-      <h2 class="heading-large">404 page</h4>
+      <h2 class="heading-large">404 page</h2>
       <p>404 errors (sometimes known as 'page not found errors') tell a user the page they were trying to access is not there. Users encounter 404 errors when:</p>
       <ul class="list list-bullet">
         <li>we make a mistake - for example a user follows a link that is broken</li>
         <li>the user makes a mistake - inputting a link incorrectly</li>
       </ul>
-      <h4 class="heading-medium">404 page examples</h4>
+      <h3 class="visually-hidden">404 examples</h3>
     </div>
 
     <div class="column-full">
       <div class="example example-images confirmation">
         <h2 class="visually-hidden" id="example-component">404 error page examples</h2>
-        <img src="{{ asset_path }}/images/404-page.svg" class="confirm-desktop" alt="">
-        <img src="{{ asset_path }}/images/404-page-mobile.svg" class="confirmation confirm-mobile" alt="">
+        <img src="{{ asset_path }}/images/404-page.svg" class="confirm-desktop" alt="Two example 404 pages, one for user error and one for a service error. With a title 'this page cannot be found' and guidance on what the user should do next.">
+        <img src="{{ asset_path }}/images/404-page-mobile.svg" class="confirmation confirm-mobile" alt="Two example 404 pages, one for user error and one for a service error. With a title 'this page cannot be found' and guidance on what the user should do next.">
       </div>
     </div>
 
     <div class="column-two-thirds">
 
-      <h4 class="heading-large">500 page</h4>
+      <h2 class="heading-large">500 page</h2>
       <p>500 errors happen when something goes wrong on the server-side. Common causes are when the server is down or maintenance work is happening.</p>
 
       <p>You do not need to show different error pages for different server problems. 500 pages should only be used for short periods of time. If there is going to be a disruption to users for an extended period use shutter pages like these <a href="http://hmrc-design-language-prototype.herokuapp.com/design-patterns/patterns/pages/shutter_pages/">HMRC examples</a>.</p>
 
-      <h4 class="heading-medium">500 page example</h4>
+      <h3 class="visually-hidden">500 example</h3>
     </div>
 
     <div class="column-full">
       <div class="example example-images confirmation">
         <h2 class="visually-hidden" id="example-component">404 error page examples</h2>
-        <img src="{{ asset_path }}/images/500-page.svg" class="confirm-desktop" alt="">
-        <img src="{{ asset_path }}/images/500-page.svg" class="confirmation confirm-mobile" alt="">
+        <img src="{{ asset_path }}/images/500-page.svg" class="confirm-desktop" alt="An example 500 error page. With a title 'we are experiencing technical problems' and guidance on what the user should do next.">
+        <img src="{{ asset_path }}/images/500-page.svg" class="confirmation confirm-mobile" alt="An example 500 error page. With a title 'we are experiencing technical problems' and guidance on what the user should do next.">
       </div>
     </div>
 
