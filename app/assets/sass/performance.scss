@@ -1,8 +1,8 @@
 .performance-header {
-  background-color: $govuk-blue;
+  background-color: #005ea5;
   width: 100%;
   height: 30vh;
-  color: $white;
+  color: #FFF;
   margin-top: -10px;
 }
 
@@ -20,24 +20,24 @@
     li {
       a {
         &:hover {
-          -webkit-box-shadow: inset 0px -5px 0px 0px $panel-colour!important;
-          -moz-box-shadow: inset 0px -5px 0px 0px $panel-colour!important;
-          box-shadow: inset 0px -5px 0px 0px $panel-colour!important;
+          -webkit-box-shadow: inset 0px -5px 0px 0px #bfc1c3!important;
+          -moz-box-shadow: inset 0px -5px 0px 0px #bfc1c3!important;
+          box-shadow: inset 0px -5px 0px 0px #bfc1c3!important;
         }
       }
 
       &.active a,
       &.active a:hover {
-      color: $white!important;
-      -webkit-box-shadow: inset 0px -5px 0px 0px $white!important;
-      -moz-box-shadow: inset 0px -5px 0px 0px $white!important;
-      box-shadow: inset 0px -5px 0px 0px $white!important;
+      color: #FFF!important;
+      -webkit-box-shadow: inset 0px -5px 0px 0px #FFF!important;
+      -moz-box-shadow: inset 0px -5px 0px 0px #FFF!important;
+      box-shadow: inset 0px -5px 0px 0px #FFF!important;
       }
     }
   }
 
   .navbar__list-items li a {
-    color: $white!important;
+    color: #FFF!important;
   }
 }
 

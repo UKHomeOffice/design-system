@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Style guide - Footer
+{% endblock %}
+
+{% block content %}
+
+{% set active = "style_guide" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" class="font-ui" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="font-ui heading-section">Footer</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <p class="font-ui lede">Footer with Home Office logo and ‘A Home Office Digital, Data and technology service'. White background helps to clearly section main content area.</p>
+
+    </div>
+
+    <div class="column-full">
+      <section>
+        <h2 class="font-ui heading-medium">Footer</h2>
+        <div class="example example-images">
+          <div class="grid-row">
+
+            <!-- Footer example -->
+            <footer style="box-shadow:none;">
+              <div class="wrapper-footer">
+                <div>
+                  <p>A Home Office Digital, Data and Technology service</p>
+                </div>
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#0">Feedback</a></li>
+                    <li><a href="#0">Help</a></li>
+                    <li><a href="#0">GOV.UK home</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

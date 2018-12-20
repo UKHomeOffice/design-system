@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Style guide - Header
+{% endblock %}
+
+{% block content %}
+
+{% set active = "style_guide" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" class="font-ui" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Header</h1>
+
+      <p class="font-ui lede">Header with the Home Office logo, service name and optional menu.</p>
+
+      <section>
+        <h2 class="font-ui heading-medium">Header</h2>
+        <div class="example example-images">
+          <div class="grid-row">
+
+            <!-- Header example -->
+            <header>
+              <div class="font-ui wrapper-header__library">
+                <div class="header-logo" style="margin-left:0;">
+                  {% include "includes/home_office_logo-header.html" %}
+                </div>
+                <div class="header-title">
+                  <a href="/" class="header-name">Service name</a>
+                </div>
+                <div class="header-menu">
+                  <ul>
+                    <li><a href="#0">Search</a></li>
+                    <li><a href="#0">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </header>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="column-full">
+      <section>
+        <h2 class="font-ui heading-medium">Header with heading section</h2>
+        <div class="example example-images">
+          <div class="grid-row">
+
+            <!-- Header example -->
+            <header>
+              <div class="font-ui wrapper-header__library">
+                <div class="header-logo" style="margin-left:0;">
+                  {% include "includes/home_office_logo-header.html" %}
+                </div>
+                <div class="header-title">
+                  <a href="/" class="header-name">Service name</a>
+                </div>
+                <div class="header-menu">
+                  <ul>
+                    <li><a href="#0">Search</a></li>
+                    <li><a href="#0">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </header>
+
+            <!-- Heading section -->
+            <section class="section-heading" style="padding-left:55px;">
+
+              <div class="breadcrumbs" style="padding-top: 0.50em;padding-bottom: 0.25em;">
+            	  <ol role="breadcrumbs">
+            	    <li><a href="#0" style="font-size:14px;">Style guide</a></li>
+            	    <li><a href="#0" style="font-size:14px;">Header</a></li>
+            	  </ol>
+            	</div>
+              <h1 class="font-ui heading-large" style="margin-top: 0;">Heading large</h1>
+            </section>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="column-two-thirds">
+      <section>
+        <h2 class="font-ui heading-medium">Header size and content</h2>
+        <p>It's important the header content doesn't dominate. The service name should be 21px and any menu items 17px.</p>
+        <p>On smaller screens, the menu defaults into a column layout. Only use a hamburger menu if the menu items do not fit.</p>
+        <p>The height of the header is 75px.</p>
+        <div class="example example-images confirmation">
+          <img src="{{ asset_path }}/images/header-spacing.svg" class="confirm-desktop" alt="">
+          <img src="{{ asset_path }}/images/header-spacing.svg" class="confirmation confirm-mobile" alt="">
+        </div>
+        <p>Make sure there is at least a 35px gap between the header and the start of the main content.</p>
+      </section>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
