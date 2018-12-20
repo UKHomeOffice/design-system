@@ -1,0 +1,20 @@
+.panel {
+  h2.heading-medium {
+    margin-bottom: 0.6em;
+  }
+}
+
+.panel-border-wide.alert-default {
+  border-color: #2b8cc4;
+  background-color: #eaf4f9;
+}
+
+.panel-border-wide.alert-success {
+  border-color: #28a197;
+  background-color: #eaf6f5;
+}
+
+.panel-border-wide.alert-error {
+  border-color: #c42b2b;
+  background-color: #f9eaea;
+}

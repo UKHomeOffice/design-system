@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pattern - Image guidance
+{% endblock %}
+
+{% block content %}
+
+{% set active = "patterns" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" role="main">
+
+
+  <div class="banner" role="banner">
+    <h1 class="heading-section">Guidance images</h1>
+    <p class="lede">Using images can help explain content to users.</p>
+    <!-- <ul class="metadata">
+      <li>Usage: internal/external</li>
+      <li>Status: experimental</li>
+      <li>Last updated: 25 August 2018</li>
+    </ul> -->
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <h2 id="interaction" class="heading-medium" style="margin-top:0.5em;">When to use this pattern</h2>
+      <p>Only use <a href="https://design-system.service.gov.uk/styles/images/">images</a> when research identifies a user need. Used correctly, images can help users to understand:</p>
+      <ul class="list list-bullet">
+        <li>a new or unfamiliar concept</li>
+        <li>complex guidance when completing a task</li>
+        <li>how to find a reference number on a document</li>
+      </ul>
+
+      <h2 id="examples" class="heading-medium">Examples</h2>
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <img src="{{ asset_path }}/images/image-guidance-passport.svg" class="confirm-desktop" alt="">
+        <img src="{{ asset_path }}/images/image-guidance-passport.svg" class="confirmation confirm-mobile" alt="">
+      </div>
+
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <img src="{{ asset_path }}/images/image-guidance-url.svg" class="confirm-desktop" alt="">
+        <img src="{{ asset_path }}/images/image-guidance-url.svg" class="confirmation confirm-mobile" alt="">
+      </div>
+
+      <h2 id="related" class="heading-medium">Services using this pattern</h2>
+      <ul class="list list-bullet">
+        <li><a href="https://www.gov.uk/apply-renew-passport">Passport renewals</a></li>
+        <li>Right to work</li>
+        <li>Registered Traveller</li>
+      </ul>
+
+      <h2 id="related" class="heading-medium">Related</h2>
+      <ul class="list list-bullet">
+        <li><a href="https://home-office-digital-patterns.herokuapp.com/patterns/interruption-card">Interruption card</a></li>
+        <li><a href="https://design-system.service.gov.uk/styles/images/">GOV.UK Design System images guidance</a></li>
+      </ul>
+
+    </div>
+
+    <div class="column-full">
+      <div class="contact-us">
+        <h2 class="heading-medium">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/92">GitHub</a>.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
