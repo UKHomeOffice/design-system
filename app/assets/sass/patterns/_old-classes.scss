@@ -1,0 +1,115 @@
+// Typography
+
+p, .body-text		{ @extend .govuk-body; }
+a 					{ @extend .govuk-link; }
+hr 					{ @extend .govuk-section-break, .govuk-section-break--visible; }
+.heading-xlarge 	{ @extend .govuk-heading-xl; }
+.heading-large 		{ @extend .govuk-heading-l; }
+.heading-medium 	{ @extend .govuk-heading-m; }
+.heading-small		{ @extend .govuk-heading-s; }
+.lede				{ @extend .govuk-body-l; }
+.font-xsmall		{ @extend .govuk-body-s; }
+
+/*
+// Other classes for hr
+govuk-section-break--xl
+govuk-section-break--l
+govuk-section-break--m
+*/
+
+// Lists
+
+.list				{ @extend .govuk-list; }
+.list-bullet		{ @extend .govuk-list; @extend .govuk-list--bullet; }
+.list-number		{ @extend .govuk-list; @extend .govuk-list--number; }
+
+// Layout and grid system class names
+
+.grid-row			{ @extend .govuk-grid-row; }
+.column-full		{ @extend .govuk-grid-column-full; }
+.column-one-half	{ @extend .govuk-grid-column-one-half; }
+.column-one-third	{ @extend .govuk-grid-column-one-third; }
+.column-two-thirds	{ @extend .govuk-grid-column-two-thirds; }
+.column-one-quarter	{ @extend .govuk-grid-column-one-quarter; }
+
+// Form related class names
+
+.form-group			{ @extend .govuk-form-group; }
+.form-hint			{ @extend .govuk-label__hint !optional; }
+.form-label			{ @extend .govuk-label; }
+
+// Helper
+
+.visually-hidden, .visuallyhidden {	@extend .govuk-visually-hidden; }
+
+// Overrides
+
+.font-xlarge		{ @extend .govuk-body; @extend .govuk-heading-xl }
+.font-large			{ @extend .govuk-body; @extend .govuk-heading-l; }
+.font-medium		{ @extend .govuk-body; @extend .govuk-heading-m; }
+.font-small			{ @extend .govuk-body; @extend .govuk-heading-s; }
+.font-xsmall		{ @extend .govuk-body; }
+.bold-xxlarge		{ @extend .govuk-body; @include govuk-font(80) }
+.bold-xlarge		{ @extend .govuk-body; @include govuk-font(48) }
+.bold-large			{ @extend .govuk-body; @include govuk-font(36) }
+.bold-medium		{ @extend .govuk-body; @include govuk-font(27) }
+.bold-small			{ @extend .govuk-body; @include govuk-font(16) }
+.bold-xsmall		{ @extend .govuk-body; @include govuk-font(14) }
+.bold				{ @extend .govuk-body; font-weight: bold; }
+
+// Layout
+
+$gutter:			$govuk-gutter;
+$gutter-half:		$govuk-gutter-half;
+
+
+// Brand colours
+$govuk-blue: 		govuk-colour("blue");
+$mainstream-brand: 	$govuk-blue;
+
+// Standard palette, colours
+$purple: 		govuk-colour("purple");
+$mauve: 		govuk-colour("light-purple");
+$fuschia: 		govuk-colour("bright-purple");
+$pink: 			govuk-colour("pink");
+$baby-pink: 	govuk-colour("light-pink");
+$red: 			govuk-colour("red");
+$mellow-red: 	govuk-colour("bright-red");
+$orange: 		govuk-colour("orange");
+$brown: 		govuk-colour("brown");
+$yellow: 		$govuk-focus-colour;
+$grass-green: 	govuk-colour("light-green");
+$green: 		govuk-colour("green");
+$turquoise: 	govuk-colour("turquoise");
+$light-blue: 	govuk-colour("light-blue");
+
+// Standard palette, greys
+$black: 		$govuk-text-colour;
+$grey-1: 		govuk-colour("grey-1");
+$grey-2: 		govuk-colour("grey-2");
+$grey-3: 		govuk-colour("grey-3");
+$grey-4: 		govuk-colour("grey-4");
+$white: 		govuk-colour("white");
+
+
+// Semantic colour names
+$link-colour: 			$govuk-blue;
+$link-active-colour: 	$light-blue;
+$link-hover-colour: 	$light-blue;
+$link-visited-colour: 	$govuk-link-visited-colour;
+$button-colour: 		govuk-colour("green");
+$focus-colour: 			$yellow;
+$text-colour: 			$black;
+$secondary-text-colour: $grey-1;
+$border-colour: 		$grey-2;
+$panel-colour: 			$grey-3;
+$canvas-colour: 		$grey-4;
+$highlight-colour: 		$grey-4;
+$page-colour: 			$white;
+$discovery-colour: 		$govuk-blue;
+$alpha-colour: 			$govuk-blue;
+$beta-colour: 			$govuk-blue;
+$live-colour: 			$grass-green;
+$banner-text-colour: 	$black;
+$error-colour: 			$red;
+$error-background: 		govuk-colour("red"); 

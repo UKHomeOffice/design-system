@@ -1,11 +1,13 @@
 // Pattern: side tab
 
 ul.tab__nav {
-  @include core-19;
-  // border-right: 2px solid $border-colour;
+  @include govuk-font(19);
+  margin-top: 0;
+  padding-left: 0;
 
   li {
     margin-bottom: 0;
+    list-style: none;
   }
   li a {
     padding: 10px 5px 15px;
@@ -13,7 +15,7 @@ ul.tab__nav {
     display: block;
 
     &.active, &:hover.active {
-      @include bold-19;
+      @include govuk-font(19, $weight: bold);
       color: $black;
     }
   }

@@ -1,57 +1,49 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "multiselect" %}
 
-{% block page_title %}
-  Pattern - Table multi-select
+{% block pageTitle %}
+Table multi-select - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Components</span>
       <h1 class="heading-section">Table multi-select</h1>
-      <p class="lede">Allows users to select all rows in a table. Allow them to interact with the whole row rather than just checkbox.</p>
-      <!-- <ul class="metadata">
-        <li>Usage: external/internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 28 June 2017</li>
-      </ul> -->
+      <p class="govuk-body-l">Allows users to select all rows in a table. Allow them to interact with the whole row rather than just checkbox.</p>
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <h2 class="govuk-heading-m" id="example-component">Example component</h2>
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/table-multiselect.html" %}
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/table-multiselect.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/table-multiselect.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_table-multiselect.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/table.scss" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">Why have we created this pattern?</h2>
+      <h2 class="govuk-heading-m">Why have we created this pattern?</h2>
       <p>There is no standard GDS pattern for selectable tables. This was a pattern created for a service that has been paused. More research is required to see if it meets a need.</p>
 
-
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/42">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

@@ -1,106 +1,100 @@
-</p>{% extends "layout.html" %}
+{% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "buttons" %}
 
-{% block page_title %}
-  Home Office DDaT design patterns
+{% block pageTitle %}
+Buttons - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
-      <div class="banner" role="banner">
-        <h1 class="heading-section">Buttons</h1>
-        <p class="lede">Use a button when a user needs to take an action, submit data, or make a change to the page. For navigation use a text link instead.</p>
-        <!-- <ul class="metadata">
-          <li>Usage: internal</li>
-          <li>Status: experimental</li>
-          <li>Last updated: 11 September 2017</li>
-        </ul> -->
-      </div>
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-      <h2 class="heading-medium" id="example-component">Primary action</h2>
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Components</span>
+      <h1 class="heading-section">Buttons</h1>
+      <p class="govuk-body-l">Use a button when a user needs to take an action, submit data, or make a change to the page. For navigation use a text link instead.</p>
+
+      <h2 class="govuk-heading-m" id="example-component">Primary action</h2>
       <div class="example example-images">
-        <div class="grid-row">
-          <div class="column-two-thirds">
-            <!-- <p>This component is taken from <a href="http://govuk-elements.herokuapp.com/buttons">GOV.UK elements</a>. The <code>disabled</code> button removes the affordance style.</p> -->
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
             {% include "includes/components/buttons.html" %}
           </div>
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/buttons.html" %}{% endfilter %}</code></pre>
-      </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_buttons.scss' | fileInclude }}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/buttons.html" %}{% endfilter %}</code></pre>
       </details>
 
-      <h2 class="heading-medium" id="example-component">Primary action (solid colour background)</h2>
+      <h2 class="govuk-heading-m" id="example-component">Primary action (solid colour background)</h2>
       <div class="example example-images">
-        <div class="grid-row">
-          <div class="column-two-thirds">
-            <p>This is also a primary action button. It should be used only on solid colour backgrounds and when contrast is high enough to maintain accessibility (see <a href="../patterns/interruption-card">interruption card</a> and <a href="../patterns/confirm-pages">confirm pages</a>).</p>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <p>This is also a primary action button. It should be used only on solid colour backgrounds and when contrast is high enough to maintain accessibility (see <a href="../patterns/interruption-card">interruption card</a> and <a href="../components/confirm-pages">confirm pages</a>).</p>
             {% include "includes/components/button-primary-alt.html" %}
           </div>
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/button-primary-alt.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/button-primary-alt.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/button-white.css" %}{% endfilter %}</code></pre>
       </details>
 
-
-      <h2 class="heading-medium" id="example-component">Secondary action</h2>
+      <h2 class="govuk-heading-m" id="example-component">Secondary action</h2>
       <div class="example example-images">
-        <div class="grid-row">
-          <div class="column-two-thirds">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
             <p>Services should avoid having multiple buttons on a page. Admin interfaces occasionally need several actions on a single page: validate this requirement with user research.</p>
             {% include "includes/components/buttons-secondary.html" %}
           </div>
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/buttons-secondary.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/buttons-secondary.html" %}{% endfilter %}</code></pre>
       </details>
-    </div>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/button-secondary.css" %}{% endfilter %}</code></pre>
+      </details>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">When to use these components</h2>
+      <h2 class="govuk-heading-m">When to use these components</h2>
       <p>Secondary buttons might be needed on admin interfaces with more then one thing per page.</p>
 
-      <h2 class="heading-medium">How to use these components</h2>
+      <h2 class="govuk-heading-m">How to use these components</h2>
       <p>Buttons need to have a good level of <a href="https://www.interaction-design.org/literature/book/the-glossary-of-human-computer-interaction/affordances">affordance</a> and look like buttons.</p>
       <p>Buttons can have an icon to further support their action or state.</p>
       <p>Button text should describe the action the button will perform. Be particularly careful when labelling "Cancel" buttons so that the action is clear.</p>
 
-      <h2 class="heading-medium">User research</h2>
+      <h2 class="govuk-heading-m">User research</h2>
       <p>Users sometimes confuse grey buttons with disabled buttons.</p>
       <p>Users sometimes confuse white buttons with input fields.</p>
-      <p>White buttons have performed well in <a href="../patterns/confirm-pages">confirmation pages</a> and <a href="../patterns/flash-card">interruption cards</a>.</p>
+      <p>White buttons have performed well in <a href="../components/confirm-pages">confirmation pages</a> and <a href="../patterns/interruption-card">interruption cards</a>.</p>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Application platform</li>
         <li>Right to work</li>
         <li>Home Office Communications</li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/40">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

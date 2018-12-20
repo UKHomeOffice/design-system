@@ -1,33 +1,91 @@
-{% extends "hod_template.html" %}
+{% extends "template.njk" %}
 
-{% block alpha_banner %}
-	{% include "includes/phase-banner_pattern-discovery.html" %}
-{% endblock %}
+{% from "back-link/macro.njk"     import govukBackLink %}
+{% from "breadcrumbs/macro.njk"   import govukBreadcrumbs %}
+{% from "button/macro.njk"        import govukButton %}
+{% from "character-count/macro.njk"  import govukCharacterCount %}
+{% from "checkboxes/macro.njk"    import govukCheckboxes %}
+{% from "date-input/macro.njk"    import govukDateInput %}
+{% from "details/macro.njk"       import govukDetails %}
+{% from "error-message/macro.njk" import govukErrorMessage %}
+{% from "error-summary/macro.njk" import govukErrorSummary %}
+{% from "fieldset/macro.njk"      import govukFieldset %}
+{% from "file-upload/macro.njk"   import govukFileUpload %}
+{% from "input/macro.njk"         import govukInput %}
+{% from "inset-text/macro.njk"    import govukInsetText %}
+{% from "panel/macro.njk"         import govukPanel %}
+{% from "phase-banner/macro.njk"  import govukPhaseBanner %}
+{% from "radios/macro.njk"        import govukRadios %}
+{% from "select/macro.njk"        import govukSelect %}
+{% from "skip-link/macro.njk"     import govukSkipLink %}
+{% from "table/macro.njk"         import govukTable %}
+{% from "tabs/macro.njk"          import govukTabs %}
+{% from "tag/macro.njk"           import govukTag %}
+{% from "textarea/macro.njk"      import govukTextarea %}
+{% from "warning-text/macro.njk"  import govukWarningText %}
 
 {% block head %}
   {% include "includes/head.html" %}
 {% endblock %}
 
-{% block cookie_message %}
-  <p>{{cookieText | safe }}</p>
+{% set bodyClasses = "ho-body" %}
+
+{% block pageTitle %}
+  Home Office design system
 {% endblock %}
 
-{% set homepage_url = "/" %}
-
-{% set logo_link_title = "Go to design patterns homepage" %}
-
-{% set global_header_text = "Home Office design system" %}
-
-
-{% block proposition_header %}
-  {% include "includes/propositional_navigation.html" %}
+{% block header %}
+  {% include "includes/cookie-banner.html" %}
+  <header>
+    <div class="wrapper-header__system">
+      <div class="app-header-mobile-nav-toggler-wrapper">
+        <button id="app-mobile-nav-toggler" class="govuk-button app-header-mobile-nav-toggler js-app-mobile-nav-toggler" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="app-mobile-nav">
+          Menu
+        </button>
+      </div>
+      <div class="header-logo">
+        {% include "includes/home-office-logo.html" %}
+      </div>
+      <div class="header-title">
+        <a href="/" class="header-name">Design system</a>
+      </div>
+    </div>
+  </header>
 {% endblock %}
 
-{% block header_class %}
-  with-proposition
+{% block main %}
+  <div class="app-pane__nav">
+    {% include "includes/top_nav.html" %}
+  </div>
+  <div class="app-pane__body">
+    {% block beforeContent %}{% endblock %}
+    {% block content %}{% endblock %}
+  </div>
 {% endblock %}
 
-{% block body_end %}
-  {% include "includes/scripts.html" %}
-  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% if useAutoStoreData %}
+  {% block footer %}
+    <footer>
+      <div class="wrapper-footer__system">
+        <div class="footer-message">
+          <p>A Home Office Digital, Data and Technology service</p>
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="https://github.com/UKHomeOffice/design-system/releases">Version 2.0</a></li>
+            <li><a href="mailto:design@digital.homeoffice.gov.uk">Feedback</a></li>
+            <li><a href="https://design-system.service.gov.uk/">GOV.UK design system</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  {% endblock %}
+{% endif %}
+
+{% block bodyEnd %}
+  {% block scripts %}
+    {% include "includes/scripts.html" %}
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+  <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
 {% endblock %}

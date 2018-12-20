@@ -1,83 +1,64 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "labels" %}
 
-{% block page_title %}
-Home Office DDaT design patterns
+{% block pageTitle %}
+Labels - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
+    <div class="app-prose-scope">
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
+      <span class="govuk-caption-xl">Components</span>
+      <h1 class="heading-section">Labels</h1>
+      <p class="govuk-body-l">Tags are used to quickly identify commonly grouped or related items.</p>
 
-      <div class="banner" role="banner">
-        <h1 class="heading-section">Labels</h1>
-        <p class="lede">Tags are used to quickly identify commonly grouped or related items.</p>
-        <!-- <ul class="metadata">
-          <li>Usage: internal</li>
-          <li>Status: experimental</li>
-          <li>Last updated: 30 June 2017</li>
-        </ul> -->
-      </div>
-
-      <h2 class="visually-hidden" id="example-component">Example label component</h2>
+      <h2 class="govuk-visually-hidden" id="example-component">Example label component</h2>
 
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/labels.html" %}
         </div>
       </div>
 
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/labels.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/labels.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_labels.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/labels.scss" %}{% endfilter %}</code></pre>
       </details>
 
-    </div>
-  </div>
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <h2 id="interaction" class="heading-medium">When to use labels</h2>
+      <h2 id="interaction" class="govuk-heading-m">When to use labels</h2>
       <p>Labels help users identify grouped content. They are for quick referencing so should change as the status of a thing changes.</p>
 
-      <h2 id="interaction" class="heading-medium">How to use labels</h2>
+      <h2 id="interaction" class="govuk-heading-m">How to use labels</h2>
       <p>Labels should be single words and use plain English to describe the grouping. We recommended that labels are lowercase.</p>
       <p>Colour combinations should meet the minimum contrast levels for WCAG AA.</p>
-    </div>
-  </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-      <h2 id="research" class="heading-medium">User research</h2>
+      <h2 id="research" class="govuk-heading-m">User research</h2>
       <p>Adding labels to everything is counterintuative</p>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Home Office Communications (HOC)</li>
         <li>Syrian Refugee Resettlement Service</li>
       </ul>
-    </div>
 
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/43">GitHub</a>.</p>
       </div>
+
     </div>
-
-  </div>
-
-</main>
+  </main>
+</div>
 
 {% endblock %}

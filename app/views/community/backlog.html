@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% set active = "community" %}
+{% set activesub = "backlog" %}
+
+{% block pageTitle %}
+Backlog - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__contribute.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+
+    <div class="app-prose-scope">
+
+      <h1 class="govuk-heading-l">Backlog</h1>
+
+      <p>The Design System has an open backlog on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/projects/1">GitHub</a>. Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones.</p>
+
+      <p>To contribute, you can create and comment on an <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues">issue in GitHub</a>.</p>
+
+      <p>The best place to discuss patterns and components is on Slack. But you can also <a href="mailto:design@digital.homeoffice.gov.uk">email the Design System team</a> or talk to us in person.</p>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

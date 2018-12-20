@@ -1,120 +1,102 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "auth" %}
 
-{% block page_title %}
-  Pattern - Authentication
+{% block pageTitle %}
+Authentication - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner" style="margin-bottom:20px;">
-    <h1 class="heading-section">Authentication</h1>
-    <p class="lede">Let users access your service in a secure way.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: internal/external</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 18 February 2018</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Authentication</h1>
+      <p class="govuk-body-l">Let users access your service in a secure way.</p>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">When to use authentication</h2>
+      <h2 class="govuk-heading-m">When to use authentication</h2>
       <p>Authentication lets users verify who they are.</p>
       <p>Most one-time services won't need to authenticate their users. When a service does need to verify a user’s identity, it needs to balance ease of access with keeping a service and its user data secure. You should think about this early on when designing your service.</p>
       <p>You might want to authenticate users if:</p>
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li>your service allows users to save and complete a transaction at another time</li>
         <li>a user can check the status of a transaction</li>
         <li>a user will use a service multiple times</li>
       </ul>
 
-      <h2 class="heading-medium">Authentication examples</h2>
+      <h2 class="govuk-heading-m">Authentication examples</h2>
       <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails, and using GOV.UK Verify. Don’t use National Insurance numbers to verify a user’s identity. <a href="https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud#protecting-your-service-against-fraud">Further guidance on National Insurance numbers and fraud can be found in the service manual</a>.</p>
       <p>You should consult a Home Office security specialist as they can advise you on the type of authentication that’s right for your service.</p>
-    </div>
 
-    <div class="column-full">
-      <details>
+      <details style="margin-top: 10px;">
         <summary>Example - authentication using a reference number</summary>
         <p></p>
         <div class="example example-images confirmation">
-          <h2 class="visually-hidden" id="example-component">Authentication using a reference number</h2>
+          <h2 class="govuk-visually-hidden" id="example-component">Authentication using a reference number</h2>
           <p>A reference number is a simple way to let users access a service. For example when a user saves progress and needs to return to complete a service.</p>
           <img src="{{ asset_path }}/images/auth.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
       </details>
-    </div>
 
-    <div class="column-full">
-      <details>
+      <details style="margin-top: 10px;">
         <summary>Example - knowledge based authentication</summary>
         <div class="example example-images confirmation">
-          <h2 class="visually-hidden" id="example-component">Knowledge based authentication</h2>
+          <h2 class="govuk-visually-hidden" id="example-component">Knowledge based authentication</h2>
           <p>Use knowledge based authentication when you need to confirm a users identity.</p>
           <img src="{{ asset_path }}/images/auth-knowledge-based.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-knowledge-based-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
       </details>
-    </div>
 
-    <div class="column-full">
-      <details>
+      <details style="margin-top: 10px;">
         <summary>Example - two-factor authentication</summary>
         <div class="example example-images confirmation">
-          <h2 class="visually-hidden" id="example-component">Two-factor authentication</h2>
+          <h2 class="govuk-visually-hidden" id="example-component">Two-factor authentication</h2>
           <p>Two-factor authentication can be used when a service stores user data and allows users to access it. Two-factor helps protect the user and the service. There are three types of authentication: something a user knows (password, pin), something a user has (phone, fob), and a biometric like a fingerprint or voice.</p>
           <img src="{{ asset_path }}/images/auth-2factor.svg" class="confirm-desktop" alt="">
           <img src="{{ asset_path }}/images/auth-2factor-mobile.svg" class="confirmation confirm-mobile" alt="">
         </div>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">Authentication is not the same as identity assurance</h2>
+      <h2 class="govuk-heading-m">Authentication is not the same as identity assurance</h2>
       <p>Identity assurance confirms the true identity of a user. The checks are usually done before confirming a users suitability for something. Identity assurance can consist of:</p>
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li>confirming the user is a human</li>
         <li>confirming the validaty of information and documents</li>
         <li>fraud checks</li>
         <li>checking for warnings about a user</li>
       </ul>
 
-      <h2 class="heading-medium">User accounts</h4>
-      <p>User accounts are a form of authentication that you should try to avoid. Services should be public facing and not start behind a user log in. This is essential for users searching for the government service they need. Making users create accounts when not needed:</p>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">User accounts</h2>
+      <p>User accounts are a form of authentication that you should try to avoid. Services should be public facing and not start behind a user log in. This is essential for users searching for the government service they need.</p>
+      <h4 class="govuk-heading-s">Making users create accounts when not needed:</h4>
+      <ul class="govuk-list govuk-list--bullet">
         <li>creates a barrier for users and can reduce completion rates</li>
         <li>forces users to keep track of more logins then neccesary</li>
         <li>burdens teams with databases that are difficult to build and maintain</li>
         <li>increases the amount of redundant databases - which is expensive and a security risk</li>
       </ul>
 
-      <p>Only make users create an account if:</p>
-      <ul class="list list-bullet">
+      <h4 class="govuk-heading-s">Only make users create an account if:</h4>
+      <ul class="govuk-list govuk-list--bullet">
         <li>users access a service frequently</li>
         <li>users need it - don't force them to create an account until necessary</li>
         <li>a service needs to audit user behaviour</li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/34">GitHub</a>.</p>
       </div>
+
     </div>
-
-  </div>
-</main>
-
+  </main>
+</div>
 
 {% endblock %}

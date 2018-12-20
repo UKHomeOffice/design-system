@@ -1,0 +1,202 @@
+{% extends "layout.html" %}
+{% set active = "styles" %}
+{% set activesub = "colour" %}
+
+{% block pageTitle %}
+Colour - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__styles.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Styles</span>
+      <h1 class="heading-section">Colour</h1>
+      <p class="govuk-body-l">Colour is a powerful means of drawing a user’s attention or giving focus to an element. Colour must be used with care and discretion, backed up by usability and accessibility testing. In the Home Office design system we use colour to draw attention to actions, links and to the Home Office brand. It is never used for ‘decoration’.</p>
+      <p class="govuk-body-l">Always ask the central design team (<a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>) for advice.</p>
+
+      <section class="colour-swatch-wrapper">
+        <h2 class="govuk-heading-m">Primary colours</h2>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#8F23B3"></span>
+          <div class="hex">
+            #8F23B3
+          </div>
+          <div class="colour-info">
+            Purple is the Home Office’s brand colour. This doesn’t mean it should be used as the dominant colour in a digital interface. Overuse of the purple can make content hard to read on screen, particularly on services that are designed to be used for long periods of time. Home Office purple works best in digital interfaces when reserved for the Home Office logo and sparingly used as a keyline or accent.
+          </div>
+        </div>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#0b0c0c"></span>
+          <div class="hex">
+            #0B0C0C
+          </div>
+          <div class="colour-info">
+            Black is used for headings and body content.
+          </div>
+        </div>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#F1F1F1;border:1px solid #CBCBCB;"></span>
+          <div class="hex">
+            #F1F1F1
+          </div>
+          <div class="colour-info">
+            Light grey is used as the content background colour on internal services to minimise eye strain caused by high contrast user interfaces. It is also supports readability for those who have dyslexia.
+          </div>
+        </div>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#CBCBCB;"></span>
+          <div class="hex">
+            #CBCBCB
+          </div>
+          <div class="colour-info">
+            Border colour is used for borders and to help define elements where needed.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="govuk-heading-m">Secondary colours</h2>
+        <p>Guidance on the use of our secondary colours is in development. In the meantime, check with the central design team (<a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>) for advice.</p>
+      </section>
+
+      <section class="colour-swatch-wrapper">
+        <h2 class="govuk-heading-m">Accessibility</h2>
+        <p>Text and background colors need to meet the minimum contrast ratios specified by <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a>.</p>
+
+        <h3 class=" heading-small" style="margin-top:30px;">Accessible text and background combinations</h3>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#0B0C0C"><span style="color:#FFF;">A</span></span>
+          <div class="colour-info">
+            Background: #0B0C0C<br>
+            Foreground: #FFF
+          </div>
+        </div>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#F1F1F1;border:1px solid #CBCBCB;">A</span>
+          <div class="colour-info">
+            Background: #F1F1F1<br>
+            Foreground: #0B0C0C
+          </div>
+        </div>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#00823B"><span style="color:#FFF;">A</span></span>
+          <div class="colour-info">
+            Background: #00823B<br>
+            Foreground: #FFF
+          </div>
+        </div>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#005EA5"><span style="color:#FFF;">A</span></span>
+          <div class="colour-info">
+            Background: #005EA5<br>
+            Foreground: #FFF
+          </div>
+        </div>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#3B3B3B"><span style="color:#FFF;">A</span></span>
+          <div class="colour-info">
+            Background: #3B3B3B<br>
+            Foreground: #FFF
+          </div>
+        </div>
+
+        <div class="colour-swatch">
+          <span class="app-swatch" style="background-color:#CBCBCB">A</span>
+          <div class="colour-info">
+            Background: #CBCBCB<br>
+            Foreground: #0B0C0C
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <h2 class="govuk-heading-m">Example usage of Home Office purple</h2>
+        <p>Purple can be used sparingly in keylines and seperators.</p>
+
+        <div class="example example-images">
+          <h3 class="visually-hidden">Card components</h3>
+          <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third">
+              <div class="govuk-card govuk-card--contained">
+                <div class="govuk-card__content">
+                  <h3 class="govuk-heading-s">Card heading</h3>
+                  <p>An overview of the content that exists behind this card. For example a full page detailing the card summary.</p>
+                  <div class="govuk-card__actions">
+                    <a href="#0">Perform this action</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <div class="govuk-card govuk-card--contained">
+                <div class="govuk-card__content">
+                  <h3 class="govuk-heading-s">Card heading</h3>
+                  <p>An overview of the content that exists behind this card. For example a full page detailing the card summary.</p>
+                  <div class="govuk-card__actions">
+                    <a href="#0">Perform this action</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <div class="govuk-card govuk-card--contained">
+                <div class="govuk-card__content">
+                  <h3 class="govuk-heading-s">Card heading</h3>
+                  <p>An overview of the content that exists behind this card. For example a full page detailing the card summary.</p>
+                  <div class="govuk-card__actions">
+                    <a href="#0">Perform this action</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="example example-images">
+          <h3 class="visually-hidden">Example content page with grid</h3>
+          <div class="grid-row" >
+            <div class="govuk-grid-column-two-thirds">
+              <h2 class="govuk-heading-m" style="margin-top:0; margin-bottom: 20px;">Casework service</h2>
+              <p>Example content exaplaining what the internal service is.</p>
+              <p>More details about the service. A short overview of the content that exists in this service. For example a full page detailing the service.</p>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <div class="side-container">
+                <h4 class="heading-small" style="margin-top:10px; margin-bottom: 10px;">Related content</h4>
+                <ul style="font-size: 15px;">
+                  <li style="padding-bottom: 6px;"><a href="#0">Help using the service</a></li>
+                  <li style="padding-bottom: 6px;"><a href="#0">Messages</a></li>
+                  <li style="padding-bottom: 6px;"><a href="#0">Recent activity</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
