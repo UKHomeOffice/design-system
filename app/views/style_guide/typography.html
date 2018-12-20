@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Style guide - Typography
+{% endblock %}
+
+{% block content %}
+
+{% set active = "style_guide" %}
+{% include "includes/top_nav.html" %}
+
+<main id="content" class="font-ui" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-section">Typography</h1>
+
+      <p class="font-ui lede">GDS Transport, the typeface used on GOV.UK, is restricted by license for use on gov.uk domains. Services for government users cannot use GDS Transport and should instead use the open source <a href="https://rsms.me/inter/">Inter UI</a> typeface.
+      <p class="font-ui lede">Inter UI is closely related to Helvetica and Arial, but offers improved legibility and readability for digital interfaces, particularly at smaller type sizes.</p>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <section>
+        <h2 class="font-ui heading-medium">Headings</h2>
+        <p>Markup headings semantically using the appropriate heading level and use a corresponding heading class to apply styling.</p>
+        <div class="example example-images">
+          <div class="grid-row">
+            <h1 class="font-ui heading-xlarge" style="margin-bottom:30px;margin-top: 0;">Heading xlarge</h1>
+            <h2 class="font-ui heading-large" style="margin-bottom:20px;margin-top: 0;">Heading large</h2>
+            <h3 class="font-ui heading-medium" style="margin-bottom:15px;margin-top: 0;">Heading medium</h3>
+            <h4 class="font-ui heading-small" style="margin-bottom:15px;margin-top: 0;">Heading small</h4>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-ui heading-medium">Body content</h2>
+        <p>Inter UI has a taller x-height and larger letter-spacing then GDS Transport. The default font size is 18px on large screens and 15px on smaller screens.</p>
+        <p>Multiuse caseworking services tend to be more complex and should be optimised for speed. Smaller font sizes are acceptable but the minimum on large screens should be 15px.</p>
+      </section>
+
+      <section>
+        <h2 class="font-ui heading-medium">Links</h2>
+        <p>Links should be <span style="color:#005EA5;text-decoration:underline;">blue and underlined</span>.</p>
+      </section>
+
+      <section>
+        <h2 class="font-ui heading-medium">Typographic scale</h2>
+        <p>Scale helps to clearly define the hierarchy of your content.</p>
+      </section>
+
+    </div>
+
+    <div class="column-full">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Element</th>
+            <th scope="col">Large screen</th>
+            <th scope="col">Small screen</th>
+            <th scope="col">Font weight</th>
+            <th scope="col">Line height</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">Heading-xlarge</th>
+            <td scope="row">40px</td>
+            <td scope="row">32px</td>
+            <td scope="row">bold</td>
+            <td scope="row">1.3</td>
+          </tr>
+          <tr>
+            <td scope="row">Heading-large</th>
+            <td scope="row">32px</td>
+            <td scope="row">24px</td>
+            <td scope="row">bold</td>
+            <td scope="row">1.3</td>
+          </tr>
+          <tr>
+            <td scope="row">Heading-medium</th>
+            <td scope="row">24px</td>
+            <td scope="row">20px</td>
+            <td scope="row">bold</td>
+            <td scope="row">1.3</td>
+          </tr>
+          <tr>
+            <td scope="row">Heading-small</th>
+            <td scope="row">18px</td>
+            <td scope="row">15px</td>
+            <td scope="row">bold</td>
+            <td scope="row">1.45</td>
+          </tr>
+          <tr>
+            <td scope="row">Body</th>
+            <td scope="row">18px</td>
+            <td scope="row">15px</td>
+            <td scope="row">regular</td>
+            <td scope="row">1.45<br>1.35 (smaller screens)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

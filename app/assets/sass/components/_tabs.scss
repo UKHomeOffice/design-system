@@ -3,12 +3,12 @@
   list-style: none;
   margin: 0 -16px;
   padding: 0;
-  border-top: 1px solid $border-colour;
+  border-top: 1px solid #ababab;
 
   @include media(tablet) {
     margin: 0;
     border-top: 0;
-    border-bottom: 2px solid $border-colour;
+    border-bottom: 2px solid #ababab;
   }
 }
 
@@ -26,14 +26,16 @@
   line-height: 3.5em;
   padding: 0 16px;
   text-align: left;
-  border-bottom: 1px solid $border-colour;
+  border-bottom: 1px solid #ababab;
+  color: $link-colour;
 
   &:hover {
-    background-color: $highlight-colour;
+    background-color: lighten( $panel-colour, 4% );
+    color: $link-colour;
   }
 
   @include media(tablet) {
-    border: solid 2px $white;
+    // border: solid 2px $white;
     border-bottom: none;
     float: left;
     height: 2.25em;
@@ -44,8 +46,8 @@
 }
 
 .tabs > ul li.active a, .tabs > ol li.active a {
-  background-color: $white;
-  border-bottom: 1px solid $border-colour;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #ababab;
   color: $text-colour;
   text-decoration: none;
   pointer-events: none;
@@ -56,7 +58,7 @@
   }
 
   @include media(tablet) {
-    border: solid 2px $border-colour;
+    border: solid 2px #ababab;
     border-bottom: none;
     padding-bottom: 2px;
   }

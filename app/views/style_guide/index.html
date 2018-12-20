@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Home Office style guide
+{% endblock %}
+
+{% block content %}
+
+{% set active = "style_guide" %}
+{% include "includes/top_nav.html" %}
+
+<main class="font-ui" id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <!-- <div class="warning-message">
+        <p>These styles are new and need further research. Contact <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> if you would like to use them on your service. Or you have questions and feedback.</p>
+      </div> -->
+
+      <h1 class="heading-section">Style guide</h1>
+
+      <p class="font-ui lede">This guide covers how to style digital services for government users at the Home Office.</p>
+
+      <section class="style-guide-section">
+        <ul class="index list lede">
+          <li><a href="/style_guide/typography">Typography</a></li>
+          <li><a href="/style_guide/colour">Colour</a></li>
+          <li><a href="/style_guide/header">Header</a></li>
+          <li><a href="/style_guide/footer">Footer</a></li>
+          <li><a href="/style_guide/images">Images and illustrations</a></li>
+          <li><a href="/style_guide/icons">Icons</a></li>
+        </ul>
+      </section>
+
+      <section class="style-guide-section">
+        <h2 class="heading-medium">Why use these styles</h2>
+        <p>Services for government users look different to services on GOV.UK because of restrictions on the use of the crown logo and on the fonts that can be used.</p>
+        <p class="quote">&ldquo;If your service isn’t on a service.gov.uk domain, you can’t use the GOV.UK crown logo.&rdquo; — Service Manual, <a href="https://www.gov.uk/service-manual/design/services-for-government-users">Services for government users</a></p>
+        <p class="quote">&ldquo;For licensing reasons we have to be quite strict about what can use the typeface. The GDS Transport font files are licensed for use on the www.gov.uk, .service.gov.uk and .blog.gov.uk domains only.&rdquo; —Mark Hurrell, <a href="https://designnotes.blog.gov.uk/2015/03/11/can-i-use-the-gov-uk-fonts/">Can I use the GOV.UK fonts?</a></p>
+
+        <h2 class="heading-medium">How to use these styles</h2>
+        <p>The Home Office design system is based on - and draws extensively from -  the GOV.UK design system, adjusted for the needs of government users. Styling not specified in this guide uses GOV.UK styles by default.</p>
+
+        <p>New services and existing digital services that are being redeveloped should follow this style guide. This includes:</p>
+        <ul class="list list-bullet">
+          <li>caseworking systems</li>
+          <li>microsites</li>
+          <li>intranets</li>
+        </ul>
+        <p>This guidance applies to digital services, and does not affect or change any of the Home Office’s existing brand advice for print and offline applications.</p>
+      </section>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
