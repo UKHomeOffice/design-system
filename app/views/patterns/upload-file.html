@@ -1,82 +1,64 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "upload" %}
 
-{% block page_title %}
-  Pattern - Add a file
+{% block pageTitle %}
+Add a file - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Add a file</h1>
-    <p class="lede">An interaction that allows a user to add (upload) one or more files.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: internal/external</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 23 October 2017</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
-    <div class="column-full">
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Add a file</h1>
+      <p class="govuk-body-l">An interaction that allows a user to add (upload) one or more files.</p>
 
+      <h2 class="govuk-heading-m" id="example-component">Add a single file</h2>
       <div class="example example-images confirmation" style="margin-bottom: 2em;">
-        <h2 class="heading-small" id="example-component">Add a single file</h2>
         <img src="{{ asset_path }}/images/single-upload.svg" class=" confirm-desktop" alt="The flow a user would take to upload a file. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file.">
         <img src="{{ asset_path }}/images/single-upload-mobile.svg" class="confirmation confirm-mobile" alt="The flow a user would take to upload a file. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file.">
       </div>
+
+      <h2 class="govuk-heading-m" id="example-component">Add multiple files</h2>
       <div class="example example-images confirmation">
-        <h2 class="heading-small" id="example-component">Add multiple files</h2>
         <img src="{{ asset_path }}/images/multi-upload.svg" class=" confirm-desktop" alt="The flow a user would take to upload multiple files. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file. Step 4 gives the user a choice to continue or add more files.">
         <img src="{{ asset_path }}/images/multi-upload-mobile.svg" class="confirmation confirm-mobile" alt="The flow a user would take to upload multiple files. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file. Step 4 gives the user a choice to continue or add more files.">
       </div>
-    </div>
 
-    <div class="column-two-thirds">
-      <!-- <h2 class="heading-medium">Why document this pattern?</h2>
-      <p>This pattern gives teams a broad starting point if they find a user need to upload files.</p> -->
-
-      <h2 class="heading-medium">Guidance</h2>
-      <h3 class="heading-small">It can be used:</h3>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Guidance</h2>
+      <h3 class="govuk-heading-s">It can be used:</h3>
+      <ul class="govuk-list govuk-list--bullet">
         <li>to add single files</li>
         <li>to add multiple files</li>
         <li>for a range of file types</li>
       </ul>
 
-      <h3 class="heading-small">It should not be used:</h3>
+      <h3 class="govuk-heading-s">It should not be used:</h3>
 
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li>in some internal services where there is a need for bulk uploading</li>
       </ul>
 
-      <h3 class="heading-small">The Add file pattern should:</h3>
-      <ul class="list list-bullet">
+      <h3 class="govuk-heading-s">The Add file pattern should:</h3>
+      <ul class="govuk-list govuk-list--bullet">
         <li>replay the file details clearly to reduce user error</li>
         <li>show the progress of an upload so users know that something is happening</li>
         <li>allow the user to skip the process if it is optional</li>
       </ul>
 
-      <!-- <h2 class="heading-medium">Interactions using this pattern</h2>
-      <ul class="list list-bullet">
-        <li>Entering a recipient&rsquo;s email address</li>
-      </ul> -->
-
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/33">GitHub</a>.</p>
       </div>
+
     </div>
-
-  </div>
-</main>
-
+  </main>
+</div>
 
 {% endblock %}

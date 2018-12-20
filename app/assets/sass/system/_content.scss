@@ -1,0 +1,102 @@
+.app-content p {
+  max-width: 38em;
+}
+
+li code,
+td code,
+p code {
+  padding: 0 govuk-spacing(1);
+  color: $dark-grey;
+  background-color: govuk-colour("grey-4");
+}
+
+.heading-section {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.image-caption {
+  font-family: 'Inter UI', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+}
+
+.govuk-heading-m {
+  padding-top: govuk-spacing(4);
+}
+
+.app-prose-scope {
+
+  h1 {
+    @extend %govuk-heading-xl;
+  }
+
+  h2 {
+    @extend %govuk-heading-l;
+  }
+
+  h3 {
+    @extend %govuk-heading-m;
+  }
+
+  h4 {
+    @extend %govuk-heading-s;
+  }
+
+  p {
+    @extend %govuk-body-m;
+  }
+
+  strong,
+  b {
+    @include govuk-typography-weight-bold;
+  }
+
+  // ul,
+  // ol {
+  //   @extend %govuk-list;
+  // }
+  //
+  // ol {
+  //   @extend %govuk-list--number;
+  // }
+  //
+  // ul {
+  //   @extend %govuk-list--bullet;
+  // }
+
+  a {
+    @extend %govuk-link;
+  }
+
+  hr {
+    @extend %govuk-section-break;
+    @extend %govuk-section-break--visible;
+    @extend %govuk-section-break--xl;
+  }
+}
+
+.app-prose-scope {
+
+  ul.resource-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    abbr[title] {
+      text-decoration: none;
+    }
+  }
+}

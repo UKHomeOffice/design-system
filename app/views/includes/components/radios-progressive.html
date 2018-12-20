@@ -1,28 +1,36 @@
-<h2 class="heading-medium" style="margin:0 0 20px 0;">Filter results</h2>
+<h2 class="govuk-heading-m" style="margin:0 0 20px 0;">Filter results</h2>
 
 <form>
-  <fieldset>
-    <legend style="margin-bottom:15px;">Find applicant by:</legend>
-    <div class="multiple-choice--hod">
-      <div class="multiple-choice" data-target="contact-by-email">
-        <input id="month-1" type="radio" name="radio-group" value="This month">
-        <label for="month-1">Email</label>
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__heading" style="margin-bottom:15px;">
+      <h3 class="govuk-heading-s">Find applicant by:</h3>
+    </legend>
+    <div class="multiple-choice--hod govuk-radios govuk-radios--conditional" data-module="radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="find-applicant" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+          Email
+        </label>
       </div>
-      <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
-        <label class="form-label" for="contact-email">Applicant email</label>
-        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-email">
+            Email address
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email">
+        </div>
       </div>
-      <div class="multiple-choice">
-        <input id="18-30" type="radio" name="radio-group" value="Age: 18 - 30">
-        <label for="18-30">18 - 30 years old</label>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="18-30" type="radio" name="find-applicant" value="Age: 18 - 30">
+        <label class="govuk-label govuk-radios__label" for="18-30">18 - 30 years old</label>
       </div>
-      <div class="multiple-choice">
-        <input id="31-55" type="radio" name="radio-group" value="Age: 31 - 55">
-        <label for="31-55">31 - 55 years old</label>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="31-55" type="radio" name="find-applicant" value="Age: 31 - 55">
+        <label class="govuk-label govuk-radios__label" for="31-55">31 - 55 years old</label>
       </div>
-      <div class="multiple-choice">
-        <input id="55" type="radio" name="radio-group" value="Age: over 55">
-        <label for="55">Over 55 years old</label>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="55" type="radio" name="find-applicant" value="Age: over 55">
+        <label class="govuk-label govuk-radios__label" for="55">Over 55 years old</label>
       </div>
     </div>
   </fieldset>
