@@ -1,83 +1,67 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "loops" %}
 
-{% block page_title %}
-  Pattern - Multiple loops
+{% block pageTitle %}
+Multiple loops - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Multiple loops</h1>
-    <p class="lede">An interaction that allows a user to add multiple items, check and add more if needed.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: internal/external</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 21 November 2017</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
-    <div class="column-full">
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Multiple loops</h1>
+      <p class="govuk-body-l">An interaction that allows a user to add multiple items, check and add more if needed.</p>
+
       <div class="example example-images confirmation">
         <img src="{{ asset_path }}/images/multiple-loops.svg" class="confirm-desktop" alt="">
         <img src="{{ asset_path }}/images/multiple-loops-mobile.svg" class="confirmation confirm-mobile" alt="">
       </div>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">When to use this pattern</h2>
+      <h2 class="govuk-heading-m">When to use this pattern</h2>
       <p>This interaction allows a user to add single or multiple items, check they are correct and an option to add more.</p>
       <p>This pattern can be used to add people to an application, add items to a list or uploading files.</p>
 
-      <h2 class="heading-medium">Guidance</h2>
-      <h3 class="heading-small">It can be used:</h3>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Guidance</h2>
+      <h3 class="govuk-heading-s">It can be used:</h3>
+      <ul class="govuk-list govuk-list--bullet">
         <li>to help confirm an action</li>
         <li>to allow the user to change their minds</li>
         <li>when the action is not easily reversible</li>
         <li>when the completion immediately starts another process</li>
       </ul>
 
-      <!-- <h3 class="heading-small">It should not be used:</h3>
-      <ul class="list list-bullet">
-        <li>to agree to terms and conditions</li>
-        <li>if the user can easily change their action or input later</li>
-      </ul> -->
-
-      <h3 class="heading-small">Multiple loops should:</h3>
-      <ul class="list list-bullet">
+      <h3 class="govuk-heading-s">Multiple loops should:</h3>
+      <ul class="govuk-list govuk-list--bullet">
         <li>remember previous choices</li>
         <li>give clear guidance on the flexibility of choices</li>
       </ul>
 
-      <h2 class="heading-medium">Interactions using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Interactions using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Entering a recipient&rsquo;s email address</li>
         <li>Uploading multiple files</li>
         <li>Adding multiple postal addresses</li>
       </ul>
 
-      <h2 class="heading-medium">Related patterns</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Related patterns</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li><a href="upload-file">Add a file</a></li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/36">GitHub</a>.</p>
       </div>
+
     </div>
-
-  </div>
-</main>
-
+  </main>
+</div>
 
 {% endblock %}

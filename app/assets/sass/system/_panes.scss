@@ -1,0 +1,137 @@
+@include govuk-exports("app-pane") {
+  $toc-width: 300px;
+  $toc-width-tablet: 210px;
+
+  .app-pane.app-pane--enabled {
+    $pane-height: 100vh;
+    overflow: hidden;
+
+    @include govuk-media-query($from: tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include govuk-media-query($from: tablet, $and: "(orientation: portrait)") {
+      height: $pane-height;
+    }
+
+    @include govuk-media-query($from: desktop) {
+      height: $pane-height;
+    }
+  }
+
+  .app-pane__header {
+    @include govuk-media-query($from: tablet) {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 auto;
+
+      > * {
+        flex: 1 0 auto;
+      }
+    }
+  }
+
+  .app-pane__body {
+    @include govuk-media-query($from: tablet) {
+      display: flex;
+      position: relative;
+      min-height: 0;
+      overflow: hidden;
+      flex: 1 1 100%;
+
+      > * {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+      }
+    }
+  }
+
+  .app-pane__subnav {
+    border-right: 1px solid $govuk-border-colour;
+    @include govuk-media-query($from: tablet) {
+      width: $toc-width-tablet;
+      border-right: 1px solid $govuk-border-colour;
+      flex: 0 0 auto;
+    }
+    @include govuk-media-query($from: desktop) {
+      width: 320px;;
+    }
+  }
+
+  .app-pane__content {
+    @include govuk-media-query($from: tablet) {
+      display: flex;
+      min-width: 0;
+      margin-left: auto;
+      flex: 1 1 auto;
+      flex-direction: column;
+
+      // Stick footer to bottom of screen if content is shorter than viewport
+      main {
+        display: block;
+        flex: 1 0 auto;
+      }
+    }
+  }
+
+  .no-flexbox.no-flexboxtweener {
+    .app-pane {
+      height: auto;
+      overflow: visible;
+      @include govuk-clearfix;
+    }
+
+    .app-pane__body {
+      display: block;
+    }
+
+    .app-pane__subnav {
+      width: $toc-width;
+      float: left;
+      overflow-x: hidden;
+      border-right: 0;
+    }
+
+    .app-pane__content {
+      margin-left: -1px;
+      overflow-x: hidden;
+      border-left: 1px solid $govuk-border-colour;
+    }
+  }
+}
+
+.app-content {
+    padding: 30px;
+}
+
+.contact-us {
+  padding: govuk-spacing(4);
+  background-color: #005ea5;
+  color: white;
+  margin-top: 30px;
+
+  a {
+    color: white;
+  }
+
+  h2.govuk-heading-m {
+    padding: 0;
+    margin: 0 0 10px 0;
+    color: white;
+  }
+
+  p {
+    margin: 0;
+    color: white;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .app-content {
+    padding: 20px;
+  }
+
+}

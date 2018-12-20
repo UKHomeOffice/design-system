@@ -34,14 +34,14 @@
 .modal-heading {
     display: block;
     clear: both;
-    padding-bottom: calc(2 * #{$space-sm});
+    padding-bottom: calc(2 * #{5px});
     h1, h2, h3, h4, h5, h6 {
         display: inline-block;
         margin-top: 0;
     }
 }
 .modal {
-    margin: calc(15 * #{$space-sm}) auto;
+    margin: calc(15 * #{5px}) auto;
     padding: 20px;
     background: $page-colour;
     width: 50%;

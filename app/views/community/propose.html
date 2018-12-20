@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% set active = "community" %}
+{% set activesub = "propose" %}
+
+{% block pageTitle %}
+Propose - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__contribute.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+
+    <div class="app-prose-scope">
+
+      <h1 class="govuk-heading-l">Propose a new pattern or component</h1>
+      <p>Anyone can propose a new component or pattern to the Home Office Design System.</p>
+
+      <h2 class="govuk-heading-m">1. Share the work</h2>
+      <p>Talk about the pattern or component to the community. Share your work, as other teams might be working on the same thing. Gather feedback and examples from the community.</p>
+
+      <h2 class="govuk-heading-m">2. Check the backlog</h2>
+      <p>Check if the pattern or component is already on the <a href="https://github.com/UKHomeOffice/design-system/projects/1">backlog</a>. If it is, feel free to comment and post screenshots of your example. Tell the Design System team if you want to contribute to it.</p>
+
+      <h2 class="govuk-heading-m">3. Raise a new issue</h2>
+      <p>If your idea is not on the backlog, <a href="https://github.com/UKHomeOffice/design-system/issues">raise an issue</a>. A member of the Design System team will get in touch to discuss your proposal.</p>
+      <p>When raising an issue, explain why you think it should be included in the design system. You can also include screenshots and research notes.</p>
+
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

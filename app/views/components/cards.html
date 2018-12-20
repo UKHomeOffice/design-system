@@ -1,55 +1,48 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
 
-{% block page_title %}
-  Home Office DDaT design patterns
+{% block pageTitle %}
+Cards - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Components</span>
       <h1 class="heading-section">Cards</h1>
-      <p class="lede">Groups content into a card, potentially a link, with optional footer to provide additional content.</p>
-      <!-- <ul class="metadata">
-        <li>Usage: internal/external</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 30 June 2017</li>
-      </ul> -->
+      <p class="govuk-body-l">Groups content into a card, potentially a link, with optional footer to provide additional content.</p>
 
-      <h2 class="heading-medium" id="example-component">Example component</h2>
+      <h2 class="govuk-heading-m" id="example-component">Example component</h2>
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/cards.html" %}
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/cards.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/cards.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_cards.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{{'./app/assets/sass/components/_cards.scss' }}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">To do</h2>
+      <h2 class="govuk-heading-m">To do</h2>
       <p>Define buttons types and how to use multiple buttons on a single screen</p>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/56">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

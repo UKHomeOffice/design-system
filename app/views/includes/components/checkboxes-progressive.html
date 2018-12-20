@@ -1,24 +1,32 @@
-<h2 class="heading-medium" style="margin:0 0 20px 0;">Filter results</h2>
+<h2 class="govuk-heading-m" style="margin:0 0 20px 0;">Filter results</h2>
 
 <form>
-  <fieldset>
-    <legend style="margin-bottom:15px;">Identity document provided</legend>
-    <div class="multiple-choice--hod">
-      <div class="multiple-choice" data-target="passport-no">
-        <input id="passport" name="passport" type="checkbox" value="Passport">
-        <label for="passport">Passport</label>
+  <fieldset class="govuk-fieldset">
+    <legend style="margin-bottom:15px; class="govuk-fieldset__legend">
+      <h2 class="govuk-heading-s" style="margin-bottom:0;">Identity document provided</h2>
+    </legend>
+    <div class="multiple-choice--hod govuk-checkboxes" data-module="checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="passport-1" name="ident-doc" type="checkbox" value="email" data-aria-controls="passport-conditional-1">
+        <label class="govuk-label govuk-checkboxes__label" for="passport-conditional-1">
+          Passport
+        </label>
       </div>
-      <div class="panel panel-border-narrow js-hidden" id="passport-no">
-        <label class="form-label" for="passport-number">Passport number</label>
-        <input class="form-control" type="text" id="passport-number" name="passport-number">
+      <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="passport-conditional-1">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="passport-number">
+            Passport number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="passport-number" name="passport-number" type="email">
+        </div>
       </div>
-      <div class="multiple-choice">
-        <input id="driving-licence" name="contract-length" type="checkbox" value="Driving licence">
-        <label for="driving-licence">Driving licence</label>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="driving-licence" name="ident-doc" type="checkbox" value="Driving licence">
+        <label class="govuk-label govuk-checkboxes__label" for="driving-licence">Driving licence</label>
       </div>
-      <div class="multiple-choice">
-        <input id="birth-cert" name="contract-length" type="checkbox" value="Birth certificate">
-        <label for="birth-cert">Birth certificate</label>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="birth-cert" name="ident-doc" type="checkbox" value="Birth certificate">
+        <label class="govuk-label govuk-checkboxes__label" for="birth-cert">Birth certificate</label>
       </div>
     </div>
   </fieldset>

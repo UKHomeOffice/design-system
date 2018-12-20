@@ -1,80 +1,70 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "leave" %}
 
-{% block page_title %}
-  Pattern - Leaving a service
+{% block pageTitle %}
+Leaving a service - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="grid-row">
-    <div class="column-full">
-      <div class="banner" role="banner">
-        <h1 class="heading-section">Leaving a service (sign out)</h1>
-        <p class="lede">Allow users to leave a service at the right time.</p>
-        <!-- <ul class="metadata">
-          <li>Usage: internal/external</li>
-          <li>Status: experimental</li>
-          <li>Last updated: 01 February 2018</li>
-        </ul> -->
-      </div>
-    </div>
+    <div class="app-prose-scope">
 
-    <div class="column-two-thirds">
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Leaving a service (sign out)</h1>
+      <p class="govuk-body-l">Allow users to leave a service at the right time.</p>
 
-      <h2 class="heading-medium" style="margin-top: 0.5em;">How to use these patterns</h2>
+      <h2 class="govuk-heading-m" style="margin-top: 0.5em;">How to use these patterns</h2>
       <p>Do research to understand at what point in a service a user will need to leave.</p>
       <p>For public-facing services it may be better to describe it as leaving a service rather then signing out. Users might not feel they have signed in to a service.</p>
       <p>Only give users the option to leave mid-service if they can save progress and carry on with the service at another time.</p>
       <p>Consider the environment users will use your service.</p>
 
-      <h2 class="heading-large">In page</h2>
-      <h3 class="heading-small">When to use this pattern</h3>
+      <h2 class="govuk-heading-m">In page</h2>
+      <h3 class="govuk-heading-s">When to use this pattern</h3>
       <p>When a user comes to a certain point in your service and the most important action is to leave. This can still be used with a persistent link elsewhere.</p>
       <p>At the end of a service.</p>
       <p>When a user is likely to be working from a public space and is inputting sensitive data.</p>
-      <img src="{{ asset_path }}/images/signout-inpage.svg" class="confirm-desktop" style="margin-bottom:3em;" alt="An example service page with a sign-out link in the main body of the page underneath a confirmation message. The sign out link is a button with the text 'Finish and leave service'.">
+      <img src="{{ asset_path }}/images/signout-inpage.svg" class="confirm-desktop confirm-mobile" style="margin-bottom:3em;" alt="An example service page with a sign-out link in the main body of the page underneath a confirmation message. The sign out link is a button with the text 'Finish and leave service'.">
 
-      <h2 class="heading-large">Under header</h2>
-      <h3 class="heading-small">When to use this pattern</h3>
+      <h2 class="govuk-heading-m">Under header</h2>
+      <h3 class="govuk-heading-s">When to use this pattern</h3>
       <p>When signing out of a service is best practice but not crucial for the user.</p>
-      <img src="{{ asset_path }}/images/signout-underheader.svg" class="confirm-desktop" style="margin-bottom:3em;" alt="An example service page with a sign-out link under the header on the right of a feedback link.">
+      <img src="{{ asset_path }}/images/signout-underheader.svg" class="confirm-desktop confirm-mobile" style="margin-bottom:3em;" alt="An example service page with a sign-out link under the header on the right of a feedback link.">
 
-      <h2 class="heading-large">In header</h2>
-      <h3 class="heading-small">When to use this pattern</h3>
+      <h2 class="govuk-heading-m">In header</h2>
+      <h3 class="govuk-heading-s">When to use this pattern</h3>
       <p>When signing out of a service isn’t important but users might want to - for example they share a workspace.</p>
       <p>This pattern is more likely to be used on multi-use and caseworking services.</p>
       <img src="{{ asset_path }}/images/signout-inheader.svg" class="confirm-desktop" style="margin-bottom:3em;" alt="An example service page with a sign-out link in the header on the right of GOV.UK and the crown.">
 
-      <h2 class="heading-medium">After leaving the service</h2>
+      <h2 class="govuk-heading-m">After leaving the service</h2>
       <p>Take users to a confirmation page that includes:</p>
-      <ul class="list list-bullet">
+      <ul class="govuk-list govuk-list--bullet">
         <li>a confirmation that the sign out has been successful</li>
         <li>gives them the option to sign back in again</li>
       </ul>
 
-      <h2 class="heading-medium">User research</h2>
+      <h2 class="govuk-heading-m">User research</h2>
       <p>Users are confident in using a 'leave the service' button at the end of a transaction. Users mention they want to make sure they leave a service securely.</p>
 
-      <h2 class="heading-medium">Related patterns</h2>
-      <ul class="list list-bullet">
-        <li><a href="header">Service header</a></li>
+      <h2 class="govuk-heading-m">Related patterns</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/styles/header">Service header</a></li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/96">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

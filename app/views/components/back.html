@@ -1,75 +1,66 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "back" %}
 
-{% block page_title %}
-  Components - Back link
+{% block pageTitle %}
+Back link - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Components</span>
       <h1 class="heading-section">Back link</h1>
-      <p class="lede">A control to navigate back to the previous page of a service.</p>
-      <!-- <ul class="metadata">
-        <li>Usage: external/internal</li>
-        <li>Status: experimental</li>
-        <li>Last updated: 29 January 2018</li>
-      </ul> -->
-    </div>
+      <p class="govuk-body-l">A control to navigate back to the previous page of a service.</p>
 
-    <div class="column-full">
-      <h2 class="heading-medium" id="example-component">Example components</h2>
+      <h2 class="govuk-heading-m" id="example-component">Example components</h2>
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/back.html" %}
         </div>
       </div>
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/back-alt.html" %}
         </div>
       </div>
-      <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/back.html" %}{% endfilter %}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/back.html" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">When to use this component</h2>
+      <h2 class="govuk-heading-m">When to use this component</h2>
       <p>Always include a back link on question pages.</p>
 
-      <h2 class="heading-medium">When not to use this component</h2>
+      <h2 class="govuk-heading-m">When not to use this component</h2>
       <p>Don’t use the back link component together with breadcrumbs. On non-linear flows a back link could confuse users. Do research to see what works for your service.</p>
 
-      <h2 class="heading-medium">How to use</h2>
+      <h2 class="govuk-heading-m">How to use</h2>
       <p>Adding a page title or ‘back to previous page’ makes it clearer to the user what to expect from the interaction. It also helps increase a users confidence that they will not lose their work.</p>
       <p>Back links should always be at the top of a page. Make sure the link takes users to the previous page and that it works without JavaScript.</p>
 
-      <h2 class="heading-medium">User research</h2>
+      <h2 class="govuk-heading-m">User research</h2>
       <p>We have seen some users not understand the context of the current back link design. This has caused them anxiety.</p>
       <p>Some users have been concerned that using the back link would lose their work.</p>
 
-      <h2 class="heading-medium">Related components</h2>
-      <ul class="list list-bullet">
-        <li><a href="icons">Icons</a></li>
+      <h2 class="govuk-heading-m">Related components</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/styles/icons">Icons</a></li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/95">GitHub</a>.</p>
       </div>
-    </div>
-  </div>
-</main>
 
+    </div>
+  </main>
+</div>
 
 {% endblock %}

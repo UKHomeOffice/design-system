@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+{% set active = "styles" %}
+{% set activesub = "typography" %}
+
+{% block pageTitle %}
+Typography - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__styles.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Styles</span>
+      <h1 class="heading-section">Typography</h1>
+      <p class="lede">GDS Transport, the typeface used on GOV.UK, is restricted by license for use on gov.uk domains. Services for government users cannot use GDS Transport and should instead use the open source <a href="https://rsms.me/inter/">Inter UI</a> typeface.
+      <p class="lede">Inter UI is closely related to Helvetica and Arial, but offers improved legibility and readability for digital interfaces, particularly at smaller type sizes.</p>
+
+      <section>
+        <h2 class="govuk-heading-m">Headings</h2>
+        <p>Markup headings semantically using the appropriate heading level and use a corresponding heading class to apply styling.</p>
+        <div class="example example-images">
+          <div class="govuk-grid-row">
+            <h1 class="govuk-heading-xl" style="margin-bottom:30px;margin-top: 0;">Heading xlarge</h1>
+            <h2 class="govuk-heading-l" style="margin-bottom:20px;margin-top: 0;">Heading large</h2>
+            <h3 class="govuk-heading-m" style="margin-bottom:15px;margin-top: 0;">Heading medium</h3>
+            <h4 class="govuk-heading-s" style="margin-bottom:15px;margin-top: 0;">Heading small</h4>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="govuk-heading-m">Body content</h2>
+        <p>Inter UI has a taller x-height and larger letter-spacing then GDS Transport. The default font size is 18px on large screens and 15px on smaller screens.</p>
+        <p>Multiuse caseworking services tend to be more complex and should be optimised for speed. Smaller font sizes are acceptable but the minimum on large screens should be 15px.</p>
+      </section>
+
+      <section>
+        <h2 class="govuk-heading-m">Links</h2>
+        <p>Links should be <span style="color:#005EA5;text-decoration:underline;">blue and underlined</span>.</p>
+      </section>
+
+      <section>
+        <h2 class="govuk-heading-m">Typographic scale</h2>
+        <p>Scale helps to clearly define the hierarchy of your content.</p>
+      </section>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col">Element</th>
+            <th class="govuk-table__header" scope="col">Large screen</th>
+            <th class="govuk-table__header" scope="col">Small screen</th>
+            <th class="govuk-table__header" scope="col">Font weight</th>
+            <th class="govuk-table__header" scope="col">Line height</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__cell" scope="row">Heading-xlarge</th>
+            <td class="govuk-table__cell" scope="row">40px</td>
+            <td class="govuk-table__cell" scope="row">32px</td>
+            <td class="govuk-table__cell" scope="row">bold</td>
+            <td class="govuk-table__cell" scope="row">1.3</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__cell" scope="row">Heading-large</th>
+            <td class="govuk-table__cell" scope="row">32px</td>
+            <td class="govuk-table__cell" scope="row">24px</td>
+            <td class="govuk-table__cell" scope="row">bold</td>
+            <td class="govuk-table__cell" scope="row">1.3</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__cell" scope="row">Heading-medium</th>
+            <td class="govuk-table__cell" scope="row">24px</td>
+            <td class="govuk-table__cell" scope="row">20px</td>
+            <td class="govuk-table__cell" scope="row">bold</td>
+            <td class="govuk-table__cell" scope="row">1.3</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__cell" scope="row">Heading-small</th>
+            <td class="govuk-table__cell" scope="row">18px</td>
+            <td class="govuk-table__cell" scope="row">15px</td>
+            <td class="govuk-table__cell" scope="row">bold</td>
+            <td class="govuk-table__cell" scope="row">1.45</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__cell" scope="row">Body</th>
+            <td class="govuk-table__cell" scope="row">18px</td>
+            <td class="govuk-table__cell" scope="row">15px</td>
+            <td class="govuk-table__cell" scope="row">regular</td>
+            <td class="govuk-table__cell" scope="row">1.45<br>1.35 (smaller screens)</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

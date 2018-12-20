@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% set active = "styles" %}
+{% set activesub = "images" %}
+
+{% block pageTitle %}
+Images - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__styles.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Styles</span>
+      <h1 class="heading-section">Images and illustrations</h1>
+      <p>Please contact the central design team (<a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>) for advice on image use and to commision illustrations.</p>
+
+      <h2 class="govuk-heading-m">Use of images</h2>
+      <p>Images can add visual interest to a page. They should be used with consideration and be relevant to the content. Images must not be used to fill space or as decoration.</p>
+      <p>Where images are used, the photographic style should focus on people, be inclusive and reflect the diversity of the people we serve. Do not use clip art or cliched stock photography. Make images accessible. Do not place text on top of an image, use text as an image, or add unnecessary filters or effects.</p>
+      <p>All images must be free from usage restrictions and permissible for use.</p>
+
+      <h2 class="govuk-heading-m">Use of illustrations and illustration style</h2>
+      <p>An illustration can consist of an icon, scene or character, and can help users understand complex, detailed or ambiguous questions.</p>
+      <p>Similar to image use, illustrations must be relevant to the content and help users understand what they need to do.
+      <p>Illustrations must have a consistent style to create reassurance across online and print.</p>
+
+      <h2 class="govuk-heading-m">Image do's and don'ts</h2>
+      <div class="example example-images" style="margin-top:1em;">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-heading-m">Do</span>
+            <img src="{{ asset_path }}/images/image-example-2.jpg" alt="People sitting around a table talking. Focus is on the one person who is talking." class="image-examples">
+            <span class="image-caption">Do use images of people that look natural in their environment</span>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-heading-m">Do not</span>
+            <img src="{{ asset_path }}/images/image-example-5.jpg" alt="Staged photo of a large group of people in a line." class="image-examples">
+            <span class="image-caption">Do not use clichéd images, for example posed or forced images</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-images" style="margin-top:2.5em;">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-heading-m">Do</span>
+            <img src="{{ asset_path }}/images/image-example-4.jpg" alt="Two people sitting in a cafe having a coffee and talking." class="image-examples">
+            <span class="image-caption">Do use images that reflect real life situations</span>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-heading-m">Do not</span>
+            <img src="{{ asset_path }}/images/image-example-3.jpg" alt="A staged image of a person talking to a group in a staged office environment." class="image-examples">
+            <span class="image-caption">Do not use images that look staged or in fake situations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-images" style="margin-top:2.5em;">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-heading-m">Do</span>
+            <img src="{{ asset_path }}/images/image-example-6.jpg" alt="A person leading a group discussion infront of a whiteboard." class="image-examples">
+            <span class="image-caption">Do focus on one key element</span>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-heading-m">Do not</span>
+            <img src="{{ asset_path }}/images/image-example-1.jpg" alt="Two people talking at work. Image has a purple filter." class="image-examples">
+            <span class="image-caption">Do not use filters or effects</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
