@@ -1,123 +1,24 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
 
-{% block page_title %}
-  Home Office design patterns
+{% block pageTitle %}
+Patterns - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
-      <h1 class="heading-section">Patterns</h1>
-      <p class="lede">Patterns are guidance on how to solve certain types of problem. They include examples of successful approaches but are flexible and don&rsquo;t prescribe exact design solutions. </p>
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-      {% set patterns = [
-        {
-          name: "Multiple loops",
-          link: "/patterns/multiple-loops",
-          label: "experimental",
-          desc: "allow a user to add one or more items, check and add more if needed"
-        },
-        {
-          name: "Enquiry form",
-          link: "/patterns/enquiry",
-          label: "experimental",
-          desc: "allow users to submit an enquiry to a service"
-        },
-        {
-          name: "Error pages",
-          link: "/patterns/error-pages",
-          label: "experimental",
-          desc: "inform a user when something goes wrong"
-        },
-        {
-          name: "Identifying users (authentication)",
-          link: "/patterns/identifying-users",
-          label: "experimental",
-          desc: "Let users access your service in a secure way"
-        },
-        {
-          name: "Postcode lookup",
-          link: "/patterns/postcode",
-          label: "experimental",
-          desc: "allow users to find an address using a postcode lookup"
-        },
-        {
-          name: "Leaving a service (sign out)",
-          link: "/patterns/sign-out",
-          label: "experimental",
-          desc: "allow users to leave a service at the right time"
-        },
-        {
-          name: "Check and confirm",
-          link: "/patterns/confirmation-loop",
-          label: "experimental",
-          desc: "an interaction that confirms the input a user has entered is correct"
-        },
-        {
-          name: "Interruption card",
-          link: "/patterns/interruption-card",
-          label: "recommended",
-          desc: "interrupt the user flow with important information"
-        },
-        {
-          name: "Contextual help",
-          link: "/patterns/help",
-          label: "experimental",
-          desc: "small overlays containing help content for complex interactions"
-        },
-        {
-          name: "Upload (adding) files",
-          link: "/patterns/upload-file",
-          label: "experimental",
-          desc: "uploading (adding) single or multiple files"
-        },
-        {
-          name: "Modal window",
-          link: "/patterns/modal",
-          label: "experimental",
-          desc: "creates focus on a single interaction"
-        }
-      ] %}
+      <div class="app-prose-scope">
+        <h1 class="heading-section">Patterns</h1>
+        <p class="govuk-body-l">Patterns are guidance on how to solve certain types of problem. They include examples of successful approaches but are flexible and don&rsquo;t prescribe exact design solutions.</p>
+        <p>These patterns extend those used across Government in the <a href="https://design-system.service.gov.uk/patterns/">GOV.UK design system</a>. As our patterns mature, we will look to contribute them to the GOV.UK system so they can used more widely.</p>
+      </div>
 
-      <table class="mb-30">
-        <thead>
-          <tr>
-            <th>Pattern</th>
-            <th>Status</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {% for pattern in patterns|sort(attribute='label')|sort(attribute='name') %}
-            {% if pattern.label|lower == 'recommended' %}
-              <tr>
-                <td><a href="{{ pattern.link }}">{{ pattern.name|capitalize  }}</a></td>
-                <td><span class="label--blue">{{ pattern.label|lower }}</span></td>
-                <td>{{ pattern.desc|capitalize }}</td>
-              </tr>
-            {% endif %}
-          {% endfor %}
-          {% for pattern in patterns|sort(attribute='label')|sort(attribute='name') %}
-            {% if pattern.label|lower == 'experimental' %}
-              <tr>
-                <td><a href="{{ pattern.link }}">{{ pattern.name|capitalize  }}</a></td>
-                <td><span class="label">{{ pattern.label|lower }}</span></td>
-                <td>{{ pattern.desc|capitalize }}</td>
-              </tr>
-            {% endif %}
-          {% endfor %}
-        </tbody>
-      </table>
-
-    </div>
-  </div>
-
-</main>
+  </main>
+</div>
 
 {% endblock %}

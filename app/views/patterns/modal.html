@@ -1,68 +1,53 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "modal" %}
 
-{% block page_title %}
-  Pattern - Modal window
+{% block pageTitle %}
+Modal window - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Modal window</h1>
-    <p class="lede">Creating focus on a single interaction.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: internal</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 8 February 2018</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Modal window</h1>
+      <p class="govuk-body-l">Creating focus on a single interaction.</p>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">When to use this pattern</h2>
+      <h2 class="govuk-heading-m">When to use this pattern</h2>
       <p>Modals should be avoided in most cases. They are hard to make accessible and do not work well in mobile views.</p>
       <p>Adding content to a new page instead of showing it in a modal should be the default approach.</p>
       <p>Modals can be useful when you need to draw a users attention to something, for example timeout warnings. Please discuss with the wider community or email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> before using this pattern.</p>
 
-      <h2 id="interaction" class="heading-medium">How modals work</h2>
+      <h2 id="interaction" class="govuk-heading-m">How modals work</h2>
       <p>A modal should focus on a single task.</p>
       <p>If the modal is user triggered, the content that opens the modal window (for example, a link or button) should explain to the user what will happen.</p>
       <p>Modals should include a heading.</p>
       <p>Extra attention should be made to make sure modals are accessible.</p>
 
-    </div>
-
-    <div class="column-two-thirds" style="margin-top: 2rem;">
       <div class="example example-images confirmation">
         <img src="{{ asset_path }}/images/modal-desktop.svg" class=" confirm-desktop" alt="A flow of 2 steps. The first screen shows a page of a service. The second screen shows a modal window overlayed on the page giving the user a timeout warning.">
         <img src="{{ asset_path }}/images/modal-mobile.svg" class="confirmation confirm-mobile" alt="A flow of 2 steps. The first screen shows a page of a service. The second screen shows a modal window overlayed on the page giving the user a timeout warning.">
       </div>
-    </div>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Employers Checking Service</li>
         <li>Passport renewals (timeout)</li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/44">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

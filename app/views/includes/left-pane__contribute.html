@@ -1,0 +1,20 @@
+<div class="app-pane__subnav app-hide-mobile">
+  <nav class="app-subnav">
+
+    <ul class="app-subnav__section">
+      <li{% if activesub == "backlog" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/community/backlog">Backlog</a>
+      </li>
+      <li{% if activesub == "propose" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/community/propose">Propose work</a>
+      </li>
+      <li{% if activesub == "stages" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/community/stages">Stages of work</a>
+      </li>
+      <li{% if activesub == "using" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/community/using">Using the system</a>
+      </li>
+    </ul>
+
+  </nav>
+</div>

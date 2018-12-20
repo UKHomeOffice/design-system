@@ -1,85 +1,71 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "subnav" %}
 
-{% block page_title %}
-  Pattern - Subnavigation links
+{% block pageTitle %}
+Sub-navigation - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Sub-navigation links</h1>
-    <p class="lede">Navigation items that appear below the service name header.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: external/internal</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 28 June 2017</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
-    <div class="column-full">
+      <span class="govuk-caption-xl">Components</span>
+      <h1 class="heading-section">Sub-navigation</h1>
+      <p class="govuk-body-l">Navigation items that appear below the Home Office header.</p>
 
       <div class="example example-images" id="example-component">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/navigation.html" %}
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/navigation.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/navigation.html" %}{% endfilter %}</code></pre>
       </details>
       <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_navigation.scss' | fileInclude }}</code></pre>
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/nav.scss" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show JavaScript snippet</summary>
-        <pre class="language-javascript"><code class="language-javascript">{{'./app/assets/javascripts/navigation.js' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>JavaScript</summary>
+        <pre><code class="javascript">{% filter escape %}{% include "includes/css/nav.js" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">Interaction principles</h2>
+      <h2 class="govuk-heading-m">Interaction principles</h2>
       <p>Only one nav item can be active at a time and an active item should be distinguishable from inactive items.</p>
       <p>Inactive items should have a hover state.</p>
       <p>Focused nav items should be consistent with other focus states.</p>
 
-      <h2 class="heading-medium">Content principles</h2>
+      <h2 class="govuk-heading-m">Content principles</h2>
       <p>The label should reflect the thing that the user will do at the destination, not describe the destination.</p>
 
-      <h2 class="heading-medium">Accessibility principles</h2>
+      <h2 class="govuk-heading-m">Accessibility principles</h2>
       <p>The active nav item should be labelled as active in the code.</p>
       <p>Colour should not be the only way to distinguish active from inactive nav items.</p>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Design system</li>
       </ul>
 
-
-      <h2 class="heading-medium">Things to do</h2>
-      <ul class="list list-bullet">
-        <li>The design needs improving for narrower views</li>
-        <li>Add notes from user research</li>
-        <li>Identify services using this pattern</li>
+      <h2 class="govuk-heading-m">Related</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/styles/header">Service header</a></li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/45">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

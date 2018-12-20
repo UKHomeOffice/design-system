@@ -1,58 +1,59 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "case" %}
 
-{% block page_title %}
-Pattern - Case summary
+{% block pageTitle %}
+Case summary - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Case summary</h1>
-    <p class="lede">A default view of a case in a caseworking system.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: internal</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 1 September 2017</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Case summary</h1>
+      <p class="govuk-body-l">A default view of a case in a caseworking system.</p>
 
-    <div class="column-full">
-      <div class="example example-images" id="example-component">
-        <div class="grid-row">
-          {% include "includes/patterns/case-summary.html" %}
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-full">
+          <div class="example example-images" id="example-component">
+            <div class="govuk-grid-row">
+              {% include "includes/patterns/case-summary.html" %}
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">Why have we created this pattern?</h2>
+          <p>There is currently no documentation for casework summaries.</p>
+
+          <h2 class="govuk-heading-m">Interaction principles</h2>
+
+          <h2 class="govuk-heading-m">Content principles</h2>
+
+          <h2 class="govuk-heading-m">User research</h2>
+
+          <h2 class="govuk-heading-m">Pattern is missing</h2>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Research</li>
+          </ul>
+
+        </div>
+
+        <div class="govuk-grid-column-full">
+          <hr>
+          <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/37">Discuss this pattern on GitHub</a>
         </div>
       </div>
-    </div>
-
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">Why have we created this pattern?</h2>
-      <p>There is currently no documentation for casework summaries.</p>
-
-      <h2 class="heading-medium">Interaction principles</h2>
-
-      <h2 class="heading-medium">Content principles</h2>
-
-      <h2 class="heading-medium">User research</h2>
-
-      <h2 class="heading-medium">Pattern is missing</h2>
-      <ul class="list list-bullet">
-        <li>Research</li>
-      </ul>
 
     </div>
-
-    <div class="column-full">
-      <hr>
-      <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/37">Discuss this pattern on GitHub</a>
-    </div>
-  </div>
-</main>
+  </main>
+</div>
 
 {% endblock %}
