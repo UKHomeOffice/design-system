@@ -1,81 +1,71 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "side" %}
 
-{% block page_title %}
-Component - Side tab
+{% block pageTitle %}
+Side tab - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Side tab</h1>
-    <p class="lede">Switching between views of grouped content; hiding content that doesn&rsquo;t always need to be visible.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: external/internal</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 15 January 2018</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
+      <span class="govuk-caption-xl">Components</span>
+      <h1 class="heading-section">Side tab</h1>
+      <p class="govuk-body-l">Switching between views of grouped content; hiding content that doesn&rsquo;t always need to be visible.</p>
 
-    <div class="column-full">
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/side-tab.html" %}
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/side-tab.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/side-tab.html" %}{% endfilter %}</code></pre>
       </details>
       <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_side-menu.scss' | fileInclude }}</code></pre>
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/tab.scss" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show JavaScript snippet</summary>
-        <pre class="language-javascript"><code class="language-javascript">{{'./app/assets/javascripts/side-menu.js' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>JavaScript</summary>
+        <pre><code class="javascript">{% filter escape %}{% include "includes/css/tab.js" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">Interaction principles</h2>
+      <h2 class="govuk-heading-m">Interaction principles</h2>
       <p>Only one tab can be active at a time.</p>
       <p>The active tab should be distinguishable from the inactive, with maximum contrast ratio.</p>
       <p>Inactive tabs should have a hover state that is distinguisable with minimum contrast ratio.</p>
       <p>Focused tabs should be consistent with other focus states and distinguisable from active, inactive and hover states.</p>
       <p><a href="https://inclusive-components.design/tabbed-interfaces/">Inclusive components</a> has some really good guidance on tabs if you want to read more.</p>
 
-      <h2 class="heading-medium">Content principles</h2>
+      <h2 class="govuk-heading-m">Content principles</h2>
       <p>The label should reflect the thing you need do with the content of that tab, not a description of what it is.</p>
 
-      <h2 class="heading-medium">Accessibility principles</h2>
+      <h2 class="govuk-heading-m">Accessibility principles</h2>
       <p>The active tab should be labelled as active in the code.</p>
       <p>Only active tab content should be readable.</p>
 
-      <h2 class="heading-medium">User research</h2>
+      <h2 class="govuk-heading-m">User research</h2>
       <p>Application platform uses vertical tabs for long lists. When combined with a typeahead search, the pattern performs very well when users don't know the contents of the list.</p>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Application platform</li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/97">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% set active = "community" %}
+{% set activesub = "using" %}
+
+{% block pageTitle %}
+Using the system - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__contribute.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+
+    <div class="app-prose-scope">
+
+      <h1 class="govuk-heading-l">Using the design system</h1>
+
+      <p>Components and some patterns come with code to make it easy for you to use them in your project. We currently provide code snippets for both old versions of the prototype kit (versions 6 and older) and new versions (versions 7.0 and newer).</p>
+      <p>We also provide a <a href="https://github.com/UKHomeOffice/ho-style-prototype-kit">version of the prototype kit with the Home Office design language</a> for Home Office teams working on services for government users.</p>
+
+      <h2 class="govuk-heading-m">Using components in the prototype kit</h2>
+      <p>Use the HTML we provide to use components in your prototypes. Simple copy the snippets into your prototype pages. Some components also need CSS and JavaScript to make them work. If this is the case, we also provide the code.</p>
+
+      <h2 class="govuk-heading-m">Sketch files</h2>
+      <p>If you are using Sketch to design, we provide a <a href="https://github.com/UKHomeOffice/design-patterns">sketch file</a> with all our patterns and components included. You can download it from GitHub. Please consider feeding back any developments or changes you make <a href="/community">to the community</a>.</p>
+
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

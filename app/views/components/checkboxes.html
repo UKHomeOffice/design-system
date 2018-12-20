@@ -1,75 +1,70 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "checkboxes" %}
 
-{% block page_title %}
-  Home Office DDaT design patterns
+{% block pageTitle %}
+Checkboxes - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-full">
-      <div class="banner" role="banner">
-        <h1 class="heading-section">Checkboxes</h1>
-        <p class="lede">A variation of <a href="http://govuk-elements.herokuapp.com/form-elements/#form-checkboxes">GOV.UK checkboxes</a> for higher density interfaces.</p>
-        <!-- <ul class="metadata">
-          <li>Usage: internal</li>
-          <li>Status: experimental</li>
-          <li>Last updated: 24 May 2018</li>
-        </ul> -->
-      </div>
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-      <h2 class="visually-hidden" id="example-component">Example checkbox component</h2>
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Components</span>
+      <h1 class="heading-section">Checkboxes</h1>
+      <p class="govuk-body-l">A variation of <a href="https://design-system.service.gov.uk/components/checkboxes/">GOV.UK checkboxes</a> for higher density interfaces.</p>
+
+      <h2 class="govuk-visually-hidden" id="example-component">Example checkbox component</h2>
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/checkboxes.html" %}
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/checkboxes.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/checkboxes.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_checkboxes.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/checkboxes.css" %}{% endfilter %}</code></pre>
       </details>
 
-      <h2 class="heading-medium" id="example-component">Checkbox with conditional reveal</h2>
+      <h2 class="govuk-heading-m" id="example-component">Checkbox with conditional reveal</h2>
       <div class="example example-images">
-        <div class="grid-row">
+        <div class="govuk-grid-row">
           {% include "includes/components/checkboxes-progressive.html" %}
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/checkboxes-progressive.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/checkboxes-progressive.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_checkboxes.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/checkboxes.css" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">When to use this component</h2>
+      <h2 class="govuk-heading-m">When to use this component</h2>
       <p>This component is a variation of the <a href="https://design-system.service.gov.uk/components/checkboxes/">GOVUK checkboxes</a>.</p>
       <p>Use this component when the form is not the most important element on a page. Or when the size of the GOVUK radio buttons creates a false hierarchy of content.</p>
       <p>A common use would be filtering search results.</p>
 
-      <h2 class="heading-medium">When not to use this component</h2>
+      <h2 class="govuk-heading-m">When not to use this component</h2>
       <p>Always start with the <a href="https://design-system.service.gov.uk/components/checkboxes/">GOVUK checkboxes</a>. Don't use this component as part of a 'one thing per page' pattern.</p>
 
-      <h2 class="heading-medium">User research</h2>
+      <h2 class="govuk-heading-m">User research</h2>
       <ul class="list">
         <li>A number of services are using this pattern in the Home Office. From the research teams have done, no identified issues with the size or usability of the smaller checkboxes.</li>
         <li>Component needs further research on mobile devices.</li>
       </ul>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>DAP</li>
         <li>Resettlement services</li>
         <li>General Aviation</li>
@@ -78,16 +73,13 @@
         <li>Data services</li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/48">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

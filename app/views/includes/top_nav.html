@@ -1,28 +1,21 @@
-<div class="content-width">
-  <nav id="nav">
+  <nav class="app-navigation govuk-clearfix">
 
-    <div class="navbar">
-      <ul class="navbar__list-items">
-        <li{% if active == "patterns" %} class="active"{% endif %}>
-          <a href="/patterns">Patterns</a>
+      <ul class="app-navigation__list">
+        <li{% if active == "patterns" %} class="current-page"{% endif %}>
+          <a class="govuk-link" href="/patterns">Patterns</a>
         </li>
-        <li{% if active == "components" %} class="active"{% endif %}>
-          <a href="/components">Components</a>
+        <li{% if active == "components" %} class="current-page"{% endif %}>
+          <a class="govuk-link" href="/components">Components</a>
         </li>
-        <li{% if active == "style_guide" %} class="active"{% endif %}>
-          <a href="/style_guide">Style guide</a>
+        <li{% if active == "styles" %} class="current-page"{% endif %}>
+          <a class="govuk-link" href="/styles">Styles</a>
         </li>
-        <li{% if active == "resources" %} class="active"{% endif %}>
-          <a href="/resources">Resources</a>
+        <li{% if active == "resources" %} class="current-page"{% endif %}>
+          <a class="govuk-link" href="/resources">Resources</a>
         </li>
-        <li{% if active == "contributing" %} class="active"{% endif %}>
-          <a href="/contribute">Contributing</a>
+        <li{% if active == "community" %} class="current-page"{% endif %}>
+          <a class="govuk-link" href="/community">Community</a>
         </li>
-        <!-- <li{% if active == "about" %} class="active"{% endif %}>
-          <a href="/about">About</a>
-        </li> -->
       </ul>
-    </div>
 
   </nav>
-</div>

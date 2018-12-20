@@ -1,76 +1,62 @@
 {% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "help" %}
 
-{% block page_title %}
-Pattern - Contextual help
+{% block pageTitle %}
+Contextual help - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "patterns" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__patterns.html" %}
 
-<main id="content" role="main">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-  <div class="banner" role="banner">
-    <h1 class="heading-section">Contextual help</h1>
-    <p class="lede">Small overlays containing help content for complex interactions.</p>
-    <!-- <ul class="metadata">
-      <li>Usage: internal</li>
-      <li>Status: experimental</li>
-      <li>Last updated: 06 March 2018</li>
-    </ul> -->
-  </div>
+    <div class="app-prose-scope">
 
-  <div class="grid-row">
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Contextual help</h1>
+      <p class="govuk-body-l">Small overlays containing help content for complex interactions.</p>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">When to use help</h2>
+      <h2 class="govuk-heading-m">When to use help</h2>
       <p>Only use help to explain things like business processes. It shouldn't be relied upon to solve design problems - services should always be simple and intuitive (<a href="https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple">service stand point 12</a>). Contextual help is more suited to complex internal services. </p>
 
-    </div>
-
-    <div class="column-full">
       <div class="example example-images confirmation">
-        <h2 class="visually-hidden" id="example-component">An example of authentication</h2>
+        <h2 class="govuk-visually-hidden" id="example-component">An example of authentication</h2>
         <img src="{{ asset_path }}/images/help.svg" class="confirm-desktop" alt="The first page is a search page on GOV.UK. It shows a search heading and information followed by a search input and button. The second page is the same but has an overlay help box with answers to common questions and a link to full help.">
         <img src="{{ asset_path }}/images/help-mobile.svg" class="confirmation confirm-mobile" alt="The first page is a search page on GOV.UK. It shows a search heading and information followed by a search input and button. The second page is the same but has an overlay help box with answers to common questions and a link to full help.">
       </div>
-    </div>
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">How to use help</h2>
+      <h2 class="govuk-heading-m">How to use help</h2>
       <p>Help should be easy to close, move and minimise until the user needs it.</p>
       <p>If contextual help doesn&rsquo;t answer a user&rsquo;s question, links to more comprehensive help should be easy to find.</p>
       <p><a href="https://www.gov.uk/service-manual/design/help-text">GDS has guidance for help content</a>.
 
-      <h2 class="heading-medium">User research</h2>
+      <h2 class="govuk-heading-m">User research</h2>
       <p>Users find side-by-side guidance more helpful and easier to use.</p>
-      <p>Small overlay windows offer the smallest interference with the users flow</p>
-      <p>This is a <a href="https://www.nngroup.com/articles/pop-up-adaptive-help/">good article on contextual help</a> from Nielsen Norman</p>
+      <p>Small overlay windows offer the smallest interference with the users flow.</p>
+      <p>This is a <a href="https://www.nngroup.com/articles/pop-up-adaptive-help/">good article on contextual help</a> from Nielsen Norman.</p>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Application platform</li>
         <li>Entities</li>
       </ul>
 
-      <h2 class="heading-medium">Related patterns</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Related patterns</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li><a href="/patterns/modal.html">Modal windows</a></li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/50">GitHub</a>.</p>
       </div>
+
     </div>
 
-  </div>
-</main>
+  </main>
+</div>
 
 {% endblock %}

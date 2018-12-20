@@ -1,138 +1,117 @@
 {% extends "layout.html" %}
+{% set active = "components" %}
+{% set activesub = "confirmation" %}
 
-{% block page_title %}
-  Pattern - Confirmation pages
+{% block pageTitle %}
+Confirmation pages - Home Office design system
 {% endblock %}
 
 {% block content %}
 
-{% set active = "components" %}
-{% include "includes/top_nav.html" %}
+{% include "includes/left-pane__components.html" %}
 
-<main id="content" role="main">
-  <div class="grid-row">
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
 
-    <div class="column-full">
-      <div role="banner">
-        <h1 class="heading-section">Confirmation pages</h1>
-        <p class="lede">Different confirmation pages based on different scenarios.</p>
-        <!-- <ul class="metadata">
-          <li>Usage: internal/external</li>
-          <li>Status: experimental</li>
-          <li>Last updated: 30 June 2017</li>
-        </ul> -->
-      </div>
-    </div>
+    <div class="app-prose-scope">
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium" id="example-component">External confirmation</h2>
+      <span class="govuk-caption-xl">Components</span>
+      <h1 class="heading-section">Confirmation pages</h1>
+      <p class="govuk-body-l">Different confirmation pages based on different scenarios.</p>
+
+      <h2 class="govuk-heading-m" id="example-component">External confirmation</h2>
       <p>If it&rsquo;s for an external application aim to send the user a confirmation email but provide a reference number as well.</p>
-    </div>
-    <div class="column-full">
+
       <div class="example example-images">
-        <div class="grid-row">
-          <div class="column-two-thirds">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
             {% include "includes/components/conf--external.html" %}
           </div>
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/conf--external.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/conf--external.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_confirm-pages.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/confirm.css" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium" id="example-component">Self service confirmation</h2>
+      <h2 class="govuk-heading-m" id="example-component">Self service confirmation</h2>
       <p>If it&rsquo;s an internal process confirm complete and allow a link back to previous section.</p>
-    </div>
-    <div class="column-full">
+
       <div class="example example-images">
-        <div class="grid-row">
-          <div class="column-two-thirds">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
             {% include "includes/components/conf--self-serve.html" %}
           </div>
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/conf--self-serve.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/conf--self-serve.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_confirm-pages.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/confirm.css" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium" id="example-component">Application confirmation</h2>
+      <h2 class="govuk-heading-m" id="example-component">Application confirmation</h2>
       <p>If more actions will take place, e.g. caseworking, provide details below.</p>
-    </div>
-    <div class="column-full">
+
       <div class="example example-images">
-        <div class="grid-row">
-          <div class="column-two-thirds">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
             {% include "includes/components/conf--casework.html" %}
           </div>
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/conf--casework.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/conf--casework.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_confirm-pages.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/confirm.css" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium" id="example-component">Further tasks confirmation</h2>
+      <h2 class="govuk-heading-m" id="example-component">Further tasks confirmation</h2>
       <p>If the online process is complete but the application requires further action, e.g. submitting forms.</p>
-    </div>
-    <div class="column-full">
+
       <div class="example example-images">
-        <div class="grid-row">
-          <div class="column-two-thirds">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
             {% include "includes/components/conf--incomplete.html" %}
           </div>
         </div>
       </div>
       <details class="code-details">
-        <summary>Show HTML snippet</summary>
-        <pre class="language-markup"><code class="language-markup">{% filter escape %}{% include "includes/components/conf--incomplete.html" %}{% endfilter %}</code></pre>
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/components/conf--incomplete.html" %}{% endfilter %}</code></pre>
       </details>
-      <details class="code-details">
-        <summary>Show CSS snippet</summary>
-        <pre class="language-css"><code class="language-css">{{'./app/assets/sass/components/_confirm-pages.scss' | fileInclude }}</code></pre>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/confirm.css" %}{% endfilter %}</code></pre>
       </details>
-    </div>
 
-    <div class="column-two-thirds">
-      <h2 class="heading-medium">Why have we created this pattern?</h2>
+      <h2 class="govuk-heading-m">Why have we created this pattern?</h2>
       <p>The GDS pattern uses a lighter green which does not meet accessibility requirements for some smaller text.</p>
       <p>The incomplete version was created because we observed users didn't know whether a task was complete or not.</p>
       <p>In general, the variations have been designed to make clearer at what stage the application now is and next steps for the user.</p>
 
-      <h2 class="heading-medium">Services using this pattern</h2>
-      <ul class="list list-bullet">
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
         <li>Sponsorship did the initial work but is now paused</li>
       </ul>
 
-    </div>
-
-    <div class="column-full">
       <div class="contact-us">
-        <h2 class="heading-medium">Get in touch</h2>
+        <h2 class="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/90">GitHub</a>.</p>
       </div>
-    </div>
 
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 {% endblock %}

@@ -1,0 +1,28 @@
+.govuk-tabs {
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #FFF;
+}
+
+.govuk-tabs__list {
+  border-right: 1px solid $border-grey;
+
+  .govuk-tabs__tab--selected {
+    margin-top: -1px;
+    font-weight: bold;
+  }
+
+  .govuk-tabs__tab {
+    padding-top: 10px;
+  }
+}
+
+
+
+.govuk-tabs__panel {
+  background-color: #FFF;
+
+  pre {
+    margin: 0;
+  }
+}
