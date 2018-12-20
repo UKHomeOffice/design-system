@@ -146,13 +146,13 @@ $border-radius: 4px;
 $box-shadow: 0 2px 10px rgba(0,0,0, 0.5);
 
 // System styles
+@import "system/top-nav";
 @import "system/example";
 @import "system/mobile-nav";
 @import "system/panes";
 @import "system/snippets";
 @import "system/content";
 @import "system/system-header";
-@import "system/top-nav";
 @import "system/subnav";
 @import "system/tabs";
 @import "system/system-footer";
