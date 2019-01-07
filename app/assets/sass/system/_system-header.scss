@@ -72,14 +72,25 @@ header {
       .header-logo {
       margin-right: 10%;
     }
+
+    .header-title {
+      margin-bottom: 0;
+    }
   }
 }
+
+@media (max-width: 769px) {
+  .wrapper-header__system {
+    padding: 16px 12px;
+  }
+}
+
 
 @media (max-width: 640px) {
 
   .wrapper-header__system {
     display: inherit;
-    padding: 12px 20px 4px;
+    padding: 12px 18px 4px;
 
     .header-name {
       font-size: 20px;

@@ -62,7 +62,7 @@
 @media (max-width: 768px) {
 
   .app-navigation {
-    padding-left: 11px;
+    padding-left: 2px;
 
     &__list {
       & > li {
@@ -71,6 +71,15 @@
         }
       }
     }
+  }
+
+
+}
+
+@media (max-width: 640px) {
+
+  .app-navigation {
+    padding-left: 9px;
   }
 
 
