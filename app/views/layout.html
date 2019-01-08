@@ -28,6 +28,15 @@
   {% include "includes/head.html" %}
 {% endblock %}
 
+{% block headIcons %}
+  <link rel="shortcut icon" href="{{ asset_path }}images/favicon.ico?0.18.4" type="image/x-icon" />
+  <link rel="mask-icon" href="{{ asset_path }}images/favicon.svg?0.18.3" color="#0b0c0c">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ asset_path }}images/favicon-152.png?0.18.4">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ asset_path }}images/favicon-120.png?0.18.4">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ asset_path }}images/favicon-76.png?0.18.4">
+  <link rel="apple-touch-icon-precomposed" href="{{ asset_path }}images/favicon-60.png?0.18.4">
+{% endblock %}
+
 {% set bodyClasses = "ho-body" %}
 
 {% block pageTitle %}
