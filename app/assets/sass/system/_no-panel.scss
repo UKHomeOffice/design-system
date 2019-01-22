@@ -1,0 +1,15 @@
+.no-panel {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .no-panel {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .no-panel {
+    margin-left: 0;
+  }
+}

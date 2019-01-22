@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+{% set active = "patterns" %}
+
+{% block pageTitle %}
+Patterns - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+    <div class="app-prose-scope no-panel">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 id="cookies">Cookies</h1>
+          <p>The Home Office Design System puts small files (known as ‘cookies’) on to your computer.</p>
+          <p>We use cookies to:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>record the notifications you’ve seen so we do not show them again</li>
+            <li>measure how you use the website so it can be updated and improved based on your activity</li>
+          </ul>
+          <p>These cookies are not used to identify you personally.</p>
+          <p>You’ll see a message on the site before we store a cookie on your computer.</p>
+          <p><a href="https://ico.org.uk/for-the-public/online/cookies/">Find out how to manage cookies.</a></p>
+          <h2 id="our-cookie-message">Our cookie message</h2>
+          <p>You will see a message about cookies when you first visit the Home Office Design System. We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.</p>
+          <table class="govuk-table app-table--fixed">
+            <caption class="govuk-table__caption govuk-visually-hidden">Dates and amounts</caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">Name</th>
+                <th class="govuk-table__header" scope="col">Purpose</th>
+                <th class="govuk-table__header" scope="col">Expires</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">seen_cookie_message</td>
+                <td class="govuk-table__cell">Saves a message to let us know that you have seen our cookie message</td>
+                <td class="govuk-table__cell">28 days</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="measuring-website-usage-with-google-analytics">Measuring website usage with Google Analytics</h2>
+          <p>We use Google Analytics software to collect information about how you use the Home Office Design System. We do this to help make sure the site is meeting the needs of its users and to help us make improvements.</p>
+          <p>Google Analytics stores information about:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>the pages you visit</li>
+            <li>how long you spend on each page</li>
+            <li>how you got to the site</li>
+            <li>what you click on while you’re visiting the site.</li>
+          </ul>
+          <p>We do not collect or store your personal information, so this data cannot be used to identify who you are.</p>
+          <p>We do not allow Google to use or share our analytics data.</p>
+          <p>Google Analytics sets the following cookies:</p>
+          <table class="govuk-table app-table--fixed">
+            <caption class="govuk-table__caption govuk-visually-hidden">Dates and amounts</caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">Name</th>
+                <th class="govuk-table__header" scope="col">Purpose</th>
+                <th class="govuk-table__header" scope="col">Expires</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_ga</td>
+                <td class="govuk-table__cell">This helps us count how many people visit the Home Office Design System site by tracking if you’ve visited before</td>
+                <td class="govuk-table__cell">2 years</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_gid</td>
+                <td class="govuk-table__cell">This helps us count how many people visit the Home Office Design System site by tracking if you’ve visited before</td>
+                <td class="govuk-table__cell">24 hours</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_gat</td>
+                <td class="govuk-table__cell">This is used to limit the rate at which page view requests are recorded by Google</td>
+                <td class="govuk-table__cell">1 minute</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="other-cookies">Other cookies</h2>
+
+          <table class="govuk-table app-table--fixed">
+            <caption class="govuk-table__caption govuk-visually-hidden">Dates and amounts</caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">Name</th>
+                <th class="govuk-table__header" scope="col">Purpose</th>
+                <th class="govuk-table__header" scope="col">Expires</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_govuk-prototype-kit</td>
+                <td class="govuk-table__cell">This helps the makers of the GOV.UK prototype kit count how many times the kit is used</td>
+                <td class="govuk-table__cell">24 hours</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_ga</td>
+                <td class="govuk-table__cell">We use an open source font <a href="https://rsms.me/inter/">Inter UI</a> which uses Google Analytics to help count how many times the font is used</td>
+                <td class="govuk-table__cell">2 years</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_cfduid</td>
+                <td class="govuk-table__cell">We use an open source font <a href="https://rsms.me/inter/">Inter UI</a> which uses <a href="https://support.cloudflare.com/hc/en-us/articles/200170156-What-does-the-Cloudflare-cfduid-cookie-do-">Cloudflare</a></td>
+                <td class="govuk-table__cell">6 months</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}
