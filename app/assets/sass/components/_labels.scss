@@ -1,17 +1,18 @@
 @mixin label ($label-background: $panel-colour, $label-border: $secondary-text-colour, $label-text: $text-colour) {
     background: $label-background;
     color: $white;
+    font-size: 17px;
     display: inline-block;
     line-height: 1;
     padding: 4px 5px 3px 5px;
-    margin: 0 calc(2 * #{5px}) 5px 5px;
+    margin: 0 calc(2 * #{5px}) 5px 10px;
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
     font-weight: normal;
 }
 .label {
-    @include label($secondary-text-colour, $text-colour)
+    @include label(#5c6367, $text-colour)
 }
 .label--white {
     @include label($page-colour)
