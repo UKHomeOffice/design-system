@@ -1,7 +1,7 @@
 @include govuk-exports("app-subnav") {
 
   .app-subnav {
-    padding: govuk-spacing(4) govuk-spacing(3) govuk-spacing(3) 42px;
+    padding: govuk-spacing(6) govuk-spacing(3) govuk-spacing(3) 42px;
     @include govuk-font(16);
 
     @include govuk-media-query($until: tablet) {
