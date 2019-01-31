@@ -26,7 +26,7 @@ module.exports = {
   useHttps: 'true',
 
   // Cookie warning - update link to service's cookie page.
-  cookieText: 'The Home Office Design System uses cookies to make the site simpler. <a href="cookies">Find out more about cookies</a>',
+  cookieText: 'The Home Office Design System uses cookies to make the site simpler. <a href="../cookies">Find out more about cookies</a>',
 
   // Enable or disable Browser Sync
   useBrowserSync: 'true'
