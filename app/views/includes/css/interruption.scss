@@ -1,0 +1,85 @@
+.flash-card {
+  margin-top: 1em;
+  padding: 30px;
+  background: #005EA5;
+  color: #FFF;
+
+  header {
+    background-color: inherit;
+  }
+
+  p {
+    margin-left: 32px;
+  }
+
+  ul.how-to-renew {
+    padding-left: 0;
+    list-style: none;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 0;
+      padding: 0;
+      color: #FFF;
+      font-size: 28px;
+    }
+
+    li {
+      margin-bottom: 22px;
+    }
+  }
+
+  h1 {
+    color: #FFF;
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
+  }
+
+  a {
+    color: #FFF;
+    &:visited, &:hover, &:active {
+      color: #FFF; }
+    }
+    details {
+      // margin-bottom: 1em;
+      summary {
+        color: #FFF;
+      }
+      .panel {
+        border-left-color: #FFF;
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    .flash-card {
+      margin-top: 1.25em;
+      padding: 35px 50px;
+    }
+  }
+
+.circle-white {
+  color: #005ea5;
+  background: #fff;
+  float: left;
+  margin-right: 15px;
+}
+
+.circle-step {
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+}
+
+.circle {
+  margin-top: 6px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-family: 'Inter UI', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
