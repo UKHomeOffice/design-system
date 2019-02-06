@@ -1,16 +1,16 @@
 .table-clickable tbody tr:hover {
-  background-color: $highlight-colour;
+  background-color: #F8F8F8;
   cursor: pointer;
 }
 
 $selected-colour: #FFECC7;
 
 .table-clickable tbody tr.checked {
-  background-color: $selected-colour;
+  background-color: #FFECC7;
 }
 
 .table-clickable tbody tr.checked:hover {
-  background-color: darken($selected-colour, 5%);
+  background-color: darken(#FFECC7, 5%);
 }
 
 .table-clickable {

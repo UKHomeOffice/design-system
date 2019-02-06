@@ -1,7 +1,7 @@
 .govuk-box-highlight {
   padding: 1em 2em 2em;
-  background-color: $green;
-  color: $white;
+  background-color: #00823B;
+  color: #FFF;
   text-align: center;
 
   .govuk-heading-m {
@@ -9,17 +9,17 @@
   }
 
   p, h2, a {
-    color: $white;
+    color: #FFF;
   }
 
   a, a:hover, a:visited {
-    color: white;
+    color: #FFF;
     font-weight: 700;
   }
 }
 
 .govuk-box-highlight.incomplete {
-  background-color: $govuk-blue;
+  background-color: #005EA5;
   text-align: left;
   padding: 15px;
   margin-bottom: 30px;
@@ -36,7 +36,7 @@
 .confirm-page {
   .hod-checkmark {
     font-size: 35px;
-    color: $white;
+    color: #FFF;
     display: block;
     margin: 15px auto;
     position: relative;
@@ -71,7 +71,7 @@
     position: relative;
     top: 1.3em;
     display: inline-block;
-    background: $grey-2;
-    box-shadow: 3px -3px 0 #fff, 6px -6px 0 $grey-2;
+    background: #BFC1C3;
+    box-shadow: 3px -3px 0 #fff, 6px -6px 0 #BFC1C3;
   }
 }

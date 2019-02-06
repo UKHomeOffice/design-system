@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   .action_needed {
-    background-color: $panel-colour;
+    background-color: #DEE0E2;
     padding: 5px 20px 5px 15px;
 
     h2 {
@@ -45,7 +45,7 @@
       padding-left: 15px;
       position: relative;
       display: block;
-      border-bottom: 1px solid $panel-colour;
+      border-bottom: 1px solid #DEE0E2;
       &:last-child {
         margin-bottom: 0px;
       }
@@ -71,7 +71,7 @@
         height: calc(2 * #{5px});
         border-radius: 50%;
         background-color: white;
-        border: 4px solid $grey-1;
+        border: 4px solid #6F777B;
         position: absolute;
         z-index: 2;
         left: -31px;
@@ -99,7 +99,7 @@
     font-size: 0.8em;
     padding-bottom: 5px;
     padding-left: 10px;
-    border-left: 4px solid $govuk-blue;
+    border-left: 4px solid #005EA5;
   }
 }
 

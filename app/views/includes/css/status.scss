@@ -1,11 +1,11 @@
 .status {
-  background-color: $govuk-blue;
-  color: $white;
+  background-color: #005EA5;
+  color: #FFF;
   padding: 20px;
 
   p {
     font-weight: 700;
-    color: $white;
+    color: #FFF;
   }
 
   .status-extra {
@@ -13,7 +13,7 @@
   }
 
   .govuk-button {
-    color: $text-colour;
+    color: #0B0C0C;
     margin-bottom: 0;
   }
 }
