@@ -10,6 +10,11 @@ p code {
   background-color: govuk-colour("grey-4");
 }
 
+p.icon-hint {
+  margin-top: -14px;
+  color: #555;
+}
+
 .heading-section {
   font-size: 40px;
   line-height: 1.2;
