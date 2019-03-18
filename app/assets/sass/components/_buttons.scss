@@ -20,6 +20,14 @@
 	}
 }
 
+.button-white:focus {
+	background-color: darken(white, 5%);
+	color: $text-colour;
+	&[disabled]{
+		background-color: white;
+	}
+}
+
 .button-secondary {
 	background-color: $panel-colour;
   box-shadow: 0 1px 0 $text-colour;
