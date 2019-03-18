@@ -44,6 +44,11 @@
 	color: $text-colour;
 }
 
+.button-secondary:focus {
+	background-color: darken($panel-colour, 5%);
+	color: $text-colour;
+}
+
 .button-affordance {
 	background-color: $panel-colour;
 	color: $text-colour;
@@ -61,6 +66,11 @@
 }
 
 .button-affordance:hover {
+	background-color: darken($panel-colour, 5%);
+	color: $text-colour;
+}
+
+.button-affordance:focus {
 	background-color: darken($panel-colour, 5%);
 	color: $text-colour;
 }
