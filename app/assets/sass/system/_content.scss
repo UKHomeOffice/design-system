@@ -15,6 +15,11 @@ p.icon-hint {
   color: #555;
 }
 
+.homepage-sections {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
 .heading-section {
   font-size: 40px;
   line-height: 1.2;
@@ -103,5 +108,12 @@ p.icon-hint {
     abbr[title] {
       text-decoration: none;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-sections {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
