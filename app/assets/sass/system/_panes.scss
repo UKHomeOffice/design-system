@@ -103,7 +103,7 @@
 }
 
 .app-content {
-    padding: 30px;
+    padding: 40px 30px;
 }
 
 .contact-us {
@@ -125,6 +125,30 @@
   p {
     margin: 0;
     color: white;
+  }
+}
+
+.app-homepage {
+  margin: 0 44px 0 24px;
+
+  .homepage-intro {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-homepage {
+    margin: 0;
+
+    .homepage-intro {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+
+  .app-content {
+    padding: 40px 12px;
   }
 }
 
