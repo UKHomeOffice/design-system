@@ -14,40 +14,40 @@ ul.tab__nav {
 
     &.active, &:hover.active {
       @include govuk-font(19, $weight: bold);
-      color: $black;
+      color: #0B0C0C;
     }
   }
 
   a:visited {
-    color: $link-colour;
+    color: #005EA5;
   }
 
   .active:hover {
-    background: $white;
+    background: #FFF;
     text-decoration: none;
   }
 
   li a:hover {
-    color: $link-colour;
+    color: #005EA5;
     text-decoration: underline;
-    background: $grey-3;
+    background: #DEE0E2;
 
     &.locked {
-      color: $black;
+      color: #0B0C0C;
       background-color: transparent;
       cursor: default;
     }
   }
   li a:focus {
-    color: $black;
+    color: #0B0C0C;
   }
   .locked {
-    color: $grey-1;
+    color: #6F777B;
     padding: 10px 5px 15px;
   }
   hr {
     height: 1px;
-    background-color: $border-colour;
+    background-color: #BFC1C3;
     margin: 0;
   }
 
