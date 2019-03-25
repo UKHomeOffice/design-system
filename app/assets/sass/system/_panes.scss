@@ -106,6 +106,21 @@
     padding: 40px 30px;
 }
 
+.app-navigation__list, {
+  max-width: 1104px;
+  margin: 0 auto;
+}
+
+.wrapper-header__system {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.app-pane__body, .wrapper-footer__system {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 .contact-us {
   padding: govuk-spacing(4);
   background-color: #005ea5;
