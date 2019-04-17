@@ -1,7 +1,7 @@
 {
-  "name": "express-prototype",
-  "description": "GOVUK prototyping app in Express",
-  "version": "8.3.0",
+  "name": "design-system",
+  "description": "A forked version of GOVUK's prototyping app in Express",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "^8.9.1"
