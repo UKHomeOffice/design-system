@@ -1,0 +1,44 @@
+{
+  "_from": "govuk_frontend_toolkit@^7.5.0",
+  "_id": "govuk_frontend_toolkit@7.6.0",
+  "_inBundle": false,
+  "_integrity": "sha1-sJpgYxr7ukv6x2qLfALnJBnCnPU=",
+  "_location": "/govuk_frontend_toolkit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "govuk_frontend_toolkit@^7.5.0",
+    "name": "govuk_frontend_toolkit",
+    "escapedName": "govuk_frontend_toolkit",
+    "rawSpec": "^7.5.0",
+    "saveSpec": null,
+    "fetchSpec": "^7.5.0"
+  },
+  "_requiredBy": [
+    "/",
+    "/govuk-elements-sass"
+  ],
+  "_resolved": "https://registry.npmjs.org/govuk_frontend_toolkit/-/govuk_frontend_toolkit-7.6.0.tgz",
+  "_shasum": "b09a60631afbba4bfac76a8b7c02e72419c29cf5",
+  "_spec": "govuk_frontend_toolkit@^7.5.0",
+  "_where": "/Users/michaelowen/Sites/design-system",
+  "author": {
+    "name": "Government Digital Service developers",
+    "email": "govuk-dev@digital.cabinet-office.gov.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/alphagov/govuk_frontend_toolkit/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "npm package for using the GOV.UK frontend toolkit",
+  "homepage": "https://github.com/alphagov/govuk_frontend_toolkit_npm#readme",
+  "license": "MIT",
+  "name": "govuk_frontend_toolkit",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alphagov/govuk_frontend_toolkit_npm.git"
+  },
+  "version": "7.6.0"
+}
