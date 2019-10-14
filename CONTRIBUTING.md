@@ -1,6 +1,6 @@
 # Contributing to the Home Office Design System
 
-This design system is for everyone. It's purpose is to extend the [GOV.UK Design System](https://design-system.service.gov.uk/) with work specific to the Home Office. Patterns or components that have a wider use will be contributed to the GOV.UK Design System so they can be used by delivery teams across government.
+This design system is for everyone. Its purpose is to extend the [GOV.UK Design System](https://design-system.service.gov.uk/) with work specific to the Home Office. Patterns or components that have a wider use will be contributed to the GOV.UK Design System so they can be used by delivery teams across government.
 
 ## How to contribute
 
