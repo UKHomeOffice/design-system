@@ -15,12 +15,53 @@ Images - Home Office design system
     <div class="app-prose-scope">
 
       <span class="govuk-caption-xl">Styles</span>
-      <h1 class="heading-section">Images and illustrations</h1>
-      <p>Please contact the central design team (<a href="mailto:designops@digital.homeoffice.gov.uk">designops@digital.homeoffice.gov.uk</a>) for advice on image use and to commission illustrations.</p>
+      <h1 class="heading-section">Images</h1>
 
-      <h2 class="govuk-heading-m">Use of images</h2>
-      <p>Images can add visual interest to a page. </p>
-      <p class="govuk-body">They should be:</p>
+      <h3 class="govuk-heading-m">Use of images</h3>
+      <p class="govuk-body">Avoid unecessary decoration. Only use images when research indicates a real user need.</p>
+
+      <p class="govuk-body"><a href="#Illustrations or representative imagery">Illustrations</a> can help users to understand:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a new or unfamiliar concept</li>
+        <li>complex guidance when completing a task</li>
+        <li>how to find a reference number on a document complex.</li>
+      </ul>
+
+      <p class="govuk-body"><a href="#Photography">Photography</a> can add visual interest to a page. We use it mostly in internal pages and services that use independent branding.</p>
+      <p class="govuk-body">Images must be relevant to the content, help users understand what they need to do and follow our guidance on the use of <a href="#Alternative text">Alternative text</a>.</p>
+
+      <h3 class="govuk-heading-m">Sourcing images</h3>
+      <p>Please contact the central design team (<a href="mailto:designops@digital.homeoffice.gov.uk">designops@digital.homeoffice.gov.uk</a>) for advice on image use, for original source files and to commission illustrations.</p>
+
+      <h2 id="Illustrations or representative imagery" class="govuk-heading-l">Illustrations or representative imagery</h2>
+      <p class="govuk-body">If your image represents something physical, such as a document, you should use the aspect ratio of that object.</p>
+      <p class="govuk-body">Illustrations must have a consistent style to create trust across online and print.</p>
+
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <h2 class="govuk-heading-l">Do you have biometric residence card or permit?</h2>
+        <img src="{{ asset_path }}/images/image-brp-example2.png" class="confirm-desktop" alt="An example of an illustrative image of a biometric residence permit card">
+        <img src="{{ asset_path }}/images/image-brp-example2.png" class="confirmation confirm-mobile" alt="An example of an illustrative image of a biometric residence permit card">
+        <span class="image-caption"><p>Right to work</p></span>
+      </div>
+
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <img src="{{ asset_path }}/images/image-passport-issue-example.png" class="confirm-desktop" alt="An example of an illustrative image of a biometric residence permit card">
+        <img src="{{ asset_path }}/images/image-passport-issue-example.png" class="confirmation confirm-mobile" alt="An example of an illustrative image of a biometric residence permit card">
+        <span class="image-caption"><a href="https://www.gov.uk/apply-renew-passport">Passport renewals</a></span>
+      </div>
+
+
+      <h2 id="related" class="govuk-heading-m">Related</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="https://design.homeoffice.gov.uk/patterns/guidance-image">Guidance images</a></li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Research</h2>
+      <p class="govuk-body">The examples of illustrations and illustrative imagery have been used in a variety of public-facing services. They’ve been tested in context and not on their own. Their use will vary as a service evolves.</p>
+      <p class="govuk-body">Get in touch to <a href="mailto:designops@digital.homeoffice.gov.uk">share research findings</a> if you’ve used these illustrations, if you have another an example to share or want to explore creating a new illustration.</p>
+
+      <h2 id="Photography" class="govuk-heading-l">Photography</h2>
+      <p class="govuk-body">Photography should be:</p>
       <ul class="govuk-list govuk-list--bullet">
         <li>relevant to the content</li>
         <li>people-focussed, inclusive and reflecting the diversity of the people we serve</li>
@@ -32,55 +73,44 @@ Images - Home Office design system
         <li>used to fill space or as decoration</li>
         <li>clip art or clichéd stock photography</li>
         </ul>
-      <h2 class="govuk-heading-m">Use of illustrations and illustration style</h2>
-      <p>An illustration can consist of an icon, scene or character, and can help users understand complex, detailed or ambiguous questions.</p>
-      <p>Similar to image use, illustrations must be relevant to the content and help users understand what they need to do.
-      <p>Illustrations must have a consistent style to create reassurance across online and print.</p>
 
-      <h2 class="govuk-heading-m">Image dos and don'ts</h2>
-      <div class="example example-images" style="margin-top:1em;">
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-half">
-            <span class="govuk-heading-m">Do</span>
-            <img src="{{ asset_path }}/images/image-example-2.jpg" alt="People sitting around a table talking. Focus is on the one person who is talking." class="image-examples">
-            <span class="image-caption">Do use images of people that look natural in their environment</span>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <span class="govuk-heading-m">Don't</span>
-            <img src="{{ asset_path }}/images/image-example-5.jpg" alt="Staged photo of a large group of people in a line." class="image-examples">
-            <span class="image-caption">Don't use clichéd images, for example posed or forced images</span>
+        <h2 class="govuk-heading-m">Photography dos and don'ts</h2>
+        <div class="example example-images" style="margin-top:1em;">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <span class="govuk-heading-m">Do</span>
+              <img src="{{ asset_path }}/images/image-example-2.jpg" alt="People sitting around a table talking. Focus is on the one person who is talking." class="image-examples">
+              <span class="image-caption">Do use images of people that look natural and reflect real life situations.</span>
+            </div>
+            <div class="govuk-grid-column-one-half">
+              <span class="govuk-heading-m">Don't</span>
+              <img src="{{ asset_path }}/images/image-example-5.jpg" alt="Staged photo of a large group of people in a line." class="image-examples">
+              <span class="image-caption">Don't use clichéd images, for example posed or forced, or in fake situations.</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="example example-images" style="margin-top:2.5em;">
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-half">
-            <span class="govuk-heading-m">Do</span>
-            <img src="{{ asset_path }}/images/image-example-4.jpg" alt="Two people sitting in a cafe having a coffee and talking." class="image-examples">
-            <span class="image-caption">Do use images that reflect real life situations</span>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <span class="govuk-heading-m">Don't</span>
-            <img src="{{ asset_path }}/images/image-example-3.jpg" alt="A staged image of a person talking to a group in a staged office environment." class="image-examples">
-            <span class="image-caption">Don't use images that look staged or in fake situations</span>
+        <div class="example example-images" style="margin-top:2.5em;">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <span class="govuk-heading-m">Do</span>
+              <img src="{{ asset_path }}/images/image-example-6.jpg" alt="A person leading a group discussion infront of a whiteboard." class="image-examples">
+              <span class="image-caption">Do focus on one key element</span>
+            </div>
+            <div class="govuk-grid-column-one-half">
+              <span class="govuk-heading-m">Don't</span>
+              <img src="{{ asset_path }}/images/image-example-1.jpg" alt="Two people talking at work. Image has a purple filter." class="image-examples">
+              <span class="image-caption">Don't use filters or effects</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="example example-images" style="margin-top:2.5em;">
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-half">
-            <span class="govuk-heading-m">Do</span>
-            <img src="{{ asset_path }}/images/image-example-6.jpg" alt="A person leading a group discussion infront of a whiteboard." class="image-examples">
-            <span class="image-caption">Do focus on one key element</span>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <span class="govuk-heading-m">Don't</span>
-            <img src="{{ asset_path }}/images/image-example-1.jpg" alt="Two people talking at work. Image has a purple filter." class="image-examples">
-            <span class="image-caption">Don't use filters or effects</span>
-          </div>
-        </div>
+      <h2 id="Alternative text" class="govuk-heading-l">Alternative text</h2>
+      <p class="govuk-body">Alternative text, or alt text, is read out by screen readers for those with visual impairments. It will also be displayed if an image does not load or if images have been switched off. We recommend following the guidance in the <a href="https://design-system.service.gov.uk/styles/images/" target=blank>GOV.UK Design System</a> on the use of alt text.</p>
+
+      <div class="contact-us">
+        <h2 class="govuk-heading-m">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system channel</a>, on <a href="https://github.com/UKHomeOffice/design-system" target=blank>GitHub</a> or email the Design system working group on <a href="mailto:designops@digital.homeoffice.gov.uk">designops@digital.homeoffice.gov.uk</a>.</p>
       </div>
 
     </div>
