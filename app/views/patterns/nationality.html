@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "nationality" %}
+
+{% block pageTitle %}
+Modal window - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__patterns.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+
+    <div class="app-prose-scope">
+
+      <span class="govuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">
+      Nationality
+        <div>
+        <strong class="govuk-tag govuk-!-margin-top-4">
+          Experimental
+        </strong>
+        </div>
+      </h1>
+      <p class="govuk-body-l">Ask users for their nationality.</p>
+
+      <div class="example example-country-nationality">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="nationality">
+            Country of nationality
+          </label>
+          <input class="govuk-input" id="nationality" name="country-nationality" type="text">
+        </div>
+      </div>
+
+
+      <h2 class="govuk-heading-m">When to use this pattern</h2>
+      <p>Follow this pattern when asking a user for their nationality as part of a service. Only ask if you need it to deliver a service. Common scenarios when a user may be asked for their nationality:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Apply for an identity document, such as a passport</li>
+        <li>Apply for travel permits such as visas</li>
+        <li>Access a previous application</li>
+        <li>Update their details</li>
+      </ul>
+
+      <h2 id="interaction" class="govuk-heading-m">How to use it</h2>
+      <p>Make it clear:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Why you’re asking for a user’s nationality, if for example you’re asking as part of a particular application journey</li>
+        <li>Whose nationality you’re asking for, for example, if your user is filling out information about a relative or guardian</li>
+      </ul>
+
+      <p>Use the <a href="https://github.com/alphagov/govuk-country-and-territory-autocomplete">GOV.UK country and territory autocomplete</a> with this pattern, and depending on the context, allow users to enter:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Several forms of citizenship. So for example, Britain, Scotland, Northern Ireland for a national of the United Kingdom of Great Britain and Northern Ireland</li>
+        <li>Entities that aren’t recognized as countries by the UK,  for example Taiwan and Hong Kong</li>
+      </ul>
+
+      <h2 id="examples" class="govuk-heading-m">Examples</h2>
+        <p>Ask users for:</p>
+          <ul class="govuk-list">
+              <li>
+                  — their nationality
+              </li>
+              <li>
+                  — <a class="govuk-link" href="#country-passport">the country on their passport</a>
+              </li>
+              <li>
+                  — <a class="govuk-link" href="#country-birth">their country of birth</a>
+              </li>
+              <li>
+                  — <a class="govuk-link" href="#all-nationalities">all the nationalities they hold</a>
+              </li>
+              <li>
+                  — <a class="govuk-link" href="#nationality-list">a nationality out of a select list</a>
+              </li>
+          </ul>
+
+          <p class="govuk-body govuk-!-margin-top-3">Do you have another examples of asking a user for their nationality? Get in touch at <a href="mailto:designops@digital.homeoffice.gov.uk">designops@digital.homeoffice.gov.uk</a>.
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-8">Asking users for their nationality</h3>
+      <div class="example example-nationality" id="nationality">
+          xx
+      </div>
+      <p class="govuk-body govuk-!-margin-top-4">Note with this example is that it doesn't let you add multiple nationalities, so there may be a question of whether dual nationals understand which nationality they should enter. Further research is needed. Let us know if your service has done any research on this.</p>
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-8">Asking users for the country on their passport</h3>
+      <div class="example example-country-passport" id="country-passport">
+          xx
+      </div>
+      <p class="govuk-body govuk-!-margin-top-4">Note with this example that this excludes users who do not hold a passport - only use when in reference to a service that relies on this particular type of identity document.</p>
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-8">Asking users for their country of birth</h3>
+      <div class="example example-country-birth" id="country-birth">
+          xx
+      </div>
+      <p class="govuk-body govuk-!-margin-top-4">When asking users for their country of birth, allow them to enter locations (countries, nations, territories) that are not recognised by the UK as well as former countries, nations and territories.</p>
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-8">Asking users for all the nationalities they hold</h3>
+      <div class="example example-all-nationalities" id="all-nationalities">
+          xx
+      </div>
+      <p class="govuk-body govuk-!-margin-top-4">You can use this example in a service that requires knowing all the nationalities that a user holds.</p>
+
+      <h3 class="govuk-heading-s govuk-!-margin-top-8">Asking users for nationality out of a select list</h3>
+      <div class="example example-nationality-list" id="nationality-list">
+          xx
+      </div>
+      <p class="govuk-body govuk-!-margin-top-4">You can use this example in a service that requires knowing all the nationalities that a user holds.</p>
+
+      <br>
+
+
+
+      <h2 class="govuk-heading-m">Services using this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li></li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Research on this pattern</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li></li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Accessibility</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li></li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Related to</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li></li>
+      </ul>
+
+
+      <div class="contact-us">
+        <h2 class="govuk-heading-m">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/44">GitHub</a>.</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}
