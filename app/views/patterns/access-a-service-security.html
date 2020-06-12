@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% set active = "patterns" %}
-{% set activesub = "identity" %}
+{% set activesub = "security" %}
 
 {% block pageTitle %}
 Check and confirm - Home Office design system
@@ -16,16 +16,16 @@ Check and confirm - Home Office design system
     <div class="app-prose-scope">
 
       <span class="govuk-caption-xl">Help users to</span>
-      <h1 class="heading-section">Access a service: with identity documents
+      <h1 class="heading-section">Access a service: with personal details
       </h1>
       <p class="govuk-body" style="margin-top: -2.5em;">Also known as Authenticate or Identifying Users<p>
 
         <div>
-          <strong class="govuk-tag govuk-!-margin-top-4 govuk-!-margin-bottom-2">Experimental</strong>
+          <strong class="govuk-tag govuk-!-margin-top-4 govuk-!-margin-bottom-2" style="color: green">Recommended</strong>
           <p class="govuk-body">This pattern is currently experimental because <a href="/community">more research</a> is needed to validate it. </p>
           </div>
 
-      <p class="govuk-body-l">Let users access a service in a secure way by authenticating themselves with their identity documents.</p>
+      <p class="govuk-body-l">Help users to authenticate themselves so they can access a service in a secure way with personal details.</p>
 
       <div class="example example-images confirmation" style="margin-bottom: 2em;">
         <img src="{{ asset_path }}/images/image-guidance-brp.svg" class="confirm-desktop" alt="An example of an illustrative image of a biometric residence permit card">
@@ -33,7 +33,7 @@ Check and confirm - Home Office design system
       </div>
 
        <h2 id="when-to-use-this-pattern" class="govuk-heading-m">When to use this pattern</h2>
-       <p>Follow this pattern if you are helping users access a service by authenticating users with an identity document. It could be the same document they’ve used to apply previously, the document your service has on record for them or the document that’s attached to their account.</p>
+       <p>Follow this pattern if you are helping users access a service by authenticating users with personal details.</p>
 
        <h2 id="services-using-this-pattern" class="govuk-heading-m">Services using this pattern</h2>
        <ul class="govuk-list govuk-list--bullet">
@@ -44,9 +44,7 @@ Check and confirm - Home Office design system
         </ul>
 
       <h2 id="research" class="govuk-heading-m">Research</h2>
-        <p class="govuk-body">In research, it has been shown to be confusing to users which document they should select in order to verify themselves. For example, they may have used the update your details service and not understand that they will now need to use these new details, rather than the original document they may have used to previously authenticate themselves.</p>
-        <p class="govuk-body">When using the biometric identity permit and card as one of the identifying documents, research has shown that there is the potential for confusion over which one to choose. Users tend to get confused about which document they have. Further research is needed on this.</p>
-
+        <p class="govuk-body">More research is needed on the best way to help users access a service by authenticating them with personal details. If your service helps users authenticate themselves with personal details, get in touch to share your user research findings.</p>
 
       <div class="contact-us">
        <h2 class="govuk-heading-m">Get in touch</h2>
