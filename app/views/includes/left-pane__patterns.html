@@ -1,6 +1,9 @@
 <div class="app-pane__subnav app-hide-mobile">
   <nav class="app-subnav">
     <ul class="app-subnav__section">
+      <li{% if activesub == "auth" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/access-a-service">Access a service</a>
+      </li>
       <li{% if activesub == "check" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/confirmation-loop">Check and confirm</a>
       </li>
@@ -10,14 +13,11 @@
       <li{% if activesub == "enquiry" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/enquiry">Enquiry form</a>
       </li>
-      <!-- <li{% if activesub == "error" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+      <!-- <li{% if activesub == "error" %} clas  s="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/error-pages">Error pages</a>
       </li> -->
       <li{% if activesub == "guide-image" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/guidance-image">Guidance images</a>
-      </li>
-      <li{% if activesub == "auth" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/identifying-users">Identifying users</a>
       </li>
       <li{% if activesub == "interruption" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/interruption-card">Interruption card</a>
