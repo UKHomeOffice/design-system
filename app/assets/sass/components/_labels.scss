@@ -1,27 +1,49 @@
-@mixin label ($label-background: $panel-colour, $label-border: $secondary-text-colour, $label-text: $text-colour) {
+// @mixin label ($label-background: $panel-colour, $label-border: $secondary-text-colour, $label-text: $text-colour) {
+//     background: $label-background;
+//     color: $white;
+//     font-size: 17px;
+//     display: inline-block;
+//     line-height: 1;
+//     padding: 4px 5px 3px 5px;
+//     margin: 0 calc(2 * #{5px}) 5px 10px;
+//     text-align: left;
+//     text-decoration: none;
+//     font-size: 1rem;
+//     font-weight: normal;
+// }
+@mixin label ($label-background: #DEE0E2, $label-border: #CBCBCB, $label-text: #0B0C0C) {
     background: $label-background;
-    color: $white;
-    font-size: 17px;
+    color: #FFF;
     display: inline-block;
     line-height: 1;
     padding: 4px 5px 3px 5px;
-    margin: 0 calc(2 * #{5px}) 5px 10px;
+    margin: 0 calc(2 * #{5px}) 5px 5px;
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
     font-weight: normal;
 }
 .label {
-    @include label(#5c6367, $text-colour)
+    @include label(#6F777B, #0B0C0C)
 }
+// .label {
+//     @include label(#5c6367, $text-colour)
+// }
 .label--white {
     @include label($page-colour)
     color: $text-colour;
     border: 1px solid $border-colour;
 }
 .label--blue {
-    @include label($link-colour, $link-colour)
+    @include label(#005EA5, #005EA5)
 }
+.label--green {
+    @include label(#00703c, #00703c)
+}
+
+// .label--blue {
+//     @include label($link-colour, $link-colour)
+// }
 
 .label--red {
     @include label($red, $red)
