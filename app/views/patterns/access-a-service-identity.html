@@ -10,26 +10,103 @@ Check and confirm - Home Office design system
 
 {% include "includes/left-pane__patterns.html" %}
 
+
 <div class="app-pane__content">
   <main class="app-content" id="main-content">
 
     <div class="app-prose-scope">
 
-      <span class="govuk-caption-xl">Help users to</span>
-      <h1 class="heading-section">Access a service: with identity documents
-      </h1>
-      <p class="govuk-body" style="margin-top: -2.5em;">Also known as Authenticate or Identifying Users<p>
+      <h1 class="heading-section">
+        <span class="govuk-caption-xl">
+          Help users to
+        </span>
+        Access a service: with identity documents
+        <p class="govuk-body govuk-!-font-size-16">Also known as authenticate or identifying users</p>
 
-      <div>
-        <strong class="govuk-tag govuk-!-margin-top-4 govuk-!-margin-bottom-2">Experimental</strong>
-        <p class="govuk-body">This pattern is currently experimental because <a href="/community">more research</a> is needed to validate it. </p>
-      </div>
+        <div>
+          <strong class="label--blue govuk-!-margin-top-4 govuk-!-margin-bottom-2 govuk-!-padding-bottom-1" >
+            Experimental
+          </strong>
+          <p class="govuk-body">This pattern is currently experimental because <a href="/community">more research</a> is needed to validate it. </p>
+        </div>
+        </h1>
 
-      <p class="govuk-body-l">Let users access a service in a secure way by authenticating themselves with their identity documents.</p>
+        <p class="govuk-body">Let users access a service in a secure way by authenticating themselves with their identity documents.</p>
 
       <div class="example example-images confirmation" style="margin-bottom: 2em;">
-        <img src="{{ asset_path }}/images/image-guidance-brp.svg" class="confirm-desktop" alt="An example of an illustrative image of a biometric residence permit card">
-        <img src="{{ asset_path }}/images/image-guidance-brp.svg" class="confirmation confirm-mobile" alt="An example of an illustrative image of a biometric residence permit card">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Which identity document are you using?
+              </h1>
+            </legend>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  Passport
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  National identity card
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                  Biometric residence card
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                  Biometric residence permit
+                </label>
+              </div>
+          </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What is a biometric residence card?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <p class="govuk-body">You have a biometric residence card if it says either:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>'Residence card at the top'</li>
+              <li>'Residence card of a family member of a union citizen' at the bottom'</li>
+              <li>'Residence card issued under EEA regulations' at the bottom'</li>
+              <li>'EU right to reside' on the back</li>
+              <li>'Permanent residence','EU family member' or 'Derivative residence' at the bottom</li>
+            </ul>
+          </div>
+        </details>
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What is a biometric residence permit?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <p class="govuk-body">You have a biometric residence permit if it shows your:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>name, date and place of birth</li>
+              <li>fingerprints and a photo of your face (your biometric information)</li>
+              <li>immigration status and any conditions of your stay</li>
+            </ul>
+          </div>
+        </details>
       </div>
 
        <h2 id="when-to-use-this-pattern" class="govuk-heading-m">When to use this pattern</h2>
@@ -44,8 +121,10 @@ Check and confirm - Home Office design system
         </ul>
 
       <h2 id="research" class="govuk-heading-m">Research</h2>
+        <p class="govuk-body">More research is needed on this pattern.</p>
         <p class="govuk-body">In research, it has been shown to be confusing to users which document they should select in order to verify themselves. For example, they may have used the update your details service and not understand that they will now need to use these new details, rather than the original document they may have used to previously authenticate themselves.</p>
-        <p class="govuk-body">When using the biometric identity permit and card as one of the identifying documents, research has shown that there is the potential for confusion over which one to choose. Users tend to get confused about which document they have. Further research is needed on this.</p>
+        <p class="govuk-body">When using the biometric identity permit and card as one of the identifying documents, research has shown that there is the potential for confusion over which one to choose. Users tend to get confused about which document they have.</p>
+        <p class="govuk-body">If you've used this pattern in your service, please get in touch to share your research findings.</p>
 
 
       <div class="contact-us">
