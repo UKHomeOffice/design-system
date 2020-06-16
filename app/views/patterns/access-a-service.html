@@ -3,7 +3,7 @@
 {% set activesub = "auth" %}
 
 {% block pageTitle %}
-Access a Service - Home Office design system
+Access a service - Home Office design system
 {% endblock %}
 
 {% block content %}
@@ -15,26 +15,34 @@ Access a Service - Home Office design system
 
     <div class="app-prose-scope">
 
-      <h1 class="heading-section">
-        <span class="govuk-caption-xl">
-          Help users to
-        </span>
-        Access a service
-        <p class="govuk-body govuk-!-font-size-16">Also known as authenticate or identifying users</p>
-        </h1>
+<!-- ASK USERS / HELP USERS / PAGES -->
+      <!-- <span class="govuk-caption-xl">Ask users for</span> -->
+      <span class="govuk-caption-xl">Help users to</span>
+      <!-- <span class="govuk-caption-xl">Pages</span> -->
 
-        <p class="govuk-body">Let users access a service in a secure way by authenticating themselves with their identity documents.</p>
+<!-- PATTERN NAME -->
+      <h1 class="heading-section">Access a service
+      <p>Also known as authenticate or identifying users</p>
+      <div>
+      <!-- <strong class="label--blue govuk-!-margin-top-4">EXPERIMENTAL</strong>
+      <br>
+      <p class="govuk-body">This pattern is currently experimental because <a href="/community">more research</a> is needed to validate it.</p> -->
+      </div>
+      </h1>
+<!--ONE LINE DESCRIPTION  -->
+      <p class="govuk-body-l">Let users access a service in a secure way by authenticating themselves with their identity documents.</p>
 
+<!--OVERVIEW  -->
       <h2 id="overview" class="govuk-heading-m">Overview</h2>
-      <p class="govuk-body">Most one-time services won't need to authenticate their users. When a service does need to verify a user’s identity, it needs to balance ease of access with keeping a service and its user data secure. You should think about this early on when designing your service.</p>
-      <p class="govuk-body">You might want to authenticate users if:</p>
+      <p>Most one-time services won't need to authenticate their users. When a service does need to verify a user’s identity, it needs to balance ease of access with keeping a service and its user data secure. You should think about this early on when designing your service.</p>
+      <p>You might want to authenticate users if:</p>
       <ul class="govuk-list govuk-list--bullet">
         <li>your service allows users to save and complete a transaction at another time</li>
         <li>a user can check the status of a transaction</li>
       </ul>
 
-      <h3 class="govuk-heading-s">Authentication is not the same as identity assurance.</h3>
-      <p class="govuk-body">Identity assurance confirms the true identity of a user. The checks are usually done before confirming a users suitability for something. Identity assurance can consist of:</p>
+      <h4 class="govuk-heading-s">Authentication is not the same as identity assurance.</h4>
+      <p>Identity assurance confirms the true identity of a user. The checks are usually done before confirming a users suitability for something. Identity assurance can consist of:</p>
       <ul class="govuk-list govuk-list--bullet">
         <li>confirming the user is human</li>
         <li>confirming the validity of information and documents</li>
@@ -42,8 +50,9 @@ Access a Service - Home Office design system
         <li>checking for warnings about a user</li>
       </ul>
 
+<!--VARIATIONS  -->
       <h2 id="variations" class="govuk-heading-m">Variations</h2>
-      <p class="govuk-body">There are several ways that you can help users access a service securely:</p>
+      <p>There are several ways that you can help users access a service securely:</p>
       <ul class="govuk-list govuk-list--bullet">
         <li><a href="/patterns/access-a-service-identity">with identity documents</a></li>
         <li><a href="/patterns/access-a-service-personal">with personal details</a></li>
@@ -52,20 +61,19 @@ Access a Service - Home Office design system
       </ul>
 
       <p>You can also authenticate users using <a href="https://www.gov.uk/government/publications/introducing-govuk-verify/introducing-govuk-verify">GOV.UK Verify</a>.</p>
-      <p>Don’t use National Insurance numbers to verify a user’s identity. <a href="https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud#protecting-your-service-against-fraud">Further guidance on National Insurance numbers and fraud can be found in the service manual</a></p>
+      <p>Don’t use National Insurance numbers to verify a user’s identity. <a href="https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud#protecting-your-service-against-fraud">Further guidance on National Insurance numbers and fraud can be found in the service manual</a>.</p>
       <p>You should consult a Home Office security specialist as they can advise you on the type of authentication that’s right for your service.</p>
 
       <br>
 
+<!--CONTACT US  -->
       <div class="contact-us">
        <h2 class="govuk-heading-m">Get in touch</h2>
-       <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system">GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+       <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system" target=blank>GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
      </div>
 
     </div>
-
   </main>
 </div>
-
 
 {% endblock %}
