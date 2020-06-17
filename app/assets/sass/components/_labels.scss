@@ -40,10 +40,14 @@
 .label--green {
     @include label(#00703c, #00703c)
 }
-
-// .label--blue {
-//     @include label($link-colour, $link-colour)
-// }
+.label--experimental {
+    @include label(#005EA5, #005EA5)
+    margin: 0px;
+}
+.label--recommended {
+    @include label(#00703c, #00703c)
+    margin: 0px;
+}
 
 .label--red {
     @include label($red, $red)
