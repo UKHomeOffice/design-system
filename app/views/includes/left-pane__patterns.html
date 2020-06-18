@@ -4,6 +4,15 @@
       <li{% if activesub == "check" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/confirmation-loop">Check and confirm</a>
       </li>
+      <li{% if activesub == "confirmation-overview" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/confirmation-overview">Confirmation</a>
+      </li>
+      <li{% if activesub == "confirmation-furtheractions" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/confirmation-furtheractions">Confirmation: Further actions</a>
+      </li>
+      <li{% if activesub == "confirmation-accountcreation" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/confirmation-accountcreation">Confirmation: Account creation</a>
+      </li>
       <li{% if activesub == "help" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/help">Contextual help</a>
       </li>
@@ -37,6 +46,7 @@
       <li{% if activesub == "upload" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/upload-file">Uploading (adding) files</a>
       </li>
-    </ul>
+
+</ul>
   </nav>
 </div>
