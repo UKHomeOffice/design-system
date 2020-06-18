@@ -88,3 +88,14 @@
     font-size: 32px;
   }
 }
+
+// dashed list_dashed
+
+.list_dashed {
+  list-style-type: none;
+}
+
+.list-item--dashed {
+  position: absolute;
+  margin-left: -20px;
+}
