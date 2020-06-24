@@ -1,7 +1,7 @@
 <div class="app-pane__subnav app-hide-mobile">
   <nav class="app-subnav">
 
-    <h4 class="app-subnav__theme">Ask user for…</h4>
+    <h4 class="app-subnav__theme">Ask users for…</h4>
     <ul class="app-subnav__section">
       <li{% if activesub == "addresses" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/addresses">Addresses</a>
@@ -29,10 +29,10 @@
             <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-personal-details">— with personal details</a>
           </li>
           <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item"{% endif %}>
-            <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-reference-number">— with reference numbers</a>
+            <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-reference-numbers">— with reference numbers</a>
           </li>
           <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item"{% endif %}>
-            <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-security-code">— with security codes</a>
+            <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-security-codes">— with security codes</a>
           </li>
         </ul>
       </li> -->
@@ -67,6 +67,10 @@
 
       <li{% if activesub == "stop-and-think" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/stop-and-think">Stop and think</a>
+      </li>
+
+      <li{% if activesub == "upload" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/upload-files">Upload files</a>
       </li>
     </ul>
 
