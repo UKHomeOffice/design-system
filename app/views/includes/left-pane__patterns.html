@@ -19,23 +19,29 @@
         <a class="app-subnav__link govuk-link" href="/patterns/add-multiple-things">Add multiple things</a>
       </li>
 
-      <!-- <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+      <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-beta.html">Access a service</a>
+
         <ul class="app-subnav__section app-subnav__section--nested">
-          <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item"{% endif %}>
+
+          <li{% if activenest == "identity" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
             <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-identity-documents">— with identity documents</a>
           </li>
-          <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item"{% endif %}>
+
+          <li{% if activenest == "personal" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
             <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-personal-details">— with personal details</a>
           </li>
-          <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item"{% endif %}>
+
+          <li{% if activenest == "reference" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
             <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-reference-numbers">— with reference numbers</a>
           </li>
-          <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item"{% endif %}>
+
+          <li{% if activenest == "codes" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
             <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-security-codes">— with security codes</a>
           </li>
+          
         </ul>
-      </li> -->
+      </li>
 
       <li{% if activesub == "check-confirm" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/check-and-confirm-details">Check and confirm details</a>
