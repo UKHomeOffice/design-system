@@ -15,10 +15,6 @@
         <a class="app-subnav__link govuk-link" href="/patterns/access-a-service">Access a service</a>
       </li>
 
-      <li{% if activesub == "add-multiple-things" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/add-multiple-things">Add multiple things</a>
-      </li>
-
       <!-- <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-beta.html">Access a service</a>
 
@@ -42,6 +38,11 @@
 
         </ul>
       </li> -->
+
+      <li{% if activesub == "add-multiple-things" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/add-multiple-things">Add multiple things</a>
+      </li>
+
 
       <li{% if activesub == "check-confirm" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/check-and-confirm-details">Check and confirm details</a>

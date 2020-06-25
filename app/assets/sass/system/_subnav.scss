@@ -59,10 +59,6 @@
   .app-subnav__section--nested .app-subnav__link  {
     padding-left: govuk-spacing(4);
     font-weight: 400;
-
-    &:active  {
-      font-weight: 600 !important;
-    }
   }
 
   .app-subnav__theme {
