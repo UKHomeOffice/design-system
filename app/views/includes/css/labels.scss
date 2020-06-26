@@ -25,6 +25,10 @@
     @include label(#00703c, #00703c)
 }
 
+.label--green {
+    @include label(#00703c, #00703c)
+}
+
 .label--red {
     @include label(#B10E1E, #B10E1E)
 }

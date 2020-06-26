@@ -1,35 +1,71 @@
 <div class="app-pane__subnav app-hide-mobile">
   <nav class="app-subnav">
+
+    <h4 class="app-subnav__theme">Ask users for…</h4>
     <ul class="app-subnav__section">
-      <li{% if activesub == "check" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/confirmation-loop">Check and confirm</a>
+      <li{% if activesub == "addresses" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/addresses">Addresses</a>
       </li>
-      <li{% if activesub == "help" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/help">Contextual help</a>
+    </ul>
+
+    <h4 class="app-subnav__theme">Help users to…</h4>
+    <ul class="app-subnav__section">
+
+      <li{% if activesub == "access-a-service" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/access-a-service">Access a service</a>
       </li>
-      <li{% if activesub == "enquiry" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/enquiry">Enquiry form</a>
+
+      <!-- <li{% if activesub == "access-a-service-beta" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-beta.html">Access a service</a>
+
+        <ul class="app-subnav__section app-subnav__section--nested">
+
+          <li{% if activenest == "identity" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+            <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-identity-documents">— with identity documents</a>
+          </li>
+
+          <li{% if activenest == "personal" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+            <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-personal-details">— with personal details</a>
+          </li>
+
+          <li{% if activenest == "reference" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+            <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-reference-numbers">— with reference numbers</a>
+          </li>
+
+          <li{% if activenest == "codes" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+            <a class="app-subnav__link govuk-link" href="/patterns/access-a-service-with-security-codes">— with security codes</a>
+          </li>
+
+        </ul>
+      </li> -->
+
+      <li{% if activesub == "add-multiple-things" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/add-multiple-things">Add multiple things</a>
       </li>
+
+
+      <li{% if activesub == "check-confirm" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/check-and-confirm-details">Check and confirm details</a>
+      </li>
+
+      <li{% if activesub == "information-on-document" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/find-information-on-a-document">Find information on a document</a>
+      </li>
+
+      <li{% if activesub == "get-more-details" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/get-more-details">Get more details</a>
+      </li>
+
+      <li{% if activesub == "make-an-enquiry" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/make-an-enquiry">Make an enquiry</a>
+      </li>
+
       <!-- <li{% if activesub == "error" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/error-pages">Error pages</a>
       </li> -->
-      <li{% if activesub == "guide-image" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/guidance-image">Guidance images</a>
-      </li>
-      <li{% if activesub == "auth" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/identifying-users">Identifying users</a>
-      </li>
-      <li{% if activesub == "interruption" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/interruption-card">Interruption card</a>
-      </li>
-      <li{% if activesub == "leave" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/sign-out">Leaving a service</a>
-      </li>
-      <li{% if activesub == "modal" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/modal">Modal window</a>
-      </li>
-      <li{% if activesub == "loops" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/multiple-loops">Multiple loops</a>
+
+      <li{% if activesub == "sign-out" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/sign-out">Sign out</a>
       </li>
       <li{% if activesub == "nationality" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/nationality">Nationality</a>
@@ -37,9 +73,26 @@
       <li{% if activesub == "postcode" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/postcode">Postcode lookup</a>
       </li>
+
+      <li{% if activesub == "stop-and-think" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/stop-and-think">Stop and think</a>
+      </li>
+
       <li{% if activesub == "upload" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/upload-file">Uploading (adding) files</a>
+        <a class="app-subnav__link govuk-link" href="/patterns/upload-files">Upload files</a>
       </li>
     </ul>
+
+
+    <!-- I've commented out this final pattern theme as we do not have the confirmation page complete -->
+
+    <!-- <h4 class="app-subnav__theme">Pages…</h4>
+    <ul>
+      <li{% if activesub == "title" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/correct-link">Pattern name</a>
+      </li>
+    </ul> -->
+
+
   </nav>
 </div>
