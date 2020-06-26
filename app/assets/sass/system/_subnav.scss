@@ -46,11 +46,17 @@
     font-weight: bold;
   }
 
+  .app-subnav__section--nested .app-subnav__section-item--current .app-subnav__link {
+    border-left-color: $govuk-link-colour;
+    font-weight: bold;
+  }
+
+
   .app-subnav__section--nested {
     margin-bottom: 0;
   }
 
-  .app-subnav__section--nested .app-subnav__link {
+  .app-subnav__section--nested .app-subnav__link  {
     padding-left: govuk-spacing(4);
     font-weight: 400;
   }
