@@ -3,7 +3,7 @@
 {% set activesub = "nationality" %}
 
 {% block pageTitle %}
-Nationality - Home Office design system
+Patterns template - Home Office design system
 {% endblock %}
 
 {% block content %}
@@ -21,22 +21,24 @@ Nationality - Home Office design system
       <!-- <span class="govuk-caption-xl">Pages</span> -->
 
 <!-- PATTERN NAME -->
-      <h1 class="heading-section">Nationality</h1>
-      <!-- <p>Also known as </p> -->
+
+      <h1 class="heading-section heading-pattern">Nationality</h1>
+      <!-- <p class="also-known-as">Also known as: </p> -->
 
       <div>
-      <p><strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong>
-      <br>
-      This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it.</p>
+        <p class="research-status">
+          <!-- <strong class="label--recommended govuk-!-margin-top-0 govuk-!-margin-bottom-2">RECOMMENDED</strong><br> -->
+          <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
+          This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it.
+        </p>
       </div>
 
 <!--ONE LINE DESCRIPTION  -->
-      <p class="govuk-body-l">Use this pattern when your service needs to ask users for their nationality.</p>
+      <p class="govuk-body-l one-line-description">Use this pattern when your service needs to ask users for their nationality.</p>
 
       <h2 class="govuk-heading-s govuk-!-font-size-19 govuk-!-margin-top-5">Country of nationality</h2>
       <div class="example example-country-of-nationality">
         <img src="{{ asset_path }}/images/nationality-country-example.svg" class="confirm-desktop" alt="An illustrative example of a form asking users for their country of nationality">
-        <!-- <img src="{{ asset_path }}/images/nationality-country-example.svg" class="confirmation confirm-mobile" alt="An illustrative example of a form asking users for their country of nationality"> -->
       </div>
 
       <br>
@@ -44,7 +46,6 @@ Nationality - Home Office design system
       <h2 class="govuk-heading-s govuk-!-font-size-19 govuk-!-margin-top-5">Dual nationality</h2>
       <div class="example example-dual-nationality">
         <img src="{{ asset_path }}/images/nationality-dual-nationality-example.svg" class="confirm-desktop" alt="An illustrative example of a flow for a form asking users if they have dual nationality followed by asking users for other country of their nationality">
-        <!-- <img src="{{ asset_path }}/images/nationality-dual-nationality-example.svg" class="confirmation confirm-mobile" alt="An illustrative example of a flow for a form asking users if they have dual nationality followed by asking users for other country of their nationality"> -->
       </div>
 
 <!-- WHEN TO USE PATTERN -->
@@ -104,20 +105,21 @@ Nationality - Home Office design system
       </ul>
 
 <!-- ACCESSIBILITY -->
-            <h2 class="govuk-heading-m">Accessibility</h2>
-            <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
+      <h2 class="govuk-heading-m">Accessibility</h2>
+      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
 <!-- RELATED PATTERNS - OPTIONAL -->
-      <h2 class="govuk-heading-m">Related</h2>
-      <p>Discussions around this pattern are also currently in the <a href="https://github.com/alphagov/govuk-design-system-backlog/issues/73">GOV.UK Design System backlog</a>.<p>
+      <!-- <h2 class="govuk-heading-m">Related patterns</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="upload-file">Add a file</a></li>
+      </ul> -->
 
       <div class="contact-us">
        <h2 class="govuk-heading-m">Get in touch</h2>
-       <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system" target=blank>GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+       <p>If you've got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system" target=blank>GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
      </div>
 
     </div>
   </main>
 </div>
-
 {% endblock %}
