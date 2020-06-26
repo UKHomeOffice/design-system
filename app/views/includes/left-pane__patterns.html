@@ -1,12 +1,22 @@
 <div class="app-pane__subnav app-hide-mobile">
   <nav class="app-subnav">
 
+<!-- ASK USERS FOR -->
+
     <h4 class="app-subnav__theme">Ask users for…</h4>
     <ul class="app-subnav__section">
+
       <li{% if activesub == "addresses" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/addresses">Addresses</a>
       </li>
+
+      <li{% if activesub == "brp" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/brp">Biometric residence card or permit details</a>
+      </li>
+
     </ul>
+
+<!-- HELP USERS TO -->
 
     <h4 class="app-subnav__theme">Help users to…</h4>
     <ul class="app-subnav__section">
@@ -64,14 +74,16 @@
         <a class="app-subnav__link govuk-link" href="/patterns/error-pages">Error pages</a>
       </li> -->
 
-      <li{% if activesub == "sign-out" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/sign-out">Sign out</a>
-      </li>
       <li{% if activesub == "nationality" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/nationality">Nationality</a>
       </li>
-      <li{% if activesub == "postcode" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/postcode">Postcode lookup</a>
+
+      <li{% if activesub == "sign-out" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/sign-out">Sign out</a>
+      </li>
+
+      <li{% if activesub == "stop-timing-out" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/stop-and-think">Stop a service timing out</a>
       </li>
 
       <li{% if activesub == "stop-and-think" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
@@ -83,6 +95,7 @@
       </li>
     </ul>
 
+<!-- PAGES -->
 
     <!-- I've commented out this final pattern theme as we do not have the confirmation page complete -->
 
