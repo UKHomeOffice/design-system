@@ -14,6 +14,10 @@
         <a class="app-subnav__link govuk-link" href="/patterns/brp">Biometric residence card or permit details</a>
       </li>
 
+      <li{% if activesub == "nationality" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/nationality">Nationality</a>
+      </li>
+
     </ul>
 
 <!-- HELP USERS TO -->
@@ -73,10 +77,6 @@
       <!-- <li{% if activesub == "error" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/error-pages">Error pages</a>
       </li> -->
-
-      <li{% if activesub == "nationality" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/nationality">Nationality</a>
-      </li>
 
       <li{% if activesub == "sign-out" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/sign-out">Sign out</a>
