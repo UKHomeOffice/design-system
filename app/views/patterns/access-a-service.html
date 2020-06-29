@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+{% set active = "patterns" %}
+{% set activesub = "access-a-service" %}
+
+{% block pageTitle %}
+Access a service - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/left-pane__patterns.html" %}
+
+<div class="app-pane__content">
+  <main class="app-content" id="main-content">
+
+    <div class="app-prose-scope">
+
+<!-- ASK USERS FOR / HELP USERS TO / PAGES -->
+      <!-- <span class="govuk-caption-xl">Ask users for</span> -->
+      <span class="govuk-caption-xl">Help users to</span>
+      <!-- <span class="govuk-caption-xl">Pages</span> -->
+
+<!-- PATTERN NAME -->
+      <h1 class="heading-section heading-pattern">Access a service</h1>
+      <p class="also-known-as">Also known as: authentication</p>
+
+      <!-- <div>
+        <p class="research-status">
+          <strong class="label--recommended govuk-!-margin-top-0 govuk-!-margin-bottom-2">RECOMMENDED</strong><br>
+          <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
+          This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it.
+        </p>
+      </div> -->
+
+<!-- ONE LINE DESCRIPTION -->
+      <p class="govuk-body-l one-line-description">Let users access your service in a secure way.</p>
+
+      <h2 class="govuk-heading-m">When to use authentication</h2>
+      <p>Authentication lets users verify who they are.</p>
+      <p>Most one-time services won't need to authenticate their users. When a service does need to verify a user’s identity, it needs to balance ease of access with keeping a service and its user data secure. You should think about this early on when designing your service.</p>
+      <p>You might want to authenticate users if:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your service allows users to save and complete a transaction at another time</li>
+        <li>a user can check the status of a transaction</li>
+        <li>a user will use a service multiple times</li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Authentication examples</h2>
+      <p>You can authenticate users using reference numbers, personal details, codes sent in SMS and emails, and using GOV.UK Verify. Don’t use National Insurance numbers to verify a user’s identity. <a href="https://www.gov.uk/service-manual/technology/protecting-your-service-against-fraud#protecting-your-service-against-fraud">Further guidance on National Insurance numbers and fraud can be found in the service manual</a>.</p>
+      <p>You should consult a Home Office security specialist as they can advise you on the type of authentication that’s right for your service.</p>
+
+      <details style="margin-top: 10px;">
+        <summary>Example - authentication using a reference number</summary>
+        <p></p>
+        <div class="example example-images confirmation">
+          <h2 class="govuk-visually-hidden" id="example-component">Authentication using a reference number</h2>
+          <p>A reference number is a simple way to let users access a service. For example when a user saves progress and needs to return to complete a service.</p>
+          <img src="{{ asset_path }}/images/auth.svg" class="confirm-desktop" alt="">
+          <img src="{{ asset_path }}/images/auth-mobile.svg" class="confirmation confirm-mobile" alt="">
+        </div>
+      </details>
+
+      <details style="margin-top: 10px;">
+        <summary>Example - knowledge based authentication</summary>
+        <div class="example example-images confirmation">
+          <h2 class="govuk-visually-hidden" id="example-component">Knowledge based authentication</h2>
+          <p>Use knowledge based authentication when you need to confirm a users identity.</p>
+          <img src="{{ asset_path }}/images/auth-knowledge-based.svg" class="confirm-desktop" alt="">
+          <img src="{{ asset_path }}/images/auth-knowledge-based-mobile.svg" class="confirmation confirm-mobile" alt="">
+        </div>
+      </details>
+
+      <details class="details-margin-btm" style="margin-top: 10px; ">
+        <summary>Example - two-factor authentication</summary>
+        <div class="example example-images confirmation">
+          <h2 class="govuk-visually-hidden" id="example-component">Two-factor authentication</h2>
+          <p>Two-factor authentication can be used when a service stores user data and allows users to access it. Two-factor helps protect the user and the service. There are three types of authentication: something a user knows (password, pin), something a user has (phone, fob), and a biometric like a fingerprint or voice.</p>
+          <img src="{{ asset_path }}/images/auth-2factor.svg" class="confirm-desktop" alt="">
+          <img src="{{ asset_path }}/images/auth-2factor-mobile.svg" class="confirmation confirm-mobile" alt="">
+        </div>
+      </details>
+
+      <h2 class="govuk-heading-m">Authentication is not the same as identity assurance</h2>
+      <p>Identity assurance confirms the true identity of a user. The checks are usually done before confirming a users suitability for something. Identity assurance can consist of:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>confirming the user is a human</li>
+        <li>confirming the validaty of information and documents</li>
+        <li>fraud checks</li>
+        <li>checking for warnings about a user</li>
+      </ul>
+
+      <h2 class="govuk-heading-m">User accounts</h2>
+      <p>User accounts are a form of authentication that you should try to avoid. Services should be public facing and not start behind a user log in. This is essential for users searching for the government service they need.</p>
+      <h4 class="govuk-heading-s">Making users create accounts when not needed:</h4>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>creates a barrier for users and can reduce completion rates</li>
+        <li>forces users to keep track of more logins then neccesary</li>
+        <li>burdens teams with databases that are difficult to build and maintain</li>
+        <li>increases the amount of redundant databases - which is expensive and a security risk</li>
+      </ul>
+
+      <h4 class="govuk-heading-s">Only make users create an account if:</h4>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>users access a service frequently</li>
+        <li>users need it - don't force them to create an account until necessary</li>
+        <li>a service needs to audit user behaviour</li>
+      </ul>
+
+      <div class="contact-us">
+       <h2 class="govuk-heading-m">Get in touch</h2>
+       <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system">GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+     </div>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}
