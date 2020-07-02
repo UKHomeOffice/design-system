@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 {% set active = "patterns" %}
-{% set activesub = "postcode" %}
+{% set activesub = "addresses" %}
 
 {% block pageTitle %}
-Postcode lookup - Home Office design system
+Addresses - Home Office design system
 {% endblock %}
 
 {% block content %}
@@ -15,9 +15,25 @@ Postcode lookup - Home Office design system
 
     <div class="app-prose-scope">
 
-      <span class="govuk-caption-xl">Patterns</span>
-      <h1 class="heading-section">Postcode lookup</h1>
-      <p class="govuk-body-l">Allow users to find an address using a postcode lookup.</p>
+<!-- ASK USERS FOR / HELP USERS TO / PAGES -->
+      <span class="govuk-caption-xl">Ask users for</span>
+      <!-- <span class="govuk-caption-xl">Help users to</span> -->
+      <!-- <span class="govuk-caption-xl">Pages</span> -->
+
+<!-- PATTERN NAME -->
+      <h1 class="heading-section heading-pattern">Addresses</h1>
+      <p class="also-known-as">Also known as: postcode lookup</p>
+
+      <!-- <div>
+        <p class="research-status">
+          <strong class="label--recommended govuk-!-margin-top-0 govuk-!-margin-bottom-2">RECOMMENDED</strong><br>
+          <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
+          This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it.
+        </p>
+      </div> -->
+
+<!-- ONE LINE DESCRIPTION -->
+      <p class="govuk-body-l one-line-description">Allow users to find an address using a postcode lookup.</p>
 
       <div class="example example-images confirmation" style="margin-bottom: 2em;">
         <img src="{{ asset_path }}/images/postcode-lookup.svg" class="confirm-desktop" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
@@ -50,7 +66,7 @@ Postcode lookup - Home Office design system
 
       <div class="contact-us">
        <h2 class="govuk-heading-m">Get in touch</h2>
-       <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system" target=blank>GitHub</a> or email the design system working group on <a href="mailto:designops@digital.homeoffice.gov.uk">designops@digital.homeoffice.gov.uk</a>.</p>
+       <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system">GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
      </div>
 
     </div>
