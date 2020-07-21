@@ -1,0 +1,86 @@
+<style>
+  .govuk-heading-xl, label, button, summary, p, ul, li {
+  font-family: GDS Transport Website !important;
+  }
+
+</style>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column govuk-styles">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Which identity document are you using?
+            </h1>
+          </legend>
+
+          <div class="govuk-radios govuk-radios--column">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="passport" name="changed-name" type="radio" value="passport">
+              <label class="govuk-label govuk-radios__label" for="passport">
+                Passport
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="national-insurance-card" name="changed-name" type="radio" value="national-insurance-card">
+              <label class="govuk-label govuk-radios__label" for="national-insurance-card">
+                National insurance card
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="biometric-residence-card" name="changed-name" type="radio" value="biometric-residence-card">
+              <label class="govuk-label govuk-radios__label" for="biometric-residence-card">
+                Biometric residence card
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="biometric-residence-permit" name="changed-name" type="radio" value="biometric-residence-permit">
+              <label class="govuk-label govuk-radios__label" for="biometric-residence-permit">
+                Biometric residence permit
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            What is biometric residence card?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p class="govuk-body">You have a biometric residence card if it says either:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>‘Residence card at the top’</li>
+            <li>‘Residence card of a family member of a union citizen’ at the bottom</li>
+            <li>‘Residence card issued under EEA regulations’ at the bottom</li>
+            <li>‘EU right to reside’ on the back</li>
+            <li>‘Permanent residence’, ‘EU family member’ or ‘Derivative residence’ at the bottom</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            What is biometric residence permit?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p class="govuk-body">You have a biometric residence permit if it shows your:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>name, date and place of birth</li>
+            <li>fingerprints and a photo of your face (your biometric information)</li>
+            <li>immigration status and any conditions of your stay</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </div>

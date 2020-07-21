@@ -35,9 +35,13 @@ Access a service with identity documents - Home Office design system
 
 <!-- ONE LINE DESCRIPTION -->
       <p class="govuk-body-l one-line-description">Let users access a service in a secure way by authenticating themselves with their identity documents.</p>
-      <div class="example example-images confirmation">
-        <img src="{{ asset_path }}/images/access-service-identity.svg" class="confirm-desktop" alt="An example of an authentication screen asking users which identity document they're using. Users can select from a radio list passport, national identity card, biometric residence card or biometric resistence permit. There is also the option to see more details with an explanation of what a biometric residence card or permit is.">
-        <img src="{{ asset_path }}/images/access-service-identity.svg" class="confirmation confirm-mobile" alt="An example of an authentication screen asking users which identity document they're using. Users can select from a radio list passport, national identity card, biometric residence card or biometric resistence permit. There is also the option to see more details with an explanation of what a biometric residence card or permit is.">
+      <!-- <div class="example example-images confirmation">
+        <img src="{{ asset_path }}/images/access-service-identity.svg" class="confirm-desktop" alt="An example of an authentication screen asking users which identity document they're using. Users can select from a radio list passport, national identity card, biometric residence card or biometric residence permit. There is also the option to see more details with an explanation of what a biometric residence card or permit is.">
+        <img src="{{ asset_path }}/images/access-service-identity.svg" class="confirmation confirm-mobile" alt="An example of an authentication screen asking users which identity document they're using. Users can select from a radio list passport, national identity card, biometric residence card or biometric residence permit. There is also the option to see more details with an explanation of what a biometric residence card or permit is.">
+      </div> -->
+      
+      <div class="example example-images">
+          {% include "includes/patterns/aas-identity-documents.html" %}
       </div>
 
 <!-- WHEN TO USE PATTERN -->
