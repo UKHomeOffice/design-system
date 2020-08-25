@@ -2,14 +2,7 @@
 
 module.exports = {
   stories: [
-    //'../components/*/spec/*.stories.@(js|mdx)', // This can be used if my PR is merged: https://github.com/storybookjs/storybook/pull/11531
-    '../components/back-link/spec/*.stories.mdx',
-    '../components/form/spec/*.stories.mdx',
-    '../components/link/spec/*.stories.mdx',
-    '../components/table/spec/*.stories.mdx',
-    '../components/tag/spec/*.stories.mdx',
-    '../styles/*.stories.mdx',
-    '../packages/components/src/components/**/*.stories.mdx'
+    '../components/*/spec/*.stories.@(js|mdx)'
   ],
   addons: [
     {
