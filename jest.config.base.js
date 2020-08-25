@@ -5,7 +5,7 @@ const path = require('path');
 /** @typedef {import('ts-jest')} */
 /** @type {import('@jest/types').Config.InitialOptions} */
 const config = {
-  preset: 'ts-jest',
+  preset: 'ts-jest/presets/js-with-babel',
   testEnvironment: 'jsdom',
   testURL: 'http://localhost/',
   setupFilesAfterEnv: [
@@ -20,6 +20,12 @@ const config = {
   ],
   snapshotSerializers: [
     'enzyme-to-json/serializer'
+  ],
+  transform: {
+    "^.+\\.jsx?$": 'babel-jest'
+  },
+  transformIgnorePatterns: [
+    'node_modules/\.pnpm/(?!@)'
   ],
   globals: {
     'ts-jest': {
