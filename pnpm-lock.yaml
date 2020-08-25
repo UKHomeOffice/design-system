@@ -84,8 +84,7 @@ importers:
     devDependencies:
       '@not-govuk/app-composer': 0.1.20_9758558ea92931c4ddad3287ec74247c
       '@not-govuk/client-renderer': 0.1.20_b9067f48172ccfe2e8a6dcb826dd865e
-      '@not-govuk/components': 0.1.20_510d91624cad7b0177cda579ac4ce26d
-      '@not-govuk/docs-components': 0.1.20_e82cbcd2fdb40001df8adde93dcfe212
+      '@not-govuk/components': 0.1.20_b9067f48172ccfe2e8a6dcb826dd865e
       '@not-govuk/engine': 0.1.20_3633d3221da0ac593e6db6f9b8d6668e
       '@not-govuk/server-renderer': 0.1.20_b9067f48172ccfe2e8a6dcb826dd865e
       '@not-govuk/webpack-config': 0.1.20_d8d7a1b06a544394e6972a4c22c84a46
@@ -111,7 +110,6 @@ importers:
       '@not-govuk/app-composer': ^0.1.0
       '@not-govuk/client-renderer': ^0.1.0
       '@not-govuk/components': ^0.1.0
-      '@not-govuk/docs-components': ^0.1.0
       '@not-govuk/engine': ^0.1.0
       '@not-govuk/server-renderer': ^0.1.0
       '@not-govuk/webpack-config': ^0.1.0
@@ -2904,6 +2902,19 @@ packages:
       react-router-dom: ^5.1.5
     resolution:
       integrity: sha512-tZZZta2ZMgKxq+B1kH+qsmOWc0dDp2WF+CnSb5W5jmyEq5fqtO1va0Ijo+mtQU1oEDtQ0jujZCi3FxLNSCb4dg==
+  /@not-govuk/anchor/0.1.20_f32e785fa5e199175d00c0f3e09c74b3:
+    dependencies:
+      '@not-govuk/component-helpers': 0.1.20
+      '@not-govuk/route-utils': 0.1.20_react-router-dom@5.2.0
+      react: 16.13.1
+      react-router-dom: 5.2.0_react@16.13.1
+    dev: true
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+      react-router-dom: ^5.1.5
+    resolution:
+      integrity: sha512-tZZZta2ZMgKxq+B1kH+qsmOWc0dDp2WF+CnSb5W5jmyEq5fqtO1va0Ijo+mtQU1oEDtQ0jujZCi3FxLNSCb4dg==
   /@not-govuk/app-composer/0.1.20_9758558ea92931c4ddad3287ec74247c:
     dependencies:
       '@not-govuk/route-utils': 0.1.20_react-router-dom@5.2.0
@@ -2922,6 +2933,20 @@ packages:
       '@not-govuk/component-helpers': 0.1.20
       '@not-govuk/docs-components': 0.1.20_6806832af14f47e790e63d480408df7c
       '@not-govuk/link': 0.1.20_e82cbcd2fdb40001df8adde93dcfe212
+      '@not-govuk/sass-base': 0.1.20
+      govuk-frontend: 3.7.0
+      react: 16.13.1
+    dev: true
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+      react-router-dom: '*'
+    resolution:
+      integrity: sha512-HZdYkTz1kzuMjSURzjLoCjJs6eX2Mo9HvWy/q2+BcOqLxELUnhMtqU4gU/7QIheirORbNZhcNUI2JBhlWv7Hhw==
+  /@not-govuk/back-link/0.1.20_f32e785fa5e199175d00c0f3e09c74b3:
+    dependencies:
+      '@not-govuk/component-helpers': 0.1.20
+      '@not-govuk/link': 0.1.20_f32e785fa5e199175d00c0f3e09c74b3
       '@not-govuk/sass-base': 0.1.20
       govuk-frontend: 3.7.0
       react: 16.13.1
@@ -2982,6 +3007,30 @@ packages:
       react-router-dom: ^5.1.5
     resolution:
       integrity: sha512-rfQEBZSz3hevc+70DK8BegGnBFQ/st+znUEqMR5opBsSMLhSb4VWfnuP/RqW65nsziZxPOWfbH97wwdAuIH4aA==
+  /@not-govuk/components/0.1.20_b9067f48172ccfe2e8a6dcb826dd865e:
+    dependencies:
+      '@not-govuk/back-link': 0.1.20_f32e785fa5e199175d00c0f3e09c74b3
+      '@not-govuk/forms': 0.1.20_0137bb454b6cc6611da3f99ce7cda70d
+      '@not-govuk/link': 0.1.20_f32e785fa5e199175d00c0f3e09c74b3
+      '@not-govuk/route-utils': 0.1.20_react-router-dom@5.2.0
+      '@not-govuk/sass-base': 0.1.20
+      '@not-govuk/tag': 0.1.20_react@16.13.1
+      formik: 2.1.5_react@16.13.1
+      qs: 6.9.4
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+      react-router: 5.2.0_react@16.13.1
+      react-router-dom: 5.2.0_react@16.13.1
+      url-parse: 1.4.7
+      validator: 12.2.0
+    dev: true
+    peerDependencies:
+      react: ^16.9.35
+      react-dom: ^16.9.8
+      react-router: ^5.1.7
+      react-router-dom: ^5.1.5
+    resolution:
+      integrity: sha512-rfQEBZSz3hevc+70DK8BegGnBFQ/st+znUEqMR5opBsSMLhSb4VWfnuP/RqW65nsziZxPOWfbH97wwdAuIH4aA==
   /@not-govuk/docs-components/0.1.20_6806832af14f47e790e63d480408df7c:
     dependencies:
       '@not-govuk/component-helpers': 0.1.20
@@ -2992,25 +3041,6 @@ packages:
       prismjs: 1.20.0
       prismjs-github: 1.0.0
       react: 16.13.1
-    dev: true
-    peerDependencies:
-      '@not-govuk/docs-components': '*'
-      '@storybook/addon-docs': ^6.0.0-rc.11
-      react: ^16.9.35
-      react-router-dom: '*'
-    resolution:
-      integrity: sha512-ZysAf7vsSD1c2KYFaCE/1Aldh2R2qrw3h1LCeZxg98b036iwIx5xiLM6ldUqCeOhsAbvLbTCrMXa7OvFwitmkg==
-  /@not-govuk/docs-components/0.1.20_e82cbcd2fdb40001df8adde93dcfe212:
-    dependencies:
-      '@not-govuk/component-helpers': 0.1.20
-      '@not-govuk/docs-components': 0.1.20_e82cbcd2fdb40001df8adde93dcfe212
-      '@not-govuk/route-utils': 0.1.20_react-router-dom@5.2.0
-      '@not-govuk/simple-table': 0.1.20_cf1e58f132140150c0e170c1b274217f
-      prettier: 2.0.5
-      prismjs: 1.20.0
-      prismjs-github: 1.0.0
-      react: 16.13.1
-      react-router-dom: 5.2.0_react@16.13.1
     dev: true
     peerDependencies:
       '@not-govuk/docs-components': '*'
@@ -3063,6 +3093,22 @@ packages:
       '@not-govuk/docs-components': 0.1.20_6806832af14f47e790e63d480408df7c
       '@not-govuk/sass-base': 0.1.20
       '@not-govuk/tag': 0.1.20_cf1e58f132140150c0e170c1b274217f
+      govuk-frontend: 3.7.0
+      react: 16.13.1
+      react-router-dom: 5.2.0_react@16.13.1
+    dev: true
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+      react-router-dom: '*'
+    resolution:
+      integrity: sha512-J21iv2a99K5m2pjmiORwMmd7iY/XKxY4j6/gglCxmj8x4NhU88Fdvy0nUU5hURa6IwWPk0KHunHydWrklFV7Kw==
+  /@not-govuk/link/0.1.20_f32e785fa5e199175d00c0f3e09c74b3:
+    dependencies:
+      '@not-govuk/anchor': 0.1.20_f32e785fa5e199175d00c0f3e09c74b3
+      '@not-govuk/component-helpers': 0.1.20
+      '@not-govuk/sass-base': 0.1.20
+      '@not-govuk/tag': 0.1.20_react@16.13.1
       govuk-frontend: 3.7.0
       react: 16.13.1
       react-router-dom: 5.2.0_react@16.13.1
@@ -3167,6 +3213,18 @@ packages:
     dependencies:
       '@not-govuk/component-helpers': 0.1.20
       '@not-govuk/docs-components': 0.1.20_6806832af14f47e790e63d480408df7c
+      '@not-govuk/sass-base': 0.1.20
+      govuk-frontend: 3.7.0
+      react: 16.13.1
+    dev: true
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-fqbfoljFK9+8WIgrK8IGpcSHwehGmIsjL+1bnwY4Rg6Q/AbfNJAzt6bx7WH0oDMxfm8CArr1eLsk+6HVXcnKGg==
+  /@not-govuk/tag/0.1.20_react@16.13.1:
+    dependencies:
+      '@not-govuk/component-helpers': 0.1.20
       '@not-govuk/sass-base': 0.1.20
       govuk-frontend: 3.7.0
       react: 16.13.1
