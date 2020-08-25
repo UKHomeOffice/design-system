@@ -18,6 +18,7 @@
   "devDependencies": {
     "@not-govuk/app-composer": "^0.1.0",
     "@not-govuk/client-renderer": "^0.1.0",
+    "@not-govuk/components": "^0.1.0",
     "@not-govuk/engine": "^0.1.0",
     "@not-govuk/server-renderer": "^0.1.0",
     "@not-govuk/webpack-config": "^0.1.0",
@@ -27,6 +28,7 @@
     "@types/react-router-dom": "^5.1.5",
     "@types/webpack-env": "^1.15.2",
     "bunyan": "^1.8.12",
+    "moment": "^2.27.0",
     "node-hot-loader": "^1.19.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -37,9 +39,6 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-middleware": "^3.7.2",
-    "webpack-hot-middleware": "^2.25.0",
-    "@not-govuk/components": "^0.1.0",
-    "@not-govuk/docs-components": "^0.1.0",
-    "moment": "^2.27.0"
+    "webpack-hot-middleware": "^2.25.0"
   }
 }
