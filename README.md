@@ -10,12 +10,12 @@ Welcome to your new project
 Your project is a monorepo managed via [pnpm]. You can build multiple
 packages from this one repository. Packages come in the following
 varieties:
-- [Applications] (found in `[apps/]`)
-- [Libraries] (found in `[lib/]`)
-- [Components] (found in `[components/]`)
+- [Applications] (found in [apps/])
+- [Libraries] (found in [lib/])
+- [Components] (found in [components/])
 
 **Note:** If you would like add more varieties you can do so by modifying
-your `[pnpm-workspaces.yaml]` and `[plopfile.js]`.
+your [pnpm-workspaces.yaml] and [plopfile.js].
 
 
 Getting started
@@ -39,7 +39,7 @@ To create a new package, simply run:
 npm run create
 ```
 
-This is all orchestrated from your `[plopfile.js]` so you can modify how
+This is all orchestrated from your [plopfile.js] so you can modify how
 it works.
 
 See: [PLOP]
@@ -82,7 +82,7 @@ Continuous Integration
 
 You project comes with configuration files for running Continuous
 Integration (CI) via [GitHub Actions]. These files are found in the
-`[.github/workflows]` directory.
+[.github/workflows] directory.
 
 If you add the required secrets to your GitHub repository, it is also
 possible to quickly set up Continuous Deployment (CD) for your
