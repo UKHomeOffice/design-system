@@ -1,0 +1,71 @@
+{
+  "scripts": {
+    "create": "plop",
+    "create:app": "plop app",
+    "create:component": "plop component",
+    "create:lib": "plop lib",
+    "all:build": "pnpm recursive run build",
+    "all:clean": "pnpm recursive run clean",
+    "all:publish": "pnpm -r publish --access public --filter ./components --filter ./components-internal --filter ./lib --filter ./lib-govuk --filter ./packages",
+    "build": "npm run build:storybook",
+    "clean": "npm run clean:storybook",
+    "preversion": "echo 'Warning: This should only be done on a fresh branch from master.'",
+    "version": "bash .npm/version.sh",
+    "postversion": "echo 'Done. You should now publish (with `npm run all:publish`), push your branch, push your tags and merge to master.'",
+    "distclean": "pnpm recursive exec -- rm -rf node_modules && rm -rf node_modules",
+    "start": "echo 'Error: This is the root of the monorepo, you should run `cd apps/YOUR_APP && npm start` or run `npm run storybook` to start Storybook.' && false",
+    "storybook": "start-storybook -p 9009",
+    "build:storybook": "build-storybook",
+    "clean:storybook": "rm -rf storybook-static",
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "test": "jest --coverage --json --outputFile=.jest-results.json"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^1.6.5",
+    "@not-govuk/components": "^0.1.0",
+    "@not-govuk/docs-components": "^0.1.0",
+    "@not-govuk/plop-pack": "^0.1.0",
+    "@not-govuk/storybook-preset": "^0.1.0",
+    "@storybook/addon-a11y": "^6.0.0-rc.11",
+    "@storybook/addon-actions": "^6.0.0-rc.11",
+    "@storybook/addon-docs": "^6.0.0-rc.11",
+    "@storybook/addon-jest": "^6.0.0-rc.11",
+    "@storybook/addon-knobs": "^6.0.0-rc.11",
+    "@storybook/addon-links": "^6.0.0-rc.11",
+    "@storybook/addon-storysource": "^6.0.0-rc.11",
+    "@storybook/addon-viewport": "^6.0.0-rc.11",
+    "@storybook/addons": "^6.0.0-rc.11",
+    "@storybook/react": "^6.0.0-rc.11",
+    "@storybook/theming": "^6.0.0-rc.11",
+    "@types/jest": "^26.0.3",
+    "chromatic": "^5.0.0",
+    "jest": "^26.1.0",
+    "plop": "^2.7.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "name": "hods",
+  "version": "0.1.0",
+  "description": "The design system for the UK Home Office.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/hods-poc.git"
+  },
+  "keywords": [
+    "react-components"
+  ],
+  "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UKHomeOffice/hods-poc/issues"
+  },
+  "homepage": "https://github.com/UKHomeOffice/hods-poc#readme"
+}

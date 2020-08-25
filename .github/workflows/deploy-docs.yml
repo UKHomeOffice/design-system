@@ -1,0 +1,67 @@
+name: Deploy docs
+on:
+  - push
+jobs:
+  deploy_docs:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12
+
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        env:
+          cache-hash: ${{ hashFiles('pnpm-lock.yaml') }}
+        with:
+          path: ~/.pnpm-store
+          key: pnpm-os_${{ runner.os }}-node_${{ matrix.node }}-lock_${{ env.cache-hash }}
+          restore-keys: |
+            pnpm-os_${{ runner.os }}-node_${{ matrix.node }}-
+            pnpm-os_${{ runner.os }}-
+            pnpm-
+
+      - name: Pull dependencies
+        uses: pnpm/action-setup@v1.2.0
+        with:
+          version: 5.4.0
+          run_install: true
+
+      - name: Build docs
+        run: |
+          cd apps/docs/
+          npm run build
+
+      - name: Package docs
+        run: |
+          cd apps/docs/
+          npm run package:serverless
+          mkdir -p .netlify
+          cd .netlify
+          mkdir functions
+          cp -a ../.serverless/docs.zip functions/
+          echo "process.env['MODE'] = 'serverless'; module.exports = require('./dist/server/index.js');" > docs.js
+          zip -mv functions/docs.zip docs.js
+          mkdir publish
+          mv ../dist/public/entrypoints.json .
+          cp -a ../dist/public/ publish/public
+          mv entrypoints.json ../dist/public/
+          echo "/* /.netlify/functions/docs/:splat 200" > publish/_redirects
+
+      - name: Deploy to prod?
+        id: target
+        run: echo "##[set-output name=flag;]$([[ \"${GITHUB_REF#refs/heads/}\" == \"master\" ]] && echo \"--prod\" || true)"
+
+      - name: Deploy docs
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir='apps/docs/.netlify/publish/' --functions='apps/docs/.netlify/functions/' ${{ steps.target.outputs.flag }}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
