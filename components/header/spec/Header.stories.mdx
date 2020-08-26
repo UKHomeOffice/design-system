@@ -1,0 +1,88 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { Header } from '../src/Header';
+import readMe from '../README.md';
+export const title = 'Header';
+
+<Meta
+  title="Header"
+  component={ Header }
+  parameters={ {
+    jest: ['Header'],
+    notes: readMe
+  } }
+/>
+
+# Header
+
+HODS' page header.
+WRITE MORE DESCRIPTION HERE.
+
+<Preview withToolbar>
+  <Story name="Header">
+    <Header title="Service name" />
+  </Story>
+</Preview>
+
+<Props of={ Header } />
+
+
+## Stories
+### Standard
+
+A standard Header.
+
+<Preview>
+  <Story name="Standard">
+    <Header />
+  </Story>
+</Preview>
+
+
+### Service title
+
+A header with a service title.
+
+<Preview>
+  <Story name="Service title">
+    <Header title="Service name" />
+  </Story>
+</Preview>
+
+
+### Sign-out
+
+A header with an option to sign out.
+
+<Preview>
+  <Story name="Sign-out">
+    <Header
+      accountHref="#/my-account"
+      title="Service name"
+      signOutHref="#/auth/sign-out"
+      username="User name"
+    />
+  </Story>
+</Preview>
+
+
+### Navigation
+
+A header with navigation links.
+
+<Preview>
+  <Story name="Navigation">
+    <Header
+      accountHref="#/my-account"
+      navigation={[
+        { href: '/styles', text: 'Styles', active: true },
+        { href: '/components', text: 'Components' },
+        { href: '/patterns', text: 'Patterns' },
+        { href: '/resources', text: 'Resources' },
+        { href: '/get-involved', text: 'Get involved' }
+      ]}
+      title="Service name"
+      signOutHref="#/auth/sign-out"
+      username="User name"
+    />
+  </Story>
+</Preview>
