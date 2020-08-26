@@ -8,6 +8,10 @@
     text-decoration: none;
     color: #000;
 
+    &:active, &:hover, &:link, &:visited {
+      color: #000;
+    }
+
     &:hover {
       text-decoration: underline;
     }
