@@ -1,6 +1,3 @@
-@import "@not-govuk/sass-base";
-@import "govuk-frontend/govuk/objects/_width-container";
-
 .hods-header {
   background-color: #FFF;
 
@@ -135,8 +132,4 @@
       }
     }
   }
-}
-
-.hods-width-container {
-  @extend .govuk-width-container;
 }
