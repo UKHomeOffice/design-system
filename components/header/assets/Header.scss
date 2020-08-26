@@ -83,7 +83,7 @@
   }
 
   &__navigation {
-    padding-left: 35px;
+    padding-left: 20px;
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 1.45;
@@ -93,6 +93,7 @@
     margin: 0 auto;
     padding: 0;
     list-style: none;
+    overflow: hidden;
   }
 
   &__navigation-item {
@@ -100,6 +101,7 @@
     height: 50px;
     float: left;
     line-height: 50px;
+    margin: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 
