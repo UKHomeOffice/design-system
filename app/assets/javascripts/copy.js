@@ -1,12 +1,10 @@
-/* global $ */
+import 'govuk-frontend/govuk/vendor/polyfills/Event'
+import ClipboardJS from 'clipboard'
 
-// Warn about using the kit in production
-if (window.console && window.console.info) {
-  window.console.info('GOV.UK Prototype Kit - do not use for production')
-}
 function Copy ($module) {
   this.$module = $module
 }
+
 Copy.prototype.init = function () {
   var $module = this.$module
   if (!$module) {
@@ -41,11 +39,4 @@ Copy.prototype.copyAction = function () {
   }
 }
 
-$(document).ready(function () {
-  window.GOVUKFrontend.initAll()
-  var $codeBlocks = document.querySelectorAll('pre');
-  $codeBlocks.forEach((item, i) => {
-    new Copy(item).init();
-  });
-
-})
+export default Copy
