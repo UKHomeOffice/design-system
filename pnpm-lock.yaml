@@ -131,21 +131,27 @@ importers:
       webpack-cli: ^3.3.11
       webpack-dev-middleware: ^3.7.2
       webpack-hot-middleware: ^2.25.0
-  components/test-component:
+  components/header:
     dependencies:
       '@not-govuk/component-helpers': 0.1.20
+      '@not-govuk/link': 0.1.23
+      '@not-govuk/sass-base': 0.1.23
+      govuk-frontend: 3.8.1
     devDependencies:
       '@mdx-js/react': 1.6.11
       '@not-govuk/component-test-helpers': 0.1.22
-      '@types/react': 16.9.46
+      '@types/react': 16.9.47
       jest: 26.1.0
-      ts-jest: 26.1.3_jest@26.1.0+typescript@3.9.7
+      ts-jest: 26.2.0_jest@26.1.0+typescript@3.9.7
       typescript: 3.9.7
     specifiers:
       '@mdx-js/react': ^1.6.5
       '@not-govuk/component-helpers': ^0.1.0
       '@not-govuk/component-test-helpers': ^0.1.0
+      '@not-govuk/link': ^0.1.23
+      '@not-govuk/sass-base': ^0.1.23
       '@types/react': ^16.9.35
+      govuk-frontend: ^3.8.1
       jest: ^26.1.0
       ts-jest: ^26.1.1
       typescript: ^3.9.2
@@ -2915,6 +2921,17 @@ packages:
       react-router-dom: ^5.1.5
     resolution:
       integrity: sha512-tZZZta2ZMgKxq+B1kH+qsmOWc0dDp2WF+CnSb5W5jmyEq5fqtO1va0Ijo+mtQU1oEDtQ0jujZCi3FxLNSCb4dg==
+  /@not-govuk/anchor/0.1.23:
+    dependencies:
+      '@not-govuk/component-helpers': 0.1.20
+      '@not-govuk/route-utils': 0.1.23
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+      react-router-dom: ^5.1.5
+    resolution:
+      integrity: sha512-dppJ7SpZ03mHMvOx8DAk9kUTtgjW3qwageumY00uhiUsTf3Cv4INbYKoqD/6JD6Q8kgZYzqzqeeaTA71Vv7pCg==
   /@not-govuk/app-composer/0.1.20_9758558ea92931c4ddad3287ec74247c:
     dependencies:
       '@not-govuk/route-utils': 0.1.20_react-router-dom@5.2.0
@@ -2950,6 +2967,7 @@ packages:
       '@not-govuk/sass-base': 0.1.20
       govuk-frontend: 3.7.0
       react: 16.13.1
+      react-router-dom: 5.2.0_react@16.13.1
     dev: true
     peerDependencies:
       '@not-govuk/docs-components': ^0.1.0
@@ -3025,6 +3043,7 @@ packages:
       validator: 12.2.0
     dev: true
     peerDependencies:
+      '@not-govuk/docs-components': '*'
       react: ^16.9.35
       react-dom: ^16.9.8
       react-router: ^5.1.7
@@ -3119,6 +3138,19 @@ packages:
       react-router-dom: '*'
     resolution:
       integrity: sha512-J21iv2a99K5m2pjmiORwMmd7iY/XKxY4j6/gglCxmj8x4NhU88Fdvy0nUU5hURa6IwWPk0KHunHydWrklFV7Kw==
+  /@not-govuk/link/0.1.23:
+    dependencies:
+      '@not-govuk/anchor': 0.1.23
+      '@not-govuk/component-helpers': 0.1.20
+      '@not-govuk/sass-base': 0.1.23
+      '@not-govuk/tag': 0.1.23
+      govuk-frontend: 3.8.1
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-RUzUTPWqWFyw3nokwN9m9BVOX8V8gvKKaHGabINJf/iwVNYwG9Bc8qMKhYdEDjJ6YxIB/o9Ii48c0YczO9iA2A==
   /@not-govuk/plop-pack-internal/0.1.20:
     dependencies:
       fs-extra: 9.0.1
@@ -3161,12 +3193,27 @@ packages:
       react-router-dom: ^5.1.5
     resolution:
       integrity: sha512-W57h5ykm090xI44DPKXXM8ySLF4UOgrnzkkBZWpRgCQomYvHj5oji7qgaAFuHSIM8Igfjo/voxkk+4s/2/kxHw==
+  /@not-govuk/route-utils/0.1.23:
+    dependencies:
+      qs: 6.9.4
+      url-parse: 1.4.7
+    dev: false
+    peerDependencies:
+      react-router-dom: ^5.1.5
+    resolution:
+      integrity: sha512-f9bxCCEUCTFQukWEMMNSv74Ha92esejWIdgK2jRL62GyanNjJ70Hm0sedv7+1kwDYWYXCt+g1lEyz/+fHW7AAQ==
   /@not-govuk/sass-base/0.1.20:
     dependencies:
       govuk-frontend: 3.7.0
     dev: true
     resolution:
       integrity: sha512-vTvH4hem9Ef4ARW0qGW6hxMgKGXCgGVNyMPVu6GqCfIUOlKR1I7J0mm0LK1Mcb+fT//zSGRieyLTGTxo97+2Ww==
+  /@not-govuk/sass-base/0.1.23:
+    dependencies:
+      govuk-frontend: 3.8.1
+    dev: false
+    resolution:
+      integrity: sha512-oGAlcHNTJMrAOErpUvA4ygRVc6NH6+SUj1Mr1WS8myCj289COJMVt+TQDd4PnK1wAgfJtoBV7p8uU7NxIuWhQg==
   /@not-govuk/server-renderer/0.1.20_b9067f48172ccfe2e8a6dcb826dd865e:
     dependencies:
       '@not-govuk/app-composer': 0.1.20_9758558ea92931c4ddad3287ec74247c
@@ -3234,6 +3281,17 @@ packages:
       react: ^16.9.35
     resolution:
       integrity: sha512-fqbfoljFK9+8WIgrK8IGpcSHwehGmIsjL+1bnwY4Rg6Q/AbfNJAzt6bx7WH0oDMxfm8CArr1eLsk+6HVXcnKGg==
+  /@not-govuk/tag/0.1.23:
+    dependencies:
+      '@not-govuk/component-helpers': 0.1.20
+      '@not-govuk/sass-base': 0.1.23
+      govuk-frontend: 3.8.1
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-1jqWwDZdwU79C5TlpSsLPn0WlfmNdDtqaEsPfEAhpKE3PMKwd+udO12Q9MmM6nQnqftOvXI3VEjgyxjXEBTMpA==
   /@not-govuk/webpack-config/0.1.20_539843541c79085b803b4e1b1db366ad:
     dependencies:
       '@babel/core': 7.10.5
@@ -10438,6 +10496,12 @@ packages:
       node: '>= 4.2.0'
     resolution:
       integrity: sha512-G3bqoKGGF8YQ18UJH9tTARrwB8i7iPwN1xc8RXwWyx91q0p/Xl10uNywZLkzGWcJDzEz1vwmBTTL3SLDU/KxNg==
+  /govuk-frontend/3.8.1:
+    dev: false
+    engines:
+      node: '>= 4.2.0'
+    resolution:
+      integrity: sha512-1995FVvBSnwizhJ63BHFzd7T8uoOLUKO6NOOT0fAOYE7bdl8Ncf6yC5n3TqiwCJ4lPMc/dCGkN9Z4QRJchwoYQ==
   /graceful-fs/4.2.4:
     dev: true
     resolution:
@@ -15679,7 +15743,6 @@ packages:
     resolution:
       integrity: sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
   /qs/6.9.4:
-    dev: true
     engines:
       node: '>=0.6'
     resolution:
@@ -15715,10 +15778,9 @@ packages:
       node: '>=0.4.x'
     resolution:
       integrity: sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
-  /querystringify/2.1.1:
-    dev: true
+  /querystringify/2.2.0:
     resolution:
-      integrity: sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+      integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
   /quick-lru/4.0.1:
     dev: true
     engines:
@@ -16577,7 +16639,6 @@ packages:
     resolution:
       integrity: sha512-ipEzlWQe6RK3jkzikgCupiTbTvm4S0/CAU5GlgptkN5SO6F3u0UD0K18wy6ErDqiCyP4J4YYe1HuAShvsxePLg==
   /requires-port/1.0.0:
-    dev: true
     resolution:
       integrity: sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
   /resolve-cwd/2.0.0:
@@ -18513,29 +18574,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3IVX4nI6B5cc31/GFFE+i8ey/N2eA0CZDbo6n0yrz0zDX8ZJ8djmU1p+XRz7G3is0F3bB3pu2pAroFdAWQKU3w==
-  /ts-jest/26.1.3_jest@26.1.0+typescript@3.9.7:
-    dependencies:
-      bs-logger: 0.2.6
-      buffer-from: 1.1.1
-      fast-json-stable-stringify: 2.1.0
-      jest: 26.1.0
-      jest-util: 26.1.0
-      json5: 2.1.3
-      lodash.memoize: 4.1.2
-      make-error: 1.3.6
-      mkdirp: 1.0.4
-      semver: 7.3.2
-      typescript: 3.9.7
-      yargs-parser: 18.1.3
-    dev: true
-    engines:
-      node: '>= 10'
-    hasBin: true
-    peerDependencies:
-      jest: '>=26 <27'
-      typescript: '>=3.8 <4.0'
-    resolution:
-      integrity: sha512-beUTSvuqR9SmKQEylewqJdnXWMVGJRFqSz2M8wKJe7GBMmLZ5zw6XXKSJckbHNMxn+zdB3guN2eOucSw2gBMnw==
   /ts-jest/26.2.0_jest@26.1.0+typescript@3.9.7:
     dependencies:
       '@types/jest': 26.0.10
@@ -18969,9 +19007,8 @@ packages:
       integrity: sha1-FrXK/Afb42dsGxmZF3gj1lA6yww=
   /url-parse/1.4.7:
     dependencies:
-      querystringify: 2.1.1
+      querystringify: 2.2.0
       requires-port: 1.0.0
-    dev: true
     resolution:
       integrity: sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
   /url-to-options/1.0.1:

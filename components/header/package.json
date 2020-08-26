@@ -1,12 +1,12 @@
 {
-  "name": "@hods/test-component",
+  "name": "@hods/header",
   "version": "0.1.0",
-  "description": "A component just for testing.",
-  "main": "src/TestComponent.tsx",
-  "sass": "assets/TestComponent.scss",
+  "description": "HODS' page header.",
+  "main": "src/Header.tsx",
+  "sass": "assets/Header.scss",
   "publishConfig": {
-    "main": "dist/TestComponent.js",
-    "typings": "dist/TestComponent.d.ts"
+    "main": "dist/Header.js",
+    "typings": "dist/Header.d.ts"
   },
   "files": [
     "/assets",
@@ -24,7 +24,10 @@
     "react-components"
   ],
   "dependencies": {
-    "@not-govuk/component-helpers": "^0.1.0"
+    "@not-govuk/component-helpers": "^0.1.0",
+    "@not-govuk/link": "^0.1.23",
+    "@not-govuk/sass-base": "^0.1.23",
+    "govuk-frontend": "^3.8.1"
   },
   "peerDependencies": {
     "@not-govuk/docs-components": "^0.1.0",
