@@ -102,7 +102,7 @@
 
 .app-copy-button {
   $copy-button-colour: #00823b;
-
+  position: absolute;
   @include govuk-font(16);
   z-index: 1;
   top: govuk-spacing(2);
