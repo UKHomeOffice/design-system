@@ -4,7 +4,7 @@ import { A } from '@not-govuk/link';
 
 import '../assets/Footer.scss';
 
-export type INavigationLink = {
+export type NavigationLink = {
   /** Whether the link is for the current page */
   active?: boolean
   /** Location to link to */
@@ -17,7 +17,7 @@ export type INavigationLink = {
 
 export type FooterProps = StandardProps & {
   /** Navigation links */
-  navigation?: INavigationLink[]
+  navigation?: NavigationLink[]
 };
 
 export const Footer: FC<FooterProps> = ({
