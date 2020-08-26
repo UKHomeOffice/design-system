@@ -1,10 +1,6 @@
-import 'govuk-frontend/govuk/vendor/polyfills/Event'
-import ClipboardJS from 'clipboard'
-
 function Copy ($module) {
   this.$module = $module
 }
-
 Copy.prototype.init = function () {
   var $module = this.$module
   if (!$module) {
@@ -39,4 +35,7 @@ Copy.prototype.copyAction = function () {
   }
 }
 
-export default Copy
+var $codeBlocks = document.querySelectorAll('pre');
+$codeBlocks.forEach((item, i) => {
+  new Copy(item).init();
+});
