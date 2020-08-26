@@ -16,6 +16,7 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "devDependencies": {
+    "@hods/page": "workspace:^0.1.0",
     "@not-govuk/app-composer": "^0.1.0",
     "@not-govuk/client-renderer": "^0.1.0",
     "@not-govuk/components": "^0.1.0",
