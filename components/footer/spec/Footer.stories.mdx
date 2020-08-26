@@ -1,0 +1,72 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { Footer } from '../src/Footer';
+import readMe from '../README.md';
+export const title = 'Footer';
+
+<Meta
+  title="Footer"
+  component={ Footer }
+  parameters={ {
+    jest: ['Footer'],
+    notes: readMe
+  } }
+/>
+
+# Footer
+
+HODS' page footer.
+WRITE MORE DESCRIPTION HERE.
+
+<Preview withToolbar>
+  <Story name="Footer">
+    <Footer
+      navigation={[
+        { href: '/feedback', text: 'Feedback' },
+        { href: '/help', text: 'Help' },
+        { href: 'https://gov.uk/', text: 'Gov.UK home' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+<Props of={ Footer } />
+
+
+## Stories
+### Standard
+
+A standard Footer.
+
+<Preview>
+  <Story name="Standard">
+    <Footer />
+  </Story>
+</Preview>
+
+
+### Navigation
+
+A Footer with links for navigation.
+
+<Preview>
+  <Story name="Navigation">
+    <Footer
+      navigation={[
+        { href: '/feedback', text: 'Feedback' },
+        { href: '/help', text: 'Help' },
+        { href: 'https://gov.uk/', text: 'Gov.UK home' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+
+### Custom
+
+A Footer with custom content.
+
+<Preview>
+  <Story name="Custom">
+    <Footer>Custom content</Footer>
+  </Story>
+</Preview>
