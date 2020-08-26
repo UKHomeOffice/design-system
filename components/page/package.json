@@ -1,0 +1,45 @@
+{
+  "name": "@hods/page",
+  "version": "0.1.0",
+  "description": "HODS' page component.",
+  "main": "src/Page.tsx",
+  "sass": "assets/Page.scss",
+  "publishConfig": {
+    "main": "dist/Page.js",
+    "typings": "dist/Page.d.ts"
+  },
+  "files": [
+    "/assets",
+    "/dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm run clean && npm run build",
+    "build": "tsc",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
+  },
+  "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
+  "license": "MIT",
+  "keywords": [
+    "react-components"
+  ],
+  "dependencies": {
+    "@hods/footer": "workspace:^0.1.0",
+    "@hods/header": "workspace:^0.1.0",
+    "@not-govuk/component-helpers": "^0.1.0",
+    "@not-govuk/sass-base": "^0.1.23",
+    "govuk-frontend": "^3.8.1"
+  },
+  "peerDependencies": {
+    "@not-govuk/docs-components": "^0.1.0",
+    "react": "^16.9.35"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^1.6.5",
+    "@not-govuk/component-test-helpers": "^0.1.0",
+    "@types/react": "^16.9.35",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.2"
+  }
+}
