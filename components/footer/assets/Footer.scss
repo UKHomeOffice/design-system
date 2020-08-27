@@ -5,6 +5,10 @@
 
   &__link, a {
     color: #3B3B3B;
+
+    &:active, &:hover, &:link, &:visited {
+      color: #3B3B3B;
+    }
   }
 
   &__container {

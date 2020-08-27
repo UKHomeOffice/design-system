@@ -4,7 +4,7 @@ import { A } from '@not-govuk/link';
 
 import '../assets/Header.scss';
 
-export type INavigationLink = {
+export type NavigationLink = {
   /** Whether the link is for the current page */
   active?: boolean
   /** Location to link to */
@@ -19,7 +19,7 @@ export type HeaderProps = StandardProps & {
   /** HRef for the account link */
   accountHref?: string
   /** Navigation links */
-  navigation?: INavigationLink[]
+  navigation?: NavigationLink[]
   /** HRef for the sign-out link */
   signOutHref?: string
   /** Text for the sign-out link */

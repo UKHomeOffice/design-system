@@ -82,6 +82,7 @@ importers:
       webpack-hot-middleware: ^2.25.0
   apps/docs:
     devDependencies:
+      '@hods/page': 'link:../../components/page'
       '@not-govuk/app-composer': 0.1.20_9758558ea92931c4ddad3287ec74247c
       '@not-govuk/client-renderer': 0.1.20_b9067f48172ccfe2e8a6dcb826dd865e
       '@not-govuk/components': 0.1.20_b9067f48172ccfe2e8a6dcb826dd865e
@@ -107,6 +108,7 @@ importers:
       webpack-dev-middleware: 3.7.2_webpack@4.43.0
       webpack-hot-middleware: 2.25.0
     specifiers:
+      '@hods/page': 'workspace:^0.1.0'
       '@not-govuk/app-composer': ^0.1.0
       '@not-govuk/client-renderer': ^0.1.0
       '@not-govuk/components': ^0.1.0
@@ -155,8 +157,6 @@ importers:
     dependencies:
       '@not-govuk/component-helpers': 0.1.20
       '@not-govuk/link': 0.1.23
-      '@not-govuk/sass-base': 0.1.23
-      govuk-frontend: 3.8.1
     devDependencies:
       '@mdx-js/react': 1.6.11
       '@not-govuk/component-test-helpers': 0.1.22
@@ -169,6 +169,30 @@ importers:
       '@not-govuk/component-helpers': ^0.1.0
       '@not-govuk/component-test-helpers': ^0.1.0
       '@not-govuk/link': ^0.1.23
+      '@types/react': ^16.9.35
+      jest: ^26.1.0
+      ts-jest: ^26.1.1
+      typescript: ^3.9.2
+  components/page:
+    dependencies:
+      '@hods/footer': 'link:../footer'
+      '@hods/header': 'link:../header'
+      '@not-govuk/component-helpers': 0.1.23
+      '@not-govuk/sass-base': 0.1.23
+      govuk-frontend: 3.8.1
+    devDependencies:
+      '@mdx-js/react': 1.6.16
+      '@not-govuk/component-test-helpers': 0.1.23
+      '@types/react': 16.9.47
+      jest: 26.4.2
+      ts-jest: 26.3.0_jest@26.4.2+typescript@3.9.7
+      typescript: 3.9.7
+    specifiers:
+      '@hods/footer': 'workspace:^0.1.0'
+      '@hods/header': 'workspace:^0.1.0'
+      '@mdx-js/react': ^1.6.5
+      '@not-govuk/component-helpers': ^0.1.0
+      '@not-govuk/component-test-helpers': ^0.1.0
       '@not-govuk/sass-base': ^0.1.23
       '@types/react': ^16.9.35
       govuk-frontend: ^3.8.1
@@ -3230,7 +3254,6 @@ packages:
       validator: 12.2.0
     dev: true
     peerDependencies:
-      '@not-govuk/docs-components': '*'
       react: ^16.9.35
       react-dom: ^16.9.8
       react-router: ^5.1.7

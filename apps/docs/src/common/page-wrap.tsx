@@ -1,6 +1,6 @@
 import { FC, createElement as h } from 'react';
 import { PageProps } from '@not-govuk/app-composer';
-import { Page } from '@not-govuk/components';
+import { Page } from '@hods/page';
 
 import './app.scss';
 
@@ -11,13 +11,18 @@ export const PageWrap: FC<PageProps> = ({ children }) => {
     { href: '/components', text: 'Components' },
     { href: '/contributing', text: 'Contributing' }
   ];
+  const footerNavigation = [
+    { href: 'https://github.com/UKHomeOffice/hods-poc/', text: 'GitHub' },
+    { href: '/cookies', text: 'Cookies' },
+    { href: 'https://github.com/UKHomeOffice/hods-poc/issues/new', text: 'Feedback' },
+    { href: 'https://design-system.service.gov.uk/', text: 'Gov.UK Design System' }
+  ];
 
   return (
     <Page
-      feedbackHref="/feedback"
+      footerNavigation={footerNavigation}
       navigation={navigation}
-      phase="alpha"
-      title="NotGovUK"
+      title="Design System"
     >
       {children}
     </Page>

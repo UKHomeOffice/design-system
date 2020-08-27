@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 const Root: FC<any> = props => (
   <div id="story-root" {...props} style={{
-    backgroundColor: 'white',
     padding: '1em'
   }}>
     <Router>
