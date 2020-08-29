@@ -2,14 +2,16 @@ import { FC, createElement as h } from 'react';
 import { PageProps } from '@not-govuk/app-composer';
 import { Page } from '@hods/page';
 
-import './app.scss';
+import '../../assets/app.scss';
 
 export const PageWrap: FC<PageProps> = ({ children }) => {
   const navigation = [
     { href: '/get-started', text: 'Get started' },
     { href: '/styles', text: 'Styles' },
     { href: '/components', text: 'Components' },
-    { href: '/contributing', text: 'Contributing' }
+    { href: '/patterns', text: 'Patterns' },
+    { href: '/resources', text: 'Resources' },
+    { href: '/get-involved', text: 'Get involved' }
   ];
   const footerNavigation = [
     { href: 'https://github.com/UKHomeOffice/hods-poc/', text: 'GitHub' },

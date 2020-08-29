@@ -1,0 +1,30 @@
+.colour-swatch {
+  display: flex;
+  padding: 15px 0;
+  align-items: center;
+  font-weight: 400;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+.colour-info {
+  padding-left: 10px;
+  width: 70%;
+}
+
+.hex {
+  padding-left: 20px;
+  width: 15%;
+}
+
+.app-swatch {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 400;
+  align-items: center;
+}
