@@ -1,3 +1,5 @@
+@import "@not-govuk/sass-base";
+
 .hods-header {
   background-color: #FFF;
 
@@ -14,8 +16,7 @@
     }
 
     &--service-name {
-      font-size: 21px;
-      font-weight: 400;
+      @include govuk-font(24); // FIXME: 21
     }
   }
 
@@ -24,9 +25,18 @@
   }
 
   &__main {
-    display: flex;
-    padding: 20px 0;
+    @include govuk-responsive-padding(4, "top");
+    @include govuk-responsive-padding(4, "bottom");
+    @include govuk-responsive-padding(0, "left");
+    @include govuk-responsive-padding(0, "right");
+    display: inherit;
     width: 100%;
+
+    @include govuk-media-query($from: mobile, $until: tablet) {
+    }
+    @include govuk-media-query($from: tablet) {
+      display: flex;
+    }
 
     > *:last-child {
       margin-right: auto;
@@ -35,10 +45,21 @@
 
   &__logo {
     display: block;
-    width: 150px;
+    width: 110px;
     height: auto;
-    margin-right: 20%;
+    margin-right: 0;
+    margin-bottom: govuk-spacing(3);
     line-height: 0;
+
+    @include govuk-media-query($from: mobile, $until: tablet) {
+      margin-right: 10%;
+      margin-bottom: 0;
+    }
+    @include govuk-media-query($from: tablet) {
+      width: 150px;
+      margin-right: 20%;
+      margin-bottom: 0;
+    }
   }
 
   &__logo-svg {
@@ -50,7 +71,7 @@
   }
 
   &__account-menu {
-    font-size: 17px;
+    @include govuk-font(16); // FIXME: 17
     align-self: center;
 
     ul {
@@ -80,10 +101,8 @@
   }
 
   &__navigation {
-    padding-left: 20px;
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.45;
+    @include govuk-font(18);
+    @include govuk-responsive-padding(4, "left");
   }
 
   &__navigation-list {
@@ -116,8 +135,11 @@
     }
 
     a {
+      @include govuk-responsive-padding(0, "top");
+      @include govuk-responsive-padding(0, "bottom");
+      @include govuk-responsive-padding(3, "left");
+      @include govuk-responsive-padding(3, "right");
       display: block;
-      padding: 0 15px;
       color: #0b0c0c !important;
       text-decoration: none;
 
