@@ -46,6 +46,12 @@ html {
   &__main {
     @extend .govuk-main-wrapper;
   }
+
+  aside {
+    $home-office: map-get($govuk-colours-organisations, "home-office");
+
+    border-color: map_get($home-office, "colour-websafe");
+  }
 }
 
 .hods-width-container {
