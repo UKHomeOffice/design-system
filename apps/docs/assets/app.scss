@@ -1,0 +1,23 @@
+@import "@not-govuk/components/src/index";
+
+.image-examples{
+  width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  @include govuk-font(16);
+}
+
+.homepage-sections {
+  margin-top: 45;
+  margin-bottom: 35;
+}
+
+.example {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #cbcbcb;
+  margin-top: 30px;
+  padding: 40px 30px 30px 30px;
+}

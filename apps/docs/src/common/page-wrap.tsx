@@ -2,7 +2,7 @@ import { FC, createElement as h } from 'react';
 import { PageProps } from '@not-govuk/app-composer';
 import { Page } from '@hods/page';
 
-import './app.scss';
+import '../../assets/app.scss';
 
 export const PageWrap: FC<PageProps> = ({ children }) => {
   const navigation = [
