@@ -137,6 +137,7 @@ importers:
     dependencies:
       '@not-govuk/component-helpers': 0.1.23
       '@not-govuk/link': 0.1.23
+      '@not-govuk/sass-base': 0.1.23
     devDependencies:
       '@mdx-js/react': 1.6.16
       '@not-govuk/component-test-helpers': 0.1.23
@@ -149,6 +150,7 @@ importers:
       '@not-govuk/component-helpers': ^0.1.0
       '@not-govuk/component-test-helpers': ^0.1.0
       '@not-govuk/link': ^0.1.23
+      '@not-govuk/sass-base': ^0.1.23
       '@types/react': ^16.9.35
       jest: ^26.1.0
       ts-jest: ^26.1.1
@@ -157,6 +159,7 @@ importers:
     dependencies:
       '@not-govuk/component-helpers': 0.1.20
       '@not-govuk/link': 0.1.23
+      '@not-govuk/sass-base': 0.1.23
     devDependencies:
       '@mdx-js/react': 1.6.11
       '@not-govuk/component-test-helpers': 0.1.22
@@ -169,6 +172,7 @@ importers:
       '@not-govuk/component-helpers': ^0.1.0
       '@not-govuk/component-test-helpers': ^0.1.0
       '@not-govuk/link': ^0.1.23
+      '@not-govuk/sass-base': ^0.1.23
       '@types/react': ^16.9.35
       jest: ^26.1.0
       ts-jest: ^26.1.1
