@@ -9,7 +9,9 @@ export const PageWrap: FC<PageProps> = ({ children }) => {
     { href: '/get-started', text: 'Get started' },
     { href: '/styles', text: 'Styles' },
     { href: '/components', text: 'Components' },
-    { href: '/contributing', text: 'Contributing' }
+    { href: '/patterns', text: 'Patterns' },
+    { href: '/resources', text: 'Resources' },
+    { href: '/get-involved', text: 'Get involved' }
   ];
   const footerNavigation = [
     { href: 'https://github.com/UKHomeOffice/hods-poc/', text: 'GitHub' },
