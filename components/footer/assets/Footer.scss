@@ -1,3 +1,5 @@
+@import "@not-govuk/sass-base";
+
 .hods-footer {
   border-top: 1px #cbcbcb solid;
   background-color: #FFF;
@@ -12,17 +14,20 @@
   }
 
   &__container {
-    padding: 30px 0;
+    @include govuk-font(14);
+    @include govuk-responsive-padding(6, "top");
+    @include govuk-responsive-padding(6, "bottom");
+    @include govuk-responsive-padding(8, "left");
+    @include govuk-responsive-padding(8, "right");
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    font-size: 14px;
     display: flex;
     align-items: center;
   }
 
   &__content {
-    font-size: 14px;
+    @include govuk-font(14);
 
     > *:last-child {
       margin-bottom: 0;
@@ -40,12 +45,12 @@
   }
 
   &__navigation-item {
-    padding-left: 1.5em;
+    @include govuk-font(14);
+    @include govuk-responsive-padding(4, "left");
     list-style: none;
-    font-size: 14px;
 
     &:first-child {
-      padding-left: 0;
+      @include govuk-responsive-padding(0, "left");
     }
   }
 }

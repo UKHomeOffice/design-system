@@ -25,7 +25,8 @@
   ],
   "dependencies": {
     "@not-govuk/component-helpers": "^0.1.0",
-    "@not-govuk/link": "^0.1.23"
+    "@not-govuk/link": "^0.1.23",
+    "@not-govuk/sass-base": "^0.1.23"
   },
   "peerDependencies": {
     "@not-govuk/docs-components": "^0.1.0",
