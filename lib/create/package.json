@@ -1,0 +1,30 @@
+{
+  "name": "@hods/create",
+  "version": "0.1.0",
+  "description": "A project and prototype initialiser.",
+  "main": "plopfile.js",
+  "bin": "bin/create",
+  "files": [
+    "/bin",
+    "/dist",
+    "/plopfile.js"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run clean && npm run build",
+    "build": "make",
+    "clean": "make clean"
+  },
+  "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "@hods/plop-pack": "workspace:^0.1.0",
+    "@not-govuk/create": "^0",
+    "@not-govuk/plop-pack-internal": "^0.1.0"
+  },
+  "devDependencies": {
+    "plop": "^2.7.4"
+  }
+}
