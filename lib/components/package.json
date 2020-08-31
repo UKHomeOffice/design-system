@@ -1,12 +1,12 @@
 {
-  "name": "@hods/page",
+  "name": "@hods/components",
   "version": "0.1.0",
-  "description": "HODS' page component.",
-  "main": "src/Page.tsx",
-  "sass": "assets/Page.scss",
+  "description": "All Home Office Design System components.",
+  "main": "src/index.ts",
+  "sass": "assets/index.scss",
   "publishConfig": {
-    "main": "dist/Page.js",
-    "typings": "dist/Page.d.ts"
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
   },
   "files": [
     "/assets",
@@ -26,18 +26,10 @@
   "dependencies": {
     "@hods/footer": "workspace:^0.1.0",
     "@hods/header": "workspace:^0.1.0",
-    "@hods/sass-base": "workspace:^0.1.0",
-    "@not-govuk/component-helpers": "^0.1.0",
-    "govuk-frontend": "^3.8.1"
-  },
-  "peerDependencies": {
-    "@not-govuk/docs-components": "^0.1.0",
-    "react": "^16.9.35"
+    "@hods/page": "workspace:^0.1.0",
+    "@hods/sass-base": "workspace:^0.1.0"
   },
   "devDependencies": {
-    "@mdx-js/react": "^1.6.5",
-    "@not-govuk/component-test-helpers": "^0.1.0",
-    "@types/react": "^16.9.35",
     "jest": "^26.1.0",
     "ts-jest": "^26.1.1",
     "typescript": "^3.9.2"

@@ -49,4 +49,4 @@ const Page: FC<PageProps> = props => (
 );
 
 export default Page;
-export const title = 'About NotGovUK';
+export const title = 'Home Office Design System';
