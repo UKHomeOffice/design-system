@@ -29,7 +29,7 @@ mkdir YOUR-PROJECT
 cd YOUR-PROJECT
 git init
 git remote add origin git@github.com:YOUR_USER/YOUR-PROJECT.git
-npm init @not-govuk
+npm init @hods
 ```
 
 
