@@ -6,7 +6,7 @@
     "create:lib": "plop lib",
     "all:build": "pnpm recursive run build",
     "all:clean": "pnpm recursive run clean",
-    "all:publish": "pnpm -r publish --access public --filter ./components --filter ./components-internal --filter ./lib --filter ./lib-govuk --filter ./packages",
+    "all:publish": "pnpm -r publish --access public --filter ./components --filter ./lib",
     "build": "npm run build:storybook",
     "clean": "npm run clean:storybook",
     "preversion": "echo 'Warning: This should only be done on a fresh branch from master.'",
