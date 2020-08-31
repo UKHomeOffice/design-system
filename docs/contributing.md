@@ -92,11 +92,11 @@ See also: [Working on your project]
 -- Daniel Martin, December 2019 (updated August 2020).
 
 
-[Pull requests]: https://github.com/daniel-ac-martin/NotGovUK/pulls
-[open an issue]: https://github.com/daniel-ac-martin/NotGovUK/issues/new
-[pull request]: https://github.com/daniel-ac-martin/NotGovUK/pulls
-[issue]: https://github.com/daniel-ac-martin/NotGovUK/issues
-[get in touch]: https://github.com/daniel-ac-martin/NotGovUK/issues/new
+[Pull requests]: https://github.com/UKHomeOffice/hods-poc/pulls
+[open an issue]: https://github.com/UKHomeOffice/hods-poc/issues/new
+[pull request]: https://github.com/UKHomeOffice/hods-poc/pulls
+[issue]: https://github.com/UKHomeOffice/hods-poc/issues
+[get in touch]: https://github.com/UKHomeOffice/hods-poc/issues/new
 [pnpm]: https://pnpm.js.org/en/installation
 [Storybook]: https://storybook.js.org/
 [Working on your project]: ./working-on-your-project
