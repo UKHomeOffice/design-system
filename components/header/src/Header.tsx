@@ -43,8 +43,8 @@ export const Header: FC<HeaderProps> = ({ accountHref, children, classBlock, cla
             <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 578 138" version="1.1" className={classes('logo-svg')}>
               <title>Home Office</title>
               <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Home_Office" fill-rule="nonzero">
+              <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                <g id="Home_Office" fillRule="nonzero">
                   <rect id="Rectangle-path" fill="#7F3F98" x="0.7" y="0.1" width="6.9" height="137.9"></rect>
                   <path d="M72.2,9.4 L72.2,13.5 C74.3,13.6 75.8,14 76.6,14.2 C76.2,11.8 74.5,10 72.2,9.4" id="Shape" fill="#000000"></path>
                   <path d="M69.7,6.5 L69.7,6.5 C69.7,7.9 69.4,8.8 69,9.4 C69,9.4 69.7,9.2 70.6,9.2 C71.2,9.2 72.1,9.4 72.2,9.4 C71.8,8.8 71.5,7.9 71.5,6.5 L71.5,6.5 C74.6,6.5 75.3,7.9 75.3,9.1 L75.9,9.1 L75.9,5.6 L75.9,2.1 L75.3,2.1 C75.3,3.3 74.5,4.7 71.5,4.7 C71.5,1.6 72.9,0.9 74.1,0.9 L74.1,0.3 L70.6,0.3 L67.1,0.3 L67.1,0.9 C68.3,0.9 69.7,1.7 69.7,4.7 C66.6,4.7 65.9,3.3 65.9,2.1 L65.3,2.1 L65.3,5.6 L65.3,9.1 L65.9,9.1 C65.9,7.9 66.6,6.5 69.7,6.5" id="Shape" fill="#000000"></path>
