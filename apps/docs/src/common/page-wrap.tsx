@@ -1,8 +1,8 @@
 import { FC, createElement as h } from 'react';
 import { PageProps } from '@not-govuk/app-composer';
-import { Page } from '@hods/page';
+import { Page } from '@hods/components';
 
-import '../../assets/app.scss';
+import './app.scss';
 
 export const PageWrap: FC<PageProps> = ({ children }) => {
   const navigation = [
