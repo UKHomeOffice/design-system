@@ -2,7 +2,7 @@ import { FC, createElement as h } from 'react';
 import { TemplateProps } from '@not-govuk/server-renderer';
 
 export const Template: FC<TemplateProps> = props => {
-  const title = `${props.appProps.pageTitle} - NotGovUK`;
+  const title = `${props.appProps.pageTitle} - HODS`;
   const charSet = props.charSet || 'UTF-8';
 
   return (
