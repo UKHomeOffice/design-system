@@ -17,6 +17,7 @@
     "body-parser": "^1.14.1",
     "browser-sync": "^2.11.1",
     "client-sessions": "^0.8.0",
+    "clipboard": "^2.0.6",
     "cookie-parser": "^1.4.3",
     "cross-spawn": "^6.0.5",
     "dotenv": "^6.0.0",
