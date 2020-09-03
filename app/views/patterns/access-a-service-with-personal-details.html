@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% set active = "patterns" %}
-{% set activesub = "access-a-service-beta" %}
+{% set activesub = "access-a-service" %}
 {% set activenest = "personal" %}
 
 {% block pageTitle %}
@@ -23,26 +23,27 @@ Access a service with personal details - Home Office design system
 
 <!-- PATTERN NAME -->
       <h1 class="heading-section heading-pattern">Access a service with personal details</h1>
-      <!-- <p class="also-known-as">Also known as: </p> -->
+      <p class="also-known-as">Also known as: authentication </p>
 
-      <!-- <div>
+      <div>
         <p class="research-status">
           <strong class="label--recommended govuk-!-margin-top-0 govuk-!-margin-bottom-2">RECOMMENDED</strong><br>
-          <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
-          This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it.
+          <!-- <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
+          This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it. -->
         </p>
-      </div> -->
+      </div>
 
 <!-- ONE LINE DESCRIPTION -->
-      <p class="govuk-body-l one-line-description">One line description</p>
-      <div class="example example-images">
-        <img src="">
+      <p class="govuk-body-l one-line-description">Let users access a service in a secure way by authenticating themselves with their personal details.</p>
+      <div class="example example-images confirmation">
+        <img src="{{ asset_path }}/images/access-service-personal.svg" class="confirm-desktop" alt="An example of a flow authenticating users with personal details, in this case passport details and their date of birth. The flow is 3 screens. Screen 1 is the user entering their passport number. The second screen is the user entering their date of birth. The final screen plays back to the user the detials they entered, informing them that those details do not match the service's records, giving the user the option to try again.">
+        <img src="{{ asset_path }}/images/access-service-personal.svg" class="confirmation confirm-mobile" alt="An example of a flow authenticating users with personal details, in this case passport details and their date of birth. The flow is 3 screens. Screen 1 is the user entering their passport number. The second screen is the user entering their date of birth. The final screen plays back to the user the detials they entered, informing them that those details do not match the service's records, giving the user the option to try again.">
       </div>
 
 <!-- WHEN TO USE PATTERN -->
 
       <h2 class="govuk-heading-m">When to use this pattern</h2>
-      <p></p>
+      <p>Follow this pattern if you are helping users access a service by authenticating them with personal details.</p>
 
 <!-- WHEN NOT TO USE PATTERN - OPTIONAL-->
 
@@ -58,7 +59,10 @@ Access a service with personal details - Home Office design system
 
       <h2 class="govuk-heading-m">Services using this pattern</h2>
       <ul class="govuk-list govuk-list--bullet">
-        <li>Service</li>
+        <li>Access UK</li>
+        <li><a href="https://www.gov.uk/settled-status-eu-citizens-families/applying-for-settled-status">Apply for the EU Settlement Scheme</a></li>
+        <li>Status: right to rent, right to work, <a href="https://www.gov.uk/view-prove-immigration-status">view and prove</a></li>
+        <li><a href="https://www.gov.uk/update-eu-settlement-scheme-details">Update your EU Settlement Scheme details</a></li>
       </ul>
 
 <!-- RESEARCH -->

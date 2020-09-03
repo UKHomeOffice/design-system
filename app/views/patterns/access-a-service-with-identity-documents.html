@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% set active = "patterns" %}
-{% set activesub = "access-a-service-beta" %}
+{% set activesub = "access-a-service" %}
 {% set activenest = "identity" %}
 
 {% block pageTitle %}
@@ -23,26 +23,36 @@ Access a service with identity documents - Home Office design system
 
 <!-- PATTERN NAME -->
       <h1 class="heading-section heading-pattern">Access a service with identity documents</h1>
-      <!-- <p class="also-known-as">Also known as: </p> -->
+      <p class="also-known-as">Also known as: authentication</p>
 
-      <!-- <div>
+      <div>
         <p class="research-status">
-          <strong class="label--recommended govuk-!-margin-top-0 govuk-!-margin-bottom-2">RECOMMENDED</strong><br>
+          <!-- <strong class="label--recommended govuk-!-margin-top-0 govuk-!-margin-bottom-2">RECOMMENDED</strong><br> -->
           <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
           This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it.
         </p>
-      </div> -->
+      </div>
 
 <!-- ONE LINE DESCRIPTION -->
-      <p class="govuk-body-l one-line-description">One line description</p>
+      <p class="govuk-body-l one-line-description">Let users access a service in a secure way by authenticating themselves with their identity documents.</p>
+      <!-- <div class="example example-images confirmation">
+        <img src="{{ asset_path }}/images/access-service-identity.svg" class="confirm-desktop" alt="An example of an authentication screen asking users which identity document they're using. Users can select from a radio list passport, national identity card, biometric residence card or biometric residence permit. There is also the option to see more details with an explanation of what a biometric residence card or permit is.">
+        <img src="{{ asset_path }}/images/access-service-identity.svg" class="confirmation confirm-mobile" alt="An example of an authentication screen asking users which identity document they're using. Users can select from a radio list passport, national identity card, biometric residence card or biometric residence permit. There is also the option to see more details with an explanation of what a biometric residence card or permit is.">
+      </div> -->
+      
       <div class="example example-images">
-        <img src="">
+          {% include "includes/patterns/aas-identity-documents.html" %}
       </div>
 
 <!-- WHEN TO USE PATTERN -->
 
       <h2 class="govuk-heading-m">When to use this pattern</h2>
-      <p></p>
+      <p>Follow this pattern if you are helping users to access a service by authenticating them with an identity document. It could be:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the same document they’ve used to apply previously</li>
+        <li>the document your service has on record for them</li>
+        <li>the document that’s attached to their account</li>
+      </ul>
 
 <!-- WHEN NOT TO USE PATTERN - OPTIONAL-->
 
@@ -58,7 +68,10 @@ Access a service with identity documents - Home Office design system
 
       <h2 class="govuk-heading-m">Services using this pattern</h2>
       <ul class="govuk-list govuk-list--bullet">
-        <li>Service</li>
+        <li>Access UK</li>
+        <li><a href="https://www.gov.uk/settled-status-eu-citizens-families/applying-for-settled-status">Apply for the EU Settlement Scheme</a></li>
+        <li>Status: right to rent, right to work, <a href="https://www.gov.uk/view-prove-immigration-status">view and prove</a></li>
+        <li><a href="https://www.gov.uk/update-eu-settlement-scheme-details">Update your EU Settlement Scheme details</a></li>
       </ul>
 
 <!-- RESEARCH -->
