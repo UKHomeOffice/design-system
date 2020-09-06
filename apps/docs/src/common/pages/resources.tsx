@@ -2,9 +2,6 @@ import { FC, Fragment, createElement as h } from 'react';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 
-const applyPassportImage = require('../../../assets/images/apply-passport.png').default;
-const ddatEventsImage = require('../../../assets/images/ddat-events.png').default;
-const policeImage = require('../../../assets/images/police.png').default;
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -25,9 +22,9 @@ const Page: FC<PageProps> = ({ location }) => (
         <div className="govuk-grid-column-two-thirds">
           <p>Resources cover:</p>
           <ul>
-            <li>how to design and build accessible services</li>
-            <li>helpful resources from across government</li>
-            <li>tools to help build prototypes</li>
+            <li>how to design and build <a href="/resources/accessibility">accessible</a> services</li>
+            <li>helpful resources from across <a href="/resources/government">government</a></li>
+            <li>tools to help build <a href="/resources/prototyping">prototypes</a></li>
           </ul>
         </div>
       </div>
