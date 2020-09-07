@@ -34,12 +34,10 @@ html {
 
   &__body {
     flex: 1 1 auto;
-    margin-bottom: govuk-spacing(2);
     width: 100%;
   }
 
   &__container {
-    border-bottom: govuk-spacing(2) solid govuk-colour("mid-grey");
     height: 100%;
   }
 

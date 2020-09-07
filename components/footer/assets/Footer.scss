@@ -1,7 +1,11 @@
 @import "@hods/sass-base";
 
 .hods-footer {
-  border-top: 1px #cbcbcb solid;
+  $border-thin: 1px;
+  $border-thick: govuk-spacing(2);
+  $border-both: $border-thin + $border-thick;
+
+  border-top: $border-thick solid #F5F5F5;
   background-color: #FFF;
   color: #0b0c0c;
 
@@ -13,14 +17,19 @@
     }
   }
 
+  &__inner {
+    border-top: $border-thin #cbcbcb solid;
+  }
+
   &__container {
     @include govuk-font(14);
     @include govuk-responsive-padding(6, "top");
     @include govuk-responsive-padding(6, "bottom");
     @include govuk-responsive-padding(8, "left");
     @include govuk-responsive-padding(8, "right");
+    border-top: $border-both solid govuk-colour("mid-grey");
     display: flex;
-    margin: 0 auto;
+    margin: -$border-both auto 0 auto;
     justify-content: space-between;
     display: flex;
     align-items: center;
