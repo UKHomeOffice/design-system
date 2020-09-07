@@ -22,9 +22,9 @@ const Page: FC<PageProps> = ({ location }) => (
         <div className="govuk-grid-column-two-thirds">
           <p>Resources cover:</p>
           <ul>
-            <li>how to design and build <a href="/resources/accessibility">accessible</a> services</li>
-            <li>helpful resources from across <a href="/resources/government">government</a></li>
-            <li>tools to help build <a href="/resources/prototyping">prototypes</a></li>
+            <li>how to design and build <A href="/resources/accessibility">accessible</A> services</li>
+            <li>helpful resources from across <A href="/resources/government">government</A></li>
+            <li>tools to help build <A href="/resources/prototyping">prototypes</A></li>
           </ul>
         </div>
       </div>
