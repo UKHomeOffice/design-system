@@ -3,21 +3,21 @@
 @import "govuk-frontend/govuk/objects/_width-container";
 @import "govuk-frontend/govuk/core/_template";
 
-.hods-page,
 #story-root,
 #root,
 body,
 html {
-  background-color: #F5F5F5 !important;
+  background-color: #FFF;
   color: #0b0c0c;
   margin: 0;
 }
 
 .hods-page,
+#story-root,
+#root,
 body,
 html {
   font-family: 'Inter', 'Arial', sans-serif;
-  height: 100%;
 }
 
 .hods-page {
@@ -27,6 +27,8 @@ html {
   overflow: initial;
   flex: 1 0 auto;
   padding: initial;
+  background-color: #F5F5F5;
+  height: 100%;
 
   .hods-page {
     height: initial;
