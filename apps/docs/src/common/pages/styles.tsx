@@ -32,9 +32,9 @@ const Page: FC<PageProps> = ({ location }) => (
           </ul>
           <p>You should use:</p>
           <ul>
-            <li><a href="/styles/templates">Home Office page template</a></li>
-            <li><a href="https://rsms.me/inter/">Inter-UI</a> font</li>
-            <li><a href="/styles/colour">Home Office colours</a></li>
+            <li><A href="/styles/templates">Home Office page template</a></li>
+            <li><A href="https://rsms.me/inter/">Inter-UI</a> font</li>
+            <li><A href="/styles/colour">Home Office colours</a></li>
           </ul>
         </div>
         <div className="govuk-grid-column-one-half">
@@ -53,15 +53,15 @@ const Page: FC<PageProps> = ({ location }) => (
           </ul>
           <p>You should use:</p>
           <ul>
-            <li><a href="/styles/page-template/">GOV.UK page template</a></li>
+            <li><A href="/styles/page-template/">GOV.UK page template</a></li>
             <li>the crown logo and GDS Transport font</li>
-            <li><a href="/styles/colour/">GOV.UK colours</a></li>
+            <li><A href="/styles/colour/">GOV.UK colours</a></li>
           </ul>
           <p>Note: independent branding is used for services that are granted a GOV.UK exemption.</p>
         </div>
         <div className="govuk-grid-column-one-half">
           <img src={applyPassportImage} alt="" className="image-examples" />
-          <span className="image-caption"><a href="https://www.passport.service.gov.uk/">www.passport.service.gov.uk</a></span>
+          <span className="image-caption"><A href="https://www.passport.service.gov.uk/">www.passport.service.gov.uk</a></span>
         </div>
       </div>
       <hr className="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
@@ -78,7 +78,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
         <div className="govuk-grid-column-one-half">
           <img src={policeImage} alt="" className="image-examples" />
-          <span className="image-caption"><a href="https://www.joiningthepolice.co.uk">www.joiningthepolice.co.uk</a></span>
+          <span className="image-caption"><A href="https://www.joiningthepolice.co.uk">www.joiningthepolice.co.uk</a></span>
         </div>
       </div>
     </div>
