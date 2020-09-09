@@ -20,7 +20,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <aside>
         <h2>Styles</h2>
         <ul className="plain">
-          <li className="active"><A href="/styles/colour">Colour</A></li>
+          <li><A href="/styles/colour">Colour</A></li>
           <li><A href="/styles/images">Images</A></li>
           <li><A href="/styles/templates">Page templates</A></li>
           <li><A href="/styles/typography">Typography</A></li>

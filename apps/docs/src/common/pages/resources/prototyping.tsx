@@ -9,7 +9,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <div className="govuk-grid-column-one-third">
       <aside>
         <ul className="plain">
-          <li className="active"><A href="/resources/accessibility">Accessibility</A></li>
+          <li><A href="/resources/accessibility">Accessibility</A></li>
           <li><A href="/resources/government">GOV.UK</A></li>
           <li><A href="/resources/prototyping">Prototyping</A></li>
         </ul>
