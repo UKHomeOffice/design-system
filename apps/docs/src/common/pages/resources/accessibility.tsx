@@ -10,7 +10,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <aside>
         <h2>Resources</h2>
         <ul className="plain">
-          <li className="active"><A href="/resources/accessibility">Accessibility</A></li>
+          <li><A href="/resources/accessibility">Accessibility</A></li>
           <li><A href="/resources/government">GOV.UK</A></li>
           <li><A href="/resources/prototyping">Prototyping</A></li>
         </ul>

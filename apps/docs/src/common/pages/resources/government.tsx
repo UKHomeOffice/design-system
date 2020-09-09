@@ -3,6 +3,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 
 
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <div className="govuk-grid-column-one-third">
@@ -15,18 +16,18 @@ const Page: FC<PageProps> = ({ location }) => (
       </aside>
     </div>
     <div className="govuk-grid-column-two-thirds">
-      <h1>Resources</h1>
-      <p>A collection of resources to help teams design and build services in Government.</p>
-      <div className="govuk-grid-row">
-        <div className="govuk-grid-column-two-thirds">
-          <p>Resources cover:</p>
-          <ul>
-            <li>how to design and build <A href="/resources/accessibility">accessible</A> services</li>
-            <li>helpful resources from across <A href="/resources/government">government</A></li>
-            <li>tools to help build <A href="/resources/prototyping">prototypes</A></li>
-          </ul>
-        </div>
-      </div>
+      <h1>
+        <span className="caption">Resources</span>
+        Guidance on GOV.UK
+      </h1>
+      <p>Resources available across government.</p>
+      <ul className="plain">
+        <li><A href="https://design-system.service.gov.uk/">GOV.UK design system</A></li>
+        <li><A href="https://www.gov.uk/guidance/government-design-principles">GOV.UK design principles</A></li>
+        <li><A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK content style guide</A></li>
+        <li><A href="https://www.gov.uk/service-manual">GOV.UK service manual</A></li>
+      </ul>
+
 
     </div>
   </div>
