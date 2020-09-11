@@ -215,4 +215,4 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Styles';
+export const title = 'Colour';
