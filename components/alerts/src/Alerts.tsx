@@ -15,7 +15,7 @@ export const Alerts: FC<AlertsProps> = ({ children, classBlock, classModifiers, 
 
   return (
       <div className={`hods-panel hods-panel-border-wide ${modifier}`}>
-        <h2 className="govuk-heading-s">{heading}</h2>
+        <h2 className="hods-panel__heading">{heading}</h2>
         <p>{children}</p>
       </div>
   );

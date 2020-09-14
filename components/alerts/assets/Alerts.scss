@@ -5,14 +5,13 @@
   border-color: #bfc1c3;
   padding: 0.2em 0.7em;
   margin-bottom: 0.78947em;
-}
 
-h2.govuk-heading-s {
-  font-size: 22px;
-  margin-bottom: 0.6em;
-  margin-top: 0.6em;
-}
-
+  &__heading {
+    font-size: 22px;
+    margin-bottom: 0.6em;
+    margin-top: 0.6em;
+  }
+ 
 .hods-panel-border-wide {
   border-left-width: 10px;
 }
