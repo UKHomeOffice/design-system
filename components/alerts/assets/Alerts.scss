@@ -1,9 +1,14 @@
+@import "@hods/sass-base";
+
 .hods-alerts {
+  @include govuk-responsive-padding(1, "top");
+  @include govuk-responsive-padding(1, "bottom");
+  @include govuk-responsive-padding(3, "left");
+  @include govuk-responsive-padding(3, "right");
+  @include govuk-responsive-margin(3, "bottom");
   box-sizing: border-box;
   clear: both;
-  border-left: 10px solid #2b8cc4;
-  padding: 0.2em 0.7em;
-  margin-bottom: 0.78947em;
+  border-left: govuk-spacing(2) solid #2b8cc4;
   background-color: #dbeff9;
 
   &--success {
@@ -17,8 +22,8 @@
   }
 
   &__heading {
-    font-size: 22px;
-    margin-bottom: 0.6em;
-    margin-top: 0.6em;
+    @include govuk-font(24, 'bold'); // FIXME: 22
+    @include govuk-responsive-margin(3, "top");
+    @include govuk-responsive-margin(3, "bottom");
   }
 }
