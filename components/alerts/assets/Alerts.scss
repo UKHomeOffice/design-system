@@ -1,8 +1,7 @@
 .hods-panel {
   box-sizing: border-box;
   clear: both;
-  border-left-style: solid;
-  border-color: #bfc1c3;
+  border-left: 10px solid #bfc1c3;
   padding: 0.2em 0.7em;
   margin-bottom: 0.78947em;
 
@@ -11,22 +10,19 @@
     margin-bottom: 0.6em;
     margin-top: 0.6em;
   }
- 
-.hods-panel-border-wide {
-  border-left-width: 10px;
 }
 
-.hods-panel-border-wide.hods-alert-standard {
+.hods-panel.hods-alert-standard {
   border-color: #2b8cc4;
   background-color: #dbeff9;
 }
 
-.hods-panel-border-wide.hods-alert-success {
+.hods-panel.hods-alert-success {
   border-color: #28a197;
   background-color: #c6ece9;
 }
 
-.hods-panel-border-wide.alert-error {
+.hods-panel.alert-error {
   border-color: #c42b2b;
   background-color: #f3dede;
 }
