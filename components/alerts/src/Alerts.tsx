@@ -6,17 +6,14 @@ import '../assets/Alerts.scss';
 export type AlertsProps = StandardProps & {
   /** Heading of the alert */
   heading: string
-  /** Type of alert */
-  type?: 'standard' | 'successful' | 'error'
 };
 
-export const Alerts: FC<AlertsProps> = ({ children, classBlock, classModifiers, className, heading, type = 'standard', ...attrs }) => {
+export const Alerts: FC<AlertsProps> = ({ children, classBlock, classModifiers, className, heading, ...attrs }) => {
   const classes = classBuilder('hods-alerts', classBlock, classModifiers, className);
-  const modifier = `hods-alert-${type}`
 
   return (
-      <div className={`hods-panel ${modifier}`}>
-        <h2 className="hods-panel__heading">{heading}</h2>
+      <div className={classes()}>
+        <h2 className={classes('heading')}>{heading}</h2>
         <p>{children}</p>
       </div>
   );
