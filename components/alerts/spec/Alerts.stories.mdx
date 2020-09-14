@@ -15,11 +15,10 @@ export const title = 'Alerts';
 # Alerts
 
 Alert users to important information.
-WRITE MORE DESCRIPTION HERE.
 
 <Preview withToolbar>
   <Story name="Alerts">
-    <Alerts heading="Passport">
+    <Alerts heading="New passport">
       We'll send your new passport by secure delivery. The cost is included in the passport fee.
     </Alerts>
   </Story>
@@ -34,12 +33,35 @@ WRITE MORE DESCRIPTION HERE.
 A standard Alerts.
 
 <Preview>
-  <Story name="Successful">
-    <Alerts heading="Payment successful" type="success">
+  <Story name="Standard">
+    <Alerts heading="New passport">
+      We'll send your new passport by secure delivery. The cost is included in the passport fee.
+    </Alerts>
+  </Story>
+</Preview>
+
+
+### Success
+
+An Alerts signifying success.
+
+<Preview>
+  <Story name="Success">
+    <Alerts heading="Payment successful" classModifiers="success">
       We've sent details to test-email@test-corp.co.uk <br /><a href="#">Download confirmation</a>
     </Alerts>
-    <Alerts heading="Payment complete" >
-      Complete! 
+  </Story>
+</Preview>
+
+
+### Error
+
+An Alerts for when something has gone wrong.
+
+<Preview>
+  <Story name="Error">
+    <Alerts heading="Payment unsuccessful" classModifiers="error">
+      Please try again or contact our <a href="#">support team</a> for assistance.
     </Alerts>
   </Story>
 </Preview>
