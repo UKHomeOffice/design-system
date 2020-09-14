@@ -1,0 +1,67 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { Alerts } from '../src/Alerts';
+import readMe from '../README.md';
+export const title = 'Alerts';
+
+<Meta
+  title="Alerts"
+  component={ Alerts }
+  parameters={ {
+    jest: ['Alerts'],
+    notes: readMe
+  } }
+/>
+
+# Alerts
+
+Alert users to important information.
+
+<Preview withToolbar>
+  <Story name="Alerts">
+    <Alerts heading="New passport">
+      We'll send your new passport by secure delivery. The cost is included in the passport fee.
+    </Alerts>
+  </Story>
+</Preview>
+
+<Props of={ Alerts } />
+
+
+## Stories
+### Standard
+
+A standard Alerts.
+
+<Preview>
+  <Story name="Standard">
+    <Alerts heading="New passport">
+      We'll send your new passport by secure delivery. The cost is included in the passport fee.
+    </Alerts>
+  </Story>
+</Preview>
+
+
+### Success
+
+An Alerts signifying success.
+
+<Preview>
+  <Story name="Success">
+    <Alerts heading="Payment successful" classModifiers="success">
+      We've sent details to test-email@test-corp.co.uk <br /><a href="#">Download confirmation</a>
+    </Alerts>
+  </Story>
+</Preview>
+
+
+### Error
+
+An Alerts for when something has gone wrong.
+
+<Preview>
+  <Story name="Error">
+    <Alerts heading="Payment unsuccessful" classModifiers="error">
+      Please try again or contact our <a href="#">support team</a> for assistance.
+    </Alerts>
+  </Story>
+</Preview>

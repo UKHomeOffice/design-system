@@ -1,0 +1,29 @@
+@import "@hods/sass-base";
+
+.hods-alerts {
+  @include govuk-responsive-padding(1, "top");
+  @include govuk-responsive-padding(1, "bottom");
+  @include govuk-responsive-padding(3, "left");
+  @include govuk-responsive-padding(3, "right");
+  @include govuk-responsive-margin(3, "bottom");
+  box-sizing: border-box;
+  clear: both;
+  border-left: govuk-spacing(2) solid #2b8cc4;
+  background-color: #dbeff9;
+
+  &--success {
+    border-color: #28a197;
+    background-color: #c6ece9;
+  }
+
+  &--error {
+    border-color: #c42b2b;
+    background-color: #f3dede;
+  }
+
+  &__heading {
+    @include govuk-font(24, 'bold'); // FIXME: 22
+    @include govuk-responsive-margin(3, "top");
+    @include govuk-responsive-margin(3, "bottom");
+  }
+}
