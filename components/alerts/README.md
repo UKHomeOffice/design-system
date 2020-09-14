@@ -1,5 +1,5 @@
-Hods - Alerts
-===
+HODS - Alerts
+=============
 
 Alert users to important information.
 
@@ -20,9 +20,9 @@ import React, { createElement as h } from 'react';
 import Alerts from '@hods/alerts';
 
 export const MyComponent = props => (
-  <Alerts
-    // WRITEME
-  />
+  <Alerts heading="New passport">
+    We'll send your new passport by secure delivery. The cost is included in the passport fee.
+  </Alerts>
 );
 
 export default MyComponent;
