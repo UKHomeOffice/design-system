@@ -4,8 +4,9 @@ import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import '../assets/Alerts.scss';
 
 export type AlertsProps = StandardProps & {
-  /** Description for the 'heading' prop */
+  /** Heading of the alert */
   heading: string
+  /** Type of alert */
   type?: 'standard' | 'successful' | 'error'
 };
 
