@@ -59,6 +59,24 @@
         <a class="app-subnav__link govuk-link" href="/patterns/check-and-confirm-details">Check and confirm details</a>
       </li>
 
+      <!-- CONFIRMATION PATTERN -->
+
+      <li{% if activesub == "confirmation" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/confirmation-overview">Confirmation</a>
+
+        <ul class="app-subnav__section app-subnav__section--nested">
+
+          <li{% if activenest == "creation" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+            <a class="app-subnav__link govuk-link" href="/patterns/confirmation-accountcreation">— with account creation</a>
+          </li>
+
+          <li{% if activenest == "further" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+            <a class="app-subnav__link govuk-link" href="/patterns/confirmation-furtheractions">— with further actions</a>
+          </li>
+
+        </ul>
+      </li>
+
       <li{% if activesub == "information-on-document" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/find-information-on-a-document">Find information on a document</a>
       </li>
