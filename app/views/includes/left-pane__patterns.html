@@ -59,24 +59,6 @@
         <a class="app-subnav__link govuk-link" href="/patterns/check-and-confirm-details">Check and confirm details</a>
       </li>
 
-      <!-- CONFIRMATION PATTERN -->
-
-      <li{% if activesub == "confirmation" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/confirmation-overview">Confirmation</a>
-
-        <ul class="app-subnav__section app-subnav__section--nested">
-
-          <li{% if activenest == "creation" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-            <a class="app-subnav__link govuk-link" href="/patterns/confirmation-accountcreation">— with account creation</a>
-          </li>
-
-          <li{% if activenest == "further" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-            <a class="app-subnav__link govuk-link" href="/patterns/confirmation-furtheractions">— with further actions</a>
-          </li>
-
-        </ul>
-      </li>
-
       <li{% if activesub == "information-on-document" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/patterns/find-information-on-a-document">Find information on a document</a>
       </li>
@@ -112,15 +94,24 @@
 
 <!-- PAGES -->
 
-    <!-- I've commented out this final pattern theme as we do not have the confirmation page complete -->
+    <h4 class="app-subnav__theme">Pages…</h4>
+    <ul class="app-subnav__section">
+      <li{% if activesub == "confirmation" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+        <a class="app-subnav__link govuk-link" href="/patterns/confirmation-overview">Confirmation</a>
 
-    <!-- <h4 class="app-subnav__theme">Pages…</h4>
-    <ul>
-      <li{% if activesub == "title" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
-        <a class="app-subnav__link govuk-link" href="/patterns/correct-link">Pattern name</a>
+        <ul class="app-subnav__section app-subnav__section--nested">
+
+          <li{% if activenest == "creation" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+            <a class="app-subnav__link govuk-link" href="/patterns/confirmation-accountcreation">— with account created</a>
+          </li>
+
+          <li{% if activenest == "further" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+            <a class="app-subnav__link govuk-link" href="/patterns/confirmation-furtheractions">— with further actions</a>
+          </li>
+
+        </ul>
       </li>
-    </ul> -->
-
+    </ul>
 
   </nav>
 </div>
