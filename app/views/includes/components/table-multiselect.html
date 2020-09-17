@@ -6,6 +6,7 @@
         <div class="govuk-checkboxes__item">
           <input type="checkbox" class="govuk-checkboxes__input jsCheckboxAll" id="radio-all">
           <label class="govuk-label govuk-checkboxes__label" for="radio-all">
+            <span class="visually-hidden">Select all</span>
             &nbsp;
           </label>
         </div>
@@ -20,7 +21,9 @@
           <div class="govuk-checkboxes__item">
             <input type="checkbox" class="govuk-checkboxes__input jsCheckbox" id="radio-{{ loop.index }}">
             <label class="govuk-label govuk-checkboxes__label" for="radio-{{ loop.index }}">
-              &nbsp;
+                &nbsp;
+              <span class="visually-hidden">{{ user.name }}</span>
+        
             </label>
           </div>
         </td>

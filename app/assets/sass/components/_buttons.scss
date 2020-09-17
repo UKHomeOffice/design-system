@@ -30,12 +30,12 @@
 
 .button-secondary {
 	background-color: $panel-colour;
-  box-shadow: 0 1px 0 $text-colour;
+  	box-shadow: 0 1px 0 $text-colour;
 	color: $text-colour;
-  border: $text-colour 1px solid;
-  &[disabled]:active {
+  	border: $text-colour 1px solid;
+  	&[disabled]:active {
 		background-color: $border-colour;
-    box-shadow: 0 0px 0 $black;
+    	box-shadow: 0 0px 0 $black;
   }
 }
 
