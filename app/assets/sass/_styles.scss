@@ -32,7 +32,7 @@
 
 .colour-swatch {
   display: flex;
-  padding: 15px 0;
+  padding: 10px 0;
   align-items: center;
   font-family: $govuk-font-family;
   font-weight: 400;
@@ -53,8 +53,8 @@
 
 .app-swatch {
     display: inline-flex;
-    width: 60px;
-    height: 60px;
+    width: 44px;
+    height: 44px;
     border: 1px solid transparent;
     border-radius: 50%;
     justify-content: center;
