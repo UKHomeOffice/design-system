@@ -24,17 +24,18 @@ Stop and think - Home Office design system
       <h1 class="heading-section heading-pattern">Stop and think</h1>
       <p class="also-known-as">Also known as: interruption card</p>
 
-      <!-- <div>
+      <div>
         <p class="research-status">
           <strong class="label--recommended govuk-!-margin-top-0 govuk-!-margin-bottom-2">RECOMMENDED</strong><br>
-          <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
-          This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it.
+          <!-- <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
+          This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it. -->
         </p>
-      </div> -->
+      </div>
 
 <!-- ONE LINE DESCRIPTION -->
       <p class="govuk-body-l one-line-description">An alert that interrupts the user flow with important information and must be acknowledged before continuing.</p>
 
+<!-- EXAMPLE -->
       <div class="example example-images" id="example-component">
         <div class="govuk-grid-row">
           {% include "includes/patterns/flash_card.html" %}
@@ -49,41 +50,51 @@ Stop and think - Home Office design system
         <pre><code class="css">{% filter escape %}{% include "includes/css/interruption.scss" %}{% endfilter %}</code></pre>
       </details>
 
-      <h2 class="govuk-heading-m">Guidance</h2>
-      <h3 class="govuk-heading-s">It can be used:</h3>
+<!-- WHEN TO USE THIS PATTERN -->
+      <h2 class="govuk-heading-m">When to use this pattern</h2>
+      <p>Follow this pattern:</p>
       <ul class="govuk-list govuk-list--bullet">
-        <li>to draw a users attention to important information specific to that point in their journey</li>
-        <li>allow users to acknowledge something before continuing</li>
-        <li>if important information is styled normally and users are missing it use this pattern - its unexpected so helps to bring attention to essential information</li>
+        <li>to draw a user’s attention to important information specific to that point in their journey</li>
+        <li>to allow users to acknowledge something before continuing</li>
+        <li>if you find that users are missing important information on a page</li>
+      </ul> 
+
+<!-- WHEN NOT TO USE THIS PATTERN -->
+      <h2 class="govuk-heading-m">When not to use this pattern</h2>
+      <p>Do not follow this pattern:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>when including large amounts of content - the effectiveness of the pattern is based on its unexpected appearance so should be used sparingly</li>
       </ul>
 
-      <h3 class="govuk-heading-s">It should not be used:</h3>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>for large amounts of content</li>
-        <li>the effectiveness of the pattern is based on its unexpected appearance so should be used sparingly</li>
-      </ul>
-
-      <h3 class="govuk-heading-s">The interruption should:</h3>
+<!-- HOW IT WORKS -->
+      <h2 class="govuk-heading-m">How it works</h2>
+      <p>The interruption card pattern should:</p>
       <ul class="govuk-list govuk-list--bullet">
         <li>include a heading</li>
         <li>have large body text - a minimum of 24px</li>
-        <li>use a &ldquo;Continue&rdquo; button to advance to the next card or page</li>
+        <li>use a “Continue” button to move on to the next card or page</li>
         <li>have one thing per card - if the user needs to do more than one thing, use extra cards</li>
       </ul>
 
-      <h2 class="govuk-heading-m">User research</h2>
-      <p>This pattern has been so successful on the passport renewals service that we have been able to dramatically reduce the amount of content on the start page.</p>
-      <p>Interrupting users&rsquo; flow in this way can increase their understanding and retention of important information.</p>
-      <p>We have seen evidence that the contrast levels of interruption cards help dyslexic users.</p>
-      <p><a href="https://designnotes.blog.gov.uk/2015/09/21/helping-users-understand-gov-uk-verify-designing-with-data/">Read a blog post about the patterns use on Verify</a></p>
-
+<!-- SERVICES USING THIS PATTERN  -->
       <h2 class="govuk-heading-m">Services using this pattern</h2>
       <ul class="govuk-list govuk-list--bullet">
         <li><a href="https://www.gov.uk/apply-renew-passport">Passport renewals</a></li>
         <li>Verify (GOV.UK)</li>
       </ul>
 
+<!-- RESEARCH -->
+      <h2 class="govuk-heading-m">Research</h2>
+      <p>This pattern has been so successful on the passport renewals service that we have been able to dramatically reduce the amount of content on the start page.</p>
+      <p>Interrupting users’ flow in this way can increase their understanding and retention of important information.</p>
+      <p>We have seen evidence that the contrast levels of interruption cards help dyslexic users.</p>
+      <p><a href="https://designnotes.blog.gov.uk/2015/09/21/helping-users-understand-gov-uk-verify-designing-with-data/">Read a blog post about the patterns use on Verify</a></p>
+
+<!-- ACCESSIBILITY -->
+      <h2 class="govuk-heading-m">Accessibility</h2>
+      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
+
+<!-- GET IN TOUCH -->
       <div class="contact-us">
        <h2 class="govuk-heading-m">Get in touch</h2>
        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <a href="https://github.com/UKHomeOffice/design-system">GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
