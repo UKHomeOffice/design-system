@@ -3524,7 +3524,6 @@ packages:
       validator: 12.2.0
     dev: true
     peerDependencies:
-      '@not-govuk/docs-components': '*'
       react: ^16.9.35
       react-dom: ^16.9.8
       react-router: ^5.1.7
@@ -3618,7 +3617,6 @@ packages:
     peerDependencies:
       '@not-govuk/docs-components': ^0.1.0
       react: ^16.9.35
-      react-router-dom: '*'
     resolution:
       integrity: sha512-Yjy5zlGv653bIsK2UhjjEyGeCewRWL6qtVi9pZHu3IBBCEbUpUQyOvxO/d5HJMfWa0ujQ4Qf+pP4Tbs9xzEx1w==
   /@not-govuk/link/0.1.26_11e3a5cc41985e6f9952195da7266220:
