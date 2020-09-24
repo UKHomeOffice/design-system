@@ -32,5 +32,37 @@ $margin: 30px;
   overflow: hidden;
   border: 1px solid #cbcbcb;
   margin-top: 30px;
-  padding: 40px 30px 30px 30px;
+  padding: 30px;
+}
+
+.example span {
+  display: block;
+}
+
+// Contact us box styling
+
+.contact-us {
+  padding: govuk-spacing(4);
+  background-color: #005ea5;
+  color: white;
+  margin-top: 30px;
+
+  a, :active, a:visited, a:link {
+    color: white;
+  }
+
+  a:focus {
+    color: black;
+  }
+
+  h2.govuk-heading-m {
+    padding: 0;
+    margin: 0 0 10px 0;
+    color: white;
+  }
+
+  p {
+    margin: 0;
+    color: white;
+  }
 }
