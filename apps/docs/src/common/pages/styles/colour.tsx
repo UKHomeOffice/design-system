@@ -336,8 +336,133 @@ const Page: FC<PageProps> = ({ location }) => (
               Off white
             </div>
         </div>      
-      
       </section>
+
+      {/* ACCESSIBILITY */}
+
+      <section className="colour-swatch-wrapper">
+        <h2 className="govuk-heading-l" style={{marginTop: "2em"}}>Accessibility</h2>
+        <p>Text and background colours need to meet the minimum AA contrast ratios specified by <A href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">Web Content Accessibility Guidelines (WCAG) 2.1</A>.</p>
+        <p>All of our secondary colours were assessed in a tool built to test colour contrast compliance with the WCAG. These are the colours combinations that passed.</p>
+      </section>
+
+      {/* BACKGROUND COMBINATIONS */}
+      
+      <section className="colour-swatch-wrapper">
+        <h2 className=" heading-small" style={{marginTop: "2em"}}>Accessible text and background combinations</h2>
+        <p>Colour alone should never be used to convey information. You must also describe the information you are trying to convey.</p>
+        
+        
+        <div className="govuk-grid-row">
+
+          <div className="govuk-grid-column-one-half">
+
+            <div className="colour-swatch">
+              <span className="app-swatch" style={{backgroundColor: "#FCEA1D"}}>
+                <span style={{color: "#0B0C0C"}}>A</span>
+              </span>
+              <div className="colour-info">
+                Background: #FCEA1D<br />
+                Foreground: #0B0C0C
+              </div>
+            </div>
+
+            <div className="colour-swatch">
+              <span className="app-swatch" style={{backgroundColor: "#F8F8F7", border: "1px solid #CBCBCB"}}>
+                <span style={{color: "#0B0C0C"}}>A</span>
+              </span>
+              <div className="colour-info">
+                Background: #F8F8F7<br />
+                Foreground: #0B0C0C
+              </div>
+            </div>
+
+            <div className="colour-swatch">
+              <span className="app-swatch" style={{backgroundColor: "#E6E6E6", border: "1px solid #CBCBCB"}}>
+                <span style={{color: "#0B0C0C"}}>A</span>
+              </span>
+              <div className="colour-info">
+                Background: #E6E6E6<br />
+                Foreground: #0B0C0C
+              </div>
+            </div>
+
+            <div className="colour-swatch">
+              <span className="app-swatch" style={{backgroundColor: "#3FA435"}}>
+                <span style={{color: "#FFFFFF"}}>A</span>
+              </span>
+              <div className="colour-info">
+                Background: #3FA435<br />
+                Foreground: #FFFFFF
+              </div>
+            </div>
+
+            <div className="colour-swatch">
+              <span className="app-swatch" style={{backgroundColor: "#00747A"}}>
+                <span style={{color: "#FFFFFF"}}>A</span>
+              </span>
+              <div className="colour-info">
+                Background: #00747A<br />
+                Foreground: #FFFFFF
+              </div>
+            </div>
+          </div>
+
+          <div className="govuk-grid-column-one-half">
+            <div className="colour-swatch">
+                <span className="app-swatch" style={{backgroundColor: "#1D70B8"}}>
+                  <span style={{color: "#FFFFFF"}}>A</span>
+                </span>
+                <div className="colour-info">
+                  Background: #1D70B8<br />
+                  Foreground: #FFFFFF
+                </div>
+              </div>
+      
+              <div className="colour-swatch">
+                <span className="app-swatch" style={{backgroundColor: "#0B0C0C"}}>
+                  <span style={{color: "#FFFFFF"}}>A</span>
+                </span>
+                <div className="colour-info">
+                  Background: #0B0C0C<br />
+                  Foreground: #FFFFFF
+                </div>
+              </div>
+      
+              <div className="colour-swatch">
+                <span className="app-swatch" style={{backgroundColor: "#882345"}}>
+                  <span style={{color: "#FFFFFF"}}>A</span>
+                </span>
+                <div className="colour-info">
+                  Background: #882345<br />
+                  Foreground: #FFFFFF
+                </div>
+              </div>
+      
+              <div className="colour-swatch">
+                <span className="app-swatch" style={{backgroundColor: "#002664"}}>
+                  <span style={{color: "#FFFFFF"}}>A</span>
+                </span>
+                <div className="colour-info">
+                  Background: #002664<br />
+                  Foreground: #FFFFFF
+                </div>
+              </div>
+      
+              <div className="colour-swatch">
+                <span className="app-swatch" style={{backgroundColor: "#858585"}}>
+                  <span style={{color: "#FFFFFF"}}>A</span>
+                </span>
+                <div className="colour-info">
+                  Background: #858585<br />
+                  Foreground: #FFFFFF
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
 
     </div>
   </div>
