@@ -12,7 +12,6 @@ const Page: FC<PageProps> = ({ location }) => (
         <ul className="plain">
           <li><A href="/styles/colour">Colour</A></li>
           <li><A href="/styles/images">Images</A></li>
-          <li><A href="/styles/templates">Page templates</A></li>
           <li><A href="/styles/typography">Typography</A></li>
         </ul>
       </aside>
@@ -96,7 +95,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <tr className="govuk-table__row">
             <th className="govuk-table__cell" scope="row">Body</th>
             <td className="govuk-table__cell" scope="row">18px</td>
-            <td className="govuk-table__cell" scope="row">15px</td>
+            <td className="govuk-table__cell" scope="row" style={{textAlign: "right"}}>15px</td>
             {/* <td className="govuk-table__cell" scope="row">regular</td> */}
             <td className="govuk-table__cell" scope="row">1.45<br />1.35 (smaller screens)</td>
           </tr>

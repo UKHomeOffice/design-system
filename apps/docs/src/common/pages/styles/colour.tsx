@@ -24,7 +24,6 @@ const Page: FC<PageProps> = ({ location }) => (
         <ul className="plain">
           <li><A href="/styles/colour">Colour</A></li>
           <li><A href="/styles/images">Images</A></li>
-          <li><A href="/styles/templates">Page templates</A></li>
           <li><A href="/styles/typography">Typography</A></li>
         </ul>
       </aside>
