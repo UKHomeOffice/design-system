@@ -83,6 +83,7 @@ importers:
   apps/docs:
     devDependencies:
       '@hods/components': 'link:../../lib/components'
+      '@hods/header': 'link:../../components/header'
       '@not-govuk/app-composer': 0.1.26_9758558ea92931c4ddad3287ec74247c
       '@not-govuk/client-renderer': 0.1.26_b9067f48172ccfe2e8a6dcb826dd865e
       '@not-govuk/components': 0.1.26_b9067f48172ccfe2e8a6dcb826dd865e
@@ -109,6 +110,7 @@ importers:
       webpack-hot-middleware: 2.25.0
     specifiers:
       '@hods/components': 'workspace:^0.1.0'
+      '@hods/header': 'workspace:^0.1.2'
       '@not-govuk/app-composer': ^0.1.26
       '@not-govuk/client-renderer': ^0.1.26
       '@not-govuk/components': ^0.1.26
