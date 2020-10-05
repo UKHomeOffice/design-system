@@ -3524,6 +3524,7 @@ packages:
       validator: 12.2.0
     dev: true
     peerDependencies:
+      '@not-govuk/docs-components': '*'
       react: ^16.9.35
       react-dom: ^16.9.8
       react-router: ^5.1.7
@@ -3617,6 +3618,7 @@ packages:
     peerDependencies:
       '@not-govuk/docs-components': ^0.1.0
       react: ^16.9.35
+      react-router-dom: '*'
     resolution:
       integrity: sha512-Yjy5zlGv653bIsK2UhjjEyGeCewRWL6qtVi9pZHu3IBBCEbUpUQyOvxO/d5HJMfWa0ujQ4Qf+pP4Tbs9xzEx1w==
   /@not-govuk/link/0.1.26_11e3a5cc41985e6f9952195da7266220:
@@ -5702,22 +5704,14 @@ packages:
       react: ^0.14 || ^15.0.0 || ^16.0.0-alpha
     resolution:
       integrity: sha512-7WHOFolP/6cS96PhKNrslCLMYAI8yB1Pp6u6XmxozQOiZbsI5ycglZr5cHhBFfuRcQQjzCMith5ZPZdYiJCxUg==
-  /ajv-errors/1.0.1_ajv@6.12.3:
+  /ajv-errors/1.0.1_ajv@6.12.4:
     dependencies:
-      ajv: 6.12.3
+      ajv: 6.12.4
     dev: true
     peerDependencies:
       ajv: '>=5.0.0'
     resolution:
       integrity: sha512-DCRfO/4nQ+89p/RK43i8Ezd41EqdGIU4ld7nGF8OQ14oc/we5rEntLCUa7+jrn3nn83BosfwZA0wb4pon2o8iQ==
-  /ajv-keywords/3.5.2_ajv@6.12.3:
-    dependencies:
-      ajv: 6.12.3
-    dev: true
-    peerDependencies:
-      ajv: ^6.9.1
-    resolution:
-      integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==
   /ajv-keywords/3.5.2_ajv@6.12.4:
     dependencies:
       ajv: 6.12.4
@@ -5726,15 +5720,6 @@ packages:
       ajv: ^6.9.1
     resolution:
       integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==
-  /ajv/6.12.3:
-    dependencies:
-      fast-deep-equal: 3.1.3
-      fast-json-stable-stringify: 2.1.0
-      json-schema-traverse: 0.4.1
-      uri-js: 4.2.2
-    dev: true
-    resolution:
-      integrity: sha512-4K0cK3L1hsqk9xIb2z9vs/XU+PGJZ9PNpJRDS9YLzmNdX6jmVPfamLvTJr0aDAusnHyCHO6MjzlkAsgtqp9teA==
   /ajv/6.12.4:
     dependencies:
       fast-deep-equal: 3.1.3
@@ -17875,9 +17860,9 @@ packages:
       integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
   /schema-utils/1.0.0:
     dependencies:
-      ajv: 6.12.3
-      ajv-errors: 1.0.1_ajv@6.12.3
-      ajv-keywords: 3.5.2_ajv@6.12.3
+      ajv: 6.12.4
+      ajv-errors: 1.0.1_ajv@6.12.4
+      ajv-keywords: 3.5.2_ajv@6.12.4
     dev: true
     engines:
       node: '>= 4'
@@ -19808,12 +19793,6 @@ packages:
   /upper-case/1.1.3:
     resolution:
       integrity: sha1-9rRQHC7EzdJrp4vnIilh3ndiFZg=
-  /uri-js/4.2.2:
-    dependencies:
-      punycode: 2.1.1
-    dev: true
-    resolution:
-      integrity: sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
   /uri-js/4.4.0:
     dependencies:
       punycode: 2.1.1
@@ -20169,7 +20148,7 @@ packages:
       neo-async: 2.6.2
     dev: true
     optionalDependencies:
-      chokidar: 3.4.1
+      chokidar: 3.4.2
       watchpack-chokidar2: 2.0.0
     resolution:
       integrity: sha512-ymVbbQP40MFTp+cNMvpyBpBtygHnPzPkHqoIwRRj/0B8KhqQwV8LaKjtbaxF2lK4vl8zN9wCxS46IFCU5K4W0g==
@@ -20308,8 +20287,8 @@ packages:
       '@webassemblyjs/wasm-edit': 1.9.0
       '@webassemblyjs/wasm-parser': 1.9.0
       acorn: 6.4.1
-      ajv: 6.12.3
-      ajv-keywords: 3.5.2_ajv@6.12.3
+      ajv: 6.12.4
+      ajv-keywords: 3.5.2_ajv@6.12.4
       chrome-trace-event: 1.0.2
       enhanced-resolve: 4.3.0
       eslint-scope: 4.0.3
