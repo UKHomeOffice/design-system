@@ -20,12 +20,15 @@ const Page: FC<PageProps> = ({ location }) => (
       </aside>
     </div>
     <div className="govuk-grid-column-two-thirds">
-    <h1 className="heading-section">Get involved</h1>
+      <h1 className="govuk-heading-l">Design system working group</h1>
 
-          <p>This design system is for everyone. Its purpose is to extend the <A href="https://design-system.service.gov.uk/">GOV.UK Design System</A> with work specific to the Home Office.</p>
-          <p>Patterns or components that have a wider use will be contributed to the GOV.UK Design System so they can be used by delivery teams across government.</p>
+          <p>The Home Office design system working group meets once a month to discuss ways to develop and improve the Home Office design system.</p>
 
-          <p>Find out more in this section about how you can contribute ideas and get involved with the Home Office design system. </p>
+          <p>The working group also helps support new design proposals, and encourage the communities to <A href="/getinvolved/propose">get involved and contribute.</A></p>
+
+          <p>It is a cross-functional team made up of interaction and content design, user research, accessibility, and front-end development.</p>
+
+          <p>You can contact the working group on the Home Office #ho-design-system slack channel, or email the design system working group on <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
     </div>
   </div>
 );
