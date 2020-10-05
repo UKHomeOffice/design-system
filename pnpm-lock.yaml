@@ -83,6 +83,7 @@ importers:
   apps/docs:
     devDependencies:
       '@hods/components': 'link:../../lib/components'
+      '@hods/header': 'link:../../components/header'
       '@not-govuk/app-composer': 0.1.26_9758558ea92931c4ddad3287ec74247c
       '@not-govuk/client-renderer': 0.1.26_b9067f48172ccfe2e8a6dcb826dd865e
       '@not-govuk/components': 0.1.26_b9067f48172ccfe2e8a6dcb826dd865e
@@ -109,6 +110,7 @@ importers:
       webpack-hot-middleware: 2.25.0
     specifiers:
       '@hods/components': 'workspace:^0.1.0'
+      '@hods/header': 'workspace:^0.1.2'
       '@not-govuk/app-composer': ^0.1.26
       '@not-govuk/client-renderer': ^0.1.26
       '@not-govuk/components': ^0.1.26
@@ -3524,7 +3526,6 @@ packages:
       validator: 12.2.0
     dev: true
     peerDependencies:
-      '@not-govuk/docs-components': '*'
       react: ^16.9.35
       react-dom: ^16.9.8
       react-router: ^5.1.7
@@ -3618,7 +3619,6 @@ packages:
     peerDependencies:
       '@not-govuk/docs-components': ^0.1.0
       react: ^16.9.35
-      react-router-dom: '*'
     resolution:
       integrity: sha512-Yjy5zlGv653bIsK2UhjjEyGeCewRWL6qtVi9pZHu3IBBCEbUpUQyOvxO/d5HJMfWa0ujQ4Qf+pP4Tbs9xzEx1w==
   /@not-govuk/link/0.1.26_11e3a5cc41985e6f9952195da7266220:

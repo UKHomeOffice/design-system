@@ -17,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "@hods/components": "workspace:^0.1.0",
+    "@hods/header": "workspace:^0.1.2",
     "@not-govuk/app-composer": "^0.1.26",
     "@not-govuk/client-renderer": "^0.1.26",
     "@not-govuk/components": "^0.1.26",
