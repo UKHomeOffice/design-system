@@ -1,6 +1,6 @@
 {
   "name": "@hods/alerts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Alert users to important information.",
   "main": "src/Alerts.tsx",
   "sass": "assets/Alerts.scss",
