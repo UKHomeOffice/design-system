@@ -24,6 +24,7 @@
     "react-components"
   ],
   "dependencies": {
+    "@hods/alerts": "workspace:^0.1.2",
     "@hods/footer": "workspace:^0.1.0",
     "@hods/header": "workspace:^0.1.0",
     "@hods/page": "workspace:^0.1.0",
