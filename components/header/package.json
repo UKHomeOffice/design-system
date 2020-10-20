@@ -1,6 +1,6 @@
 {
   "name": "@hods/header",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "HODS' page header.",
   "main": "src/Header.tsx",
   "sass": "assets/Header.scss",
