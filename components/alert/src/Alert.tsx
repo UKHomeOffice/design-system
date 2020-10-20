@@ -1,15 +1,15 @@
 import { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 
-import '../assets/Alerts.scss';
+import '../assets/Alert.scss';
 
-export type AlertsProps = StandardProps & {
+export type AlertProps = StandardProps & {
   /** Heading of the alert */
   heading: string
 };
 
-export const Alerts: FC<AlertsProps> = ({ children, classBlock, classModifiers, className, heading, ...attrs }) => {
-  const classes = classBuilder('hods-alerts', classBlock, classModifiers, className);
+export const Alert: FC<AlertProps> = ({ children, classBlock, classModifiers, className, heading, ...attrs }) => {
+  const classes = classBuilder('hods-alert', classBlock, classModifiers, className);
 
   return (
       <div className={classes()}>
@@ -19,4 +19,4 @@ export const Alerts: FC<AlertsProps> = ({ children, classBlock, classModifiers, 
   );
 };
 
-export default Alerts;
+export default Alert;

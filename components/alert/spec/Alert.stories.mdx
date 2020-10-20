@@ -1,67 +1,67 @@
 import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
-import { Alerts } from '../src/Alerts';
+import { Alert } from '../src/Alert';
 import readMe from '../README.md';
-export const title = 'Alerts';
+export const title = 'Alert';
 
 <Meta
-  title="Alerts"
-  component={ Alerts }
+  title="Alert"
+  component={ Alert }
   parameters={ {
-    jest: ['Alerts'],
+    jest: ['Alert'],
     notes: readMe
   } }
 />
 
-# Alerts
+# Alert
 
 Alert users to important information.
 
 <Preview withToolbar>
-  <Story name="Alerts">
-    <Alerts heading="New passport">
+  <Story name="Alert">
+    <Alert heading="New passport">
       We'll send your new passport by secure delivery. The cost is included in the passport fee.
-    </Alerts>
+    </Alert>
   </Story>
 </Preview>
 
-<Props of={ Alerts } />
+<Props of={ Alert } />
 
 
 ## Stories
 ### Standard
 
-A standard Alerts.
+A standard Alert.
 
 <Preview>
   <Story name="Standard">
-    <Alerts heading="New passport">
+    <Alert heading="New passport">
       We'll send your new passport by secure delivery. The cost is included in the passport fee.
-    </Alerts>
+    </Alert>
   </Story>
 </Preview>
 
 
 ### Success
 
-An Alerts signifying success.
+An Alert signifying success.
 
 <Preview>
   <Story name="Success">
-    <Alerts heading="Payment successful" classModifiers="success">
+    <Alert heading="Payment successful" classModifiers="success">
       We've sent details to test-email@test-corp.co.uk <br /><a href="#">Download confirmation</a>
-    </Alerts>
+    </Alert>
   </Story>
 </Preview>
 
 
 ### Error
 
-An Alerts for when something has gone wrong.
+An Alert for when something has gone wrong.
 
 <Preview>
   <Story name="Error">
-    <Alerts heading="Payment unsuccessful" classModifiers="error">
+    <Alert heading="Payment unsuccessful" classModifiers="error">
       Please try again or contact our <a href="#">support team</a> for assistance.
-    </Alerts>
+    </Alert>
   </Story>
 </Preview>

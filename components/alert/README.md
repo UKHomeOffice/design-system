@@ -1,5 +1,5 @@
-HODS - Alerts
-=============
+HODS - Alert
+============
 
 Alert users to important information.
 
@@ -10,19 +10,19 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @hods/alerts
+npm install -S @hods/alert
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import Alerts from '@hods/alerts';
+import Alert from '@hods/alert';
 
 export const MyComponent = props => (
-  <Alerts heading="New passport">
+  <Alert heading="New passport">
     We'll send your new passport by secure delivery. The cost is included in the passport fee.
-  </Alerts>
+  </Alert>
 );
 
 export default MyComponent;
