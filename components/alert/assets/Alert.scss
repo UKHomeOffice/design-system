@@ -1,6 +1,6 @@
 @import "@hods/sass-base";
 
-.hods-alerts {
+.hods-alert {
   @include govuk-responsive-padding(1, "top");
   @include govuk-responsive-padding(1, "bottom");
   @include govuk-responsive-padding(3, "left");

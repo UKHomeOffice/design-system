@@ -2,11 +2,11 @@
   "name": "@hods/alerts",
   "version": "0.1.4",
   "description": "Alert users to important information.",
-  "main": "src/Alerts.tsx",
-  "sass": "assets/Alerts.scss",
+  "main": "src/Alert.tsx",
+  "sass": "assets/Alert.scss",
   "publishConfig": {
-    "main": "dist/Alerts.js",
-    "typings": "dist/Alerts.d.ts"
+    "main": "dist/Alert.js",
+    "typings": "dist/Alert.d.ts"
   },
   "files": [
     "/assets",
