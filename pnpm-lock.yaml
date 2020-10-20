@@ -227,7 +227,7 @@ importers:
       typescript: ^3.9.2
   lib/components:
     dependencies:
-      '@hods/alerts': 'link:../../components/alert'
+      '@hods/alert': 'link:../../components/alert'
       '@hods/footer': 'link:../../components/footer'
       '@hods/header': 'link:../../components/header'
       '@hods/page': 'link:../../components/page'
@@ -237,7 +237,7 @@ importers:
       ts-jest: 26.3.0_jest@26.4.2+typescript@3.9.7
       typescript: 3.9.7
     specifiers:
-      '@hods/alerts': 'workspace:^0.1.2'
+      '@hods/alert': 'workspace:^0.1.5'
       '@hods/footer': 'workspace:^0.1.0'
       '@hods/header': 'workspace:^0.1.0'
       '@hods/page': 'workspace:^0.1.0'
