@@ -139,6 +139,7 @@ importers:
     dependencies:
       '@hods/sass-base': 'link:../../lib/sass-base'
       '@not-govuk/component-helpers': 0.1.27
+      '@not-govuk/inset-text': 0.1.27
     devDependencies:
       '@mdx-js/react': 1.6.18
       '@not-govuk/component-test-helpers': 0.1.27
@@ -151,6 +152,7 @@ importers:
       '@mdx-js/react': ^1.6.5
       '@not-govuk/component-helpers': ^0.1.27
       '@not-govuk/component-test-helpers': ^0.1.27
+      '@not-govuk/inset-text': ^0.1.27
       '@types/react': ^16.9.35
       jest: ^26.1.0
       ts-jest: ^26.1.1
@@ -4020,6 +4022,17 @@ packages:
       react-router-dom: ^5.1.5
     resolution:
       integrity: sha512-7MnMVzwcH6yfr6zi8CAvXAh6J2fNjC7DWmFIy5H17bWO8gw3DXIGOMaBPe0A2wWdz1Nx03TXdDY/nfF/j4FFLw==
+  /@not-govuk/inset-text/0.1.27:
+    dependencies:
+      '@not-govuk/component-helpers': 0.1.27
+      '@not-govuk/sass-base': 0.1.27
+      govuk-frontend: 3.9.1
+    dev: false
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.1.0
+      react: ^16.9.35
+    resolution:
+      integrity: sha512-maeLHaoDsdcPL8FFYnu0asYobVybvHeg3/4I6CemBZygkPLZdosZm60buV5+PcGQRP+FLNo4+gEfkYYKJA8YDw==
   /@not-govuk/inset-text/0.1.27_559a0497e35798275c7d95654e716938:
     dependencies:
       '@not-govuk/component-helpers': 0.1.27
