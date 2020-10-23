@@ -1,14 +1,9 @@
 @import "@hods/sass-base";
+@import "@not-govuk/inset-text";
 
 .hods-alert {
-  @include govuk-responsive-padding(1, "top");
-  @include govuk-responsive-padding(1, "bottom");
-  @include govuk-responsive-padding(3, "left");
-  @include govuk-responsive-padding(3, "right");
-  @include govuk-responsive-margin(3, "bottom");
-  box-sizing: border-box;
-  clear: both;
-  border-left: govuk-spacing(2) solid #2b8cc4;
+  @extend .govuk-inset-text;
+  border-color: #2b8cc4;
   background-color: #dbeff9;
 
   &--success {
@@ -21,9 +16,16 @@
     background-color: #f3dede;
   }
 
+  &:first-child {
+    @include govuk-responsive-margin(0, "top");
+  }
+
+  &:last-child {
+    @include govuk-responsive-margin(0, "bottom");
+  }
+
   &__heading {
     @include govuk-font(24, 'bold'); // FIXME: 22
-    @include govuk-responsive-margin(3, "top");
     @include govuk-responsive-margin(3, "bottom");
   }
 }
