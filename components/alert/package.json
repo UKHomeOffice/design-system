@@ -25,7 +25,8 @@
   ],
   "dependencies": {
     "@hods/sass-base": "workspace:^0.1.2",
-    "@not-govuk/component-helpers": "^0.1.27"
+    "@not-govuk/component-helpers": "^0.1.27",
+    "@not-govuk/inset-text": "^0.1.27"
   },
   "peerDependencies": {
     "@not-govuk/docs-components": "^0.1.0",
