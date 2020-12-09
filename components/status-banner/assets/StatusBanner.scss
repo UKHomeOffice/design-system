@@ -1,34 +1,37 @@
 @import "@hods/sass-base";
 
-
 .hods-status-banner {
-  background-color: govuk-colour("dark-grey");
-  color: govuk-colour("white");
   @include govuk-responsive-padding(2, "top");
   @include govuk-responsive-padding(2, "bottom");
   @include govuk-responsive-padding(3, "left");
   @include govuk-responsive-padding(3, "right");
+  background-color: govuk-colour("dark-grey");
+  color: govuk-colour("white");
 
   &--positive {
-    color: govuk-colour("white");
     background-color: govuk-colour("green");
-  }
-  &--negative {
     color: govuk-colour("white");
+  }
+
+  &--negative {
     background-color: #b10e1e;
+    color: govuk-colour("white");
   }
 
   &__summary {
-    color: govuk-colour("white");
-    text-transform: uppercase;
     @include govuk-font(19, 'bold');
+    color: govuk-colour("white");
     display: block;
-    &:hover {color: govuk-colour("white")}
-  }
-  &__text {
-    border-top: 1px solid govuk-colour("white");
-@include govuk-responsive-padding (2, "top");
-    @include govuk-responsive-margin(5, "left");
+    text-transform: uppercase;
 
+    &:hover {
+      color: govuk-colour("white");
+    }
+  }
+
+  &__text {
+    @include govuk-responsive-padding (2, "top");
+    @include govuk-responsive-margin(5, "left");
+    border-top: 1px solid govuk-colour("white");
   }
 }

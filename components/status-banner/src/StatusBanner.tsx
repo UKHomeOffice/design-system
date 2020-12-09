@@ -8,18 +8,23 @@ export type StatusBannerProps = StandardProps & {
   status: string
 };
 
-export const StatusBanner: FC<StatusBannerProps> = ({ children, classBlock, classModifiers, className, status, ...attrs }) => {
+export const StatusBanner: FC<StatusBannerProps> = ({
+  children,
+  classBlock,
+  classModifiers,
+  className,
+  status,
+  ...attrs
+}) => {
   const classes = classBuilder('hods-status-banner', classBlock, classModifiers, className);
 
   return (
-
     <details {...attrs} className={classes()}>
-<summary className={classes('summary')}>{status}</summary>
-<div className={classes('text')}>
-      {children}
+      <summary className={classes('summary')}>{status}</summary>
+      <div className={classes('text')}>
+        {children}
       </div>
-  </details>
-
+    </details>
   );
 };
 
