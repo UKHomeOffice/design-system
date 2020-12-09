@@ -18,7 +18,7 @@ Component that provides both high level and more detailed warning messages.
 
 <Preview withToolbar>
   <Story name="StatusBanner">
-    <StatusBanner>
+    <StatusBanner status="Draft">
       This licence is not active. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
     </StatusBanner>
   </Story>
@@ -30,12 +30,24 @@ Component that provides both high level and more detailed warning messages.
 ## Stories
 ### Standard
 
-A standard Status banner.
+A standard status banner.
 
 <Preview>
   <Story name="Standard">
-    <StatusBanner>
+    <StatusBanner status="Draft">
       This licence is not active. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
+    </StatusBanner>
+  </Story>
+</Preview>
+
+### Negative
+
+A negative status banner.
+
+<Preview>
+  <Story name="Negative">
+    <StatusBanner status="Expired" classModifiers="negative">
+      This licence has expired. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
     </StatusBanner>
   </Story>
 </Preview>

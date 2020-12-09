@@ -4,7 +4,7 @@ import StatusBanner from '../src/StatusBanner';
 
 describe('StatusBanner', () => {
   describe('when given valid props', () => {
-    const component = mount(h(StatusBanner, {}, 'Child'));
+    const component = mount(h(StatusBanner, {status:'status'}, 'Child'));
 
     it('renders', () => undefined);
   });

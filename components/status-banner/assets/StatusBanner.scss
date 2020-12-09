@@ -9,6 +9,11 @@
   @include govuk-responsive-padding(3, "left");
   @include govuk-responsive-padding(3, "right");
 
+  &--negative {
+    color: govuk-colour("white");
+    background-color: #b10e1e;
+  }
+
   &__summary {
     color: govuk-colour("white");
     text-transform: uppercase;

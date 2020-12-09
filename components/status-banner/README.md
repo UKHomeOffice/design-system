@@ -20,13 +20,12 @@ import React, { createElement as h } from 'react';
 import StatusBanner from '@hods/status-banner';
 
 export const MyComponent = props => (
-  <StatusBanner>
+  <StatusBanner status="Draft">
     This licence is not active. The licence holder or
     applicant is not authorised to carry out the
     programme of work as stated in this
     licence/application.
   </StatusBanner>
-
 );
 
 export default MyComponent;
