@@ -7,7 +7,7 @@ import '../assets/StatusBanner.scss';
 export type StatusBannerProps = StandardProps & {
 };
 
-export const StatusBanner: FC<StatusBannerProps> = ({ children, classBlock, classModifiers, className, heading, ...attrs }) => {
+export const StatusBanner: FC<StatusBannerProps> = ({ children, classBlock, classModifiers, className, ...attrs }) => {
   const classes = classBuilder('hods-status-banner', classBlock, classModifiers, className);
 
   return (
