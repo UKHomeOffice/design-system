@@ -1,0 +1,25 @@
+@import "@hods/sass-base";
+
+
+.hods-status-banner {
+  background-color: govuk-colour("dark-grey");
+  color: govuk-colour("white");
+  @include govuk-responsive-padding(2, "top");
+  @include govuk-responsive-padding(2, "bottom");
+  @include govuk-responsive-padding(3, "left");
+  @include govuk-responsive-padding(3, "right");
+
+  &__summary {
+    color: govuk-colour("white");
+    text-transform: uppercase;
+    @include govuk-font(19, 'bold');
+    display: block;
+    &:hover {color: govuk-colour("white")}
+  }
+  &__text {
+    border-top: 1px solid govuk-colour("white");
+@include govuk-responsive-padding (2, "top");
+    @include govuk-responsive-margin(5, "left");
+
+  }
+}

@@ -1,0 +1,41 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { StatusBanner } from '../src/StatusBanner';
+import readMe from '../README.md';
+export const title = 'Status banner';
+
+<Meta
+  title="Status banner"
+  component={ StatusBanner }
+  parameters={ {
+    jest: ['StatusBanner'],
+    notes: readMe
+  } }
+/>
+
+# Status banner
+
+Component that provides both high level and more detailed warning messages.
+
+<Preview withToolbar>
+  <Story name="StatusBanner">
+    <StatusBanner>
+      This licence is not active. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
+    </StatusBanner>
+  </Story>
+</Preview>
+
+<Props of={ StatusBanner } />
+
+
+## Stories
+### Standard
+
+A standard Status banner.
+
+<Preview>
+  <Story name="Standard">
+    <StatusBanner>
+      This licence is not active. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
+    </StatusBanner>
+  </Story>
+</Preview>
