@@ -16,6 +16,7 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "devDependencies": {
+    "@apollo/client": "^3.2.7",
     "@hods/components": "workspace:^0.1.0",
     "@hods/header": "workspace:^0.1.2",
     "@not-govuk/app-composer": "^0.1.31",
@@ -32,6 +33,7 @@
     "@types/react-router-dom": "^5.1.5",
     "@types/webpack-env": "^1.15.2",
     "bunyan": "^1.8.12",
+    "graphql": "^15.4.0",
     "moment": "^2.27.0",
     "node-hot-loader": "^1.19.0",
     "react": "^16.13.1",
