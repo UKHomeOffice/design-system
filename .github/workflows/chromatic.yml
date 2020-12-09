@@ -30,7 +30,7 @@ jobs:
             pnpm-
 
       - name: Pull dependencies
-        uses: pnpm/action-setup@v1.2.0
+        uses: pnpm/action-setup@v1.2.1
         with:
           version: 5.4.0
           run_install: true
