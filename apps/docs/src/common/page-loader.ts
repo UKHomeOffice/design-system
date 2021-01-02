@@ -1,3 +1,2 @@
-export const pageLoader = (src: string) => import(/* webpackPrefetch: true */ './pages/' + src);
-pageLoader.dir = 'src/common/pages';
+export const pageLoader = require.context('./pages', true, /\.[jt]sx?$/i, 'sync');
 export default pageLoader;

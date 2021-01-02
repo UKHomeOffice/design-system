@@ -6,7 +6,13 @@ import { LoadingPage } from '../common/loading-page';
 import { pageLoader } from '../common/page-loader';
 
 const main = () => {
-  hydrateOrRender(AppWrap, PageWrap, ErrorPage, LoadingPage, pageLoader);
+  hydrateOrRender({
+    AppWrap,
+    PageWrap,
+    ErrorPage,
+    LoadingPage,
+    pageLoader
+  });
 };
 
 main();
