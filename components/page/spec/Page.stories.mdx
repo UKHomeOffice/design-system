@@ -1,12 +1,13 @@
 import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
 import { Page } from '../src/Page';
 import readMe from '../README.md';
-export const title = 'Page';
 
 <Meta
   title="Page"
   component={ Page }
   parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'HODS\' page component.',
     jest: ['Page'],
     notes: readMe
   } }
@@ -15,7 +16,6 @@ export const title = 'Page';
 # Page
 
 HODS' page component.
-WRITE MORE DESCRIPTION HERE.
 
 <Preview withToolbar>
   <Story name="Page">

@@ -1,12 +1,13 @@
 import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
 import { Header } from '../src/Header';
 import readMe from '../README.md';
-export const title = 'Header';
 
 <Meta
   title="Header"
   component={ Header }
   parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'HODS\' page header.',
     jest: ['Header'],
     notes: readMe
   } }
@@ -15,7 +16,6 @@ export const title = 'Header';
 # Header
 
 HODS' page header.
-WRITE MORE DESCRIPTION HERE.
 
 <Preview withToolbar>
   <Story name="Header">

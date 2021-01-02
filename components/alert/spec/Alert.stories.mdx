@@ -1,12 +1,13 @@
 import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
 import { Alert } from '../src/Alert';
 import readMe from '../README.md';
-export const title = 'Alert';
 
 <Meta
   title="Alert"
   component={ Alert }
   parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Alert users to important information.',
     jest: ['Alert'],
     notes: readMe
   } }
