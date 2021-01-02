@@ -110,47 +110,47 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-  }
 
-  &__navigation-item {
-    box-sizing: border-box;
-    height: 50px;
-    float: left;
-    line-height: 50px;
-    margin: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    &__item {
+      box-sizing: border-box;
+      height: 50px;
+      float: left;
+      line-height: 50px;
+      margin: 0;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
 
-    &--active {
-      border-bottom: 3px solid #0b0c0c !important;
-      font-weight: bold;
+      &--active {
+        border-bottom: 3px solid #0b0c0c !important;
+        font-weight: bold;
 
-      a:hover {
-        color: #232727;
+        a:hover {
+          color: #232727;
+        }
       }
-    }
 
-    &:hover {
-      border-bottom: 3px solid #0b0c0c;
-    }
+      &:hover {
+        border-bottom: 3px solid #0b0c0c;
+      }
 
-    a {
-      @include govuk-responsive-padding(0, "top");
-      @include govuk-responsive-padding(0, "bottom");
-      @include govuk-responsive-padding(3, "left");
-      @include govuk-responsive-padding(3, "right");
-      display: block;
-      color: #0b0c0c !important;
-      text-decoration: none;
-
-      &:visited {
+      a {
+        @include govuk-responsive-padding(0, "top");
+        @include govuk-responsive-padding(0, "bottom");
+        @include govuk-responsive-padding(3, "left");
+        @include govuk-responsive-padding(3, "right");
+        display: block;
         color: #0b0c0c !important;
-      }
-
-      &:hover, &focus {
-        color: #0b0c0c;
-        background-color: inherit;
         text-decoration: none;
+
+        &:visited {
+          color: #0b0c0c !important;
+        }
+
+        &:hover, &focus {
+          color: #0b0c0c;
+          background-color: inherit;
+          text-decoration: none;
+        }
       }
     }
   }

@@ -1,25 +1,15 @@
 import { FC, createElement as h } from 'react';
+import { Anchor, AnchorList } from '@not-govuk/anchor-list';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import { A } from '@not-govuk/link';
 
 import '../assets/Header.scss';
 
-export type NavigationLink = {
-  /** Whether the link is for the current page */
-  active?: boolean
-  /** Location to link to */
-  href: string
-  /** Text of the link */
-  text: string
-  /** Title of the link */
-  title?: string
-};
-
 export type HeaderProps = StandardProps & {
   /** HRef for the account link */
   accountHref?: string
   /** Navigation links */
-  navigation?: NavigationLink[]
+  navigation?: Anchor[]
   /** HRef for the sign-out link */
   signOutHref?: string
   /** Text for the sign-out link */
@@ -164,15 +154,7 @@ export const Header: FC<HeaderProps> = ({ accountHref, children, classBlock, cla
         </div>
         { navigation && (
           <nav className={classes('navigation')}>
-            <ul id="navigation" className={classes('navigation-list')} aria-label="Top Level Navigation">
-              {navigation.map((v, i) => (
-                <li key={i} className={classes('navigation-item', v.active ? 'active' : undefined)}>
-                  <A classBlock="hods-header__link" href={v.href} title={v.title}>
-                    {v.text}
-                  </A>
-                </li>
-              ))}
-            </ul>
+            <AnchorList items={navigation} classBlock={classes('navigation-list')} aria-label="Top Level Navigation" />
           </nav>
         ) }
       </div>
