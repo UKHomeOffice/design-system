@@ -1,4 +1,5 @@
 import { FC, Fragment, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 const applyGithub1 = require('../../../../assets/images/Github-guide-screen-1.png').default;
@@ -7,10 +8,12 @@ const applyGithub3 = require('../../../../assets/images/Github-guide-screen-3.pn
 const applyGithub5 = require('../../../../assets/images/Github-guide-screen-5.png').default;
 const applyGithub6 = require('../../../../assets/images/Github-guide-screen-6.png').default;
 
-
-
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
+    <Helmet>
+      <title>GitHub Guide - Home Office Design System</title>
+      <meta name="og:article:section" content="Get involved" />
+    </Helmet>
     <div className="govuk-grid-column-one-third">
       <aside>
         <h2>Get involved</h2>

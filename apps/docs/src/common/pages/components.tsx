@@ -1,4 +1,5 @@
 import { FC, Fragment, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { DocsPage } from '@not-govuk/docs-components';
@@ -20,6 +21,10 @@ const Page: FC<PageProps> = ({ location }) => {
 
   return (
     <div className="govuk-grid-row">
+      <Helmet>
+        <title>Components - Home Office Design System</title>
+        <meta name="og:article:section" content="Components" />
+      </Helmet>
       <div className="govuk-grid-column-one-third">
         <aside>
           <h2>Components</h2>

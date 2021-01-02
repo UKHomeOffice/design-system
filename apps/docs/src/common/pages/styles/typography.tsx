@@ -1,10 +1,14 @@
 import { FC, Fragment, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 
 const Page: FC<PageProps> = ({ location }) => (
-  
   <div className="govuk-grid-row">
+    <Helmet>
+      <title>Typography - Home Office Design System</title>
+      <meta name="og:article:section" content="Styles" />
+    </Helmet>
 
     <div className="govuk-grid-column-one-third">
       <aside>
