@@ -20,7 +20,7 @@ HODS' page component.
 <Preview withToolbar>
   <Story name="Page">
     <Page
-      title="Service name"
+      serviceName="Service name"
       footerNavigation={[
         { href: '/feedback', text: 'Feedback' },
         { href: '/help', text: 'Help' },
@@ -61,11 +61,11 @@ A Page with navigation links in the header and footer.
   <Story name="Navigation">
     <Page
       accountHref="#/my-account"
-      title="Service name"
+      serviceName="Service name"
       signOutHref="#/auth/sign-out"
       username="User name"
       navigation={[
-        { href: '/styles', text: 'Styles', active: true },
+        { href: '/styles', text: 'Styles' },
         { href: '/components', text: 'Components' },
         { href: '/patterns', text: 'Patterns' },
         { href: '/resources', text: 'Resources' },
