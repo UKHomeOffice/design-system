@@ -13,13 +13,13 @@ describe('Header', () => {
     const component = mount(h(Header, {
       accountHref: '#/my-account',
       navigation: [
-        { href: '/styles', text: 'Styles', active: true },
+        { href: '/styles', text: 'Styles' },
         { href: '/components', text: 'Components' },
         { href: '/patterns', text: 'Patterns' },
         { href: '/resources', text: 'Resources' },
         { href: '/get-involved', text: 'Get involved' }
       ],
-      title: 'Service name',
+      serviceName: 'Service name',
       signOutHref: '#/auth/sign-out',
       username: 'User name'
     }));

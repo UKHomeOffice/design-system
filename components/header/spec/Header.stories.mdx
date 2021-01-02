@@ -19,7 +19,7 @@ HODS' page header.
 
 <Preview withToolbar>
   <Story name="Header">
-    <Header title="Service name" />
+    <Header serviceName="Service name" />
   </Story>
 </Preview>
 
@@ -44,7 +44,7 @@ A header with a service title.
 
 <Preview>
   <Story name="Service title">
-    <Header title="Service name" />
+    <Header serviceName="Service name" />
   </Story>
 </Preview>
 
@@ -57,7 +57,7 @@ A header with an option to sign out.
   <Story name="Sign-out">
     <Header
       accountHref="#/my-account"
-      title="Service name"
+      serviceName="Service name"
       signOutHref="#/auth/sign-out"
       username="User name"
     />
@@ -74,13 +74,13 @@ A header with navigation links.
     <Header
       accountHref="#/my-account"
       navigation={[
-        { href: '/styles', text: 'Styles', active: true },
+        { href: '/styles', text: 'Styles' },
         { href: '/components', text: 'Components' },
         { href: '/patterns', text: 'Patterns' },
         { href: '/resources', text: 'Resources' },
         { href: '/get-involved', text: 'Get involved' }
       ]}
-      title="Service name"
+      serviceName="Service name"
       signOutHref="#/auth/sign-out"
       username="User name"
     />

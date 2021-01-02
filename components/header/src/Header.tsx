@@ -10,19 +10,32 @@ export type HeaderProps = StandardProps & {
   accountHref?: string
   /** Navigation links */
   navigation?: Anchor[]
+  /** Service link URL */
+  serviceHref?: string
+  /** Service link text */
+  serviceName?: string
   /** HRef for the sign-out link */
   signOutHref?: string
   /** Text for the sign-out link */
   signOutText?: string
-  /** Service title */
-  title?: string
-  /** Location linked to by the service title */
-  titleHref?: string
   /** Username of the person who is logged in */
   username?: string
 };
 
-export const Header: FC<HeaderProps> = ({ accountHref, children, classBlock, classModifiers, className, navigation, signOutHref, signOutText = 'Sign out', title, titleHref = '/', username, ...attrs }) => {
+export const Header: FC<HeaderProps> = ({
+  accountHref,
+  children,
+  classBlock,
+  classModifiers,
+  className,
+  navigation,
+  serviceHref = '/',
+  serviceName,
+  signOutHref,
+  signOutText = 'Sign out',
+  username,
+  ...attrs
+}) => {
   const classes = classBuilder('hods-header', classBlock, classModifiers, className);
 
   return (
@@ -138,9 +151,9 @@ export const Header: FC<HeaderProps> = ({ accountHref, children, classBlock, cla
               </g>
             </svg>
           </div>
-          { title && (
+          { serviceName && (
             <div className={classes('title')}>
-              <A href={titleHref} classBlock="hods-header__link" classModifiers="service-name">{title}</A>
+              <A href={serviceHref} classBlock="hods-header__link" classModifiers="service-name">{serviceName}</A>
             </div>
           ) }
           { signOutHref && (
