@@ -1,12 +1,13 @@
 import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
 import { Page } from '../src/Page';
 import readMe from '../README.md';
-export const title = 'Page';
 
 <Meta
   title="Page"
   component={ Page }
   parameters={ {
+    chromatic: { viewports: [800, 600] },
+    description: 'HODS\' page component.',
     jest: ['Page'],
     notes: readMe
   } }
@@ -15,12 +16,11 @@ export const title = 'Page';
 # Page
 
 HODS' page component.
-WRITE MORE DESCRIPTION HERE.
 
 <Preview withToolbar>
   <Story name="Page">
     <Page
-      title="Service name"
+      serviceName="Service name"
       footerNavigation={[
         { href: '/feedback', text: 'Feedback' },
         { href: '/help', text: 'Help' },
@@ -61,11 +61,11 @@ A Page with navigation links in the header and footer.
   <Story name="Navigation">
     <Page
       accountHref="#/my-account"
-      title="Service name"
+      serviceName="Service name"
       signOutHref="#/auth/sign-out"
       username="User name"
       navigation={[
-        { href: '/styles', text: 'Styles', active: true },
+        { href: '/styles', text: 'Styles' },
         { href: '/components', text: 'Components' },
         { href: '/patterns', text: 'Patterns' },
         { href: '/resources', text: 'Resources' },

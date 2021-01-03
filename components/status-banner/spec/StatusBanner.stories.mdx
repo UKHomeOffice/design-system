@@ -1,12 +1,13 @@
 import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
 import { StatusBanner } from '../src/StatusBanner';
 import readMe from '../README.md';
-export const title = 'Status banner';
 
 <Meta
   title="Status banner"
   component={ StatusBanner }
   parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Component that provides both high level and more detailed warning messages.',
     jest: ['StatusBanner'],
     notes: readMe
   } }

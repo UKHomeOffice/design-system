@@ -1,16 +1,18 @@
 import { FC, Fragment, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { DocsPage } from '@not-govuk/docs-components';
 
-const reduceToLookup = (acc, cur) => ({...acc, [cur.default.title]: cur});
-const createSubpageStore = r => (
-  r
-    .keys()
-    .map(r)
-    .reduce(reduceToLookup, {})
-);
-const subpages = createSubpageStore(require.context('../../../../../components/', true, /^\.\/[^\/]+\/spec\/[^\/]+\.stories\.mdx$/));
+const reduceToLookup = (acc: object, cur) => ({...acc, [cur.default.title]: cur});
+const storySources = [
+  require('../../../../../components/alert/spec/Alert.stories.mdx'),
+  require('../../../../../components/footer/spec/Footer.stories.mdx'),
+  require('../../../../../components/header/spec/Header.stories.mdx'),
+  require('../../../../../components/page/spec/Page.stories.mdx'),
+  require('../../../../../components/status-banner/spec/StatusBanner.stories.mdx')
+];
+const subpages = storySources.reduce(reduceToLookup, {})
 
 const Page: FC<PageProps> = ({ location }) => {
   const nameParam = 'name';
@@ -19,6 +21,10 @@ const Page: FC<PageProps> = ({ location }) => {
 
   return (
     <div className="govuk-grid-row">
+      <Helmet>
+        <title>Components - Home Office Design System</title>
+        <meta name="og:article:section" content="Components" />
+      </Helmet>
       <div className="govuk-grid-column-one-third">
         <aside>
           <h2>Components</h2>
@@ -34,7 +40,7 @@ const Page: FC<PageProps> = ({ location }) => {
           stories ? (
             <Fragment>
               <span className="govuk-caption-xl">Components</span>
-              <DocsPage stories={stories} />
+              <DocsPage siteName="Home Office Design System" stories={stories} />
             </Fragment>
           ) : (
             componentName ? (

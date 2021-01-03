@@ -1,4 +1,5 @@
 import { FC, ReactNode, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import { SkipLink } from '@not-govuk/components';
 import { Header, HeaderProps } from '@hods/header';
@@ -11,6 +12,8 @@ export type PageProps = HeaderProps & {
   footerNavigation?: NavigationLink[]
   /** Footer content */
   footerContent?: ReactNode
+  /** Title of the HTML page (can be overridden via Helmet  */
+  title?: string
 };
 
 export const Page: FC<PageProps> = ({
@@ -22,27 +25,40 @@ export const Page: FC<PageProps> = ({
   footerContent,
   footerNavigation,
   navigation,
+  serviceHref,
+  serviceName: _serviceName,
   signOutHref,
   signOutText,
-  title,
-  titleHref,
+  title: _title,
   username,
   ...attrs
 }) => {
   const classes = classBuilder('hods-page', classBlock, classModifiers, className);
+  const serviceName = _serviceName || _title;
+  const title = _title || _serviceName || 'Home Office';
+  const headerProps = {
+    accountHref,
+    navigation,
+    serviceHref,
+    serviceName,
+    signOutHref,
+    signOutText,
+    username
+  };
+  const footerProps = {
+    navigation: footerNavigation
+  };
 
   return (
     <div {...attrs} className={classes()}>
-      <SkipLink id="skip-link" href="#main-content" />
-      <Header
-        accountHref={accountHref}
-        navigation={navigation}
-        signOutHref={signOutHref}
-        signOutText={signOutText}
-        title={title}
-        titleHref={titleHref}
-        username={username}
-      />
+      <Helmet>
+        <title>{title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="theme-color" content="#ffffff" />
+      </Helmet>
+      <SkipLink id="skip-link" for="main-content" />
+      <Header {...headerProps} className={classes('header')} />
       <div className={classes('body')}>
         <div className={classes('container') + ' hods-width-container'}>
           <main id="main-content" className={classes('main')} role="main">
@@ -50,7 +66,7 @@ export const Page: FC<PageProps> = ({
           </main>
         </div>
       </div>
-      <Footer navigation={footerNavigation}>{footerContent}</Footer>
+      <Footer {...footerProps}>{footerContent}</Footer>
     </div>
   );
 };

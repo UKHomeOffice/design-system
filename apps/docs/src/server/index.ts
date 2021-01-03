@@ -1,7 +1,6 @@
 import { resolve } from 'path';
 import engine, { Mode, NodeEnv } from '@not-govuk/engine';
 import config from './config';
-import Template from './template';
 import AppWrap from '../common/app-wrap';
 import ErrorPage from '../common/error-page';
 import PageWrap from '../common/page-wrap';
@@ -38,7 +37,6 @@ const startApp = () => stage1.then(
     AppWrap,
     ErrorPage,
     PageWrap,
-    Template,
     pageLoader
   })
 );
@@ -75,8 +73,19 @@ if (module.hot) {
               v.log.info(`${v.name} is no longer listening`)
 
               if (state.needSetup) {
-                state.needSetup = false;
-                stage1 = setup();
+                stage1.then(
+                  ({ proxy }) => {
+                    state.needSetup = false;
+
+                    proxy.log.info(`${proxy.name} is going down...`);
+                    proxy.stop(
+                      () => {
+                        proxy.log.info(`${proxy.name} is no longer listening`)
+                        stage1 = setup();
+                      }
+                    );
+                  }
+                );
               }
 
               app = startApp();
@@ -99,7 +108,6 @@ if (module.hot) {
   ], restart);
 
   module.hot.accept([
-    './template',
     '../common/app-wrap',
     '../common/error-page',
     '../common/page-loader',

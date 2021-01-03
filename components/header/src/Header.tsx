@@ -1,38 +1,41 @@
 import { FC, createElement as h } from 'react';
+import { Anchor, AnchorList } from '@not-govuk/anchor-list';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import { A } from '@not-govuk/link';
 
 import '../assets/Header.scss';
 
-export type NavigationLink = {
-  /** Whether the link is for the current page */
-  active?: boolean
-  /** Location to link to */
-  href: string
-  /** Text of the link */
-  text: string
-  /** Title of the link */
-  title?: string
-};
-
 export type HeaderProps = StandardProps & {
   /** HRef for the account link */
   accountHref?: string
   /** Navigation links */
-  navigation?: NavigationLink[]
+  navigation?: Anchor[]
+  /** Service link URL */
+  serviceHref?: string
+  /** Service link text */
+  serviceName?: string
   /** HRef for the sign-out link */
   signOutHref?: string
   /** Text for the sign-out link */
   signOutText?: string
-  /** Service title */
-  title?: string
-  /** Location linked to by the service title */
-  titleHref?: string
   /** Username of the person who is logged in */
   username?: string
 };
 
-export const Header: FC<HeaderProps> = ({ accountHref, children, classBlock, classModifiers, className, navigation, signOutHref, signOutText = 'Sign out', title, titleHref = '/', username, ...attrs }) => {
+export const Header: FC<HeaderProps> = ({
+  accountHref,
+  children,
+  classBlock,
+  classModifiers,
+  className,
+  navigation,
+  serviceHref = '/',
+  serviceName,
+  signOutHref,
+  signOutText = 'Sign out',
+  username,
+  ...attrs
+}) => {
   const classes = classBuilder('hods-header', classBlock, classModifiers, className);
 
   return (
@@ -148,9 +151,9 @@ export const Header: FC<HeaderProps> = ({ accountHref, children, classBlock, cla
               </g>
             </svg>
           </div>
-          { title && (
+          { serviceName && (
             <div className={classes('title')}>
-              <A href={titleHref} classBlock="hods-header__link" classModifiers="service-name">{title}</A>
+              <A href={serviceHref} classBlock="hods-header__link" classModifiers="service-name">{serviceName}</A>
             </div>
           ) }
           { signOutHref && (
@@ -164,15 +167,7 @@ export const Header: FC<HeaderProps> = ({ accountHref, children, classBlock, cla
         </div>
         { navigation && (
           <nav className={classes('navigation')}>
-            <ul id="navigation" className={classes('navigation-list')} aria-label="Top Level Navigation">
-              {navigation.map((v, i) => (
-                <li key={i} className={classes('navigation-item', v.active ? 'active' : undefined)}>
-                  <A classBlock="hods-header__link" href={v.href} title={v.title}>
-                    {v.text}
-                  </A>
-                </li>
-              ))}
-            </ul>
+            <AnchorList items={navigation} classBlock={classes('navigation-list')} aria-label="Top Level Navigation" />
           </nav>
         ) }
       </div>

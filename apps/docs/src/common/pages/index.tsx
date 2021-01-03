@@ -1,4 +1,5 @@
 import { FC, Fragment, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 
@@ -6,6 +7,9 @@ import Markdown from '../../../../../docs/about.md';
 
 const Page: FC<PageProps> = props => (
   <Fragment>
+    <Helmet>
+      <title>Home - Home Office Design System</title>
+    </Helmet>
     <div className="govuk-grid-row">
       <div className="govuk-grid-column-two-thirds">
         <Markdown />

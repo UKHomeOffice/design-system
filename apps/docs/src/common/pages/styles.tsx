@@ -1,4 +1,5 @@
 import { FC, Fragment, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 
@@ -8,6 +9,10 @@ const policeImage = require('../../../assets/images/police.png').default;
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
+    <Helmet>
+      <title>Styles - Home Office Design System</title>
+      <meta name="og:article:section" content="Styles" />
+    </Helmet>
     <div className="govuk-grid-column-one-third">
       <aside>
         <h2>Styles</h2>

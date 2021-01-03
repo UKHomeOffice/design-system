@@ -1,7 +1,6 @@
 import { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 
-
 import '../assets/StatusBanner.scss';
 
 export type StatusBannerProps = StandardProps & {
