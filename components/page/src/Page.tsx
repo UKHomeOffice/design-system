@@ -7,7 +7,7 @@ import { Footer, NavigationLink } from '@hods/footer';
 
 import '../assets/Page.scss';
 
-export type PageProps = HeaderProps & {
+export type PageProps = StandardProps & HeaderProps & {
   /** Footer links */
   footerNavigation?: NavigationLink[]
   /** Footer content */
