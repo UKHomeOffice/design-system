@@ -7,6 +7,14 @@ import { Footer, NavigationLink } from '@hods/footer';
 
 import '../assets/Page.scss';
 
+const favicon = require('../assets/images/ho-favicon.ico').default;
+const maskIcon = require('../assets/images/ho-mask-icon.svg').default;
+const appleTouchIcon180 = require('../assets/images/ho-apple-touch-icon-180x180.png').default;
+const appleTouchIcon167 = require('../assets/images/ho-apple-touch-icon-167x167.png').default;
+const appleTouchIcon152 = require('../assets/images/ho-apple-touch-icon-152x152.png').default;
+const appleTouchIcon = require('../assets/images/ho-apple-touch-icon.png').default;
+const ogImage = require('../assets/images/ho-opengraph-image.png').default;
+
 export type PageProps = StandardProps & HeaderProps & {
   /** Footer links */
   footerNavigation?: NavigationLink[]
@@ -56,6 +64,13 @@ export const Page: FC<PageProps> = ({
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="theme-color" content="#ffffff" />
+        <link rel="shortcut icon" sizes="16x16 32x32 48x48" href={favicon} type="image/x-icon" />
+        <link rel="mask-icon" href={maskIcon} color="#0b0c0c" />
+        <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon180} />
+        <link rel="apple-touch-icon" sizes="167x167" href={appleTouchIcon167} />
+        <link rel="apple-touch-icon" sizes="152x152" href={appleTouchIcon152} />
+        <link rel="apple-touch-icon" href={appleTouchIcon} />
+        <meta property="og:image" content={ogImage} />
       </Helmet>
       <SkipLink id="skip-link" for="main-content" />
       <Header {...headerProps} className={classes('header')} />
