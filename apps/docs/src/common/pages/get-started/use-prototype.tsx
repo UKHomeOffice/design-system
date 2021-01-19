@@ -30,7 +30,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
         <p>There are two ways to use components. You can either copy the code from the HTML or React tabs. </p>
 
-        <div class="govuk-inset-text">
+        <div className="govuk-inset-text">
         React is more powerful and maintainable and production code should
         make use of it over HTML.
         </div>

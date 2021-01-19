@@ -30,7 +30,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p>Rapidly create HTML prototypes of internal Home Office services. </p>
 
-      <div class="govuk-inset-text">
+      <div className="govuk-inset-text">
       If your team is planning to use the HODS production framework, you
       might consider having the developers create a blank 'app' within the
       project to make it easier to transform your prototype into a production
