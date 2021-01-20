@@ -10,7 +10,7 @@ const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>Guidance on Home Office Design System</title>
-      <meta name="og:article:section" content="Resources" />
+      <meta name="og:article:section" content="Get started" />
     </Helmet>
     <div className="govuk-grid-column-one-third">
       <aside>
@@ -40,7 +40,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
-          <img  src={applyPrototype3} className="confirm-desktop" style={{width: "100%", maxHeight: "100%"}} alt="HTML code displayed for status banner"/>
+          <img  src={applyPrototype3} className="confirm-desktop" style={{maxHeight: "100%"}} alt="HTML code displayed for status banner"/>
           </div>
         </div>
         <p></p>
@@ -48,7 +48,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
-            <img  src={applyPrototype4} className="confirm-desktop" style={{width: "100%", maxHeight: "100%"}} alt="Text editor screen with a highlight around where example code snippet should sit"/>
+            <img  src={applyPrototype4} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen with a highlight around where example code snippet should sit"/>
           </div>
         </div>
         <p></p>
@@ -56,7 +56,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
-            <img  src={applyPrototype5} className="confirm-desktop" style={{width: "100%", maxHeight: "100%"}} alt="Local web browser displaying properly coded status banner"/>
+            <img  src={applyPrototype5} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Local web browser displaying properly coded status banner"/>
           </div>
         </div>
 
