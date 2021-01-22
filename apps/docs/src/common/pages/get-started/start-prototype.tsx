@@ -10,7 +10,7 @@ const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>Guidance on Home Office Design System</title>
-      <meta name="og:article:section" content="Starting a new prototype" />
+      <meta name="og:article:section" content="Get started" />
     </Helmet>
     <div className="govuk-grid-column-one-third">
       <aside>
@@ -100,4 +100,4 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Get started';
+export const title = 'Starting a new prototype';
