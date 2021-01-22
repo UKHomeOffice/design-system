@@ -10,7 +10,7 @@ const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>Guidance on Home Office Design System</title>
-      <meta name="og:article:section" content="Get started" />
+      <meta name="og:article:section" content="Using the components" />
     </Helmet>
     <div className="govuk-grid-column-one-third">
       <aside>

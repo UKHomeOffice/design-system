@@ -10,7 +10,7 @@ const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>Guidance on Home Office Design System</title>
-      <meta name="og:article:section" content="Get started" />
+      <meta name="og:article:section" content="Starting a new prototype" />
     </Helmet>
     <div className="govuk-grid-column-one-third">
       <aside>
@@ -43,15 +43,15 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <p>For the purpose of generating a new prototype, we are assuming you'll be using a Mac which comes with a terminal application to install, start and stop the prototype. Using a terminal is sometimes called ‘using the command line’. </p>
 
-      <h2>Installing the prototype</h2>
+      <h2>Generating a new prototype</h2>
         <h3>1. Run the following commands locally</h3>
         <p>Using terminal, run the following commands below (the parts in ALL CAPS should be replaced with something specific to you):</p>
 
         <pre><code>
-        mkdir YOUR-PROTOTYPE <br />
-        cd YOUR-PROTOTYPE  <br />
-        git init  <br />
-        npm init @hods prototype <br />
+        mkdir YOUR-PROTOTYPE<br />
+        cd YOUR-PROTOTYPE <br />
+        git init <br />
+        npm init @hods prototype<br />
         </code></pre>
 
         <h3>2. Answer the interactive prompts</h3>
@@ -92,7 +92,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3>5. Optional: Commit and push your new prototype</h3>
           <p>Run the following commands to push up the first version of your new prototype to your remote code repository:</p>
         <pre><code>
-        git remote add origin git@github.com:YOUR_USER/YOUR-PROTOTYPE.git <br />
+        git remote add origin git@github.com:YOUR_USER/YOUR-PROTOTYPE.git<br />
         git push -u origin master
         </code></pre>
         </div>
