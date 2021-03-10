@@ -22,7 +22,6 @@
     "@not-govuk/app-composer": "^0.2.4",
     "@not-govuk/client-renderer": "^0.2.4",
     "@not-govuk/components": "^0.2.4",
-    "@not-govuk/docs-components": "^0.2.4",
     "@not-govuk/engine": "^0.2.4",
     "@not-govuk/server-renderer": "^0.2.4",
     "@not-govuk/user-info": "^0.2.4",
