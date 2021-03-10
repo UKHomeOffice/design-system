@@ -27,7 +27,7 @@
     "@hods/footer": "workspace:^0.1.0",
     "@hods/header": "workspace:^0.1.0",
     "@hods/sass-base": "workspace:^0.1.0",
-    "@not-govuk/component-helpers": "^0.2.1",
+    "@not-govuk/component-helpers": "^0.2.4",
     "govuk-frontend": "^3.8.1"
   },
   "peerDependencies": {
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@mdx-js/react": "^1.6.5",
-    "@not-govuk/component-test-helpers": "^0.2.1",
+    "@not-govuk/component-test-helpers": "^0.2.4",
     "@types/react": "^16.9.35",
     "jest": "^26.1.0",
     "ts-jest": "^26.1.1",
