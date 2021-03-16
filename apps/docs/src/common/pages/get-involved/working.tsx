@@ -9,7 +9,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>Design system working group - Home Office Design System</title>
       <meta name="og:article:section" content="Get involved" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
+    <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
           href: '/get-involved/working',
@@ -37,7 +37,7 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
     </div>
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
       <h1 className="govuk-heading-l">Design system working group</h1>
 
           <p>The Home Office design system working group meets once a month to discuss ways to develop and improve the Home Office design system.</p>

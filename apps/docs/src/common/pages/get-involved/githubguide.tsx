@@ -15,7 +15,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>GitHub Guide - Home Office Design System</title>
       <meta name="og:article:section" content="Get involved" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
+    <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
           href: '/get-involved/working',
@@ -43,7 +43,7 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
     </div>
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
     <h1 className="govuk-heading-l">Using GitHub to propose design system changes</h1>
 
           <p>This guide explains how to propose a new pattern or component and edit and comment on existing suggestions.</p>

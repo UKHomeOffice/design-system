@@ -4,7 +4,7 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
-    <div className="govuk-grid-column-one-third">
+    <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
           href: '/get-started/start-prototype',
@@ -21,7 +21,7 @@ const Page: FC<PageProps> = ({ location }) => (
       ]} />
     </div>
 
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
       <h1>Get started</h1>
         <p>The Home Office Design System (HODS) framework is an extension of <A href="https://not-govuk.netlify.app/">NotGovUK</A> which implements the GOV.UK Design System in React. (See: <A href="https://not-govuk.netlify.app/design-decisions">design decisions</A>)</p>
         <p>If you are designing and building an internal Home Office service, here are guides to getting started:</p>

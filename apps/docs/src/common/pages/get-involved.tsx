@@ -9,7 +9,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>Get involved - Home Office Design System</title>
       <meta name="og:article:section" content="Get involved" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
+    <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
           href: '/get-involved/working',
@@ -37,7 +37,7 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
     </div>
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
     <h1 className="heading-section">Get involved</h1>
 
           <p>This design system is for everyone. Its purpose is to extend the <A href="https://design-system.service.gov.uk/">GOV.UK Design System</A> with work specific to the Home Office.</p>

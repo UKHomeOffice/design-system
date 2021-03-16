@@ -9,7 +9,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>Suggest a new pattern or component - Home Office Design System</title>
       <meta name="og:article:section" content="Get involved" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
+    <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
           href: '/get-involved/working',
@@ -37,7 +37,7 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
     </div>
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
     <h1 className="govuk-heading-l">Suggest a new pattern or component</h1>
           <p>Anyone can suggest adding a new component or pattern to the Home Office design system.</p>
 

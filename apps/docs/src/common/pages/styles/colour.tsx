@@ -21,7 +21,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>Colour - Home Office Design System</title>
       <meta name="og:article:section" content="Styles" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
+    <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
           href: '/styles/colour',
@@ -38,7 +38,7 @@ const Page: FC<PageProps> = ({ location }) => (
       ]} />
     </div>
 
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
 
       <span className="govuk-caption-xl">Styles</span>
       <h1 className="heading-section">Colour</h1>

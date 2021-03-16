@@ -9,7 +9,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>Resources - Home Office Design System</title>
       <meta name="og:article:section" content="Resources" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
+    <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
           href: '/resources/accessibility',
@@ -25,11 +25,11 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
     </div>
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
       <h1>Resources</h1>
       <p>A collection of resources to help teams design and build services in Government.</p>
       <div className="govuk-grid-row">
-        <div className="govuk-grid-column-two-thirds">
+        <div className="govuk-grid-column-three-quarters">
           <p>Resources cover:</p>
           <ul>
             <li>how to design and build <A href="/resources/accessibility">accessible</A> services</li>

@@ -29,10 +29,10 @@ const Page: FC<PageProps> = ({ location }) => {
         <title>Components - Home Office Design System</title>
         <meta name="og:article:section" content="Components" />
       </Helmet>
-      <div className="govuk-grid-column-one-third">
+      <div className="govuk-grid-column-one-quarter">
         <NavigationMenu items={navItems} />
       </div>
-      <div className="govuk-grid-column-two-thirds">
+      <div className="govuk-grid-column-three-quarters">
         {
           stories ? (
             <Fragment>

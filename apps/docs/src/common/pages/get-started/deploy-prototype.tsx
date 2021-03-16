@@ -9,7 +9,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>Guidance on Home Office Design System</title>
       <meta name="og:article:section" content="Get started" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
+    <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
           href: '/get-started/start-prototype',
@@ -25,7 +25,7 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
     </div>
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
       <h1>
         <span className="caption">Prototyping</span>
         Deploying your prototype
