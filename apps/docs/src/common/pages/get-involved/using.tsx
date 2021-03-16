@@ -1,7 +1,7 @@
 import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A } from '@not-govuk/components';
+import { A, NavigationMenu } from '@not-govuk/components';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -9,20 +9,35 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>Using the design system - Home Office Design System</title>
       <meta name="og:article:section" content="Get involved" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
-      <aside>
-        <h2>Get involved</h2>
-        <ul className="plain">
-        <li><A href="/get-involved/working">Working group</A></li>
-        <li><A href="/get-involved/backlog">Backlog</A></li>
-        <li><A href="/get-involved/suggest">Suggest new ideas</A></li>
-        <li><A href="/get-involved/githubguide">Using GitHub to propose design system changes</A></li>
-        <li><A href="/get-involved/proving">Proving ideas work</A></li>
-        <li><A href="/get-involved/using">Using the system</A></li>
-        </ul>
-      </aside>
+    <div className="govuk-grid-column-one-quarter">
+      <NavigationMenu items={[
+        {
+          href: '/get-involved/working',
+          text: 'Working group'
+        },
+        {
+          href: '/get-involved/backlog',
+          text: 'Backlog'
+        },
+        {
+          href: '/get-involved/suggest',
+          text: 'Suggest new ideas'
+        },
+        {
+          href: '/get-involved/githubguide',
+          text: 'Using GitHub to propose design system changes'
+        },
+        {
+          href: '/get-involved/proving',
+          text: 'Proving ideas work'
+        },
+        {
+          href: '/get-involved/using',
+          text: 'Using the system'
+        }
+      ]} />
     </div>
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
     <h1 className="govuk-heading-l">Using the design system</h1>
 
           <p>Components and some patterns come with code to make it easy for you to use them in your project. We currently provide code snippets for both old versions of the prototype kit (versions 6 and older) and new versions (versions 7.0 and newer).</p>
