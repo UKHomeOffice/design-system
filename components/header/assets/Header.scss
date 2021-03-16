@@ -102,7 +102,6 @@
 
   &__navigation {
     @include govuk-font(18);
-    @include govuk-responsive-padding(4, "left");
   }
 
   &__navigation-list {
