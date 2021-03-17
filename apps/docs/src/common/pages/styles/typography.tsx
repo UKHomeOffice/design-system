@@ -1,7 +1,7 @@
 import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A } from '@not-govuk/components';
+import { A, NavigationMenu } from '@not-govuk/components';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -10,18 +10,24 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content="Styles" />
     </Helmet>
 
-    <div className="govuk-grid-column-one-third">
-      <aside>
-        <h2>Styles</h2>
-        <ul className="plain">
-          <li><A href="/styles/colour">Colour</A></li>
-          <li><A href="/styles/images">Images</A></li>
-          <li><A href="/styles/typography">Typography</A></li>
-        </ul>
-      </aside>
+    <div className="govuk-grid-column-one-quarter">
+      <NavigationMenu items={[
+        {
+          href: '/styles/colour',
+          text: 'Colour'
+        },
+        {
+          href: '/styles/images',
+          text: 'Images'
+        },
+        {
+          href: '/styles/typography',
+          text: 'Typography'
+        }
+      ]} />
     </div>
 
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
 
       <span className="govuk-caption-xl">Styles</span>
       <h1 className="heading-section">Typography</h1>

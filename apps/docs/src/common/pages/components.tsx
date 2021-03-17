@@ -1,7 +1,7 @@
 import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A } from '@not-govuk/components';
+import { NavigationMenu } from '@not-govuk/components';
 import { DocsPage } from '@not-govuk/docs-components';
 
 const reduceToLookup = (acc: object, cur) => ({...acc, [cur.default.title]: cur});
@@ -18,6 +18,10 @@ const Page: FC<PageProps> = ({ location }) => {
   const nameParam = 'name';
   const componentName = location.query[nameParam];
   const stories = subpages[componentName];
+  const navItems = Object.keys(subpages).map(v => ({
+    href: `/components?${nameParam}=${subpages[v].default.title}`,
+    text: v
+  }));
 
   return (
     <div className="govuk-grid-row">
@@ -25,17 +29,10 @@ const Page: FC<PageProps> = ({ location }) => {
         <title>Components - Home Office Design System</title>
         <meta name="og:article:section" content="Components" />
       </Helmet>
-      <div className="govuk-grid-column-one-third">
-        <aside>
-          <h2>Components</h2>
-          <ul className="plain">
-            {Object.keys(subpages).map((v, i) => (
-              <li key={i}><A href={`/components?${nameParam}=${v}`}>{subpages[v].default.title}</A></li>
-            ))}
-          </ul>
-        </aside>
+      <div className="govuk-grid-column-one-quarter">
+        <NavigationMenu items={navItems} />
       </div>
-      <div className="govuk-grid-column-two-thirds">
+      <div className="govuk-grid-column-three-quarters">
         {
           stories ? (
             <Fragment>

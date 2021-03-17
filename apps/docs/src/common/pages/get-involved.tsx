@@ -1,7 +1,7 @@
 import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A } from '@not-govuk/components';
+import { A, NavigationMenu } from '@not-govuk/components';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -9,20 +9,35 @@ const Page: FC<PageProps> = ({ location }) => (
       <title>Get involved - Home Office Design System</title>
       <meta name="og:article:section" content="Get involved" />
     </Helmet>
-    <div className="govuk-grid-column-one-third">
-      <aside>
-        <h2>Get involved</h2>
-        <ul className="plain">
-        <li><A href="/get-involved/working">Working group</A></li>
-        <li><A href="/get-involved/backlog">Backlog</A></li>
-        <li><A href="/get-involved/suggest">Suggest new ideas</A></li>
-        <li><A href="/get-involved/githubguide">Using GitHub to propose design system changes</A></li>
-        <li><A href="/get-involved/proving">Proving ideas work</A></li>
-        <li><A href="/get-involved/using">Using the system</A></li>
-        </ul>
-      </aside>
+    <div className="govuk-grid-column-one-quarter">
+      <NavigationMenu items={[
+        {
+          href: '/get-involved/working',
+          text: 'Working group'
+        },
+        {
+          href: '/get-involved/backlog',
+          text: 'Backlog'
+        },
+        {
+          href: '/get-involved/suggest',
+          text: 'Suggest new ideas'
+        },
+        {
+          href: '/get-involved/githubguide',
+          text: 'Using GitHub to propose design system changes'
+        },
+        {
+          href: '/get-involved/proving',
+          text: 'Proving ideas work'
+        },
+        {
+          href: '/get-involved/using',
+          text: 'Using the system'
+        }
+      ]} />
     </div>
-    <div className="govuk-grid-column-two-thirds">
+    <div className="govuk-grid-column-three-quarters">
     <h1 className="heading-section">Get involved</h1>
 
           <p>This design system is for everyone. Its purpose is to extend the <A href="https://design-system.service.gov.uk/">GOV.UK Design System</A> with work specific to the Home Office.</p>
