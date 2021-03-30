@@ -1,166 +1,102 @@
-Cookies
-=======
-
-The Home Office Design System puts small files (known as ‘cookies’) on to your computer.
-
-We use cookies to:
-
-- record the notifications you’ve seen so we do not show them again
-- measure how you use the website so it can be updated and improved based on your activity
-
-These cookies are not used to identify you personally.
-
-You’ll see a message on the site before we store a cookie on your computer.
-
-[Find out how to manage cookies.]
-
-### Our cookie message
-
-You will see a message about cookies when you first visit the Home Office Design System. We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.
-
-<table className="govuk-table">
-<thead>
-<tr>
-<th className="govuk-table__header">Name</th>
-<th className="govuk-table__header">Purpose</th>
-<th className="govuk-table__header">Expires</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td className="govuk-table__cell">
-  seen_cookie_message
-</td>
-<td className="govuk-table__cell">
-  Saves a message to let us know that you have seen our cookie message
-</td>
-<td className="govuk-table__cell">
-  28 days
-  </td>
-</tr>
-</tbody>
-</table>
+Working on and contributing to HODS
+===================================
 
 
-### Measuring website usage with Google Analytics
+Contributing
+------------
 
-We use Google Analytics software to collect information about how you use the Home Office Design System. We do this to help make sure the site is meeting the needs of its users and to help us make improvements.
+[Pull requests] are welcome but it is probably best to [open an issue]
+first to discuss what you think needs to change.
 
-Google Analytics stores information about:
+I would like this project to be as easy as possible to both consume and
+contribute to. To that end, if you think any of the documentation isn't
+clear please do let me know by raising an [issue] or a [pull request].
 
-- the pages you visit
-- how long you spend on each page
-- how you got to the site
-- what you click on while you’re visiting the site.
-
-We do not collect or store your personal information, so this data cannot be used to identify who you are.
-
-We do not allow Google to use or share our analytics data.
-
-Google Analytics sets the following cookies:
-
-<table className="govuk-table">
-<thead>
-<tr>
-<th className="govuk-table__header">Name</th>
-<th className="govuk-table__header">Purpose</th>
-<th className="govuk-table__header">Expires</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td className="govuk-table__cell">
-  _ga
-</td>
-<td className="govuk-table__cell">
-  This helps us count how many people visit the Home Office Design System site by tracking if you’ve visited before
-</td>
-<td className="govuk-table__cell">
-  2 years
-  </td>
-</tr>
-
-<tr>
-<td className="govuk-table__cell">
-  _gid
-</td>
-<td className="govuk-table__cell">
-  This helps us count how many people visit the Home Office Design System site by tracking if you’ve visited before
-</td>
-<td className="govuk-table__cell">
-  24 hours
-  </td>
-</tr>
-
-<tr>
-<td className="govuk-table__cell">
-  _gat
-</td>
-<td className="govuk-table__cell">
-  This is used to limit the rate at which page view requests are recorded by Google
-</td>
-<td className="govuk-table__cell">
-  1 minute
-  </td>
-</tr>
-</tbody>
-</table>
+Finally, this work is still at quite an early stage. If you run into any
+problems or have any questions, please do [get in touch].
 
 
+Working on this repository
+--------------------------
 
-### Other cookies
+### Prerequisites
 
-<table className="govuk-table">
-<thead>
-<tr>
-<th className="govuk-table__header">Name</th>
-<th className="govuk-table__header">Purpose</th>
-<th className="govuk-table__header">Expires</th>
-</tr>
-</thead>
-<tbody>
+The following sections will assume that you are on a UNIX-derived
+operating system (e.g. Linux, Mac, etc.) and have the following software
+installed on your system:
 
-<tr>
-<td className="govuk-table__cell">
-  _govuk-prototype-kit
-</td>
-<td className="govuk-table__cell">
-  This helps the makers of the GOV.UK prototype kit count how many times the kit is used
-</td>
-<td className="govuk-table__cell">
-  24 hours
-  </td>
-</tr>
-
-<tr>
-<td className="govuk-table__cell">
-  _ga
-</td>
-<td className="govuk-table__cell">
-  We use an open source font [Inter UI] which uses Google Analytics to help count how many times the font is used
-</td>
-<td className="govuk-table__cell">
-  2 years
-  </td>
-</tr>
-
-<tr>
-<td className="govuk-table__cell">
-  _cfduid
-</td>
-<td className="govuk-table__cell">
-  We use an open source font [Inter UI] which uses [Cloudflare]
-</td>
-<td className="govuk-table__cell">
-  6 months
-  </td>
-</tr>
-</tbody>
-</table>
+- Node.js
+- [pnpm]
+- (GNU?) Make
 
 
-[Find out how to manage cookies.]: https://ico.org.uk/your-data-matters/online/cookies/
-[Inter UI]: https://rsms.me/inter/
-[Cloudflare]: https://support.cloudflare.com/hc/en-us/articles/200170156-What-does-the-Cloudflare-cfduid-cookie-do-
+### Pulling NPM dependencies
+
+You should first pull the NPM dependencies by running:
+
+```shell
+pnpm install
+```
+
+
+### Bringing up a local development environment:
+
+To work on a component you will probably want to bring up [Storybook].
+This can be done by running the following command:
+
+```shell
+npm run storybook
+```
+
+
+### Running the tests
+
+To run the tests use the following command:
+
+```shell
+npm test
+```
+
+
+### Running the documentation website
+
+You might want to locally preview the documentation website. To do so,
+simply move to the 'docs' app with:
+
+```shell
+cd apps/govuk-docs
+```
+
+Then bring up the application in _dev-mode_ using:
+
+```shell
+npm run dev
+```
+
+The application will take a little while to build but when it is done,
+you will be able to access it at http://localhost:8080 .
+
+
+### Adding a new component
+
+You can add a brand new component using the included generator by
+running:
+
+```shell
+npm run create:component
+```
+
+See also: [Working on your project]
+
+
+-- Daniel Martin, December 2019 (updated August 2020).
+
+
+[Pull requests]: https://github.com/UKHomeOffice/hods-poc/pulls
+[open an issue]: https://github.com/UKHomeOffice/hods-poc/issues/new
+[pull request]: https://github.com/UKHomeOffice/hods-poc/pulls
+[issue]: https://github.com/UKHomeOffice/hods-poc/issues
+[get in touch]: https://github.com/UKHomeOffice/hods-poc/issues/new
+[pnpm]: https://pnpm.js.org/en/installation
+[Storybook]: https://storybook.js.org/
+[Working on your project]: ./working-on-your-project
