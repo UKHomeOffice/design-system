@@ -1,6 +1,6 @@
 {
   "name": "@hods/status-banner",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Component that provides both high level and more detailed warning messages",
   "main": "src/StatusBanner.tsx",
   "sass": "assets/StatusBanner.scss",
