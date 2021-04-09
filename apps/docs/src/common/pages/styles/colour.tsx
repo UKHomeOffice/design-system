@@ -44,7 +44,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h1 className="heading-section">Colour</h1>
 
       <p className="govuk-body">Always use the Home Office colour palette when you are designing and building internal services and products. For public facing and transactional sites use the <A href="https://design-system.service.gov.uk/styles/colour/">GOV.UK colour palette</A>.</p>
-      <p className="govuk-body">Ask the central design team (<A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>) if you have any questions or for advice.</p>
+      <p className="govuk-body">Ask <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> if you have any questions.</p>
 
       {/* PRIMARY  */}
 
@@ -58,7 +58,11 @@ const Page: FC<PageProps> = ({ location }) => (
             #8f23b3
           </div>
           <div className="colour-info">
-            Purple is the Home Office's brand colour. This doesn't mean it should be used as the dominant colour in a digital interface. Overuse of the purple can make content hard to read on screen, particularly on services that are designed to be used for long periods of time. Home Office purple works best in digital interfaces when reserved for the Home Office logo and sparingly used as a keyline or accent.
+            <p>Purple is the Home Office's brand colour. This doesn't mean you should use it as the dominant colour in a digital interface.</p>
+
+            <p>Overusing the purple can make content hard to read on screen, particularly on services that are designed to be used for long periods of time.</p>
+
+            <p>Home Office purple works best in digital interfaces when it's just used for the Home Office logo and sparingly used as a keyline or accent.</p>
           </div>
         </div>
 
@@ -69,7 +73,7 @@ const Page: FC<PageProps> = ({ location }) => (
             #f1f1f1
           </div>
           <div className="colour-info">
-            Light grey is used as the page background colour on internal services to minimise eye strain caused by high contrast user interfaces. It also supports readability for those who have dyslexia.
+            Use light grey as the page background colour on internal services to minimise eye strain caused by high-contrast user interfaces. It's also better for readability for those with dyslexia.
           </div>
         </div>
 
@@ -80,7 +84,7 @@ const Page: FC<PageProps> = ({ location }) => (
             #cbcbcb
           </div>
           <div className="colour-info">
-            Mid-grey is used for borders and to help define elements where needed.
+            Use mid-grey for borders and to help define elements where needed.
           </div>
         </div>
 
@@ -91,15 +95,15 @@ const Page: FC<PageProps> = ({ location }) => (
       {/* SECONDARY */}
 
       <section className="colour-swatch-wrapper">
-        <h2 className="govuk-heading-l" style={{marginTop: "2em"}}>Extended colours</h2>
-        <p>The main Home Office colours can be extended with the <A href="https://design-system.service.gov.uk/styles/colour/">GOV.UK colour palette</A>. Use these colours to create graphs and supporting materials. If you need to use tints of the palette, use either 25% or 50%.</p>
+        <h2 className="govuk-heading-l" style={{marginTop: "2em"}}>Extra colours</h2>
+        <p>You can use the <A href="https://design-system.service.gov.uk/styles/colour/">GOV.UK colour palette</A> alongside the main Home Office colours. Use them to create graphs and supporting materials. If you need to use tints of the palette, use either 25% or 50%.</p>
       </section>
 
       {/* BACKGROUND COMBINATIONS */}
 
       <section className="colour-swatch-wrapper">
         <h2 className=" heading-small" style={{marginTop: "2em"}}>Accessible text and background combinations</h2>
-        <p>Colour alone should never be used to convey information. You must also describe the information you are trying to convey. Always test the text and background colours to make sure they meet the minimum AA contrast ratios specified by <A href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Web Content Accessibility Guidelines (WCAG) 2.1</A>. Below are the colour combinations that passed.</p>
+        <p>You should never use colour as the only way to convey information. You must also describe the information you're trying to convey. Always test the text and background colours to make sure they meet the minimum AA contrast ratios specified by <A href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Web Content Accessibility Guidelines (WCAG) 2.1</A>. Below are the colour combinations that pass.</p>
 
 
         <div className="govuk-grid-row">
