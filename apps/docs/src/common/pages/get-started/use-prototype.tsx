@@ -105,4 +105,4 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Using your new prototype';
+export const title = 'Building your prototype';

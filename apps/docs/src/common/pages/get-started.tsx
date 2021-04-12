@@ -12,7 +12,7 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/use-prototype',
-          text: 'Using your prototype'
+          text: 'Building your prototype'
         },
         {
           href: '/get-started/deploy-prototype',
