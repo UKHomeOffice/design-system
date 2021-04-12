@@ -22,7 +22,7 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/use-prototype',
-          text: 'Using your prototype'
+          text: 'Building your prototype'
         },
         {
           href: '/get-started/deploy-prototype',
@@ -34,7 +34,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <div className="govuk-grid-column-three-quarters">
       <h1>
         <span className="caption">Prototyping</span>
-        Using your prototype
+        Building your prototype
       </h1>
       <p>In Atom, select <strong>File</strong> then <strong>Open</strong>. Then select your prototype folder.</p>
 
@@ -84,7 +84,7 @@ const Page: FC<PageProps> = ({ location }) => (
           </div>
         </div>
         <p></p>
-        <p>2. Open up your prototype in Atom and put the code in <code>index.html</code> or file of your choice. Remove the additional code outside of <code>fragment</code> tags (this was only useful when this was an <code>index.tsx</code> file). Paste the selected component code within the <code>fragment</code> tags. Save your changes.</p>
+        <p>2. Open your prototype in Atom and find <code>index.html</code>. Delete the contents of the file and paste in any HTML code you want to use between the <code>fragment</code> tags. Save your changes.</p>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">

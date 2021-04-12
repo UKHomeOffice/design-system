@@ -20,7 +20,7 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/use-prototype',
-          text: 'Using your prototype'
+          text: 'Building your prototype'
         },
         {
           href: '/get-started/deploy-prototype',
@@ -102,7 +102,7 @@ const Page: FC<PageProps> = ({ location }) => (
         git branch -M main<br />
         git push -u origin main
         </code></pre><br />
-        <div><A href="/get-started/use-prototype">Next: Using the prototype</A></div>
+        <div><A href="/get-started/use-prototype">Next: Building your prototype</A></div>
         </div>
 
   </div>
