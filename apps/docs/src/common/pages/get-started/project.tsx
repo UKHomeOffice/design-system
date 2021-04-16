@@ -17,11 +17,11 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/use-prototype',
-          text: 'Using the components'
+          text: 'Building your prototype'
         },
         {
           href: '/get-started/deploy-prototype',
-          text: 'Deploying'
+          text: 'Deploying your prototype'
         }
       ]} />
     </div>

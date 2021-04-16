@@ -20,11 +20,11 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/use-prototype',
-          text: 'Using the components'
+          text: 'Building your prototype'
         },
         {
           href: '/get-started/deploy-prototype',
-          text: 'Deploying'
+          text: 'Deploying your prototype'
         }
       ]} />
     </div>
@@ -94,14 +94,17 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
         <p>You can see the prototype by opening <A href="http://localhost:8080/">http://localhost:8080/</A> in your web browser.</p>
         <h3>4. Optional: Set up your remote repository</h3>
-          <p>If you want to deploy your prototype so it can be tested with users or allow others to collaborate on it, you can set up a blank code repository in GitHub</p>
+          <p>If you want to deploy your prototype so it can be tested with users or allow others to collaborate on it, you can set up a blank code repository in <A href="https://github.com/">GitHub</A>.</p>
         <h3>5. Optional: Commit and push your new prototype</h3>
           <p>Run the following commands to push up the first version of your new prototype to your remote code repository:</p>
         <pre><code>
         git remote add origin git@github.com:YOUR_USER/YOUR-PROTOTYPE.git<br />
-        git push -u origin master
-        </code></pre>
+        git branch -M main<br />
+        git push -u origin main
+        </code></pre><br />
+        <div><A href="/get-started/use-prototype">Next: Building your prototype</A></div>
         </div>
+
   </div>
 );
 

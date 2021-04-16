@@ -17,11 +17,11 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/use-prototype',
-          text: 'Using the components'
+          text: 'Building your prototype'
         },
         {
           href: '/get-started/deploy-prototype',
-          text: 'Deploying'
+          text: 'Deploying your prototype'
         }
       ]} />
     </div>
@@ -30,12 +30,16 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Prototyping</span>
         Deploying your prototype
       </h1>
-      <p>PLACEHOLDER</p>
+      <p>One of the ways you can deploy, or publish and share your prototype with others, is through Heroku.</p>
 
+      <div className="govuk-inset-text">
+      Do not enter real user data into prototypes hosted on Heroku. If your prototype stores or collects user data, talk to a security professional about appropriate security steps you must take.
+      </div>
 
+      <p>Placeholder </p>
     </div>
   </div>
 );
 
 export default Page;
-export const title = 'Get started';
+export const title = 'Deploying your prototype';
