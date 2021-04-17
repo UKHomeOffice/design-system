@@ -1,0 +1,75 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { StatusMessage } from '../src/StatusMessage';
+import readMe from '../README.md';
+import {A} from "@not-govuk/components";
+
+<Meta
+  title="Status message"
+  component={ StatusMessage }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'An indication to the user that something has changed.',
+    jest: ['StatusMessage'],
+    notes: readMe
+  } }
+/>
+
+# Status message
+
+An indication to the user that something has changed.
+
+<Preview withToolbar>
+  <Story name="Status message">
+    <StatusMessage status="Out to lunch" />
+  </Story>
+</Preview>
+
+<Props of={ StatusMessage } />
+
+## Interaction principles
+Only use status indicators:
+
+  - to tell the user something important
+  - to inform the user of a change
+  - to inform the user that they need to do something
+
+For less prominent status indicators you could use labels.
+
+## Content principles
+Clear content about the change and what it means for the user.
+
+Services using statuses:
+  - Returns and movement
+  - Passport renewals
+  - Passport application search
+
+
+## Stories
+### Standard
+
+A standard Status message.
+
+<Preview>
+  <Story name="Standard">
+    <StatusMessage status="On hold" actions={
+      <A className="govuk-button button-white" href="#">Review</A>
+    }>
+      due for review 10 March 2018
+    </StatusMessage>
+  </Story>
+</Preview>
+
+### Multiple actions
+
+A standard Status message, with multiple actions.
+
+<Preview>
+  <Story name="Multiple actions">
+    <StatusMessage status="Out to lunch" actions={[
+      <A href="#">Locate...</A>,
+      <a href="#">Preorder</a>
+    ]}>
+      at the pub on the corner
+    </StatusMessage>
+  </Story>
+</Preview>

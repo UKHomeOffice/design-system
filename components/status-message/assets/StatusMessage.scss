@@ -1,0 +1,54 @@
+@import "@hods/sass-base";
+@import "govuk-frontend/govuk/components/button";
+
+$govuk-button-colour: govuk-colour("white");
+$govuk-button-text-colour: govuk-colour("black");
+
+.hods-status-message {
+  color: govuk-colour("white");
+  background-color: govuk-colour("blue");
+  @include govuk-responsive-padding(4, "all");
+
+  &__extra {
+    font-weight: normal;
+  }
+
+  &__actions a {
+    @extend .govuk-button;
+
+    &, &:active, &:hover, &:link, &:visited {
+      color: $govuk-button-text-colour;
+      background-color: $govuk-button-colour;
+      border: $govuk-button-text-colour 1px solid;
+      @include govuk-responsive-margin(0, "all");
+      @include govuk-responsive-margin(2, "top");
+      @include govuk-responsive-margin(2, "bottom");
+    }
+
+    &:hover {
+      background-color: govuk-shade($govuk-button-colour, 10%);
+    }
+  }
+
+  @include govuk-media-query($from: tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      @include govuk-font(24);
+      margin: 0;
+    }
+
+    &__extra {
+      @include govuk-font(18);
+    }
+
+    &__actions a {
+      &, &:active, &:hover, &:link, &:visited {
+        @include govuk-responsive-margin(0, "all");
+        @include govuk-responsive-margin(1, "left");
+      }
+    }
+  }
+}
