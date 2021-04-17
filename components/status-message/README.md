@@ -31,6 +31,18 @@ export const MyComponent = props => (
 export default MyComponent;
 ```
 
+### Examples of use
+
+Some basic examples of this component can be seen by running storybook
+from the main `hods-poc` project root:
+```shell
+pnpm install
+npm run storybook
+```
+
+Once storybook is running, open the [Status Message docs] in your
+browser.
+
 
 Working on this package
 -----------------------
@@ -62,3 +74,5 @@ npm run build
 ```shell
 npm run clean
 ```
+
+[Status Message docs]: http://localhost:9009/?path=/docs/status-message--status-message
