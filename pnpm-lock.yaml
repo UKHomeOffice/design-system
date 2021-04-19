@@ -295,7 +295,7 @@ importers:
       '@not-govuk/component-helpers': ^0.2.0
       '@not-govuk/component-test-helpers': ^0.2.0
       '@types/react': ^16.9.35
-      govuk-frontend: ^3.11.0
+      govuk-frontend: ^3.9.1
       jest: ^26.1.0
       ts-jest: ^26.1.1
       typescript: ^3.9.2
