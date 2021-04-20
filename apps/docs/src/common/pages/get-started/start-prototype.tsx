@@ -99,8 +99,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>Run the following commands to push up the first version of your new prototype to your remote code repository:</p>
         <pre><code>
         git remote add origin git@github.com:YOUR_USER/YOUR-PROTOTYPE.git<br />
-        git branch -M main<br />
-        git push -u origin main
+        git push -u origin master
         </code></pre><br />
         <div><A href="/get-started/use-prototype">Next: Building your prototype</A></div>
         </div>
