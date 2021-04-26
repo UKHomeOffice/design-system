@@ -25,7 +25,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
     <div {...attrs} className={classes()}>
       <p className="govuk-!-font-weight-bold">
         {status}
-        <span className={classes('extra')}>{status && children ? ' - ' : null}{children}</span>
+        {children ? <span className={classes('extra')}>{status ? ' - ' : null}{children}</span> : null}
       </p>
       {actions ? <span className={classes('actions')}>{actions}</span> : null}
     </div>
