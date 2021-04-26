@@ -11,6 +11,7 @@ const storySources = [
   require('../../../../../components/header/spec/Header.stories.mdx'),
   require('../../../../../components/page/spec/Page.stories.mdx'),
   require('../../../../../components/status-banner/spec/StatusBanner.stories.mdx'),
+  require('../../../../../components/status-message/spec/StatusMessage.stories.mdx'),
   require('../../../../../components/timeline/spec/Timeline.stories.mdx'),
   require('../../../../../components/pagination/spec/Pagination.stories.mdx')
 ];
