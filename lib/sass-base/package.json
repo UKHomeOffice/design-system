@@ -13,6 +13,6 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "dependencies": {
-    "@not-govuk/sass-base": "^0.2.9"
+    "@not-govuk/sass-base": "^0.2.10"
   }
 }
