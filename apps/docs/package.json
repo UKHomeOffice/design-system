@@ -1,6 +1,6 @@
 {
   "name": "@hods/docs",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Documentation website.",
   "private": true,
   "main": "dist/server/index.js",
