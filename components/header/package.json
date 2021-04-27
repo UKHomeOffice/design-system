@@ -30,7 +30,7 @@
     "@not-govuk/link": "^0.2.9"
   },
   "peerDependencies": {
-    "@not-govuk/docs-components": "^0.1.0",
+    "@not-govuk/docs-components": "^0.2.0",
     "react": "^16.9.35"
   },
   "devDependencies": {
