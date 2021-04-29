@@ -1,15 +1,17 @@
 ---
 name: Start a new discussion
-about: 'Help structure your question to the community. '
+about: 'This guidance will help structure your question. '
 title: "[Insert question here]"
 labels: question
 assignees: ''
 
 ---
 
-[Delete me:
+[Delete after reading
 
-Before posting ensure your question has not already been answered on the project space
-Add images, user research or any additional information if this could help with understanding
-Apply some labels to help people find it
-Submit, go to the Project space and drag your question to the "Start or join a discussion" lane]
+Uploading process:
+1. Ensure your question hasn't been answered already in the 'Start a new discussion' column
+3. Add images (drag and drop), user research or any additional information if this could help with understanding
+5. Apply relevant labels
+6. Assign your post to the 'Design discussion' project 
+6. Submit, return to 'Design discussion' project space and drag your post from 'Add cards' to the 'Start a discussion' column]
