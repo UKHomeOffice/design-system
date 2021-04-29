@@ -1,6 +1,6 @@
 {
   "name": "@hods/create",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "A project and prototype initialiser.",
   "main": "plopfile.js",
   "bin": "bin/create",
