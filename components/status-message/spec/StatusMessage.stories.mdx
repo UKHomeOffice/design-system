@@ -51,10 +51,8 @@ A standard Status message.
 
 <Preview>
   <Story name="Standard">
-    <StatusMessage status="On hold" actions={
-      <A className="govuk-button button-white" href="#">Review</A>
-    }>
-      due for review 10 March 2018
+    <StatusMessage status="On hold" actions={[{ href: '#', text: 'Review' }]}>
+      - due for review 10 March 2018
     </StatusMessage>
   </Story>
 </Preview>
@@ -66,8 +64,8 @@ A standard Status message, with multiple actions.
 <Preview>
   <Story name="Multiple actions">
     <StatusMessage status="Out to lunch" actions={[
-      <A href="#">Locate...</A>,
-      <a href="#">Preorder</a>
+      { href: '#', text: 'Locate...' },
+      { href: '#', text: 'Preorder' }
     ]}>
       at the pub on the corner
     </StatusMessage>

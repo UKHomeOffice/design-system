@@ -9,24 +9,38 @@ $govuk-button-text-colour: govuk-colour("black");
   background-color: govuk-colour("blue");
   @include govuk-responsive-padding(4, "all");
 
+  & p {
+    font-weight: bold;
+  }
+
   &__extra {
     font-weight: normal;
   }
 
-  &__actions a {
-    @extend .govuk-button;
+  &__actions {
+    margin: 0;
+    padding: 0;
 
-    &, &:active, &:hover, &:link, &:visited {
-      color: $govuk-button-text-colour;
-      background-color: $govuk-button-colour;
-      border: $govuk-button-text-colour 1px solid;
-      @include govuk-responsive-margin(0, "all");
-      @include govuk-responsive-margin(2, "top");
-      @include govuk-responsive-margin(2, "bottom");
+    li {
+      list-style: none;
+      padding: 0;
     }
 
-    &:hover {
-      background-color: govuk-shade($govuk-button-colour, 10%);
+    & &_button {
+      @extend .govuk-button;
+
+      &, &:active, &:hover, &:link, &:visited {
+        color: $govuk-button-text-colour;
+        background-color: $govuk-button-colour;
+        border: $govuk-button-text-colour 1px solid;
+        margin: 0;
+        @include govuk-responsive-margin(2, "top");
+        @include govuk-responsive-margin(2, "bottom");
+      }
+
+      &:hover {
+        background-color: govuk-shade($govuk-button-colour, 10%);
+      }
     }
   }
 
@@ -37,6 +51,7 @@ $govuk-button-text-colour: govuk-colour("black");
 
     p {
       @include govuk-font(24);
+      font-weight: bold;
       margin: 0;
     }
 
@@ -44,9 +59,11 @@ $govuk-button-text-colour: govuk-colour("black");
       @include govuk-font(18);
     }
 
-    &__actions a {
-      &, &:active, &:hover, &:link, &:visited {
-        @include govuk-responsive-margin(0, "all");
+    &__actions {
+      display: flex;
+
+      li {
+        margin: 0;
         @include govuk-responsive-margin(1, "left");
       }
     }
