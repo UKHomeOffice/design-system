@@ -341,6 +341,7 @@ importers:
       '@hods/pagination': workspace:^0.1.8
       '@hods/sass-base': workspace:^0.1.0
       '@hods/status-banner': workspace:^0.1.7
+      '@hods/status-message': workspace:^0.1.10
       '@hods/timeline': workspace:^0.1.8
       jest: ^26.1.0
       ts-jest: ^26.1.1
@@ -353,6 +354,7 @@ importers:
       '@hods/pagination': link:../../components/pagination
       '@hods/sass-base': link:../sass-base
       '@hods/status-banner': link:../../components/status-banner
+      '@hods/status-message': link:../../components/status-message
       '@hods/timeline': link:../../components/timeline
     devDependencies:
       jest: 26.6.3
