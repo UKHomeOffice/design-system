@@ -40,7 +40,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>Patterns</h1>
-      <p>Patterns are guidance on how to solve certain types of problem. They include examples of successful approaches but are flexible and don’t prescribe exact design solutions.</p>
+      <p>Patterns are guidance on how to solve certain types of problems. They include examples of successful approaches but are flexible and don’t prescribe exact design solutions.</p>
       <p>These patterns extend those used across Government in the <A href="https://design-system.service.gov.uk/">GOV.UK design system</A>. As our patterns mature, we will look to contribute them to the GOV.UK system so they can be used more widely.</p>
     </div>
   </div>
