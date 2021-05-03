@@ -10,7 +10,7 @@ const applyAuthenticateTwoFa = require('../../../../assets/images/p-authenticate
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
   <Helmet>
-    <title>Patterns - Home Office Design System</title>
+    <title>Access a service - Home Office Design System</title>
     <meta name="og:article:section" content="Patterns" />
   </Helmet>
 
@@ -54,10 +54,13 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Let users access a service in a secure way by authenticating themselves.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p>Most one-time services won't need to authenticate their users. When a service does need to verify a user’s identity, it needs to balance ease of access with keeping a service and its user data secure. You should think about this early on when designing your service.</p>
+      <p>Most one-time services won't need to authenticate their users. When a service does need to verify
+      a user’s identity, it needs to balance ease of access with keeping a service and its user data secure.
+      You should think about this early on when designing your service.</p>
 
       <h2 className="govuk-heading-l">Access a service with identity documents</h2>
-      <p>Follow this pattern if you are helping users to access a service by authenticating them with an identity document. It could be:</p>
+      <p>Follow this pattern if you are helping users to access a service by authenticating them with an
+      identity document. It could be:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>the same document they’ve used to apply previously</li>
         <li>the document your service has on record for them</li>
@@ -68,8 +71,10 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
 
       <h2 className="govuk-heading-l">Access a service with security codes</h2>
-      <p>You can use security codes or two-factor authentication (often shortened to 2FA) to verify a user's identity to let them access a service.</p>
-      <p>You can use this method of authentication when a service stores user data and allows users to access it. Two-factor helps protect the user and the service.</p>
+      <p>You can use security codes or two-factor authentication (often shortened to 2FA) to
+      verify a user's identity to let them access a service.</p>
+      <p>You can use this method of authentication when a service stores user data and allows
+      users to access it. Two-factor helps protect the user and the service.</p>
       <p>There are three types of two-factor authentication:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>something a user knows (password or pin)</li>
@@ -88,7 +93,8 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h2 className="govuk-heading-l">Access a service with reference numbers</h2>
-      <p>A reference number is a simple way to let users access a service. For example, when a user saves progress and needs to return to complete a service.</p>
+      <p>A reference number is a simple way to let users access a service. For example,
+      when a user saves progress and needs to return to complete a service.</p>
       <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
         <img src={applyAuthenticateReference} className="image-examples" alt="An example of a service verifying the user with reference number" />
       </div>
@@ -99,14 +105,18 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p>More research is needed. If your service uses this pattern, get in touch to share your user research findings.</p>
+      <p>More research is needed. If your service uses this pattern, get in touch to
+      share your user research findings.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
-      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
+      <p>If your service uses this pattern, let us know of any insights you have on
+      accessibility considerations.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
+        <p>If you’ve got a question or suggestion share it on the Slack channel
+        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>
@@ -116,4 +126,4 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Images';
+export const title = 'Access a service';

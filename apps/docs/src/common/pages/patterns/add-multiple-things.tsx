@@ -8,7 +8,7 @@ const applyAddAnother = require('../../../../assets/images/p-add-another.svg').d
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
   <Helmet>
-    <title>Patterns - Home Office Design System</title>
+    <title>Add multiple things - Home Office Design System</title>
     <meta name="og:article:section" content="Patterns" />
   </Helmet>
 
@@ -46,17 +46,20 @@ const Page: FC<PageProps> = ({ location }) => (
       <span className="govuk-caption-xl">Help users to</span>
       <h1 className="heading-section">Add multiple things</h1>
       <div style={{marginTop: "-2em"}}>
-      <p className="govuk-caption-m" style={{marginBottom: "2em"}}>Also known as: multiple loops</p>
+      <p className="govuk-caption-m" style={{marginBottom: "2em"}}>Also known as: add another</p>
       </div>
 
-      <p className="govuk-body">An interaction that allows a user to add multiple items, check and add more if needed.</p>
+      <p className="govuk-body">An interaction that allows a user to add multiple
+      items of the same thing, check and add more if needed.</p>
 
       <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
         <img src={applyAddAnother} className="image-examples" alt="An example of an interaction to add multiple addresses" />
       </div>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p>This interaction allows a user to add single or multiple items, check they are correct and provide an option to add more. This pattern can be used to add people to an application, add items to a list or upload files.</p>
+      <p>This interaction allows a user to add single or multiple items, check they are correct
+      and provide an option to add more. This pattern can be used to add people to an application,
+      add items to a list or upload files.</p>
       <p>Follow this pattern:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>to help confirm an action</li>
@@ -66,7 +69,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h2 className="govuk-heading-l">How it works</h2>
-      <p>Multiple loops should:</p>
+      <p>When adding multiple items of the same thing, the pattern should:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>remember previous choices</li>
         <li>give clear guidance on the flexibility of choices</li>
@@ -79,14 +82,18 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">More research is needed. If your service uses this pattern, get in touch to share your user research findings.</p>
+      <p className="govuk-body">More research is needed. If your service uses this
+      pattern, get in touch to share your user research findings.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
-      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
+      <p>If your service uses this pattern, let us know of any insights you have
+      on accessibility considerations.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
+        <p>If you’ve got a question or suggestion share it on the Slack channel
+        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>
@@ -96,4 +103,4 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Images';
+export const title = 'Add multiple things';

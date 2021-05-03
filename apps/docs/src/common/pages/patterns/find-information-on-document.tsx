@@ -9,7 +9,7 @@ const applyImageRight = require('../../../../assets/images/p-image-guidance-righ
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
   <Helmet>
-    <title>Patterns - Home Office Design System</title>
+    <title>Find information on a document - Home Office Design System</title>
     <meta name="og:article:section" content="Patterns" />
   </Helmet>
 
@@ -50,7 +50,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-caption-m" style={{marginBottom: "2em"}}>Also known as: guidance images</p>
       </div>
 
-      <p className="govuk-body">Using guidance images can help users to understand a complex message, show a user how to perform an action or guide a user to complete a task.</p>
+      <p className="govuk-body">Using guidance images can help users to understand a complex
+      message, show a user how to perform an action or guide a user to complete a task.</p>
 
       <div className="example example-images" style={{marginTop: "2.5em", marginBottom: "2.5em"}}>
         <div className="govuk-grid-row">
@@ -66,12 +67,14 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p>Only use guidance images to enhance the information being conveyed, when research indicates a real user need. Used correctly, guidance images can help users understand:</p>
+      <p>Only use guidance images to enhance the information being conveyed, when research
+      indicates a real user need. Used correctly, guidance images can help users understand:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>complex guidance when completing a task</li>
         <li>how to perform an action</li>
         <li>what information you’re asking from them</li>
-        <li>where to find specific contextual information, such as a reference number on a document or the relevant side of an identity document</li>
+        <li>where to find specific contextual information, such as a reference number
+        on a document or the relevant side of an identity document</li>
       </ul>
 
       <h2 className="govuk-heading-l">When not to use this pattern</h2>
@@ -82,7 +85,8 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h2 className="govuk-heading-l">How it works</h2>
-      <p>If the image represents something physical, such as a document, you should use the aspect ratio of that object. Follow our guidance on the use of <A href="/styles/images">images</A>.</p>
+      <p>If the image represents something physical, such as a document, you should use
+      the aspect ratio of that object. Follow our guidance on the use of <A href="/styles/images">images</A>.</p>
       <p>The examples above have been used in public-facing services.</p>
 
       <h2 className="govuk-heading-l">Services using this pattern</h2>
@@ -96,14 +100,23 @@ const Page: FC<PageProps> = ({ location }) => (
           </ul>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">Research has shown that guidance images can help to guide a user through a sequence of steps and clarify what information is required from them. It has been shown to work well when representing something physical, such as a letter or an ID document, to help point users to a specific area of it.</p>
+      <p className="govuk-body">Research has shown that guidance images can help
+      to guide a user through a sequence of steps and clarify what information is
+      required from them. It has been shown to work well when representing something
+      physical, such as a letter or an ID document, to help point users to a specific
+      area of it.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
-      <p>When using an image as guidance, remember to include alternative text (alt text). We recommend following the guidance on the use of alt text in the <A href="https://design-system.service.gov.uk/styles/images/">GOV.UK Design System</A>.</p>
+      <p>When using an image as guidance, remember to include alternative text
+      (alt text). We recommend following the guidance on the use of alt text in
+      the <A href="https://design-system.service.gov.uk/styles/images/">GOV.UK
+      Design System</A>.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
+        <p>If you’ve got a question or suggestion share it on the Slack channel
+        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>
@@ -113,4 +126,4 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Images';
+export const title = 'Find information on a document';

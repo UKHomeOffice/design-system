@@ -9,7 +9,7 @@ const applyLeaveInline = require('../../../../assets/images/p-leave-service-inli
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
   <Helmet>
-    <title>Patterns - Home Office Design System</title>
+    <title>Leave a service - Home Office Design System</title>
     <meta name="og:article:section" content="Patterns" />
   </Helmet>
 
@@ -66,7 +66,9 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
 
       <h2 className="govuk-heading-l">Signing out from the header</h2>
-      <p>This pattern is more likely to be used on multi-use and caseworking services. Signing out of a service is best practice - for example, for internal services where users share a workspace.</p>
+      <p>This pattern is more likely to be used on multi-use and caseworking services.
+      Signing out of a service is best practice - for example, for internal services where
+      users share a workspace.</p>
 
       <h3 className="govuk-heading-m">Services using this pattern</h3>
       <ul className="govuk-list govuk-list--bullet">
@@ -75,8 +77,11 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h2 className="govuk-heading-l">Leaving a service inline</h2>
-      <p>This pattern is more likely to be used when a user is working from a public space and is inputting sensitive data. </p>
-      <p>You should do research to find out at what point a user will need to leave your service. An option should be provided with a persistent link through as well as the end of the service.</p>
+      <p>This pattern is more likely to be used when a user is working from a public
+      space and is inputting sensitive data. </p>
+      <p>You should do research to find out at what point a user will need to leave
+      your service. An option should be provided with a persistent link through as well
+      as the end of the service.</p>
 
       <h3 className="govuk-heading-m">Services using this pattern</h3>
       <ul className="govuk-list govuk-list--bullet">
@@ -86,9 +91,10 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h2 className="govuk-heading-l">How it works</h2>
-      <p>For public-facing services it may be better to describe it as leaving a service rather then signing out.
-      Users might not feel they have signed in to a service.</p>
-      <p>Only give users the option to leave mid-service if they can save progress and carry on with the service at another time.</p>
+      <p>For public-facing services it may be better to describe it as leaving a service
+      rather then signing out. Users might not feel they have signed in to a service.</p>
+      <p>Only give users the option to leave mid-service if they can save progress and
+      carry on with the service at another time.</p>
       <p>After leaving the service, take users to a confirmation page that includes:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>a confirmation that the sign out or leaving a service has been successful</li>
@@ -96,14 +102,18 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p>Users are confident in using a 'leave the service' button at the end of a transaction. Users mention they want to make sure they leave a service securely.</p>
+      <p>Users are confident in using a 'leave the service' button at the end of a transaction.
+      Users mention they want to make sure they leave a service securely.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
-      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
+      <p>If your service uses this pattern, let us know of any insights you have on
+      accessibility considerations.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
+        <p>If you’ve got a question or suggestion share it on the Slack channel
+        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>
@@ -113,4 +123,4 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Images';
+export const title = 'Leave a service';
