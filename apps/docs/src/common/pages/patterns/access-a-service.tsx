@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyAuthenticatePersonal = require('../../../../assets/images/p-authenticate-personal.svg').default;
-const applyAuthenticateReference = require('../../../../assets/images/p-authenticate-reference.svg').default;
-const applyAuthenticateTwoFa = require('../../../../assets/images/p-authenticate-2fa.svg').default;
+const applyAuthenticatePersonal = require('../../../../assets/images/patterns/authenticate-personal.svg').default;
+const applyAuthenticateReference = require('../../../../assets/images/patterns/authenticate-reference.svg').default;
+const applyAuthenticateTwoFa = require('../../../../assets/images/patterns/authenticate-2fa.svg').default;
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

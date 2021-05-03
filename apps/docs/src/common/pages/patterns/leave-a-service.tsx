@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyLeaveHeader = require('../../../../assets/images/p-leave-service-header.svg').default;
-const applyLeaveInline = require('../../../../assets/images/p-leave-service-inline.svg').default;
+const applyLeaveHeader = require('../../../../assets/images/patterns/leave-service-header.svg').default;
+const applyLeaveInline = require('../../../../assets/images/patterns/leave-service-inline.svg').default;
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyImageInline = require('../../../../assets/images/p-image-guidance-inline.svg').default;
-const applyImageRight = require('../../../../assets/images/p-image-guidance-right.svg').default;
+const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg').default;
+const applyImageRight = require('../../../../assets/images/patterns/image-guidance-right.svg').default;
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

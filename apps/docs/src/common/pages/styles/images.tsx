@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyImageInline = require('../../../../assets/images/p-image-guidance-inline.svg').default;
+const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg').default;
 const applyExample1 = require('../../../../assets/images/example-1.jpg').default;
 const applyExample2 = require('../../../../assets/images/example-2.jpg').default;
 const applyExample5 = require('../../../../assets/images/example-5.jpg').default;

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyContextualHelp = require('../../../../assets/images/p-contextual-help.svg').default;
+const applyContextualHelp = require('../../../../assets/images/patterns/contextual-help.svg').default;
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
