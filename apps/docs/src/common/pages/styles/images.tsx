@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyBrpExample = require('../../../../assets/images/brp-example-2.png').default;
+const applyImageInline = require('../../../../assets/images/p-image-guidance-inline.svg').default;
 const applyExample1 = require('../../../../assets/images/example-1.jpg').default;
 const applyExample2 = require('../../../../assets/images/example-2.jpg').default;
 const applyExample5 = require('../../../../assets/images/example-5.jpg').default;
@@ -59,9 +59,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 
       <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
-        <h2 className="govuk-heading-l">Do you have biometric residence card or permit?</h2>
-        <img src={applyBrpExample} className="confirm-desktop" alt="An example of an illustrative image of a biometric residence permit card" />
-        <span className="image-caption"><A href="https://www.gov.uk/employee-immigration-employment-status">Right to work</A></span>
+        <img src={applyImageInline} className="confirm-desktop" alt="An example of an illustrated image of a biometric residence permit card in a service" />
       </div>
 
       <h3 id="related" className="govuk-heading-m">Related</h3>
