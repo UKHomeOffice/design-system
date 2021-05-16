@@ -22,7 +22,7 @@
   }
 
   &__container {
-    @include govuk-font(14);
+    @include govuk-font(16);
     @include govuk-responsive-padding(6, "top");
     @include govuk-responsive-padding(6, "bottom");
     @include govuk-responsive-padding(8, "left");
@@ -36,7 +36,7 @@
   }
 
   &__content {
-    @include govuk-font(14);
+    @include govuk-font(16);
 
     > *:last-child {
       margin-bottom: 0;
@@ -51,10 +51,14 @@
   &__navigation-list {
     display: flex;
     margin: 0;
+
+    li {
+      margin: 0;
+    }
   }
 
   &__navigation-item {
-    @include govuk-font(14);
+    @include govuk-font(16);
     @include govuk-responsive-padding(4, "left");
     list-style: none;
 
