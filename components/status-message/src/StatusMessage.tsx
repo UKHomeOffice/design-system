@@ -41,7 +41,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
         <ul className={classes('actions')}>
           {actions.map((a, i) => (
             <li key={i}>
-              <A className={classes('actions_button')} href={a.href} title={a.title}>{a.text}</A>
+              <A className={classes('button')} href={a.href} title={a.title}>{a.text}</A>
             </li>
           ))}
         </ul>
