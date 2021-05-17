@@ -16,7 +16,7 @@
     }
 
     &--service-name {
-      @include govuk-font(24); // FIXME: 21
+      @include govuk-font(24);
     }
   }
 
@@ -71,7 +71,7 @@
   }
 
   &__account-menu {
-    @include govuk-font(16); // FIXME: 17
+    @include govuk-font(19);
     align-self: center;
 
     ul {
@@ -101,7 +101,7 @@
   }
 
   &__navigation {
-    @include govuk-font(18);
+    @include govuk-font(19);
   }
 
   &__navigation-list {

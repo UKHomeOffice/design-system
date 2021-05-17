@@ -25,7 +25,7 @@
   }
 
   &__heading {
-    @include govuk-font(24, 'bold'); // FIXME: 22
+    @include govuk-font(24, 'bold');
     @include govuk-responsive-margin(3, "bottom");
   }
 }
