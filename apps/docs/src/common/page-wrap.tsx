@@ -10,7 +10,7 @@ export const PageWrap: FC<PageProps> = ({ children }) => {
     { href: '/styles', text: 'Styles' },
     { href: '/components', text: 'Components' },
     { href: '/patterns', text: 'Patterns' },
-    { href: '/resources', text: 'Resources' },
+    { href: '/accessibility', text: 'Accessibility' },
     { href: '/get-involved', text: 'Get involved' }
   ];
   const footerNavigation = [
