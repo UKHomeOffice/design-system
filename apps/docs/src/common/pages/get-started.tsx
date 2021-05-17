@@ -7,16 +7,12 @@ const Page: FC<PageProps> = ({ location }) => (
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
-          href: '/get-started/start-prototype',
-          text: 'Starting a new prototype'
+          href: '/get-started/prototyping',
+          text: 'Prototyping'
         },
         {
-          href: '/get-started/use-prototype',
-          text: 'Building your prototype'
-        },
-        {
-          href: '/get-started/deploy-prototype',
-          text: 'Deploying your prototype'
+          href: '/get-started/design-assets',
+          text: 'Design assets'
         }
       ]} />
     </div>
