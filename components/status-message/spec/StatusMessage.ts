@@ -1,7 +1,6 @@
 import { createElement as h } from 'react';
 import { mount } from '@not-govuk/component-test-helpers';
 import StatusMessage from '../src/StatusMessage';
-import {A} from "@not-govuk/components";
 
 describe('StatusMessage', () => {
   describe('when given a status', () => {
@@ -43,17 +42,6 @@ describe('StatusMessage', () => {
     });
   });
 
-  describe('when given only contents', () => {
-    const component = mount(h(StatusMessage, { }, 'Basic info'));
-    it('should show the contents', () => expect(component.text()).toEqual('Basic info'));
-    it('should not show any actions', () => expect(component.exists('.hods-status-message__actions')).toEqual(false));
-  });
-
-  describe('when given only actions', () => {
-    const component = mount(h(StatusMessage, { actions: [{ href: '#', text: 'Run' }] }));
-    it('should not display anything', () => expect(component.text()).toEqual(''));
-    it('should not render anything', () => expect(component.exists('.hods-status-message')).toEqual(false));
-  });
   describe('when given no props at all', () => {
     const component = mount(h(StatusMessage));
     it('should not display anything', () => expect(component.text()).toEqual(''));

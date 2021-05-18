@@ -15,7 +15,7 @@ export type StatusAction = {
 
 export type StatusMessageProps = StandardProps & {
   /** Summary of status */
-  status?: string,
+  status: string,
   /** Links to perform status related actions */
   actions?: StatusAction[]
 };
@@ -35,7 +35,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
     <div {...attrs} className={classes()}>
       <p>
         {status}
-        {children && <span className={classes('extra')}>{status && ' '}{children}</span>}
+        {children && <span className={classes('extra')}> {children}</span>}
       </p>
       {actions && actions.length &&
         <ul className={classes('actions')}>
