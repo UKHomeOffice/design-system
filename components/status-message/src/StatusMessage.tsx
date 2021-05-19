@@ -16,16 +16,18 @@ export type StatusAction = {
 export type StatusMessageProps = StandardProps & {
   /** Summary of status */
   status: string,
+  /** Extra information about the status */
+  children?: any,
   /** Links to perform status related actions */
   actions?: StatusAction[]
 };
 
 export const StatusMessage: FC<StatusMessageProps> = ({
-    children,
     classBlock,
     classModifiers,
     className,
     status,
+    children,
     actions,
     ...attrs
   }) => {
