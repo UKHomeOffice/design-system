@@ -1,6 +1,6 @@
-import { FC, createElement as h, ReactElement, ReactNodeArray } from 'react';
+import { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { A } from "@not-govuk/components";
+import { AnchorList } from "@not-govuk/anchor-list";
 
 import '../assets/StatusMessage.scss';
 
@@ -39,15 +39,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
         {status}
         {children && <span className={classes('extra')}> {children}</span>}
       </p>
-      {actions && actions.length &&
-        <ul className={classes('actions')}>
-          {actions.map((a, i) => (
-            <li key={i}>
-              <A className={classes('button')} href={a.href} title={a.title}>{a.text}</A>
-            </li>
-          ))}
-        </ul>
-      }
+      {actions && actions.length && <AnchorList items={actions} classBlock={classes('actions')} />}
     </div>
   ) : null;
 };
