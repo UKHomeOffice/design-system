@@ -1,6 +1,6 @@
 {
   "name": "@hods/pagination",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Component to allow separating long tables into separate tables",
   "main": "src/Pagination.tsx",
   "sass": "assets/Pagination.scss",
