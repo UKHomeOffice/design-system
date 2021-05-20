@@ -1,17 +1,8 @@
 import { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { AnchorList } from "@not-govuk/anchor-list";
+import { Anchor, AnchorList } from "@not-govuk/anchor-list";
 
 import '../assets/StatusMessage.scss';
-
-export type StatusAction = {
-  /** Location to link to */
-  href: string
-  /** Text of the link */
-  text: string
-  /** Title of the link */
-  title?: string
-};
 
 export type StatusMessageProps = StandardProps & {
   /** Summary of status */
@@ -19,7 +10,7 @@ export type StatusMessageProps = StandardProps & {
   /** Extra information about the status */
   children?: any,
   /** Links to perform status related actions */
-  actions?: StatusAction[]
+  actions?: Anchor[]
 };
 
 export const StatusMessage: FC<StatusMessageProps> = ({
@@ -33,7 +24,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
   }) => {
   const classes = classBuilder('hods-status-message', classBlock, classModifiers, className);
 
-  return status || children ? (
+  return status ? (
     <div {...attrs} className={classes()}>
       <p>
         {status}
