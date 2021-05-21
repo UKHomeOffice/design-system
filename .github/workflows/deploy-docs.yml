@@ -28,9 +28,9 @@ jobs:
             pnpm-
 
       - name: Pull dependencies
-        uses: pnpm/action-setup@v1.2.1
+        uses: pnpm/action-setup@v2.0.1
         with:
-          version: 5.4.0
+          version: 6.3.0
           run_install: true
 
       - name: Build docs
@@ -42,13 +42,11 @@ jobs:
         run: |
           cd apps/docs/
           npm run package:serverless
-          mkdir -p .netlify
+          mkdir -p .netlify/functions .netlify/publish
           cd .netlify
-          mkdir functions
           cp -a ../.serverless/docs.zip functions/
           echo "process.env['MODE'] = 'serverless'; process.env['SSR_ONLY'] = 'true'; module.exports = require('./dist/server/index.js');" > docs.js
           zip -mv functions/docs.zip docs.js
-          mkdir publish
           mv ../dist/public/entrypoints.json .
           cp -a ../dist/public/ publish/public
           mv entrypoints.json ../dist/public/

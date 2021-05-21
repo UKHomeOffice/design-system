@@ -32,9 +32,9 @@ jobs:
             pnpm-
 
       - name: Pull dependencies
-        uses: pnpm/action-setup@v1.2.1
+        uses: pnpm/action-setup@v2.0.1
         with:
-          version: 5.4.0
+          version: 6.3.0
           run_install: true
 
       - name: Run unit tests
@@ -69,9 +69,9 @@ jobs:
             pnpm-
 
       - name: Pull dependencies
-        uses: pnpm/action-setup@v1.2.1
+        uses: pnpm/action-setup@v2.0.1
         with:
-          version: 5.4.0
+          version: 6.3.0
           run_install: true
 
       - name: Build everything
