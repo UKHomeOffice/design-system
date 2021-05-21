@@ -41,10 +41,4 @@ describe('StatusMessage', () => {
       });
     });
   });
-
-  describe('when given no props at all', () => {
-    const component = mount(h(StatusMessage));
-    it('should not display anything', () => expect(component.text()).toEqual(''));
-    it('should not render anything', () => expect(component.exists('.hods-status-message')).toEqual(false));
-  });
 });

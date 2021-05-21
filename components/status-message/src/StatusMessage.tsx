@@ -24,7 +24,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
   }) => {
   const classes = classBuilder('hods-status-message', classBlock, classModifiers, className);
 
-  return status ? (
+  return (
     <div {...attrs} className={classes()}>
       <p>
         {status}
@@ -32,7 +32,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
       </p>
       {actions && actions.length && <AnchorList items={actions} classBlock={classes('actions')} />}
     </div>
-  ) : null;
+  );
 };
 
 export default StatusMessage;
