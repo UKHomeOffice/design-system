@@ -1,0 +1,73 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { StatusMessage } from '../src/StatusMessage';
+import readMe from '../README.md';
+import {A} from "@not-govuk/components";
+
+<Meta
+  title="Status message"
+  component={ StatusMessage }
+  parameters={ {
+    chromatic: { viewports: [820, 480] },
+    description: 'An indication to the user that something has changed.',
+    jest: ['StatusMessage'],
+    notes: readMe
+  } }
+/>
+
+# Status message
+
+An indication to the user that something has changed.
+
+<Preview withToolbar>
+  <Story name="Status message">
+    <StatusMessage status="On hold" />
+  </Story>
+</Preview>
+
+<Props of={ StatusMessage } />
+
+## Interaction principles
+Only use status indicators:
+
+  - to tell the user something important
+  - to inform the user of a change
+  - to inform the user that they need to do something
+
+For less prominent status indicators you could use labels.
+
+## Content principles
+Clear content about the change and what it means for the user.
+
+Services using statuses:
+  - Returns and movement
+  - Passport renewals
+  - Passport application search
+
+
+## Stories
+### Standard
+
+A standard Status message.
+
+<Preview>
+  <Story name="Standard">
+    <StatusMessage status="On hold" actions={[{ href: '#', text: 'Review' }]}>
+      - due for review 31 May 2021
+    </StatusMessage>
+  </Story>
+</Preview>
+
+### Multiple actions
+
+A standard Status message, with multiple actions.
+
+<Preview>
+  <Story name="Multiple actions">
+    <StatusMessage status="On hold" actions={[
+      { href: '#', text: 'Review' },
+      { href: '#', text: 'Extend hold' }
+    ]}>
+      - due for review 31 May 2021
+    </StatusMessage>
+  </Story>
+</Preview>

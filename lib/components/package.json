@@ -31,6 +31,7 @@
     "@hods/pagination": "workspace:^0.1.8",
     "@hods/sass-base": "workspace:^0.1.0",
     "@hods/status-banner": "workspace:^0.1.7",
+    "@hods/status-message": "workspace:^0.1.10",
     "@hods/timeline": "workspace:^0.1.8"
   },
   "devDependencies": {
