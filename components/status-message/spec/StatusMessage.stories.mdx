@@ -20,7 +20,7 @@ An indication to the user that something has changed.
 
 <Preview withToolbar>
   <Story name="Status message">
-    <StatusMessage status="Out to lunch" />
+    <StatusMessage status="On hold" />
   </Story>
 </Preview>
 
@@ -52,7 +52,7 @@ A standard Status message.
 <Preview>
   <Story name="Standard">
     <StatusMessage status="On hold" actions={[{ href: '#', text: 'Review' }]}>
-      - due for review 10 March 2018
+      - due for review 31 May 2021
     </StatusMessage>
   </Story>
 </Preview>
@@ -63,11 +63,11 @@ A standard Status message, with multiple actions.
 
 <Preview>
   <Story name="Multiple actions">
-    <StatusMessage status="Out to lunch" actions={[
-      { href: '#', text: 'Locate...' },
-      { href: '#', text: 'Preorder' }
+    <StatusMessage status="On hold" actions={[
+      { href: '#', text: 'Review' },
+      { href: '#', text: 'Extend hold' }
     ]}>
-      at the pub on the corner
+      - due for review 31 May 2021
     </StatusMessage>
   </Story>
 </Preview>
