@@ -30,8 +30,8 @@ const Page: FC<PageProps> = ({ location }) => (
       Guidance
     </h2>
     <ul className="plain">
-      <li><A href="https://collaboration.homeoffice.gov.uk/display/A11y/Accessibility+Standard">Home Office Accessibility Standard v1.0 Nov 2020</A></li>
-      <li><A href="https://homeofficegovuk.sharepoint.com/:w:/s/designops/EeB8PFKt6CNEmzfijRoZAO8BudZ1A8ths4rpx4h8qykZDA?e=Mwm90N">Accessibility checklist for designers</A></li>
+      <li><A href="https://collaboration.homeoffice.gov.uk/display/A11y/Accessibility+Standard">Home Office Accessibility Standard v1.0 Nov 2020</A> (Home Office Confluence link)</li>
+      <li><A href="https://homeofficegovuk.sharepoint.com/:w:/s/designops/EeB8PFKt6CNEmzfijRoZAO8BudZ1A8ths4rpx4h8qykZDA?e=Mwm90N">Accessibility checklist for designers</A> (Home Office Sharepoint link)</li>
       <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service">Helping people to use your service</A></li>
       <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility">Testing for accessibility</A></li>
       <li><A href="https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/">Using the empathy lab at GDS</A></li>
