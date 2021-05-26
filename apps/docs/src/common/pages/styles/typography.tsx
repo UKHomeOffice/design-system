@@ -31,8 +31,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <span className="govuk-caption-xl">Styles</span>
       <h1 className="heading-section">Typography</h1>
-      <p className="lede">GDS Transport, the typeface used on GOV.UK, is restricted by license for use on gov.uk domains. Internal services can't use GDS Transport and should instead use the open source <A href="https://fonts.google.com/specimen/Roboto#standard-styles">Roboto</A> typeface.</p>
-      <p className="lede">Roboto is closely related to Helvetica and Arial but is optimised for screens, making it easier to read online.</p>
+      <p className="lede"><A href="https://design-system.service.gov.uk/styles/typography/">GDS Transport</A>, the typeface used on GOV.UK, is restricted by license for use on gov.uk domains. Internal services can't use GDS Transport and should instead use the open source <A href="https://fonts.google.com/specimen/Roboto#standard-styles">Roboto</A> typeface.</p>
+      <p className="lede">Roboto is similar to Helvetica and Arial but is optimised for screens, making it easier to read online.</p>
 
       <section>
         <h2 className="govuk-heading-l" style={{marginTop: "1.5em"}}>Headings</h2>
