@@ -13,9 +13,9 @@ import readMe from '../README.md';
   } }
 />
 
-# Status banner
+# Expandable banner
 
-Component that provides both high level and more detailed warning messages.
+Provide users with both high level and more detailed messages.
 
 <Preview withToolbar>
   <Story name="StatusBanner">
@@ -28,10 +28,12 @@ Component that provides both high level and more detailed warning messages.
 <Props of={ StatusBanner } />
 
 
-## Stories
-### Standard
+## When to use this component
 
-A standard status banner.
+Use the expandable banner to quickly scan information and show additional detail only when users need to see it.
+Do not use this to hide information that the majority of users will always need to see.
+
+### Standard banner
 
 <Preview>
   <Story name="Standard">
@@ -41,9 +43,7 @@ A standard status banner.
   </Story>
 </Preview>
 
-### Positive
-
-A positive status banner.
+### Banner showing a positive outcome
 
 <Preview>
   <Story name="Positive">
@@ -53,9 +53,7 @@ A positive status banner.
   </Story>
 </Preview>
 
-### Negative
-
-A negative status banner.
+### Banner showing a negative outcome
 
 <Preview>
   <Story name="Negative">
@@ -64,3 +62,15 @@ A negative status banner.
     </StatusBanner>
   </Story>
 </Preview>
+
+## Services using this component
+
+- Animals science licensing
+
+## Research
+
+Animals science licensing found this component worked well in showing the statuses of licenses and offered users the flexibility to view the appropriate level of information.
+
+## Accessibility
+
+If your service uses this component, let us know of any insights you have on accessibility considerations.

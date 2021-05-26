@@ -16,7 +16,7 @@ import {A} from "@not-govuk/components";
 
 # Status message
 
-An indication to the user that something has changed.
+Tell users that something has changed.
 
 <Preview withToolbar>
   <Story name="Status message">
@@ -26,28 +26,17 @@ An indication to the user that something has changed.
 
 <Props of={ StatusMessage } />
 
-## Interaction principles
-Only use status indicators:
+## When to use this component
+Use status messages to:
 
-  - to tell the user something important
-  - to inform the user of a change
-  - to inform the user that they need to do something
+  - notify the user of a change
+  - tell the user something important
+  - inform the user that they need to do something
 
-For less prominent status indicators you could use labels.
+Status messages are similar to alerts but are primarily used for internal services and can include actions for users to take.
+For less prominent status indicators you could use tags.
 
-## Content principles
-Clear content about the change and what it means for the user.
-
-Services using statuses:
-  - Returns and movement
-  - Passport renewals
-  - Passport application search
-
-
-## Stories
-### Standard
-
-A standard Status message.
+### Standard status message with an action
 
 <Preview>
   <Story name="Standard">
@@ -57,9 +46,8 @@ A standard Status message.
   </Story>
 </Preview>
 
-### Multiple actions
+### Status message with multiple actions
 
-A standard Status message, with multiple actions.
 
 <Preview>
   <Story name="Multiple actions">
@@ -71,3 +59,15 @@ A standard Status message, with multiple actions.
     </StatusMessage>
   </Story>
 </Preview>
+
+## Services using this component
+
+  - Returns and movement
+  - Passport renewals
+  - Passport application search
+
+## Research
+If your service uses this component, let us know of any insights you have on research.
+
+## Accessibility
+If your service uses this component, let us know of any insights you have on accessibility considerations.
