@@ -49,11 +49,8 @@ const Page: FC<PageProps> = ({ location }) => {
               <Fragment>
                 <h1>Components</h1>
                 <p>
-                  Components are reusable parts of the user interface that have been made to support a variety of applications.
-                </p>
-                <p>
-                  Individual components can be used in multiple different patterns and contexts. For example, the text input component can be used to
-                  ask for an email address, a National Insurance number or someone’s name.
+                  Components are reusable parts of the user interface that have been made to support a variety of applications. Individual
+                  components can be used in multiple different patterns and contexts. 
                 </p>
                 <p>
                 These components extend those used across Government in the <A href="https://design-system.service.gov.uk/">GOV.UK
