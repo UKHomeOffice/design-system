@@ -25,12 +25,12 @@
   ],
   "dependencies": {
     "@hods/alert": "workspace:^0.1.5",
+    "@hods/expandable-banner": "workspace:^0.1.7",
     "@hods/footer": "workspace:^0.1.0",
     "@hods/header": "workspace:^0.1.0",
     "@hods/page": "workspace:^0.1.0",
     "@hods/pagination": "workspace:^0.1.8",
     "@hods/sass-base": "workspace:^0.1.0",
-    "@hods/status-banner": "workspace:^0.1.7",
     "@hods/status-message": "workspace:^0.1.10",
     "@hods/timeline": "workspace:^0.1.8"
   },

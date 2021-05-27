@@ -1,14 +1,14 @@
 import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
-import { StatusBanner } from '../src/StatusBanner';
+import { ExpandableBanner } from '../src/ExpandableBanner';
 import readMe from '../README.md';
 
 <Meta
-  title="Status banner"
-  component={ StatusBanner }
+  title="Expandable banner"
+  component={ ExpandableBanner }
   parameters={ {
     chromatic: { viewports: [640, 480] },
     description: 'Component that provides both high level and more detailed warning messages.',
-    jest: ['StatusBanner'],
+    jest: ['ExpandableBanner'],
     notes: readMe
   } }
 />
@@ -18,14 +18,14 @@ import readMe from '../README.md';
 Provide users with both high level and more detailed messages.
 
 <Preview withToolbar>
-  <Story name="StatusBanner">
-    <StatusBanner status="Draft">
+  <Story name="ExpandableBanner">
+    <ExpandableBanner status="Draft">
       This licence is not active. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
-    </StatusBanner>
+    </ExpandableBanner>
   </Story>
 </Preview>
 
-<Props of={ StatusBanner } />
+<Props of={ ExpandableBanner } />
 
 
 ## When to use this component
@@ -37,9 +37,9 @@ Do not use this to hide information that the majority of users will always need 
 
 <Preview>
   <Story name="Standard">
-    <StatusBanner status="Draft">
+    <ExpandableBanner status="Draft">
       This licence is not active. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
-    </StatusBanner>
+    </ExpandableBanner>
   </Story>
 </Preview>
 
@@ -47,9 +47,9 @@ Do not use this to hide information that the majority of users will always need 
 
 <Preview>
   <Story name="Positive">
-    <StatusBanner status="Renewed" classModifiers="positive">
+    <ExpandableBanner status="Renewed" classModifiers="positive">
       This licence has been renewed. The licence holder or applicant is now authorised to carry out the programme of work as stated in this licence/application.
-    </StatusBanner>
+    </ExpandableBanner>
   </Story>
 </Preview>
 
@@ -57,9 +57,9 @@ Do not use this to hide information that the majority of users will always need 
 
 <Preview>
   <Story name="Negative">
-    <StatusBanner status="Expired" classModifiers="negative">
+    <ExpandableBanner status="Expired" classModifiers="negative">
       This licence has expired. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
-    </StatusBanner>
+    </ExpandableBanner>
   </Story>
 </Preview>
 
