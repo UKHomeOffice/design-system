@@ -1,7 +1,7 @@
 import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { NavigationMenu } from '@not-govuk/components';
+import { A, NavigationMenu } from '@not-govuk/components';
 import { DocsPage } from '@not-govuk/docs-components';
 
 const reduceToLookup = (acc: object, cur) => ({...acc, [cur.default.title]: cur});
@@ -49,10 +49,13 @@ const Page: FC<PageProps> = ({ location }) => {
               <Fragment>
                 <h1>Components</h1>
                 <p>
-                  Components are reusable parts of the user interface that have been made to support a variety of applications.
+                  Components are reusable parts of the user interface that have been made to support a variety of applications. Individual
+                  components can be used in multiple different patterns and contexts. 
                 </p>
                 <p>
-                  Individual components can be used in multiple different patterns and contexts. For example, the text input component can be used to ask for an email address, a National Insurance number or someone’s name.
+                These components extend those used across Government in the <A href="https://design-system.service.gov.uk/">GOV.UK
+                design system</A>. As our components mature, we will look to
+                contribute them to the GOV.UK system so they can be used more widely.
                 </p>
               </Fragment>
             )
