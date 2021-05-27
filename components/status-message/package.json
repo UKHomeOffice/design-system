@@ -1,6 +1,6 @@
 {
   "name": "@hods/status-message",
-  "version": "0.1.10",
+  "version": "0.1.16",
   "description": "An indication to the user that something has changed.",
   "main": "src/StatusMessage.tsx",
   "sass": "assets/StatusMessage.scss",
