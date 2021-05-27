@@ -28,10 +28,12 @@ Alert users to important information.
 <Props of={ Alert } />
 
 
-## Stories
-### Standard
+## When to use this component
 
-A standard Alert.
+Use alerts to inform users that something important has happened, notify them of a success/failure or to take action.
+Only use this component when you have identified that users need to be made aware of certain content.
+
+### Standard alert
 
 <Preview>
   <Story name="Standard">
@@ -42,9 +44,9 @@ A standard Alert.
 </Preview>
 
 
-### Success
+### Alert notifying of a successful outcome
 
-An Alert signifying success.
+Use the green version of the alert to confirm that something they’re expecting to happen has happened.
 
 <Preview>
   <Story name="Success">
@@ -55,9 +57,9 @@ An Alert signifying success.
 </Preview>
 
 
-### Error
+### Alert indicating an error
 
-An Alert for when something has gone wrong.
+Use the red version of the alert to confirm that something has gone wrong.
 
 <Preview>
   <Story name="Error">
@@ -66,3 +68,17 @@ An Alert for when something has gone wrong.
     </Alert>
   </Story>
 </Preview>
+
+## Services using this component
+
+- Passport renewals
+- Atlas caseworking system
+
+## Research
+
+Passport renewals found this component worked better than the confirmation pattern for a payment success page.
+They observed users engaged with the next steps on the page, rather than thinking they were finished.
+
+## Accessibility
+
+In the Atlas caseworking system, it was found this alert should sit under the h1 for accessibility.

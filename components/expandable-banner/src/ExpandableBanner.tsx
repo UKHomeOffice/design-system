@@ -1,13 +1,13 @@
 import { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 
-import '../assets/StatusBanner.scss';
+import '../assets/ExpandableBanner.scss';
 
-export type StatusBannerProps = StandardProps & {
+export type ExpandableBannerProps = StandardProps & {
   status: string
 };
 
-export const StatusBanner: FC<StatusBannerProps> = ({
+export const ExpandableBanner: FC<ExpandableBannerProps> = ({
   children,
   classBlock,
   classModifiers,
@@ -15,7 +15,7 @@ export const StatusBanner: FC<StatusBannerProps> = ({
   status,
   ...attrs
 }) => {
-  const classes = classBuilder('hods-status-banner', classBlock, classModifiers, className);
+  const classes = classBuilder('hods-expandable-banner', classBlock, classModifiers, className);
 
   return (
     <details {...attrs} className={classes()}>
@@ -27,4 +27,4 @@ export const StatusBanner: FC<StatusBannerProps> = ({
   );
 };
 
-export default StatusBanner;
+export default ExpandableBanner;

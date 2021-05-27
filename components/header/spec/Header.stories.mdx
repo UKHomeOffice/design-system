@@ -15,7 +15,7 @@ import readMe from '../README.md';
 
 # Header
 
-HODS' page header.
+The Home Office header shows users that they are on an internal Home Office service and indicates which service they are using.
 
 <Preview withToolbar>
   <Story name="Header">
@@ -26,10 +26,17 @@ HODS' page header.
 <Props of={ Header } />
 
 
-## Stories
-### Standard
+## When to use this component
+You must use the Home Office header if your service:
+- is internal, such as a caseworking system or admin service, and
+- sits on a homeoffice.gov.uk domain
 
-A standard Header.
+## When not to use this component
+You must not use the Home Office header if your service:
+- is public-facing and transactional, and
+- sits on a gov.uk or service.gov.uk domain
+
+### Standard header
 
 <Preview>
   <Story name="Standard">
@@ -38,9 +45,7 @@ A standard Header.
 </Preview>
 
 
-### Service title
-
-A header with a service title.
+### Header with service name
 
 <Preview>
   <Story name="Service title">
@@ -49,9 +54,7 @@ A header with a service title.
 </Preview>
 
 
-### Sign-out
-
-A header with an option to sign out.
+### Header with option to sign out
 
 <Preview>
   <Story name="Sign-out">
@@ -65,9 +68,7 @@ A header with an option to sign out.
 </Preview>
 
 
-### Navigation
-
-A header with navigation links.
+### Header with navigation
 
 <Preview>
   <Story name="Navigation">

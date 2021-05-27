@@ -1,0 +1,76 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { ExpandableBanner } from '../src/ExpandableBanner';
+import readMe from '../README.md';
+
+<Meta
+  title="Expandable banner"
+  component={ ExpandableBanner }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Component that provides both high level and more detailed warning messages.',
+    jest: ['ExpandableBanner'],
+    notes: readMe
+  } }
+/>
+
+# Expandable banner
+
+Provide users with both high level and more detailed messages.
+
+<Preview withToolbar>
+  <Story name="ExpandableBanner">
+    <ExpandableBanner status="Draft">
+      This licence is not active. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
+    </ExpandableBanner>
+  </Story>
+</Preview>
+
+<Props of={ ExpandableBanner } />
+
+
+## When to use this component
+
+Use the expandable banner to quickly scan information and show additional detail only when users need to see it.
+Do not use this to hide information that the majority of users will always need to see.
+
+### Standard banner
+
+<Preview>
+  <Story name="Standard">
+    <ExpandableBanner status="Draft">
+      This licence is not active. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
+    </ExpandableBanner>
+  </Story>
+</Preview>
+
+### Banner showing a positive outcome
+
+<Preview>
+  <Story name="Positive">
+    <ExpandableBanner status="Renewed" classModifiers="positive">
+      This licence has been renewed. The licence holder or applicant is now authorised to carry out the programme of work as stated in this licence/application.
+    </ExpandableBanner>
+  </Story>
+</Preview>
+
+### Banner showing a negative outcome
+
+<Preview>
+  <Story name="Negative">
+    <ExpandableBanner status="Expired" classModifiers="negative">
+      This licence has expired. The licence holder or applicant is not authorised to carry out the programme of work as stated in this licence/application.
+    </ExpandableBanner>
+  </Story>
+</Preview>
+
+## Services using this component
+
+- Animals science licensing
+
+## Research
+
+Animals science licensing found this component worked well in showing the statuses of licenses and offered users the flexibility to view the appropriate level of information.
+
+## Accessibility
+
+If your service uses this component, let us know of any insights you have on accessibility considerations.

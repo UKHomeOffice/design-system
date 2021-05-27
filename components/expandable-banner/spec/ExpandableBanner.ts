@@ -1,10 +1,10 @@
 import { createElement as h } from 'react';
 import { mount } from '@not-govuk/component-test-helpers';
-import StatusBanner from '../src/StatusBanner';
+import ExpandableBanner from '../src/ExpandableBanner';
 
-describe('StatusBanner', () => {
+describe('ExpandableBanner', () => {
   describe('when given valid props', () => {
-    const component = mount(h(StatusBanner, {status:'status'}, 'Child'));
+    const component = mount(h(ExpandableBanner, {status:'status'}, 'Child'));
 
     it('renders', () => undefined);
   });
