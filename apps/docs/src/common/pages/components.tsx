@@ -11,9 +11,9 @@ const storySources = [
   require('../../../../../components/footer/spec/Footer.stories.mdx'),
   require('../../../../../components/header/spec/Header.stories.mdx'),
   require('../../../../../components/page/spec/Page.stories.mdx'),
+  require('../../../../../components/pagination/spec/Pagination.stories.mdx'),
   require('../../../../../components/status-message/spec/StatusMessage.stories.mdx'),
-  require('../../../../../components/timeline/spec/Timeline.stories.mdx'),
-  require('../../../../../components/pagination/spec/Pagination.stories.mdx')
+  require('../../../../../components/timeline/spec/Timeline.stories.mdx')
 ];
 const subpages = storySources.reduce(reduceToLookup, {})
 
