@@ -1,4 +1,4 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
@@ -7,11 +7,17 @@ const applyPassportImage = require('../../../assets/images/apply-passport.png').
 const ddatEventsImage = require('../../../assets/images/ddat-events.png').default;
 const policeImage = require('../../../assets/images/police.png').default;
 
+export const title = 'Styles';
+const description = 'Make your service look and feel like a Home Office service';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Styles - Home Office Design System</title>
-      <meta name="og:article:section" content="Styles" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={title} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -30,7 +36,7 @@ const Page: FC<PageProps> = ({ location }) => (
       ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-      <h1>Styles</h1>
+      <h1>{title}</h1>
       <p>We apply different styles to Home Office services and products depending on what domain they sit in and what kind of service it is.</p>
       <h2 className="govuk-heading-m">Home Office design styles</h2>
       <div className="govuk-grid-row">
@@ -96,4 +102,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Styles';

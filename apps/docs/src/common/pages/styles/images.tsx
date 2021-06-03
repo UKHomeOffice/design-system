@@ -1,4 +1,4 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
@@ -9,11 +9,18 @@ const applyExample2 = require('../../../../assets/images/example-2.jpg').default
 const applyExample5 = require('../../../../assets/images/example-5.jpg').default;
 const applyExample6 = require('../../../../assets/images/example-6.jpg').default;
 
+export const title = 'Images';
+const description = 'Only use images if there’s a real user need';
+const section = 'Styles';
+
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
   <Helmet>
-    <title>Images - Home Office Design System</title>
-    <meta name="og:article:section" content="Styles" />
+    <title>{title} - Home Office Design System</title>
+    <meta name="description" content={description} />
+    <meta name="og:title" content={title} />
+    <meta name="og:description" content={description} />
+    <meta name="og:article:section" content={section} />
   </Helmet>
 
     <div className="govuk-grid-column-one-quarter">
@@ -34,8 +41,10 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
 
     <div className="govuk-grid-column-three-quarters">
-      <span className="govuk-caption-xl">Styles</span>
-      <h1 className="heading-section">Images</h1>
+      <h1>
+        <span className="caption">{section}</span>
+        {title}
+      </h1>
 
       <h2 className="govuk-heading-l">Use of images</h2>
       <p className="govuk-body">Avoid unecessary decoration. Only use images when research indicates that it would be helpful to users.</p>
@@ -128,4 +137,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Images';

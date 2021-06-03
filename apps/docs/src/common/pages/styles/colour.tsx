@@ -1,4 +1,4 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
@@ -15,11 +15,18 @@ const colour = (colour: string, whiteText: boolean = false) => ({
   border: '1px solid #CBCBCB'
 });
 
+export const title = 'Colour';
+const description = 'Always use the Home Office colour palette';
+const section = 'Styles';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Colour - Home Office Design System</title>
-      <meta name="og:article:section" content="Styles" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -40,8 +47,10 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <div className="govuk-grid-column-three-quarters">
 
-      <span className="govuk-caption-xl">Styles</span>
-      <h1 className="heading-section">Colour</h1>
+      <h1>
+        <span className="caption">{section}</span>
+        {title}
+      </h1>
 
       <p className="govuk-body">Always use the Home Office colour palette when you are designing and building internal services and products. For public facing and transactional sites use the <A href="https://design-system.service.gov.uk/styles/colour/">GOV.UK colour palette</A>.</p>
       <p className="govuk-body">Ask <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> if you have any questions.</p>
@@ -172,4 +181,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Colour';

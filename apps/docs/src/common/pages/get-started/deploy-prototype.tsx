@@ -1,4 +1,4 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
@@ -7,11 +7,19 @@ const applyPrototype7 = require('../../../../assets/images/heroku2.png').default
 const applyPrototype8 = require('../../../../assets/images/heroku3.png').default;
 const applyPrototype9 = require('../../../../assets/images/heroku4.png').default;
 
+export const title = 'Deploying your prototype';
+const description = 'How to deploy your prototype';
+const section = 'Get started';
+const subsection = 'Prototyping';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Guidance on Home Office Design System</title>
-      <meta name="og:article:section" content="Get started" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -27,8 +35,8 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>
-        <span className="caption">Prototyping</span>
-        Deploying your prototype
+        <span className="caption">{subsection}</span>
+        {title}
       </h1>
       <p>One of the ways you can deploy, or publish and share your prototype with others, is through Heroku.</p>
 
@@ -68,4 +76,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Deploying your prototype';

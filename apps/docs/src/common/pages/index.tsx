@@ -3,11 +3,16 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 
+export const title = 'Home Office Design System';
+const description = 'The UK Home Office\'s Design System, implemented in React';
 
 const Page: FC<PageProps> = props => (
   <Fragment>
     <Helmet>
-      <title>Home - Home Office Design System</title>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
     </Helmet>
     <div className="govuk-grid-row">
       <div className="govuk-grid-column-two-thirds">
@@ -52,4 +57,3 @@ const Page: FC<PageProps> = props => (
 );
 
 export default Page;
-export const title = 'Home Office Design System';

@@ -3,14 +3,18 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyPrototype1 = require('../../../../assets/images/prototype-screen01.png').default;
-const applyPrototype2 = require('../../../../assets/images/prototype-screen02.png').default;
+export const title = 'Prototyping';
+const description = 'How to prototype with the Home Office Design System';
+const section = 'Get started';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Guidance on Home Office Design System</title>
-      <meta name="og:article:section" content="Get started" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -27,8 +31,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <div className="govuk-grid-column-three-quarters">
       <h1>
-        <span className="caption">Setup guides</span>
-        Prototyping
+        <span className="caption">{section}</span>
+        {title}
       </h1>
 
       <ul className="plain">
@@ -42,4 +46,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Starting a new prototype';

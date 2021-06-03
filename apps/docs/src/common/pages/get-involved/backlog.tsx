@@ -3,11 +3,18 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+export const title = 'Backlog';
+const description = 'How to get involved and contribute to the Home Office Design System'
+const section = 'Get involved';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Backlog - Home Office Design System</title>
-      <meta name="og:article:section" content="Get involved" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -38,7 +45,10 @@ const Page: FC<PageProps> = ({ location }) => (
       ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-    <h1 className="govuk-heading-l">Backlog</h1>
+      <h1>
+        <span className="caption">{section}</span>
+        {title}
+      </h1>
 
         <p>The Design System has an open backlog on <A href="https://github.com/UKHomeOffice/home-office-digital-patterns/projects/1">GitHub</A>. Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones.</p>
 
@@ -155,4 +165,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Get involved';

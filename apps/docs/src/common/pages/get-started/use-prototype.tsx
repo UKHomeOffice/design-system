@@ -1,4 +1,4 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
@@ -8,11 +8,19 @@ const applyPrototype4 = require('../../../../assets/images/prototype-screen04htm
 const applyPrototype5 = require('../../../../assets/images/prototype-screen05.png').default;
 const applyPrototype6 = require('../../../../assets/images/prototype-screen07.png').default;
 
+export const title = 'Building your prototype';
+const description = 'How to build your prototype';
+const section = 'Get started';
+const subsection = 'Prototyping';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Guidance on Home Office Design System</title>
-      <meta name="og:article:section" content="Get started" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -29,8 +37,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <div className="govuk-grid-column-three-quarters">
       <h1>
-        <span className="caption">Prototyping</span>
-        Building your prototype
+        <span className="caption">{subsection}</span>
+        {title}
       </h1>
       <p>In Atom, select <strong>File</strong> then <strong>Open</strong>. Then select your prototype folder.</p>
 
@@ -101,4 +109,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Building your prototype';
