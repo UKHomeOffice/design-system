@@ -3,11 +3,17 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+export const title = 'Patterns';
+const description = 'Patterns are best practice design solutions for specific user-focused tasks and page types';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Patterns - Home Office Design System</title>
-      <meta name="og:article:section" content="Patterns" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={title} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -39,7 +45,7 @@ const Page: FC<PageProps> = ({ location }) => (
       ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-      <h1>Patterns</h1>
+      <h1>{title}</h1>
       <p>Patterns are guidance on how to solve certain types of problems. They include
       examples of successful approaches but are flexible and don’t prescribe exact design solutions.</p>
       <p>These patterns extend those used across Government in the <A href="https://design-system.service.gov.uk/">GOV.UK
@@ -50,4 +56,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Patterns';

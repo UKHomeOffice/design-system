@@ -1,4 +1,4 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
@@ -6,11 +6,19 @@ import { A, NavigationMenu } from '@not-govuk/components';
 const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg').default;
 const applyImageRight = require('../../../../assets/images/patterns/image-guidance-right.svg').default;
 
+export const title = 'Find information on a document';
+const description = 'How to help users to find information on a document';
+const section = 'Patterns';
+const subsection = 'Help users to';
+
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
   <Helmet>
-    <title>Find information on a document - Home Office Design System</title>
-    <meta name="og:article:section" content="Patterns" />
+    <title>{title} - Home Office Design System</title>
+    <meta name="description" content={description} />
+    <meta name="og:title" content={title} />
+    <meta name="og:description" content={description} />
+    <meta name="og:article:section" content={section} />
   </Helmet>
 
     <div className="govuk-grid-column-one-quarter">
@@ -44,8 +52,10 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
 
     <div className="govuk-grid-column-three-quarters">
-      <span className="govuk-caption-xl">Help users to</span>
-      <h1 className="heading-section">Find information on a document</h1>
+      <h1>
+        <span className="caption">{subsection}</span>
+        {title}
+      </h1>
       <div style={{marginTop: "-2em"}}>
       <p className="govuk-caption-m" style={{marginBottom: "2em"}}>Also known as: guidance images</p>
       </div>
@@ -126,4 +136,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Find information on a document';

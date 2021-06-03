@@ -4,11 +4,18 @@ import { PageProps } from '@not-govuk/app-composer';
 
 import Markdown from '../../../../../docs/working-on-your-project.md';
 
+export const title = 'Working on your project';
+const description = 'How to work on your HODS-based project';
+const section = 'Get started';
+
 const Page: FC<PageProps> = props => (
   <Fragment>
     <Helmet>
-      <title>Working on your project - Home Office Design System</title>
-      <meta name="og:article:section" content="Get started" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
     <span className="govuk-caption-xl">Get started</span>
     <Markdown />
@@ -16,4 +23,3 @@ const Page: FC<PageProps> = props => (
 );
 
 export default Page;
-export const title = 'Working on your project';

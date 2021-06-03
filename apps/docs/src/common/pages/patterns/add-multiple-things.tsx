@@ -1,15 +1,23 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
 const applyAddAnother = require('../../../../assets/images/patterns/add-another.svg').default;
 
+export const title = 'Add multiple things';
+const description = 'How to help users to add multiple things';
+const section = 'Patterns';
+const subsection = 'Help users to';
+
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
   <Helmet>
-    <title>Add multiple things - Home Office Design System</title>
-    <meta name="og:article:section" content="Patterns" />
+    <title>{title} - Home Office Design System</title>
+    <meta name="description" content={description} />
+    <meta name="og:title" content={title} />
+    <meta name="og:description" content={description} />
+    <meta name="og:article:section" content={section} />
   </Helmet>
 
     <div className="govuk-grid-column-one-quarter">
@@ -43,8 +51,10 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
 
     <div className="govuk-grid-column-three-quarters">
-      <span className="govuk-caption-xl">Help users to</span>
-      <h1 className="heading-section">Add multiple things</h1>
+      <h1>
+        <span className="caption">{subsection}</span>
+        {title}
+      </h1>
       <div style={{marginTop: "-2em"}}>
       <p className="govuk-caption-m" style={{marginBottom: "2em"}}>Also known as: add another</p>
       </div>
@@ -103,4 +113,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Add multiple things';

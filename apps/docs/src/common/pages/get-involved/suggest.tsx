@@ -3,11 +3,18 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+export const title = 'Suggest a new pattern or component';
+const description = 'How to propose a new pattern of component should be included in the Home Office Design System'
+const section = 'Get involved';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Suggest a new pattern or component - Home Office Design System</title>
-      <meta name="og:article:section" content="Get involved" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -38,7 +45,10 @@ const Page: FC<PageProps> = ({ location }) => (
       ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-    <h1 className="govuk-heading-l">Suggest a new pattern or component</h1>
+      <h1>
+        <span className="caption">{section}</span>
+        {title}
+      </h1>
           <p>Anyone can suggest adding a new component or pattern to the Home Office design system.</p>
 
           <h2 className="govuk-heading-m">1. Check the backlog</h2>
@@ -57,4 +67,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Get involved';

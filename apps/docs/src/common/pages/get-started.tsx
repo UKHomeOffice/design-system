@@ -1,9 +1,20 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+export const title = 'Get started';
+const description = 'The following introductory guides will help you to get set up';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
+    <Helmet>
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={title} />
+    </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
         {
@@ -18,8 +29,8 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
 
     <div className="govuk-grid-column-three-quarters">
-      <h1>Get started</h1>
-        <p>The Home Office Design System (HODS) framework is an extension of <A href="https://not-govuk.netlify.app/">NotGovUK</A> which implements the GOV.UK Design System in React. (See: <A href="https://not-govuk.netlify.app/design-decisions">design decisions</A>)</p>
+      <h1>{title}</h1>
+        <p>The Home Office Design System (HODS) framework is an extension of <A href="https://not-gov.uk/">NotGovUK</A> which implements the GOV.UK Design System in React. (See: <A href="https://not-gov.uk/design-decisions">design decisions</A>)</p>
         <p>If you are designing and building an internal Home Office service, here are guides to getting started:</p>
           <ul>
             <li><A href="/get-started/start-prototype">prototyping</A></li>
@@ -41,4 +52,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Get started';

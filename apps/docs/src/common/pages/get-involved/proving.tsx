@@ -3,11 +3,18 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+export const title = 'Proving a pattern or component works';
+const description = 'The process a new pattern or component must go through.'
+const section = 'Get involved';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Proving a pattern or component works - Home Office Design System</title>
-      <meta name="og:article:section" content="Get involved" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
       <NavigationMenu items={[
@@ -39,7 +46,10 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
 
-    <h1 className="govuk-heading-l">Proving a pattern or component works</h1>
+      <h1>
+        <span className="caption">{section}</span>
+        {title}
+      </h1>
           <p>The working group review new contributions. They may decide that something else meets the need better. If the working group agree that a pattern or component is needed, it will move through the following stages:</p>
 
           <h2 className="govuk-heading-m">Experimental</h2>
@@ -54,4 +64,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Get involved';

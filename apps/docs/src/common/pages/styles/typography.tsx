@@ -1,13 +1,20 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+export const title = 'Typography';
+const description = 'If your service is on the homeoffice.gov.uk subdomain you should use the Roboto font instead of the GDS Transport font';
+const section = 'Styles';
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
-      <title>Typography - Home Office Design System</title>
-      <meta name="og:article:section" content="Styles" />
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={section} />
     </Helmet>
 
     <div className="govuk-grid-column-one-quarter">
@@ -29,8 +36,10 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <div className="govuk-grid-column-three-quarters">
 
-      <span className="govuk-caption-xl">Styles</span>
-      <h1 className="heading-section">Typography</h1>
+      <h1>
+        <span className="caption">{section}</span>
+        {title}
+      </h1>
       <p className="lede"><A href="https://design-system.service.gov.uk/styles/typography/">GDS Transport</A>, the typeface used on GOV.UK, is restricted by license for use on gov.uk domains. Internal services can't use GDS Transport and should instead use the open source <A href="https://fonts.google.com/specimen/Roboto#standard-styles">Roboto</A> typeface.</p>
       <p className="lede">Roboto is similar to Helvetica and Arial but is optimised for screens, making it easier to read online.</p>
 
@@ -65,4 +74,3 @@ const Page: FC<PageProps> = ({ location }) => (
 );
 
 export default Page;
-export const title = 'Typography';
