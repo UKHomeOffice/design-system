@@ -3,19 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 import { DocsPage } from '@not-govuk/docs-components';
-
-const reduceToLookup = (acc: object, cur) => ({...acc, [cur.default.title]: cur});
-const storySources = [
-  require('../../../../../components/alert/spec/Alert.stories.mdx'),
-  require('../../../../../components/expandable-banner/spec/ExpandableBanner.stories.mdx'),
-  require('../../../../../components/footer/spec/Footer.stories.mdx'),
-  require('../../../../../components/header/spec/Header.stories.mdx'),
-  require('../../../../../components/page/spec/Page.stories.mdx'),
-  require('../../../../../components/pagination/spec/Pagination.stories.mdx'),
-  require('../../../../../components/status-message/spec/StatusMessage.stories.mdx'),
-  require('../../../../../components/timeline/spec/Timeline.stories.mdx')
-];
-const subpages = storySources.reduce(reduceToLookup, {})
+import { stories as subpages } from '../component-stories';
 
 export const title = 'Components';
 const description = 'The components provided in NotGovUK';

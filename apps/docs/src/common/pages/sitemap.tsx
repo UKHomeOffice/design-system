@@ -2,21 +2,10 @@ import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { AnchorList } from '@not-govuk/anchor-list';
+import { stories } from '../component-stories';
 
-const reduceToLookup = (acc: object, cur) => ({...acc, [cur.default.title]: cur});
-const storiesComponents = [
-  require('../../../../../components/alert/spec/Alert.stories.mdx'),
-  require('../../../../../components/expandable-banner/spec/ExpandableBanner.stories.mdx'),
-  require('../../../../../components/footer/spec/Footer.stories.mdx'),
-  require('../../../../../components/header/spec/Header.stories.mdx'),
-  require('../../../../../components/page/spec/Page.stories.mdx'),
-  require('../../../../../components/pagination/spec/Pagination.stories.mdx'),
-  require('../../../../../components/status-message/spec/StatusMessage.stories.mdx'),
-  require('../../../../../components/timeline/spec/Timeline.stories.mdx')
-];
-const subpagesComponents = storiesComponents.reduce(reduceToLookup, {})
-const components = Object.keys(subpagesComponents).sort().map(v => ({
-  href: `/components?name=${encodeURIComponent(subpagesComponents[v].default.title)}`,
+const components = Object.keys(stories).sort().map(v => ({
+  href: `/components?name=${encodeURIComponent(stories[v].default.title)}`,
   text: v
 }));
 
