@@ -25,7 +25,7 @@ const Page: FC<PageProps> = ({ location }) => {
   const componentName = location.query[nameParam];
   const stories = subpages[componentName];
   const navItems = Object.keys(subpages).sort().map(v => ({
-    href: `/components?${nameParam}=${subpages[v].default.title}`,
+    href: `/components?${nameParam}=${encodeURIComponent(subpages[v].default.title)}`,
     text: v
   }));
 
