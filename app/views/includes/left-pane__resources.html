@@ -3,8 +3,14 @@
     <h2 id="sidemenulabel" class="visuallyhidden">Side Menu</h2>
 
     <ul class="app-subnav__section">
-      <li{% if activesub == "accessibility" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+      <li{% if activesub == "audio-video" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/accessibility/audio-video">Audio and video</a>
+      </li>
+      <li{% if activesub == "links" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+      <a class="app-subnav__link govuk-link" href="/accessibility/links">Links</a>
+      </li>
+      <li{% if activesub == "resources" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
+      <a class="app-subnav__link govuk-link" href="/accessibility/resources">Resources</a>
       </li>
       <!-- <li{% if activesub == "government" %} class="app-subnav__section-item app-subnav__section-item--current"{% endif %}>
         <a class="app-subnav__link govuk-link" href="/resources/government">GOV.UK</a>
