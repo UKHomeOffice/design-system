@@ -19,6 +19,7 @@
     "@apollo/client": "^3.2.7",
     "@hods/components": "workspace:^0.1.0",
     "@hods/header": "workspace:^0.1.2",
+    "@not-govuk/anchor-list": "^0.2.13",
     "@not-govuk/app-composer": "^0.2.13",
     "@not-govuk/client-renderer": "^0.2.13",
     "@not-govuk/components": "^0.2.13",
