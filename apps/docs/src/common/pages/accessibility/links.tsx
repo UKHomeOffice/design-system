@@ -59,8 +59,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>The basics</h2>
         <p>Do:</p>
         <ul>
-        <li>use clear and concise link text that describe the destination (for example <A href="#">Learn how to get financial help if you’re disabled</A>)</li>
-        <li>ensure links look different from surrounding text with at least two of the following: colour, size, bold, underlined</li>
+        <li>use clear and concise link text that describe the destination <br /> (for example <span style={{color: "#005EA5", textDecoration: "underline"}}>Learn how to get financial help if you’re disabled</span>)</li>
+        <li>ensure links look different from surrounding text with at least two of the following:<br /> colour, size, bold, underlined</li>
         <li>make sure the links work, with keyboard as well as mouse, using the tab and enter keys</li>
         <li>make sure links take you to where you’d expect</li>
         </ul>

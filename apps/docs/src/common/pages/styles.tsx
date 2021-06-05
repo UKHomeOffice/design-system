@@ -49,7 +49,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>You should use:</p>
           <ul>
             <li><A href="/styles/templates">Home Office page template</A></li>
-            <li><A href="https://rsms.me/inter/">Inter-UI</A> font</li>
+            <li><A href="https://fonts.google.com/specimen/Roboto#standard-styles">Roboto</A> font</li>
             <li><A href="/styles/colour">Home Office colours</A></li>
           </ul>
         </div>
