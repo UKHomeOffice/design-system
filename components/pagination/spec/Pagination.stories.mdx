@@ -17,19 +17,7 @@ import readMe from '../README.md';
 
 A component for navigating a long list of results.
 
-Design so you don’t need pagination as it hides content from the user. It can display a lot of unhelpful information
-that gets in the way to what the users are looking for. This may indicate the design isn’t working.
-
-You can avoid pagination by:
-- setting the default number of results per page (try 50 items per page, although do test with users to get it right for that service)
-- avoid infinite scrolling as this is problematic for keyboard-only users
-
-Consider what the sorting order should be to make the search more relevant. The more specific it is to the user's search criteria,
-the better the search results.
-
-### Standard pagination
-
-<Preview>
+<Preview withToolbar>
   <Story name="Pagination">
     <Pagination
       results="249"
@@ -40,6 +28,31 @@ the better the search results.
 </Preview>
 
 <Props of={ Pagination } />
+
+Design so you don’t need pagination as it hides content from the user. It can display a lot of unhelpful information
+that gets in the way to what the users are looking for. This may indicate the design isn’t working.
+
+You can avoid pagination by:
+- setting the default number of results per page (try 50 items per page, although do test with users to get it right for that service)
+- avoid infinite scrolling as this is problematic for keyboard-only users
+
+Consider what the sorting order should be to make the search more relevant. The more specific it is to the user's search criteria,
+the better the search results.
+
+
+## How it works
+
+### Standard pagination
+
+<Preview>
+  <Story name="Standard">
+    <Pagination
+      results="249"
+      resultsPerPage="25"
+      page="3"
+    />
+  </Story>
+</Preview>
 
 ### Start of pagination
 
@@ -106,7 +119,7 @@ Display the second to last page of results.
 Display a different number of results per page.
 
 <Preview>
-  <Story name="Results Per Page">
+  <Story name="ResultsPerPage">
     <Pagination
       results="249"
       resultsPerPage="10"

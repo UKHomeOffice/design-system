@@ -22,7 +22,7 @@ const Page: FC<PageProps> = props => (
       </div>
       <div className="govuk-grid-column-one-third">
         <aside>
-          <h3 className="govuk-heading-m" style={{ marginTop: '10px', marginBottom: '10px' }}>Updates</h3>
+          <h2>Updates</h2>
           <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 17 May 2021</p>
           <ul className="govuk-!-font-size-16">
             <li>Launched new accessibility section including <a href="/accessibility/audio-and-video">audio and video guidance</a></li>
