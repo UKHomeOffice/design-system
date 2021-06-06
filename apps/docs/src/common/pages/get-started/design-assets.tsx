@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-export const title = 'Deploying your prototype';
-const description = 'How to deploy your prototype';
+export const title = 'Design assets';
+const description = 'Useful design assets for interaction designers in the Home Office';
 const section = 'Get started';
 
 const Page: FC<PageProps> = ({ location }) => (
