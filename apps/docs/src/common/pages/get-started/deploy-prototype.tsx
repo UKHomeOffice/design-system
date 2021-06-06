@@ -41,9 +41,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>One of the ways you can deploy, or publish and share your prototype with others, is through Heroku.</p>
 
         <h2>Create an app on Heroku</h2>
-        <p>1. Create a <A href="https://dashboard.heroku.com/">Heroku</A> account</p>
-        <p>2. Click on <strong>New</strong> and select <strong>Create new app</strong> </p>
-        <p>3. A prototype deployed on Heroku is called an ‘app’. Type in an app name for your prototype and choose Europe as your region. Click <strong>Create app</strong></p>
+        <ol style={{ maxWidth: '38em' }}>
+          <li>Create a <A href="https://dashboard.heroku.com/">Heroku</A> account</li>
+          <li>Click on <strong>New</strong> and select <strong>Create new app</strong></li>
+          <li>A prototype deployed on Heroku is called an ‘app’. Type in an app name for your prototype and choose Europe as your region. Click <strong>Create app</strong></li>
+        </ol>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
@@ -63,8 +65,10 @@ const Page: FC<PageProps> = ({ location }) => (
         <p></p>
 
         <h2>Set a username and password</h2>
-        <p>1. After you’ve completed the last step to deploy your application, click on the <strong>Settings</strong> tab on Heroku, click on <strong>Reveal config vars</strong> and enter your username and password.</p>
-        <p>2. Once that is done, click on the <strong>Open app</strong> tab to view your prototype. It will have a url like <strong>your-prototype.herokuapp.com</strong></p>
+        <ol style={{ maxWidth: '38em' }}>
+          <li>After you’ve completed the last step to deploy your application, click on the <strong>Settings</strong> tab on Heroku, click on <strong>Reveal config vars</strong> and enter your username and password.</li>
+          <li>Once that is done, click on the <strong>Open app</strong> tab to view your prototype. It will have a url like <strong>your-prototype.herokuapp.com</strong></li>
+        </ol>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
