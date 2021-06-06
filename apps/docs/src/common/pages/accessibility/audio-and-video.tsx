@@ -23,6 +23,10 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Audio and video'
         },
         {
+          href: '/accessibility/links',
+          text: 'Links'
+        },
+        {
           href: '/accessibility/resources',
           text: 'Resources'
         }
@@ -35,9 +39,24 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p>It's important to consider how people with different access needs will use media content.</p>
 
+      <h2>Helping everyone</h2>
+      <p>Making your audio and video content accessible can benefit users with and without a disability.</p>
+      <p>For example, any user may choose to quickly read through a transcript instead of watching a video.</p>
+      <p>Or they might use captions in loud locations where the audio can’t be heard or in quiet environments where sound can’t be
+      used. Captions can also be helpful to people who are not native speakers of the language.</p>
+
+      <h2>The basics</h2>
+        <p>Do the following things to start making your video or audio content accessible (this is not a comprehensive list):</p>
+        <ul>
+        <li>provide a transcript</li>
+        <li>use captions for video</li>
+        <li>provide an audio description for video that includes important visual information</li>
+        <li>make it clear where to find the transcript and audio-described version</li>
+        <li>use a media player that meets accessibility considerations such as keyboard accessibility</li>
+        </ul>
 
       <table className="govuk-table">
-        <caption className="govuk-table__caption govuk-table__caption--m">Examples of users with access needs</caption>
+        <caption className="govuk-table__caption govuk-table__caption--l">Examples of users with access needs</caption>
         <thead className="govuk-table__head">
           <tr className="govuk-table__row">
             <th scope="col" className="govuk-table__header">User</th>
@@ -61,7 +80,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <tr className="govuk-table__row">
             <td className="govuk-table__cell">Blind or partially sighted</td>
             <td className="govuk-table__cell">Cannot see the visual elements of a video</td>
-            <td className="govuk-table__cell">Text-to-speech software to read a transcript</td>
+            <td className="govuk-table__cell">Text-to-speech software to read a transcript. Audio description to describe video content</td>
 
           </tr>
 
@@ -80,36 +99,6 @@ const Page: FC<PageProps> = ({ location }) => (
           </tr>
         </tbody>
       </table>
-
-      <h2>
-        Helping everyone
-      </h2>
-
-<p>Making your audio and video content accessible can benefit users with and without a disability.</p>
-
-<p>For example, any user may choose to quickly read through a transcript instead of watching a video.</p>
-
-<p>Or they might use captions in loud locations where the audio can’t be heard or in quiet environments where sound can’t be
-used. Captions can also be helpful to people who are not native speakers of the language.</p>
-
-<h2>The basics</h2>
-
-<p>Do the following things to start making your video or audio content accessible (this is not a comprehensive list):</p>
-
-<ul>
-
-<li>provide a transcript</li>
-
-<li>use captions for video</li>
-
-<li>provide an audio description for video that includes important visual information</li>
-
-<li>make it clear where to find the transcript and audio-described version</li>
-
-<li>use a media player that meets accessibility considerations such as keyboard accessibility</li>
-
-</ul>
-
 
 <h2>Creating good content</h2>
 

@@ -49,12 +49,12 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>You should use:</p>
           <ul>
             <li><A href="/styles/templates">Home Office page template</A></li>
-            <li><A href="https://rsms.me/inter/">Inter-UI</A> font</li>
+            <li><A href="https://fonts.google.com/specimen/Roboto#standard-styles">Roboto</A> font</li>
             <li><A href="/styles/colour">Home Office colours</A></li>
           </ul>
         </div>
         <div className="govuk-grid-column-one-half">
-          <img src={ddatEventsImage} alt="" className="image-examples" />
+          <img src={ddatEventsImage} alt="Screenshot of a Home Office 'Digital, Data and Technology Together' events page" className="image-examples" />
           <span className="image-caption">Digital, Data and Technolgy (DDaT) Together page on homeoffice.gov.uk</span>
         </div>
       </div>
@@ -76,7 +76,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>Note: independent branding is used for services that are granted a GOV.UK exemption.</p>
         </div>
         <div className="govuk-grid-column-one-half">
-          <img src={applyPassportImage} alt="" className="image-examples" />
+          <img src={applyPassportImage} alt="Screenshot of a gov.uk 'Apply for a passport' page" className="image-examples" />
           <span className="image-caption"><A href="https://www.passport.service.gov.uk/">www.passport.service.gov.uk</A></span>
         </div>
       </div>
@@ -93,7 +93,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>You may be able to use independent branding.</p>
         </div>
         <div className="govuk-grid-column-one-half">
-          <img src={policeImage} alt="" className="image-examples" />
+          <img src={policeImage} alt="Screenshot of a 'Joining the police' page" className="image-examples" />
           <span className="image-caption"><A href="https://www.joiningthepolice.co.uk">www.joiningthepolice.co.uk</A></span>
         </div>
       </div>
