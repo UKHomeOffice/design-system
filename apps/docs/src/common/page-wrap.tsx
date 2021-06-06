@@ -15,6 +15,7 @@ export const PageWrap: FC<PageProps> = ({ children }) => {
   ];
   const footerNavigation = [
     { href: 'https://github.com/UKHomeOffice/hods-poc/', text: 'GitHub' },
+    { href: '/accessibility-statement', text: 'Accessibility statement' },
     { href: "/sitemap", text: "Sitemap" },
     { href: 'https://github.com/UKHomeOffice/hods-poc/issues/new', text: 'Feedback' },
     { href: 'https://design-system.service.gov.uk/', text: 'GOV.UK Design System' }
