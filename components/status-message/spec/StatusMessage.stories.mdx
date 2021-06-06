@@ -19,7 +19,7 @@ import {A} from "@not-govuk/components";
 Tell users that something has changed.
 
 <Preview withToolbar>
-  <Story name="Status message">
+  <Story name="StatusMessage">
     <StatusMessage status="On hold" />
   </Story>
 </Preview>
@@ -48,9 +48,8 @@ For less prominent status indicators you could use tags.
 
 ### Status message with multiple actions
 
-
 <Preview>
-  <Story name="Multiple actions">
+  <Story name="MultipleActions">
     <StatusMessage status="On hold" actions={[
       { href: '#', text: 'Review' },
       { href: '#', text: 'Extend hold' }
