@@ -66,11 +66,11 @@ const Page: FC<PageProps> = ({ location }) => (
         <div className="govuk-grid-row">
         <div className="govuk-grid-column-one-half">
           <span className="govuk-heading-m">Signing out from the header</span>
-          <img src={applyLeaveHeader} alt="An example of an option to sign out from the header." className="image-examples" />
+          <img src={applyLeaveHeader} alt="Examples of the option to sign out from the header and inline." className="image-examples" />
         </div>
           <div className="govuk-grid-column-one-half">
             <span className="govuk-heading-m">Leaving a service inline</span>
-            <img src={applyLeaveInline} alt="An example of option to leave a service from within the page." className="image-examples" />
+            <img src={applyLeaveInline} alt="Examples of the option to sign out from the header and inline." className="image-examples" />
           </div>
         </div>
       </div>

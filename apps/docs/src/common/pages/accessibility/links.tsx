@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const linksImage01 = require('../../../../assets/images/accessibility/links01.png').default;
 const linksImage02 = require('../../../../assets/images/accessibility/links02.png').default;
 const linksImage03 = require('../../../../assets/images/accessibility/links03.png').default;
 const linksImage04 = require('../../../../assets/images/accessibility/links04.png').default;
@@ -46,12 +45,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Links normally look like underlined text, or an icon/button which takes you to another page when you click it.</p>
       <p>Presenting links in the right way is important for accessibility and inclusion.</p>
 
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-two-thirds">
-        <img src={linksImage01} alt="Screenshot from gov.uk site with black text on white background, except the link 'government departments' which is blue and underlined" className="image-examples" />
-      </div>
-      </div>
-<br />
+
       <h2>Helping everyone</h2>
       <p>All users will benefit if your link text is clear and you can easily identify a link among its surrounding text.
       It’s also important to everyone to know where a link will take them before they click it.</p>
@@ -128,7 +122,7 @@ Each of the three links in the example below clearly explains the action they le
 
 <div className="govuk-grid-row">
 <div className="govuk-grid-column-one-half">
-  <img src={linksImage02} alt="Screenshot from gov.uk site with black text on white background, except the link 'Passport advice and complaints', 'Passport services if you're disabled' and 'Passport Check and Send service' which is blue and underlined" className="image-examples" />
+  <img src={linksImage02} alt="Screenshot from gov.uk site with black text on white background, except the links 'Passport advice and complaints', 'Passport services if you're disabled' and 'Passport Check and Send service' which are blue and underlined" className="image-examples" />
 </div>
 </div>
 <br />

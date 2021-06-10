@@ -74,8 +74,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">How it works</h2>
       <p>Help should be easy to close, move and minimise until the user needs it.</p>
       <p>If contextual help doesn’t answer a user’s question, links to more comprehensive
-      help should be easy to find. GDS has <A href="https://www.gov.uk/service-manual/design/designing-good-questions">guidance</A> for
-      help content.</p>
+      help should be easy to find. GDS has <A href="https://www.gov.uk/service-manual/design/designing-good-questions">guidance for
+      help content</A> .</p>
 
       <h2 className="govuk-heading-l">Services using this pattern</h2>
       <ul className="govuk-list govuk-list--bullet">
@@ -86,8 +86,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">Research</h2>
       <p className="govuk-body">Users find side-by-side guidance more helpful and easier
       to use. Small overlay windows offer the smallest interference with the user flow.
-      This is a good <A href="https://www.nngroup.com/articles/pop-up-adaptive-help/">article</A> on
-      contextual help from Nielsen Norman.</p>
+      This is a good <A href="https://www.nngroup.com/articles/pop-up-adaptive-help/">article on
+      contextual help</A>  from Nielsen Norman.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>If your service uses this pattern, let us know of any insights you have on
