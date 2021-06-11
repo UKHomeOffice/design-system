@@ -37,18 +37,29 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2>Home Office</h2>
       <ul className="plain">
-        <li><A href="https://www.figma.com/file/URKoeYCUBVGqz6KROO3fLh/HO-DDaT-journey-map-template?node-id=64%3A0/">Journey map template (Figma)</A></li>
-        <li><A href="https://www.figma.com/file/4uhWNtmvpZq7NF8mLlsXFS/Home-Office-Design-Library?node-id=4%3A76/">Styles and components (Figma)</A></li>
+        <li><A href="https://www.figma.com/file/y90OmHLuhtNuCUOc7jzQlj/Home-Office-design-library-Roboto">Home Office styles and components (Figma)</A></li>
+        <li><A href="https://www.figma.com/file/USbI5GN6y8fsLdCov6aWJx/HO-DDaT-journey-map-template">Journey map template (Figma)</A></li>
+        <li><A href="https://www.figma.com/file/gou1Y52jE53jkogQJraQau/HO-DDaT-storyboard-template?node-id=6%3A314">Storyboard template (Figma)</A></li>
+        <li><A href="https://www.figma.com/file/enEcPp3OA9XiUVPkPiN9W0/HO-DDaT-workshop-templates?node-id=6%3A314">Workshop activity templates (Figma)</A></li>
+
       </ul>
       <h2>GOV.UK</h2>
       <ul className="plain">
-        <li><A href="https://github.com/alphagov/govuk-prototype-kit/">HTML prototype kit</A></li>
-        <li><A href="https://github.com/abbott567/sketch_wireframing_kit/">Patterns and components (Sketch)</A></li>
-        <li><A href="https://github.com/enoranidi/govuk-design-system-balsamiq/">Patterns and components (Balsamiq)</A></li>
+        <li><A href="https://www.figma.com/file/NWuFffKvPQhl3aJ9nKU0p3/GOV.UK-Design-System?node-id=0%3A1">GOV.UK styles and components (Figma)</A></li>
         <li><A href="https://github.com/charlesrt/gov-flow/">GOV flow for creating user flows (Sketch)</A></li>
+        <li><A href="https://github.com/dashouse/govuk-design-system-flow-diagrams">GOV.UK design system flow diagrams (Sketch)</A></li>
+        <li><A href="https://github.com/alirawashdeh/govuk-userflow-icons">GOV.UK userflow icons (SVG images)</A></li>
+        <li><A href="https://github.com/alphagov/govuk-prototype-kit/">HTML prototype kit</A></li>
+        <li><A href="https://github.com/abbott567/sketch_wireframing_kit/">Wireframing kit (Sketch)</A></li>
+        <li><A href="https://github.com/enoranidi/govuk-design-system-balsamiq/">Wireframing kit (Balsamiq)</A></li>
+
       </ul>
+
+
     </div>
+
     </div>
+
 );
 
 export default Page;
