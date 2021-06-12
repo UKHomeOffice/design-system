@@ -67,11 +67,11 @@ const Page: FC<PageProps> = ({ location }) => (
         <div className="govuk-grid-row">
         <div className="govuk-grid-column-one-half">
           <span className="govuk-heading-m">Inline guidance image</span>
-          <img src={applyImageInline} alt="An example of an illustrated image of a biometric residence permit card in a service." className="image-examples" />
+          <img src={applyImageInline} alt="Examples of guidance images displayed inline and right-aligned." className="image-examples" />
         </div>
           <div className="govuk-grid-column-one-half">
             <span className="govuk-heading-m">Right-aligned guidance image</span>
-            <img src={applyImageRight} alt="An example of an illustrated image of where to find a reference number on a letter set on the right side of the page." className="image-examples" />
+            <img src={applyImageRight} alt="Examples of guidance images displayed inline and right-aligned." className="image-examples" />
           </div>
         </div>
       </div>
