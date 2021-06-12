@@ -1,0 +1,54 @@
+matrix:
+  DOCKER_USERNAME:
+    - ukhomeofficedigital+design_system
+  DOCKER_REGISTRY:
+    - quay.io
+pipeline:
+  deploy:
+    image: quay.io/ukhomeofficedigital/lev-ci
+    secrets:
+      - DOCKER_PASSWORD
+      - KUBE_SERVER
+      - KUBE_NAMESPACE
+      - KUBE_TOKEN
+      - KUBE_DEPLOYMENT
+      - KUBE_CONTAINER
+    environment:
+      - DOCKER_HOST=tcp://172.17.0.1:2375
+    commands:
+      - echo "$${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin "${DOCKER_REGISTRY}"
+      - npm install -g pnpm
+      - cd 'apps/docs'
+      - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
+    when:
+      branch: master
+      event: push
+  notify_slack_success:
+    image: plugins/slack:1.0
+    secrets: [ slack_webhook ]
+    channel: general
+    username: Drone
+    template: >
+      *Deployed {{repo.name}} to Dev* - <{{build.link}}|#{{build.number}}>
+    when:
+      branch: master
+      event: push
+      status: success
+  notify_slack_failure:
+    image: plugins/slack
+    secrets: [ slack_webhook ]
+    channel: alerts
+    username: Drone
+    template: >
+      *Failed to deploy {{repo.name}} to Dev*
+
+      Author: {{build.author}}
+
+      Duration: {{since job.started}}
+      Job: <{{build.link}}|#{{build.number}}>
+
+      Commit: {{build.commit}}
+    when:
+      branch: master
+      event: push
+      status: failure
