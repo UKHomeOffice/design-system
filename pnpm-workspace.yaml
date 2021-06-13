@@ -1,0 +1,7 @@
+packages:
+  - 'apps/**'
+  - 'components/**'
+  - 'components-internal/**'
+  - 'lib/**'
+  - 'lib-govuk/**'
+  - 'packages/**'

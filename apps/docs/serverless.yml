@@ -1,0 +1,24 @@
+service: docs
+provider:
+  name: aws
+  runtime: nodejs12.x
+  environment:
+    MODE: serverless
+    NODE_ENV: production
+package:
+  include:
+    - dist/**
+    - src/**
+  exclude:
+    - node_modules/**
+    - ./**
+functions:
+  server:
+    handler: dist/server/index.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{any+}
+          method: ANY

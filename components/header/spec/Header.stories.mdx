@@ -1,0 +1,92 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { Header } from '../src/Header';
+import readMe from '../README.md';
+
+<Meta
+  title="Header"
+  component={ Header }
+  parameters={ {
+    chromatic: { viewports: [800, 600] },
+    description: 'HODS\' page header.',
+    jest: ['Header'],
+    notes: readMe
+  } }
+/>
+
+# Header
+
+The Home Office header shows users that they are on an internal Home Office service and indicates which service they are using.
+
+<Preview withToolbar>
+  <Story name="Header">
+    <Header serviceName="Service name" />
+  </Story>
+</Preview>
+
+<Props of={ Header } />
+
+
+## When to use this component
+You must use the Home Office header if your service:
+- is internal, such as a caseworking system or admin service, and
+- sits on a homeoffice.gov.uk domain
+
+## When not to use this component
+You must not use the Home Office header if your service:
+- is public-facing and transactional, and
+- sits on a gov.uk or service.gov.uk domain
+
+
+## How it works
+
+### Standard header
+
+<Preview>
+  <Story name="Standard">
+    <Header />
+  </Story>
+</Preview>
+
+
+### Header with service name
+
+<Preview>
+  <Story name="ServiceTitle">
+    <Header serviceName="Service name" />
+  </Story>
+</Preview>
+
+
+### Header with option to sign out
+
+<Preview>
+  <Story name="Sign-out">
+    <Header
+      accountHref="#/my-account"
+      serviceName="Service name"
+      signOutHref="#/auth/sign-out"
+      username="User name"
+    />
+  </Story>
+</Preview>
+
+
+### Header with navigation
+
+<Preview>
+  <Story name="Navigation">
+    <Header
+      accountHref="#/my-account"
+      navigation={[
+        { href: '/styles', text: 'Styles' },
+        { href: '/components', text: 'Components' },
+        { href: '/patterns', text: 'Patterns' },
+        { href: '/resources', text: 'Resources' },
+        { href: '/get-involved', text: 'Get involved' }
+      ]}
+      serviceName="Service name"
+      signOutHref="#/auth/sign-out"
+      username="User name"
+    />
+  </Story>
+</Preview>

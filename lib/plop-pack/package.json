@@ -1,0 +1,24 @@
+{
+  "name": "@hods/plop-pack",
+  "version": "0.1.16",
+  "description": "Plop pack with misc tools.",
+  "main": "src/index.js",
+  "files": [
+    "/src",
+    "/skel"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "true",
+    "clean": "true"
+  },
+  "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "@not-govuk/plop-pack": "^0.2.13",
+    "@not-govuk/plop-pack-internal": "^0.2.13"
+  }
+}

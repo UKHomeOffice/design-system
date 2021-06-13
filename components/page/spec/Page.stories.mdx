@@ -1,0 +1,83 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { Page } from '../src/Page';
+import readMe from '../README.md';
+
+<Meta
+  title="Page"
+  component={ Page }
+  parameters={ {
+    chromatic: { viewports: [800, 600] },
+    description: 'HODS\' page component.',
+    jest: ['Page'],
+    notes: readMe
+  } }
+/>
+
+# Page
+
+Use this page template to keep your pages consistent with the rest of internal Home Office services.
+
+<Preview withToolbar>
+  <Story name="Page">
+    <Page
+      serviceName="Service name"
+      footerNavigation={[
+        { href: '/feedback', text: 'Feedback' },
+        { href: '/help', text: 'Help' },
+        { href: 'https://gov.uk/', text: 'Gov.UK home' }
+      ]}
+    >
+      <h1>Default page template</h1>
+      <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
+    </Page>
+  </Story>
+</Preview>
+
+<Props of={ Page } />
+
+
+## How it works
+
+### Standard page
+
+<Preview>
+  <Story name="Standard">
+    <Page>
+      <h1>Default page template</h1>
+      <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
+    </Page>
+  </Story>
+</Preview>
+
+
+### Page with navigation links in the header and footer
+
+<Preview>
+  <Story name="Navigation">
+    <Page
+      accountHref="#/my-account"
+      serviceName="Service name"
+      signOutHref="#/auth/sign-out"
+      username="User name"
+      navigation={[
+        { href: '/styles', text: 'Styles' },
+        { href: '/components', text: 'Components' },
+        { href: '/patterns', text: 'Patterns' },
+        { href: '/resources', text: 'Resources' },
+        { href: '/get-involved', text: 'Get involved' }
+      ]}
+      footerNavigation={[
+        { href: '/feedback', text: 'Feedback' },
+        { href: '/help', text: 'Help' },
+        { href: 'https://gov.uk/', text: 'Gov.UK home' }
+      ]}
+      footerContent="Copyright 2020 Crown copyright"
+    >
+      <h1>Default page template</h1>
+      <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
+    </Page>
+  </Story>
+</Preview>

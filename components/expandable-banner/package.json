@@ -1,0 +1,42 @@
+{
+  "name": "@hods/expandable-banner",
+  "version": "0.1.16",
+  "description": "Component that provides both high level and more detailed warning messages",
+  "main": "src/ExpandableBanner.tsx",
+  "sass": "assets/ExpandableBanner.scss",
+  "publishConfig": {
+    "main": "dist/ExpandableBanner.js",
+    "typings": "dist/ExpandableBanner.d.ts"
+  },
+  "files": [
+    "/assets",
+    "/dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm run clean && npm run build",
+    "build": "tsc",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
+  },
+  "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
+  "license": "MIT",
+  "keywords": [
+    "react-components"
+  ],
+  "dependencies": {
+    "@hods/sass-base": "workspace:^0.1.6",
+    "@not-govuk/component-helpers": "^0.2.13"
+  },
+  "peerDependencies": {
+    "@not-govuk/docs-components": "^0.2.0",
+    "react": "^16.9.35"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^1.6.5",
+    "@not-govuk/component-test-helpers": "^0.2.13",
+    "@types/react": "^16.9.35",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.2"
+  }
+}

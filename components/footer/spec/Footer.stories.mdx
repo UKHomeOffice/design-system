@@ -1,0 +1,71 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { Footer } from '../src/Footer';
+import readMe from '../README.md';
+
+<Meta
+  title="Footer"
+  component={ Footer }
+  parameters={ {
+    chromatic: { viewports: [800, 600] },
+    description: 'HODS\' page footer.',
+    jest: ['Footer'],
+    notes: readMe
+  } }
+/>
+
+# Footer
+
+The Home Office footer provides information about your service and department.
+
+<Preview withToolbar>
+  <Story name="Footer">
+    <Footer
+      navigation={[
+        { href: '/feedback', text: 'Feedback' },
+        { href: '/help', text: 'Help' },
+        { href: 'https://gov.uk/', text: 'Gov.UK home' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+<Props of={ Footer } />
+
+
+## When to use this component
+Use the footer at the bottom of every page of your internal service.
+
+
+## How it works
+
+### Standard footer
+
+<Preview>
+  <Story name="Standard">
+    <Footer />
+  </Story>
+</Preview>
+
+
+### Footer with navigation links
+
+<Preview>
+  <Story name="Navigation">
+    <Footer
+      navigation={[
+        { href: '/feedback', text: 'Feedback' },
+        { href: '/help', text: 'Help' },
+        { href: 'https://gov.uk/', text: 'Gov.UK home' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+
+### Footer with customised content
+
+<Preview>
+  <Story name="Custom">
+    <Footer>Custom content</Footer>
+  </Story>
+</Preview>

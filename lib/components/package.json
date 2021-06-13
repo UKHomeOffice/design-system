@@ -1,0 +1,42 @@
+{
+  "name": "@hods/components",
+  "version": "0.1.16",
+  "description": "All Home Office Design System components.",
+  "main": "src/index.ts",
+  "sass": "assets/index.scss",
+  "publishConfig": {
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  },
+  "files": [
+    "/assets",
+    "/dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm run clean && npm run build",
+    "build": "tsc",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
+  },
+  "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
+  "license": "MIT",
+  "keywords": [
+    "react-components"
+  ],
+  "dependencies": {
+    "@hods/alert": "workspace:^0.1.5",
+    "@hods/expandable-banner": "workspace:^0.1.7",
+    "@hods/footer": "workspace:^0.1.0",
+    "@hods/header": "workspace:^0.1.0",
+    "@hods/page": "workspace:^0.1.0",
+    "@hods/pagination": "workspace:^0.1.8",
+    "@hods/sass-base": "workspace:^0.1.0",
+    "@hods/status-message": "workspace:^0.1.10",
+    "@hods/timeline": "workspace:^0.1.8"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.2"
+  }
+}

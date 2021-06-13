@@ -1,0 +1,75 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { StatusMessage } from '../src/StatusMessage';
+import readMe from '../README.md';
+import {A} from "@not-govuk/components";
+
+<Meta
+  title="Status message"
+  component={ StatusMessage }
+  parameters={ {
+    chromatic: { viewports: [820, 480] },
+    description: 'An indication to the user that something has changed.',
+    jest: ['StatusMessage'],
+    notes: readMe
+  } }
+/>
+
+# Status message
+
+Tell users that something has changed.
+
+<Preview withToolbar>
+  <Story name="StatusMessage">
+    <StatusMessage status="On hold" />
+  </Story>
+</Preview>
+
+<Props of={ StatusMessage } />
+
+## When to use this component
+Use status messages to:
+
+  - notify the user of a change
+  - tell the user something important
+  - inform the user that they need to do something
+
+Status messages are similar to alerts but are primarily used for internal services and can include actions for users to take.
+For less prominent status indicators you could use tags.
+
+
+## How it works
+
+### Standard status message with an action
+
+<Preview>
+  <Story name="Standard">
+    <StatusMessage status="On hold" actions={[{ href: '#', text: 'Review' }]}>
+      - due for review 31 May 2021
+    </StatusMessage>
+  </Story>
+</Preview>
+
+### Status message with multiple actions
+
+<Preview>
+  <Story name="MultipleActions">
+    <StatusMessage status="On hold" actions={[
+      { href: '#', text: 'Review' },
+      { href: '#', text: 'Extend hold' }
+    ]}>
+      - due for review 31 May 2021
+    </StatusMessage>
+  </Story>
+</Preview>
+
+## Services using this component
+
+  - Returns and movement
+  - Passport renewals
+  - Passport application search
+
+## Research
+If your service uses this component, let us know of any insights you have on research.
+
+## Accessibility
+If your service uses this component, let us know of any insights you have on accessibility considerations.

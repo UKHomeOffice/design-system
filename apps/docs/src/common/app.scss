@@ -1,0 +1,68 @@
+@import "@hods/components";
+
+$max-width: 1160px;
+$margin: 30px;
+
+
+.hods-width-container {
+  max-width: $max-width;
+
+  @media (min-width: 769px) and (max-width: $max-width + 2 * $margin) {
+    margin-right: $margin;
+    margin-left: $margin;
+  }
+}
+
+.image-examples{
+  width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  @include govuk-font(16);
+}
+
+.homepage-sections {
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+
+.example {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #cbcbcb;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.example span {
+  display: block;
+}
+
+// Contact us box styling
+
+.contact-us {
+  padding: govuk-spacing(4);
+  background-color: #005ea5;
+  color: white;
+  margin-top: 30px;
+
+  a, :active, a:visited, a:link {
+    color: white;
+  }
+
+  a:focus {
+    color: black;
+  }
+
+  h2.govuk-heading-m {
+    padding: 0;
+    margin: 0 0 10px 0;
+    color: white;
+  }
+
+  p {
+    margin: 0;
+    color: white;
+  }
+}

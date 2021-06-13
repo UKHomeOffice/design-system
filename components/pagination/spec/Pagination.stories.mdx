@@ -1,0 +1,143 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { Pagination } from '../src/Pagination';
+import readMe from '../README.md';
+
+<Meta
+  title="Pagination"
+  component={ Pagination }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Component to enable navigating a long list of results.',
+    jest: ['Pagination'],
+    notes: readMe
+  } }
+/>
+
+# Pagination
+
+A component for navigating a long list of results.
+
+<Preview withToolbar>
+  <Story name="Pagination">
+    <Pagination
+      results="249"
+      resultsPerPage="25"
+      page="3"
+    />
+  </Story>
+</Preview>
+
+<Props of={ Pagination } />
+
+Design so you don’t need pagination as it hides content from the user. It can display a lot of unhelpful information
+that gets in the way to what the users are looking for. This may indicate the design isn’t working.
+
+You can avoid pagination by:
+- setting the default number of results per page (try 50 items per page, although do test with users to get it right for that service)
+- avoid infinite scrolling as this is problematic for keyboard-only users
+
+Consider what the sorting order should be to make the search more relevant. The more specific it is to the user's search criteria,
+the better the search results.
+
+
+## How it works
+
+### Standard pagination
+
+<Preview>
+  <Story name="Standard">
+    <Pagination
+      results="249"
+      resultsPerPage="25"
+      page="3"
+    />
+  </Story>
+</Preview>
+
+### Start of pagination
+
+Display the first page of results.
+
+<Preview>
+  <Story name="Start">
+    <Pagination
+      results="737"
+      resultsPerPage="25"
+      page="1"
+    />
+  </Story>
+</Preview>
+
+
+### Middle of pagination
+
+Show the middle of the results.
+
+<Preview>
+  <Story name="Middle">
+    <Pagination
+      results="737"
+      resultsPerPage="25"
+      page="15"
+    />
+  </Story>
+</Preview>
+
+
+### End of pagination
+
+Display the last page of results.
+
+<Preview>
+  <Story name="End">
+    <Pagination
+      results="737"
+      resultsPerPage="25"
+      page="30"
+    />
+  </Story>
+</Preview>
+
+
+### Near end
+
+Display the second to last page of results.
+
+<Preview>
+  <Story name="NrEnd">
+    <Pagination
+      results="737"
+      resultsPerPage="25"
+      page="29"
+    />
+  </Story>
+</Preview>
+
+
+### Results per page
+
+Display a different number of results per page.
+
+<Preview>
+  <Story name="ResultsPerPage">
+    <Pagination
+      results="249"
+      resultsPerPage="10"
+      page="2"
+    />
+  </Story>
+</Preview>
+
+## Research
+
+If your service uses this component, let us know of any insights you have on research.
+
+## Accessibility
+
+If you do require pagination, ensure that:
+- there is good colour contrast
+- the font size is legible
+- large clickable hit areas are provided and are clearly spaced out
+- the current page is clearly identified
+- you set a maximum list of 5 pages
+- you provide 'previous' and 'next' links. Don't rely on icons alone
