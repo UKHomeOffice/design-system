@@ -1,13 +1,28 @@
 Home Office Design System
-===
+=========================
 
-The design system for the UK Home Office.
+The [design system for the UK Home Office].
+
+This design system is for everyone. Its purpose is to extend the
+[GOV.UK Design System] with work specific to the Home Office. 
+
+The system contains patterns, components and styles to improve consistency
+across services and reduce duplication of work.
 
 
-Welcome to your new project
----------------------------
+Contributing
+------------
 
-Your project is a monorepo managed via [pnpm]. You can build multiple
+You can contribute by discussing and proposing components and patterns.
+
+Read our [contribution guidelines] and then check the [community backlog] to see
+what's needed.
+
+
+Working on this repository
+--------------------------
+
+This project is a monorepo managed via [pnpm]. You can build multiple
 packages from this one repository. Packages come in the following
 varieties:
 - [Applications] (found in [apps/])
@@ -15,7 +30,7 @@ varieties:
 - [Components] (found in [components/])
 
 **Note:** If you would like add more varieties you can do so by modifying
-your [pnpm-workspaces.yaml] and [plopfile.js].
+the [pnpm-workspaces.yaml] and [plopfile.js].
 
 
 Getting started
@@ -39,56 +54,47 @@ To create a new package, simply run:
 npm run create
 ```
 
-This is all orchestrated from your [plopfile.js] so you can modify how
+This is all orchestrated from the [plopfile.js] so you can modify how
 it works.
 
 See: [PLOP]
 
 
-Installing your packages
-------------------------
+Installing new packages
+-----------------------
 
-You will often need to install the libraries and components that you
-create into each other or into your applications. This can be done just
-as you would install any other package:
+You will often need to install the libraries and components that we create into
+each other or into our applications. This can be done just as you would install
+any other package:
 
 ```shell
-pnpm install @hods/your-new-package
+pnpm install @hods/our-new-package
 ```
 
 Under the hood, this will create a symlink so you need not worry about
 updates. This helps when working on mutliple packages at the same time.
 
 
-Your documentation
-------------------
+Our documentation
+-----------------
 
-Your project comes with its own [documentation application] to allow you
-to easily document your project, including any components that you create.
+This project comes with its own [documentation application] to allow you
+to easily document this project, including any components that you create.
 
-You can run it as you would any other application in your project:
+You can run it as you would any other application in this project:
 
 ```shell
 cd apps/docs
 npm run dev
 ```
 
-We advise that you set up CI publish your documentation site when
-pushing to the `master` branch.
+We publish our documentation site when pushing to the `master` branch.
 
 
-Continuous Integration
-----------------------
-
-You project comes with configuration files for running Continuous
-Integration (CI) via [GitHub Actions]. These files are found in the
-[.github/workflows] directory.
-
-If you add the required secrets to your GitHub repository, it is also
-possible to quickly set up Continuous Deployment (CD) for your
-documentation to [Netlify].
-
-
+[design system for the UK Home Office]: https://design.homeoffice.gov.uk/
+[GOV.UK Design System]: https://design-system.service.gov.uk/
+[contribution guidelines]: https://github.com/UKHomeOffice/design-system/blob/master/CONTRIBUTING.md
+[community backlog]: https://github.com/UKHomeOffice/design-system/projects/1
 [pnpm]: https://pnpm.js.org/
 [Applications]: https://not-govuk.netlify.app/
 [Libraries]: https://not-govuk.netlify.app/
@@ -101,6 +107,3 @@ documentation to [Netlify].
 [install pnpm]: https://pnpm.js.org/en/installation
 [PLOP]: https://plopjs.com/
 [documentation application]: ./apps/docs
-[GitHub Actions]: https://github.com/features/actions
-[.github/workflows]: ./.github/workflows
-[Netlify]: https://www.netlify.com/
