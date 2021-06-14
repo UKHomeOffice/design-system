@@ -6,7 +6,7 @@ import { DocsPage } from '@not-govuk/docs-components';
 import { stories as subpages } from '../component-stories';
 
 export const title = 'Components';
-const description = 'The components provided in NotGovUK';
+const description = 'The components provided in the Home Office Design System';
 
 const Page: FC<PageProps> = ({ location }) => {
   const nameParam = 'name';
