@@ -184,7 +184,7 @@ the link destination, not the image itself.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the UK Government Digital Slack channel #accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
+  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
 </div>
 
     </div>
