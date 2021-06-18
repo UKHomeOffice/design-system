@@ -22,8 +22,16 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Audio and video'
         },
         {
+          href: '/accessibility/images',
+          text: 'Images'
+        },
+        {
           href: '/accessibility/links',
           text: 'Links'
+        },
+        {
+          href: '/accessibility/tables',
+          text: 'Tables'
         },
         {
           href: '/accessibility/resources',
