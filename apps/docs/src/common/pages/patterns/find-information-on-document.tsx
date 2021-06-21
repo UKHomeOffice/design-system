@@ -22,6 +22,7 @@ const Page: FC<PageProps> = ({ location }) => (
   </Helmet>
 
     <div className="govuk-grid-column-one-quarter">
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Help users to</span>
       <NavigationMenu items={[
 
         {
