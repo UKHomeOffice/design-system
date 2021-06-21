@@ -5,8 +5,8 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 const tables = require('../../../../assets/images/accessibility/tables.png').default;
 
-export const title = 'Links';
-const description = 'Accessibility guidance for links content';
+export const title = 'Tables';
+const description = 'Accessibility guidance for tables content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -133,7 +133,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <ul>
 <li>Tables should be implemented using <code>&lt;table&gt;</code> </li>
 <li>Table rows should be marked up with <code>&lt;tr&gt;</code>, header cells should be marked up with <code>&lt;th&gt;</code> and data cells should be marked up with <code>&lt;td&gt;</code> </li>
-<li>For <A href="https://www.w3.org/WAI/tutorials/tables/two-headers/">tables with headers in the top row and first column</A> use the <code>&lt;scope&gt;</code> attribute to denote the direction</li>
+<li>For <A href="https://www.w3.org/WAI/tutorials/tables/two-headers/">tables with headers in the top row and first column</A> use the <code>scope</code> attribute to denote the direction</li>
 </ul>
 
 <p>It is worth noting that <code>&lt;thead&gt;</code>, <code>&lt;tfoot&gt;</code>, and <code>&lt;tbody&gt;</code> are not semantic HTML and do not make the table more accessible - they are only used for styling.</p>

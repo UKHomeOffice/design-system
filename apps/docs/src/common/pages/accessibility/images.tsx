@@ -5,8 +5,8 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 const linksImage01 = require('../../../../assets/images/accessibility/links01.png').default;
 
-export const title = 'Links';
-const description = 'Accessibility guidance for links content';
+export const title = 'Images';
+const description = 'Accessibility guidance for images content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (

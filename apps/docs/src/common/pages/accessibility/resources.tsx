@@ -5,7 +5,7 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 export const title = 'Resources';
 const longTitle = 'Accessibility resources';
-const description = 'Resources and further guidance for accessibility.';
+const description = 'Resources and further guidance for accessibility';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
