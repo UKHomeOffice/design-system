@@ -146,7 +146,7 @@ const Page: FC<PageProps> = ({ location }) => (
             <img  src={applyPrototype5} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Local web browser displaying properly coded status banner"/>
           </div>
         </div><br /><br />
-        <div><A href="/get-started/deploy-prototype">Next: Deploying your prototype</A></div>
+        <p><div><A href="/get-started/deploy-prototype">Next: Deploying your prototype</A></div></p>
     </div>
   </div>
 );

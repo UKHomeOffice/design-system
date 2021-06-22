@@ -73,12 +73,14 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3>1. Run the following commands locally</h3>
         <p>Using terminal, run the following commands below (the parts in ALL CAPS should be replaced with something specific to you):</p>
 
+        <p>
         <pre><code>
         mkdir YOUR-PROTOTYPE<br />
         cd YOUR-PROTOTYPE <br />
         git init <br />
         npm init @hods prototype<br />
         </code></pre>
+        </p>
 
         <h3>2. Answer the interactive prompts</h3>
         <p>The generator / initialiser will ask you some questions but the defaults should be fine. You can accept the default by simply pressing enter in the terminal.</p>
@@ -91,21 +93,27 @@ const Page: FC<PageProps> = ({ location }) => (
         <p></p>
         <p>After the prototype has been generated, you should pull down the dependencies (this will take a while):</p>
 
+        <p>
         <pre><code>
         npm install
         </code></pre>
+        </p>
 
         <h3>3. View the prototype locally</h3>
         <p>In terminal, enter:</p>
 
+        <p>
         <pre><code>
         npm run dev
         </code></pre>
+        </p>
 
         <p>When your terminal returns a message that says:</p>
+        <p>
         <pre><code>
         No issues found.
         </code></pre>
+        </p>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
@@ -114,10 +122,8 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
         <br />
         <p>You can see the prototype by opening <A href="http://localhost:8080/">http://localhost:8080/</A> in your web browser.</p>
-
-        <div><A href="/get-started/use-prototype">Next: Building your prototype</A></div>
+        <p><A href="/get-started/use-prototype">Next: Building your prototype</A></p>
         </div>
-
   </div>
 );
 

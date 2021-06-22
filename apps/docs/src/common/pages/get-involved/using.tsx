@@ -58,7 +58,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 
           <h2 className="govuk-heading-m">Using Figma to create prototypes</h2>
-          <p>If you are using Figma to design, we provide a <A href="https://www.figma.com/file/4uhWNtmvpZq7NF8mLlsXFS/Home-Office-Design-Library?node-id=4%3A76">Figma file</A> with all our patterns and components included. Please consider feeding back any developments or changes you make to the <A href="/community/working">working group.</A></p>
+          <p>If you are using Figma to design, we provide a <A href="https://www.figma.com/file/4uhWNtmvpZq7NF8mLlsXFS/Home-Office-Design-Library?node-id=4%3A76">Figma file</A> with all our patterns and components included. Please consider feeding back any developments or changes you make to the <A href="/get-involved/working">working group.</A></p>
 
     </div>
   </div>
