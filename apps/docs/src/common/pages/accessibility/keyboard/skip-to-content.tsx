@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
 const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png').default;
+
+export const title = 'Skip to content';
 const description = 'Accessibility guidance for links content';
 export const section = 'Accessibility';
 
@@ -60,7 +62,7 @@ const Page: FC<PageProps> = ({ location }) => (
         'Skip to content' links
       </h1>
       <p>For keyboard users, having to repeatedly move through the same navigation menu every time they start a new page can be frustrating.</p>
-      <p>This is why ‘skip to content’ links exist. The first tab move you make on each page should show a link at the top of the page that says ‘Skip to content’ (or similar) and moves the user to the main part of the page.</a></p>
+      <p>This is why ‘skip to content’ links exist. The first tab move you make on each page should show a link at the top of the page that says ‘Skip to content’ (or similar) and moves the user to the main part of the page.</p>
 
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-quarter">
@@ -82,6 +84,7 @@ const Page: FC<PageProps> = ({ location }) => (
 </div>
 
     </div>
+  </div>
 );
 
 export default Page;

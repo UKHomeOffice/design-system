@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+export const title = 'Pointer gestures';
 const description = 'Accessibility guidance for links content';
 export const section = 'Accessibility';
 
