@@ -33,6 +33,7 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Tables'
         }
       ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
       <NavigationMenu items={[
         {
           href: '/accessibility/keyboard',
