@@ -69,8 +69,8 @@ const Page: FC<PageProps> = ({ location }) => (
       Tools
     </h2>
     <ul className="plain">
-    <li><A href="https://ukhomeoffice.github.io/accessibility-posters/">Do's and don'ts for designing accessible services</A></li>
-    <li><A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility">Access needs poster set</A></li>
+    <li>Dos and don'ts for designing accessible services <br />
+    - available as <A href="https://ukhomeoffice.github.io/accessibility-posters/">web pages</A> and <A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility">downloadable posters</A></li>
     <li><A href="https://webaim.org/resources/contrastchecker/">Colour contrast checker</A></li>
     <li><A href="https://help.apple.com/voiceover/info/guide/10.12/">Guide for VoiceOver screenreader</A></li>
     <li><A href="https://wave.webaim.org/">WAVE accessibility evaluation tool</A></li>
