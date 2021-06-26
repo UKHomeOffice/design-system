@@ -29,6 +29,32 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Tables'
         }
       ]} />
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/keyboard',
+          text: 'Keyboard basics'
+        },
+        {
+          href: '/accessibility/keyboard/tab-navigation',
+          text: '- Tab navigation'
+        },
+        {
+          href: '/accessibility/keyboard/focus',
+          text: '- Focus'
+        },
+        {
+          href: '/accessibility/keyboard/skip-to-content',
+          text: '- Skip to content links'
+        },
+        {
+          href: '/accessibility/keyboard/character-key-shortcuts',
+          text: '- Character key shortcuts'
+        },
+        {
+          href: '/accessibility/keyboard/pointer-gestures',
+          text: '- Pointer gestures'
+        }
+      ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
         <NavigationMenu items={[
           {
@@ -69,8 +95,8 @@ const Page: FC<PageProps> = ({ location }) => (
       Tools
     </h2>
     <ul className="plain">
-    <li><A href="https://ukhomeoffice.github.io/accessibility-posters/">Do's and don'ts for designing accessible services</A></li>
-    <li><A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility">Access needs poster set</A></li>
+    <li>Dos and don'ts for designing accessible services
+    <br />- available as <A href="https://ukhomeoffice.github.io/accessibility-posters/">web pages</A> and <A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility">downloadable posters</A></li>
     <li><A href="https://webaim.org/resources/contrastchecker/">Colour contrast checker</A></li>
     <li><A href="https://help.apple.com/voiceover/info/guide/10.12/">Guide for VoiceOver screenreader</A></li>
     <li><A href="https://wave.webaim.org/">WAVE accessibility evaluation tool</A></li>

@@ -5,8 +5,9 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png').default;
 const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png').default;
-export const title = 'Links';
-const description = 'Accessibility guidance for links content';
+
+export const title = 'Character key shortcuts';
+const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -30,13 +31,32 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Tables'
         }
       ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
-        <NavigationMenu items={[
-          {
-            href: '/accessibility/#',
-            text: 'Keyboard basics'
-          }
-        ]} />
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/keyboard',
+          text: 'Keyboard basics'
+        },
+        {
+          href: '/accessibility/keyboard/tab-navigation',
+          text: '- Tab navigation'
+        },
+        {
+          href: '/accessibility/keyboard/focus',
+          text: '- Focus'
+        },
+        {
+          href: '/accessibility/keyboard/skip-to-content',
+          text: '- Skip to content links'
+        },
+        {
+          href: '/accessibility/keyboard/character-key-shortcuts',
+          text: '- Character key shortcuts'
+        },
+        {
+          href: '/accessibility/keyboard/pointer-gestures',
+          text: '- Pointer gestures'
+        }
+      ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
           <NavigationMenu items={[
             {

@@ -5,8 +5,8 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png').default;
 
-export const title = 'Skip to content';
-const description = 'Accessibility guidance for links content';
+export const title = 'Skip to content links';
+const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -30,13 +30,32 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Tables'
         }
       ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
-        <NavigationMenu items={[
-          {
-            href: '/accessibility/#',
-            text: 'Keyboard basics'
-          }
-        ]} />
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/keyboard',
+          text: 'Keyboard basics'
+        },
+        {
+          href: '/accessibility/keyboard/tab-navigation',
+          text: '- Tab navigation'
+        },
+        {
+          href: '/accessibility/keyboard/focus',
+          text: '- Focus'
+        },
+        {
+          href: '/accessibility/keyboard/skip-to-content',
+          text: '- Skip to content links'
+        },
+        {
+          href: '/accessibility/keyboard/character-key-shortcuts',
+          text: '- Character key shortcuts'
+        },
+        {
+          href: '/accessibility/keyboard/pointer-gestures',
+          text: '- Pointer gestures'
+        }
+      ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
           <NavigationMenu items={[
             {
@@ -66,7 +85,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-quarter">
-        <img src={skipImage01} alt="Screenshot of 'skip to main content' link selected" className="image-examples" />
+        <img src={skipImage01} alt="Screenshot of skip to main content link selected" className="image-examples" />
       </div>
       </div>
       <br />
@@ -82,9 +101,8 @@ const Page: FC<PageProps> = ({ location }) => (
   <h2 className="govuk-heading-m">Get in touch</h2>
   <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
 </div>
-
-    </div>
   </div>
+    </div>
 );
 
 export default Page;
