@@ -1,9 +1,9 @@
-name: Deploy docs
+name: Deploy docs to Netlify
 on:
   - push
 jobs:
-  deploy_docs:
-    name: Deploy docs
+  deploy_docs_to_netlify:
+    name: Deploy docs to Netlify
     runs-on: ubuntu-latest
     steps:
 
@@ -33,14 +33,16 @@ jobs:
           version: 6.3.0
           run_install: true
 
-      - name: Build docs
+      - name: Build
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
         run: |
-          cd apps/docs/
+          cd ./apps/docs/
           npm run build
 
-      - name: Package docs
+      - name: Package
         run: |
-          cd apps/docs/
+          cd ./apps/docs/
           npm run package:serverless
           mkdir -p .netlify/functions .netlify/publish
           cd .netlify
@@ -52,14 +54,18 @@ jobs:
           mv entrypoints.json ../dist/public/
           echo "/* /.netlify/functions/docs/:splat 200" > publish/_redirects
 
-      - name: Deploy to prod?
-        id: target
-        run: echo "##[set-output name=flag;]$([[ \"${GITHUB_REF#refs/heads/}\" == \"master\" ]] && echo \"--prod\" || true)"
-
-      - name: Deploy docs
-        uses: netlify/actions/cli@master
+      - name: Deploy
+        uses: nwtgck/actions-netlify@v1.2.2
         with:
-          args: deploy --dir='apps/docs/.netlify/publish/' --functions='apps/docs/.netlify/functions/' ${{ steps.target.outputs.flag }}
+          publish-dir: './apps/docs/.netlify/publish/'
+          functions-dir: './apps/docs/.netlify/functions/'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
         env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 2
