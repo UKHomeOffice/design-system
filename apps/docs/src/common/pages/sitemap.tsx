@@ -18,7 +18,6 @@ const Page: FC<PageProps> = ({ routes }) => {
            ? 1
            : -1
   );
-  console.log(routes);
   const pages = routes
     .map(e => ({
       href: e.href,

@@ -21,16 +21,32 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
       <NavigationMenu items={[
         {
           href: '/get-started/prototyping',
           text: 'Prototyping'
         },
         {
-          href: '/get-started/design-assets',
-          text: 'Design assets'
+          href: '/get-started/start-prototype',
+          text: '- Starting your prototype'
+        },
+        {
+          href: '/get-started/use-prototype',
+          text: '- Building your protoype'
+        },
+        {
+          href: '/get-started/deploy-prototype',
+          text: '- Deploying your prototype'
         }
       ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
+        <NavigationMenu items={[
+          {
+            href: '/get-started/design-assets',
+            text: 'Design assets'
+          }
+        ]} />
     </div>
 
     <div className="govuk-grid-column-three-quarters">
@@ -41,7 +57,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Rapidly create HTML prototypes of internal Home Office services. </p>
 
       <div className="govuk-inset-text">
-      If your team is planning to use the HODS production framework, you
+      If your team is planning to use the Home Office design system production framework, you
       might consider having the developers create a blank 'app' within the
       project to make it easier to transform your prototype into a production
       application.
@@ -80,7 +96,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </code></pre>
 
         <h3>3. View the prototype locally</h3>
-        <p>In the terminal, enter:</p>
+        <p>In terminal, enter:</p>
 
         <pre><code>
         npm run dev
@@ -96,15 +112,9 @@ const Page: FC<PageProps> = ({ location }) => (
           <img  src={applyPrototype2} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Terminal screen with a highlights around npm run dev command and no issues found"/>
           </div>
         </div>
+        <br />
         <p>You can see the prototype by opening <A href="http://localhost:8080/">http://localhost:8080/</A> in your web browser.</p>
-        <h3>4. Optional: Set up your remote repository</h3>
-          <p>If you want to deploy your prototype so it can be tested with users or allow others to collaborate on it, you can set up a blank code repository in <A href="https://github.com/">GitHub</A>.</p>
-        <h3>5. Optional: Commit and push your new prototype</h3>
-          <p>Run the following commands to push up the first version of your new prototype to your remote code repository:</p>
-        <pre><code>
-        git remote add origin git@github.com:YOUR_USER/YOUR-PROTOTYPE.git<br />
-        git push -u origin master
-        </code></pre><br />
+
         <div><A href="/get-started/use-prototype">Next: Building your prototype</A></div>
         </div>
 

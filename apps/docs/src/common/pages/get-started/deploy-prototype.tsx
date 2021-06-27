@@ -22,16 +22,32 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
       <NavigationMenu items={[
         {
           href: '/get-started/prototyping',
           text: 'Prototyping'
         },
         {
-          href: '/get-started/design-assets',
-          text: 'Design assets'
+          href: '/get-started/start-prototype',
+          text: '- Starting your prototype'
+        },
+        {
+          href: '/get-started/use-prototype',
+          text: '- Building your protoype'
+        },
+        {
+          href: '/get-started/deploy-prototype',
+          text: '- Deploying your prototype'
         }
       ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
+        <NavigationMenu items={[
+          {
+            href: '/get-started/design-assets',
+            text: 'Design assets'
+          }
+        ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>
@@ -39,6 +55,15 @@ const Page: FC<PageProps> = ({ location }) => (
         {title}
       </h1>
       <p>One of the ways you can deploy, or publish and share your prototype with others, is through Heroku.</p>
+
+      <h2>Set up your remote repository</h2>
+        <p>If you want to deploy your prototype so it can be tested with users or allow others to collaborate on it, you can set up a blank code repository in <A href="https://github.com/">GitHub</A>.</p>
+      <h3>Optional: Commit and push your new prototype</h3>
+        <p>Run the following commands to push up the first version of your new prototype to your remote code repository:</p>
+      <pre><code>
+      git remote add origin git@github.com:YOUR_USER/YOUR-PROTOTYPE.git<br />
+      git push -u origin master
+      </code></pre><br />
 
         <h2>Create an app on Heroku</h2>
         <ol style={{ maxWidth: '38em' }}>
