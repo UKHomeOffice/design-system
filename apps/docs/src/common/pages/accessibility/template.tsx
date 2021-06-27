@@ -5,8 +5,8 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 const linksImage01 = require('../../../../assets/images/accessibility/links01.png').default;
 
-export const title = 'Links';
-const description = 'Accessibility guidance for links content';
+export const title = 'xxx';
+const description = 'Accessibility guidance for xxx content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -45,8 +45,28 @@ const Page: FC<PageProps> = ({ location }) => (
             text: 'Dynamic content - TBD'
           },
           {
-            href: '/accessibility/#',
-            text: 'Keyboard basics - TBD'
+            href: '/accessibility/keyboard',
+            text: 'Keyboard basics'
+          },
+          {
+            href: '/accessibility/keyboard/tab-navigation',
+            text: '- Tab navigation'
+          },
+          {
+            href: '/accessibility/keyboard/focus',
+            text: '- Focus'
+          },
+          {
+            href: '/accessibility/keyboard/skip-to-content',
+            text: '- Skip to content links'
+          },
+          {
+            href: '/accessibility/keyboard/character-key-shortcuts',
+            text: '- Character key shortcuts'
+          },
+          {
+            href: '/accessibility/keyboard/pointer-gestures',
+            text: '- Pointer gestures'
           },
           {
             href: '/accessibility/#',
