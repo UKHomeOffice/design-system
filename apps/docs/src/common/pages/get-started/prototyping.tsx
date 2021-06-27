@@ -17,16 +17,32 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
       <NavigationMenu items={[
         {
           href: '/get-started/prototyping',
           text: 'Prototyping'
         },
         {
-          href: '/get-started/design-assets',
-          text: 'Design assets'
+          href: '/get-started/start-prototype',
+          text: '- Starting your prototype'
+        },
+        {
+          href: '/get-started/use-prototype',
+          text: '- Building your protoype'
+        },
+        {
+          href: '/get-started/deploy-prototype',
+          text: '- Deploying your prototype'
         }
       ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
+        <NavigationMenu items={[
+          {
+            href: '/get-started/design-assets',
+            text: 'Design assets'
+          }
+        ]} />
     </div>
 
     <div className="govuk-grid-column-three-quarters">
@@ -35,11 +51,12 @@ const Page: FC<PageProps> = ({ location }) => (
         {title}
       </h1>
 
-      <ul className="plain">
-        <li><A href="/get-started/start-prototype">Starting a new prototype</A></li>
-        <li><A href="/get-started/use-prototype">Building your prototype</A></li>
-        <li><A href="/get-started/deploy-prototype">Deploying your prototype</A></li>
-      </ul>
+      <p>When prototyping a public-facing service use the <A href="https://govuk-prototype-kit.herokuapp.com/docs">GOV.UK prototype kit</A> which contains the GOV.UK styles.</p>
+
+      <p>You cannot use certain GOV.UK styles such as the crown logo or Transport font for internal services. For those services, such as a caseworking system, you can use
+      the <A href="/get-started/start-prototype">prototype generator</A> which contains the Home Office design styles (Home Office logo, colours and internal font).</p>
+      <p>Visit the <A href="../styles">Styles</A> section to find out more about the differences when designing internal or public-facing services.</p>
+
     </div>
 
   </div>

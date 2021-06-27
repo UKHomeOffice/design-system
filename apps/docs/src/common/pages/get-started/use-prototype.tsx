@@ -7,6 +7,8 @@ const applyPrototype3 = require('../../../../assets/images/prototype-screen03.pn
 const applyPrototype4 = require('../../../../assets/images/prototype-screen04html.png').default;
 const applyPrototype5 = require('../../../../assets/images/prototype-screen05.png').default;
 const applyPrototype6 = require('../../../../assets/images/prototype-screen07.png').default;
+const applyPrototype8 = require('../../../../assets/images/prototype-screen08.png').default;
+const applyPrototype9 = require('../../../../assets/images/prototype-screen09.png').default;
 
 export const title = 'Building your prototype';
 const description = 'How to build your prototype';
@@ -23,16 +25,32 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
       <NavigationMenu items={[
         {
           href: '/get-started/prototyping',
           text: 'Prototyping'
         },
         {
-          href: '/get-started/design-assets',
-          text: 'Design assets'
+          href: '/get-started/start-prototype',
+          text: '- Starting your prototype'
+        },
+        {
+          href: '/get-started/use-prototype',
+          text: '- Building your protoype'
+        },
+        {
+          href: '/get-started/deploy-prototype',
+          text: '- Deploying your prototype'
         }
       ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
+        <NavigationMenu items={[
+          {
+            href: '/get-started/design-assets',
+            text: 'Design assets'
+          }
+        ]} />
     </div>
 
     <div className="govuk-grid-column-three-quarters">
@@ -49,25 +67,50 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><code>pages</code> is for HTML or React pages</li>
         </ul>
 
+        <div className="govuk-grid-row">
+          <div className="govuk-grid-column-full">
+          <img  src={applyPrototype9} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen showing prototype file structure"/>
+          </div>
+        </div>
+        <br />
+
       <h2>Create and modify pages</h2>
-        <p>You can use both HTML (<code>.html</code>) and React (<code>.tsx</code>) to build your prototype. If you are more comfortable using HTML, rename <code>index.tsx</code> to <code>index.html</code> from the <code>pages</code> folder.</p>
+        <p>You can use both HTML (<code>.html</code>) and React (<code>.tsx</code>) to build your prototype. If you are more comfortable using HTML, enter in terminal:</p>
+        <ul>
+          <li><code>npm run create:page</code></li>
+          <li>answer the prompts to choose either HTML or React</li>
+          <li>edit the new page to suit you</li>
+          </ul>
 
         <div className="govuk-inset-text">
-        Do not make a copy of the index.tsx as having both .tsx and .html with the same index name will create problems in your prototype.
+        Remove <code>index.tsx</code> from your prototype as having both .tsx and .html with the same index name will create problems in your prototype.
         </div>
 
       <h3>Change the service name</h3>
-
+<p>
           1. open <code>page-wrap.tsx</code> from the <code>pages</code> folder.<br />
           2. find <code>title="My new service"</code> and change that to your new service name. Press <strong>Cmd+S</strong> to save your changes.<br />
           3. check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes<br /><br />
-
+</p>
           <div className="govuk-grid-row">
             <div className="govuk-grid-column-full">
-            <img  src={applyPrototype6} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen with a highlight around where service name could be updated"/>
+            <img  src={applyPrototype6} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen showing changes in code for updating navigation and footer"/>
             </div>
           </div>
-          <p></p>
+          <br />
+
+      <h3>Update the sub-navigation and footer links</h3>
+<p>
+          1. open <code>page-wrap.tsx</code> from the <code>pages</code> folder.<br />
+          2. replace <code>navigation</code> with new sub-navigation and footer links. Press <strong>Cmd+S</strong> to save your changes.<br />
+          3. check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes<br /><br />
+</p>
+          <div className="govuk-grid-row">
+            <div className="govuk-grid-column-full">
+            <img  src={applyPrototype8} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen with a highlight around where service name could be updated"/>
+            </div>
+          </div>
+          <br />
 
         <h2>Using components</h2>
             <p>There are several ways to use components in your prototype:</p>

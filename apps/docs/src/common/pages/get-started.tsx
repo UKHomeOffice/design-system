@@ -16,16 +16,32 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={title} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
       <NavigationMenu items={[
         {
           href: '/get-started/prototyping',
           text: 'Prototyping'
         },
         {
-          href: '/get-started/design-assets',
-          text: 'Design assets'
+          href: '/get-started/start-prototype',
+          text: '- Starting your prototype'
+        },
+        {
+          href: '/get-started/use-prototype',
+          text: '- Building your protoype'
+        },
+        {
+          href: '/get-started/deploy-prototype',
+          text: '- Deploying your prototype'
         }
       ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
+        <NavigationMenu items={[
+          {
+            href: '/get-started/design-assets',
+            text: 'Design assets'
+          }
+        ]} />
 
     </div>
 
