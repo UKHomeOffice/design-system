@@ -45,6 +45,10 @@ const Page: FC<PageProps> = ({ location }) => (
             text: 'Dynamic content - TBD'
           },
           {
+            href: '/accessibility/error-messages',
+            text: 'Error messages'
+          },
+          {
             href: '/accessibility/keyboard',
             text: 'Keyboard basics'
           },
@@ -71,10 +75,6 @@ const Page: FC<PageProps> = ({ location }) => (
           {
             href: '/accessibility/#',
             text: 'Forms - TBD'
-          },
-          {
-            href: '/accessibility/#',
-            text: 'Error messages - TBD'
           },
           {
             href: '/accessibility/#',
