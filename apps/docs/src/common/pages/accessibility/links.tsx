@@ -36,6 +36,10 @@ const Page: FC<PageProps> = ({ location }) => (
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
       <NavigationMenu items={[
         {
+          href: '/accessibility/error-messages',
+          text: 'Error messages'
+        },
+        {
           href: '/accessibility/keyboard',
           text: 'Keyboard basics'
         },
