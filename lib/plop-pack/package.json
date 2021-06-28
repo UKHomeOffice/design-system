@@ -1,6 +1,6 @@
 {
   "name": "@hods/plop-pack",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Plop pack with misc tools.",
   "main": "src/index.js",
   "files": [
