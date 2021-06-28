@@ -57,6 +57,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><A href="https://www.figma.com/file/USbI5GN6y8fsLdCov6aWJx/HO-DDaT-journey-map-template">Journey map template (Figma)</A></li>
         <li><A href="https://www.figma.com/file/gou1Y52jE53jkogQJraQau/HO-DDaT-storyboard-template?node-id=6%3A314">Storyboard template (Figma)</A></li>
         <li><A href="https://www.figma.com/file/enEcPp3OA9XiUVPkPiN9W0/HO-DDaT-workshop-templates?node-id=6%3A314">Workshop activity templates (Figma)</A></li>
+        <li><A href="https://github.com/karypun/mock-wildcat-service">Mock service with reusable HTML and React code snippets</A></li>
 
       </ul>
       <h2>GOV.UK</h2>
