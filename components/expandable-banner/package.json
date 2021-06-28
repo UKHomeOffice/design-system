@@ -1,6 +1,6 @@
 {
   "name": "@hods/expandable-banner",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Component that provides both high level and more detailed warning messages",
   "main": "src/ExpandableBanner.tsx",
   "sass": "assets/ExpandableBanner.scss",
