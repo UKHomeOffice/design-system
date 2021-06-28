@@ -19,5 +19,6 @@ ENV LISTEN_HOST="0.0.0.0" \
     LISTEN_PORT="8080" \
     SSR_ONLY="false" \
     SESSIONS_SECRET="changeme" \
+    AUTH_METHOD="none" \
     ENVIRONMENT="dev"
 CMD ["node", "."]
