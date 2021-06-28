@@ -15,6 +15,7 @@ pipeline:
       - KUBE_CONTAINER
     environment:
       - DOCKER_HOST=tcp://172.17.0.1:2375
+      - NODE_OPTIONS=--max_old_space_size=4096
     commands:
       - echo "$${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin "${DOCKER_REGISTRY}"
       - npm install -g pnpm
