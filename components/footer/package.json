@@ -1,6 +1,6 @@
 {
   "name": "@hods/footer",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "HODS' page footer.",
   "main": "src/Footer.tsx",
   "sass": "assets/Footer.scss",

@@ -1,6 +1,6 @@
 {
   "name": "@hods/page",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "HODS' page component.",
   "main": "src/Page.tsx",
   "sass": "assets/Page.scss",
