@@ -44,7 +44,7 @@ $(dist_dir)/package.base.json: $(source_dir)/package.json
 
 $(dist_dir)/package.app.json: $(plopfile)
 	mkdir -p '$(@D)'
-	./node_modules/.bin/plop --plopfile '$(plopfile)' app 'template' 'Template.'
+	./node_modules/.bin/plop --plopfile '$(plopfile)' app 'template' 'Template' 'Template.' 'n'
 	$(strip_package) '$(docs_source_dir)/package.json' > '$(@)'
 
 $(dist_dir)/skel.tar: $(skel_deps)
