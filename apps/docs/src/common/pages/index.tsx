@@ -25,7 +25,7 @@ const Page: FC<PageProps> = props => (
           <h2>Updates</h2>
           <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 26 June 2021</p>
           <ul className="govuk-!-font-size-16">
-            <li>Rebuilt the Home Office design system onto a new React platform</li>
+            <li>Rebuilt the Home Office Design System onto a new React platform</li>
             <li>Launched new <a href="/accessibility">accessibility section</a></li>
             <li>Updated the <a href="https://github.com/UKHomeOffice/design-system/projects/1">design system backlog</a></li>
           </ul>

@@ -126,7 +126,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <tr className="govuk-table__row">
             <td className="govuk-table__cell">Blind or partially sighted</td>
             <td className="govuk-table__cell">Cannot see the visual elements of a video</td>
-            <td className="govuk-table__cell">Text-to-speech software to read a transcript. Audio description to describe video content</td>
+            <td className="govuk-table__cell">Text-to-speech software to read a transcript<br /><br />Audio description to describe video content</td>
 
           </tr>
 

@@ -124,26 +124,26 @@ const Page: FC<PageProps> = ({ location }) => (
         <tbody className="govuk-table__body">
         <tr className="govuk-table__row">
           <td className="govuk-table__cell">Blind</td>
-          <td className="govuk-table__cell">Cannot see to use a mouse. Keyboard controls and uses screen reader</td>
-          <td className="govuk-table__cell">Skip to content links. Character key shortcuts. Alternatives to pointer gestures</td>
+          <td className="govuk-table__cell">Cannot see to use a mouse<br /><br />Keyboard controls and uses screen reader</td>
+          <td className="govuk-table__cell">Skip to content links<br /><br />Character key shortcuts<br /><br /> Alternatives to pointer gestures</td>
         </tr>
 
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Partially sighted or low vision</td>
         <td className="govuk-table__cell">Cannot see content clearly at all times</td>
-        <td className="govuk-table__cell">Clear focus indication for a user to see where they are on page. Character key shortcuts</td>
+        <td className="govuk-table__cell">Clear focus indication for a user to see where they are on page<br /><br /> Character key shortcuts</td>
         </tr>
 
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Motor impaired</td>
         <td className="govuk-table__cell">Some fine motor control, not enough to use a mouse</td>
-        <td className="govuk-table__cell">Clear focus indication for a user to see where they are on the page. Alternatives to pointer gestures</td>
+        <td className="govuk-table__cell">Clear focus indication for a user to see where they are on the page<br /><br />Alternatives to pointer gestures</td>
         </tr>
 
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Mobility impaired</td>
         <td className="govuk-table__cell">Uses speech-to-text controls such as Dragon</td>
-        <td className="govuk-table__cell">Correct keyboard structure. Alternatives to pointer gestures</td>
+        <td className="govuk-table__cell">Correct keyboard structure<br /><br />Alternatives to pointer gestures</td>
         </tr>
 
         </tbody>
@@ -155,11 +155,11 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>To create good accessibility via keyboard, you need to consider the following:</p>
 <ul>
-<li>tab navigation</li>
-<li>focus</li>
-<li>‘skip to content’ links</li>
-<li>character key shortcuts</li>
-<li>pointer gestures</li>
+<li><a href="/accessibility/keyboard/tab-navigation">tab navigation</a></li>
+<li><a href="/accessibility/keyboard/focus">focus</a></li>
+<li><a href="/accessibility/keyboard/skip-to-content">‘skip to content’ links</a></li>
+<li><a href="/accessibility/keyboard/character-key-shortcuts">character key shortcuts</a></li>
+<li><a href="/accessibility/keyboard/pointer-gestures">pointer gestures</a></li>
 </ul>
 
 
