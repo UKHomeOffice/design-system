@@ -70,15 +70,6 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <tr>
         <td className="govuk-table__cell">
-          <A href="https://github.com/UKHomeOffice/design-system/issues/166">Accessibility on check and confirm details</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-          In progress
-          </td>
-      </tr>
-
-      <tr>
-        <td className="govuk-table__cell">
         <A href="https://github.com/UKHomeOffice/design-system/issues/159">Filtering</A>
         </td>
         <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
@@ -107,51 +98,6 @@ const Page: FC<PageProps> = ({ location }) => (
       <tr>
         <td className="govuk-table__cell">
         <A href="https://github.com/UKHomeOffice/design-system/issues/155">Icons</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-        In progress
-        </td>
-      </tr>
-
-      <tr>
-        <td className="govuk-table__cell">
-        <A href="https://github.com/UKHomeOffice/design-system/issues/161">Navigation content hidden on narrow viewports</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-            In progress
-        </td>
-      </tr>
-
-      <tr>
-        <td className="govuk-table__cell">
-        <A href="https://github.com/UKHomeOffice/design-system/issues/162">Passport details</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-            In progress
-        </td>
-      </tr>
-
-      <tr>
-        <td className="govuk-table__cell">
-        <A href="https://github.com/UKHomeOffice/design-system/issues/156">Sign out</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-        In progress
-        </td>
-      </tr>
-
-      <tr>
-        <td className="govuk-table__cell">
-        <A href="https://github.com/UKHomeOffice/design-system/issues/157">Status banner</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-        In progress
-        </td>
-      </tr>
-
-      <tr>
-        <td className="govuk-table__cell">
-        <A href="https://github.com/UKHomeOffice/design-system/issues/158">Typography</A>
         </td>
         <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
         In progress

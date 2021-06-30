@@ -58,7 +58,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>Talk about the pattern or component to the community. Share your work, as other teams might be working on the same thing. Gather feedback and examples from the community.</p>
 
           <h2 className="govuk-heading-m">3. Raise a new issue</h2>
-          <p>If your idea is not on the backlog, <A href="https://github.com/UKHomeOffice/design-system/issues">raise an issue in Github</A>. You can use our <A href="/getinvolved/githubguide">Github guide</A> to help you do this, or get in touch with <A href="mailto:design@digital.homeoffice.gov.uk">the working group</A>.</p>
+          <p>If your idea is not on the backlog, <A href="https://github.com/UKHomeOffice/design-system/issues">raise an issue in Github</A>. You can use our <A href="/get-involved/githubguide">Github guide</A> to help you do this, or get in touch with <A href="mailto:design@digital.homeoffice.gov.uk">the working group</A>.</p>
           <p> The working group will get in touch to discuss your proposal.</p>
           <p>When raising an issue, explain why you think it should be included in the design system. You can also include screenshots and research notes.</p>
 

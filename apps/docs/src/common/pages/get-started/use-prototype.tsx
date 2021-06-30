@@ -87,24 +87,24 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
 
       <h3>Change the service name</h3>
-<p>
-          1. open <code>page-wrap.tsx</code> from the <code>pages</code> folder.<br />
-          2. find <code>title="My new service"</code> and change that to your new service name. Press <strong>Cmd+S</strong> to save your changes.<br />
-          3. check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes<br /><br />
-</p>
+          <ol>
+            <li>open <code>page-wrap.tsx</code> from the <code>pages</code> folder.</li>
+            <li>find <code>title="My new service"</code> and change that to your new service name. Press <strong>Cmd+S</strong> to save your changes.</li>
+            <li>check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes</li>
+          </ol>
           <div className="govuk-grid-row">
             <div className="govuk-grid-column-full">
-            <img  src={applyPrototype6} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen showing changes in code for updating navigation and footer"/>
+              <img  src={applyPrototype6} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen showing changes in code for updating navigation and footer"/>
             </div>
           </div>
           <br />
 
-      <h3>Update the sub-navigation and footer links</h3>
-<p>
-          1. open <code>page-wrap.tsx</code> from the <code>pages</code> folder.<br />
-          2. replace <code>navigation</code> with new sub-navigation and footer links. Press <strong>Cmd+S</strong> to save your changes.<br />
-          3. check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes<br /><br />
-</p>
+          <h3>Update the sub-navigation and footer links</h3>
+          <ol>
+            <li>open <code>page-wrap.tsx</code> from the <code>pages</code> folder.</li>
+            <li>replace <code>navigation</code> with new sub-navigation and footer links. Press <strong>Cmd+S</strong> to save your changes.</li>
+            <li>check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes</li>
+          </ol>
           <div className="govuk-grid-row">
             <div className="govuk-grid-column-full">
             <img  src={applyPrototype8} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen with a highlight around where service name could be updated"/>
@@ -146,7 +146,7 @@ const Page: FC<PageProps> = ({ location }) => (
             <img  src={applyPrototype5} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Local web browser displaying properly coded status banner"/>
           </div>
         </div><br /><br />
-        <div><A href="/get-started/deploy-prototype">Next: Deploying your prototype</A></div>
+        <p><div><A href="/get-started/deploy-prototype">Next: Deploying your prototype</A></div></p>
     </div>
   </div>
 );
