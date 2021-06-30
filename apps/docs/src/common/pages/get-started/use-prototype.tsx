@@ -87,11 +87,11 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
 
       <h3>Change the service name</h3>
-          <ul>
+          <ol>
             <li>open <code>page-wrap.tsx</code> from the <code>pages</code> folder.</li>
             <li>find <code>title="My new service"</code> and change that to your new service name. Press <strong>Cmd+S</strong> to save your changes.</li>
             <li>check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes</li>
-          </ul>
+          </ol>
           <div className="govuk-grid-row">
             <div className="govuk-grid-column-full">
               <img  src={applyPrototype6} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen showing changes in code for updating navigation and footer"/>
