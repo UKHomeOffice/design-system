@@ -59,6 +59,13 @@ const Page: FC<PageProps> = ({ location }) => (
           text: '- Pointer gestures'
         }
       ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/inclusive-language',
+            text: 'Inclusive language'
+          },
+        ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
         <NavigationMenu items={[
           {
