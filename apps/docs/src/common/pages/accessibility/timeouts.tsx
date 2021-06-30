@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-export const title = 'Pointer gestures';
-const description = 'Accessibility guidance for keyboard content';
+export const title = 'Timeouts';
+const description = 'Accessibility guidance for timeouts';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -23,46 +23,47 @@ const Page: FC<PageProps> = ({ location }) => (
           href: '/accessibility/links',
           text: 'Links'
         },
+
         {
           href: '/accessibility/tables',
           text: 'Tables'
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
-      <NavigationMenu items={[
-        {
-          href: '/accessibility/error-messages',
-          text: 'Error messages'
-        },
-        {
-          href: '/accessibility/keyboard',
-          text: 'Keyboard basics'
-        },
-        {
-          href: '/accessibility/keyboard/tab-navigation',
-          text: '- Tab navigation'
-        },
-        {
-          href: '/accessibility/keyboard/focus',
-          text: '- Focus'
-        },
-        {
-          href: '/accessibility/keyboard/skip-to-content',
-          text: '- Skip to content links'
-        },
-        {
-          href: '/accessibility/keyboard/character-key-shortcuts',
-          text: '- Character key shortcuts'
-        },
-        {
-          href: '/accessibility/keyboard/pointer-gestures',
-          text: '- Pointer gestures'
-        },
-        {
-          href: '/accessibility/timeouts',
-          text: 'Timeouts'
-        }
-      ]} />
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/error-messages',
+            text: 'Error messages'
+          },
+          {
+            href: '/accessibility/keyboard',
+            text: 'Keyboard basics'
+          },
+          {
+            href: '/accessibility/keyboard/tab-navigation',
+            text: '- Tab navigation'
+          },
+          {
+            href: '/accessibility/keyboard/focus',
+            text: '- Focus'
+          },
+          {
+            href: '/accessibility/keyboard/skip-to-content',
+            text: '- Skip to content links'
+          },
+          {
+            href: '/accessibility/keyboard/character-key-shortcuts',
+            text: '- Character key shortcuts'
+          },
+          {
+            href: '/accessibility/keyboard/pointer-gestures',
+            text: '- Pointer gestures'
+          },
+          {
+            href: '/accessibility/timeouts',
+            text: 'Timeouts'
+          }
+        ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
           <NavigationMenu items={[
             {
@@ -72,7 +73,7 @@ const Page: FC<PageProps> = ({ location }) => (
             {
               href: '/accessibility/images',
               text: 'Images'
-            }
+            },
           ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
           <NavigationMenu items={[
@@ -85,16 +86,15 @@ const Page: FC<PageProps> = ({ location }) => (
     <div className="govuk-grid-column-three-quarters">
       <h1>
         <span className="caption">Accessibility</span>
-        Pointer gestures
+        Timeouts
       </h1>
-      <p>Pointer gestures or path-based gestures are common elements of a website. You may be familiar with elements such as volume sliders, image carousels, swiping content. Each of these elements are controlled by clicking and dragging the content with a mouse in a given direction or a long a given path.</p>
-      <p>These types of elements must also be accessible to keyboard users. If you see pointer gesture elements on a website you should try getting to it with keyboard controls and then see if you can control it by using the arrow keys, or other character controls if required.</p>
-      <p>Find out more about WCAG success criteria 2.5.1 <a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures.html">pointer gestures</a>.</p>
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-two-thirds">
-      </div>
-      </div>
-<br />
+      <p>Some interactions require the user to read content or complete an action within a certain time limit.</p>
+      <p>Different people will take different lengths of time to complete a task and may not be able to do so if the option to turn off, adjust or extend the time limit is not present.</p>
+      <p>Animated, moving or scrolling content that automatically advances or updates will also have an impact on certain people’s ability to read it.</p>
+
+      <h2>Helping everyone</h2>
+      <p>All users will benefit from knowing how long they have to complete an action. </p>
+      <p>All users will benefit from being able to turn off, adjust or extend the time limit, such as in the case of double-checking or locating additional information.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

@@ -60,6 +60,10 @@ const Page: FC<PageProps> = ({ location }) => (
           {
             href: '/accessibility/keyboard/pointer-gestures',
             text: '- Pointer gestures'
+          },
+          {
+            href: '/accessibility/timeouts',
+            text: 'Timeouts'
           }
         ]} />
 
