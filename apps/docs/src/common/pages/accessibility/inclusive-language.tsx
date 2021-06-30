@@ -5,7 +5,7 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 
 export const title = 'Inclusive language';
-const description = 'Accessibility guidance for xxx content';
+const description = 'How to use inclusive language on digital services';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
