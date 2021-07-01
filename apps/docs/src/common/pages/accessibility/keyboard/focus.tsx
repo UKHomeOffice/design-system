@@ -124,15 +124,15 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
       </div>
       <br />
-      <p>This logout example shows bad focus indication. A thin blue line surrounds the selected button. This can be hard to tell apart from the already blue button especially if the element is small.</p>
+      <p>This logout example shows bad focus indication. A thin blue line surrounds the selected button. This can be hard to tell apart from the already blue button, especially if the element is small.</p>
       <p>A user would not immediately be able to pick this out as the focused element on a busy page.</p>
       <p>When developing a service, setting a highly visible focus style effects many users. The default browser style is not sufficient to meet <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html">WCAG requirements for focus visibility</a>.</p>
 
       <h2>Focus order</h2>
       <p>Keyboard users move through a page using a set range of navigation orders. It is not as easy to freely move about the page as it is with a mouse.</p>
       <p>This means your content should be in a sensible order - normally left to right, top to bottom.</p>
-      <p>When you're testing with the tab key,  make sure that all interactive elements are selected and that you're moving through the page in what you think is a sensible order. Your focus should not be jumping around the page.</p>
-      <p>When implementing <a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html">modal dialogs</a> the focus order should be contained within the window until the user closes or dismisses it.</p>
+      <p>When you're testing with the tab key, make sure that all interactive elements are selected and that you're moving through the page in what you think is a sensible order. Your focus should not be jumping around the page.</p>
+      <p>When implementing <a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html">modal dialogs</a>, the focus order should be contained within the window until the user closes or dismisses it.</p>
 
       <h3>Good example</h3>
       <div className="govuk-grid-row">
@@ -141,7 +141,6 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
       </div>
       <br />
-      <img src={focusImage04} alt="Screenshot of website with good tab order" className="image-examples" />
       <p>This good example shows the tab moves of a user. It sensibly moves through the search and popular sections before moving through the alphabetised columns of navigation items.</p>
 
       <h3>Bad example</h3>
