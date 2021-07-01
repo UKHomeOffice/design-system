@@ -64,6 +64,13 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Timeouts'
         }
       ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/inclusive-language',
+            text: 'Inclusive language'
+          },
+        ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
         <NavigationMenu items={[
           {
@@ -105,7 +112,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </h2>
     <ul className="plain">
     <li>Dos and don'ts for designing accessible services
-    <br />- available as <A href="https://ukhomeoffice.github.io/accessibility-posters/">web pages</A> and <A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility">downloadable posters</A></li>
+    <br />- available as <A href="https://ukhomeoffice.github.io/accessibility-posters/">web pages</A> and <A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility/dos-donts">downloadable posters</A></li>
     <li><A href="https://webaim.org/resources/contrastchecker/">Colour contrast checker</A></li>
     <li><A href="https://help.apple.com/voiceover/info/guide/10.12/">Guide for VoiceOver screenreader</A></li>
     <li><A href="https://wave.webaim.org/">WAVE accessibility evaluation tool</A></li>

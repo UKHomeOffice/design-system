@@ -72,7 +72,6 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>Generating a new prototype</h2>
         <h3>1. Run the following commands locally</h3>
         <p>Using terminal, run the following commands below (the parts in ALL CAPS should be replaced with something specific to you):</p>
-
         <pre><code>
         mkdir YOUR-PROTOTYPE<br />
         cd YOUR-PROTOTYPE <br />
@@ -95,6 +94,7 @@ const Page: FC<PageProps> = ({ location }) => (
         npm install
         </code></pre>
 
+
         <h3>3. View the prototype locally</h3>
         <p>In terminal, enter:</p>
 
@@ -114,10 +114,8 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
         <br />
         <p>You can see the prototype by opening <A href="http://localhost:8080/">http://localhost:8080/</A> in your web browser.</p>
-
-        <div><A href="/get-started/use-prototype">Next: Building your prototype</A></div>
+        <p><A href="/get-started/use-prototype">Next: Building your prototype</A></p>
         </div>
-
   </div>
 );
 

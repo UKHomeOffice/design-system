@@ -85,11 +85,15 @@ const Page: FC<PageProps> = ({ location }) => (
             text: 'Timeouts - TBD'
           }
         ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Readability</span>
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
         <NavigationMenu items={[
           {
             href: '/accessibility/#',
-            text: 'Language - TBD'
+            text: 'Inclusive language'
+          },
+          {
+            href: '/accessibility/#',
+            text: 'Readability - TBD'
           },
           {
             href: '/accessibility/#',
