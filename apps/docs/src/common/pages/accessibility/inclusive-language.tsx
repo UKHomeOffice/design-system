@@ -140,7 +140,7 @@ const Page: FC<PageProps> = ({ location }) => (
               <li>allow people to disclose whether their sex registered at birth is different from their sex at present if you need to understand a persons’ current needs</li>
               </ul>
             <div className="govuk-inset-text">
-            The UK currently does not use an X marker for sex on identity documents, meaning that identity documents cannot have a sex other than male or female. Current policy states that for Biometric Residence Permit (BRPs) or identity documents, caseworkers will need to contact individuals to ask for a preference for their identity documentation. If relevant to your service, you should inform users of this when providing an ‘other’ option for questions about their sex.
+            The UK currently does not use an X marker for sex on identity documents, meaning that identity documents cannot have a sex other than male or female. Current EU Settlement Scheme policy states that for Biometric Residence Cards (BRCs), caseworkers may need to contact individuals to ask for a preference for their identity documentation. If relevant to your service, you should inform users of this when providing an ‘other’ option for questions about their sex.
             </div>
             <h4>Gender</h4>
               <p>Do:</p>
