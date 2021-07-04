@@ -25,15 +25,11 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/start-prototype',
-          text: '- Starting your prototype'
+          text: '- Setting up your prototype'
         },
         {
           href: '/get-started/use-prototype',
           text: '- Building your protoype'
-        },
-        {
-          href: '/get-started/deploy-prototype',
-          text: '- Deploying your prototype'
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
@@ -54,7 +50,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>When prototyping a public-facing service, you should use the <A href="https://govuk-prototype-kit.herokuapp.com/docs">GOV.UK prototype kit</A> which contains the GOV.UK styles.</p>
 
       <p>For internal services, such as caseworking systems, you should use
-      the <A href="/get-started/start-prototype">prototype generator</A> which contains Home Office design styles (including logo, colours and internal font).</p><p>You cannot use certain GOV.UK styles, such as the crown logo or Transport font, for internal services.</p> 
+      the <A href="/get-started/start-prototype">prototype generator</A> which contains Home Office design styles (including logo, colours and internal font).</p><p>You cannot use certain GOV.UK styles, such as the crown logo or Transport font, for internal services.</p>
       <p>Visit the <A href="../styles">Styles</A> section to find out more about the differences when designing internal or public-facing services.</p>
 
     </div>

@@ -26,15 +26,11 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/start-prototype',
-          text: '- Starting your prototype'
+          text: '- Setting up your prototype'
         },
         {
           href: '/get-started/use-prototype',
           text: '- Building your protoype'
-        },
-        {
-          href: '/get-started/deploy-prototype',
-          text: '- Deploying your prototype'
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>

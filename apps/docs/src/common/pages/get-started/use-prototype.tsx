@@ -33,15 +33,11 @@ const Page: FC<PageProps> = ({ location }) => (
         },
         {
           href: '/get-started/start-prototype',
-          text: '- Starting your prototype'
+          text: '- Setting up your prototype'
         },
         {
           href: '/get-started/use-prototype',
           text: '- Building your protoype'
-        },
-        {
-          href: '/get-started/deploy-prototype',
-          text: '- Deploying your prototype'
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
@@ -145,8 +141,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <div className="govuk-grid-column-full">
             <img  src={applyPrototype5} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Local web browser displaying properly coded status banner"/>
           </div>
-        </div><br /><br />
-        <p><div><A href="/get-started/deploy-prototype">Next: Deploying your prototype</A></div></p>
+        </div>
     </div>
   </div>
 );
