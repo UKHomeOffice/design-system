@@ -93,9 +93,9 @@ const Page: FC<PageProps> = ({ location }) => (
         git remote add origin git@github.com:YOUR_GITHUB_NAME/mock-wildcat-service.git<br />
         npm init @hods prototype<br />
         </code></pre>
-        <p>This will set up your new prototype repository on your local drive; it will also connect your local repository with the remote GitHub repository you set up in Step 1.</p>
+        <p>This does two things: it will create and link your local empty repository with the remote GitHub repository you set up in Step 1. The last line will generate your new prototype.</p>
         <h3>Answer the interactive prompts</h3>
-        <p>The prototype generator will ask you some questions. Accept the default prompts by simply pressing the ‘enter’ key in terminal.</p>
+        <p>The prototype generator will ask you some questions before generating the prototype. Accept the default prompts by simply pressing the ‘enter’ key in terminal.</p>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
@@ -187,7 +187,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <tbody className="govuk-table__body">
             <tr className="govuk-table__row">
               <td className="govuk-table__cell">HEROKU_EMAIL</td>
-              <td className="govuk-table__cell">This will your Heroku email adderess</td>
+              <td className="govuk-table__cell">This will be your Heroku email address</td>
 
             </tr>
             <tr className="govuk-table__row">
