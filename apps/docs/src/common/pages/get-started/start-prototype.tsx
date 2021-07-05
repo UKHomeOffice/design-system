@@ -68,12 +68,12 @@ const Page: FC<PageProps> = ({ location }) => (
         <ul>
         <li><A href="https://nodejs.org/en/">Node.js</A> - version 12.x.x or higher</li>
         <li><A href="https://github.com/">GitHub</A> and <A href="http://heroku.com/">Heroku</A> accounts</li>
-        <li>Terminal - an application for Mac users to install, start and stop a prototype. Using a terminal is sometimes called ‘using the command line’. </li>
+        <li>Terminal - an application to install, start and stop a prototype. Using a terminal is sometimes called ‘using the command line’. </li>
         </ul>
       <h2>Step 1. Set up your GitHub repository</h2>
         <p>This is where your prototype code will be stored.</p>
         <p>Log into your <A href="https://github.com/">GitHub</A> account and create a new blank repository.
-        To give an example, we'll name the repository <strong>mock-wildcat-service</strong>.</p>
+        To give an example, we'll name the repository <strong>review-licence-applications</strong>.</p>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
@@ -87,15 +87,15 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3>Run the prototype generator in terminal</h3>
         <p>Open terminal and enter these commands:</p>
         <pre><code>
-        mkdir mock-wildcat-service<br />
-        cd mock-wildcat-service <br />
+        mkdir review-licence-applications<br />
+        cd review-licence-applications <br />
         git init <br />
-        git remote add origin git@github.com:YOUR_GITHUB_NAME/mock-wildcat-service.git<br />
+        git remote add origin git@github.com:YOUR_GITHUB_NAME/review-licence-applications.git<br />
         npm init @hods prototype<br />
         </code></pre>
-        <p>This does two things: it will create and link your local empty repository with the remote GitHub repository you set up in Step 1. The last line will generate your new prototype.</p>
+        <p>This does two things: it will create your local repository and link it with the remote GitHub repository you set up in Step 1. The last line will generate your new prototype.</p>
         <h3>Answer the interactive prompts</h3>
-        <p>The prototype generator will ask you some questions before generating the prototype. Accept the default prompts by simply pressing the ‘enter’ key in terminal.</p>
+        <p>The prototype generator will ask you some questions before generating the prototype. Accept the default prompts by simply pressing the 'return' key in terminal.</p>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
@@ -151,9 +151,9 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3>Answer the interactive prompts</h3>
          <p>The deployment generator will ask you some questions.</p>
         <ol style={{ maxWidth: '38em' }}>
-        <li>Hit ‘enter’ to select <strong>Heroku</strong> as your deployment option</li>
+        <li>Hit the 'return' key to select <strong>Heroku</strong> as your deployment option</li>
         <li>Name your branch <strong>main</strong></li>
-        <li>Hit 'enter' to accept the other prompts called 'secrets' asking about your email address, API key and app name</li>
+        <li>Hit the 'return' key to accept the other prompts called 'secrets' asking about your email address, API key and app name</li>
         </ol>
 
         <div className="govuk-inset-text">
@@ -192,7 +192,7 @@ const Page: FC<PageProps> = ({ location }) => (
             </tr>
             <tr className="govuk-table__row">
               <td className="govuk-table__cell">HEROKU_APP_NAME</td>
-              <td className="govuk-table__cell">This will be the app name for your prototype; for example, mock-wildcat-service</td>
+              <td className="govuk-table__cell">This will be the app name for your prototype; for example, review-licence-applications</td>
 
 
             </tr>
@@ -212,7 +212,7 @@ const Page: FC<PageProps> = ({ location }) => (
         git push <br />
         </code></pre>
 
-        <p>This will build your prototype in Heroku and may take a few minutes. Once that is done, click on the <strong>Open app</strong> tab in Heroku to view your prototype. It will have a url like <strong>mock-wildcat-service.herokuapp.com</strong> which you can share with others.</p>
+        <p>This will build your prototype in Heroku and may take a few minutes. Once that is done, click on the <strong>Open app</strong> tab in Heroku to view your prototype. It will have a url like <strong>review-licence-applications.herokuapp.com</strong> which you can share with others.</p>
 
         <h3>Set a username and password</h3>
         <p>After you’ve completed the last step to deploy your application, you must protect your prototype and make it secure. To do this:</p>
