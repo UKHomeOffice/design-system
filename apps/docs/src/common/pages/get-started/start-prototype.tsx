@@ -81,11 +81,11 @@ const Page: FC<PageProps> = ({ location }) => (
           </div>
         </div>
         <p></p>
-
+        <p>We'll connect this blank repository with the prototype you'll create in the next step.</p>
 
         <h2>Step 2. Create a new prototype</h2>
         <h3>Run the prototype generator in terminal</h3>
-        <p>Open terminal and run the commands below:</p>
+        <p>Open terminal and enter these commands:</p>
         <pre><code>
         mkdir mock-wildcat-service<br />
         cd mock-wildcat-service <br />
@@ -93,7 +93,7 @@ const Page: FC<PageProps> = ({ location }) => (
         git remote add origin git@github.com:YOUR_GITHUB_NAME/mock-wildcat-service.git<br />
         npm init @hods prototype<br />
         </code></pre>
-        <p>This will start the process of creating a new prototype on your local drive; it will also connect your local repository with the remote GitHub repository you set up in Step 1.</p>
+        <p>This will set up your new prototype repository on your local drive; it will also connect your local repository with the remote GitHub repository you set up in Step 1.</p>
         <h3>Answer the interactive prompts</h3>
         <p>The prototype generator will ask you some questions. Accept the default prompts by simply pressing the ‘enter’ key in terminal.</p>
 
@@ -104,13 +104,13 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
         <p></p>
         <h3>Pull down the dependencies</h3>
-        <p>After the prototype has been generated, pull down the dependencies which will help make your prototype work by entering:</p>
+        <p>After the prototype has been generated, you'll need to pull down the dependencies to make your prototype work. Do this by running:</p>
         <pre><code>
         npm install
         </code></pre>
 
         <h3>Commit and push your new prototype to GitHub</h3>
-        <p>Once installation is complete, you can push to GitHub by entering these commands:</p>
+        <p>Once installation is complete, you can push your prototype to GitHub by entering these commands:</p>
         <pre><code>
         git add .<br />
         git commit -m"initial commit" <br />
@@ -127,7 +127,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <pre><code>
         No issues found.
         </code></pre>
-        <p>You can view the prototype by opening <A href="http://localhost:8080/">http://localhost:8080/</A> in your web browser.</p>
+        <p>You can view the prototype by opening <A href="http://localhost:8080/">http://localhost:8080/</A> in your web browser. This will help you track changes locally as you build your prototype.</p>
 
         <h2>Step 3. Deploy your prototype</h2>
         <p>One of the ways you can deploy, or publish and share your prototype with others, is through Heroku.</p>
@@ -168,7 +168,15 @@ const Page: FC<PageProps> = ({ location }) => (
         <p></p>
 
         <h3>Setting up secrets in GitHub</h3>
-        <p>Go to the <strong>Settings</strong> tab and select <strong>Secrets</strong> on the left hand side menu. Click the button <strong>New repository secret</strong> and enter the names (as written below) and relevant values:</p>
+        <p>In your GitHub <strong>Settings</strong>, select <strong>Secrets</strong> on the left hand side menu. Click the button <strong>New repository secret</strong>. This is where you'll be entering the secrets you accepted in your deployment generator.</p>
+
+        <div className="govuk-grid-row">
+          <div className="govuk-grid-column-full">
+        <img  src={applyPrototype3a} className="confirm-desktop" style={{maxHeight: "100%"}} alt="GitHub screen showing text fields to add secrets"/>
+          </div>
+        </div>
+        <p></p>
+        <p>Each secret is made up of a name and value. Enter the names as displayed below with the relevant values.</p>
         <table className="govuk-table">
           <thead className="govuk-table__head">
             <tr className="govuk-table__row">
@@ -179,12 +187,12 @@ const Page: FC<PageProps> = ({ location }) => (
           <tbody className="govuk-table__body">
             <tr className="govuk-table__row">
               <td className="govuk-table__cell">HEROKU_EMAIL</td>
-              <td className="govuk-table__cell">Enter your Heroku email</td>
+              <td className="govuk-table__cell">This will your Heroku email adderess</td>
 
             </tr>
             <tr className="govuk-table__row">
               <td className="govuk-table__cell">HEROKU_APP_NAME</td>
-              <td className="govuk-table__cell">Enter the app name for your prototype, eg. mock-wildcat-service</td>
+              <td className="govuk-table__cell">This will be the app name for your prototype; for example, mock-wildcat-service</td>
 
 
             </tr>
@@ -196,13 +204,6 @@ const Page: FC<PageProps> = ({ location }) => (
           </tbody>
         </table>
 
-        <div className="govuk-grid-row">
-          <div className="govuk-grid-column-full">
-        <img  src={applyPrototype3a} className="confirm-desktop" style={{maxHeight: "100%"}} alt="GitHub screen showing text fields to add secrets"/>
-          </div>
-        </div>
-        <p></p>
-
         <h3>Push your new deployment on Heroku</h3>
         <p>In terminal, run these commands:</p>
         <pre><code>
@@ -211,7 +212,7 @@ const Page: FC<PageProps> = ({ location }) => (
         git push <br />
         </code></pre>
 
-        <p>This will build your prototype in Heroku and will take a while. Once that is done, click on the <strong>Open app</strong> tab in Heroku to view your prototype. It will have a url like <strong>mock-wildcat-service.herokuapp.com</strong></p>
+        <p>This will build your prototype in Heroku and may take a few minutes. Once that is done, click on the <strong>Open app</strong> tab in Heroku to view your prototype. It will have a url like <strong>mock-wildcat-service.herokuapp.com</strong> which you can share with others.</p>
 
         <h3>Set a username and password</h3>
         <p>After you’ve completed the last step to deploy your application, you must protect your prototype and make it secure. To do this:</p>
