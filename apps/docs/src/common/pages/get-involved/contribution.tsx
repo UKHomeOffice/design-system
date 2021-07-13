@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-export const title = 'Backlog';
-const description = 'How to get involved and contribute to the Home Office Design System'
+export const title = 'Contribution criteria';
+const description = 'How to contribute your work to the Home Office design system'
 const section = 'Get involved';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -53,63 +53,149 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">{section}</span>
         {title}
       </h1>
+      <p>The Home Office follows the <a href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK Design System contribution criteria.</a> The only difference is that contributions will be reviewed by the Home Office’s Design System Working Group.</p>
 
-        <p>The Design System has an open backlog on <A href="https://github.com/UKHomeOffice/home-office-digital-patterns/projects/1">GitHub</A>. Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones.</p>
+      <p>The contents of the Design System must be of a high quality and meet user needs. To guarantee this, all components and patterns need to meet certain criteria.</p>
 
-        <p>To contribute, you can create and comment on an <A href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues">issue in GitHub</A>.You don’t need to upload anything to Git to contribute.</p>
+      <h2>New proposals</h2>
+      <p>To be successful, proposals need to show that the component or pattern being suggested would be useful and unique.</p>
+      <table className="govuk-table app-table--constrained">
 
-        <p>The best place to discuss patterns and components is on Slack. But you can also <A href="mailto:design@digital.homeoffice.gov.uk">email the working group</A> or talk to us in person.</p>
+        <caption className="govuk-table__caption govuk-visually-hidden">New proposals criteria</caption>
 
-        <p>Here is a list of the components, patterns and updates currently on the Home Office design system GitHub backlog:</p>
 
-        <table className="govuk-table app-table--constrained">
-        <caption className="govuk-table__caption">Design system backlog </caption>
-  <thead>
-    <tr>
-      <th className="govuk-table__header">Name</th>
-      <th className="govuk-table__header" style={{width: "90px", textAlign: "right"}}>Status</th>
-    </tr>
-  </thead>
-  <tbody>
+        <thead className="govuk-table__head">
+          <tr className="govuk-table__row">
 
-      <tr>
-        <td className="govuk-table__cell">
-        <A href="https://github.com/UKHomeOffice/design-system/issues/159">Filtering</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-        In progress
-        </td>
-      </tr>
+            <th scope="col" className="govuk-table__header">Criteria</th>
 
-      <tr>
-        <td className="govuk-table__cell">
-        <A href="https://github.com/UKHomeOffice/design-system/issues/154">Graphic for a profile image/avatar</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-        In progress
-        </td>
-      </tr>
+            <th scope="col" className="govuk-table__header">Description</th>
 
-      <tr>
-        <td className="govuk-table__cell">
-          <A href="https://github.com/UKHomeOffice/design-system/issues/186">Highlighting search matches</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-          In progress
-        </td>
-      </tr>
+          </tr>
+        </thead>
 
-      <tr>
-        <td className="govuk-table__cell">
-        <A href="https://github.com/UKHomeOffice/design-system/issues/155">Icons</A>
-        </td>
-        <td className="govuk-table__cell govuk-body-s" style={{textAlign: "right"}}>
-        In progress
-        </td>
-      </tr>
+        <tbody className="govuk-table__body">
 
-  </tbody>
-</table>
+
+          <tr className="govuk-table__row">
+
+
+
+            <th scope="row" className="govuk-table__header">Useful</th>
+
+
+
+
+            <td className="govuk-table__cell"><p> There is evidence that this component or pattern would be useful for many teams or services working on internal facing systems.</p>
+              <p className="govuk-!-margin-bottom-0">Evidence could be screenshots or links to versions of it being used in different services.</p></td>
+
+
+          </tr>
+
+
+
+          <tr className="govuk-table__row">
+
+
+
+            <th scope="row" className="govuk-table__header">Unique</th>
+
+
+
+
+            <td className="govuk-table__cell"><p> It does not replicate something already in the Design System. </p>
+              <p className="govuk-!-margin-bottom-0">If it’s intended to replace an existing component or pattern, there is evidence to show that it’s better than the existing version.</p></td>
+
+
+          </tr>
+
+
+        </tbody>
+      </table>
+      <p>The <a href="/get-involved/working/">Design System Working Group</a> reviews proposals in the <a href="/get-involved/backlog/">community backlog</a> to check they meet these criteria. Proposals that meet the criteria will then be marked ‘to do’, ready to be worked on.</p>
+
+      <h2>Before a component or pattern is published</h2>
+
+      <table className="govuk-table app-table--constrained">
+
+        <caption className="govuk-table__caption govuk-visually-hidden">Before publication criteria</caption>
+
+
+        <thead className="govuk-table__head">
+          <tr className="govuk-table__row">
+
+            <th scope="col" className="govuk-table__header">Criteria</th>
+
+            <th scope="col" className="govuk-table__header">Description</th>
+
+          </tr>
+        </thead>
+
+        <tbody className="govuk-table__body">
+
+
+          <tr className="govuk-table__row">
+
+
+
+            <th scope="row" className="govuk-table__header">Usable</th>
+
+
+
+
+            <td className="govuk-table__cell"><p>It has been tested  in user research and shown to work with a representative sample of users, including those with disabilities.</p>
+
+              <p className="govuk-!-margin-bottom-0">Components and patterns which are not proven usable can be published as experimental. But they must be clearly based on relevant user research from other organisations and best practice, and meet the other criteria.</p></td>
+
+
+          </tr>
+
+
+
+          <tr className="govuk-table__row">
+
+
+
+            <th scope="row" className="govuk-table__header">Consistent</th>
+
+
+
+
+            <td className="govuk-table__cell"><p>It reuses existing styles and components in the Design System where relevant.</p>
+
+              <p>Both the guidance and any content included in examples must follow the <a href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK content style guide</a>.</p>
+
+
+            </td>
+
+
+          </tr>
+
+
+
+          <tr className="govuk-table__row">
+
+
+
+            <th scope="row" className="govuk-table__header">Versatile</th>
+
+
+
+
+            <td className="govuk-table__cell"><p>The implementation is versatile enough that the component or pattern can be used in a range of different services that may need it.</p>
+
+              <p>For example, a versatile date input component could be set up to ask for a year only, a month and year only, a precise date, or any other combination you may need.</p>
+
+              <p className="govuk-!-margin-bottom-0">The component or pattern must also have been tested and shown to work with a range of <a href="https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices">browsers, assistive technologies and devices</a>.</p></td>
+
+
+          </tr>
+
+
+        </tbody>
+      </table>
+
+
     </div>
   </div>
 );

@@ -30,6 +30,10 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Suggest new ideas'
         },
         {
+          href: '/get-involved/contribution',
+          text: 'Contribution criteria'
+        },
+        {
           href: '/get-involved/githubguide',
           text: 'Using GitHub to propose design system changes'
         },
