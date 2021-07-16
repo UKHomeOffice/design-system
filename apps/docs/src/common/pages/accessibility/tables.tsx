@@ -2,6 +2,7 @@ import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
+import { Table } from '@not-govuk/components';
 
 const tables = require('../../../../assets/images/accessibility/tables.png').default;
 
@@ -100,33 +101,28 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <div className="govuk-grid-row">
       <div className="example" style={{marginBottom: "2em"}}>
-        <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">Months and rates</caption>
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Month you apply</th>
-              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Rate for bicycles</th>
-              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Rate for vehicles</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">January</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">£85</td>
-              <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">February</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">£75</td>
-              <td class="govuk-table__cell govuk-table__cell--numeric">£55</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">March</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">£165</td>
-              <td class="govuk-table__cell govuk-table__cell--numeric">£125</td>
-            </tr>
-          </tbody>
-        </table>
+        <Table
+          caption="Dates and amounts"
+          keys={["date", "amount"]}
+          headings={{
+            amount: "Amount",
+            date: "Date",
+          }}
+          data={[
+            {
+              amount: "£109.80 per week",
+              date: "First 6 weeks",
+            },
+            {
+              amount: "£109.80 per week",
+              date: "Next 33 weeks",
+            },
+            {
+              amount: "£4,282.20",
+              date: "Total estimated pay",
+            },
+          ]}
+        />
       </div>
       </div>
 
