@@ -144,7 +144,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <tr className="govuk-table__row">
             <td className="govuk-table__cell">Deafblind</td>
             <td className="govuk-table__cell">Cannot hear audio or see the visual elements</td>
-            <td className="govuk-table__cell">Transcript that can be output to a braille display</td>
+            <td className="govuk-table__cell">Transcript, which can be converted to braille</td>
 
           </tr>
 
@@ -229,7 +229,7 @@ and a transcript. </p>
 
 <li>position the transcript next to the video or clearly link to it </li>
 
-<li>create a trascript that's accessible</li>
+<li>create a transcript that's accessible</li>
 </ul>
 
 <h3>Audio description</h3>
