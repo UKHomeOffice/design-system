@@ -125,13 +125,13 @@ const Page: FC<PageProps> = ({ location }) => (
    <tr className="govuk-table__row">
      <td className="govuk-table__cell">Blind</td>
      <td className="govuk-table__cell">Need more time to understand page layouts, find information and operate controls<br /><br />May not be able to see timeout warning message</td>
-     <td className="govuk-table__cell">More time when using a screen reader to navigate the page</br></br>Accessible timeout messages</td>
+     <td className="govuk-table__cell">More time when using a screen reader to navigate the page<br /><br />Accessible timeout messages</td>
    </tr>
 
    <tr className="govuk-table__row">
    <td className="govuk-table__cell">Partially sighted</td>
-   <td className="govuk-table__cell">Need more time to locate and read information</br></br>May not be able to see timeout warning message</td>
-   <td className="govuk-table__cell">More time to explore the page and read content</br></br>Accessible timeout messages</td>
+   <td className="govuk-table__cell">Need more time to locate and read information<br /><br />May not be able to see timeout warning message</td>
+   <td className="govuk-table__cell">More time to explore the page and read content<br /><br />Accessible timeout messages</td>
    </tr>
 
    <tr className="govuk-table__row">
