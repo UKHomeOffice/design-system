@@ -144,14 +144,14 @@ const Page: FC<PageProps> = ({ location }) => (
           <tr className="govuk-table__row">
             <td className="govuk-table__cell">Deafblind</td>
             <td className="govuk-table__cell">Cannot hear audio or see the visual elements</td>
-            <td className="govuk-table__cell">Braille to read a transcript</td>
+            <td className="govuk-table__cell">Transcript, which can be converted to braille</td>
 
           </tr>
 
           <tr className="govuk-table__row">
             <td className="govuk-table__cell">Motor impairment</td>
             <td className="govuk-table__cell">Cannot use a mouse</td>
-            <td className="govuk-table__cell">An accessible media player that can be used with keyboard navigation</td>
+            <td className="govuk-table__cell">Media player that can be controlled using keyboard or voice input</td>
 
           </tr>
         </tbody>
@@ -160,7 +160,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <h2>Creating good content</h2>
 
 <p>You should make your audio and video content as accessible as possible as well as providing appropriate alternatives
-to ensure that everyone has a comparable experience.</p>
+to ensure that everyone has a comparable experience. See <A href="https://tetralogical.com/articles/an-inclusive-approach-to-video-production/">An inclusive approach to video production</A> for one way to do this.</p>
 
 <p>The <A href="https://www.w3.org/WAI/media/av/">Making Audio and Video Media Accessible guide</A> provides a great
 exploration of accessibility considerations.</p>
@@ -228,6 +228,8 @@ and a transcript. </p>
 <li>include all the audio and visual information so that users can understand all the content that’s in the video just from the transcript </li>
 
 <li>position the transcript next to the video or clearly link to it </li>
+
+<li>create a transcript that's accessible</li>
 </ul>
 
 <h3>Audio description</h3>
@@ -239,7 +241,7 @@ and a transcript. </p>
 <ul>
 <li>make it clear where to find the audio-described version (if separate from the main video content) </li>
 
-<li>include all that audio and visual information that’s in the video so that you could understand all the content that’s in the video </li>
+<li>include all the audio and visual information in the video so that you could understand all the content</li>
 </ul>
 
 <p>Alternatively, if your video is narrated, you could incorporate any important visual information into the narration.</p>

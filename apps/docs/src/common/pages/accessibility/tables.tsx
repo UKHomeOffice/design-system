@@ -2,6 +2,7 @@ import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
+import { Table } from '@not-govuk/components';
 
 const tables = require('../../../../assets/images/accessibility/tables.png').default;
 
@@ -99,12 +100,31 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Tables are used to present data in rows and columns. It allows a user to make quick connections between different data.</p>
 
       <div className="govuk-grid-row">
-      <div className="govuk-grid-column-two-thirds">
-        <img src={tables} alt="Screenshot from gov.uk site of example table" className="image-examples" />
+      <div className="example" style={{marginBottom: "2em"}}>
+        <Table
+          caption="Dates and amounts"
+          keys={["date", "amount"]}
+          headings={{
+            amount: "Amount",
+            date: "Date",
+          }}
+          data={[
+            {
+              amount: "£109.80 per week",
+              date: "First 6 weeks",
+            },
+            {
+              amount: "£109.80 per week",
+              date: "Next 33 weeks",
+            },
+            {
+              amount: "£4,282.20",
+              date: "Total estimated pay",
+            },
+          ]}
+        />
       </div>
       </div>
-
-<br />
 
       <p>You must create tables in a way that assistive technology can understand. This means making tables available to screen reader, screen magnification and speech-to-text software users.</p>
 
