@@ -32,6 +32,10 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/tables',
           text: 'Tables'
+        },
+        {
+          href: '/accessibility/headings',
+          text: 'Headings'
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
