@@ -96,8 +96,7 @@ const Page: FC<PageProps> = ({ location }) => (
       get in touch to share your user research findings.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
-      <p>If your service uses this pattern, let us know of any insights you have on
-      accessibility considerations.</p>
+      <p>Read our <a href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility guidance on timeouts</a>.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
