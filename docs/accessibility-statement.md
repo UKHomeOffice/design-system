@@ -68,6 +68,22 @@ due to the non-compliances listed below.
 
 The content listed below is non-accessible for the following reasons.
 
+-   Code blocks cannot be ‘scrolled’ by keyboard users (fails WCAG guideline 2.1.1 Keyboard. We will fix this by January 2021) 
+
+-   There is a missing <caption> element on the Components page for tables within the ‘Props’ click to reveal (fails WCAG guideline 1.3.1 Info and relationships. We will fix this by January 2021) 
+
+-   Text size of code lines is smaller than other text on the pages ‘Starting a new prototype’ and ‘Building your prototype’ (fails WCAG guideline 4.1.1 Parsing. We will fix this by January 2021) 
+
+-   When tabbing the navigation menu at the top, the focus is yellow but not underlined (fails WCAG guideline 2.4.7 Focus visible. We will fix this by January 2021) 
+
+-   Issue with (Edge 90, Chrome 91) and on mobile (Android 11/Chrome 91, iOS 13.7/Safari) - the footer content does not adjust correctly when the page is zoomed in to 400%, so you may need to scroll horizontally to see all the items. The main content also overlaps with the footer on IE 11 (fails WCAG  guideline 1.4.10 Reflow. We will fix this by January 2021) 
+
+-   The site map is a long list and should be divided into sections reflecting the structure of the website (fails WCAG  guideline 2.4.8 Location. We will fix this by January 2021) 
+
+-   The image on Component - Header page has a code error and so may not be read out correctly by screen readers (fails WCAG guideline 1.4.5 Images of text. We will fix this by January 2021) 
+
+-   Issue with JAWS 2019 on Edge Version 90.0.818.41 - when tabbing through links, visible headings from main page are announced before the link (fails WCAG guideline 2.4.9 Link purpose. We will fix this by January 2021) 
+
 ### Non-compliance with the accessibility regulations
 All content tested is compliant with the WCAG guidelines to the best of our knowledge. If you find areas in the site that are inaccessible, please contact us.
 
@@ -82,7 +98,7 @@ At this time, we have not identified any content that is not within scope of the
 ## Preparation of this accessibility statement
 
 This statement was prepared on 6 June 2021.
-It was last reviewed on 6 June 2021.
+It was last reviewed on 29 July 2021.
 
 This website was last tested on 6 June 2021.
 
