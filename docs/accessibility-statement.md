@@ -70,7 +70,7 @@ The content listed below is non-accessible for the following reasons.
 
 -   Code blocks cannot be ‘scrolled’ by keyboard users (fails WCAG guideline 2.1.1 Keyboard. We will fix this by January 2021) 
 
--   There is a missing <caption> element on the Components page for tables within the ‘Props’ click to reveal (fails WCAG guideline 1.3.1 Info and relationships. We will fix this by January 2021) 
+-   There is a missing `<caption>` element on the Components page for tables within the ‘Props’ click to reveal (fails WCAG guideline 1.3.1 Info and relationships. We will fix this by January 2021) 
 
 -   Text size of code lines is smaller than other text on the pages ‘Starting a new prototype’ and ‘Building your prototype’ (fails WCAG guideline 4.1.1 Parsing. We will fix this by January 2021) 
 
