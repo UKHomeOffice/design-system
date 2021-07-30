@@ -163,13 +163,13 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>An important aspect of structure is how your headings are ‘nested’. Starting with a “Heading 1” (<code>&lt;h1&gt;</code>) for the main page title, subheadings should sit below this in a sequential order.
 
 Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form: </p>
-<ul class="govuk-list">
+<ul className="govuk-list">
 <li>&lt;h1&gt;
-  <ul class="govuk-list">
+  <ul className="govuk-list">
     <li>&lt;h2&gt;
-      <ul class="govuk-list">
+      <ul className="govuk-list">
         <li>&lt;h3&gt;
-          <ul class="govuk-list">
+          <ul className="govuk-list">
             <li>&lt;h4&gt;</li>
           </ul>
         </li>
