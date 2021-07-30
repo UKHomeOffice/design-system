@@ -107,7 +107,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>Helping everyone</h2>
       <p>A logical structure can make your content readable and accessible to everyone. Just as sighted users can scan the page and use headings to find the content they’re looking for, people using assistive tech such as screenreaders can use a similar method to find their way around. So it’s important that the coding of headings matches up with their visual appearance. </p>
       <p>Adding a logical heading structure can also help you think more clearly about your content and what it is trying to say. And clear heading text is useful for everyone.</p>
-
+<br />
       <h2>The basics</h2>
         <p>Do the following things to make your heading structure clear and accessible:</p>
         <ul>
@@ -137,19 +137,19 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Cognitive impairment </td>
-        <td className="govuk-table__cell">CStruggles with pages that have dense, unstructured or a lot of text </td>
+        <td className="govuk-table__cell">Struggles with pages that have dense, unstructured or a lot of text </td>
         <td className="govuk-table__cell">Clear, descriptive headings in Plain English</td>
         </tr>
 
         </tbody>
       </table>
-
+<br />
 <h2>Creating good headings</h2>
 
 <h3>Language</h3>
 
 <p>A good heading describes the content beneath it in simple language. Keep headings short and relevant to the content. </p>
-
+<br />
 <h3>Structure</h3>
 
 <p>Use headings to split up and structure content into clear sections. Users rely on this structure for navigation so keep it straightforward, and try not to use too many sub-sub-subheadings. Most pages or documents shouldn’t need more than four heading levels unless they are very long or complicated.</p>
@@ -157,19 +157,19 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>Consider your heading structure as a table of contents – this reflects how people use them to find the most relevant content for their needs.  </p>
 
 <p>Many types of assistive technology allow users to navigate with headings in a similar way to a sighted user. They can quickly scan a page by its headings, and jump directly to the content they are looking for. </p>
-
+<br />
 <h3>Nested headings</h3>
 
 <p>An important aspect of structure is how your headings are ‘nested’. Starting with a “Heading 1” (<code>&lt;h1&gt;</code>) for the main page title, subheadings should sit below this in a sequential order.
 
 Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form: </p>
-<ul>
+<ul class="govuk-list">
 <li>&lt;h1&gt;
-  <ul>
+  <ul class="govuk-list">
     <li>&lt;h2&gt;
-      <ul>
+      <ul class="govuk-list">
         <li>&lt;h3&gt;
-          <ul>
+          <ul class="govuk-list">
             <li>&lt;h4&gt;</li>
           </ul>
         </li>
@@ -183,16 +183,17 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 
 <p>An example of a nested heading structure: </p>
 <img src={headingImage} alt="Headings nested in a sequential hierarchy"  width="50%"/>
-
+<br />
 <h3>Structure is separate from appearance</h3>
 
 <p>Don’t use heading tags for non-heading purposes. For example, if you need a call-out message in large text but it does not function as a heading, then use styling to achieve this visual effect. </p>
 
 <p>As a rule of thumb: if there is nothing or very little that sits underneath to it, it’s probably not a heading. </p>
 
-<p>Similarly, if part of your content works as a heading (for example, to head up content blocks in the footer, or in a sidebar list of related links) then you must use the correct html code as well as any visual styling. If you don’t, a screen reader will not recognise this as a heading and the user may miss it.</p>
+<p>Similarly, if part of your content works as a heading (for example, to head up content blocks in the footer, or in a sidebar list of related links) then you must use the correct html code as well as any visual styling. If you don’t, a screenreader will not recognise this as a heading and the user may miss it.</p>
 
-<p>Where sections are broken up with visual design alone, it may be worth adding a screenreader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/%5d">'visually hidden’ style in CSS.</a></p>
+<p>Where sections are broken up with visual design alone, it may be worth adding a screenreader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">'visually hidden’ style in CSS.</a></p>
+<br />
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
