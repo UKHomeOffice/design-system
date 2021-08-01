@@ -7,7 +7,7 @@ This website is run by the Home Office.
 We want as many people as possible to be able to use this website.
 For example, that means you should be able to:
 -   Change colours, contrast levels and fonts
--   Zoom in up to 300% without the text spilling off the screen
+-   Zoom in up to 250% without the text spilling off the screen
 -   Navigate most of the website using just a keyboard
 -   Navigate most of the website using speech recognition software
 -   Listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
@@ -68,6 +68,14 @@ due to the non-compliances listed below.
 
 The content listed below is non-accessible for the following reasons.
 
+-   Some code blocks cannot be ‘scrolled’ by keyboard users (fails WCAG guideline 2.1.1 Keyboard. We will fix this by January 2022) 
+
+-   There is a missing `<caption>` element on the Components page for tables within the ‘Props’ click to reveal (fails WCAG guideline 1.3.1 Info and relationships. We will fix this by January 2022) 
+
+-   Issue with (Edge 90, Chrome 91) and on mobile (Android 11/Chrome 91, iOS 13.7/Safari) - the footer content does not adjust correctly when the page is zoomed in to 400%, so you may need to scroll horizontally to see all the items. The main content also overlaps with the footer on IE 11 (fails WCAG  guideline 1.4.10 Reflow. We will fix this by January 2022) 
+
+-   The site map is a long list and should be divided into sections reflecting the structure of the website (fails WCAG guideline 2.4.5: Multiple Ways. We will fix this by January 2022) 
+
 ### Non-compliance with the accessibility regulations
 All content tested is compliant with the WCAG guidelines to the best of our knowledge. If you find areas in the site that are inaccessible, please contact us.
 
@@ -82,7 +90,7 @@ At this time, we have not identified any content that is not within scope of the
 ## Preparation of this accessibility statement
 
 This statement was prepared on 6 June 2021.
-It was last reviewed on 6 June 2021.
+It was last reviewed on 29 July 2021.
 
 This website was last tested on 6 June 2021.
 
