@@ -166,11 +166,11 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 <ul className="govuk-list">
 <li>&lt;h1&gt;
   <ul className="govuk-list">
-    <li>&lt;h2&gt;
+    <li>&emsp;&lt;h2&gt;
       <ul className="govuk-list">
-        <li>&lt;h3&gt;
+        <li>&emsp;&emsp;&lt;h3&gt;
           <ul className="govuk-list">
-            <li>&lt;h4&gt;</li>
+            <li>&emsp;&emsp;&emsp;&lt;h4&gt;</li>
           </ul>
         </li>
       </ul>
@@ -183,7 +183,7 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 
 <p>An example of a nested heading structure: </p>
 <img src={headingImage} alt="Headings nested in a sequential hierarchy"  width="50%"/>
-<br />
+<br /><br />
 <h3>Structure is separate from appearance</h3>
 
 <p>Don’t use heading tags for non-heading purposes. For example, if you need a call-out message in large text but it does not function as a heading, then use styling to achieve this visual effect. </p>
