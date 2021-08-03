@@ -279,6 +279,7 @@ importers:
       '@mdx-js/react': ^1.6.5
       '@not-govuk/component-helpers': ^0.2.15
       '@not-govuk/component-test-helpers': ^0.2.15
+      '@not-govuk/link': ^0.2.15
       '@types/react': ^16.9.35
       jest: ^26.1.0
       ts-jest: ^26.1.1
@@ -286,6 +287,7 @@ importers:
     dependencies:
       '@hods/sass-base': link:../../lib/sass-base
       '@not-govuk/component-helpers': 0.2.15
+      '@not-govuk/link': 0.2.15
     devDependencies:
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-test-helpers': 0.2.15
