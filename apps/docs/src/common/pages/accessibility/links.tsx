@@ -31,6 +31,10 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/tables',
           text: 'Tables'
+        },
+        {
+          href: '/accessibility/headings',
+          text: 'Headings'
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
@@ -62,6 +66,10 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/keyboard/pointer-gestures',
           text: '- Pointer gestures'
+        },
+        {
+          href: '/accessibility/timeouts',
+          text: 'Timeouts'
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>

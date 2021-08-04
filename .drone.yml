@@ -27,10 +27,10 @@ pipeline:
   notify_slack_success:
     image: plugins/slack:1.0
     secrets: [ slack_webhook ]
-    channel: general
+    channel: ho-design-system
     username: Drone
     template: >
-      *Deployed {{repo.name}} to Dev* - <{{build.link}}|#{{build.number}}>
+      *Deployed {{repo.name}}* - <{{build.link}}|#{{build.number}}>
     when:
       branch: master
       event: push
@@ -38,10 +38,10 @@ pipeline:
   notify_slack_failure:
     image: plugins/slack
     secrets: [ slack_webhook ]
-    channel: alerts
+    channel: ho-design-system
     username: Drone
     template: >
-      *Failed to deploy {{repo.name}} to Dev*
+      *Failed to deploy {{repo.name}}*
 
       Author: {{build.author}}
 
