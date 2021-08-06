@@ -178,7 +178,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>This not only makes text more readable for many but the switch to a ‘dark theme’ also reduces brightness, which can reduce stress on the eye.</p>
 
 <h3>Checking your colour contrast</h3>
-<p>The <A href="https://support.microsoft.com/en-us/windows/make-your-pc-easier-to-use-1c313f8f-8bc3-4e1c-c1c8-efe173a94845">WebAIM contrast checker</A> is a web page where you can input two colours that you are planning to use and it will tell you the contrast ratio.</p>
+<p>The <A href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</A> is a web page where you can input two colours that you are planning to use and it will tell you the contrast ratio.</p>
 
 <div className="govuk-grid-row">
 <div className="govuk-grid-column-two-thirds">
