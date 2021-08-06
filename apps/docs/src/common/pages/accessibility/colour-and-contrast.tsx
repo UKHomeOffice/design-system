@@ -115,11 +115,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>The basics</h2>
         <p>Do:</p>
         <ul>
-        <li>Check your website colour scheme for contrast standards (standard text 4.5:1, everything else 3:1)</li>
-        <li>make sure your website works in Windows high-contrast mode</li>
+        <li>check your website colour scheme for contrast standards (standard text 4.5:1, everything else 3:1)</li>
+        <li>make sure your website works in Window's high-contrast mode</li>
         <li>check that you can clearly see where focus indication is on a screen at a glance</li>
         <li>ensure that users can change colours with Operating System (OS) or browser settings</li>
-        <li>use standard gov.uk components</li>
+        <li>use standard GOV.UK components</li>
         </ul>
 
         <p>Do not:</p>
@@ -161,8 +161,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <h3>Text contrast</h3>
 <p>The contrast requirement for text is 4.5:1 against the surrounding background colour.</p>
-<p>For most Gov.uk services we use black text against a white background. This combination has a contrast ratio of 21:1, easily meeting the requirements.</p>
-<p>Alternatively bad contrast may be something like the below.</p>
+<p>For most GOV.UK services we use black text against a white background. This combination has a contrast ratio of 21:1, easily meeting the requirements.</p>
+<p>Alternatively, bad contrast may be something like the below.</p>
 <p style={{color: "yellow"}}>Bad example text in yellow. Have you ever seen slides in a presentation where the speaker has yellow text on a white background? It makes it almost impossible to see for many users.</p>
 <p>For large text (above 18pt font size), or non-text elements such as focus indication or icons, the contrast requirement is 3:1.</p>
 
