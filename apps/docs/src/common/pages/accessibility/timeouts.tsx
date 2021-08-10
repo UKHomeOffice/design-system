@@ -23,7 +23,6 @@ const Page: FC<PageProps> = ({ location }) => (
           href: '/accessibility/links',
           text: 'Links'
         },
-
         {
           href: '/accessibility/tables',
           text: 'Tables'
@@ -34,55 +33,66 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/error-messages',
+          text: 'Error messages'
+        },
+        {
+          href: '/accessibility/keyboard',
+          text: 'Keyboard basics'
+        },
+        {
+          href: '/accessibility/keyboard/tab-navigation',
+          text: '- Tab navigation'
+        },
+        {
+          href: '/accessibility/keyboard/focus',
+          text: '- Focus'
+        },
+        {
+          href: '/accessibility/keyboard/skip-to-content',
+          text: '- Skip to content links'
+        },
+        {
+          href: '/accessibility/keyboard/character-key-shortcuts',
+          text: '- Character key shortcuts'
+        },
+        {
+          href: '/accessibility/keyboard/pointer-gestures',
+          text: '- Pointer gestures'
+        },
+        {
+          href: '/accessibility/timeouts',
+          text: 'Timeouts'
+        }
+      ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
         <NavigationMenu items={[
           {
-            href: '/accessibility/error-messages',
-            text: 'Error messages'
+            href: '/accessibility/inclusive-language',
+            text: 'Inclusive language'
           },
           {
-            href: '/accessibility/keyboard',
-            text: 'Keyboard basics'
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
+        ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/audio-and-video',
+            text: 'Audio and video'
           },
           {
-            href: '/accessibility/keyboard/tab-navigation',
-            text: '- Tab navigation'
+            href: '/accessibility/colour-and-contrast',
+            text: 'Colour and contrast'
           },
           {
-            href: '/accessibility/keyboard/focus',
-            text: '- Focus'
-          },
-          {
-            href: '/accessibility/keyboard/skip-to-content',
-            text: '- Skip to content links'
-          },
-          {
-            href: '/accessibility/keyboard/character-key-shortcuts',
-            text: '- Character key shortcuts'
-          },
-          {
-            href: '/accessibility/keyboard/pointer-gestures',
-            text: '- Pointer gestures'
-          },
-          {
-            href: '/accessibility/timeouts',
-            text: 'Timeouts'
+            href: '/accessibility/images',
+            text: 'Images'
           }
         ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/audio-and-video',
-              text: 'Audio and video'
-            },
-            {
-              href: '/accessibility/colour-and-contrast',
-              text: 'Colour and contrast'
-            },
-            {
-              href: '/accessibility/images',
-              text: 'Images'
-            },
-          ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
           <NavigationMenu items={[
             {

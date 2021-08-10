@@ -32,47 +32,51 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/error-messages',
+          text: 'Error messages'
+        },
+        {
+          href: '/accessibility/keyboard',
+          text: 'Keyboard basics'
+        },
+        {
+          href: '/accessibility/keyboard/tab-navigation',
+          text: '- Tab navigation'
+        },
+        {
+          href: '/accessibility/keyboard/focus',
+          text: '- Focus'
+        },
+        {
+          href: '/accessibility/keyboard/skip-to-content',
+          text: '- Skip to content links'
+        },
+        {
+          href: '/accessibility/keyboard/character-key-shortcuts',
+          text: '- Character key shortcuts'
+        },
+        {
+          href: '/accessibility/keyboard/pointer-gestures',
+          text: '- Pointer gestures'
+        },
+        {
+          href: '/accessibility/timeouts',
+          text: 'Timeouts'
+        }
+      ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
         <NavigationMenu items={[
           {
-            href: '/accessibility/error-messages',
-            text: 'Error messages'
+            href: '/accessibility/inclusive-language',
+            text: 'Inclusive language'
           },
           {
-            href: '/accessibility/keyboard',
-            text: 'Keyboard basics'
+            href: '/accessibility/readability',
+            text: 'Readability'
           },
-          {
-            href: '/accessibility/keyboard/tab-navigation',
-            text: '- Tab navigation'
-          },
-          {
-            href: '/accessibility/keyboard/focus',
-            text: '- Focus'
-          },
-          {
-            href: '/accessibility/keyboard/skip-to-content',
-            text: '- Skip to content links'
-          },
-          {
-            href: '/accessibility/keyboard/character-key-shortcuts',
-            text: '- Character key shortcuts'
-          },
-          {
-            href: '/accessibility/keyboard/pointer-gestures',
-            text: '- Pointer gestures'
-          },
-          {
-            href: '/accessibility/timeouts',
-            text: 'Timeouts'
-          }
         ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/inclusive-language',
-              text: 'Inclusive language'
-            },
-          ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
         <NavigationMenu items={[
           {
