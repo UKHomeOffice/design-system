@@ -165,12 +165,12 @@ const Page: FC<PageProps> = ({ location }) => (
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Dyslexic</td>
         <td className="govuk-table__cell">May struggle with longer paragraphs or more complicated sentences; may be using text-to-speech software</td>
-        <td className="govuk-table__cell">Short, simple sentences, broken up with clear heading<br /><br />Language codes to help the software pronounce words correctly</td>
+        <td className="govuk-table__cell">Short, simple sentences, broken up with clear headings<br /><br />Language codes to help the software pronounce words correctly</td>
         </tr>
 
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Non-native English speaker</td>
-        <td className="govuk-table__cell">May have lower vocabulary or be using translation software<br /><br />May be a BSL speaker</td>
+        <td className="govuk-table__cell">May have limited vocabulary or be using translation software<br /><br />May be a BSL speaker</td>
         <td className="govuk-table__cell">Clear and simple language<br /><br />Language codes to aid translation software<br /><br />BSL video versions</td>
         </tr>
 
@@ -187,7 +187,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <h3>Keep it simple</h3>
 
 <p>Follow the <A href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk">GOV.UK best practice guidance</A> for writing content. Usually we recommend writing for a maximum reading age of 9, even if you are writing for a specialist audience. </p>
-<p>Microsoft Word has a reading-age checker within the spellcheck function – there will be a score at the end of the checker, which you can interpret with a <A href="https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/">conversion table</A>. See more <a href="#tools">readability tools</a> below.</p>
+<p>Microsoft Word has a reading-age checker within the spellcheck function (see following image)– there will be a score at the end of the checker, which you can interpret with a <A href="https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/">conversion table</A>. See more <a href="#tools">readability tools</a> below.</p>
 
 <div className="govuk-grid-row">
 <div className="govuk-grid-column-two-thirds">
@@ -197,7 +197,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <br />
 
 <h3>Abbreviations</h3>
-<p>If you need to use abbreviations, define them on their first use, at the start of a page or the start of a journey. But it’s best to avoid them if you can – for example, it may be better to shorten “Biometric residence permits” to simply “permits” rather than “BRPs”.</p>
+<p>If you need to use abbreviations, define them on their first use, at the start of a page or the start of a journey. But it’s best to avoid them if you can – for example, it may be better to shorten “Immigration health surcharge” to simply “healthcare surcharge” rather than “IHS”.</p>
 
 <h3>Coding the language</h3>
 <p>Each web page must have the language set in the html code. This should be an attribute in the first line of html code, in the format <code>&lt;html lang=”en”&gt;</code>. If the primary language of the page is not English, adjust this language code to match. </p>
