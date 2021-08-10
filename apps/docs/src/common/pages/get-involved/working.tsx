@@ -56,11 +56,11 @@ const Page: FC<PageProps> = ({ location }) => (
 
           <p>The Home Office design system working group meets once a month to discuss ways to develop and improve the Home Office design system.</p>
 
-          <p>The working group also helps support new design proposals, and encourage the communities to <A href="/getinvolved/propose">get involved and contribute.</A></p>
+          <p>The working group also helps support new design proposals, and encourage the communities to get involved and contribute.</p>
 
           <p>It is a cross-functional team made up of interaction and content design, user research, accessibility, and front-end development.</p>
 
-          <p>You can contact the working group on the Home Office #ho-design-system slack channel, or email the design system working group on <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
+          <p>You can contact the working group on the Home Office #ho-design-system slack channel, or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
     </div>
   </div>
 );

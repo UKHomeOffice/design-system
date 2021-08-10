@@ -42,9 +42,9 @@ export const Footer: FC<FooterProps> = ({
               <ul id="navigation" className={classes('navigation-list')}>
                 {navigation.map((v, i) => (
                   <li key={i} className={classes('navigation-item', v.active ? 'active' : undefined)}>
-                    <A classBlock="hods-footer__link" href={v.href} title={v.title}>
+                    <a classBlock="hods-footer__link" href={v.href} title={v.title}>
                       {v.text}
-                    </A>
+                    </a>
                   </li>
                 ))}
               </ul>

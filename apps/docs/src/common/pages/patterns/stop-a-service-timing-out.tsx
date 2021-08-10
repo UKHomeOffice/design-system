@@ -72,7 +72,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Adding content to a new page instead of showing it in a modal should be the default
       approach.</p>
       <p>Modals can be useful when you need to draw a user's attention to something, for example
-      timeout warnings. Please discuss with the wider community or email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> before
+      timeout warnings. Please discuss with the wider community or email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> before
       using this pattern.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
@@ -102,7 +102,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on the Slack channel
         #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
+        email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
       </div>
 
     </div>

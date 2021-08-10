@@ -59,7 +59,7 @@ updates. This helps when working on mutliple packages at the same time.
 Your documentation
 ------------------
 
-Your project comes with its own [documentation application] to allow you
+Your project comes with its own documentation application to allow you
 to easily document your project, including any components that you create.
 
 You can run it as you would any other application in your project:
