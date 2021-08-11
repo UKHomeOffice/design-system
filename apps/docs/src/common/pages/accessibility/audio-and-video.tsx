@@ -106,7 +106,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Accessibility</span>
         Audio and video
       </h1>
-      <p>It's important to consider how people with different access needs will use media content.</p>
+      <p>It’s important to consider how people with different access needs will use media content.</p>
 
       <h2>Helping everyone</h2>
       <p>Making your audio and video content accessible can benefit users with and without a disability.</p>
@@ -187,7 +187,7 @@ and a transcript. </p>
 <p>Do: </p>
 
 <ul>
-<li>make sure speech can be clearly heard and there's good separation from any background noise </li>
+<li>make sure speech can be clearly heard and there’s good separation from any background noise </li>
 
 <li>make sure information makes sense to people who cannot see the video by being as descriptive as possible in the main audio </li>
 
@@ -241,7 +241,7 @@ and a transcript. </p>
 
 <li>position the transcript next to the video or clearly link to it </li>
 
-<li>create a transcript that's accessible</li>
+<li>create a transcript that’s accessible</li>
 </ul>
 
 <h3>Audio description</h3>

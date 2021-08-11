@@ -106,7 +106,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <div className="govuk-grid-column-three-quarters">
       <h1>
         <span className="caption">Accessibility</span>
-        'Skip to content' links
+        ‘Skip to content’ links
       </h1>
       <p>For keyboard users, having to repeatedly move through the same navigation menu every time they start a new page can be frustrating.</p>
       <p>This is why ‘skip to content’ links exist. The first tab move you make on each page should show a link at the top of the page that says ‘Skip to content’ (or similar) and moves the user to the main part of the page.</p>
@@ -117,7 +117,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
       </div>
       <br />
-            <p>You can test this by pressing enter on the 'skip to content' link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
+            <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
             <p>Read more on the WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</a>.</p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-two-thirds">

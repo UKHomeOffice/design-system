@@ -197,16 +197,16 @@ const Page: FC<PageProps> = ({ location }) => (
 <br />
 
 <h3>Abbreviations</h3>
-<p>If you need to use abbreviations, define them on their first use, at the start of a page or the start of a journey. But it’s best to avoid them if you can – for example, it may be better to shorten “Immigration health surcharge” to simply “healthcare surcharge” rather than “IHS”.</p>
+<p>If you need to use abbreviations, define them on their first use, at the start of a page or the start of a journey. But it’s best to avoid them if you can – for example, it may be better to shorten ‘Immigration health surcharge’ to simply ‘healthcare surcharge’ rather than ‘IHS’.</p>
 
 <h3>Coding the language</h3>
-<p>Each web page must have the language set in the html code. This should be an attribute in the first line of html code, in the format <code>&lt;html lang=”en”&gt;</code>. If the primary language of the page is not English, adjust this language code to match. </p>
+<p>Each web page must have the language set in the html code. This should be an attribute in the first line of html code, in the format <code>&lt;html lang="en"&gt;</code>. If the primary language of the page is not English, adjust this language code to match. </p>
 <p><A href="https://r12a.github.io/app-subtags/">List of language codes</A></p>
-<p>For any content within a page that is a different language, you’ll need to set the language on those words directly. Again, use a language attribute in a tag – for example <code>&lt;span lang=”cy”&gt;</code> for a Welsh word or sentence on your page.</p>
+<p>For any content within a page that is a different language, you’ll need to set the language on those words directly. Again, use a language attribute in a tag – for example <code>&lt;span lang="cy"&gt;</code> for a Welsh word or sentence on your page.</p>
 
 <h3 id="tools">Readability tools</h3>
 <ul>
-  <li><A href="https://govspeak-preview.herokuapp.com">Govspeak preview</A> – use is a simplified 'markup' language based on Markdown, to help format content for GOV.UK</li>
+  <li><A href="https://govspeak-preview.herokuapp.com">Govspeak preview</A> – use is a simplified ‘markup‘ language based on Markdown, to help format content for GOV.UK</li>
   <li><A href="https://www.grammarly.com">Grammarly</A> – writing assistant</li>
   <li><A href="https://www.webfx.com/tools/read-able/">Readablel (webfx.com)</A> – readability test tool </li>
   <li><A href="https://rewordify.com/">Rewordify.com</A> -  online software that improves reading, learning, and teaching </li>
