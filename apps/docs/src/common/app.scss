@@ -3,6 +3,10 @@
 $max-width: 1160px;
 $margin: 30px;
 
+code{
+  @include govuk-font(19);
+  font-family: Courier, Consolas, serif;
+}
 
 .hods-width-container {
   max-width: $max-width;
