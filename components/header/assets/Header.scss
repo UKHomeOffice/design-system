@@ -37,10 +37,6 @@
     @include govuk-media-query($from: tablet) {
       display: flex;
     }
-
-    > *:last-child {
-      margin-right: auto;
-    }
   }
 
   &__logo {
@@ -48,17 +44,15 @@
     width: 110px;
     height: auto;
     margin-right: 0;
-    margin-bottom: govuk-spacing(3);
+    //margin-bottom: govuk-spacing(3);
     line-height: 0;
 
     @include govuk-media-query($from: mobile, $until: tablet) {
       margin-right: 10%;
-      margin-bottom: 0;
     }
     @include govuk-media-query($from: tablet) {
       width: 150px;
       margin-right: 20%;
-      margin-bottom: 0;
     }
   }
 
@@ -115,12 +109,11 @@
       height: 50px;
       float: left;
       line-height: 50px;
-      margin: 0;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
 
       &--active {
-        border-bottom: 3px solid #0b0c0c !important;
+        border-bottom: 3px solid #0b0c0c;
         font-weight: bold;
 
         a:hover {
@@ -133,11 +126,10 @@
       }
 
       a {
-        @include govuk-responsive-padding(0, "top");
-        @include govuk-responsive-padding(0, "bottom");
+        @include govuk-responsive-padding(2, "top");
+        @include govuk-responsive-padding(2, "bottom");
         @include govuk-responsive-padding(3, "left");
         @include govuk-responsive-padding(3, "right");
-        display: block;
         color: #0b0c0c !important;
         text-decoration: none;
 
