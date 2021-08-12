@@ -131,7 +131,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Do not:</p>
         <ul>
         <li>have links that show the full URL</li>
-        <li>have links that are not clear on destination such as “click here” or “read more”</li>
+        <li>have links that are not clear on destination such as ‘click here’ or ‘read more’</li>
         <li>set links to open in new tab or new window, unless this is necessary for the service (such as separate
           guidance content that the user may want to check against as they go through the service) and you tell users
           that a new tab will open</li>
@@ -186,7 +186,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>Link text needs to clearly show which page it will open when clicked.</p>
 
 <p>It should always make sense by itself and should not rely on surrounding content to be clear on where it goes
-to. This means that link text should say things like 'contact us page' or 'article on Home Office accessibility'.
+to. This means that link text should say things like ‘contact us page’ or ‘article on Home Office accessibility’.
 Each of the three links in the example below clearly explains the action they lead off to.</p>
 
 <div className="govuk-grid-row">
@@ -198,7 +198,7 @@ Each of the three links in the example below clearly explains the action they le
 <p>Link text should not be a URL directly on the page. The only exception to this is when adding links to emails,
 because it’s important that email users know and trust the destination before clicking.</p>
 
-<p>Links should not say things like 'click here’ or 'read more'.</p>
+<p>Links should not say things like ‘click here’ or ‘read more’.</p>
 
 <div className="govuk-grid-row">
 <div className="govuk-grid-column-one-half">
@@ -244,9 +244,9 @@ the link destination, not the image itself.</p>
 
 <p>Does the link do what the user expects when they click it?</p>
 
-<p>It's important that, along with clear link text, a link takes the user to where they expect to go and does not do anything unexpected.</p>
+<p>It’s important that, along with clear link text, a link takes the user to where they expect to go and does not do anything unexpected.</p>
 
-<p>Normally a user expects a link to take them to a new page within the current browser window or tab that they're in.</p>
+<p>Normally a user expects a link to take them to a new page within the current browser window or tab that they’re in.</p>
 
 <p>An example of doing something unexpected is if content opens in a new browser tab or window. If you have to do this you should tell users that this will happen in the link text or with a clearly defined icon.</p>
 
