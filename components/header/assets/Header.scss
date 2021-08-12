@@ -37,6 +37,10 @@
     @include govuk-media-query($from: tablet) {
       display: flex;
     }
+
+    > *:last-child {
+      margin-right: auto;
+    }
   }
 
   &__logo {
@@ -44,7 +48,7 @@
     width: 110px;
     height: auto;
     margin-right: 0;
-    //margin-bottom: govuk-spacing(3);
+    margin-bottom: govuk-spacing(3);
     line-height: 0;
 
     @include govuk-media-query($from: mobile, $until: tablet) {
@@ -109,11 +113,12 @@
       height: 50px;
       float: left;
       line-height: 50px;
+      margin: 0;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
 
       &--active {
-        border-bottom: 3px solid #0b0c0c;
+        border-bottom: 3px solid #0b0c0c !important;
         font-weight: bold;
 
         a:hover {
