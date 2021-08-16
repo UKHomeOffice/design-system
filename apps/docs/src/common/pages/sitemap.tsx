@@ -148,22 +148,10 @@ const getInvolved = Object.keys(getInvolvedHref).sort().map(v => ({
   text: getInvolvedTitle[v]
 }));
 
-
 export const title = 'Sitemap';
 const description = 'Overview of the Home Office Design System';
 
-const Page: FC<PageProps> = ({ routes }) => {
-  const compare = (a, b) => (
-    a.href > b.href
-           ? 1
-           : -1
-  );
-  const pages = routes
-    .map(e => ({
-      href: e.href,
-      text: e.title
-    }))
-    .sort(compare);
+const Page: FC<PageProps> = () => {
 
   return (
     <Fragment>
