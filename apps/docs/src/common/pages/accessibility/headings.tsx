@@ -75,6 +75,10 @@ const Page: FC<PageProps> = ({ location }) => (
             href: '/accessibility/inclusive-language',
             text: 'Inclusive language'
           },
+          {
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
         ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
         <NavigationMenu items={[
@@ -164,7 +168,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <br />
 <h3>Nested headings</h3>
 
-<p>An important aspect of structure is how your headings are ‘nested’. Starting with a “Heading 1” (<code>&lt;h1&gt;</code>) for the main page title, subheadings should sit below this in a sequential order.
+<p>An important aspect of structure is how your headings are ‘nested’. Starting with a ‘Heading 1’ (<code>&lt;h1&gt;</code>) for the main page title, subheadings should sit below this in a sequential order.
 
 Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form: </p>
 <ul className="govuk-list">
@@ -196,7 +200,7 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 
 <p>Similarly, if part of your content works as a heading (for example, to head up content blocks in the footer, or in a sidebar list of related links) then you must use the correct HTML code as well as any visual styling. If you don’t, a screenreader will not recognise this as a heading and the user may miss it.</p>
 
-<p>Where sections are broken up with visual design alone, it may be worth adding a screenreader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">'visually hidden’ style in CSS.</a></p>
+<p>Where sections are broken up with visual design alone, it may be worth adding a screenreader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS.</a></p>
 <br />
 
 <div className="contact-us">

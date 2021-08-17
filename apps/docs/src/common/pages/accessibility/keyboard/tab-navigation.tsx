@@ -76,22 +76,26 @@ const Page: FC<PageProps> = ({ location }) => (
             href: '/accessibility/inclusive-language',
             text: 'Inclusive language'
           },
+          {
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
         ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/audio-and-video',
-              text: 'Audio and video'
-            },
-            {
-              href: '/accessibility/colour-and-contrast',
-              text: 'Colour and contrast'
-            },
-            {
-              href: '/accessibility/images',
-              text: 'Images'
-            }
-          ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/audio-and-video',
+            text: 'Audio and video'
+          },
+          {
+            href: '/accessibility/colour-and-contrast',
+            text: 'Colour and contrast'
+          },
+          {
+            href: '/accessibility/images',
+            text: 'Images'
+          }
+        ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
           <NavigationMenu items={[
             {
@@ -122,7 +126,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2>Interactive elements</h2>
       <p>Interactive elements are anything on the page that a user can interact with. This could be a link or button, an image to be expanded, a form input field, calendar or any number of other things.</p>
-      <p>It's important that every interactive element on a page is accessible by keyboard. You can check this by looking out for the focus indication, or if focus indication is not present you can also try and confirm if an element is accessible by the keyboard by looking in the bottom left of your screen.</p>
+      <p>It’s important that every interactive element on a page is accessible by keyboard. You can check this by looking out for the focus indication, or if focus indication is not present you can also try and confirm if an element is accessible by the keyboard by looking in the bottom left of your screen.</p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-three-quarters">
         <img src={tabImage02} alt="Screenshot of GOV.UK - https://www.gov.uk/guidance/travel-advice-novel-coronavirus" className="image-examples" />

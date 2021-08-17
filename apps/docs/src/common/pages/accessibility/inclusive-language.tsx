@@ -34,62 +34,66 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
-        <NavigationMenu items={[
-          {
-            href: '/accessibility/error-messages',
-            text: 'Error messages'
-          },
-          {
-            href: '/accessibility/keyboard',
-            text: 'Keyboard basics'
-          },
-          {
-            href: '/accessibility/keyboard/tab-navigation',
-            text: '- Tab navigation'
-          },
-          {
-            href: '/accessibility/keyboard/focus',
-            text: '- Focus'
-          },
-          {
-            href: '/accessibility/keyboard/skip-to-content',
-            text: '- Skip to content links'
-          },
-          {
-            href: '/accessibility/keyboard/character-key-shortcuts',
-            text: '- Character key shortcuts'
-          },
-          {
-            href: '/accessibility/keyboard/pointer-gestures',
-            text: '- Pointer gestures'
-          },
-          {
-            href: '/accessibility/timeouts',
-            text: 'Timeouts'
-          }
-        ]} />
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/error-messages',
+          text: 'Error messages'
+        },
+        {
+          href: '/accessibility/keyboard',
+          text: 'Keyboard basics'
+        },
+        {
+          href: '/accessibility/keyboard/tab-navigation',
+          text: '- Tab navigation'
+        },
+        {
+          href: '/accessibility/keyboard/focus',
+          text: '- Focus'
+        },
+        {
+          href: '/accessibility/keyboard/skip-to-content',
+          text: '- Skip to content links'
+        },
+        {
+          href: '/accessibility/keyboard/character-key-shortcuts',
+          text: '- Character key shortcuts'
+        },
+        {
+          href: '/accessibility/keyboard/pointer-gestures',
+          text: '- Pointer gestures'
+        },
+        {
+          href: '/accessibility/timeouts',
+          text: 'Timeouts'
+        }
+      ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
         <NavigationMenu items={[
           {
             href: '/accessibility/inclusive-language',
             text: 'Inclusive language'
           },
+          {
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
         ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/audio-and-video',
-              text: 'Audio and video'
-            },
-            {
-              href: '/accessibility/colour-and-contrast',
-              text: 'Colour and contrast'
-            },
-            {
-              href: '/accessibility/images',
-              text: 'Images'
-            },
-          ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/audio-and-video',
+            text: 'Audio and video'
+          },
+          {
+            href: '/accessibility/colour-and-contrast',
+            text: 'Colour and contrast'
+          },
+          {
+            href: '/accessibility/images',
+            text: 'Images'
+          }
+        ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
           <NavigationMenu items={[
             {
@@ -178,7 +182,7 @@ const Page: FC<PageProps> = ({ location }) => (
               <h3>Race ethnicity and religion</h3>
                 <p>Do:</p>
                 <ul>
-                <li>only refer to people's race ethnicity or religion if it's relevant to the content </li>
+                <li>only refer to people’s race ethnicity or religion if it’s relevant to the content </li>
                 <li>ask how people identify themselves, and be aware of complexities within racial, ethnic, and religious identities </li>
                 <li>recognise the negative impacts of using broad terminology to homogenise diverse communities</li>
                 </ul>

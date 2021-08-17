@@ -75,6 +75,10 @@ const Page: FC<PageProps> = ({ location }) => (
             href: '/accessibility/inclusive-language',
             text: 'Inclusive language'
           },
+          {
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
         ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
         <NavigationMenu items={[
@@ -113,7 +117,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p>For blind and visually impaired people, missing out on these images can sometime mean missing out on important information or instructions for completing a task.</p>
 
-      <p>It's important to provide alternatives to images that help these users.</p>
+      <p>It’s important to provide alternatives to images that help these users.</p>
 
 
 <br />
@@ -191,7 +195,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <li>functional images that act as a link: describe where the link will take the user</li>
 </ul>
 
-<p>To check if an image has the necessary alt text, right click on the image and select ‘Inspect’. Check the image tag to see if there's an alt tag and whether its text description is appropriate for the image.</p>
+<p>To check if an image has the necessary alt text, right click on the image and select ‘Inspect’. Check the image tag to see if there’s an alt tag and whether its text description is appropriate for the image.</p>
 
 
 <h3>Text in images</h3>
@@ -202,7 +206,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>Sometimes we use graphs or diagrams to explain <A href="https://www.w3.org/WAI/tutorials/images/complex/">complicated topics or data</A>. These can be hard to describe and usually cannot be done so effectively using alt text alone.</p>
 
-<p>Instead, you should think about the information you're trying to convey. Perhaps think about how you would explain the point of the image to people if you were showing it in a presentation and use this as the basis of your description.</p>
+<p>Instead, you should think about the information you’re trying to convey. Perhaps think about how you would explain the point of the image to people if you were showing it in a presentation and use this as the basis of your description.</p>
 
 <p>With complex images, put a thorough description of the graph or diagram in context in the surrounding text. You should also use alt text to let users know where this description is. Do not use the <code>&lt;longdesc&gt;</code> attribute to provide a longer description as this is no longer recommended.</p>
 

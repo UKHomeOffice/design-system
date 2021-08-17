@@ -36,62 +36,66 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/error-messages',
+          text: 'Error messages'
+        },
+        {
+          href: '/accessibility/keyboard',
+          text: 'Keyboard basics'
+        },
+        {
+          href: '/accessibility/keyboard/tab-navigation',
+          text: '- Tab navigation'
+        },
+        {
+          href: '/accessibility/keyboard/focus',
+          text: '- Focus'
+        },
+        {
+          href: '/accessibility/keyboard/skip-to-content',
+          text: '- Skip to content links'
+        },
+        {
+          href: '/accessibility/keyboard/character-key-shortcuts',
+          text: '- Character key shortcuts'
+        },
+        {
+          href: '/accessibility/keyboard/pointer-gestures',
+          text: '- Pointer gestures'
+        },
+        {
+          href: '/accessibility/timeouts',
+          text: 'Timeouts'
+        }
+      ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
         <NavigationMenu items={[
           {
-            href: '/accessibility/error-messages',
-            text: 'Error messages'
+            href: '/accessibility/inclusive-language',
+            text: 'Inclusive language'
           },
           {
-            href: '/accessibility/keyboard',
-            text: 'Keyboard basics'
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
+        ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/audio-and-video',
+            text: 'Audio and video'
           },
           {
-            href: '/accessibility/keyboard/tab-navigation',
-            text: '- Tab navigation'
+            href: '/accessibility/colour-and-contrast',
+            text: 'Colour and contrast'
           },
           {
-            href: '/accessibility/keyboard/focus',
-            text: '- Focus'
-          },
-          {
-            href: '/accessibility/keyboard/skip-to-content',
-            text: '- Skip to content links'
-          },
-          {
-            href: '/accessibility/keyboard/character-key-shortcuts',
-            text: '- Character key shortcuts'
-          },
-          {
-            href: '/accessibility/keyboard/pointer-gestures',
-            text: '- Pointer gestures'
-          },
-          {
-            href: '/accessibility/timeouts',
-            text: 'Timeouts'
+            href: '/accessibility/images',
+            text: 'Images'
           }
         ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/inclusive-language',
-              text: 'Inclusive language'
-            },
-          ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/audio-and-video',
-              text: 'Audio and video'
-            },
-            {
-              href: '/accessibility/colour-and-contrast',
-              text: 'Colour and contrast'
-            },
-            {
-              href: '/accessibility/images',
-              text: 'Images'
-            }
-          ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
           <NavigationMenu items={[
             {
@@ -105,7 +109,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Accessibility</span>
         Error messages
       </h1>
-      <p>When a user gets something wrong on a page, it's important they know about it so they can fix it.</p>
+      <p>When a user gets something wrong on a page, it’s important they know about it so they can fix it.</p>
       <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/notifications/"> notifications and feedback</A> have on user interaction.</p>
 
 
@@ -161,7 +165,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Cognitive, language and learning disability, people with low digital literacy</td>
-        <td className="govuk-table__cell">May be easily confused by unexpected things happening when there's an error</td>
+        <td className="govuk-table__cell">May be easily confused by unexpected things happening when there’s an error</td>
         <td className="govuk-table__cell">Clear, descriptive error messages that work in a consistent way</td>
         </tr>
 
@@ -203,7 +207,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>A content designer should always be involved in writing your error messages.</p>
 
 
-<h3>Say what's gone wrong</h3>
+<h3>Say what’s gone wrong</h3>
 
 <p>You should use simple language to explain the error and what has caused it.</p>
 

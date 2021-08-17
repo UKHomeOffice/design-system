@@ -79,22 +79,26 @@ const Page: FC<PageProps> = ({ location }) => (
             href: '/accessibility/inclusive-language',
             text: 'Inclusive language'
           },
+          {
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
         ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/audio-and-video',
-              text: 'Audio and video'
-            },
-            {
-              href: '/accessibility/colour-and-contrast',
-              text: 'Colour and contrast'
-            },
-            {
-              href: '/accessibility/images',
-              text: 'Images'
-            }
-          ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/audio-and-video',
+            text: 'Audio and video'
+          },
+          {
+            href: '/accessibility/colour-and-contrast',
+            text: 'Colour and contrast'
+          },
+          {
+            href: '/accessibility/images',
+            text: 'Images'
+          }
+        ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
           <NavigationMenu items={[
             {
@@ -110,14 +114,14 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p>All users need to know where they are as they navigate their way through a document or web page, whether this is via keyboard or a mouse.</p>
       <h2>Focus indication</h2>
-      <p>Keyboard users need to know where they are on the page, just as the mouse cursor does for mouse users. The way to show this is by ‘focus indication’. When you press the tab key and move through a page, you should see a highlighted box surrounding the element you're currently focused on.</p>
+      <p>Keyboard users need to know where they are on the page, just as the mouse cursor does for mouse users. The way to show this is by ‘focus indication’. When you press the tab key and move through a page, you should see a highlighted box surrounding the element you’re currently focused on.</p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
         <img src={focusImage01} alt="Image of focus indication on link text on GOV.UK" className="image-examples" />
       </div>
       </div>
       <br />
-      <p>In the example here you can see which of the links is selected because it's surrounded by a bright yellow box that looks very different to the content around it.</p>
+      <p>In the example here you can see which of the links is selected because it’s surrounded by a bright yellow box that looks very different to the content around it.</p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-two-thirds">
       </div>
@@ -143,7 +147,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>Focus order</h2>
       <p>Keyboard users move through a page using a set range of navigation orders. It is not as easy to freely move about the page as it is with a mouse.</p>
       <p>This means your content should be in a sensible order - normally left to right, top to bottom.</p>
-      <p>When you're testing with the tab key, make sure that all interactive elements are selected and that you're moving through the page in what you think is a sensible order. Your focus should not be jumping around the page.</p>
+      <p>When you’re testing with the tab key, make sure that all interactive elements are selected and that you’re moving through the page in what you think is a sensible order. Your focus should not be jumping around the page.</p>
       <p>When implementing <a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html">modal dialogs</a>, the focus order should be contained within the window until the user closes or dismisses it.</p>
 
       <h3>Good example</h3>

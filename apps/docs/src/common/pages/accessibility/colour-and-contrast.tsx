@@ -35,62 +35,66 @@ const Page: FC<PageProps> = ({ location }) => (
         }
       ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/error-messages',
+          text: 'Error messages'
+        },
+        {
+          href: '/accessibility/keyboard',
+          text: 'Keyboard basics'
+        },
+        {
+          href: '/accessibility/keyboard/tab-navigation',
+          text: '- Tab navigation'
+        },
+        {
+          href: '/accessibility/keyboard/focus',
+          text: '- Focus'
+        },
+        {
+          href: '/accessibility/keyboard/skip-to-content',
+          text: '- Skip to content links'
+        },
+        {
+          href: '/accessibility/keyboard/character-key-shortcuts',
+          text: '- Character key shortcuts'
+        },
+        {
+          href: '/accessibility/keyboard/pointer-gestures',
+          text: '- Pointer gestures'
+        },
+        {
+          href: '/accessibility/timeouts',
+          text: 'Timeouts'
+        }
+      ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
         <NavigationMenu items={[
           {
-            href: '/accessibility/error-messages',
-            text: 'Error messages'
+            href: '/accessibility/inclusive-language',
+            text: 'Inclusive language'
           },
           {
-            href: '/accessibility/keyboard',
-            text: 'Keyboard basics'
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
+        ]} />
+      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
+        <NavigationMenu items={[
+          {
+            href: '/accessibility/audio-and-video',
+            text: 'Audio and video'
           },
           {
-            href: '/accessibility/keyboard/tab-navigation',
-            text: '- Tab navigation'
+            href: '/accessibility/colour-and-contrast',
+            text: 'Colour and contrast'
           },
           {
-            href: '/accessibility/keyboard/focus',
-            text: '- Focus'
-          },
-          {
-            href: '/accessibility/keyboard/skip-to-content',
-            text: '- Skip to content links'
-          },
-          {
-            href: '/accessibility/keyboard/character-key-shortcuts',
-            text: '- Character key shortcuts'
-          },
-          {
-            href: '/accessibility/keyboard/pointer-gestures',
-            text: '- Pointer gestures'
-          },
-          {
-            href: '/accessibility/timeouts',
-            text: 'Timeouts'
+            href: '/accessibility/images',
+            text: 'Images'
           }
         ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/inclusive-language',
-              text: 'Inclusive language'
-            },
-          ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/audio-and-video',
-              text: 'Audio and video'
-            },
-            {
-              href: '/accessibility/colour-and-contrast',
-              text: 'Colour and contrast'
-            },
-            {
-              href: '/accessibility/images',
-              text: 'Images'
-            }
-          ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
           <NavigationMenu items={[
             {
@@ -116,7 +120,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Do:</p>
         <ul>
         <li>check your website colour scheme for contrast standards (standard text 4.5:1, everything else 3:1)</li>
-        <li>make sure your website works in Window's high-contrast mode</li>
+        <li>make sure your website works in Windows high-contrast mode</li>
         <li>check that you can clearly see where focus indication is on a screen at a glance</li>
         <li>ensure that users can change colours with Operating System (OS) or browser settings</li>
         <li>use standard GOV.UK components</li>
@@ -162,7 +166,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <h3>Text contrast</h3>
 <p>The contrast requirement for text is 4.5:1 against the surrounding background colour.</p>
 <p>For most GOV.UK services we use black text against a white background. This combination has a contrast ratio of 21:1, easily meeting the requirements.</p>
-<p>Alternatively, bad contrast may be something like the below.</p>
+<p>Alternatively, bad contrast may be something like the following.</p>
 <p style={{color: "yellow"}}>Bad example text in yellow. Have you ever seen slides in a presentation where the speaker has yellow text on a white background? It makes it almost impossible to see for many users.</p>
 <p>For large text (above 18pt font size), or non-text elements such as focus indication or icons, the contrast requirement is 3:1.</p>
 
@@ -187,7 +191,7 @@ const Page: FC<PageProps> = ({ location }) => (
 </div>
 <br />
 
-<p>Most automated testing tools such as Microsoft <A href="https://accessibilityinsights.io/">Accessibility Insights</A> check for contrast issues. These can be useful for quick checks on a page, but do not only rely on automated tools, you should manually check contrast ratios as well.</p>
+<p>Most automated testing tools such as Microsoft <A href="https://accessibilityinsights.io/">Accessibility Insights</A> check for contrast issues. These can be useful for quick checks on a page, but do not only rely on automated tools – you should manually check contrast ratios as well.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

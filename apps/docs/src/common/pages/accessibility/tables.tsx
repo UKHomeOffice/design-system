@@ -76,6 +76,10 @@ const Page: FC<PageProps> = ({ location }) => (
             href: '/accessibility/inclusive-language',
             text: 'Inclusive language'
           },
+          {
+            href: '/accessibility/readability',
+            text: 'Readability'
+          },
         ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
         <NavigationMenu items={[
@@ -227,7 +231,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>For more guidance on more complex tables, such as tables with irregular headers and multi-level headers, see <A href="https://www.w3.org/WAI/tutorials/tables/">Tables concepts</A>.</p>
 
-<p>If you cannot use semantic tables (for instance, if you're working with a complex, highly custom component), ARIA roles can be used to replicate the structure of a table. However, you should avoid this as it adds complexity. If you need to use ARIA, please see the <A href="https://www.w3.org/TR/wai-aria-practices-1.1/#table">Table Design Pattern in WAI-ARIA Authoring Practices 1.1</A>.</p>
+<p>If you cannot use semantic tables (for instance, if you’re working with a complex, highly custom component), ARIA roles can be used to replicate the structure of a table. However, you should avoid this as it adds complexity. If you need to use ARIA, please see the <A href="https://www.w3.org/TR/wai-aria-practices-1.1/#table">Table Design Pattern in WAI-ARIA Authoring Practices 1.1</A>.</p>
 
 <h3>Table text</h3>
 
