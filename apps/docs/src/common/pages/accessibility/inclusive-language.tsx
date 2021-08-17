@@ -182,7 +182,7 @@ const Page: FC<PageProps> = ({ location }) => (
               <h3>Race ethnicity and religion</h3>
                 <p>Do:</p>
                 <ul>
-                <li>only refer to people's race ethnicity or religion if it's relevant to the content </li>
+                <li>only refer to people’s race ethnicity or religion if it’s relevant to the content </li>
                 <li>ask how people identify themselves, and be aware of complexities within racial, ethnic, and religious identities </li>
                 <li>recognise the negative impacts of using broad terminology to homogenise diverse communities</li>
                 </ul>

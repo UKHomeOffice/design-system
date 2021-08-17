@@ -48,7 +48,7 @@ const Page: FC<PageProps> = ({ location }) => (
           </ul>
           <p>You should use:</p>
           <ul>
-            <li><A href="/styles/templates">Home Office page template</A></li>
+            <li><A href="/components?name=Page">Home Office page template</A></li>
             <li><A href="https://fonts.google.com/specimen/Roboto#standard-styles">Roboto</A> font</li>
             <li><A href="/styles/colour">Home Office colours</A></li>
           </ul>
@@ -69,9 +69,9 @@ const Page: FC<PageProps> = ({ location }) => (
           </ul>
           <p>You should use:</p>
           <ul>
-            <li><A href="/styles/page-template/">GOV.UK page template</A></li>
+            <li><A href="https://design-system.service.gov.uk/styles/page-template/">GOV.UK page template</A></li>
             <li>the crown logo and GDS Transport font</li>
-            <li><A href="/styles/colour/">GOV.UK colours</A></li>
+            <li><A href="https://design-system.service.gov.uk/styles/colour/">GOV.UK colours</A></li>
           </ul>
           <p>Note: independent branding is used for services that are granted a GOV.UK exemption.</p>
         </div>
