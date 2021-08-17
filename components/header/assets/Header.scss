@@ -53,10 +53,12 @@
 
     @include govuk-media-query($from: mobile, $until: tablet) {
       margin-right: 10%;
+      margin-bottom: 0;
     }
     @include govuk-media-query($from: tablet) {
       width: 150px;
       margin-right: 20%;
+      margin-bottom: 0;
     }
   }
 
