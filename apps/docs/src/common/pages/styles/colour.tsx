@@ -53,7 +53,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
 
       <p className="govuk-body">Always use the Home Office colour palette when you are designing and building internal services and products. For public facing and transactional sites use the <A href="https://design-system.service.gov.uk/styles/colour/">GOV.UK colour palette</A>.</p>
-      <p className="govuk-body">Ask <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> if you have any questions.</p>
+      <p className="govuk-body">Ask <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> if you have any questions.</p>
 
       {/* PRIMARY  */}
 

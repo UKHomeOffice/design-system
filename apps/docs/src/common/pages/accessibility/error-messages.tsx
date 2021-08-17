@@ -109,7 +109,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Accessibility</span>
         Error messages
       </h1>
-      <p>When a user gets something wrong on a page, it's important they know about it so they can fix it.</p>
+      <p>When a user gets something wrong on a page, it’s important they know about it so they can fix it.</p>
       <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/notifications/"> notifications and feedback</A> have on user interaction.</p>
 
 
@@ -165,7 +165,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Cognitive, language and learning disability, people with low digital literacy</td>
-        <td className="govuk-table__cell">May be easily confused by unexpected things happening when there's an error</td>
+        <td className="govuk-table__cell">May be easily confused by unexpected things happening when there’s an error</td>
         <td className="govuk-table__cell">Clear, descriptive error messages that work in a consistent way</td>
         </tr>
 
@@ -207,7 +207,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>A content designer should always be involved in writing your error messages.</p>
 
 
-<h3>Say what's gone wrong</h3>
+<h3>Say what’s gone wrong</h3>
 
 <p>You should use simple language to explain the error and what has caused it.</p>
 
@@ -254,7 +254,7 @@ You should place keyboard and visual focus at the summary to alert screen reader
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
+  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <a href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</a>.</p>
 </div>
 
     </div>
