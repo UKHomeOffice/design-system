@@ -31,7 +31,7 @@ export const Footer: FC<FooterProps> = ({
   const classes = classBuilder('hods-footer', classBlock, classModifiers, className);
 
   return (
-    <footer {...attrs} className={classes()} role="contentinfo">
+    <footer className={classes()} role="contentinfo">
       <div className={classes('inner')}>
         <div className={classes('container') + ' hods-width-container'}>
           <div className={classes('content')}>
@@ -42,7 +42,7 @@ export const Footer: FC<FooterProps> = ({
               <ul id="navigation" className={classes('navigation-list')}>
                 {navigation.map((v, i) => (
                   <li key={i} className={classes('navigation-item', v.active ? 'active' : undefined)}>
-                    <A classBlock="hods-footer__link" href={v.href} title={v.title}>
+                    <A classBlock={classes('link')} href={v.href} title={v.title}>
                       {v.text}
                     </A>
                   </li>

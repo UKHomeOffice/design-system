@@ -6,9 +6,9 @@ Working on your project
 Your project is a monorepo managed via [pnpm]. You can build multiple
 packages from this one repository. Packages come in the following
 varieties:
-- [Applications] (found in `[apps/]`)
-- [Libraries] (found in `[lib/]`)
-- [Components] (found in `[components/]`)
+- Applications (found in `[apps/]`)
+- Libraries (found in `[lib/]`)
+- Components (found in `[components/]`)
 
 **Note:** If you would like add more varieties you can do so by modifying
 your `[pnpm-workspaces.yaml]` and `[plopfile.js]`.
@@ -59,7 +59,7 @@ updates. This helps when working on mutliple packages at the same time.
 Your documentation
 ------------------
 
-Your project comes with its own [documentation application] to allow you
+Your project comes with its own documentation application to allow you
 to easily document your project, including any components that you create.
 
 You can run it as you would any other application in your project:
@@ -87,9 +87,9 @@ documentation to [Netlify].
 
 [set up your project]: ./get-started
 [pnpm]: https://pnpm.js.org/
-[Applications]: https://not-govuk.netlify.app/
-[Libraries]: https://not-govuk.netlify.app/
-[Components]: https://not-govuk.netlify.app/
+[Applications]: https://not-govuk/
+[Libraries]: https://not-govuk/
+[Components]: https://not-govuk/
 [apps/]: ./apps/
 [lib/]: ./lib/
 [components/]: ./components/
