@@ -87,6 +87,9 @@ documentation to [Netlify].
 
 [set up your project]: ./get-started
 [pnpm]: https://pnpm.js.org/
+[Applications]: https://not-govuk/
+[Libraries]: https://not-govuk/
+[Components]: https://not-govuk/
 [apps/]: ./apps/
 [lib/]: ./lib/
 [components/]: ./components/

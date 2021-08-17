@@ -56,7 +56,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
           <p>The Home Office design system working group meets once a month to discuss ways to develop and improve the Home Office design system.</p>
 
-          <p>The working group also helps support new design proposals, and encourage the communities to get involved and contribute.</p>
+          <p>The working group also helps support new design proposals, and encourage the communities to <a href="/get-involved/suggest">get involved and contribute.</a></p>
 
           <p>It is a cross-functional team made up of interaction and content design, user research, accessibility, and front-end development.</p>
 
