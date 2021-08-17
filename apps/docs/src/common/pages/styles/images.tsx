@@ -60,7 +60,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Images must be relevant to the content, help users understand what they need to do and follow our guidance on the use of <A href="#Alternative text">alternative text</A>.</p>
 
       <h3 className="govuk-heading-m">Sourcing images</h3>
-      <p>Please contact <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> for advice on image use and for original source files.</p>
+      <p>Please contact <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> for advice on image use and for original source files.</p>
 
       <h2 id="Illustrations or representative imagery" className="govuk-heading-l">Illustrations or representative imagery</h2>
       <p className="govuk-body">Illustrations must have a consistent style to create trust. This includes print products as well.</p>
@@ -73,7 +73,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h3 id="related" className="govuk-heading-m">Related</h3>
       <ul className="govuk-list govuk-list--bullet">
-        <li><A href="https://design.homeoffice.gov.uk/patterns/find-information-on-a-document">Find information on a document</A></li>
+        <li><A href="/patterns/find-information-on-document">Find information on a document</A></li>
       </ul>
 
       <h2 id="Photography" className="govuk-heading-l">Photography</h2>
@@ -127,7 +127,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
+        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
       </div>
 
     </div>
