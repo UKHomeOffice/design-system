@@ -12,7 +12,7 @@ describe('Pagination', () => {
 
     let current;
     beforeAll(() => {
-      expect(current = pagination.find('.hods-pagination__link--current')).toHaveLength(1);
+      expect(current = pagination.find('a.hods-pagination__link--current')).toHaveLength(1);
     });
 
     it('is on the correct page', () => {
@@ -20,7 +20,7 @@ describe('Pagination', () => {
     });
 
     it('should not have a link', () => {
-      expect(current.html()).toContain('href=""');
+      expect(current.html()).not.toContain('href=');
     });
 
     const summary = pagination.find('.hods-pagination__summary').text();
@@ -59,7 +59,7 @@ describe('Pagination', () => {
 
     let current;
     beforeAll(() => {
-      expect(current = pagination.find('.hods-pagination__link--current')).toHaveLength(1);
+      expect(current = pagination.find('a.hods-pagination__link--current')).toHaveLength(1);
     });
 
     it('is on the correct page', () => {
@@ -67,7 +67,7 @@ describe('Pagination', () => {
     });
 
     it('should not have a link', () => {
-      expect(current.html()).toContain('href=""');
+      expect(current.html()).not.toContain('href=');
     });
 
     const summary = pagination.find('.hods-pagination__summary').text();
@@ -102,7 +102,7 @@ describe('Pagination', () => {
 
     let current;
     beforeAll(() => {
-      expect(current = pagination.find('.hods-pagination__link--current')).toHaveLength(0);
+      expect(current = pagination.find('a.hods-pagination__link--current')).toHaveLength(0);
     });
   });
 });

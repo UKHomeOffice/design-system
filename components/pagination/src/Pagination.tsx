@@ -1,5 +1,6 @@
 import React, { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
+import { A } from '@not-govuk/link';
 
 import '../assets/Pagination.scss';
 
@@ -53,21 +54,26 @@ export const Pagination: FC<PaginationProps> = ({
         <ul className={ classes('list-items') }>
           { page > 1 ?
             <li className={ classes('item') } id="prevButton" key="prev">
-              <a className={ classes('link') } href={ page > 1 ? hl[1] : "" }>
+              <A className={ classes('link') } href={hl[1]}>
                 <span aria-hidden="true" role="presentation">&laquo;</span> Previous
-              </a>
+              </A>
             </li>
           : null }
           { it.map( i => (
             <li className={ classes('item') } key={i}>
-              { pages[i] < 1 || pages[i] > maxPages ? null : <a className={classes('link', pages[i] === page ? 'current' : undefined)} href={hl[i]}>{pages[i]}</a>}
+              { pages[i] < 1 || pages[i] > maxPages
+                ? null
+                : pages[i]!==page
+                  ? <A className={ classes('link') } href={ hl[i] }>{ pages[i] }</A>
+                  : <a className={ classes('link', 'current') }>{ pages[i] }</a>
+              }
             </li>
           ))}
           { resultsTo == results ? null :
             <li className={ classes('item') } id="nextButton" key="next">
-              <a className={ classes('link') } href={ resultsTo == results ? "" : hl[3] }>
+              <A className={ classes('link') } href={hl[3]}>
                  Next <span aria-hidden="true" role="presentation">&raquo;</span>
-              </a>
+              </A>
             </li>
           }
         </ul>
