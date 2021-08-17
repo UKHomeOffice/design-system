@@ -5,7 +5,7 @@ $margin: 30px;
 
 code{
   @include govuk-font(19);
-  font-family: Courier, Consolas, serif;
+  font-family: monospace;
 }
 
 .hods-width-container {
