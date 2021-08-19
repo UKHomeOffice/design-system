@@ -4,185 +4,60 @@ import { PageProps } from '@not-govuk/app-composer';
 import { AnchorList } from '@not-govuk/anchor-list';
 import { stories } from '../component-stories';
 
-function removeLinksFromIndex(linksToRemove, indexToRemoveFrom) {
-  let strippedIndex = indexToRemoveFrom;
-  linksToRemove.forEach(element => {
-    for (var i = 0; i < indexToRemoveFrom.length; i++) {
-      if(element == indexToRemoveFrom[i].href) {
-        strippedIndex.splice(i, 1);
-        break;
-      }
-    }
-  });
-  return strippedIndex;
-}
-
 export const title = 'Sitemap';
 const description = 'Overview of the Home Office Design System';
 
 const Page: FC<PageProps> = ({ routes }) => {
 
-  // Create automatic site index
-  let miscRoutes = routes.map(e => ({
-    href: e.href,
-    text: e.title
-  }));
+  // Create automatic site index & section arrays
+  const misc = routes.map(e => ({ href: e.href, text: e.title }));
+  const getStarted = [], styles = [], patterns = [], accessibility = [], getInvolved = [];
 
-  // Create index of Get Started pages
-  const getStartedHref = [
-    '/get-started',
-    '/get-started/prototyping',
-    '/get-started/start-prototype',
-    '/get-started/use-prototype',
-    '/get-started/design-assets',
-    '/get-started/deploy-prototype',
-    '/get-started/project'
-  ];
-  const getStartedTitle = [
-    'Get Started',
-    'Prototyping',
-    'Setting up your prototype',
-    'Building your prototype',
-    'Design assets',
-    'Deploy prototype',
-    'Prototype'
-  ];
-  const getStarted = Object.keys(getStartedHref).sort().map(v => ({
-    href: getStartedHref[v],
-    text: getStartedTitle[v]
-  }));
-  // Remove Get Started pages from automatic index
-  miscRoutes = removeLinksFromIndex(getStartedHref, miscRoutes)
+  // auto-detect groups by parsing misc array for hrefs
+  misc.forEach(element => {
+    const siteSection = element.href.substring(1).split("/")[0];
 
-  // Create index of Styles pages
-  const stylesHref = [
-    '/styles',
-    '/styles/colour',
-    '/styles/images',
-    '/styles/typography'
-  ];
-  const stylesTitle = [
-    'Styles',
-    'Colour',
-    'Images',
-    'Typography'
-  ];
-  const styles = Object.keys(stylesHref).sort().map(v => ({
-    href: stylesHref[v],
-    text: stylesTitle[v]
-  }));
-  // Remove Styles pages from automatic index
-  miscRoutes = removeLinksFromIndex(stylesHref, miscRoutes)
+    switch(siteSection) {
+      case "get-started":
+        getStarted.push({href: element.href, text: element.text});
+        break;
+      case "styles":
+        styles.push({href: element.href, text: element.text});
+        break;
+      case "patterns":
+        patterns.push({href: element.href, text: element.text});
+        break;
+      case "accessibility":
+        accessibility.push({href: element.href, text: element.text});
+        break;
+      case "get-involved":
+        getInvolved.push({href: element.href, text: element.text});
+        break;
+    };
+  });
+
+  // Remove pages from misc section when added to other sections
+  getStarted.forEach(element => {
+    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
+  });
+  styles.forEach(element => {
+    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
+  });
+  patterns.forEach(element => {
+    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
+  });
+  accessibility.forEach(element => {
+    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
+  });
+  getInvolved.forEach(element => {
+    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
+  });
 
   // Group all component pages (not included in automatic index so no need to remove)
   const components = Object.keys(stories).sort().map(v => ({
     href: `/components?name=${encodeURIComponent(stories[v].default.title)}`,
     text: v
   }));
-
-  // Create index of Patterns pages
-  const patternsHref = [
-    '/patterns',
-    '/patterns/access-a-service',
-    '/patterns/add-multiple-things',
-    '/patterns/find-information-on-document',
-    '/patterns/get-more-details',
-    '/patterns/leave-a-service',
-    '/patterns/stop-a-service-timing-out'
-  ];
-  const patternsTitle = [
-    'Patterns',
-    'Access a service',
-    'Add multiple things',
-    'Find information on a document',
-    'Get more details',
-    'Leave a service',
-    'Stop a service timing out'
-  ];
-  const patterns = Object.keys(patternsHref).sort().map(v => ({
-    href: patternsHref[v],
-    text: patternsTitle[v]
-  }));
-  // Remove Patterns pages from automatic index
-  miscRoutes = removeLinksFromIndex(patternsHref, miscRoutes)
-
-  // Create index of Accessibility pages
-  const accessibilityHref = [
-    '/accessibility',
-    '/accessibility-statement',
-    '/accessibility/links',
-    '/accessibility/tables',
-    '/accessibility/headings',
-    '/accessibility/error-messages',
-    '/accessibility/keyboard',
-    '/accessibility/keyboard/tab-navigation',
-    '/accessibility/keyboard/focus',
-    '/accessibility/keyboard/skip-to-content',
-    '/accessibility/keyboard/character-key-shortcuts',
-    '/accessibility/keyboard/pointer-gestures',
-    '/accessibility/timeouts',
-    '/accessibility/inclusive-language',
-    '/accessibility/readability',
-    '/accessibility/audio-and-video',
-    '/accessibility/colour-and-contrast',
-    '/accessibility/images',
-    '/accessibility/resources'
-  ];
-  const accessibilityTitle = [
-    'Accessibility',
-    'Accessibility Statement',
-    'Links',
-    'Tables',
-    'Headings',
-    'Error messages',
-    'Keyboard basics',
-    'Tab navigation',
-    'Focus',
-    'Skip to content links',
-    'Character key shortcuts',
-    'Pointer gestures',
-    'Timeouts',
-    'Inclusive language',
-    'Readability',
-    'Audio and video',
-    'Colour and contrast',
-    'Images',
-    'Guidance, tools and further reading'
-  ];
-  const accessibility = Object.keys(accessibilityHref).sort().map(v => ({
-    href: accessibilityHref[v],
-    text: accessibilityTitle[v]
-  }));
-  // Remove Accessibility pages from automatic index
-  miscRoutes = removeLinksFromIndex(accessibilityHref, miscRoutes)
-
-  // Create index of Get Involved pages
-  const getInvolvedHref = [
-    '/get-involved',
-    '/get-involved/working',
-    '/get-involved/backlog',
-    '/get-involved/suggest',
-    '/get-involved/contribution',
-    '/get-involved/githubguide',
-    '/get-involved/proving',
-    '/get-involved/using'
-  ];
-  const getInvolvedTitle = [
-    'get Involved',
-    'Working group',
-    'Backlog',
-    'Suggest new ideas',
-    'Contribution criteria',
-    'Using GitHub to propose design system changes',
-    'Proving ideas work',
-    'Using the system'
-  ];
-  const getInvolved = Object.keys(getInvolvedHref).sort().map(v => ({
-    href: getInvolvedHref[v],
-    text: getInvolvedTitle[v]
-  }));
-  // Remove Get Involved pages from automatic index
-  miscRoutes = removeLinksFromIndex(getInvolvedHref, miscRoutes)
 
   return (
     <Fragment>
@@ -206,7 +81,7 @@ const Page: FC<PageProps> = ({ routes }) => {
       <h2>Get Involved</h2>
       <AnchorList classBlock="govuk-list" items={getInvolved} />
       <h2>Misc</h2>
-      <AnchorList classBlock="govuk-list" items={miscRoutes} />
+      <AnchorList classBlock="govuk-list" items={misc} />
     </Fragment>
 
   );
