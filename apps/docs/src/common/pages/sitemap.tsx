@@ -10,48 +10,33 @@ const description = 'Overview of the Home Office Design System';
 const Page: FC<PageProps> = ({ routes }) => {
 
   // Create automatic site index & section arrays
-  const misc = routes.map(e => ({ href: e.href, text: e.title }));
-  const getStarted = [], styles = [], patterns = [], accessibility = [], getInvolved = [];
+  const all = routes.map(e => ({ href: e.href, text: e.title }));
 
-  // auto-detect groups by parsing misc array for hrefs
-  misc.forEach(element => {
-    const siteSection = element.href.substring(1).split("/")[0];
+  const getStarted = all.filter(({href}) => (
+    href.substring(1).split('/')[0] === 'get-started'
+  ));
+  const styles = all.filter(({href}) => (
+    href.substring(1).split('/')[0] === 'styles'
+  ));
+  const patterns = all.filter(({href}) => (
+    href.substring(1).split('/')[0] === 'patterns'
+  ));
+  const accessibility = all.filter(({href}) => (
+    href.substring(1).split('/')[0] === 'accessibility'
+  ));
+  const getInvolved = all.filter(({href}) => (
+    href.substring(1).split('/')[0] === 'get-involved'
+  ));
 
-    switch(siteSection) {
-      case "get-started":
-        getStarted.push({href: element.href, text: element.text});
-        break;
-      case "styles":
-        styles.push({href: element.href, text: element.text});
-        break;
-      case "patterns":
-        patterns.push({href: element.href, text: element.text});
-        break;
-      case "accessibility":
-        accessibility.push({href: element.href, text: element.text});
-        break;
-      case "get-involved":
-        getInvolved.push({href: element.href, text: element.text});
-        break;
-    };
-  });
+  const categorised = [
+    getStarted,
+    styles,
+    patterns,
+    accessibility,
+    getInvolved
+  ];
 
-  // Remove pages from misc section when added to other sections
-  getStarted.forEach(element => {
-    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
-  });
-  styles.forEach(element => {
-    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
-  });
-  patterns.forEach(element => {
-    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
-  });
-  accessibility.forEach(element => {
-    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
-  });
-  getInvolved.forEach(element => {
-    misc.splice(misc.indexOf(misc.find(route => element.href == route.href)), 1);
-  });
+  const misc = all.filter(e => !categorised.flat().includes(e));
 
   // Group all component pages (not included in automatic index so no need to remove)
   const components = Object.keys(stories).sort().map(v => ({
