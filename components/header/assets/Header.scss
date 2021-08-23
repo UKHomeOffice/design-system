@@ -133,11 +133,10 @@
       }
 
       a {
-        @include govuk-responsive-padding(0, "top");
-        @include govuk-responsive-padding(0, "bottom");
+        @include govuk-responsive-padding(2, "top");
+        @include govuk-responsive-padding(2, "bottom");
         @include govuk-responsive-padding(3, "left");
         @include govuk-responsive-padding(3, "right");
-        display: block;
         color: #0b0c0c !important;
         text-decoration: none;
 

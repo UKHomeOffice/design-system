@@ -1,6 +1,6 @@
 {
   "name": "@hods/create",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "A project and prototype initialiser.",
   "main": "plopfile.js",
   "bin": "bin/create",
@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "@hods/plop-pack": "workspace:^0.1.0",
-    "@not-govuk/create": "^0.2.15",
-    "@not-govuk/plop-pack-internal": "^0.2.15"
+    "@not-govuk/create": "^0.2.16",
+    "@not-govuk/plop-pack-internal": "^0.2.16"
   },
   "devDependencies": {
     "plop": "^2.7.4"
