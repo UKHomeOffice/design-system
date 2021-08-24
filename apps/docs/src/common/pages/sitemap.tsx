@@ -70,7 +70,7 @@ const Page: FC<PageProps> = ({ routes }) => {
 
   const footer = all.filter(e => !categorised.includes(e)).sort(compare);
 
-  //remove pages we don't want to show in any section
+  // Manually remove pages we don't want to show in any section
   getStarted.splice(getStarted.indexOf(getStarted.find(element => element.text === "Get started")), 1);
   getStarted.splice(getStarted.indexOf(getStarted.find(element => element.text === "Production")), 1);
   styles.splice(styles.indexOf(styles.find(element => element.text === "Styles")), 1);
@@ -80,6 +80,7 @@ const Page: FC<PageProps> = ({ routes }) => {
   accessibility.splice(accessibility.indexOf(accessibility.find(element => element.text === "xxx")), 1);
   getInvolved.splice(getInvolved.indexOf(getInvolved.find(element => element.text === "Get involved")), 1);
   footer.splice(footer.indexOf(footer.find(element => element.text === "Cookies")), 1);
+  footer.splice(footer.indexOf(footer.find(element => element.text === "Components")), 1);
 
   return (
     <Fragment>
