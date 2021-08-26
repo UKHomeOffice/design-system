@@ -28,7 +28,6 @@
     "@not-govuk/client-renderer": "^0.2.16",
     "@not-govuk/components": "^0.2.16",
     "@not-govuk/engine": "^0.2.16",
-    "@not-govuk/link": "^0.2.16",
     "@not-govuk/server-renderer": "^0.2.16",
     "@not-govuk/user-info": "^0.2.16",
     "@not-govuk/webpack-config": "^0.2.16",
