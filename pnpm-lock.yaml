@@ -5873,7 +5873,7 @@ packages:
       terminal-link: 2.1.1
       v8-to-istanbul: 6.0.1
     optionalDependencies:
-      node-notifier: 8.0.0
+      node-notifier: 8.0.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -18947,18 +18947,6 @@ packages:
     dev: true
     optional: true
 
-  /node-notifier/8.0.0:
-    resolution: {integrity: sha512-46z7DUmcjoYdaWyXouuFNNfUo6eFa94t23c53c+lG/9Cvauk4a98rAUp9672X5dxGdQmLpPzTxzu8f/OeEPaFA==}
-    dependencies:
-      growly: 1.3.0
-      is-wsl: 2.2.0
-      semver: 7.3.2
-      shellwords: 0.1.1
-      uuid: 8.3.1
-      which: 2.0.2
-    dev: true
-    optional: true
-
   /node-notifier/8.0.2:
     resolution: {integrity: sha512-oJP/9NAdd9+x2Q+rfphB2RJCHjod70RcRLjosiPMMu5gjIfwVnOUGq2nbTjTUbmy0DJ/tFIVT30+Qe3nzl4TJg==}
     dependencies:
@@ -23972,14 +23960,6 @@ packages:
       loose-envify: 1.4.0
     dev: true
 
-  /watchpack-chokidar2/2.0.0:
-    resolution: {integrity: sha512-9TyfOyN/zLUbA288wZ8IsMZ+6cbzvsNyEzSBp6e/zkifi6xxbl8SmQ/CxQq32k8NNqrdVEVUVSEf56L4rQ/ZxA==}
-    engines: {node: <8.10.0}
-    dependencies:
-      chokidar: 2.1.8
-    dev: true
-    optional: true
-
   /watchpack-chokidar2/2.0.1:
     resolution: {integrity: sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww==}
     dependencies:
@@ -23994,7 +23974,7 @@ packages:
       neo-async: 2.6.2
     optionalDependencies:
       chokidar: 3.4.1
-      watchpack-chokidar2: 2.0.0
+      watchpack-chokidar2: 2.0.1
     dev: true
 
   /watchpack/1.7.5:
