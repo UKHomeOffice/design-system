@@ -113,7 +113,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <div className="example" style={{marginBottom: "2em"}}>
         <p>To view the skip link component tab to this example, or click inside this example and press tab.</p>
-        <A href="#" class="govuk-skip-link">Skip to main content</A>
+        <A href="#" className="govuk-skip-link">Skip to main content</A>
       </div>
 
       <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
