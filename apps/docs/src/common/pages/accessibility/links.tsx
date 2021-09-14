@@ -113,7 +113,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p>Links normally look like underlined text, or an icon/button which takes you to another page when you click it.</p>
       <p>Presenting links in the right way is important for accessibility and inclusion.</p>
-
+      <p>See the impact that accessible links have on people who use <A href="https://www.w3.org/WAI/perspective-videos/speech/">text to speech</A> software, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#accountant">Ilya, senior staff member who is blind</A>.</p>
 
       <h2>Helping everyone</h2>
       <p>All users will benefit if your link text is clear and you can easily identify a link among its surrounding text.
@@ -122,7 +122,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>The basics</h2>
         <p>Do:</p>
         <ul>
-        <li>use clear and concise link text that describe the destination <br /> (for example <span style={{color: "#005EA5", textDecoration: "underline"}}>Learn how to get financial help if you’re disabled</span>)</li>
+        <li>use clear and concise link text that describe the destination <br /> (for example <A href="https://www.gov.uk/financial-help-disabled">Learn how to get financial help if you’re disabled</A>)</li>
         <li>ensure links look different from surrounding text with at least two of the following:<br /> colour, size, bold, underlined</li>
         <li>make sure the links work, with keyboard as well as mouse, using the tab and enter keys</li>
         <li>make sure links take you to where you’d expect</li>

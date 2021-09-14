@@ -106,12 +106,9 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Accessibility</span>
         Keyboard basics
       </h1>
-      <p>Most users navigate websites using a mouse to scroll through content and click on elements of a page. Some users are not able to use a mouse (for instance, due to mobility or visual impairments) or just prefer to use a keyboard.</p>
-
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-two-thirds">
-      </div>
-      </div>
+      <p>Most users navigate websites using a mouse to scroll through content and click on elements of a page.</p>
+      <p>Some users are not able to use a mouse (for instance, due to mobility or visual impairments) or just prefer to use a keyboard.</p>
+      <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/keyboard/">keyboard compatibility</A> has on user interaction, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#reporter">Alex, a reporter with repetitive stress injury</A>.</p>
 <br />
 
       <h2>Helping everyone</h2>

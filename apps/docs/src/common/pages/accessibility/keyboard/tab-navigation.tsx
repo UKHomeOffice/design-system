@@ -110,7 +110,7 @@ const Page: FC<PageProps> = ({ location }) => (
         Tab navigation
       </h1>
       <p>A quick and easy way to test a common use of keyboard navigation is to use the tab key on your keyboard.</p>
-      <p>WebAIM has a useful list of <a href="https://webaim.org/techniques/keyboard/">common keyboard controls.</a></p>
+      <p>WebAIM has a useful list of <a href="https://webaim.org/techniques/keyboard/">common keyboard controls</a>.</p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-quarter">
         <img src={tabImage01} alt="Image of tab key" className="image-examples" />

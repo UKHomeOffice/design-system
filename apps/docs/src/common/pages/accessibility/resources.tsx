@@ -111,11 +111,11 @@ const Page: FC<PageProps> = ({ location }) => (
       Guidance
     </h2>
     <ul className="plain">
-      <li><A href="https://collaboration.homeoffice.gov.uk/display/A11y/Accessibility+Standard">Home Office Accessibility Standard v1.0 Nov 2020</A> (Home Office Confluence link)</li>
+      <li><A href="https://collaboration.homeoffice.gov.uk/display/A11y/Home+Office+Accessibility+Standard">Home Office Accessibility Standard v1.1 August 2021</A> (Home Office Confluence link)</li>
       <li><A href="https://homeofficegovuk.sharepoint.com/:w:/s/designops/EeB8PFKt6CNEmzfijRoZAO8BudZ1A8ths4rpx4h8qykZDA?e=Mwm90N">Accessibility checklist for designers</A> (Home Office Sharepoint link)</li>
+      <li><A href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks – A First Review of Web Accessibility</A></li>
       <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service">Helping people to use your service</A></li>
       <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility">Testing for accessibility</A></li>
-      <li><A href="https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/">Using the empathy lab at GDS</A></li>
       <li><A href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">User profiles for understanding disabilities and impairments</A></li>
     </ul>
 
@@ -135,6 +135,7 @@ const Page: FC<PageProps> = ({ location }) => (
       Further reading
     </h2>
     <ul className="plain">
+      <li><A href="https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/">Using the empathy lab at GDS</A></li>
       <li><A href="https://www.digitala11y.com/digital-accessibility-courses-roundup/">Free accessibility courses</A></li>
       <li><A href="https://www.digitala11y.com/digital-accessibility-newsletters-roundup/">Accessibility newsletters</A></li>
       <li><A href="https://www.digitala11y.com/web-accessibility-podcasts-rountup/">Accessibility podcasts</A></li>

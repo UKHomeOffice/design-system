@@ -167,7 +167,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
       <br />
       <p>This bad example shows irregular tab moves. The focus does not move in a left to right, top to bottom order - instead it jumps back up the page and from right to left. It also does not tab to all interactive elements in each section.</p>
-      <p>Find out more about WCAG success criteria 2.4.3 <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">focus order</a></p>
+      <p>Find out more about WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">focus order</a>.</p>
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
   <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>

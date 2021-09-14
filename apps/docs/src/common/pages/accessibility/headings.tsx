@@ -109,7 +109,7 @@ const Page: FC<PageProps> = ({ location }) => (
         Headings
       </h1>
       <p>Headings are an important navigation tool for all users.</p>
-
+      <p>See the impact that accessible headings have on people who use <A href="https://www.w3.org/WAI/perspective-videos/speech/">text to speech</A> software, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#accountant">Ilya, senior staff member who is blind</A>.</p>
 <br />
 
       <h2>Helping everyone</h2>
@@ -200,8 +200,7 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 
 <p>Similarly, if part of your content works as a heading (for example, to head up content blocks in the footer, or in a sidebar list of related links) then you must use the correct HTML code as well as any visual styling. If you don’t, a screenreader will not recognise this as a heading and the user may miss it.</p>
 
-<p>Where sections are broken up with visual design alone, it may be worth adding a screenreader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS.</a></p>
-<br />
+<p>Where sections are broken up with visual design alone, it may be worth adding a screenreader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS</a>.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

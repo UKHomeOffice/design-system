@@ -3,9 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const errorImage01 = require('../../../../assets/images/accessibility/error-message.png').default;
-const errorImage02 = require('../../../../assets/images/accessibility/error-summary.png').default;
-
 export const title = 'Error messages';
 const description = 'Accessibility guidance for error messages';
 export const section = 'Accessibility';
@@ -110,6 +107,46 @@ const Page: FC<PageProps> = ({ location }) => (
         Error messages
       </h1>
       <p>When a user gets something wrong on a page, it’s important they know about it so they can fix it.</p>
+      <div className="example" style={{marginBottom: "2em"}}>
+        <div className="govuk-form-group govuk-form-group--error">
+          <fieldset className="govuk-fieldset" role="group" aria-describedby="passport-issued-hint passport-issued-error">
+            <legend className="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 className="govuk-fieldset__heading">
+                When was your passport issued?
+              </h1>
+            </legend>
+            <div id="passport-issued-hint" className="govuk-hint">
+              For example, 12 11 2007
+            </div>
+            <span id="passport-issued-error" className="govuk-error-message">
+              <span className="govuk-visually-hidden">Error:</span> The date your passport was issued must be in the past
+            </span>
+            <div className="govuk-date-input" id="passport-issued">
+              <div className="govuk-date-input__item">
+                <div className="govuk-form-group">
+                  <label className="govuk-label govuk-date-input__label" htmlFor="passport-issued-day">
+                    Day
+                  </label>
+                  <input className="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-day" name="passport-issued-day" type="text" defaultValue={6} pattern="[0-9]*" inputMode="numeric" /></div>
+              </div>
+              <div className="govuk-date-input__item">
+                <div className="govuk-form-group">
+                  <label className="govuk-label govuk-date-input__label" htmlFor="passport-issued-month">
+                    Month
+                  </label>
+                  <input className="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-month" name="passport-issued-month" type="text" defaultValue={3} pattern="[0-9]*" inputMode="numeric" /></div>
+              </div>
+              <div className="govuk-date-input__item">
+                <div className="govuk-form-group">
+                  <label className="govuk-label govuk-date-input__label" htmlFor="passport-issued-year">
+                    Year
+                  </label>
+                  <input className="govuk-input govuk-date-input__input govuk-input--width-4 govuk-input--error" id="passport-issued-year" name="passport-issued-year" type="text" defaultValue={2076} pattern="[0-9]*" inputMode="numeric" /></div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
       <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/notifications/"> notifications and feedback</A> have on user interaction.</p>
 
 
@@ -211,12 +248,11 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>You should use simple language to explain the error and what has caused it.</p>
 
-<div className="govuk-grid-row">
-<div className="govuk-grid-column-two-thirds">
-  <img src={errorImage01} alt="Screenshot highlighting an error message where details have not been submitted" className="image-examples" />
+<div className="example" style={{marginBottom: "2em"}}>
+  <span id="passport-issued-error" className="govuk-error-message">
+    <span className="govuk-visually-hidden">Error:</span> The date your passport was issued must be in the past
+  </span>
 </div>
-</div>
-<br />
 
 <p>The GOV.UK design system has an <A href="https://design-system.service.gov.uk/components/error-message/">error message</A> component and specific error patterns for asking users for things such as their National Insurance number.</p>
 <p>Do not use colour alone to identify an error.</p>
@@ -235,22 +271,67 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>If errors occur when the user submits a form, make sure an <A href="https://design-system.service.gov.uk/components/error-summary/">error summary</A> appears at the top of the form.
 You should place keyboard and visual focus at the summary to alert screen reader users to the errors.</p>
 
-<div className="govuk-grid-row">
-<div className="govuk-grid-column-two-thirds">
-  <img src={errorImage02} alt="Screenshot highlighting an error summary where details have not been submitted" className="image-examples" />
+<div className="example example-images" style={{marginBottom: "2em"}}>
+  <div className="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabIndex={-1} data-module="govuk-error-summary">
+    <h2 className="govuk-error-summary__title" id="error-summary-title">
+      There is a problem
+    </h2>
+    <div className="govuk-error-summary__body">
+      <ul className="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#passport-issued-day">The date your passport was issued must be in the past</a>
+        </li>
+        <li>
+          <a href="#postcode-input">Enter a postcode, like AA1 1AA</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-</div>
-<br />
 
 <p>You should also make the page title element change to include the word ‘error’ to highlight to a user that an error has occurred.</p>
 <p>If possible you should also display errors in line with the form field, between the label and the form element. Ensure that the error message is programmatically associated with the input field so that the error is announced when a screen reader user navigates through fields with the tab key.</p>
 
-<div className="govuk-grid-row">
-<div className="govuk-grid-column-two-thirds">
-  <img src={errorImage01} alt="Screenshot highlighting an error message where details have not been submitted" className="image-examples" />
+<div className="example" style={{marginBottom: "2em"}}>
+  <div className="govuk-form-group govuk-form-group--error">
+    <fieldset className="govuk-fieldset" role="group" aria-describedby="passport-issued-hint passport-issued-error">
+      <legend className="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 className="govuk-fieldset__heading">
+          When was your passport issued?
+        </h1>
+      </legend>
+      <div id="passport-issued-hint" className="govuk-hint">
+        For example, 12 11 2007
+      </div>
+      <span id="passport-issued-error" className="govuk-error-message">
+        <span className="govuk-visually-hidden">Error:</span> The date your passport was issued must be in the past
+      </span>
+      <div className="govuk-date-input" id="passport-issued">
+        <div className="govuk-date-input__item">
+          <div className="govuk-form-group">
+            <label className="govuk-label govuk-date-input__label" htmlFor="passport-issued-day">
+              Day
+            </label>
+            <input className="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-day" name="passport-issued-day" type="text" defaultValue={6} pattern="[0-9]*" inputMode="numeric" /></div>
+        </div>
+        <div className="govuk-date-input__item">
+          <div className="govuk-form-group">
+            <label className="govuk-label govuk-date-input__label" htmlFor="passport-issued-month">
+              Month
+            </label>
+            <input className="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-month" name="passport-issued-month" type="text" defaultValue={3} pattern="[0-9]*" inputMode="numeric" /></div>
+        </div>
+        <div className="govuk-date-input__item">
+          <div className="govuk-form-group">
+            <label className="govuk-label govuk-date-input__label" htmlFor="passport-issued-year">
+              Year
+            </label>
+            <input className="govuk-input govuk-date-input__input govuk-input--width-4 govuk-input--error" id="passport-issued-year" name="passport-issued-year" type="text" defaultValue={2076} pattern="[0-9]*" inputMode="numeric" /></div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
 </div>
-</div>
-<br />
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

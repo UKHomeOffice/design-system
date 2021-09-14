@@ -107,6 +107,7 @@ const Page: FC<PageProps> = ({ location }) => (
         Audio and video
       </h1>
       <p>It’s important to consider how people with different access needs will use media content.</p>
+      <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/captions/">video captions</A> have on user interaction, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#onlinestudent">Martine, an online student who is hard of hearing</A></p>
 
       <h2>Helping everyone</h2>
       <p>Making your audio and video content accessible can benefit users with and without a disability.</p>

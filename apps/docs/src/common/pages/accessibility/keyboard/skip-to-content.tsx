@@ -111,19 +111,13 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>For keyboard users, having to repeatedly move through the same navigation menu every time they start a new page can be frustrating.</p>
       <p>This is why ‘skip to content’ links exist. The first tab move you make on each page should show a link at the top of the page that says ‘Skip to content’ (or similar) and moves the user to the main part of the page.</p>
 
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-one-quarter">
-        <img src={skipImage01} alt="Screenshot of skip to main content link selected" className="image-examples" />
+      <div className="example" style={{marginBottom: "2em"}}>
+        <p>To view the skip link component tab to this example, or click inside this example and press tab.</p>
+        <A href="#" class="govuk-skip-link">Skip to main content</A>
       </div>
-      </div>
-      <br />
-            <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
-            <p>Read more on the WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</a>.</p>
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-two-thirds">
-      </div>
-      </div>
-<br />
+
+      <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
+      <p>Read more on the WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</a>.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

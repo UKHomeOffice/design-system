@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const linksImage01 = require('../../../../assets/images/accessibility/links01.png').default;
+const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg').default;
 
 export const title = 'Images';
 const description = 'Accessibility guidance for images content';
@@ -108,17 +108,18 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Accessibility</span>
         Images
       </h1>
-      <p>Images, charts, icons and infographics on websites have different purposes. These include but are not limited to:</p>
+      <p>Images, charts, icons and infographics on websites have different purposes.</p>
+      <p>These include but are not limited to:</p>
       <ul>
       <li>giving information</li>
       <li>making a webpage more visually attractive</li>
       <li>interactivity, such as buttons and links</li>
       </ul>
-
-      <p>For blind and visually impaired people, missing out on these images can sometime mean missing out on important information or instructions for completing a task.</p>
-
-      <p>It’s important to provide alternatives to images that help these users.</p>
-
+      <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
+        <img src={applyImageInline} className="confirm-desktop" alt="An example of an illustrated image of a biometric residence permit card in a service" />
+      </div>
+      <p>For blind and visually impaired people, missing out on these images can sometime mean missing out on important information or instructions for completing a task. It’s important to provide alternatives to images that help these users.</p>
+      <p>See the impact that accessible images have on people who use <A href="https://www.w3.org/WAI/perspective-videos/speech/">text to speech</A> software, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#accountant">Ilya, senior staff member who is blind</A>.</p>
 
 <br />
 
