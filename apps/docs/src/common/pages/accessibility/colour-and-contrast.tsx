@@ -133,7 +133,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
       <br />
       <p>It is important contrast is clear, though there also should be alternatives for those who cannot see clearly.</p>
-      <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/contrast/">colours with good contrast</A> have on user interaction, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#shopper">Lee, an online shopper with color blindness.</A></p>
+      <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/contrast/">colours with good contrast</A> have on user interaction, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#shopper">Lee, an online shopper with color blindness</A>.</p>
 
       <h2>Helping everyone</h2>
       <p>When designing websites, it is important that you use sensible colours that make text, focus indication and other parts of your website easy to see.</p>
