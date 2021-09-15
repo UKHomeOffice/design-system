@@ -109,7 +109,7 @@ const Page: FC<PageProps> = ({ location }) => (
         Headings
       </h1>
       <p>Headings are an important navigation tool for all users.</p>
-      <p>See the impact that accessible headings have on people who use <A href="https://www.w3.org/WAI/perspective-videos/speech/">text to speech</A> software, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#accountant">Ilya, senior staff member who is blind</A>.</p>
+      <p>See the impact that accessible headings have on people who use <A href="https://www.w3.org/WAI/perspective-videos/speech/">text to speech</A> software.</p>
 <br />
 
       <h2>Helping everyone</h2>

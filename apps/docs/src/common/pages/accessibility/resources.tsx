@@ -113,7 +113,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <ul className="plain">
       <li><A href="https://collaboration.homeoffice.gov.uk/display/A11y/Home+Office+Accessibility+Standard">Home Office Accessibility Standard v1.1 August 2021</A> (Home Office Confluence link)</li>
       <li><A href="https://homeofficegovuk.sharepoint.com/:w:/s/designops/EeB8PFKt6CNEmzfijRoZAO8BudZ1A8ths4rpx4h8qykZDA?e=Mwm90N">Accessibility checklist for designers</A> (Home Office Sharepoint link)</li>
-      <li><A href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks – A First Review of Web Accessibility</A></li>
+      <li><A href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy checks – a first review of web accessibility</A></li>
       <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service">Helping people to use your service</A></li>
       <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility">Testing for accessibility</A></li>
       <li><A href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">User profiles for understanding disabilities and impairments</A></li>

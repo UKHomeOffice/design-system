@@ -129,33 +129,6 @@ const Page: FC<PageProps> = ({ location }) => (
               Foreground: #0b0c0c
             </div>
           </div>
-          <div className="colour-swatch">
-            <span className="app-swatch" style={{backgroundColor: "#cbcbcb", border: "1px solid #cbcbcb"}}>
-              <span style={{color: "#0b0c0c"}}>A</span>
-            </span>
-            <div className="colour-info">
-              Background: #cbcbcb<br />
-              Foreground: #0b0c0c
-            </div>
-          </div>
-          <div className="colour-swatch">
-            <span className="app-swatch" style={{backgroundColor: "#00703c"}}>
-              <span style={{color: "#ffffff"}}>A</span>
-            </span>
-            <div className="colour-info">
-              Background: #00703c<br />
-              Foreground: #ffffff
-            </div>
-          </div>
-          <div className="colour-swatch">
-            <span className="app-swatch" style={{backgroundColor: "#1d70b8"}}>
-              <span style={{color: "#ffffff"}}>A</span>
-            </span>
-            <div className="colour-info">
-              Background: #1d70b8<br />
-              Foreground: #ffffff
-            </div>
-          </div>
         </div>
       </div>
       <br />
