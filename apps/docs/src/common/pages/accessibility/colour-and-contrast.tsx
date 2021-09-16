@@ -132,6 +132,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
       </div>
       <br />
+      <p>See the <A href="https://design.homeoffice.gov.uk/styles/colour">colour page</A> for the full list of accessible text and background combinations.</p>
       <p>It is important contrast is clear, though there also should be alternatives for those who cannot see clearly.</p>
       <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/contrast/">colours with good contrast</A> have on user interaction, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#shopper">Lee, an online shopper with color blindness</A>.</p>
 
