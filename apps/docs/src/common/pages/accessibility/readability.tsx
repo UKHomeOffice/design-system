@@ -116,6 +116,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>users whose first language is not English. This includes sign-language (BSL) speakers</li>
       </ul>
       <p>Sometimes you may need to publish content in languages other than English. It’s important to code this correctly as it will affect how some assistive technology interacts with the page – for example, it will read out text using the pronunciation rules of the coded language. All web pages should have the main language specified in the code.</p>
+      <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/understandable/">understandable content</A> has on user interaction.</p>
 
       <h2>Helping everyone</h2>
       <p>Simple language doesn’t mean dumbing down – short, clear sentences are easier to understand for everyone.</p>

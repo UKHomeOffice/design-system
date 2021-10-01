@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+const applyModalWindow = require('../../../../assets/images/patterns/timeout.svg').default;
+
 export const title = 'Timeouts';
 const description = 'Accessibility guidance for timeouts';
 export const section = 'Accessibility';
@@ -107,6 +109,9 @@ const Page: FC<PageProps> = ({ location }) => (
         Timeouts
       </h1>
       <p>Some interactions require the user to read content or complete an action within a certain time limit.</p>
+      <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
+        <img src={applyModalWindow} className="image-examples" alt="An example of a modal window warning the service will time out" />
+      </div>
       <p>Different people will take different lengths of time to complete a task and may not be able to do so if the option to turn off, adjust or extend the time limit is not available.</p>
       <p>Animated, moving or scrolling content that automatically advances or updates will also have an impact on certain people’s ability to read it.</p>
 

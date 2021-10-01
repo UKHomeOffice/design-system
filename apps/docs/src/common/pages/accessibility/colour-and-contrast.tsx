@@ -108,7 +108,33 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Accessibility</span>
         Colour and contrast
       </h1>
-      <p>Many users rely on colour and contrast being clearly visible to consume content or move through our services. It is important contrast is clear, though there also should be alternatives for those who cannot see clearly.</p>
+      <p>Many users rely on colour and contrast being clearly visible to consume content or move through our services.</p>
+      <p>It is important contrast is clear, though there also should be alternatives for those who cannot see clearly.</p>
+      <div className="govuk-grid-row">
+        <div className="govuk-grid-column-one-half">
+          <div className="colour-swatch">
+            <span className="app-swatch" style={{backgroundColor: "#0b0c0c"}}>
+              <span style={{color: "#ffffff"}}>A</span>
+            </span>
+            <div className="colour-info">
+              Background: #0b0c0c<br />
+              Foreground: #ffffff
+            </div>
+          </div>
+          <div className="colour-swatch">
+            <span className="app-swatch" style={{backgroundColor: "#ffffff", border: "1px solid #cbcbcb"}}>
+              <span style={{color: "#0b0c0c"}}>A</span>
+            </span>
+            <div className="colour-info">
+              Background: #ffffff<br />
+              Foreground: #0b0c0c
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <p>See the <A href="https://design.homeoffice.gov.uk/styles/colour">colour page</A> for the full list of accessible text and background combinations.</p>
+      <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/contrast/">colours with good contrast</A> have on user interaction, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#shopper">Lee, an online shopper with color blindness</A>.</p>
 
       <h2>Helping everyone</h2>
       <p>When designing websites, it is important that you use sensible colours that make text, focus indication and other parts of your website easy to see.</p>
@@ -167,7 +193,9 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>The contrast requirement for text is 4.5:1 against the surrounding background colour.</p>
 <p>For most GOV.UK services we use black text against a white background. This combination has a contrast ratio of 21:1, easily meeting the requirements.</p>
 <p>Alternatively, bad contrast may be something like the following.</p>
-<p style={{color: "yellow"}}>Bad example text in yellow. Have you ever seen slides in a presentation where the speaker has yellow text on a white background? It makes it almost impossible to see for many users.</p>
+<div className="example" style={{marginBottom: "2em"}}>
+  <p style={{color: "yellow"}}>Bad example text in yellow. Have you ever seen slides in a presentation where the speaker has yellow text on a white background? It makes it almost impossible to see for many users.</p>
+</div>
 <p>For large text (above 18pt font size), or non-text elements such as focus indication or icons, the contrast requirement is 3:1.</p>
 
 <h3>How users can change their contrast settings</h3>

@@ -117,12 +117,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>look into remapping them so that they use two or more concurrent key presses OR</li>
       <li>disable the character key shortcuts if they do not bring value to the content</li>
       </ul>
-      <p>Find out more about WCAG success criteria 2.1.4 <a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html">character key shortcuts</a>.</p>
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-two-thirds">
-      </div>
-      </div>
-<br />
+      <p>Find out more about WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html">character key shortcuts</a>.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

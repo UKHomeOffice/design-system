@@ -140,10 +140,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p>You must create tables in a way that assistive technology can understand. This means making tables available to screen reader, screen magnification and speech-to-text software users.</p>
 
-      <p>Where possible, you should use semantic HTML to indicate different table cells.</p>
-
-      <p>Tables should not be used to position elements on a web page - for this you should use other CSS layout techniques.</p>
-
+      <p>Where possible, you should use semantic HTML to indicate different table cells. Tables should not be used to position elements on a web page - for this you should use other CSS layout techniques.</p>
+      <p>See the impact that accessible tables have on people who use <A href="https://www.w3.org/WAI/perspective-videos/speech/">text to speech</A> software.</p>
 
 <br />
 
@@ -231,7 +229,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>For more guidance on more complex tables, such as tables with irregular headers and multi-level headers, see <A href="https://www.w3.org/WAI/tutorials/tables/">Tables concepts</A>.</p>
 
-<p>If you cannot use semantic tables (for instance, if you’re working with a complex, highly custom component), ARIA roles can be used to replicate the structure of a table. However, you should avoid this as it adds complexity. If you need to use ARIA, please see the <A href="https://www.w3.org/TR/wai-aria-practices-1.1/#table">Table Design Pattern in WAI-ARIA Authoring Practices 1.1</A>.</p>
+<p>If you cannot use semantic tables (for instance, if yre working with a complex, highly custom component), ARIA roles can be used to replicate the structure of a table. However, you should avoid this as it adds complexity. If you need to use ARIA, please see the <A href="https://www.w3.org/TR/wai-aria-practices-1.1/#table">Table Design Pattern in WAI-ARIA Authoring Practices 1.1</A>.</p>
 
 <h3>Table text</h3>
 
