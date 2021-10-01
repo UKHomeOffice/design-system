@@ -26,6 +26,10 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Links'
         },
         {
+          href: '/accessibility/navigation',
+          text: 'Navigation'
+        },
+        {
           href: '/accessibility/tables',
           text: 'Tables'
         },
@@ -63,6 +67,10 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/keyboard/pointer-gestures',
           text: '- Pointer gestures'
+        },
+        {
+          href: '/accessibility/forms',
+          text: 'Forms'
         },
         {
           href: '/accessibility/timeouts',
