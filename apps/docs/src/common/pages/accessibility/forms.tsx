@@ -195,7 +195,7 @@ const Page: FC<PageProps> = ({ location }) => (
   <div id="national-insurance-number-hint" className="govuk-hint">
     It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.
   </div>
-  <input className="govuk-input govuk-input--width-10" id="national-insurance-number" name="national-insurance-number" type="text" spellcheck="false" aria-describedby="national-insurance-number-hint" />
+  <input className="govuk-input govuk-input--width-10" id="national-insurance-number" name="national-insurance-number" type="text" spellCheck="false" aria-describedby="national-insurance-number-hint" />
 </div>
 </div>
 
