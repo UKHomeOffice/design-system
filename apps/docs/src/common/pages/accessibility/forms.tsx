@@ -189,7 +189,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <div className="example" style={{marginBottom: "2em"}}>
 <div className="govuk-form-group">
-  <label className="govuk-label" for="national-insurance-number">
+  <label className="govuk-label" htmlFor="national-insurance-number">
     National Insurance number
   </label>
   <div id="national-insurance-number-hint" className="govuk-hint">
@@ -212,25 +212,25 @@ const Page: FC<PageProps> = ({ location }) => (
     <div className="govuk-radios">
       <div className="govuk-radios__item">
         <input className="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england" />
-        <label className="govuk-label govuk-radios__label" for="where-do-you-live">
+        <label className="govuk-label govuk-radios__label" htmlFor="where-do-you-live">
           England
         </label>
       </div>
       <div className="govuk-radios__item">
         <input className="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland" />
-        <label className="govuk-label govuk-radios__label" for="where-do-you-live-2">
+        <label className="govuk-label govuk-radios__label" htmlFor="where-do-you-live-2">
           Scotland
         </label>
       </div>
       <div className="govuk-radios__item">
         <input className="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales" />
-        <label className="govuk-label govuk-radios__label" for="where-do-you-live-3">
+        <label className="govuk-label govuk-radios__label" htmlFor="where-do-you-live-3">
           Wales
         </label>
       </div>
       <div className="govuk-radios__item">
         <input className="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland" />
-        <label className="govuk-label govuk-radios__label" for="where-do-you-live-4">
+        <label className="govuk-label govuk-radios__label" htmlFor="where-do-you-live-4">
           Northern Ireland
         </label>
       </div>
