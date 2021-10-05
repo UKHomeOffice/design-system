@@ -167,7 +167,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </tr>
 
         <tr className="govuk-table__row">
-        <td className="govuk-table__cell">Motor impairment</td>
+        <td className="govuk-table__cell">Motor impaired</td>
         <td className="govuk-table__cell">Cannot interact with image links and buttons</td>
         <td className="govuk-table__cell">Alt text allows speech-to-text software to select image links and buttons</td>
         </tr>

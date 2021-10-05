@@ -121,7 +121,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <br />
 
       <h2>Helping everyone</h2>
-      <p>A logical structure can make your content readable and accessible to everyone. Just as sighted users can scan the page and use headings to find the content they’re looking for, people using assistive tech such as screenreaders can use a similar method to find their way around. So it’s important that the coding of headings matches up with their visual appearance. </p>
+      <p>A logical structure can make your content readable and accessible to everyone. Just as sighted users can scan the page and use headings to find the content they’re looking for, people using assistive tech such as screen readers can use a similar method to find their way around. So it’s important that the coding of headings matches up with their visual appearance. </p>
       <p>Adding a logical heading structure can also help you think more clearly about your content and what it is trying to say. And clear heading text is useful for everyone.</p>
 <br />
       <h2>The basics</h2>
@@ -146,9 +146,9 @@ const Page: FC<PageProps> = ({ location }) => (
         </thead>
         <tbody className="govuk-table__body">
         <tr className="govuk-table__row">
-          <td className="govuk-table__cell">Blind screenreader user </td>
+          <td className="govuk-table__cell">Blind screen reader user </td>
           <td className="govuk-table__cell">Cannot see the visual appearance of headings to help with navigation </td>
-          <td className="govuk-table__cell">Semantically-coded headings that screenreader software can recognise </td>
+          <td className="govuk-table__cell">Semantically-coded headings that screen reader software can recognise </td>
         </tr>
 
         <tr className="govuk-table__row">
@@ -206,9 +206,9 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 
 <p>As a rule of thumb: if there is nothing or very little that sits underneath to it, it’s probably not a heading. </p>
 
-<p>Similarly, if part of your content works as a heading (for example, to head up content blocks in the footer, or in a sidebar list of related links) then you must use the correct HTML code as well as any visual styling. If you don’t, a screenreader will not recognise this as a heading and the user may miss it.</p>
+<p>Similarly, if part of your content works as a heading (for example, to head up content blocks in the footer, or in a sidebar list of related links) then you must use the correct HTML code as well as any visual styling. If you don’t, a screen reader will not recognise this as a heading and the user may miss it.</p>
 
-<p>Where sections are broken up with visual design alone, it may be worth adding a screenreader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS</a>.</p>
+<p>Where sections are broken up with visual design alone, it may be worth adding a screen reader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS</a>.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

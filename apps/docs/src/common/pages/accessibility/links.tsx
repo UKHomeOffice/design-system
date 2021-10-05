@@ -174,7 +174,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </tr>
 
         <tr className="govuk-table__row">
-          <td className="govuk-table__cell">Motor impairment</td>
+          <td className="govuk-table__cell">Motor impaired</td>
           <td className="govuk-table__cell">Cannot use a mouse</td>
           <td className="govuk-table__cell">Links that can be seen and activated using a keyboard</td>
         </tr>

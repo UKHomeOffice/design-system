@@ -133,7 +133,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2>Helping everyone</h2>
       <p>Clear signposting makes the user’s journey through a service much smoother for everyone - and the more complicated a service is, the more important this is.</p>
-      <p>With multiple ways to navigate, users are free to choose the way that works best for them, whether this is through a standard navigation menu, a search option, or some of the built-in screen reader functions to help users find their way around a page.</p>
+      <p>With multiple ways to navigate, users are free to choose the way that works best for them, whether this is through a standard navigation menu, a search option, or some of the built-in screen reader functions that help users find their way around a page.</p>
 
       <h2>The basics</h2>
         <p>Do:</p>
@@ -173,7 +173,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Cognitive or emotional issues, or vulnerable demographic</td>
         <td className="govuk-table__cell">May be anxious when filling out official forms</td>
-        <td className="govuk-table__cell">Clear indicators of where they are in a journey and how many steps remain</td>
+        <td className="govuk-table__cell">Clear indicators of where they are in a journey and how many steps are left</td>
         </tr>
 
         </tbody>
@@ -205,7 +205,7 @@ const Page: FC<PageProps> = ({ location }) => (
 </div>
 </div>
 
-<p>For a linear journey, it’s good practice to show a step indicator or progress bar, so a user can gauge how far they are through the process. Make sure that this is also intelligible to screenreaders – in the below example, the screenreader reads the list and announces ‘Current step’ for the step the user is on.</p>
+<p>For a linear journey, it’s good practice to show a step indicator or progress bar, so a user can gauge how far they are through the process. Make sure that this is also intelligible to screen readers – in the below example, the screen reader reads the list and announces ‘Current step’ for the step the user is on.</p>
 <div className="govuk-grid-row">
   <div className="govuk-grid-column-three-quarters">
     <img src={navigationImage03} alt="An example of a progress indicator - the steps are listed and the current step is highlighted" className="image-examples" />

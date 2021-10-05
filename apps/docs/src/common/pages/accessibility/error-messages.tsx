@@ -215,7 +215,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </tr>
 
         <tr className="govuk-table__row">
-        <td className="govuk-table__cell">Motor impairment</td>
+        <td className="govuk-table__cell">Motor impaired</td>
         <td className="govuk-table__cell">Difficulty or cannot use a mouse so cannot put information in lots of times</td>
         <td className="govuk-table__cell">Provide input format requirements to avoid errors, allow users to pick from restricted values</td>
         </tr>

@@ -120,7 +120,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </h2>
     <ul className="plain">
       <li><A href="https://collaboration.homeoffice.gov.uk/display/A11y/Home+Office+Accessibility+Standard">Home Office Accessibility Standard v1.1 August 2021</A> (Home Office Confluence link)</li>
-      <li><A href="https://homeofficegovuk.sharepoint.com/:w:/s/designops/EeB8PFKt6CNEmzfijRoZAO8BudZ1A8ths4rpx4h8qykZDA?e=Mwm90N">Accessibility checklist for designers</A> (Home Office Sharepoint link)</li>
+      <li><A href="https://homeofficegovuk.sharepoint.com/:w:/r/teams/HomeOfficeDigital/User%20Research%20and%20Design/contentdesign/_layouts/15/Doc.aspx?sourcedoc=%7BD88898BB-F961-4636-95E1-5E56F2B1789B%7D&file=Accessibility%20checklist.docx&action=default&mobileredirect=true">Accessibility checklist for designers</A> (Home Office Sharepoint link)</li>
       <li><A href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy checks – a first review of web accessibility</A></li>
       <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service">Helping people to use your service</A></li>
       <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility">Testing for accessibility</A></li>
@@ -134,7 +134,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <li>Dos and don'ts for designing accessible services
     <br />- available as <A href="https://ukhomeoffice.github.io/accessibility-posters/">web pages</A> and <A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility/dos-donts">downloadable posters</A></li>
     <li><A href="https://webaim.org/resources/contrastchecker/">Colour contrast checker</A></li>
-    <li><A href="https://help.apple.com/voiceover/info/guide/10.12/">Guide for VoiceOver screenreader</A></li>
+    <li><A href="https://help.apple.com/voiceover/info/guide/10.12/">Guide for VoiceOver screen reader</A></li>
     <li><A href="https://wave.webaim.org/">WAVE accessibility evaluation tool</A></li>
     </ul>
 

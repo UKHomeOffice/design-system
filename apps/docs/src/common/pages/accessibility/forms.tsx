@@ -114,10 +114,11 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Accessibility</span>
         Forms
       </h1>
-      <p>Forms are one of the main ways that we gather information from users, from everything to applying for an immigration product to entering details into a caseworking system.</p>
+      <p>Forms are one of the main ways that we gather information from users</p>
+      <p>This can be anything from applying for an immigration product to entering details into a caseworking system.</p>
 
       <h2>Helping everyone</h2>
-      <p>Good labelling helps people fill out a form correctly and easily. This creates a better user experience and reduces errors which can cost money to address.</p>
+      <p>Good labelling helps people fill out a form correctly and easily. This reduces errors which can cost money to address.</p>
 
       <h2>The basics</h2>
         <p>Do:</p>
@@ -155,7 +156,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </tr>
 
         <tr className="govuk-table__row">
-        <td className="govuk-table__cell">Motor impairment</td>
+        <td className="govuk-table__cell">Motor impaired</td>
         <td className="govuk-table__cell">Clicking or tapping on form fields can be difficult</td>
         <td className="govuk-table__cell">Good spacing between fields and correctly associated labels</td>
         </tr>
@@ -177,15 +178,15 @@ const Page: FC<PageProps> = ({ location }) => (
     &lt;/div&gt;
   </code>
 </p>
-<p>This allows screenreaders to read out the label when the field is focused and provide a larger click/tap area for users with motor impairments.</p>
+<p>This allows screen readers to read out the label when the field is focused and provide a larger click/tap area for users with motor impairments.</p>
 <p>Find out more about labelling controls in <A href="https://www.w3.org/WAI/tutorials/forms/labels/">WAI Web Accessibility Tutorials</A>.</p>
 
 <h3>Avoid using placeholders</h3>
-<p>Do not use placeholders that disappear when the field is being used, this makes it harder for people with memory issues and are not always read out by a screen reader. Using them instead of a label can make it hard for users to double check their answers. </p>
+<p>Do not use placeholders that disappear when the field is being used - this makes it harder for people with memory issues and are not always read out by a screen reader. Using them instead of a label can make it hard for users to double check their answers. </p>
 
 <h3>Use hint text to help users</h3>
-<p>Hint text is additional information that helps users know what information to put in a field. Make sure it is short and to the point with examples of expected formats. Use <code>aria-describedby</code> to link the hint text to the field so that it is read out by screen readers. Don’t add links to hint text as screen readers won’t pick this up. It is also important to make sure that the hint text passes colour contrast.</p>
-<p>There is more advice about good hint text in the <A href="https://design-system.service.gov.uk/components/text-input/#hint-text">GOV.UK Design System</A></p>
+<p>Hint text is additional information that helps users know what information to put in a field. Make sure it is short and to the point with examples of expected formats. Use <code>aria-describedby</code> to link the hint text to the field so that it is read out by screen readers. Do not add links to hint text as screen readers won’t pick this up. It is also important to make sure that the hint text passes colour contrast.</p>
+<p>There is more advice about good hint text in the <A href="https://design-system.service.gov.uk/components/text-input/#hint-text">GOV.UK Design System</A>.</p>
 
 <div className="example" style={{marginBottom: "2em"}}>
 <div className="govuk-form-group">
