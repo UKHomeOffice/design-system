@@ -24,6 +24,10 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Links'
         },
         {
+          href: '/accessibility/navigation',
+          text: 'Navigation'
+        },
+        {
           href: '/accessibility/tables',
           text: 'Tables'
         },
@@ -61,6 +65,10 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/keyboard/pointer-gestures',
           text: '- Pointer gestures'
+        },
+        {
+          href: '/accessibility/forms',
+          text: 'Forms'
         },
         {
           href: '/accessibility/timeouts',
@@ -162,7 +170,7 @@ const Page: FC<PageProps> = ({ location }) => (
           </tr>
 
           <tr className="govuk-table__row">
-            <td className="govuk-table__cell">Motor impairment</td>
+            <td className="govuk-table__cell">Motor impaired</td>
             <td className="govuk-table__cell">Cannot use a mouse</td>
             <td className="govuk-table__cell">Media player that can be controlled using keyboard or voice input</td>
 
