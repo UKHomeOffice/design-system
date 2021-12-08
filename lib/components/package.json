@@ -1,6 +1,6 @@
 {
   "name": "@hods/components",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "All Home Office Design System components.",
   "main": "src/index.ts",
   "sass": "assets/index.scss",
