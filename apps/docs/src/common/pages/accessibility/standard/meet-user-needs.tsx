@@ -3,10 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png').default;
-
-export const title = 'Skip to content links';
-const description = 'Accessibility guidance for keyboard content';
+export const title = 'Meet user needs';
+const description = 'Meet user needs Accessibility Standard requirements';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -144,27 +142,32 @@ const Page: FC<PageProps> = ({ location }) => (
         ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-      <h1>
-        <span className="caption">Accessibility</span>
-        ‘Skip to content’ links
-      </h1>
-      <p>For keyboard users, having to repeatedly move through the same navigation menu every time they start a new page can be frustrating.</p>
-      <p>This is why ‘skip to content’ links exist. The first tab move you make on each page should show a link at the top of the page that says ‘Skip to content’ (or similar) and moves the user to the main part of the page.</p>
 
-      <div className="example" style={{marginBottom: "2em"}}>
-        <p>To view the skip link component tab to this example, or click inside this example and press tab.</p>
-        <A href="#" className="govuk-skip-link">Skip to main content</A>
-      </div>
+    <h1>
+      <span className="caption">Accessibility</span>
+      Meet user needs
+    </h1>
+    <p>You must ensure that you understand and meet user needs.</p>
+    <p>When conducting user research you must include users with disabilities.</p>
+    <h2>Index</h2>
+    <ul className="plain">
+      <li><a href="#rr5.1.1">5.1.1 - User Research Participants</a></li>
+    </ul>
 
-      <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
-      <p>Read more on the WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</a>.</p>
+    <h3 id="rr5.1.1">5.1.1 - User Research Participant</h3>
+    <p>When doing user research, make sure to include users with disabilities (at least 1 out of every 5 participants).</p>
+    <h4>Implementation guidance</h4>
+    <p>During user research activity, at least 1 in 5 participants must have a disability. You should ensure that you include a diverse group of disabled users with a range of disabilities that represents the population you’re researching.</p>
+    <h4>How to test</h4>
+    <p>You should ensure that you work with the Research Operations team to identify and recruit disabled participants. You should use appropriate research methods as defined by the Head of User Research.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
   <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
 </div>
-  </div>
+
     </div>
+  </div>
 );
 
 export default Page;

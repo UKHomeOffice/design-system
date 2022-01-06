@@ -42,6 +42,10 @@ const Page: FC<PageProps> = ({ location }) => (
           text: 'Error messages'
         },
         {
+          href: '/accessibility/notifications',
+          text: 'Notifications'
+        },
+        {
           href: '/accessibility/keyboard',
           text: 'Keyboard basics'
         },
@@ -98,10 +102,38 @@ const Page: FC<PageProps> = ({ location }) => (
           {
             href: '/accessibility/images',
             text: 'Images'
+          },
+          {
+            href: '/accessibility/moving-and-flashing-content',
+            text: 'Moving and flashing content'
           }
         ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
           <NavigationMenu items={[
+            {
+              href: '/accessibility/standard',
+              text: 'Accessibility Standard'
+            },
+            {
+              href: '/accessibility/standard/perceivable',
+              text: '- Perceivable'
+            },
+            {
+              href: '/accessibility/standard/operable',
+              text: '- Operable'
+            },
+            {
+              href: '/accessibility/standard/understandable',
+              text: '- Understandable'
+            },
+            {
+              href: '/accessibility/standard/robust',
+              text: '- Robust'
+            },
+            {
+              href: '/accessibility/standard/meet-user-needs',
+              text: '- Meet user needs'
+            },
             {
               href: '/accessibility/resources',
               text: 'Guidance, tools and further reading'
@@ -116,7 +148,7 @@ const Page: FC<PageProps> = ({ location }) => (
       different needs and circumstances such as location, health and equipment.</p>
       <p>Delivering accessible and inclusive services is also in line with government standards and our legal
       responsibilities for equality and accessibility.</p>
-      <p>We will be adding more guidance in the coming weeks.</p>
+      <p>In order to provide consistency for users and product teams, we’ve developed a <A href="/accessibility/standard">Home Office Accessibility Standard</A> that closely aligns to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
     </div>
   </div>
 );

@@ -3,10 +3,11 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const headingImage = require('../../../../assets/images/accessibility/heading-hierarchy.png').default;
+const movingImage01 = require('../../../../assets/images/accessibility/moving-and-flashing-01.png').default;
+const movingImage02 = require('../../../../assets/images/accessibility/moving-and-flashing-02.png').default;
 
-export const title = 'Headings';
-const description = 'Accessibility guidance for headings';
+export const title = 'Moving and flashing content';
+const description = 'Accessibility guidance for moving and flashing content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -144,28 +145,54 @@ const Page: FC<PageProps> = ({ location }) => (
         ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-      <h1>
-        <span className="caption">Accessibility</span>
-        Headings
-      </h1>
-      <p>Headings are an important navigation tool for all users.</p>
-      <p>See the impact that accessible headings have on people who use <A href="https://www.w3.org/WAI/perspective-videos/speech/">text to speech</A> software.</p>
-<br />
 
-      <h2>Helping everyone</h2>
-      <p>A logical structure can make your content readable and accessible to everyone. Just as sighted users can scan the page and use headings to find the content they’re looking for, people using assistive tech such as screen readers can use a similar method to find their way around. So it’s important that the coding of headings matches up with their visual appearance. </p>
-      <p>Adding a logical heading structure can also help you think more clearly about your content and what it is trying to say. And clear heading text is useful for everyone.</p>
-<br />
-      <h2>The basics</h2>
-        <p>Do the following things to make your heading structure clear and accessible:</p>
-        <ul>
-        <li>write headings in clear, descriptive language </li>
-        <li>stick to one main heading (H1) per page or document</li>
-        <li>make sure any subheadings follow a logical sequence</li>
-        <li>if it’s intended as a heading, make sure it’s coded as one</li>
-        <li>do not use heading styles for non-heading purposes (for example: for emphasis, or for pull-out quotes)</li>
-        </ul>
+    <h1>
+      <span className="caption">Accessibility</span>
+      Moving and flashing content
+    </h1>
+    <p>Moving, flashing, blinking, auto-scrolling or auto-updating content is used to increase visual interest or draw and maintain attention.</p>
+    <p>Common examples of moving content include:</p>
+    <ul>
+      <li>animated images</li>
+      <li>presentation slide transitions</li>
+      <li>scrolling carousels</li>
+    </ul>
 
+    <p>The following is an example of a moving carousel from the <A href="https://ukcop26.org/">COP26 website</A>.</p>
+
+    <div className="govuk-grid-row">
+    <div className="govuk-grid-column-three-quarters">
+      <img src={movingImage02} alt="A carousel on the COP26 website" className="image-examples"/>
+    </div>
+    </div>
+    <br />
+
+    <p>Auto-scrolling and auto-updating content is content that changes based on pre-set time intervals and includes news, stock price updates and social media feeds.</p>
+
+    <div className="govuk-grid-row">
+    <div className="govuk-grid-column-three-quarters">
+      <img src={movingImage01} alt="Home Office DDaT Twitter feed" className="image-examples"/>
+    </div>
+    </div>
+    <br />
+
+    <p>Blinking and flashing content is less common but may form part of videos or other animated content.</p>
+
+    <h2>Helping everyone</h2>
+    <p>Websites without moving, auto-updating or flashing content are easier for everyone to see and use, meaning that it is easier to concentrate on and interact with other parts of the page.</p>
+
+    <h2>The basics</h2>
+      <p>Do:</p>
+      <ul>
+        <li>avoid moving and auto-updating content if possible</li>
+        <li>limit animations to five seconds</li>
+        <li>provide a way to pause, stop or hide animated content, or control the frequency of updates</li>
+      </ul>
+
+      <p>Do not:</p>
+      <ul>
+        <li>use content that flashes more than three times a second</li>
+      </ul>
 
       <table className="govuk-table">
         <caption className="govuk-table__caption govuk-table__caption--l">Examples of users with access needs</caption>
@@ -178,69 +205,38 @@ const Page: FC<PageProps> = ({ location }) => (
         </thead>
         <tbody className="govuk-table__body">
         <tr className="govuk-table__row">
-          <td className="govuk-table__cell">Blind screen reader user </td>
-          <td className="govuk-table__cell">Cannot see the visual appearance of headings to help with navigation </td>
-          <td className="govuk-table__cell">Semantically-coded headings that screen reader software can recognise </td>
+          <td className="govuk-table__cell">Blind and partially sighted</td>
+          <td className="govuk-table__cell">Changes in auto-updating content may not be read out<br /><br />Changes may be announced too frequently, interrupting a screen reader user</td>
+          <td className="govuk-table__cell">Correctly implemented auto-updating content using ARIA live regions<br /><br />Static context<br /><br />A way to pause, stop or hide auto-updating content, or control the frequency of updates</td>
         </tr>
-
         <tr className="govuk-table__row">
-        <td className="govuk-table__cell">Cognitive impairment </td>
-        <td className="govuk-table__cell">Struggles with pages that have dense, unstructured or a lot of text </td>
-        <td className="govuk-table__cell">Clear, descriptive headings in Plain English</td>
+          <td className="govuk-table__cell">Cognitive, language and learning disability, dyslexic, attention deficit hyperactivity disorder (ADHD)</td>
+          <td className="govuk-table__cell">Static content to be easy to read and not be a distraction</td>
+          <td className="govuk-table__cell">Static content<br /><br />A way to pause, stop or hide animated and auto-updated content, or control the frequency of updates<br /><br />A warning if upcoming pages contain movement</td>
         </tr>
-
+        <tr className="govuk-table__row">
+          <td className="govuk-table__cell">Epilepsy</td>
+          <td className="govuk-table__cell">Content that does not cause seizures</td>
+          <td className="govuk-table__cell">Static content<br /><br />Content that does not flash more than three times a second</td>
+        </tr>
         </tbody>
       </table>
-<br />
-<h2>Creating good headings</h2>
 
-<h3>Language</h3>
+      <h2>Using moving and auto-updating content</h2>
+      <p>Consider whether moving, blinking, scrolling, auto-updating or flashing content is  necessary or whether the desired outcome can be achieved in another way.</p>
+      <p>Moving content may be necessary if removing it changes the meaning or functionality of the content and when this cannot be achieved in any other way.</p>
 
-<p>A good heading describes the content beneath it in simple language. Keep headings short and relevant to the content. </p>
-<br />
-<h3>Structure</h3>
+      <h3>Moving content</h3>
+      <p>If the content moves automatically, make sure that the movement lasts a maximum of 5 seconds. Otherwise, provide an option for users to pause, stop or hide this content. Make sure that the user is able to restart and unhide the content if desired.</p>
+      <p>Content that is paused should resume where it was stopped, unless doing so would present misleading information when it is restarted.</p>
+      <p>Ensure that pausing the content does not prevent the use of the rest of the page.</p>
 
-<p>Use headings to split up and structure content into clear sections. Users rely on this structure for navigation so keep it straightforward, and try not to use too many sub-sub-subheadings. Most pages or documents shouldn’t need more than four heading levels unless they are very long or complicated.</p>
+      <h3>Auto-updating Content</h3>
+      <p>Ideally, content should not update automatically, as frequent changes may be distracting.</p>
+      <p>If the content has to update, provide an option for users to pause, stop or hide this content, or control the frequency of the updating content.</p>
 
-<p>Consider your heading structure as a table of contents – this reflects how people use them to find the most relevant content for their needs.  </p>
-
-<p>Many types of assistive technology allow users to navigate with headings in a similar way to a sighted user. They can quickly scan a page by its headings, and jump directly to the content they are looking for. </p>
-<br />
-<h3>Nested headings</h3>
-
-<p>An important aspect of structure is how your headings are ‘nested’. Starting with a ‘Heading 1’ (<code>&lt;h1&gt;</code>) for the main page title, subheadings should sit below this in a sequential order.
-
-Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form: </p>
-<ul className="govuk-list">
-<li>&lt;h1&gt;
-  <ul className="govuk-list">
-    <li>&emsp;&lt;h2&gt;
-      <ul className="govuk-list">
-        <li>&emsp;&emsp;&lt;h3&gt;
-          <ul className="govuk-list">
-            <li>&emsp;&emsp;&emsp;&lt;h4&gt;</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</li>
-</ul>
-
-<p>Never skip heading levels – if you need a heading to look different, do this with CSS styles rather than with the HTML code. </p>
-
-<p>An example of a nested heading structure: </p>
-<img src={headingImage} alt="Headings nested in a sequential hierarchy"  width="50%"/>
-<br /><br />
-<h3>Structure is separate from appearance</h3>
-
-<p>Don’t use heading tags for non-heading purposes. For example, if you need a call-out message in large text but it does not function as a heading, then use styling to achieve this visual effect. </p>
-
-<p>As a rule of thumb: if there is nothing or very little that sits underneath to it, it’s probably not a heading. </p>
-
-<p>Similarly, if part of your content works as a heading (for example, to head up content blocks in the footer, or in a sidebar list of related links) then you must use the correct HTML code as well as any visual styling. If you don’t, a screen reader will not recognise this as a heading and the user may miss it.</p>
-
-<p>Where sections are broken up with visual design alone, it may be worth adding a screen reader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS</a>.</p>
+      <h3>Flashing content</h3>
+      <p>Content must not flash more than three times a second.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
