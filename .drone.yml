@@ -1,55 +1,75 @@
-matrix:
-  DOCKER_USERNAME:
-    - ukhomeofficedigital+design_system
-  DOCKER_REGISTRY:
-    - quay.io
-pipeline:
-  deploy:
-    image: quay.io/ukhomeofficedigital/lev-ci
-    secrets:
-      - DOCKER_PASSWORD
-      - KUBE_SERVER
-      - KUBE_NAMESPACE
-      - KUBE_TOKEN
-      - KUBE_DEPLOYMENT
-      - KUBE_CONTAINER
-    environment:
-      - DOCKER_HOST=tcp://172.17.0.1:2375
-      - NODE_OPTIONS=--max_old_space_size=4096
-    commands:
-      - echo "$${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin "${DOCKER_REGISTRY}"
-      - npm install -g pnpm
-      - cd 'apps/docs'
-      - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
-    when:
-      branch: master
-      event: push
-  notify_slack_success:
-    image: plugins/slack:1.0
-    secrets: [ slack_webhook ]
+---
+kind: pipeline
+name: matrix-1
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: deploy
+  pull: if-not-exists
+  image: quay.io/ukhomeofficedigital/lev-ci
+  commands:
+  - echo "$${DOCKER_PASSWORD}" | docker login -u "ukhomeofficedigital+design_system" --password-stdin "quay.io"
+  - npm install -g pnpm
+  - cd 'apps/docs'
+  - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
+  environment:
+    DOCKER_HOST: tcp://172.17.0.1:2375
+    DOCKER_PASSWORD:
+      from_secret: DOCKER_PASSWORD
+    KUBE_CONTAINER:
+      from_secret: KUBE_CONTAINER
+    KUBE_DEPLOYMENT:
+      from_secret: KUBE_DEPLOYMENT
+    KUBE_NAMESPACE:
+      from_secret: KUBE_NAMESPACE
+    KUBE_SERVER:
+      from_secret: KUBE_SERVER
+    KUBE_TOKEN:
+      from_secret: KUBE_TOKEN
+    NODE_OPTIONS: --max_old_space_size=4096
+  when:
+    branch:
+    - master
+    event:
+    - push
+
+- name: notify_slack_success
+  pull: if-not-exists
+  image: plugins/slack:1.0
+  settings:
     channel: ho-design-system
+    template: "*Deployed {{repo.name}}* - <{{build.link}}|#{{build.number}}>\n"
     username: Drone
-    template: >
-      *Deployed {{repo.name}}* - <{{build.link}}|#{{build.number}}>
-    when:
-      branch: master
-      event: push
-      status: success
-  notify_slack_failure:
-    image: plugins/slack
-    secrets: [ slack_webhook ]
+  environment:
+    SLACK_WEBHOOK:
+      from_secret: slack_webhook
+  when:
+    branch:
+    - master
+    event:
+    - push
+    status:
+    - success
+
+- name: notify_slack_failure
+  pull: if-not-exists
+  image: plugins/slack
+  settings:
     channel: ho-design-system
+    template: "*Failed to deploy {{repo.name}}*\nAuthor: {{build.author}}\nDuration: {{since job.started}} Job: <{{build.link}}|#{{build.number}}>\nCommit: {{build.commit}}\n"
     username: Drone
-    template: >
-      *Failed to deploy {{repo.name}}*
+  environment:
+    SLACK_WEBHOOK:
+      from_secret: slack_webhook
+  when:
+    branch:
+    - master
+    event:
+    - push
+    status:
+    - failure
 
-      Author: {{build.author}}
-
-      Duration: {{since job.started}}
-      Job: <{{build.link}}|#{{build.number}}>
-
-      Commit: {{build.commit}}
-    when:
-      branch: master
-      event: push
-      status: failure
+...
