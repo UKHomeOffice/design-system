@@ -17,7 +17,7 @@ steps:
   - cd 'apps/docs'
   - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
   environment:
-    DOCKER_HOST: tcp://172.17.0.1:2375
+    DOCKER_HOST: tcp://127.0.0.1:2375
     DOCKER_PASSWORD:
       from_secret: DOCKER_PASSWORD
     KUBE_CONTAINER:
@@ -80,4 +80,6 @@ steps:
     status:
     - failure
 
-...
+services:
+  - name: docker
+    image: 340268328991.dkr.ecr.eu-west-2.amazonaws.com/acp/dind
