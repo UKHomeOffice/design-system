@@ -47,7 +47,7 @@ steps:
   resources:
     requests:
       cpu: 500
-      memory: 4GiB
+      memory: 5GiB
     limits:
       cpu: 4000
       memory: 5GiB
