@@ -6,7 +6,7 @@ name: default
 trigger:
   branch:
     - master
-    event:
+  event:
     - push
 
 platform:
