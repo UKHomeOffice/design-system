@@ -3,6 +3,12 @@ kind: pipeline
 type: kubernetes
 name: default
 
+trigger:
+  branch:
+    - master
+    event:
+    - push
+
 platform:
   os: linux
   arch: amd64
