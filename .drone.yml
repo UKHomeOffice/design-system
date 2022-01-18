@@ -20,6 +20,7 @@ steps:
   commands:
   - echo "$${DOCKER_PASSWORD}" | docker login -u "$${DOCKER_USERNAME}" --password-stdin "$${DOCKER_REGISTRY}"
   - npm install -g pnpm
+  - wget -q "https://storage.googleapis.com/kubernetes-release/release/v$${KUBECTL_VERSION}/bin/linux/amd64/kubectl" -O "/usr/bin/kubectl"
   - cd 'apps/docs'
   - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
   environment:
@@ -38,6 +39,7 @@ steps:
       from_secret: KUBE_SERVER
     KUBE_TOKEN:
       from_secret: KUBE_TOKEN
+    KUBECTL_VERSION: 1.19.15
     NODE_OPTIONS: --max_old_space_size=4096
   when:
     branch:
