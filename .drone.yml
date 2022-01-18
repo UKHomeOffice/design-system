@@ -1,5 +1,6 @@
 ---
 kind: pipeline
+type: kubernetes
 name: default
 
 platform:
@@ -35,6 +36,13 @@ steps:
     - master
     event:
     - push
+  resources:
+    requests:
+      cpu: 500
+      memory: 4GiB
+    limits:
+      cpu: 4000
+      memory: 5GiB
 
 - name: notify_slack_success
   pull: if-not-exists
