@@ -16,7 +16,7 @@ platform:
 steps:
 - name: deploy
   pull: if-not-exists
-  image: quay.io/ukhomeofficedigital/lev-ci
+  image: quay.io/ukhomeofficedigital/lev-ci:3.5.2-163-6aa2aab124
   commands:
   - echo "$${DOCKER_PASSWORD}" | docker login -u "$${DOCKER_USERNAME}" --password-stdin "$${DOCKER_REGISTRY}"
   - npm install -g pnpm
