@@ -57,7 +57,8 @@ steps:
   image: plugins/slack
   settings:
     channel: ho-design-system
-    template: "*Deployed {{repo.name}}* - <{{build.link}}|#{{build.number}}>\n"
+    template: >
+      *Deployed {{repo.name}}* - <{{build.link}}|#{{build.number}}>
     username: Drone
   environment:
     SLACK_WEBHOOK:
@@ -75,7 +76,15 @@ steps:
   image: plugins/slack
   settings:
     channel: ho-design-system
-    template: "*Failed to deploy {{repo.name}}*\nAuthor: {{build.author}}\nDuration: {{since job.started}} Job: <{{build.link}}|#{{build.number}}>\nCommit: {{build.commit}}\n"
+    template: >
+      *Failed to deploy {{repo.name}}*
+
+      Author: {{build.author}}
+
+      Duration: {{since job.started}}
+      Job: <{{build.link}}|#{{build.number}}>
+
+      Commit: {{build.commit}}
     username: Drone
   environment:
     SLACK_WEBHOOK:
