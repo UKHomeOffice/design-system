@@ -18,12 +18,14 @@ steps:
   pull: if-not-exists
   image: quay.io/ukhomeofficedigital/lev-ci
   commands:
-  - echo "$${DOCKER_PASSWORD}" | docker login -u "ukhomeofficedigital+design_system" --password-stdin "quay.io"
+  - echo "$${DOCKER_PASSWORD}" | docker login -u "$${DOCKER_USERNAME}" --password-stdin "$${DOCKER_REGISTRY}"
   - npm install -g pnpm
   - cd 'apps/docs'
   - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
   environment:
     DOCKER_HOST: tcp://127.0.0.1:2375
+    DOCKER_REGISTRY: quay.io
+    DOCKER_USERNAME: ukhomeofficedigital+design_system
     DOCKER_PASSWORD:
       from_secret: DOCKER_PASSWORD
     KUBE_CONTAINER:
