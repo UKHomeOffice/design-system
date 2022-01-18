@@ -54,7 +54,7 @@ steps:
 
 - name: notify_slack_success
   pull: if-not-exists
-  image: plugins/slack:1.0
+  image: plugins/slack
   settings:
     channel: ho-design-system
     template: "*Deployed {{repo.name}}* - <{{build.link}}|#{{build.number}}>\n"
