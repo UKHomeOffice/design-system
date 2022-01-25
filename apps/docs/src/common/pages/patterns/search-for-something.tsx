@@ -61,19 +61,32 @@ const Page: FC<PageProps> = ({ location }) => (
         <p className="govuk-caption-m" style={{ marginBottom: "2em" }}>Also known as: search</p>
       </div>
 
-      <p className="govuk-body">Searching for records in the system</p>
+      <p className="govuk-body">Searching for records in a system.</p>
 
       
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p>Use this pattern to help users find a person, task, place or another type of record in your system, when navigation alone is not a practical option.</p>
 
-      <h2 className='govuk-heading-l'>When not to use this patern</h2>
+      <h2 className='govuk-heading-l'>When not to use this pattern</h2>
       <p>Do not use this pattern if users only have a simple list to manage. Try and instead allow filtering, or make automatic suggestions and test this with your users.
 
       </p>
 
       <p>Make sure you understand who your users are and what they are trying to achieve before coming up with any design solutions.</p>
+
+
+      <h2 className="govuk-heading-l">Narrow search</h2>
+
+      <p>If your users normally have a single key piece of information to hand to search with, such as a reference number or identifier, allow them to search by that as it will allow for a quicker match. When an exact match is found, surface the match result the same way you would normally (rather than going directing to the record).</p>
+
+      <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
+        <img src={applySearchNarrow} className="image-examples" alt="An example of a service allowing search with narrow parameters" />
+      </div>
+
+      <h3 className="govuk-heading-m">Research on this pattern</h3>
+      <p>Multiple Home Office services use wide search. If you have evidence this also works for your users, <a href="https://github.com/UKHomeOffice/design-system/issues/322">please contribute</a></p>
+
 
       <h2 className="govuk-heading-l">Wide search</h2>
       <p>Users may not have a lot of information to hand before starting their search. If this is the case, you should make your search parameters quite wide. For example, if a user is searching for a person, allow them to enter both name and DOB, as well as address and postcode. If this brings up too many results, allow filtering.
@@ -86,7 +99,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Your users may have different needs, for example:</p>
 
       <ul className="govuk-list govuk-list--bullet">
-        <li>analysts: need a range of search options presented in order to obtain different data types. May also need to add their own search parameters (research this)</li>
+        <li>analysts: need a range of search options presented in order to obtain different data types. May also need to add their own search parameters (you should research what these are)</li>
         <li>caseworkers: need context-specific options in order to find the right results</li>
       </ul>
       <p>When presenting multiple options, ensure all entries that are not required are marked as part of the label as (optional).</p>
@@ -94,7 +107,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Speak with technical members of your team to understand constraints in relation to your database, for instance:</p>
 
       <ul className="govuk-list govuk-list--bullet">
-        <li>what can be searched for</li>
+        <li>what users can search for</li>
         <li>how the data that is brought back will be presented</li>
         <li>how many potential results may be brought back </li>
 
@@ -102,67 +115,44 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h3 className="govuk-heading-m">Research on this pattern</h3>
-      <p>Multiple Home Office services use search, including:</p>
+      <p>Multiple Home Office services use wide search. If you have evidence this also works for your users, <a href="https://github.com/UKHomeOffice/design-system/issues/322">please contribute</a></p>
 
-      <ul className="govuk-list govuk-list--bullet">
-        <li>Atlas - Border Force case working tool</li>
-        <li>Cerberus - Border Force data analysis tool</li>
-        <li>Entity search - Border Force research tool</li>
-        <li>NLEDS - Policing system</li>
-        <li>Ludus - Policing system for football officers</li>
-      </ul>
+      
 
 
 
-      <h2 className="govuk-heading-l">Narrow search</h2>
-
-      <p>If your users normally have a single key piece of information to hand to search with, such as a reference number or identifier, allow them to search by that as it will allow for a quicker match. When an exact match is found, surface the match result the same way you would normally (rather than going directing to the record).</p>
-
-      <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
-        <img src={applySearchNarrow} className="image-examples" alt="An example of a service allowing search with narrow parameters" />
-      </div>
-
-      <h3 className="govuk-heading-m">Research on this pattern</h3>
-      <p>Several Home Office services use this pattern including:</p>
-
-      <ul className="govuk-list govuk-list--bullet">
-        <li>Ludus</li>
-        <li>NLEDS</li>
-        <li>Entity Search</li>
-
-      </ul>
 
       <h2 className="govuk-heading-l">Accessibility considerations</h2>
       <p>Ensure you test your search with users with access needs. </p>
 
       <h3 className="govuk-heading-m">Keyboard navigation</h3>
 
-      <p>Tabbing in a logical way to the interactive elements, being able to see the focus, and being able to interact with it. If not using native HTML elements and creating something custom refer to <a href="https://www.w3.org/TR/wai-aria-practices/wai-aria-practices">https://www.w3.org/TR/wai-aria-practices/wai-aria-practices</a> for expected interaction., </p>
+      <p>Tabbing in a logical way to the interactive elements, being able to see the focus, and being able to interact with it. If not using native HTML elements and creating something custom refer to <a href="https://www.w3.org/TR/wai-aria-practices/wai-aria-practices">https://www.w3.org/TR/wai-aria-practices/wai-aria-practices</a> for expected interaction.</p>
 
       <h3 className="govuk-heading-l">Screen readers</h3>
-      <ul className="govuk-list govuk-list--bullet"><li>Ensure programmatic labelling of fields</li>
-        <li>Ensure that all interactive elements have a name, role and value, see WAI-ARIA Authoring Practices 1.1 for expected values.</li>
+      <p>You should make sure</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>fields are labelled programmatically</li>
+        <li>all interactive elements have a name, role and value, see WAI-ARIA Authoring Practices 1.1 for expected values</li>
       </ul>
 
 
-      <h3 className="govuk-heading-l">Other</h3>
-      <ul className="govuk-list govuk-list--bullet"><li>when presenting data in tables, ensure this is marked up correctly</li>
-        <li>make sure colour only isn't used to assign meaning to results</li>
-        <li>make sure you can resize text up to 200% and scale up to 400% (tables excluded) respectively. </li>
-        <li>ensure that users can change font spacing. All of these especially important if there is a lot of data.</li>
-        <li>allow users to turn off, adjust or extend timeouts</li>
-        <li>especially for filtering, make sure not to change results based on filter checkbox selection alone for example, provide a submit button</li>
-        <li>If the search generates errors, making sure screen reader users know what happened and how to fix it.</li>
+      <h3 className="govuk-heading-l">General</h3>
+      <p>You should make sure</p>
+
+      <ul className="govuk-list govuk-list--bullet">
+        <li>when presenting data in tables, that this is marked up correctly</li>
+        <li>colour is not used as the only way to assign meaning to results</li>
+        <li>users can resize text up to 200% and scale up to 400% (tables excluded)</li>
+        <li>users can change font spacing. All of these especially important if there is a lot of data</li>
+        <li>users can turn off, adjust or extend timeouts</li>
+        <li>you do not change results based on filter checkbox selection alone (for example you could provide a submit button)</li>
+        <li>if the search generates errors, that screen reader users know what happened and how to fix it</li>
       </ul>
-
-
-
-
-
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel
+        <p>If you've got a question or suggestion share it on the Slack channel
           #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
           email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
       </div>
