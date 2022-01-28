@@ -126,7 +126,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p>Tabbing in a logical way to the interactive elements, being able to see the focus, and being able to interact with it. If not using native HTML elements and creating something custom refer to <a href="https://www.w3.org/TR/wai-aria-practices/wai-aria-practices">https://www.w3.org/TR/wai-aria-practices/wai-aria-practices</a> for expected interaction.</p>
 
-      <h3 className="govuk-heading-l">Screen readers</h3>
+      <h3 className="govuk-heading-m">Screen readers</h3>
       <p>You should make sure</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>fields are labelled programmatically</li>
