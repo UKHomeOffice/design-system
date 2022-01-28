@@ -1,45 +1,83 @@
-matrix:
-  DOCKER_USERNAME:
-    - ukhomeofficedigital+design_system
-  DOCKER_REGISTRY:
-    - quay.io
-pipeline:
-  deploy:
-    image: quay.io/ukhomeofficedigital/lev-ci
-    secrets:
-      - DOCKER_PASSWORD
-      - KUBE_SERVER
-      - KUBE_NAMESPACE
-      - KUBE_TOKEN
-      - KUBE_DEPLOYMENT
-      - KUBE_CONTAINER
-    environment:
-      - DOCKER_HOST=tcp://172.17.0.1:2375
-      - NODE_OPTIONS=--max_old_space_size=4096
-    commands:
-      - echo "$${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin "${DOCKER_REGISTRY}"
-      - npm install -g pnpm
-      - cd 'apps/docs'
-      - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
-    when:
-      branch: master
-      event: push
-  notify_slack_success:
-    image: plugins/slack:1.0
-    secrets: [ slack_webhook ]
+---
+kind: pipeline
+type: kubernetes
+name: default
+
+trigger:
+  branch:
+    - master
+  event:
+    - push
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: deploy
+  pull: if-not-exists
+  image: quay.io/ukhomeofficedigital/lev-ci:3.5.1-130-e662c06959
+  commands:
+  - echo "$${DOCKER_PASSWORD}" | docker login -u "$${DOCKER_USERNAME}" --password-stdin "$${DOCKER_REGISTRY}"
+  - npm install -g pnpm
+  - wget -q "https://storage.googleapis.com/kubernetes-release/release/v$${KUBECTL_VERSION}/bin/linux/amd64/kubectl" -O "/usr/bin/kubectl"
+  - cd 'apps/docs'
+  - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
+  environment:
+    DOCKER_HOST: tcp://127.0.0.1:2375
+    DOCKER_REGISTRY: quay.io
+    DOCKER_USERNAME: ukhomeofficedigital+design_system
+    DOCKER_PASSWORD:
+      from_secret: DOCKER_PASSWORD
+    KUBE_CONTAINER:
+      from_secret: KUBE_CONTAINER
+    KUBE_DEPLOYMENT:
+      from_secret: KUBE_DEPLOYMENT
+    KUBE_NAMESPACE:
+      from_secret: KUBE_NAMESPACE
+    KUBE_SERVER:
+      from_secret: KUBE_SERVER
+    KUBE_TOKEN:
+      from_secret: KUBE_TOKEN
+    KUBECTL_VERSION: 1.19.15
+    NODE_OPTIONS: --max_old_space_size=4096
+  when:
+    branch:
+    - master
+    event:
+    - push
+  resources:
+    requests:
+      cpu: 500
+      memory: 5GiB
+    limits:
+      cpu: 4000
+      memory: 5GiB
+
+- name: notify_slack_success
+  pull: if-not-exists
+  image: plugins/slack
+  settings:
     channel: ho-design-system
-    username: Drone
     template: >
       *Deployed {{repo.name}}* - <{{build.link}}|#{{build.number}}>
-    when:
-      branch: master
-      event: push
-      status: success
-  notify_slack_failure:
-    image: plugins/slack
-    secrets: [ slack_webhook ]
-    channel: ho-design-system
     username: Drone
+  environment:
+    SLACK_WEBHOOK:
+      from_secret: slack_webhook
+  when:
+    branch:
+    - master
+    event:
+    - push
+    status:
+    - success
+
+- name: notify_slack_failure
+  pull: if-not-exists
+  image: plugins/slack
+  settings:
+    channel: ho-design-system
     template: >
       *Failed to deploy {{repo.name}}*
 
@@ -49,7 +87,18 @@ pipeline:
       Job: <{{build.link}}|#{{build.number}}>
 
       Commit: {{build.commit}}
-    when:
-      branch: master
-      event: push
-      status: failure
+    username: Drone
+  environment:
+    SLACK_WEBHOOK:
+      from_secret: slack_webhook
+  when:
+    branch:
+    - master
+    event:
+    - push
+    status:
+    - failure
+
+services:
+  - name: docker
+    image: 340268328991.dkr.ecr.eu-west-2.amazonaws.com/acp/dind
