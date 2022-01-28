@@ -78,16 +78,13 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">Narrow search</h2>
 
-      <p>If your users normally have a single key piece of information to hand to search with, such as a reference number or identifier, allow them to search by that as it will allow for a quicker match. When an exact match is found, surface the match result the same way you would normally (rather than going directing to the record).</p>
+      <p>If your users normally have a single key piece of information to hand to search with, such as a reference number or identifier, allow them to search by that as it will allow for a quick match (delete 'er' at end of quicker). When an exact match is found, surface the match result <strong>on the screen</strong> (rather than going directing to the record).</p>
 
       <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
         <img src={applySearchNarrow} className="image-examples" alt="An example of a service allowing search with narrow parameters" />
       </div>
 
-      <h3 className="govuk-heading-m">Research on this pattern</h3>
-      <p>Multiple Home Office services use wide search. If you have evidence this also works for your users, <a href="https://github.com/UKHomeOffice/design-system/issues/322">please contribute</a></p>
-
-
+  
       <h2 className="govuk-heading-l">Wide search</h2>
       <p>Users may not have a lot of information to hand before starting their search. If this is the case, you should make your search parameters quite wide. For example, if a user is searching for a person, allow them to enter both name and DOB, as well as address and postcode. If this brings up too many results, allow filtering.
 
@@ -115,7 +112,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h3 className="govuk-heading-m">Research on this pattern</h3>
-      <p>Multiple Home Office services use wide search. If you have evidence this also works for your users, <a href="https://github.com/UKHomeOffice/design-system/issues/322">please contribute</a></p>
+      <p>Multiple Home Office services use search. If you have evidence this also works for your users, you <a href="https://github.com/UKHomeOffice/design-system/issues/322">can contribute to our backlog</a></p>
 
       
 
