@@ -77,8 +77,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 
       <h2 className="govuk-heading-l">Narrow search</h2>
-
-      <p>If your users normally have a single key piece of information to hand to search with, such as a reference number or identifier, allow them to search by that as it will allow for a quick match (delete 'er' at end of quicker). When an exact match is found, surface the match result <strong>on the screen</strong> (rather than going directing to the record).</p>
+      <p>If your users normally have a single key piece of information to hand to search with, such as a reference number or identifier, allow them to search by that as it will allow for a quick match. When an exact match is found, surface the match result on the screen (rather than going directing to the record).</p>
 
       <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
         <img src={applySearchNarrow} className="image-examples" alt="An example of a service allowing search with narrow parameters" />
