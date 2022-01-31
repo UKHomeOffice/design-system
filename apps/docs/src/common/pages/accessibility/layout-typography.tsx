@@ -225,7 +225,6 @@ const Page: FC<PageProps> = ({ location }) => (
   </ul>
 
 <p>An example of how to use landmarks in your page layout:  </p>
-<p>
 <div className="govuk-grid-row">
   <div className="govuk-grid-column-two-thirds">
     <img src={layoutImage01} alt="A sample page layout showing regions for banner, nav, main, aside and footer" className="image-examples" />
