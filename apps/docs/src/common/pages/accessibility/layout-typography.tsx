@@ -136,7 +136,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <ul>
         <li>use italics or ALL CAPS for blocks of text </li>
         <li>leave large areas of empty space on your page</li>
-        <li>use absolute units like “px” for font sizes and spacing – use relative units like “em” instead </li>
+        <li>use absolute units like ‘px’ for font sizes and spacing – use relative units like ‘em’ instead </li>
         </ul>
 
 
@@ -155,16 +155,16 @@ const Page: FC<PageProps> = ({ location }) => (
           <td className="govuk-table__cell">Finds large blocks of text and unusual letter shapes harder to read  </td>
           <td className="govuk-table__cell">Break up longer paragraphs with line breaks <br />
           <br />Use clear and readable fonts
-          Don’t use italics or ALL CAPS  </td>
+          <br /><br />Don’t use italics or ALL CAPS  </td>
         </tr>
 
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Low vision</td>
-        <td className="govuk-table__cell">SMay use strong magnification and only see a small part of the page <br />
+        <td className="govuk-table__cell">May use strong magnification and only see a small part of the page <br /><br />
         May adjust font size or letter spacing </td>
-        <td className="govuk-table__cell">Consistent page layouts <br />
-        Left-aligned content <br />
-        No big empty spaces in between content <br />
+        <td className="govuk-table__cell">Consistent page layouts <br /><br />
+        Left-aligned content <br /><br />
+        No big empty spaces in between content <br /><br />
         Spacing and font sizes with relative units so that they can be adjusted to a user’s needs</td>
         </tr>
 
@@ -186,7 +186,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <h3>Fonts</h3>
 
-<p>The Home Office and GOV.UK design systems both use fonts chosen for clarity and readability, so use them if you can. In emails, documents, or third-party products that allow limited customisation, choose a font that is open and clear. Because all users have different needs, there’s no such thing as a fully “accessible” font, but usually it’s better to choose a sans-serif font (such as Arial) over a serif font (such as Times New Roman). </p>
+<p>The Home Office and GOV.UK design systems both use fonts chosen for clarity and readability, so use them if you can. In emails, documents, or third-party products that allow limited customisation, choose a font that is open and clear. Because all users have different needs, there’s no such thing as a fully ‘accessible’ font, but usually it’s better to choose a sans-serif font (such as Arial) over a serif font (such as Times New Roman). </p>
 <br />
 <h3>Styling</h3>
 
@@ -194,9 +194,9 @@ const Page: FC<PageProps> = ({ location }) => (
 <br />
 <h3>Reflow and resizing</h3>
 
-<p>Many users will resize their screens, zoom in, or use browser settings to adjust the size and spacing of text. Make sure your service is set up to accommodate this. Relative units such as (<code>em</code>) and &#37; will allow your text to reflow and resize to fit user needs, so use these instead of fixed units such as px. </p>
+<p>Many users will resize their screens, zoom in, or use browser settings to adjust the size and spacing of text. Make sure your service is set up to accommodate this. Relative units such as (em) and &#37; will allow your text to reflow and resize to fit user needs, so use these instead of fixed units such as px. </p>
 
-<p>Make sure your design is flexible enough to still work with larger text (inside buttons or table cells, for example) – users should be able to zoom up to 300% without losing page function. Your service must work in both landscape (horizontal) and portrait (vertical) orientations, for users who may not have a choice in which orientation they use - for example, a paraplegic user with a device attached to their wheelchair in a fixed orientation.  </p>
+<p>Make sure your design is flexible enough to still work with larger text (inside buttons or table cells, for example) – users should be able to zoom up to 300% without losing page function.</p><p> Your service must work in both landscape (horizontal) and portrait (vertical) orientations, for users who may not have a choice in which orientation they use. For example, a paraplegic user with a device attached to their wheelchair in a fixed orientation.  </p>
 
 <br />
 <h2>Creating accessible layouts</h2>
@@ -204,7 +204,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <br />
 <h3>Title and headings</h3>
 
-<p>The page title, which appears in the browser tab, is vital for user navigation, and should always be unique. We recommend you use a format of ‘page – service – site’ for title text, for example “Enter your address – Apply for a passport – GOV.UK”.  </p>
+<p>The page title, which appears in the browser tab, is vital for user navigation, and should always be unique. We recommend you use a format of ‘page – service – site’ for title text, for example ‘Enter your address – Apply for a passport – GOV.UK’.  </p>
 
 <p>Clear headings are important to help users find content within a page – see the <a href="/accessibility/headings">headings guidance</a> for more detail. You can also use <a href="/accessibility/keyboard/skip-to-content">skip links</a> to help keyboard users bypass repeated blocks of content.   </p>
 
@@ -212,7 +212,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>As well as headings, screenreader users can also use extra navigation functions such as landmarks to navigate within a page. </p>
 
 <br />
-<h3>Landmarks></h3>
+<h3>Landmarks</h3>
 <p>Landmarks are HTML5 elements that break up and label blocks of content by their purpose on the page. They’re often used alongside an aria role to make the structure even clearer, especially for users of older browsers. Screenreader users will often rely on these to jump straight to relevant content, rather than navigating through the entire page.</p>
 
 <p>The most common landmarks are: </p>
@@ -225,7 +225,7 @@ const Page: FC<PageProps> = ({ location }) => (
   </ul>
 
 <p>An example of how to use landmarks in your page layout:  </p>
-<p>
+
 <div className="govuk-grid-row">
   <div className="govuk-grid-column-two-thirds">
     <img src={layoutImage01} alt="A sample page layout showing regions for banner, nav, main, aside and footer" className="image-examples" />
