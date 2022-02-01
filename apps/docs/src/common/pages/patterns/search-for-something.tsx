@@ -7,7 +7,7 @@ import { A, NavigationMenu } from '@not-govuk/components';
  const applySearchWide= require('../../../../assets/images/patterns/search-wide.svg').default;
 
 export const title = 'Search for something';
-const description = 'How to help users to stop a service from timing out';
+const description = 'How to help users to search for something';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
