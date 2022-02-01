@@ -169,8 +169,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2>The basics</h2>
       <p>Do:</p>
       <ul>
-        <li>use ARIA live regions to communicate status messages or updates to screen reader users</li>
-        <li>use polite priority to avoid interrupting other screen reader announcements</li>
+        <li>use <A href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">ARIA live regions</A> to communicate status messages or updates to screen reader users</li>
+        <li>use the polite setting (see more under ‘Announcements’) to avoid interrupting other screen reader announcements</li>
         <li>keep visual and keyboard focus in the same place on the page</li>
         <li>give people enough time to read the notification message</li>
       </ul>
@@ -204,7 +204,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <tr className="govuk-table__row">
           <td className="govuk-table__cell">Cognitive, language and learning disability</td>
           <td className="govuk-table__cell">May be easily confused by unexpected changes of focus</td>
-          <td className="govuk-table__cell">Visual and keyboard focus remaining unchanged<br /><br />Notification not being too big and distracting</td>
+          <td className="govuk-table__cell">Visual and keyboard focus remaining unchanged<br /><br />Unobtrusive notifications</td>
         </tr>
         <tr className="govuk-table__row">
           <td className="govuk-table__cell">People with low digital literacy</td>
@@ -235,8 +235,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <h3>Appearance</h3>
       <p>Notifications should be non-intrusive and only used when there is a benefit to the user, for instance informing them how many search results have been returned, that errors have occurred in their submission, or that a form has been successfully submitted.</p>
       <p>Ensure that notifications are visible for long enough to allow people to successfully locate and read the message. See <A href="https://sheribyrnehaber.medium.com/designing-toast-messages-for-accessibility-fb610ac364be">Designing Toast Messages for Accessibility</A> for a calculation of the minimum amount of time that these should be displayed. Ensure that notification messages are located in a consistent location and that these do not overlap critical content.</p>
-      <p>The message should be clear, concise, and easy to understand. See the <A href="/accessibility/readability">Home Office readability guidance</A> for information on how to make your language easier to understand.</p>
-      <p>Ensure that text and icons have sufficient colour contrast and that meaning is not conveyed by colour alone. See the colour and <A href="/accessibility/colour-and-contrast">Home Office contrast guidance</A> for information on how to ensure that text meets minimum contrast requirements.</p>
+      <p>The message should be clear, concise, and easy to understand. See our <A href="/accessibility/readability">readability guidance</A> for information on how to make your language easier to understand.</p>
+      <p>Ensure that text and icons have sufficient colour contrast and that meaning is not conveyed by colour alone. See our <A href="/accessibility/colour-and-contrast">colour and contrast guidance</A> for information on how to ensure that text meets minimum contrast requirements.</p>
       <p>Notification text should respond to user adjustments such as:</p>
       <ul>
         <li>resizing up to 400%</li>

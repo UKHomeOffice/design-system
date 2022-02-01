@@ -4,7 +4,6 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
 const movingImage01 = require('../../../../assets/images/accessibility/moving-and-flashing-01.png').default;
-const movingImage02 = require('../../../../assets/images/accessibility/moving-and-flashing-02.png').default;
 
 export const title = 'Moving and flashing content';
 const description = 'Accessibility guidance for moving and flashing content';
@@ -150,32 +149,18 @@ const Page: FC<PageProps> = ({ location }) => (
       <span className="caption">Accessibility</span>
       Moving and flashing content
     </h1>
-    <p>Moving, flashing, blinking, auto-scrolling or auto-updating content is used to increase visual interest or draw and maintain attention.</p>
-    <p>Common examples of moving content include:</p>
-    <ul>
-      <li>animated images</li>
-      <li>presentation slide transitions</li>
-      <li>scrolling carousels</li>
-    </ul>
+    <p>Moving, flashing, blinking, auto-scrolling or auto-updating content is used to increase visual interest or draw and maintain attention. However, these are not generally as accessible as static content.</p>
 
-    <p>The following is an example of a moving carousel from the <A href="https://ukcop26.org/">COP26 website</A>.</p>
+    <p>The following is an image of a carousel from the <A href="https://ukcop26.org/">COP26 website</A>.</p>
 
     <div className="govuk-grid-row">
     <div className="govuk-grid-column-three-quarters">
-      <img src={movingImage02} alt="A carousel on the COP26 website" className="image-examples"/>
+      <img src={movingImage01} alt="A carousel on the COP26 website" className="image-examples"/>
     </div>
     </div>
     <br />
 
     <p>Auto-scrolling and auto-updating content is content that changes based on pre-set time intervals and includes news, stock price updates and social media feeds.</p>
-
-    <div className="govuk-grid-row">
-    <div className="govuk-grid-column-three-quarters">
-      <img src={movingImage01} alt="Home Office DDaT Twitter feed" className="image-examples"/>
-    </div>
-    </div>
-    <br />
-
     <p>Blinking and flashing content is less common but may form part of videos or other animated content.</p>
 
     <h2>Helping everyone</h2>
