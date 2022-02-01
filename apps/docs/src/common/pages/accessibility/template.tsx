@@ -87,6 +87,10 @@ const Page: FC<PageProps> = ({ location }) => (
           {
             href: '/accessibility/#',
             text: 'Timeouts - TBD'
+          },
+          {
+            href: '/accessibility/layout-typography',
+            text: 'Layout and typography'
           }
         ]} />
       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
