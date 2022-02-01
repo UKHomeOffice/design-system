@@ -154,14 +154,14 @@ const Page: FC<PageProps> = ({ location }) => (
       Keyboard
     </h1>
     <p>Users must be able to use any input device, including the keyboard, to fill in forms.</p>
-
-    <h2>Helping everyone</h2>
     <p>Making sure forms work with the keyboard helps disabled keyboard users and users of alternative input devices such as switches. Some expert users can also benefit as keyboard entry can be faster than using the mouse when filling out multiple forms.</p>
+    <p>Blind or partially sighted people often can’t see mouse cursors and may need to use a keyboard, perhaps with a screen reader or magnifier.</p>
+    <p>People with a motor impairment may not be able to use a mouse, so need to use a keyboard or an input device that emulates a keyboard.</p>
 
     <h2>The basics</h2>
       <p>Do:</p>
       <ul>
-      <li>use native components or components from the design system wherever possible as they come with expected keyboard functionality built-in</li>
+      <li>use native components or components from the GOV.UK or Home Office design systems wherever possible as they come with expected keyboard functionality built-in</li>
       <li>test that your component works as expected</li>
       <li>use hint text to explain how complex controls work</li>
       <li>make sure <a href="/../accessibility/keyboard/focus">focus is visible and in the correct order</a></li>
@@ -171,28 +171,6 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul>
       <li>use custom form components without checking they work with the keyboard as well as the mouse</li>
       </ul>
-
-    <table className="govuk-table">
-      <caption className="govuk-table__caption govuk-table__caption--l">Examples of users with access needs</caption>
-      <thead className="govuk-table__head">
-        <tr className="govuk-table__row">
-          <th scope="col" className="govuk-table__header">User</th>
-          <th scope="col" className="govuk-table__header">Access need</th>
-        </tr>
-      </thead>
-      <tbody className="govuk-table__body">
-      <tr className="govuk-table__row">
-        <td className="govuk-table__cell">Blind or partially sighted</td>
-        <td className="govuk-table__cell">People with low vision often can’t see mouse cursors and may need to use a keyboard, perhaps with a screen reader or magnifier</td>
-      </tr>
-
-      <tr className="govuk-table__row">
-      <td className="govuk-table__cell">Cognitive, language and learning disability, people with low digital literacy</td>
-      <td className="govuk-table__cell">Cannot use a mouse so need to use a keyboard or an input device that emulates a keyboard</td>
-      </tr>
-
-      </tbody>
-    </table>
 
     <h2>How to test forms with the keyboard</h2>
 
@@ -205,9 +183,14 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <br />
 
+    <h3>Commands</h3>
     <ul>
       <li>Tab: Go to the next focusable element, these are link, button or form field elements</li>
       <li>Shift-tab: Go back to the previous focusable element</li>
+    </ul>
+
+    <h3>For different field types</h3>
+    <ul>
       <li>Checkboxes: Tab moves to the next checkbox, shift tab goes one back</li>
       <li>Radio buttons: Tab to the first radio and then use the arrow keys to move between them</li>
       <li>Select or dropdown: Space to open the options, arrow keys to move to the one you want and space or enter to choose the right option</li>
