@@ -22,6 +22,10 @@ const Page: FC<PageProps> = ({ location }) => (
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Page structure</span>
     <NavigationMenu items={[
       {
+        href: '/accessibility/headings',
+        text: 'Headings'
+      },
+      {
         href: '/accessibility/links',
         text: 'Links'
       },
@@ -32,10 +36,6 @@ const Page: FC<PageProps> = ({ location }) => (
       {
         href: '/accessibility/tables',
         text: 'Tables'
-      },
-      {
-        href: '/accessibility/headings',
-        text: 'Headings'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
@@ -45,8 +45,8 @@ const Page: FC<PageProps> = ({ location }) => (
         text: 'Error messages'
       },
       {
-        href: '/accessibility/notifications',
-        text: 'Notifications'
+        href: '/accessibility/forms',
+        text: 'Forms'
       },
       {
         href: '/accessibility/keyboard',
@@ -73,8 +73,8 @@ const Page: FC<PageProps> = ({ location }) => (
         text: '- Pointer gestures'
       },
       {
-        href: '/accessibility/forms',
-        text: 'Forms'
+        href: '/accessibility/notifications',
+        text: 'Notifications'
       },
       {
         href: '/accessibility/timeouts',
@@ -216,7 +216,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Content that is paused should resume where it was stopped, unless doing so would present misleading information when it is restarted.</p>
       <p>Ensure that pausing the content does not prevent the use of the rest of the page.</p>
 
-      <h3>Auto-updating Content</h3>
+      <h3>Auto-updating content</h3>
       <p>Ideally, content should not update automatically, as frequent changes may be distracting.</p>
       <p>If the content has to update, provide an option for users to pause, stop or hide this content, or control the frequency of the updating content.</p>
 

@@ -21,6 +21,10 @@ const Page: FC<PageProps> = ({ location }) => (
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Page structure</span>
     <NavigationMenu items={[
       {
+        href: '/accessibility/headings',
+        text: 'Headings'
+      },
+      {
         href: '/accessibility/links',
         text: 'Links'
       },
@@ -31,10 +35,6 @@ const Page: FC<PageProps> = ({ location }) => (
       {
         href: '/accessibility/tables',
         text: 'Tables'
-      },
-      {
-        href: '/accessibility/headings',
-        text: 'Headings'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
@@ -44,8 +44,8 @@ const Page: FC<PageProps> = ({ location }) => (
         text: 'Error messages'
       },
       {
-        href: '/accessibility/notifications',
-        text: 'Notifications'
+        href: '/accessibility/forms',
+        text: 'Forms'
       },
       {
         href: '/accessibility/keyboard',
@@ -72,8 +72,8 @@ const Page: FC<PageProps> = ({ location }) => (
         text: '- Pointer gestures'
       },
       {
-        href: '/accessibility/forms',
-        text: 'Forms'
+        href: '/accessibility/notifications',
+        text: 'Notifications'
       },
       {
         href: '/accessibility/timeouts',
