@@ -155,7 +155,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </h1>
     <p>Users must be able to use any input device, including the keyboard, to fill in forms.</p>
     <p>Making sure forms work with the keyboard helps disabled keyboard users and users of alternative input devices such as switches. Some expert users can also benefit as keyboard entry can be faster than using the mouse when filling out multiple forms.</p>
-    <p>Blind or partially sighted people often can’t see mouse cursors and may need to use a keyboard, perhaps with a screen reader or magnifier.</p>
+    <p>Blind or partially sighted people often cannot see mouse cursors and may need to use a keyboard, perhaps with a screen reader or magnifier.</p>
     <p>People with a motor impairment may not be able to use a mouse, so need to use a keyboard or an input device that emulates a keyboard.</p>
 
     <h2>The basics</h2>
