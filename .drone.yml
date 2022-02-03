@@ -60,7 +60,7 @@ steps:
   settings:
     channel: ho-design-system
     template: >
-      *{{build.author}} deployed {{repo.name}}* ({{build.commit}}) - <{{build.link}}|#{{build.number}}>
+      *{{build.author}} deployed {{repo.name}}* - <{{build.link}}|#{{build.number}}>
     username: Drone
   environment:
     SLACK_WEBHOOK:
