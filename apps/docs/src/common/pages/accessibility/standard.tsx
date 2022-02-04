@@ -655,7 +655,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <tbody className="govuk-table__body">
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr5.1.1">5.1.1 User Research Participants</a>
+        <a href="/accessibility/standard/meet-user-needs#rr5.1.1">5.1.1 User Research Participants</a>
         </td>
         <td className="govuk-table__cell">
         <p>When doing user research, make sure to include users with disabilities (at least 1 out of every 5 participants).</p>
