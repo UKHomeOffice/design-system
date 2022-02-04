@@ -154,7 +154,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <li><a href="#rr5.1.1">5.1.1 - User Research Participants</a></li>
     </ul>
 
-    <h3 id="rr5.1.1">5.1.1 - User Research Participant</h3>
+    <h3 id="rr5.1.1">5.1.1 - User Research Participants</h3>
     <p>When doing user research, make sure to include users with disabilities (at least 1 out of every 5 participants).</p>
     <h4>Implementation guidance</h4>
     <p>During user research activity, at least 1 in 5 participants must have a disability. You should ensure that you include a diverse group of disabled users with a range of disabilities that represents the population you’re researching.</p>
