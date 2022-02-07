@@ -39,6 +39,10 @@ export const menu = (
           text: 'Forms'
         },
         {
+          href: '/accessibility/forms/keyboard',
+          text: '- Keyboard'
+        },
+        {
           href: '/accessibility/keyboard',
           text: 'Keyboard basics'
         },
@@ -65,10 +69,6 @@ export const menu = (
         {
           href: '/accessibility/notifications',
           text: 'Notifications'
-        },
-        {
-          href: '/accessibility/forms/keyboard',
-          text: '- Keyboard'
         },
         {
           href: '/accessibility/timeouts',
