@@ -3,11 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png').default;
-const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png').default;
-
-export const title = 'Character key shortcuts';
-const description = 'Accessibility guidance for keyboard content';
+export const title = 'Meet user needs';
+const description = 'Meet user needs Accessibility Standard requirements';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -25,10 +22,6 @@ const Page: FC<PageProps> = ({ location }) => (
       {
         href: '/accessibility/headings',
         text: 'Headings'
-      },
-      {
-        href: '/accessibility/layout-typography',
-        text: 'Layout and typography'
       },
       {
         href: '/accessibility/links',
@@ -95,7 +88,7 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/readability',
           text: 'Readability'
-        }
+        },
       ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
       <NavigationMenu items={[
@@ -149,23 +142,28 @@ const Page: FC<PageProps> = ({ location }) => (
         ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-      <h1>
-        <span className="caption">Accessibility</span>
-        Character key shortcuts
-      </h1>
-      <p>Many websites and services offer character key shortcuts to help users navigate around a page or control page elements more easily.</p>
-      <p>For example, some forms may have the character key shortcut Ctrl+S to save the current progress on the form so the user can come back later, or a web page may allow users to quickly open a menu by pressing Alt+F. Though there are reasons why it is beneficial to have these character key shortcuts available to users, these can also cause problems when not implemented correctly.</p>
-      <p>Single character key shortcuts can lead to errors, whether this is through mis-clicks or misunderstanding by assistive technology. In the case of those that use speech-to-text software, a word misunderstood by the software could trigger shortcut actions that the user did not want to happen. Because of this it is far better to have character key shortcuts that combine two or more key presses to initiate an action.</p>
-      <p>If you have single character key shortcuts enabled on your website or service, you should:</p>
-      <ul>
-      <li>look into remapping them so that they use two or more concurrent key presses OR</li>
-      <li>disable the character key shortcuts if they do not bring value to the content</li>
-      </ul>
-      <p>Find out more about WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html">character key shortcuts</a>.</p>
+
+    <h1>
+      <span className="caption">Accessibility</span>
+      Meet user needs
+    </h1>
+    <p>You must ensure that you understand and meet user needs.</p>
+    <p>When conducting user research you must include users with disabilities.</p>
+    <h2>Index</h2>
+    <ul className="plain">
+      <li><a href="#rr5.1.1">5.1.1 - User Research Participants</a></li>
+    </ul>
+
+    <h3 id="rr5.1.1">5.1.1 - User Research Participants</h3>
+    <p>When doing user research, make sure to include users with disabilities (at least 1 out of every 5 participants).</p>
+    <h4>Implementation guidance</h4>
+    <p>During user research activity, at least 1 in 5 participants must have a disability. You should ensure that you include a diverse group of disabled users with a range of disabilities that represents the population you’re researching.</p>
+    <h4>How to test</h4>
+    <p>You should ensure that you work with the Research Operations team to identify and recruit disabled participants. You should use appropriate research methods as defined by the Head of User Research.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <a href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</a>.</p>
+  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
 </div>
 
     </div>

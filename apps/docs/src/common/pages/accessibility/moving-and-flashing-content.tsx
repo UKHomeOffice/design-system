@@ -3,8 +3,10 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-export const title = 'Keyboard';
-const description = 'Accessibility guidance for keyboard content';
+const movingImage01 = require('../../../../assets/images/accessibility/moving-and-flashing-01.png').default;
+
+export const title = 'Moving and flashing content';
+const description = 'Accessibility guidance for moving and flashing content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -22,10 +24,6 @@ const Page: FC<PageProps> = ({ location }) => (
       {
         href: '/accessibility/headings',
         text: 'Headings'
-      },
-      {
-        href: '/accessibility/layout-typography',
-        text: 'Layout and typography'
       },
       {
         href: '/accessibility/links',
@@ -92,7 +90,7 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/readability',
           text: 'Readability'
-        }
+        },
       ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
       <NavigationMenu items={[
@@ -146,36 +144,41 @@ const Page: FC<PageProps> = ({ location }) => (
         ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-      <h1>
-        <span className="caption">Accessibility</span>
-        Keyboard basics
-      </h1>
-      <p>Most users navigate websites using a mouse to scroll through content and click on elements of a page.</p>
-      <p>Some users are not able to use a mouse (for instance, due to mobility or visual impairments) or just prefer to use a keyboard.</p>
-      <p>See the impact that <A href="https://www.w3.org/WAI/perspective-videos/keyboard/">keyboard compatibility</A> has on user interaction, or read about <A href="https://www.w3.org/WAI/people-use-web/user-stories/#reporter">Alex, a reporter with repetitive stress injury</A>.</p>
-<br />
 
-      <h2>Helping everyone</h2>
-      <p>Keyboard navigation allows many people to navigate a page without the use of a mouse. They can still ‘click’ on things, scroll through content and interact with pages if they are built correctly.</p>
-      <p>Some people just prefer to use keyboard controls because they can move through pages quicker that way. Making sure pages work with keyboard improves user journeys overall by making the interactive elements work for everyone.</p>
+    <h1>
+      <span className="caption">Accessibility</span>
+      Moving and flashing content
+    </h1>
+    <p>Moving, flashing, blinking, auto-scrolling or auto-updating content is used to increase visual interest or draw and maintain attention. However, these are not generally as accessible as static content.</p>
 
-      <h2>The basics</h2>
-        <p>Do:</p>
-        <ul>
-        <li>make sure all interactive elements can be reached by pressing the tab key</li>
-        <li>make sure all interactive elements indicate clear focus when selected</li>
-        <li>make sure a ‘skip to content’ link appears in one of the first few tab moves</li>
-        <li>check that all interactive elements are focused in the order that you expect</li>
-        <li>check that all interactive elements can be activated by keyboard</li>
-        </ul>
+    <p>The following is an image of a carousel from the <A href="https://ukcop26.org/">COP26 website</A>.</p>
 
-        <p>Do not:</p>
-        <ul>
-        <li>disable focus indication</li>
-        <li>trap keyboard users in content that stops them moving around the rest of the page</li>
-        <li>use single character key shortcuts</li>
-        </ul>
-        <p>See more in <a href="https://www.w3.org/WAI/test-evaluate/preliminary/#interaction">WCAG basics easy keyboard checks</a>.</p>
+    <div className="govuk-grid-row">
+    <div className="govuk-grid-column-three-quarters">
+      <img src={movingImage01} alt="A carousel on the COP26 website" className="image-examples"/>
+    </div>
+    </div>
+    <br />
+
+    <p>Auto-scrolling and auto-updating content is content that changes based on pre-set time intervals and includes news, stock price updates and social media feeds.</p>
+    <p>Blinking and flashing content is less common but may form part of videos or other animated content.</p>
+
+    <h2>Helping everyone</h2>
+    <p>Websites without moving, auto-updating or flashing content are easier for everyone to see and use, meaning that it is easier to concentrate on and interact with other parts of the page.</p>
+
+    <h2>The basics</h2>
+      <p>Do:</p>
+      <ul>
+        <li>avoid moving and auto-updating content if possible</li>
+        <li>limit animations to five seconds</li>
+        <li>provide a way to pause, stop or hide animated content, or control the frequency of updates</li>
+      </ul>
+
+      <p>Do not:</p>
+      <ul>
+        <li>use content that flashes more than three times a second</li>
+      </ul>
+
       <table className="govuk-table">
         <caption className="govuk-table__caption govuk-table__caption--l">Examples of users with access needs</caption>
         <thead className="govuk-table__head">
@@ -187,45 +190,38 @@ const Page: FC<PageProps> = ({ location }) => (
         </thead>
         <tbody className="govuk-table__body">
         <tr className="govuk-table__row">
-          <td className="govuk-table__cell">Blind</td>
-          <td className="govuk-table__cell">Cannot see to use a mouse<br /><br />Keyboard controls and uses screen reader</td>
-          <td className="govuk-table__cell">Skip to content links<br /><br />Character key shortcuts<br /><br /> Alternatives to pointer gestures</td>
+          <td className="govuk-table__cell">Blind and partially sighted</td>
+          <td className="govuk-table__cell">Changes in auto-updating content may not be read out<br /><br />Changes may be announced too frequently, interrupting a screen reader user</td>
+          <td className="govuk-table__cell">Correctly implemented auto-updating content using ARIA live regions<br /><br />Static context<br /><br />A way to pause, stop or hide auto-updating content, or control the frequency of updates</td>
         </tr>
-
         <tr className="govuk-table__row">
-        <td className="govuk-table__cell">Partially sighted or low vision</td>
-        <td className="govuk-table__cell">Cannot see content clearly at all times</td>
-        <td className="govuk-table__cell">Clear focus indication for a user to see where they are on page<br /><br /> Character key shortcuts</td>
+          <td className="govuk-table__cell">Cognitive, language and learning disability, dyslexic, attention deficit hyperactivity disorder (ADHD)</td>
+          <td className="govuk-table__cell">Static content to be easy to read and not be a distraction</td>
+          <td className="govuk-table__cell">Static content<br /><br />A way to pause, stop or hide animated and auto-updated content, or control the frequency of updates<br /><br />A warning if upcoming pages contain movement</td>
         </tr>
-
         <tr className="govuk-table__row">
-        <td className="govuk-table__cell">Motor impaired</td>
-        <td className="govuk-table__cell">Some fine motor control, not enough to use a mouse</td>
-        <td className="govuk-table__cell">Clear focus indication for a user to see where they are on the page<br /><br />Alternatives to pointer gestures</td>
+          <td className="govuk-table__cell">Epilepsy</td>
+          <td className="govuk-table__cell">Content that does not cause seizures</td>
+          <td className="govuk-table__cell">Static content<br /><br />Content that does not flash more than three times a second</td>
         </tr>
-
-        <tr className="govuk-table__row">
-        <td className="govuk-table__cell">Mobility impaired</td>
-        <td className="govuk-table__cell">Uses speech-to-text controls such as Dragon</td>
-        <td className="govuk-table__cell">Correct keyboard structure<br /><br />Alternatives to pointer gestures</td>
-        </tr>
-
         </tbody>
       </table>
 
-<h2>Creating good keyboard accessibility</h2>
+      <h2>Using moving and auto-updating content</h2>
+      <p>Consider whether moving, blinking, scrolling, auto-updating or flashing content is  necessary or whether the desired outcome can be achieved in another way.</p>
+      <p>Moving content may be necessary if removing it changes the meaning or functionality of the content and when this cannot be achieved in any other way.</p>
 
-<h3></h3>
+      <h3>Moving content</h3>
+      <p>If the content moves automatically, make sure that the movement lasts a maximum of 5 seconds. Otherwise, provide an option for users to pause, stop or hide this content. Make sure that the user is able to restart and unhide the content if desired.</p>
+      <p>Content that is paused should resume where it was stopped, unless doing so would present misleading information when it is restarted.</p>
+      <p>Ensure that pausing the content does not prevent the use of the rest of the page.</p>
 
-<p>To create good accessibility via keyboard, you need to consider the following:</p>
-<ul>
-<li><a href="/accessibility/keyboard/tab-navigation">tab navigation</a></li>
-<li><a href="/accessibility/keyboard/focus">focus</a></li>
-<li><a href="/accessibility/keyboard/skip-to-content">‘skip to content’ links</a></li>
-<li><a href="/accessibility/keyboard/character-key-shortcuts">character key shortcuts</a></li>
-<li><a href="/accessibility/keyboard/pointer-gestures">pointer gestures</a></li>
-</ul>
+      <h3>Auto-updating content</h3>
+      <p>Ideally, content should not update automatically, as frequent changes may be distracting.</p>
+      <p>If the content has to update, provide an option for users to pause, stop or hide this content, or control the frequency of the updating content.</p>
 
+      <h3>Flashing content</h3>
+      <p>Content must not flash more than three times a second.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
