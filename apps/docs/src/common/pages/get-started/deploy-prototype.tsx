@@ -1,16 +1,18 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
-
-const applyPrototype7 = require('../../../../assets/images/heroku2.png').default;
-const applyPrototype8 = require('../../../../assets/images/heroku3.png').default;
-const applyPrototype9 = require('../../../../assets/images/heroku4.png').default;
+import { A } from '@not-govuk/components';
+import { menu } from '../get-started';
 
 export const title = 'Deploying your prototype';
 const description = 'How to deploy your prototype';
 const section = 'Get started';
 const subsection = 'Prototyping';
+
+const applyPrototype7 = require('../../../../assets/images/heroku2.png').default;
+const applyPrototype8 = require('../../../../assets/images/heroku3.png').default;
+const applyPrototype9 = require('../../../../assets/images/heroku4.png').default;
+
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -22,32 +24,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
-      <NavigationMenu items={[
-        {
-          href: '/get-started/prototyping',
-          text: 'Prototyping'
-        },
-        {
-          href: '/get-started/start-prototype',
-          text: '- Starting your prototype'
-        },
-        {
-          href: '/get-started/use-prototype',
-          text: '- Building your protoype'
-        },
-        {
-          href: '/get-started/deploy-prototype',
-          text: '- Deploying your prototype'
-        }
-      ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
-        <NavigationMenu items={[
-          {
-            href: '/get-started/design-assets',
-            text: 'Design assets'
-          }
-        ]} />
+      {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>

@@ -1,14 +1,33 @@
-import { FC, createElement as h } from 'react';
+import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const applyPassportImage = require('../../../assets/images/apply-passport.png').default;
-const ddatEventsImage = require('../../../assets/images/ddat-events.png').default;
-const policeImage = require('../../../assets/images/police.png').default;
+export const menu = (
+  <Fragment>
+    <NavigationMenu items={[
+      {
+        href: '/styles/colour',
+        text: 'Colour'
+      },
+      {
+        href: '/styles/images',
+        text: 'Images'
+      },
+      {
+        href: '/styles/typography',
+        text: 'Typography'
+      }
+    ]} />
+  </Fragment>
+);
 
 export const title = 'Styles';
 const description = 'Make your service look and feel like a Home Office service';
+
+const applyPassportImage = require('../../../assets/images/apply-passport.png').default;
+const ddatEventsImage = require('../../../assets/images/ddat-events.png').default;
+const policeImage = require('../../../assets/images/police.png').default;
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -20,20 +39,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={title} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-      <NavigationMenu items={[
-        {
-          href: '/styles/colour',
-          text: 'Colour'
-        },
-        {
-          href: '/styles/images',
-          text: 'Images'
-        },
-        {
-          href: '/styles/typography',
-          text: 'Typography'
-        }
-      ]} />
+      {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>{title}</h1>
