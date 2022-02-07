@@ -84,6 +84,10 @@ const Page: FC<PageProps> = ({ location }) => (
         text: 'Notifications'
       },
       {
+        href: '/accessibility/forms/keyboard',
+        text: '- Keyboard'
+      },
+      {
         href: '/accessibility/timeouts',
         text: 'Timeouts'
       }

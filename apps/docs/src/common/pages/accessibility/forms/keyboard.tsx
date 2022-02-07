@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png').default;
+const formskeyboardImage = require('../../../../../assets/images/accessibility/forms-keyboard.png').default;
 
-export const title = 'Skip to content links';
-const description = 'Accessibility guidance for keyboard content';
+export const title = 'Keyboard';
+const description = 'Accessibility guidance for forms';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -22,14 +22,6 @@ const Page: FC<PageProps> = ({ location }) => (
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Page structure</span>
     <NavigationMenu items={[
       {
-        href: '/accessibility/headings',
-        text: 'Headings'
-      },
-      {
-        href: '/accessibility/layout-typography',
-        text: 'Layout and typography'
-      },
-      {
         href: '/accessibility/links',
         text: 'Links'
       },
@@ -40,6 +32,10 @@ const Page: FC<PageProps> = ({ location }) => (
       {
         href: '/accessibility/tables',
         text: 'Tables'
+      },
+      {
+        href: '/accessibility/headings',
+        text: 'Headings'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
@@ -49,8 +45,8 @@ const Page: FC<PageProps> = ({ location }) => (
         text: 'Error messages'
       },
       {
-        href: '/accessibility/forms',
-        text: 'Forms'
+        href: '/accessibility/notifications',
+        text: 'Notifications'
       },
       {
         href: '/accessibility/keyboard',
@@ -77,8 +73,8 @@ const Page: FC<PageProps> = ({ location }) => (
         text: '- Pointer gestures'
       },
       {
-        href: '/accessibility/notifications',
-        text: 'Notifications'
+        href: '/accessibility/forms',
+        text: 'Forms'
       },
       {
         href: '/accessibility/forms/keyboard',
@@ -98,7 +94,7 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/readability',
           text: 'Readability'
-        }
+        },
       ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
       <NavigationMenu items={[
@@ -152,27 +148,68 @@ const Page: FC<PageProps> = ({ location }) => (
         ]} />
     </div>
     <div className="govuk-grid-column-three-quarters">
-      <h1>
-        <span className="caption">Accessibility</span>
-        ‘Skip to content’ links
-      </h1>
-      <p>For keyboard users, having to repeatedly move through the same navigation menu every time they start a new page can be frustrating.</p>
-      <p>This is why ‘skip to content’ links exist. The first tab move you make on each page should show a link at the top of the page that says ‘Skip to content’ (or similar) and moves the user to the main part of the page.</p>
 
-      <div className="example" style={{marginBottom: "2em"}}>
-        <p>To view the skip link component tab to this example, or click inside this example and press tab.</p>
-        <A href="#" className="govuk-skip-link">Skip to main content</A>
+    <h1>
+      <span className="caption">Accessibility</span>
+      Keyboard
+    </h1>
+    <p>Users must be able to use any input device, including the keyboard, to fill in forms.</p>
+    <p>Making sure forms work with the keyboard helps disabled keyboard users and users of alternative input devices such as switches. Some expert users can also benefit as keyboard entry can be faster than using the mouse when filling out multiple forms.</p>
+    <p>Blind or partially sighted people often cannot see mouse cursors and may need to use a keyboard, perhaps with a screen reader or magnifier.</p>
+    <p>People with a motor impairment may not be able to use a mouse, so need to use a keyboard or an input device that emulates a keyboard.</p>
+
+    <h2>The basics</h2>
+      <p>Do:</p>
+      <ul>
+      <li>use native components or components from the GOV.UK or Home Office design systems wherever possible as they come with expected keyboard functionality built-in</li>
+      <li>test that your component works as expected</li>
+      <li>use hint text to explain how complex controls work</li>
+      <li>make sure <a href="/../accessibility/keyboard/focus">focus is visible and in the correct order</a></li>
+      </ul>
+
+      <p>Do not:</p>
+      <ul>
+      <li>use custom form components without checking they work with the keyboard as well as the mouse</li>
+      </ul>
+
+    <h2>How to test forms with the keyboard</h2>
+
+    <p>Make sure you can move from one field to another and back again, in the same order as the visual layout of the page. Do not skip fields or go backwards when tabbing forwards. Make sure to check that focus indication is right.</p>
+
+    <div className="govuk-grid-row">
+      <div className="govuk-grid-column-one-half">
+        <img src={formskeyboardImage} alt="" className="image-examples" />
       </div>
+    </div>
+    <br />
 
-      <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
-      <p>Read more on the WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</a>.</p>
+    <h3>Commands</h3>
+    <ul>
+      <li>Tab: Go to the next focusable element, these are link, button or form field elements</li>
+      <li>Shift-tab: Go back to the previous focusable element</li>
+    </ul>
+
+    <h3>For different field types</h3>
+    <ul>
+      <li>Checkboxes: Tab moves to the next checkbox, shift tab goes one back</li>
+      <li>Radio buttons: Tab to the first radio and then use the arrow keys to move between them</li>
+      <li>Select or dropdown: Space to open the options, arrow keys to move to the one you want and space or enter to choose the right option</li>
+      <li>Buttons: Enter or space to activate </li>
+      <li>Links: Enter or space to activate</li>
+    </ul>
+
+    <h2>Other considerations</h2>
+
+    <p>If your form control is more complex than a text field or dropdown, consider giving users help with how to use the control via hint text. You should also offer an alternative, for example allowing users to type in a date field as well as having a date picker.</p>
+    <p>Using keyboard, switch or other input devices can be tiring for people with motor impairments so make sure users don’t have to use Tab more than they need to. Things like typeahead fields, the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">autocomplete attribute</a> and considering field number and order can help make your form easier to use.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
   <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
 </div>
-  </div>
+
     </div>
+  </div>
 );
 
 export default Page;
