@@ -3,19 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-export const title = 'Accessibility';
-const description = 'Information on how to ensure your service is accessible'
-
-const Page: FC<PageProps> = ({ location }) => (
-  <div className="govuk-grid-row">
-    <Helmet>
-      <title>{title} - Home Office Design System</title>
-      <meta name="description" content={description} />
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={description} />
-      <meta name="og:article:section" content={title} />
-    </Helmet>
-    <div className="govuk-grid-column-one-quarter">
+export const menu = (
+  <Fragment>
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Page structure</span>
       <NavigationMenu items={[
         {
@@ -147,6 +136,23 @@ const Page: FC<PageProps> = ({ location }) => (
               text: 'Guidance, tools and further reading'
             }
           ]} />
+  </Fragment>
+);
+
+export const title = 'Accessibility';
+const description = 'Information on how to ensure your service is accessible'
+
+const Page: FC<PageProps> = ({ location }) => (
+  <div className="govuk-grid-row">
+    <Helmet>
+      <title>{title} - Home Office Design System</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:article:section" content={title} />
+    </Helmet>
+    <div className="govuk-grid-column-one-quarter">
+      {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>Accessibility</h1>

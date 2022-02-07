@@ -1,7 +1,12 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
+import { menu } from '../styles';
+
+export const title = 'Colour';
+const description = 'Always use the Home Office colour palette';
+const section = 'Styles';
 
 import '../../../../assets/colour.scss';
 
@@ -15,9 +20,6 @@ const colour = (colour: string, whiteText: boolean = false) => ({
   border: '1px solid #CBCBCB'
 });
 
-export const title = 'Colour';
-const description = 'Always use the Home Office colour palette';
-const section = 'Styles';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -29,20 +31,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-      <NavigationMenu items={[
-        {
-          href: '/styles/colour',
-          text: 'Colour'
-        },
-        {
-          href: '/styles/images',
-          text: 'Images'
-        },
-        {
-          href: '/styles/typography',
-          text: 'Typography'
-        }
-      ]} />
+      {menu}
     </div>
 
     <div className="govuk-grid-column-three-quarters">
