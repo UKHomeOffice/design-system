@@ -49,7 +49,12 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/patterns/stop-a-service-timing-out',
           text: 'Stop a service timing out'
+        },
+        {
+          href: '/patterns/search-for-something',
+          text: 'Search for something'
         }
+
       ]} />
     </div>
 

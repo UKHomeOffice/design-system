@@ -24,6 +24,10 @@ const Page: FC<PageProps> = ({ location }) => (
         text: 'Headings'
       },
       {
+        href: '/accessibility/layout-typography',
+        text: 'Layout and typography'
+      },
+      {
         href: '/accessibility/links',
         text: 'Links'
       },

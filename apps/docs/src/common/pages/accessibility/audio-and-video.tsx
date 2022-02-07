@@ -24,6 +24,10 @@ const Page: FC<PageProps> = ({ location }) => (
         text: 'Headings'
       },
       {
+        href: '/accessibility/layout-typography',
+        text: 'Layout and typography'
+      },
+      {
         href: '/accessibility/links',
         text: 'Links'
       },
@@ -88,7 +92,7 @@ const Page: FC<PageProps> = ({ location }) => (
         {
           href: '/accessibility/readability',
           text: 'Readability'
-        },
+        }
       ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
       <NavigationMenu items={[
