@@ -47,7 +47,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">1.1</td>
       <td className="govuk-table__cell">01/08/2021</td>
-      <td className="govuk-table__cell">Updated based on peer review by <A href="https://tetralogical.com/">TetraLogical</A></td>
+      <td className="govuk-table__cell">Updated based on peer review by TetraLogical</td>
       <td className="govuk-table__cell">David Caldwell</td>
     </tr>
     </tbody>
