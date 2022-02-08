@@ -497,7 +497,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <tbody className="govuk-table__body">
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr4.1.1">4.1.1 Parsing</a>
+        <a href="/accessibility/standard/robust#rr4.1.1">4.1.1 Parsing</a>
         </td>
         <td className="govuk-table__cell">
         <p>The code of the page must not cause browser or assistive technology conflicts. This ensures that content and functionality is presented in a way that works reliably across all supported browsers and assistive technologies.</p>
@@ -505,7 +505,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr4.1.2">4.1.2 Name, Role, Value</a>
+        <a href="/accessibility/standard/robust#rr4.1.2">4.1.2 Name, Role, Value</a>
         </td>
         <td className="govuk-table__cell">
         <p>All interactive components must have an accessible name and role, and the state of the component must be communicated to assistive technologies.</p>
@@ -513,7 +513,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr4.1.3">4.1.3 Status messages</a>
+        <a href="/accessibility/standard/robust#rr4.1.3">4.1.3 Status messages</a>
         </td>
         <td className="govuk-table__cell">
         <p>There are different situations where a page needs to dynamically display a status message. These messages need to be conveyed to assistive technology users, even when they don’t receive focus. Where possible, you should avoid disturbing the user’s place in a page.</p>
