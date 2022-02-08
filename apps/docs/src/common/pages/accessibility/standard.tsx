@@ -411,7 +411,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <tbody className="govuk-table__body">
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.1.x">3.1.x - Language of page and parts</a>
+        <a href="/accessibility/standard/understandable#rr3.1.x">3.1.x - Language of page and parts</a>
         </td>
         <td className="govuk-table__cell">
         <p>The written language of the page must be identified in the code of the web page.</p>
@@ -420,7 +420,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.2.1">3.2.1 On Focus</a>
+        <a href="/accessibility/standard/understandable#rr3.2.1">3.2.1 On Focus</a>
         </td>
         <td className="govuk-table__cell">
         <p>When a keyboard user focuses on a control it must not cause a change of context, such as loading a new page/tab.</p>
@@ -428,7 +428,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.2.2">3.2.2 On Input</a>
+        <a href="/accessibility/standard/understandable#rr3.2.2">3.2.2 On Input</a>
         </td>
         <td className="govuk-table__cell">
         <p>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behaviour before using the component.</p>
@@ -436,7 +436,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.2.3">3.2.3 Consistent navigation</a>
+        <a href="/accessibility/standard/understandable#rr3.2.3">3.2.3 Consistent navigation</a>
         </td>
         <td className="govuk-table__cell">
         <p>When ways to navigate content are repeated on multiple pages, they must be presented in a consistent manner.</p>
@@ -444,7 +444,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.2.4">3.2.4 Consistent identification</a>
+        <a href="/accessibility/standard/understandable#rr3.2.4">3.2.4 Consistent identification</a>
         </td>
         <td className="govuk-table__cell">
         <p>When features with the same functionality are used in multiple places, they must be identified in a consistent way.</p>
@@ -452,7 +452,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.3.1">3.3.1 Error identification</a>
+        <a href="/accessibility/standard/understandable#rr3.3.1">3.3.1 Error identification</a>
         </td>
         <td className="govuk-table__cell">
         <p>When an error occurs the user is informed what caused the error, and the error is described in text in an accessible way.</p>
@@ -460,7 +460,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.3.2">3.3.2 Labels or instructions</a>
+        <a href="/accessibility/standard/understandable#rr3.3.2">3.3.2 Labels or instructions</a>
         </td>
         <td className="govuk-table__cell">
         <p>When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field. Password fields should allow a user to view and check the entry.</p>
@@ -468,7 +468,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.3.3">3.3.3 Error Suggestions</a>
+        <a href="/accessibility/standard/understandable#rr3.3.3">3.3.3 Error Suggestions</a>
         </td>
         <td className="govuk-table__cell">
         <p>When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field. Password fields should allow a user to view and check the entry.</p>
@@ -476,7 +476,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <a href="/accessibility/standard/operable#rr3.3.4">3.3.4 Error prevention</a>
+        <a href="/accessibility/standard/understandable#rr3.3.4">3.3.4 Error prevention</a>
         </td>
         <td className="govuk-table__cell">
         <p>All transactions should be reversible, or confirmation must be required before submission.</p>
