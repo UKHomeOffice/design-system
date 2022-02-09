@@ -39,13 +39,13 @@ const Page: FC<PageProps> = ({ location }) => (
     </thead>
     <tbody className="govuk-table__body">
     <tr className="govuk-table__row">
-      <td className="govuk-table__cell">1</td>
+      <td className="govuk-table__cell">1.0.0</td>
       <td className="govuk-table__cell">01/11/2020</td>
       <td className="govuk-table__cell">First published version</td>
       <td className="govuk-table__cell">Yacoob Woozeer</td>
     </tr>
     <tr className="govuk-table__row">
-      <td className="govuk-table__cell">1.1</td>
+      <td className="govuk-table__cell">1.1.0</td>
       <td className="govuk-table__cell">01/08/2021</td>
       <td className="govuk-table__cell">Updated based on peer review by TetraLogical</td>
       <td className="govuk-table__cell">David Caldwell</td>
