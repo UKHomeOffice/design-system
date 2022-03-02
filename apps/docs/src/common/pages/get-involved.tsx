@@ -1,7 +1,42 @@
-import { FC, createElement as h } from 'react';
+import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
+
+export const menu = (
+  <Fragment>
+    <NavigationMenu items={[
+      {
+        href: '/get-involved/working',
+        text: 'Working group'
+      },
+      {
+        href: '/get-involved/backlog',
+        text: 'Backlog'
+      },
+      {
+        href: '/get-involved/suggest',
+        text: 'Suggest new ideas'
+      },
+      {
+        href: '/get-involved/contribution',
+        text: 'Contribution criteria'
+      },
+      {
+        href: '/get-involved/githubguide',
+        text: 'Using GitHub to propose design system changes'
+      },
+      {
+        href: '/get-involved/proving',
+        text: 'Proving ideas work'
+      },
+      {
+        href: '/get-involved/using',
+        text: 'Using the system'
+      }
+    ]} />
+  </Fragment>
+);
 
 export const title = 'Get involved';
 const description = 'How to get involved and contribute to the Home Office Design System'
@@ -16,36 +51,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={title} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-      <NavigationMenu items={[
-        {
-          href: '/get-involved/working',
-          text: 'Working group'
-        },
-        {
-          href: '/get-involved/backlog',
-          text: 'Backlog'
-        },
-        {
-          href: '/get-involved/suggest',
-          text: 'Suggest new ideas'
-        },
-        {
-          href: '/get-involved/contribution',
-          text: 'Contribution criteria'
-        },
-        {
-          href: '/get-involved/githubguide',
-          text: 'Using GitHub to propose design system changes'
-        },
-        {
-          href: '/get-involved/proving',
-          text: 'Proving ideas work'
-        },
-        {
-          href: '/get-involved/using',
-          text: 'Using the system'
-        }
-      ]} />
+      {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
     <h1 className="heading-section">Get involved</h1>

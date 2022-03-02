@@ -1,7 +1,8 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
+import { menu } from '../accessibility'
 
 const linksImage01 = require('../../../../assets/images/accessibility/links01.png').default;
 
@@ -19,151 +20,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Page structure</span>
-      <NavigationMenu items={[
-        {
-          href: '/accessibility/#',
-          text: 'Headings - TBD'
-        },
-        {
-          href: '/accessibility/links',
-          text: 'Links'
-        },
-        {
-          href: '/accessibility/#',
-          text: 'Navigation - TBD'
-        },
-        {
-          href: '/accessibility/tables',
-          text: 'Tables'
-        },
-        {
-          href: '/accessibility/headings',
-          text: 'Headings'
-        }
-      ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
-        <NavigationMenu items={[
-          {
-            href: '/accessibility/#',
-            text: 'Dynamic content - TBD'
-          },
-          {
-            href: '/accessibility/error-messages',
-            text: 'Error messages'
-          },
-          {
-            href: '/accessibility/keyboard',
-            text: 'Keyboard basics'
-          },
-          {
-            href: '/accessibility/keyboard/tab-navigation',
-            text: '- Tab navigation'
-          },
-          {
-            href: '/accessibility/keyboard/focus',
-            text: '- Focus'
-          },
-          {
-            href: '/accessibility/keyboard/skip-to-content',
-            text: '- Skip to content links'
-          },
-          {
-            href: '/accessibility/keyboard/character-key-shortcuts',
-            text: '- Character key shortcuts'
-          },
-          {
-            href: '/accessibility/keyboard/pointer-gestures',
-            text: '- Pointer gestures'
-          },
-          {
-            href: '/accessibility/#',
-            text: 'Forms - TBD'
-          },
-          {
-            href: '/accessibility/#',
-            text: 'Surprises - TBD'
-          },
-          {
-            href: '/accessibility/#',
-            text: 'Timeouts - TBD'
-          }
-        ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
-        <NavigationMenu items={[
-          {
-            href: '/accessibility/#',
-            text: 'Inclusive language'
-          },
-          {
-            href: '/accessibility/#',
-            text: 'Readability - TBD'
-          },
-          {
-            href: '/accessibility/#',
-            text: 'Text and zoom - TBD'
-          }
-        ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/audio-and-video',
-              text: 'Audio and video'
-            },
-            {
-              href: '/accessibility/#',
-              text: 'Colour and contrast - TBD'
-            },
-            {
-              href: '/accessibility/images',
-              text: 'Images'
-            },
-            {
-              href: '/accessibility/#',
-              text: 'Moving content - TBD'
-            }
-          ]} />
-          <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Legal obligations</span>
-            <NavigationMenu items={[
-              {
-                href: '/accessibility/#',
-                text: 'Accessibility statement - TBD'
-              },
-              {
-                href: '/accessibility/#',
-                text: 'Disproportionate burden - TBD'
-              },
-              {
-                href: '/accessibility/#',
-                text: 'Equality act / PSED - TBD'
-              },
-              {
-                href: '/accessibility/#',
-                text: 'PSBAR - TBD'
-              }
-            ]} />
-            <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Accessible documents</span>
-              <NavigationMenu items={[
-                {
-                  href: '/accessibility/#',
-                  text: 'Accessible PDFs - TBD'
-                },
-                {
-                  href: '/accessibility/#',
-                  text: 'Emails - TBD'
-                },
-                {
-                  href: '/accessibility/#',
-                  text: 'Sharepoint - TBD'
-                }
-              ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/resources',
-              text: 'Guidance, tools and further reading'
-            }
-          ]} />
+      {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>

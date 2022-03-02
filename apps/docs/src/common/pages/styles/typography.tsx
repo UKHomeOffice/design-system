@@ -1,7 +1,8 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
+import { menu } from '../styles';
 
 export const title = 'Typography';
 const description = 'If your service is on the homeoffice.gov.uk subdomain you should use the Roboto font instead of the GDS Transport font';
@@ -18,20 +19,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </Helmet>
 
     <div className="govuk-grid-column-one-quarter">
-      <NavigationMenu items={[
-        {
-          href: '/styles/colour',
-          text: 'Colour'
-        },
-        {
-          href: '/styles/images',
-          text: 'Images'
-        },
-        {
-          href: '/styles/typography',
-          text: 'Typography'
-        }
-      ]} />
+      {menu}
     </div>
 
     <div className="govuk-grid-column-three-quarters">

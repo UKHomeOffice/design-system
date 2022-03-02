@@ -1,17 +1,18 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
+import { menu } from '../../accessibility'
+
+export const title = 'Focus';
+const description = 'Accessibility guidance for keyboard content';
+export const section = 'Accessibility';
 
 const focusImage01 = require('../../../../../assets/images/accessibility/focus-01.png').default;
 const focusImage02 = require('../../../../../assets/images/accessibility/focus-02.png').default;
 const focusImage03 = require('../../../../../assets/images/accessibility/focus-03.png').default;
 const focusImage04 = require('../../../../../assets/images/accessibility/focus-04.png').default;
 const focusImage05 = require('../../../../../assets/images/accessibility/focus-05.png').default;
-
-export const title = 'Focus';
-const description = 'Accessibility guidance for keyboard content';
-export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -23,97 +24,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Page structure</span>
-      <NavigationMenu items={[
-        {
-          href: '/accessibility/links',
-          text: 'Links'
-        },
-        {
-          href: '/accessibility/navigation',
-          text: 'Navigation'
-        },
-        {
-          href: '/accessibility/tables',
-          text: 'Tables'
-        },
-        {
-          href: '/accessibility/headings',
-          text: 'Headings'
-        }
-      ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Interactivity</span>
-      <NavigationMenu items={[
-        {
-          href: '/accessibility/error-messages',
-          text: 'Error messages'
-        },
-        {
-          href: '/accessibility/keyboard',
-          text: 'Keyboard basics'
-        },
-        {
-          href: '/accessibility/keyboard/tab-navigation',
-          text: '- Tab navigation'
-        },
-        {
-          href: '/accessibility/keyboard/focus',
-          text: '- Focus'
-        },
-        {
-          href: '/accessibility/keyboard/skip-to-content',
-          text: '- Skip to content links'
-        },
-        {
-          href: '/accessibility/keyboard/character-key-shortcuts',
-          text: '- Character key shortcuts'
-        },
-        {
-          href: '/accessibility/keyboard/pointer-gestures',
-          text: '- Pointer gestures'
-        },
-        {
-          href: '/accessibility/forms',
-          text: 'Forms'
-        },
-        {
-          href: '/accessibility/timeouts',
-          text: 'Timeouts'
-        }
-      ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Written content</span>
-        <NavigationMenu items={[
-          {
-            href: '/accessibility/inclusive-language',
-            text: 'Inclusive language'
-          },
-          {
-            href: '/accessibility/readability',
-            text: 'Readability'
-          },
-        ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Providing alternatives</span>
-        <NavigationMenu items={[
-          {
-            href: '/accessibility/audio-and-video',
-            text: 'Audio and video'
-          },
-          {
-            href: '/accessibility/colour-and-contrast',
-            text: 'Colour and contrast'
-          },
-          {
-            href: '/accessibility/images',
-            text: 'Images'
-          }
-        ]} />
-        <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Resources</span>
-          <NavigationMenu items={[
-            {
-              href: '/accessibility/resources',
-              text: 'Guidance, tools and further reading'
-            }
-          ]} />
+      {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>

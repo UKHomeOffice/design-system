@@ -1,14 +1,15 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
-
-const applyAddAnother = require('../../../../assets/images/patterns/add-another.svg').default;
+import { A } from '@not-govuk/components';
+import { menu } from '../patterns';
 
 export const title = 'Add multiple things';
 const description = 'How to help users to add multiple things';
 const section = 'Patterns';
 const subsection = 'Help users to';
+
+const applyAddAnother = require('../../../../assets/images/patterns/add-another.svg').default;
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -21,34 +22,7 @@ const Page: FC<PageProps> = ({ location }) => (
   </Helmet>
 
     <div className="govuk-grid-column-one-quarter">
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Help users to</span>
-      <NavigationMenu items={[
-
-        {
-          href: '/patterns/access-a-service',
-          text: 'Access a service'
-        },
-        {
-          href: '/patterns/add-multiple-things',
-          text: 'Add multiple things'
-        },
-        {
-          href: '/patterns/find-information-on-document',
-          text: 'Find information on a document'
-        },
-        {
-          href: '/patterns/get-more-details',
-          text: 'Get more details'
-        },
-        {
-          href: '/patterns/leave-a-service',
-          text: 'Leave a service'
-        },
-        {
-          href: '/patterns/stop-a-service-timing-out',
-          text: 'Stop a service timing out'
-        }
-      ]} />
+      {menu}
     </div>
 
     <div className="govuk-grid-column-three-quarters">

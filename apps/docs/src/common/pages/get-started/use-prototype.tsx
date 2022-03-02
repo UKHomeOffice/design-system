@@ -1,7 +1,13 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
+import { menu } from '../get-started';
+
+export const title = 'Building your prototype';
+const description = 'How to build your prototype';
+const section = 'Get started';
+const subsection = 'Prototyping';
 
 const applyPrototype3 = require('../../../../assets/images/prototype-screen03.png').default;
 const applyPrototype4 = require('../../../../assets/images/prototype-screen04html.png').default;
@@ -10,10 +16,6 @@ const applyPrototype6 = require('../../../../assets/images/prototype-screen07.pn
 const applyPrototype8 = require('../../../../assets/images/prototype-screen08.png').default;
 const applyPrototype9 = require('../../../../assets/images/prototype-screen09.png').default;
 
-export const title = 'Building your prototype';
-const description = 'How to build your prototype';
-const section = 'Get started';
-const subsection = 'Prototyping';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -25,28 +27,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
-      <NavigationMenu items={[
-        {
-          href: '/get-started/prototyping',
-          text: 'Prototyping'
-        },
-        {
-          href: '/get-started/start-prototype',
-          text: '- Setting up your prototype'
-        },
-        {
-          href: '/get-started/use-prototype',
-          text: '- Building your protoype'
-        }
-      ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
-        <NavigationMenu items={[
-          {
-            href: '/get-started/design-assets',
-            text: 'Design assets'
-          }
-        ]} />
+      {menu}
     </div>
 
     <div className="govuk-grid-column-three-quarters">

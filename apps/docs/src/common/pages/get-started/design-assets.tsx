@@ -1,7 +1,8 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
+import { menu } from '../get-started';
 
 export const title = 'Design assets';
 const description = 'Useful design assets for interaction designers in the Home Office';
@@ -17,28 +18,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
-      <NavigationMenu items={[
-        {
-          href: '/get-started/prototyping',
-          text: 'Prototyping'
-        },
-        {
-          href: '/get-started/start-prototype',
-          text: '- Setting up your prototype'
-        },
-        {
-          href: '/get-started/use-prototype',
-          text: '- Building your protoype'
-        }
-      ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
-        <NavigationMenu items={[
-          {
-            href: '/get-started/design-assets',
-            text: 'Design assets'
-          }
-        ]} />
+      {menu}
     </div>
 
     <div className="govuk-grid-column-three-quarters">

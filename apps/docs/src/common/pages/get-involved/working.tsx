@@ -1,7 +1,8 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
+import { menu } from '../get-involved';
 
 export const title = 'Design system working group';
 const description = 'The Home Office design system working group meets once a month to discuss ways to develop and improve the Home Office design system';
@@ -17,36 +18,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={section} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-      <NavigationMenu items={[
-        {
-          href: '/get-involved/working',
-          text: 'Working group'
-        },
-        {
-          href: '/get-involved/backlog',
-          text: 'Backlog'
-        },
-        {
-          href: '/get-involved/suggest',
-          text: 'Suggest new ideas'
-        },
-        {
-          href: '/get-involved/contribution',
-          text: 'Contribution criteria'
-        },
-        {
-          href: '/get-involved/githubguide',
-          text: 'Using GitHub to propose design system changes'
-        },
-        {
-          href: '/get-involved/proving',
-          text: 'Proving ideas work'
-        },
-        {
-          href: '/get-involved/using',
-          text: 'Using the system'
-        }
-      ]} />
+      {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>

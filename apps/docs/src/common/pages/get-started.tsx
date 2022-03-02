@@ -1,7 +1,34 @@
-import { FC, createElement as h } from 'react';
+import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
+
+export const menu = (
+  <Fragment>
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
+    <NavigationMenu items={[
+      {
+        href: '/get-started/prototyping',
+        text: 'Prototyping'
+      },
+      {
+        href: '/get-started/start-prototype',
+        text: '- Setting up your prototype'
+      },
+      {
+        href: '/get-started/use-prototype',
+        text: '- Building your protoype'
+      }
+    ]} />
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
+    <NavigationMenu items={[
+      {
+        href: '/get-started/design-assets',
+        text: 'Design assets'
+      }
+    ]} />
+  </Fragment>
+);
 
 export const title = 'Get started';
 const description = 'The following introductory guides will help you to get set up';
@@ -16,31 +43,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={title} />
     </Helmet>
     <div className="govuk-grid-column-one-quarter">
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
-      <NavigationMenu items={[
-        {
-          href: '/get-started/prototyping',
-          text: 'Prototyping'
-        },
-        {
-          href: '/get-started/start-prototype',
-          text: '- Setting up your prototype'
-        },
-        {
-          href: '/get-started/use-prototype',
-          text: '- Building your protoype'
-        }
-      ]} />
-      <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
-        <NavigationMenu items={[
-          {
-            href: '/get-started/design-assets',
-            text: 'Design assets'
-          }
-        ]} />
-
+      {menu}
     </div>
-
     <div className="govuk-grid-column-three-quarters">
       <h1>{title}</h1>
         <p>The Home Office Design System is an extension of <A href="https://not-gov.uk/">NotGovUK</A> which implements the GOV.UK Design System in React. (See: <A href="https://not-gov.uk/design-decisions">design decisions</A>)</p>

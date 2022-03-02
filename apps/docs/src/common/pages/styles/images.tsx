@@ -1,17 +1,18 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
+import { menu } from '../styles';
+
+export const title = 'Images';
+const description = 'Only use images if there’s a real user need';
+const section = 'Styles';
 
 const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg').default;
 const applyExample1 = require('../../../../assets/images/example-1.jpg').default;
 const applyExample2 = require('../../../../assets/images/example-2.jpg').default;
 const applyExample5 = require('../../../../assets/images/example-5.jpg').default;
 const applyExample6 = require('../../../../assets/images/example-6.jpg').default;
-
-export const title = 'Images';
-const description = 'Only use images if there’s a real user need';
-const section = 'Styles';
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -24,20 +25,7 @@ const Page: FC<PageProps> = ({ location }) => (
   </Helmet>
 
     <div className="govuk-grid-column-one-quarter">
-      <NavigationMenu items={[
-        {
-          href: '/styles/colour',
-          text: 'Colour'
-        },
-        {
-          href: '/styles/images',
-          text: 'Images'
-        },
-        {
-          href: '/styles/typography',
-          text: 'Typography'
-        }
-      ]} />
+      {menu}
     </div>
 
     <div className="govuk-grid-column-three-quarters">
