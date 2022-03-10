@@ -1,0 +1,39 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { Date } from '../src/Date';
+import readMe from '../README.md';
+
+<Meta
+  title="date"
+  component={ Date }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Displays date and time inline with GOV expectations',
+    jest: ['Date'],
+    notes: readMe
+  } }
+/>
+
+# date
+
+Displays date and time inline with GOV expectations
+WRITE MORE DESCRIPTION HERE.
+
+<Preview withToolbar>
+  <Story name="Date">
+    <Date />
+  </Story>
+</Preview>
+
+<Props of={ Date } />
+
+
+## Stories
+### Standard
+
+A standard date.
+
+<Preview>
+  <Story name="Standard">
+    <Date />
+  </Story>
+</Preview>
