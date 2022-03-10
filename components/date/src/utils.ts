@@ -75,7 +75,7 @@ export const monthFromNumber = (monthNumber: number) => {
     }
 }
 
-export const formatDateTime = (dateStirng: string): string => {
+export const formatDateTimeFromISOString = (dateStirng: string): string => {
     const date = new Date(dateStirng);
     const day = date.getDate();
     const month = monthFromNumber(date.getMonth() + 1);
