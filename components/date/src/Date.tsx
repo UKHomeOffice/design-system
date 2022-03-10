@@ -1,14 +1,21 @@
 import { FC, createElement as h } from "react";
 import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
-import { monthNumbers, dayNumbers, monthFromNumber } from "./utils";
+import {
+	monthNumbers,
+	dayNumbers,
+	monthFromNumber,
+	formatDateTimeFromISOString,
+} from "./utils";
 
 import "../assets/Date.scss";
 
 export type DateProps = StandardProps & {
-	yyyy?: number;
-	mm?: monthNumbers;
-	dd?: dayNumbers;
-	dateTime?: string; // ISO - "2022-03-03T19:39:33.233Z"
+	//** allow year, month, day values to be inputted seperately */
+	year?: number;
+	month?: monthNumbers;
+	day?: dayNumbers;
+	//** alternatively, input a javascript ISO date string to transfor into a date - "2022-03-03T19:39:33.233Z" */
+	dateTime?: string;
 };
 
 export const Date: FC<DateProps> = ({
@@ -17,9 +24,9 @@ export const Date: FC<DateProps> = ({
 	classModifiers,
 	className,
 	heading,
-	yyyy,
-	mm,
-	dd,
+	year,
+	month,
+	day,
 	dateTime,
 	...attrs
 }) => {
@@ -31,19 +38,19 @@ export const Date: FC<DateProps> = ({
 	);
 
 	if (dateTime) {
+		const dateString = formatDateTimeFromISOString(dateTime);
+
 		return (
 			<div {...attrs} className={classes()}>
-				{/* {children} */}
-				<time dateTime={dateTime}>{}</time>
+				<time dateTime={dateTime}>{dateString}</time>
 			</div>
 		);
 	}
 
-	const dateString = `${dd} ${monthFromNumber(mm)} ${yyyy}`;
+	const dateString = `${day} ${monthFromNumber(month)} ${year}`;
 
 	return (
 		<div {...attrs} className={classes()}>
-			{children}
 			<time>{dateString}</time>
 		</div>
 	);
