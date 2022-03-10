@@ -1,4 +1,4 @@
-import { monthFromNumber, formatDateTime } from "../src/utils";
+import { monthFromNumber, formatDateTimeFromISOString } from "../src/utils";
 
 describe('Date Utils', () => {
 
@@ -21,13 +21,13 @@ describe('Date Utils', () => {
     })
 
     it('Formats string from date time value', () => {
-        const testDateA = formatDateTime("2022-01-10T19:39:33.233Z");
+        const testDateA = formatDateTimeFromISOString("2022-01-10T19:39:33.233Z");
         expect(testDateA).toBe("10 January 2022")
 
-        const testDateB = formatDateTime("2022-10-10T19:39:33.233Z");
+        const testDateB = formatDateTimeFromISOString("2022-10-10T19:39:33.233Z");
         expect(testDateB).toBe("10 October 2022")
 
-        const testDateC = formatDateTime("2018-10-10T19:39:33.233Z");
+        const testDateC = formatDateTimeFromISOString("2018-10-10T19:39:33.233Z");
         expect(testDateC).toBe("10 October 2018")
     })
 
