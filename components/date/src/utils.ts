@@ -112,11 +112,9 @@ export const formatDateFromISOString = (dateStirng: string): string => {
     return `${day} ${month} ${year}`
 }
 
-export const formatTimeFromISOString = (dateString: string): string =>{
+export const formatTimeFromISOString = (dateString: string): string => {
     const date = new Date(dateString);
     const hours = date.getHours();
     const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
-    return `${hours > 12 ? convertTime(hours) : hours}:${minutes}${hours > 12 ? "pm" : "am"}`
-    // 7:30pm
+    return `${hours > 12 ? convertTime(hours) : hours}:${minutes}${hours > 11 ? "pm" : "am"}`
 }
