@@ -10,12 +10,12 @@ import {
 import "../assets/Date.scss";
 
 export type DateProps = StandardProps & {
-	//** allow year, month, day values to be inputted seperately */
+	//** allow year, month, day, times values to be inputted seperately. This can be used if date time is already split into consituent parts i.e year, month, day */
 	year?: number;
 	month?: monthNumbers;
 	day?: dayNumbers;
 	//** alternatively, input a javascript ISO date string to transform into a date - "2022-03-03T19:39:33.233Z" */
-	dateTime?: string;
+	dateTime?: string; // regex for ISOString? - rename variable to ISODateString
 	//** set whether time should shown with the date - 14:30pm 31 March 2021 */
 	displayTime?: boolean;
 	//** input from designer on how to write date with time - 14:30pm on 31 March 2022 or 31 March 2022 at 14:30pm. What should be the defacto setting? */
@@ -31,8 +31,8 @@ export const Date: FC<DateProps> = ({
 	month,
 	day,
 	dateTime,
-	displayTime,
-	precedence,
+	displayTime = false,
+	precedence = "time",
 	...attrs
 }) => {
 	const classes = classBuilder(
@@ -52,7 +52,7 @@ export const Date: FC<DateProps> = ({
 			<div {...attrs} className={classes()}>
 				{
 					precedence === "time" ? 
-					<time dateTime={dateTime}>{timeString? `${timeString} on ` : ``}{dateString}</time> 
+					<time dateTime={dateTime}>{timeString ? `${timeString} on ` : ``}{dateString}</time> 
 					: 
 					<time dateTime={dateTime}>{dateString}{timeString ? ` at ${timeString}`: ``}</time>
 				}
