@@ -3,7 +3,7 @@ import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import {
 	monthNumbers,
 	dayNumbers,
-	monthFromNumber,
+	months,
 	formatDateFromISOString,
 	formatTimeFromISOString,
 } from "./utils";
@@ -61,7 +61,7 @@ export const Date: FC<DateProps> = ({
 	}
 
 	//** build date string from inputted values year={} month={} day={} */
-	const dateString = `${day} ${monthFromNumber(month)} ${year}`;
+	const dateString = `${day} ${months[month - 1]} ${year}`;
 	return (
 		<div {...attrs} className={classes()}>
 			<time>{dateString}</time>

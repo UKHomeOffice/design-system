@@ -44,38 +44,7 @@ export type dayNumbers =
 30 | 
 31;
 
-export const monthFromNumber = (monthNumber: number) => {
-    switch(monthNumber) { 
-        case 1:
-            return "January"
-        case 2:
-            return "February"
-        case 3:
-            return "March"
-        case 4:
-            return "April"
-        case 5:
-            return "May"
-        case 6:
-            return "June"
-        case 7:
-            return "July"
-        case 8:
-            return "August"
-        case 9:
-            return "September"
-        case 10:
-            return "October"
-        case 11:
-            return "November"
-        case 12:
-            return "December"
-        default:
-            return undefined
-    }
-}
-
-export const convertTime = (time: number): number => {
+export const convertFrom24HourTime = (time: number): number => {
     switch(time){
         case 13:
             return 1
@@ -104,10 +73,25 @@ export const convertTime = (time: number): number => {
     }
 }
 
+export const months = [
+		"January",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December",
+	];
+
 export const formatDateFromISOString = (dateStirng: string): string => {
     const date = new Date(dateStirng);
     const day = date.getDate();
-    const month = monthFromNumber(date.getMonth() + 1);
+    const month = months[date.getMonth()];
     const year = date.getFullYear()
     return `${day} ${month} ${year}`
 }
@@ -116,5 +100,5 @@ export const formatTimeFromISOString = (dateString: string): string => {
     const date = new Date(dateString);
     const hours = date.getHours();
     const minutes = date.getMinutes();
-    return `${hours > 12 ? convertTime(hours) : hours}:${minutes}${hours > 11 ? "pm" : "am"}`
+    return `${hours > 12 ? convertFrom24HourTime(hours) : hours}:${minutes}${hours > 11 ? "pm" : "am"}`
 }

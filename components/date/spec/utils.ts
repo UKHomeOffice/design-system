@@ -1,24 +1,6 @@
-import { monthFromNumber, formatDateFromISOString, formatTimeFromISOString } from "../src/utils";
+import { formatDateFromISOString, formatTimeFromISOString } from "../src/utils";
 
 describe('Date Utils', () => {
-
-    it.each([
-        {number: 1, month: "January"},
-        {number: 2, month: "February"},
-        {number: 3, month: "March"},
-        {number: 4, month: "April"},
-        {number: 5, month: "May"},
-        {number: 6, month: "June"},
-        {number: 7, month: "July"},
-        {number: 8, month: "August"},
-        {number: 9, month: "September"},
-        {number: 10, month: "October"},
-        {number: 11, month: "November"},
-        {number: 12, month: "December"},
-    ])('Converts number to month string', ({number, month}) => {
-        const stringMonth = monthFromNumber(number);
-        expect(stringMonth).toBe(month);
-    })
 
     it('Formats date string from date time value', () => {
         const testDateA = formatDateFromISOString("2022-01-10T19:39:33.233Z");
@@ -49,10 +31,17 @@ describe('Date Utils', () => {
     })
 
     it('Displays pm or am depending on the time', () => {
-        const amTime = formatTimeFromISOString(`2022-01-10T10:30:33.233Z`)
-        const pmTime = formatTimeFromISOString(`2022-01-10T22:30:33.233Z`)
+        const amTime = formatTimeFromISOString(`2022-01-10T10:30:33.233Z`);
+        const pmTime = formatTimeFromISOString(`2022-01-10T22:30:33.233Z`);
         expect(amTime).toBe("10:30am");
         expect(pmTime).toBe("10:30pm");
+    })
+
+    it('Displays pm when the hour is 12', () => {
+        const timeAM = formatTimeFromISOString(`2022-01-10T00:30:33.233Z`);
+        const timePM = formatTimeFromISOString(`2022-01-10T12:30:33.233Z`);
+        expect(timeAM).toBe("0:30am");
+        expect(timePM).toBe("12:30pm");        
     })
 
 })
