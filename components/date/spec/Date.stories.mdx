@@ -3,7 +3,7 @@ import { Date } from '../src/Date';
 import readMe from '../README.md';
 
 <Meta
-  title="date"
+  title="Datetime"
   component={ Date }
   parameters={ {
     chromatic: { viewports: [640, 480] },
@@ -13,27 +13,32 @@ import readMe from '../README.md';
   } }
 />
 
-# date
+# Datetime
 
 Displays date and time inline with GOV expectations
-WRITE MORE DESCRIPTION HERE.
 
 <Preview withToolbar>
-  <Story name="Date">
-    <Date />
+  <Story name="Date From Inputted Values">
+    <Date year={2022} month={7} day={30} />
   </Story>
 </Preview>
 
 <Props of={ Date } />
 
-
-## Stories
-### Standard
-
-A standard date.
+<Preview>
+  <Story name="Date From ISO String">
+    <Date dateTime="2022-03-03T19:39:33.233Z" />
+  </Story>
+</Preview>
 
 <Preview>
-  <Story name="Standard">
-    <Date />
+  <Story name="Date From ISO String With Time First">
+    <Date dateTime="2022-03-03T19:39:33.233Z" displayTime={true} precedence={"time"} />
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Date From ISO String With Time Last">
+    <Date dateTime="2022-03-03T19:39:33.233Z" displayTime={true} precedence={"date"} />
   </Story>
 </Preview>

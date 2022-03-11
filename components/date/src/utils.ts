@@ -75,10 +75,48 @@ export const monthFromNumber = (monthNumber: number) => {
     }
 }
 
-export const formatDateTimeFromISOString = (dateStirng: string): string => {
+export const convertTime = (time: number): number => {
+    switch(time){
+        case 13:
+            return 1
+        case 14:
+            return 2
+        case 15:
+            return 3
+        case 16:
+            return 4
+        case 17:
+            return 5
+        case 18:
+            return 6
+        case 19:
+            return 7
+        case 20:
+            return 8
+        case 21:
+            return 9
+        case 22:
+            return 10
+        case 23:
+            return 11
+        default:
+            return
+    }
+}
+
+export const formatDateFromISOString = (dateStirng: string): string => {
     const date = new Date(dateStirng);
     const day = date.getDate();
     const month = monthFromNumber(date.getMonth() + 1);
     const year = date.getFullYear()
     return `${day} ${month} ${year}`
+}
+
+export const formatTimeFromISOString = (dateString: string): string =>{
+    const date = new Date(dateString);
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    return `${hours > 12 ? convertTime(hours) : hours}:${minutes}${hours > 12 ? "pm" : "am"}`
+    // 7:30pm
 }
