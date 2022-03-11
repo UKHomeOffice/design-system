@@ -46,15 +46,15 @@ export const Date: FC<DateProps> = ({
 	if (dateTime) {
 		const dateString = formatDateFromISOString(dateTime);
 		//** convert time to string if displayTime is set to true */
-		const timeStirng = displayTime ? formatTimeFromISOString(dateTime) : null;
+		const timeString = displayTime ? formatTimeFromISOString(dateTime) : null;
 
 		return (
 			<div {...attrs} className={classes()}>
 				{
 					precedence === "time" ? 
-					<time dateTime={dateTime}>{timeStirng} on {dateString}</time> 
+					<time dateTime={dateTime}>{timeString? `${timeString} on ` : ``}{dateString}</time> 
 					: 
-					<time dateTime={dateTime}>{dateString} at {timeStirng}</time>
+					<time dateTime={dateTime}>{dateString}{timeString ? ` at ${timeString}`: ``}</time>
 				}
 			</div>
 		);
