@@ -37,7 +37,7 @@ describe('Date Utils', () => {
         expect(pmTime).toBe("10:30pm");
     })
 
-    it('Displays pm when the hour is 12', () => {
+    it('Displays pm when the hour is 12 and am when the hour is 00', () => {
         const timeAM = formatTimeFromISOString(`2022-01-10T00:30:33.233Z`);
         const timePM = formatTimeFromISOString(`2022-01-10T12:30:33.233Z`);
         expect(timeAM).toBe("0:30am");

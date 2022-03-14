@@ -15,38 +15,36 @@ import readMe from "../README.md";
 
 # Datetime
 
-Displays date and time inline with GOV expectations
-
 <Preview withToolbar>
 	<Story name="Ordered date values y/d/m">
 		<Date dateValues={{ year: 2022, day: 30, month: 1 }} />
 	</Story>
 </Preview>
 
-<Preview withToolbar>
+<Props of={Date} />
+
+<Preview>
 	<Story name="Ordered date values d/m/y">
 		<Date dateValues={{ day: 30, month: 1, year: 2022 }} />
 	</Story>
 </Preview>
 
-<Preview withToolbar>
+<Preview>
 	<Story name="Ordered date values m/d/y">
 		<Date dateValues={{ month: 1, day: 30, year: 2022 }} />
 	</Story>
 </Preview>
 
-<Props of={Date} />
-
 <Preview>
 	<Story name="Date From ISO String">
-		<Date dateTime="2022-07-30T19:39:33.233Z" />
+		<Date ISOString="2022-07-30T19:39:33.233Z" />
 	</Story>
 </Preview>
 
 <Preview>
 	<Story name="Date From ISO String With Time First">
 		<Date
-			dateTime="2022-07-30T19:39:33.233Z"
+			ISOString="2022-07-30T19:39:33.233Z"
 			displayTime={true}
 			precedence={"time"}
 		/>
@@ -54,9 +52,9 @@ Displays date and time inline with GOV expectations
 </Preview>
 
 <Preview>
-	<Story name="Date From ISO String With Time Last">
+	<Story name="Date From ISO String With Date First">
 		<Date
-			dateTime="2022-07-39T19:39:33.233Z"
+			ISOString="2022-07-30T19:39:33.233Z"
 			displayTime={true}
 			precedence={"date"}
 		/>
