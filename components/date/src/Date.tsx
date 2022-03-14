@@ -16,12 +16,11 @@ interface dateValues {
 }
 
 export type DateProps = StandardProps & {
-	dateValues?: dateValues;
+	dateValues?: dateValues; // entered as an object that can be configured to change date format
 	ISOString?: string; // takes an ISO date string and returns a formatted date (and time) string
-	//** set whether time should shown with the date - 14:30pm 31 March 2021 */
-	displayTime?: boolean;
+	displayTime?: boolean; // set whether time should shown with the date, false unless set to true
 	//** input from designer on how to write date with time - 14:30pm on 31 March 2022 or 31 March 2022 at 14:30pm. What should be the defacto setting? */
-	precedence?: "time" | "date";
+	precedence?: "time" | "date"; // sets whether time should written first or date, defaults to "time" i.e 4:30pm on 31 March 2022
 };
 
 export const Date: FC<DateProps> = ({
