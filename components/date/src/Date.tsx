@@ -17,8 +17,7 @@ interface dateValues {
 
 export type DateProps = StandardProps & {
 	dateValues?: dateValues;
-	//** alternatively, input a javascript ISO date string to transform into a date - "2022-03-03T19:39:33.233Z" */
-	ISOString?: string; // regex for ISOString? - rename variable to ISODateString
+	ISOString?: string; // takes an ISO date string and returns a formatted date (and time) string
 	//** set whether time should shown with the date - 14:30pm 31 March 2021 */
 	displayTime?: boolean;
 	//** input from designer on how to write date with time - 14:30pm on 31 March 2022 or 31 March 2022 at 14:30pm. What should be the defacto setting? */
@@ -43,6 +42,23 @@ export const Date: FC<DateProps> = ({
 		className
 	);
 
+	//** build date string from inputted values dateValues={{day: 3, month: 1, year: 2022}} */
+	if (dateValues) {
+		const date = [];
+		for (const dateValue in dateValues) {
+			if (dateValue == "month") {
+				date.push(months[dateValues[dateValue] - 1]);
+			} else {
+				date.push(dateValues[dateValue]);
+			}
+		}
+		return (
+			<div {...attrs} className={classes()}>
+				<time>{date.join(" ")}</time>
+			</div>
+		);
+	}
+
 	//** build date and time from an ISO String dateTime={} */
 	if (ISOString) {
 		const dateString = formatDateFromISOString(ISOString);
@@ -62,23 +78,6 @@ export const Date: FC<DateProps> = ({
 						{timeString ? ` at ${timeString}` : ``}
 					</time>
 				)}
-			</div>
-		);
-	}
-
-	//** build date string from inputted values dateValues={{day: 3, month: 1, year: 2022}} */
-	if (dateValues) {
-		const date = [];
-		for (const dateValue in dateValues) {
-			if(dateValue == "month") {
-				date.push(months[dateValues[dateValue] -1])
-			} else {
-				date.push(dateValues[dateValue]);
-			}
-		}
-		return (
-			<div {...attrs} className={classes()}>
-				<time>{date.join(" ")}</time>
 			</div>
 		);
 	}
