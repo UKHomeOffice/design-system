@@ -1,5 +1,5 @@
 import { FC, createElement as h } from "react";
-import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
+import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
 import {
 	monthNumbers,
 	dayNumbers,
@@ -9,13 +9,16 @@ import {
 } from "./utils";
 import "../assets/Date.scss";
 
+interface dateValues {
+	year: number;
+	month: monthNumbers;
+	day: dayNumbers;
+}
+
 export type DateProps = StandardProps & {
-	//** allow year, month, day, times values to be inputted seperately. This can be used if date time is already split into consituent parts i.e year, month, day */
-	year?: number;
-	month?: monthNumbers;
-	day?: dayNumbers;
+	dateValues?: dateValues;
 	//** alternatively, input a javascript ISO date string to transform into a date - "2022-03-03T19:39:33.233Z" */
-	dateTime?: string; // regex for ISOString? - rename variable to ISODateString
+	ISOString?: string; // regex for ISOString? - rename variable to ISODateString
 	//** set whether time should shown with the date - 14:30pm 31 March 2021 */
 	displayTime?: boolean;
 	//** input from designer on how to write date with time - 14:30pm on 31 March 2022 or 31 March 2022 at 14:30pm. What should be the defacto setting? */
@@ -27,10 +30,8 @@ export const Date: FC<DateProps> = ({
 	classBlock,
 	classModifiers,
 	className,
-	year,
-	month,
-	day,
-	dateTime,
+	dateValues,
+	ISOString,
 	displayTime = false,
 	precedence = "time",
 	...attrs
@@ -42,31 +43,45 @@ export const Date: FC<DateProps> = ({
 		className
 	);
 
-	//** build date and time form an ISO String dateTime={} */
-	if (dateTime) {
-		const dateString = formatDateFromISOString(dateTime);
+	//** build date and time from an ISO String dateTime={} */
+	if (ISOString) {
+		const dateString = formatDateFromISOString(ISOString);
 		//** convert time to string if displayTime is set to true */
-		const timeString = displayTime ? formatTimeFromISOString(dateTime) : null;
+		const timeString = displayTime ? formatTimeFromISOString(ISOString) : null;
 
 		return (
 			<div {...attrs} className={classes()}>
-				{
-					precedence === "time" ? 
-					<time dateTime={dateTime}>{timeString ? `${timeString} on ` : ``}{dateString}</time> 
-					: 
-					<time dateTime={dateTime}>{dateString}{timeString ? ` at ${timeString}`: ``}</time>
-				}
+				{precedence === "time" ? (
+					<time dateTime={ISOString}>
+						{timeString ? `${timeString} on ` : ``}
+						{dateString}
+					</time>
+				) : (
+					<time dateTime={ISOString}>
+						{dateString}
+						{timeString ? ` at ${timeString}` : ``}
+					</time>
+				)}
 			</div>
 		);
 	}
 
-	//** build date string from inputted values year={} month={} day={} */
-	const dateString = `${day} ${months[month - 1]} ${year}`;
-	return (
-		<div {...attrs} className={classes()}>
-			<time>{dateString}</time>
-		</div>
-	);
+	//** build date string from inputted values dateValues={{day: 3, month: 1, year: 2022}} */
+	if (dateValues) {
+		const date = [];
+		for (const dateValue in dateValues) {
+			if(dateValue == "month") {
+				date.push(months[dateValues[dateValue] -1])
+			} else {
+				date.push(dateValues[dateValue]);
+			}
+		}
+		return (
+			<div {...attrs} className={classes()}>
+				<time>{date.join(" ")}</time>
+			</div>
+		);
+	}
 };
 
 Date.displayName = "Date";

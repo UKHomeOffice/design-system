@@ -1,16 +1,16 @@
-import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
-import { Date } from '../src/Date';
-import readMe from '../README.md';
+import { Meta, Preview, Props, Story } from "@not-govuk/docs-components";
+import { Date } from "../src/Date";
+import readMe from "../README.md";
 
 <Meta
-  title="Datetime"
-  component={ Date }
-  parameters={ {
-    chromatic: { viewports: [640, 480] },
-    description: 'Displays date and time inline with GOV expectations',
-    jest: ['Date'],
-    notes: readMe
-  } }
+	title="Datetime"
+	component={Date}
+	parameters={{
+		chromatic: { viewports: [640, 480] },
+		description: "Displays date and time inline with GOV expectations",
+		jest: ["Date"],
+		notes: readMe,
+	}}
 />
 
 # Datetime
@@ -18,27 +18,47 @@ import readMe from '../README.md';
 Displays date and time inline with GOV expectations
 
 <Preview withToolbar>
-  <Story name="Date From Inputted Values">
-    <Date year={2022} month={7} day={30} />
-  </Story>
+	<Story name="Ordered date values y/d/m">
+		<Date dateValues={{ year: 2022, day: 30, month: 1 }} />
+	</Story>
 </Preview>
 
-<Props of={ Date } />
+<Preview withToolbar>
+	<Story name="Ordered date values d/m/y">
+		<Date dateValues={{ day: 30, month: 1, year: 2022 }} />
+	</Story>
+</Preview>
+
+<Preview withToolbar>
+	<Story name="Ordered date values m/d/y">
+		<Date dateValues={{ month: 1, day: 30, year: 2022 }} />
+	</Story>
+</Preview>
+
+<Props of={Date} />
 
 <Preview>
-  <Story name="Date From ISO String">
-    <Date dateTime="2022-07-30T19:39:33.233Z" />
-  </Story>
+	<Story name="Date From ISO String">
+		<Date dateTime="2022-07-30T19:39:33.233Z" />
+	</Story>
 </Preview>
 
 <Preview>
-  <Story name="Date From ISO String With Time First">
-    <Date dateTime="2022-07-30T19:39:33.233Z" displayTime={true} precedence={"time"} />
-  </Story>
+	<Story name="Date From ISO String With Time First">
+		<Date
+			dateTime="2022-07-30T19:39:33.233Z"
+			displayTime={true}
+			precedence={"time"}
+		/>
+	</Story>
 </Preview>
 
 <Preview>
-  <Story name="Date From ISO String With Time Last">
-    <Date dateTime="2022-07-39T19:39:33.233Z" displayTime={true} precedence={"date"} />
-  </Story>
+	<Story name="Date From ISO String With Time Last">
+		<Date
+			dateTime="2022-07-39T19:39:33.233Z"
+			displayTime={true}
+			precedence={"date"}
+		/>
+	</Story>
 </Preview>
