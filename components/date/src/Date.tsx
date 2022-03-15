@@ -1,24 +1,19 @@
 import { FC, createElement as h } from "react";
 import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
 import {
-	monthNumbers,
-	dayNumbers,
-	months,
+	dateValues,
 	formatDateFromISOString,
 	formatTimeFromISOString,
 } from "./utils";
 import "../assets/Date.scss";
 
-interface dateValues {
-	year: number;
-	month: monthNumbers;
-	day: dayNumbers;
-}
-
 export type DateProps = StandardProps & {
-	dateValues?: dateValues; // entered as an object that can be configured to change date format
 	ISOString?: string; // takes an ISO date string and returns a formatted date (and time) string
-	displayTime?: boolean; // set whether time should shown with the date, false unless set to true
+
+	dateFormat?: dateValues[]; // array of three strings that sets the format of the date
+
+	displayTime?: boolean; // set whether time should be shown with the date, false unless set to true
+
 	//** input from designer on how to write date with time - 14:30pm on 31 March 2022 or 31 March 2022 at 14:30pm. What should be the defacto setting? */
 	precedence?: "time" | "date"; // sets whether time should written first or date i.e 4:30pm on 31 March 2022 or 31 March 2022 at 4:30pm
 };
@@ -28,8 +23,8 @@ export const Date: FC<DateProps> = ({
 	classBlock,
 	classModifiers,
 	className,
-	dateValues,
 	ISOString,
+	dateFormat = ["day", "month", "year"],
 	displayTime = false,
 	precedence = "time",
 	...attrs
@@ -41,45 +36,24 @@ export const Date: FC<DateProps> = ({
 		className
 	);
 
-	//** build date string from inputted values dateValues={{day: 3, month: 1, year: 2022}} - date format can be configured here */
-	if (dateValues) {
-		const date = [];
-		for (const dateValue in dateValues) {
-			if (dateValue == "month") {
-				date.push(months[dateValues[dateValue] - 1]);
-			} else {
-				date.push(dateValues[dateValue]);
-			}
-		}
-		return (
-			<div {...attrs} className={classes()}>
-				<time>{date.join(" ")}</time>
-			</div>
-		);
-	}
+	const dateString = formatDateFromISOString(ISOString, dateFormat);
+	const timeString = displayTime ? formatTimeFromISOString(ISOString) : null;
 
-	//** build date and time from an ISO String dateTime={} */
-	if (ISOString) {
-		const dateString = formatDateFromISOString(ISOString);
-		//** convert time to string if displayTime is set to true */
-		const timeString = displayTime ? formatTimeFromISOString(ISOString) : null;
-
-		return (
-			<div {...attrs} className={classes()}>
-				{precedence === "time" ? (
-					<time dateTime={ISOString}>
-						{timeString ? `${timeString} on ` : ``}
-						{dateString}
-					</time>
-				) : (
-					<time dateTime={ISOString}>
-						{dateString}
-						{timeString ? ` at ${timeString}` : ``}
-					</time>
-				)}
-			</div>
-		);
-	}
+	return (
+		<div {...attrs} className={classes()}>
+			{precedence === "time" ? (
+				<time dateTime={ISOString}>
+					{timeString ? `${timeString} on ` : ``}
+					{dateString}
+				</time>
+			) : (
+				<time dateTime={ISOString}>
+					{dateString}
+					{timeString ? ` at ${timeString}` : ``}
+				</time>
+			)}
+		</div>
+	);
 };
 
 Date.displayName = "Date";

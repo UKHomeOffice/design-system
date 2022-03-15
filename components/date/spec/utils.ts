@@ -2,17 +2,35 @@ import { formatDateFromISOString, formatTimeFromISOString } from "../src/utils";
 
 describe('Date Utils', () => {
 
-    it('Formats date string from date time value', () => {
-        const testDateA = formatDateFromISOString("2022-01-10T19:39:33.233Z");
+    it('Formats date string dd/mm/yyyy', () => {
+        const testDateA = formatDateFromISOString("2022-01-10T19:39:33.233Z", ["day", "month", "year"]);
         expect(testDateA).toBe("10 January 2022")
-
-        const testDateB = formatDateFromISOString("2022-10-10T19:39:33.233Z");
-        expect(testDateB).toBe("10 October 2022")
-
-        const testDateC = formatDateFromISOString("2018-10-10T19:39:33.233Z");
-        expect(testDateC).toBe("10 October 2018")
     })
-
+    it('Formats date string yyyy/mm/dd', () => {
+        const testDateA = formatDateFromISOString("2022-01-10T19:39:33.233Z", ["year", "month", "day"]);
+        expect(testDateA).toBe("2022 January 10")
+    })
+    it('Formats date string mm/dd/yyyy', () => {
+        const testDateA = formatDateFromISOString("2022-01-10T19:39:33.233Z", ["month", "day", "year"]);
+        expect(testDateA).toBe("January 10 2022")
+    })
+    it.each([
+        {number: '01', string: "January"},
+        {number: '02', string: "February"},
+        {number: '03', string: "March"},
+        {number: '04', string: "April"},
+        {number: '05', string: "May"},
+        {number: '06', string: "June"},
+        {number: '07', string: "July"},
+        {number: '08', string: "August"},
+        {number: '09', string: "September"},
+        {number: '10', string: "October"},
+        {number: '11', string: "November"},
+        {number: '12', string: "December"},
+    ])('Converts number to month string', ({number, string}) => {
+        const testDate = formatDateFromISOString(`2022-${number}-10T10:30:33.233Z`, ["day", "month", "year"]);
+        expect(testDate).toBe(`10 ${string} 2022`)
+    })
     it.each([
         {number: 13, value: 1},
         {number: 14, value: 2},

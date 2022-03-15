@@ -16,28 +16,28 @@ import readMe from "../README.md";
 # Datetime
 
 <Preview withToolbar>
-	<Story name="Ordered date values y/d/m">
-		<Date dateValues={{ year: 2022, day: 30, month: 1 }} />
+	<Story name="Ordered date values with default format">
+		<Date ISOString={"2022-01-10T19:39:33.233Z"} />
 	</Story>
 </Preview>
 
 <Props of={Date} />
 
 <Preview>
-	<Story name="Ordered date values d/m/y">
-		<Date dateValues={{ day: 30, month: 1, year: 2022 }} />
+	<Story name="Ordered date values as yyyy/mm/dd">
+		<Date
+			ISOString={"2022-01-10T19:39:33.233Z"}
+			dateFormat={["year", "month", "day"]}
+		/>
 	</Story>
 </Preview>
 
 <Preview>
-	<Story name="Ordered date values m/d/y">
-		<Date dateValues={{ month: 1, day: 30, year: 2022 }} />
-	</Story>
-</Preview>
-
-<Preview>
-	<Story name="Date From ISO String">
-		<Date ISOString="2022-07-30T19:39:33.233Z" />
+	<Story name="Ordered date values as mm/dd/yyyy">
+		<Date
+			ISOString={"2022-01-10T19:39:33.233Z"}
+			dateFormat={["month", "day", "year"]}
+		/>
 	</Story>
 </Preview>
 
