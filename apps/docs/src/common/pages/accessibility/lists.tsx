@@ -27,7 +27,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">Accessibility</span>
         Lists
       </h1>
-      <p>A list is a cluster of related information points, either unordered or sorted by importance or sequence.  They are a good way to break up and shorten large chunks of information making them easier to read and understand. </p>
+      <p>A list is a cluster of related pieces of information, either unordered or sorted by importance or sequence.  They are a good way to break up and shorten large chunks of information making them easier to read and understand. </p>
       <p>Lists are usually visually distinguished from the main body of the text by indentation and numbers or bullet points. Blind users lack these visual cues, so the coding of lists is important for helping them to navigate. For example, screen reader software will often announce the length of a list so users will know how many items to expect. </p>
 
       <h2>Helping everyone</h2>
@@ -66,7 +66,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <tr className="govuk-table__row">
         <td className="govuk-table__cell">Cognitive impairment or dyslexia</td>
         <td className="govuk-table__cell">Text that is easy to decode and understand</td>
-        <td className="govuk-table__cell">Where relevant, information formatted as a list, rather than items separated by commas within a dense paragraph </td>
+        <td className="govuk-table__cell"> Information formatted as a list, rather than items separated by commas within a dense paragraph </td>
         </tr>
 
         </tbody>
@@ -75,7 +75,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <h2>Creating good lists</h2>
 
 
-<p>A correctly implemented list with structural markup means that screen readers will correctly announce it and read out list items. It also means screen reader users can navigate to the lists easily or skip past them.</p>
+<p>Implementing a list with structural markup means that screen readers will correctly announce it and read out list items. It also means screen reader users can navigate to the lists easily or skip past them.</p>
 <p>Choose the right type of list for your content – numbered lists should only be used for content where the order or sequence is important. </p>
 
 
