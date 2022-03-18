@@ -40,17 +40,15 @@ export const Date: FC<DateProps> = ({
 
 	return (
 		<div {...attrs} className={classes()}>
-			{precedence === "time" ? (
-				<time dateTime={ISOString}>
-					{formattedTime ? `${formattedTime} on ` : ``}
-					{formattedDate}
-				</time>
-			) : (
-				<time dateTime={ISOString}>
-					{formattedDate}
-					{formattedTime ? ` at ${formattedTime}` : ``}
-				</time>
-			)}
+			<time dateTime={ISOString}>
+				{precedence === "time"
+					? formattedTime
+						? `${formattedTime} on ${formattedDate}`
+						: `${formattedDate}`
+					: formattedTime
+					? `${formattedDate} at ${formattedTime}`
+					: `${formattedDate}`}
+			</time>
 		</div>
 	);
 };
