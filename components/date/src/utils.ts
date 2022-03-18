@@ -14,33 +14,37 @@ export const months = [
 	"November",
 	"December",
 ];
-export const formatDateFromISOString = (
-	dateStirng: string,
-	dateFormatArray: dateValues[]
-): string => {
-	const date = new Date(dateStirng);
-	const dateFormat = [];
-	dateFormatArray.forEach((dateValue) => {
-		switch (dateValue) {
-			case "day":
-				dateFormat.push(date.getDate());
-				break;
-			case "month":
-				dateFormat.push(months[date.getMonth()]);
-				break;
-			case "year":
-				dateFormat.push(date.getFullYear());
-				break;
-		}
-	});
-	return dateFormat.join(" ");
-};
-
-export const formatTimeFromISOString = (dateString: string): string => {
+export const formatDateTimeFromISOString = (
+	dateString: string,
+	dateFormatArray: dateValues[],
+	displayTime: boolean
+) => {
 	const date = new Date(dateString);
-	const hours = date.getHours();
-	const minutes = date.getMinutes();
-	return `${hours > 12 ? pmTimes.indexOf(hours) + 1 : hours}:${minutes}${
-		hours > 11 ? "pm" : "am"
-	}`;
+	const formattedDate = dateFormatArray
+		.map((dateValue) => {
+			switch (dateValue) {
+				case "day":
+					return date.getDate();
+				case "month":
+					return months[date.getMonth()];
+				case "year":
+					return date.getFullYear();
+			}
+		})
+		.join(" ");
+
+	let formattedTime = null;
+
+	if (displayTime) {
+		const hours = date.getHours();
+		const minutes = date.getMinutes();
+		formattedTime = `${
+			hours > 12 ? pmTimes.indexOf(hours) + 1 : hours
+		}:${minutes}${hours > 11 ? "pm" : "am"}`;
+	}
+
+	return {
+		formattedDate,
+		formattedTime,
+	};
 };

@@ -1,29 +1,29 @@
-import { formatDateFromISOString, formatTimeFromISOString } from "../src/utils";
+import { formatDateTimeFromISOString } from "../src/utils";
 
 describe("Date Utils", () => {
 	it("Formats date string dd/mm/yyyy", () => {
-		const testDateA = formatDateFromISOString("2022-01-10T19:39:33.233Z", [
-			"day",
-			"month",
-			"year",
-		]);
-		expect(testDateA).toBe("10 January 2022");
+		const { formattedDate } = formatDateTimeFromISOString(
+			"2022-01-10T19:39:33.233Z",
+			["day", "month", "year"],
+			false
+		);
+		expect(formattedDate).toBe(`10 January 2022`);
 	});
 	it("Formats date string yyyy/mm/dd", () => {
-		const testDateA = formatDateFromISOString("2022-01-10T19:39:33.233Z", [
-			"year",
-			"month",
-			"day",
-		]);
-		expect(testDateA).toBe("2022 January 10");
+		const { formattedDate } = formatDateTimeFromISOString(
+			"2022-01-10T19:39:33.233Z",
+			["month", "day", "year"],
+			false
+		);
+		expect(formattedDate).toBe(`January 10 2022`);
 	});
 	it("Formats date string mm/dd/yyyy", () => {
-		const testDateA = formatDateFromISOString("2022-01-10T19:39:33.233Z", [
-			"month",
-			"day",
-			"year",
-		]);
-		expect(testDateA).toBe("January 10 2022");
+		const { formattedDate } = formatDateTimeFromISOString(
+			"2022-01-10T19:39:33.233Z",
+			["year", "day", "month"],
+			false
+		);
+		expect(formattedDate).toBe(`2022 10 January`);
 	});
 	it.each([
 		{ number: "01", string: "January" },
@@ -39,11 +39,12 @@ describe("Date Utils", () => {
 		{ number: "11", string: "November" },
 		{ number: "12", string: "December" },
 	])("Converts number to month string", ({ number, string }) => {
-		const testDate = formatDateFromISOString(
-			`2022-${number}-10T10:30:33.233Z`,
-			["day", "month", "year"]
+		const { formattedDate } = formatDateTimeFromISOString(
+			`2022-${number}-10T19:39:33.233Z`,
+			["day", "month", "year"],
+			false
 		);
-		expect(testDate).toBe(`10 ${string} 2022`);
+		expect(formattedDate).toBe(`10 ${string} 2022`);
 	});
 	it.each([
 		{ number: 13, value: 1 },
@@ -58,21 +59,27 @@ describe("Date Utils", () => {
 		{ number: 22, value: 10 },
 		{ number: 23, value: 11 },
 	])("Converts 24 hour clock into 12 clock", ({ number, value }) => {
-		const testTime = formatTimeFromISOString(`2022-01-10T${number}:30:33.233Z`);
-		expect(testTime).toBe(`${value}:30pm`);
+		const { formattedTime } = formatDateTimeFromISOString(
+			`2022-01-10T${number}:30:33.233Z`,
+			["day", "month", "year"],
+			true
+		);
+		expect(formattedTime).toBe(`${value}:30pm`);
 	});
-
-	it("Displays pm or am depending on the time", () => {
-		const amTime = formatTimeFromISOString(`2022-01-10T10:30:33.233Z`);
-		const pmTime = formatTimeFromISOString(`2022-01-10T22:30:33.233Z`);
-		expect(amTime).toBe("10:30am");
-		expect(pmTime).toBe("10:30pm");
+	it("Displays pm when time is 12", () => {
+		const { formattedTime } = formatDateTimeFromISOString(
+			`2022-01-10T12:30:33.233Z`,
+			["day", "month", "year"],
+			true
+		);
+		expect(formattedTime).toBe("12:30pm");
 	});
-
-	it("Displays pm when the hour is 12 and am when the hour is 00", () => {
-		const timeAM = formatTimeFromISOString(`2022-01-10T00:30:33.233Z`);
-		const timePM = formatTimeFromISOString(`2022-01-10T12:30:33.233Z`);
-		expect(timeAM).toBe("0:30am");
-		expect(timePM).toBe("12:30pm");
+	it("Displays am when time is 00", () => {
+		const { formattedTime } = formatDateTimeFromISOString(
+			`2022-01-10T00:30:33.233Z`,
+			["day", "month", "year"],
+			true
+		);
+		expect(formattedTime).toBe("0:30am");
 	});
 });

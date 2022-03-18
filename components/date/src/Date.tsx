@@ -1,10 +1,6 @@
-import { FC, createElement as h } from "react";
+import React, { FC, createElement as h } from "react";
 import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
-import {
-	dateValues,
-	formatDateFromISOString,
-	formatTimeFromISOString,
-} from "./utils";
+import { dateValues, formatDateTimeFromISOString } from "./utils";
 import "../assets/Date.scss";
 
 export type DateProps = StandardProps & {
@@ -36,20 +32,23 @@ export const Date: FC<DateProps> = ({
 		className
 	);
 
-	const dateString = formatDateFromISOString(ISOString, dateFormat);
-	const timeString = displayTime ? formatTimeFromISOString(ISOString) : null;
+	const { formattedDate, formattedTime } = formatDateTimeFromISOString(
+		ISOString,
+		dateFormat,
+		displayTime
+	);
 
 	return (
 		<div {...attrs} className={classes()}>
 			{precedence === "time" ? (
 				<time dateTime={ISOString}>
-					{timeString ? `${timeString} on ` : ``}
-					{dateString}
+					{formattedTime ? `${formattedTime} on ` : ``}
+					{formattedDate}
 				</time>
 			) : (
 				<time dateTime={ISOString}>
-					{dateString}
-					{timeString ? ` at ${timeString}` : ``}
+					{formattedDate}
+					{formattedTime ? ` at ${formattedTime}` : ``}
 				</time>
 			)}
 		</div>
