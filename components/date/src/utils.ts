@@ -17,7 +17,8 @@ export const months = [
 export const formatDateTimeFromISOString = (
 	dateString: string,
 	dateFormatArray: dateValues[],
-	displayTime: boolean
+	displayTime: boolean,
+	clockType: 12 | 24
 ) => {
 	const date = new Date(dateString);
 	const formattedDate = dateFormatArray
@@ -38,9 +39,13 @@ export const formatDateTimeFromISOString = (
 	if (displayTime) {
 		const hours = date.getHours();
 		const minutes = date.getMinutes();
-		formattedTime = `${
-			hours > 12 ? pmTimes.indexOf(hours) + 1 : hours
-		}:${minutes}${hours > 11 ? "pm" : "am"}`;
+
+		formattedTime =
+			clockType === 24
+				? (formattedTime = `${hours}:${minutes}`)
+				: (formattedTime = `${
+						hours > 12 ? pmTimes.indexOf(hours) + 1 : hours
+				  }:${minutes}${hours > 11 ? "pm" : "am"}`);
 	}
 
 	return {

@@ -10,8 +10,11 @@ export type DateProps = StandardProps & {
 
 	displayTime?: boolean; // set whether time should be shown with the date, false unless set to true
 
-	//** input from designer on how to write date with time - 14:30pm on 31 March 2022 or 31 March 2022 at 14:30pm. What should be the defacto setting? */
+	// input from designer on how to write date with time - 14:30pm on 31 March 2022 or 31 March 2022 at 14:30pm. What should be the defacto setting?
 	precedence?: "time" | "date"; // sets whether time should written first or date i.e 4:30pm on 31 March 2022 or 31 March 2022 at 4:30pm
+
+	// sets whether clock should be a 12 hour clock or a 24 hour clock - defaults to 12
+	clockType?: 12 | 24
 };
 
 export const Date: FC<DateProps> = ({
@@ -23,6 +26,7 @@ export const Date: FC<DateProps> = ({
 	dateFormat = ["day", "month", "year"],
 	displayTime = false,
 	precedence = "time",
+	clockType = 12,
 	...attrs
 }) => {
 	const classes = classBuilder(
@@ -35,7 +39,8 @@ export const Date: FC<DateProps> = ({
 	const { formattedDate, formattedTime } = formatDateTimeFromISOString(
 		ISOString,
 		dateFormat,
-		displayTime
+		displayTime,
+		clockType
 	);
 
 	return (
