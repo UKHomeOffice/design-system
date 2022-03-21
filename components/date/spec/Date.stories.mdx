@@ -42,7 +42,7 @@ import readMe from "../README.md";
 </Preview>
 
 <Preview>
-	<Story name="Date From ISO String With Time First">
+	<Story name="Date With Time First">
 		<Date
 			ISOString="2022-07-30T19:39:33.233Z"
 			displayTime={true}
@@ -52,11 +52,21 @@ import readMe from "../README.md";
 </Preview>
 
 <Preview>
-	<Story name="Date From ISO String With Date First">
+	<Story name="Date With Date First">
 		<Date
 			ISOString="2022-07-30T19:39:33.233Z"
 			displayTime={true}
 			precedence={"date"}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Date with 24 hour time">
+		<Date
+			ISOString="2022-07-30T19:39:33.233Z"
+			displayTime={true}
+			clockType={24}
 		/>
 	</Story>
 </Preview>
