@@ -79,7 +79,6 @@ describe("Date Utils", () => {
 			true,
 			["day", "month", "year"],
 			12
-		
 		);
 		expect(formattedTime).toBe("12:30pm");
 	});
@@ -93,4 +92,30 @@ describe("Date Utils", () => {
 		);
 		expect(formattedTime).toBe("0:30am");
 	});
+	it.each([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])(
+		"Displays 24 hour time with appended 0 for 1 - 9 times",
+		(number) => {
+			const { formattedTime } = formatDateTimeFromISOString(
+				`2022-01-10T0${number}:30:33.233Z`,
+				false,
+				true,
+				["day", "month", "year"],
+				24
+			);
+			expect(formattedTime).toBe(`0${number}:30`);
+		}
+	);
+	it.each([10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])(
+		"Displays 24 hour time",
+		(number) => {
+			const { formattedTime } = formatDateTimeFromISOString(
+				`2022-01-10T${number}:30:33.233Z`,
+				false,
+				true,
+				["day", "month", "year"],
+				24
+			);
+			expect(formattedTime).toBe(`${number}:30`);
+		}
+	);
 });

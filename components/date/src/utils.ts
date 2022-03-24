@@ -43,12 +43,15 @@ export const formatDateTimeFromISOString = (
 	if (displayTime) {
 		const hours = date.getHours();
 		const minutes = date.getMinutes();
-		formattedTime =
-			clockType === 24
-				? `${hours}:${minutes}`
-				: `${hours > 12 ? pmTimes.indexOf(hours) + 1 : hours}:${minutes}${
-						hours > 11 ? "pm" : "am"
-				  }`;
+
+		if (clockType === 24) {
+			formattedTime =
+				hours < 10 ? `0${hours}:${minutes}` : `${hours}:${minutes}`;
+		} else {
+			formattedTime = `${
+				hours > 12 ? pmTimes.indexOf(hours) + 1 : hours
+			}:${minutes}${hours > 11 ? "pm" : "am"}`;
+		}
 	}
 
 	return {
