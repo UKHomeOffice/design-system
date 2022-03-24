@@ -16,8 +16,8 @@ import readMe from "../README.md";
 # Datetime
 
 <Preview withToolbar>
-	<Story name="Ordered date values with default format">
-		<Date ISOString={"2022-01-10T19:39:33.233Z"} />
+	<Story name="Ordered date values as dd/mm/yyyy">
+		<Date ISOString={"2022-01-10T19:39:33.233Z"} displayDate={true} />
 	</Story>
 </Preview>
 
@@ -27,6 +27,7 @@ import readMe from "../README.md";
 	<Story name="Ordered date values as yyyy/mm/dd">
 		<Date
 			ISOString={"2022-01-10T19:39:33.233Z"}
+			displayDate={true}
 			dateFormat={["year", "month", "day"]}
 		/>
 	</Story>
@@ -36,27 +37,8 @@ import readMe from "../README.md";
 	<Story name="Ordered date values as mm/dd/yyyy">
 		<Date
 			ISOString={"2022-01-10T19:39:33.233Z"}
+			displayDate={true}
 			dateFormat={["month", "day", "year"]}
-		/>
-	</Story>
-</Preview>
-
-<Preview>
-	<Story name="Date With Time First">
-		<Date
-			ISOString="2022-07-30T19:39:33.233Z"
-			displayTime={true}
-			precedence={"time"}
-		/>
-	</Story>
-</Preview>
-
-<Preview>
-	<Story name="Date With Date First">
-		<Date
-			ISOString="2022-07-30T19:39:33.233Z"
-			displayTime={true}
-			precedence={"date"}
 		/>
 	</Story>
 </Preview>
@@ -67,6 +49,38 @@ import readMe from "../README.md";
 			ISOString="2022-07-30T19:39:33.233Z"
 			displayTime={true}
 			clockType={24}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Date with 12 hour time">
+		<Date
+			ISOString="2022-07-30T19:39:33.233Z"
+			displayTime={true}
+			clockType={12}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Date and time with time first">
+		<Date
+			ISOString="2022-07-30T19:39:33.233Z"
+			displayDate={true}
+			displayTime={true}
+			precedence={"time"}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Date and time with date first">
+		<Date
+			ISOString="2022-07-30T19:39:33.233Z"
+			displayDate={true}
+			displayTime={true}
+			precedence={"date"}
 		/>
 	</Story>
 </Preview>
