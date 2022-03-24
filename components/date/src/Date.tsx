@@ -6,15 +6,16 @@ import "../assets/Date.scss";
 export type DateProps = StandardProps & {
 	ISOString?: string; // takes an ISO date string and returns a formatted date (and time) string
 
+	displayDate: boolean; // set whether date should be shown
+
+	displayTime: boolean; // set whether time should be shown with the date, false unless set to true
+
 	dateFormat?: dateValues[]; // array of three strings that sets the format of the date
 
-	displayTime?: boolean; // set whether time should be shown with the date, false unless set to true
-
-	// input from designer on how to write date with time - 14:30pm on 31 March 2022 or 31 March 2022 at 14:30pm. What should be the defacto setting?
 	precedence?: "time" | "date"; // sets whether time should written first or date i.e 4:30pm on 31 March 2022 or 31 March 2022 at 4:30pm
 
 	// sets whether clock should be a 12 hour clock or a 24 hour clock - defaults to 12
-	clockType?: 12 | 24
+	clockType?: 12 | 24;
 };
 
 export const Date: FC<DateProps> = ({
@@ -23,8 +24,9 @@ export const Date: FC<DateProps> = ({
 	classModifiers,
 	className,
 	ISOString,
+	displayTime,
+	displayDate,
 	dateFormat = ["day", "month", "year"],
-	displayTime = false,
 	precedence = "time",
 	clockType = 12,
 	...attrs
@@ -38,22 +40,32 @@ export const Date: FC<DateProps> = ({
 
 	const { formattedDate, formattedTime } = formatDateTimeFromISOString(
 		ISOString,
-		dateFormat,
+		displayDate,
 		displayTime,
+		dateFormat,
 		clockType
 	);
 
+	let formattedDateTimeString = undefined;
+
+	if (displayTime && displayDate) {
+		formattedDateTimeString =
+			precedence === "time"
+				? formattedTime
+					? `${formattedTime} on ${formattedDate}`
+					: `${formattedDate}`
+				: formattedTime
+				? `${formattedDate} at ${formattedTime}`
+				: `${formattedDate}`;
+	} else if (displayDate) {
+		formattedDateTimeString = formattedDate;
+	} else if (displayTime) {
+		formattedDateTimeString = formattedTime;
+	}
+
 	return (
 		<div {...attrs} className={classes()}>
-			<time dateTime={ISOString}>
-				{precedence === "time"
-					? formattedTime
-						? `${formattedTime} on ${formattedDate}`
-						: `${formattedDate}`
-					: formattedTime
-					? `${formattedDate} at ${formattedTime}`
-					: `${formattedDate}`}
-			</time>
+			<time dateTime={ISOString}>{formattedDateTimeString}</time>
 		</div>
 	);
 };
