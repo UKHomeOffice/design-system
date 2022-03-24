@@ -46,7 +46,7 @@ export const Date: FC<DateProps> = ({
 		clockType
 	);
 
-	let formattedDateTimeString = undefined;
+	let formattedDateTimeString;
 
 	if (displayTime && displayDate) {
 		formattedDateTimeString =
@@ -57,10 +57,12 @@ export const Date: FC<DateProps> = ({
 				: formattedTime
 				? `${formattedDate} at ${formattedTime}`
 				: `${formattedDate}`;
-	} else if (displayDate) {
-		formattedDateTimeString = formattedDate;
-	} else if (displayTime) {
-		formattedDateTimeString = formattedTime;
+	} else {
+		formattedDateTimeString = displayDate
+			? formattedDate
+			: displayTime
+			? formattedTime
+			: undefined;
 	}
 
 	return (
