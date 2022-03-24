@@ -42,8 +42,8 @@ export const formatDateTimeFromISOString = (
 
 		formattedTime =
 			clockType === 24
-				? (formattedTime = `${hours}:${minutes}`)
-				: (formattedTime = `${
+				? (`${hours}:${minutes}`)
+				: (`${
 						hours > 12 ? pmTimes.indexOf(hours) + 1 : hours
 				  }:${minutes}${hours > 11 ? "pm" : "am"}`);
 	}
