@@ -44,7 +44,7 @@ import readMe from "../README.md";
 </Preview>
 
 <Preview>
-	<Story name="Date with 24 hour time">
+	<Story name="24 hour time">
 		<Date
 			ISOString="2022-07-30T19:39:33.233Z"
 			displayTime={true}
@@ -54,7 +54,7 @@ import readMe from "../README.md";
 </Preview>
 
 <Preview>
-	<Story name="Date with 12 hour time">
+	<Story name="12 hour time">
 		<Date
 			ISOString="2022-07-30T19:39:33.233Z"
 			displayTime={true}
@@ -70,17 +70,31 @@ import readMe from "../README.md";
 			displayDate={true}
 			displayTime={true}
 			precedence={"time"}
+			clockType={12}
 		/>
 	</Story>
 </Preview>
 
 <Preview>
-	<Story name="Date and time with date first">
+	<Story name="Date and 12 hour time with date first">
 		<Date
 			ISOString="2022-07-30T19:39:33.233Z"
 			displayDate={true}
 			displayTime={true}
 			precedence={"date"}
+			clockType={12}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Date and 24 hour time with date first">
+		<Date
+			ISOString="2022-07-30T19:39:33.233Z"
+			displayDate={true}
+			displayTime={true}
+			precedence={"date"}
+			clockType={24}
 		/>
 	</Story>
 </Preview>
