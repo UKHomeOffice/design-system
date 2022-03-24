@@ -19,7 +19,7 @@ export const formatDateTimeFromISOString = (
 	displayDate: boolean,
 	displayTime: boolean,
 	dateFormatArray: dateValues[],
-	clockType: 12 | 24
+	clockType?: 12 | 24
 ) => {
 	const date = new Date(dateString);
 

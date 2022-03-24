@@ -4,24 +4,27 @@ describe("Date Utils", () => {
 	it("Formats date string dd/mm/yyyy", () => {
 		const { formattedDate } = formatDateTimeFromISOString(
 			"2022-01-10T19:39:33.233Z",
-			["day", "month", "year"],
-			false
+			true,
+			false,
+			["day", "month", "year"]
 		);
 		expect(formattedDate).toBe(`10 January 2022`);
 	});
 	it("Formats date string yyyy/mm/dd", () => {
 		const { formattedDate } = formatDateTimeFromISOString(
 			"2022-01-10T19:39:33.233Z",
-			["month", "day", "year"],
-			false
+			true,
+			false,
+			["month", "day", "year"]
 		);
 		expect(formattedDate).toBe(`January 10 2022`);
 	});
 	it("Formats date string mm/dd/yyyy", () => {
 		const { formattedDate } = formatDateTimeFromISOString(
 			"2022-01-10T19:39:33.233Z",
-			["year", "day", "month"],
-			false
+			true,
+			false,
+			["year", "day", "month"]
 		);
 		expect(formattedDate).toBe(`2022 10 January`);
 	});
@@ -41,8 +44,9 @@ describe("Date Utils", () => {
 	])("Converts number to month string", ({ number, string }) => {
 		const { formattedDate } = formatDateTimeFromISOString(
 			`2022-${number}-10T19:39:33.233Z`,
-			["day", "month", "year"],
-			false
+			true,
+			false,
+			["day", "month", "year"]
 		);
 		expect(formattedDate).toBe(`10 ${string} 2022`);
 	});
@@ -61,24 +65,31 @@ describe("Date Utils", () => {
 	])("Converts 24 hour clock into 12 clock", ({ number, value }) => {
 		const { formattedTime } = formatDateTimeFromISOString(
 			`2022-01-10T${number}:30:33.233Z`,
+			false,
+			true,
 			["day", "month", "year"],
-			true
+			12
 		);
 		expect(formattedTime).toBe(`${value}:30pm`);
 	});
 	it("Displays pm when time is 12", () => {
 		const { formattedTime } = formatDateTimeFromISOString(
 			`2022-01-10T12:30:33.233Z`,
+			false,
+			true,
 			["day", "month", "year"],
-			true
+			12
+		
 		);
 		expect(formattedTime).toBe("12:30pm");
 	});
 	it("Displays am when time is 00", () => {
 		const { formattedTime } = formatDateTimeFromISOString(
 			`2022-01-10T00:30:33.233Z`,
+			false,
+			true,
 			["day", "month", "year"],
-			true
+			12
 		);
 		expect(formattedTime).toBe("0:30am");
 	});
