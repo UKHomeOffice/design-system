@@ -32,7 +32,7 @@ const Page: FC<PageProps> = ({ routes }) => {
     href.split('/')[1] === 'accessibility' && href.split('/')[2] !== undefined && text !== 'xxx'
   ));
   const getInvolved = all.filter(({href}) => (
-    href.split('/')[1] === 'get-involved' && href.split('/')[2] !== undefined
+    href.split('/')[1] === 'contribute' && href.split('/')[2] !== undefined
   ));
 
   // Group all component pages (not included in automatic index so no need to remove)
@@ -52,7 +52,7 @@ const Page: FC<PageProps> = ({ routes }) => {
   const stylesHeader = all.filter(({href}) => ( href === '/styles' ))[0];
   const patternsHeader = all.filter(({href}) => ( href === '/patterns' ))[0];
   const accessibilityHeader = all.filter(({href}) => ( href === '/accessibility' ))[0];
-  const getInvolvedHeader = all.filter(({href}) => ( href === '/get-involved' ))[0];
+  const getInvolvedHeader = all.filter(({href}) => ( href === '/contribute' ))[0];
   const componentsHeader = all.filter(({href}) => ( href === '/components' ))[0];
 
   const headerPages = [
