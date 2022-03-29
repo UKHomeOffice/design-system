@@ -1,39 +1,82 @@
-import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
-import { DateTime } from '../src/DateTime';
-import readMe from '../README.md';
+import { Meta, Preview, Props, Story } from "@not-govuk/docs-components";
+import { DateTime } from "../src/DateTime";
+import readMe from "../README.md";
 
 <Meta
-  title="DateTime"
-  component={ DateTime }
-  parameters={ {
-    chromatic: { viewports: [640, 480] },
-    description: 'Displays date and time inline with Gov style guidance',
-    jest: ['DateTime'],
-    notes: readMe
-  } }
+	title="Date & Time"
+	component={DateTime}
+	parameters={{
+		chromatic: { viewports: [640, 480] },
+		description: "Displays date and time inline with Gov style guidance",
+		jest: ["DateTime"],
+		notes: readMe,
+	}}
 />
 
 # DateTime
 
 Displays date and time inline with Gov style guidance
-WRITE MORE DESCRIPTION HERE.
 
 <Preview withToolbar>
-  <Story name="DateTime">
-    <DateTime />
-  </Story>
+	<Story name="Standard date">
+		<DateTime ISOString={"2022-01-16T15:30:00.000Z"} displayDate={true} />
+	</Story>
 </Preview>
 
-<Props of={ DateTime } />
-
+<Props of={DateTime} />
 
 ## Stories
-### Standard
-
-A standard DateTime.
 
 <Preview>
-  <Story name="Standard">
-    <DateTime />
-  </Story>
+	<Story name="Ordered date">
+		<DateTime
+			ISOString={"2022-01-16T15:30:00.000Z"}
+			displayDate={true}
+			dateFormat={["month","day","year"]}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Standard 12 hour time">
+		<DateTime
+			ISOString={"2022-01-16T15:30:00.000Z"}
+			displayTime={true}
+			clockType={12}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Standard 24 hour time">
+		<DateTime
+			ISOString={"2022-01-16T15:30:00.000Z"}
+			displayTime={true}
+			clockType={24}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Date with time after">
+		<DateTime
+			ISOString={"2022-01-16T15:30:00.000Z"}
+			displayTime={true}
+			displayDate={true}
+			precedence={"date"}
+			clockType={12}
+		/>
+	</Story>
+</Preview>
+
+<Preview>
+	<Story name="Time with date after">
+		<DateTime
+			ISOString={"2022-01-16T15:30:00.000Z"}
+			displayTime={true}
+			displayDate={true}
+			precedence={"time"}
+			clockType={12}
+		/>
+	</Story>
 </Preview>

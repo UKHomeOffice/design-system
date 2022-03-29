@@ -7,9 +7,9 @@ import "../assets/DateTime.scss";
 export type DateTimeProps = StandardProps & {
 	ISOString?: string; // an ISO String representing date with/without time
 
-	displayDate: boolean; // sets whether date should be shown
+	displayDate?: boolean; // sets whether date should be shown
 
-	displayTime: boolean; // sets whether time should be shown with the date
+	displayTime?: boolean; // sets whether time should be shown with the date
 
 	dateFormat?: dateValues[]; // array of three strings that sets the format of the date
 

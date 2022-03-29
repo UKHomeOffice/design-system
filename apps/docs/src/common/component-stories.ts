@@ -8,7 +8,7 @@ const storySources = [
   require('../../../../components/pagination/spec/Pagination.stories.mdx'),
   require('../../../../components/status-message/spec/StatusMessage.stories.mdx'),
   require('../../../../components/timeline/spec/Timeline.stories.mdx'),
-  require('../../../../components/date/spec/Date.stories.mdx')
+  require('../../../../components/date-time/spec/DateTime.stories.mdx')
 ];
 export const stories = storySources.reduce(reduceToLookup, {})
 
