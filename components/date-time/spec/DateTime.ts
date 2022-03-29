@@ -1,13 +1,13 @@
 import { createElement as h } from 'react';
 import { mount } from '@not-govuk/component-test-helpers';
-import Date from '../src/Date';
+import DateTime from '../src/DateTime';
 
-describe('Date', () => {
+describe('DateTime', () => {
   const minimalProps = {
   };
 
   describe('when given minimal valid props', () => {
-    const component = mount(h(Date, minimalProps, 'Child'));
+    const component = mount(h(DateTime, minimalProps, 'Child'));
 
     it('renders', () => undefined);
   });
@@ -16,7 +16,7 @@ describe('Date', () => {
     const props = {
       ...minimalProps
     };
-    const component = mount(h(Date, props, 'Child'));
+    const component = mount(h(DateTime, props, 'Child'));
 
     it('renders', () => undefined);
   });

@@ -1,24 +1,24 @@
-import React, { FC, createElement as h } from "react";
+import { FC, createElement as h } from "react";
 import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
 import { dateValues, formatDateTimeFromISOString } from "./utils";
-import "../assets/Date.scss";
 
-export type DateProps = StandardProps & {
-	ISOString?: string; // takes an ISO date string and returns a formatted date (and time) string
+import "../assets/DateTime.scss";
 
-	displayDate: boolean; // set whether date should be shown
+export type DateTimeProps = StandardProps & {
+	ISOString?: string; // an ISO String representing date with/without time
 
-	displayTime: boolean; // set whether time should be shown with the date, false unless set to true
+	displayDate: boolean; // sets whether date should be shown
+
+	displayTime: boolean; // sets whether time should be shown with the date
 
 	dateFormat?: dateValues[]; // array of three strings that sets the format of the date
 
-	precedence?: "time" | "date"; // sets whether time should written first or date i.e 4:30pm on 31 March 2022 or 31 March 2022 at 4:30pm
+	precedence?: "time" | "date"; // sets whether time should written first or date written first i.e 4:30pm on 31 March 2022 or 31 March 2022 at 4:30pm
 
-	// sets whether clock should be a 12 hour clock or a 24 hour clock - defaults to 12
-	clockType?: 12 | 24;
+	clockType?: 12 | 24; // sets whether clock should be a 12 hour clock or a 24 hour clock
 };
 
-export const Date: FC<DateProps> = ({
+export const DateTime: FC<DateTimeProps> = ({
 	children,
 	classBlock,
 	classModifiers,
@@ -32,7 +32,7 @@ export const Date: FC<DateProps> = ({
 	...attrs
 }) => {
 	const classes = classBuilder(
-		"hods-date",
+		"hods-date-time",
 		classBlock,
 		classModifiers,
 		className
@@ -72,6 +72,6 @@ export const Date: FC<DateProps> = ({
 	);
 };
 
-Date.displayName = "Date";
+DateTime.displayName = "DateTime";
 
-export default Date;
+export default DateTime;

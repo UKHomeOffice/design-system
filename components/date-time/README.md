@@ -1,7 +1,7 @@
-Hods - Date
-===========
+Hods - Date Time
+================
 
-Displays date and time inline with GOV expectations
+Displays date and time inline with Gov style guidance
 
 
 Using this package
@@ -10,17 +10,17 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @hods/date
+npm install -S @hods/date-time
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import Date from '@hods/date';
+import DateTime from '@hods/date-time';
 
 export const MyComponent = props => (
-  <Date
+  <DateTime
     // WRITEME
   />
 );

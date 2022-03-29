@@ -1,12 +1,12 @@
 {
-  "name": "@hods/date",
+  "name": "@hods/date-time",
   "version": "0.1.20",
-  "description": "Displays date and time inline with GOV expectations",
-  "main": "src/Date.tsx",
-  "sass": "assets/Date.scss",
+  "description": "Displays date and time inline with Gov style guidance",
+  "main": "src/DateTime.tsx",
+  "sass": "assets/DateTime.scss",
   "publishConfig": {
-    "main": "dist/Date.js",
-    "typings": "dist/Date.d.ts"
+    "main": "dist/DateTime.js",
+    "typings": "dist/DateTime.d.ts"
   },
   "files": [
     "/assets",

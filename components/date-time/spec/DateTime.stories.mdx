@@ -1,0 +1,39 @@
+import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
+import { DateTime } from '../src/DateTime';
+import readMe from '../README.md';
+
+<Meta
+  title="DateTime"
+  component={ DateTime }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Displays date and time inline with Gov style guidance',
+    jest: ['DateTime'],
+    notes: readMe
+  } }
+/>
+
+# DateTime
+
+Displays date and time inline with Gov style guidance
+WRITE MORE DESCRIPTION HERE.
+
+<Preview withToolbar>
+  <Story name="DateTime">
+    <DateTime />
+  </Story>
+</Preview>
+
+<Props of={ DateTime } />
+
+
+## Stories
+### Standard
+
+A standard DateTime.
+
+<Preview>
+  <Story name="Standard">
+    <DateTime />
+  </Story>
+</Preview>
