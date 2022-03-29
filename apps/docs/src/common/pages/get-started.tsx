@@ -63,7 +63,7 @@ const Page: FC<PageProps> = ({ location }) => (
           </ul>
 
       <h2>Contribute</h2>
-        <p>Get involved with our <A href="https://github.com/UKHomeOffice/design-system/discussions">github discussions</A> about our styles, components and patterns.</p>
+        <p>Get involved with <A href="https://github.com/UKHomeOffice/design-system/discussions">github discussions</A> about our styles, components and patterns.</p>
     </div>
   </div>
 );

@@ -5,12 +5,7 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 export const menu = (
   <Fragment>
-    <NavigationMenu items={[
-      {
-        href: '/contribute/propose-pattern-component',
-        text: 'Propose a pattern or component'
-      }
-    ]} />
+    <NavigationMenu items={[]} />
   </Fragment>
 );
 
@@ -30,23 +25,29 @@ const Page: FC<PageProps> = ({ location }) => (
       {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
-    <h1 className="heading-section">Get involved</h1>
-      <p>Join discussions about styles, components, and patterns in the Home Office Design System:</p>
+    <h1 className="heading-section">Contribute</h1>
+      <p>Join discussions about research findings, styles, components and patterns in the Home Office Design System:</p>
       <ol>
         <li>Create a <A href="https://github.com/signup">github account</A>.</li>
-        <li>Reply to a <A href="https://github.com/UKHomeOffice/design-system/discussions">discussion</A>.</li>
+        <li>Reply to a <A href="https://github.com/UKHomeOffice/design-system/discussions">discussion</A> or start a <A href="https://github.com/UKHomeOffice/design-system/discussions/new">new discussion</A>.</li>
       </ol>
-      <p>Everyone is welcome to contribute, including:</p>
-      <ul>
-        <li>user researchers</li>
-        <li>accessibility experts</li>
-        <li>interaction and content designers</li>
-        <li>developers</li>
-      </ul>
-      <p>If you want to discuss something and there’s not already a discussion, create a new discussion.</p>
       <p>If you’re not sure on the best way for you to contribute, email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>, and we’ll get back to you.</p>
-    </div>
+    <h2>
+      Propose a pattern or component
+    </h2>
+    <ol>
+      <li>Create a <A href="https://github.com/UKHomeOffice/design-system/discussions">github discussion</A>.</li>
+      <li>The Design System Working Group assesses your proposal with the <A href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribution criteria</A>.</li>
+      <li>The Design System Working Group creates a <A href="https://github.com/UKHomeOffice/design-system/issues">github issue</A>.</li>
+    </ol>
+    <p>The github issue is where we discuss the details of:</p>
+    <ul>
+      <li>what the code will be</li>
+      <li>the guidance on when and how to use</li>
+    </ul>
   </div>
+  </div>
+
 );
 
 export default Page;
