@@ -177,6 +177,25 @@ importers:
       ts-jest: 26.4.4_jest@26.6.3+typescript@3.9.7
       typescript: 3.9.7
 
+  components/date-time:
+    specifiers:
+      '@mdx-js/react': ^1.6.5
+      '@not-govuk/component-helpers': ^0.2.0
+      '@not-govuk/component-test-helpers': ^0.3.0
+      '@types/react': ^16.9.55
+      jest: ^26.1.0
+      ts-jest: ^26.1.1
+      typescript: ^3.9.2
+    dependencies:
+      '@not-govuk/component-helpers': 0.2.16
+    devDependencies:
+      '@mdx-js/react': 1.6.22_react@16.14.0
+      '@not-govuk/component-test-helpers': 0.3.4_react-router@5.2.0+react@16.14.0
+      '@types/react': 16.14.5
+      jest: 26.6.3
+      ts-jest: 26.5.5_jest@26.6.3+typescript@3.9.9
+      typescript: 3.9.9
+
   components/expandable-banner:
     specifiers:
       '@hods/sass-base': workspace:^0.1.6
@@ -6138,9 +6157,9 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
       '@types/istanbul-reports': 3.0.0
-      '@types/node': 14.14.41
+      '@types/node': 16.11.12
       '@types/yargs': 15.0.13
-      chalk: 4.1.0
+      chalk: 4.1.2
     dev: true
 
   /@mdx-js/loader/1.6.21_react@16.14.0:
@@ -6443,6 +6462,10 @@ packages:
       - react-router
       - react-router-dom
     dev: true
+
+  /@not-govuk/component-helpers/0.2.16:
+    resolution: {integrity: sha512-HRk5DiNLtVtpkMI4EvW7cu2dDfe+n9aSMSht2qpbSRniPld3F0eKNAMNpR6HNx3BO82lW8IPMJ9Qp2zvN8EMOg==}
+    dev: false
 
   /@not-govuk/component-helpers/0.3.4:
     resolution: {integrity: sha512-wJ9kLv2r+egrKdhwTZu0EqMupQWK4NtQsUXjs++19KytkGCXQkKmYVNszgZI2W0OVqahTlAeR0PdB4G9eAu0ag==}
@@ -17620,9 +17643,9 @@ packages:
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@jest/types': 26.6.2
-      '@types/node': 14.14.41
-      chalk: 4.1.0
-      graceful-fs: 4.2.6
+      '@types/node': 16.11.12
+      chalk: 4.1.2
+      graceful-fs: 4.2.8
       is-ci: 2.0.0
       micromatch: 4.0.4
     dev: true
@@ -18855,7 +18878,7 @@ packages:
     engines: {node: '>=8.6'}
     dependencies:
       braces: 3.0.2
-      picomatch: 2.2.3
+      picomatch: 2.3.0
 
   /miller-rabin/4.0.1:
     resolution: {integrity: sha512-115fLhvZVqWwHPbClyntxEVfVDfl9DLLTuJvq3g2O/Oxi8AiNouAHvDSzHS0viUJc+V5vm3eq91Xwqn9dp4jRA==}
@@ -20255,6 +20278,7 @@ packages:
   /picomatch/2.2.3:
     resolution: {integrity: sha512-KpELjfwcCDUb9PeigTs2mBJzXUPzAuP2oPcA989He8Rte0+YUAjw1JVedDhuTKPkHjSYzMN3npC9luThGYEKdg==}
     engines: {node: '>=8.6'}
+    dev: true
 
   /picomatch/2.3.0:
     resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
@@ -23790,7 +23814,7 @@ packages:
       typescript: '>=3.8 <5.0'
     dependencies:
       bs-logger: 0.2.6
-      buffer-from: 1.1.1
+      buffer-from: 1.1.2
       fast-json-stable-stringify: 2.1.0
       jest: 26.6.3
       jest-util: 26.6.2
