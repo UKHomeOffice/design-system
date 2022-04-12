@@ -1,33 +1,6 @@
 import { formatDateTimeFromISOString } from "../src/utils";
 
 describe("Date Utils", () => {
-	it("Formats date string dd/mm/yyyy", () => {
-		const { formattedDate } = formatDateTimeFromISOString(
-			"2022-01-10T19:39:33.233Z",
-			true,
-			false,
-			["day", "month", "year"]
-		);
-		expect(formattedDate).toBe(`10 January 2022`);
-	});
-	it("Formats date string yyyy/mm/dd", () => {
-		const { formattedDate } = formatDateTimeFromISOString(
-			"2022-01-10T19:39:33.233Z",
-			true,
-			false,
-			["month", "day", "year"]
-		);
-		expect(formattedDate).toBe(`January 10 2022`);
-	});
-	it("Formats date string mm/dd/yyyy", () => {
-		const { formattedDate } = formatDateTimeFromISOString(
-			"2022-01-10T19:39:33.233Z",
-			true,
-			false,
-			["year", "day", "month"]
-		);
-		expect(formattedDate).toBe(`2022 10 January`);
-	});
 	it.each([
 		{ number: "01", string: "January" },
 		{ number: "02", string: "February" },
@@ -46,7 +19,6 @@ describe("Date Utils", () => {
 			`2022-${number}-10T19:39:33.233Z`,
 			true,
 			false,
-			["day", "month", "year"]
 		);
 		expect(formattedDate).toBe(`10 ${string} 2022`);
 	});
@@ -67,7 +39,6 @@ describe("Date Utils", () => {
 			`2022-01-10T${number}:30:33.233Z`,
 			false,
 			true,
-			["day", "month", "year"],
 			12
 		);
 		expect(formattedTime).toBe(`${value}:30pm`);
@@ -77,7 +48,6 @@ describe("Date Utils", () => {
 			`2022-01-10T12:30:33.233Z`,
 			false,
 			true,
-			["day", "month", "year"],
 			12
 		);
 		expect(formattedTime).toBe("12:30pm");
@@ -87,7 +57,6 @@ describe("Date Utils", () => {
 			`2022-01-10T00:30:33.233Z`,
 			false,
 			true,
-			["day", "month", "year"],
 			12
 		);
 		expect(formattedTime).toBe("0:30am");
@@ -99,7 +68,6 @@ describe("Date Utils", () => {
 				`2022-01-10T0${number}:30:33.233Z`,
 				false,
 				true,
-				["day", "month", "year"],
 				24
 			);
 			expect(formattedTime).toBe(`0${number}:30`);
@@ -112,7 +80,6 @@ describe("Date Utils", () => {
 				`2022-01-10T${number}:30:33.233Z`,
 				false,
 				true,
-				["day", "month", "year"],
 				24
 			);
 			expect(formattedTime).toBe(`${number}:30`);
