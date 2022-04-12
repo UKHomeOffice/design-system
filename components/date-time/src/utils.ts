@@ -1,43 +1,15 @@
-export type dateValues = "day" | "month" | "year";
-export const pmTimes = [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
-export const months = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December",
-];
 export const formatDateTimeFromISOString = (
-	dateString: string,
+	ISOString: string,
 	displayDate: boolean,
 	displayTime: boolean,
-	dateFormatArray: dateValues[],
 	clockType?: 12 | 24
 ) => {
-	const date = new Date(dateString);
+	const date = new Date(ISOString);
 
-	let formattedDate = null;
-	if (displayDate) {
-		formattedDate = dateFormatArray
-			.map((dateValue) => {
-				switch (dateValue) {
-					case "day":
-						return date.getDate();
-					case "month":
-						return months[date.getMonth()];
-					case "year":
-						return date.getFullYear();
-				}
-			})
-			.join(" ");
-	}
+	let dateOptions = { year: "numeric", month: "long", day: "numeric" };
+	let formattedDate = displayDate
+		? date.toLocaleString("en-GB", dateOptions)
+		: null;
 
 	let formattedTime = null;
 	if (displayTime) {
@@ -49,7 +21,7 @@ export const formatDateTimeFromISOString = (
 				? hours < 10
 					? `0${hours}:${minutes}`
 					: `${hours}:${minutes}`
-				: `${hours > 12 ? pmTimes.indexOf(hours) + 1 : hours}:${minutes}${
+				: `${hours > 12 ? hours - 12 : hours}:${minutes}${
 						hours > 11 ? "pm" : "am"
 				  }`;
 	}
