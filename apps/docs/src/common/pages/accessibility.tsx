@@ -20,6 +20,10 @@ export const menu = (
           text: 'Links'
         },
         {
+          href: '/accessibility/lists',
+          text: 'Lists'
+        },
+        {
           href: '/accessibility/navigation',
           text: 'Navigation'
         },
