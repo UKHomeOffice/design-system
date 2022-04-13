@@ -52,17 +52,17 @@ describe("Date Utils", () => {
 		);
 		expect(formattedTime).toBe("12:30pm");
 	});
-	it("Displays am when time is 00", () => {
+	it("Displays midnight times correctly on a 12-hour clock", () => {
 		const { formattedTime } = formatDateTimeFromISOString(
 			`2022-01-10T00:30:33.233Z`,
 			false,
 			true,
 			12
 		);
-		expect(formattedTime).toBe("0:30am");
+		expect(formattedTime).toBe("12:30am");
 	});
 	it.each([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])(
-		"Displays 24 hour time with appended 0 for 1 - 9 times",
+		"Displays 24 hour time with prepended 0 for 1 - 9 times",
 		(number) => {
 			const { formattedTime } = formatDateTimeFromISOString(
 				`2022-01-10T0${number}:30:33.233Z`,
