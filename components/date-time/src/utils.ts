@@ -21,7 +21,7 @@ export const formatDateTimeFromISOString = (
 				? hours < 10
 					? `0${hours}:${minutes}`
 					: `${hours}:${minutes}`
-				: `${hours > 12 ? hours - 12 : hours}:${minutes}${
+				: `${hours > 12 ? hours - 12 : hours == 0 ? 12 : hours}:${minutes}${
 						hours > 11 ? "pm" : "am"
 				  }`;
 	}
