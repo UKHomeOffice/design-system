@@ -2,27 +2,6 @@ import { formatDateTimeFromISOString } from "../src/utils";
 
 describe("Date Utils", () => {
 	it.each([
-		{ number: "01", string: "January" },
-		{ number: "02", string: "February" },
-		{ number: "03", string: "March" },
-		{ number: "04", string: "April" },
-		{ number: "05", string: "May" },
-		{ number: "06", string: "June" },
-		{ number: "07", string: "July" },
-		{ number: "08", string: "August" },
-		{ number: "09", string: "September" },
-		{ number: "10", string: "October" },
-		{ number: "11", string: "November" },
-		{ number: "12", string: "December" },
-	])("Converts number to month string", ({ number, string }) => {
-		const { formattedDate } = formatDateTimeFromISOString(
-			`2022-${number}-10T19:39:33.233Z`,
-			true,
-			false,
-		);
-		expect(formattedDate).toBe(`10 ${string} 2022`);
-	});
-	it.each([
 		{ number: 13, value: 1 },
 		{ number: 14, value: 2 },
 		{ number: 15, value: 3 },
