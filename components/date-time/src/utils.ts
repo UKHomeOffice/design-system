@@ -8,6 +8,7 @@ export const formatDateTimeFromISOString = (
 
 	let dateOptions = { year: "numeric", month: "long", day: "numeric" };
 	let formattedDate = displayDate
+		//@ts-ignore
 		? date.toLocaleString("en-GB", dateOptions)
 		: null;
 
