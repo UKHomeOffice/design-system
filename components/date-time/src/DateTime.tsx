@@ -5,15 +5,16 @@ import { formatDateTimeFromISOString } from "./utils";
 import "../assets/DateTime.scss";
 
 export type DateTimeProps = StandardProps & {
-	ISOString?: string; // an ISO String representing date with/without time
-
-	displayDate?: boolean; // sets whether date should be shown
-
-	displayTime?: boolean; // sets whether time should be shown
-
-	precedence?: "time" | "date"; // sets whether time or date is written first
-
-	clockType?: 12 | 24; // sets whether clock should be a 12 hour clock or a 24 hour clock
+	/** ISO string */
+	ISOString: string;
+	/** Displays date when true */
+	displayDate?: boolean;
+	/** Displays time when true */
+	displayTime?: boolean;
+	/** Displays time or date first */
+	precedence?: "time" | "date";
+	/** Displays time as a 12 or 24 hour clock */
+	clockType?: 12 | 24;
 };
 
 export const DateTime: FC<DateTimeProps> = ({
