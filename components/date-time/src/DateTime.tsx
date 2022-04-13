@@ -9,9 +9,9 @@ export type DateTimeProps = StandardProps & {
 
 	displayDate?: boolean; // sets whether date should be shown
 
-	displayTime?: boolean; // sets whether time should be shown with the date
+	displayTime?: boolean; // sets whether time should be shown
 
-	precedence?: "time" | "date"; // sets whether time should written first or date written first i.e 4:30pm on 31 March 2022 or 31 March 2022 at 4:30pm
+	precedence?: "time" | "date"; // sets whether time or date is written first
 
 	clockType?: 12 | 24; // sets whether clock should be a 12 hour clock or a 24 hour clock
 };
