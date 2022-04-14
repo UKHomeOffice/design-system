@@ -1,5 +1,6 @@
 import React, { FC, Fragment, createElement as h } from "react";
 import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
+import { useLocation } from "@not-govuk/route-utils";
 
 import "../assets/Pagination.scss";
 
@@ -28,14 +29,25 @@ export const Pagination: FC<PaginationProps> = ({
 		classModifiers,
 		className
 	);
+	const location = useLocation();
+	
+	// mock location object
+	// {
+	// 	hash: "",
+	// 	pathname: "/iframe.html",
+	// 	query: { id: "pagination--start", viewMode: "story", page: "6" },
+	// 	search: "?id=pagination--start&viewMode=story",
+	// 	state: undefined,
+	// };
 
-	page = Number(page); // in case user passes in a string
+	//@ts-ignore
+	page = location.query.page ? Number(location.query.page) : Number(page);
 	results = Number(results);
 	resultsPerPage = Number(resultsPerPage);
 
 	const resultsFrom = (page - 1) * resultsPerPage + 1;
 	const maxResults = page * resultsPerPage;
-	const maxPages = results / resultsPerPage + 1;
+	const maxPages = results / resultsPerPage;
 	const resultsTo = results < maxResults ? results : maxResults;
 
 	const pages = [page - 2, page - 1, page, page + 1, page + 2];
@@ -50,7 +62,7 @@ export const Pagination: FC<PaginationProps> = ({
 
 	return (
 		<Fragment>
-			<div>
+			<div className={classes("content")}>
 				{React.Children.map(children, (child, index) => {
 					if (index + 1 >= resultsFrom && index + 1 <= resultsTo) return child;
 				})}
