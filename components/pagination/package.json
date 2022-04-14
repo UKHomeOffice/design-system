@@ -25,7 +25,8 @@
   ],
   "dependencies": {
     "@hods/sass-base": "workspace:^0.3.5",
-    "@not-govuk/component-helpers": "^0.5.7"
+    "@not-govuk/component-helpers": "^0.5.7",
+    "@not-govuk/route-utils": "^0.5.7"
   },
   "peerDependencies": {
     "@not-govuk/docs-components": "^0.5.7",
