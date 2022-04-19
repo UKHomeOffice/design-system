@@ -1,4 +1,4 @@
-import React, { FC, Fragment, createElement as h } from "react";
+import React, { FC, createElement as h } from "react";
 import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
 import { useLocation } from "@not-govuk/route-utils";
 
@@ -30,15 +30,6 @@ export const Pagination: FC<PaginationProps> = ({
 		className
 	);
 	const location = useLocation();
-	
-	// mock location object
-	// {
-	// 	hash: "",
-	// 	pathname: "/iframe.html",
-	// 	query: { id: "pagination--start", viewMode: "story", page: "6" },
-	// 	search: "?id=pagination--start&viewMode=story",
-	// 	state: undefined,
-	// };
 
 	//@ts-ignore
 	page = location.query.page ? Number(location.query.page) : Number(page);
@@ -61,58 +52,57 @@ export const Pagination: FC<PaginationProps> = ({
 	];
 
 	return (
-		<Fragment>
+		<div className={classes()}>
 			<div className={classes("content")}>
 				{React.Children.map(children, (child, index) => {
 					if (index + 1 >= resultsFrom && index + 1 <= resultsTo) return child;
 				})}
 			</div>
-			<div className={classes()}>
-				<div className={classes("summary")}>
-					Showing {resultsFrom} - {resultsTo} of {results} results
-				</div>
-				<ul className={classes("list-items")}>
-					{page > 1 ? (
-						<li className={classes("item")} id="prevButton" key="prev">
-							<a className={classes("link")} href={page > 1 ? hl[1] : ""}>
-								<span aria-hidden="true" role="presentation">
-									&laquo;
-								</span>{" "}
-								Previous
-							</a>
-						</li>
-					) : null}
-					{it.map((i) => (
-						<li className={classes("item")} key={i}>
-							{pages[i] < 1 || pages[i] > maxPages ? null : (
-								<a
-									className={classes(
-										"link",
-										pages[i] === page ? "current" : undefined
-									)}
-									href={hl[i]}
-								>
-									{pages[i]}
-								</a>
-							)}
-						</li>
-					))}
-					{resultsTo == results ? null : (
-						<li className={classes("item")} id="nextButton" key="next">
-							<a
-								className={classes("link")}
-								href={resultsTo == results ? "" : hl[3]}
-							>
-								Next{" "}
-								<span aria-hidden="true" role="presentation">
-									&raquo;
-								</span>
-							</a>
-						</li>
-					)}
-				</ul>
+			<div className={classes("summary")}>
+				Showing {resultsFrom} - {resultsTo} of {results} results
 			</div>
-		</Fragment>
+			<ul className={classes("list-items")}>
+				{page > 1 ? (
+					<li className={classes("item")} id="prevButton" key="prev">
+						<a className={classes("link")} href={page > 1 ? hl[1] : ""}>
+							<span aria-hidden="true" role="presentation">
+								&laquo;
+							</span>{" "}
+							Previous
+						</a>
+					</li>
+				) : null}
+				{it.map((i) => (
+					<li className={classes("item")} key={i}>
+						{pages[i] < 1 || pages[i] > maxPages ? null : (
+							<a
+								className={classes(
+									"link",
+									pages[i] === page ? "current" : undefined
+								)}
+								href={hl[i]}
+							>
+								{pages[i]}
+							</a>
+						)}
+					</li>
+				))}
+				{resultsTo == results ? null : (
+					<li className={classes("item")} key="next">
+						<a
+							className={classes("link")}
+							href={resultsTo == results ? "" : hl[3]}
+							id="nextButton"
+						>
+							Next{" "}
+							<span aria-hidden="true" role="presentation">
+								&raquo;
+							</span>
+						</a>
+					</li>
+				)}
+			</ul>
+		</div>
 	);
 };
 
