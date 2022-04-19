@@ -88,11 +88,10 @@ export const Pagination: FC<PaginationProps> = ({
 					</li>
 				))}
 				{resultsTo == results ? null : (
-					<li className={classes("item")} key="next">
+					<li className={classes("item")} id="nextButton" key="next">
 						<a
 							className={classes("link")}
 							href={resultsTo == results ? "" : hl[3]}
-							id="nextButton"
 						>
 							Next{" "}
 							<span aria-hidden="true" role="presentation">
