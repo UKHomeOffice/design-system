@@ -68,7 +68,7 @@ export const Pagination: FC<PaginationProps> = ({
 							className={classes("item")}
 							id="prevButton"
 							key="prev"
-							aria-label={`Next page, go to page ${page - 1}`}
+							aria-label={`Previous page, go to page ${page - 1}`}
 						>
 							<a className={classes("link")} href={page > 1 ? hl[1] : ""}>
 								<span aria-hidden="true" role="presentation">
