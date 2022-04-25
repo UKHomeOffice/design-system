@@ -1,0 +1,46 @@
+name: Deploy to Netlify
+inputs:
+  app:
+    required: false
+    type: string
+  github-token:
+    required: false
+    type: string
+  netlify-auth-token:
+    required: true
+    type: string
+  netlify-site-id:
+    required: true
+    type: string
+  production-branch:
+    default: master
+    required: false
+    type: string
+outputs:
+  deploy-url:
+    description: The URL for accessing the deployment
+    value: ${{ steps.deploy.outputs.deploy-url }}
+runs:
+  using: composite
+  steps:
+
+    - name: Package
+      shell: bash
+      working-directory: "${{ inputs.app && format('apps/{0}', inputs.app) }}"
+      run: 'make netlify'
+
+    - id: deploy
+      name: Deploy
+      uses: nwtgck/actions-netlify@v1.2.3
+      with:
+        publish-dir: "${{ inputs.app && format('apps/{0}/', inputs.app) }}pkg/netlify/publish/"
+        functions-dir: "${{ inputs.app && format('apps/{0}/', inputs.app) }}pkg/netlify/functions/"
+        production-branch: ${{ inputs.production-branch }}
+        github-token: ${{ inputs.github-token }}
+        deploy-message: "Deploy from GitHub Actions"
+        enable-pull-request-comment: false
+        enable-commit-comment: true
+        overwrites-pull-request-comment: true
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ inputs.netlify-auth-token }}
+        NETLIFY_SITE_ID: ${{ inputs.netlify-site-id }}

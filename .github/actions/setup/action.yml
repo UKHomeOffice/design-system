@@ -1,0 +1,36 @@
+name: Set-up
+description: Set-up for building, testing and deployment of NotGovUK projects
+inputs:
+  node:
+    description: The version of Node.js to use.
+    required: false
+    default: 14
+runs:
+  using: composite
+  steps:
+
+    - name: Setup PNPM
+      uses: pnpm/action-setup@v2.2.1
+      with:
+        version: 6.32.3
+        run_install: false
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node }}
+        cache: 'pnpm'
+
+    - name: Cache Cypress.io
+      uses: actions/cache@v3
+      env:
+        cache-hash: ${{ hashFiles('pnpm-lock.yaml') }}
+      with:
+        path: '~/.cache/Cypress'
+        key: cypress-os_${{ runner.os }}-lock_${{ env.cache-hash }}
+
+    - name: Pull dependencies
+      uses: pnpm/action-setup@v2.2.1
+      with:
+        version: 6.13.0
+        run_install: true

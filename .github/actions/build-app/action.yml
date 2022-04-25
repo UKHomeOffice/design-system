@@ -1,0 +1,14 @@
+name: Build application
+description: Build a NotGovUK application
+inputs:
+  app:
+    required: false
+    type: string
+runs:
+  using: composite
+  steps:
+
+    - name: Build application
+      shell: bash
+      working-directory: "${{ inputs.app && format('apps/{0}/', inputs.app) }}"
+      run: 'npm run build'

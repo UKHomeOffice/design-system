@@ -1,17 +1,15 @@
-service: docs
+service: govuk-template
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   environment:
     MODE: serverless
     NODE_ENV: production
 package:
-  include:
+  excludeDevDependencies: false
+  patterns:
+    - '!./**'
     - dist/**
-    - src/**
-  exclude:
-    - node_modules/**
-    - ./**
 functions:
   server:
     handler: dist/server/index.handler
