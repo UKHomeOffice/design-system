@@ -9,7 +9,7 @@ importers:
       '@babel/preset-env': 7.16.11
       '@babel/preset-react': 7.16.7
       '@babel/preset-typescript': 7.16.7
-      '@hods/plop-pack': workspace:^0.1.0
+      '@hods/plop-pack': workspace:^0.2.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/components': ^0.4.2
       '@not-govuk/docs-components': ^0.4.2
@@ -87,8 +87,8 @@ importers:
   apps/docs:
     specifiers:
       '@apollo/client': 3.5.10
-      '@hods/components': workspace:^0.1.0
-      '@hods/header': workspace:^0.1.2
+      '@hods/components': workspace:^0.2.0
+      '@hods/header': workspace:^0.2.0
       '@not-govuk/anchor-list': ^0.4.2
       '@not-govuk/app-composer': ^0.4.2
       '@not-govuk/app-plop-pack': ^0.4.2
@@ -162,7 +162,7 @@ importers:
 
   components/alert:
     specifiers:
-      '@hods/sass-base': workspace:^0.1.2
+      '@hods/sass-base': workspace:^0.2.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.4.2
       '@not-govuk/component-test-helpers': ^0.4.2
@@ -185,7 +185,7 @@ importers:
 
   components/expandable-banner:
     specifiers:
-      '@hods/sass-base': workspace:^0.1.6
+      '@hods/sass-base': workspace:^0.2.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.4.2
       '@not-govuk/component-test-helpers': ^0.4.2
@@ -206,7 +206,7 @@ importers:
 
   components/footer:
     specifiers:
-      '@hods/sass-base': workspace:^0.1.0
+      '@hods/sass-base': workspace:^0.2.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.4.2
       '@not-govuk/component-test-helpers': ^0.4.2
@@ -229,7 +229,7 @@ importers:
 
   components/header:
     specifiers:
-      '@hods/sass-base': workspace:^0.1.0
+      '@hods/sass-base': workspace:^0.2.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/anchor-list': ^0.4.2
       '@not-govuk/component-helpers': ^0.4.2
@@ -254,9 +254,9 @@ importers:
 
   components/page:
     specifiers:
-      '@hods/footer': workspace:^0.1.0
-      '@hods/header': workspace:^0.1.0
-      '@hods/sass-base': workspace:^0.1.0
+      '@hods/footer': workspace:^0.2.0
+      '@hods/header': workspace:^0.2.0
+      '@hods/sass-base': workspace:^0.2.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.4.2
       '@not-govuk/component-test-helpers': ^0.4.2
@@ -281,7 +281,7 @@ importers:
 
   components/pagination:
     specifiers:
-      '@hods/sass-base': workspace:^0.1.13
+      '@hods/sass-base': workspace:^0.2.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.4.2
       '@not-govuk/component-test-helpers': ^0.4.2
@@ -302,7 +302,7 @@ importers:
 
   components/status-message:
     specifiers:
-      '@hods/sass-base': workspace:^0.1.10
+      '@hods/sass-base': workspace:^0.2.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/anchor-list': ^0.4.2
       '@not-govuk/component-helpers': ^0.4.2
@@ -336,7 +336,7 @@ importers:
       ts-jest: 27.1.3
       typescript: 3.9.10
     dependencies:
-      '@hods/sass-base': link:../../lib/sass-base
+      '@hods/sass-base': 0.1.20
       '@not-govuk/component-helpers': 0.4.2
     devDependencies:
       '@mdx-js/react': 1.6.22_react@16.14.0
@@ -348,15 +348,15 @@ importers:
 
   lib/components:
     specifiers:
-      '@hods/alert': workspace:^0.1.5
-      '@hods/expandable-banner': workspace:^0.1.7
-      '@hods/footer': workspace:^0.1.0
-      '@hods/header': workspace:^0.1.0
-      '@hods/page': workspace:^0.1.0
-      '@hods/pagination': workspace:^0.1.8
-      '@hods/sass-base': workspace:^0.1.0
-      '@hods/status-message': workspace:^0.1.10
-      '@hods/timeline': workspace:^0.1.8
+      '@hods/alert': workspace:^0.2.0
+      '@hods/expandable-banner': workspace:^0.2.0
+      '@hods/footer': workspace:^0.2.0
+      '@hods/header': workspace:^0.2.0
+      '@hods/page': workspace:^0.2.0
+      '@hods/pagination': workspace:^0.2.0
+      '@hods/sass-base': workspace:^0.2.0
+      '@hods/status-message': workspace:^0.2.0
+      '@hods/timeline': workspace:^0.2.0
       jest: 27.5.1
       ts-jest: 27.1.3
       typescript: 3.9.10
@@ -377,7 +377,7 @@ importers:
 
   lib/create:
     specifiers:
-      '@hods/plop-pack': workspace:^0.1.0
+      '@hods/plop-pack': workspace:^0.2.0
       '@not-govuk/create': ^0.4.2
       '@not-govuk/plop-pack-internal': ^0.4.2
       plop: 2.7.6
@@ -3037,6 +3037,12 @@ packages:
       '@hapi/hoek': 9.2.1
     dev: true
 
+  /@hods/sass-base/0.1.20:
+    resolution: {integrity: sha512-BmOe9YcKj4H1njUh8ZvM50bb0qZj1dhinykwOL/XKAgyCTWhHC9NX++4Hx109hiaT/oNZ3N3PFpCFX1WkTvx/Q==}
+    dependencies:
+      '@not-govuk/sass-base': 0.3.4
+    dev: false
+
   /@hypnosphi/create-react-context/0.3.1_prop-types@15.8.1+react@16.14.0:
     resolution: {integrity: sha512-V1klUed202XahrWJLLOT3EXNeCpFHCcJntdFGI15ntCwau+jfT386w7OFTMaCqOgXUH1fa0w/I1oZs+i/Rfr0A==}
     peerDependencies:
@@ -4090,6 +4096,12 @@ packages:
       qs: 6.10.3
       react-router-dom: 5.3.0_react@16.14.0
       url-parse: 1.5.10
+
+  /@not-govuk/sass-base/0.3.4:
+    resolution: {integrity: sha512-55Nect/Pc5dOpKdqWOkTh8amM9BvD7RrcJPLw3Qf1+nsqvwaiimL7Z2vVaMI4HEnaIJ3H63Baw5d06vJSLuk5A==}
+    dependencies:
+      govuk-frontend: 3.11.0
+    dev: false
 
   /@not-govuk/sass-base/0.4.2:
     resolution: {integrity: sha512-tRe8ZN04ISS77gy21wNKYX/3Ulo7QdnT9e6o1Q+XfQqIZA7CV5YygzJVwubXhstbcJr4pT1iShmoP9UA5+iCEw==}
