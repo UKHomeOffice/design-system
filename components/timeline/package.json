@@ -1,6 +1,6 @@
 {
   "name": "@hods/timeline",
-  "version": "0.1.20",
+  "version": "0.2.0",
   "description": "A timeline of events",
   "main": "src/Timeline.tsx",
   "sass": "assets/Timeline.scss",
