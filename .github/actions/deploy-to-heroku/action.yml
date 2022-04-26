@@ -1,0 +1,32 @@
+name: Deploy to Heroku
+inputs:
+  app:
+    required: false
+    type: string
+  heroku-api-key:
+    required: true
+    type: string
+  heroku-app-name:
+    required: true
+    type: string
+  heroku-email:
+    required: true
+    type: string
+runs:
+  using: composite
+  steps:
+
+    - name: Login to Heroku
+      uses: AkhileshNS/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{ inputs.heroku-api-key }}
+        heroku_app_name: ''
+        heroku_email: ${{ inputs.heroku-email }}
+        justlogin: true
+
+    - name: Package and deploy
+      working-directory: "${{ inputs.app && format('apps/{0}', inputs.app) }}"
+      run: |
+        heroku container:login
+        heroku container:push -a '${{ inputs.heroku-app-name }}' web
+        heroku container:release -a '${{ inputs.heroku-app-name }}' web

@@ -1,0 +1,12 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "downloadsFolder": ".cypress/downloads",
+  "fixturesFolder": "fixtures",
+  "integrationFolder": "feat",
+  "pluginsFile": "../../.cypress/plugins/index.js",
+  "requestTimeout": 7000,
+  "screenshotsFolder": ".cypress/screenshots",
+  "supportFile": "../../.cypress/support/index.js",
+  "videosFolder": ".cypress/videos",
+  "videoUploadOnPasses": false
+}

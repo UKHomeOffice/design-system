@@ -93,10 +93,6 @@ describe('Timeline', () => {
       expect(timeline.text()).toContain(items[0].action);
     });
 
-    it('should not show the user', () => {
-      expect(timeline.text()).not.toContain(items[0].by);
-    });
-
     it('should show the date', () => {
       expect(timeline.text()).toContain(items[0].date.toLocaleString('en-GB', { timeZone: 'UTC' }));
     });
