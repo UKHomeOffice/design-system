@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.1.6",
+    "@hods/sass-base": "workspace:^0.2.0",
     "@not-govuk/component-helpers": "^0.4.2"
   },
   "peerDependencies": {
