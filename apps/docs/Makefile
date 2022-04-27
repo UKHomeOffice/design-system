@@ -51,12 +51,12 @@ docker-push: docker
 	docker tag $(DOCKER_IMAGE) '$(DOCKER_REPO):$(major_version)' && docker push '$(DOCKER_REPO):$(major_version)'
 	docker tag $(DOCKER_IMAGE) '$(DOCKER_REPO):latest' && docker push '$(DOCKER_REPO):latest'
 
-aws-lambda: pkg/aws-lambda/govuk-template.zip
+aws-lambda: pkg/aws-lambda/docs.zip
 
-pkg/aws-lambda/govuk-template.zip: dist/server/index.js aws.serverless.yml
+pkg/aws-lambda/docs.zip: dist/server/index.js aws.serverless.yml
 	npm run package:aws-lambda
 
-netlify: pkg/netlify/functions/govuk-template.zip pkg/netlify/publish/_redirects
+netlify: pkg/netlify/functions/docs.zip pkg/netlify/publish/_redirects
 
 pkg/netlify/functions/%.zip: pkg/aws-lambda/%.zip
 	mkdir -p '$(@D)'
@@ -68,7 +68,7 @@ pkg/netlify/publish/_redirects: dist/server/index.js
 	mkdir -p '$(@D)'
 	cp -a 'dist/public/' 'pkg/netlify/publish/public'
 	rm -f 'pkg/netlify/publish/public/entrypoints.json'
-	echo '/* /.netlify/functions/govuk-template/:splat 200' > '$(@)'
+	echo '/* /.netlify/functions/docs/:splat 200' > '$(@)'
 
 deploy: docker-push
 	$(kubectl) set image 'deployment/$(KUBE_DEPLOYMENT)' '$(KUBE_CONTAINER)=$(DOCKER_REPO):$(full_version)'
