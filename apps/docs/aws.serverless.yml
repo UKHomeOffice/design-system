@@ -1,4 +1,4 @@
-service: govuk-template
+service: docs
 provider:
   name: aws
   runtime: nodejs14.x
