@@ -160,71 +160,74 @@ describe("Pagination", () => {
 
 		it.skip("moves to the previous page when 'previous' is clicked", () => {});
 
-		it.each([1, 2, 3, 4])(
+		it.skip.each([1, 2, 3, 4])(
 			"moves to page when page number is clicked",
 			(number) => {}
 		);
 	});
 });
 
-// describe("when given alternative valid props", () => {
-// 	const pagination = mount(
-// 		h(Pagination, {
-// 			results: 39,
-// 			resultsPerPage: 10,
-// 			page: 1, // location taken from mocked urlLocation hook
-// 		})
-// 	);
-
-// 	let current;
-// 	beforeAll(() => {
-// 		expect(
-// 			(current = pagination.find(".hods-pagination__link--current"))
-// 		).toHaveLength(1);
-// 	});
-
-// 	it("is on the correct page", () => {
-// 		expect(current.text()).toEqual("2");
-// 	});
-
-// 	it("should not have a link", () => {
-// 		expect(current.html()).toContain('href=""');
-// 	});
-
-// 	const summary = pagination.find(".hods-pagination__summary").text();
-
-// 	it("displays the correct value for results from", () => {
-// 		expect(summary.slice(8, 9)).toEqual("1");
-// 	});
-
-// 	it("displays the correct value for results to", () => {
-// 		expect(summary.slice(12, 14)).toEqual("10");
-// 	});
-
-// 	it("displays the correct value for total results", () => {
-// 		expect(summary.slice(18, 20)).toEqual("39");
-// 	});
-
-// 	const ul = pagination.find(".hods-pagination__list-items");
-// 	const prev = pagination.find("#prevButton");
-// 	const next = pagination.find("#nextButton");
-
-// 	it("does not display the previous link", () => {
-// 		expect(ul.childAt(0)).not.toEqual(prev);
-// 	});
-
-// 	it("displays the next link in the correct place", () => {
-// 		expect(ul.childAt(5)).toEqual(next);
-// 	});
-// });
-
-describe("when given no props", () => {
-	const pagination = mount(h(Pagination, {}));
+describe("when given alternative valid props", () => {
+	const pagination = mount(
+		h(Pagination, {
+			//@ts-ignore
+			results: "249",
+			//@ts-ignore
+			resultsPerPage: "25",
+			//@ts-ignore
+			page: "3", // location taken from mocked urlLocation hook
+		})
+	);
 
 	let current;
 	beforeAll(() => {
 		expect(
 			(current = pagination.find(".hods-pagination__link--current"))
-		).toHaveLength(0);
+		).toHaveLength(1);
+	});
+
+	it("is on the correct page", () => {
+		expect(current.text()).toEqual("2");
+	});
+
+	it("should not have a link", () => {
+		expect(current.html()).toContain('href=""');
+	});
+
+	const summary = pagination.find(".hods-pagination__summary").text();
+
+	it("displays the correct value for results from", () => {
+		expect(summary.slice(8, 10)).toEqual("26");
+	});
+
+	it("displays the correct value for results to", () => {
+		expect(summary.slice(13, 15)).toEqual("50");
+	});
+
+	it("displays the correct value for total results", () => {
+		expect(summary.slice(19, 22)).toEqual("249");
+	});
+
+	const ul = pagination.find(".hods-pagination__list-items");
+	const prev = pagination.find("#prevButton");
+	const next = pagination.find("#nextButton");
+
+	it("displays the previous link in the correct place", () => {
+		expect(ul.childAt(0)).toEqual(prev);
+	});
+
+	it("displays the next link in the correct place", () => {
+		expect(ul.childAt(6)).toEqual(next);
 	});
 });
+
+// describe("when given no props", () => {
+// 	const pagination = mount(h(Pagination, {}));
+
+// 	let current;
+// 	beforeAll(() => {
+// 		expect(
+// 			(current = pagination.find(".hods-pagination__link--current"))
+// 		).toHaveLength(0);
+// 	});
+// });
