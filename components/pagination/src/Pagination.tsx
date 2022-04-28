@@ -38,7 +38,12 @@ export const Pagination: FC<PaginationProps> = ({
 
 	const resultsFrom = (page - 1) * resultsPerPage + 1;
 	const maxResults = page * resultsPerPage;
-	const maxPages = results / resultsPerPage;
+	const additionalPage =
+		Math.floor(results / resultsPerPage) * resultsPerPage < results ? 1 : 0;
+	const maxPages = Math.floor(results / resultsPerPage) + additionalPage;
+
+	console.log(maxPages);
+
 	const resultsTo = results < maxResults ? results : maxResults;
 
 	const pages = [page - 2, page - 1, page, page + 1, page + 2];
