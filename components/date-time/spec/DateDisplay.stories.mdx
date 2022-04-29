@@ -1,0 +1,49 @@
+import { Meta, Preview, Props, Story } from "@not-govuk/docs-components";
+import { DateTime } from "../src/DateTime";
+import readMe from "../README.md";
+
+<Meta
+	title="Date display"
+	component={DateTime}
+	parameters={{
+		chromatic: { viewports: [640, 480] },
+		description: "Displays dates to users within services",
+		jest: ["DateTime"],
+		notes: readMe,
+	}}
+/>
+
+# Display a date
+
+Displays dates to users within services
+
+## When to use this component
+
+This is a standard code implementation to display a date. Use this to display a date in the format:
+
+- 4 January 2014
+
+Follow the [date GOV.UK style guidelines](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates) to decide which format to use within your service.
+
+Do not use if you are displaying a time as well, instead use [display a time](components?name=Time%20display).
+
+## How it works
+Use this component to display a date in a standard format.
+
+<Preview withToolbar>
+	<Story name="Standard date">
+		<DateTime ISOString={"2022-01-16T15:30:00.000Z"} displayDate={true} />
+	</Story>
+</Preview>
+
+<Props of={DateTime} />
+
+Multiple Home Office services present dates to users. For example, a date is used to:
+
+- orient users in cases where date has significance - for example, when staff are reviewing actions relating to a specific date, the date is used as a heading
+- offer users information which they need to check or confirm
+
+## Contribute
+This component needs improving. We need evidence about:
+
+- which products use this

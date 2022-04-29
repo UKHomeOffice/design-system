@@ -1,0 +1,67 @@
+import { Meta, Preview, Props, Story } from "@not-govuk/docs-components";
+import { DateTime } from "../src/DateTime";
+import readMe from "../README.md";
+
+<Meta
+	title="Time display"
+	component={DateTime}
+	parameters={{
+		chromatic: { viewports: [640, 480] },
+		description: "Display times to users within services",
+		jest: ["DateTime"],
+		notes: readMe,
+	}}
+/>
+
+# Display a time
+
+Display times to users within services
+
+## When to use this component
+
+This is a standard code implementation to display a time. Use this to display a time such as:
+
+- 5:32pm
+- 10:27am
+
+Do not use if you are displaying a date as well, instead use [display date and time](components?name=Date%20and%20time%20display).
+
+## How it works
+Use this component to display a time in a standard format.
+
+<Preview withToolbar>
+	<Story name="Standard 12 hour time">
+		<DateTime
+			ISOString={"2022-01-16T15:30:00.000Z"}
+			displayTime={true}
+			clockType={12}
+		/>
+	</Story>
+</Preview>
+
+<Props of={DateTime} />
+
+Follow the [time GOV.UK style guidelines](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#times) to decide which format to use within your service.
+
+You should use the 12-hour clock. For example, 5:30pm and 2:30am.
+
+If you have evidence that your users regularly use the 24-hour and find it easier, then you may choose to use the 24-hour clock to display time. For example, 17:30 and 02:30.
+
+For services used by internal users, you may choose to use the 24-hour clock. For example, 17:30 and 02:30. We need more evidence and research to validate this.
+
+<Preview>
+	<Story name="Standard 24 hour time">
+		<DateTime
+			ISOString={"2022-01-16T15:30:00.000Z"}
+			displayTime={true}
+			clockType={24}
+		/>
+	</Story>
+</Preview>
+
+## Contribute
+
+This component needs improving. We need evidence about:
+
+- when to use the 24-hour clock
+- displaying time zones
