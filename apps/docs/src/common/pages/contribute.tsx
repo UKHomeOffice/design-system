@@ -5,7 +5,20 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 export const menu = (
   <Fragment>
-    <NavigationMenu items={[]} />
+    <NavigationMenu items={[
+          {
+            href: '/contribute',
+            text: 'Make a suggestion'
+          },
+          {
+            href: '/contribute/discuss-on-github',
+            text: 'Discuss on github'
+          },
+          {
+            href: '/contribute/design-system-working-group',
+            text: 'Join the working group'
+          }
+        ]} />
   </Fragment>
 );
 
@@ -25,26 +38,32 @@ const Page: FC<PageProps> = ({ location }) => (
       {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
-    <h1 className="heading-section">Contribute</h1>
-      <p>Join discussions about research findings, styles, components and patterns in the Home Office Design System:</p>
-      <ol>
-        <li>Create a <A href="https://github.com/signup">github account</A>.</li>
-        <li>Reply to a <A href="https://github.com/UKHomeOffice/design-system/discussions">discussion</A> or start a <A href="https://github.com/UKHomeOffice/design-system/discussions/new">new discussion</A>.</li>
-      </ol>
-      <p>If you’re not sure on the best way for you to contribute, email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>, and we’ll get back to you.</p>
-    <h2>
-      Propose a pattern or component
-    </h2>
-    <ol>
-      <li>Create a <A href="https://github.com/UKHomeOffice/design-system/discussions">github discussion</A>.</li>
-      <li>The Design System Working Group assesses your proposal with the <A href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribution criteria</A>.</li>
-      <li>The Design System Working Group creates a <A href="https://github.com/UKHomeOffice/design-system/issues">github issue</A>.</li>
-    </ol>
-    <p>The github issue is where we discuss the details of:</p>
+    <h1 className="heading-section">How to make a suggestion or amend an existing pattern</h1>
+    <p>Anyone can propose, develop or contribute to new patterns and components, or suggest improvements to existing ones.</p>
+    <p>For example, you can:</p>
     <ul>
-      <li>what the code will be</li>
-      <li>the guidance on when and how to use</li>
+      <li>ask questions about a style, component or pattern</li>
+      <li>answer questions from others</li>
+      <li>share examples or demos of a component or pattern</li>
+      <li>share research relating to a style, compontent or pattern</li>
     </ul>
+    <h2>1. Check if there's already a discussion</h2>
+    <p>If there's already a <a href="https://github.com/UKHomeOffice/design-system/discussions">github discussion</a>, you can:</p>
+    <ul>
+      <li>comment your thoughts and ideas</li>
+      <li>add design screenshots</li>
+      <li>provide high level research findings</li>
+    </ul>
+    <h2>2. Create a new discussion</h2>
+    <p>If there isn't a discussion, <a href="https://github.com/UKHomeOffice/design-system/discussions/new">create a new github discussion</a>.</p>
+    <p>For help, use our <a href="/contribute/discuss-on-github">github guide</a> or ask the <a href="/contribute/design-system-working-group">working group</a>.</p>
+    <p>When discussing a proposal for a new component, try to explain why it should be included in our design system. If you can include screenshots and research findings.</p>
+    <h2>3. Share the discussion</h2>
+    <p>Talk about the pattern or compontent to the community.</p>
+    <p>Share your discussion through slack, show and tells and community meetups.</p>
+    <h2>4. Progress your discussion</h2>
+    <p>The <a href="/contribute/design-system-working-group">design system working group</a> regularly assess discussions against the <a href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribute criteria</a>.</p>
+    <p>Contact us <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> if you'd like feedback on your discussion.</p>
   </div>
   </div>
 
