@@ -25,6 +25,7 @@
   ],
   "dependencies": {
     "@hods/sass-base": "^0.1.10",
+    "@hods/date-time": "^0.1.20",
     "@not-govuk/component-helpers": "^0.3.4"
   },
   "peerDependencies": {
