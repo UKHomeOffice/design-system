@@ -17,12 +17,14 @@ export const formatDateTimeFromISOString = (
 		const hours = date.getHours();
 		const minutes = date.getMinutes();
 
+		const paddedMinutes = minutes < 10 ? `0${minutes}` : minutes
+
 		formattedTime =
 			clockType === 24
 				? hours < 10
-					? `0${hours}:${minutes}`
-					: `${hours}:${minutes}`
-				: `${hours > 12 ? hours - 12 : hours == 0 ? 12 : hours}:${minutes}${
+					? `0${hours}:${paddedMinutes}`
+					: `${hours}:${paddedMinutes}`
+				: `${hours > 12 ? hours - 12 : hours == 0 ? 12 : hours}:${paddedMinutes}${
 						hours > 11 ? "pm" : "am"
 				  }`;
 	}
