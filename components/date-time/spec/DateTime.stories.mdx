@@ -15,20 +15,6 @@ import readMe from "../README.md";
 
 # Display a date and time
 
-Display dates and times to users within services.
-
-## When to use this component
-
-This component offers a standard code implementation for displaying a dates and times to users. Use this when the date and time need to be used together.
-
-Follow the [time GOV.UK style guidelines](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#times) and the [GOV.UK date guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates) to decide which format to use within your service.
-
-Do not use if you are only:
-
-- displaying a date, instead use [display a date](components?name=Date%20display)
-- displaying a time, instead use [display a time](components?name=Time%20display)
-
-## How it works
 Use this component to display dates and times in a standard format.
 
 <Preview withToolbar>
@@ -45,13 +31,42 @@ Use this component to display dates and times in a standard format.
 
 <Props of={DateTime} />
 
+## When to use this component
+
+This component is a standard code implementation for displaying easy to read dates and times to users from ISO format.
+
+Follow the [time GOV.UK style guidelines](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#times) and the [GOV.UK date guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates) to decide which format to use within your service.
+
+## How it works
+Use this component to display dates and times in a standard format.
+
+### Date only
+Display only the time when the date is not relevant.
+
+<Preview withToolbar>
+	<Story name="Standard date">
+		<DateTime ISOString={"2022-01-16T15:30:00.000Z"} displayDate={true} />
+	</Story>
+</Preview>
+
+### Time only
+Display only the time when the date is not relevant.
+
+<Preview>
+	<Story name="Standard 12 hour time">
+		<DateTime
+			ISOString={"2022-01-16T15:30:00.000Z"}
+			displayTime={true}
+			clockType={12}
+		/>
+	</Story>
+</Preview>
+
 ### Time format
 
 You should use the 12-hour clock. For example, 5:30pm and 2:30am.
 
-If you have evidence that your users regularly use the 24-hour and find it easier, then you may choose to use the 24-hour clock to display time. For example, 17:30 and 02:30.
-
-For services used by internal users, you may choose to use the 24-hour clock. For example, 17:30 and 02:30. We need more evidence and research to validate this.
+If you have evidence that your internal users regularly use the 24-hour and find it easier, then you may choose to use the 24-hour clock to display time. For example, 17:30 and 02:30.We need more evidence and research to validate this.
 
 <Preview>
 	<Story name="Date with 24-hour time after">
@@ -90,3 +105,5 @@ This component needs improving. We need evidence about:
 - when to use the 24-hour clock
 - displaying time zones
 - when to display the date before the time, or the time before the date
+
+To contribute, add your thoughts and research findings to our [github discussion](https://github.com/UKHomeOffice/design-system/discussions/386), or follow our [contribute guidance](/get-involved).
