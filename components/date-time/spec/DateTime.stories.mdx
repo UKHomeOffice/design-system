@@ -13,7 +13,7 @@ import readMe from "../README.md";
 	}}
 />
 
-# Display a date and time
+# Date and time display
 
 Use this component to display dates and times in a standard format.
 
@@ -40,27 +40,8 @@ Follow the [time GOV.UK style guidelines](https://www.gov.uk/guidance/style-guid
 ## How it works
 Use this component to display dates and times in a standard format.
 
-### Date only
-Display only the date when the time is not relevant.
-
-<Preview withToolbar>
-	<Story name="Standard date">
-		<DateTime ISOString={"2022-01-16T15:30:00.000Z"} displayDate={true} />
-	</Story>
-</Preview>
-
-### Time only
-Display only the time when the date is not relevant.
-
-<Preview>
-	<Story name="Standard 12 hour time">
-		<DateTime
-			ISOString={"2022-01-16T15:30:00.000Z"}
-			displayTime={true}
-			clockType={12}
-		/>
-	</Story>
-</Preview>
+### Date or time only
+You can display either the date only or the time only, if the other is not relevant.
 
 ### Time format
 
@@ -68,35 +49,11 @@ You should use the 12-hour clock. For example, 5:30pm and 2:30am.
 
 If you have evidence that your internal users regularly use the 24-hour and find it easier, then you may choose to use the 24-hour clock to display time. For example, 17:30 and 02:30.We need more evidence and research to validate this.
 
-<Preview>
-	<Story name="Date with 24-hour time after">
-		<DateTime
-			ISOString={"2022-01-16T15:30:00.000Z"}
-			displayTime={true}
-			displayDate={true}
-			precedence={"date"}
-			clockType={24}
-		/>
-	</Story>
-</Preview>
-
 ### Order of date and time
 
 You should use evidence to assess whether the date or the time is most important to your users.
 
 If the time is more important, change the order so that the time comes before the date.
-
-<Preview>
-	<Story name="Time with date after">
-		<DateTime
-			ISOString={"2022-01-16T15:30:00.000Z"}
-			displayTime={true}
-			displayDate={true}
-			precedence={"time"}
-			clockType={12}
-		/>
-	</Story>
-</Preview>
 
 ## Contribute
 
