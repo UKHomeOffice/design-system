@@ -5,6 +5,7 @@ import AppWrap from '../common/app-wrap';
 import ErrorPage from '../common/error-page';
 import PageWrap from '../common/page-wrap';
 import pageLoader from '../common/page-loader';
+import isReady from './readiness';
 
 const setup = () => {
   const assets = (
@@ -37,6 +38,7 @@ const startApp = () => stage1.then(
     AppWrap,
     ErrorPage,
     PageWrap,
+    isReady,
     pageLoader
   })
 );
