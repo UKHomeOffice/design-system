@@ -4,9 +4,9 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
-export const title = 'Prototyping';
+export const title = 'Prototype - GOV.UK prototype kit';
 const description = 'How to prototype with the Home Office Design System';
-const section = 'Get started - React';
+const section = 'Get started using GOV.UK prototype kit';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -26,12 +26,14 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">{section}</span>
         {title}
       </h1>
-
-      <p>When prototyping a public-facing service, you should use the <A href="https://govuk-prototype-kit.herokuapp.com/docs">GOV.UK prototype kit</A> which contains the GOV.UK styles.</p>
-
-      <p>For internal services, such as caseworking systems, you should use
-      the <A href="/get-started/start-prototype">prototype generator</A> which contains Home Office design styles (including logo, colours and internal font).</p><p>You cannot use certain GOV.UK styles, such as the crown logo or Transport font, for internal services.</p>
-      <p>Visit the <A href="../styles">Styles</A> section to find out more about the differences when designing internal or public-facing services.</p>
+      <p>This is a Home Office styled version of the GOV.UK prototype kit.</p>
+      <h2>Install the kit</h2>
+      <pre><code>
+      git clone https://github.com/UKHomeOffice/home_office_design_kit.git<br />
+      cd home_office_design_kit <br />
+      npm install <br />
+      npm start<br />
+      </code></pre>
 
     </div>
 

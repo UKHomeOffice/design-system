@@ -9,16 +9,24 @@ export const menu = (
     <NavigationMenu items={[
       {
         href: '/get-started/prototyping',
-        text: 'Prototyping'
+        text: 'Prototype (React)'
       },
       {
         href: '/get-started/start-prototype',
-        text: '- Setting up your prototype'
+        text: '- Set up your prototype'
       },
       {
         href: '/get-started/use-prototype',
-        text: '- Building your protoype'
-      }
+        text: '- Build your protoype'
+      },
+      {
+        href: '/get-started/prototype-gov',
+        text: 'Prototype (GOV.UK kit)'
+      },
+      {
+        href: '/get-started/today-other-dates',
+        text: '- Use today and other dates'
+      },
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
     <NavigationMenu items={[
@@ -50,7 +58,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>The Home Office Design System is an extension of <A href="https://not-gov.uk/">NotGovUK</A> which implements the GOV.UK Design System in React. (See: <A href="https://not-gov.uk/design-decisions">design decisions</A>)</p>
         <p>If you are designing and building an internal Home Office service, here are guides to getting started:</p>
           <ul>
-            <li><A href="/get-started/start-prototype">prototyping</A></li>
+            <li><A href="/get-started/start-prototype">prototyping in React</A></li>
+            <li><A href="/get-started/prototype-gov">prototyping in GOV.UK kit</A></li>
             <li><A href="/get-started/project">production</A></li>
           </ul>
         <p>Visit the <A href="../styles">Styles</A> section for more information on internal and public facing services.</p>

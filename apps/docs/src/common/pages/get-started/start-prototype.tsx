@@ -4,10 +4,10 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
-export const title = 'Setting up your prototype';
+export const title = 'Set up your prototype';
 const description = 'How to generate a new prototype based on the Home Office Design System';
 const section = 'Get started';
-const subsection = 'Prototyping';
+const subsection = 'Prototyping - React';
 
 const applyPrototype0 = require('../../../../assets/images/github-screen01.png').default;
 const applyPrototype1 = require('../../../../assets/images/terminal-screen01.png').default;

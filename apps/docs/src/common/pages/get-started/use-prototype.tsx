@@ -4,10 +4,10 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
-export const title = 'Building your prototype';
+export const title = 'Build your prototype';
 const description = 'How to build your prototype';
 const section = 'Get started';
-const subsection = 'Prototyping';
+const subsection = 'Prototyping - React';
 
 const applyPrototype3 = require('../../../../assets/images/prototype-screen03.png').default;
 const applyPrototype4 = require('../../../../assets/images/prototype-screen04html.png').default;
