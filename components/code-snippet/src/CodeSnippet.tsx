@@ -1,6 +1,5 @@
 import { FC, createElement as h, useState } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { InsetText } from '@not-govuk/inset-text';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneLight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
