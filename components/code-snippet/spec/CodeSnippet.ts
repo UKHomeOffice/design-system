@@ -1,8 +1,8 @@
 import { createElement as h } from 'react';
 import { mount } from '@not-govuk/component-test-helpers';
-import CodeSnippet from '../src/Alert';
+import CodeSnippet from '../src/CodeSnippet';
 
-describe('Alert', () => {
+describe('CodeSnippet', () => {
   describe('when given valid props', () => {
     const component = mount(h(CodeSnippet, { }, 'Child'));
 
