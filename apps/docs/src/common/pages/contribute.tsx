@@ -8,7 +8,7 @@ export const menu = (
     <NavigationMenu items={[
           {
             href: '/contribute',
-            text: 'Make a suggestion'
+            text: 'Contribute to the design system'
           },
           {
             href: '/contribute/discuss-on-github',
@@ -16,7 +16,7 @@ export const menu = (
           },
           {
             href: '/contribute/design-system-working-group',
-            text: 'Join the working group'
+            text: 'Design system working group'
           }
         ]} />
   </Fragment>
@@ -38,7 +38,7 @@ const Page: FC<PageProps> = ({ location }) => (
       {menu}
     </div>
     <div className="govuk-grid-column-three-quarters">
-    <h1 className="heading-section">How to make a suggestion or amend an existing pattern</h1>
+    <h1 className="heading-section">Contribute to the design system</h1>
     <p>Anyone can propose, develop or contribute to new patterns and components, or suggest improvements to existing ones.</p>
     <p>For example, you can:</p>
     <ul>
@@ -47,23 +47,24 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>share examples or demos of a component or pattern</li>
       <li>share research relating to a style, compontent or pattern</li>
     </ul>
-    <h2>1. Check if there's already a discussion</h2>
-    <p>If there's already a <a href="https://github.com/UKHomeOffice/design-system/discussions">github discussion</a>, you can:</p>
-    <ul>
-      <li>comment your thoughts and ideas</li>
-      <li>add design screenshots</li>
-      <li>provide high level research findings</li>
-    </ul>
-    <h2>2. Create a new discussion</h2>
-    <p>If there isn't a discussion, <a href="https://github.com/UKHomeOffice/design-system/discussions/new">create a new github discussion</a>.</p>
+    <h2>Make a suggestion</h2>
+    <h3>1. Check if there's already a discussion</h3>
+    <p><a href="https://github.com/UKHomeOffice/design-system/discussions">Check if there are any open discussions</a> about your suggestion on the Design System Github.</p>
+    <h3>2. Create a new discussion</h3>
+    <p>If there is not a discussion, <a href="https://github.com/UKHomeOffice/design-system/discussions/new">start a new discussion</a> on github. Select ‘ideas’ from the ‘select category’ list when starting to create the discussion.</p>
     <p>For help, use our <a href="/contribute/discuss-on-github">github guide</a> or ask the <a href="/contribute/design-system-working-group">working group</a>.</p>
     <p>When discussing a proposal for a new component, try to explain why it should be included in our design system. If you can include screenshots and research findings.</p>
-    <h2>3. Share the discussion</h2>
-    <p>Talk about the pattern or compontent to the community.</p>
+    <h3>3. Share the discussion</h3>
+    <p>Let the UCD and Accessibility community know that you have posted a new discussion and ask their comments.</p>
     <p>Share your discussion through slack, show and tells and community meetups.</p>
-    <h2>4. Progress your discussion</h2>
+    <p>Consider give your discussion topic a deadline of a few weeks.</p>
+    <h3>4. Summarise the discussion</h3>
+    <p>Use the comments to make a suggestion for an improvement or a new entry.</p>
+    <p>Contact <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> if you'd like feedback on your discussion or for the design system working group to review it.</p>
+    <h3>5. Updating the design system</h3>
     <p>The <a href="/contribute/design-system-working-group">design system working group</a> regularly assess discussions against the <a href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribute criteria</a>.</p>
-    <p>Contact us <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> if you'd like feedback on your discussion.</p>
+    <p>If the pattern or component is  ready to be published, the working group will then raise an issue and progress this work further.</p>
+    <p>The working group will share updates in the UCD community email about proposal decisions and changes to the Home Office design system.</p>
   </div>
   </div>
 

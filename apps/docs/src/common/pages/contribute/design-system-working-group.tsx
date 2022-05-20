@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../contribute';
 
-export const title = 'Join the design system working group';
+export const title = 'Design system working group';
 const description = 'The governance of the design system';
 const section = 'Contribute';
 
@@ -24,10 +24,20 @@ const Page: FC<PageProps> = ({ location }) => (
       <h1>
         {title}
       </h1>
-      <p>The Home Office design system working group meets once a month to discuss ways to develop and improve the Home Office design system.</p>
-      <p>The working group reviews new contributions. They may decide that something else meets the need better.</p>
-      <p>The working group also supports new design proposals, and encourages the community to <a href="/contribute/discuss-on-github">discuss on github</a>.</p>
-      <p>It is a cross-functional team made up of interaction and content design, user research, accessibility, and front-end development.</p>
+      <p>The Home Office design system working group is a cross-functional team. It’s made up of interaction and content design, user research, accessibility, and front-end development. </p>
+      <p>They meet every 2 weeks where they will:</p>
+      <ul>
+        <li>review new discussions and whether something else better meets the need</li>
+        <li>check how discussions are progressing and if it needs support from the group</li>
+        <li>decide when a discussion is ready to become a pattern or component in the design system</li>
+        <li>identify any discussion that are covered by the GOV.UK design system and raise it with them</li>
+      </ul>
+      <p>The working group will also:</p>
+      <ul>
+        <li>move discussions to <a href="https://github.com/UKHomeOffice/design-system/issues">issues to be worked on by the working group</a></li>
+        <li>publish and update the Home Office design system</li>
+        <li>share updates about the Home Office design system and encourage the UCD community to get involved</li>
+      </ul>
       <p>You can contact the working group:</p>
       <ul>
         <li>on the Home Office #ho-design-system slack channel</li>
