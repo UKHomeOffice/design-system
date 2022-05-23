@@ -64,7 +64,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3>5. Updating the design system</h3>
     <p>The <a href="/contribute/design-system-working-group">design system working group</a> regularly assess discussions using the <a href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribute criteria</a>.</p>
     <p>If the pattern or component is  ready to be published, the working group will then raise an issue and progress this work further.</p>
-    <p>The working group will share updates in the UCD community email about proposal decisions and changes to the Home Office design system.</p>
+    <p>The working group will share updates in the user-centred design community email about proposal decisions and changes to the Home Office design system.</p>
   </div>
   </div>
 

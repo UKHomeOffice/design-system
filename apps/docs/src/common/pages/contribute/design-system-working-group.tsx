@@ -36,7 +36,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul>
         <li>move discussions to <a href="https://github.com/UKHomeOffice/design-system/issues">issues to be worked on by the working group</a></li>
         <li>publish and update the Home Office design system</li>
-        <li>share updates about the Home Office design system and encourage the UCD community to get involved</li>
+        <li>share updates about the Home Office design system and encourage the user-centred design community to get involved</li>
       </ul>
       <p>If you have a question or idea, you can contact the working group:</p>
       <ul>
