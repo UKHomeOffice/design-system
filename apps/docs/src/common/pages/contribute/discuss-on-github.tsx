@@ -28,7 +28,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>Create an account</h2>
       <p><a href="https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2FUKHomeOffice%2Fdesign-system%2Fdiscussions&source=login">Create a github account</a> with any email address, including your Home Office email addresses.</p>
       <h2>Join a discussion</h2>
-      <p>If there's an existing discussion contribute. For example, you can:</p>
+      <p>If there's an existing discussion, you can:</p>
       <ul>
         <li>ask questions about a style, component or pattern</li>
         <li>answer questions from others</li>
@@ -39,7 +39,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Your new discussion can be as simple as a thought you've had, or more well-formed research findings.</p>
       <ol>
         <li>Create a <a href="https://github.com/UKHomeOffice/design-system/discussions/new">new discussion</a>.</li>
-        <li>Select the Ideas category.</li>
+        <li>Select the 'ideas' category.</li>
         <li>Summarise your idea or problem in the title.</li>
         <li>Write your question or idea - write as much as you need, some are short others a bit longer.</li>
       </ol>

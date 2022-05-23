@@ -30,7 +30,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>review new discussions and whether something else better meets the need</li>
         <li>check how discussions are progressing and if it needs support from the group</li>
         <li>decide when a discussion is ready to become a pattern or component in the design system</li>
-        <li>identify any discussion that are covered by the GOV.UK design system and raise it with them</li>
+        <li>identify any discussions that are covered by the GOV.UK design system and raise it with them</li>
       </ul>
       <p>The working group will also:</p>
       <ul>
@@ -38,7 +38,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>publish and update the Home Office design system</li>
         <li>share updates about the Home Office design system and encourage the UCD community to get involved</li>
       </ul>
-      <p>You can contact the working group:</p>
+      <p>If you have a question or idea, you can contact the working group:</p>
       <ul>
         <li>on the Home Office #ho-design-system slack channel</li>
         <li>by email at <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a></li>

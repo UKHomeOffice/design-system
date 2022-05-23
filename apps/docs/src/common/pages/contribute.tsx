@@ -53,16 +53,16 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3>2. Create a new discussion</h3>
     <p>If there is not a discussion, <a href="https://github.com/UKHomeOffice/design-system/discussions/new">start a new discussion</a> on github. Select ‘ideas’ from the ‘select category’ list when starting to create the discussion.</p>
     <p>For help, use our <a href="/contribute/discuss-on-github">github guide</a> or ask the <a href="/contribute/design-system-working-group">working group</a>.</p>
-    <p>When discussing a proposal for a new component, try to explain why it should be included in our design system. If you can include screenshots and research findings.</p>
+    <p>When discussing a proposal for a new component, try to explain why it should be included in our design system. If you can, include screenshots and research findings.</p>
     <h3>3. Share the discussion</h3>
-    <p>Let the UCD and Accessibility community know that you have posted a new discussion and ask their comments.</p>
-    <p>Share your discussion through slack, show and tells and community meetups.</p>
-    <p>Consider give your discussion topic a deadline of a few weeks.</p>
+    <p>Let the user-centred design and accessibility community know that you have posted a new discussion and ask their comments.</p>
+    <p>Share your discussion through Slack, show and tells and community meetups.</p>
+    <p>Consider giving your discussion topic a deadline of a few weeks.</p>
     <h3>4. Summarise the discussion</h3>
     <p>Use the comments to make a suggestion for an improvement or a new entry.</p>
     <p>Contact <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> if you'd like feedback on your discussion or for the design system working group to review it.</p>
     <h3>5. Updating the design system</h3>
-    <p>The <a href="/contribute/design-system-working-group">design system working group</a> regularly assess discussions against the <a href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribute criteria</a>.</p>
+    <p>The <a href="/contribute/design-system-working-group">design system working group</a> regularly assess discussions using the <a href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribute criteria</a>.</p>
     <p>If the pattern or component is  ready to be published, the working group will then raise an issue and progress this work further.</p>
     <p>The working group will share updates in the UCD community email about proposal decisions and changes to the Home Office design system.</p>
   </div>
