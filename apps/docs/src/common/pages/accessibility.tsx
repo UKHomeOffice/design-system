@@ -71,6 +71,10 @@ export const menu = (
           text: '- Pointer gestures'
         },
         {
+          href: '/accessibility/gestures-and-motion',
+          text: 'Gestures and motion'
+        },
+        {
           href: '/accessibility/notifications',
           text: 'Notifications'
         },
