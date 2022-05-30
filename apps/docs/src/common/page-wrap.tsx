@@ -11,7 +11,7 @@ export const PageWrap: FC<PageProps> = ({ children }) => {
     { href: '/components', text: 'Components' },
     { href: '/patterns', text: 'Patterns' },
     { href: '/accessibility', text: 'Accessibility' },
-    { href: '/get-involved', text: 'Get involved' }
+    { href: '/contribute', text: 'Contribute' }
   ];
   const footerNavigation = [
     { href: 'https://github.com/UKHomeOffice/design-system/', text: 'GitHub' },
