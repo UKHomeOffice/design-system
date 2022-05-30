@@ -7,10 +7,6 @@ export const menu = (
   <Fragment>
     <NavigationMenu items={[
           {
-            href: '/contribute',
-            text: 'Contribute to the design system'
-          },
-          {
             href: '/contribute/discuss-on-github',
             text: 'Discuss on github'
           },

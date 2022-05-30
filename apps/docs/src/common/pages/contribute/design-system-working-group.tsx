@@ -22,6 +22,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>
+        <span className="caption">{section}</span>
         {title}
       </h1>
       <p>The Home Office design system working group is a cross-functional team. It’s made up of interaction and content design, user research, accessibility, and front-end development. </p>

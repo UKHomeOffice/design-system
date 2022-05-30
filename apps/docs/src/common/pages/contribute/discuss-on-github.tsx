@@ -22,6 +22,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>
+        <span className="caption">{section}</span>
         {title}
       </h1>
       <p>Our <a href="https://github.com/UKHomeOffice/design-system/discussions">github repository discussions</a> is where our designs are discussed and problems explored.</p>
