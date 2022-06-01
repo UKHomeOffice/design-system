@@ -27,7 +27,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p>Our <a href="https://github.com/UKHomeOffice/design-system/discussions">GitHub repository discussions</a> is where our designs are discussed and problems explored.</p>
       <h2>Create an account</h2>
-      <p><a href="https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2FUKHomeOffice%2Fdesign-system%2Fdiscussions&source=login">Create a github account</a> with any email address, including your Home Office email addresses.</p>
+      <p><a href="https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2FUKHomeOffice%2Fdesign-system%2Fdiscussions&source=login">Create a GitHub account</a> with any email address, including your Home Office email addresses.</p>
       <h2>Join a discussion</h2>
       <p>If there's an existing discussion, you can:</p>
       <ul>
