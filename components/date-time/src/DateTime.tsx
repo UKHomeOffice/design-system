@@ -63,9 +63,11 @@ export const DateTime: FC<DateTimeProps> = ({
 	}
 
 	return (
-		<div {...attrs} className={classes()}>
-			<time dateTime={ISOString}>{formattedDateTimeString}</time>
-		</div>
+		<details {...attrs}>
+			<time className={classes()} dateTime={ISOString}>
+				{formattedDateTimeString}
+			</time>
+		</details>
 	);
 };
 
