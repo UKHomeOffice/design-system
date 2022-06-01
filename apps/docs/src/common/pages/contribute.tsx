@@ -8,7 +8,7 @@ export const menu = (
     <NavigationMenu items={[
           {
             href: '/contribute/discuss-on-github',
-            text: 'Discuss on github'
+            text: 'Discuss on GitHub'
           },
           {
             href: '/contribute/design-system-working-group',
@@ -41,14 +41,14 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>ask questions about a style, component or pattern</li>
       <li>answer questions from others</li>
       <li>share examples or demos of a component or pattern</li>
-      <li>share research relating to a style, compontent or pattern</li>
+      <li>share research relating to a style, component or pattern</li>
     </ul>
     <h2>Make a suggestion</h2>
     <h3>1. Check if there's already a discussion</h3>
     <p><a href="https://github.com/UKHomeOffice/design-system/discussions">Check if there are any open discussions</a> about your suggestion on the design system github.</p>
     <h3>2. Create a new discussion</h3>
     <p>If there is not a discussion, <a href="https://github.com/UKHomeOffice/design-system/discussions/new">start a new discussion</a> on github. Select ‘ideas’ from the ‘select category’ list when starting to create the discussion.</p>
-    <p>For help, use our <a href="/contribute/discuss-on-github">github guide</a> or ask the <a href="/contribute/design-system-working-group">working group</a>.</p>
+    <p>For help, use our <a href="/contribute/discuss-on-github">GitHub guide</a> or ask the <a href="/contribute/design-system-working-group">working group</a>.</p>
     <p>When discussing a proposal for a new component, try to explain why it should be included in our design system. If you can, include screenshots and research findings.</p>
     <h3>3. Share the discussion</h3>
     <p>Let the user-centred design and accessibility community know that you have posted a new discussion and ask their comments.</p>
