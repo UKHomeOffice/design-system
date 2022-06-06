@@ -27,7 +27,7 @@ const Page: FC<PageProps> = props => (
           <ul className="govuk-!-font-size-16">
             <li>Added <A href="/accessibility/gestures-and-motion">gestures and motion accessibility guidance</A></li>
             <li>Updated <A href="/contribute">how to contribute</A> to the design system</li>
-            <li>Using <A href="https://github.com/UKHomeOffice/design-system/discussions">discussions</A> on github</li>
+            <li>Using <A href="https://github.com/UKHomeOffice/design-system/discussions">discussions</A> on GitHub</li>
           </ul>
         </aside>
       </div>
