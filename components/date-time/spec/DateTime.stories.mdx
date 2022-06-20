@@ -20,7 +20,7 @@ Use this component to display dates and times in an easy to read standard format
 <Preview withToolbar>
 	<Story name="Date with time after">
 		<DateTime
-			ISOString={"2022-01-16T15:30:00.000Z"}
+			ISOString={new Date().toISOString()}
 			displayTime={true}
 			displayDate={true}
 			precedence={"date"}
@@ -44,14 +44,14 @@ You can display either the date only or the time only, if the other is not relev
 
 <Preview>
 	<Story name="Standard date">
-		<DateTime ISOString={"2022-01-16T15:30:00.000Z"} displayDate={true} />
+		<DateTime ISOString={new Date().toISOString()} displayDate={true} />
 	</Story>
 </Preview>
 
 <Preview>
 	<Story name="Standard 12 hour time">
 		<DateTime
-			ISOString={"2022-01-16T15:30:00.000Z"}
+			ISOString={new Date().toISOString()}
 			displayTime={true}
 			clockType={12}
 		/>
@@ -67,7 +67,7 @@ If you have evidence that your internal users regularly use the 24-hour and find
 <Preview>
 	<Story name="Date with 24-hour time after">
 		<DateTime
-			ISOString={"2022-01-16T15:30:00.000Z"}
+			ISOString={new Date().toISOString()}
 			displayTime={true}
 			displayDate={true}
 			precedence={"date"}
@@ -85,7 +85,7 @@ If the time is more important, change the order so that the time comes before th
 <Preview>
 	<Story name="Time with date after">
 		<DateTime
-			ISOString={"2022-01-16T15:30:00.000Z"}
+			ISOString={new Date().toISOString()}
 			displayTime={true}
 			displayDate={true}
 			precedence={"time"}
