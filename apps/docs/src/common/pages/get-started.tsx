@@ -62,8 +62,8 @@ const Page: FC<PageProps> = ({ location }) => (
             <li><A href="https://github.com/UKHomeOffice/design-system/issues">view known issues on GitHub</A></li>
           </ul>
 
-      <h2>Contributing</h2>
-        <p>If you’ve got any technical ideas or suggestions for this framework, <A href="https://github.com/UKHomeOffice/design-system/pulls">pull requests</A> are welcome but it is probably best to <A href="https://github.com/UKHomeOffice/design-system/issues">open an issue</A> first to discuss what you think needs to change.</p>
+      <h2>Contribute</h2>
+        <p>Get involved with <A href="https://github.com/UKHomeOffice/design-system/discussions">GitHub discussions</A> about our styles, components and patterns.</p>
     </div>
   </div>
 );
