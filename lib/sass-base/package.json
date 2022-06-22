@@ -1,6 +1,6 @@
 {
   "name": "@hods/sass-base",
-  "version": "0.1.20",
+  "version": "0.2.1",
   "description": "The base SASS code for HODS styling.",
   "sass": "src/index.scss",
   "files": [
@@ -13,6 +13,6 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "dependencies": {
-    "@not-govuk/sass-base": "^0.3.4"
+    "@not-govuk/sass-base": "^0.4.2"
   }
 }

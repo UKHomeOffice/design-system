@@ -1,0 +1,85 @@
+name: Deploy to Netlify and test
+on:
+  workflow_call:
+    inputs:
+      app:
+        required: false
+        type: string
+      node:
+        default: 14
+        required: false
+        type: string
+      production-branch:
+        default: master
+        required: false
+        type: string
+    secrets:
+      CYPRESS_PROJECT_ID:
+        required: false
+      CYPRESS_RECORD_KEY:
+        required: false
+      NETLIFY_AUTH_TOKEN:
+        required: true
+      NETLIFY_SITE_ID:
+        required: true
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    outputs:
+      deploy-url: ${{ steps.deploy.outputs.deploy-url }}
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node: ${{ inputs.node }}
+
+      - name: Download build directory
+        uses: actions/download-artifact@v3
+        with:
+          name: 'build-${{ inputs.app }}'
+          path: "${{ inputs.app && format('apps/{0}/', inputs.app) }}dist"
+
+      - name: Deploy
+        id: deploy
+        uses: ./.github/actions/deploy-to-netlify
+        with:
+          app: ${{ inputs.app }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          production-branch: ${{ inputs.production-branch }}
+
+  test:
+    name: Test
+    needs:
+      - deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: [ 'electron' ]
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node: ${{ inputs.node }}
+
+      - name: Run functional tests
+        uses: './.github/actions/test-app'
+        with:
+          app: ${{ inputs.app }}
+          base-url: ${{ needs.deploy.outputs.deploy-url }}
+          browser: ${{ matrix.browser }}
+          cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
+          cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
+          deployment: netlify
+          node: 14
+          smoke: true

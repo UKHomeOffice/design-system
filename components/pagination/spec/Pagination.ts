@@ -5,9 +5,9 @@ import Pagination from '../src/Pagination';
 describe('Pagination', () => {
   describe('when given valid props', () => {
     const pagination = mount(h(Pagination, {
-      results: "249",
-      resultsPerPage: "25",
-      page: "3"
+      results: 249,
+      resultsPerPage: 25,
+      page: 3
     }));
 
     let current;
@@ -52,9 +52,9 @@ describe('Pagination', () => {
 
   describe('when given alternative valid props', () => {
     const pagination = mount(h(Pagination, {
-      results: "39",
-      resultsPerPage: "10",
-      page: "1"
+      results: 39,
+      resultsPerPage: 10,
+      page: 1
     }));
 
     let current;
@@ -94,15 +94,6 @@ describe('Pagination', () => {
 
     it('displays the next link in the correct place', () => {
       expect(ul.childAt(5)).toEqual(next);
-    });
-  });
-
-  describe('when given no props', () => {
-    const pagination = mount(h(Pagination, {}));
-
-    let current;
-    beforeAll(() => {
-      expect(current = pagination.find('.hods-pagination__link--current')).toHaveLength(0);
     });
   });
 });

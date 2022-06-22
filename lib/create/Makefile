@@ -42,9 +42,11 @@ $(dist_dir)/package.base.json: $(source_dir)/package.json
 	$(strip_package) '$(<)' > '$(@)'
 	$(patch_package) '$(@)'
 
-$(dist_dir)/package.app.json: $(plopfile)
+$(dist_dir)/package.app.json: $(plopfile) $(build_dir)/.github/workflows/main.yml
 	mkdir -p '$(@D)'
+	cp -r '../../.github/' '$(build_dir)/.github'
 	./node_modules/.bin/plop --plopfile '$(plopfile)' app 'template' 'Template' 'Template.' 'n'
+	rm -rf '$(build_dir)/.github/'
 	$(strip_package) '$(docs_source_dir)/package.json' > '$(@)'
 
 $(dist_dir)/skel.tar: $(skel_deps)
@@ -56,6 +58,10 @@ $(dist_dir)/skel-prototype.tar: $(skel_proto_deps)
 	cd 'build/' && tar -cf '../$(@)' 'skel-prototype/'
 
 $(plopfile): $(source_dir)/plopfile.js
+	mkdir -p '$(@D)'
+	$(cp) '$(<)' '$(@D)'
+
+$(build_dir)/.github/%: $(source_dir)/.github/%
 	mkdir -p '$(@D)'
 	$(cp) '$(<)' '$(@D)'
 

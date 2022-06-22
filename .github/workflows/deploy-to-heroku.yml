@@ -1,0 +1,79 @@
+name: Deploy to Heroku and test
+on:
+  workflow_call:
+    inputs:
+      app:
+        required: false
+        type: string
+      node:
+        required: false
+        type: string
+        default: 14
+    secrets:
+      CYPRESS_PROJECT_ID:
+        required: false
+      CYPRESS_RECORD_KEY:
+        required: false
+      HEROKU_API_KEY:
+        required: true
+      HEROKU_APP_NAME:
+        required: true
+      HEROKU_EMAIL:
+        required: true
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node: ${{ inputs.node }}
+
+      - name: Download build directory
+        uses: actions/download-artifact@v3
+        with:
+          name: 'build-${{ inputs.app }}'
+          path: "${{ inputs.app && format('apps/{0}/', inputs.app) }}dist"
+
+      - name: Deploy
+        uses: ./.github/actions/deploy-to-heroku
+        with:
+          app: ${{ inputs.app }}
+          heroku-api-key: ${{ secrets.HEROKU_API_KEY }}
+          heroku-app-name: ${{ secrets.HEROKU_APP_NAME }}
+          heroku-email: ${{ secrets.HEROKU_EMAIL }}
+
+  test:
+    name: Test
+    needs:
+      - deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: [ 'electron' ]
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node: ${{ inputs.node }}
+
+      - name: Run functional tests
+        uses: './.github/actions/test-app'
+        with:
+          app: ${{ inputs.app }}
+          base-url: ${{ needs.deploy.outputs.deploy-url }}
+          browser: ${{ matrix.browser }}
+          cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
+          cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
+          deployment: heroku
+          node: 14
+          smoke: true
