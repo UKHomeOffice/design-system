@@ -31,8 +31,8 @@ const Page: FC<PageProps> = ({ routes }) => {
   const accessibility = all.filter(({href, text}) => (
     href.split('/')[1] === 'accessibility' && href.split('/')[2] !== undefined && text !== 'xxx'
   ));
-  const getInvolved = all.filter(({href}) => (
-    href.split('/')[1] === 'get-involved' && href.split('/')[2] !== undefined
+  const contribute = all.filter(({href}) => (
+    href.split('/')[1] === 'contribute' && href.split('/')[2] !== undefined
   ));
 
   // Group all component pages (not included in automatic index so no need to remove)
@@ -52,7 +52,7 @@ const Page: FC<PageProps> = ({ routes }) => {
   const stylesHeader = all.filter(({href}) => ( href === '/styles' ))[0];
   const patternsHeader = all.filter(({href}) => ( href === '/patterns' ))[0];
   const accessibilityHeader = all.filter(({href}) => ( href === '/accessibility' ))[0];
-  const getInvolvedHeader = all.filter(({href}) => ( href === '/get-involved' ))[0];
+  const contributeHeader = all.filter(({href}) => ( href === '/contribute' ))[0];
   const componentsHeader = all.filter(({href}) => ( href === '/components' ))[0];
 
   const headerPages = [
@@ -60,7 +60,7 @@ const Page: FC<PageProps> = ({ routes }) => {
     stylesHeader,
     patternsHeader,
     accessibilityHeader,
-    getInvolvedHeader,
+    contributeHeader,
     componentsHeader
   ];
 
@@ -69,7 +69,7 @@ const Page: FC<PageProps> = ({ routes }) => {
     ...styles,
     ...patterns,
     ...accessibility,
-    ...getInvolved,
+    ...contribute,
     ...components,
     ...headerPages,
     ...hidden
@@ -96,8 +96,8 @@ const Page: FC<PageProps> = ({ routes }) => {
       <AnchorList classBlock="govuk-list" items={patterns} />
       <h2><A href={accessibilityHeader.href}>{accessibilityHeader.text}</A></h2>
       <AnchorList classBlock="govuk-list" items={accessibility} />
-      <h2><A href={getInvolvedHeader.href}>{getInvolvedHeader.text}</A></h2>
-      <AnchorList classBlock="govuk-list" items={getInvolved} />
+      <h2><A href={contributeHeader.href}>{contributeHeader.text}</A></h2>
+      <AnchorList classBlock="govuk-list" items={contribute} />
       <h2>Footer</h2>
       <AnchorList classBlock="govuk-list" items={footer} />
     </Fragment>
