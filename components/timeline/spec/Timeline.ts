@@ -121,14 +121,6 @@ describe("Timeline", () => {
 			expect(timeline.text()).toContain(items[0].action);
 		});
 
-		it("should not show the user", () => {
-			expect(timeline.text()).not.toContain(items[0].by);
-		});
-
-		it("should show the date", () => {
-			expect(timeline.text()).toContain("14 April 2021 at 4:27pm");
-		});
-
 		it("should show the description", () => {
 			expect(timeline.text()).toContain(items[0].description);
 		});
