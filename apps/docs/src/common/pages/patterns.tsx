@@ -17,6 +17,10 @@ export const menu = (
         text: 'Add multiple things'
       },
       {
+        href: '/patterns/make-a-declaration',
+        text: 'Make a declaration'
+      },
+      {
         href: '/patterns/find-information-on-document',
         text: 'Find information on a document'
       },
