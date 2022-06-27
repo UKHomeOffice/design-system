@@ -1,11 +1,11 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
-export const title = 'Prototyping';
-const description = 'How to prototype with the Home Office Design System';
+export const title = 'Code examples';
+const description = 'Useful code examples for interaction designers in the Home Office';
 const section = 'Get started';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -27,15 +27,20 @@ const Page: FC<PageProps> = ({ location }) => (
         {title}
       </h1>
 
-      <p>When prototyping a public-facing service, you should use the <A href="https://govuk-prototype-kit.herokuapp.com/docs">GOV.UK prototype kit</A> which contains the GOV.UK styles.</p>
-
-      <p>For internal services, such as caseworking systems, you should use
-      the <A href="/get-started/start-prototype">prototype generator</A> which contains Home Office design styles (including logo, colours and internal font).</p><p>You cannot use certain GOV.UK styles, such as the crown logo or Transport font, for internal services.</p>
-      <p>Visit the <A href="../styles">Styles</A> section to find out more about the differences when designing internal or public-facing services.</p>
-
+      <h2>Home Office React prototype kit</h2>
+      <ul className="plain">
+        <li><A href="">Today's date (Home Office)</A></li>
+        <li><A href="">Display submitted data (Home Office)</A></li>
+      </ul>
+      <h2>Home Office-styled GOV.UK prototype kit</h2>
+      <ul className="plain">
+        <li><A href="">Today's date (GOV.UK)</A></li>
+        <li><A href="">Display submitted data (GOV.UK)</A></li>
+      </ul>
     </div>
 
   </div>
+
 );
 
 export default Page;

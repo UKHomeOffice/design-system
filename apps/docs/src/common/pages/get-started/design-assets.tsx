@@ -34,6 +34,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><A href="https://www.figma.com/file/gou1Y52jE53jkogQJraQau/HO-DDaT-storyboard-template?node-id=6%3A314">Storyboard template (Figma)</A></li>
         <li><A href="https://www.figma.com/file/enEcPp3OA9XiUVPkPiN9W0/HO-DDaT-workshop-templates?node-id=6%3A314">Workshop activity templates (Figma)</A></li>
         <li><A href="https://github.com/karypun/mock-wildcat-service">Mock service with reusable HTML and React code snippets</A></li>
+        <li><A href="https://github.com/UKHomeOffice/home_office_design_kit">Home Office-styled GOV.UK prototyping kit</A></li>
 
       </ul>
       <h2>GOV.UK</h2>
@@ -42,7 +43,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><A href="https://github.com/charlesrt/gov-flow/">GOV flow for creating user flows (Sketch)</A></li>
         <li><A href="https://github.com/dashouse/govuk-design-system-flow-diagrams">GOV.UK design system flow diagrams (Sketch)</A></li>
         <li><A href="https://github.com/alirawashdeh/govuk-userflow-icons">GOV.UK userflow icons (SVG images)</A></li>
-        <li><A href="https://github.com/alphagov/govuk-prototype-kit/">HTML prototype kit</A></li>
+        <li><A href="https://github.com/alphagov/govuk-prototype-kit/">GOV.UK prototype kit</A></li>
         <li><A href="https://github.com/abbott567/sketch_wireframing_kit/">Wireframing kit (Sketch)</A></li>
         <li><A href="https://github.com/enoranidi/govuk-design-system-balsamiq/">Wireframing kit (Balsamiq)</A></li>
 

@@ -5,19 +5,27 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 export const menu = (
   <Fragment>
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>How to guides</span>
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office prototype</span>
     <NavigationMenu items={[
-      {
-        href: '/get-started/prototyping',
-        text: 'Prototyping'
-      },
+
       {
         href: '/get-started/start-prototype',
-        text: '- Setting up your prototype'
+        text: 'Set up your prototype'
       },
       {
         href: '/get-started/use-prototype',
-        text: '- Building your protoype'
+        text: 'Build your protoype'
+      },
+      {
+        href: '/get-started/deploy-prototype',
+        text: 'Publish your protoype'
+      }
+    ]} />
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office-styled GOV.UK prototype</span>
+    <NavigationMenu items={[
+      {
+        href: '/get-started/start-govuk-prototype',
+        text: 'Set up your GOV.UK prototype'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
@@ -25,6 +33,18 @@ export const menu = (
       {
         href: '/get-started/design-assets',
         text: 'Design assets'
+      },
+      {
+        href: '/get-started/code-examples',
+        text: 'Code examples'
+      },
+      {
+        href: '/get-started/todays-date',
+        text: '- today\'s date'
+      },
+      {
+        href: '/get-started/display-submitted-data',
+        text: '- display submitted data'
       }
     ]} />
   </Fragment>
@@ -47,13 +67,22 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>{title}</h1>
-        <p>The Home Office Design System is an extension of <A href="https://not-gov.uk/">NotGovUK</A> which implements the GOV.UK Design System in React. (See: <A href="https://not-gov.uk/design-decisions">design decisions</A>)</p>
-        <p>If you are designing and building an internal Home Office service, here are guides to getting started:</p>
+        <p>The Home Office design system is an extension of <A href="https://not-gov.uk/">NotGovUK</A> which implements the GOV.UK design system in React. (See: <A href="https://not-gov.uk/design-decisions">design decisions</A>)</p>
+        <p>You can use the Home Office design system for prototyping and products in production. See <A href="../styles">Styles</A> for more information on internal and public facing services.</p>
+        <h2>Prototype</h2>
+          <p>When prototyping a public-facing service, you should use the <A href="https://govuk-prototype-kit.herokuapp.com/docs">GOV.UK prototype kit</A> which contains the GOV.UK styles.</p>
+
+          <p>For internal services, such as caseworking systems, you should use the Home Office styles (including logo, colours and internal font) in your prototypes. You can choose whether to use the:</p>
           <ul>
-            <li><A href="/get-started/start-prototype">prototyping</A></li>
-            <li><A href="/get-started/project">production</A></li>
+            <li><A href="/get-started/start-prototype">Home Office design system React prototype kit</A></li>
+            <li><A href="/get-started/start-govuk-prototype">Home Office-styled GOV.UK prototype kit</A></li>
           </ul>
-        <p>Visit the <A href="../styles">Styles</A> section for more information on internal and public facing services.</p>
+
+          <p>You cannot use certain GOV.UK styles, such as the crown logo or Transport font, for internal services.</p>
+
+        <h2>Production</h2>
+          <p>This content still needs to be written.</p>
+
       <h2>Support</h2>
         <p>If you have a question or need support you can:</p>
           <ul>
