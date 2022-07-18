@@ -92,10 +92,8 @@ const Page: FC<PageProps> = ({ location }) => (
       area of it.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
-      <p>When using an image as guidance, remember to include alternative text
-      (alt text). We recommend following the guidance on the use of alt text in
-      the <A href="https://design-system.service.gov.uk/styles/images/">GOV.UK
-      Design System</A>.</p>
+      <p>All images must have an alternative text description that describes its meaning. See the <A href="/accessibility/images">images guidance</A> for more information.</p>
+      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
