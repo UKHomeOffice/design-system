@@ -1,6 +1,7 @@
 import { Meta, Preview, Props, Story } from '@not-govuk/docs-components';
 import { Page } from '../src/Page';
 import readMe from '../README.md';
+import { Helmet } from 'react-helmet-async';
 
 <Meta
   title="Page"
@@ -81,3 +82,6 @@ Use this page template to keep your pages consistent with the rest of internal H
     </Page>
   </Story>
 </Preview>
+<Helmet>
+  <title>Page - Home Office Design System</title>
+</Helmet>
