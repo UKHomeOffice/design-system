@@ -71,7 +71,9 @@ const Page: FC<PageProps> = ({ location }) => (
             #f1f1f1
           </div>
           <div className="colour-info">
+            <p>
             Use light grey as the page background colour on internal services to minimise eye strain caused by high-contrast user interfaces. It's also better for readability for those with dyslexia.
+            </p>
           </div>
         </div>
 
@@ -82,7 +84,9 @@ const Page: FC<PageProps> = ({ location }) => (
             #cbcbcb
           </div>
           <div className="colour-info">
+            <p>
             Use mid-grey for borders and to help define elements where needed.
+            </p>
           </div>
         </div>
 
