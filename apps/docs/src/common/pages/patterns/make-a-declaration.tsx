@@ -92,19 +92,19 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">Research</h2>
       <p className="govuk-body">More research is needed. If your service uses this
-      pattern, <a href="https://github.com/UKHomeOffice/design-system/discussions/378">get in touch</a> to share your user research findings.</p>
+      pattern, <A href="https://github.com/UKHomeOffice/design-system/discussions/378">get in touch</A> to share your user research findings.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>Consider alternative ways a user can submit a declaration offline.</p>
       <p>If your service uses this pattern, let us know of any insights you have
       on accessibility considerations.</p>
-      <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html">Read 'Error Prevention (Legal, Financial, Data)' on the W3c website</a>
+      <A href="https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html">Read 'Error Prevention (Legal, Financial, Data)' on the W3c website</A>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you've got a question or suggestion share it on the Slack channel
         #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>

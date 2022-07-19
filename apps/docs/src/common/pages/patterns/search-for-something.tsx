@@ -85,7 +85,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h3 className="govuk-heading-m">Research on this pattern</h3>
-      <p>Multiple Home Office services use search. If you have evidence this also works for your users, you <a href="https://github.com/UKHomeOffice/design-system/issues/322">can contribute to our backlog</a></p>
+      <p>Multiple Home Office services use search. If you have evidence this also works for your users, you <A href="https://github.com/UKHomeOffice/design-system/issues/322">can contribute to our backlog</A></p>
 
       
 
@@ -97,7 +97,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h3 className="govuk-heading-m">Keyboard navigation</h3>
 
-      <p>Tabbing in a logical way to the interactive elements, being able to see the focus, and being able to interact with it. If not using native HTML elements and creating something custom refer to <a href="https://www.w3.org/TR/wai-aria-practices/wai-aria-practices">https://www.w3.org/TR/wai-aria-practices/wai-aria-practices</a> for expected interaction.</p>
+      <p>Tabbing in a logical way to the interactive elements, being able to see the focus, and being able to interact with it. If not using native HTML elements and creating something custom refer to <A href="https://www.w3.org/TR/wai-aria-practices/wai-aria-practices">https://www.w3.org/TR/wai-aria-practices/wai-aria-practices</A> for expected interaction.</p>
 
       <h3 className="govuk-heading-m">Screen readers</h3>
       <p>You should make sure</p>
@@ -124,7 +124,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you've got a question or suggestion share it on the Slack channel
           #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-          email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+          email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>
