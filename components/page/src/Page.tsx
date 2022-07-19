@@ -1,7 +1,7 @@
 import { FC, ReactNode, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { SkipLink } from '@not-govuk/components';
+import { SkipLink } from '@not-govuk/skip-link';
 import { Header, HeaderProps } from '@hods/header';
 import { Footer, NavigationLink } from '@hods/footer';
 

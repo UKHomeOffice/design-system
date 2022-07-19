@@ -28,6 +28,7 @@
     "@hods/header": "workspace:^0.2.0",
     "@hods/sass-base": "workspace:^0.2.0",
     "@not-govuk/component-helpers": "^0.4.2",
+    "@not-govuk/skip-link": "^0.4.2",
     "govuk-frontend": "3.11.0"
   },
   "peerDependencies": {
