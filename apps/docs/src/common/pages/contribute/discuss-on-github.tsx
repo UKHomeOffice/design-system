@@ -25,9 +25,9 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">{section}</span>
         {title}
       </h1>
-      <p>Our <a href="https://github.com/UKHomeOffice/design-system/discussions">GitHub repository discussions</a> is where our designs are discussed and problems explored.</p>
+      <p>Our <A href="https://github.com/UKHomeOffice/design-system/discussions">GitHub repository discussions</A> is where our designs are discussed and problems explored.</p>
       <h2>Create an account</h2>
-      <p><a href="https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2FUKHomeOffice%2Fdesign-system%2Fdiscussions&source=login">Create a GitHub account</a> with any email address, including your Home Office email addresses.</p>
+      <p><A href="https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2FUKHomeOffice%2Fdesign-system%2Fdiscussions&source=login">Create a GitHub account</A> with any email address, including your Home Office email addresses.</p>
       <h2>Join a discussion</h2>
       <p>If there's an existing discussion, you can:</p>
       <ul>
@@ -39,7 +39,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>Create a new discussion</h2>
       <p>Your new discussion can be as simple as a thought you've had, or more well-formed research findings.</p>
       <ol>
-        <li>Create a <a href="https://github.com/UKHomeOffice/design-system/discussions/new">new discussion</a>.</li>
+        <li>Create a <A href="https://github.com/UKHomeOffice/design-system/discussions/new">new discussion</A>.</li>
         <li>Select the 'ideas' category.</li>
         <li>Summarise your idea or problem in the title.</li>
         <li>Write your question or idea - write as much as you need, some are short others a bit longer.</li>
