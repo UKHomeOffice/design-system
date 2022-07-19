@@ -57,7 +57,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>Support</h2>
         <p>If you have a question or need support you can:</p>
           <ul>
-            <li>email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a></li>
+            <li>email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A></li>
             <li>get in touch on Slack #ho-design-system</li>
             <li><A href="https://github.com/UKHomeOffice/design-system/issues">view known issues on GitHub</A></li>
           </ul>
