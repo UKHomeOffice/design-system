@@ -7,6 +7,7 @@
   "requestTimeout": 7000,
   "screenshotsFolder": ".cypress/screenshots",
   "supportFile": "../../.cypress/support/index.js",
+  "testFiles": "**/*.spec.*",
   "videosFolder": ".cypress/videos",
   "videoUploadOnPasses": false
 }

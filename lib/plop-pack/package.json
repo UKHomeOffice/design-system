@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "description": "Plop pack with misc tools.",
   "main": "src/index.js",
+  "type": "module",
   "files": [
     "/src",
     "/skel"
@@ -18,7 +19,7 @@
     "node": ">=12.0.0"
   },
   "dependencies": {
-    "@not-govuk/plop-pack": "^0.4.2",
-    "@not-govuk/plop-pack-internal": "^0.4.2"
+    "@not-govuk/plop-pack": "^0.5.5",
+    "@not-govuk/plop-pack-internal": "^0.5.5"
   }
 }
