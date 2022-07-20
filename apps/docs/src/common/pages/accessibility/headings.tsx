@@ -119,7 +119,7 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 
 <p>Similarly, if part of your content works as a heading (for example, to head up content blocks in the footer, or in a sidebar list of related links) then you must use the correct HTML code as well as any visual styling. If you don’t, a screen reader will not recognise this as a heading and the user may miss it.</p>
 
-<p>Where sections are broken up with visual design alone, it may be worth adding a screen reader-only heading to help non-visual users navigate these parts of the page. You can do this with a <a href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS</a>.</p>
+<p>Where sections are broken up with visual design alone, it may be worth adding a screen reader-only heading to help non-visual users navigate these parts of the page. You can do this with a <A href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS</A>.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

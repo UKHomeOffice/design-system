@@ -30,35 +30,35 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Text alternative for non-text content, captions and other alternatives for multimedia should be provided, and content should be adaptable by the user to fit their requirements.</p>
     <h2>Index</h2>
     <h3>Text Alternatives</h3>
-    <p><a href="#rr1.1.1">1.1.1 - Non text content</a></p>
+    <p><A href="#rr1.1.1">1.1.1 - Non text content</A></p>
 
     <h3>Time based media</h3>
-    <p><a href="#rr1.2.x">1.2.x - Alternatives for audio and video</a></p>
+    <p><A href="#rr1.2.x">1.2.x - Alternatives for audio and video</A></p>
 
     <h3>Adaptable</h3>
     <ul className="plain">
-      <li><a href="#rr1.3.1a">1.3.1a - Info and relationships - Tables</a></li>
-      <li><a href="#rr1.3.1b">1.3.1b - Info and relationships - Lists</a></li>
-      <li><a href="#rr1.3.1c">1.3.1c - Info and relationships - Headings</a></li>
-      <li><a href="#rr1.3.1d">1.3.1d - Info and relationships - Form fields</a></li>
-      <li><a href="#rr1.3.1e">1.3.1e - Info and relationship - Landmarks</a></li>
-      <li><a href="#rr1.3.2">1.3.2 - Meaningful sequence</a></li>
-      <li><a href="#rr1.3.3">1.3.3 - Sensory Characteristics</a></li>
-      <li><a href="#rr1.3.4">1.3.4 - Orientation</a></li>
-      <li><a href="#rr1.3.5">1.3.5 - Identify Input Purpose</a></li>
+      <li><A href="#rr1.3.1a">1.3.1a - Info and relationships - Tables</A></li>
+      <li><A href="#rr1.3.1b">1.3.1b - Info and relationships - Lists</A></li>
+      <li><A href="#rr1.3.1c">1.3.1c - Info and relationships - Headings</A></li>
+      <li><A href="#rr1.3.1d">1.3.1d - Info and relationships - Form fields</A></li>
+      <li><A href="#rr1.3.1e">1.3.1e - Info and relationship - Landmarks</A></li>
+      <li><A href="#rr1.3.2">1.3.2 - Meaningful sequence</A></li>
+      <li><A href="#rr1.3.3">1.3.3 - Sensory Characteristics</A></li>
+      <li><A href="#rr1.3.4">1.3.4 - Orientation</A></li>
+      <li><A href="#rr1.3.5">1.3.5 - Identify Input Purpose</A></li>
     </ul>
 
     <h3>Distinguishable</h3>
     <ul className="plain">
-      <li><a href="#rr1.4.1">1.4.1 - Use of colour</a></li>
-      <li><a href="#rr1.4.2">1.4.2 - Audio control</a></li>
-      <li><a href="#rr1.4.3">1.4.3 - Contrast</a></li>
-      <li><a href="#rr1.4.4">1.4.4 - Resize text</a></li>
-      <li><a href="#rr1.4.5">1.4.5 - Images of text</a></li>
-      <li><a href="#rr1.4.10">1.4.10 - Reflow</a></li>
-      <li><a href="#rr1.4.11">1.4.11 - Non text contrast</a></li>
-      <li><a href="#rr1.4.12">1.4.12 - Text spacing</a></li>
-      <li><a href="#rr1.4.13">1.4.13 - Content on hover or focus</a></li>
+      <li><A href="#rr1.4.1">1.4.1 - Use of colour</A></li>
+      <li><A href="#rr1.4.2">1.4.2 - Audio control</A></li>
+      <li><A href="#rr1.4.3">1.4.3 - Contrast</A></li>
+      <li><A href="#rr1.4.4">1.4.4 - Resize text</A></li>
+      <li><A href="#rr1.4.5">1.4.5 - Images of text</A></li>
+      <li><A href="#rr1.4.10">1.4.10 - Reflow</A></li>
+      <li><A href="#rr1.4.11">1.4.11 - Non text contrast</A></li>
+      <li><A href="#rr1.4.12">1.4.12 - Text spacing</A></li>
+      <li><A href="#rr1.4.13">1.4.13 - Content on hover or focus</A></li>
     </ul>
 
     <h2>Text Alternatives</h2>

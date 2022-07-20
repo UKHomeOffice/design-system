@@ -1,13 +1,13 @@
 import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { Table } from '@not-govuk/components';
+import { A, Table } from '@not-govuk/components';
 
 const interUI = (
-  <a href="https://rsms.me/inter/">InterUI</a>
+  <A href="https://rsms.me/inter/">InterUI</A>
 );
 const cloudflare = (
-  <a href="https://support.cloudflare.com/hc/en-us/articles/200170156-What-does-the-Cloudflare-cfduid-cookie-do-">Cloudflare</a>
+  <A href="https://support.cloudflare.com/hc/en-us/articles/200170156-What-does-the-Cloudflare-cfduid-cookie-do-">Cloudflare</A>
 );
 
 const Page: FC<PageProps> = props => (
@@ -24,7 +24,7 @@ const Page: FC<PageProps> = props => (
     </ul>
     <p>These cookies are not used to identify you personally.</p>
     <p>You’ll see a message on the site before we store a cookie on your computer.</p>
-    <p><a href="https://ico.org.uk/your-data-matters/online/cookies/">Find out how to manage cookies.</a></p>
+    <p><A href="https://ico.org.uk/your-data-matters/online/cookies/">Find out how to manage cookies.</A></p>
     <h3>Our cookie message</h3>
     <p>You will see a message about cookies when you first visit the Home Office Design System. We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.</p>
     <Table

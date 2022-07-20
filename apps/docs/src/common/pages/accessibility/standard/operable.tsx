@@ -31,35 +31,35 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2>Index</h2>
     <h3>Keyboard Accessible</h3>
     <ul className="plain">
-      <li><a href="#rr2.1.1">2.1.1 - Keyboard accessible</a></li>
-      <li><a href="#rr2.1.2">2.1.2 - No keyboard trap</a></li>
-      <li><a href="#rr2.1.4">2.1.4 - Character key shortcuts</a></li>
+      <li><A href="#rr2.1.1">2.1.1 - Keyboard accessible</A></li>
+      <li><A href="#rr2.1.2">2.1.2 - No keyboard trap</A></li>
+      <li><A href="#rr2.1.4">2.1.4 - Character key shortcuts</A></li>
     </ul>
     <h3>Enough time</h3>
     <ul className="plain">
-      <li><a href="#rr2.2.1">2.2.1 - Timing adjustable</a></li>
-      <li><a href="#rr2.2.2">2.2.2 - Pause, stop, hide</a></li>
+      <li><A href="#rr2.2.1">2.2.1 - Timing adjustable</A></li>
+      <li><A href="#rr2.2.2">2.2.2 - Pause, stop, hide</A></li>
     </ul>
     <h3>Seizures and physical reactions</h3>
     <ul className="plain">
-      <li><a href="#rr2.3.1">2.3.1 - Three flashes or below</a></li>
+      <li><A href="#rr2.3.1">2.3.1 - Three flashes or below</A></li>
     </ul>
     <h3>Navigable</h3>
     <ul className="plain">
-      <li><a href="#rr2.4.1">2.4.1 - Bypass blocks</a></li>
-      <li><a href="#rr2.4.2">2.4.2 - Page title</a></li>
-      <li><a href="#rr2.4.3">2.4.3 - Focus order</a></li>
-      <li><a href="#rr2.4.4">2.4.4 - Link purpose in context</a></li>
-      <li><a href="#rr2.4.5">2.4.5 - Mulitple ways</a></li>
-      <li><a href="#rr2.4.6">2.4.6 - Headings and labels</a></li>
-      <li><a href="#rr2.4.7">2.4.7 - Focus visible</a></li>
+      <li><A href="#rr2.4.1">2.4.1 - Bypass blocks</A></li>
+      <li><A href="#rr2.4.2">2.4.2 - Page title</A></li>
+      <li><A href="#rr2.4.3">2.4.3 - Focus order</A></li>
+      <li><A href="#rr2.4.4">2.4.4 - Link purpose in context</A></li>
+      <li><A href="#rr2.4.5">2.4.5 - Mulitple ways</A></li>
+      <li><A href="#rr2.4.6">2.4.6 - Headings and labels</A></li>
+      <li><A href="#rr2.4.7">2.4.7 - Focus visible</A></li>
     </ul>
     <h3>Input Modalities</h3>
     <ul className="plain">
-      <li><a href="#rr2.5.1">2.5.1 - Pointer gestures</a></li>
-      <li><a href="#rr2.5.2">2.5.2 - Pointer cancellation</a></li>
-      <li><a href="#rr2.5.3">2.5.3 - Label in name</a></li>
-      <li><a href="#rr2.5.4">2.5.4 - Motion actuation</a></li>
+      <li><A href="#rr2.5.1">2.5.1 - Pointer gestures</A></li>
+      <li><A href="#rr2.5.2">2.5.2 - Pointer cancellation</A></li>
+      <li><A href="#rr2.5.3">2.5.3 - Label in name</A></li>
+      <li><A href="#rr2.5.4">2.5.4 - Motion actuation</A></li>
     </ul>
 
     <h2>Keyboard Accessible</h2>

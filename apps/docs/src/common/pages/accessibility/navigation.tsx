@@ -104,13 +104,13 @@ const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-breadcrumbs">
   <ol className="govuk-breadcrumbs__list">
     <li className="govuk-breadcrumbs__list-item">
-      <a className="govuk-breadcrumbs__link" href="#">Home</a>
+      <A className="govuk-breadcrumbs__link" href="#">Home</A>
     </li>
     <li className="govuk-breadcrumbs__list-item">
-      <a className="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</a>
+      <A className="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</A>
     </li>
     <li className="govuk-breadcrumbs__list-item">
-      <a className="govuk-breadcrumbs__link" href="#">Travel abroad</a>
+      <A className="govuk-breadcrumbs__link" href="#">Travel abroad</A>
     </li>
   </ol>
 </div>
