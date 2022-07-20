@@ -16,8 +16,6 @@ describe("Date Utils", () => {
 	])("Converts 24 hour clock into 12 clock", ({ number, value }) => {
 		const { formattedTime } = formatDateTimeFromISOString(
 			`2022-01-10T${number}:30:33.233Z`,
-			false,
-			true,
 			12
 		);
 		expect(formattedTime).toBe(`${value}:30pm`);
@@ -25,8 +23,6 @@ describe("Date Utils", () => {
 	it("Displays pm when time is 12", () => {
 		const { formattedTime } = formatDateTimeFromISOString(
 			`2022-01-10T12:30:33.233Z`,
-			false,
-			true,
 			12
 		);
 		expect(formattedTime).toBe("12:30pm");
@@ -34,8 +30,6 @@ describe("Date Utils", () => {
 	it("Displays midnight times correctly on a 12-hour clock", () => {
 		const { formattedTime } = formatDateTimeFromISOString(
 			`2022-01-10T00:30:33.233Z`,
-			false,
-			true,
 			12
 		);
 		expect(formattedTime).toBe("12:30am");
@@ -45,8 +39,6 @@ describe("Date Utils", () => {
 		(number) => {
 			const { formattedTime } = formatDateTimeFromISOString(
 				`2022-01-10T0${number}:30:33.233Z`,
-				false,
-				true,
 				24
 			);
 			expect(formattedTime).toBe(`0${number}:30`);
@@ -57,8 +49,6 @@ describe("Date Utils", () => {
 		(number) => {
 			const { formattedTime } = formatDateTimeFromISOString(
 				`2022-01-10T${number}:30:33.233Z`,
-				false,
-				true,
 				24
 			);
 			expect(formattedTime).toBe(`${number}:30`);
