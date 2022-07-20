@@ -35,14 +35,14 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
       <p>The working group will also:</p>
       <ul>
-        <li>move discussions to <a href="https://github.com/UKHomeOffice/design-system/issues">issues to be worked on by the working group</a></li>
+        <li>move discussions to <A href="https://github.com/UKHomeOffice/design-system/issues">issues to be worked on by the working group</A></li>
         <li>publish and update the Home Office design system</li>
         <li>share updates about the Home Office design system and encourage the user-centred design community to get involved</li>
       </ul>
       <p>If you have a question or idea, you can contact the working group:</p>
       <ul>
         <li>on the Home Office #ho-design-system Slack channel</li>
-        <li>by email at <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a></li>
+        <li>by email at <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A></li>
       </ul>
     </div>
   </div>

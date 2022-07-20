@@ -46,7 +46,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>use age-related descriptors like ‘young’ or ‘old’ - use specific age ranges, such as ‘18-24’ or ‘over 65’ </li>
         </ul>
         <h3>Disability</h3>
-        <p>As well as following our <a href="https://ukhomeoffice.github.io/accessibility-posters/">accessible design principles</a>, you should consider how your language is inclusive to people who face different barriers to accessing services.</p>
+        <p>As well as following our <A href="https://ukhomeoffice.github.io/accessibility-posters/">accessible design principles</A>, you should consider how your language is inclusive to people who face different barriers to accessing services.</p>
           <p>Do:</p>
           <ul>
           <li>clearly signpost users to alternative methods of accessing the service and get support if needed</li>

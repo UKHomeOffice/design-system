@@ -198,10 +198,10 @@ You should place keyboard and visual focus at the summary to alert screen reader
     <div className="govuk-error-summary__body">
       <ul className="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#passport-issued-day">The date your passport was issued must be in the past</a>
+          <A href="#passport-issued-day">The date your passport was issued must be in the past</A>
         </li>
         <li>
-          <a href="#postcode-input">Enter a postcode, like AA1 1AA</a>
+          <A href="#postcode-input">Enter a postcode, like AA1 1AA</A>
         </li>
       </ul>
     </div>
@@ -254,7 +254,7 @@ You should place keyboard and visual focus at the summary to alert screen reader
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <a href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</a>.</p>
+  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
 </div>
 
     </div>

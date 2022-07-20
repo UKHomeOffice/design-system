@@ -30,7 +30,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>When conducting user research you must include users with disabilities.</p>
     <h2>Index</h2>
     <ul className="plain">
-      <li><a href="#rr5.1.1">5.1.1 - User Research Participants</a></li>
+      <li><A href="#rr5.1.1">5.1.1 - User Research Participants</A></li>
     </ul>
 
     <h3 id="rr5.1.1">5.1.1 - User Research Participants</h3>

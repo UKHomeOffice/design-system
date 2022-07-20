@@ -30,9 +30,9 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2>Index</h2>
     <h3>Compatible</h3>
     <ul className="plain">
-      <li><a href="#rr4.1.1">4.1.1 - Parsing</a></li>
-      <li><a href="#rr4.1.2">4.1.2 - Name, Role, Value</a></li>
-      <li><a href="#rr4.1.3">4.1.3 - Status messages</a></li>
+      <li><A href="#rr4.1.1">4.1.1 - Parsing</A></li>
+      <li><A href="#rr4.1.2">4.1.2 - Name, Role, Value</A></li>
+      <li><A href="#rr4.1.3">4.1.3 - Status messages</A></li>
     </ul>
 
     <h2>Compatible</h2>

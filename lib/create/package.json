@@ -3,7 +3,8 @@
   "version": "0.2.1",
   "description": "A project and prototype initialiser.",
   "main": "plopfile.js",
-  "bin": "bin/create",
+  "type": "module",
+  "bin": "bin/create.mjs",
   "files": [
     "/bin",
     "/dist",
@@ -21,10 +22,10 @@
   },
   "dependencies": {
     "@hods/plop-pack": "workspace:^0.2.0",
-    "@not-govuk/create": "^0.4.2",
-    "@not-govuk/plop-pack-internal": "^0.4.2"
+    "@not-govuk/create": "^0.5.5",
+    "@not-govuk/plop-pack-internal": "^0.5.5"
   },
   "devDependencies": {
-    "plop": "2.7.6"
+    "plop": "3.1.1"
   }
 }

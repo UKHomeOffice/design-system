@@ -1,0 +1,60 @@
+name: Scan application
+description: Scan an application for security vulnerabilities
+inputs:
+  app:
+    required: false
+    type: string
+  target:
+    required: false
+    type: string
+  token:
+    description: GitHub token
+    required: true
+  smoke:
+    required: false
+    default: true
+  baseline-branch:
+    description: Name of branch to track changes on
+    required: false
+    default: master
+runs:
+  using: composite
+  steps:
+
+    - name: Gather info
+      id: info
+      shell: bash
+      env:
+        APP: ${{ inputs.app }}
+        BASELINE_BRANCH: ${{ inputs.baseline-branch }}
+        TARGET: ${{ inputs.target }}
+      run: |
+        PRETTY_TARGET="${TARGET#https://}"
+        echo "::set-output name=write-issue::$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'false' || echo 'true')"
+        echo "::set-output name=fail-action::$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'true' || true)"
+        echo "::set-output name=prefix::${PRETTY_TARGET:-${APP}}"
+        echo "::set-output name=target::${TARGET:-http://localhost:8080}"
+
+    - name: ZAP Scan (baseline)
+      if: inputs.smoke
+      uses: zaproxy/action-baseline@v0.7.0
+      with:
+        token: ${{ inputs.token }}
+        target: ${{ steps.info.outputs.target }}
+        allow_issue_writing: ${{ steps.info.outputs.write-issue }}
+        issue_title: "${{ steps.info.outputs.prefix }}: ZAP Scan Report (baseline)"
+        fail_action: ${{ steps.info.outputs.fail-action }}
+        rules_file_name: "./.zap/rules.tsv"
+        cmd_options: "-j"
+
+    - name: ZAP Scan (full)
+      if: ${{ !inputs.smoke }}
+      uses: zaproxy/action-full-scan@v0.4.0
+      with:
+        token: ${{ inputs.token }}
+        target: ${{ steps.info.outputs.target }}
+        allow_issue_writing: ${{ steps.info.outputs.write-issue }}
+        issue_title: "${{ steps.info.outputs.prefix }}: ZAP Scan Report"
+        fail_action: ${{ steps.info.outputs.fail-action }}
+        rules_file_name: "./.zap/rules.tsv"
+        cmd_options: "-j"

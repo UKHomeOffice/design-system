@@ -50,7 +50,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>trap keyboard users in content that stops them moving around the rest of the page</li>
         <li>use single character key shortcuts</li>
         </ul>
-        <p>See more in <a href="https://www.w3.org/WAI/test-evaluate/preliminary/#interaction">WCAG basics easy keyboard checks</a>.</p>
+        <p>See more in <A href="https://www.w3.org/WAI/test-evaluate/preliminary/#interaction">WCAG basics easy keyboard checks</A>.</p>
       <table className="govuk-table">
         <caption className="govuk-table__caption govuk-table__caption--l">Examples of users with access needs</caption>
         <thead className="govuk-table__head">
@@ -94,11 +94,11 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>To create good accessibility via keyboard, you need to consider the following:</p>
 <ul>
-<li><a href="/accessibility/keyboard/tab-navigation">tab navigation</a></li>
-<li><a href="/accessibility/keyboard/focus">focus</a></li>
-<li><a href="/accessibility/keyboard/skip-to-content">‘skip to content’ links</a></li>
-<li><a href="/accessibility/keyboard/character-key-shortcuts">character key shortcuts</a></li>
-<li><a href="/accessibility/keyboard/pointer-gestures">pointer gestures</a></li>
+<li><A href="/accessibility/keyboard/tab-navigation">tab navigation</A></li>
+<li><A href="/accessibility/keyboard/focus">focus</A></li>
+<li><A href="/accessibility/keyboard/skip-to-content">‘skip to content’ links</A></li>
+<li><A href="/accessibility/keyboard/character-key-shortcuts">character key shortcuts</A></li>
+<li><A href="/accessibility/keyboard/pointer-gestures">pointer gestures</A></li>
 </ul>
 
 
