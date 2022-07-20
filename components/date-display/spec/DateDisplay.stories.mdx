@@ -1,0 +1,49 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { DateDisplay } from '../src/DateDisplay';
+import readMe from '../README.md';
+
+<Meta
+  title="DateDisplay"
+  component={ DateDisplay }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Displays a date in accordance with Gov style guidance',
+    jest: ['DateDisplay'],
+    notes: readMe
+  } }
+/>
+
+# Date display
+
+Displays a date in accordance with Gov style guidance
+
+<Preview withToolbar>
+  <Story name="DateDisplay">
+    <DateDisplay date="2022-07-20" />
+  </Story>
+</Preview>
+
+<Props of={ DateDisplay } />
+
+## When to use this component
+
+This component is a standard code implementation for displaying easy to read dates to users from [ISO format](https://en.wikipedia.org/wiki/ISO_8601).
+
+Follow the [GOV.UK date guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates) to decide which format to use within your service.
+
+## How it works
+### Standard
+
+<Preview>
+  <Story name="Standard">
+    <DateDisplay date="2022-07-20" />
+  </Story>
+</Preview>
+
+### No wrap
+
+<Preview>
+  <Story name="No wrap">
+    <DateDisplay date="2022-07-20" wrap={false} />
+  </Story>
+</Preview>
