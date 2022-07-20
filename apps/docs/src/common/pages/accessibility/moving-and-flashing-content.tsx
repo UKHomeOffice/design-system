@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const movingImage01 = require('../../../../assets/images/accessibility/moving-and-flashing-01.png').default;
+const movingImage01 = require('../../../../assets/images/accessibility/moving-and-flashing-01.png');
 
 export const title = 'Moving and flashing content';
 const description = 'Accessibility guidance for moving and flashing content';

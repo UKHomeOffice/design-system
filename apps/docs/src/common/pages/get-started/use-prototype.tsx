@@ -9,12 +9,12 @@ const description = 'How to build your prototype';
 const section = 'Get started';
 const subsection = 'Prototyping';
 
-const applyPrototype3 = require('../../../../assets/images/prototype-screen03.png').default;
-const applyPrototype4 = require('../../../../assets/images/prototype-screen04html.png').default;
-const applyPrototype5 = require('../../../../assets/images/prototype-screen05.png').default;
-const applyPrototype6 = require('../../../../assets/images/prototype-screen07.png').default;
-const applyPrototype8 = require('../../../../assets/images/prototype-screen08.png').default;
-const applyPrototype9 = require('../../../../assets/images/prototype-screen09.png').default;
+const applyPrototype3 = require('../../../../assets/images/prototype-screen03.png');
+const applyPrototype4 = require('../../../../assets/images/prototype-screen04html.png');
+const applyPrototype5 = require('../../../../assets/images/prototype-screen05.png');
+const applyPrototype6 = require('../../../../assets/images/prototype-screen07.png');
+const applyPrototype8 = require('../../../../assets/images/prototype-screen08.png');
+const applyPrototype9 = require('../../../../assets/images/prototype-screen09.png');
 
 
 const Page: FC<PageProps> = ({ location }) => (

@@ -8,8 +8,8 @@ export const title = 'Tab navigation';
 const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
-const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png').default;
-const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png').default;
+const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png');
+const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">

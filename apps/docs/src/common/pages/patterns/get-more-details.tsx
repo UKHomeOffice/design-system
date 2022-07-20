@@ -9,7 +9,7 @@ const description = 'How to help users to get more details on something';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyContextualHelp = require('../../../../assets/images/patterns/contextual-help.svg').default;
+const applyContextualHelp = require('../../../../assets/images/patterns/contextual-help.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

@@ -8,7 +8,7 @@ export const title = 'Skip to content links';
 const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
-const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png').default;
+const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">

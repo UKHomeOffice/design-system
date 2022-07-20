@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const headingImage = require('../../../../assets/images/accessibility/heading-hierarchy.png').default;
+const headingImage = require('../../../../assets/images/accessibility/heading-hierarchy.png');
 
 export const title = 'Headings';
 const description = 'Accessibility guidance for headings';

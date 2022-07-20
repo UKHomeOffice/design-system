@@ -4,8 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const navigationImage01 = require('../../../../assets/images/accessibility/navigation-01.png').default;
-const navigationImage03 = require('../../../../assets/images/accessibility/navigation-03.png').default;
+const navigationImage01 = require('../../../../assets/images/accessibility/navigation-01.png');
+const navigationImage03 = require('../../../../assets/images/accessibility/navigation-03.png');
 
 export const title = 'Navigation';
 const description = 'Accessibility guidance for page navigation';

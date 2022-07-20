@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const mapImage = require('../../../../assets/images/accessibility/gestures-and-motion.png').default;
+const mapImage = require('../../../../assets/images/accessibility/gestures-and-motion.png');
 
 export const title = 'Gestures and motion';
 const description = 'Accessibility guidance for gestures and motion';

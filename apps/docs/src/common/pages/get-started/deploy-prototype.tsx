@@ -9,9 +9,9 @@ const description = 'How to deploy your prototype';
 const section = 'Get started';
 const subsection = 'Prototyping';
 
-const applyPrototype7 = require('../../../../assets/images/heroku2.png').default;
-const applyPrototype8 = require('../../../../assets/images/heroku3.png').default;
-const applyPrototype9 = require('../../../../assets/images/heroku4.png').default;
+const applyPrototype7 = require('../../../../assets/images/heroku2.png');
+const applyPrototype8 = require('../../../../assets/images/heroku3.png');
+const applyPrototype9 = require('../../../../assets/images/heroku4.png');
 
 
 const Page: FC<PageProps> = ({ location }) => (

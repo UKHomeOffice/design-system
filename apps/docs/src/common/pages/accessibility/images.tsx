@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg').default;
+const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg');
 
 export const title = 'Images';
 const description = 'Accessibility guidance for images content';

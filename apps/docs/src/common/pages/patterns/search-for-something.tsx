@@ -9,8 +9,8 @@ const description = 'How to help users to search for something';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applySearchNarrow = require('../../../../assets/images/patterns/search-narrow.svg').default;
-const applySearchWide= require('../../../../assets/images/patterns/search-wide.svg').default;
+const applySearchNarrow = require('../../../../assets/images/patterns/search-narrow.svg');
+const applySearchWide= require('../../../../assets/images/patterns/search-wide.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">

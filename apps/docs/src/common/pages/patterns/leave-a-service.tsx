@@ -9,8 +9,8 @@ const description = 'How to help users to leave a service';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyLeaveHeader = require('../../../../assets/images/patterns/leave-service-header.svg').default;
-const applyLeaveInline = require('../../../../assets/images/patterns/leave-service-inline.svg').default;
+const applyLeaveHeader = require('../../../../assets/images/patterns/leave-service-header.svg');
+const applyLeaveInline = require('../../../../assets/images/patterns/leave-service-inline.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
