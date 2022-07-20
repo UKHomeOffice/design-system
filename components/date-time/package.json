@@ -1,12 +1,12 @@
 {
-  "name": "@hods/timeline",
+  "name": "@hods/date-time",
   "version": "0.2.1",
-  "description": "A timeline of events",
-  "main": "src/Timeline.tsx",
-  "sass": "assets/Timeline.scss",
+  "description": "Displays date and time inline with Gov style guidance",
+  "main": "src/DateTime.tsx",
+  "sass": "assets/DateTime.scss",
   "publishConfig": {
-    "main": "dist/Timeline.js",
-    "typings": "dist/Timeline.d.ts"
+    "main": "dist/DateTime.js",
+    "typings": "dist/DateTime.d.ts"
   },
   "files": [
     "/assets",
@@ -24,8 +24,6 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.2.0",
-    "@hods/date-time": "workspace:^0.2.0",
     "@not-govuk/component-helpers": "^0.5.5"
   },
   "peerDependencies": {
