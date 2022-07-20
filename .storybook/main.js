@@ -9,7 +9,7 @@ module.exports = {
       name: '@not-govuk/storybook-preset',
       options: {
         baseDir: __dirname,
-        tsConfig: '../tsconfig.json'
+        tsConfig: '../tsconfig.webpack.json'
       }
     },
     '@storybook/addon-a11y/register',
@@ -20,6 +20,10 @@ module.exports = {
     '@storybook/addon-storysource',
     '@storybook/addon-viewport/register'
   ],
+  core: {
+    builder: 'webpack5',
+    disableTelemetry: true
+  },
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.(stories|story)\.[tj]sx?$/,

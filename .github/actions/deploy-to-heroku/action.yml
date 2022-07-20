@@ -25,6 +25,7 @@ runs:
         justlogin: true
 
     - name: Package and deploy
+      shell: bash
       working-directory: "${{ inputs.app && format('apps/{0}', inputs.app) }}"
       run: |
         heroku container:login

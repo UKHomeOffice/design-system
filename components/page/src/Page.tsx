@@ -1,19 +1,19 @@
 import { FC, ReactNode, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { SkipLink } from '@not-govuk/components';
+import { SkipLink } from '@not-govuk/skip-link';
 import { Header, HeaderProps } from '@hods/header';
 import { Footer, NavigationLink } from '@hods/footer';
 
 import '../assets/Page.scss';
 
-const favicon = require('../assets/images/ho-favicon.ico').default;
-const maskIcon = require('../assets/images/ho-mask-icon.svg').default;
-const appleTouchIcon180 = require('../assets/images/ho-apple-touch-icon-180x180.png').default;
-const appleTouchIcon167 = require('../assets/images/ho-apple-touch-icon-167x167.png').default;
-const appleTouchIcon152 = require('../assets/images/ho-apple-touch-icon-152x152.png').default;
-const appleTouchIcon = require('../assets/images/ho-apple-touch-icon.png').default;
-const ogImage = require('../assets/images/ho-opengraph-image.png').default;
+import favicon from '../assets/images/ho-favicon.ico';
+import maskIcon from '../assets/images/ho-mask-icon.svg';
+import appleTouchIcon180 from '../assets/images/ho-apple-touch-icon-180x180.png';
+import appleTouchIcon167 from '../assets/images/ho-apple-touch-icon-167x167.png';
+import appleTouchIcon152 from '../assets/images/ho-apple-touch-icon-152x152.png';
+import appleTouchIcon from '../assets/images/ho-apple-touch-icon.png';
+import ogImage from '../assets/images/ho-opengraph-image.png';
 
 export type PageProps = StandardProps & HeaderProps & {
   /** Footer links */

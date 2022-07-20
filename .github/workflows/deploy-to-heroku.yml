@@ -8,7 +8,7 @@ on:
       node:
         required: false
         type: string
-        default: 14
+        default: 16
     secrets:
       CYPRESS_PROJECT_ID:
         required: false
@@ -21,8 +21,8 @@ on:
       HEROKU_EMAIL:
         required: true
 jobs:
-  deploy:
-    name: Deploy
+  build-and-deploy:
+    name: Build and deploy application
     runs-on: ubuntu-latest
     steps:
 
@@ -34,11 +34,10 @@ jobs:
         with:
           node: ${{ inputs.node }}
 
-      - name: Download build directory
-        uses: actions/download-artifact@v3
+      - name: Build
+        uses: ./.github/actions/build-app
         with:
-          name: 'build-${{ inputs.app }}'
-          path: "${{ inputs.app && format('apps/{0}/', inputs.app) }}dist"
+          app: ${{ inputs.app }}
 
       - name: Deploy
         uses: ./.github/actions/deploy-to-heroku
@@ -51,7 +50,7 @@ jobs:
   test:
     name: Test
     needs:
-      - deploy
+      - build-and-deploy
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -70,10 +69,19 @@ jobs:
         uses: './.github/actions/test-app'
         with:
           app: ${{ inputs.app }}
-          base-url: ${{ needs.deploy.outputs.deploy-url }}
+          base-url: https://${{ secrets.HEROKU_APP_NAME }}.herokuapp.com
           browser: ${{ matrix.browser }}
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
           deployment: heroku
-          node: 14
+          node: 16
           smoke: true
+
+      - name: Scan service for vulnerabilities
+        uses: './.github/actions/scan-app'
+        with:
+          app: ${{ inputs.app }}
+          baseline-branch: ${{ inputs.production-branch }}
+          smoke: true
+          target: https://${{ secrets.HEROKU_APP_NAME }}.herokuapp.com
+          token: ${{ secrets.GITHUB_TOKEN }}

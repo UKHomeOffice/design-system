@@ -1,0 +1,31 @@
+name: Publish
+description: Publish all public packages
+inputs:
+  npm-token:
+    description: NPM token to publish with
+    required: true
+  version:
+    description: Version to publish
+    required: true
+runs:
+  using: composite
+  steps:
+
+    - name: Set up NPM and Git
+      shell: bash
+      env:
+        NPM_TOKEN: ${{ inputs.npm-token }}
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+
+    - name: Publish
+      shell: bash
+      env:
+        VERSION: ${{ inputs.version }}
+      run: |
+        npm version "${VERSION}"
+        npm run all:publish
+        git push
+        git push --tags

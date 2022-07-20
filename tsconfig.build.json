@@ -3,7 +3,8 @@
   "compilerOptions": {
     "composite": true,
     "declaration": true,
-    "module": "ES2020",
+    "module": "commonjs",
+    "resolveJsonModule": true,
     "sourceMap": false,
     "target": "ES2019"
   }

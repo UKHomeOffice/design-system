@@ -1,4 +1,4 @@
-FROM cypress/included:9.5.2
+FROM cypress/included:9.7.0
 
 RUN mv /root/.cache /home/node/.cache && \
     mkdir -p /cypress && \
@@ -15,3 +15,4 @@ USER node
 ENV CYPRESS_BASE_URL="http://localhost:8080" \
     CYPRESS_PROJECT_ID="" \
     CYPRESS_RECORD_KEY=""
+HEALTHCHECK NONE

@@ -7,7 +7,9 @@ const path = require('path');
 const config = {
   preset: 'ts-jest/presets/js-with-babel',
   testEnvironment: 'jsdom',
-  testURL: 'http://localhost/',
+  testEnvironmentOptions: {
+    url: 'http://localhost/'
+  },
   setupFilesAfterEnv: [
     path.resolve(__dirname, '.jest', 'setup', 'enzyme.js')
   ],
@@ -27,10 +29,15 @@ const config = {
   transformIgnorePatterns: [
     'node_modules/\.pnpm/(?!@)'
   ],
+  extensionsToTreatAsEsm: [
+    '.ts',
+    '.tsx'
+  ],
   globals: {
     'ts-jest': {
       isolatedModules: true,
-      tsconfig: path.resolve(__dirname, 'tsconfig.nodejs.json')
+      tsconfig: path.resolve(__dirname, 'tsconfig.json'),
+      useESM: true
     }
   }
 };
