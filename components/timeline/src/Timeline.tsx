@@ -38,14 +38,15 @@ export const Timeline: FC<TimelineProps> = ({
           <div className={classes('item')} key={e.date.getTime()}>
             <h2 className={classes('title')}>{e.action}</h2>
             {!e.by ? null : (<p className={classes('by')}> by {e.by}</p>)}
-            <DateTime
-              className="hods-timeline__date"
-              ISOString={e.date.toISOString()}
-              displayTime={true}
-              displayDate={true}
-              precedence={"date"}
-              clockType={12}
-            />
+            <p className={classes('date')}>
+            	<DateTime
+              	ISOString={e.date.toISOString()}
+              	  displayTime={true}
+              	  displayDate={true}
+              	  precedence={"date"}
+              	  clockType={12}
+            	/>
+            </p>
             <p className={classes('description')}>{e.description}</p>
           </div>
         )) : null }
