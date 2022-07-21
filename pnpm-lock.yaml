@@ -229,6 +229,7 @@ importers:
   components/date-time:
     specifiers:
       '@hods/date-display': workspace:^0.2.1
+      '@hods/time': workspace:^0.2.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.5.5
       '@not-govuk/component-test-helpers': ^0.5.5
@@ -239,6 +240,7 @@ importers:
       typescript: 4.6.4
     dependencies:
       '@hods/date-display': link:../date-display
+      '@hods/time': link:../time
       '@not-govuk/component-helpers': 0.5.5
     devDependencies:
       '@mdx-js/react': 1.6.22_react@16.14.0
@@ -403,6 +405,27 @@ importers:
       jest: 28.1.3
       jest-environment-jsdom: 28.1.3
       ts-jest: 28.0.7_29fd29b45a179e42552c09286f44f78c
+      typescript: 4.6.4
+
+  components/time:
+    specifiers:
+      '@mdx-js/react': 1.6.22
+      '@not-govuk/component-helpers': ^0.5.5
+      '@not-govuk/component-test-helpers': ^0.5.5
+      '@types/react': 16.14.26
+      jest: 28.1.0
+      jest-environment-jsdom: 28.1.0
+      ts-jest: 28.0.2
+      typescript: 4.6.4
+    dependencies:
+      '@not-govuk/component-helpers': 0.5.5
+    devDependencies:
+      '@mdx-js/react': 1.6.22_react@16.14.0
+      '@not-govuk/component-test-helpers': 0.5.5_57f8232eecda0638ee341414c70496e7
+      '@types/react': 16.14.26
+      jest: 28.1.0
+      jest-environment-jsdom: 28.1.0
+      ts-jest: 28.0.2_abbd375b6ce73a97390b2a65729626ed
       typescript: 4.6.4
 
   components/timeline:
