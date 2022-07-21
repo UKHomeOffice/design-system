@@ -41,8 +41,6 @@ export const Timeline: FC<TimelineProps> = ({
             <p className={classes('date')}>
             	<DateTime
               	ISOString={e.date.toISOString()}
-              	  displayTime={true}
-              	  displayDate={true}
               	  precedence={"date"}
               	  clockType={12}
             	/>
