@@ -1,0 +1,51 @@
+{
+  "name": "@hods/time",
+  "version": "0.2.1",
+  "description": "Displays a time in accordance with Gov style guidance",
+  "main": "src/Time.tsx",
+  "sass": "assets/Time.scss",
+  "publishConfig": {
+    "main": "dist/Time.js",
+    "typings": "dist/Time.d.ts"
+  },
+  "files": [
+    "/assets",
+    "/dist"
+  ],
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "prepublishOnly": "npm run clean && npm run build",
+    "build": "tsc",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
+  },
+  "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
+  "license": "MIT",
+  "keywords": [
+    "react-components"
+  ],
+  "dependencies": {
+    "@not-govuk/component-helpers": "^0.5.5"
+  },
+  "peerDependencies": {
+    "@not-govuk/docs-components": "^0.5.5",
+    "@storybook/addon-docs": "^6.4.0",
+    "react": "^16.9.55"
+  },
+  "peerDependenciesMeta": {
+    "@not-govuk/docs-components": {
+      "optional": true
+    },
+    "@storybook/addon-docs": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@mdx-js/react": "1.6.22",
+    "@not-govuk/component-test-helpers": "^0.5.5",
+    "@types/react": "16.14.26",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
+    "ts-jest": "28.0.2",
+    "typescript": "4.6.4"
+  }
+}

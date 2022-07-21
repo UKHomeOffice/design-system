@@ -1,0 +1,69 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Time } from '../src/Time';
+import readMe from '../README.md';
+
+<Meta
+  title="Time"
+  component={ Time }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Displays a time in accordance with Gov style guidance',
+    jest: ['Time'],
+    notes: readMe
+  } }
+/>
+
+# Time
+
+Displays a time in accordance with Gov style guidance.
+
+<Preview withToolbar>
+  <Story name="Time">
+	<Time
+	  time="2022-07-21T22:37:34.570Z"
+	/>
+  </Story>
+</Preview>
+
+<Props of={ Time } />
+
+
+## How to use this component.
+### Standard
+
+Display the time in the 12 hour clock.
+
+<Preview>
+  <Story name="Standard">
+	<Time
+	  time="2022-07-21T22:37:34.570Z"
+	/>
+  </Story>
+</Preview>
+
+### 24 Hour
+
+Display the time in the 24 hour clock.
+
+<Preview>
+  <Story name="24 Hour">
+	<Time
+	  time="2022-07-21T22:37:34.570Z"
+	  clockType={24}
+	/>
+  </Story>
+</Preview>
+
+### No wrap
+
+Display the time without a time element.
+
+<Preview>
+  <Story name="No wrap">
+	<Time
+	  time="2022-07-21T22:37:34.570Z"
+	  wrap={false}
+	/>
+  </Story>
+  
+</Preview>
