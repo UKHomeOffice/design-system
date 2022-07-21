@@ -25,6 +25,7 @@
   ],
   "dependencies": {
     "@hods/date-display": "workspace:^0.2.1",
+    "@hods/time": "workspace:^0.2.1",
     "@not-govuk/component-helpers": "^0.5.5"
   },
   "peerDependencies": {

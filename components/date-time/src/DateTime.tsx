@@ -1,7 +1,7 @@
 import { FC, Fragment, createElement as h } from "react";
 import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
-import { formatDateTimeFromISOString } from "./utils";
 import { DateDisplay } from "@hods/date-display";
+import {Time} from "@hods/time";
 
 import "../assets/DateTime.scss";
 
@@ -31,20 +31,15 @@ export const DateTime: FC<DateTimeProps> = ({
 		className
 	);
 
-	const { formattedTime } = formatDateTimeFromISOString(
-		ISOString,
-		clockType
-	);
-
 	return (
 		<time {...attrs} className={classes()} dateTime={ISOString}>
 		{ precedence === "time" ? (
 		<Fragment>
-		{formattedTime} on <DateDisplay date={ISOString} wrap={false} />
+		<Time time={ISOString} wrap={false} clockType={clockType} /> on <DateDisplay date={ISOString} wrap={false} />
 		</Fragment>
 		):(
 		<Fragment>
-		<DateDisplay date={ISOString} wrap={false} /> at {formattedTime}
+		<DateDisplay date={ISOString} wrap={false} /> at <Time time={ISOString} wrap={false} clockType={clockType} />
 		</Fragment>
 		)}
 		</time>
