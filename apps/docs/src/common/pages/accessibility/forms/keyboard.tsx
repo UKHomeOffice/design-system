@@ -8,7 +8,7 @@ export const title = 'Keyboard';
 const description = 'Accessibility guidance for forms';
 export const section = 'Accessibility';
 
-const formskeyboardImage = require('../../../../../assets/images/accessibility/forms-keyboard.png').default;
+const formskeyboardImage = require('../../../../../assets/images/accessibility/forms-keyboard.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">

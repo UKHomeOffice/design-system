@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const linksImage01 = require('../../../../assets/images/accessibility/readability-score.png').default;
+const linksImage01 = require('../../../../assets/images/accessibility/readability-score.png');
 
 export const title = 'Readability';
 const description = 'Accessibility guidance for readability';

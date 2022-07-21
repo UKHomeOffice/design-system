@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const linksImage01 = require('../../../../assets/images/accessibility/colour-contrast.png').default;
+const linksImage01 = require('../../../../assets/images/accessibility/colour-contrast.png');
 
 export const title = 'Colour and contrast';
 const description = 'Accessibility guidance for colour and contrast';

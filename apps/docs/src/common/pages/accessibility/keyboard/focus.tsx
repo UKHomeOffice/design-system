@@ -8,11 +8,11 @@ export const title = 'Focus';
 const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
-const focusImage01 = require('../../../../../assets/images/accessibility/focus-01.png').default;
-const focusImage02 = require('../../../../../assets/images/accessibility/focus-02.png').default;
-const focusImage03 = require('../../../../../assets/images/accessibility/focus-03.png').default;
-const focusImage04 = require('../../../../../assets/images/accessibility/focus-04.png').default;
-const focusImage05 = require('../../../../../assets/images/accessibility/focus-05.png').default;
+const focusImage01 = require('../../../../../assets/images/accessibility/focus-01.png');
+const focusImage02 = require('../../../../../assets/images/accessibility/focus-02.png');
+const focusImage03 = require('../../../../../assets/images/accessibility/focus-03.png');
+const focusImage04 = require('../../../../../assets/images/accessibility/focus-04.png');
+const focusImage05 = require('../../../../../assets/images/accessibility/focus-05.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">

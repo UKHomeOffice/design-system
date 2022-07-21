@@ -8,11 +8,11 @@ export const title = 'Images';
 const description = 'Only use images if there’s a real user need';
 const section = 'Styles';
 
-const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg').default;
-const applyExample1 = require('../../../../assets/images/example-1.jpg').default;
-const applyExample2 = require('../../../../assets/images/example-2.jpg').default;
-const applyExample5 = require('../../../../assets/images/example-5.jpg').default;
-const applyExample6 = require('../../../../assets/images/example-6.jpg').default;
+const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg');
+const applyExample1 = require('../../../../assets/images/example-1.jpg');
+const applyExample2 = require('../../../../assets/images/example-2.jpg');
+const applyExample5 = require('../../../../assets/images/example-5.jpg');
+const applyExample6 = require('../../../../assets/images/example-6.jpg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

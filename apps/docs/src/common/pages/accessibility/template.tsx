@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const linksImage01 = require('../../../../assets/images/accessibility/links01.png').default;
+const linksImage01 = require('../../../../assets/images/accessibility/links01.png');
 
 export const title = 'xxx';
 const description = 'Accessibility guidance for xxx content';

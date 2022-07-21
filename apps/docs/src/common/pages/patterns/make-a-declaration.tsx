@@ -9,8 +9,8 @@ const description = 'A declaration allows users to confirm that they have unders
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyDeclaration1 = require('../../../../assets/images/patterns/make-a-declaration.png').default;
-const applyDeclaration2 = require('../../../../assets/images/patterns/make-a-declaration-privacy-terms-conditions.png').default;
+const applyDeclaration1 = require('../../../../assets/images/patterns/make-a-declaration.png');
+const applyDeclaration2 = require('../../../../assets/images/patterns/make-a-declaration-privacy-terms-conditions.png');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

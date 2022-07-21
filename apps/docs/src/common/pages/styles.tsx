@@ -25,9 +25,9 @@ export const menu = (
 export const title = 'Styles';
 const description = 'Make your service look and feel like a Home Office service';
 
-const applyPassportImage = require('../../../assets/images/apply-passport.png').default;
-const ddatEventsImage = require('../../../assets/images/ddat-events.png').default;
-const policeImage = require('../../../assets/images/police.png').default;
+const applyPassportImage = require('../../../assets/images/apply-passport.png');
+const ddatEventsImage = require('../../../assets/images/ddat-events.png');
+const policeImage = require('../../../assets/images/police.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">

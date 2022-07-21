@@ -4,8 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const layoutImage01 = require('../../../../assets/images/accessibility/landmarks1.png').default;
-const layoutImage02 = require('../../../../assets/images/accessibility/landmarks2.png').default;
+const layoutImage01 = require('../../../../assets/images/accessibility/landmarks1.png');
+const layoutImage02 = require('../../../../assets/images/accessibility/landmarks2.png');
 
 export const title = 'Layout and typography';
 const description = 'Accessibility guidance for layout and typography';

@@ -9,8 +9,8 @@ const description = 'How to help users to find information on a document';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg').default;
-const applyImageRight = require('../../../../assets/images/patterns/image-guidance-right.svg').default;
+const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg');
+const applyImageRight = require('../../../../assets/images/patterns/image-guidance-right.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

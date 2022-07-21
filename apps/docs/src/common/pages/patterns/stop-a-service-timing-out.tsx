@@ -9,7 +9,7 @@ const description = 'How to help users to stop a service from timing out';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyModalWindow = require('../../../../assets/images/patterns/timeout.svg').default;
+const applyModalWindow = require('../../../../assets/images/patterns/timeout.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
