@@ -25,7 +25,7 @@ export const DateDisplay: FC<DateDisplayProps> = ({
   const formattedDate = date.toLocaleString("en-GB", {year: "numeric", month: "long", day: "numeric"});
 
   return wrap ? (
-    <time {...attrs} className={classes()} dateTime={formattedDate}>
+    <time {...attrs} className={classes()} dateTime={_date}>
       {formattedDate}
     </time>
   ) : (
