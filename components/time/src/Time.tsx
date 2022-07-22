@@ -1,6 +1,6 @@
 import { FC, Fragment, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { formatDateTimeFromISOString } from "./utils";
+import { formatTime } from "./utils";
 
 import '../assets/Time.scss';
 
@@ -25,7 +25,7 @@ export const Time: FC<TimeProps> = ({
 }) => {
   const classes = classBuilder('hods-time', classBlock, classModifiers, className);
   
-  const { formattedTime } = formatDateTimeFromISOString(
+  const formattedTime = formatTime(
 	  time,
 	  clockType
   );
