@@ -456,6 +456,8 @@ importers:
   lib/components:
     specifiers:
       '@hods/alert': workspace:^0.2.0
+      '@hods/date-display': workspace:^0.2.1
+      '@hods/date-time': workspace:^0.2.1
       '@hods/expandable-banner': workspace:^0.2.0
       '@hods/footer': workspace:^0.2.0
       '@hods/header': workspace:^0.2.0
@@ -463,6 +465,7 @@ importers:
       '@hods/pagination': workspace:^0.2.0
       '@hods/sass-base': workspace:^0.2.0
       '@hods/status-message': workspace:^0.2.0
+      '@hods/time': workspace:^0.2.1
       '@hods/timeline': workspace:^0.2.0
       jest: 28.1.3
       jest-environment-jsdom: 28.1.3
@@ -470,6 +473,8 @@ importers:
       typescript: 4.6.4
     dependencies:
       '@hods/alert': link:../../components/alert
+      '@hods/date-display': link:../../components/date-display
+      '@hods/date-time': link:../../components/date-time
       '@hods/expandable-banner': link:../../components/expandable-banner
       '@hods/footer': link:../../components/footer
       '@hods/header': link:../../components/header
@@ -477,6 +482,7 @@ importers:
       '@hods/pagination': link:../../components/pagination
       '@hods/sass-base': link:../sass-base
       '@hods/status-message': link:../../components/status-message
+      '@hods/time': link:../../components/time
       '@hods/timeline': link:../../components/timeline
     devDependencies:
       jest: 28.1.3

@@ -12,6 +12,12 @@ runs:
   using: composite
   steps:
 
+    - name: Set locale
+      shell: bash
+      run: |
+        sudo locale-gen ${{ env.LANG }}
+        sudo update-locale LANG=${{ env.LANG }}
+
     - name: Setup PNPM
       uses: pnpm/action-setup@v2.2.2
       with:

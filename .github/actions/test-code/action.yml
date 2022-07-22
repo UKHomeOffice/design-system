@@ -9,12 +9,6 @@ runs:
   using: composite
   steps:
 
-    - name: Set locale
-      shell: bash
-      run: |
-        sudo locale-gen ${{ env.LANG }}
-        sudo update-locale LANG=${{ env.LANG }}
-
     - name: Run unit tests
       shell: bash
       run: npm test
