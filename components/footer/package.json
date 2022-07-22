@@ -1,6 +1,6 @@
 {
   "name": "@hods/footer",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "HODS' page footer.",
   "main": "src/Footer.tsx",
   "sass": "assets/Footer.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.2.0",
+    "@hods/sass-base": "workspace:^0.3.1",
     "@not-govuk/component-helpers": "^0.5.5",
     "@not-govuk/link": "^0.5.5"
   },
