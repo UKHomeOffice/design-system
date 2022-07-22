@@ -1,8 +1,11 @@
 export { default as Alert } from '@hods/alert';
+export { default as DateTime } from '@hods/date-time';
+export { default as DateDisplay } from '@hods/date-display';
 export { default as ExpandableBanner } from '@hods/expandable-banner';
 export { default as Footer } from '@hods/footer';
 export { default as Header } from '@hods/header';
 export { default as Page } from '@hods/page';
 export { default as Pagination } from '@hods/pagination';
 export { default as StatusMessage } from '@hods/status-message';
+export { default as Time } from '@hods/time';
 export { default as Timeline } from '@hods/timeline';
