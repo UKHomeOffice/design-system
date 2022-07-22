@@ -1,6 +1,10 @@
 name: Change assurance
 on:
   pull_request:
+env:
+  LANG: "en_GB.UTF-8"
+  LANGUAGE: "en_GB:en"
+  LC_ALL: "en_GB.UTF-8"
 jobs:
   common:
     name: Dependencies, Unit tests
