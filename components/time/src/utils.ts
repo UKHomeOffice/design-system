@@ -11,5 +11,6 @@ export const formatTime = (
 		    minute: '2-digit'
 		  })
 		  .replace(' ','')
+      .toLowerCase()
 	);
 };
