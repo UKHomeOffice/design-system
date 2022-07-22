@@ -75,19 +75,26 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <h2>Step 2. Create a prototype</h2>
           <h3>Run the prototype generator in terminal</h3>
+          <p>You can use any name you like for your prototype folder, in this example we'll use <code>review-licence-applications</code>.</p>
           <p>Open terminal and enter these commands:</p>
           <ol>
-            <li>Run <code>mkdir review-licence-applications</code> (literally make directory) to create a folder for your prototype. You can see this folder in File Explorer on Windows or Finder on Mac.</li>
-            <li>Run <code>cd review-licence-applications</code> (literally change directory) to move your terminal inside your prototype folder.</li>
-            <li>Run <code>npm init @hods prototype</code> to create the prototype.</li>
-            <li>Answer the prompts. Accept the default answers, by pressing the 'return' key</li>
-          </ol>
-
-          <div className="govuk-grid-row">
-            <div className="govuk-grid-column-full">
-              <img  src={applyPrototype1} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Terminal screen with questions to set up prototype"/>
+            <li>Run <code>mkdir review-licence-applications</code> (literally make directory) to create a folder for your prototype. You can see this folder in File Explorer on Windows or Finder on Mac. Nothing will show in terminal.</li>
+            <li>Run <code>cd review-licence-applications</code> (literally change directory) to move your terminal inside your prototype folder. You should see your current folder has changed in terminal.</li>
+            <li>Run <code>npm init @hods prototype</code> to create the prototype. You'll see:
+            <pre><code>  Need to install the following packages:
+    @hods/create
+  Ok to proceed? (y)</code></pre></li>
+            <li>Press enter to continue.</li>
+            <li>Answer the prompts. Accept the default answers, by pressing enter.
+            <div className="govuk-grid-row">
+              <div className="govuk-grid-column-full">
+                <img  src={applyPrototype1} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Terminal screen with asking for the short name, long name, version, description and licence needed to set up the prototype"/>
+              </div>
             </div>
-          </div>
+            You'll see a lot of text in the terminal, it'll end with <code>✔  message Done.</code>.
+            </li>
+
+          </ol>
 
         <h3>Download the dependencies</h3>
         <p>Run <code>npm install</code> to pull down the dependencies to make your prototype work. These are stored in the <code>node_modules</code> folder. They are specific to this prototype and do not affect any of your other prototypes.</p>
