@@ -20,10 +20,8 @@ Use this component to display dates and times in an easy to read standard format
 <Preview withToolbar>
 	<Story name="Date with time after">
 		<DateTime
-			ISOString={new Date().toISOString()}
-			displayTime={true}
-			displayDate={true}
-			precedence={"date"}
+			ISOString="2022-07-21T22:37:34.570Z"
+			precedence="date"
 			clockType={12}
 		/>
 	</Story>
@@ -38,26 +36,6 @@ This component is a standard code implementation for displaying easy to read dat
 Follow the [time GOV.UK style guidelines](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#times) and the [GOV.UK date guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates) to decide which format to use within your service.
 
 ## How it works
-
-### Date or time only
-You can display either the date only or the time only, if the other is not relevant.
-
-<Preview>
-	<Story name="Standard date">
-		<DateTime ISOString={new Date().toISOString()} displayDate={true} />
-	</Story>
-</Preview>
-
-<Preview>
-	<Story name="Standard 12 hour time">
-		<DateTime
-			ISOString={new Date().toISOString()}
-			displayTime={true}
-			clockType={12}
-		/>
-	</Story>
-</Preview>
-
 ### Time format
 
 You should use the 12-hour clock. For example, 5:30pm and 2:30am.
@@ -67,10 +45,8 @@ If you have evidence that your internal users regularly use the 24-hour and find
 <Preview>
 	<Story name="Date with 24-hour time after">
 		<DateTime
-			ISOString={new Date().toISOString()}
-			displayTime={true}
-			displayDate={true}
-			precedence={"date"}
+			ISOString="2022-07-21T22:37:34.570Z"
+			precedence="date"
 			clockType={24}
 		/>
 	</Story>
@@ -85,10 +61,8 @@ If the time is more important, change the order so that the time comes before th
 <Preview>
 	<Story name="12-hour time with date after">
 		<DateTime
-			ISOString={new Date().toISOString()}
-			displayTime={true}
-			displayDate={true}
-			precedence={"time"}
+			ISOString="2022-07-21T22:37:34.570Z"
+			precedence="time"
 			clockType={12}
 		/>
 	</Story>

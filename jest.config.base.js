@@ -1,5 +1,9 @@
 'use strict';
 
+process.env.TZ = 'Europe/London';
+process.env.LC_ALL = 'en_GB.UTF-8';
+process.env.LANG = 'en_GB.UTF-8';
+
 const path = require('path');
 
 /** @typedef {import('ts-jest')} */

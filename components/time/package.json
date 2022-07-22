@@ -1,12 +1,12 @@
 {
-  "name": "@hods/date-time",
+  "name": "@hods/time",
   "version": "0.2.1",
-  "description": "Displays date and time inline with Gov style guidance",
-  "main": "src/DateTime.tsx",
-  "sass": "assets/DateTime.scss",
+  "description": "Displays a time in accordance with Gov style guidance",
+  "main": "src/Time.tsx",
+  "sass": "assets/Time.scss",
   "publishConfig": {
-    "main": "dist/DateTime.js",
-    "typings": "dist/DateTime.d.ts"
+    "main": "dist/Time.js",
+    "typings": "dist/Time.d.ts"
   },
   "files": [
     "/assets",
@@ -24,12 +24,10 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/date-display": "workspace:^0.2.1",
-    "@hods/time": "workspace:^0.2.1",
     "@not-govuk/component-helpers": "^0.5.5"
   },
   "peerDependencies": {
-    "@not-govuk/docs-components": "^0.5.0",
+    "@not-govuk/docs-components": "^0.5.5",
     "@storybook/addon-docs": "^6.4.0",
     "react": "^16.9.55"
   },
@@ -44,10 +42,10 @@
   "devDependencies": {
     "@mdx-js/react": "1.6.22",
     "@not-govuk/component-test-helpers": "^0.5.5",
-    "@types/react": "16.14.24",
-    "jest": "28.1.3",
-    "jest-environment-jsdom": "28.1.3",
-    "ts-jest": "28.0.7",
+    "@types/react": "16.14.26",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
+    "ts-jest": "28.0.2",
     "typescript": "4.6.4"
   }
 }

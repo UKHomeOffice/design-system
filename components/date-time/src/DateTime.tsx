@@ -1,16 +1,13 @@
-import { FC, createElement as h } from "react";
+import { FC, Fragment, createElement as h } from "react";
 import { StandardProps, classBuilder } from "@not-govuk/component-helpers";
-import { formatDateTimeFromISOString } from "./utils";
+import { DateDisplay } from "@hods/date-display";
+import {Time} from "@hods/time";
 
 import "../assets/DateTime.scss";
 
 export type DateTimeProps = StandardProps & {
 	/** ISO string */
 	ISOString: string;
-	/** Displays date when true */
-	displayDate?: boolean;
-	/** Displays time when true */
-	displayTime?: boolean;
 	/** Displays time or date first */
 	precedence?: "time" | "date";
 	/** Displays time as a 12 or 24 hour clock */
@@ -23,8 +20,6 @@ export const DateTime: FC<DateTimeProps> = ({
 	classModifiers,
 	className,
 	ISOString,
-	displayTime,
-	displayDate,
 	precedence = "time",
 	clockType = 12,
 	...attrs
@@ -36,35 +31,17 @@ export const DateTime: FC<DateTimeProps> = ({
 		className
 	);
 
-	const { formattedDate, formattedTime } = formatDateTimeFromISOString(
-		ISOString,
-		displayDate,
-		displayTime,
-		clockType
-	);
-
-	let formattedDateTimeString;
-
-	if (displayTime && displayDate) {
-		formattedDateTimeString =
-			precedence === "time"
-				? formattedTime
-					? `${formattedTime} on ${formattedDate}`
-					: `${formattedDate}`
-				: formattedTime
-				? `${formattedDate} at ${formattedTime}`
-				: `${formattedDate}`;
-	} else {
-		formattedDateTimeString = displayDate
-			? formattedDate
-			: displayTime
-			? formattedTime
-			: undefined;
-	}
-
 	return (
 		<time {...attrs} className={classes()} dateTime={ISOString}>
-			{formattedDateTimeString}
+		{ precedence === "time" ? (
+		<Fragment>
+		<Time time={ISOString} wrap={false} clockType={clockType} /> on <DateDisplay date={ISOString} wrap={false} />
+		</Fragment>
+		):(
+		<Fragment>
+		<DateDisplay date={ISOString} wrap={false} /> at <Time time={ISOString} wrap={false} clockType={clockType} />
+		</Fragment>
+		)}
 		</time>
 	);
 };
