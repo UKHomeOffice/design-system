@@ -1,5 +1,7 @@
 'use strict';
 
+process.env.TZ = 'Europe/London';
+
 const path = require('path');
 
 /** @typedef {import('ts-jest')} */
