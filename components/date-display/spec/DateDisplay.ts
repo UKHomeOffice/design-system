@@ -6,7 +6,7 @@ describe('DateDisplay', () => {
   const minimalProps = {date:'2022-07-20'};
 
   describe('when given minimal valid props', () => {
-    const component = mount(h(DateDisplay, minimalProps, 'Child'));
+    const component = mount(h(DateDisplay, minimalProps));
 
     it("formats date", () => {
 			expect(component.text()).toBe("20 July 2022");
@@ -21,7 +21,7 @@ describe('DateDisplay', () => {
       ...minimalProps,
       wrap:false
     };
-    const component = mount(h(DateDisplay, props, 'Child'));
+    const component = mount(h(DateDisplay, props));
 
     it("formats date", () => {
 			expect(component.text()).toBe("20 July 2022");
