@@ -13,15 +13,15 @@ pnpm recursive up --workspace "@${name}/*"
 
 # Update references in template files
 sed -i -E "s/workspace:([^\^0-9]*)(\^)?.+\"/workspace:\1\2${version}\"/g" \
-  {lib,lib-govuk}/*/skel/*/package.json*
+  lib/*/skel/*/package.json*
 
 # Update references in peerDependencies
 sed -i -E "s/\"@(${name})\/([^\"]*)\":([^\"]*)\"[^:]+\"/\"@\1\/\2\":\3\"^${version}\"/g" \
-  {lib}/*/skel/*/package.json* \
+  lib/*/skel/*/package.json* \
   {apps,components,lib}/*/package.json
 
 # Stage modified files
  git add \
-   {lib}/*/skel/*/package.json* \
+   lib/*/skel/*/package.json* \
    {apps,components,lib}/*/package.json
  git add -f pnpm-lock.yaml
