@@ -78,7 +78,7 @@
     "webpack-hot-middleware": "2.25.1"
   },
   "name": "hods",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "The design system for the UK Home Office.",
   "main": "index.js",
   "repository": {

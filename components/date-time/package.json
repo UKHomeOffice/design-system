@@ -1,6 +1,6 @@
 {
   "name": "@hods/date-time",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Displays date and time inline with Gov style guidance",
   "main": "src/DateTime.tsx",
   "sass": "assets/DateTime.scss",
