@@ -21,7 +21,7 @@ describe('Time', () => {
     const component = mount(h(Time, {time:'22:37'}));
 
     it("formats time", () => {
-			expect(component.text()).toBe("11:37pm");
+			expect(component.text()).toBe("10:37pm");
     });
     it("is wrapped in a time element", () => {
     			expect(component.find('time').length).toBe(1);

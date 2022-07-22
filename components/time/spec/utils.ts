@@ -20,6 +20,27 @@ describe("Date Utils", () => {
 		);
 		expect(formattedTime).toBe(`${value}:30pm`);
 	});
+	
+	it.each([
+		{ number: 13, value: 1 },
+		{ number: 14, value: 2 },
+		{ number: 15, value: 3 },
+		{ number: 16, value: 4 },
+		{ number: 17, value: 5 },
+		{ number: 18, value: 6 },
+		{ number: 19, value: 7 },
+		{ number: 20, value: 8 },
+		{ number: 21, value: 9 },
+		{ number: 22, value: 10 },
+		{ number: 23, value: 11 },
+	])("Converts short 24 hour clock into 12 clock", ({ number, value }) => {
+		const { formattedTime } = formatDateTimeFromISOString(
+			`${number}:30`,
+			12
+		);
+		expect(formattedTime).toBe(`${value}:30pm`);
+	});
+	
 	it("Displays pm when time is 12", () => {
 		const { formattedTime } = formatDateTimeFromISOString(
 			`2022-01-10T12:30:33.233Z`,

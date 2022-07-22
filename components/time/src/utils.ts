@@ -3,7 +3,7 @@ export const formatDateTimeFromISOString = (
 	clockType?: 12 | 24
 ) => {
 	let formattedTime = null;
-	const date = new Date(ISOString);
+	const date = new Date(ISOString.includes('T') ? ISOString : `1970-01-01T${ISOString}`);
 		const hours = date.getHours();
 		const minutes = date.getMinutes();
 
