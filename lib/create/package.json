@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@hods/plop-pack": "workspace:^0.3.1",
-    "@not-govuk/create": "^0.5.5",
-    "@not-govuk/plop-pack-internal": "^0.5.5"
+    "@not-govuk/create": "^0.5.6",
+    "@not-govuk/plop-pack-internal": "^0.5.6"
   },
   "devDependencies": {
     "plop": "3.1.1"
