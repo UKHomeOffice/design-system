@@ -1,6 +1,6 @@
 {
   "name": "@hods/sass-base",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "The base SASS code for HODS styling.",
   "sass": "src/index.scss",
   "files": [
