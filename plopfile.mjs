@@ -1,5 +1,5 @@
 export const plopFunction = async (plop) => {
-  await plop.load('@not-govuk/plop-pack');
+  await plop.load('@hods/plop-pack');
 };
 
 export default plopFunction;
