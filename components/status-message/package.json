@@ -1,6 +1,6 @@
 {
   "name": "@hods/status-message",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "An indication to the user that something has changed.",
   "main": "src/StatusMessage.tsx",
   "sass": "assets/StatusMessage.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.3.3",
+    "@hods/sass-base": "workspace:^0.3.4",
     "@not-govuk/anchor-list": "^0.5.7",
     "@not-govuk/component-helpers": "^0.5.7",
     "govuk-frontend": "3.11.0"
