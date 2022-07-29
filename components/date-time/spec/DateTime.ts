@@ -6,10 +6,10 @@ describe("DateTime", () => {
 	const dateTimeString = "2022-01-10T19:30:33.233Z";
 
 	const minimalProps: DateTimeProps = {
-		ISOString: dateTimeString,
+		dateTime: dateTimeString,
 	};
 	const fullProps: DateTimeProps = {
-		ISOString: dateTimeString,
+		dateTime: dateTimeString,
 		clockType: 24,
 		precedence: 'date'
 	};

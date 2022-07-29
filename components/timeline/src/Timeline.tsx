@@ -40,7 +40,7 @@ export const Timeline: FC<TimelineProps> = ({
             {!e.by ? null : (<p className={classes('by')}> by {e.by}</p>)}
             <p className={classes('date')}>
             	<DateTime
-              	ISOString={e.date.toISOString()}
+              dateTime={e.date.toISOString()}
               	  precedence={"date"}
               	  clockType={12}
             	/>
