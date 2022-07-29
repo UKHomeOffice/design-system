@@ -6,8 +6,8 @@ import {Time} from "@hods/time";
 import "../assets/DateTime.scss";
 
 export type DateTimeProps = StandardProps & {
-	/** ISO string */
-	ISOString: string;
+	/** Date-time string in ISO-8601 format */
+	dateTime: string;
 	/** Displays time or date first */
 	precedence?: "time" | "date";
 	/** Displays time as a 12 or 24 hour clock */
@@ -19,8 +19,8 @@ export const DateTime: FC<DateTimeProps> = ({
 	classBlock,
 	classModifiers,
 	className,
-	ISOString,
-	precedence = "time",
+	dateTime,
+	precedence = "date",
 	clockType = 12,
 	...attrs
 }) => {
@@ -32,14 +32,14 @@ export const DateTime: FC<DateTimeProps> = ({
 	);
 
 	return (
-		<time {...attrs} className={classes()} dateTime={ISOString}>
+		<time {...attrs} className={classes()} dateTime={dateTime}>
 		{ precedence === "time" ? (
 		<Fragment>
-		<Time time={ISOString} wrap={false} clockType={clockType} /> on <DateDisplay date={ISOString} wrap={false} />
+		<Time time={dateTime} wrap={false} clockType={clockType} /> on <DateDisplay date={dateTime} wrap={false} />
 		</Fragment>
 		):(
 		<Fragment>
-		<DateDisplay date={ISOString} wrap={false} /> at <Time time={ISOString} wrap={false} clockType={clockType} />
+		<DateDisplay date={dateTime} wrap={false} /> at <Time time={dateTime} wrap={false} clockType={clockType} />
 		</Fragment>
 		)}
 		</time>

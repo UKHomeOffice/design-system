@@ -21,7 +21,9 @@ import DateTime from '@hods/date-time';
 
 export const MyComponent = props => (
   <DateTime
-    // WRITEME
+    dateTime="2022-07-21T22:37:34.570Z"
+    precedence="date"
+    clockType={24}
   />
 );
 
