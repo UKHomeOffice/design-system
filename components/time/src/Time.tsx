@@ -7,8 +7,8 @@ import '../assets/Time.scss';
 export type TimeProps = StandardProps & {
   /** Displays time as a 12 or 24 hour clock */
   clockType?: 12 | 24
-  /** Whether to wrap the time in a time element */
-  wrap?: boolean
+  /** Whether to not wrap the time in a time element */
+  noWrap?: boolean
     /** The time in ISO format */
   time: string
 };
@@ -20,7 +20,7 @@ export const Time: FC<TimeProps> = ({
   	className,
   	clockType = 12,
   	time,
-  	wrap = true,
+    noWrap = false,
   	...attrs
 }) => {
   const classes = classBuilder('hods-time', classBlock, classModifiers, className);
@@ -30,14 +30,14 @@ export const Time: FC<TimeProps> = ({
 	  clockType
   );
   
-  return wrap ? (
-    <time {...attrs} className={classes()} dateTime={time}>
-      {formattedTime}
-    </time>
-  ) : (
+  return noWrap ? (
     <Fragment>
       {formattedTime}
     </Fragment>
+  ) : (
+    <time {...attrs} className={classes()} dateTime={time}>
+      {formattedTime}
+    </time>
   );
   
 };
