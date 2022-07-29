@@ -18,11 +18,9 @@ import readMe from "../README.md";
 Use this component to display dates and times in an easy to read standard format.
 
 <Preview withToolbar>
-	<Story name="Date with time after">
+	<Story name="DateTime">
 		<DateTime
 			dateTime="2022-07-21T22:37:34.570Z"
-			precedence="date"
-			clockType={12}
 		/>
 	</Story>
 </Preview>
@@ -43,10 +41,9 @@ You should use the 12-hour clock. For example, 5:30pm and 2:30am.
 If you have evidence that your internal users regularly use the 24-hour and find it easier, then you may choose to use the 24-hour clock to display time. For example, 17:30 and 02:30. We need more evidence and research to validate this.
 
 <Preview>
-	<Story name="Date with 24-hour time after">
+	<Story name="24-hour">
 		<DateTime
 			dateTime="2022-07-21T22:37:34.570Z"
-			precedence="date"
 			clockType={24}
 		/>
 	</Story>
@@ -59,11 +56,10 @@ You should use evidence to assess whether the date or the time is most important
 If the time is more important, change the order so that the time comes before the date.
 
 <Preview>
-	<Story name="12-hour time with date after">
+	<Story name="Time first">
 		<DateTime
 			dateTime="2022-07-21T22:37:34.570Z"
 			precedence="time"
-			clockType={12}
 		/>
 	</Story>
 </Preview>

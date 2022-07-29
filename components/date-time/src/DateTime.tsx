@@ -20,7 +20,7 @@ export const DateTime: FC<DateTimeProps> = ({
 	classModifiers,
 	className,
 	dateTime,
-	precedence = "time",
+	precedence = "date",
 	clockType = 12,
 	...attrs
 }) => {
