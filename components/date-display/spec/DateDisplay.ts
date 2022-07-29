@@ -19,7 +19,7 @@ describe('DateDisplay', () => {
   describe('when given all valid props', () => {
     const props = {
       ...minimalProps,
-      wrap:false
+      noWrap: true
     };
     const component = mount(h(DateDisplay, props));
 

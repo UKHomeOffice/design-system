@@ -6,9 +6,8 @@ import '../assets/DateDisplay.scss';
 export type DateDisplayProps = StandardProps & {
   /** The date in ISO format */
   date: string
-  /** Whether to wrap the date in a time element */
-  wrap?: boolean
- 
+  /** Whether to not wrap the date in a time element */
+  noWrap?: boolean
 };
 
 export const DateDisplay: FC<DateDisplayProps> = ({
@@ -17,21 +16,21 @@ export const DateDisplay: FC<DateDisplayProps> = ({
   classModifiers,
   className,
   date: _date,
-  wrap = true,
+  noWrap = false,
   ...attrs
 }) => {
   const classes = classBuilder('hods-date-display', classBlock, classModifiers, className);
   const date = new Date(_date);
   const formattedDate = date.toLocaleString("en-GB", {year: "numeric", month: "long", day: "numeric"});
 
-  return wrap ? (
-    <time {...attrs} className={classes()} dateTime={_date}>
-      {formattedDate}
-    </time>
-  ) : (
+  return noWrap ? (
     <Fragment>
       {formattedDate}
     </Fragment>
+  ) : (
+    <time {...attrs} className={classes()} dateTime={_date}>
+      {formattedDate}
+    </time>
   );
 };
 
