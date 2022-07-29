@@ -35,11 +35,11 @@ export const DateTime: FC<DateTimeProps> = ({
 		<time {...attrs} className={classes()} dateTime={dateTime}>
 		{ precedence === "time" ? (
 		<Fragment>
-		<Time time={dateTime} wrap={false} clockType={clockType} /> on <DateDisplay date={dateTime} wrap={false} />
+		<Time time={dateTime} clockType={clockType} noWrap /> on <DateDisplay date={dateTime} noWrap />
 		</Fragment>
 		):(
 		<Fragment>
-		<DateDisplay date={dateTime} wrap={false} /> at <Time time={dateTime} wrap={false} clockType={clockType} />
+		<DateDisplay date={dateTime} noWrap /> at <Time time={dateTime} clockType={clockType} noWrap />
 		</Fragment>
 		)}
 		</time>
