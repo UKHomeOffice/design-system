@@ -30,4 +30,12 @@ describe('DateDisplay', () => {
     			expect(component.find('time').length).toBe(0);
     });
    });
+
+  describe('when given a date-time', () => {
+    const component = mount(h(DateDisplay, { date: '2022-07-21T23:37:34.570Z' }));
+
+    it("formats date", () => {
+			expect(component.text()).toBe("22 July 2022");
+    });
   });
+});
