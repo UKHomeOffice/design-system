@@ -20,7 +20,7 @@ Displays a time in accordance with Gov style guidance.
 <Preview withToolbar>
   <Story name="Time">
 	<Time
-	  time="2022-07-21T22:37:34.570Z"
+	  time="22:37"
 	/>
   </Story>
 </Preview>
@@ -36,7 +36,7 @@ Display the time in the 12 hour clock.
 <Preview>
   <Story name="Standard">
 	<Time
-	  time="2022-07-21T22:37:34.570Z"
+	  time="22:37"
 	/>
   </Story>
 </Preview>
@@ -48,8 +48,21 @@ Display the time in the 24 hour clock.
 <Preview>
   <Story name="24 Hour">
 	<Time
-	  time="2022-07-21T22:37:34.570Z"
+	  time="22:37"
 	  clockType={24}
 	/>
+  </Story>
+</Preview>
+
+
+### With date-time
+
+If it is convenient, you can provide a full date-time and display just the time as calculated from the timezone.
+
+<Preview>
+  <Story name="Date-time">
+	  <Time
+	    time="2022-07-21T22:37:34.570Z"
+	  />
   </Story>
 </Preview>
