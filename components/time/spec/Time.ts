@@ -48,7 +48,7 @@ describe('Time', () => {
 describe('when given wrap false prop', () => {
     const props = {
       ...minimalProps,
-      wrap:false
+      noWrap: true
     };
     const component = mount(h(Time, props));
 
