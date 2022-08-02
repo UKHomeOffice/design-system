@@ -6,11 +6,11 @@ import '../assets/Pagination.scss';
 
 export type PaginationProps = StandardProps & {
   /**The total number of results*/
-  results: number;
+  results: number
   /**The number of results shown on each page*/
-  resultsPerPage: number;
+  resultsPerPage: number
   /**The current page being viewed*/
-  page: number;
+  page: number
 };
 
 export const Pagination: FC<PaginationProps> = ({
