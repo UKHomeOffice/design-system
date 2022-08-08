@@ -29,12 +29,13 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>This can be anything from applying for an immigration product to entering details into a caseworking system.</p>
 
       <h2>Helping everyone</h2>
-      <p>Good labelling helps people fill out a form correctly and easily. This reduces errors which can cost money to address.</p>
+      <p>Good labelling and correctly implemented input fields help people fill out a form correctly and easily. This reduces errors which can cost money to address.</p>
 
       <h2>The basics</h2>
         <p>Do:</p>
         <ul>
         <li>make sure each field has a label</li>
+        <li>include autocomplete on fields requesting information about the user</li>
         <li>add hint text to help people know what to put such as ‘31 03 1984’ for a date of birth field</li>
         <li>use fieldsets to group related fields such as checkboxes or radio buttons</li>
         </ul>
@@ -67,9 +68,21 @@ const Page: FC<PageProps> = ({ location }) => (
         </tr>
 
         <tr className="govuk-table__row">
+        <td className="govuk-table__cell">Cognitive impairment or memory loss</td>
+        <td className="govuk-table__cell">May find remembering information difficult</td>
+        <td className="govuk-table__cell">Input fields are automatically filled in based on previous entry</td>
+        </tr>
+
+        <tr className="govuk-table__row">
         <td className="govuk-table__cell">Motor impaired</td>
         <td className="govuk-table__cell">Clicking or tapping on form fields can be difficult</td>
         <td className="govuk-table__cell">Good spacing between fields and correctly associated labels</td>
+        </tr>
+
+        <tr className="govuk-table__row">
+        <td className="govuk-table__cell">Mobility impaired</td>
+        <td className="govuk-table__cell">May find repeated manual input difficult</td>
+        <td className="govuk-table__cell">Input fields are automatically filled in based on previous entry</td>
         </tr>
 
         </tbody>
@@ -91,6 +104,10 @@ const Page: FC<PageProps> = ({ location }) => (
 </p>
 <p>This allows screen readers to read out the label when the field is focused and provide a larger click/tap area for users with motor impairments.</p>
 <p>Find out more about labelling controls in <A href="https://www.w3.org/WAI/tutorials/forms/labels/">WAI Web Accessibility Tutorials</A>.</p>
+
+<h3>Use autocomplete</h3>
+<p>Autocomplete allows the purpose of each input field that collects information about the user to be understood by browsers and assistive technologies. This allows for the required information to be filled in automatically.</p>
+<p>If a form field relates to the user’s personal information (from the set of input purposes listed at <A href="https://www.w3.org/TR/WCAG/#input-purposes">W3C Input Purposes for User Interface Components</A>), include an explicit autocomplete attribute with the relevant value.</p>
 
 <h3>Avoid using placeholders</h3>
 <p>Do not use placeholders that disappear when the field is being used - this makes it harder for people with memory issues and are not always read out by a screen reader. Using them instead of a label can make it hard for users to double check their answers. </p>
