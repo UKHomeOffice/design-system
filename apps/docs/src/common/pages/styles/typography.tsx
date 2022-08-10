@@ -55,7 +55,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Links should be <span style={{color: "#005EA5", textDecoration: "underline"}}>blue and underlined</span>.</p>
       </section>
 
-
+      <h2 id="Alternative text" className="govuk-heading-l" style={{marginTop: "1.5em"}}>Accessibility</h2>
+      <p>If your service uses text in a way that is not shown here, let us know of any insights you have on accessibility considerations.</p>
 
     </div>
   </div>

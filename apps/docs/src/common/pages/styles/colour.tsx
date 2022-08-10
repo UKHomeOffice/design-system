@@ -101,11 +101,15 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>You can use the <A href="https://design-system.service.gov.uk/styles/colour/">GOV.UK colour palette</A> alongside the main Home Office colours. Use them to create graphs and supporting materials. If you need to use tints of the palette, use either 25% or 50%.</p>
       </section>
 
+      <h2 className="govuk-heading-l" style={{marginTop: "2em"}}>Accessibility</h2>
+      <p>There should be enough difference (contrast) between a background and the foreground content so that user can easily differentiate the two. See the <A href="/accessibility/colour-and-contrast">colour and contrast guidance</A> for more information.</p>
+      <p>If your service uses colour, let us know of any insights you have on accessibility considerations.</p>
+
       {/* BACKGROUND COMBINATIONS */}
 
       <section className="colour-swatch-wrapper">
-        <h2 className=" heading-small" style={{marginTop: "2em"}}>Accessible text and background combinations</h2>
-        <p>You should never use colour as the only way to convey information. You must also describe the information you're trying to convey. Always test the text and background colours to make sure they meet the minimum AA contrast ratios specified by <A href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Web Content Accessibility Guidelines (WCAG) 2.1</A>. Below are the colour combinations that pass.</p>
+        <h3 className="govuk-heading-m" style={{marginTop: "1.5em", marginBottom: "0.5em"}}>Accessible text and background combinations</h3>
+        <p>Below are the colour combinations that pass.</p>
 
 
         <div className="govuk-grid-row">
