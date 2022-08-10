@@ -15,7 +15,7 @@ import readMe from '../README.md';
 
 # Time
 
-Displays a time in accordance with Gov style guidance.
+Display a time following the [time guidance for GOV.UK](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#times).
 
 <Preview withToolbar>
   <Story name="Time">
@@ -27,9 +27,15 @@ Displays a time in accordance with Gov style guidance.
 
 <Props of={ Time } />
 
+## When to use this component
 
-## How to use this component.
-### Standard
+This component is a standard code implementation for displaying easy to read times to users from:
+
+- a time such as 22:37
+- [ISO format](https://en.wikipedia.org/wiki/ISO_8601) such as 2022-07-21T22:37:34.570Z
+
+## How to use this component
+### 12-hour
 
 Display the time in the 12 hour clock.
 
@@ -41,9 +47,10 @@ Display the time in the 12 hour clock.
   </Story>
 </Preview>
 
-### 24 Hour
+### 24-hour
+You should use the 12-hour clock. For example, 5:30pm and 2:30am.
 
-Display the time in the 24 hour clock.
+If you have evidence that your internal users regularly use the 24-hour and find it easier, then you may choose to use the 24-hour clock to display time. For example, 17:30 and 02:30. We need more evidence and research to validate this.
 
 <Preview>
   <Story name="24 Hour">
@@ -54,10 +61,9 @@ Display the time in the 24 hour clock.
   </Story>
 </Preview>
 
+### ISO format date-time input
 
-### With date-time
-
-If it is convenient, you can provide a full date-time and display just the time as calculated from the timezone.
+You can provide a [full ISO formatted date-time](https://en.wikipedia.org/wiki/ISO_8601)) and display just the time as calculated from the timezone.
 
 <Preview>
   <Story name="Date-time">
@@ -66,3 +72,19 @@ If it is convenient, you can provide a full date-time and display just the time 
 	  />
   </Story>
 </Preview>
+
+## Accessibility
+If your service uses this component, let us know of any insights you have on accessibility considerations.
+
+## Research
+If your service uses this component, let us know of any research findings.
+
+## Help improve this component
+
+This component needs improving. We need evidence about:
+
+- what services use this component
+- when to use the 24-hour clock
+- displaying time zones
+
+To contribute, add your thoughts and research findings to our [display date and time GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/386), or follow our [contribute guidance](/get-involved).

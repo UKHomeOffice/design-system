@@ -36,9 +36,7 @@ Use status messages to:
 Status messages are similar to alerts but are primarily used for internal services and can include actions for users to take.
 For less prominent status indicators you could use tags.
 
-
 ## How it works
-
 ### Standard status message with an action
 
 <Preview>
@@ -62,14 +60,41 @@ For less prominent status indicators you could use tags.
   </Story>
 </Preview>
 
-## Services using this component
+## Accessibility
+If your service uses this component, let us know of any insights you have on accessibility considerations.
+
+## Research
+The status message is used by:
 
   - Returns and movement
   - Passport renewals
   - Passport application search
+  - an internal service
 
-## Research
-If your service uses this component, let us know of any insights you have on research.
+For an internal service, this was used at the top of the screen of a case management system to:
 
-## Accessibility
-If your service uses this component, let us know of any insights you have on accessibility considerations.
+- show who owns the case
+- whether the case is read only
+- allow users to take over the case
+
+<Preview>
+  <Story name="ExampleFromIntenalService">
+    <StatusMessage status="Read only" actions={[
+      { href: '#', text: 'Take over' }
+    ]}>
+      - Liam Davies is working on these results<br />
+         Last active: 5 minutes ago
+    </StatusMessage>
+  </Story>
+</Preview>
+
+Research with 6 users showed that users understood the message and how to interact with it.
+
+## Help improve this component
+
+This component needs improving. We need evidence about:
+
+- how to write for this component
+- when to use an [alert](/components?name=Alert), [expandable banner](/components?name=Expandable%20banner) or status message
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/419), or follow our [contribute guidance](/get-involved).

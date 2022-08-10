@@ -15,7 +15,7 @@ import readMe from '../README.md';
 
 # Date display
 
-Displays a date in accordance with Gov style guidance
+Display a date following the [date guidance for GOV.UK](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates).
 
 <Preview withToolbar>
   <Story name="DateDisplay">
@@ -27,7 +27,10 @@ Displays a date in accordance with Gov style guidance
 
 ## When to use this component
 
-This component is a standard code implementation for displaying easy to read dates to users from [ISO format](https://en.wikipedia.org/wiki/ISO_8601).
+This component is a standard code implementation for displaying easy to read dates to users from:
+
+- a date such as 2022-07-20
+- [ISO format](https://en.wikipedia.org/wiki/ISO_8601) such as 2022-07-21T22:37:34.570Z
 
 Follow the [GOV.UK date guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates) to decide which format to use within your service.
 
@@ -40,13 +43,26 @@ Follow the [GOV.UK date guidance](https://www.gov.uk/guidance/style-guide/a-to-z
   </Story>
 </Preview>
 
-
-### With date-time
-
-If it is convenient, you can provide a full date-time and display just the date as calculated from the timezone.
+### ISO format date-time input
+You can provide a [full ISO formatted date-time](https://en.wikipedia.org/wiki/ISO_8601)) and display just the time as calculated from the timezone.
 
 <Preview>
   <Story name="Date-time">
     <DateDisplay date="2022-07-21T23:37:34.570Z" />
   </Story>
 </Preview>
+
+## Accessibility
+If your service uses this component, let us know of any insights you have on accessibility considerations.
+
+## Research
+If your service uses this component, let us know of any research findings.
+
+## Help improve this component
+
+This component needs improving. We need evidence about:
+
+- what services use this component
+- displaying time zones
+
+To contribute, add your thoughts and research findings to our [display date and time GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/386), or follow our [contribute guidance](/get-involved).
