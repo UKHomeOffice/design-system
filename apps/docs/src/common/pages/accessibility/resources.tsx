@@ -30,36 +30,22 @@ const Page: FC<PageProps> = ({ location }) => (
       Guidance
     </h2>
     <ul className="plain">
-      <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service">Helping people to use your service</A></li>
-      <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility">Testing for accessibility</A></li>
-      <li><A href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">User profiles for understanding disabilities and impairments</A></li>
-    </ul>
-    <h2>Checklists</h2>
-    <ul className="plain">
-    <li><A href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy checks – a first review of web accessibility</A></li>
-      <li><A href="https://www.a11yproject.com/checklist/">The A11Y Project Checklist</A></li>
+      <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service">GOV.UK Service Manual - Accessibility and assisted digital</A></li>
+      <li><A href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">Understanding disabilities and impairments: user profiles</A></li>
     </ul>
 
     <h2>
       Tools
     </h2>
-    <ul className="plain">
-    <li>Dos and don'ts for designing accessible services
-    <br />- available as <A href="https://ukhomeoffice.github.io/accessibility-posters/">web pages</A> and <A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility/dos-donts">downloadable posters</A></li>
-    <li><A href="https://www.tpgi.com/color-contrast-checker/">Colour Contrast Analyser (CCA)</A></li>
-    <li><A href="https://www.ssa.gov/accessibility/andi/help/install.html">ANDI - Accessibility Testing Tool</A></li>
-    </ul>
+    <p>Dos and don'ts for designing accessible services - available as <A href="https://ukhomeoffice.github.io/accessibility-posters/">web pages</A> and <A href="https://github.com/UKHomeOffice/posters/tree/master/accessibility/dos-donts">downloadable posters</A></p>
 
 
     <h2>
       Further reading
     </h2>
     <ul className="plain">
+      <li><A href="https://hodigital.blog.gov.uk/category/accessibility/">Home Office Digital, Data and Technology blog - Accessibility</A></li>
       <li><A href="https://accessibility.blog.gov.uk/">Accessibility in government blog</A></li>
-      <li><A href="https://www.digitala11y.com/digital-accessibility-courses-roundup/">Free and paid accessibility courses</A></li>
-      <li><A href="https://www.digitala11y.com/digital-accessibility-newsletters-roundup/">Accessibility newsletters</A></li>
-      <li><A href="https://www.digitala11y.com/web-accessibility-podcasts-rountup/">Accessibility podcasts</A></li>
-      <li><A href="https://www.a11yproject.com/resources/">Other accessibility resources</A></li>
     </ul>
 
     <div className="contact-us">
