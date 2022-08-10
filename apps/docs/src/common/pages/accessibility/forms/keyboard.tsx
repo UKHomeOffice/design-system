@@ -8,7 +8,7 @@ export const title = 'Keyboard';
 const description = 'Accessibility guidance for forms';
 export const section = 'Accessibility';
 
-const formskeyboardImage = require('../../../../../assets/images/accessibility/forms-keyboard.png').default;
+const formskeyboardImage = require('../../../../../assets/images/accessibility/forms-keyboard.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -39,7 +39,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>use native components or components from the GOV.UK or Home Office design systems wherever possible as they come with expected keyboard functionality built-in</li>
       <li>test that your component works as expected</li>
       <li>use hint text to explain how complex controls work</li>
-      <li>make sure <a href="/../accessibility/keyboard/focus">focus is visible and in the correct order</a></li>
+      <li>make sure <A href="/../accessibility/keyboard/focus">focus is visible and in the correct order</A></li>
       </ul>
 
       <p>Do not:</p>
@@ -76,7 +76,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2>Other considerations</h2>
 
     <p>If your form control is more complex than a text field or dropdown, consider giving users help with how to use the control via hint text. You should also offer an alternative, for example allowing users to type in a date field as well as having a date picker.</p>
-    <p>Using keyboard, switch or other input devices can be tiring for people with motor impairments so make sure users don’t have to use Tab more than they need to. Things like typeahead fields, the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">autocomplete attribute</a> and considering field number and order can help make your form easier to use.</p>
+    <p>Using keyboard, switch or other input devices can be tiring for people with motor impairments so make sure users don’t have to use Tab more than they need to. Things like typeahead fields, the <A href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">autocomplete attribute</A> and considering field number and order can help make your form easier to use.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

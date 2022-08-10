@@ -8,7 +8,7 @@ export const title = 'Skip to content links';
 const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
-const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png').default;
+const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -36,7 +36,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
 
       <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
-      <p>Read more on the WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</a>.</p>
+      <p>Read more on the WCAG success criteria on <A href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</A>.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

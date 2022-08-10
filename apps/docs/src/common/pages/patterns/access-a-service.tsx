@@ -9,9 +9,9 @@ const description = 'How to help users to access a service';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyAuthenticatePersonal = require('../../../../assets/images/patterns/authenticate-personal.svg').default;
-const applyAuthenticateReference = require('../../../../assets/images/patterns/authenticate-reference.svg').default;
-const applyAuthenticateTwoFa = require('../../../../assets/images/patterns/authenticate-2fa.svg').default;
+const applyAuthenticatePersonal = require('../../../../assets/images/patterns/authenticate-personal.svg');
+const applyAuthenticateReference = require('../../../../assets/images/patterns/authenticate-reference.svg');
+const applyAuthenticateTwoFa = require('../../../../assets/images/patterns/authenticate-2fa.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -101,7 +101,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on the Slack channel
         #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>

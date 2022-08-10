@@ -9,8 +9,8 @@ const description = 'A declaration allows users to confirm that they have unders
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyDeclaration1 = require('../../../../assets/images/patterns/make-a-declaration.png').default;
-const applyDeclaration2 = require('../../../../assets/images/patterns/make-a-declaration-privacy-terms-conditions.png').default;
+const applyDeclaration1 = require('../../../../assets/images/patterns/make-a-declaration.png');
+const applyDeclaration2 = require('../../../../assets/images/patterns/make-a-declaration-privacy-terms-conditions.png');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -92,19 +92,20 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">Research</h2>
       <p className="govuk-body">More research is needed. If your service uses this
-      pattern, <a href="https://github.com/UKHomeOffice/design-system/discussions/378">get in touch</a> to share your user research findings.</p>
+      pattern, <A href="https://github.com/UKHomeOffice/design-system/discussions/378">get in touch</A> to share your user research findings.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>All transactions should be reversible, or confirmation must be required before submission. See the <A href="/accessibility/standard/understandable#rr3.3.4">error prevention requirement</A> in the Home Office Accessibility Standard for more information.</p>
       <p>Consider alternative ways a user can submit a declaration offline.</p>
       <p>If your service uses this pattern, let us know of any insights you have
       on accessibility considerations.</p>
+      <A href="https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html">Read 'Error Prevention (Legal, Financial, Data)' on the W3c website</A>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you've got a question or suggestion share it on the Slack channel
         #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>

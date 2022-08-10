@@ -4,13 +4,22 @@ inputs:
   node:
     description: The version of Node.js to use.
     required: false
-    default: 14
+    default: 16
+  frozen-lockfile:
+    description: Whether to require a frozen lock-file
+    required: false
 runs:
   using: composite
   steps:
 
+    - name: Set locale
+      shell: bash
+      run: |
+        sudo locale-gen ${{ env.LANG }}
+        sudo update-locale LANG=${{ env.LANG }}
+
     - name: Setup PNPM
-      uses: pnpm/action-setup@v2.2.1
+      uses: pnpm/action-setup@v2.2.2
       with:
         version: 6.32.3
         run_install: false
@@ -18,7 +27,7 @@ runs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node }}
+        node-version: ${{ inputs.node }}
         cache: 'pnpm'
 
     - name: Cache Cypress.io
@@ -30,7 +39,17 @@ runs:
         key: cypress-os_${{ runner.os }}-lock_${{ env.cache-hash }}
 
     - name: Pull dependencies
-      uses: pnpm/action-setup@v2.2.1
+      if: ${{ !inputs.frozen-lockfile || inputs.frozen-lockfile == 'false' }}
+      uses: pnpm/action-setup@v2.2.2
       with:
-        version: 6.13.0
+        version: 6.32.3
+        run_install: |
+          recursive: true
+          args: [--no-frozen-lockfile]
+
+    - name: Pull dependencies (frozen lock-file)
+      if: ${{ inputs.frozen-lockfile && inputs.frozen-lockfile != 'false' }}
+      uses: pnpm/action-setup@v2.2.2
+      with:
+        version: 6.32.3
         run_install: true

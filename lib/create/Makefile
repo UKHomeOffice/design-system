@@ -6,7 +6,7 @@ dist_dir = ./dist
 source_dir = ../..
 target_dir = $(build_dir)/skel
 sources := $(wildcard \
-	$(source_dir)/plopfile.js \
+	$(source_dir)/plopfile.mjs \
 	$(source_dir)/pnpm-lock.yaml \
 )
 docs_source_dir = $(build_dir)/apps/template
@@ -21,7 +21,7 @@ proto_target_dir = $(build_dir)/skel-prototype
 skel_proto_deps = \
 	$(proto_target_dir)/src/common/app.scss \
 	$(proto_target_dir)/src/common/page-wrap.tsx
-plopfile = $(build_dir)/plopfile.js
+plopfile = $(build_dir)/plopfile.mjs
 
 .PHONY: all clean debug
 
@@ -42,7 +42,7 @@ $(dist_dir)/package.base.json: $(source_dir)/package.json
 	$(strip_package) '$(<)' > '$(@)'
 	$(patch_package) '$(@)'
 
-$(dist_dir)/package.app.json: $(plopfile) $(build_dir)/.github/workflows/main.yml
+$(dist_dir)/package.app.json: $(plopfile) $(build_dir)/.github/workflows/change-assurance.yml
 	mkdir -p '$(@D)'
 	cp -r '../../.github/' '$(build_dir)/.github'
 	./node_modules/.bin/plop --plopfile '$(plopfile)' app 'template' 'Template' 'Template.' 'n'
@@ -57,7 +57,7 @@ $(dist_dir)/skel-prototype.tar: $(skel_proto_deps)
 	mkdir -p '$(@D)'
 	cd 'build/' && tar -cf '../$(@)' 'skel-prototype/'
 
-$(plopfile): $(source_dir)/plopfile.js
+$(plopfile): $(source_dir)/plopfile.mjs
 	mkdir -p '$(@D)'
 	$(cp) '$(<)' '$(@D)'
 

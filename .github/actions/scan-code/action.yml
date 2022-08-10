@@ -1,0 +1,43 @@
+name: Scan code-base
+description: Scans the code-base for credentials and security vulnerabilities
+inputs:
+  token:
+    description: GitHub token
+    required: true
+runs:
+  using: composite
+  steps:
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: 'javascript'
+
+    - name: Cache vdb
+      uses: actions/cache@v3
+      with:
+        path: |
+          ${{ github.workspace }}/vdb
+        key: vdb-os_${{ runner.os }}
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+
+    - name: Scan
+      uses: ShiftLeftSecurity/scan-action@master
+      env:
+        DISABLE_TELEMETRY: 'true'
+        ENABLE_OSS_RISK: 'true'
+        FETCH_LICENSE: 'true'
+        VDB_HOME: ${{ github.workspace }}/vdb
+        WORKSPACE: https://github.com/${{ github.repository }}/blob/${{ github.sha }}
+        GITHUB_TOKEN: ${{ inputs.token }}
+      with:
+        type: json,yaml,serverless,dockerfile,kubernetes,depscan,bom
+        output: reports
+
+    - name: Upload scan reports
+      uses: actions/upload-artifact@master
+      with:
+        name: slscan-reports
+        path: reports

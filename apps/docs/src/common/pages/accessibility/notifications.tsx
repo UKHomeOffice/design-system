@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const notificationsImage = require('../../../../assets/images/accessibility/notifications.png').default;
+const notificationsImage = require('../../../../assets/images/accessibility/notifications.png');
 
 export const title = 'Notifications';
 const description = 'Accessibility guidance for notifications';

@@ -1,0 +1,45 @@
+name: Deploy
+on:
+  push:
+env:
+  LANG: "en_GB.UTF-8"
+  LANGUAGE: "en_GB:en"
+  LC_ALL: "en_GB.UTF-8"
+jobs:
+  chromatic:
+    name: Chromatic
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node: 16
+
+      - name: Push Storybook to Chromatic
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          buildScriptName: 'build:storybook'
+          autoAcceptChanges: master
+          exitZeroOnChanges: true
+          exitOnceUploaded: true
+
+  deploy-docs-to-netlify:
+    name: Deploy to Netlify and test
+    uses: './.github/workflows/deploy-to-netlify.yml'
+    with:
+      app: docs
+      node: 16
+      production-branch: master
+    secrets:
+      CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+      CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

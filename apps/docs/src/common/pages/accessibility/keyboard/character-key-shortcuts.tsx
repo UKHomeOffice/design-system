@@ -8,8 +8,8 @@ export const title = 'Character key shortcuts';
 const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
-const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png').default;
-const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png').default;
+const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png');
+const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -36,11 +36,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>look into remapping them so that they use two or more concurrent key presses OR</li>
       <li>disable the character key shortcuts if they do not bring value to the content</li>
       </ul>
-      <p>Find out more about WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html">character key shortcuts</a>.</p>
+      <p>Find out more about WCAG success criteria on <A href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html">character key shortcuts</A>.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <a href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</a>.</p>
+  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
 </div>
 
     </div>

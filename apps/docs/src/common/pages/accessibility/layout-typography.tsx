@@ -4,8 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const layoutImage01 = require('../../../../assets/images/accessibility/landmarks1.png').default;
-const layoutImage02 = require('../../../../assets/images/accessibility/landmarks2.png').default;
+const layoutImage01 = require('../../../../assets/images/accessibility/landmarks1.png');
+const layoutImage02 = require('../../../../assets/images/accessibility/landmarks2.png');
 
 export const title = 'Layout and typography';
 const description = 'Accessibility guidance for layout and typography';
@@ -117,7 +117,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>The page title, which appears in the browser tab, is vital for user navigation, and should always be unique. We recommend you use a format of ‘page – service – site’ for title text, for example ‘Enter your address – Apply for a passport – GOV.UK’.  </p>
 
-<p>Clear headings are important to help users find content within a page – see the <a href="/accessibility/headings">headings guidance</a> for more detail. You can also use <a href="/accessibility/keyboard/skip-to-content">skip links</a> to help keyboard users bypass repeated blocks of content.   </p>
+<p>Clear headings are important to help users find content within a page – see the <A href="/accessibility/headings">headings guidance</A> for more detail. You can also use <A href="/accessibility/keyboard/skip-to-content">skip links</A> to help keyboard users bypass repeated blocks of content.   </p>
 
 <p>Don’t capitalise every word in a title – it's easier for users to read ‘sentence case’, where only the first letter of the sentence is capitalised</p>
 <p>As well as headings, screenreader users can also use extra navigation functions such as landmarks to navigate within a page. </p>

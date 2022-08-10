@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const linksImage01 = require('../../../../assets/images/accessibility/colour-contrast.png').default;
+const linksImage01 = require('../../../../assets/images/accessibility/colour-contrast.png');
 
 export const title = 'Colour and contrast';
 const description = 'Accessibility guidance for colour and contrast';
@@ -142,7 +142,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <a href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</a>.</p>
+  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
 </div>
 
     </div>

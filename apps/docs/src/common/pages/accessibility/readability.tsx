@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const linksImage01 = require('../../../../assets/images/accessibility/readability-score.png').default;
+const linksImage01 = require('../../../../assets/images/accessibility/readability-score.png');
 
 export const title = 'Readability';
 const description = 'Accessibility guidance for readability';
@@ -107,7 +107,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <h3>Keep it simple</h3>
 
 <p>Follow the <A href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk">GOV.UK best practice guidance</A> for writing content. Usually we recommend writing for a maximum reading age of 9, even if you are writing for a specialist audience. </p>
-<p>Microsoft Word has a reading-age checker within the spellcheck function (see following image) – there will be a score at the end of the checker, which you can interpret with a <A href="https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/">conversion table</A>. See more <a href="#tools">readability tools</a> below.</p>
+<p>Microsoft Word has a reading-age checker within the spellcheck function (see following image) – there will be a score at the end of the checker, which you can interpret with a <A href="https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/">conversion table</A>. See more <A href="#tools">readability tools</A> below.</p>
 
 <div className="govuk-grid-row">
 <div className="govuk-grid-column-two-thirds">

@@ -1,14 +1,17 @@
-name: Main
+name: Change assurance
 on:
-  - pull_request
-  - push
+  pull_request:
+env:
+  LANG: "en_GB.UTF-8"
+  LANGUAGE: "en_GB:en"
+  LC_ALL: "en_GB.UTF-8"
 jobs:
   common:
     name: Dependencies, Unit tests
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ '14', '16' ]
+        node: [ '14', '16', '18' ]
     steps:
 
       - name: Check out repository
@@ -20,16 +23,13 @@ jobs:
           node: ${{ matrix.node }}
 
       - name: Run unit tests
-        run: npm test
+        uses: ./.github/actions/test-code
 
   libs:
     name: Build libraries
     needs:
       - common
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ '14' ]
     steps:
 
       - name: Check out repository
@@ -38,43 +38,10 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: ${{ matrix.node }}
+          node: 16
 
       - name: Build libraries
         run: npm run libs:build
-
-  chromatic:
-    name: Chromatic
-    needs:
-      - libs
-    runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request'
-    strategy:
-      matrix:
-        node: [ '14' ]
-    steps:
-
-      - name: Check out repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Setup
-        uses: ./.github/actions/setup
-        with:
-          node: ${{ matrix.node }}
-
-      - name: Push Storybook to Chromatic
-        env:
-          NODE_OPTIONS: --max_old_space_size=6144
-        uses: chromaui/action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          buildScriptName: 'build:storybook'
-          autoAcceptChanges: master
-          exitZeroOnChanges: true
-          exitOnceUploaded: true
 
   build-app:
     name: Build application
@@ -84,7 +51,6 @@ jobs:
     strategy:
       matrix:
         app: [ 'docs' ]
-        node: [ '14' ]
     steps:
 
       - name: Check out repository
@@ -93,7 +59,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: ${{ matrix.node }}
+          node: 16
 
       - name: Build
         uses: ./.github/actions/build-app
@@ -117,7 +83,6 @@ jobs:
       matrix:
         app: [ 'docs' ]
         browser: [ 'chromium', 'firefox', 'electron' ]
-        node: [ '14' ]
     steps:
 
       - name: Check out repository
@@ -126,7 +91,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: ${{ matrix.node }}
+          node: 16
 
       - name: Download build directory
         uses: actions/download-artifact@v3
@@ -142,19 +107,3 @@ jobs:
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
           node: ${{ matrix.node }}
-
-  deploy-docs-to-netlify:
-    name: Deploy to Netlify and test
-    if: github.event_name != 'pull_request'
-    needs:
-      - build-app
-    uses: './.github/workflows/deploy-to-netlify.yml'
-    with:
-      app: docs
-      node: 14
-      production-branch: master
-    secrets:
-      CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
-      CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

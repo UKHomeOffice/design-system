@@ -1,0 +1,29 @@
+name: Publish packages
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to publish
+        required: true
+jobs:
+  publish:
+    name: Publish packages
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node: 16
+          frozen-lockfile: true
+
+      - name: Publish
+        uses: ./.github/actions/publish
+        with:
+          npm-token: ${{ secrets.NPM_TOKEN }}
+          version: ${{ inputs.version }}

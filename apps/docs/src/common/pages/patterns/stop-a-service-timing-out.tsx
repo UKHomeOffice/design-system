@@ -9,7 +9,7 @@ const description = 'How to help users to stop a service from timing out';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyModalWindow = require('../../../../assets/images/patterns/timeout.svg').default;
+const applyModalWindow = require('../../../../assets/images/patterns/timeout.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -46,7 +46,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Adding content to a new page instead of showing it in a modal should be the default
       approach.</p>
       <p>Modals can be useful when you need to draw a user's attention to something, for example
-      timeout warnings. Please discuss with the wider community or email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a> before
+      timeout warnings. Please discuss with the wider community or email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> before
       using this pattern.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
@@ -72,12 +72,13 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>When a time limit, like a session timeout, is set ensure a user is informed, especially if this may result in a loss of data. See the <A href="/accessibility/timeouts">timeouts guidance</A> for more information.</p>
       <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
+      <p>Read our <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility guidance on timeouts</A>.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on the Slack channel
         #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>

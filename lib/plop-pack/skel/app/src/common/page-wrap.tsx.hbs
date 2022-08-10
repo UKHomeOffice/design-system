@@ -1,8 +1,15 @@
 import { FC, createElement as h } from 'react';
 import { PageProps } from '@not-govuk/app-composer';
+{{#if govuk}}
+import { GovUKPage as Page } from '@not-govuk/components';
+{{else}}
 import { Page } from '@hods/components';
+{{/if}}
+import config from './config';
 
 import './app.scss';
+
+const siteTitle = config.title;
 
 export const PageWrap: FC<PageProps> = ({ routes, children }) => {
   const compare = (a, b) => (
@@ -11,17 +18,28 @@ export const PageWrap: FC<PageProps> = ({ routes, children }) => {
     : -1
   );
   const navigation = routes
+    .filter(e => e.href !== '/' && e.href !== '/sitemap')
     .map(e => ({
       href: e.href,
       text: e.title
     }))
     .sort(compare);
+  const meta = [
+    { href: "/sitemap", text: "Sitemap" }
+  ];
 
   return (
     <Page
-      footerNavigation={navigation}
+      title={siteTitle}
       navigation={navigation}
-      title="My new service"
+{{#if govuk}}
+      feedbackHref="/feedback"
+      meta={meta}
+      phase="alpha"
+      serviceName={siteTitle}
+{{else}}
+      footerNavigation={meta}
+{{/if}}
     >
       {children}
     </Page>

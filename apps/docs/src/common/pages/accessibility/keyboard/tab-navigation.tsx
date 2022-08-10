@@ -8,8 +8,8 @@ export const title = 'Tab navigation';
 const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
-const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png').default;
-const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png').default;
+const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png');
+const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -29,7 +29,7 @@ const Page: FC<PageProps> = ({ location }) => (
         Tab navigation
       </h1>
       <p>A quick and easy way to test a common use of keyboard navigation is to use the tab key on your keyboard.</p>
-      <p>WebAIM has a useful list of <a href="https://webaim.org/techniques/keyboard/">common keyboard controls</a>.</p>
+      <p>WebAIM has a useful list of <A href="https://webaim.org/techniques/keyboard/">common keyboard controls</A>.</p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-quarter">
         <img src={tabImage01} alt="Image of tab key" className="image-examples" />
@@ -55,7 +55,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>The link information found in the bottom left corner can give you an idea of whether the element is selected – for instance in this image of GOV.UK, you can see where the link would take you to.</p>
       <p>Focusing on an interactive elements should not initiate a change such as submitting a form or changing focus to another interactive component.</p>
       <p>Interacting with an element should not automatically move a user to another page or open a popup, unless the user has been informed beforehand. Instead provide a submit to perform an action.</p>
-      <p>Sometimes you can get stuck in elements such as carousel content or social media widgets. When this happens and you cannot move out of an element with tab, first try using the esc key. If you continue to be stuck, this is a fault and is known as getting caught in a <a href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html">keyboard trap</a>.</p>
+      <p>Sometimes you can get stuck in elements such as carousel content or social media widgets. When this happens and you cannot move out of an element with tab, first try using the esc key. If you continue to be stuck, this is a fault and is known as getting caught in a <A href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html">keyboard trap</A>.</p>
 
 
 

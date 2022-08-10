@@ -1,0 +1,26 @@
+name: Test code-base
+description: Tests the code-base
+inputs:
+  baseline-branch:
+    description: Name of branch to store baseline on
+    required: false
+    default: master
+runs:
+  using: composite
+  steps:
+
+    - name: Run unit tests
+      shell: bash
+      run: npm test
+
+    - name: Upload test results
+      uses: actions/upload-artifact@master
+      with:
+        name: test-results
+        path: .jest-results.json
+
+    - name: Upload coverage report
+      uses: actions/upload-artifact@master
+      with:
+        name: coverage-report
+        path: coverage

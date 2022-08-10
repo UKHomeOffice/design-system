@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, Table } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const tables = require('../../../../assets/images/accessibility/tables.png').default;
+const tables = require('../../../../assets/images/accessibility/tables.png');
 
 export const title = 'Tables';
 const description = 'Accessibility guidance for tables content';

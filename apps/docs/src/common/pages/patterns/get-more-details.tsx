@@ -9,7 +9,7 @@ const description = 'How to help users to get more details on something';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyContextualHelp = require('../../../../assets/images/patterns/contextual-help.svg').default;
+const applyContextualHelp = require('../../../../assets/images/patterns/contextual-help.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -72,7 +72,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on the Slack channel
         #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-         email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+         email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>

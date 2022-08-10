@@ -9,12 +9,12 @@ const description = 'How to generate a new prototype based on the Home Office De
 const section = 'Get started';
 const subsection = 'Prototyping';
 
-const applyPrototype0 = require('../../../../assets/images/github-screen01.png').default;
-const applyPrototype1 = require('../../../../assets/images/terminal-screen01.png').default;
-const applyPrototype2 = require('../../../../assets/images/terminal-screen02.png').default;
-const applyPrototype3a = require('../../../../assets/images/github-screen02.png').default;
-const applyPrototype7 = require('../../../../assets/images/heroku02.png').default;
-const applyPrototype9 = require('../../../../assets/images/heroku4.png').default;
+const applyPrototype0 = require('../../../../assets/images/github-screen01.png');
+const applyPrototype1 = require('../../../../assets/images/terminal-screen01.png');
+const applyPrototype2 = require('../../../../assets/images/terminal-screen02.png');
+const applyPrototype3a = require('../../../../assets/images/github-screen02.png');
+const applyPrototype7 = require('../../../../assets/images/heroku02.png');
+const applyPrototype9 = require('../../../../assets/images/heroku4.png');
 
 
 const Page: FC<PageProps> = ({ location }) => (

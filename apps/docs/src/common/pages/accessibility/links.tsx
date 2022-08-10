@@ -4,10 +4,10 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const linksImage02 = require('../../../../assets/images/accessibility/links02.png').default;
-const linksImage03 = require('../../../../assets/images/accessibility/links03.png').default;
-const linksImage04 = require('../../../../assets/images/accessibility/links04.png').default;
-const linksImage05 = require('../../../../assets/images/accessibility/links05.png').default;
+const linksImage02 = require('../../../../assets/images/accessibility/links02.png');
+const linksImage03 = require('../../../../assets/images/accessibility/links03.png');
+const linksImage04 = require('../../../../assets/images/accessibility/links04.png');
+const linksImage05 = require('../../../../assets/images/accessibility/links05.png');
 
 export const title = 'Links';
 const description = 'Accessibility guidance for links content';

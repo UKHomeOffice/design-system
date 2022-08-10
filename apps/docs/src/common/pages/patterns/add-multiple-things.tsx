@@ -9,7 +9,7 @@ const description = 'How to help users to add multiple things';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applyAddAnother = require('../../../../assets/images/patterns/add-another.svg').default;
+const applyAddAnother = require('../../../../assets/images/patterns/add-another.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -78,7 +78,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you’ve got a question or suggestion share it on the Slack channel
         #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>

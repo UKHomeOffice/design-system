@@ -9,8 +9,8 @@ const description = 'How to help users to search for something';
 const section = 'Patterns';
 const subsection = 'Help users to';
 
-const applySearchNarrow = require('../../../../assets/images/patterns/search-narrow.svg').default;
-const applySearchWide= require('../../../../assets/images/patterns/search-wide.svg').default;
+const applySearchNarrow = require('../../../../assets/images/patterns/search-narrow.svg');
+const applySearchWide= require('../../../../assets/images/patterns/search-wide.svg');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -85,12 +85,13 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h3 className="govuk-heading-m">Research on this pattern</h3>
-      <p>Multiple Home Office services use search. If you have evidence this also works for your users, you <a href="https://github.com/UKHomeOffice/design-system/issues/322">can contribute to our backlog</a></p>
+      <p>Multiple Home Office services use search. If you have evidence this also works for your users, you <A href="https://github.com/UKHomeOffice/design-system/issues/322">can contribute to our backlog</A></p>
 
 
 
 
 
+      <p>Tabbing in a logical way to the interactive elements, being able to see the focus, and being able to interact with it. If not using native HTML elements and creating something custom refer to <A href="https://www.w3.org/TR/wai-aria-practices/wai-aria-practices">https://www.w3.org/TR/wai-aria-practices/wai-aria-practices</A> for expected interaction.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>It must be possible for someone using a keyboard to complete all tasks in a service. See the <A href="/accessibility/keyboard">keyboard guidance</A> for more information.</p>
@@ -113,7 +114,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you've got a question or suggestion share it on the Slack channel
           #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-          email <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
+          email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>

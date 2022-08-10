@@ -31,21 +31,21 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2>Index</h2>
     <h3>Readable</h3>
     <ul className="plain">
-      <li><a href="#rr3.1.x">3.1.x - Language of page and parts</a></li>
+      <li><A href="#rr3.1.x">3.1.x - Language of page and parts</A></li>
     </ul>
     <h3>Predictable</h3>
     <ul className="plain">
-      <li><a href="#rr3.2.1">3.2.1 - On Focus</a></li>
-      <li><a href="#rr3.2.2">3.2.2 - On Input</a></li>
-      <li><a href="#rr3.2.3">3.2.3 - Consistent navigation</a></li>
-      <li><a href="#rr3.2.4">3.2.4 - Consistent identification</a></li>
+      <li><A href="#rr3.2.1">3.2.1 - On Focus</A></li>
+      <li><A href="#rr3.2.2">3.2.2 - On Input</A></li>
+      <li><A href="#rr3.2.3">3.2.3 - Consistent navigation</A></li>
+      <li><A href="#rr3.2.4">3.2.4 - Consistent identification</A></li>
     </ul>
     <h3>Input assistance</h3>
     <ul className="plain">
-      <li><a href="#rr3.3.1">3.3.1 - Error identification</a></li>
-      <li><a href="#rr3.3.2">3.3.2 - Labels or instructions</a></li>
-      <li><a href="#rr3.3.3">3.3.3 - Error Suggestions</a></li>
-      <li><a href="#rr3.3.4">3.3.4 - Error prevention</a></li>
+      <li><A href="#rr3.3.1">3.3.1 - Error identification</A></li>
+      <li><A href="#rr3.3.2">3.3.2 - Labels or instructions</A></li>
+      <li><A href="#rr3.3.3">3.3.3 - Error Suggestions</A></li>
+      <li><A href="#rr3.3.4">3.3.4 - Error prevention</A></li>
     </ul>
 
     <h2>Readable</h2>

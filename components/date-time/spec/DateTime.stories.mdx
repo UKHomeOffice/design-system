@@ -1,0 +1,75 @@
+import { Meta, Preview, Props, Story } from "@not-govuk/docs-components";
+import { DateTime } from "../src/DateTime";
+import readMe from "../README.md";
+
+<Meta
+	title="Date-time"
+	component={DateTime}
+	parameters={{
+		chromatic: { viewports: [640, 480] },
+		description: "Displays date and time to users in services.",
+		jest: ["DateTime"],
+		notes: readMe,
+	}}
+/>
+
+# Date-time
+
+Use this component to display dates and times in an easy to read standard format.
+
+<Preview withToolbar>
+	<Story name="DateTime">
+		<DateTime
+			dateTime="2022-07-21T22:37:34.570Z"
+		/>
+	</Story>
+</Preview>
+
+<Props of={DateTime} />
+
+## When to use this component
+
+This component is a standard code implementation for displaying easy to read dates and times to users from [ISO format](https://en.wikipedia.org/wiki/ISO_8601).
+
+Follow the [time GOV.UK style guidelines](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#times) and the [GOV.UK date guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates) to decide which format to use within your service.
+
+## How it works
+### Time format
+
+You should use the 12-hour clock. For example, 5:30pm and 2:30am.
+
+If you have evidence that your internal users regularly use the 24-hour and find it easier, then you may choose to use the 24-hour clock to display time. For example, 17:30 and 02:30. We need more evidence and research to validate this.
+
+<Preview>
+	<Story name="24-hour">
+		<DateTime
+			dateTime="2022-07-21T22:37:34.570Z"
+			clockType={24}
+		/>
+	</Story>
+</Preview>
+
+### Order of date and time
+
+You should use evidence to assess whether the date or the time is most important to your users.
+
+If the time is more important, change the order so that the time comes before the date.
+
+<Preview>
+	<Story name="Time first">
+		<DateTime
+			dateTime="2022-07-21T22:37:34.570Z"
+			precedence="time"
+		/>
+	</Story>
+</Preview>
+
+## Contribute
+
+This component needs improving. We need evidence about:
+
+- when to use the 24-hour clock
+- displaying time zones
+- when to display the date before the time, or the time before the date
+
+To contribute, add your thoughts and research findings to our [github discussion](https://github.com/UKHomeOffice/design-system/discussions/386), or follow our [contribute guidance](/get-involved).

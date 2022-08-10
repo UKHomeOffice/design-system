@@ -8,11 +8,11 @@ export const title = 'Focus';
 const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
-const focusImage01 = require('../../../../../assets/images/accessibility/focus-01.png').default;
-const focusImage02 = require('../../../../../assets/images/accessibility/focus-02.png').default;
-const focusImage03 = require('../../../../../assets/images/accessibility/focus-03.png').default;
-const focusImage04 = require('../../../../../assets/images/accessibility/focus-04.png').default;
-const focusImage05 = require('../../../../../assets/images/accessibility/focus-05.png').default;
+const focusImage01 = require('../../../../../assets/images/accessibility/focus-01.png');
+const focusImage02 = require('../../../../../assets/images/accessibility/focus-02.png');
+const focusImage03 = require('../../../../../assets/images/accessibility/focus-03.png');
+const focusImage04 = require('../../../../../assets/images/accessibility/focus-04.png');
+const focusImage05 = require('../../../../../assets/images/accessibility/focus-05.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -61,13 +61,13 @@ const Page: FC<PageProps> = ({ location }) => (
       <br />
       <p>This logout example shows bad focus indication. A thin blue line surrounds the selected button. This can be hard to tell apart from the already blue button, especially if the element is small.</p>
       <p>A user would not immediately be able to pick this out as the focused element on a busy page.</p>
-      <p>When developing a service, setting a highly visible focus style effects many users. The default browser style is not sufficient to meet <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html">WCAG requirements for focus visibility</a>.</p>
+      <p>When developing a service, setting a highly visible focus style effects many users. The default browser style is not sufficient to meet <A href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html">WCAG requirements for focus visibility</A>.</p>
 
       <h2>Focus order</h2>
       <p>Keyboard users move through a page using a set range of navigation orders. It is not as easy to freely move about the page as it is with a mouse.</p>
       <p>This means your content should be in a sensible order - normally left to right, top to bottom.</p>
       <p>When you’re testing with the tab key, make sure that all interactive elements are selected and that you’re moving through the page in what you think is a sensible order. Your focus should not be jumping around the page.</p>
-      <p>When implementing <a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html">modal dialogs</a>, the focus order should be contained within the window until the user closes or dismisses it.</p>
+      <p>When implementing <A href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html">modal dialogs</A>, the focus order should be contained within the window until the user closes or dismisses it.</p>
 
       <h3>Good example</h3>
       <div className="govuk-grid-row">
@@ -86,7 +86,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
       <br />
       <p>This bad example shows irregular tab moves. The focus does not move in a left to right, top to bottom order - instead it jumps back up the page and from right to left. It also does not tab to all interactive elements in each section.</p>
-      <p>Find out more about WCAG success criteria on <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">focus order</a>.</p>
+      <p>Find out more about WCAG success criteria on <A href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">focus order</A>.</p>
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
   <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>

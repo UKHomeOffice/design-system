@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-const applyModalWindow = require('../../../../assets/images/patterns/timeout.svg').default;
+const applyModalWindow = require('../../../../assets/images/patterns/timeout.svg');
 
 export const title = 'Timeouts';
 const description = 'Accessibility guidance for timeouts';
