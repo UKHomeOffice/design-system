@@ -99,7 +99,6 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Consider alternative ways a user can submit a declaration offline.</p>
       <p>If your service uses this pattern, let us know of any insights you have
       on accessibility considerations.</p>
-      <A href="https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html">Read 'Error Prevention (Legal, Financial, Data)' on the W3c website</A>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>

@@ -91,7 +91,6 @@ const Page: FC<PageProps> = ({ location }) => (
 
 
 
-      <p>Tabbing in a logical way to the interactive elements, being able to see the focus, and being able to interact with it. If not using native HTML elements and creating something custom refer to <A href="https://www.w3.org/TR/wai-aria-practices/wai-aria-practices">https://www.w3.org/TR/wai-aria-practices/wai-aria-practices</A> for expected interaction.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>It must be possible for someone using a keyboard to complete all tasks in a service. See the <A href="/accessibility/keyboard">keyboard guidance</A> for more information.</p>
@@ -107,7 +106,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>you do not change results based on filter checkbox selection alone (for example you could provide a submit button)</li>
         <li>if the search generates errors, that screen reader users know what happened and how to fix it</li>
       </ul>
-      
+
       <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
       <div className="contact-us">
