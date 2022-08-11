@@ -95,10 +95,10 @@ const Page: FC<PageProps> = ({ location }) => (
       pattern, <A href="https://github.com/UKHomeOffice/design-system/discussions/378">get in touch</A> to share your user research findings.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
+      <p>All transactions should be reversible, or confirmation must be required before submission. See the <A href="/accessibility/standard/understandable#rr3.3.4">error prevention requirement</A> in the Home Office Accessibility Standard for more information.</p>
       <p>Consider alternative ways a user can submit a declaration offline.</p>
       <p>If your service uses this pattern, let us know of any insights you have
       on accessibility considerations.</p>
-      <A href="https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html">Read 'Error Prevention (Legal, Financial, Data)' on the W3c website</A>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>

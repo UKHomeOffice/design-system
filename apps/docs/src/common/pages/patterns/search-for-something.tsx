@@ -37,7 +37,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">Searching for records in a system.</p>
 
-      
+
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p>Use this pattern to help users find a person, task, place or another type of record in your system, when navigation alone is not a practical option.</p>
@@ -57,7 +57,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <img src={applySearchNarrow} className="image-examples" alt="An example of a service allowing search with narrow parameters" />
       </div>
 
-  
+
       <h2 className="govuk-heading-l">Wide search</h2>
       <p>Users may not have a lot of information to hand before starting their search. If this is the case, you should make your search parameters quite wide. For example, if a user is searching for a person, allow them to enter both name and DOB, as well as address and postcode. If this brings up too many results, allow filtering.
 
@@ -87,27 +87,14 @@ const Page: FC<PageProps> = ({ location }) => (
       <h3 className="govuk-heading-m">Research on this pattern</h3>
       <p>Multiple Home Office services use search. If you have evidence this also works for your users, you <A href="https://github.com/UKHomeOffice/design-system/issues/322">can contribute to our backlog</A></p>
 
-      
 
 
 
 
-      <h2 className="govuk-heading-l">Accessibility considerations</h2>
-      <p>Ensure you test your search with users with access needs. </p>
 
-      <h3 className="govuk-heading-m">Keyboard navigation</h3>
-
-      <p>Tabbing in a logical way to the interactive elements, being able to see the focus, and being able to interact with it. If not using native HTML elements and creating something custom refer to <A href="https://www.w3.org/TR/wai-aria-practices/wai-aria-practices">https://www.w3.org/TR/wai-aria-practices/wai-aria-practices</A> for expected interaction.</p>
-
-      <h3 className="govuk-heading-m">Screen readers</h3>
-      <p>You should make sure</p>
-      <ul className="govuk-list govuk-list--bullet">
-        <li>fields are labelled programmatically</li>
-        <li>all interactive elements have a name, role and value, see WAI-ARIA Authoring Practices 1.1 for expected values</li>
-      </ul>
-
-
-      <h3 className="govuk-heading-l">General</h3>
+      <h2 className="govuk-heading-l">Accessibility</h2>
+      <p>It must be possible for someone using a keyboard to complete all tasks in a service. See the <A href="/accessibility/keyboard">keyboard guidance</A> for more information.</p>
+      <p>All form fields have an associated visible label. Where this isn’t possible a non-visible label must be present. See the <A href="/accessibility/forms">forms guidance</A> for more information.</p>
       <p>You should make sure</p>
 
       <ul className="govuk-list govuk-list--bullet">
@@ -119,6 +106,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>you do not change results based on filter checkbox selection alone (for example you could provide a submit button)</li>
         <li>if the search generates errors, that screen reader users know what happened and how to fix it</li>
       </ul>
+
+      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
