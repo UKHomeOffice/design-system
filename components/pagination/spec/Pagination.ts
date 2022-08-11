@@ -1,32 +1,15 @@
 import { createElement as h } from 'react';
 import { jest } from '@jest/globals';
-import { mount, shallow } from '@not-govuk/component-test-helpers';
+import { mount } from '@not-govuk/component-test-helpers';
 import Pagination from '../src/Pagination';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { useLocation } from 'react-router';
-
-Enzyme.configure({ adapter: new Adapter() });
-
-// useLocation mock
-jest.mock('@not-govuk/route-utils', () => ({
-  ...jest.requireActual('@not-govuk/route-utils'),
-  useLocation: () => ({
-    hash: '',
-    pathname: '',
-    query: { page: 2 },
-    search: '',
-    state: undefined,
-  }),
-}));
 
 describe('Pagination', () => {
-  describe('when given valid props and valid url location data', () => {
+  describe.only('when given valid props and valid url location data', () => {
     const pagination = mount(
       h(Pagination, {
         results: 249,
         resultsPerPage: 25,
-        page: 3, // location taken from mocked urlLocation hook
+        page: 3,
       })
     );
 
@@ -38,21 +21,21 @@ describe('Pagination', () => {
     });
 
     it('is on the correct page', () => {
-      expect(current.text()).toEqual('2');
+      expect(current.text()).toEqual('3');
     });
 
     it('should not have a link', () => {
-      expect(current.html()).toContain('href=\'\'');
+      expect(current.html()).toContain('href=""');
     });
 
     const summary = pagination.find('.hods-pagination__summary').text();
 
     it('displays the correct value for results from', () => {
-      expect(summary.slice(8, 10)).toEqual('26');
+      expect(summary.slice(8, 10)).toEqual('51');
     });
 
     it('displays the correct value for results to', () => {
-      expect(summary.slice(13, 15)).toEqual('50');
+      expect(summary.slice(13, 15)).toEqual('75');
     });
 
     it('displays the correct value for total results', () => {
@@ -89,21 +72,21 @@ describe('Pagination', () => {
     };
 
     it('paginates content using url parameters', () => {
-      const wrapper = shallow(h(Pagination, props));
+      const wrapper = mount(h(Pagination, props));
 
       expect(
         wrapper.find('.hods-pagination__content').children().length
       ).toEqual(5);
-      expect(wrapper.find('[id="6"]').exists()).toBeTruthy();
-      expect(wrapper.find('[id="7"]').exists()).toBeTruthy();
-      expect(wrapper.find('[id="8"]').exists()).toBeTruthy();
-      expect(wrapper.find('[id="9"]').exists()).toBeTruthy();
-      expect(wrapper.find('[id="10"]').exists()).toBeTruthy();
-      expect(wrapper.find('[id="1"]').exists()).toBeFalsy();
-      expect(wrapper.find('[id="2"]').exists()).toBeFalsy();
-      expect(wrapper.find('[id="3"]').exists()).toBeFalsy();
-      expect(wrapper.find('[id="4"]').exists()).toBeFalsy();
-      expect(wrapper.find('[id="5"]').exists()).toBeFalsy();
+      expect(wrapper.find('[id="1"]').exists()).toBeTruthy();
+      expect(wrapper.find('[id="2"]').exists()).toBeTruthy();
+      expect(wrapper.find('[id="3"]').exists()).toBeTruthy();
+      expect(wrapper.find('[id="4"]').exists()).toBeTruthy();
+      expect(wrapper.find('[id="5"]').exists()).toBeTruthy();
+      expect(wrapper.find('[id="6"]').exists()).toBeFalsy();
+      expect(wrapper.find('[id="7"]').exists()).toBeFalsy();
+      expect(wrapper.find('[id="8"]').exists()).toBeFalsy();
+      expect(wrapper.find('[id="9"]').exists()).toBeFalsy();
+      expect(wrapper.find('[id="10"]').exists()).toBeFalsy();
       expect(wrapper.find('[id="11"]').exists()).toBeFalsy();
       expect(wrapper.find('[id="12"]').exists()).toBeFalsy();
       expect(wrapper.find('[id="13"]').exists()).toBeFalsy();
@@ -117,7 +100,7 @@ describe('Pagination', () => {
     });
 
     it.skip('moves to the next page when \'next\' is clicked', () => {
-      const wrapper = shallow(h(Pagination, {
+      const wrapper = mount(h(Pagination, {
         ...props,
         results: 20,
         resultsPerPage: 5,
@@ -168,12 +151,9 @@ describe('Pagination', () => {
 describe('when given alternative valid props', () => {
   const pagination = mount(
     h(Pagination, {
-      //@ts-ignore
-      results: '249',
-      //@ts-ignore
-      resultsPerPage: '25',
-      //@ts-ignore
-      page: '3', // location taken from mocked urlLocation hook
+      results: 39,
+      resultsPerPage: 10,
+      page: 1
     })
   );
 
@@ -185,7 +165,7 @@ describe('when given alternative valid props', () => {
   });
 
   it('is on the correct page', () => {
-    expect(current.text()).toEqual('2');
+    expect(current.text()).toEqual('1');
   });
 
   it('should not have a link', () => {
@@ -195,37 +175,26 @@ describe('when given alternative valid props', () => {
   const summary = pagination.find('.hods-pagination__summary').text();
 
   it('displays the correct value for results from', () => {
-    expect(summary.slice(8, 10)).toEqual('26');
+    expect(summary.slice(8, 9)).toEqual('1');
   });
 
   it('displays the correct value for results to', () => {
-    expect(summary.slice(13, 15)).toEqual('50');
+    expect(summary.slice(12, 14)).toEqual('10');
   });
 
   it('displays the correct value for total results', () => {
-    expect(summary.slice(19, 22)).toEqual('249');
+    expect(summary.slice(18, 20)).toEqual('39');
   });
 
   const ul = pagination.find('.hods-pagination__list-items');
   const prev = pagination.find('#prevButton');
   const next = pagination.find('#nextButton');
 
-  it('displays the previous link in the correct place', () => {
-    expect(ul.childAt(0)).toEqual(prev);
+  it('does not display the previous link', () => {
+    expect(ul.childAt(0)).not.toEqual(prev);
   });
 
   it('displays the next link in the correct place', () => {
-    expect(ul.childAt(6)).toEqual(next);
+    expect(ul.childAt(5)).toEqual(next);
   });
 });
-
-// describe('when given no props', () => {
-//   const pagination = mount(h(Pagination, {}));
-
-//   let current;
-//   beforeAll(() => {
-//     expect(
-//       (current = pagination.find('.hods-pagination__link--current'))
-//     ).toHaveLength(0);
-//   });
-// });
