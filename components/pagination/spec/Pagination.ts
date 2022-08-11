@@ -1,4 +1,5 @@
 import React, { createElement as h } from 'react';
+import { jest } from '@jest/globals';
 import { mount, shallow } from '@not-govuk/component-test-helpers';
 import Pagination from '../src/Pagination';
 import Enzyme from 'enzyme';
