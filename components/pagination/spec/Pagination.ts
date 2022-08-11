@@ -1,4 +1,4 @@
-import React, { createElement as h } from 'react';
+import { createElement as h } from 'react';
 import { jest } from '@jest/globals';
 import { mount, shallow } from '@not-govuk/component-test-helpers';
 import Pagination from '../src/Pagination';
@@ -42,7 +42,7 @@ describe('Pagination', () => {
     });
 
     it('should not have a link', () => {
-      expect(current.html()).toContain('href=''');
+      expect(current.html()).toContain('href=\'\'');
     });
 
     const summary = pagination.find('.hods-pagination__summary').text();
@@ -71,21 +71,26 @@ describe('Pagination', () => {
       expect(ul.childAt(6)).toEqual(next);
     });
 
+    const content = [
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    ];
+    const items = content.map((c, i) => h(
+      'div', {
+        key: i,
+        id: c.toString()
+      },
+      c.toString()
+    ));
+    const props = {
+      results: content.length,
+      resultsPerPage: 5,
+      page: 1,
+      children: items
+    };
+
     it('paginates content using url parameters', () => {
-      const content = [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-      ];
-      const wrapper = shallow(
-        <Pagination results={content.length} resultsPerPage={5} page={1}>
-          {content.map((c, i) => {
-            return (
-              <div id={`${c.toString()}`} key={i}>
-                {c}
-              </div>
-            );
-          })}
-        </Pagination>
-      );
+      const wrapper = shallow(h(Pagination, props));
+
       expect(
         wrapper.find('.hods-pagination__content').children().length
       ).toEqual(5);
@@ -111,21 +116,13 @@ describe('Pagination', () => {
       expect(wrapper.find('[id="20"]').exists()).toBeFalsy();
     });
 
-    it.skip('moves to the next page when 'next' is clicked', () => {
-      const content = [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-      ];
-      const wrapper = shallow(
-        <Pagination results={20} resultsPerPage={5} page={1}>
-          {content.map((c, i) => {
-            return (
-              <div id={`${c.toString()}`} key={i}>
-                {c}
-              </div>
-            );
-          })}
-        </Pagination>
-      );
+    it.skip('moves to the next page when \'next\' is clicked', () => {
+      const wrapper = shallow(h(Pagination, {
+        ...props,
+        results: 20,
+        resultsPerPage: 5,
+        page: 1
+      }));
       // assert correct starting page as page 2
       expect(wrapper.find('.hods-pagination__link--current').text()).toEqual(
         '2'
@@ -159,7 +156,7 @@ describe('Pagination', () => {
       expect(wrapper.find('[id="20"]').exists()).toBeFalsy();
     });
 
-    it.skip('moves to the previous page when 'previous' is clicked', () => {});
+    it.skip('moves to the previous page when \'previous\' is clicked', () => {});
 
     it.skip.each([1, 2, 3, 4])(
       'moves to page when page number is clicked',
