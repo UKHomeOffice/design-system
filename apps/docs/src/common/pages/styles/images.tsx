@@ -45,7 +45,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <p className="govuk-body"><A href="#Photography">Photography</A> can add visual interest to a page. We use it mostly in internal pages and services.</p>
-      <p className="govuk-body">Images must be relevant to the content, help users understand what they need to do and follow our guidance on the use of <A href="#Alternative text">alternative text</A>.</p>
+      <p className="govuk-body">Images must be relevant to the content, help users understand what they need to do and follow our guidance on the use of <A href="/accessibility/images">alternative text</A>.</p>
 
       <h3 className="govuk-heading-m">Sourcing images</h3>
       <p>Please contact <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> for advice on image use and for original source files.</p>
@@ -110,8 +110,9 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
       </div>
 
-      <h3 id="Alternative text" className="govuk-heading-m">Alternative text</h3>
-      <p className="govuk-body">Alternative text, or alt text, is read out by screen readers for those with visual impairments. It will also be displayed if an image does not load or if images have been switched off. We recommend following the guidance in the <A href="https://design-system.service.gov.uk/styles/images/">GOV.UK Design System</A> on the use of alt text.</p>
+      <h2 className="govuk-heading-l">Accessibility</h2>
+      <p className="govuk-body">All images must have an alternative text description that describes its meaning. See the <A href="/accessibility/images">images guidance</A> for more information.</p>
+      <p>If your service uses images, let us know of any insights you have on accessibility considerations.</p>
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
