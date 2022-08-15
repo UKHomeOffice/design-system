@@ -358,9 +358,11 @@ importers:
   components/pagination:
     specifiers:
       '@hods/sass-base': workspace:^0.3.5
+      '@jest/globals': 28.1.3
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.5.7
       '@not-govuk/component-test-helpers': ^0.5.7
+      '@not-govuk/route-utils': ^0.5.7
       '@types/react': 16.14.24
       jest: 28.1.3
       jest-environment-jsdom: 28.1.3
@@ -369,7 +371,9 @@ importers:
     dependencies:
       '@hods/sass-base': link:../../lib/sass-base
       '@not-govuk/component-helpers': 0.5.7
+      '@not-govuk/route-utils': 0.5.7_react-router-dom@5.3.3
     devDependencies:
+      '@jest/globals': 28.1.3
       '@mdx-js/react': 1.6.22_react@16.14.0
       '@not-govuk/component-test-helpers': 0.5.7_57f8232eecda0638ee341414c70496e7
       '@types/react': 16.14.24
@@ -13749,7 +13753,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.1
+      follow-redirects: 1.15.1_debug@4.3.2
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug

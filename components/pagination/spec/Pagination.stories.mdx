@@ -33,12 +33,12 @@ Design so you don’t need pagination as it hides content from the user. It can 
 that gets in the way to what the users are looking for. This may indicate the design isn’t working.
 
 You can avoid pagination by:
+
 - setting the default number of results per page (try 50 items per page, although do test with users to get it right for that service)
 - avoid infinite scrolling as this is problematic for keyboard-only users
 
 Consider what the sorting order should be to make the search more relevant. The more specific it is to the user's search criteria,
 the better the search results.
-
 
 ## How it works
 
@@ -47,10 +47,16 @@ the better the search results.
 <Preview>
   <Story name="Standard">
     <Pagination
-      results="249"
-      resultsPerPage="25"
+      results="20"
+      resultsPerPage="5"
       page="3"
-    />
+    >
+      {[
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      ].map((c) => {
+        return <div id={`${c.toString()}`}>{c}</div>;
+      })}
+    </Pagination>
   </Story>
 </Preview>
 
@@ -61,10 +67,16 @@ Display the first page of results.
 <Preview>
   <Story name="Start">
     <Pagination
-      results="737"
-      resultsPerPage="25"
+      results="20"
+      resultsPerPage="5"
       page="1"
-    />
+    >
+      {[
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      ].map((c) => {
+        return <div id={`${c.toString()}`}>{c}</div>;
+      })}
+    </Pagination>
   </Story>
 </Preview>
 
@@ -76,10 +88,17 @@ Show the middle of the results.
 <Preview>
   <Story name="Middle">
     <Pagination
-      results="737"
-      resultsPerPage="25"
-      page="15"
-    />
+      results="30"
+      resultsPerPage="5"
+      page="3"
+    >
+      {[
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+      ].map((c) => {
+        return <div id={`${c.toString()}`}>{c}</div>;
+      })}
+    </Pagination>
   </Story>
 </Preview>
 
@@ -91,10 +110,17 @@ Display the last page of results.
 <Preview>
   <Story name="End">
     <Pagination
-      results="737"
-      resultsPerPage="25"
-      page="30"
-    />
+      results="30"
+      resultsPerPage="5"
+      page="6"
+    >
+      {[
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+      ].map((c) => {
+        return <div id={`${c.toString()}`}>{c}</div>;
+      })}
+    </Pagination>
   </Story>
 </Preview>
 
@@ -106,10 +132,17 @@ Display the second to last page of results.
 <Preview>
   <Story name="NrEnd">
     <Pagination
-      results="737"
-      resultsPerPage="25"
-      page="29"
-    />
+      results="30"
+      resultsPerPage="5"
+      page="5"
+    >
+      {[
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+      ].map((c) => {
+        return <div id={`${c.toString()}`}>{c}</div>;
+      })}
+    </Pagination>
   </Story>
 </Preview>
 
@@ -119,18 +152,27 @@ Display the second to last page of results.
 Display a different number of results per page.
 
 <Preview>
-  <Story name="ResultsPerPage">
+  <Story name="Odd Number">
     <Pagination
-      results="249"
-      resultsPerPage="10"
-      page="2"
-    />
+      results="30"
+      resultsPerPage="7"
+      page="5"
+    >
+      {[
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+      ].map((c) => {
+        return <div id={`${c.toString()}`}>{c}</div>;
+      })}
+    </Pagination>
   </Story>
 </Preview>
+
 
 ## Research
 
 If your service uses this component, let us know of any insights you have on research.
+
 
 ## Accessibility
 
