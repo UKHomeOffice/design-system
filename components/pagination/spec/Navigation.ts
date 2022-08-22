@@ -1,5 +1,5 @@
 import { createElement as h } from 'react';
-import { mount } from '@not-govuk/component-test-helpers';
+import { render, screen } from '@not-govuk/component-test-helpers';
 import Navigation from '../src/Navigation';
 
 describe('Navigation', () => {
@@ -8,43 +8,41 @@ describe('Navigation', () => {
     resultsPerPage: 3,
     page: 3,
   };
+  const current = () => screen.getByRole('link', { current: true });
 
   describe('when given minimal valid props', () => {
-    const navigation = mount(h(Navigation, minimalProps));
+    beforeEach(() => {
+      render(h(Navigation, minimalProps));
+    });
 
-    const summary = navigation.find('.hods-pagination-navigation__summary');
-    const current = navigation.find('A[aria-current="true"]').first();
-
-    it('shows the current page', () => expect(current.length).toEqual(1));
-    it('displays the correct page', () => expect(current.text()).toEqual('3'));
-    it('displays a summary', () => expect(summary.text()).toEqual('Showing 7 - 9 of 30 results'));
-    it('displays a link to the next page', () => expect(navigation.text()).toContain('Next'));
-    it('displays a link to previous page', () => expect(navigation.text()).toContain('Previous'));
+    it('shows the current page', () => expect(current()).toBeTruthy());
+    it('displays the correct page', () => expect(current().textContent).toBe('3'));
+    it('displays a summary', () => expect(screen.getByText('Showing 7 - 9 of 30 results')).toBeTruthy());
+    it('displays a link to the next page', () => expect(screen.getByLabelText('Next page', { exact: false }).textContent).toContain('Next'));
+    it('displays a link to the previous page', () => expect(screen.getByLabelText('Previous page', { exact: false }).textContent).toContain('Previous'));
   });
 
   describe('when given minimal valid props set to the first page', () => {
-    const navigation = mount(h(Navigation, { ...minimalProps, page: 1 }));
+    beforeEach(() => {
+      render(h(Navigation, { ...minimalProps, page: 1 }));
+    });
 
-    const summary = navigation.find('.hods-pagination-navigation__summary');
-    const current = navigation.find('A[aria-current="true"]').first();
-
-    it('shows the current page', () => expect(current.length).toEqual(1));
-    it('displays the correct page', () => expect(current.text()).toEqual('1'));
-    it('displays a summary', () => expect(summary.text()).toEqual('Showing 1 - 3 of 30 results'));
-    it('displays a link to the next page', () => expect(navigation.text()).toContain('Next'));
-    it('does NOT display a link to previous page', () => expect(navigation.text()).not.toContain('Previous'));
+    it('shows the current page', () => expect(current()).toBeTruthy());
+    it('displays the correct page', () => expect(current().textContent).toBe('1'));
+    it('displays a summary', () => expect(screen.getByText('Showing 1 - 3 of 30 results')).toBeTruthy());
+    it('displays a link to the next page', () => expect(screen.getByLabelText('Next page', { exact: false }).textContent).toContain('Next'));
+    it('does NOT display a link to the previous page', () => expect(screen.queryByLabelText('Previous page', { exact: false })).toBeFalsy());
   });
 
   describe('when given minimal valid props set to the last page', () => {
-    const navigation = mount(h(Navigation, { ...minimalProps, page: 10 }));
+    beforeEach(() => {
+      render(h(Navigation, { ...minimalProps, page: 10 }));
+    });
 
-    const summary = navigation.find('.hods-pagination-navigation__summary');
-    const current = navigation.find('A[aria-current="true"]').first();
-
-    it('shows the current page', () => expect(current.length).toEqual(1));
-    it('displays the correct page', () => expect(current.text()).toEqual('10'));
-    it('displays a summary', () => expect(summary.text()).toEqual('Showing 28 - 30 of 30 results'));
-    it('does NOT display a link to the next page', () => expect(navigation.text()).not.toContain('Next'));
-    it('displays a link to previous page', () => expect(navigation.text()).toContain('Previous'));
+    it('shows the current page', () => expect(current()).toBeTruthy());
+    it('displays the correct page', () => expect(current().textContent).toBe('10'));
+    it('displays a summary', () => expect(screen.getByText('Showing 28 - 30 of 30 results')).toBeTruthy());
+    it('does NOT display a link to the next page', () => expect(screen.queryByLabelText('Next page', { exact: false })).toBeFalsy());
+    it('displays a link to the previous page', () => expect(screen.getByLabelText('Previous page', { exact: false }).textContent).toContain('Previous'));
   });
 });

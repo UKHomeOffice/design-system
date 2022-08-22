@@ -1,6 +1,6 @@
 import { createElement as h } from 'react';
 import { jest } from '@jest/globals';
-import { mount } from '@not-govuk/component-test-helpers';
+import { render, screen } from '@not-govuk/component-test-helpers';
 import Pagination from '../src/Pagination';
 
 describe('Pagination', () => {
@@ -15,24 +15,21 @@ describe('Pagination', () => {
       `Item #${i + 1}`
     )
   );
+  const current = () => screen.getByRole('link', { current: true });
 
   describe('when given minimal valid props', () => {
-    const pagination = mount(h(Pagination, minimalProps, children));
+    beforeEach(() => {
+      render(h(Pagination, minimalProps, children));
+    });
 
-    const content = pagination.find('.hods-pagination__content');
-    const navigation = pagination.find('.hods-pagination__navigation');
-
-    const summary = navigation.find('.hods-pagination__navigation__summary');
-    const current = navigation.find('A[aria-current="true"]').first();
-
-    it('shows the current page', () => expect(current.length).toEqual(1));
-    it('displays the first page', () => expect(current.text()).toEqual('1'));
-    it('displays the first element', () => expect(content.text()).toContain('Item #1'));
-    it('does NOT display the 11th element', () => expect(content.text()).not.toContain('Item #11'));
-    it('does NOT display the last element', () => expect(content.text()).not.toContain('Item #30'));
-    it('displays a summary', () => expect(summary.text()).toEqual('Showing 1 - 10 of 30 results'));
-    it('displays a link to the next page', () => expect(navigation.text()).toContain('Next'));
-    it('does NOT display a link to previous page', () => expect(navigation.text()).not.toContain('Previous'));
+    it('shows the current page', () => expect(current()).toBeTruthy());
+    it('displays the first page', () => expect(current().textContent).toBe('1'));
+    it('displays the first element', () => expect(screen.getByText('Item #1')).toBeTruthy());
+    it('does NOT display the 11th element', () => expect(screen.queryByText('Item #11')).toBeFalsy());
+    it('does NOT display the last element', () => expect(screen.queryByText('Item #30')).toBeFalsy());
+    it('displays a summary', () => expect(screen.getByText('Showing 1 - 10 of 30 results')).toBeTruthy());
+    it('displays a link to the next page', () => expect(screen.getByLabelText('Next page', { exact: false }).textContent).toContain('Next'));
+    it('does NOT display a link to the previous page', () => expect(screen.queryByLabelText('Previous page', { exact: false })).toBeFalsy());
 
     describe.skip('when \'Next\' is clicked', () => {
     });
