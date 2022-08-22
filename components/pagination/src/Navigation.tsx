@@ -63,11 +63,13 @@ export const Navigation: FC<NavigationProps> = ({
         {page > 1 ? (
           <li
             className={classes('item')}
-            id="prevButton"
             key="prev"
-            aria-label={`Previous page, go to page ${page - 1}`}
           >
-            <A className={classes('link')} href={page > 1 ? hl[1] : ''}>
+            <A
+              className={classes('link')}
+              href={page > 1 ? hl[1] : ''}
+              aria-label={`Previous page, go to page ${page - 1}`}
+            >
               <span aria-hidden="true" role="presentation">
                 &laquo;
               </span>{' '}
@@ -99,13 +101,12 @@ export const Navigation: FC<NavigationProps> = ({
         {resultsTo == results ? null : (
           <li
             className={classes('item')}
-            id="nextButton"
             key="next"
-            aria-label={`Next page, go to page ${page + 1}`}
           >
             <A
               className={classes('link')}
               href={resultsTo == results ? '' : hl[3]}
+              aria-label={`Next page, go to page ${page + 1}`}
             >
               Next{' '}
               <span aria-hidden="true" role="presentation">
