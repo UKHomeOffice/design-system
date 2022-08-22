@@ -19,11 +19,38 @@ A component for navigating a long list of results.
 
 <Preview withToolbar>
   <Story name="Pagination">
-    <Pagination
-      results="249"
-      resultsPerPage="25"
-      page="3"
-    />
+    <Pagination>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+      <div>21</div>
+      <div>22</div>
+      <div>23</div>
+      <div>24</div>
+      <div>25</div>
+      <div>26</div>
+      <div>27</div>
+      <div>28</div>
+      <div>29</div>
+      <div>30</div>
+    </Pagination>
   </Story>
 </Preview>
 
@@ -46,124 +73,120 @@ the better the search results.
 
 <Preview>
   <Story name="Standard">
-    <Pagination
-      results="20"
-      resultsPerPage="5"
-      page="3"
-    >
-      {[
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-      ].map((c) => {
-        return <div id={`${c.toString()}`}>{c}</div>;
-      })}
+    <Pagination>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+      <div>21</div>
+      <div>22</div>
+      <div>23</div>
+      <div>24</div>
+      <div>25</div>
+      <div>26</div>
+      <div>27</div>
+      <div>28</div>
+      <div>29</div>
+      <div>30</div>
     </Pagination>
   </Story>
 </Preview>
-
-### Start of pagination
-
-Display the first page of results.
-
-<Preview>
-  <Story name="Start">
-    <Pagination
-      results="20"
-      resultsPerPage="5"
-      page="1"
-    >
-      {[
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-      ].map((c) => {
-        return <div id={`${c.toString()}`}>{c}</div>;
-      })}
-    </Pagination>
-  </Story>
-</Preview>
-
-
-### Middle of pagination
-
-Show the middle of the results.
-
-<Preview>
-  <Story name="Middle">
-    <Pagination
-      results="30"
-      resultsPerPage="5"
-      page="3"
-    >
-      {[
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-        21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-      ].map((c) => {
-        return <div id={`${c.toString()}`}>{c}</div>;
-      })}
-    </Pagination>
-  </Story>
-</Preview>
-
-
-### End of pagination
-
-Display the last page of results.
-
-<Preview>
-  <Story name="End">
-    <Pagination
-      results="30"
-      resultsPerPage="5"
-      page="6"
-    >
-      {[
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-        21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-      ].map((c) => {
-        return <div id={`${c.toString()}`}>{c}</div>;
-      })}
-    </Pagination>
-  </Story>
-</Preview>
-
-
-### Near end
-
-Display the second to last page of results.
-
-<Preview>
-  <Story name="NrEnd">
-    <Pagination
-      results="30"
-      resultsPerPage="5"
-      page="5"
-    >
-      {[
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-        21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-      ].map((c) => {
-        return <div id={`${c.toString()}`}>{c}</div>;
-      })}
-    </Pagination>
-  </Story>
-</Preview>
-
 
 ### Results per page
 
 Display a different number of results per page.
 
 <Preview>
-  <Story name="Odd Number">
-    <Pagination
-      results="30"
-      resultsPerPage="7"
-      page="5"
-    >
-      {[
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-        21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-      ].map((c) => {
-        return <div id={`${c.toString()}`}>{c}</div>;
-      })}
+  <Story name="Size">
+    <Pagination size={5}>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+      <div>21</div>
+      <div>22</div>
+      <div>23</div>
+      <div>24</div>
+      <div>25</div>
+      <div>26</div>
+      <div>27</div>
+      <div>28</div>
+      <div>29</div>
+      <div>30</div>
+    </Pagination>
+  </Story>
+</Preview>
+
+
+### Custom query parameter
+
+Control the GET / query parameter used to set the active page with the `pageParameter` prop.
+
+<Preview>
+  <Story name="Parameter">
+    <Pagination pageParameter="p">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+      <div>21</div>
+      <div>22</div>
+      <div>23</div>
+      <div>24</div>
+      <div>25</div>
+      <div>26</div>
+      <div>27</div>
+      <div>28</div>
+      <div>29</div>
+      <div>30</div>
     </Pagination>
   </Story>
 </Preview>
