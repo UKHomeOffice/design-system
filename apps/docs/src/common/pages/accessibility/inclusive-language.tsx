@@ -46,12 +46,12 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>use age-related descriptors like ‘young’ or ‘old’ - use specific age ranges, such as ‘18-24’ or ‘over 65’ </li>
         </ul>
         <h3>Disability</h3>
-        <p>As well as following our <A href="https://ukhomeoffice.github.io/accessibility-posters/">accessible design principles</A>, you should consider how your language is inclusive to people who face different barriers to accessing services.</p>
+        <p>Follow our <A href="https://ukhomeoffice.github.io/accessibility-posters/">accessible design principles</A> and consider how your language is inclusive to people who face different barriers to accessing services.</p>
           <p>Do:</p>
           <ul>
-          <li>clearly signpost users to alternative methods of accessing the service and get support if needed</li>
+          <li>clearly signpost users to alternative methods of accessing a service and get support, if needed</li>
           <li>recognise the variety of barriers in society that can make life harder for people</li>
-          <li>use positive and person-centred language, when talking about people with disabilities - such as, people with health conditions or impairments</li>
+          <li>use positive and person-centred language, when talking about people with disabilities - for example, 'people with health conditions or impairments'</li>
           </ul>
 
           <p>Do not:</p>
@@ -89,7 +89,7 @@ const Page: FC<PageProps> = ({ location }) => (
               <h4>Sexuality</h4>
                 <p>Do:</p>
                 <ul>
-                <li>provide a reason for asking a person’s sexuality, if you need to ask for it</li>
+                <li>give a reason for asking a person’s sexuality, if you need to ask for it</li>
                 <li>always use gender neutral terms when referring to people and their relationships</li>
                 </ul>
                 <p>Do not:</p>
@@ -97,30 +97,29 @@ const Page: FC<PageProps> = ({ location }) => (
                 <li>give ‘same-sex’ relationships as a different radio option from ‘spouse, partner or cohabitant’ in questions</li>
                 <li>use language that makes assumptions about a person’s sexuality </li>
                 </ul>
-              <h3>Race ethnicity and religion</h3>
+              <h3>Ethnicity, nationality and religion</h3>
                 <p>Do:</p>
                 <ul>
-                <li>only refer to people’s race ethnicity or religion if it’s relevant to the content </li>
-                <li>ask how people identify themselves, and be aware of complexities within racial, ethnic, and religious identities </li>
+                <li>only refer to people’s ethnicity or religion if it’s relevant to the content </li>
+                <li>ask how people identify themselves, and be aware of complexities within ethnic and religious identities </li>
                 <li>recognise the negative impacts of using broad terminology to homogenise diverse communities</li>
                 </ul>
-                <h4>Race and ethnicity</h4>
+                <h4>Ethnicity and nationality</h4>
                 <p>Do:</p>
                 <ul>
-                <li>sense-check the language used with ethnic and racial diversity in mind</li>
-                <li>use upper case when referring to racial and ethnic groups  </li>
+                <li>sense-check your language with ethnic diversity in mind</li>
+                <li>capitalise ethnic groups and nationalities when writing about, or asking users for their, ethicity or nationality</li>
                 </ul>
                   <p>Do not:</p>
                   <ul>
-                  <li>group diverse geographical regions together - spell out specific nationalities, or racial and ethnic groups when relevant</li>
-                  <li>use acronyms like BAME or BME - they do not refer to a singular homogeneous ethnic group</li>
+                  <li>group diverse geographical regions together - spell out specific nationalities and ethnic groups when relevant</li>
+                  <li>use acronyms like 'BAME' or 'BME' - they do not refer to a singular homogeneous ethnic group</li>
                   <li>use language that can be linked to harmful stereotypes and assumptions</li>
-                  <li>use terms that imply inferiority or superiority - for example ‘the minority’, ‘the majority’</li>
                   </ul>
                   <h4>Religion</h4>
                   <p>Do:</p>
                   <ul>
-                  <li>always consider the various religious practices and beliefs that people have - and recognise the diverse needs of people from different faiths within your writing</li>
+                  <li>always consider the various religious practices and beliefs that people have - and recognise the diverse needs of people from different faiths in your writing</li>
 
                   </ul>
                     <p>Do not:</p>
