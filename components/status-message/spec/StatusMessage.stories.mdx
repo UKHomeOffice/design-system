@@ -36,9 +36,7 @@ Use status messages to:
 Status messages are similar to alerts but are primarily used for internal services and can include actions for users to take.
 For less prominent status indicators you could use tags.
 
-
 ## How it works
-
 ### Standard status message with an action
 
 <Preview>
@@ -62,16 +60,41 @@ For less prominent status indicators you could use tags.
   </Story>
 </Preview>
 
-## Services using this component
+## Accessibility
+All users benefit from clear, visible notification messages which are presented in a consistent, predictable way. See the <a href="/accessibility/notifications">notifications guidance</a> for more information
+
+## Research
+The status message is used by:
 
   - Returns and movement
   - Passport renewals
   - Passport application search
+  - a service used by staff to assess risk at the border
 
-## Research
-If your service uses this component, let us know of any insights you have on research.
+For a service to assess border risk, this was used at the top of the screen to:
 
-## Accessibility
-All users benefit from clear, visible notification messages which are presented in a consistent, predictable way. See the <a href="/accessibility/notifications">notifications guidance</a> for more information.
+- show who owns the case
+- show if the case is read only
+- allow users to take over the case
 
-If your service uses this component, let us know of any insights you have on accessibility considerations.
+<Preview>
+  <Story name="ExampleFromIntenalService">
+    <StatusMessage status="Read only" actions={[
+      { href: '#', text: 'Take over' }
+    ]}>
+      - Liam Davies is working on these results<br />
+         Last active: 5 minutes ago
+    </StatusMessage>
+  </Story>
+</Preview>
+
+Research with 6 users showed that users understood the message and how to interact with it.
+
+## Help improve this component
+
+This component needs improving. We need evidence about:
+
+- how to write for this component
+- when to use an [alert](/components?name=Alert), [expandable banner](/components?name=Expandable%20banner) or status message
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/419), or follow our [contribute guidance](/get-involved).
