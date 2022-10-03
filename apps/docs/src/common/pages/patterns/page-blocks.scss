@@ -1,0 +1,29 @@
+@import "@hods/sass-base";
+
+$app-annotate-block-label-color: #ffffff;
+
+.app-letter-model {
+  background-color: white;
+  padding: 0.5em;
+  outline: 2px solid govuk-colour("dark-grey");
+  margin-bottom: govuk-spacing(6);
+}
+
+.app-annotate-block {
+  position: relative;
+  margin-bottom: govuk-spacing(6);
+  padding: govuk-spacing(3);
+  padding-top: 3em;
+  outline: 2px dashed govuk-colour("dark-grey");
+}
+
+.app-annotate-block__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .25em .5em;
+  border-right: 2px dashed govuk-colour("dark-grey");
+  border-bottom: 2px dashed govuk-colour("dark-grey");
+  background: $app-annotate-block-label-color;
+  font-family: $govuk-font-family;
+}

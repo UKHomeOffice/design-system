@@ -41,6 +41,13 @@ export const menu = (
         text: 'Search for something'
       }
     ]} />
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Send users</span>
+    <NavigationMenu items={[
+      {
+        href: '/patterns/send-a-letter',
+        text: 'A letter'
+      }
+    ]} />
   </Fragment>
 );
 
