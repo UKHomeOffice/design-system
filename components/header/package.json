@@ -1,6 +1,6 @@
 {
   "name": "@hods/header",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "HODS' page header.",
   "main": "src/Header.tsx",
   "sass": "assets/Header.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.3.5",
+    "@hods/sass-base": "workspace:^0.3.6",
     "@not-govuk/anchor-list": "^0.5.8",
     "@not-govuk/component-helpers": "^0.5.8",
     "@not-govuk/link": "^0.5.8"
