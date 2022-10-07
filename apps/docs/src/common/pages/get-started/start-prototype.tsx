@@ -35,35 +35,36 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">{subsection}</span>
         {title}
       </h1>
-      <p>Rapidly create HTML prototypes of internal Home Office services. </p>
+      <p>Rapidly create HTML prototypes of internal Home Office services.</p>
 
       <div className="govuk-inset-text">
-      If your team is planning to use the Home Office design system production framework, you
-      might consider having the developers create a blank 'app' within the
-      project to make it easier to transform your prototype into a production
-      application.
+        If your team is planning to use the Home Office design system production framework,
+        consider having the developers create a blank 'app' within the project to make it easier 
+        to transform your prototype into a production application.
       </div>
 
       <h2>Before you start</h2>
+        <p>Mac users can use the Terminal application. It's located in the <code>Utilities</code> folder in <code>Applications</code>.</p>
+        <p>Windows users should install <A href="https://git-scm.com/download/win">Git Bash (direct download)</A> to use these instructions.</p>
         <p>You'll need:</p>
         <ol>
-          <li><A href="https://nodejs.org/en/">Node.js</A> - version 12.x.x or 14.x.x</li>
-          <li><A href="https://github.com/">GitHub</A> and <A href="http://heroku.com/">Heroku</A> accounts</li>
+          <li><A href="https://nodejs.org/en/">Node.js (version 16)</A> - you can use version 14 too.</li>
+          <li><A href="https://github.com/">GitHub</A> and <A href="http://heroku.com/">Heroku</A> accounts.</li>
           <li>Terminal - an application to install, start and stop a prototype. Using a terminal is sometimes called ‘using the command line’.</li>
+          <li>A text editor, such as <A href="https://code.visualstudio.com/">VSCode</A> or <A href="https://atom.io/">Atom</A>.</li>
         </ol>
+        <p>To install Node.js or a text editor, you'll need administrator access to your computer.</p>
         <p>Create your GitHub and Heroku accounts with any email address, including your Home Office email addresses.</p>
-        <p>If you need to use multiple version of Node.js for different prototypes, install <A href="https://github.com/nvm-sh/nvm">node version manager</A>.</p>
+
       <h2>Step 1. Set up your GitHub repository</h2>
         <p>This is where your prototype code will be stored.</p>
         <ol>
           <li>Log into your <A href="https://github.com/">GitHub</A> account.</li>
           <li>Create a <A href="https://github.com/new">new repository</A>.</li>
-          <li>For our example, we'll use review-licence-applications as the repository name.</li>
+          <li>For our example, we'll use <code>review-licence-applications</code> as the repository name.</li>
           <li>Select public for the privacy.</li>
           <li>Do not add a README, a .gitignore or a license, these will come later.</li>
         </ol>
-
-        <p>Your repository should look like this <A href="https://github.com/tomyems/blank-repository">example blank repostory</A>.</p>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
@@ -97,7 +98,7 @@ const Page: FC<PageProps> = ({ location }) => (
           </ol>
 
         <h3>Download the dependencies</h3>
-        <p>Run <code>npm install</code> to pull down the dependencies to make your prototype work. These are stored in the <code>node_modules</code> folder. They are specific to this prototype and do not affect any of your other prototypes.</p>
+        <p>Run <code>npm install</code> to download the dependencies to make your prototype work. These are stored in the <code>node_modules</code> folder. They are specific to this prototype and do not affect any of your other prototypes.</p>
 
         <h3>View the prototype locally</h3>
         <p>In terminal, enter:</p>
@@ -110,19 +111,18 @@ const Page: FC<PageProps> = ({ location }) => (
         </code></pre>
         <p>You can view the prototype by opening <A href="http://localhost:8080/">http://localhost:8080/</A> in your web browser. This will help you track changes locally as you build your prototype.</p>
 
-        <h3>Share your prototype on GitHub</h3>
+        <h2>Step 3. Share your prototype on GitHub</h2>
         <p>Once installation is complete, you can share your prototype on GitHub.</p>
         <ol>
           <li>Run <code>git init</code> to create (or initialise) a local git repository.</li>
           <li>Run <code>git add .</code> to locally stage the initial files ready for commit.</li>
-          <li>Run <code>git commit -m "initial commit" </code> to locally commit the initial files.</li>
+          <li>Run <code>git commit -m "initial commit"</code> to locally commit the initial files.</li>
           <li>Go to your blank GitHub repository.</li>
           <li>Find the section on 'push an existing repository'.</li>
           <li>Copy the 3 lines of code, and run them in your terminal.</li>
-          <li>Run <code>git remote add origin git@github.com:YOUR_GITHUB_NAME/review-licence-applications.git</code> to add a remote git repository called 'origin'.</li>
         </ol>
 
-        <p>The 3 lines of code are:</p>
+        <p>If you can't find the lines of code, use these replacing YOUR_GITHUB_NAME with your user name:</p>
         <ol>
           <li><code>git remote add origin git@github.com:YOUR_GITHUB_NAME/review-licence-applications.git</code> to add a remote git repository called 'origin'.</li>
           <li><code>git branch -M main</code> to rename your local branch called 'master' to 'main'.</li>

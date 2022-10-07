@@ -36,13 +36,18 @@ const Page: FC<PageProps> = ({ location }) => (
         {title}
       </h1>
       <p>In Atom, select <strong>File</strong> then <strong>Open</strong>. Then select your prototype folder.</p>
+      <p><code>src/common</code> is for your work. You won't need to change any files outside of this folder.</p>
 
-      <h2>Overview of folders in your prototype</h2>
-      <ul>
-        <li><code>/common</code> is for your work. Inside that folder:</li>
-        <li><code>page-wrap.tsx</code> is where you change your service name and update your header and footer links </li>
-        <li><code>pages</code> is for HTML or React pages</li>
-        </ul>
+      <h2>Update service name</h2>
+
+        <p>In <code>src/common/page-wrap.tsx</code>:</p>
+        <ol>
+          <li>Find the <code>Page</code> React element.</li>
+          <li>Add a new line before <code>title</code>.</li>
+          <li>On that line add <code>serviceName="New service name"</code>.</li>
+          <li>Save the file.</li>
+          <li>Refresh your web browser and you should see the change. If your prototype is not running, follow View the prototype locally on <A href="start-prototype">Set up prototype</A>get started</li>
+        </ol>
 
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-full">
@@ -57,47 +62,37 @@ const Page: FC<PageProps> = ({ location }) => (
           <li><code>npm run create:page</code></li>
           <li>answer the prompts to choose either HTML or React</li>
           <li>edit the new page to suit you</li>
-          </ul>
+        </ul>
+
+        <p>If that doesn't work then duplicate an existing page</p>
 
         <div className="govuk-inset-text">
-        Remove <code>index.tsx</code> from your prototype as having both .tsx and .html with the same index name will create problems in your prototype.
+          Make sure you don't have a React (.tsx) and HTML (.html) file with the same name.
         </div>
 
-      <h3>Change the service name</h3>
+          <h2>Update the sub-navigation and footer links</h2>
           <ol>
-            <li>open <code>page-wrap.tsx</code> from the <code>pages</code> folder.</li>
-            <li>find <code>title="My new service"</code> and change that to your new service name. Press <strong>Cmd+S</strong> to save your changes.</li>
-            <li>check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes</li>
+            <li>Open <code>page-wrap.tsx</code> from the <code>pages</code> folder.</li>
+            <li>Replace <code>navigation</code> with new sub-navigation and footer links. Press <strong>Cmd+S</strong> to save your changes.</li>
+            <li>Check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes.</li>
           </ol>
-          <div className="govuk-grid-row">
-            <div className="govuk-grid-column-full">
-              <img  src={applyPrototype6} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen showing changes in code for updating navigation and footer"/>
-            </div>
-          </div>
-          <br />
-
-          <h3>Update the sub-navigation and footer links</h3>
-          <ol>
-            <li>open <code>page-wrap.tsx</code> from the <code>pages</code> folder.</li>
-            <li>replace <code>navigation</code> with new sub-navigation and footer links. Press <strong>Cmd+S</strong> to save your changes.</li>
-            <li>check <A href="http://localhost:8080">http://localhost:8080</A> to preview the changes</li>
-          </ol>
+          <p>See all the options for the <A href="/components?name=page">Page component</A>.</p>
           <div className="govuk-grid-row">
             <div className="govuk-grid-column-full">
             <img  src={applyPrototype8} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Text editor screen with a highlight around where service name could be updated"/>
             </div>
           </div>
-          <br />
 
-        <h2>Using components</h2>
-            <p>There are several ways to use components in your prototype:</p>
-            <ul>
-            <li>copy the code from the HTML or React tabs in the design system</li>
-             <li>copy the code from GOV.UK design system (HTML only, not Nunjucks)</li></ul>
+      <h2>Using components</h2>
+        <p>There are several ways to use <A href="/components">components</A> in your prototype:</p>
+        <ul>
+          <li>copy the code from the HTML or React tabs in the design system</li>
+          <li>copy the code from GOV.UK design system (HTML only, not Nunjucks)</li>
+        </ul>
 
-            <div className="govuk-inset-text">
-            Currently, if you are using any components that contains javascript (like tabs or accordions) we advise you use the React code as the functionality will work much better. The files must be saved as .tsx files.
-            </div>
+        <div className="govuk-inset-text">
+          If you use components that contain javascript (like tabs or accordions) the React code functions better. The files must be saved as .tsx files.
+        </div>
 
       <h3>Using HTML</h3>
         <p>1. Copy the HTML code</p>
