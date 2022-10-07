@@ -160,7 +160,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Some of our users will not speak English as a first language and literacy levels may vary.
         The content should be written to be clear and understandable for all and avoid jargon or over-complicated legal text.</p>
 
-      <p className="govuk-body">Make sure you ask users whether they want to receive a letter or whether an alternative type of communication, like an eail, would be better.</p>
+      <p className="govuk-body">Make sure you ask users whether they want to receive a letter or whether an alternative type of communication, like an email, would be better.</p>
 
       <p className="govuk-body">If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
       
