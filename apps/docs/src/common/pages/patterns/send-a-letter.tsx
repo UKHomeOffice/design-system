@@ -35,23 +35,21 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>what is happening with their claim or application</li>
         <li>what they need to do next</li>
       </ul>
-      <p className="govuk-body">All letters should be clear and actionable. This guidance sets out the content you need to include to achieve this.</p>
-      <p className="govuk-body">Before you start, check with your team or policy contact about who usually writes and approves the letters for your service.
-       Different areas of the department will use their own templates and have their own approval processes.</p>
+      <p className="govuk-body">All letters should be clear and easy to act on.</p>
 
-      <h2 className="govuk-heading-m">When to use this pattern</h2>
+      <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p className="govuk-body">Use this pattern to tell users what has happened with their claim or application.</p>
       <p className="govuk-body">Use <A href="https://www.notifications.service.gov.uk/">GOV.UK Notify</A> to send letters where possible.</p>
 
-      <h2 className="govuk-heading-m">When not to use this pattern</h2>
+      <h2 className="govuk-heading-l">When not to use this pattern</h2>
       <p className="govuk-body">Do not use this pattern for letters that are not part of a service - such as official letters from ministers.</p>
       <p className="govuk-body">Make sure you understand what letters are used for and who usually writes and approves them.
         Speak to your policy contact if you are not sure.</p>
       
-      <h2 className="govuk-heading-m">What to include in a letter</h2>
+      <h2 className="govuk-heading-l">What to include in a letter</h2>
       <p className="govuk-body">Each letter should have:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>a clear sender with an official log, contact address and signature</li>
+        <li>a clear sender with an official logo, contact address and signature</li>
         <li>a reference number and details of when and how to use it</li>
         <li>the full name of the recipient so they trust it is authentic</li>
         <li>a main header summarising the outcome or action</li>
@@ -59,10 +57,10 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>a header summarising next steps</li>
         <li>a concise description of next steps - again, lists may help break up actions if there are several</li>
         <li>page numbers or 'end of letter' in the footer so they know they have read everything</li>
-        <li>any standard paragraphs below thesignature so they do not distract from the main message of the letter</li>
+        <li>any standard paragraphs below the signature so they do not distract from the main message of the letter</li>
       </ul>
 
-      <h3 className="govuk-heading-s">First page letter content model</h3>
+      <h3 className="govuk-heading-m">Main page content</h3>
       <div className="app-letter-model">
         <div className="govuk-grid-row">
           <div className="govuk-grid-column-one-half">
@@ -86,28 +84,39 @@ const Page: FC<PageProps> = ({ location }) => (
         <div className="app-annotate-block">
           <span className="app-annotate-block__label">block: outcome or action</span>
           <div className="app-annotate-block">
-            <span className="app-annotate-block__label">block: date</span>
+            <span className="app-annotate-block__label">element: date</span>
           </div>
           <div className="app-annotate-block">
-            <span className="app-annotate-block__label">block: main header</span>
+            <span className="app-annotate-block__label">element: main header</span>
             <h1 className="govuk-heading-l">Main header summarising outcome or action</h1>
           </div>
         </div>
         <div className="app-annotate-block">
           <span className="app-annotate-block__label">block: introduction</span>
-          <p className="govuk-body">Dear First name and last name</p>
-          <p className="govuk-body">Concise description of outcome or action.</p>
-          <ul className="govuk-list govuk-list--bullet">
-            <li>Lists can help make multiple outcomes or actions more readable</li>
-          </ul>
+          <div className="app-annotate-block">
+            <span className="app-annotate-block__label">element: recipient name</span>
+            <p className="govuk-body">Dear First name and last name,</p>
+          </div>
+          <div className="app-annotate-block">
+            <span className="app-annotate-block__label">element: description</span>
+            <ul className="govuk-list govuk-list--bullet">
+              <li>Lists can help make multiple outcomes or actions more readable</li>
+            </ul>
+          </div>
         </div>
         <div className="app-annotate-block">
           <span className="app-annotate-block__label">block: next steps</span>
-          <h2 className="govuk-heading-m">Header summarising next steps</h2>
-          <p className="govuk-body">Concise description of what the user needs to do or where to go for ongoing support or advice.</p>
-          <ul className="govuk-list govuk-list--bullet">
-            <li>Lists can help make multiple outcomes or actions more readable</li>
-          </ul>
+          <div className="app-annotate-block">
+            <span className="app-annotate-block__label">element: next steps header</span>
+            <h2 className="govuk-heading-l">Header summarising next steps</h2>
+          </div>
+          <div className="app-annotate-block">
+            <span className="app-annotate-block__label">element: next steps description</span>
+            <p className="govuk-body">Concise description of what the user needs to do or where to go for ongoing support or advice.</p>
+            <ul className="govuk-list govuk-list--bullet">
+              <li>Lists can help make multiple outcomes or actions more readable</li>
+            </ul>
+          </div>
         </div>
         <div className="app-annotate-block">
           <span className="app-annotate-block__label">block: signature</span>
@@ -120,14 +129,14 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
       </div>
 
-      <h3 className="govuk-heading-s">Last page letter content model</h3>
+      <h3 className="govuk-heading-m">Additional letter content</h3>
       <div className="app-letter-model">
         <div className="app-annotate-block">
           <span className="app-annotate-block__label">block: standard content</span>
-          <p className="govuk-body">Standard paragraphs not directly relevant to task if applicable</p>
+          <p className="govuk-body">Standard paragraphs not directly relevant to task, such as:</p>
           <ul className="govuk-list govuk-list--bullet">
-            <li>Data protection</li>
-            <li>Legal rights</li>
+            <li>data protection</li>
+            <li>legal rights</li>
           </ul>
         </div>
         <div className="app-annotate-block">
@@ -136,8 +145,8 @@ const Page: FC<PageProps> = ({ location }) => (
         </div>
       </div>
 
-      <h2 className="govuk-heading-m">Research on this pattern</h2>
-      <p className="govuk-body">The insights that infred this model came from multiple services across the Home Office including:</p>
+      <h2 className="govuk-heading-l">Research on this pattern</h2>
+      <p className="govuk-body">The insights that informed this model came from multiple services across the Home Office including:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>Refugee Integration Loans</li>
         <li>Penalty notices</li>
@@ -147,7 +156,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
       <p className="govuk-body">If you have evidence this also works for your users, you can contribute to our backlog.</p>
 
-      <h2 className="govuk-heading-m">Accessibility</h2>
+      <h2 className="govuk-heading-l">Accessibility</h2>
       <p className="govuk-body">Some of our users will not speak English as a first language and literacy levels may vary.
         The content should be written to be clear and understandable for all and avoid jargon or over-complicated legal text.</p>
 
