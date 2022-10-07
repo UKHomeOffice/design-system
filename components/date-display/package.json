@@ -24,10 +24,10 @@
     "react-components"
   ],
   "dependencies": {
-    "@not-govuk/component-helpers": "^0.5.7"
+    "@not-govuk/component-helpers": "^0.5.8"
   },
   "peerDependencies": {
-    "@not-govuk/docs-components": "^0.5.7",
+    "@not-govuk/docs-components": "^0.5.8",
     "@storybook/addon-docs": "^6.4.0",
     "react": "^16.9.55"
   },
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@mdx-js/react": "1.6.22",
-    "@not-govuk/component-test-helpers": "^0.5.7",
+    "@not-govuk/component-test-helpers": "^0.5.8",
     "@types/react": "16.14.26",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
