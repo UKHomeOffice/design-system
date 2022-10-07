@@ -9,13 +9,13 @@ const description = 'How to deploy your prototype';
 const section = 'Get started';
 const subsection = 'Prototyping';
 
-const applyPrototype0 = require('../../../../assets/images/github-screen01.png').default;
-const applyPrototype1 = require('../../../../assets/images/terminal-screen01.png').default;
-const applyPrototype2 = require('../../../../assets/images/terminal-screen02.png').default;
-const applyPrototype3a = require('../../../../assets/images/github-screen02.png').default;
-const applyPrototype7 = require('../../../../assets/images/heroku2.png').default;
-const applyPrototype8 = require('../../../../assets/images/heroku3.png').default;
-const applyPrototype9 = require('../../../../assets/images/heroku4.png').default;
+const applyPrototype0 = require('../../../../assets/images/github-screen01.png');
+const applyPrototype1 = require('../../../../assets/images/terminal-screen01.png');
+const applyPrototype2 = require('../../../../assets/images/terminal-screen02.png');
+const applyPrototype3a = require('../../../../assets/images/github-screen02.png');
+const applyPrototype7 = require('../../../../assets/images/heroku2.png');
+const applyPrototype8 = require('../../../../assets/images/heroku3.png');
+const applyPrototype9 = require('../../../../assets/images/heroku4.png');
 
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -112,11 +112,11 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <h2>Push your new deployment on Heroku</h2>
         <p>In terminal, run these commands:</p>
-        <pre><code>
-        git add .<br />
-        git commit -m"add deployment pipeline" <br />
-        git push <br />
-        </code></pre>
+        <ol>
+          <li><code>git add .</code> - locally stages your files ready to be committed</li>
+          <li><code>git commit -m "add deployment pipeline"</code> - locally commits your files</li>
+          <li><code>git push</code> - publishes your files on GitHub</li>
+        </ol>
 
         <p>This will build your prototype in Heroku and may take a few minutes. Once that is done, click on the <strong>Open app</strong> tab in Heroku to view your prototype. It will have a url like <strong>review-licence-applications.herokuapp.com</strong> which you can share with others.</p>
 

@@ -4,8 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
-export const title = 'Building your prototype';
-const description = 'How to build your prototype';
+export const title = 'Build your prototype';
+const description = 'Build your prototype';
 const section = 'Get started';
 const subsection = 'Prototyping';
 
@@ -64,7 +64,21 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>edit the new page to suit you</li>
         </ul>
 
-        <p>If that doesn't work then duplicate an existing page</p>
+        <p>If that doesn't work then for HTML:</p>
+        <ol>
+          <li>Create a new file, ending with .html.</li>
+          <li>On the first line of the file enter <code>&lt;Fragment&gt;</code>.</li>
+          <li>Press enter.</li>
+          <li>On the last line enter <code>&lt;/Fragment&gt;</code>.</li>
+        </ol>
+
+        <p>If that doesn't work then for React:</p>
+        <ol>
+          <li>Copy the index.tsx file.</li>
+          <li>Rename the file.</li>
+          <li>Edit the <code>title</code> and <code>description</code>.</li>
+          <li>Enter your page content between the <code>&lt;/Helmet&gt;</code> and the <code>&lt;/Fragment&gt;</code>.</li>
+        </ol>
 
         <div className="govuk-inset-text">
           Make sure you don't have a React (.tsx) and HTML (.html) file with the same name.
@@ -118,6 +132,8 @@ const Page: FC<PageProps> = ({ location }) => (
             <img  src={applyPrototype5} className="confirm-desktop" style={{maxHeight: "100%"}} alt="Local web browser displaying properly coded status banner"/>
           </div>
         </div>
+
+        <p><A href="/get-started/deploy-prototype">Next: Publish your prototype</A></p>
     </div>
   </div>
 );
