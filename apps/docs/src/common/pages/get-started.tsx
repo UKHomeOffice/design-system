@@ -15,11 +15,7 @@ export const menu = (
       {
         href: '/get-started/use-prototype',
         text: 'Build your protoype'
-      },
-      {
-        href: '/get-started/todays-date',
-        text: '- today\'s date'
-      },
+      }
       {
         href: '/get-started/deploy-prototype',
         text: 'Publish your protoype'
@@ -30,10 +26,6 @@ export const menu = (
       {
         href: '/get-started/start-govuk-prototype',
         text: 'Set up your GOV.UK prototype'
-      },
-      {
-        href: '/get-started/display-submitted-data',
-        text: '- display submitted data'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
