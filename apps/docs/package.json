@@ -1,6 +1,6 @@
 {
   "name": "@hods/docs",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Documentation website.",
   "private": true,
   "main": "dist/server/index.js",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@apollo/client": "3.6.9",
     "@graphql-tools/schema": "8.5.0",
-    "@hods/components": "workspace:^0.3.6",
+    "@hods/components": "workspace:^0.3.7",
     "@not-govuk/anchor-list": "^0.5.9",
     "@not-govuk/app-composer": "^0.5.9",
     "@not-govuk/app-plop-pack": "^0.5.9",

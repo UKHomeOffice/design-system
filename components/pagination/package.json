@@ -1,6 +1,6 @@
 {
   "name": "@hods/pagination",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Component to allow separating long tables into separate tables",
   "main": "src/Pagination.tsx",
   "sass": "assets/Pagination.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.3.6",
+    "@hods/sass-base": "workspace:^0.3.7",
     "@not-govuk/component-helpers": "^0.5.9",
     "@not-govuk/link": "^0.5.9",
     "@not-govuk/route-utils": "^0.5.9"
