@@ -15,7 +15,7 @@ export const menu = (
       {
         href: '/get-started/use-prototype',
         text: 'Build your protoype'
-      }
+      },
       {
         href: '/get-started/deploy-prototype',
         text: 'Publish your protoype'
