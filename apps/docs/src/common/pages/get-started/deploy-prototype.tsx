@@ -4,17 +4,16 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
+import "./_get-started.scss";
+
 export const title = 'Publish your prototype';
 const description = 'How to deploy your prototype';
 const section = 'Get started';
 const subsection = 'Prototyping';
 
-const applyPrototype0 = require('../../../../assets/images/github-screen01.png');
-const applyPrototype1 = require('../../../../assets/images/terminal-screen01.png');
 const applyPrototype2 = require('../../../../assets/images/terminal-screen02.png');
 const applyPrototype3a = require('../../../../assets/images/github-screen02.png');
 const applyPrototype7 = require('../../../../assets/images/heroku2.png');
-const applyPrototype8 = require('../../../../assets/images/heroku3.png');
 const applyPrototype9 = require('../../../../assets/images/heroku4.png');
 
 
