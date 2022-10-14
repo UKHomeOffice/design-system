@@ -14,7 +14,7 @@ const subsection = 'Send users';
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
   <Helmet>
-    <title>{title} - Home Office Design System</title>
+    <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>
     <meta name="description" content={description} />
     <meta name="og:title" content={title} />
     <meta name="og:description" content={description} />
@@ -71,7 +71,7 @@ const Page: FC<PageProps> = ({ location }) => (
               <span className="app-annotate-block__label">block: recipient address</span>
             </div>
           </div>
-          <div className="govuk-grid-column-one-half">
+          <div className="govuk-grid-column-one-half govuk-!-width-one-half">
             <div className="app-annotate-block">
               <span className="app-annotate-block__label">block: contact or return details</span>
             </div>
