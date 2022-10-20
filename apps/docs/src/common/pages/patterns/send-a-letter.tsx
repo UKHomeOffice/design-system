@@ -95,10 +95,11 @@ const Page: FC<PageProps> = ({ location }) => (
           <span className="app-annotate-block__label">block: introduction</span>
           <div className="app-annotate-block">
             <span className="app-annotate-block__label">element: recipient name</span>
-            <p className="govuk-body">Dear First name and last name,</p>
+            <p className="govuk-body">Dear first name and last name,</p>
           </div>
           <div className="app-annotate-block">
-            <span className="app-annotate-block__label">element: description</span>
+            <span className="app-annotate-block__label">element: summary</span>
+            <p className="govuk-body">Summarise the outcome or action.</p>
             <ul className="govuk-list govuk-list--bullet">
               <li>Lists can help make multiple outcomes or actions more readable</li>
             </ul>
