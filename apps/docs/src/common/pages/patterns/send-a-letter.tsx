@@ -62,37 +62,37 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h3 className="govuk-heading-m">Main page content</h3>
       <div className="app-letter-model">
-        <div className="govuk-grid-row">
-          <div className="govuk-grid-column-one-half">
-            <div className="app-annotate-block">
-              <span className="app-annotate-block__label">block: logo</span>
+        <div className="app-annotate-block">
+          <span className="app-annotate-block__label">block: header</span>
+          <div className="govuk-grid-row">
+            <div className="govuk-grid-column-one-half">
+              <div className="app-annotate-block">
+                <span className="app-annotate-block__label">element: logo</span>
+              </div>
+              <div className="app-annotate-block">
+                <span className="app-annotate-block__label">element: recipient address</span>
+              </div>
+              <div className="app-annotate-block">
+                <span className="app-annotate-block__label">element: date</span>
+              </div>
             </div>
-            <div className="app-annotate-block">
-              <span className="app-annotate-block__label">block: recipient address</span>
-            </div>
-          </div>
-          <div className="govuk-grid-column-one-half govuk-!-width-one-half">
-            <div className="app-annotate-block">
-              <span className="app-annotate-block__label">block: contact or return details</span>
+            <div className="govuk-grid-column-one-half govuk-!-width-one-half">
+              <div className="app-annotate-block">
+                <span className="app-annotate-block__label">element: contact or return details</span>
+              </div>
             </div>
           </div>
         </div>
         <div className="app-annotate-block">
-          <span className="app-annotate-block__label">block: reference number</span>
-          <p className="govuk-body">Include when and how to use the reference number</p>
-        </div>
-        <div className="app-annotate-block">
-          <span className="app-annotate-block__label">block: outcome or action</span>
-          <div className="app-annotate-block">
-            <span className="app-annotate-block__label">element: date</span>
-          </div>
+          <span className="app-annotate-block__label">block: main message</span>
           <div className="app-annotate-block">
             <span className="app-annotate-block__label">element: main header</span>
             <h1 className="govuk-heading-l">Main header summarising outcome or action</h1>
           </div>
-        </div>
-        <div className="app-annotate-block">
-          <span className="app-annotate-block__label">block: introduction</span>
+          <div className="app-annotate-block">
+            <span className="app-annotate-block__label">element: reference number</span>
+            <p className="govuk-body">Include when and how to use the reference number</p>
+          </div>
           <div className="app-annotate-block">
             <span className="app-annotate-block__label">element: recipient name</span>
             <p className="govuk-body">Dear first name and last name,</p>
