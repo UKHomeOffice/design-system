@@ -108,7 +108,7 @@ const Page: FC<PageProps> = ({ location }) => (
                 <p>Do:</p>
                 <ul>
                 <li>sense-check your language with ethnic diversity in mind</li>
-                <li>capitalise ethnic groups and nationalities when writing about, or asking users for their, ethicity or nationality</li>
+                <li>capitalise ethnic groups and nationalities when writing about, or asking users for their, ethnicity or nationality</li>
                 </ul>
                   <p>Do not:</p>
                   <ul>
@@ -126,6 +126,9 @@ const Page: FC<PageProps> = ({ location }) => (
                     <ul>
                     <li>use language that may inherently exclude those of different faiths - for example, referring to certain religious celebrations but not others </li>
                     </ul>
+                    <h2>Posters</h2>
+                    <p>Use our quick reference inclusive language posters as best practice guidelines while you design and research.</p>
+                    <p>Download the posters for your office space and help colleagues think about how to write inclusively.</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>
