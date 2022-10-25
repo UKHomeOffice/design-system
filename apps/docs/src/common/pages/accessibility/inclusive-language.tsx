@@ -127,7 +127,7 @@ const Page: FC<PageProps> = ({ location }) => (
                     <li>use language that may inherently exclude those of different faiths - for example, referring to certain religious celebrations but not others </li>
                     </ul>
                     <h2>Posters</h2>
-                    <p>Use our quick reference inclusive language posters as best practice guidelines while you design and research.</p>
+                    <p>Use our quick reference <A href="https://github.com/UKHomeOffice/posters/tree/master/design/Inclusive%20language">inclusive language posters</A> as best practice guidelines while you design and research.</p>
                     <p>Download the posters for your office space and help colleagues think about how to write inclusively.</p>
 
 <div className="contact-us">
