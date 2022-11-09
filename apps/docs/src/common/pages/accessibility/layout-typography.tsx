@@ -107,7 +107,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>Many users will resize their screens, zoom in, or use browser settings to adjust the size and spacing of text. Make sure your service is set up to accommodate this. Relative units such as (em) and &#37; will allow your text to reflow and resize to fit user needs, so use these instead of fixed units such as px. </p>
 
-<p>Make sure your design is flexible enough to still work with larger text (inside buttons or table cells, for example) – users should be able to zoom up to 300% without losing page function.</p><p>Your service must work in both landscape (horizontal) and portrait (vertical) orientations, for users who may not have a choice in which orientation they use. For example, a paraplegic user with a device attached to their wheelchair in a fixed orientation.  </p>
+<p>Make sure your design is flexible enough to still work with larger text (inside buttons or table cells, for example) – users should be able to zoom up to 400% without losing page function.</p><p>Your service must work in both landscape (horizontal) and portrait (vertical) orientations, for users who may not have a choice in which orientation they use. For example, a paraplegic user with a device attached to their wheelchair in a fixed orientation.  </p>
 
 <br />
 <h2>Creating accessible layouts</h2>
