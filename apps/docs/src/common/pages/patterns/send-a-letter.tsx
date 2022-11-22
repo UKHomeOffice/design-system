@@ -61,91 +61,99 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h3 className="govuk-heading-m">Main page content</h3>
-      <div className="app-letter-model">
-        <div className="app-annotate-block">
+      <ol className="govuk-list app-letter-model">
+        <li className="app-annotate-block">
           <span className="app-annotate-block__label">block: header</span>
           <div className="govuk-grid-row">
             <div className="govuk-grid-column-one-half">
-              <div className="app-annotate-block">
-                <span className="app-annotate-block__label">left element: logo</span>
-              </div>
-              <div className="app-annotate-block">
-                <span className="app-annotate-block__label">left element: recipient address</span>
-              </div>
-              <div className="app-annotate-block">
-                <span className="app-annotate-block__label">left element: date</span>
-              </div>
+              <ol className ="govuk-list">
+                <li className="app-annotate-block">
+                  <span className="app-annotate-block__label">left element: logo</span>
+                </li>
+                <li className="app-annotate-block">
+                  <span className="app-annotate-block__label">left element: recipient address</span>
+                </li>
+                <li className="app-annotate-block">
+                  <span className="app-annotate-block__label">left element: date</span>
+                </li>
+              </ol>
             </div>
             <div className="govuk-grid-column-one-half govuk-!-width-one-half">
-              <div className="app-annotate-block">
-                <span className="app-annotate-block__label">right element: contact or return details</span>
-              </div>
+              <ol className="govuk-list">
+                <li className="app-annotate-block">
+                  <span className="app-annotate-block__label">right element: contact or return details</span>
+                </li>
+              </ol>
             </div>
           </div>
-        </div>
-        <div className="app-annotate-block">
+        </li>
+        <li className="app-annotate-block">
           <span className="app-annotate-block__label">block: main message</span>
-          <div className="app-annotate-block">
-            <span className="app-annotate-block__label">element: main header</span>
-            <h1 className="govuk-heading-l">Main header summarising outcome or action</h1>
-          </div>
-          <div className="app-annotate-block">
-            <span className="app-annotate-block__label">element: reference number</span>
-            <p className="govuk-body">Include when and how to use the reference number</p>
-          </div>
-          <div className="app-annotate-block">
-            <span className="app-annotate-block__label">element: recipient name</span>
-            <p className="govuk-body">Dear first name and last name,</p>
-          </div>
-          <div className="app-annotate-block">
-            <span className="app-annotate-block__label">element: summary</span>
-            <p className="govuk-body">Summarise the outcome or action.</p>
-            <ul className="govuk-list govuk-list--bullet">
-              <li>Lists can help make multiple outcomes or actions more readable</li>
-            </ul>
-          </div>
-        </div>
-        <div className="app-annotate-block">
+          <ol className="govuk-list">
+            <li className="app-annotate-block">
+              <span className="app-annotate-block__label">element: main header</span>
+              <h1 className="govuk-heading-l">Main header summarising outcome or action</h1>
+            </li>
+            <li className="app-annotate-block">
+              <span className="app-annotate-block__label">element: reference number</span>
+              <p className="govuk-body">Include when and how to use the reference number</p>
+            </li>
+            <li className="app-annotate-block">
+              <span className="app-annotate-block__label">element: recipient name</span>
+              <p className="govuk-body">Dear first name and last name,</p>
+            </li>
+            <li className="app-annotate-block">
+              <span className="app-annotate-block__label">element: summary</span>
+              <p className="govuk-body">Summarise the outcome or action.</p>
+              <ul className="govuk-list govuk-list--bullet">
+                <li>Lists can help make multiple outcomes or actions more readable</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li className="app-annotate-block">
           <span className="app-annotate-block__label">block: next steps</span>
-          <div className="app-annotate-block">
-            <span className="app-annotate-block__label">element: next steps header</span>
-            <h2 className="govuk-heading-l">Header summarising next steps</h2>
-          </div>
-          <div className="app-annotate-block">
-            <span className="app-annotate-block__label">element: next steps description</span>
-            <p className="govuk-body">Concise description of what the user needs to do or where to go for ongoing support or advice.</p>
-            <ul className="govuk-list govuk-list--bullet">
-              <li>Lists can help make multiple outcomes or actions more readable</li>
-            </ul>
-          </div>
-        </div>
-        <div className="app-annotate-block">
+          <ol className="govuk-list">
+            <li className="app-annotate-block">
+              <span className="app-annotate-block__label">element: next steps header</span>
+              <h2 className="govuk-heading-l">Header summarising next steps</h2>
+            </li>
+            <li className="app-annotate-block">
+              <span className="app-annotate-block__label">element: next steps description</span>
+              <p className="govuk-body">Concise description of what the user needs to do or where to go for ongoing support or advice.</p>
+              <ul className="govuk-list govuk-list--bullet">
+                <li>Lists can help make multiple outcomes or actions more readable</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li className="app-annotate-block">
           <span className="app-annotate-block__label">block: signature</span>
           <p className="govuk-body">Yours sincerely,</p>
           <p className="govuk-body">Sender</p>
-        </div>
-        <div className="app-annotate-block">
+        </li>
+        <li className="app-annotate-block">
           <span className="app-annotate-block__label">block: page number</span>
           <p className="govuk-body">Page number or 'End of letter'</p>
-        </div>
-      </div>
+        </li>
+      </ol>
 
       <h3 className="govuk-heading-m">Additional letter content</h3>
       <p className="govuk-body">Include extra information on additional pages.</p>
-      <div className="app-letter-model">
-        <div className="app-annotate-block">
+      <ol className="govuk-list app-letter-model">
+        <li className="app-annotate-block">
           <span className="app-annotate-block__label">block: standard content</span>
           <p className="govuk-body">Standard paragraphs not directly relevant to task, such as:</p>
           <ul className="govuk-list govuk-list--bullet">
             <li>data protection</li>
             <li>legal rights</li>
           </ul>
-        </div>
-        <div className="app-annotate-block">
+        </li>
+        <li className="app-annotate-block">
           <span className="app-annotate-block__label">block: page number</span>
           <p className="govuk-body">Page number or 'End of letter'</p>
-        </div>
-      </div>
+        </li>
+      </ol>
 
       <h2 className="govuk-heading-l">Research on this pattern</h2>
       <p className="govuk-body">The insights that informed this model came from multiple services across the Home Office including:</p>
