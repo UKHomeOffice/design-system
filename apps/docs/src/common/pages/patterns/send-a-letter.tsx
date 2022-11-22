@@ -67,18 +67,18 @@ const Page: FC<PageProps> = ({ location }) => (
           <div className="govuk-grid-row">
             <div className="govuk-grid-column-one-half">
               <div className="app-annotate-block">
-                <span className="app-annotate-block__label">element: logo</span>
+                <span className="app-annotate-block__label">left element: logo</span>
               </div>
               <div className="app-annotate-block">
-                <span className="app-annotate-block__label">element: recipient address</span>
+                <span className="app-annotate-block__label">left element: recipient address</span>
               </div>
               <div className="app-annotate-block">
-                <span className="app-annotate-block__label">element: date</span>
+                <span className="app-annotate-block__label">left element: date</span>
               </div>
             </div>
             <div className="govuk-grid-column-one-half govuk-!-width-one-half">
               <div className="app-annotate-block">
-                <span className="app-annotate-block__label">element: contact or return details</span>
+                <span className="app-annotate-block__label">right element: contact or return details</span>
               </div>
             </div>
           </div>
@@ -131,6 +131,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
 
       <h3 className="govuk-heading-m">Additional letter content</h3>
+      <p className="govuk-body">Extra information should be included on additional pages.</p>
       <div className="app-letter-model">
         <div className="app-annotate-block">
           <span className="app-annotate-block__label">block: standard content</span>
@@ -162,6 +163,15 @@ const Page: FC<PageProps> = ({ location }) => (
         The content should be written to be clear and understandable for all and avoid jargon or over-complicated legal text.</p>
 
       <p className="govuk-body">Make sure you ask users whether they want to receive a letter or whether an alternative type of communication, like an email, would be better.</p>
+
+      <p className="govuk-body">The letter should:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>use Arial font, or another sans-serif font</li>
+        <li>use font size at least 12</li>
+        <li>left-align English text, and other left to right languages (right-align text read right to left)</li>
+        <li>not use italics</li>
+        <li>use sentence case and not block capitals</li>
+      </ul>
 
       <p className="govuk-body">If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
       
