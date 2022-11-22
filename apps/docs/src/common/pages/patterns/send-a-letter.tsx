@@ -131,7 +131,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
 
       <h3 className="govuk-heading-m">Additional letter content</h3>
-      <p className="govuk-body">Extra information should be included on additional pages.</p>
+      <p className="govuk-body">Include extra information on additional pages.</p>
       <div className="app-letter-model">
         <div className="app-annotate-block">
           <span className="app-annotate-block__label">block: standard content</span>
@@ -168,7 +168,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul className="govuk-list govuk-list--bullet">
         <li>use Arial font, or another sans-serif font</li>
         <li>use font size at least 12</li>
-        <li>left-align English text, and other left to right languages (right-align text read right to left)</li>
+        <li>left-align English text, and other left to right languages</li>
+        <li>right-align text that is read right to left</li>
         <li>not use italics</li>
         <li>use sentence case and not block capitals</li>
       </ul>
