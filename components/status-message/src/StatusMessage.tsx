@@ -28,8 +28,8 @@ export const StatusMessage: FC<StatusMessageProps> = ({
     <div {...attrs} className={classes()}>
       <p>
         {status}
-        {children && <span className={classes('extra')}> {children}</span>}
       </p>
+      {children && <span className={classes('extra')}> {children}</span>}
       {actions && actions.length && <AnchorList items={actions} classBlock={classes('actions')} />}
     </div>
   );
