@@ -11,16 +11,25 @@ describe('StatusMessage', () => {
 
     describe('and extra contents', () => {
       const component = mount(h(StatusMessage, { status: 'My heading' }, 'extra info'));
-      it('should show the status and extra contents', () =>
-        expect(component.text()).toMatch(/^My heading\s+extra info$/));
+      it('should show the status', () =>
+        expect(component.text()).toMatch(/^My heading/));
+      it('should show extra content', () => {
+        expect(component.find(".hods-status-message__extra").text()).toMatch('extra info');
+      })
 
       describe('with an action', () => {
         const component = mount(h(StatusMessage, {
           status: 'My heading',
           actions: [{ href: '#', text: 'Run' }]
         }, 'extra info'));
-        it('should show the status and extra contents', () =>
-          expect(component.find('p').text()).toMatch(/^My heading\s+extra info$/));
+        it('should show the status', () =>
+          expect(component.find('p').text()).toMatch(/^My heading/));
+        
+        it('should show extra content', () => {
+          expect(component.find(".hods-status-message__extra").text()).toMatch('extra info');
+        })
+        
+        
         it('should also show the action', () =>
           expect(component.find('.hods-status-message__actions li')).toHaveLength(1));
         it('should render the action', () =>
@@ -33,8 +42,11 @@ describe('StatusMessage', () => {
           { href: '#', text: 'Sleep' }
         ];
         const component = mount(h(StatusMessage, { status: 'My heading', actions }, 'extra info'));
-        it('should show the status and extra contents', () =>
-          expect(component.find('p').text()).toMatch(/^My heading\s+extra info$/));
+        it('should show the status', () =>
+          expect(component.find('p').text()).toMatch(/^My heading/));
+                it('should show extra content', () => {
+          expect(component.find(".hods-status-message__extra").text()).toMatch('extra info');
+        })
         it('should have actions', () => expect(component.find('.hods-status-message__actions li')).toHaveLength(3));
         it('should show all the actions', () =>
           expect(component.find('.hods-status-message__actions').text()).toMatch(/^Run\s*Jump\s*Sleep$/));
