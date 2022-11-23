@@ -11,11 +11,14 @@ $govuk-button-text-colour: govuk-colour("black");
 
   p {
     padding-right: 1rem;
+    margin: 0;
     font-weight: bold;
   }
 
   &__extra {
     font-weight: normal;
+    display: block;
+    @include govuk-responsive-margin(2, "top");
   }
 
   &__actions {
@@ -57,6 +60,7 @@ $govuk-button-text-colour: govuk-colour("black");
     }
 
     &__extra {
+      margin: 0;
       @include govuk-font(19);
       flex-grow: 1;
     }
