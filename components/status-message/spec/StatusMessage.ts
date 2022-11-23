@@ -6,9 +6,8 @@ describe('StatusMessage', () => {
   describe('when given a status', () => {
     const component = mount(h(StatusMessage, { status: 'My heading' }));
     it('should show the status', () => expect(component.text()).toEqual('My heading'));
-    it('should not show extra contents', () => expect(component.exists('.hods-status-message span')).toEqual(false));
+    it('should not show extra contents', () => expect(component.exists('.hods-status-message__extra')).toEqual(false));
     it('should not show any actions', () => expect(component.exists('.hods-status-message__actions')).toEqual(false));
-
     describe('and extra contents', () => {
       const component = mount(h(StatusMessage, { status: 'My heading' }, 'extra info'));
       it('should show the status', () =>
@@ -16,7 +15,6 @@ describe('StatusMessage', () => {
       it('should show extra content', () => {
         expect(component.find(".hods-status-message__extra").text()).toMatch('extra info');
       })
-
       describe('with an action', () => {
         const component = mount(h(StatusMessage, {
           status: 'My heading',
@@ -28,8 +26,6 @@ describe('StatusMessage', () => {
         it('should show extra content', () => {
           expect(component.find(".hods-status-message__extra").text()).toMatch('extra info');
         })
-        
-        
         it('should also show the action', () =>
           expect(component.find('.hods-status-message__actions li')).toHaveLength(1));
         it('should render the action', () =>
