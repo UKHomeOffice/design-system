@@ -31,8 +31,10 @@ export const StatusMessage: FC<StatusMessageProps> = ({
 
 	return (
 		<div {...attrs} className={classes()}>
-			<p className={classes("status")}>{status}</p>
-			{children && <p className={classes("extra")}> {children}</p>}
+			<div>
+				<p className={classes("status")}>{status}</p>
+				{children && <p className={classes("extra")}> {children}</p>}
+			</div>
 			{actions && actions.length && (
 				<AnchorList items={actions} classBlock={classes("actions")} />
 			)}

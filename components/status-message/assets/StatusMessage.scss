@@ -10,20 +10,21 @@ $govuk-button-text-colour: govuk-colour("black");
 	@include govuk-responsive-padding(4, "all");
 
 	&__status {
-		padding-right: 1rem;
 		margin: 0;
 		font-weight: bold;
 	}
 
 	&__extra {
+		margin: 0;
 		font-weight: normal;
 		display: block;
-		@include govuk-responsive-margin(2, "top");
+		@include govuk-responsive-margin(3, "top");
 	}
 
 	&__actions {
 		margin: 0;
 		padding: 0;
+		@include govuk-responsive-margin(3, "top");
 
 		li {
 			list-style: none;
@@ -57,10 +58,16 @@ $govuk-button-text-colour: govuk-colour("black");
 		align-items: center;
 		justify-content: space-between;
 
+		div:first-child {
+			display: flex;
+			align-items: center;
+		}
+
 		&__status {
+			margin: 0;
+			@include govuk-responsive-margin(3, "right");
 			@include govuk-font(24);
 			font-weight: bold;
-			margin: 0;
 		}
 
 		&__extra {
@@ -70,6 +77,7 @@ $govuk-button-text-colour: govuk-colour("black");
 		}
 
 		&__actions {
+			margin: 0;
 			display: flex;
 
 			li {
