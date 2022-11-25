@@ -42,9 +42,9 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Use <A href="https://www.notifications.service.gov.uk/">GOV.UK Notify</A> to send letters in the post where possible.</p>
 
       <h2 className="govuk-heading-l">When not to use this pattern</h2>
-      <p className="govuk-body">Do not use this pattern for letters:</p>
+      <p className="govuk-body">Do not use this pattern for letters that are:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>that are not part of a service - such as official letters from ministers</li>
+        <li>not part of a service - such as official letters from ministers</li>
         <li>attached to emails</li>
       </ul>
       <p className="govuk-body">Make sure you understand what letters are used for and who usually writes and approves them.
