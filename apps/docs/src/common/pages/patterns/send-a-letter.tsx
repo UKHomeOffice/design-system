@@ -30,7 +30,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">{subsection}</span>
         {title}
       </h1>
-      <p className="govuk-body">The Home Office sends letters to tell users:</p>
+      <p className="govuk-body">The Home Office sends printed letters in the post to tell users:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>what is happening with their claim or application</li>
         <li>what they need to do next</li>
@@ -39,10 +39,14 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p className="govuk-body">Use this pattern to tell users what has happened with their claim or application.</p>
-      <p className="govuk-body">Use <A href="https://www.notifications.service.gov.uk/">GOV.UK Notify</A> to send letters where possible.</p>
+      <p className="govuk-body">Use <A href="https://www.notifications.service.gov.uk/">GOV.UK Notify</A> to send letters in the post where possible.</p>
 
       <h2 className="govuk-heading-l">When not to use this pattern</h2>
-      <p className="govuk-body">Do not use this pattern for letters that are not part of a service - such as official letters from ministers.</p>
+      <p className="govuk-body">Do not use this pattern for letters:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>that are not part of a service - such as official letters from ministers</li>
+        <li>attached to emails</li>
+      </ul>
       <p className="govuk-body">Make sure you understand what letters are used for and who usually writes and approves them.
         Speak to your policy contact if you are not sure.</p>
       
@@ -183,7 +187,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <p className="govuk-body">If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
-      
+
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
         <p>If you've got a question or suggestion share it on the Slack channel
