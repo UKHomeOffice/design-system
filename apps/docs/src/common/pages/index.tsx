@@ -23,11 +23,9 @@ const Page: FC<PageProps> = props => (
       <div className="govuk-grid-column-one-third">
         <aside>
           <h2>Updates</h2>
-          <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 23 May 2022</p>
+          <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 25 Nov 2022</p>
           <ul className="govuk-!-font-size-16">
-            <li>Added <A href="/accessibility/gestures-and-motion">gestures and motion accessibility guidance</A></li>
-            <li>Updated <A href="/contribute">how to contribute</A> to the design system</li>
-            <li>Using <A href="https://github.com/UKHomeOffice/design-system/discussions">discussions</A> on GitHub</li>
+            <li>Added <A href="/patterns/send-a-letter">designing letters guidance</A></li>
           </ul>
         </aside>
       </div>
