@@ -101,6 +101,7 @@ importers:
       '@apollo/client': 3.6.9
       '@graphql-tools/schema': 8.5.0
       '@hods/components': workspace:^0.3.7
+      '@hods/sass-base': workspace:^0.3.7
       '@not-govuk/anchor-list': ^0.5.9
       '@not-govuk/app-composer': ^0.5.9
       '@not-govuk/app-plop-pack': ^0.5.9
@@ -141,6 +142,7 @@ importers:
       '@apollo/client': 3.6.9_graphql@15.8.0+react@16.14.0
       '@graphql-tools/schema': 8.5.0_graphql@15.8.0
       '@hods/components': link:../../lib/components
+      '@hods/sass-base': link:../../lib/sass-base
       '@not-govuk/anchor-list': 0.5.9_e2f8c4cc5e2652a542da59401b37abaf
       '@not-govuk/app-composer': 0.5.9_8f4850753f7c989957613a2d32924152
       '@not-govuk/app-plop-pack': 0.5.9
