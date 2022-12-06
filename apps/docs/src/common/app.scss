@@ -101,3 +101,24 @@ ol.app-letter-model .app-annotate-block__label {
   background: $app-annotate-block-label-color;
   font-family: $govuk-font-family;
 }
+
+// Content style guide
+.a-z-header {
+  display: inline-block;
+  @include govuk-responsive-margin(6, "top");
+  @include govuk-responsive-padding(2, "top");
+  @include govuk-responsive-padding(2, "left");
+  @include govuk-responsive-padding(2, "bottom");
+  @include govuk-responsive-padding(2, "right");
+  background-color: #8f23b3;
+  color: govuk-colour("white");
+}
+
+.back-to-top {
+  display: block;
+  @include govuk-responsive-margin(6, "bottom");
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
