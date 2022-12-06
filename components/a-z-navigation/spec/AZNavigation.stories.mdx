@@ -1,0 +1,41 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Tag } from '@not-govuk/tag';
+import { AZNavigation } from '../src/AZNavigation';
+import readMe from '../README.md';
+
+<Meta
+  title="A-Z navigation"
+  component={ AZNavigation }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'A component to help users navigate an A to Z.',
+    jest: ['AZNavigation'],
+    notes: readMe
+  } }
+/>
+
+# A-Z navigation
+
+<p><Tag text="Experimental" /></p>
+
+A component to help users navigate an A to Z.
+
+<Preview withToolbar>
+  <Story name="AZNavigation">
+    <AZNavigation />
+  </Story>
+</Preview>
+
+<Props of={ AZNavigation } />
+
+
+## Stories
+### Standard
+
+A standard A-Z navigation.
+
+<Preview>
+  <Story name="Standard">
+    <AZNavigation />
+  </Story>
+</Preview>

@@ -24,6 +24,7 @@
     "react-components"
   ],
   "dependencies": {
+    "@hods/a-z-navigation": "workspace:^0.3.7",
     "@hods/alert": "workspace:^0.3.7",
     "@hods/date-display": "workspace:^0.3.7",
     "@hods/date-time": "workspace:^0.3.7",
