@@ -180,6 +180,31 @@ importers:
       webpack-dev-middleware: 5.3.3_webpack@5.74.0
       webpack-hot-middleware: 2.25.1
 
+  components/a-z-navigation:
+    specifiers:
+      '@hods/sass-base': workspace:^0.3.7
+      '@mdx-js/react': 1.6.22
+      '@not-govuk/component-test-helpers': ^0.5.9
+      '@not-govuk/navigation-menu': ^0.5.9
+      '@not-govuk/tag': ^0.5.9
+      '@types/react': 16.14.28
+      jest: 28.1.3
+      jest-environment-jsdom: 28.1.3
+      ts-jest: 28.0.7
+      typescript: 4.7.4
+    dependencies:
+      '@hods/sass-base': link:../../lib/sass-base
+      '@not-govuk/navigation-menu': 0.5.9_e2f8c4cc5e2652a542da59401b37abaf
+    devDependencies:
+      '@mdx-js/react': 1.6.22_react@16.14.0
+      '@not-govuk/component-test-helpers': 0.5.9_57f8232eecda0638ee341414c70496e7
+      '@not-govuk/tag': 0.5.9_2a30aaaaaa40420d421515ef1c43d73c
+      '@types/react': 16.14.28
+      jest: 28.1.3
+      jest-environment-jsdom: 28.1.3
+      ts-jest: 28.0.7_9a759de3690b67967dee22e0d6aa4503
+      typescript: 4.7.4
+
   components/alert:
     specifiers:
       '@hods/sass-base': workspace:^0.3.7
@@ -461,6 +486,7 @@ importers:
 
   lib/components:
     specifiers:
+      '@hods/a-z-navigation': workspace:^0.3.7
       '@hods/alert': workspace:^0.3.7
       '@hods/date-display': workspace:^0.3.7
       '@hods/date-time': workspace:^0.3.7
@@ -478,6 +504,7 @@ importers:
       ts-jest: 28.0.7
       typescript: 4.7.4
     dependencies:
+      '@hods/a-z-navigation': link:../../components/a-z-navigation
       '@hods/alert': link:../../components/alert
       '@hods/date-display': link:../../components/date-display
       '@hods/date-time': link:../../components/date-time
@@ -6817,7 +6844,6 @@ packages:
       react: 16.14.0
     transitivePeerDependencies:
       - react-router-dom
-    dev: true
 
   /@not-govuk/page/0.5.9_e2f8c4cc5e2652a542da59401b37abaf:
     resolution: {integrity: sha512-lCkAhuAENXT18vdFxxIgl06kFBFzAEyWyWwreKSGaASIUDPtHOvlljw2R/XeuY3Cb3Bh8MxVwfjpahxPArLQ6g==}
@@ -9246,7 +9272,7 @@ packages:
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
-      csstype: 3.1.0
+      csstype: 3.1.1
     dev: true
 
   /@types/react/17.0.47:
@@ -16173,7 +16199,7 @@ packages:
       '@jest/fake-timers': 28.1.3
       '@jest/types': 28.1.3
       '@types/jsdom': 16.2.14
-      '@types/node': 18.6.1
+      '@types/node': 18.8.3
       jest-mock: 28.1.3
       jest-util: 28.1.3
       jsdom: 19.0.0
@@ -21591,7 +21617,7 @@ packages:
       json5: 2.2.1
       lodash.memoize: 4.1.2
       make-error: 1.3.6
-      semver: 7.3.7
+      semver: 7.3.8
       typescript: 4.7.4
       yargs-parser: 21.0.1
     dev: true

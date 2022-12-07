@@ -4,8 +4,6 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
-import "./page-blocks.scss"
-
 export const title = 'A letter';
 const description = 'How to send users effective letters';
 const section = 'Patterns';
