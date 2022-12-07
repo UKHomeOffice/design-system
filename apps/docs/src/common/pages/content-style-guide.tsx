@@ -37,7 +37,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
     <p>Lower case. You can use the acronym ‘BRP’ after the first full mention.</p>
     <h3 id="biometric residence card">biometric residence card (BRC)</h3>
-    <p>Lower case. These are no longer in use. Also called a ‘UK residence card’ or ‘EEA biometric residence card’.</p>
+    <p>Lower case. You can use the acronym ‘BRC’ after the first full mention. Also called a ‘UK residence card’ or ‘EEA biometric residence card’.</p>
     <h3 id="border force">Border Force</h3>
     <p>Capitalised.</p>
     <h3 id="border control">border control</h3>
