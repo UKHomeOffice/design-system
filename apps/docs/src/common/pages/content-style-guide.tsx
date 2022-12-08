@@ -269,6 +269,9 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="z">Z</h2>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
+
+    <h2>Help improve this guide</h2>
+    <p>To contribute, send your request to <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk,</A> or add it to the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
   </Fragment>
 );
 
