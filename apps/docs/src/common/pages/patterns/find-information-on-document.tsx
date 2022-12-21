@@ -74,33 +74,33 @@ const Page: FC<PageProps> = ({ location }) => (
       the aspect ratio of that object. Follow our guidance on the use of <A href="/styles/images">images</A>.</p>
       <p>The examples above have been used in public-facing services.</p>
 
-      <h2 className="govuk-heading-l">Services using this pattern</h2>
-        <ul className="govuk-list govuk-list--bullet">
-          <li>EU settlement account recovery</li>
-          <li>Generic identity verification</li>
-          <li>Update your EU settlement scheme details</li>
-          <li>Refugee integration loan</li>
-          <li>Registered traveller</li>
-          <li>Passport renewals</li>
-          </ul>
+      <h2 className="govuk-heading-l">Accessibility</h2>
+      <p>All images must have an alternative text description that describes its meaning. See the <A href="/accessibility/images">images guidance</A> for more information.</p>
+      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
       <h2 className="govuk-heading-l">Research</h2>
+      <p className="govuk-body">This pattern is used by:</p>
+      <ul>
+        <li>EU settlement account recovery</li>
+        <li>Generic identity verification</li>
+        <li>Update your EU settlement scheme details</li>
+        <li>Refugee integration loan</li>
+        <li>Registered traveller</li>
+        <li>Passport renewals</li>
+      </ul>
       <p className="govuk-body">Research has shown that guidance images can help
       to guide a user through a sequence of steps and clarify what information is
       required from them. It has been shown to work well when representing something
       physical, such as a letter or an ID document, to help point users to a specific
       area of it.</p>
 
-      <h2 className="govuk-heading-l">Accessibility</h2>
-      <p>All images must have an alternative text description that describes its meaning. See the <A href="/accessibility/images">images guidance</A> for more information.</p>
-      <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
+      <h2 className="govuk-heading-l">Help us improve this pattern</h2>
+      <p>This pattern needs improving. We need evidence about:</p>
+      <ul>
+        <li>how to write for this pattern</li>
+      </ul>
 
-      <div className="contact-us">
-        <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel
-        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
-      </div>
+      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/478">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
 
     </div>
 </div>

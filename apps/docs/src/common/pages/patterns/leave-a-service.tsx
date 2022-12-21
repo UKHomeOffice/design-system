@@ -55,7 +55,7 @@ const Page: FC<PageProps> = ({ location }) => (
       Signing out of a service is best practice - for example, for internal services where
       users share a workspace.</p>
 
-      <h3 className="govuk-heading-m">Services using this pattern</h3>
+      <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>Entity search</li>
         <li>Booking returns and movement</li>
@@ -68,11 +68,11 @@ const Page: FC<PageProps> = ({ location }) => (
       your service. An option should be provided with a persistent link through as well
       as the end of the service.</p>
 
-      <h3 className="govuk-heading-m">Services using this pattern</h3>
+      <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
-      <li>Apply for the EU settlement scheme</li>
-      <li>Update your EU settlement scheme details</li>
-      <li>Employer checking service</li>
+        <li>Apply for the EU settlement scheme</li>
+        <li>Update your EU settlement scheme details</li>
+        <li>Employer checking service</li>
       </ul>
 
       <h2 className="govuk-heading-l">How it works</h2>
@@ -86,20 +86,22 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>the option to sign back or return to the service again</li>
       </ul>
 
-      <h2 className="govuk-heading-l">Research</h2>
-      <p>Users are confident in using a 'leave the service' button at the end of a transaction.
-      Users mention they want to make sure they leave a service securely.</p>
-
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>If your service uses this pattern, let us know of any insights you have on
       accessibility considerations.</p>
 
-      <div className="contact-us">
-        <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel
-        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
-      </div>
+      <h2 className="govuk-heading-l">Research</h2>
+
+      <p>Users are confident in using a 'leave the service' button at the end of a transaction.
+      Users mention they want to make sure they leave a service securely.</p>
+
+      <h2 className="govuk-heading-l">Help us improve this pattern</h2>
+      <p>This pattern needs improving. We need evidence about:</p>
+      <ul>
+        <li>how to write for this pattern</li>
+      </ul>
+
+      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/482">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
 
     </div>
 </div>

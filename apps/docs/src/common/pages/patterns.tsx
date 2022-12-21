@@ -17,10 +17,6 @@ export const menu = (
         text: 'Add multiple things'
       },
       {
-        href: '/patterns/make-a-declaration',
-        text: 'Make a declaration'
-      },
-      {
         href: '/patterns/find-information-on-document',
         text: 'Find information on a document'
       },
@@ -33,12 +29,16 @@ export const menu = (
         text: 'Leave a service'
       },
       {
-        href: '/patterns/stop-a-service-timing-out',
-        text: 'Stop a service timing out'
+        href: '/patterns/make-a-declaration',
+        text: 'Make a declaration'
       },
       {
         href: '/patterns/search-for-something',
         text: 'Search for something'
+      },
+      {
+        href: '/patterns/stop-a-service-timing-out',
+        text: 'Stop a service timing out'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Send users</span>

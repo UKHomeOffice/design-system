@@ -37,7 +37,6 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">A declaration allows users to confirm that they have understood or agreed to something before they submit an online form.</p>
 
-      <h2 className="govuk-heading-l">Examples</h2>
       <p>The following examples show how declarations are used in Home Office services. Use these examples as a guide only and adapt them for your service.</p>
       <p>You must ask a legal representative to sign off your declaration content.</p>
       <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
@@ -54,6 +53,11 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>they understand the information they have been given</li>
         <li>they need to agree to something</li>
       </ul>
+
+      <h2 className="govuk-heading-l">When not to use this pattern</h2>
+      <p>Do not use this pattern to give users complex or complicated information about policy or legislation.</p>
+      <p>If a bullet list is not needed, instead consider using 'Accept and continue' or 'Agree and continue' buttons along with a statement. For example:</p>
+      <p>By submitting this application, you are agreeing that the information you have provided is correct.</p>
 
       <h2 className="govuk-heading-l">Writing for this pattern</h2>
       <p>The declaration should be tailored to the service and include information about what will happen if the user makes a false declaration.</p>
@@ -74,25 +78,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>publish a declaration content that has not been sign off by legal or policy</li>
       </ul>
 
-      <h2 className="govuk-heading-l">When not to use this pattern</h2>
-      <p>Do not use this pattern to give users complex or complicated information about policy or legislation.</p>
-      <p>If a bullet list is not needed, instead consider using 'Accept and continue' or 'Agree and continue' buttons along with a statement. For example:</p>
-      <p>By submitting this application, you are agreeing that the information you have provided is correct.</p>
-
-      <h2 className="govuk-heading-l">Error messages</h2>
+      <h3 className="govuk-heading-m">Error messages</h3>
       <p>If your service uses this pattern, add the error messages that you have used.</p>
-
-      <h2 className="govuk-heading-l">Services using this pattern</h2>
-      <p>This pattern has been used in the following services:</p>
-      <ul className="govuk-list govuk-list--bullet">
-        <li>Electronic Visa Waiver</li>
-        <li>Register to Apply for US Global Entry</li>
-        <li>Registered Traveller</li>
-      </ul>
-
-      <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">More research is needed. If your service uses this
-      pattern, <A href="https://github.com/UKHomeOffice/design-system/discussions/378">get in touch</A> to share your user research findings.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>All transactions should be reversible, or confirmation must be required before submission. See the <A href="/accessibility/standard/understandable#rr3.3.4">error prevention requirement</A> in the Home Office Accessibility Standard for more information.</p>
@@ -100,12 +87,25 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>If your service uses this pattern, let us know of any insights you have
       on accessibility considerations.</p>
 
-      <div className="contact-us">
-        <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you've got a question or suggestion share it on the Slack channel
-        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
-      </div>
+      <h2 className="govuk-heading-l">Research</h2>
+      <p>This pattern is used by:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>Electronic Visa Waiver</li>
+        <li>Register to Apply for US Global Entry</li>
+        <li>Registered Traveller</li>
+      </ul>
+
+      <p className="govuk-body">More research is needed. If your service uses this
+      pattern, share your user research findings.</p>
+
+      <h2 className="govuk-heading-l">Help us improve this pattern</h2>
+      <p>This pattern needs improving. We need evidence about:</p>
+      <ul>
+        <li>how to write error messages</li>
+        <li>user research findings</li>
+      </ul>
+
+      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/378">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
 
     </div>
 </div>
