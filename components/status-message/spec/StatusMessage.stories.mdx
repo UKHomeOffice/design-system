@@ -1,17 +1,17 @@
-import { Meta, Preview, Props, Story } from "@storybook/addon-docs";
-import { StatusMessage } from "../src/StatusMessage";
-import readMe from "../README.md";
-import { A } from "@not-govuk/components";
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { StatusMessage } from '../src/StatusMessage';
+import readMe from '../README.md';
+import {A} from '@not-govuk/components';
 
 <Meta
-	title="Status message"
-	component={StatusMessage}
-	parameters={{
-		chromatic: { viewports: [820, 480] },
-		description: "An indication to the user that something has changed.",
-		jest: ["StatusMessage"],
-		notes: readMe,
-	}}
+  title="Status message"
+  component={ StatusMessage }
+  parameters={ {
+    chromatic: { viewports: [820, 480] },
+    description: 'An indication to the user that something has changed.',
+    jest: ['StatusMessage'],
+    notes: readMe,
+  } }
 />
 
 # Status message
@@ -19,20 +19,20 @@ import { A } from "@not-govuk/components";
 Tell users that something has changed.
 
 <Preview withToolbar>
-	<Story name="StatusMessage">
-		<StatusMessage status="On hold" />
-	</Story>
+  <Story name="StatusMessage">
+    <StatusMessage status="On hold" />
+  </Story>
 </Preview>
 
-<Props of={StatusMessage} />
+<Props of={ StatusMessage } />
 
 ## When to use this component
 
 Use status messages to:
 
-- notify the user of a change
-- tell the user something important
-- inform the user that they need to do something
+  - notify the user of a change
+  - tell the user something important
+  - inform the user that they need to do something
 
 Status messages are similar to alerts but are primarily used for internal services and can include actions for users to take.
 For less prominent status indicators you could use tags.
@@ -42,11 +42,11 @@ For less prominent status indicators you could use tags.
 ### Standard status message with an action
 
 <Preview>
-	<Story name="Standard">
-		<StatusMessage status="On hold" actions={[{ href: "#", text: "Review" }]}>
-			Due for review 31 May 2021
-		</StatusMessage>
-	</Story>
+  <Story name="Standard">
+    <StatusMessage status="On hold" actions={[{ href: "#", text: "Review" }]}>
+      Due for review 31 May 2021
+    </StatusMessage>
+  </Story>
 </Preview>
 
 ### Status message without an action
@@ -60,31 +60,28 @@ For less prominent status indicators you could use tags.
 ### Status message with multiple actions
 
 <Preview>
-	<Story name="MultipleActions">
-		<StatusMessage
-			status="On hold"
-			actions={[
-				{ href: "#", text: "Review" },
-				{ href: "#", text: "Extend hold" },
-			]}
-		>
-			Due for review 31 May 2021
-		</StatusMessage>
-	</Story>
+  <Story name="MultipleActions">
+    <StatusMessage status="On hold" actions={[
+        { href: "#", text: "Review" },
+        { href: "#", text: "Extend hold" },
+      ]}>
+      Due for review 31 May 2021
+    </StatusMessage>
+  </Story>
 </Preview>
-
+ 
 ### Status message with multiple actions (no extra content)
 
 <Preview>
-	<Story name="MultipleActions no extra content">
-		<StatusMessage
-			status="On hold"
-			actions={[
-				{ href: "#", text: "Review" },
-				{ href: "#", text: "Extend hold" },
-			]}
-		></StatusMessage>
-	</Story>
+  <Story name="MultipleActions no extra content">
+    <StatusMessage
+      status="On hold"
+      actions={[
+        { href: "#", text: "Review" },
+        { href: "#", text: "Extend hold" },
+      ]}>
+    </StatusMessage>
+  </Story>
 </Preview>
 
 ## Accessibility
@@ -95,10 +92,10 @@ All users benefit from clear, visible notification messages which are presented 
 
 The status message is used by:
 
-- Returns and movement
-- Passport renewals
-- Passport application search
-- a service used by staff to assess risk at the border
+  - Returns and movement
+  - Passport renewals
+  - Passport application search
+  - a service used by staff to assess risk at the border
 
 For a service to assess border risk, this was used at the top of the screen to:
 
@@ -107,16 +104,15 @@ For a service to assess border risk, this was used at the top of the screen to:
 - allow users to take over the case
 
 <Preview>
-	<Story name="ExampleFromIntenalService">
-		<StatusMessage
-			status="Read only"
-			actions={[{ href: "#", text: "Take over" }]}
-		>
-			Liam Davies is working on these results
-			<br />
-			Last active: 5 minutes ago
-		</StatusMessage>
-	</Story>
+  <Story name="ExampleFromIntenalService">
+    <StatusMessage
+      status="Read only"
+      actions={[{ href: "#", text: "Take over" }]}>
+      Liam Davies is working on these results
+      <br />
+      Last active: 5 minutes ago
+    </StatusMessage>
+  </Story>
 </Preview>
 
 Research with 6 users showed that users understood the message and how to interact with it.
