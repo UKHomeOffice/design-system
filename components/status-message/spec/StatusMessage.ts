@@ -1,6 +1,6 @@
-import { createElement as h } from "react";
-import { mount } from "@not-govuk/component-test-helpers";
-import StatusMessage from "../src/StatusMessage";
+import { createElement as h } from 'react';
+import { mount } from '@not-govuk/component-test-helpers';
+import StatusMessage from '../src/StatusMessage';
 
 describe("StatusMessage", () => {
   describe("when given a status", () => {
@@ -35,13 +35,13 @@ describe("StatusMessage", () => {
         it("should render the action", () =>
           expect(component.find(".hods-status-message__actions").text()).toEqual("Run"));
       });
-      describe("with multiple actions", () => {
+      describe('with multiple actions', () => {
         const actions = [
-          { href: "#", text: "Run" },
-          { href: "#", text: "Jump" },
-          { href: "#", text: "Sleep" },
+          { href: '#', text: 'Run' },
+          { href: '#', text: 'Jump' },
+          { href: '#', text: 'Sleep' },
         ];
-        const component = mount(h(StatusMessage, { status: "My heading", actions }, "extra info"));
+        const component = mount(h(StatusMessage, { status: 'My heading', actions }, 'extra info'));
         it("should show the status", () =>
           expect(component.find(".hods-status-message__status").text()).toMatch("My heading"));
         it("should show extra content", () => {
