@@ -6,11 +6,11 @@ import '../assets/StatusMessage.scss';
 
 export type StatusMessageProps = StandardProps & {
   /** Summary of status */
-  status: string;
+  status: string,
   /** Extra information about the status */
-  children?: any;
+  children?: any,
   /** Links to perform status related actions */
-  actions?: Anchor[];
+  actions?: Anchor[]
 };
 
 export const StatusMessage: FC<StatusMessageProps> = ({
@@ -23,7 +23,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
   ...attrs
 }) => {
   const classes = classBuilder(
-    "hods-status-message",
+    'hods-status-message',
     classBlock,
     classModifiers,
     className
@@ -32,11 +32,11 @@ export const StatusMessage: FC<StatusMessageProps> = ({
   return (
     <div {...attrs} className={classes()}>
       <div>
-        <p className={classes("status")}>{status}</p>
-        {children && <p className={classes("extra")}> {children}</p>}
+        <p className={classes('status')}>{status}</p>
+        {children && <p className={classes('extra')}> {children}</p>}
       </div>
       {actions && actions.length && (
-        <AnchorList items={actions} classBlock={classes("actions")} />
+        <AnchorList items={actions} classBlock={classes('actions')} />
       )}
     </div>
   );
