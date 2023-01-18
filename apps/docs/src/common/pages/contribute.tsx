@@ -35,13 +35,14 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
     <h1 className="heading-section">Contribute to the design system</h1>
-    <p>Anyone can propose, develop or contribute to new patterns and components, or suggest improvements to existing ones.</p>
-    <p>For example, you can:</p>
+    <p>Anyone can contribute to the design system. For example, you can:</p>
     <ul>
       <li>ask questions about a style, component or pattern</li>
       <li>answer questions from others</li>
-      <li>share examples or demos of a component or pattern</li>
+      <li>share an example use of a component or pattern</li>
       <li>share research relating to a style, component or pattern</li>
+      <li>request an addition or improvement to the content style guide</li>
+      <li>propose a new style, component or pattern</li>
     </ul>
     <h2>Make a suggestion</h2>
     <h3>1. Check if there's already a discussion</h3>
