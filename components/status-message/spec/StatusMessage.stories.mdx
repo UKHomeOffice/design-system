@@ -1,7 +1,7 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
 import { StatusMessage } from '../src/StatusMessage';
 import readMe from '../README.md';
-import {A} from '@not-govuk/components';
+import {A} from "@not-govuk/components";
 
 <Meta
   title="Status message"
@@ -10,7 +10,7 @@ import {A} from '@not-govuk/components';
     chromatic: { viewports: [820, 480] },
     description: 'An indication to the user that something has changed.',
     jest: ['StatusMessage'],
-    notes: readMe,
+    notes: readMe
   } }
 />
 
@@ -37,7 +37,7 @@ Use status messages to:
 They are like alerts but are primarily used for internal services and can include actions for users to take.
 For less prominent status indicators you could use <A href="https://design-system.service.gov.uk/components/tag/">tags from the GOV.UK design system</A>.
 
-Limit to important information, or when it’s changed. Overuse risks the message getting lost. 
+Limit to important information, or when it’s changed. Overuse risks the message getting lost.
 
 ## How it works
 
@@ -71,7 +71,7 @@ Limit to important information, or when it’s changed. Overuse risks the messag
     </StatusMessage>
   </Story>
 </Preview>
- 
+
 ### Status message with multiple actions (no extra content)
 
 <Preview>
@@ -87,15 +87,15 @@ Limit to important information, or when it’s changed. Overuse risks the messag
 </Preview>
 
 ## Writing for this component
-The status message should be as concise as possible and relate to the whole page. The bold part and button should be short, 1 or 2 words. 
+The status message should be as concise as possible and relate to the whole page. The bold part and button should be short, 1 or 2 words.
 
-Any buttons should be verbs. 
+Any buttons should be verbs.
 
-If text in the middle is necessary, then ideally one line. It does not need to be in full sentences and does not need to end in a full stop. It should be plain text with no formatting. 
+If text in the middle is necessary, then ideally one line. It does not need to be in full sentences and does not need to end in a full stop. It should be plain text with no formatting.
 
-Do not use links, they do not contrast well with the background, use buttons instead. 
+Do not use links, they do not contrast well with the background, use buttons instead.
 
-If it’s about people, make sure your content is dynamic and personalised. Use ‘person’ when it’s about one person and ‘people’ for more than one and include names if you can. 
+If it’s about people, make sure your content is dynamic and personalised. Use ‘person’ when it’s about one person and ‘people’ for more than one and include names if you can.
 
 ## Accessibility
 

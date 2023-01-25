@@ -1,6 +1,6 @@
 import { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { Anchor, AnchorList } from '@not-govuk/anchor-list';
+import { Anchor, AnchorList } from "@not-govuk/anchor-list";
 
 import '../assets/StatusMessage.scss';
 
