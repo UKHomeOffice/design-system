@@ -59,26 +59,26 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>be accessible</li>
       </ul>
 
-      <h2 className="govuk-heading-l">Services using this pattern</h2>
-      <ul className="govuk-list govuk-list--bullet">
-        <li>Employer checking service</li>
-        <li>Passport renewals</li>
-      </ul>
-
-      <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">More research is needed. If your service uses this pattern,
-      get in touch to share your user research findings.</p>
-
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>When a time limit, like a session timeout, is set ensure a user is informed, especially if this may result in a loss of data. See the <A href="/accessibility/timeouts">timeouts guidance</A> for more information.</p>
       <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
-      <div className="contact-us">
-        <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel
-        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
-      </div>
+      <h2 className="govuk-heading-l">Research</h2>
+      <p className="govuk-body">This pattern is used by:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>Employer checking service</li>
+        <li>Passport renewals</li>
+      </ul>
+      <p className="govuk-body">More research is needed. If your service uses this pattern,
+      get in touch to share your user research findings.</p>
+
+      <h2 className="govuk-heading-l">Help us improve this pattern</h2>
+      <p>This pattern needs improving. We need evidence about:</p>
+      <ul>
+        <li>how to write for this pattern</li>
+      </ul>
+
+      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/383">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
 
     </div>
 </div>

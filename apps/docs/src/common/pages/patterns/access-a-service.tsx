@@ -43,7 +43,8 @@ const Page: FC<PageProps> = ({ location }) => (
       a user’s identity, it needs to balance ease of access with keeping a service and its user data secure.
       You should think about this early on when designing your service.</p>
 
-      <h2 className="govuk-heading-l">Access a service with identity documents</h2>
+      <h2 className="govuk-heading-l">How it works</h2>
+      <h3 className="govuk-heading-m">Access a service with identity documents</h3>
       <p>Follow this pattern if you are helping users to access a service by authenticating them with an
       identity document. It could be:</p>
       <ul className="govuk-list govuk-list--bullet">
@@ -55,7 +56,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <img src={applyAuthenticatePersonal} className="image-examples" alt="An example of a service verifying the user with passport details and date of birth" />
       </div>
 
-      <h2 className="govuk-heading-l">Access a service with security codes</h2>
+      <h3 className="govuk-heading-m">Access a service with security codes</h3>
       <p>You can use security codes or two-factor authentication (often shortened to 2FA) to
       verify a user's identity to let them access a service.</p>
       <p>You can use this method of authentication when a service stores user data and allows
@@ -70,39 +71,42 @@ const Page: FC<PageProps> = ({ location }) => (
         <img src={applyAuthenticateTwoFa} className="image-examples" alt="An example of a service verifying the user with two-factor authentication" />
       </div>
 
-      <h3 className="govuk-heading-m">Services using these patterns</h3>
+      <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>Access UK</li>
         <li>Apply for the EU settlement scheme</li>
         <li>Employer checking service</li>
       </ul>
 
-      <h2 className="govuk-heading-l">Access a service with reference numbers</h2>
+      <h3 className="govuk-heading-m">Access a service with reference numbers</h3>
       <p>A reference number is a simple way to let users access a service. For example,
       when a user saves progress and needs to return to complete a service.</p>
       <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
         <img src={applyAuthenticateReference} className="image-examples" alt="An example of a service verifying the user with reference number" />
       </div>
 
-      <h3 className="govuk-heading-m">Services using this pattern</h3>
+      <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>Passport renewals</li>
       </ul>
-
-      <h2 className="govuk-heading-l">Research</h2>
-      <p>More research is needed. If your service uses this pattern, get in touch to
-      share your user research findings.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>If your service uses this pattern, let us know of any insights you have on
       accessibility considerations.</p>
 
-      <div className="contact-us">
-        <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel
-        #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-        email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
-      </div>
+      <h2 className="govuk-heading-l">Research</h2>
+      <p>More research is needed. If your service uses this pattern, get in touch to
+      share your user research findings.</p>
+
+      <h2 className="govuk-heading-l">Help us improve this pattern</h2>
+      <p>This pattern needs improving. We need evidence about:</p>
+      <ul>
+        <li>how to write for this pattern</li>
+        <li>any research findings</li>
+        <li>any accessibility considerations</li>
+      </ul>
+
+      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/476">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
 
     </div>
 </div>

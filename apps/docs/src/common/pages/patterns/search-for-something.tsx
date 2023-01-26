@@ -49,8 +49,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p>Make sure you understand who your users are and what they are trying to achieve before coming up with any design solutions.</p>
 
-
-      <h2 className="govuk-heading-l">Narrow search</h2>
+      <h2 className='govuk-heading-l'>How it works</h2>
+      <h3 className="govuk-heading-m">Narrow search</h3>
       <p>If your users normally have a single key piece of information to hand to search with, such as a reference number or identifier, allow them to search by that as it will allow for a quick match. When an exact match is found, surface the match result on the screen (rather than going directing to the record).</p>
 
       <div className="example example-images confirmation" style={{marginBottom: "2em"}}>
@@ -58,7 +58,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
 
 
-      <h2 className="govuk-heading-l">Wide search</h2>
+      <h3 className="govuk-heading-m">Wide search</h3>
       <p>Users may not have a lot of information to hand before starting their search. If this is the case, you should make your search parameters quite wide. For example, if a user is searching for a person, allow them to enter both name and DOB, as well as address and postcode. If this brings up too many results, allow filtering.
 
       </p>
@@ -84,13 +84,6 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>response time between searching and the time it will take to surface the results</li>
       </ul>
 
-      <h3 className="govuk-heading-m">Research on this pattern</h3>
-      <p>Multiple Home Office services use search. If you have evidence this also works for your users, you <A href="https://github.com/UKHomeOffice/design-system/issues/322">can contribute to our backlog</A></p>
-
-
-
-
-
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>It must be possible for someone using a keyboard to complete all tasks in a service. See the <A href="/accessibility/keyboard">keyboard guidance</A> for more information.</p>
@@ -109,12 +102,19 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
-      <div className="contact-us">
-        <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you've got a question or suggestion share it on the Slack channel
-          #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-          email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
-      </div>
+      <h2 className="govuk-heading-l">Research</h2>
+      <p className="govuk-body">More research is needed. If your service uses this
+      pattern, share your user research findings.</p>
+
+      <h2 className="govuk-heading-l">Help us improve this pattern</h2>
+      <p>This pattern needs improving. We need evidence about:</p>
+      <ul>
+        <li>any research findings</li>
+        <li>how to <A href="https://github.com/UKHomeOffice/design-system/discussions/455">highlight search matches</A></li>
+        <li>how to write for this pattern</li>
+      </ul>
+
+      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/484">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
 
     </div>
   </div>
