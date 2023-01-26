@@ -10,7 +10,7 @@ export const formatTime = (
 		    hour: clockType === 24 ? '2-digit' : 'numeric',
 		    minute: '2-digit'
 		  })
-		  .replace(' ','')
+		  .replace(/\s+/g,'')
       .toLowerCase()
 	);
 };

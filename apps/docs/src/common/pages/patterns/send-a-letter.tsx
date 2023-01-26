@@ -157,17 +157,6 @@ const Page: FC<PageProps> = ({ location }) => (
         </li>
       </ol>
 
-      <h2 className="govuk-heading-l">Research on this pattern</h2>
-      <p className="govuk-body">The insights that informed this model came from multiple services across the Home Office including:</p>
-      <ul className="govuk-list govuk-list--bullet">
-        <li>Refugee Integration Loans</li>
-        <li>Penalty notices</li>
-        <li>Atlas caseworking system</li>
-        <li>EU Settlement Scheme</li>
-        <li>Home Office HR system</li>
-      </ul>
-      <p className="govuk-body">If you have evidence this also works for your users, you can contribute to our backlog.</p>
-
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p className="govuk-body">Some of our users will not speak English as a first language and literacy levels may vary.
         The content should be written to be clear and understandable for all and avoid jargon or over-complicated legal text.</p>
@@ -186,12 +175,26 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
-      <div className="contact-us">
-        <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you've got a question or suggestion share it on the Slack channel
-          #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or
-          email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
-      </div>
+      <h2 className="govuk-heading-l">Research</h2>
+      <p className="govuk-body">The insights that informed this model came from multiple services across the Home Office including:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>Refugee Integration Loans</li>
+        <li>Penalty notices</li>
+        <li>Atlas caseworking system</li>
+        <li>EU Settlement Scheme</li>
+        <li>Home Office HR system</li>
+      </ul>
+      <p className="govuk-body">If you have evidence this also works for your users, you can contribute to our backlog.</p>
+
+      <h2 className="govuk-heading-l">Help us improve this pattern</h2>
+      <p>This pattern needs improving. We need evidence about:</p>
+      <ul>
+        <li>how you've used this template to design a letter</li>
+        <li>any other accessibility considerations</li>
+        <li>design differences if the letter is sent by email</li>
+      </ul>
+
+      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/377">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
     </div>
 </div>
 
