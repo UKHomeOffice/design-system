@@ -108,7 +108,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="e">E</h2>
     <h3 id="eea biometric residence card">EEA biometric residence card</h3>
-    <p>Lower case. Also called ‘UK residence card’ or ‘biometric residence card (BRC)’, these are no longer in use.</p>
+    <p>Lower case. Also called a ‘UK residence card’ or ‘biometric residence card (BRC)’, these are no longer in use.</p>
     <h3 id="enhanced dbs check">enhanced DBS check</h3>
     <p>Use ‘enhanced DBS check’ rather than ‘enhanced disclosure’.</p>
     <h3 id="eu settlement scheme">EU Settlement Scheme (EUSS)</h3>
