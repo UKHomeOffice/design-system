@@ -128,8 +128,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2 className="a-z-header" id="h">H</h2>
     <h3 id="his majesty’s">His Majesty’s</h3>
     <p>Use ‘HM’ rather than ‘His Majesty’s’ in front of the name of the relevant public body. For example, ‘HM Revenue & Customs’.</p>
-    <h3 id="his majesty’s passport office">His Majesty’s Passport Office</h3>
-    <p>Capitalised. You can use ‘HM Passport Office’ after the first full mention. Do not use ‘HMPO’ in public-facing services.</p>
+    <h3 id="hm passport office">HM Passport Office</h3>
+    <p>Capitalised. Do not use ‘HMPO’ in public-facing services.</p>
     <h3 id="home office reference number">Home Office reference number</h3>
     <p>Use lower case for ‘reference number’.</p>
     <h3 id="horizon news">Horizon News</h3>
