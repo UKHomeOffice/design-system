@@ -32,7 +32,7 @@ export const StatusMessage: FC<StatusMessageProps> = ({
   return (
     <div {...attrs} className={classes()}>
       <div>
-        <p className={classes('status')}>{status}</p>
+        <div className={classes('status')}>{status}</div>
         {children && <p className={classes('extra')}> {children}</p>}
       </div>
       {actions && actions.length && (
