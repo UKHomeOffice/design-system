@@ -1,0 +1,41 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Highlight } from '../src/Highlight';
+import readMe from '../README.md';
+
+<Meta
+  title="Highlight"
+  component={ Highlight }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'A component for highlighting words and short pieces of text.',
+    jest: ['Highlight'],
+    notes: readMe
+  } }
+/>
+
+# highlight
+
+A component for highlighting words and short pieces of text.
+
+<Preview withToolbar>
+  <Story name="Highlight Date">
+    <highlight>
+      12/12/1995
+    </highlight>
+  </Story>
+</Preview>
+
+<Props of={ Highlight } />
+
+## Stories
+### Standard
+
+A standard highlight.
+
+<Preview>
+  <Story name="Highlight Important Information">
+    <highlight>
+      United Kingdon (UK)
+    </highlight>
+  </Story>
+</Preview>
