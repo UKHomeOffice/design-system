@@ -19,6 +19,4 @@ export const Highlight: FC<StandardProps> = ({
   );
 };
 
-Highlight.displayName = 'Highlight';
-
 export default Highlight;
