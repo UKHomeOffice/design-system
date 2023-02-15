@@ -1,0 +1,9 @@
+.hods-loading-spinner {
+  /* Write base styles for LoadingSpinner here */
+  background-color: beige;
+
+  &__heading {
+    /* Write styles for 'heading' element within LoadingSpinner here */
+    color: navy;
+  }
+}

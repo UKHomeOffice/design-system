@@ -1,0 +1,39 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { LoadingSpinner } from '../src/LoadingSpinner';
+import readMe from '../README.md';
+
+<Meta
+  title="loading-spinner"
+  component={ LoadingSpinner }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'A circular rotating loading spinner.',
+    jest: ['LoadingSpinner'],
+    notes: readMe
+  } }
+/>
+
+# loading-spinner
+
+A circular rotating loading spinner.
+WRITE MORE DESCRIPTION HERE.
+
+<Preview withToolbar>
+  <Story name="LoadingSpinner">
+    <LoadingSpinner />
+  </Story>
+</Preview>
+
+<Props of={ LoadingSpinner } />
+
+
+## Stories
+### Standard
+
+A standard loading-spinner.
+
+<Preview>
+  <Story name="Standard">
+    <LoadingSpinner />
+  </Story>
+</Preview>
