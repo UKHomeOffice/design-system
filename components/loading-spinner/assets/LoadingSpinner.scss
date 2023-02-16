@@ -3,22 +3,29 @@
 .hods-loading-spinner {
 
   &__spinner {
-    @include govuk-responsive-margin(4, "top");
-    @include govuk-responsive-margin(4, "bottom");
-    margin-left: auto;
-    margin-right: auto;
-    border: 12px solid #DEE0E2;
-    border-radius: 50%;
-    border-top-color: #005EA5;
-    width: 80px;
-    height: 80px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    @include govuk-responsive-padding(4, "top");
+    @include govuk-responsive-padding(4, "bottom");
+
+    div {
+      margin-left: auto;
+      margin-right: auto;
+      border: 12px solid #DEE0E2;
+      border-radius: 50%;
+      border-top-color: #005EA5;
+      width: 80px;
+      height: 80px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
   }
 
-  &__text {
-    @include govuk-font(16);
+  &__content {
+    @include govuk-responsive-padding(4, "top");
     text-align: center;
+
+    h1 {
+      @include govuk-font(16);
+    }
   }
 }
 

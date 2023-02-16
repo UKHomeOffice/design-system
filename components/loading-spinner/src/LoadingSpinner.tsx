@@ -20,8 +20,12 @@ export const LoadingSpinner: FC<LoadingSpinnerProps> = ({
 
   return (
     <div className={classes()} {...attrs}>
-      <div className={classes('spinner')} aria-live="polite" role="status" />
-      <h1 className={classes('text')}>{textContent}</h1>
+      <div className={classes('spinner')}>
+        <div aria-live="polite" role="status" />
+      </div>
+      <div className={classes('content')}>
+        <h1>{textContent}</h1>
+      </div>
     </div>
   );
 };
