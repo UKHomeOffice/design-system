@@ -4,8 +4,8 @@ import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import '../assets/LoadingSpinner.scss';
 
 export type LoadingSpinnerProps = StandardProps & {
-  /** Description for the 'heading' prop */
-  heading?: string
+  /** Text content for the loading spinner */
+  textContent: string
 };
 
 export const LoadingSpinner: FC<LoadingSpinnerProps> = ({
@@ -13,20 +13,17 @@ export const LoadingSpinner: FC<LoadingSpinnerProps> = ({
   classBlock,
   classModifiers,
   className,
-  heading,
+  textContent,
   ...attrs
 }) => {
   const classes = classBuilder('hods-loading-spinner', classBlock, classModifiers, className);
-  const title = heading || 'loading-spinner';
 
   return (
-    <div {...attrs} className={classes()}>
-      <h1 className={classes('heading')}>{title}</h1>
-      {children}
+    <div className={classes()} {...attrs}>
+      <div className={classes('spinner')} aria-live="polite" role="status" />
+      <h1 className={classes('text')}>{textContent}</h1>
     </div>
   );
 };
-
-LoadingSpinner.displayName = 'LoadingSpinner';
 
 export default LoadingSpinner;
