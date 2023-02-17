@@ -4,20 +4,15 @@ import LoadingSpinner from '../src/LoadingSpinner';
 
 describe('LoadingSpinner', () => {
   const minimalProps = {
+    textContent: "Your next assigned task is loading..."
   };
 
   describe('when given minimal valid props', () => {
     const component = mount(h(LoadingSpinner, minimalProps, 'Child'));
 
-    it('renders', () => undefined);
+    it('renders', () => {
+      expect(component.text()).toBe(minimalProps.textContent);
+    });
   });
 
-  describe('when given all valid props', () => {
-    const props = {
-      ...minimalProps
-    };
-    const component = mount(h(LoadingSpinner, props, 'Child'));
-
-    it('renders', () => undefined);
-  });
 });
