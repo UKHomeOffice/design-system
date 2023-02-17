@@ -84,6 +84,14 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>response time between searching and the time it will take to surface the results</li>
       </ul>
 
+      <h3 className="govuk-heading-m">Highlight search results</h3>
+      <p>You may wish to <a href="/components?name=Highlight">highlight</a> to users why the search results match the search criteria.</p>
+      <p>You should:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>consider other colours on the page, does the highlight conflict with them</li>
+        <li>think about which parts of the search results should be highlighted, do not overuse the highlight</li>
+        <li>use bold as well as colour to highlight the differences</li>
+      </ul>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p>It must be possible for someone using a keyboard to complete all tasks in a service. See the <A href="/accessibility/keyboard">keyboard guidance</A> for more information.</p>
@@ -103,6 +111,13 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
       <h2 className="govuk-heading-l">Research</h2>
+      <p className="govuk-body">We conducted usability testing on highlighting search results with 3 external participants with access needs, with varying levels of blindess. Participants used screen readers and zoom function whilst participating. High level findings included:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>highlight colours conflicted with other coloured tags in the results causing disorientation</li>
+        <li>focus was drawn to the other colours on the screen rather than the highlight</li>
+        <li>participants took time to understand what the highlight was for</li>
+      </ul>
+
       <p className="govuk-body">More research is needed. If your service uses this
       pattern, share your user research findings.</p>
 
@@ -110,7 +125,6 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>This pattern needs improving. We need evidence about:</p>
       <ul>
         <li>any research findings</li>
-        <li>how to <A href="https://github.com/UKHomeOffice/design-system/discussions/455">highlight search matches</A></li>
         <li>how to write for this pattern</li>
       </ul>
 
