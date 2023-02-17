@@ -14,7 +14,9 @@ export const Highlight: FC<StandardProps> = ({
 
   return (
     <mark {...attrs} className={classes()}>
-      {children}
+      <strong>
+        {children}
+      </strong>
     </mark>
   );
 };
