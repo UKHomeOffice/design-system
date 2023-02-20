@@ -3,7 +3,7 @@ import { LoadingSpinner } from '../src/LoadingSpinner';
 import readMe from '../README.md';
 
 <Meta
-  title="loading-spinner"
+  title="Loading spinner"
   component={ LoadingSpinner }
   parameters={ {
     chromatic: { viewports: [640, 480] },
@@ -13,10 +13,9 @@ import readMe from '../README.md';
   } }
 />
 
-# loading-spinner
+# Loading spinner
 
-A circular rotating loading spinner.
-WRITE MORE DESCRIPTION HERE.
+Tell a user they need to wait, as something is happening.
 
 <Preview withToolbar>
   <Story name="LoadingSpinner">
@@ -26,14 +25,51 @@ WRITE MORE DESCRIPTION HERE.
 
 <Props of={ LoadingSpinner } />
 
+## When to use this component
+Use a loading spinner to inform users they need to wait for something to happen. For example, you can use a loading spinner to show that a result is taking time to process.
+ 
+Consider whether the speed and responsiveness of the service can be technically improved before using a loading spinner.
 
-## Stories
-### Standard
-
-A standard loading-spinner.
+## How it works
 
 <Preview>
   <Story name="Standard">
     <LoadingSpinner textContent="Loading the next task for this case" />
   </Story>
 </Preview>
+
+### If something goes wrong
+If something goes wrong or the loading period times out, tell users there has been a problem and provide a link to another suitable action. Do not allow the loading spinner to loop indefinitely. 
+
+## Writing for this component
+Explain what the user is waiting for.
+
+The explanation is a heading 1, so do not show another heading 1 with the loading spinner.
+
+## Accessibility
+
+If you do need a loading screen, ensure that: 
+- you agree a maximum loading time that is suitable for the action 
+- content clearly describes what the user is waiting for
+
+To help assistive technology users, ensure your code includes: 
+- aria-live=”polite” 
+- role=”status” 
+- the div is called “loading”
+
+This component only uses HTML and css - it does not use javascript. It does not require users to have javascript enabled.
+
+If your service uses this component, let us know of any insights you have on accessibility considerations.
+
+## Research
+
+The loading spinner is used by:
+* Atlas caseworking system
+* Manage appointment booking
+* Generic ID verification web
+
+Another department found that using an animated loading spinner gave users more confidence that something is still happening, over a static message.
+
+## Help improve this component
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/488), or follow our [contribute guidance](https://design.homeoffice.gov.uk/contribute).
