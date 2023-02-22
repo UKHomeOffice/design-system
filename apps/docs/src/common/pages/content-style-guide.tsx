@@ -249,7 +249,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2 className="a-z-header" id="u">U</h2>
     <h3 id="uk residence card">UK residence card</h3>
     <p>Lower case. Also called a ‘biometric residence card (BRC)’ or 'EEA biometric residence card'.</p>
-    <h3 id="user-centred">User centred</h3>
+    <h3 id="user-centred">user centred</h3>
     <p>Hyphenate when using as an adjective, as in 'user-centred design'. Do not hyphenate when using as a noun, as in 'teams need to be user centred'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
