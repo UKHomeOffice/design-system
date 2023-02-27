@@ -111,7 +111,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>If your service uses this pattern, let us know of any insights you have on accessibility considerations.</p>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">We conducted usability testing on highlighting search results with 3 external participants with access needs, with varying levels of blindess. Participants used screen readers and zoom function whilst participating. High level findings included:</p>
+      <p className="govuk-body">We conducted usability testing on highlighting search results with 3 external participants with access needs, with varying severities of vision loss. Participants used screen readers and zoom function whilst participating. High level findings included:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>highlight colours conflicted with other coloured tags in the results causing disorientation</li>
         <li>focus was drawn to the other colours on the screen rather than the highlight</li>

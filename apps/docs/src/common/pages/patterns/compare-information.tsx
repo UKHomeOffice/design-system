@@ -126,7 +126,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Use in moderation. Overuse reduces efficacy of the highlight and can cause unnecessary mental load for people using screen readers.</p>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">We did usability testing with 3 external participants with access needs, with varying levels of blindness. Participants used screen readers and zoom function whilst participating. High level findings included: </p>
+      <p className="govuk-body">We did usability testing with 3 external participants with access needs, with varying severities of vision loss. Participants used screen readers and zoom function whilst participating. High level findings included: </p>
       <ul className="govuk-list govuk-list--bullet">
         <li>the colour of the highlight was disorientating for some partially sighted users</li>
         <li>comparing highlighted information with a screen reader would be difficult without other applications</li>
