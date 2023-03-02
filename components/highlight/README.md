@@ -1,4 +1,4 @@
-Hods - Highlight
+HODS - Highlight
 ================
 
 A component for highlighting words and short pieces of text.
@@ -20,9 +20,9 @@ import React, { createElement as h } from 'react';
 import Highlight from '@hods/highlight';
 
 export const MyComponent = props => (
-  <Highlight
-    // WRITEME
-  />
+  <Highlight>
+    United Kingdon (UK)
+  </Highlight>
 );
 
 export default MyComponent;
