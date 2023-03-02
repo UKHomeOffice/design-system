@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
-import { Highlight } from '../../../../../../components/highlight'
+import { Highlight } from '@hods/components'
 
 export const title = 'Compare information';
 const description = 'How to help users to compare information';
