@@ -108,7 +108,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="e">E</h2>
     <h3 id="eea biometric residence card">EEA biometric residence card</h3>
-    <p>Lower case. Also called ‘UK residence card’ or ‘biometric residence card (BRC)’, these are no longer in use.</p>
+    <p>Lower case. Also called a ‘UK residence card’ or ‘biometric residence card (BRC)’.</p>
     <h3 id="enhanced dbs check">enhanced DBS check</h3>
     <p>Use ‘enhanced DBS check’ rather than ‘enhanced disclosure’.</p>
     <h3 id="eu settlement scheme">EU Settlement Scheme (EUSS)</h3>
@@ -128,8 +128,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2 className="a-z-header" id="h">H</h2>
     <h3 id="his majesty’s">His Majesty’s</h3>
     <p>Use ‘HM’ rather than ‘His Majesty’s’ in front of the name of the relevant public body. For example, ‘HM Revenue & Customs’.</p>
-    <h3 id="his majesty’s passport office">His Majesty’s Passport Office</h3>
-    <p>Capitalised. You can use ‘HM Passport Office’ after the first full mention. Do not use ‘HMPO’ in public-facing services.</p>
+    <h3 id="hm passport office">HM Passport Office</h3>
+    <p>Capitalised. Do not use ‘HMPO’ in public-facing services.</p>
     <h3 id="home office reference number">Home Office reference number</h3>
     <p>Use lower case for ‘reference number’.</p>
     <h3 id="horizon news">Horizon News</h3>
@@ -147,8 +147,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Capitalised. After first mention, you can refer to ‘the rules’, using lower case.</p>
     <h3 id="inclusive language">inclusive language</h3>
     <p>Read our <A href="https://design.homeoffice.gov.uk/accessibility/inclusive-language">guidance on using inclusive language</A> in the Home Office design system.</p>
-    <h3 id="indefinite leave to remain">indefinite leave to remain (ILR)</h3>
-    <p>'Indefinite leave to remain' is officially called 'settlement' or 'settled status'. For example, 'apply for citizenship if you have settled status'.</p>
+    <h3 id="indefinite leave to remain">indefinite leave to remain</h3>
+    <p>'Indefinite leave to remain' is officially called 'settlement'. For example, 'apply for UK settlement'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="j">J</h2>
@@ -160,9 +160,9 @@ const Page: FC<PageProps> = ({ location }) => (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="l">L</h2>
-    <h3 id="leave to enter">Leave to enter</h3>
+    <h3 id="leave to enter">leave to enter</h3>
     <p>Use 'permission to enter' instead of 'leave to enter', which is no longer in official use. For example, 'apply for permission to enter the UK'.</p>
-    <h3 id="leave to remain">Leave to remain</h3>
+    <h3 id="leave to remain">leave to remain</h3>
     <p>Use 'permission to stay' instead of 'leave to remain', which is no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
     <h3 id="life in the uk test">Life in the UK Test</h3>
     <p>Capitalise the ‘L’ and ‘T’. After first mention, you can refer to ‘the test’, using lower case.</p>
@@ -188,6 +188,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
     <h3 id="people">people</h3>
     <p>Use ‘people’ rather than ‘persons’.</p>
+    <h3 id="permission to enter">permission to enter</h3>
+    <p>Use 'permission to enter' instead of 'leave to enter', which is no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="permission to stay">permission to stay</h3>
     <p>Use 'permission to stay' instead of 'leave to remain', which is no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
     <h3 id="persons">persons</h3>
@@ -228,7 +230,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="senior civil service">senior civil service (SCS)</h3>
     <p>Lower case. You can use ‘SCS’ after the first full mention.</p>
     <h3 id="settlement">settlement</h3>
-    <p>'Indefinite leave to remain' is officially called 'settlement' or 'settled status'. For example, 'apply for citizenship if you have settled status'.</p>
+    <p>'Indefinite leave to remain' is officially called 'settlement'. For example, 'apply for UK settlement'.</p>
     <h3 id="set up">set up</h3>
     <p>Use ‘create an account’ rather than ‘register’ or ‘set up’ an account.</p>
     <h3 id="sign in">sign in</h3>
@@ -246,7 +248,9 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="u">U</h2>
     <h3 id="uk residence card">UK residence card</h3>
-    <p>Lower case. Also called a ‘biometric residence card (BRC)’, these are no longer in use.</p>
+    <p>Lower case. Also called a ‘biometric residence card (BRC)’ or 'EEA biometric residence card'.</p>
+    <h3 id="user-centred">User centred</h3>
+    <p>Hyphenate when using as an adjective, as in 'user-centred design'. Do not hyphenate when using as a noun, as in 'teams need to be user centred'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="v">V</h2>
