@@ -1,4 +1,4 @@
-Hods - Loading-Spinner
+HODS - Loading-Spinner
 ======================
 
 A circular rotating loading spinner.
@@ -20,9 +20,7 @@ import React, { createElement as h } from 'react';
 import LoadingSpinner from '@hods/loading-spinner';
 
 export const MyComponent = props => (
-  <LoadingSpinner
-    // WRITEME
-  />
+  <LoadingSpinner textContent="Loading the next task in your case load" />
 );
 
 export default MyComponent;
