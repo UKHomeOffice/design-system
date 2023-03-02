@@ -11,8 +11,8 @@
     border-top-color: #005EA5;
     width: 80px;
     height: 80px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    -webkit-animation: hods-loading-spinner-animation 2s linear infinite;
+    animation: hods-loading-spinner-animation 2s linear infinite;
   }
 
   &__content {
@@ -21,7 +21,7 @@
   }
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes hods-loading-spinner-animation {
   0% {
     -webkit-transform: rotate(0deg);
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@keyframes spin {
+@keyframes hods-loading-spinner-animation {
   0% {
     transform: rotate(0deg);
   }
