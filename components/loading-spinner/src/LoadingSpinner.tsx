@@ -13,7 +13,7 @@ export const LoadingSpinner: FC<LoadingSpinnerProps> = ({
   classBlock,
   classModifiers,
   className,
-  textContent,
+  textContent = "Loading...",
   ...attrs
 }) => {
   const classes = classBuilder('hods-loading-spinner', classBlock, classModifiers, className);
