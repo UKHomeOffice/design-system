@@ -20,7 +20,7 @@ import React, { createElement as h } from 'react';
 import LoadingSpinner from '@hods/loading-spinner';
 
 export const MyComponent = props => (
-  <LoadingSpinner textContent="Loading the next task in your case load" />
+  <LoadingSpinner>Loading the next task in your case load<LoadingSpinner/>
 );
 
 export default MyComponent;

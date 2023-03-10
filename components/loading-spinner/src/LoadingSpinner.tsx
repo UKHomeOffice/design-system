@@ -3,17 +3,11 @@ import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 
 import '../assets/LoadingSpinner.scss';
 
-export type LoadingSpinnerProps = StandardProps & {
-  /** Text content for the loading spinner */
-  textContent: string
-};
-
-export const LoadingSpinner: FC<LoadingSpinnerProps> = ({
+export const LoadingSpinner: FC<StandardProps> = ({
   children,
   classBlock,
   classModifiers,
   className,
-  textContent = "Loading...",
   ...attrs
 }) => {
   const classes = classBuilder('hods-loading-spinner', classBlock, classModifiers, className);
@@ -22,7 +16,7 @@ export const LoadingSpinner: FC<LoadingSpinnerProps> = ({
     <div className={classes()} {...attrs}>
       <div className={classes('spinner')} aria-live="polite" role="status" />
       <div className={classes('content')}>
-        <h1 className='govuk-heading-m'>{textContent}</h1>
+        <h1 className='govuk-heading-m'>{children ? children : "Loading..."}</h1>
       </div>
     </div>
   );

@@ -3,23 +3,22 @@ import { mount } from '@not-govuk/component-test-helpers';
 import LoadingSpinner from '../src/LoadingSpinner';
 
 describe('LoadingSpinner', () => {
-  const minimalProps = {
-    textContent: "Your next assigned task is loading..."
-  };
 
   describe("when given default valid props" ,() => {
-    const component = mount(h(LoadingSpinner, undefined, 'Child'));
+    const component = mount(h(LoadingSpinner, undefined, undefined));
 
     it('renders default text content', () => {
       expect(component.text()).toBe("Loading...");
     })
   })
 
-  describe('when given minimal valid props', () => {
-    const component = mount(h(LoadingSpinner, minimalProps, 'Child'));
+  describe('when given passed children', () => {
+    const textContent = 'Loading next task...'
+
+    const component = mount(h(LoadingSpinner, undefined, textContent));
 
     it('renders text content', () => {
-      expect(component.text()).toBe(minimalProps.textContent);
+      expect(component.text()).toBe(textContent);
     });
   });
 });
