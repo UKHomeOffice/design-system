@@ -34,8 +34,6 @@ export const Navigation: FC<NavigationProps> = ({
     classModifiers,
     className
   );
-  const pageEquals = pageParameter + '=';
-
   const resultsFrom = (page - 1) * resultsPerPage + 1;
   const maxResults = page * resultsPerPage;
   const additionalPage =

@@ -1,6 +1,8 @@
 # False positives
 10027	IGNORE	(Information Disclosure - Suspicious Comments)
 10031	IGNORE	(User Controllable HTML Element Attribute)
+# We deliberately don't cache HTML as it may contain sensitive information
+10049	IGNORE	(Non-Storable Content)
 # Netlify seems to randomly generate these
 10096	IGNORE	(Timestamp Disclosure)
 # HSTS should be set by the proxy terminating TLS
@@ -11,11 +13,15 @@
 10055	IGNORE	(CSP: style-src unsafe-inline)
 # We can't seem to run the Ajax spider
 10109	INFO	(Modern Web Application)
+# These are not real forms, and we replicate GDS
+10202	IGNORE	(Absence of Anti-CSRF Tokens)
 # We don't control the headers on Netlify's CDN
 10021	OUTOFSCOPE	.*/public/.*
+10063	OUTOFSCOPE	.*/public/.*
 # These are not timestamps
 10096	OUTOFSCOPE	.*/public/.*\.css
 # These are HTML errors
 10202	OUTOFSCOPE	.*/public/.*\.bundle\.js
 # We don't control the vendors code
+10110	OUTOFSCOPE	.*/public/js/vendors\..*\.bundle\.js
 90022	OUTOFSCOPE	.*/public/js/vendors\..*\.bundle\.js
