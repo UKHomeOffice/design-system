@@ -5,6 +5,7 @@ const storySources = [
   require('../../../../components/footer/spec/Footer.stories.mdx'),
   require('../../../../components/header/spec/Header.stories.mdx'),
   require('../../../../components/highlight/spec/Highlight.stories.mdx'),
+  require('../../../../components/loading-spinner/spec/LoadingSpinner.stories.mdx'),
   require('../../../../components/page/spec/Page.stories.mdx'),
   require('../../../../components/pagination/spec/Pagination.stories.mdx'),
   require('../../../../components/status-message/spec/StatusMessage.stories.mdx'),

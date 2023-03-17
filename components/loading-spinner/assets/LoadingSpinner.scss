@@ -1,0 +1,42 @@
+@import "@hods/sass-base";
+
+.hods-loading-spinner {
+  @include govuk-responsive-padding(4, "top");
+
+  &__spinner {
+    margin-left: auto;
+    margin-right: auto;
+    border: 12px solid #DEE0E2;
+    border-radius: 50%;
+    border-top-color: govuk-colour("blue");
+    width: 80px;
+    height: 80px;
+    -webkit-animation: hods-loading-spinner-animation 2s linear infinite;
+    animation: hods-loading-spinner-animation 2s linear infinite;
+  }
+
+  &__content {
+    @include govuk-responsive-padding(4, "top");
+    text-align: center;
+  }
+}
+
+@-webkit-keyframes hods-loading-spinner-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes hods-loading-spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

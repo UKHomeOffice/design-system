@@ -31,6 +31,7 @@
     "@hods/expandable-banner": "workspace:^0.3.7",
     "@hods/footer": "workspace:^0.3.7",
     "@hods/header": "workspace:^0.3.7",
+    "@hods/loading-spinner": "workspace:^0.3.7",
     "@hods/highlight": "workspace:^0.3.7",
     "@hods/page": "workspace:^0.3.7",
     "@hods/pagination": "workspace:^0.3.7",
