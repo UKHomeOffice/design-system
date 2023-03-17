@@ -27,6 +27,7 @@ Tell users that something has changed.
 <Props of={ StatusMessage } />
 
 ## When to use this component
+
 Use status messages to:
 
   - notify the user of a change
@@ -36,17 +37,26 @@ Use status messages to:
 They are like alerts but are primarily used for internal services and can include actions for users to take.
 For less prominent status indicators you could use <A href="https://design-system.service.gov.uk/components/tag/">tags from the GOV.UK design system</A>.
 
-Limit to important information, or when it’s changed. Overuse risks the message getting lost. 
+Limit to important information, or when it’s changed. Overuse risks the message getting lost.
 
 ## How it works
+
 ### Standard status message with an action
 
 <Preview>
   <Story name="Standard">
-    <StatusMessage status="On hold" actions={[{ href: '#', text: 'Review' }]}>
-      - due for review 31 May 2021
+    <StatusMessage status="On hold" actions={[{ href: "#", text: "Review" }]}>
+      Due for review 31 May 2021
     </StatusMessage>
   </Story>
+</Preview>
+
+### Status message without an action
+
+<Preview>
+	<Story name="Standard without action">
+		<StatusMessage status="On hold">Due for review 31 May 2021</StatusMessage>
+	</Story>
 </Preview>
 
 ### Status message with multiple actions
@@ -54,29 +64,45 @@ Limit to important information, or when it’s changed. Overuse risks the messag
 <Preview>
   <Story name="MultipleActions">
     <StatusMessage status="On hold" actions={[
-      { href: '#', text: 'Review' },
-      { href: '#', text: 'Extend hold' }
-    ]}>
-      - due for review 31 May 2021
+        { href: "#", text: "Review" },
+        { href: "#", text: "Extend hold" },
+      ]}>
+      Due for review 31 May 2021
+    </StatusMessage>
+  </Story>
+</Preview>
+
+### Status message with multiple actions (no extra content)
+
+<Preview>
+  <Story name="MultipleActions no extra content">
+    <StatusMessage
+      status="On hold"
+      actions={[
+        { href: "#", text: "Review" },
+        { href: "#", text: "Extend hold" },
+      ]}>
     </StatusMessage>
   </Story>
 </Preview>
 
 ## Writing for this component
-The status message should be as concise as possible and relate to the whole page. The bold part and button should be short, 1 or 2 words. 
+The status message should be as concise as possible and relate to the whole page. The bold part and button should be short, 1 or 2 words.
 
-Any buttons should be verbs. 
+Any buttons should be verbs.
 
-If text in the middle is necessary, then ideally one line. It does not need to be in full sentences and does not need to end in a full stop. It should be plain text with no formatting. 
+If text in the middle is necessary, then ideally one line. It does not need to be in full sentences and does not need to end in a full stop. It should be plain text with no formatting.
 
-Do not use links, they do not contrast well with the background, use buttons instead. 
+Do not use links, they do not contrast well with the background, use buttons instead.
 
-If it’s about people, make sure your content is dynamic and personalised. Use ‘person’ when it’s about one person and ‘people’ for more than one and include names if you can. 
+If it’s about people, make sure your content is dynamic and personalised. Use ‘person’ when it’s about one person and ‘people’ for more than one and include names if you can.
 
 ## Accessibility
+
 All users benefit from clear, visible notification messages which are presented in a consistent, predictable way. See the <a href="/accessibility/notifications">notifications guidance</a> for more information
 
 ## Research
+
 The status message is used by:
 
   - Returns and movement
@@ -93,11 +119,12 @@ For a service to assess border risk, this was used at the top of the screen to:
 
 <Preview>
   <Story name="ExampleFromIntenalService">
-    <StatusMessage status="Read only" actions={[
-      { href: '#', text: 'Take over' }
-    ]}>
-      - Liam Davies is working on these results<br />
-         Last active: 5 minutes ago
+    <StatusMessage
+      status="Read only"
+      actions={[{ href: "#", text: "Take over" }]}>
+      Liam Davies is working on these results
+      <br />
+      Last active: 5 minutes ago
     </StatusMessage>
   </Story>
 </Preview>
