@@ -4,7 +4,7 @@ import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import '../assets/LoadingSpinner.scss';
 
 export const LoadingSpinner: FC<StandardProps> = ({
-  children,
+   children = 'Loading...',
   classBlock,
   classModifiers,
   className,
@@ -16,7 +16,7 @@ export const LoadingSpinner: FC<StandardProps> = ({
     <div className={classes()} {...attrs}>
       <div className={classes('spinner')} aria-live="polite" role="status" />
       <div className={classes('content')}>
-        <h1 className='govuk-heading-m'>{children ? children : "Loading..."}</h1>
+        <h1 className='govuk-heading-m'>{children}</h1>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ export { default as DateDisplay } from '@hods/date-display';
 export { default as ExpandableBanner } from '@hods/expandable-banner';
 export { default as Footer } from '@hods/footer';
 export { default as Header } from '@hods/header';
+export { default as LoadingSpinner } from '@hods/loading-spinner';
 export { default as Page } from '@hods/page';
 export { default as Pagination } from '@hods/pagination';
 export { default as StatusMessage } from '@hods/status-message';
