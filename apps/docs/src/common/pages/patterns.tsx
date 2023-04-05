@@ -22,7 +22,7 @@ export const menu = (
       },
       {
         href: '/patterns/enter-passport-details/scan-passport-chip',
-        text: '- Scan passport chip'
+        text: '- Scan the chip'
       },
       {
         href: '/patterns/enter-passport-details/take-upload-photo',

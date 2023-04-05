@@ -30,8 +30,8 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p className="govuk-body">You can ask for passport details in 3 ways. Users can:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li><A href="enter-passport-details/scan-passport-chip">scan the chip</A> in the passport</li>
-        <li><A href="enter-passport-details/take-upload-photo">take and upload a photo or scan</A> of the passport</li>
+        <li><A href="enter-passport-details/scan-passport-chip">scan the chip</A></li>
+        <li><A href="enter-passport-details/take-upload-photo">take and upload a photo or scan</A></li>
         <li><A href="enter-passport-details/manually-enter-details">manually enter the details</A></li>
       </ul>
       <p className="govuk-body">Use the <A href="https://www.consilium.europa.eu/prado/en/search-by-document-country.html">public register of identity documents</A> to see the similarities and differences between passports from around the world.</p>
@@ -41,7 +41,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">You may find that your particular use case or user needs means you need to adjust the guidance based on your research.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
-      <p className="govuk-body">In all the methods, you should make it clear which passport the user needs to scan, an individual may have several.</p>
+      <p className="govuk-body">In all the methods, you should make it clear which passport the user needs to scan, because a person may have several.</p>
       
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>

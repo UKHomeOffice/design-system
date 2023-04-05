@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, Radios, TextInput, Select } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
-export const title = 'Enter passport details';
+export const title = 'Take and upload photo of passport';
 const description = 'How to ask users for passport details';
 const section = 'Patterns';
 const subsection = 'Help users to';
@@ -32,7 +32,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Use optical character recognition to read the machine-readable zone of the passport.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">If users take and upload a photo, the system should use optical character recognition (OCR) to read the machine readable zone (MRZ) at the bottom of the passport page. Consider which pieces of data in the MRZ you actually need to capture.</p>
+      <p className="govuk-body">If users take and upload a photo, the system should use optical character recognition (OCR) to read the machine-readable zone (MRZ) at the bottom of the passport page. Consider which pieces of data in the MRZ you actually need to capture.</p>
 
       <p className="govuk-body">This method is less trustworthy than reading directly from the chip, but more trustworthy than manual data entry. </p>
 
@@ -60,10 +60,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </ul>
       </div>
 
-      <p className="govuk-body">Consider what users can do if they hit a barrier:</p>
-      <ul className="govuk-list govuk-list--bullet">
-        <li>if they can’t take a good enough photo, can they enter the data manually</li>
-      </ul>
+      <p className="govuk-body">Consider what users can do if they hit a barrier. For example, if they cannot take a good enough photo, can they enter data manually.</p>
 
       <p className="govuk-body">There is a small chance that the computer misreads the characters. Use check your answers so that users can check that the information has been read correctly. You’ll need to explain that the information may look different, due to transliteration, translation, truncation or formatting. Only show the information that you’re storing and need to use in the check answers. For example, if you’re not storing or using their sex, then don’t show it.</p>
 
@@ -111,7 +108,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">Research</h2>
       <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>an electronic visa waver scheme</li>
+        <li>an electronic visa waiver scheme</li>
       </ul>
 
       <h2 className="govuk-heading-l">Help us improve this pattern</h2>

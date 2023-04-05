@@ -37,7 +37,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">This is currently only used for members of the public to scan their passport.</p>
       <p className="govuk-body">You may find that your particular use case or user needs means you need to adjust the guidance based on your research.</p>
 
-      <p className="govuk-body">You should make it clear which passport the user needs to scan, an individual may have several.</p>
+      <p className="govuk-body">You should make it clear which passport the user needs to scan, because a person may have several.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
       <p className="govuk-body">Users can only scan the chip in their passport, if they are using a device with a near field communication (NFC) chip. Phones that can make contactless payments have an NFC chip.</p>

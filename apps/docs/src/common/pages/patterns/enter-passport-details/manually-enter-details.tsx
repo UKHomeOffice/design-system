@@ -32,7 +32,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Users enter passport details in response to a series of questions.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">Manually entering passport details is the most prone to human error, and therefore the least trustworthy. It is technically the simplest, but we should be doing the <A href="https://www.gov.uk/guidance/government-design-principles#do-the-hard-work-to-make-it-simple">hard work to make it simple</A>.</p>
+      <p className="govuk-body">Entering passport details manually can be a source of error. If you need more trust in the data, you could <A href="take-upload-photo">take and upload photo</A> or <A href="scan-passport-chip">scan the chip</A>.</p>
 
       <p className="govuk-body">Consider whether you need all the information, or just a small amount of it, such as the passport number. Depending on your users or journey, you may find evidence for separating over multiple pages or for including on one page.</p>
 
@@ -42,9 +42,9 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">The captions for the fields in a passport must be translated into English, French or Spanish.</p>
 
-      <p className="govuk-body">You should make it clear which passport the user needs to enter the information from, an individual may have several.</p>
+      <p className="govuk-body">You should make it clear which passport the user needs to enter the information from, because a person may have several.</p>
 
-      <p className="govuk-body">Allow users to check their answers after manually entering passport details. </p>
+      <p className="govuk-body">Allow users to check their answers after manually entering passport details.</p>
       
       <h2 className="govuk-heading-l">How it works</h2>
       <h3 className="govuk-heading-m">Passport number</h3>
@@ -226,8 +226,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">Research</h2>
       <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>Central Operations Platform</li>
         <li>Apply for a visa</li>
+        <li>Central operations platform</li>
       </ul>
 
       <h2 className="govuk-heading-l">Help us improve this pattern</h2>
