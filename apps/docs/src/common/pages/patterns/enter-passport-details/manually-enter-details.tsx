@@ -36,7 +36,11 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">Consider whether you need all the information, or just a small amount of it, such as the passport number. Depending on your users or journey, you may find evidence for separating over multiple pages or for including on one page.</p>
 
-      <p className="govuk-body">You may have also collected some of this information already, such as sex, name and date of birth. When you collect this information, consider explaining in the question or in hint text that it should match their passport.</p>
+      <p className="govuk-body">You may have also collected some of this information already, such as sex, name and date of birth. You can either:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>when you ask for the information, explain that it should match their passport</li>
+        <li>ask for the information again, if you think it could be different from their passport</li> 
+      </ul>
       
       <p className="govuk-body">This pattern could be used as an alternative option if the other patterns do not work for a user.</p>
 
