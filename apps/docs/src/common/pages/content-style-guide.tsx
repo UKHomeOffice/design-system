@@ -22,13 +22,13 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="a">A</h2>
     <h3 id="abroad">abroad</h3>
-    <p>‘Abroad’ and ‘overseas’ can cause confusion. Try to use plain English. For example, ‘apply from outside the UK’ or ‘working in another country’.</p>
+    <p>'Abroad' and 'overseas' can cause confusion. Try to use plain English. For example, 'apply from outside the UK' or 'working in another country'.</p>
     <h3 id="account">account</h3>
-    <p>Use ‘create an account’ rather than ‘register an account’ or ‘set up an account’.</p>
+    <p>Use 'create an account' rather than 'register an account' or ‘set up an account’.</p>
     <h3 id="acronyms">acronyms</h3>
     <p>See guidance on abbreviations and acronyms in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
     <h3 id="alter">alter</h3>
-    <p>Use ‘change’ rather than ‘alter’, ‘modify’ or ‘switch’.</p>
+    <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="b">B</h2>
@@ -102,6 +102,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Adjective. For example, ‘I am dependent on the main applicant’ or ‘dependent children are not required to apply at the same time’.</p>
     <h3 id="deportation">deportation</h3>
     <p>Not a synonym for ‘removal’. ‘Deportation’ is the forced removal of someone for the ‘public good’, usually after being convicted of a criminal offence.</p>
+    <h3 id="digital status">digital status</h3>
+    <p>Avoid using 'online status' or 'digital status' when referring to someone's immigration status. Use 'online immigration status' instead.</p>
     <h3 id="disclosure and barring service">Disclosure and Barring Service (DBS)</h3>
     <p>Capitalised. You can use the acronym ‘DBS’ after the first full mention.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -172,15 +174,19 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="m">M</h2>
     <h3 id="migrant">migrant</h3>
-    <p>Do not use ‘migrants’. Try to be specific, such as ‘applicant’, ‘claimant’, ‘employee’ or ‘worker’. If you cannot be specific, use ‘people’.</p>
+    <p>Do not use 'migrants'. Try to be specific, such as ‘applicant’, ‘claimant’, ‘employee’ or ‘worker’. If you cannot be specific, use ‘people’.</p>
     <h3 id="ministers">ministers</h3>
     <p>See guidance on using titles in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide.</A></p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="n">N</h2>
+    <h3 id="notification">notification</h3>
+    <p>Avoid using 'notification' or 'notify'. Try to be specific about contact, such as, 'we will send you an email' or 'how do you want to be contacted?'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="o">O</h2>
+    <h3 id="online status">online status</h3>
+    <p>Avoid using 'online status' or 'digital status' when referring to someone’s immigration status. Use 'online immigration status' instead.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="p">P</h2>
@@ -195,17 +201,17 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="persons">persons</h3>
     <p>Use ‘people’ rather than ‘persons’.</p>
     <h3 id="please">please</h3>
-    <p>Use ‘please’ sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
+    <p>Use 'please' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="points-based system">points-based system</h3>
-    <p>Lower case and hyphenate ‘points-based’.</p>
+    <p>Lower case and hyphenate 'points-based'.</p>
     <h3 id="police national computer">Police National Computer (PNC)</h3>
-    <p>Upper case. You can use ‘PNC’ after the first full mention.</p>
+    <p>Upper case. You can use 'PNC' after the first full mention.</p>
     <h3 id="postal">postal</h3>
-    <p>Use ‘postal address’ rather than ‘correspondence’ if you mean letters or emails. For example, ‘is this the family’s postal address?’</p>
+    <p>Use 'postal address' rather than 'correspondence' if you mean letters or emails. For example, 'is this the family's postal address?'</p>
     <h3 id="primary control point">primary control point</h3>
-    <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
+    <p>Use 'border control' rather than 'passport control' or 'primary control point'.</p>
     <h3 id="purdah">purdah</h3>
-    <p>Use ‘pre-election period’ rather than ‘purdah’.</p>
+    <p>Use 'pre-election period' rather than 'purdah'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="q">Q</h2>
@@ -215,7 +221,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="r">R</h2>
     <h3 id="rank">rank (police and armed forces)</h3>
-    <p>Capitalise the rank before the name, as in ‘Detective Inspector Joan Smith’. Use lower case when it follows the name, as in ‘Joan Smith, a detective inspector’.</p>
+    <p>Capitalise the rank before the name, as in 'Detective Inspector Joan Smith'. Use lower case when it follows the name, as in 'Joan Smith, a detective inspector'.</p>
     <h3 id="register">register</h3>
     <p>Use ‘create an account’ rather than ‘register’ or ‘set up’ an account.</p>
     <h3 id="right">right</h3>
@@ -224,7 +230,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="s">S</h2>
     <h3 id="secondary control">secondary control</h3>
-    <p>Use ‘customs’ rather than ‘secondary control’. For example, ‘customs regulations’ or ‘customs allowances’.</p>
+    <p>Use ‘customs’ rather than 'secondary control'. For example, 'customs regulations' or 'customs allowances'.</p>
     <h3 id="select">select</h3>
     <p>Use ‘select’ rather than ‘click’ or ‘tap’ because not everyone uses a mouse.</p>
     <h3 id="senior civil service">senior civil service (SCS)</h3>
@@ -232,32 +238,32 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="settlement">settlement</h3>
     <p>'Indefinite leave to remain' is officially called 'settlement'. For example, 'apply for UK settlement'.</p>
     <h3 id="set up">set up</h3>
-    <p>Use ‘create an account’ rather than ‘register’ or ‘set up’ an account.</p>
+    <p>Use 'create an account' rather than 'register' or 'set up' an account.</p>
     <h3 id="sign in">sign in</h3>
-    <p>Use ‘sign in’ rather than ‘log in’ or ‘login’.</p>
+    <p>Use 'sign in' rather than 'log in' or 'login'.</p>
     <h3 id="sorry">sorry</h3>
-    <p>Avoid using ‘sorry’. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
+    <p>Avoid using 'sorry'. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="sovereign base areas">Sovereign Base Areas</h3>
-    <p>Capitalised. You can use ‘SBA’ after the first full mention.</p>
+    <p>Capitalised. You can use 'SBA' after the first full mention.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="t">T</h2>
     <h3 id="thank you">thank you</h3>
-    <p>Use ‘thank you’ sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
+    <p>Use 'thank you' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="u">U</h2>
     <h3 id="uk residence card">UK residence card</h3>
-    <p>Lower case. Also called a ‘biometric residence card (BRC)’ or 'EEA biometric residence card'.</p>
+    <p>Lower case. Also called a 'biometric residence card (BRC)' or 'EEA biometric residence card'.</p>
     <h3 id="user-centred">user centred</h3>
     <p>Hyphenate when using as an adjective, as in 'user-centred design'. Do not hyphenate when using as a noun, as in 'teams need to be user centred'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="v">V</h2>
     <h3 id="visa">visa</h3>
-    <p>Use ‘visa’ rather than technical terms like ‘route’ or ‘permission to enter’ in public-facing services, unless you need to be specific. For example, use ‘graduate visa’ rather than ‘graduate route’.</p>
+    <p>Use 'visa' rather than technical terms like 'route' or 'permission to enter' in public-facing services, unless you need to be specific. For example, use ‘graduate visa’ rather than ‘graduate route’.</p>
     <h3 id="visa application centre">visa application centre (VAC)</h3>
-    <p>Lower case. You can use ‘VAC’ after the first full mention. Do not use ‘visa section’, ‘visa processing post’ or ‘visa issuing office’.</p>
+    <p>Lower case. You can use 'VAC' after the first full mention. Do not use 'visa section', 'visa processing post' or 'visa issuing office'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="w">W</h2>

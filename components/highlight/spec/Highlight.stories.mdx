@@ -1,0 +1,99 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Highlight } from '../src/Highlight';
+import readMe from '../README.md';
+
+<Meta
+  title="Highlight"
+  component={ Highlight }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'A component for highlighting words and short pieces of text.',
+    jest: ['Highlight'],
+    notes: readMe
+  } }
+/>
+
+# Highlight
+
+Draw attention to specific written content, from other content on the page. 
+
+<Preview withToolbar>
+  <Story name="Highlight a Date">
+    <Highlight>
+      12/12/1995
+    </Highlight>
+  </Story>
+</Preview>
+
+<Props of={ Highlight } />
+
+## When to use this component
+
+The highlight can be used to solve different problems:
+* in [search results](/patterns/search-for-something) to highlight matches and partial matches
+* [highlight differences or similarities](/patterns/compare-information)
+
+## When to not use this component
+
+Do not:
+* only use colour to highlight differences, use other elements such as bold
+* use with other coloured components within content
+* overuse
+
+## How it works
+
+<Preview>
+  <Story name="Highlight Text">
+    <Highlight>
+      United Kingdon (UK)
+    </Highlight>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Highlight an Id">
+    <Highlight>
+      PEX 354 857 999
+    </Highlight>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Highlight a Name">
+    <Highlight>
+      Niles Turnball
+    </Highlight>
+  </Story>
+</Preview>
+
+## Writing for this component
+Consider explaining the purpose of the highlight, especially if there are different use cases within a service. It takes users time to work out what the highlight is showing.
+
+## Accessibility
+
+You should:
+* combine bold text with the highlight
+* use in moderation - overuse reduces efficacy and can cause unecessary mental load, especially for people using screen readers
+
+## Research
+
+This component is used by:
+* an internal service to compare identity details
+
+The highlight does not work if:
+* it's overused
+* there are multiple conflicting colours on the screen
+
+We found this from usability testing with 3 external participants with access needs, with varying severities of vision loss. Participants used screen readers and zoom function whilst participating. High level findings include:
+* the highlight doesn’t draw the attention of users using screen readers
+* bold was more useful to alert participants who were partially sighted
+* conflicting colours on screen was disorienting for partially sighted users
+
+## Help us improve this component
+
+This component needs improving. We need more evidence about:
+* internal staff, who use systems daily
+* users with other access needs, such as dyslexia, dyscalculia and ADHD
+* new staff members or those recently trained on a service
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/455), or follow our [contribute guidance](https://design.homeoffice.gov.uk/contribute).
