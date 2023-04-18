@@ -34,7 +34,9 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p className="govuk-body">If users take and upload a photo, the system should use optical character recognition (OCR) to read the machine-readable zone (MRZ) at the bottom of the passport page. Consider which pieces of data in the MRZ you actually need to capture.</p>
 
-      <p className="govuk-body">This method is less trustworthy than reading directly from the chip, but more trustworthy than manual data entry. </p>
+      <p className="govuk-body">This method is less trustworthy than reading directly from the chip, but more trustworthy than manual data entry.</p>
+
+      <p className="govuk-body">You may ask users to take and upload a photo, in order to <A href="scan-passport-chip">scan the chip</A>.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
       <p className="govuk-body">You should explain why they need to take a picture of their passport, and provide some helpful tips. Consider providing in-camera guidance, indicating when the passport is lined up and readable.</p>
@@ -47,7 +49,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>the machine-readable zone (MRZ)</li>
         </ul>
 
-        <p className="govuk-body">The MRZ is 2 or 3 lines of letters, symbols and numbers at the bottom of the personal details page on your passport:</p>
+        <p className="govuk-body">The MRZ is 2 lines of letters, symbols and numbers at the bottom of the personal details page on your passport:</p>
         <p className="monospace">
           P&gt;GBRSMITH&gt;&gt;ANGELA&gt;ZOE&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;<br/>
           9990727768GBR7308196F2807041&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;02
@@ -73,6 +75,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>transliterated into the 26 character Latin alphabet </li>
         <li>diacritics are removed</li>
       </ul>
+
+      <p className="govuk-body">Consider how to explain to users that their name might look different.</p>
 
       <h3 className="govuk-heading-m">Date of birth century</h3>
       <p className="govuk-body">The date of birth stored on the chip only has 2 digits for the year. You may need to ask users for the century to confirm whether the year is 1920 or 2020, if it’s not obvious from context.</p>

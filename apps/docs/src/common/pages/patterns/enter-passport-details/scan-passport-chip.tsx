@@ -34,14 +34,16 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Scan the passport chip to get the information from the passport.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">This is currently only used for members of the public to scan their passport.</p>
+      <p className="govuk-body">This pattern is for services where members of the public scan their passport.</p>
       <p className="govuk-body">You may find that your particular use case or user needs means you need to adjust the guidance based on your research.</p>
 
       <p className="govuk-body">You should make it clear which passport the user needs to scan, because a person may have several.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
       <p className="govuk-body">Users can only scan the chip in their passport, if they are using a device with a near field communication (NFC) chip. Phones that can make contactless payments have an NFC chip.</p>
-      <p className="govuk-body">For external users, this normally means they need to be using a mobile phone app. For internal users, this could be a chip scanner, such as at the border.</p>
+      <p className="govuk-body">For external users, this normally means they need to be using a mobile phone app.</p>
+
+      <p className="govuk-body">To scan the chip, you need the information in the machine-readable zone (MRZ) of the passport. Users should <A href="take-upload-photo">take and upload a photo</A>.</p>
 
       <p className="govuk-body">Scanning the chip in a passport has the highest level of trust. It also collects the largest amount of data, the chip contains:</p>
       <ul className="govuk-list govuk-list--bullet">

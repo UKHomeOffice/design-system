@@ -146,6 +146,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>shown as a 3 letter code under Code or Country code (in English, French or Spanish)</li>
       </ul>
 
+      <p className="govuk-body">We need more evidence for the hint text in this question, what makes it easier for users to find the country of issue in their passport?</p>
+
       <div className="app-example">
         <Select
           label="Country of issue"
@@ -243,6 +245,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>if nationality or country of nationality is clearer to users, particularly observed confusion over the options being mostly countries</li>
         <li>if country of issue causes a barrier for entering passports issued by an organisation (say the European Union) rather than a country</li>
         <li>the hint text for country of issue, how do users interpret the first page of the passport</li>
+        <li>the list of values users select from for nationality and country of issue</li>
       </ul>
 
       <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/449">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>

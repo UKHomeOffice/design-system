@@ -41,7 +41,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">You may find that your particular use case or user needs means you need to adjust the guidance based on your research.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
-      <p className="govuk-body">In all the methods, you should make it clear which passport the user needs to scan, because a person may have several.</p>
+      <p className="govuk-body">In all the methods, you should make it clear to the user which passport details to enter, because a person may have several.</p>
       
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>
