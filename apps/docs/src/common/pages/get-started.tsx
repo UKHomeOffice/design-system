@@ -21,11 +21,11 @@ export const menu = (
         text: 'Publish your protoype'
       }
     ]} />
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office-styled GOV.UK prototype</span>
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office plugin for GOV.UK prototype</span>
     <NavigationMenu items={[
       {
-        href: '/get-started/start-govuk-prototype',
-        text: 'Set up your GOV.UK prototype'
+        href: '/get-started/home-office-plugin',
+        text: 'Add Home Office plugin to GOV.UK prototype'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
@@ -69,7 +69,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>For internal services, such as caseworking systems, you should use the Home Office styles (including logo, colours and internal font) in your prototypes. You can choose whether to use the:</p>
           <ul>
             <li><A href="/get-started/start-prototype">Home Office design system React prototype kit</A></li>
-            <li><A href="/get-started/start-govuk-prototype">Home Office-styled GOV.UK prototype kit</A></li>
+            <li><A href="/get-started/home-office-plugin">Home Office-styled GOV.UK prototype kit</A></li>
           </ul>
 
           <p>You cannot use certain GOV.UK styles, such as the crown logo or Transport font, for internal services.</p>
