@@ -1,6 +1,6 @@
 {
   "name": "@hods/expandable-banner",
-  "version": "0.3.5",
+  "version": "0.3.7",
   "description": "Component that provides both high level and more detailed warning messages",
   "main": "src/ExpandableBanner.tsx",
   "sass": "assets/ExpandableBanner.scss",
@@ -24,11 +24,11 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.3.5",
-    "@not-govuk/component-helpers": "^0.5.7"
+    "@hods/sass-base": "workspace:^0.3.7",
+    "@not-govuk/component-helpers": "^0.5.9"
   },
   "peerDependencies": {
-    "@not-govuk/docs-components": "^0.5.7",
+    "@not-govuk/docs-components": "^0.5.9",
     "@storybook/addon-docs": "^6.4.0",
     "react": "^16.9.55"
   },
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@mdx-js/react": "1.6.22",
-    "@not-govuk/component-test-helpers": "^0.5.7",
+    "@not-govuk/component-test-helpers": "^0.5.9",
     "@types/react": "16.14.24",
     "jest": "28.1.3",
     "jest-environment-jsdom": "28.1.3",

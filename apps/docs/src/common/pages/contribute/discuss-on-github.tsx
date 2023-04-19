@@ -33,8 +33,9 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul>
         <li>ask questions about a style, component or pattern</li>
         <li>answer questions from others</li>
-        <li>share examples or demos of a component or pattern</li>
+        <li>share an example use of a component or pattern</li>
         <li>share research relating to a style, component or pattern</li>
+        <li>request an addition or improvement to the content style guide</li>
       </ul>
       <h2>Create a new discussion</h2>
       <p>Your new discussion can be as simple as a thought you've had, or more well-formed research findings.</p>

@@ -1,6 +1,6 @@
 {
   "name": "@hods/components",
-  "version": "0.3.5",
+  "version": "0.3.7",
   "description": "All Home Office Design System components.",
   "main": "src/index.ts",
   "sass": "assets/index.scss",
@@ -24,18 +24,21 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/alert": "workspace:^0.3.5",
-    "@hods/date-display": "workspace:^0.3.5",
-    "@hods/date-time": "workspace:^0.3.5",
-    "@hods/expandable-banner": "workspace:^0.3.5",
-    "@hods/footer": "workspace:^0.3.5",
-    "@hods/header": "workspace:^0.3.5",
-    "@hods/page": "workspace:^0.3.5",
-    "@hods/pagination": "workspace:^0.3.5",
-    "@hods/sass-base": "workspace:^0.3.5",
-    "@hods/status-message": "workspace:^0.3.5",
-    "@hods/time": "workspace:^0.3.5",
-    "@hods/timeline": "workspace:^0.3.5"
+    "@hods/a-z-navigation": "workspace:^0.3.7",
+    "@hods/alert": "workspace:^0.3.7",
+    "@hods/date-display": "workspace:^0.3.7",
+    "@hods/date-time": "workspace:^0.3.7",
+    "@hods/expandable-banner": "workspace:^0.3.7",
+    "@hods/footer": "workspace:^0.3.7",
+    "@hods/header": "workspace:^0.3.7",
+    "@hods/loading-spinner": "workspace:^0.3.7",
+    "@hods/highlight": "workspace:^0.3.7",
+    "@hods/page": "workspace:^0.3.7",
+    "@hods/pagination": "workspace:^0.3.7",
+    "@hods/sass-base": "workspace:^0.3.7",
+    "@hods/status-message": "workspace:^0.3.7",
+    "@hods/time": "workspace:^0.3.7",
+    "@hods/timeline": "workspace:^0.3.7"
   },
   "devDependencies": {
     "jest": "28.1.3",

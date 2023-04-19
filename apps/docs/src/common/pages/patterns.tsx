@@ -17,8 +17,8 @@ export const menu = (
         text: 'Add multiple things'
       },
       {
-        href: '/patterns/make-a-declaration',
-        text: 'Make a declaration'
+        href: '/patterns/compare-information',
+        text: 'Compare information'
       },
       {
         href: '/patterns/find-information-on-document',
@@ -33,12 +33,23 @@ export const menu = (
         text: 'Leave a service'
       },
       {
-        href: '/patterns/stop-a-service-timing-out',
-        text: 'Stop a service timing out'
+        href: '/patterns/make-a-declaration',
+        text: 'Make a declaration'
       },
       {
         href: '/patterns/search-for-something',
         text: 'Search for something'
+      },
+      {
+        href: '/patterns/stop-a-service-timing-out',
+        text: 'Stop a service timing out'
+      }
+    ]} />
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Send users</span>
+    <NavigationMenu items={[
+      {
+        href: '/patterns/send-a-letter',
+        text: 'A letter'
       }
     ]} />
   </Fragment>
@@ -63,7 +74,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h1>{title}</h1>
       <p>Patterns are guidance on how to solve certain types of problems. They include
       examples of successful approaches but are flexible and don’t prescribe exact design solutions.</p>
-      <p>These patterns extend those used across Government in the <A href="https://design-system.service.gov.uk/">GOV.UK
+      <p>These patterns extend those used across government in the <A href="https://design-system.service.gov.uk/">GOV.UK
       design system</A>.
       As our patterns mature, we will look to contribute them to the GOV.UK system so they can be used more widely.</p>
     </div>

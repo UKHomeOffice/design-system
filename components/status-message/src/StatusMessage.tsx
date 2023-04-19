@@ -14,23 +14,30 @@ export type StatusMessageProps = StandardProps & {
 };
 
 export const StatusMessage: FC<StatusMessageProps> = ({
+  classBlock,
+  classModifiers,
+  className,
+  status,
+  children,
+  actions,
+  ...attrs
+}) => {
+  const classes = classBuilder(
+    'hods-status-message',
     classBlock,
     classModifiers,
-    className,
-    status,
-    children,
-    actions,
-    ...attrs
-  }) => {
-  const classes = classBuilder('hods-status-message', classBlock, classModifiers, className);
+    className
+  );
 
   return (
     <div {...attrs} className={classes()}>
-      <p>
-        {status}
-        {children && <span className={classes('extra')}> {children}</span>}
-      </p>
-      {actions && actions.length && <AnchorList items={actions} classBlock={classes('actions')} />}
+      <div>
+        <div className={classes('status')}>{status}</div>
+        {children && <p className={classes('extra')}> {children}</p>}
+      </div>
+      {actions && actions.length && (
+        <AnchorList items={actions} classBlock={classes('actions')} />
+      )}
     </div>
   );
 };
