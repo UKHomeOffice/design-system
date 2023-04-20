@@ -30,7 +30,7 @@ export const menu = (
       },
       {
         href: '/patterns/enter-passport-details/take-upload-photo',
-        text: '- Take upload photo'
+        text: '- Take or upload photo'
       },
       {
         href: '/patterns/enter-passport-details/manually-enter-details',

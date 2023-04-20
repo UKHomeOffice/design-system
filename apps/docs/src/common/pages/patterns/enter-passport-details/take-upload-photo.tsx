@@ -73,7 +73,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Consider the format of the data when asking users to check. The format of dates does not make a huge different to understanding. Make sure you clearly explain what format the dates are in.</p>
      
       <h3 className="govuk-heading-m">Names</h3>
-      <p className="govuk-heading-m">Consider if you need to collect their name from the passport, and whether you need the name in the machine-readable zone or on the visual display.</p>
+      <p className="govuk-body">Consider if you need to collect their name from the passport, and whether you need the name in the machine-readable zone or on the visual display.</p>
       <p className="govuk-body">The names stored on the chip may be truncated. The names are identical to those in the machine-readable zone. They may appear different in the visual display of the passport, it may be:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>truncated to 39 characters</li>
