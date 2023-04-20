@@ -31,7 +31,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">You can ask for passport details in 3 ways. Users can:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li><A href="enter-passport-details/scan-passport-chip">scan the chip</A></li>
-        <li><A href="enter-passport-details/take-upload-photo">take and upload a photo or scan</A></li>
+        <li><A href="enter-passport-details/take-upload-photo">take or upload a photo</A></li>
         <li><A href="enter-passport-details/manually-enter-details">manually enter the details</A></li>
       </ul>
       <p className="govuk-body">Use the <A href="https://www.consilium.europa.eu/prado/en/search-by-document-country.html">public register of identity documents</A> to see the similarities and differences between passports from around the world.</p>
@@ -42,6 +42,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">How it works</h2>
       <p className="govuk-body">In all the methods, you should make it clear to the user which passport details to enter, because a person may have several.</p>
+      <p className="govuk-body">Consider how the information is used, are there internal processes that need to handle incorrect information being entered?</p>
       
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>

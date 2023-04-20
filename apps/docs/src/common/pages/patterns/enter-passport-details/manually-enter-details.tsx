@@ -32,7 +32,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Users enter passport details in response to a series of questions.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">Entering passport details manually can be a source of error. If you need more trust in the data, you could <A href="take-upload-photo">take and upload photo</A> or <A href="scan-passport-chip">scan the chip</A>.</p>
+      <p className="govuk-body">Entering passport details manually can be a source of error. If you need more trust in the data, you could <A href="take-upload-photo">take or upload photo</A> or <A href="scan-passport-chip">scan the chip</A>.</p>
 
       <p className="govuk-body">Consider whether you need all the information, or just a small amount of it, such as the passport number. Depending on your users or journey, you may find evidence for separating over multiple pages or for including on one page.</p>
 
@@ -225,15 +225,20 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Not all countries have a standard 10 year length of passport validity. You may know more about expiry dates from your context, such as if you are collecting UK passport details.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
+      <p className="govuk-body">Give users adequate time to find and enter the information. Some users may need extra time to locate and enter the information. See <A href="https://design.homeoffice.gov.uk/accessibility/standard/operable#rr2.2.1">2.2.1 - Timing adjustable of our accessibility standards</A>.</p>
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>
 
-      <p className="govuk-body">Allow users to check their answers after manually entering passport details. </p>
+      <p className="govuk-body">Allow users to check their answers after manually entering passport details. This is both a check of the information, and that they're providing information from the correct passport.</p>
+
+      <p className="govuk-body">You should try and prevent errors by being as specific as you can about the format of input and where on a passport this information is. We need to improve the hint text for inputs on this pattern.</p>
 
       <h2 className="govuk-heading-l">Research</h2>
       <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>Apply for a visa</li>
         <li>Central operations platform</li>
+        <li>Confirm your identity (Generic identity verification)</li>
+        <li>Update your UKVI account details</li>
       </ul>
 
       <h2 className="govuk-heading-l">Help us improve this pattern</h2>
@@ -246,6 +251,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>if country of issue causes a barrier for entering passports issued by an organisation (say the European Union) rather than a country</li>
         <li>the hint text for country of issue, how do users interpret the first page of the passport</li>
         <li>the list of values users select from for nationality and country of issue</li>
+        <li>improving the hint text for all inputs to better explain where users would find the information on their passport</li>
       </ul>
 
       <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/449">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>

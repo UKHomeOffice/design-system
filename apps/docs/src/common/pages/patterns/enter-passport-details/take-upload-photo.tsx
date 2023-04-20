@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, Radios, TextInput, Select } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
-export const title = 'Take and upload photo of passport';
+export const title = 'Take or upload photo of passport';
 const description = 'How to ask users for passport details';
 const section = 'Patterns';
 const subsection = 'Help users to';
@@ -32,11 +32,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Use optical character recognition to read the machine-readable zone of the passport.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">If users take and upload a photo, the system should use optical character recognition (OCR) to read the machine-readable zone (MRZ) at the bottom of the passport page. Consider which pieces of data in the MRZ you actually need to capture.</p>
+      <p className="govuk-body">If users take or upload a photo, the system should use optical character recognition (OCR) to read the machine-readable zone (MRZ) at the bottom of the passport page. Consider which pieces of data in the MRZ you actually need to capture.</p>
 
       <p className="govuk-body">This method is less trustworthy than reading directly from the chip, but more trustworthy than manual data entry.</p>
 
-      <p className="govuk-body">You may ask users to take and upload a photo, in order to <A href="scan-passport-chip">scan the chip</A>.</p>
+      <p className="govuk-body">You may ask users to take or upload a photo, in order to <A href="scan-passport-chip">scan the chip</A>.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
       <p className="govuk-body">You should explain why they need to take a picture of their passport, and provide some helpful tips. Consider providing in-camera guidance, indicating when the passport is lined up and readable.</p>
@@ -64,19 +64,24 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">Consider what users can do if they hit a barrier. For example, if they cannot take a good enough photo, can they enter data manually.</p>
 
-      <p className="govuk-body">There is a small chance that the computer misreads the characters. Use check your answers so that users can check that the information has been read correctly. You’ll need to explain that the information may look different, due to transliteration, translation, truncation or formatting. Only show the information that you’re storing and need to use in the check answers. For example, if you’re not storing or using their sex, then don’t show it.</p>
+      <p className="govuk-body">Consider automated checks to check the quality, such as orientation, shadows, 4 corners in the frame. You should consider the error messages and feedback to help users take a better photo.</p>
+
+      <h3 className="govuk-heading-m">Check the information</h3>
+      <p className="govuk-body">There is a small chance that the computer misreads the characters.</p>
+      <p className="govuk-body">Use check your answers so that users can check that the information has been read correctly. You’ll need to explain that the information may look different, due to transliteration, translation, truncation or formatting. Only show the information that you’re storing and need to use in the check answers. For example, if you’re not storing or using their sex, then don’t show it.</p>
 
       <p className="govuk-body">Consider the format of the data when asking users to check. The format of dates does not make a huge different to understanding. Make sure you clearly explain what format the dates are in.</p>
-      
+     
       <h3 className="govuk-heading-m">Names</h3>
-      <p className="govuk-body">The names stored on the chip may be truncated. The names are identical to those in the machine-readable zone. They may appear different to in the visual display of the passport, it may be:</p>
+      <p className="govuk-heading-m">Consider if you need to collect their name from the passport, and whether you need the name in the machine-readable zone or on the visual display.</p>
+      <p className="govuk-body">The names stored on the chip may be truncated. The names are identical to those in the machine-readable zone. They may appear different in the visual display of the passport, it may be:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>truncated to 39 characters</li>
         <li>transliterated into the 26 character Latin alphabet </li>
         <li>diacritics are removed</li>
       </ul>
 
-      <p className="govuk-body">Consider how to explain to users that their name might look different.</p>
+      <p className="govuk-body">Consider how to explain to users that their name might look different to their name on the page.</p>
 
       <h3 className="govuk-heading-m">Date of birth century</h3>
       <p className="govuk-body">The date of birth stored on the chip only has 2 digits for the year. You may need to ask users for the century to confirm whether the year is 1920 or 2020, if it’s not obvious from context.</p>
@@ -113,6 +118,9 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>an electronic visa waiver scheme</li>
+        <li>Apply for a visa</li>
+        <li>Confirm your identity (Generic identity verification)</li>
+        <li>Update your UKVI account details</li>
       </ul>
 
       <h2 className="govuk-heading-l">Help us improve this pattern</h2>

@@ -43,7 +43,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Users can only scan the chip in their passport, if they are using a device with a near field communication (NFC) chip. Phones that can make contactless payments have an NFC chip.</p>
       <p className="govuk-body">For external users, this normally means they need to be using a mobile phone app.</p>
 
-      <p className="govuk-body">To scan the chip, you need the information in the machine-readable zone (MRZ) of the passport. Users should <A href="take-upload-photo">take and upload a photo</A>.</p>
+      <p className="govuk-body">To scan the chip, you need the information in the machine-readable zone (MRZ) of the passport. Users should <A href="take-upload-photo">take or upload a photo</A>.</p>
 
       <p className="govuk-body">Scanning the chip in a passport has the highest level of trust. It also collects the largest amount of data, the chip contains:</p>
       <ul className="govuk-list govuk-list--bullet">
@@ -53,6 +53,8 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <p className="govuk-body">However not all passports have chips, so you’ll need to ask the user whether their passport has a chip or not. You might already know from the context that the passport must have a chip, for example it’s a UK passport from after 2006. To determine whether the passport has a chip, ask the user if the chip symbol is on the front cover (it may be a different colour).</p>
+
+      <p className="govuk-body">Some users with some passports may not be able to tell that their passport has a chip. You should provide an alternative method, such as <A href="manually-enter-details">manual entry</A>.</p>
 
       <div className="app-example">
         <img src={ePassportLogo} />
@@ -92,9 +94,11 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">Consider what users can do if they hit a barrier:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>if they don’t have a compatible phone, can they go to a physical location to get their passport scanned, or should they try another method </li>
-        <li>if the scanning of the chip completely fails, what do they do next </li>
+        <li>if they don’t have a compatible phone, can they go to a physical location to get their passport scanned, or should they try another method</li>
+        <li>if the scanning of the chip completely fails, what do they do next</li>
       </ul>
+
+      <p className="govuk-body">Once a chip is successfully scanned, there are background checks on the data. You should consider what happens if these fail.</p>
 
       <h3 className="govuk-heading-m">Date of birth century</h3>
       <p className="govuk-body">The date of birth stored on the chip only has 2 digits for the year. You may need to ask users for the century to confirm whether the year is 1920 or 2020, if it’s not obvious from context.</p>
@@ -129,6 +133,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>
+      <p className="govuk-body">Some users with some passports may not be able to tell that their passport has a chip. You should provide an alternative method, such as <A href="manually-enter-details">manual entry</A>.</p>
 
       <h2 className="govuk-heading-l">Research</h2>
       <p className="govuk-body">Scanning the chip is used by:</p>
