@@ -49,6 +49,13 @@ const Page: FC<PageProps> = ({ location }) => (
 
       </ul>
 
+      <h2 className="govuk-heading-l">Help us improve prototyping guidance</h2>
+        <p>This needs improving. We need evidence about:</p>
+        <ul>
+          <li>your experience using this kit</li>
+        </ul>
+
+        <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/389">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
 
     </div>
 

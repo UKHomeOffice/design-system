@@ -47,6 +47,17 @@ const Page: FC<PageProps> = ({ location }) => (
       <ol className="govuk-list govuk-list--number">
         <li>In <code>app/assets/sass</code> create <code>settings.scss</code>, and add one line:<br /> <code>@import "node_modules/home-office-kit/sass/settings"</code></li>
       </ol>
+
+
+      <h2 className="govuk-heading-l">Help us improve prototyping guidance</h2>
+      <p>This needs improving. We need evidence about:</p>
+      <ul>
+        <li>your experience using this plugin</li>
+        <li>suggested improvements or features</li>
+        <li>bugs you've found</li>
+      </ul>
+
+      <p className="govuk-body">To contribute, add your ideas to our <A href="https://github.com/UKHomeOffice/design-system/discussions/389">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
     </div>
   </div>
 );

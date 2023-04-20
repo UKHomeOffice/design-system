@@ -40,6 +40,8 @@ const Page: FC<PageProps> = ({ location }) => (
         to transform your prototype into a production application.
       </div>
 
+      <p>This prototype is experimental, and we'd welcome your feedback.</p>
+
       <h2>Before you start</h2>
         <p>Mac users can use the Terminal application. It's located in the <code>Utilities</code> folder in <code>Applications</code>.</p>
         <p>Windows users should install <A href="https://git-scm.com/download/win">Git Bash (direct download)</A> to use these app-instructions.</p>
@@ -129,6 +131,14 @@ const Page: FC<PageProps> = ({ location }) => (
         </ol>
 
         <p><A href="/get-started/use-prototype">Next: Build your prototype</A></p>
+
+        <h2 className="govuk-heading-l">Help us improve prototyping guidance</h2>
+        <p>This needs improving. We need evidence about:</p>
+        <ul>
+          <li>your experience using this kit</li>
+        </ul>
+
+        <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/389">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
     </div>
   </div>
 );
