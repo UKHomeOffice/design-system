@@ -51,8 +51,9 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>{title}</h1>
-        <p>The Home Office design system is an extension of <A href="https://not-gov.uk/">NotGovUK</A> which implements the GOV.UK design system in React. (See: <A href="https://not-gov.uk/design-decisions">design decisions</A>)</p>
-        <p>You can use the Home Office design system for prototyping and products in production. See <A href="../styles">Styles</A> for more information on internal and public facing services.</p>
+        <p>The Home Office design system helps us understand what Home Office services look like and how they should behave. It builds on the <A href="https://design-system.service.gov.uk/">GOV.UK design system</A>.</p>
+        <p>There is an implementation of the design system that's an extension of <A href="https://not-gov.uk/">NotGovUK</A> which implements the GOV.UK design system in React. (See: <A href="https://not-gov.uk/design-decisions">design decisions</A>)</p>
+        <p>You can use the Home Office design system for prototyping and products in production. See <A href="../styles">styles</A> for more information on internal and public facing services.</p>
         <h2>Design prototype assets</h2>
         <p>You can explore ideas and demonstrate page flows using these design assets:</p>
         <ul>
