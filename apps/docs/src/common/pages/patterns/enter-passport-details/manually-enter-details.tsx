@@ -60,8 +60,8 @@ const Page: FC<PageProps> = ({ location }) => (
         />
       </div>
 
-      <p className="govuk-body">If more than 9 characters are entered, show: Passport number must be 9 characters or less.</p>
-      <p className="govuk-body">If characters that are not letters or numbers are entered, show Passport number must only include numbers and letters a to z.</p>
+      <p className="govuk-body">If more than 9 characters are entered, say 'Passport number must be 9 characters or less'.</p>
+      <p className="govuk-body">If characters that are not letters or numbers are entered, say 'Passport number must only include numbers and letters a to z'.</p>
       
       <h3 className="govuk-heading-m">Nationality</h3>
       <div className="app-example">
@@ -210,7 +210,7 @@ const Page: FC<PageProps> = ({ location }) => (
         />
       </div>
 
-      <p className="govuk-body">The issue date should be validated to be in the past.</p>
+      <p className="govuk-body">The issue date should be validated to be in the past, using the <A href="https://design-system.service.gov.uk/components/date-input/">GOV.UK date input guidance</A>.</p>
         
       <h3 className="govuk-heading-m">Expiry date</h3>
       <div className="app-example">
@@ -221,7 +221,8 @@ const Page: FC<PageProps> = ({ location }) => (
         />
       </div>
 
-      <p className="govuk-body">If you’re capturing current valid passports, then the expiry date should be validated to be in the future. All passports must have an expiry date.</p>
+      <p className="govuk-body">All passports have an expiry date.</p>
+      <p className="govuk-body">If you’re capturing current valid passports, then the expiry date should be validated to be in the future, using the using the <A href="https://design-system.service.gov.uk/components/date-input/">GOV.UK date input guidance</A>.</p>
       <p className="govuk-body">Not all countries have a standard 10 year length of passport validity. You may know more about expiry dates from your context, such as if you are collecting UK passport details.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
