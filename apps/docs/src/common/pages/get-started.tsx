@@ -5,7 +5,14 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 export const menu = (
   <Fragment>
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office prototype</span>
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office plugin for GOV.UK prototype</span>
+    <NavigationMenu items={[
+      {
+        href: '/get-started/home-office-plugin',
+        text: 'Add Home Office plugin to GOV.UK prototype'
+      }
+    ]} />
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office React prototype</span>
     <NavigationMenu items={[
 
       {
@@ -15,17 +22,6 @@ export const menu = (
       {
         href: '/get-started/use-prototype',
         text: 'Build your protoype'
-      },
-      {
-        href: '/get-started/deploy-prototype',
-        text: 'Publish your protoype'
-      }
-    ]} />
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office plugin for GOV.UK prototype</span>
-    <NavigationMenu items={[
-      {
-        href: '/get-started/home-office-plugin',
-        text: 'Add Home Office plugin to GOV.UK prototype'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Community resources</span>
@@ -64,12 +60,15 @@ const Page: FC<PageProps> = ({ location }) => (
           <li><A href="https://design-system.service.gov.uk/community/resources-and-tools/">GOV.UK design system community assets</A></li>
           <li><A href="https://www.figma.com/file/y90OmHLuhtNuCUOc7jzQlj/Home-Office-design-library-Roboto">Home Office styles and components (Figma)</A></li>
         </ul>
-        <h2>HTML Prototype</h2>
-          <p>When prototyping a public-facing service, you should use the <A href="https://govuk-prototype-kit.herokuapp.com/docs">GOV.UK prototype kit</A> which contains the GOV.UK styles.</p>
-          <p>For internal services, such as caseworking systems, you should use the Home Office styles (including logo, colours and internal font) in your prototypes. You can choose whether to use the:</p>
+        <h2>HTML prototype</h2>
+          <h3>Public facing services</h3>
+            <p>When prototyping an external public-facing service, use the <A href="https://prototype-kit.service.gov.uk/docs/">GOV.UK prototype kit</A> which contains the GOV.UK styles.</p>
+            <p>You may find some of features of the <A href="/get-started/home-office-plugin">Home Office plugin</A> makes it easier and quicker to prototype.</p>
+          <h3>Internal services</h3>
+          <p>For internal services, such as caseworking systems, use the Home Office styles (including logo, colours and internal font) in your prototypes. You can choose whether to use the:</p>
           <ul>
+            <li><A href="/get-started/home-office-plugin">GOV.UK prototype kit with the Home Office plugin</A></li>
             <li><A href="/get-started/start-prototype">Home Office design system React prototype kit</A></li>
-            <li><A href="/get-started/home-office-plugin">Home Office-styled GOV.UK prototype kit</A></li>
           </ul>
 
           <p>You cannot use certain GOV.UK styles, such as the crown logo or Transport font, for internal services.</p>

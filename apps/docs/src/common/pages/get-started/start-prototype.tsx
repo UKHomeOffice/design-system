@@ -49,7 +49,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>a <A href="https://github.com/">GitHub</A> account</li>
           <li>optionally a <A href="http://heroku.com/">Heroku</A> account, to publish your prototype</li>
           <li>terminal - an application to install, start and stop a prototype. Using a terminal is sometimes called ‘using the command line’</li>
-          <li>a text editor, such as <A href="https://code.visualstudio.com/">VSCode</A> or <A href="https://atom.io/">Atom</A></li>
+          <li>a text editor, such as <A href="https://code.visualstudio.com/">VSCode</A></li>
         </ul>
         <p>To install Node.js or a text editor, you'll need administrator access to your computer.</p>
         <p>Create your GitHub and Heroku accounts with any email address, including your Home Office email addresses.</p>

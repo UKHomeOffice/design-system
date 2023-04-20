@@ -34,7 +34,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><A href="https://www.figma.com/file/gou1Y52jE53jkogQJraQau/HO-DDaT-storyboard-template?node-id=6%3A314">Storyboard template (Figma)</A></li>
         <li><A href="https://www.figma.com/file/enEcPp3OA9XiUVPkPiN9W0/HO-DDaT-workshop-templates?node-id=6%3A314">Workshop activity templates (Figma)</A></li>
         <li><A href="https://github.com/karypun/mock-wildcat-service">Mock service with reusable HTML and React code snippets</A></li>
-        <li><A href="https://github.com/UKHomeOffice/home_office_design_kit">Home Office-styled GOV.UK prototyping kit</A></li>
+        <li><A href="https://github.com/UKHomeOffice/home-office-kit">Source code for the Home Office plugin to the GOV.UK prototype kit</A></li>
 
       </ul>
       <h2>GOV.UK</h2>
