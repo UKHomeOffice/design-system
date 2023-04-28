@@ -140,7 +140,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="i">I</h2>
     <h3 id="immigration adviser">immigration adviser</h3>
-    <p>An immigration expert regulated by the OISC <A href="https://www.gov.uk/government/organisations/office-of-the-immigration-services-commissioner/about">OISC</A> who advises on issues like visas, citizenship, employment, asylum and deportation. Some are qualified to represent clients at immigration tribunals and court hearings.</p>
+    <p>An immigration expert regulated by the <A href="https://www.gov.uk/government/organisations/office-of-the-immigration-services-commissioner/about">OISC</A> who advises on issues like visas, citizenship, employment, asylum and deportation. Some are qualified to represent clients at immigration tribunals and court hearings.</p>
     <h3 id="immigration bail">immigration bail</h3>
     <p>Lower case.</p>
     <h3 id="immigration health surcharge">immigration health surcharge (IHS)</h3>
