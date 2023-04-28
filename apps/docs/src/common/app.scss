@@ -102,6 +102,18 @@ ol.app-letter-model .app-annotate-block__label {
   font-family: $govuk-font-family;
 }
 
+// Passport pattern
+div.app-example {
+  background-color: white;
+  padding: 0.5em;
+  outline: 2px solid govuk-colour("dark-grey");
+  margin-bottom: govuk-spacing(6);
+}
+
+p.monospace {
+  font-family: monospace;
+}
+
 // Content style guide
 .a-z-header {
   display: inline-block;

@@ -21,6 +21,22 @@ export const menu = (
         text: 'Compare information'
       },
       {
+        href: '/patterns/enter-passport-details',
+        text: 'Enter passport details'
+      },
+      {
+        href: '/patterns/enter-passport-details/scan-passport-chip',
+        text: '- Scan the chip'
+      },
+      {
+        href: '/patterns/enter-passport-details/take-upload-photo',
+        text: '- Take or upload photo'
+      },
+      {
+        href: '/patterns/enter-passport-details/manually-enter-details',
+        text: '- Manually enter details'
+      },
+      {
         href: '/patterns/find-information-on-document',
         text: 'Find information on a document'
       },
