@@ -30,9 +30,9 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p className="govuk-body">You can ask for passport details in 3 ways. Users can:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li><A href="enter-passport-details/scan-passport-chip">scan the chip</A></li>
-        <li><A href="enter-passport-details/take-upload-photo">take or upload a photo</A></li>
-        <li><A href="enter-passport-details/manually-enter-details">manually enter the details</A></li>
+        <li><A href="/patterns/enter-passport-details/scan-passport-chip">scan the chip</A></li>
+        <li><A href="/patterns/enter-passport-details/take-upload-photo">take or upload a photo</A></li>
+        <li><A href="/patterns/enter-passport-details/manually-enter-details">manually enter the details</A></li>
       </ul>
       <p className="govuk-body">Use the <A href="https://www.consilium.europa.eu/prado/en/search-by-document-country.html">public register of identity documents</A> to see the similarities and differences between passports from around the world.</p>
 
