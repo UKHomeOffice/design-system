@@ -69,7 +69,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>For internal services, such as caseworking systems, use the Home Office styles (including logo, colours and internal font) in your prototypes. You can choose whether to use the:</p>
           <ul>
             <li><A href="/get-started/home-office-plugin">GOV.UK prototype kit with the Home Office plugin</A></li>
-            <li><A href="/get-started/start-prototype">Home Office design system React prototype kit (experimental)</A></li>
+            <li><A href="/get-started/start-prototype">Home Office design system React prototype kit</A></li>
           </ul>
 
           <p>You cannot use certain GOV.UK styles, such as the crown logo or Transport font, for internal services.</p>
