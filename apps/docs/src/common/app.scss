@@ -134,3 +134,24 @@ p.monospace {
     margin-bottom: 0;
   }
 }
+
+
+img.app-instruction {
+  @include govuk-responsive-margin(4, "bottom");
+}
+
+pre {
+  padding: govuk-spacing(3);
+  border: $govuk-focus-width solid transparent;
+  outline: 1px solid $govuk-border-colour;
+  background-color: govuk-colour("light-grey", $legacy: "grey-4");
+  overflow: auto;
+}
+
+p code,
+li code {
+  color: #d13118;
+  background-color: govuk-colour("light-grey", $legacy: "grey-4");
+  outline: 1px solid $govuk-border-colour;
+  padding: 0 govuk-spacing(1);
+}

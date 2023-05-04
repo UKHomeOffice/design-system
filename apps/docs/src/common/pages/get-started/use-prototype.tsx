@@ -4,8 +4,6 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
-import "./_get-started.scss";
-
 export const title = 'Build your prototype';
 const description = 'Build your prototype';
 const section = 'Get started';

@@ -4,8 +4,6 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
-import "./_get-started.scss";
-
 export const title = 'Set up your prototype';
 const description = 'How to generate a new prototype based on the Home Office Design System';
 const section = 'Get started';
