@@ -94,14 +94,14 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p>Labels need to be associated with their fields. They should always sit above the field and be spaced so that there is a visible connection. The label also needs to be attached to the form input in the HTML by using the <code>for</code> attribute on the label.</p>
 
-<p>
-  <code>
-    &lt;div class="govuk-form-group"&gt;<br />
-    &lt;label class="govuk-label" for="event-name"&gt; What is the name of the event? &lt;/label&gt;<br />
+
+<pre><code>
+  &lt;div class="govuk-form-group"&gt;<br />
+    &lt;label class="govuk-label" for="event-name"&gt; What is the name of the event?&lt;/label&gt;<br />
     &lt;input class="govuk-input" id="event-name" name="event-name" type="text"&gt;<br />
-    &lt;/div&gt;
-  </code>
-</p>
+  &lt;/div&gt;
+</code></pre>
+
 <p>This allows screen readers to read out the label when the field is focused and provide a larger click/tap area for users with motor impairments.</p>
 <p>Find out more about labelling controls in <A href="https://www.w3.org/WAI/tutorials/forms/labels/">WAI Web Accessibility Tutorials</A>.</p>
 
