@@ -1,4 +1,5 @@
 @import "@hods/sass-base";
+@import "@hods/button";
 @import "govuk-frontend/govuk/components/button";
 
 $govuk-button-colour: govuk-colour("white");
@@ -32,19 +33,22 @@ $govuk-button-text-colour: govuk-colour("black");
     }
 
     &__link {
-      @extend .govuk-button;
+      @extend .hods-button--secondary;
 
-      &, &:active, &:hover, &:link, &:visited {
-        color: $govuk-button-text-colour;
-        background-color: $govuk-button-colour;
-        border: $govuk-button-text-colour 1px solid;
-        margin: 0;
-        @include govuk-responsive-margin(2, "top");
-        @include govuk-responsive-margin(2, "bottom");
-      }
-
+      &,
+      &:link,
+      &:visited,
+      &:active,
       &:hover {
-        background-color: govuk-shade($govuk-button-colour, 10%);
+        color: $hods-secondary-button-text-colour;
+      }
+  
+      &:hover {
+        background-color: govuk-shade($hods-secondary-button-background-colour, 10%);
+  
+        &[disabled] {
+          background-color: $hods-secondary-button-background-colour;
+        }
       }
     }
   }
