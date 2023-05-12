@@ -1,0 +1,39 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Button } from '../src/Button';
+import readMe from '../README.md';
+
+<Meta
+  title="Button"
+  component={ Button }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Extension of GOV.UK design system buttons',
+    jest: ['Button'],
+    notes: readMe
+  } }
+/>
+
+# Button
+
+Extension of GOV.UK design system buttons
+WRITE MORE DESCRIPTION HERE.
+
+<Preview withToolbar>
+  <Story name="Button">
+    <Button />
+  </Story>
+</Preview>
+
+<Props of={ Button } />
+
+
+## Stories
+### Standard
+
+A standard Button.
+
+<Preview>
+  <Story name="Standard">
+    <Button />
+  </Story>
+</Preview>
