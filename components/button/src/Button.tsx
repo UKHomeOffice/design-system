@@ -1,29 +1,25 @@
 import { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
+import { Button, ButtonProps } from '@not-govuk/button';
 
 import '../assets/Button.scss';
 
-export type ButtonProps = StandardProps & {
-  /** Description for the 'heading' prop */
-  heading?: string
-};
+export type HomeOfficeButtonProps = ButtonProps
 
-export const Button: FC<ButtonProps> = ({
+const defaultClassBlock = 'hods-button';
+
+export const HomeOfficeButton: FC<ButtonProps> = ({
   children,
   classBlock,
-  classModifiers,
-  className,
-  heading,
   ...attrs
 }) => {
-  const classes = classBuilder('hods-button', classBlock, classModifiers, className);
-  const title = heading || 'Button';
-
   return (
-    <div {...attrs} className={classes()}>
-      <h1 className={classes('heading')}>{title}</h1>
+    <Button
+      classBlock={classBlock || defaultClassBlock}
+      {...attrs}
+    >
       {children}
-    </div>
+    </Button>
   );
 };
 

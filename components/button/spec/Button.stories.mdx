@@ -1,10 +1,10 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
-import { Button } from '../src/Button';
+import { HomeOfficeButton } from '../src/Button';
 import readMe from '../README.md';
 
 <Meta
   title="Button"
-  component={ Button }
+  component={ HomeOfficeButton }
   parameters={ {
     chromatic: { viewports: [640, 480] },
     description: 'Extension of GOV.UK design system buttons',
@@ -15,25 +15,36 @@ import readMe from '../README.md';
 
 # Button
 
-Extension of GOV.UK design system buttons
-WRITE MORE DESCRIPTION HERE.
+Read the [button guidance on the GOV.UK design system](https://design-system.service.gov.uk/components/button/).
 
 <Preview withToolbar>
   <Story name="Button">
-    <Button />
+    <HomeOfficeButton>
+      Save and continue
+    </HomeOfficeButton>
   </Story>
 </Preview>
 
-<Props of={ Button } />
+<Props of={ HomeOfficeButton } />
 
 
-## Stories
-### Standard
+## How to use
+### Secondary buttons
 
-A standard Button.
+The style of the secondary button is slightly changed from the GOV.UK design system to improve the contrast with the page background.
 
 <Preview>
   <Story name="Standard">
-    <Button />
+    <HomeOfficeButton classModifiers="secondary">
+      Save and continue
+    </HomeOfficeButton>
   </Story>
 </Preview>
+
+## Help improve this component
+
+This component needs improving. We need evidence about:
+
+- how to use buttons on internal systems
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/372), or follow our [contribute guidance](/contribute).

@@ -1,9 +1,37 @@
-.hods-button {
-  /* Write base styles for Button here */
-  background-color: beige;
+@import "@hods/sass-base";
+@import "@not-govuk/button";
 
-  &__heading {
-    /* Write styles for 'heading' element within Button here */
-    color: navy;
+$hods-secondary-button-text-colour: govuk-colour("black");
+$hods-secondary-button-background-colour: #F8F8F8;
+
+.hods-button {
+  @extend .govuk-button;
+
+  &--secondary {
+    @extend .govuk-button--secondary;
+    background-color: $hods-secondary-button-background-colour;
+    border: 1px solid govuk-colour("black"); // text colour
+    padding: 9px 10px; // 2px taller to account for the transparent 2px border in the default button styles
+    box-shadow: 0px 1px 0px govuk-colour("black"); // text colour
+
+    &,
+    &:link,
+    &:visited,
+    &:active,
+    &:hover {
+      color: $hods-secondary-button-text-colour;
+    }
+
+    &:hover {
+      background-color: govuk-shade($hods-secondary-button-background-colour, 10%);
+
+      &[disabled] {
+        background-color: $hods-secondary-button-background-colour;
+      }
+    }
+  }
+
+  &--warning {
+    @extend .govuk-button--warning;
   }
 }

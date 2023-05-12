@@ -24,7 +24,9 @@
     "react-components"
   ],
   "dependencies": {
-    "@not-govuk/component-helpers": "^0.5.9"
+    "@not-govuk/component-helpers": "^0.5.9",
+    "@not-govuk/button": "^0.5.9",
+    "@hods/sass-base": "workspace:^0.3.7"
   },
   "peerDependencies": {
     "@not-govuk/docs-components": "^0.5.9",
