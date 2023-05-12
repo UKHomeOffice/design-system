@@ -42,6 +42,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Capitalised.</p>
     <h3 id="border control">border control</h3>
     <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
+    <h3 id="british national (overseas)">British national (overseas)</h3>
+    <p>Use 'British national (overseas)' when referring to people, as in 'she is a British national (overseas)'. When referring to the visa, use 'British National (Overseas) visa', which can be abbreviated to 'BNO visa'. For example, 'apply for a British National (Overseas) visa'.</p>
     <h3 id="british overseas territories">British overseas territories</h3>
     <p>Write ‘overseas territories’ in lower case.</p>
     <h3 id="british overseas territories citizen">British overseas territories citizen</h3>
@@ -165,9 +167,9 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="l">L</h2>
     <h3 id="leave to enter">leave to enter</h3>
-    <p>Use 'permission to enter' instead of 'leave to enter', which is no longer in official use. For example, 'apply for permission to enter the UK'.</p>
+    <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="leave to remain">leave to remain</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain', which is no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
+    <p>Use 'permission to stay' instead of 'leave to remain', 'limited leave to remain' or 'indefinite leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
     <h3 id="life in the uk test">Life in the UK Test</h3>
     <p>Capitalise the ‘L’ and ‘T’. After first mention, you can refer to ‘the test’, using lower case.</p>
     <h3 id="log in">log in</h3>
@@ -197,9 +199,9 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="people">people</h3>
     <p>Use ‘people’ rather than ‘persons’.</p>
     <h3 id="permission to enter">permission to enter</h3>
-    <p>Use 'permission to enter' instead of 'leave to enter', which is no longer in official use. For example, 'apply for permission to enter the UK'.</p>
+    <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="permission to stay">permission to stay</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain', which is no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
+    <p>Use 'permission to stay' instead of 'leave to remain', 'limited leave to remain' or 'indefinite leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
     <h3 id="persons">persons</h3>
     <p>Use ‘people’ rather than ‘persons’.</p>
     <h3 id="please">please</h3>
