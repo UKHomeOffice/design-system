@@ -68,7 +68,7 @@ export const menu = (
         text: 'A letter'
       }
     ]} />
-       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users</span>
+       <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users for</span>
     <NavigationMenu items={[
       {
         href: '/patterns/ask-sex-or-gender',

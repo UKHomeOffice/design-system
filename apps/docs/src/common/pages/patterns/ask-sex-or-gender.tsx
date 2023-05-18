@@ -68,7 +68,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">You should only ask users what their sex is if you genuinely cannot provide your service without this information. </p>
 
-      <p className="govuk-body">If you need to ask users for this information, use ‘sex’ to collect biological data. For example, if your service needs to verify someone’s identity from the details on their identity document.</p>
+      <p className="govuk-body">If you need to ask users for this information, use a sex question to collect biological data. For example, if your service needs to verify someone’s identity from the details on their identity document.</p>
 
       <h3 className="govuk-heading-m">Asking users about their gender</h3>
 
