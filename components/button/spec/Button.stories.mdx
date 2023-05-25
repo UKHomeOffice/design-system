@@ -1,10 +1,10 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
-import { HomeOfficeButton } from '../src/Button';
+import { Button } from '@not-govuk/button';
 import readMe from '../README.md';
 
 <Meta
   title="Button"
-  component={ HomeOfficeButton }
+  component={ Button }
   parameters={ {
     chromatic: { viewports: [640, 480] },
     description: 'Extension of GOV.UK design system buttons',
@@ -19,13 +19,15 @@ Read the [button guidance on the GOV.UK design system](https://design-system.ser
 
 <Preview withToolbar>
   <Story name="Button">
-    <HomeOfficeButton>
+    <Button>
       Save and continue
-    </HomeOfficeButton>
+    </Button>
   </Story>
 </Preview>
 
-<Props of={ HomeOfficeButton } />
+<Props of={ Button } />
+
+To use in React, [read the button documentation from NotGovUK](https://not-gov.uk/components?name=Button).
 
 
 ## How to use
@@ -35,9 +37,9 @@ The style of the secondary button is slightly changed from the GOV.UK design sys
 
 <Preview>
   <Story name="Standard">
-    <HomeOfficeButton classModifiers="secondary">
+    <Button classModifiers="secondary">
       Save and continue
-    </HomeOfficeButton>
+    </Button>
   </Story>
 </Preview>
 

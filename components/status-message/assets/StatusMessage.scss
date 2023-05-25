@@ -33,22 +33,19 @@ $govuk-button-text-colour: govuk-colour("black");
     }
 
     &__link {
-      @extend .hods-button--secondary;
+      @extend .govuk-button;
 
-      &,
-      &:link,
-      &:visited,
-      &:active,
-      &:hover {
-        color: $hods-secondary-button-text-colour;
+      &, &:active, &:hover, &:link, &:visited {
+        color: $govuk-button-text-colour;
+        background-color: $govuk-button-colour;
+        border: $govuk-button-text-colour 1px solid;
+        margin: 0;
+        @include govuk-responsive-margin(2, "top");
+        @include govuk-responsive-margin(2, "bottom");
       }
-  
+
       &:hover {
-        background-color: govuk-shade($hods-secondary-button-background-colour, 10%);
-  
-        &[disabled] {
-          background-color: $hods-secondary-button-background-colour;
-        }
+        background-color: govuk-shade($govuk-button-colour, 10%);
       }
     }
   }
