@@ -465,7 +465,6 @@ importers:
 
   components/status-message:
     specifiers:
-      '@hods/button': workspace:^0.3.7
       '@hods/sass-base': workspace:^0.3.7
       '@mdx-js/react': 1.6.22
       '@not-govuk/anchor-list': ^0.5.9
@@ -478,7 +477,6 @@ importers:
       ts-jest: 28.0.7
       typescript: 4.7.4
     dependencies:
-      '@hods/button': link:../button
       '@hods/sass-base': link:../../lib/sass-base
       '@not-govuk/anchor-list': 0.5.9
       '@not-govuk/component-helpers': 0.5.9
