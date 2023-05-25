@@ -28,7 +28,6 @@
     "@not-govuk/anchor-list": "^0.8.6",
     "@not-govuk/component-helpers": "^0.8.6",
     "govuk-frontend": "4.4.1"
-    "@hods/button": "workspace:^0.4.0"
   },
   "peerDependencies": {
     "@not-govuk/docs-components": "^0.8.6",
