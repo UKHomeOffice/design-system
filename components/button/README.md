@@ -1,7 +1,8 @@
 Hods - Button
 =============
 
-Extension of GOV.UK design system buttons
+The SASS code for HODS styling of the GOV.UK secondary button. You should `@import` this file
+before you import components from `govuk-frontend`.
 
 
 Using this package
@@ -15,17 +16,8 @@ npm install -S @hods/button
 
 Then use it in your code as follows:
 
-```js
-import React, { createElement as h } from 'react';
-import Button from '@hods/button';
-
-export const MyComponent = props => (
-  <Button
-    // WRITEME
-  />
-);
-
-export default MyComponent;
+```scss
+@import '@hods/button';
 ```
 
 
@@ -37,31 +29,4 @@ the following command:
 
 ```shell
 pnpm install
-```
-
-
-### Testing
-
-Run the unit tests.
-
-```shell
-npm test
-```
-
-
-### Building
-
-Build the package by compiling the TypeScript source code.
-
-```shell
-npm run build
-```
-
-
-### Clean-up
-
-Remove any previously built files.
-
-```shell
-npm run clean
 ```

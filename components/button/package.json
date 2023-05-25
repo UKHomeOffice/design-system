@@ -2,12 +2,7 @@
   "name": "@hods/button",
   "version": "0.3.7",
   "description": "Extension of GOV.UK design system buttons",
-  "main": "src/Button.tsx",
   "sass": "assets/Button.scss",
-  "publishConfig": {
-    "main": "dist/Button.js",
-    "typings": "dist/Button.d.ts"
-  },
   "files": [
     "/assets",
     "/dist"
@@ -24,30 +19,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@not-govuk/component-helpers": "^0.5.9",
     "@not-govuk/button": "^0.5.9",
     "@hods/sass-base": "workspace:^0.3.7"
-  },
-  "peerDependencies": {
-    "@not-govuk/docs-components": "^0.5.9",
-    "@storybook/addon-docs": "^6.4.0",
-    "react": "^16.9.55"
-  },
-  "peerDependenciesMeta": {
-    "@not-govuk/docs-components": {
-      "optional": true
-    },
-    "@storybook/addon-docs": {
-      "optional": true
-    }
-  },
-  "devDependencies": {
-    "@mdx-js/react": "1.6.22",
-    "@not-govuk/component-test-helpers": "^0.5.9",
-    "@types/react": "16.14.28",
-    "jest": "28.1.3",
-    "jest-environment-jsdom": "28.1.3",
-    "ts-jest": "28.0.7",
-    "typescript": "4.7.4"
   }
 }
