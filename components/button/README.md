@@ -1,8 +1,8 @@
 Hods - Button
 =============
 
-The SASS code for HODS styling of the GOV.UK secondary button. You should `@import` this file
-before you import components from `govuk-frontend`.
+The SASS code for HODS styling of the GOV.UK secondary button. `@import` this file
+to use this styling.
 
 
 Using this package
