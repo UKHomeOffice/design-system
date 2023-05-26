@@ -178,7 +178,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="m">M</h2>
     <h3 id="migrant">migrant</h3>
-    <p>Do not use 'migrants'. Try to be specific, such as ‘applicant’, ‘claimant’, ‘employee’ or ‘worker’. If you cannot be specific, use ‘people’.</p>
+    <p>Avoid using 'migrants'. Try to be specific, such as ‘applicant’, ‘claimant’, ‘employee’ or ‘worker’. If you cannot be specific, use ‘people’.</p>
     <h3 id="ministers">ministers</h3>
     <p>See guidance on using titles in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide.</A></p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
