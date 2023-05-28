@@ -1,11 +1,16 @@
 import { createElement as h } from 'react';
-import { mount } from '@not-govuk/component-test-helpers';
+import { render, screen } from '@not-govuk/component-test-helpers';
 import ExpandableBanner from '../src/ExpandableBanner';
 
 describe('ExpandableBanner', () => {
   describe('when given valid props', () => {
-    const component = mount(h(ExpandableBanner, {status:'status'}, 'Child'));
 
-    it('renders', () => undefined);
+    beforeEach( async() => {
+      render(h(ExpandableBanner, {status:'status'}, 'Child'));
+    });
+
+    it('renders an element', async() => expect(screen.getByRole('group')).toBeInTheDocument());
+    it('includes the status provided', async() => expect(screen.getByRole('group')).toHaveTextContent('status'));
+    it('includes the children provided', async() => expect(screen.getByRole('group')).toHaveTextContent('Child'));
   });
 });
