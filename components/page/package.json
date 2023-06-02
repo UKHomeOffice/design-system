@@ -27,6 +27,7 @@
     "@hods/footer": "workspace:^0.4.0",
     "@hods/header": "workspace:^0.4.0",
     "@hods/sass-base": "workspace:^0.4.0",
+    "@not-govuk/button": "^0.8.6",
     "@not-govuk/component-helpers": "^0.8.6",
     "@not-govuk/skip-link": "^0.8.6",
     "govuk-frontend": "4.4.1"
