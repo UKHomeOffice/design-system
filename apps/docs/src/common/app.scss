@@ -17,6 +17,10 @@ code{
   }
 }
 
+.hods-colour-purple {
+  background-color: $hods-brand-colour-purple;
+}
+
 .image-examples{
   width: 100%;
   height: auto;
@@ -122,7 +126,7 @@ p.monospace {
   @include govuk-responsive-padding(2, "left");
   @include govuk-responsive-padding(2, "bottom");
   @include govuk-responsive-padding(2, "right");
-  background-color: #732282;
+  background-color: $hods-brand-colour-purple;
   color: govuk-colour("white");
 }
 

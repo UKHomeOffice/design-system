@@ -51,7 +51,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <h3 className="govuk-heading-m" style={{marginTop: "1.5em", marginBottom: "0.5em"}} >Brand colour</h3>
         <div className="colour-swatch">
-          <span className="app-swatch" style={{backgroundColor: "#732282"}}></span>
+          <span className="app-swatch hods-colour-purple"></span>
           <div className="hex">
             #732282
           </div>
