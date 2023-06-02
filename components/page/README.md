@@ -47,6 +47,7 @@ export const MyComponent = props => (
 export default MyComponent;
 ```
 
+This package also re-styles the secondary button component to have better contrast with the grey background.
 
 Working on this package
 -----------------------

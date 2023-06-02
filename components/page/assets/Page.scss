@@ -4,6 +4,9 @@
 @import "govuk-frontend/govuk/core/_template";
 @import "./fonts/roboto.scss";
 
+$hods-secondary-button-text-colour: govuk-colour("black");
+$hods-secondary-button-background-colour: #F8F8F8;
+
 .hods-page,
 #story-root,
 #root,
@@ -49,6 +52,30 @@ html {
     $home-office: map-get($govuk-colours-organisations, "home-office");
 
     border-color: map_get($home-office, "colour-websafe");
+  }
+  
+  // The style of the secondary button needs to change due to the grey background of .hods-page
+  .govuk-button--secondary {
+    background-color: $hods-secondary-button-background-colour;
+    border: 1px solid govuk-colour("black");
+    padding: 9px 10px; // 2px taller to account for the transparent 2px border in the default button styles
+    box-shadow: 0px 1px 0px govuk-colour("black");
+  
+    &,
+    &:link,
+    &:visited,
+    &:active,
+    &:hover {
+      color: $hods-secondary-button-text-colour;
+    }
+  
+    &:hover {
+      background-color: govuk-shade($hods-secondary-button-background-colour, 10%);
+  
+      &[disabled] {
+        background-color: $hods-secondary-button-background-colour;
+      }
+    }
   }
 }
 
