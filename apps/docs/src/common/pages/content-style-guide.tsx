@@ -197,7 +197,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="passport control">passport control</h3>
     <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
     <h3 id="people">people</h3>
-    <p>Use ‘people’ rather than ‘persons’.</p>
+    <p>Use 'people' as a plural of person, rather than 'persons' or 'individuals'.</p>
     <h3 id="permission to enter">permission to enter</h3>
     <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="permission to stay">permission to stay</h3>
