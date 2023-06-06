@@ -259,15 +259,17 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2 className="a-z-header" id="u">U</h2>
     <h3 id="uk residence card">UK residence card</h3>
     <p>Lower case. Also called a 'biometric residence card (BRC)' or 'EEA biometric residence card'.</p>
+    <h3 id="uk visa and citizenship application services">UK Visa and Citizenship Application Services (UKVCAS)</h3>
+    <p>UKVCAS service points are located in the UK, whereas visa application centres are outside the UK. You can use 'UKVCAS' after the first full mention.</p>
     <h3 id="user-centred">user centred</h3>
     <p>Hyphenate when using as an adjective, as in 'user-centred design'. Do not hyphenate when using as a noun, as in 'teams need to be user centred'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="v">V</h2>
     <h3 id="visa">visa</h3>
-    <p>Use 'visa' rather than technical terms like 'route' or 'permission to enter' in public-facing services, unless you need to be specific. For example, use ‘graduate visa’ rather than ‘graduate route’.</p>
+    <p>Use 'visa' rather than technical terms like 'route' or 'permission to enter' in public-facing services, unless you need to be specific. For example, use 'graduate visa' rather than 'graduate route'.</p>
     <h3 id="visa application centre">visa application centre (VAC)</h3>
-    <p>Lower case. You can use 'VAC' after the first full mention. Do not use 'visa section', 'visa processing post' or 'visa issuing office'.</p>
+    <p>Visa application centres (VAC) are located outside the UK whereas UKVCAS service points are in the UK. Use upper case when referring to UK VACs, as in 'find a UK Visa Application Centre'. Do not use 'visa section', 'visa processing post' or 'visa issuing office'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="w">W</h2>
