@@ -74,7 +74,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="correct">correct</h3>
     <p>Use ‘correct’ rather than ‘right’. For example, ‘select the correct settlement route’.</p>
     <h3 id="correspondence">correspondence</h3>
-    <p>Correspondence is not plain English. Try to be specific such as ‘postal address’, ‘contact address’ or ‘email’. For example, ‘is this the family’s postal address?’</p>
+    <p>Correspondence is not plain English. Try to be specific such as ‘address’, ‘contact address’ or ‘email’. For example, ‘is this the family’s address?’</p>
     <h3 id="countersignatory">countersignatory</h3>
     <p>Avoid using ‘countersignatory’. Instead, use ‘the person who can confirm your identity’ or ‘someone who can confirm your identity’.</p>
     <h3 id="criminal justice system">criminal justice system</h3>
@@ -211,7 +211,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="police national computer">Police National Computer (PNC)</h3>
     <p>Upper case. You can use 'PNC' after the first full mention.</p>
     <h3 id="postal">postal</h3>
-    <p>Use 'postal address' rather than 'correspondence' if you mean letters or emails. For example, 'is this the family's postal address?'</p>
+    <p>Use 'postal address' rather than 'correspondence' if you mean letters. For example, 'is this the family's postal address?'</p>
     <h3 id="primary control point">primary control point</h3>
     <p>Use 'border control' rather than 'passport control' or 'primary control point'.</p>
     <h3 id="purdah">purdah</h3>
