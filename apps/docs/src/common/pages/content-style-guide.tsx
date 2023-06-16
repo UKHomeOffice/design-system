@@ -74,7 +74,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="correct">correct</h3>
     <p>Use ‘correct’ rather than ‘right’. For example, ‘select the correct settlement route’.</p>
     <h3 id="correspondence">correspondence</h3>
-    <p>Correspondence is not plain English. Try to be specific such as ‘address’, ‘contact address’ or ‘email’. For example, ‘is this the family’s address?’</p>
+    <p>Correspondence is not plain English. Try to be specific such as ‘postal address’, ‘contact address’ or ‘email address’. For example, ‘is this the family’s postal address?’</p>
     <h3 id="countersignatory">countersignatory</h3>
     <p>Avoid using ‘countersignatory’. Instead, use ‘the person who can confirm your identity’ or ‘someone who can confirm your identity’.</p>
     <h3 id="criminal justice system">criminal justice system</h3>
