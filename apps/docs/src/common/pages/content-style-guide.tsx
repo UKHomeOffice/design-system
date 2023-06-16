@@ -76,7 +76,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="correspondence">correspondence</h3>
     <p>Correspondence is not plain English. Try to be specific such as ‘postal address’, ‘contact address’ or ‘email address’. For example, ‘is this the family’s postal address?’</p>
     <h3 id="countersignatory">countersignatory</h3>
-    <p>Avoid using ‘countersignatory’. Instead, use ‘the person who can confirm your identity’ or ‘someone who can confirm your identity’.</p>
+    <p>'Countersignatory' is not plain English. Instead, try 'the person who can confirm your identity' or 'you must have your application signed by someone else'.</p>
     <h3 id="criminal justice system">criminal justice system</h3>
     <p>Lower case.</p>
     <h3 id="customer">customer</h3>
