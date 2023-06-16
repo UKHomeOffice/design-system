@@ -105,23 +105,26 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="deportation">deportation</h3>
     <p>Not a synonym for ‘removal’. ‘Deportation’ is the forced removal of someone for the ‘public good’, usually after being convicted of a criminal offence.</p>
     <h3 id="digital status">digital status</h3>
-    <p>Avoid using 'online status' or 'digital status' when referring to someone's immigration status. Use 'online immigration status' instead.</p>
+    <p>Avoid using 'digital status' in public-facing services. Instead use 'eVisa' or 'online immigration status'. For example, 'view and prove your online immigration status (eVisa)'.</p>
     <h3 id="disclosure and barring service">Disclosure and Barring Service (DBS)</h3>
     <p>Capitalised. You can use the acronym ‘DBS’ after the first full mention.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="e">E</h2>
     <h3 id="eea biometric residence card">EEA biometric residence card</h3>
-    <p>Lower case. Also called a ‘UK residence card’ or ‘biometric residence card (BRC)’.</p>
+    <p>Lower case. Also called a 'UK residence card' or 'biometric residence card (BRC)'.</p>
     <h3 id="enhanced dbs check">enhanced DBS check</h3>
-    <p>Use ‘enhanced DBS check’ rather than ‘enhanced disclosure’.</p>
+    <p>Use 'enhanced DBS check' rather than 'enhanced disclosure'.</p>
     <h3 id="eu settlement scheme">EU Settlement Scheme (EUSS)</h3>
-    <p>Capitalised. You can use the acronym ‘EUSS’ after the first full mention.</p>
+    <p>Capitalised. You can use the acronym 'EUSS' after the first full mention.</p>
+    <a className="back-to-top" href="#a-z-nav">Back to top</a>
+    <h3 id="e-visa">eVisa</h3>
+    <p>When using 'eVisa' in public-facing services, explain what it means. For example, 'view and prove your online immigration status (eVisa)'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="f">F</h2>
     <h3 id="finger scan">finger scan</h3>
-    <p>Not a synonym for ‘fingerprint’. Fingers are ‘scanned’ and the results are called ‘fingerprints’.</p>
+    <p>Not a synonym for 'fingerprint'. Fingers are 'scanned' and the results are called 'fingerprints'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="g">G</h2>
