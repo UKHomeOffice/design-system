@@ -1,5 +1,5 @@
 import { createElement as h } from "react";
-import { mount } from "@not-govuk/component-test-helpers";
+import { render, screen } from "@not-govuk/component-test-helpers";
 import Timeline from "../src/Timeline";
 
 describe("Timeline", () => {
@@ -44,32 +44,33 @@ describe("Timeline", () => {
 			"25 January 2021 at 9:35am" +
 			items[2].description;
 
-		const timeline = mount(
-			h(Timeline, {
-				items: items,
-			})
-		);
+    beforeEach(async() => {
+		  render(
+        h(Timeline, {
+          items: items,
+        }))
+    });
 
-		it("displays all props", () => {
-			expect(timeline); // to exist
-			expect(timeline.text()).toBe(itemString);
-			expect(timeline.find(".hods-timeline__item")).toHaveLength(3);
+		it("displays all props", async () => {
+			expect(screen.getAllByRole("generic")[0]).toBeInTheDocument(); // to exist
+			expect(screen.getAllByRole("generic")[0]).toHaveTextContent(itemString);
+			expect(screen.getAllByRole("heading", {level: 2})).toHaveLength(3);
 		});
 
 		it("should show the title", () => {
-			expect(timeline.text()).toContain(items[0].action);
+			expect(screen.getAllByRole("heading", {level: 2})[0]).toHaveTextContent(items[0].action);
 		});
 
 		it("should show the user", () => {
-			expect(timeline.text()).toContain(items[0].by);
+			expect(screen.getAllByRole("generic")[1]).toHaveTextContent(items[0].by);
 		});
 
 		it("should show the date", () => {
-			expect(timeline.text()).toContain("14 April 2021 at 4:27pm");
+			expect(screen.getAllByRole("generic")[1]).toHaveTextContent("14 April 2021 at 4:27pm");
 		});
 
 		it("should show the description", () => {
-			expect(timeline.text()).toContain(items[0].description);
+			expect(screen.getAllByRole("generic")[1]).toHaveTextContent(items[0].description);
 		});
 	});
 
@@ -105,24 +106,25 @@ describe("Timeline", () => {
 			"25 January 2021 at 9:35am" +
 			items[2].description;
 
-		const timeline = mount(
-			h(Timeline, {
-				items: items,
-			})
-		);
+      beforeEach(async() => {
+        render(
+          h(Timeline, {
+            items: items,
+          }))
+      });
 
-		it("displays all props", () => {
-			expect(timeline); // to exist
-			expect(timeline.text()).toBe(itemString);
-			expect(timeline.find(".hods-timeline__item")).toHaveLength(3);
+		it("displays all props", async () => {
+			expect(screen.getAllByRole("generic")[0]).toBeInTheDocument(); // to exist
+			expect(screen.getAllByRole("generic")[0]).toHaveTextContent(itemString);
+			expect(screen.getAllByRole("heading", {level: 2})).toHaveLength(3);
 		});
 
 		it("should show the title", () => {
-			expect(timeline.text()).toContain(items[0].action);
+			expect(screen.getAllByRole("heading", {level: 2})[0]).toHaveTextContent(items[0].action);
 		});
 
 		it("should show the description", () => {
-			expect(timeline.text()).toContain(items[0].description);
+			expect(screen.getAllByRole("generic")[1]).toHaveTextContent(items[0].description);
 		});
 	});
 });

@@ -41,7 +41,7 @@ const serverConfig = {
     level: process.env.LOG_LEVEL || 'info'
   },
   httpd: {
-    host: process.env.LISTEN_HOST || '0.0.0.0',
+    host: process.env.LISTEN_HOST || '::',
     port: Number(process.env.PORT) || Number(process.env.LISTEN_PORT) || 8080
   },
   mode: (process.env.MODE || 'server') as Mode,

@@ -30,10 +30,10 @@ runs:
         TARGET: ${{ inputs.target }}
       run: |
         PRETTY_TARGET="${TARGET#https://}"
-        echo "::set-output name=write-issue::$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'false' || echo 'true')"
-        echo "::set-output name=fail-action::$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'true' || true)"
-        echo "::set-output name=prefix::${PRETTY_TARGET:-${APP}}"
-        echo "::set-output name=target::${TARGET:-http://localhost:8080}"
+        echo "write-issue=$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'false' || echo 'true')" >> ${GITHUB_OUTPUT}
+        echo "fail-action=$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'true' || true)" >> ${GITHUB_OUTPUT}
+        echo "prefix=${PRETTY_TARGET:-${APP}}" >> ${GITHUB_OUTPUT}
+        echo "target=${TARGET:-http://localhost:8080}" >> ${GITHUB_OUTPUT}
 
     - name: ZAP Scan (baseline)
       if: inputs.smoke
