@@ -22,6 +22,7 @@ steps:
   - echo "$${DOCKER_PASSWORD}" | docker login -u "$${DOCKER_USERNAME}" --password-stdin "$${DOCKER_REGISTRY}"
   - npm install -g pnpm@6.32.3
   - wget -q "https://storage.googleapis.com/kubernetes-release/release/v$${KUBECTL_VERSION}/bin/linux/amd64/kubectl" -O "/usr/bin/kubectl"
+  - chmod +x "/usr/bin/kubectl"
   - cd 'apps/docs'
   - make deploy kubectl="kubectl --insecure-skip-tls-verify --server=$${KUBE_SERVER} --namespace=$${KUBE_NAMESPACE} --token=$${KUBE_TOKEN}"
   environment:
