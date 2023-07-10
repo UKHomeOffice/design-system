@@ -1,6 +1,6 @@
 {
   "name": "@hods/page",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "description": "HODS' page component.",
   "main": "src/Page.tsx",
   "sass": "assets/Page.scss",
@@ -24,9 +24,9 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/footer": "workspace:^0.3.7",
-    "@hods/header": "workspace:^0.3.7",
-    "@hods/sass-base": "workspace:^0.3.7",
+    "@hods/footer": "workspace:^0.4.0",
+    "@hods/header": "workspace:^0.4.0",
+    "@hods/sass-base": "workspace:^0.4.0",
     "@not-govuk/component-helpers": "^0.7.2",
     "@not-govuk/skip-link": "^0.7.2",
     "govuk-frontend": "4.4.1"

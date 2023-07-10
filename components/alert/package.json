@@ -1,6 +1,6 @@
 {
   "name": "@hods/alert",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "description": "Alert users to important information.",
   "main": "src/Alert.tsx",
   "sass": "assets/Alert.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.3.7",
+    "@hods/sass-base": "workspace:^0.4.0",
     "@not-govuk/component-helpers": "^0.7.2",
     "@not-govuk/inset-text": "^0.7.2"
   },

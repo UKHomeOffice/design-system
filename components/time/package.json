@@ -1,6 +1,6 @@
 {
   "name": "@hods/time",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "description": "Displays a time in accordance with Gov style guidance",
   "main": "src/Time.tsx",
   "sass": "assets/Time.scss",

@@ -1,6 +1,6 @@
 {
   "name": "@hods/timeline",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "description": "A timeline of events",
   "main": "src/Timeline.tsx",
   "sass": "assets/Timeline.scss",
@@ -24,8 +24,8 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/date-time": "workspace:^0.3.7",
-    "@hods/sass-base": "workspace:^0.3.7",
+    "@hods/date-time": "workspace:^0.4.0",
+    "@hods/sass-base": "workspace:^0.4.0",
     "@not-govuk/component-helpers": "^0.7.2"
   },
   "peerDependencies": {
