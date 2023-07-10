@@ -102,12 +102,25 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>Manage appointment booking</li>
         
       </ul>
-      <p className="govuk-body">We conducted usability research with trans, intersex and users identifying as non-binary, to develop this pattern. We did not speak to any users with X on their passport or travel document.</p>
+    
+      <p className="govuk-body">We conducted usability research with trans, intersex and users identifying as non-binary, to develop this pattern. We found that:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>asking users about their biological sex is intrusive and can cause distress</li>
+        <li>users identify strongly with their gender identity, more so than with their sex. This should be considered, even if sex information is collected</li>
+        <li>often documents do not align with a user’s gender identity, which can cause confusion and discomfort when choosing an answer to the sex question</li>
+      </ul>
+      <p className="govuk-body">In research we identified ways to help to ease negative emotions and minimise user distress around this question, by explaining:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>why the question is being asked and how the data will be used</li>
+        <li>what documentation is required and the distinction between sex and gender, for example in the hint text</li>
+        
+      </ul>
+      <p className="govuk-body">We did not speak to any users with X on their passport or travel document.</p>
       <h2 className="govuk-heading-l">Help us improve this pattern</h2>
       <p className="govuk-body">This pattern needs improving. We need evidence about:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>any research insights, particularly from users with X on their documents </li>
-       
+        <li>how asking users about their sex changes when the identity document type users have is already known</li>
       </ul>
 
       <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/347">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
