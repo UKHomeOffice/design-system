@@ -16,8 +16,9 @@ platform:
 steps:
 - name: deploy
   pull: if-not-exists
-  image: quay.io/ukhomeofficedigital/lev-ci:3.5.1-130-e662c06959
+  image: node:18-alpine
   commands:
+  - apk add -q --no-cache docker make
   - echo "$${DOCKER_PASSWORD}" | docker login -u "$${DOCKER_USERNAME}" --password-stdin "$${DOCKER_REGISTRY}"
   - npm install -g pnpm@6.32.3
   - wget -q "https://storage.googleapis.com/kubernetes-release/release/v$${KUBECTL_VERSION}/bin/linux/amd64/kubectl" -O "/usr/bin/kubectl"
