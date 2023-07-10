@@ -51,9 +51,9 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <h3 className="govuk-heading-m" style={{marginTop: "1.5em", marginBottom: "0.5em"}} >Brand colour</h3>
         <div className="colour-swatch">
-          <span className="app-swatch" style={{backgroundColor: "#8f23b3"}}></span>
+          <span className="app-swatch hods-colour-purple"></span>
           <div className="hex">
-            #8f23b3
+            #732282
           </div>
           <div className="colour-info">
             <p>Purple is the Home Office's brand colour. This doesn't mean you should use it as the dominant colour in a digital interface.</p>
