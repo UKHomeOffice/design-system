@@ -19,7 +19,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 16
+          node: 18
           frozen-lockfile: true
 
       - name: Publish
