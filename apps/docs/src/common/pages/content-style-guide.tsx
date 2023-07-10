@@ -60,13 +60,15 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="certificate of sponsorship">certificate of sponsorship (CoS)</h3>
     <p>Lower case. You can use the acronym ‘CoS’ after the first full mention.</p>
     <h3 id="check">check</h3>
-    <p>Use ‘check’ rather than ‘verify’ or ‘validate’. For example, ‘check how long you’ve lived in the UK’.</p>
+    <p>Consider using ‘check’ instead of ‘verify’ if you are asking users to check the accuracy of something. For example, ‘check your answers' or ‘check a passport number'</p>
     <h3 id="clandestine">clandestine</h3>
     <p>Do not refer to people as ‘a clandestine’ or ‘clandestine entrant’. Try to be specific, like ‘a person hidden in a vehicle, ship or plane’.</p>
     <h3 id="click">click</h3>
     <p>Use ‘select’ rather than ‘click’ or ‘tap’ because not everyone uses a mouse.</p>
     <h3 id="common travel area">Common Travel Area</h3>
     <p>Capitalised. You can use the acronym ‘CTA’ after the first full mention.</p>
+    <h3 id="confirm">Confirm</h3>
+    <p>Consider using ‘confirm' or ‘prove’ instead of ‘validate’ if you are asking users to provide additional evidence. For example, ‘confirm your identity’ or 'prove your status’.</p>
     <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
     <p>Capitalised. You can use the acronym ‘CAS’ after the first full mention.</p>
     <h3 id="contractions">contractions</h3>
@@ -217,6 +219,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Use 'postal address' rather than 'correspondence' if you mean letters. For example, 'is this the family's postal address?'</p>
     <h3 id="primary control point">primary control point</h3>
     <p>Use 'border control' rather than 'passport control' or 'primary control point'.</p>
+    <h3 id="prove">prove</h3>
+    <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
     <h3 id="purdah">purdah</h3>
     <p>Use 'pre-election period' rather than 'purdah'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -269,6 +273,10 @@ const Page: FC<PageProps> = ({ location }) => (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="v">V</h2>
+    <h3 id="validate">validate</h3>
+    <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
+    <h3 id="verify">verify</h3>
+    <p>Consider using 'check' instead of 'verify' if you are asking users to check the accuracy of something. For example, 'check your answers' or 'check a passport number'.</p>
     <h3 id="visa">visa</h3>
     <p>Use 'visa' rather than technical terms like 'route' or 'permission to enter' in public-facing services, unless you need to be specific. For example, use 'graduate visa' rather than 'graduate route'.</p>
     <h3 id="visa application centre">visa application centre (VAC)</h3>
