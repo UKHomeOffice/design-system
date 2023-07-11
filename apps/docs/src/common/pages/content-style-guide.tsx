@@ -67,7 +67,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Use ‘select’ rather than ‘click’ or ‘tap’ because not everyone uses a mouse.</p>
     <h3 id="common travel area">Common Travel Area</h3>
     <p>Capitalised. You can use the acronym ‘CTA’ after the first full mention.</p>
-    <h3 id="confirm">Confirm</h3>
+    <h3 id="confirm">confirm</h3>
     <p>Consider using ‘confirm' or ‘prove’ instead of ‘validate’ if you are asking users to provide additional evidence. For example, ‘confirm your identity’ or 'prove your status’.</p>
     <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
     <p>Capitalised. You can use the acronym ‘CAS’ after the first full mention.</p>
