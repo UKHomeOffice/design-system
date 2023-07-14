@@ -74,7 +74,7 @@ jobs:
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
           deployment: heroku
-          node: 16
+          node: 18
           smoke: true
 
       - name: Scan service for vulnerabilities

@@ -1,6 +1,6 @@
 {
   "name": "@hods/create",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "description": "A project and prototype initialiser.",
   "main": "plopfile.js",
   "type": "module",
@@ -18,12 +18,12 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   },
   "dependencies": {
-    "@hods/plop-pack": "workspace:^0.3.7",
-    "@not-govuk/create": "^0.5.9",
-    "@not-govuk/plop-pack-internal": "^0.5.9"
+    "@hods/plop-pack": "workspace:^0.4.0",
+    "@not-govuk/create": "^0.7.2",
+    "@not-govuk/plop-pack-internal": "^0.7.2"
   },
   "devDependencies": {
     "plop": "3.1.1"

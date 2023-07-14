@@ -1,7 +1,5 @@
-name: 'Analysis'
+name: 'Static Security Analysis'
 on:
-  pull_request:
-    branches: [ 'master' ]
   schedule:
     - cron: '35 1 * * 2'
 jobs:
@@ -18,12 +16,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Scan code-base
+        uses: ./.github/actions/scan-code
+
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 16
+          node: 18
 
-      - name: Scan code-base
-        uses: ./.github/actions/scan-code
+      - name: Scan dependencies
+        uses: ./.github/actions/scan-dependencies
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

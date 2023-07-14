@@ -6,6 +6,21 @@ env:
   LANGUAGE: "en_GB:en"
   LC_ALL: "en_GB.UTF-8"
 jobs:
+  static-analysis:
+    name: Static analysis
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Scan code-base
+        uses: ./.github/actions/scan-code
+
   common:
     name: Dependencies, Unit tests
     runs-on: ubuntu-latest
@@ -38,7 +53,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 16
+          node: 18
 
       - name: Build libraries
         run: npm run libs:build
@@ -59,7 +74,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 16
+          node: 18
 
       - name: Build
         uses: ./.github/actions/build-app
@@ -91,7 +106,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 16
+          node: 18
 
       - name: Download build directory
         uses: actions/download-artifact@v3

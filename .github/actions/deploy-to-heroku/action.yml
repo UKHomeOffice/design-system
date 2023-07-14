@@ -17,7 +17,7 @@ runs:
   steps:
 
     - name: Login to Heroku
-      uses: AkhileshNS/heroku-deploy@v3.12.12
+      uses: AkhileshNS/heroku-deploy@v3.12.14
       with:
         heroku_api_key: ${{ inputs.heroku-api-key }}
         heroku_app_name: ''
