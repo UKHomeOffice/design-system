@@ -1,6 +1,6 @@
 {
   "name": "@hods/plop-pack",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "description": "Plop pack with misc tools.",
   "main": "src/index.js",
   "type": "module",
@@ -16,10 +16,10 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   },
   "dependencies": {
-    "@not-govuk/plop-pack": "^0.5.9",
-    "@not-govuk/plop-pack-internal": "^0.5.9"
+    "@not-govuk/plop-pack": "^0.7.2",
+    "@not-govuk/plop-pack-internal": "^0.7.2"
   }
 }

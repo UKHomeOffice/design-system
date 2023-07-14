@@ -19,7 +19,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 16
+          node: 18
 
       - name: Push Storybook to Chromatic
         uses: chromaui/action@v1
@@ -30,13 +30,14 @@ jobs:
           autoAcceptChanges: master
           exitZeroOnChanges: true
           exitOnceUploaded: true
+          onlyChanged: true
 
   deploy-docs-to-netlify:
     name: Deploy to Netlify and test
     uses: './.github/workflows/deploy-to-netlify.yml'
     with:
       app: docs
-      node: 16
+      node: 18
       production-branch: master
     secrets:
       CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}

@@ -1,7 +1,7 @@
 service: docs
 provider:
   name: aws
-  runtime: nodejs16.x
+  runtime: nodejs18.x
   environment:
     MODE: serverless
     NODE_ENV: production

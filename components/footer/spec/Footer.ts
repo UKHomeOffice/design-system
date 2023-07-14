@@ -1,23 +1,31 @@
 import { createElement as h } from 'react';
-import { mount } from '@not-govuk/component-test-helpers';
+import { render, screen } from '@not-govuk/component-test-helpers';
 import Footer from '../src/Footer';
 
 describe('Footer', () => {
   describe('when given no props', () => {
-    const component = mount(h(Footer, {}));
 
-    it('renders', () => undefined);
+    beforeEach(async() => {
+		  render(h(Footer, {}))
+    });
+
+    it('renders', async () => expect(screen.getByRole('contentinfo')).toBeInTheDocument());
   });
 
   describe('when given valid props', () => {
-    const component = mount(h(Footer, {
-      navigation: [
-        { href: '/feedback', text: 'Feedback' },
-        { href: '/help', text: 'Help' },
-        { href: 'https://gov.uk/', text: 'Gov.UK home' }
-      ]
-    }, 'Custom content.'));
 
-    it('renders', () => undefined);
+    beforeEach(async() => {
+      render(h(Footer, {
+        navigation: [
+          { href: '/feedback', text: 'Feedback' },
+          { href: '/help', text: 'Help' },
+          { href: 'https://gov.uk/', text: 'Gov.UK home' }
+        ]
+      }, 'Custom content.'));
+    });
+
+    it('renders', async () => expect(screen.getByRole('contentinfo')).toBeInTheDocument());
+    it('has 3 links', async() => expect(screen.getAllByRole('link')).toHaveLength(3));
+    it('renders children', async () => expect(screen.getByText('Custom content.')).toBeInTheDocument());
   });
 });

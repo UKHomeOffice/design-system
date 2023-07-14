@@ -4,7 +4,7 @@ inputs:
   node:
     description: The version of Node.js to use.
     required: false
-    default: 16
+    default: 18
   frozen-lockfile:
     description: Whether to require a frozen lock-file
     required: false
@@ -19,7 +19,7 @@ runs:
         sudo update-locale LANG=${{ env.LANG }}
 
     - name: Setup PNPM
-      uses: pnpm/action-setup@v2.2.2
+      uses: pnpm/action-setup@v2.2.4
       with:
         version: 6.32.3
         run_install: false
@@ -40,7 +40,7 @@ runs:
 
     - name: Pull dependencies
       if: ${{ !inputs.frozen-lockfile || inputs.frozen-lockfile == 'false' }}
-      uses: pnpm/action-setup@v2.2.2
+      uses: pnpm/action-setup@v2.2.4
       with:
         version: 6.32.3
         run_install: |
@@ -49,7 +49,7 @@ runs:
 
     - name: Pull dependencies (frozen lock-file)
       if: ${{ inputs.frozen-lockfile && inputs.frozen-lockfile != 'false' }}
-      uses: pnpm/action-setup@v2.2.2
+      uses: pnpm/action-setup@v2.2.4
       with:
         version: 6.32.3
         run_install: true

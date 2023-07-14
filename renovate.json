@@ -2,7 +2,12 @@
   "extends": [
     "config:base"
   ],
+  "minimumReleaseAge": "2 days",
   "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
+    },
     {
       "matchPackageNames": [
         "cypress/included",
@@ -20,6 +25,9 @@
         "jest-environment-jsdom",
         "ts-jest"
       ],
+      "matchPackagePatterns": [
+        "^@jest/"
+      ],
       "groupName": "jest"
     },
     {
@@ -27,7 +35,8 @@
         "@types/node",
         "node"
       ],
-      "groupName": "node"
+      "groupName": "node",
+      "allowedVersions": "/^[0-9]*[02468][.\\-]/"
     },
     {
       "matchPackageNames": [
@@ -67,11 +76,23 @@
       "groupName": "storybook"
     },
     {
+      "matchPackageNames": [
+        "@testing-library/jest-dom",
+        "@testing-library/react",
+        "@testing-library/user-event"
+      ],
+      "matchPackagePatterns": [
+        "^@testing-library/"
+      ],
+      "groupName": "testing-library"
+    },
+    {
       "matchPackagePatterns": [
         "^@types/webpack",
         "^webpack"
       ],
       "groupName": "webpack"
     }
-  ]
+  ],
+  "schedule": ["before 3am on Monday"]
 }
