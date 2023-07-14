@@ -42,6 +42,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Capitalised.</p>
     <h3 id="border control">border control</h3>
     <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
+    <h3 id="british national (overseas)">British national (overseas)</h3>
+    <p>Use 'British national (overseas)' when referring to people, as in 'she is a British national (overseas)'. When referring to the visa, use 'British National (Overseas) visa', which can be abbreviated to 'BNO visa'. For example, 'apply for a British National (Overseas) visa'.</p>
     <h3 id="british overseas territories">British overseas territories</h3>
     <p>Write ‘overseas territories’ in lower case.</p>
     <h3 id="british overseas territories citizen">British overseas territories citizen</h3>
@@ -58,13 +60,15 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="certificate of sponsorship">certificate of sponsorship (CoS)</h3>
     <p>Lower case. You can use the acronym ‘CoS’ after the first full mention.</p>
     <h3 id="check">check</h3>
-    <p>Use ‘check’ rather than ‘verify’ or ‘validate’. For example, ‘check how long you’ve lived in the UK’.</p>
+    <p>Consider using ‘check’ instead of ‘verify’ if you are asking users to check the accuracy of something. For example, ‘check your answers' or ‘check a passport number'</p>
     <h3 id="clandestine">clandestine</h3>
     <p>Do not refer to people as ‘a clandestine’ or ‘clandestine entrant’. Try to be specific, like ‘a person hidden in a vehicle, ship or plane’.</p>
     <h3 id="click">click</h3>
     <p>Use ‘select’ rather than ‘click’ or ‘tap’ because not everyone uses a mouse.</p>
     <h3 id="common travel area">Common Travel Area</h3>
     <p>Capitalised. You can use the acronym ‘CTA’ after the first full mention.</p>
+    <h3 id="confirm">confirm</h3>
+    <p>Consider using ‘confirm' or ‘prove’ instead of ‘validate’ if you are asking users to provide additional evidence. For example, ‘confirm your identity’ or 'prove your status’.</p>
     <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
     <p>Capitalised. You can use the acronym ‘CAS’ after the first full mention.</p>
     <h3 id="contractions">contractions</h3>
@@ -72,9 +76,9 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="correct">correct</h3>
     <p>Use ‘correct’ rather than ‘right’. For example, ‘select the correct settlement route’.</p>
     <h3 id="correspondence">correspondence</h3>
-    <p>Correspondence is not plain English. Try to be specific such as ‘postal address’, ‘contact address’ or ‘email’. For example, ‘is this the family’s postal address?’</p>
+    <p>Correspondence is not plain English. Try to be specific such as ‘postal address’, ‘contact address’ or ‘email address’. For example, ‘is this the family’s postal address?’</p>
     <h3 id="countersignatory">countersignatory</h3>
-    <p>Avoid using ‘countersignatory’. Instead, use ‘the person who can confirm your identity’ or ‘someone who can confirm your identity’.</p>
+    <p>'Countersignatory' is not plain English. Instead, try 'the person who can confirm your identity' or 'you must have your application signed by someone else'.</p>
     <h3 id="criminal justice system">criminal justice system</h3>
     <p>Lower case.</p>
     <h3 id="customer">customer</h3>
@@ -103,23 +107,26 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="deportation">deportation</h3>
     <p>Not a synonym for ‘removal’. ‘Deportation’ is the forced removal of someone for the ‘public good’, usually after being convicted of a criminal offence.</p>
     <h3 id="digital status">digital status</h3>
-    <p>Avoid using 'online status' or 'digital status' when referring to someone's immigration status. Use 'online immigration status' instead.</p>
+    <p>Avoid using 'digital status' in public-facing services. Instead use 'eVisa' or 'online immigration status'. For example, 'view and prove your online immigration status (eVisa)'.</p>
     <h3 id="disclosure and barring service">Disclosure and Barring Service (DBS)</h3>
     <p>Capitalised. You can use the acronym ‘DBS’ after the first full mention.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="e">E</h2>
     <h3 id="eea biometric residence card">EEA biometric residence card</h3>
-    <p>Lower case. Also called a ‘UK residence card’ or ‘biometric residence card (BRC)’.</p>
+    <p>Lower case. Also called a 'UK residence card' or 'biometric residence card (BRC)'.</p>
     <h3 id="enhanced dbs check">enhanced DBS check</h3>
-    <p>Use ‘enhanced DBS check’ rather than ‘enhanced disclosure’.</p>
+    <p>Use 'enhanced DBS check' rather than 'enhanced disclosure'.</p>
     <h3 id="eu settlement scheme">EU Settlement Scheme (EUSS)</h3>
-    <p>Capitalised. You can use the acronym ‘EUSS’ after the first full mention.</p>
+    <p>Capitalised. You can use the acronym 'EUSS' after the first full mention.</p>
+    <a className="back-to-top" href="#a-z-nav">Back to top</a>
+    <h3 id="e-visa">eVisa</h3>
+    <p>When using 'eVisa' in public-facing services, explain what it means. For example, 'view and prove your online immigration status (eVisa)'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="f">F</h2>
     <h3 id="finger scan">finger scan</h3>
-    <p>Not a synonym for ‘fingerprint’. Fingers are ‘scanned’ and the results are called ‘fingerprints’.</p>
+    <p>Not a synonym for 'fingerprint'. Fingers are 'scanned' and the results are called 'fingerprints'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="g">G</h2>
@@ -165,9 +172,9 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="l">L</h2>
     <h3 id="leave to enter">leave to enter</h3>
-    <p>Use 'permission to enter' instead of 'leave to enter', which is no longer in official use. For example, 'apply for permission to enter the UK'.</p>
+    <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="leave to remain">leave to remain</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain', which is no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
+    <p>Use 'permission to stay' instead of 'leave to remain', 'limited leave to remain' or 'indefinite leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
     <h3 id="life in the uk test">Life in the UK Test</h3>
     <p>Capitalise the ‘L’ and ‘T’. After first mention, you can refer to ‘the test’, using lower case.</p>
     <h3 id="log in">log in</h3>
@@ -176,7 +183,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="m">M</h2>
     <h3 id="migrant">migrant</h3>
-    <p>Do not use 'migrants'. Try to be specific, such as ‘applicant’, ‘claimant’, ‘employee’ or ‘worker’. If you cannot be specific, use ‘people’.</p>
+    <p>Avoid using 'migrants'. Try to be specific, such as ‘applicant’, ‘claimant’, ‘employee’ or ‘worker’. If you cannot be specific, use ‘people’.</p>
     <h3 id="ministers">ministers</h3>
     <p>See guidance on using titles in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide.</A></p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -195,11 +202,11 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="passport control">passport control</h3>
     <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
     <h3 id="people">people</h3>
-    <p>Use ‘people’ rather than ‘persons’.</p>
+    <p>Use 'people' as a plural of person, rather than 'persons' or 'individuals'.</p>
     <h3 id="permission to enter">permission to enter</h3>
-    <p>Use 'permission to enter' instead of 'leave to enter', which is no longer in official use. For example, 'apply for permission to enter the UK'.</p>
+    <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="permission to stay">permission to stay</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain', which is no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
+    <p>Use 'permission to stay' instead of 'leave to remain', 'limited leave to remain' or 'indefinite leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
     <h3 id="persons">persons</h3>
     <p>Use ‘people’ rather than ‘persons’.</p>
     <h3 id="please">please</h3>
@@ -209,9 +216,11 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="police national computer">Police National Computer (PNC)</h3>
     <p>Upper case. You can use 'PNC' after the first full mention.</p>
     <h3 id="postal">postal</h3>
-    <p>Use 'postal address' rather than 'correspondence' if you mean letters or emails. For example, 'is this the family's postal address?'</p>
+    <p>Use 'postal address' rather than 'correspondence' if you mean letters. For example, 'is this the family's postal address?'</p>
     <h3 id="primary control point">primary control point</h3>
     <p>Use 'border control' rather than 'passport control' or 'primary control point'.</p>
+    <h3 id="prove">prove</h3>
+    <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
     <h3 id="purdah">purdah</h3>
     <p>Use 'pre-election period' rather than 'purdah'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -257,15 +266,21 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2 className="a-z-header" id="u">U</h2>
     <h3 id="uk residence card">UK residence card</h3>
     <p>Lower case. Also called a 'biometric residence card (BRC)' or 'EEA biometric residence card'.</p>
+    <h3 id="uk visa and citizenship application services">UK Visa and Citizenship Application Services (UKVCAS)</h3>
+    <p>UKVCAS service points are located in the UK, whereas visa application centres are outside the UK. You can use 'UKVCAS' after the first full mention.</p>
     <h3 id="user-centred">user centred</h3>
     <p>Hyphenate when using as an adjective, as in 'user-centred design'. Do not hyphenate when using as a noun, as in 'teams need to be user centred'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="v">V</h2>
+    <h3 id="validate">validate</h3>
+    <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
+    <h3 id="verify">verify</h3>
+    <p>Consider using 'check' instead of 'verify' if you are asking users to check the accuracy of something. For example, 'check your answers' or 'check a passport number'.</p>
     <h3 id="visa">visa</h3>
-    <p>Use 'visa' rather than technical terms like 'route' or 'permission to enter' in public-facing services, unless you need to be specific. For example, use ‘graduate visa’ rather than ‘graduate route’.</p>
+    <p>Use 'visa' rather than technical terms like 'route' or 'permission to enter' in public-facing services, unless you need to be specific. For example, use 'graduate visa' rather than 'graduate route'.</p>
     <h3 id="visa application centre">visa application centre (VAC)</h3>
-    <p>Lower case. You can use 'VAC' after the first full mention. Do not use 'visa section', 'visa processing post' or 'visa issuing office'.</p>
+    <p>Visa application centres (VAC) are located outside the UK whereas UKVCAS service points are in the UK. Use upper case when referring to UK VACs, as in 'find a UK Visa Application Centre'. Do not use 'visa section', 'visa processing post' or 'visa issuing office'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="w">W</h2>

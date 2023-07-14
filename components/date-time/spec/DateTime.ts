@@ -1,5 +1,5 @@
 import { createElement as h } from "react";
-import { mount } from "@not-govuk/component-test-helpers";
+import { render, screen } from "@not-govuk/component-test-helpers";
 import DateTime, { DateTimeProps } from "../src/DateTime";
 
 describe("DateTime", () => {
@@ -8,10 +8,12 @@ describe("DateTime", () => {
 	};
 
 	describe("when given minimal valid props to display time then date", () => {
-		const component = mount(h(DateTime, minimalProps));
+    beforeEach(async() => {
+		  render(h(DateTime, minimalProps))
+    });
 
-		it("renders", () => {
-			expect(component.text()).toBe("10 January 2022 at 7:30pm");
+		it("renders", async () => {
+			expect(screen.getByText("10 January 2022 at 7:30pm")).toBeInTheDocument()
 		});
 	});
 
@@ -22,10 +24,12 @@ describe("DateTime", () => {
       precedence: 'time'
     };
 
-		const component = mount(h(DateTime, props));
+    beforeEach(async() => {
+		  render(h(DateTime, props))
+    });
 
 		it("renders", () => {
-			expect(component.text()).toBe("19:30 on 10 January 2022");
+			expect(screen.getByText("19:30 on 10 January 2022")).toBeInTheDocument();
 		});
 	});
 });
