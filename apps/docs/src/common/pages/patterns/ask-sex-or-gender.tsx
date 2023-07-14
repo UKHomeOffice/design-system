@@ -85,11 +85,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">How it works</h2>
       <p className="govuk-body">Check the sex options in the document that users of your service will have so the options accurately reflect users’ document data. For example, if the users have non-UK passports, you need to include the 'X or other' option as this appears on some non-UK passports and travel documents.</p>
 
-      <p className="govuk-body">Where possible, you should tell users what their data will be used for.</p>
+    
 
       <h2 className="govuk-heading-l">Writing for this pattern</h2>
       <p className="govuk-body">Use the ‘why we ask this question’ content to explain to users the purpose for collecting their sex data.</p>
-      <p className="govuk-body">In the usability research we conducted, users were apprehensive if they did not understand why they were being asked to provide these details.</p>
+     
       <p className="govuk-body">You should outline why it is important for the functioning of the service, in simple language. Do not use technical terms. If you cannot provide these details for users, consider if it is necessary to collect this data at all.</p>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
