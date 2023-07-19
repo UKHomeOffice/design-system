@@ -23,9 +23,9 @@ const Page: FC<PageProps> = props => (
       <div className="govuk-grid-column-one-third">
         <aside>
           <h2>Updates</h2>
-          <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 18 Apr 2023</p>
+          <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 21 Jul 2023</p>
           <ul className="govuk-!-font-size-16">
-            <li>Added <A href="/patterns/enter-passport-details">enter passport details</A></li>
+            <li>Added ask users for their <A href="/patterns/ask-sex-or-gender">sex and gender</A></li>
           </ul>
         </aside>
         <aside>
