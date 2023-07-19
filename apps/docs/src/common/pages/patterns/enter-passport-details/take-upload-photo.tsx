@@ -7,7 +7,7 @@ import { menu } from '../../patterns';
 export const title = 'Take or upload photo of passport';
 const description = 'How to ask users for passport details';
 const section = 'Patterns';
-const subsection = 'Ask users for';
+const subsection = 'Ask users to';
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

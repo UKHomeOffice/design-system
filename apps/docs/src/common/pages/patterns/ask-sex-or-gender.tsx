@@ -7,7 +7,7 @@ import { menu } from '../patterns';
 export const title = 'Their sex or gender';
 const description = 'How to ask users for their sex or gender';
 const section = 'Patterns';
-const subsection = 'Ask users';
+const subsection = 'Ask users for';
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
