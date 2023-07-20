@@ -98,9 +98,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">Research</h2>
       <p className="govuk-body">This pattern is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>Central operations platform</li>
-        <li>Manage appointment booking</li>
-        
+        <li>an internal reporting service used by operational Border Force officers</li>
+        <li>an internal service to manage appointments</li>
       </ul>
     
       <p className="govuk-body">We conducted usability research with trans, intersex and users identifying as non-binary, to develop this pattern. We found that:</p>
