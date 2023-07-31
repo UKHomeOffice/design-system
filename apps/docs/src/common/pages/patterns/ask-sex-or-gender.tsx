@@ -72,7 +72,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h3 className="govuk-heading-m">Ask users about their gender</h3>
 
-      <p className="govuk-body">Home Office public-facing services do not ask for gender, but some internal services ask this question in certain circumstances. For example, in asylum operations, we record users’ preference to be interviewed by a staff member of a specific gender.</p>
+      <p className="govuk-body">Home Office public-facing services do not ask for gender, but some internal services ask this question in certain circumstances. For example, we record users’ preference to be interviewed by a staff member of a specific gender.</p>
 
       <p className="govuk-body">Ask this question if your service needs data on how a person self-identifies to handle them or their case appropriately. </p>
 
@@ -102,7 +102,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>an internal service to manage appointments</li>
       </ul>
     
-      <p className="govuk-body">We conducted usability research with trans, intersex and users identifying as non-binary, to develop this pattern. We found that:</p>
+      <p className="govuk-body">We conducted usability research with trans and users identifying as non-binary, to develop this pattern. We found that:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>asking users about their biological sex is intrusive and can cause distress</li>
         <li>users identify strongly with their gender identity, more so than with their sex. This should be considered, even if sex information is collected</li>
