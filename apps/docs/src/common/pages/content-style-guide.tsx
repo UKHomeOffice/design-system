@@ -194,7 +194,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="n">N</h2>
     <h3 id="naturalisation">naturalisation</h3>
-    <p>Naturalisation is a legal process someone goes through to become a <A href="/content-style-guide#british%20citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
+    <p>Naturalisation is a legal process someone goes through to become a <A href="https://design.homeoffice.gov.uk/content-style-guide#british%20citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
     <h3 id="notification">notification</h3>
     <p>Avoid using 'notification' or 'notify'. Try to be specific about contact, such as, 'we will send you an email' or 'how do you want to be contacted?'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
