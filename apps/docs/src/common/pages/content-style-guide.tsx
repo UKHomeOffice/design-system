@@ -42,6 +42,10 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Capitalised.</p>
     <h3 id="border control">border control</h3>
     <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
+    <h3 id="british citizen">British citizen</h3>
+    <p>British citizen is one of <A href="https://www.gov.uk/types-of-british-nationality">6 different types of nationality</A>. Do not use 'UK citizen'.</p>
+    <h3 id="british nationality">British nationality</h3>
+    <p>There are <A href="https://www.gov.uk/types-of-british-nationality">6 different types of nationality</A>. These are British citizen, British overseas territories citizen, British overseas citizen, British subject, British national (overseas) and British protected person.</p>
     <h3 id="british national (overseas)">British national (overseas)</h3>
     <p>Use 'British national (overseas)' when referring to people, as in 'she is a British national (overseas)'. When referring to the visa, use 'British National (Overseas) visa', which can be abbreviated to 'BNO visa'. For example, 'apply for a British National (Overseas) visa'.</p>
     <h3 id="british overseas territories">British overseas territories</h3>
@@ -84,9 +88,9 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="customer">customer</h3>
     <p>Avoid calling the people who use our services ‘customers’. Keep it simple and use ‘you’. If you need to describe the user, try to be specific, like ‘asylum seeker’, ‘applicant’ or ‘claimant’.</p>
     <h3 id="customs">customs</h3>
-    <p>Use ‘customs’ rather than ‘secondary control’. For example, ‘customs regulations’ or ‘customs allowances’.</p>
+    <p>Use 'customs' rather than 'secondary control'. For example, 'customs regulations' or 'customs allowances'.</p>
     <h3 id="customs officer">customs officer</h3>
-    <p>Use ‘Border Force officer’ rather than ‘customs officer’ unless you have a specific reason.</p>
+    <p>Use ‘Border Force officer’ rather than 'customs officer' unless you have a specific reason.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="d">D</h2>
@@ -189,6 +193,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="n">N</h2>
+    <h3 id="naturalisation">Naturalisation</h3>
+    <p>Naturalisation is a legal process someone goes through to become a <A href="https://design.homeoffice.gov.uk/content-style-guide#b">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
     <h3 id="notification">notification</h3>
     <p>Avoid using 'notification' or 'notify'. Try to be specific about contact, such as, 'we will send you an email' or 'how do you want to be contacted?'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
