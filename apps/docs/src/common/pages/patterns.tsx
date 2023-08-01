@@ -33,7 +33,7 @@ export const menu = (
       },
       {
         href: '/patterns/ask-sex-or-gender',
-        text: 'Sex or gender'
+        text: 'Their sex or gender'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Help users to</span>
