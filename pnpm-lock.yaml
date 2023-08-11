@@ -395,6 +395,7 @@ importers:
       '@hods/header': workspace:^0.4.0
       '@hods/sass-base': workspace:^0.4.0
       '@mdx-js/react': 1.6.22
+      '@not-govuk/button': ^0.7.2
       '@not-govuk/component-helpers': ^0.7.2
       '@not-govuk/component-test-helpers': ^0.7.2
       '@not-govuk/skip-link': ^0.7.2
@@ -409,6 +410,7 @@ importers:
       '@hods/header': link:../header
       '@hods/sass-base': link:../../lib/sass-base
       '@not-govuk/component-helpers': 0.7.2
+      '@not-govuk/button': 0.7.2
       '@not-govuk/skip-link': 0.7.2_9fa7178d6e3333b72920375ce4a01a26
       govuk-frontend: 4.4.1
     devDependencies:
