@@ -178,7 +178,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="leave to enter">leave to enter</h3>
     <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="leave to remain">leave to remain</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain', 'limited leave to remain' or 'indefinite leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
+    <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="life in the uk test">Life in the UK Test</h3>
     <p>Capitalise the ‘L’ and ‘T’. After first mention, you can refer to ‘the test’, using lower case.</p>
     <h3 id="log in">log in</h3>
@@ -212,7 +212,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="permission to enter">permission to enter</h3>
     <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="permission to stay">permission to stay</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain', 'limited leave to remain' or 'indefinite leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
+    <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="persons">persons</h3>
     <p>Use ‘people’ rather than ‘persons’.</p>
     <h3 id="please">please</h3>
