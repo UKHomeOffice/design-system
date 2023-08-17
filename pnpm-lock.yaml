@@ -395,6 +395,8 @@ importers:
       '@hods/header': workspace:^0.4.0
       '@hods/sass-base': workspace:^0.4.0
       '@mdx-js/react': 1.6.22
+      '@not-govuk/button': ^0.7.2
+      '@not-govuk/button-group': ^0.7.2
       '@not-govuk/component-helpers': ^0.7.2
       '@not-govuk/component-test-helpers': ^0.7.2
       '@not-govuk/skip-link': ^0.7.2
@@ -413,6 +415,8 @@ importers:
       govuk-frontend: 4.4.1
     devDependencies:
       '@mdx-js/react': 1.6.22
+      '@not-govuk/button': 0.7.2
+      '@not-govuk/button-group': 0.7.2
       '@not-govuk/component-test-helpers': 0.7.2
       '@types/react': 16.14.38
       jest: 29.5.0
@@ -4844,7 +4848,6 @@ packages:
       react-router-hash-link: 2.4.3
     transitivePeerDependencies:
       - react-router-dom
-    dev: false
 
   /@not-govuk/anchor/0.7.2_jocyui6jwueadhqfh525qglyzq:
     resolution: {integrity: sha512-XG7gVsYExxdjhqGnrlQDUOv3WsF45YqNKTOaxuERDP2LPsumh2jcLrspLSu4F9u2BgdmzNjoECbGK4+CEsl/NA==}
@@ -5059,6 +5062,23 @@ packages:
       - react-router-dom
     dev: true
 
+  /@not-govuk/button-group/0.7.2:
+    resolution: {integrity: sha512-IltOAn5H27NHtxd/tyh8QNHQcSK/vheHQ/G+y1S29ZuSVNnNE7lnEmrTKVjVZixdq+2nZfmP/SSMRcqqtg20ig==}
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.7.2
+      '@storybook/addon-docs': ^6.4.0
+      react: ^16.9.55
+    peerDependenciesMeta:
+      '@not-govuk/docs-components':
+        optional: true
+      '@storybook/addon-docs':
+        optional: true
+    dependencies:
+      '@not-govuk/component-helpers': 0.7.2
+      '@not-govuk/sass-base': 0.7.2
+      govuk-frontend: 4.4.1
+    dev: true
+
   /@not-govuk/button-group/0.7.2_react@16.14.0:
     resolution: {integrity: sha512-IltOAn5H27NHtxd/tyh8QNHQcSK/vheHQ/G+y1S29ZuSVNnNE7lnEmrTKVjVZixdq+2nZfmP/SSMRcqqtg20ig==}
     peerDependencies:
@@ -5095,6 +5115,26 @@ packages:
       '@storybook/addon-docs': 6.5.16_fijkficcb77iescfrgc5hfm56u
       govuk-frontend: 4.4.1
       react: 16.14.0
+    dev: true
+
+  /@not-govuk/button/0.7.2:
+    resolution: {integrity: sha512-hALvDJ+vvLRkHMBnLB/5ZeGrrN/ZAbEkuKRzyotlhsMWlqwAXp2eUWJBu7okWBt/SqL/oyhTxPbmLhpQKXsCsQ==}
+    peerDependencies:
+      '@not-govuk/docs-components': ^0.7.2
+      '@storybook/addon-docs': ^6.4.0
+      react: ^16.9.55
+    peerDependenciesMeta:
+      '@not-govuk/docs-components':
+        optional: true
+      '@storybook/addon-docs':
+        optional: true
+    dependencies:
+      '@not-govuk/component-helpers': 0.7.2
+      '@not-govuk/link': 0.7.2
+      '@not-govuk/sass-base': 0.7.2
+      govuk-frontend: 4.4.1
+    transitivePeerDependencies:
+      - react-router-dom
     dev: true
 
   /@not-govuk/button/0.7.2_jocyui6jwueadhqfh525qglyzq:
@@ -6123,7 +6163,6 @@ packages:
       govuk-frontend: 4.4.1
     transitivePeerDependencies:
       - react-router-dom
-    dev: false
 
   /@not-govuk/link/0.7.2_jocyui6jwueadhqfh525qglyzq:
     resolution: {integrity: sha512-neI8HjGcLuJ70co87UIm53qf+euh5/wfcMayGI6XkfExeFAcBpXEdIzFuMAlMCihUzEyo7G2F4WQAW97u95Law==}
@@ -6504,7 +6543,6 @@ packages:
       history: 4.10.1
       qs: 6.11.2
       url-parse: 1.5.10
-    dev: false
 
   /@not-govuk/route-utils/0.7.2_react-router-dom@5.3.4:
     resolution: {integrity: sha512-qP/BN5gMR8D+XGXvdpGKWkjBieJxMQtdq8OlmPLsXEGzC4I/u9naHBfO7sI1fQdgIil9Jk480QVT6NLVUO1SEw==}
@@ -18961,7 +18999,6 @@ packages:
       react-router-dom: '>=4'
     dependencies:
       prop-types: 15.8.1
-    dev: false
 
   /react-router-hash-link/2.4.3_jocyui6jwueadhqfh525qglyzq:
     resolution: {integrity: sha512-NU7GWc265m92xh/aYD79Vr1W+zAIXDWp3L2YZOYP4rCqPnJ6LI6vh3+rKgkidtYijozHclaEQTAHaAaMWPVI4A==}
