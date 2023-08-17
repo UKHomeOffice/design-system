@@ -43,7 +43,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Windows users should install <A href="https://git-scm.com/download/win">Git Bash (direct download)</A> to use these app-instructions.</p>
         <p>You'll need:</p>
         <ul>
-          <li><A href="https://nodejs.org/en/">Node.js (version 16)</A> - you can use version 14 too</li>
+          <li><A href="https://nodejs.org/en/">Node.js (version 18)</A> - you can use version 16 too</li>
           <li>a <A href="https://github.com/">GitHub</A> account</li>
           <li>optionally a <A href="http://heroku.com/">Heroku</A> account, to publish your prototype</li>
           <li>terminal - an application to install, start and stop a prototype. Using a terminal is sometimes called ‘using the command line’</li>
