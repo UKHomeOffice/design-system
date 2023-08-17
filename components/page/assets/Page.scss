@@ -4,6 +4,14 @@
 @import "govuk-frontend/govuk/objects/_template";
 @import "./fonts/roboto.scss";
 
+$hods-secondary-button-colour: #F8F8F8;
+$hods-secondary-button-hover-colour: govuk-shade($hods-secondary-button-colour, 10%);
+$hods-secondary-button-shadow-colour: govuk-colour("black"); // was: govuk-shade($hods-secondary-button-colour, 40%);
+$hods-secondary-button-text-colour: govuk-colour("black");
+$hods-secondary-button-border-width: 1px;
+
+$button-shadow-size: $govuk-border-width-form-element;
+
 .hods-page,
 #story-root,
 #root,
@@ -36,6 +44,43 @@ html {
   &__body {
     flex: 1 1 auto;
     width: 100%;
+
+    // The style of the secondary button needs to change due to the grey background of .hods-page
+    .govuk-button--secondary {
+      background-color: $hods-secondary-button-colour;
+      // We make the, now visible, borders smaller
+      border-color: $hods-secondary-button-shadow-colour;
+      border-width: $hods-secondary-button-border-width $hods-secondary-button-border-width 0 $hods-secondary-button-border-width;
+      // Padding must be adjusted to account for new border size
+      padding: (govuk-spacing(2) - $hods-secondary-button-border-width)
+               (govuk-spacing(2) + $govuk-border-width-form-element - $hods-secondary-button-border-width)
+               (govuk-spacing(2) - ($button-shadow-size / 2));
+      box-shadow: 0 $button-shadow-size 0 $hods-secondary-button-shadow-colour;
+
+      &,
+      &:link,
+      &:visited,
+      &:active,
+      &:hover {
+        color: $hods-secondary-button-text-colour;
+      }
+
+      &:hover {
+        background-color: $hods-secondary-button-hover-colour;
+
+        &[disabled] {
+          background-color: $hods-secondary-button-colour;
+        }
+      }
+
+      &:focus {
+        // Must reinstate original border widths and padding
+        border-width: $govuk-border-width-form-element;
+        padding: (govuk-spacing(2) - $govuk-border-width-form-element)
+                 govuk-spacing(2)
+                 (govuk-spacing(2) - $govuk-border-width-form-element - ($button-shadow-size / 2));
+      }
+    }
   }
 
   &__container {
