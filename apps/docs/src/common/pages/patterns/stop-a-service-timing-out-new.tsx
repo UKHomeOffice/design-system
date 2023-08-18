@@ -55,6 +55,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">If the user does not take action within the time limit, send them to a timeout page that explains what has happened and gives options for how to continue. </p>
       <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.  </p>
       <p className="govuk-body">You may choose to add a ‘Warning’ prefix to the title of your page once the countdown has started, to alert users who are working on a different tab. </p>
+      <p className="govuk-body">You may choose to add a ‘Warning’ prefix to the title of your page once the countdown has started, to alert users who are working on a different tab. </p>
 
       
       <p className="govuk-body"><strong>The timeout warning modal should:</strong></p>
@@ -91,11 +92,12 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p className="govuk-body">As an example, the timeout warning could be triggered by 25 minutes of inactivity and show a 5-minute countdown.</p>
 <p className="govuk-body">The time should count down in minutes until the last minute, when it should change to 20-second intervals, both on the modal and for screen reader alerts. </p>
-<p className="govuk-body">Use <code>Aria live = polite</code> for the countdown message so it will be announced as it is updated. For a screen reader to announce content updates, the content must be inserted into a live region element. </p>
+<p className="govuk-body">Use <code>aria-live="polite"</code> for the countdown message so it will be announced as it is updated. For a screen reader to announce content updates, the content must be inserted into a live region element. </p>
 
 <h3 className="govuk-heading-m">When the user is not signed into a service</h3>     
 <p className="govuk-body">If a user is not signed in, tell them their progress will not be saved if the time runs out. </p>
 <p className="govuk-body">If the user is timed out, consider the onwards journey.  </p>
+<h3 className="govuk-heading-m"></h3>
 <div className="app-example">
       <h2 className="govuk-heading-l">Your page will time out soon</h2>
         
@@ -107,15 +109,15 @@ const Page: FC<PageProps> = ({ location }) => (
   Stay on this page
 </button> 
       </div>
-
+  
+      
       <h2 className="govuk-heading-l">Accessibility</h2>
-<p className="govuk-body">Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance.</A> </p>
-<p className="govuk-body">Ensure screen readers announce the remaining time - use <code>aria-live =polite</code> so the hidden countdown does not interrupt other content being read out.</p>
+<p className="govuk-body">Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance</A>.</p>
+<p className="govuk-body">Ensure screen readers announce the remaining time - use <code>aria-live="polite"</code> so the hidden countdown does not interrupt other content being read out.</p>
   
   
 
-
-<h3 className="govuk-heading-m">When the modal dialog opens:</h3>
+<p className="govuk-body"><strong>When the modal dialog opens:</strong></p>
 <ul className="govuk-list govuk-list--bullet">
   <li>prevent the user from interacting with the underlying page  </li>
   <li>add an overlay to the underlying page content to show users that they cannot interact with it </li>
@@ -123,8 +125,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 </ul>
 
-
-<h3 className="govuk-heading-m">For a screen reader:</h3>
+<p className="govuk-body"><strong>For a screen reader:</strong></p>
 <ul className="govuk-list govuk-list--bullet">
   <li>announce that a dialogue has opened</li>
   <li>read the modal content, including the calls-to-action</li>
