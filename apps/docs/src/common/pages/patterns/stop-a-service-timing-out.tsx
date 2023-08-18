@@ -51,11 +51,12 @@ const Page: FC<PageProps> = ({ location }) => (
       
 
       <p className="govuk-body">The timeout warning is shown to the user when they have 5 minutes left to take action before the time runs out. This should be shown in a modal dialog.</p>
+      <p className="govuk-body">Consider whether you should inform your users that they will be timed out of the service after a period of inactivity. </p>
       <p className="govuk-body">The primary call to action would be to continue with the journey. You can offer a secondary action if it is suitable to your service, such as signing out.</p>
       <p className="govuk-body">If the user does not take action within the time limit, send them to a timeout page that explains what has happened and gives options for how to continue. </p>
       <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.  </p>
       <p className="govuk-body">You may choose to add a ‘Warning’ prefix to the title of your page once the countdown has started, to alert users who are working on a different tab. </p>
-      <p className="govuk-body">You may choose to add a ‘Warning’ prefix to the title of your page once the countdown has started, to alert users who are working on a different tab. </p>
+
 
       
       <p className="govuk-body"><strong>The timeout warning modal should:</strong></p>
