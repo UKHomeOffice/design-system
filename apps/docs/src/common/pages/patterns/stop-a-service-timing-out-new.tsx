@@ -8,6 +8,7 @@ export const title = 'Stop a service timing out';
 const description = 'How to ask users to manually enter passport details';
 const section = 'Patterns';
 const subsection = 'Help users to';
+const applyModalWindow = require('../../../../assets/images/patterns/time-out.png');
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -30,23 +31,11 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
 
       <p className="govuk-body">Warn users that they are about to be timed out of a service and explain what happens after they are timed out.</p>
-
-      <div className="app-example">
-      <h2 className="govuk-heading-l">You will be signed out soon</h2>
-        
-
-        <p className="govuk-body">To protect your information, you will be signed out in <strong>5 minutes.</strong></p>
-        
-        <div className="govuk-button-group">
-  <button className="govuk-button" data-module="govuk-button">
-    Stay signed in
-  </button>
-  <A className="govuk-link" href="#">Sign out</A>
-</div>
-      </div>
-
+      <img src={applyModalWindow} className="image-examples" alt="An example of a modal window warning the service will time out" />
+    
+      <h2 className="govuk-heading-l"></h2>
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">If your service has sessions and automatically ends the user’s session after a period of inactivity. </p>
+      <p className="govuk-body">Use if your service automatically ends the user’s session after a period of inactivity.</p>
 
       
       <h2 className="govuk-heading-l">When not to use this pattern</h2>
@@ -121,7 +110,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">Accessibility</h2>
 <p className="govuk-body">Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance.</A> </p>
-<p className="govuk-body">Ensure screen readers announce the remaining time - use <code>aria-live =polite</code> so the hidden countdown does not interrupt other content being read out. </A> </p>
+<p className="govuk-body">Ensure screen readers announce the remaining time - use <code>aria-live =polite</code> so the hidden countdown does not interrupt other content being read out.</p>
   
   
 
@@ -180,7 +169,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>having a secondary action (sign out) did not impact users’ understanding</li>
       </ul>
 
-      <p className="govuk-body">We decided to trigger the timeout warning after two minutes to gauge their reaction, then explained later that this would not normally happen. </p>
+      <p className="govuk-body"> </p>
 
 
       <h2 className="govuk-heading-l">Help us improve this pattern</h2>
