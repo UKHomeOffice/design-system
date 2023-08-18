@@ -5,7 +5,7 @@ import { A, DateInput, Details, TextInput, Select } from '@not-govuk/components'
 import { menu } from '../patterns';
 
 export const title = 'Stop a service timing out';
-const description = 'How to ask users to manually enter passport details';
+const description = 'How to help users to stop a service from timing out';
 const section = 'Patterns';
 const subsection = 'Help users to';
 const applyModalWindow = require('../../../../assets/images/patterns/time-out.png');
