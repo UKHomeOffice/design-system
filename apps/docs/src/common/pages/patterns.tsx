@@ -60,11 +60,6 @@ export const menu = (
         href: '/patterns/stop-a-service-timing-out',
         text: 'Stop a service timing out'
       }
-      ,
-      {
-        href: '/patterns/stop-a-service-timing-out-new',
-        text: 'Stop a service timing out-new'
-      }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Send users</span>
     <NavigationMenu items={[
