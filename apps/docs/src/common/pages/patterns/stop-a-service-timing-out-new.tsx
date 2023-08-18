@@ -67,19 +67,19 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.  </p>
       <p className="govuk-body">You may choose to add a ‘Warning’ prefix to the title of your page once the countdown has started, to alert users who are working on a different tab. </p>
 
-      <h3 className="govuk-heading-m">The timeout warning modal should: </h3>
-
+      
+      <p className="govuk-body"><strong>The timeout warning modal should:</strong></p>
       <ul className="govuk-list govuk-list--bullet">
         <li>include a heading, for example ‘You will be signed out soon'</li>
         <li>explain why the countdown has started, for example ‘You have not done anything on this page for 25 minutes’ </li>
-        <li>tell users whether their information or progress will be saved </li>
-        <li>allow users to close the modal using ‘Esc’ on the keyboard </li>
+        <li>tell the user whether their information or progress will be saved </li>
+        <li>allow the user to close the modal using ‘Esc’ on the keyboard </li>
         <li>follow accessibility best practice</li>
 
       </ul>
 
-      <h3 className="govuk-heading-m">If user chooses to continue where they were:  </h3>
-
+      
+      <p className="govuk-body"><strong>If user chooses to continue where they were:</strong></p>
 <ul className="govuk-list govuk-list--bullet">
   <li>close the warning and allow the user access to the page they were on </li>
   <li>return the keyboard focus to where it was before the warning appeared </li>
@@ -87,8 +87,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
 </ul>
 
-<h3 className="govuk-heading-m">If user runs out of time:</h3>
 
+<p className="govuk-body"><strong>If user runs out of time:</strong></p>
 <ul className="govuk-list govuk-list--bullet">
   <li>redirect the user to a timeout page  </li>
   <li>give them the option to sign back into the service  </li>
@@ -102,7 +102,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p className="govuk-body">As an example, the timeout warning could be triggered by 25 minutes of inactivity and show a 5-minute countdown.</p>
 <p className="govuk-body">The time should count down in minutes until the last minute, when it should change to 20-second intervals, both on the modal and for screen reader alerts. </p>
-<p className="govuk-body">Use <code>Aria live = polite</code> for the countdown message so it will be announced as it is updated. For a screen reader to announce content update, the content must be inserted into a live region element. </p>
+<p className="govuk-body">Use <code>Aria live = polite</code> for the countdown message so it will be announced as it is updated. For a screen reader to announce content updates, the content must be inserted into a live region element. </p>
 
 <h3 className="govuk-heading-m">When the user is not signed into a service</h3>     
 <p className="govuk-body">If a user is not signed in, tell them their progress will not be saved if the time runs out. </p>
@@ -120,17 +120,17 @@ const Page: FC<PageProps> = ({ location }) => (
       </div>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
-<ul className="govuk-list govuk-list--bullet">
-  <li>Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance.</A> </li>
-  <li>Ensure screen readers announce the remaining time - use <code>aria-live =polite</code> so the hidden countdown does not interrupt other content being read out. </li>
+<p className="govuk-body">Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance.</A> </p>
+<p className="govuk-body">Ensure screen readers announce the remaining time - use <code>aria-live =polite</code> so the hidden countdown does not interrupt other content being read out. </A> </p>
   
-</ul>
+  
+
 
 <h3 className="govuk-heading-m">When the modal dialog opens:</h3>
 <ul className="govuk-list govuk-list--bullet">
   <li>prevent the user from interacting with the underlying page  </li>
   <li>add an overlay to the underlying page content to show users that they cannot interact with it </li>
-  <li>consider keyboard accessibility of interactive elements, <A href="https://design.homeoffice.gov.uk/accessibility/forms/keyboard">more guidance on keyboard accessibility</A></li>
+  <li>consider the keyboard accessibility of interactive elements, <A href="https://design.homeoffice.gov.uk/accessibility/forms/keyboard">more guidance on keyboard accessibility</A></li>
 
 </ul>
 
@@ -145,7 +145,7 @@ const Page: FC<PageProps> = ({ location }) => (
 </ul>
 
 
-<p className="govuk-body">We followed the <A href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/">W3C guidance on modals.</A> </p>
+<p className="govuk-body">We followed the <A href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/">W3C guidance on modals</A>.</p>
 <p className="govuk-body">If your service uses this pattern, let us know of any insights you have on accessibility. </p>
 
       <h2 className="govuk-heading-l">Research</h2>
@@ -156,7 +156,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h3 className="govuk-heading-m">Research findings</h3>
-
+      <p className="govuk-body">High level findings include:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>Users have high awareness of timeouts and timeout warnings as they are widely used. Users understand that timeouts are triggered by inactivity or a session time limit, and that the timeout is for security reasons.  </li>
         <li>Users know that they need to take action to extend their time and will usually quickly close the warning using the primary call to action without reading the content. </li>
@@ -174,8 +174,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul className="govuk-list govuk-list--bullet">
         <li>on balance, users of assistive technology were alerted more quickly to the timeout on the modal dialog than the warning page </li>
         <li>users were clear how to remain signed in and that they would be signed out if they took no action </li>
-        <li>on the warning page some screen readers read out the standard page elements before the timeout warning message, so it was not immediately clear users had received a timeout </li>
-        <li>the warning page introduced distractions from the message warning users they would be timed out </li>
+        <li>on the warning page some screen readers read out the standard page elements before the timeout warning message, introducing distractions meaning it was not immediately clear users had received a timeout</li>
         <li>when the modal dialog was triggered on mobile devices, screen readers focused on the CTA button before reading the rest of the warning content - however, this was not a blocker for users </li>
         <li>counting down by minutes, and then 20 second intervals in the final minute, worked best for both sighted and non-sighted users </li>
         <li>having a secondary action (sign out) did not impact users’ understanding</li>
