@@ -102,7 +102,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>an internal service to manage appointments</li>
       </ul>
     
-      <p className="govuk-body">We conducted usability research with trans and users identifying as non-binary, to develop this pattern. We found that:</p>
+      <p className="govuk-body">We conducted usability research with users who are trans or identify as non-binary, to develop this pattern. We found that:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>asking users about their biological sex is intrusive and can cause distress</li>
         <li>users identify strongly with their gender identity, more so than with their sex. This should be considered, even if sex information is collected</li>
