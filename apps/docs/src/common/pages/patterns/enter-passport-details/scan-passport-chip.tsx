@@ -7,7 +7,7 @@ import { menu } from '../../patterns';
 export const title = 'Scan the passport chip';
 const description = 'How to ask users to scan the chip of their passport';
 const section = 'Patterns';
-const subsection = 'Help users to';
+const subsection = 'Ask users to';
 
 const ePassportLogo = require('../../../../../assets/images/patterns/EPassport_logo.svg');
 

@@ -4,10 +4,10 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
-export const title = 'Make a declaration';
+export const title = 'Declarations';
 const description = 'A declaration allows users to confirm that they have understood or agreed to something before they submit an online form.';
 const section = 'Patterns';
-const subsection = 'Help users to';
+const subsection = 'Ask users for';
 
 const applyDeclaration1 = require('../../../../assets/images/patterns/make-a-declaration.png');
 const applyDeclaration2 = require('../../../../assets/images/patterns/make-a-declaration-privacy-terms-conditions.png');
