@@ -1,4 +1,6 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Button } from '@not-govuk/button';
+import { ButtonGroup } from '@not-govuk/button-group';
 import { Page } from '../src/Page';
 import readMe from '../README.md';
 
@@ -29,6 +31,11 @@ Use this page template to keep your pages consistent with the rest of internal H
     >
       <h1>Default page template</h1>
       <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The main page content has a grey background to reduce eye-strain. Buttons in this section are slightly re-styled, for accessibility reasons.</p>
+      <ButtonGroup>
+        <Button>Save and continue</Button>
+        <Button classModifiers="secondary">Save as draft</Button>
+      </ButtonGroup>
       <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
     </Page>
   </Story>
@@ -44,6 +51,11 @@ Use this page template to keep your pages consistent with the rest of internal H
     <Page>
       <h1>Default page template</h1>
       <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The main page content has a grey background to reduce eye-strain. Buttons in this section are slightly re-styled, for accessibility reasons.</p>
+      <ButtonGroup>
+        <Button>Save and continue</Button>
+        <Button classModifiers="secondary">Save as draft</Button>
+      </ButtonGroup>
       <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
     </Page>
   </Story>
@@ -74,10 +86,16 @@ Use this page template to keep your pages consistent with the rest of internal H
     >
       <h1>Default page template</h1>
       <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The main page content has a grey background to reduce eye-strain. Buttons in this section are slightly re-styled, for accessibility reasons.</p>
+      <ButtonGroup>
+        <Button>Save and continue</Button>
+        <Button classModifiers="secondary">Save as draft</Button>
+      </ButtonGroup>
       <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
     </Page>
   </Story>
 </Preview>
+
 
 ## Accessibility
 
