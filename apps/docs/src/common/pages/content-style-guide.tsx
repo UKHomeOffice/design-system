@@ -206,7 +206,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="p">P</h2>
     <h3 id="passport control">passport control</h3>
-    <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
+    <p>Use 'passport control' or 'border control' with the general public rather than 'primary control point (PCP)'.</p>
     <h3 id="people">people</h3>
     <p>Use 'people' as a plural of person, rather than 'persons' or 'individuals'.</p>
     <h3 id="permission to enter">permission to enter</h3>
@@ -223,8 +223,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Upper case. You can use 'PNC' after the first full mention.</p>
     <h3 id="postal">postal</h3>
     <p>Use 'postal address' rather than 'correspondence' if you mean letters. For example, 'is this the family's postal address?'</p>
-    <h3 id="primary control point">primary control point</h3>
-    <p>Use 'border control' rather than 'passport control' or 'primary control point'.</p>
+    <h3 id="primary control point">primary control point (PCP)</h3>
+    <p>A term widely used by Border Force to describe the immigration control area where passengers present their travel documents. Do not use 'primary control point' with the general public. Use 'border control' or 'passport control' instead.</p>
     <h3 id="prove">prove</h3>
     <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
     <h3 id="purdah">purdah</h3>
