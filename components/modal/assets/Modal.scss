@@ -1,0 +1,31 @@
+@import "@hods/sass-base";
+@import "govuk-frontend/govuk/overrides/_display";
+
+.hods-modal {
+
+  &__show {
+    @extend .govuk-\!-display-block;
+  }
+
+  &__hide {
+    @extend .govuk-\!-display-none;
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 666;
+  }
+
+  &__content {
+    min-width: 200px;
+    max-width: 340px;
+    @include govuk-responsive-padding(6);
+    background-color: #fff;
+    border: 3px solid #000000;
+  }
+}

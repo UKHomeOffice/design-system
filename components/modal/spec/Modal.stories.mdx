@@ -1,0 +1,42 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Modal } from '../src/Modal';
+import readMe from '../README.md';
+
+<Meta
+  title="Modal"
+  component={ Modal }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'A modal component',
+    jest: ['Modal'],
+    notes: readMe
+  } }
+/>
+
+# Modal
+
+A modal component
+WRITE MORE DESCRIPTION HERE.
+
+<Preview withToolbar>
+  <Story name="Modal">
+    <Modal show>
+        <h3>You will be signed out soon</h3>
+        <p>You will be signed out to protect your information</p>
+    </Modal>
+  </Story>
+</Preview>
+
+<Props of={ Modal } />
+
+
+## Stories
+### Standard
+
+A standard Modal.
+
+<Preview>
+  <Story name="Standard">
+    <Modal />
+  </Story>
+</Preview>
