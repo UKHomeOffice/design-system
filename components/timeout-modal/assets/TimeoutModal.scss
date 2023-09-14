@@ -1,0 +1,58 @@
+@import "@hods/sass-base";
+@import "govuk-frontend/govuk/objects/_button-group";
+@import "govuk-frontend/govuk/components/button/_button";
+@import "govuk-frontend/govuk/core/_typography";
+@import "govuk-frontend/govuk/core/_links";
+
+.hods-timeout-modal {
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 666;
+  }
+  &__content {
+    min-width: 200px;
+    max-width: 340px;
+    @include govuk-responsive-padding(6);
+    background-color: #fff;
+    border: 3px solid #000000;
+
+    h1 {
+      @extend .govuk-heading-l;
+    }
+
+    p {
+      @extend .govuk-body;
+    }
+  }
+  &__buttons {
+    @extend .govuk-button-group;
+    @include govuk-responsive-margin(0, 'bottom');
+
+    button {
+      @extend .govuk-button;
+
+      @include govuk-media-query($from: tablet) {
+        @include govuk-responsive-margin(0, 'bottom');
+      }
+    }
+
+    a {
+      @extend .govuk-link;
+      @include govuk-responsive-margin(0);
+
+      @include govuk-media-query($from: tablet) {
+        @include govuk-responsive-margin(3, 'left');
+      }
+    }
+  }
+  &__timer {
+    font-weight: $govuk-font-weight-bold;
+    white-space: nowrap;
+  }
+
+}
