@@ -88,7 +88,7 @@ const Page: FC<PageProps> = ({ location }) => (
 </ul>
       
 <p className="govuk-body">If the user chooses to sign out, take them to a confirmation page which gives them the option to sign back in.  </p>
-<p className="govuk-body">If the user navigates using the browser back button, remove the modal and extend their session. </p>
+<p className="govuk-body">Remove the modal and extend the session if the user navigates using the browser back button.</p>
 
 <h3 className="govuk-heading-m">The warning countdown </h3>     
 
