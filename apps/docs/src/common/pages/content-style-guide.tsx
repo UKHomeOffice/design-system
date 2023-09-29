@@ -34,7 +34,6 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2 className="a-z-header" id="b">B</h2>
     <h3 id="biometric-passport">biometric passport</h3>
     <p>Use 'passport' if the type of passport does not matter. When referring to passports with a chip, use 'biometric passport' instead of 'ePassport'.</p>
-    <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
     <h3 id="biometrics">biometrics</h3>
     <p>When using ‘biometrics’ or ‘biometric information’ in public-facing services, explain what it means first. For example, ‘you'll be asked to provide your fingerprints and photo (biometric information)’.</p>
     <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
