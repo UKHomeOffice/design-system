@@ -32,6 +32,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="b">B</h2>
+    <h3 id="biometric-passport">biometric passport</h3>
+    <p>Use 'passport' if the type of passport does not matter. When referring to passports with a chip, use 'biometric passport' instead of 'ePassport'.</p>
     <h3 id="biometrics">biometrics</h3>
     <p>When using ‘biometrics’ or ‘biometric information’ in public-facing services, explain what it means first. For example, ‘you'll be asked to provide your fingerprints and photo (biometric information)’.</p>
     <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
@@ -119,11 +121,14 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2 className="a-z-header" id="e">E</h2>
     <h3 id="eea biometric residence card">EEA biometric residence card</h3>
     <p>Lower case. Also called a 'UK residence card' or 'biometric residence card (BRC)'.</p>
+    <h3 id="egates">eGates</h3>
+    <p>When using 'eGates' with the public, explain what it means the first time you use it. For example, 'you will have the option of using an eGate (electronic passport gate)'.</p>
     <h3 id="enhanced dbs check">enhanced DBS check</h3>
     <p>Use 'enhanced DBS check' rather than 'enhanced disclosure'.</p>
+    <h3 id="epassport">ePassport</h3>
+    <p>Use 'passport' if the type of passport does not matter. When referring to passports with a chip, use 'biometric passport' instead of 'ePassport'.</p>
     <h3 id="eu settlement scheme">EU Settlement Scheme (EUSS)</h3>
     <p>Capitalised. You can use the acronym 'EUSS' after the first full mention.</p>
-    <a className="back-to-top" href="#a-z-nav">Back to top</a>
     <h3 id="e-visa">eVisa</h3>
     <p>When using 'eVisa' in public-facing services, explain what it means. For example, 'view and prove your online immigration status (eVisa)'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
