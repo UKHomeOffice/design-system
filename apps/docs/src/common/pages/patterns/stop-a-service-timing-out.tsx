@@ -61,7 +61,7 @@ const Page: FC<PageProps> = ({ location }) => (
       
       <p className="govuk-body"><strong>The timeout warning modal should:</strong></p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>include a heading, for example ‘You will be signed out soon'</li>
+        <li>include a heading level 2, for example ‘You will be signed out soon'</li>
         <li>explain why the countdown has started, for example ‘You have not done anything on this page for 25 minutes’ </li>
         <li>tell the user whether their information or progress will be saved </li>
         <li>allow the user to close the modal using ‘Esc’ on the keyboard </li>
@@ -88,6 +88,7 @@ const Page: FC<PageProps> = ({ location }) => (
 </ul>
       
 <p className="govuk-body">If the user chooses to sign out, take them to a confirmation page which gives them the option to sign back in.  </p>
+<p className="govuk-body">If the user navigates using the browser back button, remove the modal and extend their session. </p>
 
 <h3 className="govuk-heading-m">The warning countdown </h3>     
 
@@ -120,7 +121,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p className="govuk-body"><strong>When the modal dialog opens:</strong></p>
 <ul className="govuk-list govuk-list--bullet">
-  <li>prevent the user from interacting with the underlying page  </li>
+  <li>prevent the user from scrolling and interacting with the underlying page  </li>
   <li>add an overlay to the underlying page content to show users that they cannot interact with it </li>
   <li>consider the keyboard accessibility of interactive elements, <A href="https://design.homeoffice.gov.uk/accessibility/forms/keyboard">more guidance on keyboard accessibility</A></li>
 
