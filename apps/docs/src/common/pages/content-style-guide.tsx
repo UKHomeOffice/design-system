@@ -32,6 +32,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="b">B</h2>
+    <h3 id="biometric-passport">biometric passport</h3>
+    <p>Use 'passport' if the type of passport does not matter. When referring to passports with a chip, use 'biometric passport' instead of 'ePassport'.</p>
     <h3 id="biometrics">biometrics</h3>
     <p>When using ‘biometrics’ or ‘biometric information’ in public-facing services, explain what it means first. For example, ‘you'll be asked to provide your fingerprints and photo (biometric information)’.</p>
     <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
@@ -119,11 +121,14 @@ const Page: FC<PageProps> = ({ location }) => (
     <h2 className="a-z-header" id="e">E</h2>
     <h3 id="eea biometric residence card">EEA biometric residence card</h3>
     <p>Lower case. Also called a 'UK residence card' or 'biometric residence card (BRC)'.</p>
+    <h3 id="egates">eGates</h3>
+    <p>When using 'eGates' with the public, explain what it means the first time you use it. For example, 'you will have the option of using an eGate (electronic passport gate)'.</p>
     <h3 id="enhanced dbs check">enhanced DBS check</h3>
     <p>Use 'enhanced DBS check' rather than 'enhanced disclosure'.</p>
+    <h3 id="epassport">ePassport</h3>
+    <p>Use 'passport' if the type of passport does not matter. When referring to passports with a chip, use 'biometric passport' instead of 'ePassport'.</p>
     <h3 id="eu settlement scheme">EU Settlement Scheme (EUSS)</h3>
     <p>Capitalised. You can use the acronym 'EUSS' after the first full mention.</p>
-    <a className="back-to-top" href="#a-z-nav">Back to top</a>
     <h3 id="e-visa">eVisa</h3>
     <p>When using 'eVisa' in public-facing services, explain what it means. For example, 'view and prove your online immigration status (eVisa)'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -178,7 +183,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="leave to enter">leave to enter</h3>
     <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="leave to remain">leave to remain</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain', 'limited leave to remain' or 'indefinite leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
+    <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="life in the uk test">Life in the UK Test</h3>
     <p>Capitalise the ‘L’ and ‘T’. After first mention, you can refer to ‘the test’, using lower case.</p>
     <h3 id="log in">log in</h3>
@@ -206,13 +211,13 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="p">P</h2>
     <h3 id="passport control">passport control</h3>
-    <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
+    <p>Use 'passport control' or 'border control' with the general public rather than 'primary control point (PCP)'.</p>
     <h3 id="people">people</h3>
     <p>Use 'people' as a plural of person, rather than 'persons' or 'individuals'.</p>
     <h3 id="permission to enter">permission to enter</h3>
     <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
     <h3 id="permission to stay">permission to stay</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain', 'limited leave to remain' or 'indefinite leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'.</p>
+    <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="persons">persons</h3>
     <p>Use ‘people’ rather than ‘persons’.</p>
     <h3 id="please">please</h3>
@@ -223,8 +228,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Upper case. You can use 'PNC' after the first full mention.</p>
     <h3 id="postal">postal</h3>
     <p>Use 'postal address' rather than 'correspondence' if you mean letters. For example, 'is this the family's postal address?'</p>
-    <h3 id="primary control point">primary control point</h3>
-    <p>Use 'border control' rather than 'passport control' or 'primary control point'.</p>
+    <h3 id="primary control point">primary control point (PCP)</h3>
+    <p>A term widely used by Border Force to describe the immigration control area where passengers present their travel documents. Do not use 'primary control point' with the general public. Use 'border control' or 'passport control' instead.</p>
     <h3 id="prove">prove</h3>
     <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
     <h3 id="purdah">purdah</h3>

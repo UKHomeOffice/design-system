@@ -25,10 +25,10 @@
   ],
   "dependencies": {
     "@hods/sass-base": "workspace:^0.4.0",
-    "@not-govuk/navigation-menu": "^0.7.2"
+    "@not-govuk/navigation-menu": "^0.8.2"
   },
   "peerDependencies": {
-    "@not-govuk/docs-components": "^0.7.2",
+    "@not-govuk/docs-components": "^0.8.2",
     "@storybook/addon-docs": "^6.4.0",
     "react": "^16.9.55"
   },
@@ -42,8 +42,8 @@
   },
   "devDependencies": {
     "@mdx-js/react": "1.6.22",
-    "@not-govuk/component-test-helpers": "^0.7.2",
-    "@not-govuk/tag": "^0.7.2",
+    "@not-govuk/component-test-helpers": "^0.8.2",
+    "@not-govuk/tag": "^0.8.2",
     "@types/react": "16.14.28",
     "jest": "29.5.0",
     "jest-environment-jsdom": "29.5.0",

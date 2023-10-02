@@ -5,6 +5,37 @@ import { A, NavigationMenu } from '@not-govuk/components';
 
 export const menu = (
   <Fragment>
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users for</span>
+    <NavigationMenu items={[
+      {
+        href: '/patterns/make-a-declaration',
+        text: 'Declarations'
+      },
+      {
+        href: '/patterns/find-information-on-document',
+        text: 'Information on a document'
+      },
+      {
+        href: '/patterns/enter-passport-details',
+        text: 'Passport details'
+      },
+      {
+        href: '/patterns/enter-passport-details/scan-passport-chip',
+        text: '- Scan the chip'
+      },
+      {
+        href: '/patterns/enter-passport-details/take-upload-photo',
+        text: '- Take or upload photo'
+      },
+      {
+        href: '/patterns/enter-passport-details/manually-enter-details',
+        text: '- Manually enter details'
+      },
+      {
+        href: '/patterns/ask-sex-or-gender',
+        text: 'Their sex or gender'
+      }
+    ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Help users to</span>
     <NavigationMenu items={[
 
@@ -21,36 +52,12 @@ export const menu = (
         text: 'Compare information'
       },
       {
-        href: '/patterns/enter-passport-details',
-        text: 'Enter passport details'
-      },
-      {
-        href: '/patterns/enter-passport-details/scan-passport-chip',
-        text: '- Scan the chip'
-      },
-      {
-        href: '/patterns/enter-passport-details/take-upload-photo',
-        text: '- Take or upload photo'
-      },
-      {
-        href: '/patterns/enter-passport-details/manually-enter-details',
-        text: '- Manually enter details'
-      },
-      {
-        href: '/patterns/find-information-on-document',
-        text: 'Find information on a document'
-      },
-      {
         href: '/patterns/get-more-details',
         text: 'Get more details'
       },
       {
         href: '/patterns/leave-a-service',
         text: 'Leave a service'
-      },
-      {
-        href: '/patterns/make-a-declaration',
-        text: 'Make a declaration'
       },
       {
         href: '/patterns/search-for-something',

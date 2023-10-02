@@ -7,7 +7,7 @@ import { menu } from '../../patterns';
 export const title = 'Manually enter passport details';
 const description = 'How to ask users to manually enter passport details';
 const section = 'Patterns';
-const subsection = 'Help users to';
+const subsection = 'Ask users to';
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

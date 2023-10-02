@@ -4,10 +4,10 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, Radios, TextInput, Select } from '@not-govuk/components';
 import { menu } from '../patterns';
 
-export const title = 'Enter passport details';
+export const title = 'Passport details';
 const description = 'How to ask users for passport details';
 const section = 'Patterns';
-const subsection = 'Help users to';
+const subsection = 'Ask users for';
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">

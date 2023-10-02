@@ -21,7 +21,7 @@ runs:
     - name: Setup PNPM
       uses: pnpm/action-setup@v2.2.4
       with:
-        version: 6.32.3
+        version: 7.33.6
         run_install: false
 
     - name: Setup Node.js
@@ -42,7 +42,7 @@ runs:
       if: ${{ !inputs.frozen-lockfile || inputs.frozen-lockfile == 'false' }}
       uses: pnpm/action-setup@v2.2.4
       with:
-        version: 6.32.3
+        version: 7.33.6
         run_install: |
           recursive: true
           args: [--no-frozen-lockfile]
@@ -51,5 +51,5 @@ runs:
       if: ${{ inputs.frozen-lockfile && inputs.frozen-lockfile != 'false' }}
       uses: pnpm/action-setup@v2.2.4
       with:
-        version: 6.32.3
+        version: 7.33.6
         run_install: true

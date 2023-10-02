@@ -4,10 +4,10 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
-export const title = 'Find information on a document';
+export const title = 'Information on a document';
 const description = 'How to help users to find information on a document';
 const section = 'Patterns';
-const subsection = 'Help users to';
+const subsection = 'Ask users for';
 
 const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg');
 const applyImageRight = require('../../../../assets/images/patterns/image-guidance-right.svg');
