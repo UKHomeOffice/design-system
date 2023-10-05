@@ -44,18 +44,24 @@ export const TimeoutModal: FC<TimeoutModalProps> = ({
     return () => dialog.close();
   }, [isOpen]);
 
+
+  if(!isOpen) {
+    return null;
+  }
+
   return (
-      <dialog ref={modalRef} aria-labelledby='modalTitle' aria-describedby='modalContent' className={classes('content')}>
-        <div {...attrs} className={classes('overlay')} />
-        <h2 id='modalTitle'>You will be signed out soon</h2>
-        <p id='modalContent' aria-live='polite'>
-          To protect your information, you will be signed out in <Timer className={classes('timer')} timerFrom={isOpen ? timerDurationInSeconds : 0} onTimeout={onTimeout}/>.
-        </p>
-        <div className={classes('buttons')}>
-          <button role='button' onClick={onContinue}>Continue on this page</button>
-          <a role='link' onClick={onSignout}>Sign out</a>
-        </div>
-      </dialog>
+      <div {...attrs} className={classes('overlay')} >
+        <dialog ref={modalRef} aria-labelledby='modalTitle' aria-describedby='modalContent' className={classes('content')}>
+          <h2 id='modalTitle'>You will be signed out soon</h2>
+          <p id='modalContent' aria-live='polite'>
+            To protect your information, you will be signed out in <Timer className={classes('timer')} timerFrom={isOpen ? timerDurationInSeconds : 0} onTimeout={onTimeout}/>.
+          </p>
+          <div className={classes('buttons')}>
+            <button role='button' onClick={onContinue}>Continue on this page</button>
+            <a role='link' onClick={onSignout}>Sign out</a>
+          </div>
+        </dialog>
+      </div>
   );
 };
 

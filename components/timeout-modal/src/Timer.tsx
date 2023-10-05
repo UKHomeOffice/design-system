@@ -26,13 +26,10 @@ export const Timer: FC<TimerProps> = ({
         } else {
             clearInterval(interval);
         }
-        return () => {
-            if(runTimer) setRunTimer(false);
-            clearInterval(interval);
-        };
+        return () => clearInterval(interval);
     }, [runTimer])
 
-    const formatTimer = (timer) => {
+    useEffect(() => {
         if(timer > 60) {
             if(timer % 60 == 0) {
                 formattedTimer = Math.round(timer / 60);
@@ -42,14 +39,18 @@ export const Timer: FC<TimerProps> = ({
                 formattedTimer = timer;
                 if(timer == 0) {
                     setRunTimer(false);
-                    onTimeout;
                 }
             }
         }
-    }
-    if(timer > 0) {
-      formatTimer(timer);
-    }
+    }, [timer])
+
+    useEffect(() => {
+        return () => {
+            setRunTimer(false);
+        };
+    }, []);
+
+    console.log(timer);
 
     return (
       <span {...attrs}>{formattedTimer} {timer <= 60 ? "seconds" : formattedTimer == 1 ? "minute" : "minutes"}</span>
