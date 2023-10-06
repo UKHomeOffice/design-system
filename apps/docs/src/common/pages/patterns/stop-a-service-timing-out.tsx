@@ -59,7 +59,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 
       
-      <p className="govuk-body"><strong>The timeout warning modal should:</strong></p>
+      <p className="govuk-body">The timeout warning modal should:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>include a heading level 2, for example ‘You will be signed out soon'</li>
         <li>explain why the countdown has started, for example ‘You have not done anything on this page for 25 minutes’ </li>
@@ -69,8 +69,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
       </ul>
 
-      
-      <p className="govuk-body"><strong>If user chooses to continue where they were:</strong></p>
+      <h3 className="govuk-heading-m">If the user chooses to continue</h3>
+      <p className="govuk-body">When a user selects stay signed in:</p>
 <ul className="govuk-list govuk-list--bullet">
   <li>close the warning and allow the user access to the page they were on </li>
   <li>return the keyboard focus to where it was before the warning appeared </li>
@@ -78,8 +78,8 @@ const Page: FC<PageProps> = ({ location }) => (
 
 </ul>
 
-
-<p className="govuk-body"><strong>If user runs out of time:</strong></p>
+<h3 className="govuk-heading-m">If the user runs out of time</h3>
+<p className="govuk-body">When a user is timed out:</p>
 <ul className="govuk-list govuk-list--bullet">
   <li>redirect the user to a timeout page  </li>
   <li>give them the option to sign back into the service  </li>
@@ -148,20 +148,21 @@ const Page: FC<PageProps> = ({ location }) => (
       </ul>
 
       <h3 className="govuk-heading-m">Research findings</h3>
-      <p className="govuk-body">High level findings include:</p>
+      <p className="govuk-body">We found that:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>Users have high awareness of timeouts and timeout warnings as they are widely used. Users understand that timeouts are triggered by inactivity or a session time limit, and that the timeout is for security reasons.  </li>
-        <li>Users know that they need to take action to extend their time and will usually quickly close the warning using the primary call to action without reading the content. </li>
-        <li>Warning users in advance that the service will time them out after a period of inactivity caused confusion and anxiety – generally they misunderstood it as having a time limit to complete the task.</li>
-        <li>Even if timed out, users hoped any information they had input would be saved. </li>
-        <li>Users expected to be taken back to the page they had been timed out from when they signed back in.</li>
+        <li>users have high awareness of timeouts and timeout warnings as they are widely used </li>
+        <li>users understand that timeouts are triggered by inactivity or a session time limit, and that the timeout is for security reasons  </li>
+        <li>users know that they need to take action to extend their time and will usually quickly close the warning using the primary call to action without reading the content </li>
+        <li>warning users in advance that the service will time them out after a period of inactivity caused confusion and anxiety – generally they misunderstood it as having a time limit to complete the task</li>
+        <li>even if timed out, users hoped any information they had input would be saved </li>
+        <li>users expected to be taken back to the page they had been timed out from when they signed back in</li>
       </ul>
 
 
       <h3 className="govuk-heading-m">Accessibility research findings </h3>
 
-      <p className="govuk-body">We conducted A/B research on a modal dialog and a warning page with 8 participants using assistive technology. The users were visually impaired or had dyslexia. </p>
-      <p className="govuk-body">We found that:</p>
+      <p className="govuk-body">We conducted A/B research on a modal dialog and a warning page with 8 participants using assistive technology. The users were visually impaired or had dyslexia. We found that:</p>
+      
 
       <ul className="govuk-list govuk-list--bullet">
         <li>on balance, users of assistive technology were alerted more quickly to the timeout on the modal dialog than the warning page </li>
@@ -183,7 +184,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>whether users expect to be able to close the modal any other way, for example clicking outside it or using the ‘Esc’ on the keyboard </li>
       </ul>
 
-      <p className="govuk-body">We need evidence from web analytics about how users actually interact with the modal, including: </p>
+      <p className="govuk-body">We need evidence from web analytics about how users interact with the modal, including: </p>
       <ul className="govuk-list govuk-list--bullet">
         <li>how many times the timeout modal appears and where in the user journey  </li>
         <li>how quickly it is closed </li>
@@ -193,7 +194,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>user behaviour after timing out or signing out – do they sign back in</li>
       </ul>
 
-      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/449">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
+      <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/544">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
 
     
 
