@@ -36,7 +36,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l"></h2>
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p className="govuk-body">Use if your service automatically ends the user’s session after a period of inactivity.</p>
-
+      <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.  </p>
       
       <h2 className="govuk-heading-l">When not to use this pattern</h2>
       <p className="govuk-body">Our research showed that modal dialogs (also known as pop-up windows) work well for timeout warnings.</p>
@@ -50,27 +50,23 @@ const Page: FC<PageProps> = ({ location }) => (
       
       
 
-      <p className="govuk-body">The timeout warning is shown to the user when they have 5 minutes left to take action before the time runs out. This should be shown in a modal dialog.</p>
-      <p className="govuk-body">Consider whether you should inform your users that they will be timed out of the service after a period of inactivity. </p>
-      <p className="govuk-body">The primary call to action would be to continue with the journey. You can offer a secondary action if it is suitable to your service, such as signing out.</p>
-      <p className="govuk-body">If the user does not take action within the time limit, send them to a timeout page that explains what has happened and gives options for how to continue. </p>
-      <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.  </p>
-      <p className="govuk-body">You may choose to add a ‘Warning’ prefix to the title of your page once the countdown has started, to alert users who are working on a different tab. </p>
+      <p className="govuk-body">Show the timeout warning to users when they have at least 2 minutes to take action before their session time runs out. This should be shown in a modal dialog.</p>
+      <p className="govuk-body">The primary action button allows the user to continue with the journey. You can offer a secondary action if it is suitable for your service, such as signing out. </p>
+      <p className="govuk-body">If the user does not take action within the time limit, redirect them to a timeout page that explains what has happened and gives options for how to continue.  </p>
+      
+  
 
 
       
       <p className="govuk-body">The timeout warning modal should:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>include a heading level 2, for example ‘You will be signed out soon'</li>
-        <li>explain why the countdown has started, for example ‘You have not done anything on this page for 25 minutes’ </li>
+        <li>have a heading level 2</li>
         <li>tell the user whether their information or progress will be saved </li>
-        <li>allow the user to close the modal using ‘Esc’ on the keyboard </li>
-        <li>follow accessibility best practice</li>
-
+        <li>allow the user to close the modal and reset the session time by selecting the primary action button, using ‘Esc’ on the keyboard or using the browser back button</li>
       </ul>
 
       <h3 className="govuk-heading-m">If the user chooses to continue</h3>
-      <p className="govuk-body">When a user selects stay signed in:</p>
+      <p className="govuk-body">When a user selects to stay signed in:</p>
 <ul className="govuk-list govuk-list--bullet">
   <li>close the warning and allow the user access to the page they were on </li>
   <li>return the keyboard focus to where it was before the warning appeared </li>
@@ -86,9 +82,16 @@ const Page: FC<PageProps> = ({ location }) => (
   <li>if they choose to sign back in and it makes sense to do so, take them back to the home page or journey they were on </li>
 
 </ul>
+
+<h3 className="govuk-heading-m">If the user chooses to sign out</h3>
+<p className="govuk-body">When a user decides to sign out: </p>
+<ul className="govuk-list govuk-list--bullet">
+  <li>take the user to a confirmation page</li>
+  <li>give them the option to sign back in </li>
+</ul>
       
 <p className="govuk-body">If the user chooses to sign out, take them to a confirmation page which gives them the option to sign back in.  </p>
-<p className="govuk-body">Remove the modal and extend the session if the user navigates using the browser back button.</p>
+<p className="govuk-body">If the user chooses to sign out </p>
 
 <h3 className="govuk-heading-m">The warning countdown </h3>     
 
@@ -119,7 +122,7 @@ const Page: FC<PageProps> = ({ location }) => (
   
   
 
-<p className="govuk-body"><strong>When the modal dialog opens:</strong></p>
+<p className="govuk-body">When the modal dialog opens:</p>
 <ul className="govuk-list govuk-list--bullet">
   <li>prevent the user from scrolling and interacting with the underlying page  </li>
   <li>add an overlay to the underlying page content to show users that they cannot interact with it </li>
@@ -127,7 +130,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 </ul>
 
-<p className="govuk-body"><strong>For a screen reader:</strong></p>
+<p className="govuk-body">For a screen reader:</p>
 <ul className="govuk-list govuk-list--bullet">
   <li>announce that a dialogue has opened</li>
   <li>read the modal content, including the calls-to-action</li>
@@ -141,9 +144,9 @@ const Page: FC<PageProps> = ({ location }) => (
 <p className="govuk-body">If your service uses this pattern, let us know of any insights you have on accessibility. </p>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">This pattern is used by:</p>
+      <p className="govuk-body">This pattern is used by an internal reporting service used by operational Border Force officers.</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>an internal reporting service used by operational Border Force officers </li>
+        
        
       </ul>
 
@@ -167,8 +170,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul className="govuk-list govuk-list--bullet">
         <li>on balance, users of assistive technology were alerted more quickly to the timeout on the modal dialog than the warning page </li>
         <li>users were clear how to remain signed in and that they would be signed out if they took no action </li>
-        <li>on the warning page some screen readers read out the standard page elements before the timeout warning message, introducing distractions meaning it was not immediately clear users had received a timeout</li>
-        <li>when the modal dialog was triggered on mobile devices, screen readers focused on the CTA button before reading the rest of the warning content - however, this was not a blocker for users </li>
+        <li>on the warning page some screen readers read out the standard page elements before the timeout warning message, meaning it was not immediately clear users had received a timeout</li>
+        <li>when the modal dialog was triggered on mobile devices, screen readers focused on the main call to action button before reading the rest of the warning content - however, this was not a blocker for users </li>
         <li>counting down by minutes, and then 20 second intervals in the final minute, worked best for both sighted and non-sighted users </li>
         <li>having a secondary action (sign out) did not impact users’ understanding</li>
       </ul>
@@ -191,7 +194,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>methods of closing the modal (using ‘Esc’ on the keyboard, clicking away or primary CTA) </li>
         <li>what actions users take when the timeout appears (continue, sign out or do nothing)  </li>
         <li>how often users are timed out</li>
-        <li>user behaviour after timing out or signing out – do they sign back in</li>
+        <li>user behaviour after timing out or signing out</li>
       </ul>
 
       <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/544">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
