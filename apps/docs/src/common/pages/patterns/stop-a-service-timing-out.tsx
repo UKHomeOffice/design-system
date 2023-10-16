@@ -31,7 +31,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
 
       <p className="govuk-body">Warn users that they are about to be timed out of a service and explain what happens after they are timed out.</p>
-      <img src={applyModalWindow} className="image-examples" alt="An example of a modal window warning the service will time out" />
+      <img src={applyModalWindow} className="image-examples" alt="An example of a modal dialog which warns users the service will time out." />
     
       <h2 className="govuk-heading-l"></h2>
       <h2 className="govuk-heading-l">When to use this pattern</h2>
@@ -52,7 +52,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">Show the timeout warning to users when they have at least 2 minutes to take action before their session time runs out. This should be shown in a modal dialog.</p>
       <p className="govuk-body">The primary action button allows the user to continue with the journey. You can offer a secondary action if it is suitable for your service, such as signing out. </p>
-      <p className="govuk-body">If the user does not take action within the time limit, redirect them to a timeout page that explains what has happened and gives options for how to continue.  </p>
+      <p className="govuk-body">If the user does not take action within the time limit, redirect them to a timeout page which explains what has happened and gives options for how to continue.  </p>
       
   
 
@@ -89,9 +89,7 @@ const Page: FC<PageProps> = ({ location }) => (
   <li>take the user to a confirmation page</li>
   <li>give them the option to sign back in </li>
 </ul>
-      
-<p className="govuk-body">If the user chooses to sign out, take them to a confirmation page which gives them the option to sign back in.  </p>
-<p className="govuk-body">If the user chooses to sign out </p>
+
 
 <h3 className="govuk-heading-m">The warning countdown </h3>     
 
@@ -144,7 +142,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <p className="govuk-body">If your service uses this pattern, let us know of any insights you have on accessibility. </p>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">This pattern is used by an internal reporting service used by operational Border Force officers.</p>
+      <p className="govuk-body">This pattern is used by an internal reporting service for operational Border Force officers.</p>
       <ul className="govuk-list govuk-list--bullet">
         
        
@@ -155,7 +153,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul className="govuk-list govuk-list--bullet">
         <li>users have high awareness of timeouts and timeout warnings as they are widely used </li>
         <li>users understand that timeouts are triggered by inactivity or a session time limit, and that the timeout is for security reasons  </li>
-        <li>users know that they need to take action to extend their time and will usually quickly close the warning using the primary call to action without reading the content </li>
+        <li>users know that they need to take action to extend their time and will usually quickly close the warning using the primary action button without reading the content </li>
         <li>warning users in advance that the service will time them out after a period of inactivity caused confusion and anxiety – generally they misunderstood it as having a time limit to complete the task</li>
         <li>even if timed out, users hoped any information they had input would be saved </li>
         <li>users expected to be taken back to the page they had been timed out from when they signed back in</li>
@@ -171,7 +169,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>on balance, users of assistive technology were alerted more quickly to the timeout on the modal dialog than the warning page </li>
         <li>users were clear how to remain signed in and that they would be signed out if they took no action </li>
         <li>on the warning page some screen readers read out the standard page elements before the timeout warning message, meaning it was not immediately clear users had received a timeout</li>
-        <li>when the modal dialog was triggered on mobile devices, screen readers focused on the main call to action button before reading the rest of the warning content - however, this was not a blocker for users </li>
+        <li>when the modal dialog was triggered on mobile devices, screen readers focused on the primary action button before reading the rest of the warning content - however, this was not a blocker for users </li>
         <li>counting down by minutes, and then 20 second intervals in the final minute, worked best for both sighted and non-sighted users </li>
         <li>having a secondary action (sign out) did not impact users’ understanding</li>
       </ul>
@@ -184,14 +182,14 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul className="govuk-list govuk-list--bullet">
         <li>how screen reader users experience modal dialogs on mobile devices </li>
         <li>how users with lower digital literacy navigate this pattern </li>
-        <li>whether users expect to be able to close the modal any other way, for example clicking outside it or using the ‘Esc’ on the keyboard </li>
+        <li>whether users expect to be able to close the modal any other way, for example clicking outside it</li>
       </ul>
 
       <p className="govuk-body">We need evidence from web analytics about how users interact with the modal, including: </p>
       <ul className="govuk-list govuk-list--bullet">
         <li>how many times the timeout modal appears and where in the user journey  </li>
         <li>how quickly it is closed </li>
-        <li>methods of closing the modal (using ‘Esc’ on the keyboard, clicking away or primary CTA) </li>
+        <li>methods of closing the modal (using ‘Esc’ on the keyboard or primary action button) </li>
         <li>what actions users take when the timeout appears (continue, sign out or do nothing)  </li>
         <li>how often users are timed out</li>
         <li>user behaviour after timing out or signing out</li>
