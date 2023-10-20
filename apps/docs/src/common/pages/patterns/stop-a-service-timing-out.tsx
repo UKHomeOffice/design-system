@@ -52,7 +52,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">Show the timeout warning to users when they have at least 2 minutes to take action before their session time runs out. This should be shown in a modal dialog.</p>
       <p className="govuk-body">The primary action button allows the user to continue with the journey. You can offer a secondary action if it is suitable for your service, such as signing out. </p>
-      <p className="govuk-body">If the user does not take action within the time limit, redirect them to a 'you have been timed out' page which explains what has happened and gives options for how to continue.  </p>
+      <p className="govuk-body">If the user does not take action within the time limit, redirect them to a page which explains that a timeout has happened and gives options for how to continue.</p>
       
   
 
@@ -130,7 +130,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p className="govuk-body">For a screen reader:</p>
 <ul className="govuk-list govuk-list--bullet">
-  <li>announce that a dialogue has opened</li>
+  <li>announce that a dialog has opened</li>
   <li>read the modal content, including action buttons</li>
   <li>periodically announce how long user has left</li>
   <li>prevent screen reading software from reading out the underlying page</li>
