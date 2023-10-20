@@ -187,7 +187,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">We need evidence from web analytics about how users interact with the modal, including: </p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>how many often the timeout modal dialog appears and at which point in the user journey</li>
+        <li>how often the timeout modal dialog appears and at which point in the user journey</li>
         <li>how quickly it is closed </li>
         <li>methods of closing the modal (using ‘Esc’ on the keyboard or primary action button) </li>
         <li>what actions users take when the timeout appears (continue, sign out or do nothing)  </li>
