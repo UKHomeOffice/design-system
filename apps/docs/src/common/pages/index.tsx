@@ -25,7 +25,7 @@ const Page: FC<PageProps> = props => (
           <h2>Updates</h2>
           <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 20 October 2023</p>
           <ul className="govuk-!-font-size-16">
-          <li>Added ask users for their <A href="/patterns/stop-a-service-timing-out">Stop a service timing out</A></li>
+          <li>Help users to <A href="/patterns/stop-a-service-timing-out">Stop a service timing out</A></li>
           </ul>
         </aside>
         <aside>
