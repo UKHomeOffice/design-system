@@ -35,7 +35,7 @@ const Page: FC<PageProps> = ({ location }) => (
     
       <h2 className="govuk-heading-l"></h2>
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">Use if your service automatically ends the user’s session after a period of inactivity.</p>
+      <p className="govuk-body">Use this pattern if your service automatically ends the user’s session after a period of inactivity.</p>
       <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.  </p>
       
       <h2 className="govuk-heading-l">When not to use this pattern</h2>
@@ -52,7 +52,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">Show the timeout warning to users when they have at least 2 minutes to take action before their session time runs out. This should be shown in a modal dialog.</p>
       <p className="govuk-body">The primary action button allows the user to continue with the journey. You can offer a secondary action if it is suitable for your service, such as signing out. </p>
-      <p className="govuk-body">If the user does not take action within the time limit, redirect them to a timeout page which explains what has happened and gives options for how to continue.  </p>
+      <p className="govuk-body">If the user does not take action within the time limit, redirect them to a 'you have been timed out' page which explains what has happened and gives options for how to continue.  </p>
       
   
 
@@ -95,7 +95,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
 <p className="govuk-body">As an example, the timeout warning could be triggered by 25 minutes of inactivity and show a 5-minute countdown.</p>
 <p className="govuk-body">The time should count down in minutes until the last minute, when it should change to 20-second intervals, both on the modal and for screen reader alerts. </p>
-<p className="govuk-body">Use <code>aria-live="polite"</code> for the countdown message so it will be announced as it is updated. For a screen reader to announce content updates, the content must be inserted into a live region element. </p>
+<p className="govuk-body">Use <code>aria-live="polite"</code> for the countdown message so it will be announced as the timer is updated. For a screen reader to announce content updates, the content must be inserted into a live region element. </p>
 
 <h3 className="govuk-heading-m">When the user is not signed into a service</h3>     
 <p className="govuk-body">If a user is not signed in, tell them their progress will not be saved if the time runs out. </p>
@@ -131,7 +131,7 @@ const Page: FC<PageProps> = ({ location }) => (
 <p className="govuk-body">For a screen reader:</p>
 <ul className="govuk-list govuk-list--bullet">
   <li>announce that a dialogue has opened</li>
-  <li>read the modal content, including the calls-to-action</li>
+  <li>read the modal content, including action buttons</li>
   <li>periodically announce how long user has left</li>
   <li>prevent screen reading software from reading out the underlying page</li>
 
@@ -187,7 +187,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">We need evidence from web analytics about how users interact with the modal, including: </p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>how many times the timeout modal appears and where in the user journey  </li>
+        <li>how many often the timeout modal dialog appears and at which point in the user journey</li>
         <li>how quickly it is closed </li>
         <li>methods of closing the modal (using ‘Esc’ on the keyboard or primary action button) </li>
         <li>what actions users take when the timeout appears (continue, sign out or do nothing)  </li>
