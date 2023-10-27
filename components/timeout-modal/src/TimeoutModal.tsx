@@ -22,7 +22,7 @@ export const TimeoutModal: FC<TimeoutModalProps> = ({
   classBlock,
   classModifiers,
   className,
-  isOpen = true,
+  isOpen,
   timerDurationInSeconds,
   onContinue,
   onSignout,
