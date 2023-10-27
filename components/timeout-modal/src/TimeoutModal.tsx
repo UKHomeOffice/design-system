@@ -23,7 +23,7 @@ export const TimeoutModal: FC<TimeoutModalProps> = ({
   classModifiers,
   className,
   isOpen = true,
-  timerDurationInSeconds = 20,
+  timerDurationInSeconds,
   onContinue,
   onSignout,
   onTimeout,
@@ -39,11 +39,8 @@ export const TimeoutModal: FC<TimeoutModalProps> = ({
     }
     const dialog = modalRef.current;
     // @ts-ignore
-    dialog.showModal();
-    // @ts-ignore
-    return () => dialog.close();
+    dialog.showModal(); return () => dialog.close();
   }, [isOpen]);
-
 
   if(!isOpen) {
     return null;
