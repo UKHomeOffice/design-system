@@ -1,5 +1,6 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
 import { TimeoutModal } from '../src/TimeoutModal';
+import { Page } from '../../page/src/Page';
 import readMe from '../README.md';
 
 <Meta
@@ -19,7 +20,9 @@ HODS timeout modal
 
 <Preview withToolbar>
   <Story name="TimeoutModal">
-    <TimeoutModal  />
+  <Page>
+    <TimeoutModal isOpen={true} timerDurationInSeconds={300} />
+  </Page>
   </Story>
 </Preview>
 

@@ -1,4 +1,4 @@
-import { FC, createElement as h, useState, useEffect } from 'react';
+import { FC, createElement as h, useState, useEffect, useRef } from 'react';
 import { StandardProps } from '@not-govuk/component-helpers';
 
 export type TimerProps = StandardProps & {
@@ -16,34 +16,18 @@ export const Timer: FC<TimerProps> = ({
     const [runTimer, setRunTimer] = useState(true)
     const [timer, setTimer] = useState(timerFrom);
     let formattedTimer = timer < 60 ? Math.ceil(timer / 20) * 20 : Math.ceil(timer / 60);
+    const interval = useRef(null);
 
     useEffect(() => {
-        let interval;
-        if(runTimer) {
-            interval = setInterval(() => setTimer((timer) => timer - 1), 1000);
-        } else {
-            clearInterval(interval);
-        }
-        return () => clearInterval(interval);
+        if(runTimer) interval.current = setInterval(() => setTimer((timer) => timer - 1), 1000);
+        else clearInterval(interval.current);
+        return () => clearInterval(interval.current);
     }, [runTimer])
 
-    if(runTimer) {
-        if(timer > 60) {
-            if(timer % 60 == 0) {
-                formattedTimer = Math.round(timer / 60);
-            }
-        } else {
-            if([60,40,20,0].includes(timer)) {
-                formattedTimer = timer;
-                if(timer == 0) {
-                    setRunTimer(false);
-                    onTimeout;
-                }
-            }
-        }
+    if(runTimer && timer == 0) {
+        clearInterval(interval.current);
+        onTimeout;
     }
-
-    console.log(timer);
 
     return (
       <span {...attrs}>{formattedTimer} {timer <= 60 ? "seconds" : formattedTimer == 1 ? "minute" : "minutes"}</span>
