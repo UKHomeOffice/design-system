@@ -15,7 +15,7 @@ export const Timer: FC<TimerProps> = ({
 }) => {
     const [runTimer, setRunTimer] = useState(true)
     const [timer, setTimer] = useState(timerFrom);
-    let formattedTimer = timer < 60 ? Math.ceil(timer / 20) * 20 : Math.ceil(timer / 60);
+    let formattedTimer = timer < 61 ? Math.ceil(timer / 20) * 20 : Math.ceil(timer / 60);
     const interval = useRef(null);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ export const Timer: FC<TimerProps> = ({
 
     if(runTimer && timer == 0) {
         clearInterval(interval.current);
-        onTimeout;
+        onTimeout();
     }
 
     return (

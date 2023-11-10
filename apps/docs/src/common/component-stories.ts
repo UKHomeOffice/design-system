@@ -12,7 +12,8 @@ const storySources = [
   require('../../../../components/timeline/spec/Timeline.stories.mdx'),
   require('../../../../components/date-time/spec/DateTime.stories.mdx'),
   require('../../../../components/date-display/spec/DateDisplay.stories.mdx'),
-  require('../../../../components/time/spec/Time.stories.mdx')
+  require('../../../../components/time/spec/Time.stories.mdx'),
+  require('../../../../components/timeout-modal/spec/TimeoutModal.stories.mdx')
 ];
 export const stories = storySources.reduce(reduceToLookup, {})
 

@@ -53,8 +53,8 @@ export const TimeoutModal: FC<TimeoutModalProps> = ({
             To protect your information, you will be signed out in <Timer className={classes('timer')} timerFrom={isOpen ? timerDurationInSeconds : 0} onTimeout={onTimeout}/>.
           </p>
           <div className={classes('buttons')}>
-            <button role='button' onClick={onTimeout}>Continue on this page</button>
-            <a role='link' onClick={onSignout}>Sign out</a>
+            <button role='button' onClick={onContinue} tabIndex={0}>Continue on this page</button>
+            <a role='link' onClick={onSignout} tabIndex={1}>Sign out</a>
           </div>
         </dialog>
       </div>

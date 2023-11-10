@@ -10,32 +10,30 @@ import readMe from '../README.md';
     chromatic: { viewports: [640, 480] },
     description: 'HODS timeout modal',
     jest: ['TimeoutModal'],
-    notes: readMe
+    notes: readMe,
+     docs: {
+        inlineStories: false,
+        iframeHeight: 500,
+      }
   } }
 />
 
 # timeout-modal
 
-HODS timeout modal
+HODS Timeout Modal
 
 <Preview withToolbar>
-  <Story name="TimeoutModal">
+  <Story name="5 Minutes Timeout Modal">
   <Page>
-    <TimeoutModal isOpen={true} timerDurationInSeconds={300} />
+    <TimeoutModal
+        isOpen={true}
+        timerDurationInSeconds={60}
+        onTimeout={() => console.log("timed out")}
+        onContinue={() => console.log("continue")}
+        onSignout={() => console.log("sign out")}
+    />
   </Page>
   </Story>
 </Preview>
 
 <Props of={ TimeoutModal } />
-
-
-## Stories
-### Standard
-
-A standard timeout-modal.
-
-<Preview>
-  <Story name="Standard">
-    <TimeoutModal />
-  </Story>
-</Preview>
