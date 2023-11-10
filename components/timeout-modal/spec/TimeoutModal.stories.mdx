@@ -8,26 +8,30 @@ import readMe from '../README.md';
   component={ TimeoutModal }
   parameters={ {
     chromatic: { viewports: [640, 480] },
-    description: 'HODS timeout modal',
+    description: 'Inform a user their current session will soon time out.',
     jest: ['TimeoutModal'],
     notes: readMe,
      docs: {
         inlineStories: false,
         iframeHeight: 500,
-      }
+        story: {
+            inline: false,
+            iframeHeight: 500,
+        }
+      },
   } }
 />
 
 # timeout-modal
 
-HODS Timeout Modal
+Inform a user their current session will time out in 5 minutes.
 
 <Preview withToolbar>
   <Story name="5 Minutes Timeout Modal">
   <Page>
     <TimeoutModal
         isOpen={true}
-        timerDurationInSeconds={60}
+        timerDurationInSeconds={300}
         onTimeout={() => console.log("timed out")}
         onContinue={() => console.log("continue")}
         onSignout={() => console.log("sign out")}
