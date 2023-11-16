@@ -29,7 +29,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>See guidance on abbreviations and acronyms in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
     <h3 id="alter">alter</h3>
     <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
-    <h3 id="asylum claimant">Asylum claimant</h3>
+    <h3 id="asylum claimant">asylum claimant</h3>
     <p>You can use either 'asylum claimant' or 'asylum applicant' to describe someone who has applied for asylum in the UK. Do not use both in the same product or service.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
