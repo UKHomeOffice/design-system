@@ -29,6 +29,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>See guidance on abbreviations and acronyms in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
     <h3 id="alter">alter</h3>
     <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
+    <h3 id="asylum claimant">Asylum claimant</h3>
+    <p>You can use either 'asylum claimant' or 'asylum applicant' to describe someone who has applied for asylum in the UK. Do not use both in the same product or service.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="b">B</h2>
@@ -242,6 +244,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="r">R</h2>
+    <h3 id="refugee">refugee</h3>
+    <p>Only use refugee to describe an asylum claimant who has been granted refugee status.</p>
     <h3 id="rank">rank (police and armed forces)</h3>
     <p>Capitalise the rank before the name, as in 'Detective Inspector Joan Smith'. Use lower case when it follows the name, as in 'Joan Smith, a detective inspector'.</p>
     <h3 id="register">register</h3>
