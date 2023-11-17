@@ -80,7 +80,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
     <p>Capitalised. You can use the acronym ‘CAS’ after the first full mention.</p>
     <h3 id="contractions">contractions</h3>
-    <p>Avoid negative contractions like ‘don’t’. See guidance on contractions in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide.</A></p>
+    <p>Avoid negative contractions like 'don’t'. See guidance on contractions in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
+    <p>Avoid all contractions, including positive contractions like 'we’ll', 'you’ve' or 'they’re', if your audience does not speak English as a first language. Research shows that contractions make content difficult to understand for people who are not fluent in English.</p>
     <h3 id="correct">correct</h3>
     <p>Use ‘correct’ rather than ‘right’. For example, ‘select the correct settlement route’.</p>
     <h3 id="correspondence">correspondence</h3>
