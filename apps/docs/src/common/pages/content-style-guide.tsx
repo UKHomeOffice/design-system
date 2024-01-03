@@ -45,7 +45,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="border force">Border Force</h3>
     <p>Capitalised.</p>
     <h3 id="border control">border control</h3>
-    <p>Use ‘border control’ rather than ‘passport control’ or ‘primary control point’.</p>
+    <p>Use 'border control' rather than 'passport control' or 'primary control point'.</p>
     <h3 id="british citizen">British citizen</h3>
     <p>British citizen is one of <A href="https://www.gov.uk/types-of-british-nationality">6 different types of British nationality</A>. Do not use 'UK citizen'.</p>
     <h3 id="british nationality">British nationality</h3>
@@ -53,9 +53,9 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="british national (overseas)">British national (overseas)</h3>
     <p>Use 'British national (overseas)' when referring to people, as in 'she is a British national (overseas)'. When referring to the visa, use 'British National (Overseas) visa', which can be abbreviated to 'BNO visa'. For example, 'apply for a British National (Overseas) visa'.</p>
     <h3 id="british overseas territories">British overseas territories</h3>
-    <p>Write ‘overseas territories’ in lower case.</p>
+    <p>Write 'overseas territories' in lower case.</p>
     <h3 id="british overseas territories citizen">British overseas territories citizen</h3>
-    <p>Write ‘overseas territories citizen’ in lower case.</p>
+    <p>Write 'overseas territories citizen' in lower case.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="c">C</h2>
@@ -70,13 +70,13 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="check">check</h3>
     <p>Consider using ‘check’ instead of ‘verify’ if you are asking users to check the accuracy of something. For example, ‘check your answers' or ‘check a passport number'</p>
     <h3 id="clandestine">clandestine</h3>
-    <p>Do not refer to people as ‘a clandestine’ or ‘clandestine entrant’. Try to be specific, like ‘a person hidden in a vehicle, ship or plane’.</p>
+    <p>Do not refer to people as 'a clandestine' or 'clandestine entrant'. Try to be specific, like 'a person hidden in a vehicle, ship or plane'.</p>
     <h3 id="click">click</h3>
-    <p>Use ‘select’ rather than ‘click’ or ‘tap’ because not everyone uses a mouse.</p>
+    <p>Use 'select' rather than 'click' or 'tap' because not everyone uses a mouse.</p>
     <h3 id="common travel area">Common Travel Area</h3>
     <p>Capitalised. You can use the acronym ‘CTA’ after the first full mention.</p>
     <h3 id="confirm">confirm</h3>
-    <p>Consider using ‘confirm' or ‘prove’ instead of ‘validate’ if you are asking users to provide additional evidence. For example, ‘confirm your identity’ or 'prove your status’.</p>
+    <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status’.</p>
     <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
     <p>Capitalised. You can use the acronym ‘CAS’ after the first full mention.</p>
     <h3 id="contractions">contractions</h3>
@@ -153,8 +153,6 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Capitalised. Do not use ‘HMPO’ in public-facing services.</p>
     <h3 id="home office reference number">Home Office reference number</h3>
     <p>Use lower case for ‘reference number’.</p>
-    <h3 id="horizon news">Horizon News</h3>
-    <p>Capitalised.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="i">I</h2>
