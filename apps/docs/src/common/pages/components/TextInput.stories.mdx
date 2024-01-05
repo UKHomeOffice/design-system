@@ -1,0 +1,41 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { TextInput } from '@not-govuk/text-input';
+
+<Meta
+  title="Text input"
+  component={ TextInput }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Extra guidance for using TextInput in the Home Office.',
+    jest: ['TextInput'],
+  } }
+/>
+
+# Text input
+
+This is the same component as the [GOV.UK design system text input](https://design-system.service.gov.uk/components/text-input/). There is extra guidance for using text inputs in the Home Office.
+
+<Preview withToolbar>
+  <Story name="TextInput">
+    <TextInput
+      label={
+        <h1 className="govuk-heading-l">
+          What is the name of the event?
+        </h1>
+      }
+      name="event-name"
+    />
+  </Story>
+</Preview>
+
+<Props of={ TextInput } />
+
+This React component is imported from [NotGovUK text input](https://not-gov.uk/components?name=Text%20input).
+
+## When to not use this component
+
+For internal systems, check the user needs for reporting. If there's only a limited number of options, consider another way of asking the user.
+
+## Help us improve this component
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/455), or follow our [contribute guidance](https://design.homeoffice.gov.uk/contribute).

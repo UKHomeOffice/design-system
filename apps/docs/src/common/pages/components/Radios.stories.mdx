@@ -1,0 +1,59 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Radios } from '@not-govuk/Radios';
+
+<Meta
+  title="Radios"
+  component={ Radios }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Extra guidance for using radios in the Home Office.',
+    jest: ['Radios'],
+  } }
+/>
+
+# Radios
+
+This is the same component as the [GOV.UK design system radios](https://design-system.service.gov.uk/components/radios/). There is extra guidance for using radios in the Home Office.
+
+<Preview withToolbar>
+  <Story name="Radios">
+    <Radios
+      label={
+        <h1 className="govuk-heading-l">
+          Where do you live?
+        </h1>
+      }
+      name="where-do-you-live"
+      options={[
+        {
+          value: "england",
+          label: "England",
+        },
+        {
+          value: "scotland",
+          label: "Scotland",
+        },
+        {
+          value: "wales",
+          label: "Wales",
+        },
+        {
+          value: "northern-ireland",
+          label: "Northern Ireland",
+        },
+      ]}
+    />
+  </Story>
+</Preview>
+
+<Props of={ Radios } />
+
+This React component is imported from [NotGovUK radios](https://not-gov.uk/components?name=Radios).
+
+## When to not use this component
+
+Check our [long list pattern](#) to see if there's another way to select an item from a long list.
+
+## Help us improve this component
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/455), or follow our [contribute guidance](https://design.homeoffice.gov.uk/contribute).
