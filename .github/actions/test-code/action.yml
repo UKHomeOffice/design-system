@@ -5,6 +5,10 @@ inputs:
     description: Name of branch to store baseline on
     required: false
     default: master
+  node:
+    description: The version of Node.js to use.
+    required: false
+    default: 18
 runs:
   using: composite
   steps:
@@ -16,11 +20,11 @@ runs:
     - name: Upload test results
       uses: actions/upload-artifact@master
       with:
-        name: test-results
+        name: test-results-${{ inputs.node }}
         path: .jest-results.json
 
     - name: Upload coverage report
       uses: actions/upload-artifact@master
       with:
-        name: coverage-report
+        name: coverage-report-${{ inputs.node }}
         path: coverage
