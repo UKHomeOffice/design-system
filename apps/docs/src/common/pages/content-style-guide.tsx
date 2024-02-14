@@ -73,7 +73,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Do not refer to people as 'a clandestine' or 'clandestine entrant'. Try to be specific, like 'a person hidden in a vehicle, ship or plane'.</p>
     <h3 id="click">click</h3>
     <p>Use 'select' rather than 'click' or 'tap' because not everyone uses a mouse.</p>
-    <h3 id="common travel area">Common Travel Area</h3>
+    <h3 id="common travel area">Common Travel Area (CTA)</h3>
     <p>Capitalised. You can use the acronym ‘CTA’ after the first full mention.</p>
     <h3 id="confirm">confirm</h3>
     <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status’.</p>
@@ -100,17 +100,17 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="d">D</h2>
     <h3 id="dbs adult first">DBS adult first</h3>
-    <p>Use lower case for ‘adult first’.</p>
+    <p>Use lower case for 'adult first'.</p>
     <h3 id="dbs adults barred list">DBS adults barred list</h3>
-    <p>Use lower case for ‘adults barred list’.</p>
+    <p>Use lower case for 'adults barred list'.</p>
     <h3 id="dbs certificate">DBS certificate</h3>
-    <p>Use ‘DBS certificate’ rather than ‘DBS disclosure’.</p>
+    <p>Use ‘DBS certificate’ rather than 'DBS disclosure'.</p>
     <h3 id="dbs checking service">DBS checking service</h3>
     <p>Use ‘DBS checking service’ rather than ‘DBS disclosure service’.</p>
     <h3 id="dbs children’s barred list">DBS children’s barred list</h3>
     <p>Use lower case for ‘children’s barred list’.</p>
     <h3 id="dependant">dependant</h3>
-    <p>Noun. For example, ‘a dependant’, ‘a child dependant’ or ‘are there any dependants on this application?’.</p>
+    <p>Noun. For example, 'a dependant', 'a child dependant' or 'are there any dependants on this application?'.</p>
     <h3 id="dependent">dependent</h3>
     <p>Adjective. For example, ‘I am dependent on the main applicant’ or ‘dependent children are not required to apply at the same time’.</p>
     <h3 id="deportation">deportation</h3>
@@ -142,13 +142,17 @@ const Page: FC<PageProps> = ({ location }) => (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="g">G</h2>
+    <h3 id="gender">gender</h3>
+    <p>Find out how to ask users for their gender in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the Home Office sex and gender pattern</A>.</p>
+    <h3 id="general register office">General Register Office (GRO)</h3>
+    <p>Capitalised. It is 'register' not 'registry'. You can use the acronym 'GRO' after the first full mention.</p>
     <h3 id="gov.uk">GOV.UK</h3>
     <p>All upper case.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="h">H</h2>
     <h3 id="his majesty’s">His Majesty’s</h3>
-    <p>Use ‘HM’ rather than ‘His Majesty’s’ in front of the name of the relevant public body. For example, ‘HM Revenue & Customs’.</p>
+    <p>Use ‘HM’ rather than ‘His Majesty’s’ in front of the name of the relevant public body. For example, 'HM Revenue & Customs'.</p>
     <h3 id="hm passport office">HM Passport Office</h3>
     <p>Capitalised. Do not use ‘HMPO’ in public-facing services.</p>
     <h3 id="home office reference number">Home Office reference number</h3>
@@ -264,6 +268,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>'Indefinite leave to remain' is officially called 'settlement'. For example, 'apply for UK settlement'.</p>
     <h3 id="set up">set up</h3>
     <p>Use 'create an account' rather than 'register' or 'set up' an account.</p>
+    <h3 id="sex">sex</h3>
+    <p>Find out how to ask users for their sex in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the Home Office sex and gender pattern</A>.</p>
     <h3 id="sign in">sign in</h3>
     <p>Use 'sign in' rather than 'log in' or 'login'.</p>
     <h3 id="sorry">sorry</h3>
