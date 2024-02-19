@@ -132,7 +132,7 @@ const Page: FC<PageProps> = ({ location }) => (
                     <p>Download the posters for your office space and help colleagues think about how to write inclusively.</p>
 
 <h2>Help improve this guidance</h2>
-    <p>To contribute, send your request to <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk,</A> or add it to the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
+    <p>To contribute, send your request to <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk,</A> or add it to the <A href="https://github.com/UKHomeOffice/design-system/discussions/557">GitHub discussion</A>.</p>
 
 
     </div>
