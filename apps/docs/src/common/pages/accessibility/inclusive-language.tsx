@@ -86,7 +86,7 @@ const Page: FC<PageProps> = ({ location }) => (
               <ul>
               <li>use language that reinforces harmful stereotypes and assumptions</li>
               </ul>
-      <p>Find out more about how to ask users for their sex or gender in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the sex and gender pattern</A>.</p>
+              <p>Find out more about how to ask users for their sex or gender in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the sex and gender pattern</A>.</p>
               <h4>Sexuality</h4>
                 <p>Do:</p>
                 <ul>
