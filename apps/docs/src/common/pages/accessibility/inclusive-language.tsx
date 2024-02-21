@@ -86,6 +86,7 @@ const Page: FC<PageProps> = ({ location }) => (
               <ul>
               <li>use language that reinforces harmful stereotypes and assumptions</li>
               </ul>
+              <p>Find out more about how to ask users for their sex or gender in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the sex and gender pattern</A>.</p>
               <h4>Sexuality</h4>
                 <p>Do:</p>
                 <ul>
@@ -130,10 +131,9 @@ const Page: FC<PageProps> = ({ location }) => (
                     <p>Use our quick reference <A href="https://github.com/UKHomeOffice/posters/tree/master/design/Inclusive%20language">inclusive language posters</A> as best practice guidelines while you design and research.</p>
                     <p>Download the posters for your office space and help colleagues think about how to write inclusively.</p>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #inclusion.</p>
-</div>
+<h2>Help improve this guidance</h2>
+    <p>To contribute, send your request to <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk,</A> or add it to the <A href="https://github.com/UKHomeOffice/design-system/discussions/557">GitHub discussion</A>.</p>
+
 
     </div>
   </div>
