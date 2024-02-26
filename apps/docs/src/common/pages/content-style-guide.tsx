@@ -288,6 +288,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Lower case. Also called a 'biometric residence card (BRC)' or 'EEA biometric residence card'.</p>
     <h3 id="uk visa and citizenship application services">UK Visa and Citizenship Application Services (UKVCAS)</h3>
     <p>UKVCAS service points are located in the UK, whereas visa application centres are outside the UK. You can use 'UKVCAS' after the first full mention.</p>
+    <h3 id="uk visas and immigration">UK Visas and Immigration (UKVI)</h3>
+    <p>Capitalised. Use 'and' not '&'. You can use the acronym 'UKVI' after the first full mention.</p>
     <h3 id="user-centred">user centred</h3>
     <p>Hyphenate when using as an adjective, as in 'user-centred design'. Do not hyphenate when using as a noun, as in 'teams need to be user centred'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
