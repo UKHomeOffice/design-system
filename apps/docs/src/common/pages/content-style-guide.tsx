@@ -285,7 +285,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2 className="a-z-header" id="u">U</h2>
     <h3 id="uk residence card">UK residence card</h3>
-    <p>Lower case. Also called a 'biometric residence card (BRC)' or 'EEA biometric residence card'.</p>    
+    <p>Lower case. Also called a 'biometric residence card (BRC)' or 'EEA biometric residence card'.</p>
     <h3 id="uk visa and citizenship application services">UK Visa and Citizenship Application Services (UKVCAS)</h3>
     <p>UKVCAS service points are located in the UK, whereas visa application centres are outside the UK. You can use 'UKVCAS' after the first full mention.</p>
     <h3 id="uk visas and immigration">UK Visas and Immigration (UKVI)</h3>
