@@ -34,7 +34,6 @@ const Page: FC<PageProps> = ({ location }) => (
         <th scope="col" className="govuk-table__header">Version number</th>
         <th scope="col" className="govuk-table__header">Date</th>
         <th scope="col" className="govuk-table__header">Description</th>
-        <th scope="col" className="govuk-table__header">Author</th>
       </tr>
     </thead>
     <tbody className="govuk-table__body">
@@ -42,13 +41,16 @@ const Page: FC<PageProps> = ({ location }) => (
       <td className="govuk-table__cell">1</td>
       <td className="govuk-table__cell">01/11/2020</td>
       <td className="govuk-table__cell">First published version</td>
-      <td className="govuk-table__cell">Yacoob Woozeer</td>
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">1.1</td>
       <td className="govuk-table__cell">01/08/2021</td>
       <td className="govuk-table__cell">Updated based on peer review by TetraLogical</td>
-      <td className="govuk-table__cell">David Caldwell</td>
+    </tr>
+    <tr className="govuk-table__row">
+      <td className="govuk-table__cell">1.2</td>
+      <td className="govuk-table__cell">23/02/2024</td>
+      <td className="govuk-table__cell">Updated to include WCAG 2.2 success criteria</td>
     </tr>
     </tbody>
   </table>
@@ -67,7 +69,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <tbody className="govuk-table__body">
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/perceivable#rr1.1.1">1.1.1 - Non Text content</A>
+      <A href="/accessibility/standard/perceivable#rr1.1.1">1.1.1 - Non text content</A>
       </td>
       <td className="govuk-table__cell">
       <p>All non-text content like images, charts, icons and infographics, must have an appropriate text equivalent. This ensures that information conveyed by non-text content is available to people who cannot see it, like screen reader users.</p>
@@ -137,7 +139,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <p><A href="/accessibility/standard/perceivable#rr1.3.3">1.3.3 - Sensory Characteristics</A></p>
+      <p><A href="/accessibility/standard/perceivable#rr1.3.3">1.3.3 - Sensory characteristics</A></p>
       </td>
       <td className="govuk-table__cell">
       <p>Instructions must not depend on sensory characteristics like shape, size, colour, or location. This ensures that instructions can be understood by users who are unable to see or recognise information communicated using sensory characteristics.</p>
@@ -154,7 +156,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <p><A href="/accessibility/standard/perceivable#rr1.3.5">1.3.5 - Identify Input Purpose</A></p>
+      <p><A href="/accessibility/standard/perceivable#rr1.3.5">1.3.5 - Identify input purpose</A></p>
       </td>
       <td className="govuk-table__cell">
       <p>In an input  field, the purpose of each input field that collects information about the user can be understood by assistive technologies and browsers by using autocomplete.</p>
@@ -231,7 +233,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p><A href="/accessibility/standard/perceivable#rr1.4.13">1.4.13 - Content on hover or focus</A></p>
       </td>
       <td className="govuk-table__cell">
-      <p>Ensuring that extra content eg tooltips:
+      <p>Extra content e.g. tooltips:
       <ul>
         <li>can be viewed easily</li>
         <li>don’t cover up key content</li>
@@ -286,7 +288,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <A href="/accessibility/standard/operable#rr2.2.1">2.2.1 - Timing adjustable</A>
       </td>
       <td className="govuk-table__cell">
-      <p>When a time limit, like a session timeout, is set ensure a user is informed,especially if this may result in a loss of data.  It must be possible for the user to define the length of the timeout (e.g. in settings),  turn it off, delay it, or extend the length of time.</p>
+      <p>When a time limit, like a session timeout, is set ensure a user is informed, especially if this may result in a loss of data.</p> 
+      <p>It must be possible for the user to define the length of the timeout (for example in settings), turn it off, delay it, or extend the length of time.</p>
       </td>
     </tr>
     <tr className="govuk-table__row">
@@ -325,7 +328,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.4.3">2.4.3 -  Focus order</A>
+      <A href="/accessibility/standard/operable#rr2.4.3">2.4.3 - Focus order</A>
       </td>
       <td className="govuk-table__cell">
       <p>It must be possible to navigate through content in a way that makes sense.</p>
@@ -333,7 +336,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.4.4">2.4.4 Link purpose in context</A>
+      <A href="/accessibility/standard/operable#rr2.4.4">2.4.4 - Link purpose in context</A>
       </td>
       <td className="govuk-table__cell">
       <p>Link text should make it clear what the link is i.e. where the links goes. Links should make sense out of context e.g. when using a links list.</p>
@@ -341,7 +344,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.4.5">2.4.5 Multiple ways</A>
+      <A href="/accessibility/standard/operable#rr2.4.5">2.4.5 - Multiple ways</A>
       </td>
       <td className="govuk-table__cell">
       <p>Unless the service is a series of steps, there must be different ways for people to locate and navigate content.</p>
@@ -349,7 +352,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.4.6">2.4.6 Headings and labels</A>
+      <A href="/accessibility/standard/operable#rr2.4.6">2.4.6 - Headings and labels</A>
       </td>
       <td className="govuk-table__cell">
       <p>Headings must indicate the topic or purpose of the content in that section of the page, and labels must indicate the purpose of the field they relate to.</p>
@@ -357,7 +360,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.4.7">2.4.7 Focus visible</A>
+      <A href="/accessibility/standard/operable#rr2.4.7">2.4.7 - Focus visible</A>
       </td>
       <td className="govuk-table__cell">
       <p>It must be easy to tell which element has keyboard focus.</p>
@@ -365,7 +368,15 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.5.1">2.5.1 Pointer gestures</A>
+      <A href="/accessibility/standard/operable#rr2.4.11">2.4.11 - Focus not obscured</A>
+      </td>
+      <td className="govuk-table__cell">
+      <p>When an element receives keyboard focus, the focus indicator is easy to see (not entirely hidden behind other elements).</p>
+      </td>
+    </tr>
+    <tr className="govuk-table__row">
+      <td className="govuk-table__cell">
+      <A href="/accessibility/standard/operable#rr2.5.1">2.5.1 - Pointer gestures</A>
       </td>
       <td className="govuk-table__cell">
       <p>Any functionality which requires a multipoint or path based gestures has an alternative single pointer, non path-based gesture.</p>
@@ -373,7 +384,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.5.2">2.5.2 Pointer cancellation</A>
+      <A href="/accessibility/standard/operable#rr2.5.2">2.5.2 - Pointer cancellation</A>
       </td>
       <td className="govuk-table__cell">
       <p>Any script triggering must be done on the ‘up’ event – not the ‘down’ event.</p>
@@ -381,7 +392,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.5.3">2.5.3 Label in name</A>
+      <A href="/accessibility/standard/operable#rr2.5.3">2.5.3 - Label in name</A>
       </td>
       <td className="govuk-table__cell">
       <p>For user interface components with labels that include text or images of text, the Accessible name contains the text that is presented visually.</p>
@@ -389,11 +400,27 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td className="govuk-table__cell">
-      <A href="/accessibility/standard/operable#rr2.5.4">2.5.4 Motion actuation</A>
+      <A href="/accessibility/standard/operable#rr2.5.4">2.5.4 - Motion actuation</A>
       </td>
       <td className="govuk-table__cell">
-      <p>Any functionality that is initiated by tilting or shaking (etc) a device, must be able to be intiated by a button, or other control.</p>
-      <p>Users must be able to switch off motion acutation.</p>
+      <p>Any functionality that is initiated by tilting or shaking (etc) a device, must be able to be initiated by a button, or other control.</p>
+      <p>Users must be able to switch off motion actuation.</p>
+      </td>
+    </tr>
+    <tr className="govuk-table__row">
+      <td className="govuk-table__cell">
+      <A href="/accessibility/standard/operable#rr2.5.7">2.5.7 - Dragging movements</A>
+      </td>
+      <td className="govuk-table__cell">
+      <p>Any functionality that requires dragging or swiping must be able to be initiated by a button, or other control.</p>
+      </td>
+    </tr>
+    <tr className="govuk-table__row">
+      <td className="govuk-table__cell">
+      <A href="/accessibility/standard/operable#rr2.5.8">2.5.8 - Target size</A>
+      </td>
+      <td className="govuk-table__cell">
+      <p>The interactive area of a component must be at least 24 by 24 CSS pixels or have sufficient spacing around it.</p>
       </td>
     </tr>
     </tbody>
@@ -415,12 +442,12 @@ const Page: FC<PageProps> = ({ location }) => (
         </td>
         <td className="govuk-table__cell">
         <p>The written language of the page must be identified in the code of the web page.</p>
-        <p>Where multiple written languages are included on a single page, the individual written language must be indentified in the code of the web page.</p>
+        <p>Where multiple written languages are included on a single page, the individual written language must be identified in the code of the web page.</p>
         </td>
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/understandable#rr3.2.1">3.2.1 On Focus</A>
+        <A href="/accessibility/standard/understandable#rr3.2.1">3.2.1 - On focus</A>
         </td>
         <td className="govuk-table__cell">
         <p>When a keyboard user focuses on a control it must not cause a change of context, such as loading a new page/tab.</p>
@@ -428,7 +455,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/understandable#rr3.2.2">3.2.2 On Input</A>
+        <A href="/accessibility/standard/understandable#rr3.2.2">3.2.2 - On input</A>
         </td>
         <td className="govuk-table__cell">
         <p>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behaviour before using the component.</p>
@@ -436,7 +463,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/understandable#rr3.2.3">3.2.3 Consistent navigation</A>
+        <A href="/accessibility/standard/understandable#rr3.2.3">3.2.3 - Consistent navigation</A>
         </td>
         <td className="govuk-table__cell">
         <p>When ways to navigate content are repeated on multiple pages, they must be presented in a consistent manner.</p>
@@ -444,7 +471,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/understandable#rr3.2.4">3.2.4 Consistent identification</A>
+        <A href="/accessibility/standard/understandable#rr3.2.4">3.2.4 - Consistent identification</A>
         </td>
         <td className="govuk-table__cell">
         <p>When features with the same functionality are used in multiple places, they must be identified in a consistent way.</p>
@@ -452,7 +479,15 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/understandable#rr3.3.1">3.3.1 Error identification</A>
+        <A href="/accessibility/standard/understandable#rr3.2.6">3.2.6 - Consistent help</A>
+        </td>
+        <td className="govuk-table__cell">
+        <p>If present, help is located in the same place relative to other content across multiple related pages.</p>
+        </td>
+      </tr>
+      <tr className="govuk-table__row">
+        <td className="govuk-table__cell">
+        <A href="/accessibility/standard/understandable#rr3.3.1">3.3.1 - Error identification</A>
         </td>
         <td className="govuk-table__cell">
         <p>When an error occurs the user is informed what caused the error, and the error is described in text in an accessible way.</p>
@@ -460,7 +495,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/understandable#rr3.3.2">3.3.2 Labels or instructions</A>
+        <A href="/accessibility/standard/understandable#rr3.3.2">3.3.2 - Labels or instructions</A>
         </td>
         <td className="govuk-table__cell">
         <p>When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field. Password fields should allow a user to view and check the entry.</p>
@@ -468,7 +503,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/understandable#rr3.3.3">3.3.3 Error Suggestions</A>
+        <A href="/accessibility/standard/understandable#rr3.3.3">3.3.3 - Error suggestions</A>
         </td>
         <td className="govuk-table__cell">
         <p>When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field. Password fields should allow a user to view and check the entry.</p>
@@ -476,10 +511,26 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/understandable#rr3.3.4">3.3.4 Error prevention</A>
+        <A href="/accessibility/standard/understandable#rr3.3.4">3.3.4 - Error prevention</A>
         </td>
         <td className="govuk-table__cell">
         <p>All transactions should be reversible, or confirmation must be required before submission.</p>
+        </td>
+      </tr>
+      <tr className="govuk-table__row">
+        <td className="govuk-table__cell">
+        <A href="/accessibility/standard/understandable#rr3.3.7">3.3.7 - Redundant entry</A>
+        </td>
+        <td className="govuk-table__cell">
+        <p>The user must not be required to provide the same information multiple times during one session.</p>
+        </td>
+      </tr>
+      <tr className="govuk-table__row">
+        <td className="govuk-table__cell">
+        <A href="/accessibility/standard/understandable#rr3.3.8">3.3.8 - Accessible authentication</A>
+        </td>
+        <td className="govuk-table__cell">
+        <p>Do not require the user to solve a puzzle, recall information or transcribe anything to register, log in, or authenticate a session.</p>
         </td>
       </tr>
       </tbody>
@@ -497,15 +548,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <tbody className="govuk-table__body">
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/robust#rr4.1.1">4.1.1 Parsing</A>
-        </td>
-        <td className="govuk-table__cell">
-        <p>The code of the page must not cause browser or assistive technology conflicts. This ensures that content and functionality is presented in a way that works reliably across all supported browsers and assistive technologies.</p>
-        </td>
-      </tr>
-      <tr className="govuk-table__row">
-        <td className="govuk-table__cell">
-        <A href="/accessibility/standard/robust#rr4.1.2">4.1.2 Name, Role, Value</A>
+        <A href="/accessibility/standard/robust#rr4.1.2">4.1.2 - Name, role, value</A>
         </td>
         <td className="govuk-table__cell">
         <p>All interactive components must have an accessible name and role, and the state of the component must be communicated to assistive technologies.</p>
@@ -513,7 +556,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </tr>
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/robust#rr4.1.3">4.1.3 Status messages</A>
+        <A href="/accessibility/standard/robust#rr4.1.3">4.1.3 - Status messages</A>
         </td>
         <td className="govuk-table__cell">
         <p>There are different situations where a page needs to dynamically display a status message. These messages need to be conveyed to assistive technology users, even when they don’t receive focus. Where possible, you should avoid disturbing the user’s place in a page.</p>
@@ -534,10 +577,26 @@ const Page: FC<PageProps> = ({ location }) => (
       <tbody className="govuk-table__body">
       <tr className="govuk-table__row">
         <td className="govuk-table__cell">
-        <A href="/accessibility/standard/meet-user-needs#rr5.1.1">5.1.1 User Research Participants</A>
+        <A href="/accessibility/standard/meet-user-needs#rr5.1.1">5.1.1 - User research participants</A>
         </td>
         <td className="govuk-table__cell">
         <p>When doing user research, make sure to include users with disabilities (at least 1 out of every 5 participants).</p>
+        </td>
+      </tr>
+      <tr className="govuk-table__row">
+        <td className="govuk-table__cell">
+        <A href="/accessibility/standard/meet-user-needs#rr5.1.2">5.1.2 - Accessibility statement</A>
+        </td>
+        <td className="govuk-table__cell">
+        <p>Ensure that you publish an accessibility statement and keep it updated.</p>
+        </td>
+      </tr>
+      <tr className="govuk-table__row">
+        <td className="govuk-table__cell">
+        <A href="/accessibility/standard/meet-user-needs#rr5.1.3">5.1.3 - Testing methodology</A>
+        </td>
+        <td className="govuk-table__cell">
+        <p>Ensure that you have a comprehensive testing strategy in place that focuses on user needs and utilises automated, manual and assistive technology testing across a range of browsers and devices.</p>
         </td>
       </tr>
       </tbody>
