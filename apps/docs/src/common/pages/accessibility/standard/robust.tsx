@@ -46,9 +46,9 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>an implicit or explicit role and;</li>
       <li>communicate information about their state</li>
     </ul>
-    <p>See guidance for complex components/widget at <A href="https://www.w3.org/WAI/ARIA/apg/">https://www.w3.org/WAI/ARIA/apg/</A></p>
+    <p>See guidance for complex components/widget in the <A href="https://www.w3.org/WAI/ARIA/apg/">ARIA Authoring Practices Guide (APG)</A></p>
     <h4>How to test</h4>
-    <p>The guidance at <A href="https://www.w3.org/WAI/ARIA/apg/">https://www.w3.org/WAI/ARIA/apg/</A> includes testing practices for complex components.</p>
+    <p>The guidance in the <A href="https://www.w3.org/WAI/ARIA/apg/">ARIA Authoring Practices Guide (APG)</A> includes testing practices for complex components.</p>
     <h4>How to test with JAWS/NVDA</h4>
     <p>Use the arrow keys, Enter key and Spacebar to reach and interact with all the user interface components on the page and check that the screen readers announce all the information necessary to understand the role and current status of the components and how to operate them.</p>
 
@@ -58,7 +58,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>Implementation guidance</h4>
     <p>Status messages or updates which occur visually should be communicated to screen reader users.</p>
     <p>These messages should be non-intrusive and only used when there is a benefit to the user, for example informing them how many search results have been returned, that errors have occurred in their submission or that a form has been successfully submitted.</p>
-    <p>Generally, a notification/status message should be implemented using an ARIA live region (see <A href="https://www.w3.org/TR/wai-aria/#aria-live">https://www.w3.org/TR/wai-aria/#aria-live</A> and <A href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions</A>).</p>
+    <p>Generally, a notification/status message should be implemented using an ARIA live region (see <A href="https://www.w3.org/TR/wai-aria/#aria-live">aria-live property</A> and <A href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">ARIA live regions</A>).</p>
     <p>Avoid using the assertive setting for ARIA live regions. The polite setting is sufficient in most use cases.</p>
     <h4>How to test with JAWS/NVDA</h4>
     <p>When completing actions that involve a visual status message or information that a user needs to be made aware of, check that the message is announced to screen reader users in a timely manner.</p>

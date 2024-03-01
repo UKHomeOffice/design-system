@@ -40,7 +40,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>Implementation guidance</h4>
     <p>During user research activity, at least 1 in 5 participants must have a disability. You should ensure that you include a diverse group of disabled users with a range of disabilities that represents the population you’re researching.</p>
     <h4>How to test</h4>
-    <p>You should ensure that you work with the Research Operations team to identify and recruit disabled participants. You should use appropriate research methods as defined by the Head of User Research.</p>
+    <p>You may be able to get support with working with disabled participants from the User Centred Design Operations team. You should use appropriate research methods as defined by the Head of User Research.</p>
 
     <h3 id="rr5.1.2">5.1.2 - Accessibility statement</h3>
     <p>Ensure that you publish an accessibility statement and keep it updated.</p>
@@ -68,7 +68,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>How to test</h4>
     <p>Ensure that any testing takes into account the expected key user journeys through a system, and highlights any blockers to completing expected tasks.</p>
     <p>Do not rely only on automated tools for accessibility testing. Ensure you use manual techniques and optionally automated tools.</p>
-    <p>Check that you are testing across as many browsers and devices as appropriate for the service. The full list of currently supported browsers can be found at <A href="https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in-from-june-2022">https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in-from-june-2022</A></p>
+    <p>Check that you are testing across as many browsers and devices as appropriate for the service. The full list of currently supported browsers can be found in the <A href="https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in-from-june-2022">Designing for different browsers and devices</A> guidance</p>
     <h4>How to test with assistive technology</h4>
     <p>To meet the Service Standard, check that you are testing using:</p>
     <ul>
@@ -77,7 +77,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>speech recognition software</li>
     </ul>
     <p>as appropriate for the service audience and environment.</p>
-    <p>The full combinations of assistive technologies and browsers you should test with can be found at <A href="https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies">https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies</A></p>
+    <p>The full combinations of assistive technologies and browsers you should test with can be found in the <A href="https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies">Testing with assistive technologies</A> guidance</p>
 
 <div className="contact-us">
   <h2 className="govuk-heading-m">Get in touch</h2>

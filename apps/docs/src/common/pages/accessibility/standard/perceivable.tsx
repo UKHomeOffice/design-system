@@ -63,9 +63,9 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2>Text Alternatives</h2>
 
-    <h3 id="rr1.1.1">1.1.1 - Non Text content</h3>
+    <h3 id="rr1.1.1">1.1.1 - Non text content</h3>
     <p>All non-text content like images, charts, icons and infographics, must have an appropriate text equivalent. This ensures that information conveyed by non-text content is available to people who cannot see it, like screen reader users.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html">Understanding Success Criterion 1.1.1: Non-text Content</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">Understanding Success Criterion 1.1.1: Non-text Content</A></p>
     <h4>Implementation guidance</h4>
     <p>All images must have an alternative text description that describes its meaning, not what the image is:</p>
     <ul>
@@ -116,7 +116,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>The transcript should be available near to the multimedia content but can be a link to another page.</p>
     <p>If a second version of the content is available with audio description then this must be easily accessible from the non-audio described version.</p>
     <h4>Helpful links</h4>
-    <p><A href="http://localhost:8080/accessibility/audio-and-video">Home Office Design System - Audio and Video</A></p>
+    <p><A href="/accessibility/audio-and-video">Home Office Design System - Audio and Video</A></p>
 
     <h2>Adaptable</h2>
 
@@ -128,7 +128,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Tabular data is presented using proper HTML markup (&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; elements).</p>
     <p>Tables include a &lt;caption&gt; element which summarises the overall purpose of the table.</p>
     <p>Avoid creating complex tables (with multiple rows or columns of headings).</p>
-    <p>If semantic tables are not possible, as a last resort, use ARIA roles to replicate the structure of a table. This is highly complex and involves a lot of additional coding, so avoid it if you can. See <A href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Table_Role">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Table_Role</A> for implementation advice.</p>
+    <p>If semantic tables are not possible, as a last resort, use ARIA roles to replicate the structure of a table. This is highly complex and involves a lot of additional coding, so avoid it if you can. See <A href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Table_Role">ARIA: table role</A> for implementation advice.</p>
     <h4>How to test with a manual code check</h4>
     <ul>
       <li>right click on any tables and select the ‘Inspect’ option</li>
@@ -174,7 +174,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>Implementation guidance</h4>
     <p>Use proper HTML markup for headings (&lt;h1&gt; through &lt;h6&gt; elements).</p>
     <p>Each page should have a H1 which describes the overall purpose of the page.</p>
-    <p>This should be similar to the Title of the page (see 2.4.2).</p>
+    <p>This should be similar to the title of the page (see <A href="/accessibility/standard/operable#rr2.4.2">2.4.2 - Page title</A>).</p>
     <p>Do not skip heading levels or use multiple H1s on a page if you can avoid it.</p>
     <p>If you cannot use semantic headings, use the ARIA heading role and aria-level attribute to provide heading structure to the page. This is a last resort.</p>
     <h4>How to test with a manual code check</h4>
@@ -206,7 +206,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>If you cannot use &lt;fieldset&gt; and &lt;legend&gt;, use the radiogroup and radio ARIA roles and associated attributes for radio buttons. Use the group and checkbox ARIA roles and associated attributes for checkboxes. This is a last resort.</p>
     <p>Use aria-describedby to reference hint text from the form control if specific format or input requirements need to be met by users.</p>
     <p>Ensure information on entry format isn’t given by placeholders alone and that this is available to screen reader users.</p>
-    <p>If you cannot use visible labels, follow the requirements of 4.1.2 - Name, role, value.</p>
+    <p>If you cannot use visible labels, follow the requirements of <A href="/accessibility/standard/robust#rr4.1.2">4.1.2 - Name, role, value</A>.</p>
     <h4>How to test with a quick check</h4>
     <p>The following quick check will show you if this requirement has been implemented. It will not necessarily show you if it’s failed. If this check doesn’t work then complete the other manual code checks.</p>
     <ul>
@@ -275,7 +275,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>How to test with a visual check</h4>
     <ul>
       <li>to check the reading order of the page, the visual styling needs to be switched off</li>
-      <li>you can do this by using a simple bookmarklet like <A href="https://dorward.uk/software/disablecss">https://dorward.uk/software/disablecss</A> or, depending on the browser, using the ‘Reading view’ option in the browser</li>
+      <li>you can do this by using a simple bookmarklet like <A href="https://dorward.uk/software/disablecss">Disable CSS Bookmarklet</A> or, depending on the browser, using the ‘Reading view’ option in the browser</li>
       <li>you can also manually review the DOM to see how content appears</li>
       <li>regardless of the method, once enabled, you should read through the linerised content to check that the reading order follows the reading order with styles enabled</li>
     </ul>
@@ -307,14 +307,14 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>right click on the page and select ‘Inspect’</li>
       <li>activate the device toolbar</li>
       <li>select the ‘rotate’ option in the toolbar and observe whether the content moves into the new orientation successfully</li>
-      <li>resize the browser window to have a portrait or landscape aspect ration. Observe if a ‘Please rotate your device’ message is shown.</li>
+      <li>resize the browser window to have a portrait or landscape aspect ratio. Observe if a ‘Please rotate your device’ message is shown.</li>
     </ul>
 
     <h3 id="rr1.3.5">1.3.5 - Identify input purpose</h3>
     <p>In an input  field, the purpose of each input field that collects information about the user can be understood by assistive technologies and browsers by using autocomplete.</p>
     <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose">Understanding Success Criterion 1.3.5: Identify Input Purpose</A></p>
     <h4>Implementation guidance</h4>
-    <p>If a form field relates to the user’s personal information (from the set of input purposes listed at <A href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose">https://www.w3.org/TR/WCAG/#input-purposes</A>), include an explicit autocomplete attribute with the relevant value.</p>
+    <p>If a form field relates to the user’s personal information (from the set of input purposes listed at <A href="https://www.w3.org/TR/WCAG/#input-purposes">Input Purposes for User Interface Components</A>), include an explicit autocomplete attribute with the relevant value.</p>
     <p>This ensures that the purpose of the input can be programmatically determined/understood by user agents and third party tools (such as password managers).</p>
     <h4>How to test with a manual code check</h4>
     <p>Right click on each form field requiring information that can be suggested by the browser, select ‘Inspect’ and check that the autocomplete attribute is included in its source code and that the correct value has been given to this attribute.</p>
@@ -365,7 +365,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </ul>
     <h4>How to test with manual code check</h4>
     <ul>
-      <li>use an online contrast checker e.g. <A href="https://webaim.org/resources/contrastchecker">https://webaim.org/resources/contrastchecker</A></li>
+      <li>use an online contrast checker e.g. <A href="https://webaim.org/resources/contrastchecker">WebAIM Contrast Checker</A></li>
       <li>identify the HEX values from the CSS for text and background colours</li>
       <li>use the design specification for the site to identify the HEX values and use the site to check these meet or exceed the 4.5:1 requirement</li>
     </ul>
@@ -430,7 +430,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </ul>
     <h4>How to test with a manual code check</h4>
     <ul>
-      <li>Use an online contrast checker e.g. <A href="https://webaim.org/resources/contrastchecker">https://webaim.org/resources/contrastchecker</A></li>
+      <li>Use an online contrast checker e.g. <A href="https://webaim.org/resources/contrastchecker">WebAIM Contrast Checker</A></li>
       <li>Identify the HEX values from the CSS for outline styles and states and input these into the colour contrast checker</li>
       <li>Use the design specification for the site to identify the HEX values and use the site to check these meet or exceed the 3:1 requirement</li>
     </ul>
@@ -448,7 +448,7 @@ const Page: FC<PageProps> = ({ location }) => (
     </ul>
     <p>Users should be able to adjust text spacing without breaking layouts, overlapping elements or problems seeing content.</p>
     <h4>How to test with a visual check</h4>
-    <p>You can use the Text Spacing Bookmarklet (<A href="http://www.html5accessibility.com/tests/tsbookmarklet.html">http://www.html5accessibility.com/tests/tsbookmarklet.html</A>) to modify the content spacing and check that all content adapts and is still visible.</p>
+    <p>You can use the <A href="http://www.html5accessibility.com/tests/tsbookmarklet.html">Text Spacing Bookmarklet</A> to modify the content spacing and check that all content adapts and is still visible.</p>
 
     <h3 id="rr1.4.13">1.4.13 - Content on hover or focus</h3>
     <p>Extra content e.g. tooltips:</p>

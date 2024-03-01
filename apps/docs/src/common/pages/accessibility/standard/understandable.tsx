@@ -120,7 +120,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr3.2.6">3.2.6 - Consistent help</h3>
     <p>If present, help is located in the same place relative to other content across multiple related pages.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help">Understanding Success Criteria 3.2.6: Consistent Help</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help">Understanding Success Criterion 3.2.6: Consistent Help</A></p>
     <h4>Implementation guidance</h4>
     <p>If you choose to provide help, put it in the same place relative to other content, such as in the header or footer, across multiple related pages.</p>
     <h4>How to test with a visual check</h4>
@@ -147,7 +147,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Ensure that an Error Summary is provided for ‘on submission’ errors.</p>
     <p>Check that it is easy to identify the fields in error in the form (note that the fields in error cannot be identified via colour alone).</p>
     <h4>How to test with JAWS/NVDA</h4>
-    <p>Generate an error on a field with validation. When error messages displayed on submit, check that the screen reader is alerted to the error.</p>
+    <p>Generate an error on a field with validation. When error messages are displayed on submit, check that the screen reader is alerted to the error.</p>
     <p>Navigate to the field with an error and check that the inline message is read out by the screen reader</p>
     <h4>Helpful links</h4>
     <p><A href="/accessibility/error-messages">Home Office Design System - Error messages</A></p>
@@ -192,7 +192,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr3.3.7">3.3.7 - Redundant entry</h3>
     <p>The user must not be required to provide the same information multiple times during one session.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry">Understanding Success Criteria 3.3.7: Redundant Entry</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry">Understanding Success Criterion 3.3.7: Redundant Entry</A></p>
     <h4>Implementation guidance</h4>
     <p>Avoid asking users to provide the same information multiple times as part of the same session.</p>
     <p>If it is necessary to ask for the same information again, provide one of the following:</p>
@@ -209,14 +209,14 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>How to test with a visual check</h4>
     <p>If information entered earlier in the process is suitable for the current step, check one of the following is true:</p>
     <ul>
-      <li>it is prepopulated</li>
+      <li>it is auto-populated</li>
       <li>the user can select it, from a list of options</li>
       <li>it is displayed on screen</li>
     </ul>
 
     <h3 id="rr3.3.8">3.3.8 - Accessible authentication</h3>
     <p>Do not require the user to solve a puzzle, recall information or transcribe anything to register, log in, or authenticate a session.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html">Understanding Success Criteria 3.3.8: Accessible Authentication</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum">Understanding Success Criterion 3.3.8: Accessible Authentication</A></p>
     <h4>Implementation guidance</h4>
     <p>There must be an easy way for people to register, log in or authenticate a session that does not rely on memorising a password, transcribing characters from one place to another, using correct spelling, carrying out any calclulations or solving any puzzles.</p>
     <p>Allow third-party password managers to fill in the password field automatically or allow the user to manually copy and paste the password.</p>

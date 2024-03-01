@@ -78,7 +78,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>Review 2.4.3 - Focus order and follow the recommendations</li>
     </ul>
     <h4>How to test with a keyboard</h4>
-    <p>Use the keyboard to navigate the page and check that you can reach all actionable items (e.g. links, buttons, form fields, tabs, sliders, menus) using the Tab or arrow keys, that you can activate all items by pressing the Enter key or Spacebar, and that you can move backward to the top of the page using Shift+Tab</p>
+    <p>Use the keyboard to navigate the page and check that you can reach all actionable items (e.g. links, buttons, form fields, tabs, sliders, menus) using the Tab or arrow keys, that you can activate all items by pressing the Enter key or Spacebar, and that you can move backward to the top of the page using Shift+Tab.</p>
     <h4>Helpful links</h4>
     <p><A href="/accessibility/keyboard">Home Office Design System - Keyboard basics</A></p>
 
@@ -249,7 +249,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Unless the service is a series of steps, there must be different ways for people to locate and navigate content.</p>
     <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways">Understanding Success Criterion 2.4.5: Multiple Ways</A></p>
     <h4>Implementation guidance</h4>
-    <p>In additional to general navigation, your site should include at least one of the following:</p>
+    <p>In addition to general navigation, your site should include at least one of the following:</p>
     <ul>
       <li>a site search available on every page</li>
       <li>a link to a site map, normally in the footer</li>
@@ -271,11 +271,11 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>How to test with a visual check</h4>
     <ul>
       <li>read the page and check that its content is organised in short sections and that each section is preceded by a unique, descriptive heading.</li>
-      <li>check that heading of the same level have content between them</li>
+      <li>check that headings of the same level have content between them</li>
       <li>check that labels for fields indicate their purpose</li>
     </ul>
     <h4>How to test with JAWS</h4>
-    <p>Use the JAWS key + F6 to list Headings.. Review this to check that headings are descriptive.</p>
+    <p>Use the JAWS key + F6 to list Headings. Review this to check that headings are descriptive.</p>
     <p>Use the JAWS key + F5 to list form fields. Review this to check that everything is labelled.</p>
     <h4>How to test with NVDA</h4>
     <p>Use the NVDA key + F7 to show you a list of the form elements on the page. Review this to check that everything is labelled.</p>
@@ -304,8 +304,8 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>When an interactive element receives keyboard focus, the focus must be easy to see (not entirely hidden behind elements such as cookie banners, sticky headers or footers).</p>
     <p>When implementing content such as headers, footers and banners, make sure page content is shifted accordingly and there is no overlap with the focused element. Alternatively restrict keyboard focus to the banner to prevent user from interacting with the underlying page.</p>
     <h4>How to test with a visual check</h4>
-    <p>If a cookie banner is present, tab around before you dismiss it, to make sure focus indicator doesn't disappear behind it. Clear your cookie cache to make the banner reappear if necessary.</p>
-    <p>Then tab around the page to make sure focus indicator doesn't disapear behind other elements, such as sticky headers or footers.</p>
+    <p>If a cookie banner is present, tab around before you dismiss it, to make sure focus indicator does not disappear behind it. Clear your cookie cache to make the banner reappear if necessary.</p>
+    <p>Then tab around the page to make sure focus indicator does not disapear behind other elements, such as sticky headers or footers.</p>
 
     <h2>Input Modalities</h2>
 
@@ -364,7 +364,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr2.5.7">2.5.7 - Dragging movements</h3>
     <p>Any functionality that requires dragging or swiping must be able to be initiated by a button, or other control.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements">Understanding Success Criteria 2.5.7: Dragging Movements</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements">Understanding Success Criterion 2.5.7: Dragging Movements</A></p>
     <h4>Implementation guidance</h4>
     <p>If you are using elements that rely on a dragging movement for operation, like swipeable carousels, maps that rely on dragging for panning or any drag-and-drop functionality, provide a button or other control that doesn’t require dragging.</p>
     <h4>How to test with a visual check</h4>
@@ -375,13 +375,13 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr2.5.8">2.5.8 - Target size</h3>
     <p>The interactive area of a component must be at least 24 by 24 CSS pixels or have sufficient spacing around it.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum">Understanding Success Criteria 2.5.8: Target Size (Minimum)</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum">Understanding Success Criterion 2.5.8: Target Size (Minimum)</A></p>
     <h4>Implementation guidance</h4>
     <p>Ensure that all interactive elements, apart from links within text, are at least 24 x 24 CSS pixels in size.</p>
     <p>Alternatively, ensure that interactive element and area around it meets the required size of 24 x 24 CSS pixels and does not intersect with another interactive element (for smaller components this might also include area around it to the combined size of 24 x 24 CSS pixels).</p>
-    <p>If the element doesn't meet those size requirements, make sure there is another way to achieve the same outcome using another element that does.</p>
+    <p>If the element does not meet those size requirements, make sure there is another way to achieve the same outcome using another element that does.</p>
     <h4>How to test with a manual check</h4>
-    <p>Use the bookmarklet to check that interactive areas of components are either 24 x 24 CSS pixels, or have at least that much space around them in total to avoid clashing with other interactive areas (<A href="https://adrianroselli.com/2022/05/24x24-pixel-cursor-bookmarklet.html">https://adrianroselli.com/2022/05/24x24-pixel-cursor-bookmarklet.html</A>).</p>
+    <p>Use the bookmarklet to check that interactive areas of components are either 24 x 24 CSS pixels, or have at least that much space around them in total to avoid clashing with other interactive areas (<A href="https://adrianroselli.com/2022/05/24x24-pixel-cursor-bookmarklet">24×24 Pixel Cursor Bookmarklet</A>).</p>
     <p>Interactive elements could include buttons, radio buttons, checkboxes and carousel controls.</p>
 
 <div className="contact-us">
