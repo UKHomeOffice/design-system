@@ -43,9 +43,9 @@ const Page: FC<PageProps> = ({ location }) => (
       <li><A href="#rr1.3.1d">1.3.1d - Info and relationships - Form fields</A></li>
       <li><A href="#rr1.3.1e">1.3.1e - Info and relationship - Landmarks</A></li>
       <li><A href="#rr1.3.2">1.3.2 - Meaningful sequence</A></li>
-      <li><A href="#rr1.3.3">1.3.3 - Sensory Characteristics</A></li>
+      <li><A href="#rr1.3.3">1.3.3 - Sensory characteristics</A></li>
       <li><A href="#rr1.3.4">1.3.4 - Orientation</A></li>
-      <li><A href="#rr1.3.5">1.3.5 - Identify Input Purpose</A></li>
+      <li><A href="#rr1.3.5">1.3.5 - Identify input purpose</A></li>
     </ul>
 
     <h3>Distinguishable</h3>
@@ -63,14 +63,14 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h2>Text Alternatives</h2>
 
-    <h3 id="rr1.1.1">1.1.1 - Non Text content</h3>
+    <h3 id="rr1.1.1">1.1.1 - Non text content</h3>
     <p>All non-text content like images, charts, icons and infographics, must have an appropriate text equivalent. This ensures that information conveyed by non-text content is available to people who cannot see it, like screen reader users.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content">Understanding Success Criterion 1.1.1: Non-text Content</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">Understanding Success Criterion 1.1.1: Non-text Content</A></p>
     <h4>Implementation guidance</h4>
     <p>All images must have an alternative text description that describes its meaning, not what the image is:</p>
     <ul>
       <li>images that communicate information (for example icons and logos) have short text descriptions</li>
-      <li>editoral images that support the text around them have short descriptions</li>
+      <li>editorial images that support the text around them have short descriptions</li>
       <li>images that communicate complex information (for example infographics, charts and diagrams) have longer text descriptions within the same page</li>
       <li>decorative images have the null (or empty) alternative description alt="" (no space between the quotations)</li>
     </ul>
@@ -80,7 +80,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>check the image tag to see if the alt attribute exists</li>
       <li>for decorative images, the alt attribute should be alt="" or just alt</li>
       <li>for editoral images and images which communicate information check that the descriptions are appropriate</li>
-      <li>for images of complex information, check that the description refers to the availabiltiy of a longer description and that this is present on the page</li>
+      <li>for images of complex information, check that the description refers to the availability of a longer description and that this is present on the page</li>
     </ul>
     <h4>How to test with JAWS</h4>
     <p>Use the ‘G’ key to navigate to the images on the page and check that a meaningful textual description is read out for informative images, and that decorative images are not announced.</p>
@@ -95,11 +95,11 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="rr1.2.x">1.2.x - Alternatives for audio and video</h3>
     <p>Audio and video content has appropriate alternatives to ensure that everyone has a comparable experience when interacting with this content. This may include transcripts, captions and audio description depending on the type of audio or video content.</p>
     <ul className="plain">
-      <li><A href="https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded">Understanding Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)</A></li>
-      <li><A href="https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded">Understanding Success Criterion 1.2.2: Captions (Prerecorded)</A></li>
-      <li><A href="https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded">Understanding Success Criterion 1.2.3: Audio Description or Media Alternative (Prerecorded)</A></li>
-      <li><A href="https://www.w3.org/WAI/WCAG21/Understanding/captions-live">Understanding Success Criterion 1.2.4: Captions (Live)</A></li>
-      <li><A href="https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded">Understanding Success Criterion 1.2.5: Audio Description (Prerecorded)</A></li>
+      <li><A href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded">Understanding Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)</A></li>
+      <li><A href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded">Understanding Success Criterion 1.2.2: Captions (Prerecorded)</A></li>
+      <li><A href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded">Understanding Success Criterion 1.2.3: Audio Description or Media Alternative (Prerecorded)</A></li>
+      <li><A href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live">Understanding Success Criterion 1.2.4: Captions (Live)</A></li>
+      <li><A href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded">Understanding Success Criterion 1.2.5: Audio Description (Prerecorded)</A></li>
     </ul>
     <h4>Implementation guidance</h4>
     <p>The alternative required depends on the context of the audio or video, but broadly:</p>
@@ -113,22 +113,22 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>For live video content like livestreams of events, captions should be provided which are synchronised with the audio.</p>
     <h4>How to test with a visual check</h4>
     <p>If the page contains multimedia content, check that the required alternative is available.</p>
-    <p>The transcipt should be available near to the multimedia content but can be a link to another page.</p>
+    <p>The transcript should be available near to the multimedia content but can be a link to another page.</p>
     <p>If a second version of the content is available with audio description then this must be easily accessible from the non-audio described version.</p>
     <h4>Helpful links</h4>
-    <p><A href="http://localhost:8080/accessibility/audio-and-video">Home Office Design System - Audio and Video</A></p>
+    <p><A href="/accessibility/audio-and-video">Home Office Design System - Audio and Video</A></p>
 
     <h2>Adaptable</h2>
 
     <h3 id="rr1.3.1a">1.3.1a - Info and relationships - Tables</h3>
     <p>When information is visually presented as a table, this structure must be conveyed appropriately to assistive technologies. This ensure that tables are available to screen reader, screen magnification and speech recognition tool users.</p>
     <p>Where possible, you should use semantic HTML to implement content structures.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
     <h4>Implementation guidance</h4>
     <p>Tabular data is presented using proper HTML markup (&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; elements).</p>
     <p>Tables include a &lt;caption&gt; element which summarises the overall purpose of the table.</p>
     <p>Avoid creating complex tables (with multiple rows or columns of headings).</p>
-    <p>If semantic tables are not possible, as a last resort, use ARIA roles to replicate the structure of a table. This is highly complex and involves a lot of additional coding, so avoid it if you can. See <A href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Table_Role">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Table_Role</A> for implementation advice.</p>
+    <p>If semantic tables are not possible, as a last resort, use ARIA roles to replicate the structure of a table. This is highly complex and involves a lot of additional coding, so avoid it if you can. See <A href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Table_Role">ARIA: table role</A> for implementation advice.</p>
     <h4>How to test with a manual code check</h4>
     <ul>
       <li>right click on any tables and select the ‘Inspect’ option</li>
@@ -147,7 +147,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="rr1.3.1b">1.3.1b - Info and relationships - Lists</h3>
     <p>When presenting lists of information, you must communicate this list in a way that assistive technology users can understand.</p>
     <p>Where possible, you should use semantic HTML list options which are appropriate to the information being presented.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
     <h4>Implementation guidance</h4>
     <p>Use appropriate and proper HTML markup for lists of items:</p>
     <ul>
@@ -169,12 +169,12 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr1.3.1c">1.3.1c - Info and relationships - Headings</h3>
     <p>Where visual headings are used to communicate the structure of a page, they must also be communicated in a way that supports assistive technology users to access this structure.</p>
-    <p>You should use semanatic HTML headings to structure your page. Heads should cascade from H1-H6. Each page must have at least a Level 1 Heading (H1).</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
+    <p>You should use semantic HTML headings to structure your page. Heads should cascade from H1-H6. Each page must have at least a Level 1 Heading (H1).</p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
     <h4>Implementation guidance</h4>
     <p>Use proper HTML markup for headings (&lt;h1&gt; through &lt;h6&gt; elements).</p>
     <p>Each page should have a H1 which describes the overall purpose of the page.</p>
-    <p>This should be similar to the Title of the page (see 2.4.2).</p>
+    <p>This should be similar to the title of the page (see <A href="/accessibility/standard/operable#rr2.4.2">2.4.2 - Page title</A>).</p>
     <p>Do not skip heading levels or use multiple H1s on a page if you can avoid it.</p>
     <p>If you cannot use semantic headings, use the ARIA heading role and aria-level attribute to provide heading structure to the page. This is a last resort.</p>
     <h4>How to test with a manual code check</h4>
@@ -199,14 +199,14 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>All form fields have an associated visible label. Where this isn’t possible a non-visible label must be present.</p>
     <p>Sets of radio buttons or checkboxes must be grouped together so that assistive technology users can understand the relationship between these controls.</p>
     <p>Where specific format or input requirements need to be met, hint text linked to the form fields is provided.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
     <h4>Implementation guidance</h4>
     <p>If you can, use the &lt;label&gt; tag and ‘for’ attribute to give form field elements visible labels.</p>
     <p>Group sets of radio buttons or checkboxes using the &lt;fieldset&gt; tag and have an appropriate &lt;legend&gt; tag to label the group.</p>
     <p>If you cannot use &lt;fieldset&gt; and &lt;legend&gt;, use the radiogroup and radio ARIA roles and associated attributes for radio buttons. Use the group and checkbox ARIA roles and associated attributes for checkboxes. This is a last resort.</p>
     <p>Use aria-describedby to reference hint text from the form control if specific format or input requirements need to be met by users.</p>
     <p>Ensure information on entry format isn’t given by placeholders alone and that this is available to screen reader users.</p>
-    <p>If you cannot use visible labels, follow the requirements of 4.1.2 - Name, Role, Value.</p>
+    <p>If you cannot use visible labels, follow the requirements of <A href="/accessibility/standard/robust#rr4.1.2">4.1.2 - Name, role, value</A>.</p>
     <h4>How to test with a quick check</h4>
     <p>The following quick check will show you if this requirement has been implemented. It will not necessarily show you if it’s failed. If this check doesn’t work then complete the other manual code checks.</p>
     <ul>
@@ -218,7 +218,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <ul>
       <li>right click on a form element and select the ‘Inspect’ option</li>
       <li>manually review the form element and check that a label has been associated with it</li>
-      <li>if there is a visible label start by checking the label. It should be wrapped in a &lt;Label&gt; tag and should have a for attribute which references the ID of the form element it labels</li>
+      <li>if there is a visible label start by checking the label. It should be wrapped in a &lt;label&gt; tag and should have a for attribute which references the id of the form element it labels</li>
       <li>if there is no visible label or it doesn’t have a for attribute, look for aria-label or aria-labelledby on the form element</li>
       <li>check that any additional hint information is linked using aria-describedby</li>
       <li>check that any additional hint information is not only provided using placeholder text</li>
@@ -243,7 +243,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr1.3.1e">1.3.1e - Info and relationship - Landmarks</h3>
     <p>Content sections within a page should have an appropriate HTML5 section element or ARIA landmark role defined.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
     <h4>Implementation guidance</h4>
     <p>As a minimum, you must include a main landmark (either the HTML 5 &lt;main&gt; or ARIA role="main") on each page.</p>
     <p>Add extra landmarks, for example navigation and footer content, if the page has these areas.</p>
@@ -260,14 +260,14 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Use the ‘R’ key to get the screen readers to announce all landmarks on the page and check that the right landmark is announced for each page section (e.g. ‘main’ for the main content area).</p>
     <h4>Testing with NVDA</h4>
     <ul>
-      <li>use the ‘D’ key to hear all the landmarks on the page and check tha tthe right landmark is announced for each section</li>
+      <li>use the ‘D’ key to hear all the landmarks on the page and check that the right landmark is announced for each section</li>
       <li>use the NVDA key + F7 to show you the list of landmark elements on the page. Review this to check that all the required landmarks exist and that they are labelled appropriately</li>
     </ul>
 
     <h3 id="rr1.3.2">1.3.2 - Meaningful sequence</h3>
     <p>When the order of content is important, the content order must be preserved no matter how it is presented to the user.</p>
     <p>This ensures that the order of content is meaningful whether someone is looking at it, listening to it with a screen reader, or has stripped out visual styling using a browser plugin.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence">Understanding Success Criterion 1.3.2: Meaningful Sequence</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence">Understanding Success Criterion 1.3.2: Meaningful Sequence</A></p>
     <h4>Implementation guidance</h4>
     <p>The structure of your code should reflect the visual structure of the page.</p>
     <p>This keeps the order of content meaningful for screen reader users, or users who have turned off visual styling.</p>
@@ -275,16 +275,16 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>How to test with a visual check</h4>
     <ul>
       <li>to check the reading order of the page, the visual styling needs to be switched off</li>
-      <li>you can do this by using a simple bookmarklet like <A href="https://dorward.uk/software/disablecss">https://dorward.uk/software/disablecss</A> or, depending on the browser, using the ‘Reading view’ option in the browser</li>
+      <li>you can do this by using a simple bookmarklet like <A href="https://dorward.uk/software/disablecss">Disable CSS Bookmarklet</A> or, depending on the browser, using the ‘Reading view’ option in the browser</li>
       <li>you can also manually review the DOM to see how content appears</li>
       <li>regardless of the method, once enabled, you should read through the linerised content to check that the reading order follows the reading order with styles enabled</li>
     </ul>
     <h4>Testing with JAWS/NVDA</h4>
     <p>Use the arrow keys (or Insert + down arrow) to go through the whole page and check that its content is read out in a logical order.</p>
 
-    <h3 id="rr1.3.3">1.3.3 - Sensory Characteristics</h3>
+    <h3 id="rr1.3.3">1.3.3 - Sensory characteristics</h3>
     <p>Instructions must not depend on sensory characteristics like shape, size, colour, or location. This ensures that instructions can be understood by users who are unable to see or recognise information communicated using sensory characteristics.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics">Understanding Success Criterion 1.3.3: Sensory Characteristics</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">Understanding Success Criterion 1.3.3: Sensory Characteristics</A></p>
     <h4>Implementation guidance</h4>
     <p>Do not rely on visual descriptions like ‘green’ or ‘below’ to communicate user instructions. For example, in ‘Press the green ‘Next’ button to continue’, the colour is supplemented by non-sensory information.</p>
     <h4>How to test with a visual check</h4>
@@ -293,7 +293,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="rr1.3.4">1.3.4 - Orientation</h3>
     <p>A page view must not be locked to either horizontal or vertical views only, unless this is essential.</p>
     <p>There are limited cases where ‘essential’ orientation locking applies. Check with the A&I team for cases.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/orientation">Understanding Success Criterion 1.3.4: Orientation</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/orientation">Understanding Success Criterion 1.3.4: Orientation</A></p>
     <h4>Implementation gudance</h4>
     <p>Let the user view pages in their preferred orientation.</p>
     <p>Use CSS to allow both landscape and portrait.</p>
@@ -307,14 +307,14 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>right click on the page and select ‘Inspect’</li>
       <li>activate the device toolbar</li>
       <li>select the ‘rotate’ option in the toolbar and observe whether the content moves into the new orientation successfully</li>
-      <li>resize the browser window to have a portrait or landscape aspect ration. Observe if a ‘Please rotate your device’ message is shown.</li>
+      <li>resize the browser window to have a portrait or landscape aspect ratio. Observe if a ‘Please rotate your device’ message is shown.</li>
     </ul>
 
-    <h3 id="rr1.3.5">1.3.5 - Identify Input Purpose</h3>
+    <h3 id="rr1.3.5">1.3.5 - Identify input purpose</h3>
     <p>In an input  field, the purpose of each input field that collects information about the user can be understood by assistive technologies and browsers by using autocomplete.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose">Understanding Success Criterion 1.3.5: Identify Input Purpose</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose">Understanding Success Criterion 1.3.5: Identify Input Purpose</A></p>
     <h4>Implementation guidance</h4>
-    <p>If a form field relates to the user’s personal information (from the set of input purposes listed at <A href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose">https://www.w3.org/TR/WCAG/#input-purposes</A>), include an explicit autocomplete attribute with the relevant value.</p>
+    <p>If a form field relates to the user’s personal information (from the set of input purposes listed at <A href="https://www.w3.org/TR/WCAG/#input-purposes">Input Purposes for User Interface Components</A>), include an explicit autocomplete attribute with the relevant value.</p>
     <p>This ensures that the purpose of the input can be programmatically determined/understood by user agents and third party tools (such as password managers).</p>
     <h4>How to test with a manual code check</h4>
     <p>Right click on each form field requiring information that can be suggested by the browser, select ‘Inspect’ and check that the autocomplete attribute is included in its source code and that the correct value has been given to this attribute.</p>
@@ -323,7 +323,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr1.4.1">1.4.1 - Use of colour</h3>
     <p>Information conveyed with colour must also be identifiable from context, labelling, or alternative forms</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color">Understanding Success Criterion 1.4.1: Use of Color</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color">Understanding Success Criterion 1.4.1: Use of Color</A></p>
     <h4>Implementation guidance</h4>
     <p>When rendered in monochrome, information does not disappear.</p>
     <p>Do not only use colour to indicate important content. Use a visible border and label, underline or other visual effect as well.</p>
@@ -336,7 +336,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr1.4.2">1.4.2 - Audio control</h3>
     <p>Audio/video must not play automatically unless the user is pre-warned and can control the audio</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/audio-control">Understanding Success Criterion 1.4.2: Audio Control</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control">Understanding Success Criterion 1.4.2: Audio Control</A></p>
     <h4>Implementation guidance</h4>
     <p>Audio or video content that plays automatically, for example an alert sound, lasts for three seconds or less.</p>
     <p>Audio or video that plays automatically and lasts for more than three seconds can be paused and/or stopped using on screen controls.</p>
@@ -349,7 +349,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr1.4.3">1.4.3 - Contrast</h3>
     <p>There should be enough difference (contrast) between a background and the foreground content so that user can easily differentiate the two.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3: Contrast (Minimum)</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3: Contrast (Minimum)</A></p>
     <h4>Implementation guidance</h4>
     <p>Text, including text in images, must have a contrast ratio of at least 4.5:1 against its background colour.</p>
     <p>Where text crosses different background colours or an image, all of the text must meet the contrast requirement.</p>
@@ -365,14 +365,14 @@ const Page: FC<PageProps> = ({ location }) => (
     </ul>
     <h4>How to test with manual code check</h4>
     <ul>
-      <li>use an online contrast checker e.g. <A href="https://webaim.org/resources/contrastchecker">https://webaim.org/resources/contrastchecker</A></li>
+      <li>use an online contrast checker e.g. <A href="https://webaim.org/resources/contrastchecker">WebAIM Contrast Checker</A></li>
       <li>identify the HEX values from the CSS for text and background colours</li>
       <li>use the design specification for the site to identify the HEX values and use the site to check these meet or exceed the 4.5:1 requirement</li>
     </ul>
 
     <h3 id="rr1.4.4">1.4.4 - Resize text</h3>
     <p>Users should be able to resize text up to 200% without any problems with the presentation and structure of the page (for example truncated text, overlaps or missing items).</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text">Understanding Success Criterion 1.4.4: Resize text</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">Understanding Success Criterion 1.4.4: Resize text</A></p>
     <h4>Implementation guidance</h4>
     <p>Avoid setting specific width and height sizes for containers if you can, so they will adapt to the size of the content they contain.</p>
     <p>Avoid using CSS absolute positioning, as these layouts can easily end up overlapping other content or containers.</p>
@@ -391,7 +391,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <h3 id="rr1.4.5">1.4.5 - Images of text</h3>
     <p>Meaningful text must not be presented as part of an image because it cannot be resized, it deteriorates in quality when magnified and is not customisable by the end user.</p>
     <p>Meaningful text is anything which is used to aid understanding for users.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text">Understanding Success Criterion 1.4.5: Images of Text</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">Understanding Success Criterion 1.4.5: Images of Text</A></p>
     <h4>Implementation guidance</h4>
     <p>Do not use images for meaningful text that gives users information. Text in some types of images, like SVGs, can resize without deterioration, but cannot be customised. As a result no images of text are allowable.</p>
     <p>The Home Office standard for images of text is stricter than the WCAG requirements.</p>
@@ -400,11 +400,10 @@ const Page: FC<PageProps> = ({ location }) => (
     <h4>How to test with a manual code check</h4>
     <p>Select all the text on the page - any images of text will not be selectable</p>
 
-
     <h3 id="rr1.4.10">1.4.10 - Reflow</h3>
     <p>Users should be able to magnify the page up to 400% and content should reflow - move into one column - and not add horizontal scroll bars.</p>
     <p>Content should not be cut off or omitted entirely when magnified.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/reflow">Understanding Success Criterion 1.4.10: Reflow</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">Understanding Success Criterion 1.4.10: Reflow</A></p>
     <h4>Implementation guidance</h4>
     <p>Make sure your pages are responsive, so the content will ‘reflow’ to a single column gracefully.</p>
     <p>There are a small number of exemptions for this requirement:</p>
@@ -418,7 +417,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <h3 id="rr1.4.11">1.4.11 - Non text contrast</h3>
     <p>Interactive controls, keyboard focus, icons and content required for understanding e.g. charts and infographics must have enough contrast (at least 3:1) with adjacent colours.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast">Understanding Success Criterion 1.4.11: Non-text Contrast</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast">Understanding Success Criterion 1.4.11: Non-text Contrast</A></p>
     <h4>Implementation guidance</h4>
     <p>Buttons or other inputs and controls must have a contrast ratio of 3:1 or higher in all their states.</p>
     <p>Parts of graphical objects, like icons, that convey information must have a minimum contrast ratio of 3:1 with adjacent colours.</p>
@@ -431,14 +430,14 @@ const Page: FC<PageProps> = ({ location }) => (
     </ul>
     <h4>How to test with a manual code check</h4>
     <ul>
-      <li>Use an online contrast checker e.g. <A href="https://webaim.org/resources/contrastchecker">https://webaim.org/resources/contrastchecker</A></li>
+      <li>Use an online contrast checker e.g. <A href="https://webaim.org/resources/contrastchecker">WebAIM Contrast Checker</A></li>
       <li>Identify the HEX values from the CSS for outline styles and states and input these into the colour contrast checker</li>
       <li>Use the design specification for the site to identify the HEX values and use the site to check these meet or exceed the 3:1 requirement</li>
     </ul>
 
     <h3 id="rr1.4.12">1.4.12 - Text spacing</h3>
     <p>For regular HTML page content, no loss of content or functionality happens when a user changes line height, letter or word spacing.</p>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing">Understanding Success Criterion 1.4.12: Text Spacing</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing">Understanding Success Criterion 1.4.12: Text Spacing</A></p>
     <h4>Implementation guidance</h4>
     <p>Make sure your CSS lets users adjust:</p>
     <ul>
@@ -449,10 +448,10 @@ const Page: FC<PageProps> = ({ location }) => (
     </ul>
     <p>Users should be able to adjust text spacing without breaking layouts, overlapping elements or problems seeing content.</p>
     <h4>How to test with a visual check</h4>
-    <p>You can use the Text Spacing Bookmarklet (<A href="http://www.html5accessibility.com/tests/tsbookmarklet.html">http://www.html5accessibility.com/tests/tsbookmarklet.html</A>) to modify the content spacing and check that all content adapts and is still visible.</p>
+    <p>You can use the <A href="http://www.html5accessibility.com/tests/tsbookmarklet.html">Text Spacing Bookmarklet</A> to modify the content spacing and check that all content adapts and is still visible.</p>
 
     <h3 id="rr1.4.13">1.4.13 - Content on hover or focus</h3>
-    <p>Ensuring that extra content eg tooltips:</p>
+    <p>Extra content e.g. tooltips:</p>
     <ul>
       <li>can be viewed easily</li>
       <li>don’t cover up key content</li>
@@ -460,14 +459,14 @@ const Page: FC<PageProps> = ({ location }) => (
       <li>can be hovered over (i.e. it doesn’t disappear if you move the mouse)</li>
       <li>is persistent and doesn’t disappear until the user moves focus / hover away</li>
     </ul>
-    <p><A href="https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus">Understanding Success Criterion 1.4.13: Content on Hover or Focus</A></p>
+    <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Understanding Success Criterion 1.4.13: Content on Hover or Focus</A></p>
     <h4>Implementation guidance</h4>
     <p>Position the additional content so that it does not obscure any other content, including the trigger. This does not include white space and purely decorative content, such as a background graphic which provides no information.</p>
     <p>Provide an easy way to dismiss the additional content, such as by pressing Escape or selecting a close button.</p>
     <p>The additional content should stay on screen until dismissed by the user.</p>
     <p>The additional content should stay on screen if the user hovers over it.</p>
     <h4>How to test using a visual check</h4>
-    <p>When new content appears on mouse over or on keyboard focus complete the following checks:</p>
+    <p>When new content appears on mouse hover or on keyboard focus complete the following checks:</p>
     <ul>
       <li>check that you can dismiss the new content by pressing the Esc key or a close button</li>
       <li>check that you can move the mouse pointer to the new content</li>
