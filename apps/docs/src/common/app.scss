@@ -159,3 +159,10 @@ li code {
   outline: 1px solid $govuk-border-colour;
   padding: 0 govuk-spacing(1);
 }
+
+// NotGovUK (0.8.3) imposes a max-width on a paragraph. Need to override this.
+// This is so that bullets, paragraphs, inset text and so on have the same width,
+// which is defined by the containing column.
+p {
+  max-width: none;
+}
