@@ -28,7 +28,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="account">account</h3>
         <p>Use 'create an account' rather than 'register an account' or ‘set up an account’.</p>
         <h3 id="acronyms">acronyms</h3>
-        <p>See guidance on abbreviations and acronyms in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
+        <p>Write out an acronym in full the first time you use it on a new page or screen, unless it is well known to your users, like UK, US or NHS. Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. If available, use a tooltip like <A href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown#acronyms">acronym Markdown</A> to make the acronym appear in full as hover text. See more guidance on abbreviations and acronyms in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
         <h3 id="alter">alter</h3>
         <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
         <h3 id="asylum claimant">asylum claimant</h3>
@@ -81,9 +81,12 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status’.</p>
         <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
         <p>Capitalised. You can use the acronym ‘CAS’ after the first full mention.</p>
+        <h3 id="consignee">consignee</h3>
+        <p>Consignee is not plain English. Some users confuse 'consignee' with 'consignor'. If you need to use consignee, use it with 'recipient'. For example, recipient (consignee).</p>
+        <h3 id="consignor">consignor</h3>
+        <p>Consignor is not plain English. Some users confuse 'consignor' with 'consignee'. If you need to use consignor,  use it with 'sender'. For example, sender (consignor).</p>
         <h3 id="contractions">contractions</h3>
-        <p>Avoid negative contractions like 'don’t'. See guidance on contractions in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
-        <p>Avoid all contractions, including positive contractions like 'we’ll', 'you’ve' or 'they’re', if your audience does not speak English as a first language. Research shows that contractions make content difficult to understand for people who are not fluent in English.</p>
+        <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users are not fluent in English. Research shows that contractions make content difficult to understand for people with limited fluency. See general guidance on contractions in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
         <h3 id="correct">correct</h3>
         <p>Use ‘correct’ rather than ‘right’. For example, ‘select the correct settlement route’.</p>
         <h3 id="correspondence">correspondence</h3>
@@ -128,6 +131,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Lower case. Also called a 'UK residence card' or 'biometric residence card (BRC)'.</p>
         <h3 id="egates">eGates</h3>
         <p>When using 'eGates' with the public, explain what it means the first time you use it. For example, 'you will have the option of using an eGate (electronic passport gate)'.</p>
+        <h3 id="electronic travel authorisation">electronic travel authorisation (ETA)</h3>
+        <p>Lower case. You can use the acronym 'ETA' after the first full mention.</p>
         <h3 id="enhanced dbs check">enhanced DBS check</h3>
         <p>Use 'enhanced DBS check' rather than 'enhanced disclosure'.</p>
         <h3 id="epassport">ePassport</h3>
@@ -174,8 +179,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Capitalised. After first mention, you can refer to ‘the rules’, using lower case.</p>
         <h3 id="inclusive language">inclusive language</h3>
         <p>Read our <A href="https://design.homeoffice.gov.uk/accessibility/inclusive-language">guidance on using inclusive language</A> in the Home Office design system.</p>
-        <h3 id="indefinite leave to remain">indefinite leave to remain</h3>
-        <p>'Indefinite leave to remain' is officially called 'settlement'. For example, 'apply for UK settlement'.</p>
+        <h3 id="indefinite leave to enter or remain">indefinite leave to enter or remain</h3>
+        <p>'Indefinite leave to enter' and 'indefinite leave to remain' are officially called 'settlement'. For example, 'apply for UK settlement'.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
         <h2 className="a-z-header" id="j">J</h2>
@@ -188,7 +193,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <h2 className="a-z-header" id="l">L</h2>
         <h3 id="leave to enter">leave to enter</h3>
-        <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
+        <p>Use 'permission to enter' instead of 'leave to enter' or 'limited leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
         <h3 id="leave to remain">leave to remain</h3>
         <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
         <h3 id="life in the uk test">Life in the UK Test</h3>
@@ -222,7 +227,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="people">people</h3>
         <p>Use 'people' as a plural of person, rather than 'persons' or 'individuals'.</p>
         <h3 id="permission to enter">permission to enter</h3>
-        <p>Use 'permission to enter' instead of 'leave to enter', 'limited leave to enter' or 'indefinite leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'.</p>
+        <p>Use 'permission to enter' instead of 'leave to enter' or 'limited leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
         <h3 id="permission to stay">permission to stay</h3>
         <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
         <h3 id="persons">persons</h3>
@@ -267,7 +272,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="senior civil service">senior civil service (SCS)</h3>
         <p>Lower case. You can use ‘SCS’ after the first full mention.</p>
         <h3 id="settlement">settlement</h3>
-        <p>'Indefinite leave to remain' is officially called 'settlement'. For example, 'apply for UK settlement'.</p>
+        <p>'Indefinite leave to remain' and 'indefinite leave to enter' are officially called 'settlement'. For example, 'apply for UK settlement'.</p>
         <h3 id="set up">set up</h3>
         <p>Use 'create an account' rather than 'register' or 'set up' an account.</p>
         <h3 id="sex">sex</h3>
@@ -292,6 +297,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>UKVCAS service points are located in the UK, whereas visa application centres are outside the UK. You can use 'UKVCAS' after the first full mention.</p>
         <h3 id="uk visas and immigration">UK Visas and Immigration (UKVI)</h3>
         <p>Capitalised. Use 'and' not '&'. You can use the acronym 'UKVI' after the first full mention.</p>
+        <h3 id="unique application number">unique application number (UAN)</h3>
+        <p>Lower case. You can use the acronym 'UAN' after the first full mention.</p>
         <h3 id="user-centred">user centred</h3>
         <p>Hyphenate when using as an adjective, as in 'user-centred design'. Do not hyphenate when using as a noun, as in 'teams need to be user centred'.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
