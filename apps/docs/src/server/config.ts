@@ -36,6 +36,7 @@ const serverConfig = {
     secure: ( devMode ? defaultsFalse : defaultsTrue )(process.env.COOKIES_SECURE)
   },
   env,
+  frameAncestors: process.env.FRAME_ANCESTORS?.split(','),
   logger: {
     destination: process.env.LOG_DESTINATION,
     level: process.env.LOG_LEVEL || 'info'

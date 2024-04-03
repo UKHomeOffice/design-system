@@ -34,6 +34,7 @@ export const createServer = ({ entrypoints, port }: httpdOptions) => {
       secure: config.cookies.secure
     },
     env: config.env,
+    frameAncestors: config.frameAncestors,
     httpd: {
       host: config.httpd.host,
       port: port || config.httpd.port
