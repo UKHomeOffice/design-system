@@ -26,7 +26,7 @@ ENV LISTEN_HOST="::" \
     OIDC_REDIRECT_URI="http://localhost:8080" \
     AUTH_HEADER_USERNAME="x-auth-username" \
     AUTH_HEADER_GROUPS="x-auth-groups" \
-    AUTH_HEADER_ROLES="x-auth-roles"
+    AUTH_HEADER_ROLES="x-auth-roles" \
     FRAME_ANCESTORS="'self',*.hugr.dev,*.hugr.app"
 EXPOSE ${LISTEN_PORT:-8080}
 HEALTHCHECK CMD wget -q -O /dev/null http://localhost/healthz:${LISTEN_PORT} || exit 1
