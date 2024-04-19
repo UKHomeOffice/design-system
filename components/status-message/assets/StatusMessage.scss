@@ -1,5 +1,6 @@
 @import "@hods/sass-base";
 @import "govuk-frontend/govuk/components/button";
+@import "govuk-frontend/govuk/objects/button-group";
 
 $govuk-button-colour: govuk-colour("white");
 $govuk-button-text-colour: govuk-colour("black");
@@ -22,6 +23,8 @@ $govuk-button-text-colour: govuk-colour("black");
   }
 
   &__actions {
+    @extend .govuk-button-group;
+    justify-content: end;
     margin: 0;
     padding: 0;
     @include govuk-responsive-margin(3, "top");
@@ -29,6 +32,11 @@ $govuk-button-text-colour: govuk-colour("black");
     li {
       list-style: none;
       padding: 0;
+      width: 100%;
+
+      &:last-child > :last-child {
+        margin-bottom: 0;
+      }
     }
 
     &__link {
@@ -39,8 +47,7 @@ $govuk-button-text-colour: govuk-colour("black");
         background-color: $govuk-button-colour;
         border: $govuk-button-text-colour 1px solid;
         margin: 0;
-        @include govuk-responsive-margin(2, "top");
-        @include govuk-responsive-margin(2, "bottom");
+        @include govuk-responsive-margin(3, "bottom");
       }
 
       &:hover {
@@ -74,11 +81,18 @@ $govuk-button-text-colour: govuk-colour("black");
 
     &__actions {
       margin: 0;
-      display: flex;
 
       li {
         margin: 0;
+        width: auto;
         @include govuk-responsive-margin(1, "left");
+      }
+
+      &__link {
+        &, &:active, &:hover, &:link, &:visited {
+          @include govuk-responsive-margin(1, "top");
+          @include govuk-responsive-margin(1, "bottom");
+        }
       }
     }
   }
