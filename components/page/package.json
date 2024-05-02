@@ -27,6 +27,7 @@
     "@hods/footer": "workspace:^0.4.0",
     "@hods/header": "workspace:^0.4.0",
     "@hods/sass-base": "workspace:^0.4.0",
+    "@not-govuk/button": "^0.8.6",
     "@not-govuk/component-helpers": "^0.8.6",
     "@not-govuk/skip-link": "^0.8.6",
     "govuk-frontend": "4.4.1"
@@ -47,6 +48,8 @@
   "devDependencies": {
     "@mdx-js/react": "1.6.22",
     "@not-govuk/component-test-helpers": "^0.8.6",
+    "@not-govuk/button-group": "^0.8.6",
+    "@not-govuk/button": "^0.8.6",
     "@types/react": "16.14.38",
     "jest": "29.5.0",
     "jest-environment-jsdom": "29.5.0",
