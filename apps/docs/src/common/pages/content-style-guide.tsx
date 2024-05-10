@@ -7,6 +7,26 @@ import { AZNavigation } from '@hods/components';
 export const title = 'Content style guide';
 const description = 'How to write content for Home Office services.';
 
+export const menu = (
+  <Fragment>
+    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users for</span>
+    <NavigationMenu items={[
+      {
+        href: '/accessibility/inclusive-language',
+        text: 'Inclusive language'
+      },
+      {
+        href: '/accessibility/readability',
+        text: 'Readability'
+      },
+      {
+        href: '/content-style-guide/designing-for-limited-english',
+        text: 'Writing for limited English'
+      }
+    ]} />
+  </Fragment>
+);
+
 const Page: FC<PageProps> = ({ location }) => (
   <Fragment>
     <Helmet>
@@ -17,11 +37,14 @@ const Page: FC<PageProps> = ({ location }) => (
       <meta name="og:article:section" content={title} />
     </Helmet>
 
-    <h1>{title}</h1>
-    <AZNavigation id="a-z-nav" />
+    <div className="govuk-grid-column-one-quarter">
+      {menu}
+    </div>
 
     <div className="govuk-grid-row">
+      <h1>{title}</h1>
       <div className="govuk-grid-column-two-thirds">
+        <AZNavigation id="a-z-nav" />
         <h2 className="a-z-header" id="a">A</h2>
         <h3 id="abroad">abroad</h3>
         <p>'Abroad' and 'overseas' can cause confusion. Try to use plain English. For example, 'apply from outside the UK' or 'working in another country'.</p>
