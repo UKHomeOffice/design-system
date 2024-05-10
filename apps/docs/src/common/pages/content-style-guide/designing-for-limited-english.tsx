@@ -22,8 +22,8 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>
-        <span className="caption">Accessibility</span>
-          Inclusive language
+        <span className="caption">Content style guide</span>
+          Designing for limited English
       </h1>
       <p>As an organisation and in communications with our users, we should write in a way which is clear, compassionate and respectful.</p>
 
