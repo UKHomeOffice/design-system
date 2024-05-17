@@ -71,73 +71,73 @@ const Page: FC<PageProps> = ({ location }) => (
  <h2>Avoid idioms</h2>
        <p>A phrasal verb is where you combine a verb with other words to make it mean something different, such as ‘carry out’, ‘get over’ or ‘look after’. English is full of them. But their meaning is not always clear until you have learned them.  </p>
        <p>There is nearly always a one-word alternative to a phrasal verb that is easier to translate.  </p>
-      <table class="govuk-table">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header">Instead of</th>
-      <th scope="col" class="govuk-table__header">Use</th>
+      <table Name="govuk-table">
+  <thead className="govuk-table__head">
+    <tr className="govuk-table__row">
+      <th scope="col" className="govuk-table__header">Instead of</th>
+      <th scope="col" className="govuk-table__header">Use</th>
     </tr>
   </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
+  <tbody className="govuk-table__body">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">carry out </th>
-      <td class="govuk-table__cell">do, implement </td>
+      <td className="govuk-table__cell">do, implement </td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">fill in </th>
-      <td class="govuk-table__cell">complete</td>
+      <td className="govuk-table__cell">complete</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">call off</th>
-      <td class="govuk-table__cell">cancel</td>
+      <td className="govuk-table__cell">cancel</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">get over </th>
-      <td class="govuk-table__cell">do, implement </td>
+      <td className="govuk-table__cell">do, implement </td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">look into </th>
-      <td class="govuk-table__cell">research, investigate </td>
+      <td className="govuk-table__cell">research, investigate </td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">look up </th>
-      <td class="govuk-table__cell">search </td>
+      <td className="govuk-table__cell">search </td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">look after </th>
-      <td class="govuk-table__cell">care for, be responsible for </td>
+      <td className="govuk-table__cell">care for, be responsible for </td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">turn down </th>
-      <td class="govuk-table__cell">reject </td>
+      <td className="govuk-table__cell">reject </td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">make out</th>
-      <td class="govuk-table__cell">understand</td>
+      <td className="govuk-table__cell">understand</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">sort out </th>
-      <td class="govuk-table__cell">solve</td>
+      <td className="govuk-table__cell">solve</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">point out</th>
-      <td class="govuk-table__cell">show</td>
+      <td className="govuk-table__cell">show</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">come up with</th>
-      <td class="govuk-table__cell">suggest</td>
+      <td className="govuk-table__cell">suggest</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">go over </th>
-      <td class="govuk-table__cell">check, examine</td>
+      <td className="govuk-table__cell">check, examine</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">come across</th>
-      <td class="govuk-table__cell">find</td>
+      <td className="govuk-table__cell">find</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <th scope="row" class="govuk-table__cell">stick to</th>
-      <td class="govuk-table__cell">follow, maintain</td>
+      <td className="govuk-table__cell">follow, maintain</td>
     </tr>
   </tbody>
 </table>
