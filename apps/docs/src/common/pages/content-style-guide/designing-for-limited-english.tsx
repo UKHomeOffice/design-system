@@ -202,7 +202,7 @@ const Page: FC<PageProps> = ({ location }) => (
       
       <p>Work with your team and stakeholders to understand the benefits and costs of hiring translation services. This isn’t just about business pressures. There may be risks if a service is only partially translated or something has been mistranslated. </p>
       
-      <h2>Help improve this guidance/h2>
+      <h2>Help improve this guidance</h2>
       <p>To contribute, join the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
     </div>
   </div>
