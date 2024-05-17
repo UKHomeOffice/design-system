@@ -4,8 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-export const title = 'Inclusive language';
-const description = 'How to use inclusive language on digital services';
+export const title = 'Limited English';
+const description = 'Designing for people with limited English';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = ({ location }) => (
@@ -23,118 +23,187 @@ const Page: FC<PageProps> = ({ location }) => (
     <div className="govuk-grid-column-three-quarters">
       <h1>
         <span className="caption">Content style guide</span>
-          Designing for limited English
+          Designing for people with limited English
       </h1>
-      <p>As an organisation and in communications with our users, we should write in a way which is clear, compassionate and respectful.</p>
-
-
-
-      <h2>Helping everyone</h2>
-      <p>When we build government services, we must ensure they’re accessible and inclusive to everyone who needs to use them.</p>
-      <p>Inclusive language builds trust and allows us to communicate effectively with our users.</p>
-      <p>This guidance is not comprehensive, but aims to provide principles and specific suggestions for writing and talking about diverse groups of people.</p>
-      <h2>Writing inclusive content</h2>
-      <h3>Age</h3>
-        <p>Do:</p>
+      <p>People who depend on Home Office services, such as visas, passports and asylum, are often not fluent in English.</p> 
+      <p>This means important information in application forms, guidance pages and other tasks may be difficult to understand.</p> 
+      <p>We have identified 10 evidence-based principles to follow when writing for people with limited English: </p>
         <ul>
-        <li>only ask for a person’s age if it is needed - for example, if a person must be over 18 to use a service</li>
-        <li>only refer to someone’s age if it’s relevant to what you’re writing about</li>
+        <li>use clear language</li>
+        <li>use simple tenses</li>
+        <li>avoid idioms, like ‘wear and tear’</li>
+        <li>avoid phrasal verbs, like ‘look up’ or ‘carry out’</li>
+        <li>write acronyms in full</li>
+        <li>avoid all contractions</li>
+        <li>check how it translates</li>
+        <li>consider images or videos</li>
+        <li>test language with users</li>
+        <li>consider translation services</li>
         </ul>
+      <p>Some of these principles can also be used to help make your services more accessible and inclusive to everyone.</p> 
 
-        <p>Do not:</p>
+        
+        <h2>Use clear language</h2>
+        <p>Words you think are clear language may not be clear to people with limited English. Home Office researchers found that words like 'identity', 'dialect' and 'immediate family' were not always well understood. The 'Home Office' ministerial department is sometimes confused with a spare room or home office. Research has found that technical language and long documents make people with limited English anxious. If you need to use technical language, provide a clear language explanation. For example, 'biometrics (your fingerprints and photo)'.</p> 
+        <p>When designing for people with limited English, try to: </p>
         <ul>
-        <li>use age-related descriptors like ‘young’ or ‘old’ - use specific age ranges, such as ‘18-24’ or ‘over 65’ </li>
-        </ul>
-        <h3>Disability</h3>
-        <p>Follow our <A href="https://ukhomeoffice.github.io/accessibility-posters/">accessible design principles</A> and consider how your language is inclusive to people who face different barriers to accessing services.</p>
-          <p>Do:</p>
-          <ul>
-          <li>clearly signpost users to alternative methods of accessing a service and get support, if needed</li>
-          <li>recognise the variety of barriers in society that can make life harder for people</li>
-          <li>use positive and person-centred language, when talking about people with disabilities - for example, 'people with health conditions or impairments'</li>
+          <li>match your writing to your users’ language levels</li>
+          <li>keep sentences short and <A href="https://contentdesign.london/blog/the-case-for-clear-language">on average 15 words</A></li>
+          <li>use the active voice</li>
           </ul>
 
-          <p>Do not:</p>
-          <ul>
-          <li>use language that implies conditions or disability being a barrier - instead focus on removing barriers that they might face in society</li>
+          <p>For more advice, read the <A href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk">GOV.UK guidance on using plain English</A>.</p>
+          
+      <h2>Use simple tenses</h2>
+        <p>The present and past tenses are the easiest to understand. Avoid sentences with complex tenses like ‘it will have worked’. </p> 
+        <p>You will often have to use the future tense. But you can sometimes avoid it by writing in the active voice. For example, ‘how your information will be used’ may be easier to understand written in the present tense: 'how we use your information'. </p>
+        <p>To make your content more direct, use the present tense instead of more complex verb constructions like ‘should have’ or 'would have'. </p>
+        <p>For example, instead of: </p>      
+      <ul>
+          <li>Before submitting this form, you should have completed the following steps.</li></ul>
+      <p>Use</p>
+          <ul><li>Before you submit this form, complete the next steps. </li></ul>
+          
+  <h2>Avoid idioms</h2>
+        <p>The English language has many idioms. We use them to make our services more conversational. Common expressions like 'by the book', 'red tape' or 'touch base' are not always clear to people with limited English and do not always translate well using translation tools like Google Translate or Bing Translator. </p> 
+        <p>Designers working on the passport application service found that users with limited English did not recognise 'wear and tear' as an expression to mean damage. Instead, they translated these words individually and mistakenly thought the statement did not apply to their passports as they were not torn.  </p>
+
+ <h2>Avoid idioms</h2>
+       <p>A phrasal verb is where you combine a verb with other words to make it mean something different, such as ‘carry out’, ‘get over’ or ‘look after’. English is full of them. But their meaning is not always clear until you have learned them.  </p>
+       <p>There is nearly always a one-word alternative to a phrasal verb that is easier to translate.  </p>
+      <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Instead of</th>
+      <th scope="col" class="govuk-table__header">Use</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">carry out </th>
+      <td class="govuk-table__cell">do, implement </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">fill in </th>
+      <td class="govuk-table__cell">complete</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">call off</th>
+      <td class="govuk-table__cell">cancel</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">get over </th>
+      <td class="govuk-table__cell">do, implement </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">look into </th>
+      <td class="govuk-table__cell">research, investigate </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">look up </th>
+      <td class="govuk-table__cell">search </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">look after </th>
+      <td class="govuk-table__cell">care for, be responsible for </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">turn down </th>
+      <td class="govuk-table__cell">reject </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">make out</th>
+      <td class="govuk-table__cell">understand</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">sort out </th>
+      <td class="govuk-table__cell">solve</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">point out</th>
+      <td class="govuk-table__cell">show</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">come up with</th>
+      <td class="govuk-table__cell">suggest</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">go over </th>
+      <td class="govuk-table__cell">check, examine</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">come across</th>
+      <td class="govuk-table__cell">find</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__cell">stick to</th>
+      <td class="govuk-table__cell">follow, maintain</td>
+    </tr>
+  </tbody>
+</table>
+<p>Use clear language whenever possible but if the alternative word translates better, consider using that instead. </p>
+
+      <h2>Use simple tenses</h2>
+      <p>Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. Write an acronym in full the first time you use it on a new page or screen, unless it is well known to 80% of your users, like UK, US or NHS. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. </p>
+      <p>Translation tools do not translate acronyms. For example, 'National Health Service (NHS)' translates to 'Serviço Nacional de Saúde (NHS)' in Portuguese. Users may not recognise 'NHS' on a later screen. </p>
+      <p>If available, use a tooltip, like acronym Markdown, to make the acronym appear in full as hover text.  </p>
+      <p>See more guidance on abbreviations and acronyms in the GOV.UK style guide. </p>
+
+      <h2>Avoid all contractions </h2>
+      <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users have limited English. Research suggests that contractions make content difficult to understand for people with limited fluency. See general guidance on contractions in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>. </p>
+       
+       <h2>Check how it translates</h2>
+        <p>People with limited English often use online translators, like Google Translate, DeepL, Bing Translator or a native phone app. Use a translation tool to translate your text into some of the languages used by your main user groups. Then translate it back into English using a different translator to sense check it. You may find that some words translate better than others.  </p> 
+        <p>Examples of words that may not translate well into the languages of your main user groups: </p>
+        <ul>
+          <li>deadline</li>
+          <li>get in touch</li>
+          <li>ethnicity</li>
+          <li>dependant</li>
           </ul>
-          <h3>Sex, gender and sexuality</h3>
-            <p>Do:</p>
-            <ul>
-            <li>only refer to a person’s sex or gender if relevant and there’s a reason why you’re collecting this data</li>
-            <li>allow for flexibility around this information, such as asking for both a person’s sex and their gender, to ensure that the data captured accurately represents the individual and their needs</li>
-            <li>allow people to self-describe - use language that reflects how a person refers to themselves</li>
-            </ul>
-            <h4>Sex</h4>
-              <p>Do:</p>
-              <ul>
-              <li>ask for, or refer to, a person’s sex only when it’s relevant for biological data, not when concerning how a person identifies</li>
-              <li>refer to the sex someone was registered with at birth</li>
-              <li>provide options other than male and female where possible</li>
-              <li>allow people to disclose whether their sex registered at birth is different from their sex at present if you need to understand a persons’ current needs</li>
-              </ul>
-            <div className="govuk-inset-text">
-            The UK currently does not use an X marker for sex on identity documents, meaning that identity documents cannot have a sex other than male or female. Current policy states that for Biometric Residence Permit (BRPs) or identity documents, caseworkers will need to contact individuals to ask for a preference for their identity documentation. If relevant to your service, you should inform users of this when providing an ‘other’ option for questions about their sex.
-            </div>
-            <h4>Gender</h4>
-              <p>Do:</p>
-              <ul>
-              <li>refer to gender when relevant to how a person identifies, rather than when referring to biological characteristics - for example, if you need this data to understand the needs of users for policing, housing or asylum accommodation purposes</li>
-              <li>use gender neutral pronouns - for example, ‘Alex Brown has settled status, they have the right to live and work in the UK’</li>
-              </ul>
-              <p>Do not:</p>
-              <ul>
-              <li>use language that reinforces harmful stereotypes and assumptions</li>
-              </ul>
-              <p>Find out more about how to ask users for their sex or gender in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the sex and gender pattern</A>.</p>
-              <h4>Sexuality</h4>
-                <p>Do:</p>
-                <ul>
-                <li>give a reason for asking a person’s sexuality, if you need to ask for it</li>
-                <li>always use gender neutral terms when referring to people and their relationships</li>
-                </ul>
-                <p>Do not:</p>
-                <ul>
-                <li>give ‘same-sex’ relationships as a different radio option from ‘spouse, partner or cohabitant’ in questions</li>
-                <li>use language that makes assumptions about a person’s sexuality </li>
-                </ul>
-              <h3>Ethnicity, nationality and religion</h3>
-                <p>Do:</p>
-                <ul>
-                <li>only refer to people’s ethnicity or religion if it’s relevant to the content </li>
-                <li>ask how people identify themselves, and be aware of complexities within ethnic and religious identities </li>
-                <li>recognise the negative impacts of using broad terminology to homogenise diverse communities</li>
-                </ul>
-                <h4>Ethnicity and nationality</h4>
-                <p>Do:</p>
-                <ul>
-                <li>sense-check your language with ethnic diversity in mind</li>
-                <li>capitalise ethnic groups and nationalities when writing about, or asking users for their, ethnicity or nationality</li>
-                </ul>
-                  <p>Do not:</p>
-                  <ul>
-                  <li>group diverse geographical regions together - spell out specific nationalities and ethnic groups when relevant</li>
-                  <li>use acronyms like 'BAME' or 'BME' - they do not refer to a singular homogeneous ethnic group</li>
-                  <li>use language that can be linked to harmful stereotypes and assumptions</li>
-                  </ul>
-                  <h4>Religion</h4>
-                  <p>Do:</p>
-                  <ul>
-                  <li>always consider the various religious practices and beliefs that people have - and recognise the diverse needs of people from different faiths in your writing</li>
 
-                  </ul>
-                    <p>Do not:</p>
-                    <ul>
-                    <li>use language that may inherently exclude those of different faiths - for example, referring to certain religious celebrations but not others </li>
-                    </ul>
-                    <h2 id="posters">Posters</h2>
-                    <p>Use our quick reference <A href="https://github.com/UKHomeOffice/posters/tree/master/design/Inclusive%20language">inclusive language posters</A> as best practice guidelines while you design and research.</p>
-                    <p>Download the posters for your office space and help colleagues think about how to write inclusively.</p>
+          <p>Content designers working on visa application forms have been using ‘money’ instead of ‘maintenance’ or ‘financial support’ because it translates better in some of the languages used by their users. </p>
+          <p>Use online translators for guidance purposes only. These are external websites which can change at any time. While they are improving, they are far from perfect. Do not put sensitive information into online translators because that information can be stored and you have no control over how it is used. </p>
 
-<h2>Help improve this guidance</h2>
-    <p>To contribute, send your request to <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk,</A> or add it to the <A href="https://github.com/UKHomeOffice/design-system/discussions/557">GitHub discussion</A>.</p>
+      <h2>Consider images or video</h2>
+      <p>In some cases, an image, diagram or video can communicate information more clearly. Research at UK arrival centres found that some people had difficulty finding their way using the text-only signage. To address this issue, designers produced a new signage system using text supported by images.</p>
+       
+      <p>INSERT IMAGE</p>
+      <p>Make sure you include text alternatives for users with visual access needs. </p>
 
+      <h2>Test language with users </h2>
+        <p>Guidance cannot replace the insight gained from testing your content with low-fluency English speakers. Content designers creating an asylum application form found that ‘medicine’ tested better than ‘medication’. The NHS style guide also advises using medicine.   </p> 
+        <p>Test all important content in your service, including, but not limited to:</p>
+        <ul>
+          <li>headings</li>
+          <li>labels</li>
+          <li>hint text</li>
+          <li>buttons</li>
+          <li>guidance text </li>
+          <li>error messages</li>
+          <li>alt text</li>
+          <li>conditional reveals </li>
+          </ul>
+      <p>Recruit participants with limited fluency and choose the most appropriate method for testing your content. For example, if some users need an interpreter to use your service, consider testing the service with an interpreter alongside a user.   </p>
+      <p></p>
 
+<h2>Consider translation services</h2>
+        <p>Could your service benefit from having professional translation and interpretation support to make it more accessible? </p> 
+        <p>If you identify a need to translate your content, consider:</p>
+        <ul>
+          <li>the number of alternative languages needed </li>
+          <li>if responses need to be translated</li>
+          <li>if content will be translated by a human or a machine</li>
+          <li>how translated content will be kept up to date </li>
+          <li>how to assure the quality of translated content  </li>
+          <li>error messages</li>
+          <li>what happens when funding for translation ends </li>
+          </ul>
+      
+      <p>Work with your team and stakeholders to understand the benefits and costs of hiring translation services. This isn’t just about business pressures. There may be risks if a service is only partially translated or something has been mistranslated. </p>
+      
+      <h2>Help improve this guidance/h2>
+      <p>To contribute, join the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
     </div>
   </div>
 );
