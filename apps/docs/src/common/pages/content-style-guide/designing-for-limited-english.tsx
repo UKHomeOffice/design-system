@@ -43,7 +43,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Some of these principles can also be used to help make your services more accessible and inclusive to everyone.</p> 
 
         
-        <h2>Use clear language id=“use-clear-language”</h2>
+        <h2 id="user-clear-language">Use clear language</h2>
         <p>Words you think are clear language may not be clear to people with limited English. Home Office researchers found that words like 'identity', 'dialect' and 'immediate family' were not always well understood. The 'Home Office' ministerial department is sometimes confused with a spare room or home office. Research has found that technical language and long documents make people with limited English anxious. If you need to use technical language, provide a clear language explanation. For example, 'biometrics (your fingerprints and photo)'.</p> 
         <p>When designing for people with limited English, try to: </p>
         <ul>
@@ -54,7 +54,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
           <p>For more advice, read the <A href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk">GOV.UK guidance on using plain English</A>.</p>
           
-      <h2>Use simple tenses id=“use-simple-tenses”</h2>
+      <h2 id="use-simple-tenses">Use simple tenses</h2>
         <p>The present and past tenses are the easiest to understand. Avoid sentences with complex tenses like ‘it will have worked’. </p> 
         <p>You will often have to use the future tense. But you can sometimes avoid it by writing in the active voice. For example, ‘how your information will be used’ may be easier to understand written in the present tense: 'how we use your information'. </p>
         <p>To make your content more direct, use the present tense instead of more complex verb constructions like ‘should have’ or 'would have'. </p>
@@ -64,11 +64,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Use</p>
           <ul><li>Before you submit this form, complete the next steps. </li></ul>
           
-  <h2>Avoid idioms id=“avoid-idioms”</h2>
+  <h2 id="avoid-idioms">Avoid idioms</h2>
         <p>The English language has many idioms. We use them to make our services more conversational. Common expressions like 'by the book', 'red tape' or 'touch base' are not always clear to people with limited English and do not always translate well using translation tools like Google Translate or Bing Translator. </p> 
         <p>Designers working on the passport application service found that users with limited English did not recognise 'wear and tear' as an expression to mean damage. Instead, they translated these words individually and mistakenly thought the statement did not apply to their passports as they were not torn.  </p>
 
- <h2>Avoid phrasal verbs id=“avoid-phrasal-verbs”</h2>
+ <h2 id="avoid-phrasal-verbs">Avoid phrasal verbs</h2>
        <p>A phrasal verb is where you combine a verb with other words to make it mean something different, such as ‘carry out’, ‘get over’ or ‘look after’. English is full of them. But their meaning is not always clear until you have learned them.  </p>
        <p>There is nearly always a one-word alternative to a phrasal verb that is easier to translate.  </p>
       <table className="govuk-table">
@@ -143,16 +143,16 @@ const Page: FC<PageProps> = ({ location }) => (
 </table>
 <p>Use clear language whenever possible but if the alternative word translates better, consider using that instead. </p>
 
-      <h2>write acronyms in full id=“write-acronyms-in-full”</h2>
+      <h2 id="write-acronyms-in-full">Write acronyms in full</h2>
       <p>Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. Write an acronym in full the first time you use it on a new page or screen, unless it is well known to 80% of your users, like UK, US or NHS. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. </p>
       <p>Translation tools do not translate acronyms. For example, 'National Health Service (NHS)' translates to 'Serviço Nacional de Saúde (NHS)' in Portuguese. Users may not recognise 'NHS' on a later screen. </p>
       <p>If available, use a tooltip, like acronym Markdown, to make the acronym appear in full as hover text.  </p>
       <p>See more guidance on abbreviations and acronyms in the GOV.UK style guide. </p>
 
-      <h2>Avoid all contractions id=“avoid-all-contractions”</h2>
+      <h2 id="avoid-all-contractions">Avoid all contractions</h2>
       <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users have limited English. Research suggests that contractions make content difficult to understand for people with limited fluency. See general guidance on contractions in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>. </p>
        
-       <h2>Check how it translates id=“check-how-it-translates”</h2>
+       <h2 id="check-how-it-translates">Check how it translates</h2>
         <p>People with limited English often use online translators, like Google Translate, DeepL, Bing Translator or a native phone app. Use a translation tool to translate your text into some of the languages used by your main user groups. Then translate it back into English using a different translator to sense check it. You may find that some words translate better than others.  </p> 
         <p>Examples of words that may not translate well into the languages of your main user groups: </p>
         <ul>
@@ -165,13 +165,13 @@ const Page: FC<PageProps> = ({ location }) => (
           <p>Content designers working on visa application forms have been using ‘money’ instead of ‘maintenance’ or ‘financial support’ because it translates better in some of the languages used by their users. </p>
           <p>Use online translators for guidance purposes only. These are external websites which can change at any time. While they are improving, they are far from perfect. Do not put sensitive information into online translators because that information can be stored and you have no control over how it is used. </p>
 
-      <h2>Consider images or video id=“consider-images-or-videos”</h2>
+      <h2 id="consider-images-or-videos">Consider images or video</h2>
       <p>In some cases, an image, diagram or video can communicate information more clearly. Research at UK arrival centres found that some people had difficulty finding their way using the text-only signage. To address this issue, designers produced a new signage system using text supported by images.</p>
        
       <p>INSERT IMAGE</p>
       <p>Make sure you include text alternatives for users with visual access needs. </p>
 
-      <h2>Test language with users id=“test-language-with-users”</h2>
+      <h2 id="test-language-with-users">Test language with users</h2>
         <p>Guidance cannot replace the insight gained from testing your content with low-fluency English speakers. Content designers creating an asylum application form found that ‘medicine’ tested better than ‘medication’. The NHS style guide also advises using medicine.   </p> 
         <p>Test all important content in your service, including, but not limited to:</p>
         <ul>
@@ -187,7 +187,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>Recruit participants with limited fluency and choose the most appropriate method for testing your content. For example, if some users need an interpreter to use your service, consider testing the service with an interpreter alongside a user.   </p>
       <p></p>
 
-<h2>Consider translation services id=“consider-translation-services”</h2>
+<h2 id="consider-translation-services">Consider translation services</h2>
         <p>Could your service benefit from having professional translation and interpretation support to make it more accessible? </p> 
         <p>If you identify a need to translate your content, consider:</p>
         <ul>
