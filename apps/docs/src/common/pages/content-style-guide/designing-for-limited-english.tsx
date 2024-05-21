@@ -68,7 +68,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>The English language has many idioms. We use them to make our services more conversational. Common expressions like 'by the book', 'red tape' or 'touch base' are not always clear to people with limited English and do not always translate well using translation tools like Google Translate or Bing Translator. </p> 
         <p>Designers working on the passport application service found that users with limited English did not recognise 'wear and tear' as an expression to mean damage. Instead, they translated these words individually and mistakenly thought the statement did not apply to their passports as they were not torn.  </p>
 
- <h2>Avoid idioms</h2>
+ <h2>Avoid phrasal verbs</h2>
        <p>A phrasal verb is where you combine a verb with other words to make it mean something different, such as ‘carry out’, ‘get over’ or ‘look after’. English is full of them. But their meaning is not always clear until you have learned them.  </p>
        <p>There is nearly always a one-word alternative to a phrasal verb that is easier to translate.  </p>
       <table className="govuk-table">
