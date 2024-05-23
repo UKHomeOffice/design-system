@@ -1,7 +1,7 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, DateInput, Details, Radios, TextInput, Select, Textarea } from '@not-govuk/components';
+import { A, DateInput, Details, Radios, TextInput, Select, Textarea, Fieldset } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
 export const title = 'Record given address';
