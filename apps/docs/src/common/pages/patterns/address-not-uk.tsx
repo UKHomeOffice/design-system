@@ -28,11 +28,11 @@ const Page: FC<PageProps> = ({ location }) => (
         <span className="caption">{subsection}</span>
         {title}
       </h1>
-      <p className="govuk-body">You can ask for addresses not in the UK in 3 ways. You can ask:</p>
+      <p className="govuk-body">Ask for address in different ways depending on what the user needs to do. They might need to enter:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li><A href="/patterns/address-not-uk/valuable-delivery">for a valuable delivery - most assurance</A></li>
-        <li><A href="/patterns/address-not-uk/familiar">for familiar address</A></li>
-        <li><A href="/patterns/address-not-uk/record-given-address">to record a given address - least assurance</A></li>
+        <li><A href="/patterns/address-not-uk/valuable-delivery">an address for something valuable to be delievered to</A></li>
+        <li><A href="/patterns/address-not-uk/familiar-address">a familiar address</A></li>
+        <li><A href="/patterns/address-not-uk/record-given-address">an address they have been given</A></li>
       </ul>
 
       <p className="govuk-body">The <A href="/patterns/address-not-uk/country-index">country index</A> has specific information about addresses in certain countries.</p>

@@ -1,7 +1,7 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, DateInput, Details, Radios, TextInput, Select } from '@not-govuk/components';
+import { A, DateInput, Details, Radios, TextInput, Select, Fieldset } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
 export const title = 'Valuable delivery address';
@@ -143,14 +143,22 @@ const Page: FC<PageProps> = ({ location }) => (
         <h1 className="govuk-heading-l">Enter your home address</h1>
         <h2 className="govuk-heading-m">Postcode</h2>
         <p className="govuk-body">9007 <A href="#postcode" className="govuk-link">Change</A></p>
-        <TextInput
-          label="Address line 1"
-          name="address-line-1"
-        />
-        <TextInput
-          label="Address line 2 (optional)"
-          name="address-line-2"
-        />
+        <Fieldset
+          legend={
+            <h2 className="govuk-heading-m">
+              Home address
+            </h2>
+          }
+        >
+          <TextInput
+            label="Address line 1"
+            name="address-line-1"
+          />
+          <TextInput
+            label="Address line 2 (optional)"
+            name="address-line-2"
+          />
+        </Fieldset>
         <h2 className="govuk-heading-m">Town or city</h2>
         <p className="govuk-body">Oslo</p>
         <Details summary="This is not the correct town or city">
@@ -166,40 +174,46 @@ const Page: FC<PageProps> = ({ location }) => (
         <h1 className="govuk-heading-l">Enter your home address</h1>
         <h2 className="govuk-heading-m">Postcode</h2>
         <p className="govuk-body">9007 <A href="#postcode" className="govuk-link">Change</A></p>
-        <TextInput
-          label="Address line 1"
-          name="address-line-1"
-        />
-        <TextInput
-          label="Address line 2 (optional)"
-          name="address-line-2"
-        />
-        <Select
-          label="Town or city"
-          name="town-city"
-          options={[
-            {
-              value: "3 towns or cities found",
-              label: "3 towns or cities found",
-              selected: true
-            },
-            {
-              value: "Bodo",
-              label: "Bodo",
-            },
-            {
-              value: "Oslo",
-              label: "Oslo",
-            },
-            {
-              value: "Tromso",
-              label: "Tromso",
-            }
-          ]}
-        />
-        <Details summary="I cannot find my town or city">
-          Check your postcode or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
-        </Details>
+        <Fieldset
+          legend={
+            <h2 className="govuk-heading-m">Home address</h2>
+          }
+        >
+          <TextInput
+            label="Address line 1"
+            name="address-line-1"
+          />
+          <TextInput
+            label="Address line 2 (optional)"
+            name="address-line-2"
+          />
+          <Select
+            label="Town or city"
+            name="town-city"
+            options={[
+              {
+                value: "3 towns or cities found",
+                label: "3 towns or cities found",
+                selected: true
+              },
+              {
+                value: "Bodo",
+                label: "Bodo",
+              },
+              {
+                value: "Oslo",
+                label: "Oslo",
+              },
+              {
+                value: "Tromso",
+                label: "Tromso",
+              }
+            ]}
+          />
+          <Details summary="I cannot find my town or city">
+            Check your postcode or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
+          </Details>
+        </Fieldset>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">Norway</p>
       </div>
@@ -210,6 +224,11 @@ const Page: FC<PageProps> = ({ location }) => (
         <h1 className="govuk-heading-l">Enter your home address</h1>
         <h2 className="govuk-heading-m">Postcode</h2>
         <p className="govuk-body">9007 <A href="#postcode" className="govuk-link">Change</A></p>
+        <Fieldset
+          legend={
+            <h2 className="govuk-heading-m">Home address</h2>
+          }
+        >
         <TextInput
           label="Address line 1"
           name="address-line-1"
@@ -225,6 +244,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <Details summary="I cannot find my town or city">
           Check your postcode or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
         </Details>
+        </Fieldset>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">Norway</p>
       </div>
@@ -331,8 +351,9 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">For address lines 1, 2 and town or city allow:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>free text inputs</li>
-        <li>accented characters</li>
+        <li>accented latin-based characters</li>
         <li>punctuation, such as full stops, commas, apostrophes, hypens, exclamation marks</li>
+        <li>numbers</li>
         <li>up to 255 characters</li>
         <li>a blank address line 2</li>
       </ul>

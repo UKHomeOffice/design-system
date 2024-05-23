@@ -1,7 +1,7 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, DateInput, Details, Radios, TextInput, Select } from '@not-govuk/components';
+import { A, DateInput, Details, Radios, TextInput, Select, Fieldset } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
 export const title = 'Familiar address';
@@ -32,7 +32,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Ask users to provide a familiar address not in the UK. This could be somewhere they live or have lived.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">This pattern is for services where there is little impact on the user for the address being incorrect or not recognised by another system.</p>
+      <p className="govuk-body">This pattern is for services where there is either:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>little impact on the user for the address being incorrect or not recognised by another system</li>
+        <li>other validation before the address is used</li>
+      </ul>
 
       <h2 className="govuk-heading-l">How it works</h2>
 
@@ -101,27 +105,32 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h3 className="govuk-heading-m">Manual entry</h3>
       <div className="app-example">
-        <h1 className="govuk-heading-l">Enter your home address</h1>
-
-        <TextInput
-          label={
-            <span className="govuk-label govuk-label--s">Address line 1</span>
-          }
-          name="address-line-1"
-        />
-        <TextInput
-          label="Address line 2 (optional)"
-          name="address-line-2"
-        />
-        <TextInput
-          label="Town or city"
-          name="town-city"
-        />
-        <TextInput
-          label="Postal code"
-          name="postal-code"
-          width={10}
-        />
+        <Fieldset
+          legend={
+            <h1 className="govuk-heading-l">
+              Enter your home address
+            </h1>
+          }>
+          <TextInput
+            label={
+              <span className="govuk-label govuk-label--s">Address line 1</span>
+            }
+            name="address-line-1"
+          />
+          <TextInput
+            label="Address line 2 (optional)"
+            name="address-line-2"
+          />
+          <TextInput
+            label="Town or city"
+            name="town-city"
+          />
+          <TextInput
+            label="Postal code"
+            name="postal-code"
+            width={10}
+          />
+        </Fieldset>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">St Pierre & Miquelon <A href="#country">Change <span className="govuk-visually-hidden">country</span></A></p>
       </div>
@@ -129,8 +138,9 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">For address lines 1, 2 and town or city allow:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>free text inputs</li>
-        <li>accented characters</li>
+        <li>accented latin-based characters</li>
         <li>punctuation, such as full stops, commas, apostrophes, hypens, exclamation marks</li>
+        <li>numbers</li>
         <li>up to 255 characters</li>
         <li>a blank address line 2</li>
       </ul>

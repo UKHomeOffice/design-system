@@ -47,30 +47,35 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">This structured format can be used to send letters with GOV.UK Notify. This is the maximum number of address lines GOV.UK Notify accepts. Ensure there is a process to handle with undeliverable letters.</p>
 
       <div className="app-example">
-        <h1 className="govuk-heading-l">Their home address</h1>
-
-        <TextInput
-          label={
-            <span className="govuk-label govuk-label--s">Address line 1</span>
-          }
-          name="address-line-1"
-        />
-        <TextInput
-          label="Address line 2 (optional)"
-          name="address-line-2"
-        />
-        <TextInput
-          label="Address line 3 (optional)"
-          name="address-line-3"
-        />
-        <TextInput
-          label="Address line 4 (optional)"
-          name="address-line-4"
-        />
-        <TextInput
-          label="Address line 5 (optional)"
-          name="address-line-5"
-        />
+        <Fieldset
+            legend={
+              <h1 className="govuk-heading-l">
+                Their home address
+              </h1>
+            }>
+          <TextInput
+            label={
+              <span className="govuk-label govuk-label--s">Address line 1</span>
+            }
+            name="address-line-1"
+          />
+          <TextInput
+            label="Address line 2 (optional)"
+            name="address-line-2"
+          />
+          <TextInput
+            label="Address line 3 (optional)"
+            name="address-line-3"
+          />
+          <TextInput
+            label="Address line 4 (optional)"
+            name="address-line-4"
+          />
+          <TextInput
+            label="Address line 5 (optional)"
+            name="address-line-5"
+          />
+        </Fieldset>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">St Pierre & Miquelon <A href="#country">Change <span className="govuk-visually-hidden">country</span></A></p>
       </div>
