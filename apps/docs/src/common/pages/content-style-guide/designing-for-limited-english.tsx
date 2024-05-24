@@ -55,16 +55,36 @@ const Page: FC<PageProps> = ({ location }) => (
           </ul>
 
           <p>For more advice, read the <A href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk">GOV.UK guidance on using plain English</A>.</p>
-          
-      <h2 id="use-simple-tenses">Use simple tenses</h2>
-        <p>The present and past tenses are the easiest to understand. Avoid sentences with complex tenses like ‘it will have worked’. </p> 
-        <p>You will often have to use the future tense. But you can sometimes avoid it by writing in the active voice. For example, ‘how your information will be used’ may be easier to understand written in the present tense: 'how we use your information'. </p>
-        <p>To make your content more direct, use the present tense instead of 'should have' or 'would have'. </p>
-        <p>For example, instead of: </p>      
-      <ul>
-          <li>Before submitting this form, you should have completed the following steps.</li></ul>
-      <p>Use</p>
-          <ul><li>Before you submit this form, complete the next steps. </li></ul>
+
+       <h2 id="check-how-it-translates">Check how it translates</h2>
+        <p>People with limited English often use online translators, like Google Translate, DeepL, Bing Translator or a native phone app. Use a translation tool to translate your text into some of the languages used by your main user groups. Then translate it back into English using a different translator to sense check it. You may find that some words translate better than others.  </p> 
+        <p>Examples of words that may not translate well into the languages of your main user groups: </p>
+        <ul>
+          <li>deadline</li>
+          <li>get in touch</li>
+          <li>ethnicity</li>
+          <li>dependant</li>
+          </ul>
+
+          <p>Content designers working on visa application forms have been using ‘money’ instead of ‘maintenance’ or ‘financial support’ because it translates better in some of the languages used by their users. </p>
+          <p>Use online translators for guidance purposes only. These are external websites which can change at any time. While they are improving, they are far from perfect. Do not put sensitive information into online translators because that information can be stored and you have no control over how it is used. </p>
+     
+
+      <h2 id="test-language-with-users">Test language with users</h2>
+        <p>Guidance cannot replace the insight gained from testing your content with low-fluency English speakers. Content designers creating an asylum application form found that ‘medicine’ tested better than ‘medication’. The NHS style guide also advises using medicine.   </p> 
+        <p>Test all important content in your service, including, but not limited to:</p>
+        <ul>
+          <li>headings</li>
+          <li>labels</li>
+          <li>hint text</li>
+          <li>buttons</li>
+          <li>guidance text </li>
+          <li>error messages</li>
+          <li>alt text</li>
+          <li>conditional reveals </li>
+          </ul>
+      <p>Recruit participants with limited fluency and choose the most appropriate method for testing your content. For example, if some users need an interpreter to use your service, consider testing the service with an interpreter alongside a user.   </p>
+      <p></p>
           
   <h2 id="avoid-idioms">Avoid idioms</h2>
         <p>The English language has many idioms. We use them to make our services more conversational. Common expressions like 'by the book', 'red tape' or 'touch base' are not always clear to people with limited English and do not always translate well using translation tools like Google Translate or Bing Translator. </p> 
@@ -145,6 +165,16 @@ const Page: FC<PageProps> = ({ location }) => (
 </table>
 <p>Use clear language whenever possible but if the alternative word translates better, consider using that instead. </p>
 
+       <h2 id="use-simple-tenses">Use simple tenses</h2>
+        <p>The present and past tenses are the easiest to understand. Avoid sentences with complex tenses like ‘it will have worked’. </p> 
+        <p>You will often have to use the future tense. But you can sometimes avoid it by writing in the active voice. For example, ‘how your information will be used’ may be easier to understand written in the present tense: 'how we use your information'. </p>
+        <p>To make your content more direct, use the present tense instead of 'should have' or 'would have'. </p>
+        <p>For example, instead of: </p>      
+      <ul>
+          <li>Before submitting this form, you should have completed the following steps.</li></ul>
+      <p>Use</p>
+          <ul><li>Before you submit this form, complete the next steps. </li></ul>
+      
       <h2 id="write-acronyms-in-full">Write acronyms in full</h2>
       <p>Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. Write an acronym in full the first time you use it on a new page or screen, unless it is well known to 80% of your users, like UK, US or NHS. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. </p>
       <p>Translation tools do not translate acronyms. For example, 'National Health Service (NHS)' translates to 'Serviço Nacional de Saúde (NHS)' in Portuguese. Users may not recognise 'NHS' on a later screen. </p>
@@ -154,18 +184,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 id="avoid-all-contractions">Avoid all contractions</h2>
       <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users have limited English. Research suggests that contractions make content difficult to understand for people with limited fluency. See general guidance on contractions in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>. </p>
        
-       <h2 id="check-how-it-translates">Check how it translates</h2>
-        <p>People with limited English often use online translators, like Google Translate, DeepL, Bing Translator or a native phone app. Use a translation tool to translate your text into some of the languages used by your main user groups. Then translate it back into English using a different translator to sense check it. You may find that some words translate better than others.  </p> 
-        <p>Examples of words that may not translate well into the languages of your main user groups: </p>
-        <ul>
-          <li>deadline</li>
-          <li>get in touch</li>
-          <li>ethnicity</li>
-          <li>dependant</li>
-          </ul>
-
-          <p>Content designers working on visa application forms have been using ‘money’ instead of ‘maintenance’ or ‘financial support’ because it translates better in some of the languages used by their users. </p>
-          <p>Use online translators for guidance purposes only. These are external websites which can change at any time. While they are improving, they are far from perfect. Do not put sensitive information into online translators because that information can be stored and you have no control over how it is used. </p>
+      
 
       <h2 id="consider-images-or-videos">Consider images or video</h2>
       <p>In some cases, an image, diagram or video can communicate information more clearly. Research at UK arrival centres found that some people had difficulty finding their way using the text-only signage. To address this issue, designers produced a new signage system using text supported by images.</p>
@@ -173,21 +192,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>INSERT IMAGE</p>
       <p>Make sure you include text alternatives for users with visual access needs. </p>
 
-      <h2 id="test-language-with-users">Test language with users</h2>
-        <p>Guidance cannot replace the insight gained from testing your content with low-fluency English speakers. Content designers creating an asylum application form found that ‘medicine’ tested better than ‘medication’. The NHS style guide also advises using medicine.   </p> 
-        <p>Test all important content in your service, including, but not limited to:</p>
-        <ul>
-          <li>headings</li>
-          <li>labels</li>
-          <li>hint text</li>
-          <li>buttons</li>
-          <li>guidance text </li>
-          <li>error messages</li>
-          <li>alt text</li>
-          <li>conditional reveals </li>
-          </ul>
-      <p>Recruit participants with limited fluency and choose the most appropriate method for testing your content. For example, if some users need an interpreter to use your service, consider testing the service with an interpreter alongside a user.   </p>
-      <p></p>
+      
 
 <h2 id="consider-translation-services">Consider translation services</h2>
         <p>Could your service benefit from having professional translation and interpretation support to make it more accessible? </p> 
