@@ -27,24 +27,26 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p>People who depend on Home Office services, such as visas, passports and asylum, are often not fluent in English.</p> 
       <p>This means important information in application forms, guidance pages and other tasks may be difficult to understand.</p> 
-      <p>We have identified 10 evidence-based principles to follow when writing for people with limited English: </p>
+      <p>We have identified 10 evidence-based principles to follow when designing for people with limited English: </p>
         <ul>
         <li><a href="#use-clear-language">use clear language</a></li>
-        <li><a href="#use-simple-tenses">use simple tenses</a></li>
+          <li><a href="#check-how-it-translates">check how it translates</a></li>
+          <li><a href="#test-language-with-users">test language with users</a></li>
         <li><a href="#avoid-idioms">avoid idioms, like ‘wear and tear’</a></li>
         <li><a href="#avoid-phrasal-verbs">avoid phrasal verbs, like ‘look up’ or ‘carry out’</a></li>
+           <li><a href="#use-simple-tenses">use simple tenses</a></li>
         <li><a href="#write-acronyms-in-full">write acronyms in full</a></li>
-        <li><a href="#avoid-all-contractions">avoid all contractions</a></li>
-        <li><a href="#check-how-it-translates">check how it translates</a></li>
-        <li><a href="#consider-images-or-videos">consider-images-or-videos</a></li>
-        <li><a href="#test-language-with-users">test language with users</a></li>
+        <li><a href="#avoid-all-contractions">avoid all contractions</a></li>        
+        <li><a href="#consider-images-or-videos">consider images or videos</a></li>
         <li><a href="#consider-translation-services">consider translation services</a></li>
         </ul>
-      <p>Some of these principles can also be used to help make your services more accessible and inclusive to everyone.</p> 
+      <p>Most of these principles will also make your content accessible and inclusive for everyone.</p> 
 
         
         <h2 id="user-clear-language">Use clear language</h2>
-        <p>Words you think are clear language may not be clear to people with limited English. Home Office researchers found that words like 'identity', 'dialect' and 'immediate family' were not always well understood. The 'Home Office' ministerial department is sometimes confused with a spare room or home office. Research has found that technical language and long documents make people with limited English anxious. If you need to use technical language, provide a clear language explanation. For example, 'biometrics (your fingerprints and photo)'.</p> 
+      <p>People with limited English need to read every word, unlike fluent speakers who often skim read. They may need to stop regularly to translate something. Reading this way takes a lot longer and can make information harder to remember.</p>  
+      <p>Words you think are clear language may not be clear to people with limited English. Home Office researchers found that words like 'identity', 'dialect' and 'immediate family' were not always well understood. The 'Home Office' ministerial department is sometimes confused with a spare room or home office.</p>
+        <p>Research has found that technical language and long documents make people with limited English anxious. If you need to use technical language, provide a clear language explanation. For example, 'biometrics (your fingerprints and photo)'.</p> 
         <p>When designing for people with limited English, try to: </p>
         <ul>
           <li>match your writing to your users’ language levels</li>
@@ -57,7 +59,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 id="use-simple-tenses">Use simple tenses</h2>
         <p>The present and past tenses are the easiest to understand. Avoid sentences with complex tenses like ‘it will have worked’. </p> 
         <p>You will often have to use the future tense. But you can sometimes avoid it by writing in the active voice. For example, ‘how your information will be used’ may be easier to understand written in the present tense: 'how we use your information'. </p>
-        <p>To make your content more direct, use the present tense instead of more complex verb constructions like ‘should have’ or 'would have'. </p>
+        <p>To make your content more direct, use the present tense instead of 'should have' or 'would have'. </p>
         <p>For example, instead of: </p>      
       <ul>
           <li>Before submitting this form, you should have completed the following steps.</li></ul>
