@@ -5,7 +5,7 @@ import { A, DateInput, Details, Radios, TextInput, Select, Fieldset } from '@not
 import { menu } from '../../patterns';
 
 export const title = 'Familiar address';
-const description = 'How to ask users for a familiar address not in the UK';
+const description = 'How to ask users for a familiar address outside the UK';
 const section = 'Patterns';
 const subsection = 'Ask users for';
 
@@ -29,7 +29,7 @@ const Page: FC<PageProps> = ({ location }) => (
         {title}
       </h1>
 
-      <p className="govuk-body">Ask users to provide a familiar address not in the UK. This could be somewhere they live or have lived.</p>
+      <p className="govuk-body">Ask users for an address they know or are familiar with. This could be somewhere they live or have lived.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p className="govuk-body">This pattern is for services where there is either:</p>
@@ -40,14 +40,25 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">How it works</h2>
 
-      <h3 className="govuk-heading-m">Country</h3>
-      <p className="govuk-body">If you do not already know the country, ask for the country that you are collecting the address in. This enables future improvements for users by reducing the effort to tweaking how addresses are collected for each country.</p>
+      <p className="govuk-body">If you do not already know the country, ask for the country that you are collecting the address in.</p>
 
+      <p className="govuk-body">Ask for country first because the manual address format can be adjusted for particular countries. For example your research may show for users in particular countries find entering an address easier if:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>there are extra lines for 'state' or 'province'</li>
+        <li>'zip code' is used instead of 'postal code'</li>
+      </ul>
+
+      <p className="govuk-body">Check the <A href="country-list">country list</A> for variations found helpful in other Home Office services.</p>
+
+      <h3 className="govuk-heading-m">Country</h3>
+      
       <p className="govuk-body">Consider the list of countries you allow users to select from. There are territories, such as Puerto Rico, that are not recognised as separate by the <A href="https://www.gov.uk/government/publications/geographical-names-and-information">FCDO geographical names index</A>. Some of these have specific address needs that may be different from the internationally recognised ‘country’.</p>
+
+      <p className="govuk-body">If asking for previous addresses, consider whether users can select countries that no longer exist.</p>
 
       <p className="govuk-body">Do not include the 3 letter country code, unless there is evidence your users understand them.</p>
 
-      <p className="govuk-body">Consider providing users an option if they cannot find the country in the list.</p>
+      <p className="govuk-body">Consider providing users with an option if they cannot find the country in the list.</p>
 
       <div className="app-example">
         <Select
@@ -108,13 +119,12 @@ const Page: FC<PageProps> = ({ location }) => (
         <Fieldset
           legend={
             <h1 className="govuk-heading-l">
-              Enter your home address
+              What is your address?
             </h1>
-          }>
+          }
+          className="govuk-!-width-two-thirds">
           <TextInput
-            label={
-              <span className="govuk-label govuk-label--s">Address line 1</span>
-            }
+            label="Address line 1"
             name="address-line-1"
           />
           <TextInput
@@ -124,6 +134,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <TextInput
             label="Town or city"
             name="town-city"
+            className="govuk-!-width-two-thirds"
           />
           <TextInput
             label="Postal code"
@@ -138,7 +149,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">For address lines 1, 2 and town or city allow:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>free text inputs</li>
-        <li>accented latin-based characters</li>
+        <li>letters a to z, lowercase, and uppercase, including accents (extended latin character set)</li>
         <li>punctuation, such as full stops, commas, apostrophes, hypens, exclamation marks</li>
         <li>numbers</li>
         <li>up to 255 characters</li>
@@ -148,14 +159,18 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">For postal code allow:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>free text inputs</li>
-        <li>up to 10 characters</li>
+        <li>numbers (0 to 9)</li>
+        <li>letters A to Z (unaccented)</li>
+        <li>spaces</li>
+        <li>hyphens</li>
+        <li>up to 10 letters and numbers</li>
       </ul>
 
       <h2 className="govuk-heading-l">Accessibility</h2>
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">Familiar address not in the UK is used by:</p>
+      <p className="govuk-body">Familiar address outside the UK is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li></li>
       </ul>

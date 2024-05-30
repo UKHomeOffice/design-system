@@ -5,7 +5,7 @@ import { A, DateInput, Details, Radios, TextInput, Select, Fieldset } from '@not
 import { menu } from '../../patterns';
 
 export const title = 'Valuable delivery address';
-const description = 'How to ask users for a valuable delivery address not in the UK';
+const description = 'How to ask users for a valuable delivery address outside the UK';
 const section = 'Patterns';
 const subsection = 'Ask users for';
 
@@ -29,10 +29,10 @@ const Page: FC<PageProps> = ({ location }) => (
         {title}
       </h1>
 
-      <p className="govuk-body">Ask users to provide reliable addresses for a valuable delivery.</p>
+      <p className="govuk-body">Ask users to provide reliable addresses to delivery something valuable.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">This pattern is for services where the user has a barrier to completing the service if the address is incorrect.</p>
+      <p className="govuk-body">This pattern is for services where the user has a barrier to completing the service if the address is incorrect. For example, not being able to receive an important document.</p>
       <p className="govuk-body">Consider if a process to correct the address after the user has entered it would resolve this barrier.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
@@ -101,13 +101,13 @@ const Page: FC<PageProps> = ({ location }) => (
         <p className="govuk-body"><A href="#manual-entry">I cannot find the country in the list</A></p>
       </div>
 
-      <h3 className="govuk-heading-m" id="postcode">Postcode</h3>
+      <h3 className="govuk-heading-m" id="postal-code">Postal code</h3>
 
-      <p className="govuk-body">Only ask for a postcode if you know the country uses them.</p>
+      <p className="govuk-body">Only ask for a postal code if you know the country uses them.</p>
 
       <p className="govuk-body">Include an option for users to enter their address manually.</p>
 
-      <p className="govuk-body">If possible, use the country specific word for the postcode, such as 'postal code', 'zipcode'. If not, use 'postal code'</p>
+      <p className="govuk-body">If possible, use the country specific word for the postal code, such as 'postcode', 'zipcode', or 'Eircode'. If not, use 'postal code'. Check the <A href="/patterns/address-outside-uk/country-list">country list</A>.</p>
 
       <div className="app-example">
         <TextInput
@@ -117,22 +117,22 @@ const Page: FC<PageProps> = ({ location }) => (
         <p className="govuk-body"><A href="#manual-entry">Enter address manually</A></p>
       </div>
 
-      <h4 className="govuk-heading-s">Postcode to town</h4>
+      <h4 className="govuk-heading-s">Postal code to town</h4>
 
-      <p className="govuk-body">Some delivery companies have a defined list of towns or city for each postcode or country.</p>
+      <p className="govuk-body">Some delivery companies have a defined list of towns or city for each postal code or country.</p>
 
       <p className="govuk-body">Only use if the spelling of the town or city impacts the user.</p>
 
       <p className="govuk-body">Allow users to:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>change the postcode</li>
+        <li>change the postal code</li>
         <li>enter the full address manually.</li>
       </ul>
 
       <p className="govuk-body">For address lines 1 and 2 allow:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>free text inputs</li>
-        <li>accented latin-based characters</li>
+        <li>letters a to z, lowercase, and uppercase, including accents (extended latin character set)</li>
         <li>punctuation, such as full stops, commas, apostrophes, hypens, exclamation marks</li>
         <li>a blank address line 2</li>
       </ul>
@@ -140,13 +140,13 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">If there is only one town or city:</p>
 
       <div className="app-example">
-        <h1 className="govuk-heading-l">Enter your home address</h1>
-        <h2 className="govuk-heading-m">Postcode</h2>
-        <p className="govuk-body">9007 <A href="#postcode" className="govuk-link">Change</A></p>
+        <h1 className="govuk-heading-l">What is your address?</h1>
+        <h2 className="govuk-heading-m">Postal code</h2>
+        <p className="govuk-body">9007 <A href="#postal-code" className="govuk-link">Change</A></p>
         <Fieldset
           legend={
             <h2 className="govuk-heading-m">
-              Home address
+              Address
             </h2>
           }
         >
@@ -162,7 +162,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h2 className="govuk-heading-m">Town or city</h2>
         <p className="govuk-body">Oslo</p>
         <Details summary="This is not the correct town or city">
-          Check your postcode or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
+          Check your postal code or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
         </Details>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">Norway</p>
@@ -171,12 +171,12 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">If there are 2 to 10 towns or cities, use the Select component to allow the town or city to be selected. Show how many towns or cities are in the list.</p>
 
       <div className="app-example">
-        <h1 className="govuk-heading-l">Enter your home address</h1>
-        <h2 className="govuk-heading-m">Postcode</h2>
-        <p className="govuk-body">9007 <A href="#postcode" className="govuk-link">Change</A></p>
+        <h1 className="govuk-heading-l">What is your address?</h1>
+        <h2 className="govuk-heading-m">Postal code</h2>
+        <p className="govuk-body">9007 <A href="#postal-code" className="govuk-link">Change</A></p>
         <Fieldset
           legend={
-            <h2 className="govuk-heading-m">Home address</h2>
+            <h2 className="govuk-heading-m">Address</h2>
           }
         >
           <TextInput
@@ -211,7 +211,7 @@ const Page: FC<PageProps> = ({ location }) => (
             ]}
           />
           <Details summary="I cannot find my town or city">
-            Check your postcode or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
+            Check your postal code or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
           </Details>
         </Fieldset>
         <h2 className="govuk-heading-m">Country</h2>
@@ -221,12 +221,12 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">If there are more than 10 towns or cities, use autosuggest to allow the town or city to be selected:</p>
 
       <div className="app-example">
-        <h1 className="govuk-heading-l">Enter your home address</h1>
-        <h2 className="govuk-heading-m">Postcode</h2>
-        <p className="govuk-body">9007 <A href="#postcode" className="govuk-link">Change</A></p>
+        <h1 className="govuk-heading-l">What is your address?</h1>
+        <h2 className="govuk-heading-m">Postal code</h2>
+        <p className="govuk-body">9007 <A href="#postal-code" className="govuk-link">Change</A></p>
         <Fieldset
           legend={
-            <h2 className="govuk-heading-m">Home address</h2>
+            <h2 className="govuk-heading-m">Address</h2>
           }
         >
         <TextInput
@@ -242,27 +242,27 @@ const Page: FC<PageProps> = ({ location }) => (
           name="town-city"
         />
         <Details summary="I cannot find my town or city">
-          Check your postcode or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
+          Check your postal code or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
         </Details>
         </Fieldset>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">Norway</p>
       </div>
 
-      <h4 className="govuk-heading-s">Postcode to address</h4>
-      <p className="govuk-body">Sometimes there is a defined list of addresses for each postcode in a country.</p>
-      <p className="govuk-body">Use when users are familiar with this use of postcodes.</p>
+      <h4 className="govuk-heading-s">Postal code to address</h4>
+      <p className="govuk-body">Sometimes there is a defined list of addresses for each postal code in a country.</p>
+      <p className="govuk-body">Use when users are familiar with this use of postal code.</p>
       <p className="govuk-body">Allow users to:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>select the address from an autosuggest</li>
-        <li>change the postcode</li>
+        <li>change the postal code</li>
         <li>enter their address manually</li>
       </ul>
 
       <div className="app-example">
         <Select
           label={
-            <h1 className="govuk-heading-l">Select your address</h1>
+            <h1 className="govuk-heading-l">What is your address?</h1>
           }
           name="address"
           options={[
@@ -273,34 +273,34 @@ const Page: FC<PageProps> = ({ location }) => (
             }
           ]}
         />
-        <h2 className="govuk-heading-m">Postcode</h2>
-        <p className="govuk-body">A65 F4E2 <A href="#postcode" className="govuk-link">Change</A></p>
+        <h2 className="govuk-heading-m">Postal code</h2>
+        <p className="govuk-body">A65 F4E2 <A href="#postal-code" className="govuk-link">Change</A></p>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">Ireland</p>
         <p className="govuk-body"><A href="#manual-entry" className="govuk-link">I cannot find my address in the list</A></p>
       </div>
       
-      <p className="govuk-body">If there are no addresses for the postcode, allow the user to change the postcode or enter their address manually. For example:</p>
+      <p className="govuk-body">If there are no addresses for the postal code, allow the user to change the postal code or enter their address manually. For example:</p>
 
       <div className="app-example">
         <h1 className="govuk-heading-l">No addresses found</h1>
-        <h2 className="govuk-heading-m">Postcode</h2>
-        <p className="govuk-body">A65 F4E2 <A href="#postcode" className="govuk-link">Change</A></p>
+        <h2 className="govuk-heading-m">Postal code</h2>
+        <p className="govuk-body">A65 F4E2 <A href="#postal-code" className="govuk-link">Change</A></p>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">Ireland</p>
         <p className="govuk-body"><A href="#manual-entry" className="govuk-link">Enter address manually</A></p>
       </div>
 
-      <h3 className="govuk-heading-m">No postcode</h3>
+      <h3 className="govuk-heading-m">No postal code</h3>
 
-      <p className="govuk-body">If there are no postcodes, consider using a complete list of towns or cities in that country. Without a list, small villages or regions may be entered.</p>
+      <p className="govuk-body">If there are no postal codes, consider using a complete list of towns or cities in that country. Without a list, small villages or regions may be entered.</p>
 
-      <p className="govuk-body">Balance the need of the user to recieve their delivery with the barrier of interaction.</p>
+      <p className="govuk-body">Balance the need of the user to receive their delivery with the barrier of interaction.</p>
 
       <div className="app-example">
-        <h1 className="govuk-heading-l">Enter your home address</h1>
-        <h2 className="govuk-heading-m">Postcode</h2>
-        <p className="govuk-body">9007 <A href="#postcode" className="govuk-link">Change</A></p>
+        <h1 className="govuk-heading-l">What is your address?</h1>
+        <h2 className="govuk-heading-m">Postal code</h2>
+        <p className="govuk-body">9007 <A href="#postal-code" className="govuk-link">Change</A></p>
         <TextInput
           label="Address line 1"
           name="address-line-1"
@@ -318,12 +318,12 @@ const Page: FC<PageProps> = ({ location }) => (
         <p className="govuk-body">Norway</p>
       </div>
 
-      <p className="govuk-body">In some places, like Bermuda, users expect a postcode field, even though some delivery companies do not accept them. In this case, ask for the postcode optionally, and do not share it with the delivery company.</p>
+      <p className="govuk-body">In some places, like Bermuda, users expect a postal code field, even though some delivery companies do not accept them. In this case, ask for the postal code optionally, and do not share it with the delivery company.</p>
 
       <h3 className="govuk-heading-m" id="manual-entry">Manual entry</h3>
 
       <div className="app-example">
-        <h1 className="govuk-heading-l">Enter your home address</h1>
+        <h1 className="govuk-heading-l">What is your address?</h1>
 
         <TextInput
           label={
@@ -351,7 +351,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">For address lines 1, 2 and town or city allow:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>free text inputs</li>
-        <li>accented latin-based characters</li>
+        <li>letters a to z, lowercase, and uppercase, including accents (extended latin character set)</li>
         <li>punctuation, such as full stops, commas, apostrophes, hypens, exclamation marks</li>
         <li>numbers</li>
         <li>up to 255 characters</li>
@@ -368,7 +368,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">Valuable delivery address not in the UK is used by:</p>
+      <p className="govuk-body">Valuable delivery address outside the UK is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>Apply for a passport</li>
       </ul>

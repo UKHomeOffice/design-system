@@ -8,23 +8,23 @@ export const menu = (
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users for</span>
     <NavigationMenu items={[
       {
-        href: '/patterns/address-not-uk',
-        text: 'Address not in the UK'
+        href: '/patterns/address-outside-uk',
+        text: 'Address outside the UK'
       },
       {
-        href: '/patterns/address-not-uk/valuable-delivery',
-        text: '- Valuable delivery'
+        href: '/patterns/address-outside-uk/delivery-address',
+        text: '- Delivery address'
       },
       {
-        href: '/patterns/address-not-uk/familiar-address',
+        href: '/patterns/address-outside-uk/familiar-address',
         text: '- Familiar address'
       },
       {
-        href: '/patterns/address-not-uk/record-given-address',
+        href: '/patterns/address-outside-uk/record-given-address',
         text: '- Given address'
       },
       {
-        href: '/patterns/address-not-uk/country-list',
+        href: '/patterns/address-outside-uk/country-list',
         text: '- Country list'
       },    
       {

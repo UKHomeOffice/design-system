@@ -5,7 +5,7 @@ import { A, DateInput, Details, Radios, TextInput, Select, Textarea, Fieldset } 
 import { menu } from '../../patterns';
 
 export const title = 'Record given address';
-const description = 'How to ask users for a given address not in the UK';
+const description = 'How to ask users for a given address outside the UK';
 const section = 'Patterns';
 const subsection = 'Ask users for';
 
@@ -32,7 +32,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Ask users to enter an address that they have been given.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">This pattern is for internal services where both:</p>
+      <p className="govuk-body">This pattern is for internal services where:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>there is a need to record an address that is not verified</li>
         <li>staff are given addresses to record</li>
@@ -40,11 +40,13 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h2 className="govuk-heading-l">How it works</h2>
 
-      <p className="govuk-body">Check whether there is a need to record the data in a structured format.</p>
+      <p className="govuk-body">Check whether there is a need to record the data in a structured format. For example, the address may be recorded in a database that requires a particular format.</p>
 
       <h3 className="govuk-heading-m">Structured address lines</h3>
 
-      <p className="govuk-body">This structured format can be used to send letters with GOV.UK Notify. This is the maximum number of address lines GOV.UK Notify accepts. Ensure there is a process to handle with undeliverable letters.</p>
+      <p className="govuk-body">This structured format can be used to send letters with GOV.UK Notify. This is the maximum number of address lines GOV.UK Notify accepts.</p>
+      
+      <p className="govuk-body">Ensure there is a process to handle with undeliverable letters.</p>
 
       <div className="app-example">
         <Fieldset
@@ -102,7 +104,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <p className="govuk-body">Allow:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>accented latin-based characters</li>
+       <li>letters a to z, lowercase, and uppercase, including accents (extended latin character set)</li>
         <li>punctuation, such as full stops, commas, apostrophes, hypens, exclamation marks</li>
         <li>numbers</li>
       </ul>
@@ -111,7 +113,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">Record a given address not in the UK is used by:</p>
+      <p className="govuk-body">Record a given address outside the UK is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>an internal reporting service for operational Border Force officers</li>
       </ul>
