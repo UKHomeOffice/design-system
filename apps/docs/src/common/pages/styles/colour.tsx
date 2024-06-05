@@ -66,9 +66,9 @@ const Page: FC<PageProps> = ({ location }) => (
 
         <h3 className="govuk-heading-m" style={{marginTop: "1.5em", marginBottom: "0.5em"}}>Page background</h3>
         <div className="colour-swatch">
-          <span className="app-swatch" style={{backgroundColor: "#f1f1f1", border: "1px solid #CBCBCB"}}></span>
+          <span className="app-swatch" style={{backgroundColor: "#f5f5f5", border: "1px solid #CBCBCB"}}></span>
           <div className="hex">
-            #f1f1f1
+            #f5f5f5
           </div>
           <div className="colour-info">
             <p>
