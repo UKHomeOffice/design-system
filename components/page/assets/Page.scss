@@ -52,9 +52,9 @@ html {
       border-color: $hods-secondary-button-shadow-colour;
       border-width: $hods-secondary-button-border-width $hods-secondary-button-border-width 0 $hods-secondary-button-border-width;
       // Padding must be adjusted to account for new border size
-      padding: (govuk-spacing(2) - $hods-secondary-button-border-width)
-               (govuk-spacing(2) + $govuk-border-width-form-element - $hods-secondary-button-border-width)
-               (govuk-spacing(2) - ($button-shadow-size / 2));
+      padding: calc(govuk-spacing(2) - $hods-secondary-button-border-width)
+               calc(govuk-spacing(2) + $govuk-border-width-form-element - $hods-secondary-button-border-width)
+               calc(govuk-spacing(2) - ($button-shadow-size / 2));
       box-shadow: 0 $button-shadow-size 0 $hods-secondary-button-shadow-colour;
 
       &,
@@ -76,9 +76,9 @@ html {
       &:focus {
         // Must reinstate original border widths and padding
         border-width: $govuk-border-width-form-element;
-        padding: (govuk-spacing(2) - $govuk-border-width-form-element)
+        padding: calc(govuk-spacing(2) - $govuk-border-width-form-element)
                  govuk-spacing(2)
-                 (govuk-spacing(2) - $govuk-border-width-form-element - ($button-shadow-size / 2));
+                 calc(govuk-spacing(2) - $govuk-border-width-form-element - ($button-shadow-size / 2));
       }
     }
   }
