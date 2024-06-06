@@ -8,6 +8,8 @@ export const title = 'Limited English';
 const description = 'Designing for people with limited English';
 export const section = 'Accessibility';
 
+const applyImageInline = require('../../../../assets/images/content-style-guide/Biometrics sign.png');
+
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
     <Helmet>
@@ -189,7 +191,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 id="consider-images-or-videos">Consider images or video</h2>
       <p>In some cases, an image, diagram or video can communicate information more clearly. Research at UK arrival centres found that some people had difficulty finding their way using the text-only signage. To address this issue, designers produced a new signage system using text supported by images.</p>
        
-      <p>INSERT IMAGE</p>
+      <img src={applyImageInline} alt="Sign showing camera and fingerprint icons to explain in different languages how biometric information is taken." className="image-examples" />
+      
       <p>Make sure you include text alternatives for users with visual access needs. </p>
 
       
