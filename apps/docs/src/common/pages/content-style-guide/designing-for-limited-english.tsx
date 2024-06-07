@@ -192,7 +192,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>In some cases, an image, diagram or video can communicate information more clearly. Research at UK arrival centres found that some people had difficulty finding their way using the text-only signage. To address this issue, designers produced a new signage system using text supported by images.</p>
        
       <img src={biometricsSign} alt="Sign showing camera and fingerprint icons to explain in different languages how biometric information is taken." className="image-examples" />
-      
+      <p></p>
       <p>Make sure you include text alternatives for users with visual access needs. </p>
 
       
