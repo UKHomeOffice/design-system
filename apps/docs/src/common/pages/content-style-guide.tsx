@@ -9,7 +9,7 @@ const description = 'How to write content for Home Office services.';
 
 export const menu = (
   <Fragment>
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users for</span>
+    
     <NavigationMenu items={[
       {
         href: '/accessibility/inclusive-language',
