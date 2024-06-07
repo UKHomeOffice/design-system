@@ -8,7 +8,7 @@ export const title = 'Limited English';
 const description = 'Designing for people with limited English';
 export const section = 'Accessibility';
 
-const applyImageInline = require('../../../../assets/images/content-style-guide/Biometrics sign.png');
+const biometricsSign = require('../../../../assets/images/content-style-guide/Biometrics sign.png');
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
