@@ -34,8 +34,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><a href="#use-clear-language">use clear language</a></li>
           <li><a href="#check-how-it-translates">check how it translates</a></li>
           <li><a href="#test-language-with-users">test language with users</a></li>
-        <li><a href="#avoid-idioms">avoid idioms, like ‘wear and tear’</a></li>
-        <li><a href="#avoid-phrasal-verbs">avoid phrasal verbs, like ‘look up’ or ‘carry out’</a></li>
+        <li><a href="#avoid-idioms">avoid idioms, like 'wear and tear'</a></li>
+        <li><a href="#avoid-phrasal-verbs">avoid phrasal verbs, like 'look up' or 'carry out'</a></li>
            <li><a href="#use-simple-tenses">use simple tenses</a></li>
         <li><a href="#write-acronyms-in-full">write acronyms in full</a></li>
         <li><a href="#avoid-all-contractions">avoid all contractions</a></li>        
@@ -68,12 +68,12 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>dependant</li>
           </ul>
 
-          <p>Content designers working on visa application forms have been using ‘money’ instead of ‘maintenance’ or ‘financial support’ because it translates better in some of the languages used by their users. </p>
+          <p>Content designers working on visa application forms have been using 'money' instead of 'maintenance' or 'financial support' because it translates better in some of the languages used by their users. </p>
           <p>Use online translators for guidance purposes only. These are external websites which can change at any time. While they are improving, they are far from perfect. Do not put sensitive information into online translators because that information can be stored and you have no control over how it is used. </p>
      
 
       <h2 id="test-language-with-users">Test language with users</h2>
-        <p>Guidance cannot replace the insight gained from testing your content with low-fluency English speakers. Content designers creating an asylum application form found that ‘medicine’ tested better than ‘medication’. The NHS style guide also advises using medicine.   </p> 
+        <p>Guidance cannot replace the insight gained from testing your content with low-fluency English speakers. Content designers creating an asylum application form found that 'medicine' tested better than 'medication'. The NHS style guide also advises using medicine.</p> 
         <p>Test all important content in your service, including, but not limited to:</p>
         <ul>
           <li>headings</li>
@@ -85,7 +85,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>alt text</li>
           <li>conditional reveals </li>
           </ul>
-      <p>Recruit participants with limited fluency and choose the most appropriate method for testing your content. For example, if some users need an interpreter to use your service, consider testing the service with an interpreter alongside a user.   </p>
+      <p>Recruit participants with limited English and choose the most appropriate method for testing your content. For example, if some users need an interpreter to use your service, consider testing the service with an interpreter alongside a user.   </p>
       <p></p>
           
   <h2 id="avoid-idioms">Avoid idioms</h2>
@@ -93,8 +93,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Designers working on the passport application service found that users with limited English did not recognise 'wear and tear' as an expression to mean damage. Instead, they translated these words individually and mistakenly thought the statement did not apply to their passports as they were not torn.  </p>
 
  <h2 id="avoid-phrasal-verbs">Avoid phrasal verbs</h2>
-       <p>A phrasal verb is where you combine a verb with other words to make it mean something different, such as ‘carry out’, ‘get over’ or ‘look after’. English is full of them. But their meaning is not always clear until you have learned them.  </p>
-       <p>There is nearly always a one-word alternative to a phrasal verb that is easier to translate.  </p>
+       <p>A phrasal verb is where you combine a verb with other words to make it mean something different, such as 'carry out', 'get over' or 'look after'. English is full of them. But their meaning is not always clear until you have learned them.  </p>
+       <p>There is nearly always a one-word alternative to a phrasal verb that is easier to translate. Use clear language whenever possible but if you have an alternative that translates better, consider using that instead. </p> </p>
       <table className="govuk-table">
   <thead className="govuk-table__head">
     <tr className="govuk-table__row">
@@ -165,11 +165,11 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
   </tbody>
 </table>
-<p>Use clear language whenever possible but if the alternative word translates better, consider using that instead. </p>
+
 
        <h2 id="use-simple-tenses">Use simple tenses</h2>
         <p>The present and past tenses are the easiest to understand. Avoid sentences with complex tenses like ‘it will have worked’. </p> 
-        <p>You will often have to use the future tense. But you can sometimes avoid it by writing in the active voice. For example, ‘how your information will be used’ may be easier to understand written in the present tense: 'how we use your information'. </p>
+        <p>You will often have to use the future tense. But you can sometimes avoid it by writing in the active voice. For example, 'how your information will be used' may be easier to understand written in the present tense: 'how we use your information'. </p>
         <p>To make your content more direct, use the present tense instead of 'should have' or 'would have'. </p>
         <p>For example, instead of: </p>      
       <ul>
@@ -180,11 +180,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 id="write-acronyms-in-full">Write acronyms in full</h2>
       <p>Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. Write an acronym in full the first time you use it on a new page or screen, unless it is well known to 80% of your users, like UK, US or NHS. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. </p>
       <p>Translation tools do not translate acronyms. For example, 'National Health Service (NHS)' translates to 'Serviço Nacional de Saúde (NHS)' in Portuguese. Users may not recognise 'NHS' on a later screen. </p>
-      <p>If available, use a tooltip, like acronym Markdown, to make the acronym appear in full as hover text.  </p>
-      <p>See more guidance on abbreviations and acronyms in the GOV.UK style guide. </p>
+      <p>If available, use a tooltip, like <A href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown">acronym Markdown</A>, so that when a user hovers over the acronym they see it written in full as 'alt text'.</p>
+      <p>See more guidance on abbreviations and acronyms in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>. </p>
 
       <h2 id="avoid-all-contractions">Avoid all contractions</h2>
-      <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users have limited English. Research suggests that contractions make content difficult to understand for people with limited fluency. See general guidance on contractions in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>. </p>
+      <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users have limited English. Research suggests that contractions make content difficult to understand for people with limited English. See general guidance on contractions in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>. </p>
        
       
 
@@ -193,7 +193,9 @@ const Page: FC<PageProps> = ({ location }) => (
        
       <img src={biometricsSign} alt="Sign showing camera and fingerprint icons to explain in different languages how biometric information is taken." className="image-examples" />
       <p></p>
-      <p>Make sure you include text alternatives for users with visual access needs. </p>
+      <p>Make sure you include text alternatives with images for users with visual access needs. </p>
+    
+    <p>Research with vulnerable users on the eVisa service found that most participants, including fluent English speakers, found the written guidance too long and technical. They said the information in the What is an eVisa video was easier to understand.</p>
 
       
 
@@ -210,7 +212,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>what happens when funding for translation ends </li>
           </ul>
       
-      <p>Work with your team and stakeholders to understand the benefits and costs of hiring translation services. This isn’t just about business pressures. There may be risks if a service is only partially translated or something has been mistranslated. </p>
+      <p>Work with your team and stakeholders to understand the benefits and costs of hiring translation services. This is not just about business pressures. There may be risks if a service is only partially translated or something has been mistranslated. </p>
       
       <h2>Help improve this guidance</h2>
       <p>To contribute, join the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
