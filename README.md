@@ -104,6 +104,6 @@ We publish our documentation site when pushing to the `master` branch.
 [components/]: ./components/
 [pnpm-workspaces.yaml]: ./pnpm-workspaces.yaml
 [plopfile.js]: ./plopfile.js
-[install pnpm]: https://pnpm.js.org/en/installation
+[install pnpm]: https://pnpm.io/installation
 [PLOP]: https://plopjs.com/
 [documentation application]: ./apps/docs
