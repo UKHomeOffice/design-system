@@ -96,8 +96,8 @@ const Page: FC<PageProps> = ({ location }) => (
        <p>A phrasal verb is where you combine a verb with other words to make it mean something different, such as ‘carry out’, ‘get over’ or ‘look after’. English is full of them. But their meaning is not always clear until you have learned them.  </p>
        <p>There is nearly always a one-word alternative to a phrasal verb that is easier to translate.  </p>
 
-       <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-half">
+       <div className="govuk-grid-row">
+  <div className="govuk-grid-column-one-half">
 
       <table className="govuk-table">
   <thead className="govuk-table__head">
