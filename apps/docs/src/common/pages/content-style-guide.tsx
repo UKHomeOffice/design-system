@@ -21,7 +21,7 @@ export const menu = (
       },
       {
         href: '/content-style-guide/designing-for-limited-english',
-        text: 'Writing for limited English'
+        text: 'Designing for users with limited English'
       }
     ]} />
   </Fragment>
