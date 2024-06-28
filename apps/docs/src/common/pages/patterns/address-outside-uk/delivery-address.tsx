@@ -4,8 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, Radios, TextInput, Select, Fieldset } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
-export const title = 'Valuable delivery address';
-const description = 'How to ask users for a valuable delivery address outside the UK';
+export const title = 'Delivery address';
+const description = 'How to ask users for a delivery address outside the UK';
 const section = 'Patterns';
 const subsection = 'Ask users for';
 
@@ -29,7 +29,7 @@ const Page: FC<PageProps> = ({ location }) => (
         {title}
       </h1>
 
-      <p className="govuk-body">Ask users to provide reliable addresses to delivery something valuable.</p>
+      <p className="govuk-body">Ask users to provide reliable addresses to deliver something valuable.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p className="govuk-body">This pattern is for services where the user will receive a delivery some something valuable to this address.</p>
