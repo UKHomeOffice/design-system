@@ -32,7 +32,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Ask users to provide reliable addresses to delivery something valuable.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">This pattern is for services where the user has a barrier to completing the service if the address is incorrect. For example, not being able to receive an important document.</p>
+      <p className="govuk-body">This pattern is for services where the user will receive a delivery some something valuable to this address.</p>
+      <p className="govuk-body">This pattern is more complicated for the user to complete, and should only be used if a wrong address has a significant negative impact on the user.</p>
       <p className="govuk-body">Consider if a process to correct the address after the user has entered it would resolve this barrier.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
@@ -113,6 +114,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <TextInput
           label="Postal code"
           name="postal-code"
+          width={10}
         />
         <p className="govuk-body"><A href="#manual-entry">Enter address manually</A></p>
       </div>

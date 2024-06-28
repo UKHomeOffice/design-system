@@ -32,17 +32,17 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Ask users to enter an address that they have been given.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p className="govuk-body">This pattern is for internal services where:</p>
-      <ul className="govuk-list govuk-list--bullet">
-        <li>there is a need to record an address that is not verified</li>
-        <li>staff are given addresses to record</li>
-      </ul>
+      <p className="govuk-body">This pattern is for internal services where staff are given addresses to record.</p>
 
       <h2 className="govuk-heading-l">How it works</h2>
 
-      <p className="govuk-body">Check whether there is a need to record the data in a structured format. For example, the address may be recorded in a database that requires a particular format.</p>
+      <p className="govuk-body">Check whether there is a need to record the data in a structured format. For example:</p>
+      <ul className="govuk-list govuk-list--bullet">
+        <li>the address may be recorded in a database that requires a particular format</li>
+        <li>another part of the service may require another user to read the address</li>
+      </ul>
 
-      <h3 className="govuk-heading-m">Structured address lines</h3>
+      <h3 className="govuk-heading-m">Structured address</h3>
 
       <p className="govuk-body">This structured format can be used to send letters with GOV.UK Notify. This is the maximum number of address lines GOV.UK Notify accepts.</p>
       
@@ -52,7 +52,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <Fieldset
             legend={
               <h1 className="govuk-heading-l">
-                Their home address
+                What is their home address?
               </h1>
             }>
           <TextInput
@@ -84,11 +84,11 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <h3 className="govuk-heading-m">Not structured</h3>
 
-      <p className="govuk-body">If there is no need for structured information, users find it easier to record address in an unstructured format:</p>
+      <p className="govuk-body">If there is no need for structured information, consider recording the address in an unstructured format:</p>
 
       <div className="app-example">
         <Textarea
-          label="Their home address"
+          label="What is their home address?"
           name="unstructured-address"
           rows={5}
         />

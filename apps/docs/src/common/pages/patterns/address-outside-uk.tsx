@@ -30,9 +30,9 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p className="govuk-body">Ask for an address in different ways depending on what the user needs to do. They might need to enter an address:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li><A href="/patterns/address-not-uk/valuable-delivery">for something valuable to be delivered to</A></li>
-        <li><A href="/patterns/address-not-uk/familiar-address">where they live, have lived, or are otherwise familiar with</A></li>
-        <li><A href="/patterns/address-not-uk/record-given-address">they have been given</A></li>
+        <li><A href="/patterns/address-outside-uk/delivery-address">for something valuable to be delivered to</A></li>
+        <li><A href="/patterns/address-outside-uk/familiar-address">where they live, have lived, or are otherwise familiar with</A></li>
+        <li><A href="/patterns/address-outside-uk/record-given-address">they have been given</A></li>
       </ul>
 
       <p className="govuk-body">The <A href="/patterns/address-not-uk/country-index">country index</A> has specific information about addresses in certain countries.</p>
