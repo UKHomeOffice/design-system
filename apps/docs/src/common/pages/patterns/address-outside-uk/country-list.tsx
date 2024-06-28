@@ -5,10 +5,10 @@ import { AZNavigation } from '@hods/components';
 import { A } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
-export const title = 'Country index';
+export const title = 'Country list';
 const description = 'Describes the address differences in different countries';
 const section = 'Patterns';
-const subsection = 'Ask users for addresses';
+const subsection = 'Ask users for an address outside the UK';
 
 const Page: FC<PageProps> = ({ location }) => (
 <div className="govuk-grid-row">
@@ -30,7 +30,7 @@ const Page: FC<PageProps> = ({ location }) => (
         {title}
       </h1>
 
-      <p className="govuk-body">The address needs of some territories may be different from the FCDO country list or delivery company data.</p>
+      <p className="govuk-body">The address needs of some territories may be different from the <a href="https://www.gov.uk/government/publications/geographical-names-and-information">FCDO country list</a> or delivery company data.</p>
 
       <AZNavigation id="a-z-nav" />
 
