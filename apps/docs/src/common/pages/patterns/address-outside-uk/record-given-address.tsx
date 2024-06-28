@@ -56,9 +56,7 @@ const Page: FC<PageProps> = ({ location }) => (
               </h1>
             }>
           <TextInput
-            label={
-              <span className="govuk-label govuk-label--s">Address line 1</span>
-            }
+            label="Address line 1"
             name="address-line-1"
           />
           <TextInput
