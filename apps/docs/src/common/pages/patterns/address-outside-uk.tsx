@@ -35,7 +35,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><A href="/patterns/address-outside-uk/record-given-address">they have been given</A></li>
       </ul>
 
-      <p className="govuk-body">The <A href="/patterns/address-not-uk/country-index">country index</A> has specific information about addresses in certain countries.</p>
+      <p className="govuk-body">The <A href="/patterns/address-outside-uk/country-index">country index</A> has specific information about addresses in certain countries.</p>
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p className="govuk-body">This is for both internal staff members and members of the public providing addresses.</p>
