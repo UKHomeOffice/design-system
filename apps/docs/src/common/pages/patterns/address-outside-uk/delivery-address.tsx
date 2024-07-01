@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, Radios, TextInput, Select, Fieldset } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
-export const title = 'Delivery address';
+export const title = 'Delivery address outside the UK';
 const description = 'How to ask users for a delivery address outside the UK';
 const section = 'Patterns';
 const subsection = 'Ask users for';
@@ -40,67 +40,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Explain why you are asking for this address. This helps users understand why they need to provide it and why in this way.</p>
 
       <h3 className="govuk-heading-m">Country</h3>
-      <p className="govuk-body">If you do not already know the country, ask for the country that you are collecting the address in. Use this to ask for the address in the format for that country.</p>
-
-      <p className="govuk-body">Consider the list of countries you allow users to select from. There are territories, such as Puerto Rico, that are not recognised as separate by the <A href="https://www.gov.uk/government/publications/geographical-names-and-information">FCDO geographical names index</A>. Some of these have specific address needs that may be different from the internationally recognised ‘country’.</p>
-
-      <p className="govuk-body">Do not include the 3 letter country code, unless there is evidence your users understand them.</p>
-
-      <p className="govuk-body">Consider providing users an option if they cannot find the country in the list.</p>
-
-      <div className="app-example">
-        <Select
-          label="Which country or territory do you currently live in?"
-          name="country-or-territory"
-          options={[
-            {
-              value: "France",
-              label: "France"
-            },
-            {
-              value: "United Kingdom",
-              label: "United Kingdom"
-            }
-          ]}
-        />
-        <p className="govuk-body"><A href="#">I cannot find the country in the list</A></p>
-      </div>
-
-      <p className="govuk-body">If there is a particular country your users are more likely to live in, ask with a radio button first:</p>
-
-      <div className="app-example">
-        <Radios
-          label="Do you currently live in ((country name))?"
-          name="country-or-territory"
-          options={[
-            {
-              value: "yes",
-              label: "Yes"
-            },
-            {
-              value: "no",
-              label: "No",
-              conditional: (
-                <Select
-                  label="Which country or territory do you currently live in?"
-                  name="country-or-territory"
-                  options={[
-                    {
-                      value: "France",
-                      label: "France"
-                    },
-                    {
-                      value: "United Kingdom",
-                      label: "United Kingdom"
-                    }
-                  ]}
-                />
-              )
-            }
-          ]}
-        />
-        <p className="govuk-body"><A href="#manual-entry">I cannot find the country in the list</A></p>
-      </div>
+      <p className="govuk-body">If you do not already know the country, ask for the country that you are collecting the address in - use the <A href="/patterns/address-outside-uk">address outside the UK</A> pattern.</p>
 
       <h3 className="govuk-heading-m" id="postal-code">Postal code</h3>
 
@@ -119,7 +59,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <p className="govuk-body"><A href="#manual-entry">Enter address manually</A></p>
       </div>
 
-      <h4 className="govuk-heading-s">Postal code to town</h4>
+      <h4 className="govuk-heading-s">Use the postal code to get possible towns</h4>
 
       <p className="govuk-body">Some delivery companies have a defined list of towns or city for each postal code or country.</p>
 
@@ -151,6 +91,7 @@ const Page: FC<PageProps> = ({ location }) => (
               Address
             </h2>
           }
+          className="govuk-!-width-two-thirds"
         >
           <TextInput
             label="Address line 1"
@@ -180,6 +121,7 @@ const Page: FC<PageProps> = ({ location }) => (
           legend={
             <h2 className="govuk-heading-m">Address</h2>
           }
+          className="govuk-!-width-two-thirds"
         >
           <TextInput
             label="Address line 1"
@@ -230,6 +172,7 @@ const Page: FC<PageProps> = ({ location }) => (
           legend={
             <h2 className="govuk-heading-m">Address</h2>
           }
+          className="govuk-!-width-two-thirds"
         >
         <TextInput
           label="Address line 1"
@@ -242,6 +185,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <TextInput
           label="Town or city"
           name="town-city"
+          className="govuk-!-width-two-thirds"
         />
         <Details summary="I cannot find my town or city">
           Check your postal code or <A href="#manual-entry" className="govuk-link">enter your address manually</A>.
@@ -251,7 +195,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <p className="govuk-body">Norway</p>
       </div>
 
-      <h4 className="govuk-heading-s">Postal code to address</h4>
+      <h4 className="govuk-heading-s">Use the postal code to get possible addresses</h4>
       <p className="govuk-body">Sometimes there is a defined list of addresses for each postal code in a country.</p>
       <p className="govuk-body">Use when users are familiar with this use of postal code.</p>
       <p className="govuk-body">Allow users to:</p>
@@ -303,6 +247,12 @@ const Page: FC<PageProps> = ({ location }) => (
         <h1 className="govuk-heading-l">What is your address?</h1>
         <h2 className="govuk-heading-m">Postal code</h2>
         <p className="govuk-body">9007 <A href="#postal-code" className="govuk-link">Change</A></p>
+        <Fieldset
+          legend={
+            <h2 className="govuk-heading-m">Address</h2>
+          }
+          className="govuk-!-width-two-thirds"
+        >
         <TextInput
           label="Address line 1"
           name="address-line-1"
@@ -314,7 +264,9 @@ const Page: FC<PageProps> = ({ location }) => (
         <TextInput
           label="Town or city"
           name="town-city"
+          className="govuk-!-width-two-thirds"
         />
+        </Fieldset>
         <p className="govuk-body"><A href="#manual-entry" className="govuk-link">I cannot find my town or city</A>.</p>
         <h2 className="govuk-heading-m">Country</h2>
         <p className="govuk-body">Norway</p>
@@ -325,29 +277,34 @@ const Page: FC<PageProps> = ({ location }) => (
       <h3 className="govuk-heading-m" id="manual-entry">Manual entry</h3>
 
       <div className="app-example">
-        <h1 className="govuk-heading-l">What is your address?</h1>
-
-        <TextInput
-          label={
-            <span className="govuk-label govuk-label--s">Address line 1</span>
+        <Fieldset
+          legend={
+            <h1 className="govuk-heading-l">
+              What is your address?
+            </h1>
           }
-          name="address-line-1"
-        />
-        <TextInput
-          label="Address line 2 (optional)"
-          name="address-line-2"
-        />
-        <TextInput
-          label="Town or city"
-          name="town-city"
-        />
-        <TextInput
-          label="Postal code"
-          name="postal-code"
-          width={10}
-        />
+          className="govuk-!-width-two-thirds">
+          <TextInput
+            label="Address line 1"
+            name="address-line-1"
+          />
+          <TextInput
+            label="Address line 2 (optional)"
+            name="address-line-2"
+          />
+          <TextInput
+            label="Town or city"
+            name="town-city"
+            className="govuk-!-width-two-thirds"
+          />
+          <TextInput
+            label="Postal code"
+            name="postal-code"
+            width={10}
+          />
+        </Fieldset>
         <h2 className="govuk-heading-m">Country</h2>
-        <p className="govuk-body">St Pierre & Miquelon</p>
+        <p className="govuk-body">Saint Pierre and Miquelon</p>
       </div>
 
       <p className="govuk-body">For address lines 1, 2 and town or city allow:</p>
@@ -370,7 +327,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Consider that users may need more than one method for capturing the information. What do they do if they hit a barrier?</p>
 
       <h2 className="govuk-heading-l">Research</h2>
-      <p className="govuk-body">Valuable delivery address outside the UK is used by:</p>
+      <p className="govuk-body">Delivery address outside the UK is used by:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>Apply for a passport</li>
       </ul>

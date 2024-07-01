@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, Radios, TextInput, Select, Textarea, Fieldset } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
-export const title = 'Record given address';
+export const title = 'Record given address outside the UK';
 const description = 'How to ask users for a given address outside the UK';
 const section = 'Patterns';
 const subsection = 'Ask users for';
@@ -34,6 +34,8 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2 className="govuk-heading-l">When to use this pattern</h2>
       <p className="govuk-body">This pattern is for internal services where staff are given addresses to record.</p>
 
+      <p className="govuk-body">Staff may be given written addresses and may not know which address line is a 'Town or city'.</p>
+
       <h2 className="govuk-heading-l">How it works</h2>
 
       <p className="govuk-body">Check whether there is a need to record the data in a structured format. For example:</p>
@@ -54,7 +56,9 @@ const Page: FC<PageProps> = ({ location }) => (
               <h1 className="govuk-heading-l">
                 What is their home address?
               </h1>
-            }>
+            }
+            className="govuk-!-width-two-thirds"
+            >
           <TextInput
             label="Address line 1"
             name="address-line-1"
@@ -77,7 +81,7 @@ const Page: FC<PageProps> = ({ location }) => (
           />
         </Fieldset>
         <h2 className="govuk-heading-m">Country</h2>
-        <p className="govuk-body">St Pierre & Miquelon <A href="#country">Change <span className="govuk-visually-hidden">country</span></A></p>
+        <p className="govuk-body">Saint Pierre and Miquelon <A href="#country">Change <span className="govuk-visually-hidden">country</span></A></p>
       </div>
 
       <h3 className="govuk-heading-m">Not structured</h3>
@@ -89,9 +93,10 @@ const Page: FC<PageProps> = ({ location }) => (
           label="What is their home address?"
           name="unstructured-address"
           rows={5}
+          className="govuk-!-width-two-thirds"
         />
         <h2 className="govuk-heading-m">Country</h2>
-        <p className="govuk-body">St Pierre & Miquelon <A href="#country">Change <span className="govuk-visually-hidden">country</span></A></p>
+        <p className="govuk-body">Saint Pierre and Miquelon <A href="#country">Change <span className="govuk-visually-hidden">country</span></A></p>
       </div>
 
       <p className="govuk-body">If you need to limit:</p>

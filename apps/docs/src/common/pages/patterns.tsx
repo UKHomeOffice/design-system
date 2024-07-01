@@ -16,10 +16,6 @@ export const menu = (
         text: '- Delivery address'
       },
       {
-        href: '/patterns/address-outside-uk/familiar-address',
-        text: '- Familiar address'
-      },
-      {
         href: '/patterns/address-outside-uk/record-given-address',
         text: '- Given address'
       },
