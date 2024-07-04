@@ -57,7 +57,7 @@ const Page: FC<PageProps> = ({ location }) => (
     <p>Consider giving your discussion topic a deadline of a few weeks.</p>
     <h3>4. Summarise the discussion</h3>
     <p>Use the comments to make a suggestion for an improvement or a new entry.</p>
-    <p>Contact <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> if you'd like feedback on your discussion or for the design system working group to review it.</p>
+    <p>Contact <A href="mailto:ucdops@homeoffice.gov.uk">ucdops@homeoffice.gov.uk</A> if you'd like feedback on your discussion or for the design system working group to review it.</p>
     <h3>5. Updating the design system</h3>
     <p>The <A href="/contribute/design-system-working-group">design system working group</A> regularly assess discussions using the <A href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribute criteria</A>.</p>
     <p>If the pattern or component is  ready to be published, the working group will then raise an issue and progress this work further.</p>
