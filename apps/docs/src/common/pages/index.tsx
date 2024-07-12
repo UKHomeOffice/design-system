@@ -23,9 +23,11 @@ const Page: FC<PageProps> = props => (
       <div className="govuk-grid-column-one-third">
         <aside>
           <h2>Updates</h2>
-          <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 23 October 2023</p>
+          <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 12 July 2024</p>
           <ul className="govuk-!-font-size-16">
-            <li>Help users to <A href="/patterns/stop-a-service-timing-out">stop a service timing out</A></li>
+            <li>Added a guide for <A href="/content-style-guide/designing-for-limited-english">designing for people with limited English</A></li>
+            <li>Improved accessibility of our <A href="/components?name=Button">secondary buttons</A></li>
+            <li>Updated <A href="/accessibility/standard">Accessibility Standard</A> to Version 1.2</li>
           </ul>
         </aside>
         <aside>
