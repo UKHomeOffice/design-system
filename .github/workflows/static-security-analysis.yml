@@ -14,7 +14,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Scan code-base
         uses: ./.github/actions/scan-code

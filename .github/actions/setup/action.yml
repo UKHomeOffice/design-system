@@ -19,19 +19,19 @@ runs:
         sudo update-locale LANG=${{ env.LANG }}
 
     - name: Setup PNPM
-      uses: pnpm/action-setup@v2.2.4
+      uses: pnpm/action-setup@v3.0.0
       with:
         version: 7.33.6
         run_install: false
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node }}
         cache: 'pnpm'
 
     - name: Cache Cypress.io
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       env:
         cache-hash: ${{ hashFiles('pnpm-lock.yaml') }}
       with:
@@ -40,7 +40,7 @@ runs:
 
     - name: Pull dependencies
       if: ${{ !inputs.frozen-lockfile || inputs.frozen-lockfile == 'false' }}
-      uses: pnpm/action-setup@v2.2.4
+      uses: pnpm/action-setup@v3.0.0
       with:
         version: 7.33.6
         run_install: |
@@ -49,7 +49,7 @@ runs:
 
     - name: Pull dependencies (frozen lock-file)
       if: ${{ inputs.frozen-lockfile && inputs.frozen-lockfile != 'false' }}
-      uses: pnpm/action-setup@v2.2.4
+      uses: pnpm/action-setup@v3.0.0
       with:
         version: 7.33.6
         run_install: true

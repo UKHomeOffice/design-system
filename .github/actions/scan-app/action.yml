@@ -31,7 +31,7 @@ runs:
       run: |
         PRETTY_TARGET="${TARGET#https://}"
         echo "write-issue=$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'false' || echo 'true')" >> ${GITHUB_OUTPUT}
-        echo "fail-action=$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'true' || true)" >> ${GITHUB_OUTPUT}
+        echo "fail-action=$([[ \"${GITHUB_REF#refs/heads/}\" != \"${BASELINE_BRANCH}\" ]] && echo 'true' || echo 'false')" >> ${GITHUB_OUTPUT}
         echo "prefix=${PRETTY_TARGET:-${APP}}" >> ${GITHUB_OUTPUT}
         echo "target=${TARGET:-http://localhost:8080}" >> ${GITHUB_OUTPUT}
 
