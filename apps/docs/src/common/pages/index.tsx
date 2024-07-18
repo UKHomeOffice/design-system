@@ -27,7 +27,7 @@ const Page: FC<PageProps> = props => (
           <ul className="govuk-!-font-size-16">
             <li>Added a guide for <A href="/content-style-guide/designing-for-limited-english">designing for people with limited English</A></li>
             <li>Improved accessibility of our <A href="/components?name=Button">secondary buttons</A></li>
-            <li>Updated <A href="/accessibility/standard">Accessibility Standard</A> to Version 1.2</li>
+            <li>Updated <A href="/accessibility/standard">Accessibility Standard</A> to version 1.2</li>
           </ul>
         </aside>
         <aside>
