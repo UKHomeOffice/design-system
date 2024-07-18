@@ -42,7 +42,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>If you have a question or idea, you can contact the working group:</p>
       <ul>
         <li>on the Home Office #ho-design-system Slack channel</li>
-        <li>by email at <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A></li>
+        <li>by email at <A href="mailto:ucdops@homeoffice.gov.uk">ucdops@homeoffice.gov.uk</A></li>
       </ul>
     </div>
   </div>
