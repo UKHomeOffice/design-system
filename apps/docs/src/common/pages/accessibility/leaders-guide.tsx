@@ -221,13 +221,13 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Most people are aware that there are legal requirements around accessibility, though not necessarily what they are. This is sometimes used as the ultimate threat to force compliance.</p>
         <p>The relevant laws are:</p>
         <h4>The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</h4> 
-        <p>The Central Digital and Data Office (CDDO) is responsible for monitoring public sector website compliance. It has the power to request information and demand access to any public sector organisation’s web content – both intranet and public-facing materials. If a public sector body fails to publish an accessibility statement on their website – or one that is not accurate – the CCDO will publish the organisation’s name. Enforcement falls under the Equality and Human Rights Commission (except in Northern Ireland).</p>
+        <p>The Government Digital Service (GDS) is responsible for monitoring public sector website compliance. It has the power to request information and demand access to any public sector organisation’s web content – both intranet and public-facing materials. If a public sector body fails to publish an accessibility statement on their website – or one that is not accurate – the CCDO will publish the organisation’s name. Enforcement falls under the Equality and Human Rights Commission (except in Northern Ireland).</p>
         <h4>Equality Act 2010</h4>
         <p>Legally protects people from discrimination in the workplace and in wider society.</p>
         <p>You might find it useful to refer to the GOV.UK guidance <A href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">Understanding accessibility requirements for public sector bodies</A>:</p>
         <p>Your website or mobile app will meet legal requirements if you:</p>
         <ul>
-          <li>meet the <A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag">international WCAG 2.2 AA accessibility standard</A></li>
+          <li>meet the <A href="https://www.w3.org/TR/WCAG22/">international WCAG 2.2 AA accessibility standard</A></li>
           <li>publish an accessibility statement that explains how accessible your website or mobile app is</li>
         </ul>
         <h4>Financial, time and resource costs</h4>
@@ -287,7 +287,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>Continue user research, including participants with a range of access needs</li>
         </ul>
         <h4>Beta</h4>
-        <p>Building your product and releasing it while you continue to make improvements. A private beta is only open to a few users. A public beta is open to anyone who needs to use the service.</p>
+        <p>Building your product and releasing it while you continue to make improvements. A private beta is only open to a limited number of users. A public beta is open to anyone who needs to use the service.</p>
         <ul>
           <li>Design according to <A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag">accessibility principles</A>.</li>
           <li><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility">Test for accessibility</A> regularly.</li>
@@ -370,7 +370,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>Ask for an update on accessibility in team meetings.</li>
           <li><A href="https://www.gov.uk/government/publications/sample-accessibility-statement">Read the sample accessibility statement</A> and start to think about how yours might look.</li>
           <li>Sit in on a user research session with a participant who has access needs. If your team doesn’t have a user researcher, ask around—observers and note takers are usually welcome.</li>
-          <li>If you have online forums such as Teams, Slack, Viva, Engage or Yammer, join an accessibility channel (for example #accessibility in the UK Government Digital Slack workspace). They’ll answer questions and post useful links. There’s also the <A href="https://groups.google.com/a/digital.cabinet-office.gov.uk/forum/#!forum/accessibility-community">Cross-government accessibility community</A>.</li>
+          <li>If you have online forums such as Teams, Slack, Viva Engage or Yammer, join an accessibility channel (for example #accessibility in the UK Government Digital Slack workspace). They’ll answer questions and post useful links. There’s also the <A href="https://www.gov.uk/service-manual/communities/accessibility-community#get-involved">Cross-government accessibility community</A>.</li>
           <li>Find out if your organisation has an Accessibility Champions’ Network (or something similar), and attend their meetings whenever possible. If not, consider starting one.</li>
           <li>Make increasing accessibility knowledge a learning objective for yourself or someone you manage (with their agreement!).</li>
           <li>Allocate time and budget for team members to have accessibility training.</li>
@@ -404,7 +404,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3>HTML</h3>
         <p>HyperText Markup Language: the code used to define elements of a web page, for example headers, paragraphs and images.</p>
         <h3>PSBAR</h3>
-        <p>The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.: regulations that set standards for web accessibility.</p>
+        <p>The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 regulations that set standards for web accessibility.</p>
         <h3>W3C</h3>
         <p>The World Wide Web Consortium: develops standards and guidelines for the web, including accessibility standards.</p>
         <h3>WCAG</h3>
