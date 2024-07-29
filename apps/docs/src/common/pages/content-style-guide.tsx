@@ -49,11 +49,13 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="abroad">abroad</h3>
         <p>'Abroad' and 'overseas' can cause confusion. Try to use plain English. For example, 'apply from outside the UK' or 'working in another country'.</p>
         <h3 id="account">account</h3>
-        <p>Use 'create an account' rather than 'register an account' or ‘set up an account’.</p>
+        <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
         <h3 id="acronyms">acronyms</h3>
         <p>Write out an acronym in full the first time you use it on a new page or screen, unless it is well known to your users, like UK, US or NHS. Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. If available, use a tooltip like <A href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown#acronyms">acronym Markdown</A> to make the acronym appear in full as hover text. See more guidance on abbreviations and acronyms in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
         <h3 id="alter">alter</h3>
         <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
+         <h3 id="authorising officer">authorising officer</h3>
+        <p>Lower case. You can use the acronym 'AO' after the first full mention.</p>
         <h3 id="asylum claimant">asylum claimant</h3>
         <p>You can use either 'asylum claimant' or 'asylum applicant' to describe someone who has applied for asylum in the UK. Do not use both in the same product or service.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -222,7 +224,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="life in the uk test">Life in the UK Test</h3>
         <p>Capitalise the ‘L’ and ‘T’. After first mention, you can refer to ‘the test’, using lower case.</p>
         <h3 id="log in">log in</h3>
-        <p>Use ‘sign in’ rather than ‘log in’, ‘login’ or ‘logon’.</p>
+        <p>Use 'sign in' rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
         <h2 className="a-z-header" id="m">M</h2>
@@ -282,7 +284,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="rank">rank (police and armed forces)</h3>
         <p>Capitalise the rank before the name, as in 'Detective Inspector Joan Smith'. Use lower case when it follows the name, as in 'Joan Smith, a detective inspector'.</p>
         <h3 id="register">register</h3>
-        <p>Use ‘create an account’ rather than ‘register’ or ‘set up’ an account.</p>
+        <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
         <h3 id="right">right</h3>
         <p>Use ‘correct’ rather than ‘right’. For example, ‘Select the correct settlement route’.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -297,11 +299,13 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="settlement">settlement</h3>
         <p>'Indefinite leave to remain' and 'indefinite leave to enter' are officially called 'settlement'. For example, 'apply for UK settlement'.</p>
         <h3 id="set up">set up</h3>
-        <p>Use 'create an account' rather than 'register' or 'set up' an account.</p>
+        <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
         <h3 id="sex">sex</h3>
         <p>Find out how to ask users for their sex in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the Home Office sex and gender pattern</A>.</p>
         <h3 id="sign in">sign in</h3>
-        <p>Use 'sign in' rather than 'log in' or 'login'.</p>
+        <p>Use 'sign in’ rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
+        <h3 id="sponsor">sponsor</h3>
+        <p>Lower case. A company or person sponsoring an individual to work in the UK and supporting their visa application.</p>
         <h3 id="sorry">sorry</h3>
         <p>Avoid using 'sorry'. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
         <h3 id="sovereign base areas">Sovereign Base Areas</h3>
