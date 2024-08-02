@@ -2,21 +2,21 @@
 
 <h2>Home Office voice</h2> 
 
-<p class=”govuk-body”>Our voice should be consistent across all our products and services. It is who we are and how we want to be seen by others.</p> 
+<p class=”govuk-body”>Our voice should be consistent across all our products and services. It is who we are and how we want others to see us.</p> 
 
-<p class=”govuk-body”>Our voice is rooted in our core Home Office values: compassionate, courageous, respectful and collaborative.</p> 
+<p class=”govuk-body”>Our voice should reflect our core Home Office values: compassionate, courageous, respectful and collaborative.</p> 
 
 <p class=”govuk-body”>For our content, this means we want to speak to people in a way that is:</p> 
 
 <ul class=”govuk-list govuk-list--bullet"> 
 
-<li>Human</li>  
+<li>human</li>  
 
-<li>Empowering</li> 
+<li>empowering</li> 
 
-<li>Respectful</li> 
+<li>respectful</li> 
 
-<li>Clear</li> 
+<li>clear</li> 
 
 </ul> 
 
@@ -43,9 +43,9 @@
 
 <ul class=”govuk-list govuk-list--bullet"> 
 
-<li>The tone of our ‘Ask Metis’ HR virtual assistant is ‘conversational, informal, varied’</li> 
+<li>The tone of our ‘Ask Metis’ HR virtual assistant is ‘conversational, informal, and varied’ to reflect the conversational nature of the interaction.</li> 
 
-<li>The desired tone for our case management system is direct, clear and active as staff use it do tasks, not ask for advice. It should avoid informal and colloquial language given the sensitivity of the information it holds.</li> 
+<li>Our Home Office case management systems should have a direct, clear and active tone. Staff need instructional and straightforward language that reflects their work processes so they can quickly and accurately complete tasks and make decisions on often sensitive cases. We avoid using a tone that could be offensive, flippant or inappropriate.</li> 
 
 </ul> 
 
