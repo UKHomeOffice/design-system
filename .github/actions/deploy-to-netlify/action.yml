@@ -31,7 +31,7 @@ runs:
 
     - id: deploy
       name: Deploy
-      uses: nwtgck/actions-netlify@v2.0.0
+      uses: nwtgck/actions-netlify@v3.0.0
       with:
         publish-dir: "${{ inputs.app && format('apps/{0}/', inputs.app) }}pkg/netlify/publish/"
         functions-dir: "${{ inputs.app && format('apps/{0}/', inputs.app) }}pkg/netlify/functions/"

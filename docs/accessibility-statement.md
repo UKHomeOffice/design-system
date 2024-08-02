@@ -26,7 +26,7 @@ You can see a full list of any issues we currently know about in the Non-accessi
 
 If you need information on this website in a different format like accessible PDF, large print, easy read, audio
 recording or braille:
--   email design@digital.homeoffice.gov.uk
+-   email ucdops@homeoffice.gov.uk
 -   contact us via the methods listed at https://design.homeoffice.gov.uk/contribute
 
 We'll consider your request and get back to you in 30 days.
@@ -35,7 +35,7 @@ We'll consider your request and get back to you in 30 days.
 ## Reporting accessibility problems with this website
 
 We're always looking to improve the accessibility of this website.
-If you find any problems not listed on this page or think we're not meeting accessibility requirements, contact the Design Operations team on email: design@digital.homeoffice.gov.uk
+If you find any problems not listed on this page or think we're not meeting accessibility requirements, contact the Design Operations team on email: ucdops@homeoffice.gov.uk
 
 [Read tips on contacting organisation about inaccessible websites][contact-tips].
 
