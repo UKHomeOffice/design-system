@@ -29,7 +29,7 @@ const Page: FC<PageProps> = ({ location }) => (
       </h1>
       <p>People who depend on Home Office services, such as visas, passports and asylum, are often not fluent in English.</p> 
       <p>This means important information in application forms, guidance pages and other tasks may be difficult to understand.</p> 
-      <p>We have identified 10 evidence-based principles to follow when designing for people with limited English: </p>
+      <p>We have identified 10 evidence-based principles to follow when designing content for people with limited English: </p>
         <ul>
         <li><a href="#use-clear-language">use clear language</a></li>
           <li><a href="#check-how-it-translates">check how it translates</a></li>
@@ -42,12 +42,12 @@ const Page: FC<PageProps> = ({ location }) => (
         <li><a href="#consider-images-or-videos">consider images or videos</a></li>
         <li><a href="#consider-translation-services">consider translation services</a></li>
         </ul>
-      <p>Most of these principles will also make your content accessible and inclusive for everyone.</p> 
+      <p>Most of these principles also make your content accessible and inclusive for everyone.</p> 
 
         
         <h2 id="user-clear-language">Use clear language</h2>
       <p>People with limited English need to read every word, unlike fluent speakers who often skim read. They may need to stop regularly to translate something. Reading this way takes a lot longer and can make information harder to remember.</p>  
-      <p>Words you think are clear language may not be clear to people with limited English. Home Office researchers found that words like 'identity', 'dialect' and 'immediate family' were not always well understood. The 'Home Office' ministerial department is sometimes confused with a spare room or home office.</p>
+      <p>Some plain English words may not be clear to people with limited English. Home Office researchers found that words like 'identity', 'dialect' and 'immediate family' were not always well understood. The 'Home Office' ministerial department is sometimes confused with a spare room or home office.</p>
         <p>Research has found that technical language and long documents make people with limited English anxious. If you need to use technical language, provide a clear language explanation. For example, 'biometrics (your fingerprints and photo)'.</p> 
         <p>When designing for people with limited English, try to: </p>
         <ul>
@@ -73,7 +73,7 @@ const Page: FC<PageProps> = ({ location }) => (
      
 
       <h2 id="test-language-with-users">Test language with users</h2>
-        <p>Guidance cannot replace the insight gained from testing your content with low-fluency English speakers. Content designers creating an asylum application form found that 'medicine' tested better than 'medication'. The NHS style guide also advises using medicine.</p> 
+        <p>Guidance cannot replace the insight gained from testing your content with people with limited English. Content designers creating an asylum application form found that 'medicine' tested better than 'medication'. The NHS style guide also advises using medicine.</p> 
         <p>Test all important content in your service, including, but not limited to:</p>
         <ul>
           <li>headings</li>
@@ -121,23 +121,23 @@ const Page: FC<PageProps> = ({ location }) => (
     </tr>
     <tr className="govuk-table__row">
       <td scope="row" className="govuk-table__cell">get over </td>
-      <td className="govuk-table__cell">do, implement </td>
+      <td className="govuk-table__cell">recover</td>
     </tr>
     <tr className="govuk-table__row">
       <td scope="row" className="govuk-table__cell">look into </td>
-      <td className="govuk-table__cell">research, investigate </td>
+      <td className="govuk-table__cell">research, investigate</td>
     </tr>
     <tr className="govuk-table__row">
       <td scope="row" className="govuk-table__cell">look up </td>
-      <td className="govuk-table__cell">search </td>
+      <td className="govuk-table__cell">search</td>
     </tr>
     <tr className="govuk-table__row">
       <td scope="row" className="govuk-table__cell">look after </td>
-      <td className="govuk-table__cell">care for, be responsible for </td>
+      <td className="govuk-table__cell">care for, be responsible for</td>
     </tr>
     <tr className="govuk-table__row">
       <td scope="row" className="govuk-table__cell">turn down </td>
-      <td className="govuk-table__cell">reject </td>
+      <td className="govuk-table__cell">reject</td>
     </tr>
     <tr className="govuk-table__row">
       <td scope="row" className="govuk-table__cell">make out</td>
@@ -182,11 +182,11 @@ const Page: FC<PageProps> = ({ location }) => (
       <ul>
           <li>Before submitting this form, you should have completed the following steps.</li></ul>
       <p>Use</p>
-          <ul><li>Before you submit this form, complete the next steps. </li></ul>
+          <ul><li>Complete the next steps before you submit this form. </li></ul>
       
       <h2 id="write-acronyms-in-full">Write acronyms in full</h2>
       <p>Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. Write an acronym in full the first time you use it on a new page or screen, unless it is well known to 80% of your users, like UK, US or NHS. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. </p>
-      <p>Translation tools do not translate acronyms. For example, 'National Health Service (NHS)' translates to 'Serviço Nacional de Saúde (NHS)' in Portuguese. Users may not recognise 'NHS' on a later screen. </p>
+      <p>Translation tools do not translate acronyms. For example, 'biometric residence permit (BRP)' translates to 'permesso di soggiorno biometrico (BRP)' in Italian. Italian speakers may not remember the meaning of 'BRP' if they see it on a later screen. </p>
       <p>If available, use a tooltip, like <A href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown">acronym Markdown</A>, so that when a user hovers over the acronym they see it written in full as 'alt text'.</p>
       <p>See more guidance on abbreviations and acronyms in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>. </p>
 

@@ -48,7 +48,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p className="govuk-body">Images must be relevant to the content, help users understand what they need to do and follow our guidance on the use of <A href="/accessibility/images">alternative text</A>.</p>
 
       <h3 className="govuk-heading-m">Sourcing images</h3>
-      <p>Please contact <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A> for advice on image use and for original source files.</p>
+      <p>Please contact <A href="mailto:ucdops@homeoffice.gov.uk">ucdops@homeoffice.gov.uk</A> for advice on image use and for original source files.</p>
 
       <h2 id="Illustrations or representative imagery" className="govuk-heading-l">Illustrations or representative imagery</h2>
       <p className="govuk-body">Illustrations must have a consistent style to create trust. This includes print products as well.</p>
@@ -116,7 +116,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
       <div className="contact-us">
         <h2 className="govuk-heading-m">Get in touch</h2>
-        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or email <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</A>.</p>
+        <p>If you’ve got a question or suggestion share it on the Slack channel #ho-design-system, on <A href="https://github.com/UKHomeOffice/design-system">GitHub</A> or email <A href="mailto:ucdops@homeoffice.gov.uk">ucdops@homeoffice.gov.uk</A>.</p>
       </div>
 
     </div>

@@ -21,7 +21,7 @@ export const menu = (
       },
       {
         href: '/content-style-guide/designing-for-limited-english',
-        text: 'Writing for limited English'
+        text: 'Designing for users with limited English'
       }
     ]} />
   </Fragment>
@@ -352,7 +352,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
         <h2>Help improve this guide</h2>
-        <p>To contribute, send your request to <A href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk,</A> or add it to the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
+        <p>To contribute, send your request to <A href="mailto:ucdops@homeoffice.gov.uk">ucdops@homeoffice.gov.uk,</A> or add it to the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
       </div>
     </div>
   </Fragment>
