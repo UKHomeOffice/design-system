@@ -29,7 +29,7 @@
     @include govuk-responsive-margin(3, "bottom");
   }
 
-  a{
+  a:not(.govuk-button){
     font-weight: bold;
   }
 }
