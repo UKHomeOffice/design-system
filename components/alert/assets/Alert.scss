@@ -28,4 +28,8 @@
     @include govuk-font(24, 'bold');
     @include govuk-responsive-margin(3, "bottom");
   }
+
+  a:not(.govuk-button){
+    font-weight: bold;
+  }
 }
