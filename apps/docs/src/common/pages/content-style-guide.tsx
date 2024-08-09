@@ -22,6 +22,10 @@ export const menu = (
       {
         href: '/content-style-guide/designing-for-limited-english',
         text: 'Designing for users with limited English'
+      },
+      {
+        href: '/content-style-guide/voice-and-tone',
+        text: 'Voice and tone'
       }
     ]} />
   </Fragment>
