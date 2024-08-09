@@ -2,13 +2,11 @@ import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
-import { menu } from '../accessibility'
+import { menu } from '../content-style-guide'
 
-export const title = 'Limited English';
-const description = 'Designing for people with limited English';
-export const section = 'Accessibility';
-
-const biometricsSign = require('../../../../assets/images/content-style-guide/Biometrics sign.png');
+export const title = 'Voice and tone';
+const description = 'Voice and tone';
+export const section = 'Content style guide';
 
 const Page: FC<PageProps> = ({ location }) => (
   <div className="govuk-grid-row">
@@ -24,8 +22,8 @@ const Page: FC<PageProps> = ({ location }) => (
     </div>
     <div className="govuk-grid-column-three-quarters">
       <h1>
-        <span className="caption">Content style guide</span>
-          Voice and tone
+        <span className="caption">{section}</span>
+          {title}
       </h1>
       <h2 id="home-office-voice">Home Office voice</h2>
       <p>Our voice should be consistent across all our products and services. It is who we are and how we want others to see us.</p>
