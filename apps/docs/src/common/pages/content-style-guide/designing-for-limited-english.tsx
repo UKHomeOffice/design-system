@@ -2,11 +2,11 @@ import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
-import { menu } from '../accessibility'
+import { menu } from '../content-style-guide'
 
 export const title = 'Limited English';
 const description = 'Designing for people with limited English';
-export const section = 'Accessibility';
+export const section = 'Content style guide';
 
 const biometricsSign = require('../../../../assets/images/content-style-guide/Biometrics sign.png');
 
