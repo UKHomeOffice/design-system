@@ -145,7 +145,7 @@ export const menu = (
             },
             {
               href: '/accessibility/leaders-guide',
-              text: '- Leader’s guide on accessibility'
+              text: '- Leader’s guide to accessibility'
             }
           ]} />
   </Fragment>

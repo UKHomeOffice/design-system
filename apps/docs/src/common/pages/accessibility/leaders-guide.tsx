@@ -4,7 +4,7 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
-export const title = 'Leader’s guide on accessibility';
+export const title = 'Leader’s guide to accessibility';
 const description = 'Accessibility guidance for leaders';
 export const section = 'Accessibility';
 
@@ -23,9 +23,45 @@ const Page: FC<PageProps> = ({ location }) => (
     <div className="govuk-grid-column-three-quarters">
       <h1>
         <span className="caption">Accessibility</span>
-        Leader’s guide on accessibility
+        Leader’s guide to accessibility
       </h1>
-      <h2>Introduction</h2>
+      <h2>Table of Contents</h2>
+      <h3>Introduction</h3>
+      <ul className="plain">
+        <li><A href="#introduction">Introduction</A></li>
+        <li><A href="#what-accessibility-means-for-you">What accessibility means for you</A></li>
+        <li><A href="#how-to-use-the-guide">How to use the guide</A></li>
+      </ul>
+      <h3>Accessibility as a team sport</h3>
+      <ul className="plain">
+        <li><A href="#accessibility-as-a-team-sport">Accessibility as a team sport</A></li>
+        <li><A href="#roles-and-responsibilities-delivery-teams">Roles and responsibilities: delivery teams</A></li>
+        <li><A href="#roles-and-responsibilities-beyond-your-team">Roles and responsibilities beyond your team</A></li>
+        <li><A href="#your-role-as-a-leader">Your role as a leader</A></li>
+        <li><A href="#educating-yourself-and-others">Educating yourself and others</A></li>
+      </ul>
+      <h3>Accessibility and your product</h3>
+      <ul className="plain">
+        <li><A href="#accessibility-and-your-product">Accessibility and your product</A></li>
+        <li><A href="#the-business-case-for-accessibility">The business case for accessibility</A></li>
+        <li><A href="#the-risks-of-non-compliance">The risks of non-compliance</A></li>
+        <li><A href="#user-research">User research</A></li>
+        <li><A href="#accessibility-testing">Accessibility testing</A></li>
+        <li><A href="#accessibility-audit-and-accessibility-statement">Accessibility audit and accessibility statement</A></li>
+        <li><A href="#product-lifecycle">Product lifecycle</A></li>
+      </ul>
+      <h3>Accessible procurement</h3>
+      <ul className="plain">
+        <li><A href="#accessible-procurement">Accessible procurement</A></li>
+        <li><A href="#ask-the-right-questions">Ask the right questions</A></li>
+        <li><A href="#how-do-you-procure-accessible-services">How do you procure accessible services?</A></li>
+        <li><A href="#tips-and-resources">Tips and resources</A></li>
+      </ul>
+      <h3>Glossary</h3>
+      <ul className="plain">
+        <li><A href="#glossary">Glossary</A></li>
+      </ul>
+      <h2 id="introduction">Introduction</h2>
         <div className="govuk-inset-text">
           <p>“The single best thing a leader can do is ask ‘Is it accessible?’ because everything flows from that, for both themselves and their team.”</p>
           <p><strong>James Buller, Senior Accessibility and Inclusion Consultant at Home Office Digital, Data and Technology</strong></p>
@@ -34,14 +70,14 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Maybe you’re not sure what we mean by accessibility. Maybe you understand the principles, but you don’t know how to embed them in your team and your product. Maybe you know the basics, but you want to know more.</p>
         <p>This guide covers the basic information you need to know, and links to further resources if you want to increase your knowledge.</p>
 
-      <h2>What accessibility means for you</h2>
+      <h2 id="what-accessibility-means-for-you">What accessibility means for you</h2>
         <p>So that everyone can access and use websites, web pages and online services provided or used by your department:</p>
         <ol>
           <li>Use clear, simple design and content to make it as easy as possible for users to do what they need to.</li>
           <li>Make sure the service works with assistive technology. For example, some users might increase the text size so they can read it more easily, use the keyboard instead of a mouse, or use software that reads a web page out loud.</li>
         </ol>
 
-      <h2>How to use the guide</h2>
+      <h2 id="how-to-use-the-guide">How to use the guide</h2>
       <p>The guide covers the following areas:</p>
       <ul>
         <li><A href="#accessibility-as-a-team-sport">Accessibility as a team sport</A>: The roles and responsibilities within a typical delivery team, and how leaders can help everyone understand what they need to do and get the training they need (accessibility from the top down).</li>
@@ -56,7 +92,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>In this section, we’ll mainly focus on the roles within a delivery team and the role you as a leader have in making sure your teams are delivering in an accessible way.</p>
       <p>We’ll also touch on some general principles that everyone can adopt to ensure the work they deliver is more accessible.</p>
 
-      <h2>Roles and responsibilities: delivery teams</h2>
+      <h2 id="roles-and-responsibilities-delivery-teams">Roles and responsibilities: delivery teams</h2>
       <p>These tables are based on the Government Digital and Data Profession Capability Framework. Use them as a guide to help you assign responsibilities. You may not have, or need, all these roles in your own team.</p>
       <h3>Product and delivery roles</h3>
       <h4>Product manager</h4>
@@ -131,7 +167,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <li>Avoids using PDFs if possible, and makes sure they are accessible if used.</li>
       </ul>
 
-      <h2>Roles and responsibilities beyond your team</h2>
+      <h2 id="roles-and-responsibilities-beyond-your-team">Roles and responsibilities beyond your team</h2>
       <p>These people are often ‘enablers’ for accessible service delivery.</p>
       <h3>Design authority</h3>
         <ul>
@@ -168,7 +204,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <ul>
             <li>Makes sure technology systems, services and websites meet accessibility standards and legal requirements</li>
           </ul>
-        <h2>Your role as a leader</h2>
+        <h2 id="your-role-as-a-leader">Your role as a leader</h2>
         <p>Leaders have a key role in embedding accessibility in their team’s people, processes and technology. You set an example from the top and help to drive understanding of accessibility principles and why they’re important.</p>
         <p>To achieve this, you’ll need to know:</p>
         <ul>
@@ -186,7 +222,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>measure accessibility maturity within your organisation, and see that improvement plans are in place and delivered against</li>
           <li>look outwards to partners across government, commercial partners and academia for best practice and sharing opportunities to improve accessibility across other areas of your department and broader government</li>
         </ul>
-        <h3>Educating yourself and others</h3>
+        <h3 id="educating-yourself-and-others">Educating yourself and others</h3>
         <p>You do not need an in-depth knowledge of accessibility. You have experts in your organisation who can help with the technical work.</p>
         <p>However, it is important that you have a basic understanding of accessibility principles, including the <A href="https://www.legislation.gov.uk/uksi/2018/852/contents/made">Public Sector Bodies Accessibility Regulations (PSBAR)</A> and the <A href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG)</A>, and how they should be applied, so you can guide and support your team.</p>
         <p>The following resources provide quick and simple guidance on the basics.</p>
@@ -204,7 +240,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <p><A href="https://www.edx.org/course/web-accessibility-introduction">Web Accessibility Introduction (edX)</A> is a strong foundation in digital accessibility to make your website and apps work well for people with disabilities and meet international standards. (4 weeks, 4 to 5 hours a week, self-paced)</p>
         <h2 id="accessibility-and-your-product">Accessibility and your product</h2>
         <p>Your product must be accessible to comply with <A href="https://www.gov.uk/service-manual/service-standard/point-5-make-sure-everyone-can-use-the-service">point 5 ot the government Service Standard</A>: Make sure everyone can use the service.</p>
-        <h3>The business case for accessibility</h3>
+        <h3 id="the-business-case-for-accessibility">The business case for accessibility</h3>
         <p>Initial investment in making services, products and documents accessible can save time and money later in development and production.</p>
         <p>The easier your products are for everyone to use, the less time you will spend answering enquiries and providing alternative formats. Using accessible formats and language can reduce the need for helplines and call centres.</p>
         <p>Internal services should be accessible, as well as those used by the public. Many of our colleagues and employees have access needs, including visual and hearing impairments, mobility issues and learning difficulties.</p>
@@ -215,13 +251,13 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>Why don’t you? Are the systems you use a barrier because they have accessibility issues?</li>
           <li>What if you do in the future?</li>
         </ul>
-        <h3>The risks of non-compliance</h3>
+        <h3 id="the-risks-of-non-compliance">The risks of non-compliance</h3>
         <p>There are a number of reasons to include accessibility issues in your risk register.</p>
         <h4>Legal consequences</h4>
         <p>Most people are aware that there are legal requirements around accessibility, though not necessarily what they are. This is sometimes used as the ultimate threat to force compliance.</p>
         <p>The relevant laws are:</p>
         <h4>The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</h4> 
-        <p>The Government Digital Service (GDS) is responsible for monitoring public sector website compliance. It has the power to request information and demand access to any public sector organisation’s web content – both intranet and public-facing materials. If a public sector body fails to publish an accessibility statement on their website – or one that is not accurate – the CCDO will publish the organisation’s name. Enforcement falls under the Equality and Human Rights Commission (except in Northern Ireland).</p>
+        <p>The Government Digital Service (GDS) is responsible for monitoring public sector website compliance. It has the power to request information and demand access to any public sector organisation’s web content – both intranet and public-facing materials. If a public sector body fails to publish an accessibility statement on their website – or one that is not accurate – the Central Digital and Data Office (CDDO) will publish the organisation’s name. Enforcement falls under the Equality and Human Rights Commission (except in Northern Ireland).</p>
         <h4>Equality Act 2010</h4>
         <p>Legally protects people from discrimination in the workplace and in wider society.</p>
         <p>You might find it useful to refer to the GOV.UK guidance <A href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">Understanding accessibility requirements for public sector bodies</A>:</p>
@@ -236,16 +272,18 @@ const Page: FC<PageProps> = ({ location }) => (
         <h4>Reputational damage</h4>
         <p>Complaints from users who cannot use the product or find it difficult to use, especially if voiced online or picked up by the media, can damage team morale as well as the reputation of your team, your department and the government.</p>
         <p>Loss of your users’ trust can be hard to fix and may take a long time.</p>
-        <h3>User research</h3>
+        <h3 id="user-research">User research</h3>
         <p>User research is an important part of developing your product. At least 1 in 5 user research participants should be someone with an access need across a representative range of disabilities.</p>
         <p>Testing with users will give you and your team more insight into how accessible the product is than an audit alone. An accessibility audit checks that the product meets a set standard, but it might not reflect the real world user experience.</p>
         <p>If your team includes user centred design specialists, they will carry out user research. If not, consider contacting a third party agency for assistance.</p>
         <p><A href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">Read more about users with access needs</A>.</p>
-        <h3>Accessibility testing</h3>
+        <h3 id="accessibility-testing">Accessibility testing</h3>
         <p>Testing for accessibility at each stage of development makes it easier to solve problems than if you leave it till last.</p>
         <p>Remember, accessibility is a team sport and different roles will perform different tests. Developers check their code is accessible. Content designers check that wording is clear and concise.</p>
         <p>Your department’s accessibility and inclusion team, if you have one, can help you with testing, or recommend external companies to test your product, depending on your requirements.</p>
-        <h3>Accessibility audit and accessibility statement</h3>
+        <p>It is important to understand the difference between a WCAG audit and an accessibility test. Accessibility testing primarily involves manual assessments by real users. It highlights issues that might not be obvious by automated tools alone.</p>
+        <p>On the other hand, an accessibility audit systemically examines whether a site or application adheres to the WCAG standard. Audits are normally a combination of automated tools and expert evaluations. They often provide a structured detailed assessment so to meet the legal requirements an audit is required.</p>
+        <h3 id="accessibility-audit-and-accessibility-statement">Accessibility audit and accessibility statement</h3>
         <p>Before a service is made publicly available, you’ll need:</p>
         <ul>
           <li>An accessibility audit</li>
@@ -264,7 +302,7 @@ const Page: FC<PageProps> = ({ location }) => (
         </ul>
         <p><A href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/getting-an-accessibility-audit">Read more about accessibility audits</A>, including how to book one.</p>
         <p><A href="https://www.gov.uk/guidance/make-your-website-or-app-accessible-and-publish-an-accessibility-statement#publish-your-accessibility-statement">Read more about accessibility statements</A>. This includes a sample statement to use as a template.</p>
-        <h3>Product lifecycle</h3>
+        <h3 id="product-lifecycle">Product lifecycle</h3>
         <p>It’s important to build in accessibility from the start of a project, rather than add it in at the end. This approach will save time and money in the longer term.</p>
         <p>If you are working with a legacy system, it may not be possible to make it accessible from the start of the project. Run an accessibility audit, list any issues in order of priority and include fixes in the improvements you are making.</p>
         <p><strong>Bake in, not bolt on.</strong></p>
@@ -320,7 +358,7 @@ const Page: FC<PageProps> = ({ location }) => (
           <li>controlled</li>
         </ul>
         <p>by your organisation, for example an external website that you link to.</p>
-        <h3>Ask the right questions</h3>
+        <h3 id="ask-the-right-questions">Ask the right questions</h3>
         <p>Make sure your product meets your accessibility obligations by asking:</p>
         <h4>Do we have a statutory requirement or other mandatory requirement to use this product?</h4>
         <p>If you have to use that product for reasons outside of your control and there are no alternatives, it may not be your responsibility to resolve, or resolving it may be considered a <A href="#glossary">disproportionate burden</A>.</p>
@@ -330,7 +368,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Have you decided to place the content on a platform you control, or are you directing to another platform you do not control?</p>
         <h4>Is this a bespoke product?</h4>
         <p>If you are ordering a custom or non standard product, include accessibility in your requirements.</p>
-        <h3>How do you procure accessible services?</h3>
+        <h3 id="how-do-you-procure-accessible-services">How do you procure accessible services?</h3>
         <p>Get your procurement team on board from the beginning.</p>
         <p>Make accessibility a mandatory requirement.</p>
         <p>Make sure your tender and contract documents include meeting the accessibility standard as a requirement.</p>
