@@ -93,7 +93,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <p>We’ll also touch on some general principles that everyone can adopt to ensure the work they deliver is more accessible.</p>
 
       <h2 id="roles-and-responsibilities-delivery-teams">Roles and responsibilities: delivery teams</h2>
-      <p>These tables are based on the Government Digital and Data Profession Capability Framework. Use them as a guide to help you assign responsibilities. You may not have, or need, all these roles in your own team.</p>
+      <p>These role descriptions are based on the Government Digital and Data Profession Capability Framework. Use them as a guide to help you assign responsibilities. You may not have, or need, all these roles in your own team.</p>
       <h3>Product and delivery roles</h3>
       <h4>Product manager</h4>
       <ul>
@@ -404,7 +404,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <ul>
           <li>Discuss accessibility at your next team meeting. What do they think accessibility means? What is each person’s accessibility responsibility?</li>
           <li>Run emails, documents, templates and presentations you’ve written through the inbuilt Microsoft Outlook accessibility checker and encourage your team to do the same.</li>
-          <li>Test websites you’re procuring and overseeing with an automated accessibility checker such as WAVE, Axe and/or inspect the HTML code to get a rough idea how accessible they are.</li>
+          <li>Test websites you’re procuring and overseeing with an automated accessibility checker such as <A href="https://wave.webaim.org/">WAVE</A>, <A href="https://www.deque.com/axe/">Axe</A> and/or inspect the HTML code to get a rough idea how accessible they are.</li>
           <li>Ask for an update on accessibility in team meetings.</li>
           <li><A href="https://www.gov.uk/government/publications/sample-accessibility-statement">Read the sample accessibility statement</A> and start to think about how yours might look.</li>
           <li>Sit in on a user research session with a participant who has access needs. If your team doesn’t have a user researcher, ask around—observers and note takers are usually welcome.</li>
