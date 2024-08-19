@@ -142,6 +142,10 @@ export const menu = (
             {
               href: '/accessibility/resources',
               text: 'Guidance, tools and further reading'
+            },
+            {
+              href: '/accessibility/leaders-guide',
+              text: '- Leader’s guide to accessibility'
             }
           ]} />
   </Fragment>
