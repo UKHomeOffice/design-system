@@ -31,13 +31,13 @@ const Page: FC<PageProps> = ({ location }) => (
 <p>Here are some examples showing what we mean.</p>
  <h3 id="human">Human</h3>
 <p>A 'human' voice is empathetic, personal, and natural. It use words that the audience understands. Varying your sentence length and structure will help to make your content seem less rigid and monotonous. If you reuse templated text, make sure all the content is relevant to the user.</p>
-<p>For example: 'You can work and study, and come and go as many times as you want before the permit expires.' rather than 'It allows employment, education and unlimited entry/exit.'</li>
-</p><h3 id="empowering">Empowering</h3>
+<p>For example: 'You can work and study, and come and go as many times as you want before the permit expires.' rather than 'It allows employment, education and unlimited entry/exit.'</p>
+<h3 id="empowering">Empowering</h3>
 <p>Using an 'empowering' voice means focussing on what someone can do, rather than what they cannot do or what will be done to them. It provides options, next steps and support. Speak to the reader, use ‘you’ as much as you can, and write in the active voice.</p>
-<p>For example: 'You can prove your English language ability by...' rather than 'You will be assessed on your English language ability'.
+<p>For example: 'You can prove your English language ability by...' rather than 'You will be assessed on your English language ability'.</p>
 <h3 id="respectful">Respectful</h3>
 <p>A 'respectful' voice is inclusive, considerate and sensitive. It is not accusing or demanding; it fosters an environment where people feel valued and treated with dignity.</p>
-<p>For example: 'You may be asked questions about difficult topics but it is important that you explain what has happened to you and your family.' rather than 'Tell the interviewer everything or it can count against you.'
+<p>For example: 'You may be asked questions about difficult topics but it is important that you explain what has happened to you and your family.' rather than 'Tell the interviewer everything or it can count against you.'</p>
 <h3 id="clear">Clear</h3>
 <p>Use plain language that the user will understand. Be honest about what we are doing and why, and clarify and explain if needed. Do not hide meaning behind legal or government jargon.</p>
 <p>For example: 'give your fingerprints and photo' rather than 'provide biometric information'.</p>
