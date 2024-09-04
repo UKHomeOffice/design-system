@@ -26,28 +26,26 @@ const Page: FC<PageProps> = ({ location }) => (
           {title}
       </h1>
       <h2 id="home-office-voice">Home Office voice</h2>
-      <p>Our voice should be consistent across all our products and services. It is who we are and how we want others to see us.</p>
-<p>A consistent voice presents us as trustworthy, confident and organised.</p>
-<p>The Home Office voice is:</p>
-        <ul>
-          <li>human</li>
-          <li>empowering</li>
-          <li>respectful</li>
-          <li>clear</li>
-          </ul>
-<p>It is based on our core Home Office values of compassion, courage, respect and collaboration.</p>
+     <p>Our voice is human, empowering, respectful and clear.</p>
+      <p>It should be consistent across all our products and services. It is who we are and how we demonstrate our values of courage, compassion, respect and collaboration.</p>
 <p>Here are some examples showing what we mean.</p>
  <h3 id="human">Human</h3>
-<p>Be empathetic, natural, and use words that the audience understands. Vary your sentence length and structure. Do not be formulaic or monotonous and try to avoid standard templated text if you can.</p>
+<p>A 'human' voice is empathetic, personal, and natural. It use words that the audience understands. Varying your sentence length and structure will help to make your content seem less rigid and monotonous. If you reuse templated text, make sure all the content is relevant to the user.</p>
+<p>For example: 'You can work and study, and come and go as many times as you want before the permit expires.' rather than 'It allows employment, education and unlimited entry/exit.'</p>
 <h3 id="empowering">Empowering</h3>
-<p>Focus on what someone can do, rather than what they cannot do or what will be done to them. Provide next steps. Speak to the reader, use ‘you’ as much as you can, and write in the active voice.</p>
+<p>Using an 'empowering' voice means focussing on what someone can do, rather than what they cannot do or what will be done to them. It provides options, next steps and support. Speak to the reader, use ‘you’ as much as you can, and write in the active voice.</p>
+<p>For example: 'You can prove your English language ability by...' rather than 'You will be assessed on your English language ability'.</p>
 <h3 id="respectful">Respectful</h3>
-<p>Be inclusive, considerate and sensitive. A respectful voice is not accusing or demanding; it fosters an environment where people feel valued and treated with dignity.</p>
+<p>A 'respectful' voice is inclusive, considerate and sensitive. It is not accusing or demanding; it fosters an environment where people feel valued and treated with dignity.</p>
+<p>For example: 'You may be asked questions about difficult topics but it is important that you explain what has happened to you and your family.' rather than 'Tell the interviewer everything or it can count against you.'</p>
 <h3 id="clear">Clear</h3>
-<p>Use plain and unambiguous language. Write to be understood. Be honest about what we are doing and why, and clarify and explain if needed. Do not hide meaning behind legal or government jargon.</p>
+<p>Use plain language that the user will understand. Be honest about what we are doing and why, and clarify and explain if needed. Do not hide meaning behind legal or government jargon.</p>
+<p>For example: 'give your fingerprints and photo' rather than 'provide biometric information'.</p>
 
+    
 <h2 id="tone">Tone</h2>
-<p>Unlike voice, tone can change depending on the audience or channel. Like in conversation, this is about being responsive to the person and the context.</p>
+<p>Tone can change depending on the audience or channel. Like in conversation, this is about being responsive to the person and the context.</p>
+<p>Whatever tone we take, it should reflect our voice and values.</p>
 <p>Here are some examples:</p>
       <ul>
 <li>Our HR virtual assistant is more chatty, informal and varied in tone than our static HR guidance and policies.</li>
