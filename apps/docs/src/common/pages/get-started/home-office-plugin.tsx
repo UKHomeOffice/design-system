@@ -40,7 +40,7 @@ const Page: FC<PageProps> = ({ location }) => (
       <h2>Header, footer and page background</h2>
       <p>To change your prototype to by default use the Home Office styling:</p>
       <ol className="govuk-list govuk-list--number">
-        <li>In <code>app/views/layouts/main.html</code> change:<br /> <code>&#123;% extends "govuk-prototype-kit/layouts/main.html" %&#125;</code> to <br /><code>&#123;% extends "home-office-kit-layout.html" %&#125;</code></li>
+        <li>In <code>app/views/layouts/main.html</code> change:<br /> <code>&#123;% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %&#125;</code> to <br /><code>&#123;% extends "home-office-kit-layout.html" %&#125;</code></li>
       </ol>
       <h2>Font</h2>
       <p>To change your prototype to use Roboto:</p>
