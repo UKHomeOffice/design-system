@@ -46,7 +46,7 @@ Limit to important information, or when it’s changed. Overuse risks the messag
 <Preview>
   <Story name="Standard">
     <StatusMessage status="On hold" actions={[{ href: "#", text: "Review" }]}>
-      Due for review 31 May 2021
+      Due for review <time class="hods-date-display" datetime="2021-05-31">31 May 2021</time>
     </StatusMessage>
   </Story>
 </Preview>
@@ -55,7 +55,7 @@ Limit to important information, or when it’s changed. Overuse risks the messag
 
 <Preview>
 	<Story name="Standard without action">
-		<StatusMessage status="On hold">Due for review 31 May 2021</StatusMessage>
+		<StatusMessage status="On hold">Due for review <time class="hods-date-display" datetime="2021-05-31">31 May 2021</time></StatusMessage>
 	</Story>
 </Preview>
 
@@ -67,7 +67,7 @@ Limit to important information, or when it’s changed. Overuse risks the messag
         { href: "#", text: "Review" },
         { href: "#", text: "Extend hold" },
       ]}>
-      Due for review 31 May 2021
+      Due for review <time class="hods-date-display" datetime="2021-05-31">31 May 2021</time>
     </StatusMessage>
   </Story>
 </Preview>
@@ -99,7 +99,11 @@ If it’s about people, make sure your content is dynamic and personalised. Use 
 
 ## Accessibility
 
-All users benefit from clear, visible notification messages which are presented in a consistent, predictable way. See the <a href="/accessibility/notifications">notifications guidance</a> for more information
+All users benefit from clear, visible notification messages which are presented in a consistent, predictable way.
+
+If the status message component dynamically updates or appears on the page, for example as a result of user action, this needs to be announced to screen reader users. Consider using ARIA live region for this. See the <a href="/accessibility/notifications">notifications guidance</a> for more information.
+
+If you are inlcuding the extra text or link sections then the main status should be marked up as a heading.
 
 ## Research
 
