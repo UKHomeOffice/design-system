@@ -12,6 +12,7 @@ $govuk-button-text-colour: govuk-colour("black");
 
   &__status {
     margin: 0;
+    @include govuk-font(19);
     font-weight: bold;
   }
 
