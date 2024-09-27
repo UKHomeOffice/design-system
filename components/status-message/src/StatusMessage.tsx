@@ -30,11 +30,9 @@ export const StatusMessage: FC<StatusMessageProps> = ({
   );
 
   return (
-    <div {...attrs} className={classes()}>
-      <div>
-        <div className={classes('status')}>{status}</div>
+    <div {...attrs} className={classes()} role="region" aria-labelledby="hods-status-message-status">
+        <h2 className={classes('status')} id="hods-status-message-status">{status}</h2>
         {children && <p className={classes('extra')}> {children}</p>}
-      </div>
       {actions && actions.length && (
         <AnchorList items={actions} classBlock={classes('actions')} />
       )}
