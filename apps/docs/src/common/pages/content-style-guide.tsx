@@ -47,6 +47,7 @@ const Page: FC<PageProps> = ({ location }) => (
 
     <div className="govuk-grid-row">
       <h1>{title}</h1>
+      <p>This style guide is specific to the Home Office to help make our language clear and consistent for all our users. Refer to <A href="https://www.gov.uk/guidance/style-guide/a-to-z">the GDS style guide</A> for style, spelling and grammar conventions across GOV.UK.</p>
       <div className="govuk-grid-column-two-thirds">
         <AZNavigation id="a-z-nav" />
         <h2 className="a-z-header" id="a">A</h2>
@@ -59,7 +60,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="alter">alter</h3>
         <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
          <h3 id="authorising officer">authorising officer</h3>
-        <p>Lower case. You can use the acronym 'AO' after the first full mention.</p>
+        <p>Lower case. You can use the initials 'AO' after the first full mention.</p>
         <h3 id="asylum claimant">asylum claimant</h3>
         <p>You can use either 'asylum claimant' or 'asylum applicant' to describe someone who has applied for asylum in the UK. Do not use both in the same product or service.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -70,9 +71,9 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="biometrics">biometrics</h3>
         <p>When using ‘biometrics’ or ‘biometric information’ in public-facing services, explain what it means first. For example, ‘you'll be asked to provide your fingerprints and photo (biometric information)’.</p>
         <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
-        <p>Lower case. You can use the acronym ‘BRP’ after the first full mention.</p>
+        <p>Lower case. You can use the initials ‘BRP’ after the first full mention.</p>
         <h3 id="biometric residence card">biometric residence card (BRC)</h3>
-        <p>Lower case. You can use the acronym ‘BRC’ after the first full mention. Also called a ‘UK residence card’ or ‘EEA biometric residence card’.</p>
+        <p>Lower case. You can use the initials ‘BRC’ after the first full mention. Also called a ‘UK residence card’ or ‘EEA biometric residence card’.</p>
         <h3 id="border force">Border Force</h3>
         <p>Capitalised.</p>
         <h3 id="border control">border control</h3>
@@ -105,7 +106,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="click">click</h3>
         <p>Use 'select' rather than 'click' or 'tap' because not everyone uses a mouse.</p>
         <h3 id="common travel area">Common Travel Area (CTA)</h3>
-        <p>Capitalised. You can use the acronym ‘CTA’ after the first full mention.</p>
+        <p>Capitalised. You can use the initials ‘CTA’ after the first full mention.</p>
         <h3 id="confirm">confirm</h3>
         <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status’.</p>
         <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
@@ -140,9 +141,13 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="dbs certificate">DBS certificate</h3>
         <p>Use ‘DBS certificate’ rather than 'DBS disclosure'.</p>
         <h3 id="dbs checking service">DBS checking service</h3>
-        <p>Use ‘DBS checking service’ rather than ‘DBS disclosure service’.</p>
+        <p>Use ‘DBS checking service’ rather than 'DBS disclosure service'.</p>
         <h3 id="dbs children’s barred list">DBS children’s barred list</h3>
         <p>Use lower case for ‘children’s barred list’.</p>
+        <h3 id="decision maker">decision maker</h3>
+        <p>Lower case.</p>
+        <h3 id="decision making unit">decision making unit (DMU)</h3>
+        <p>Lower case. You can use the initials 'DMU' after the first full mention.</p>
         <h3 id="dependant">dependant</h3>
         <p>Noun. For example, 'a dependant', 'a child dependant' or 'are there any dependants on this application?'.</p>
         <h3 id="dependent">dependent</h3>
@@ -152,7 +157,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="digital status">digital status</h3>
         <p>Avoid using 'digital status' in public-facing services. Instead use 'eVisa' or 'online immigration status'. For example, 'view and prove your online immigration status (eVisa)'.</p>
         <h3 id="disclosure and barring service">Disclosure and Barring Service (DBS)</h3>
-        <p>Capitalised. You can use the acronym ‘DBS’ after the first full mention.</p>
+        <p>Capitalised. You can use the initials ‘DBS’ after the first full mention.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
         <h2 className="a-z-header" id="e">E</h2>
@@ -167,7 +172,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="epassport">ePassport</h3>
         <p>Use 'passport' if the type of passport does not matter. When referring to passports with a chip, use 'biometric passport' instead of 'ePassport'.</p>
         <h3 id="eu settlement scheme">EU Settlement Scheme (EUSS)</h3>
-        <p>Capitalised. You can use the acronym 'EUSS' after the first full mention.</p>
+        <p>Capitalised. You can use the initials 'EUSS' after the first full mention.</p>
         <h3 id="e-visa">eVisa</h3>
         <p>When using 'eVisa' in public-facing services, explain what it means. For example, 'view and prove your online immigration status (eVisa)'.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -181,7 +186,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="gender">gender</h3>
         <p>Find out how to ask users for their gender in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the Home Office sex and gender pattern</A>.</p>
         <h3 id="general register office">General Register Office (GRO)</h3>
-        <p>Capitalised. It is 'register' not 'registry'. You can use the acronym 'GRO' after the first full mention.</p>
+        <p>Capitalised. It is 'register' not 'registry'. You can use the initials 'GRO' after the first full mention.</p>
         <h3 id="gov.uk">GOV.UK</h3>
         <p>All upper case.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -225,6 +230,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Use 'permission to enter' instead of 'leave to enter' or 'limited leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
         <h3 id="leave to remain">leave to remain</h3>
         <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+        <h3 id="letter of authority">letter of authority</h3>
+        <p>Lower case.</p>
         <h3 id="life in the uk test">Life in the UK Test</h3>
         <p>Capitalise the ‘L’ and ‘T’. After first mention, you can refer to ‘the test’, using lower case.</p>
         <h3 id="log in">log in</h3>
@@ -310,6 +317,8 @@ const Page: FC<PageProps> = ({ location }) => (
         <p>Use 'sign in’ rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
         <h3 id="sponsor">sponsor</h3>
         <p>Lower case. A company or person sponsoring an individual to work in the UK and supporting their visa application.</p>
+        <h3 id="sponsorship reference number">sponsorship reference number</h3>
+        <p>Lower case.</p>
         <h3 id="sorry">sorry</h3>
         <p>Avoid using 'sorry'. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
         <h3 id="sovereign base areas">Sovereign Base Areas</h3>
@@ -327,9 +336,9 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="uk visa and citizenship application services">UK Visa and Citizenship Application Services (UKVCAS)</h3>
         <p>UKVCAS service points are located in the UK, whereas visa application centres are outside the UK. You can use 'UKVCAS' after the first full mention.</p>
         <h3 id="uk visas and immigration">UK Visas and Immigration (UKVI)</h3>
-        <p>Capitalised. Use 'and' not '&'. You can use the acronym 'UKVI' after the first full mention.</p>
+        <p>Capitalised. Use 'and' not '&'. You can use the initials 'UKVI' after the first full mention.</p>
         <h3 id="unique application number">unique application number (UAN)</h3>
-        <p>Lower case. You can use the acronym 'UAN' after the first full mention.</p>
+        <p>Lower case. You can use the initials 'UAN' after the first full mention.</p>
         <h3 id="user-centred">user centred</h3>
         <p>Hyphenate when using as an adjective, as in 'user-centred design'. Do not hyphenate when using as a noun, as in 'teams need to be user centred'.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -340,7 +349,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="verify">verify</h3>
         <p>Consider using 'check' instead of 'verify' if you are asking users to check the accuracy of something. For example, 'check your answers' or 'check a passport number'.</p>
         <h3 id="visa">visa</h3>
-        <p>Use 'visa' rather than technical terms like 'route' or 'permission to enter' in public-facing services, unless you need to be specific. For example, use 'graduate visa' rather than 'graduate route'.</p>
+        <p>Use 'visa' rather than terms like 'route'. For example, use 'graduate visa' rather than 'graduate route'.</p>
         <h3 id="visa application centre">visa application centre (VAC)</h3>
         <p>Visa application centres (VAC) are located outside the UK whereas UKVCAS service points are in the UK. Use upper case when referring to UK VACs, as in 'find a UK Visa Application Centre'. Do not use 'visa section', 'visa processing post' or 'visa issuing office'.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
