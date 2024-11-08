@@ -110,7 +110,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="confirm">confirm</h3>
         <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status’.</p>
         <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
-        <p>Capitalised. You can use the initials ‘CAS’ after the first full mention.</p>
+        <p>Capitalised. You can use the acronym ‘CAS’ after the first full mention.</p>
         <h3 id="consignee">consignee</h3>
         <p>Consignee is not plain English. Some users confuse 'consignee' with 'consignor'. If you need to use consignee, use it with 'recipient'. For example, recipient (consignee).</p>
         <h3 id="consignor">consignor</h3>
@@ -166,7 +166,7 @@ const Page: FC<PageProps> = ({ location }) => (
         <h3 id="egates">eGates</h3>
         <p>When using 'eGates' with the public, explain what it means the first time you use it. For example, 'you will have the option of using an eGate (electronic passport gate)'.</p>
         <h3 id="electronic travel authorisation">electronic travel authorisation (ETA)</h3>
-        <p>Lower case. You can use the initials 'ETA' after the first full mention.</p>
+        <p>Lower case. You can use the acronym 'ETA' after the first full mention.</p>
         <h3 id="enhanced dbs check">enhanced DBS check</h3>
         <p>Use 'enhanced DBS check' rather than 'enhanced disclosure'.</p>
         <h3 id="epassport">ePassport</h3>
