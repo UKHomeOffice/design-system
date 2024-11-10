@@ -1,6 +1,6 @@
 {
   "name": "@hods/next-example",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A Next.js application with HODS components.",
   "private": true,
   "scripts": {
@@ -16,8 +16,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
+    "@hods/components": "workspace:^0.5.0",
     "@not-govuk/simple-components": "^0.15.0",
-    "@hods/components": "workspace:^0.4.0",
     "next": "15.0.3",
     "react": "18.3.1",
     "react-dom": "18.3.1"
