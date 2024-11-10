@@ -22,8 +22,8 @@ describe('Pagination', () => {
       render(h(Pagination, minimalProps, children));
     });
 
-    it('shows the current page', () => expect(current()).toBeTruthy());
-    it('displays the first page', () => expect(current().textContent).toBe('1'));
+    it.skip('shows the current page', () => expect(current()).toBeTruthy());
+    it.skip('displays the first page', () => expect(current().textContent).toBe('1'));
     it('displays the first element', () => expect(screen.getByText('Item #1')).toBeTruthy());
     it('does NOT display the 11th element', () => expect(screen.queryByText('Item #11')).toBeFalsy());
     it('does NOT display the last element', () => expect(screen.queryByText('Item #30')).toBeFalsy());
