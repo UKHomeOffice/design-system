@@ -9,7 +9,7 @@ const longTitle = 'Starting a new project';
 const description = 'How to start a new project';
 const section = 'Get started';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{longTitle} - Home Office Design System</title>

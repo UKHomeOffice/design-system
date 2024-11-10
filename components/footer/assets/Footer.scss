@@ -22,17 +22,17 @@
   }
 
   &__container {
-    @include govuk-font(16);
-    @include govuk-responsive-padding(6, "top");
-    @include govuk-responsive-padding(6, "bottom");
-    @include govuk-responsive-padding(8, "left");
-    @include govuk-responsive-padding(8, "right");
     border-top: $border-both solid govuk-colour("mid-grey");
     display: flex;
     margin: -$border-both auto 0 auto;
     justify-content: space-between;
     display: flex;
     align-items: center;
+    @include govuk-font(16);
+    @include govuk-responsive-padding(6, "top");
+    @include govuk-responsive-padding(6, "bottom");
+    @include govuk-responsive-padding(8, "left");
+    @include govuk-responsive-padding(8, "right");
   }
 
   &__content {
@@ -59,9 +59,9 @@
   }
 
   &__navigation-item {
+    list-style: none;
     @include govuk-font(16);
     @include govuk-responsive-padding(4, "left");
-    list-style: none;
 
     &:first-child {
       @include govuk-responsive-padding(0, "left");

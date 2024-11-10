@@ -1,10 +1,14 @@
-import { FC, createElement as h } from 'react';
+import { FC, ReactNode, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 
 import '../assets/LoadingSpinner.scss';
 
-export const LoadingSpinner: FC<StandardProps> = ({
-   children = 'Loading...',
+export type LoadingSpinnerProps = StandardProps & {
+  children?: ReactNode
+};
+
+export const LoadingSpinner: FC<LoadingSpinnerProps> = ({
+  children = 'Loading...',
   classBlock,
   classModifiers,
   className,

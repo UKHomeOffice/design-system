@@ -12,7 +12,7 @@ const subsection = 'Ask users for';
 const applyDeclaration1 = require('../../../../assets/images/patterns/make-a-declaration.png');
 const applyDeclaration2 = require('../../../../assets/images/patterns/make-a-declaration-privacy-terms-conditions.png');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>

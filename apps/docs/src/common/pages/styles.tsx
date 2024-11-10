@@ -29,7 +29,7 @@ const applyPassportImage = require('../../../assets/images/apply-passport.png');
 const ddatEventsImage = require('../../../assets/images/ddat-events.png');
 const policeImage = require('../../../assets/images/police.png');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = ({}) => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

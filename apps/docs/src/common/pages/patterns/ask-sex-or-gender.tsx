@@ -9,7 +9,7 @@ const description = 'How to ask users for their sex or gender';
 const section = 'Patterns';
 const subsection = 'Ask users for';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>

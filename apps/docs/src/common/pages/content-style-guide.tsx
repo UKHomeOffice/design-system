@@ -31,7 +31,7 @@ export const menu = (
   </Fragment>
 );
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <Fragment>
     <Helmet>
       <title>{title} - Home Office Design System</title>

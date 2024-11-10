@@ -10,7 +10,7 @@ export const title = 'Timeouts';
 const description = 'Accessibility guidance for timeouts';
 export const section = 'Accessibility';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

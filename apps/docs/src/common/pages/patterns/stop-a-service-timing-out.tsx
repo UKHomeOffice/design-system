@@ -10,7 +10,7 @@ const section = 'Patterns';
 const subsection = 'Help users to';
 const applyModalWindow = require('../../../../assets/images/patterns/time-out.png');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>

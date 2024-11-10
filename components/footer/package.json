@@ -13,7 +13,7 @@
     "/dist"
   ],
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "jest",
     "prepublishOnly": "npm run clean && npm run build",
     "build": "tsc",
     "clean": "rm -rf dist tsconfig.tsbuildinfo"
@@ -25,13 +25,13 @@
   ],
   "dependencies": {
     "@hods/sass-base": "workspace:^0.4.0",
-    "@not-govuk/component-helpers": "^0.8.6",
-    "@not-govuk/link": "^0.8.6"
+    "@not-govuk/component-helpers": "^0.15.0",
+    "@not-govuk/link": "^0.15.0"
   },
   "peerDependencies": {
-    "@not-govuk/docs-components": "^0.8.6",
-    "@storybook/addon-docs": "^6.4.0",
-    "react": "^16.9.55"
+    "@not-govuk/docs-components": "^0.15.0",
+    "@storybook/addon-docs": "^6.5.16",
+    "react": "^18.0.0"
   },
   "peerDependenciesMeta": {
     "@not-govuk/docs-components": {
@@ -43,11 +43,11 @@
   },
   "devDependencies": {
     "@mdx-js/react": "1.6.22",
-    "@not-govuk/component-test-helpers": "^0.8.6",
-    "@types/react": "16.14.24",
-    "jest": "29.5.0",
-    "jest-environment-jsdom": "29.5.0",
-    "ts-jest": "29.1.0",
+    "@not-govuk/component-test-helpers": "^0.15.0",
+    "@types/react": "18.3.12",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "ts-jest": "29.2.5",
     "typescript": "4.9.5"
   }
 }

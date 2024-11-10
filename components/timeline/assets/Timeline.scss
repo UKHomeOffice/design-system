@@ -5,19 +5,19 @@
   position: relative;
 
   &__item {
-    @include govuk-responsive-padding(2, "bottom");
     padding-left: 22px;
     position: relative;
+    @include govuk-responsive-padding(2, "bottom");
 
     &:before { /* styling for lines in margin */
       background-color: govuk-colour("blue");
       content: "";
       padding-top: 0.3em;
-      @include govuk-responsive-padding(3, "right");
       left: 0;
       position: absolute;
       margin-top: 0.55em;
       z-index: 1;
+      @include govuk-responsive-padding(3, "right");
     }
   }
 
@@ -33,19 +33,19 @@
   }
 
   &__title {
-    @include govuk-font(19, 'bold');
     display: inline;
+    @include govuk-font(19, 'bold');
   }
 
   &__by {
-    @include govuk-font(16);
     color: govuk-colour('dark-grey');
     display: inline;
+    @include govuk-font(16);
   }
 
   &__date {
-    @include govuk-font(16);
     color: govuk-colour('dark-grey');
+    @include govuk-font(16);
     @include govuk-responsive-margin(0, "top");
   }
 

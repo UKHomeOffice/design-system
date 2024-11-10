@@ -12,7 +12,7 @@ const subsection = 'Help users to';
 const applyLeaveHeader = require('../../../../assets/images/patterns/leave-service-header.svg');
 const applyLeaveInline = require('../../../../assets/images/patterns/leave-service-inline.svg');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>

@@ -8,7 +8,7 @@ export const title = 'Voice and tone';
 const description = 'Voice and tone';
 export const section = 'Content style guide';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

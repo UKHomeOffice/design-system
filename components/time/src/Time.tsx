@@ -14,7 +14,6 @@ export type TimeProps = StandardProps & {
 };
 
 export const Time: FC<TimeProps> = ({
-  	children,
   	classBlock,
   	classModifiers,
   	className,
@@ -24,12 +23,12 @@ export const Time: FC<TimeProps> = ({
   	...attrs
 }) => {
   const classes = classBuilder('hods-time', classBlock, classModifiers, className);
-  
+
   const formattedTime = formatTime(
 	  time,
 	  clockType
   );
-  
+
   return noWrap ? (
     <Fragment>
       {formattedTime}
@@ -39,7 +38,7 @@ export const Time: FC<TimeProps> = ({
       {formattedTime}
     </time>
   );
-  
+
 };
 
 Time.displayName = 'Time';

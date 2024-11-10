@@ -1,7 +1,7 @@
 import { FC, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import { A } from '@not-govuk/link';
-import { queryString } from '@not-govuk/route-utils';
+import { queryString } from '@not-govuk/uri';
 
 export type NavigationProps = StandardProps & {
   /**The total number of results*/
@@ -17,7 +17,6 @@ export type NavigationProps = StandardProps & {
 };
 
 export const Navigation: FC<NavigationProps> = ({
-  children,
   classBlock,
   classModifiers,
   className,
@@ -88,7 +87,7 @@ export const Navigation: FC<NavigationProps> = ({
                 aria-label={
                   pages[i] === page
                     ? `Current page, page ${page}`
-                    : `Go to page ${page}`
+                    : `Go to page ${pages[i]}`
                 }
               >
                 {pages[i]}

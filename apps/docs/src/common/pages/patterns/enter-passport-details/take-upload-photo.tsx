@@ -9,7 +9,7 @@ const description = 'How to ask users for passport details';
 const section = 'Patterns';
 const subsection = 'Ask users to';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>

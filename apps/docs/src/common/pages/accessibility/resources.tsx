@@ -9,7 +9,7 @@ const longTitle = 'Accessibility resources';
 const description = 'Resources and further guidance for accessibility';
 export const section = 'Accessibility';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{longTitle} - Home Office Design System</title>

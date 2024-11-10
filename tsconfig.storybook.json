@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.webpack.json",
+  "include": [
+    ".storybook/**/*",
+    "{components}*/*/spec/*"
+  ]
+}

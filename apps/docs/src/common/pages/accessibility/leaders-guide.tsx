@@ -8,7 +8,7 @@ export const title = 'Leader’s guide to accessibility';
 const description = 'Accessibility guidance for leaders';
 export const section = 'Accessibility';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

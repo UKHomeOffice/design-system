@@ -11,7 +11,7 @@ const subsection = 'Ask users to';
 
 const ePassportLogo = require('../../../../../assets/images/patterns/EPassport_logo.svg');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>

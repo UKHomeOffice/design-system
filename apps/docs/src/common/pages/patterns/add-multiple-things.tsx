@@ -12,7 +12,7 @@ const subsection = 'Help users to';
 const applyAddAnother = require('../../../../assets/images/patterns/add-another.svg');
 const chooseDocumentType = require('../../../../assets/images/patterns/choose-document-type.svg');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>

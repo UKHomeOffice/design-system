@@ -1,4 +1,4 @@
-import { FC, createElement as h } from 'react';
+import { FC, ReactNode, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import { Anchor, AnchorList } from "@not-govuk/anchor-list";
 
@@ -8,7 +8,7 @@ export type StatusMessageProps = StandardProps & {
   /** Summary of status */
   status: string,
   /** Extra information about the status */
-  children?: any,
+  children?: ReactNode,
   /** Links to perform status related actions */
   actions?: Anchor[]
 };

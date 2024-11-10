@@ -15,7 +15,7 @@ const applyPrototype7 = require('../../../../assets/images/heroku2.png');
 const applyPrototype9 = require('../../../../assets/images/heroku4.png');
 
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

@@ -13,7 +13,7 @@ const applyAuthenticatePersonal = require('../../../../assets/images/patterns/au
 const applyAuthenticateReference = require('../../../../assets/images/patterns/authenticate-reference.svg');
 const applyAuthenticateTwoFa = require('../../../../assets/images/patterns/authenticate-2fa.svg');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>

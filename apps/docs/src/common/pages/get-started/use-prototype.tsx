@@ -17,7 +17,7 @@ const applyPrototype9 = require('../../../../assets/images/prototype-screen09.pn
 const applyPrototype10 = require('../../../../assets/images/prototype-screen10.png');
 
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

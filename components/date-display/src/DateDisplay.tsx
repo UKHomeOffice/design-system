@@ -11,7 +11,6 @@ export type DateDisplayProps = StandardProps & {
 };
 
 export const DateDisplay: FC<DateDisplayProps> = ({
-  children,
   classBlock,
   classModifiers,
   className,

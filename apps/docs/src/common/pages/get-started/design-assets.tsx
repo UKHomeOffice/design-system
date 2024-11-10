@@ -8,7 +8,7 @@ export const title = 'Design assets';
 const description = 'Useful design assets for interaction designers in the Home Office';
 const section = 'Get started';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

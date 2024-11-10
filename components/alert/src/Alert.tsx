@@ -1,10 +1,11 @@
-import { FC, createElement as h } from 'react';
+import { FC, ReactNode, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import { InsetText} from '@not-govuk/inset-text';
 
 import '../assets/Alert.scss';
 
 export type AlertProps = StandardProps & {
+  children?: ReactNode
   /** Heading of the alert */
   heading: string
 };

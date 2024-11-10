@@ -7,7 +7,7 @@ import globalDecorator from './decorators';
 import jestResults from '../.jest-results.json';
 
 // FIXME: Temporary hack to get CSS
-import '@not-govuk/components/src/index.scss';
+import '@hods/components/assets/index.scss';
 
 addParameters({
   docs: {

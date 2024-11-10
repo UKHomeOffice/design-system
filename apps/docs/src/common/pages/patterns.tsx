@@ -81,7 +81,7 @@ export const menu = (
 export const title = 'Patterns';
 const description = 'Patterns are best practice design solutions for specific user-focused tasks and page types';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

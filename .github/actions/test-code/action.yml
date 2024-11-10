@@ -8,7 +8,7 @@ inputs:
   node:
     description: The version of Node.js to use.
     required: false
-    default: 18
+    default: 22
 runs:
   using: composite
   steps:

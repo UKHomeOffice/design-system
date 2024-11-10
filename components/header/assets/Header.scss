@@ -25,12 +25,12 @@
   }
 
   &__main {
+    display: inherit;
+    width: 100%;
     @include govuk-responsive-padding(4, "top");
     @include govuk-responsive-padding(4, "bottom");
     @include govuk-responsive-padding(0, "left");
     @include govuk-responsive-padding(0, "right");
-    display: inherit;
-    width: 100%;
 
     @include govuk-media-query($from: mobile, $until: tablet) {
     }
@@ -71,8 +71,8 @@
   }
 
   &__account-menu {
-    @include govuk-font(19);
     align-self: center;
+    @include govuk-font(19);
 
     ul {
       margin: 0;
@@ -133,12 +133,12 @@
       }
 
       a {
+        color: #0b0c0c !important;
+        text-decoration: none;
         @include govuk-responsive-padding(2, "top");
         @include govuk-responsive-padding(2, "bottom");
         @include govuk-responsive-padding(3, "left");
         @include govuk-responsive-padding(3, "right");
-        color: #0b0c0c !important;
-        text-decoration: none;
 
         &:visited {
           color: #0b0c0c !important;

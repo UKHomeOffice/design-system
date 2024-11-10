@@ -14,7 +14,7 @@ const applyExample2 = require('../../../../assets/images/example-2.jpg');
 const applyExample5 = require('../../../../assets/images/example-5.jpg');
 const applyExample6 = require('../../../../assets/images/example-6.jpg');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = ({}) => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>

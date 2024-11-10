@@ -1,9 +1,10 @@
-import { FC, createElement as h } from 'react';
+import { FC, ReactNode, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 
 import '../assets/ExpandableBanner.scss';
 
 export type ExpandableBannerProps = StandardProps & {
+  children?: ReactNode
   status: string
 };
 

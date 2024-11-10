@@ -4,8 +4,8 @@ $max-width: 1160px;
 $margin: 30px;
 
 code{
-  @include govuk-font(19);
   font-family: monospace;
+  @include govuk-font(19);
 }
 
 .hods-width-container {
@@ -120,14 +120,14 @@ p.monospace {
 
 // Content style guide
 .a-z-header {
+  background-color: $hods-brand-colour-purple;
+  color: govuk-colour("white");
   display: inline-block;
   @include govuk-responsive-margin(6, "top");
   @include govuk-responsive-padding(2, "top");
   @include govuk-responsive-padding(2, "left");
   @include govuk-responsive-padding(2, "bottom");
   @include govuk-responsive-padding(2, "right");
-  background-color: $hods-brand-colour-purple;
-  color: govuk-colour("white");
 }
 
 .back-to-top {
@@ -148,14 +148,14 @@ pre {
   padding: govuk-spacing(3);
   border: $govuk-focus-width solid transparent;
   outline: 1px solid $govuk-border-colour;
-  background-color: govuk-colour("light-grey", $legacy: "grey-4");
+  background-color: govuk-colour("light-grey");
   overflow: auto;
 }
 
 p code,
 li code {
   color: #d13118;
-  background-color: govuk-colour("light-grey", $legacy: "grey-4");
+  background-color: govuk-colour("light-grey");
   outline: 1px solid $govuk-border-colour;
   padding: 0 govuk-spacing(1);
 }

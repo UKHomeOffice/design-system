@@ -154,7 +154,7 @@ export const menu = (
 export const title = 'Accessibility';
 const description = 'Information on how to ensure your service is accessible'
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

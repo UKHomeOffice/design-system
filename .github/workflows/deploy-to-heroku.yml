@@ -8,7 +8,7 @@ on:
       node:
         required: false
         type: string
-        default: 16
+        default: 22
     secrets:
       CYPRESS_PROJECT_ID:
         required: false
@@ -74,7 +74,7 @@ jobs:
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
           deployment: heroku
-          node: 18
+          node: 22
           smoke: true
 
       - name: Scan service for vulnerabilities

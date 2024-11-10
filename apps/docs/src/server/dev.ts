@@ -1,3 +1,4 @@
+import type { Server } from '@not-govuk/engine';
 import { assetProxy } from '@not-govuk/asset-proxy';
 import config from './config';
 import { createServer } from './httpd';
@@ -29,7 +30,7 @@ const { entrypoints, port, startProxy } = (
       })
     }
 );
-const startApp = () => createServer({ entrypoints, port }).app;
+const startApp = () => createServer({ entrypoints, port }).app as Promise<Server>;
 
 let proxy = startProxy();
 let server = startApp();
@@ -61,7 +62,7 @@ if (module.hot) {
                 proxy.log.info(`${proxy.name} is going down...`);
                 proxy.stop(
                   () => {
-                    proxy.log.info(`${proxy.name} is no longer listening`)
+                    proxy?.log.info(`${proxy.name} is no longer listening`)
                     proxy = startProxy();
                   }
                 );

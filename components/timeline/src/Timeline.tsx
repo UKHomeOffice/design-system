@@ -19,7 +19,6 @@ export type TimelineProps = StandardProps & {
 };
 
 export const Timeline: FC<TimelineProps> = ({
-  children,
   classBlock,
   classModifiers,
   className,
@@ -33,7 +32,7 @@ export const Timeline: FC<TimelineProps> = ({
     className
   );
   return (
-      <div className={classes()}>
+      <div className={classes()} {...attrs}>
         {items ? items.map(e => (
           <div className={classes('item')} key={e.date.getTime()}>
             <h2 className={classes('title')}>{e.action}</h2>

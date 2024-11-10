@@ -1,6 +1,6 @@
 @import "@hods/sass-base";
-@import "govuk-frontend/govuk/components/button";
-@import "govuk-frontend/govuk/objects/button-group";
+@import "govuk-frontend/dist/govuk/components/button";
+@import "govuk-frontend/dist/govuk/objects/button-group";
 
 $govuk-button-colour: govuk-colour("white");
 $govuk-button-text-colour: govuk-colour("black");

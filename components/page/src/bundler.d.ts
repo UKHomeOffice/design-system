@@ -1,43 +1,47 @@
 // Based on CRA's react-scripts
 
+type ImageData = string | {
+  src: string
+}
+
 declare module '*.avif' {
-  const src: string;
+  const src: ImageData;
   export default src;
 }
 
 declare module '*.bmp' {
-  const src: string;
+  const src: ImageData;
   export default src;
 }
 
 declare module '*.gif' {
-  const src: string;
+  const src: ImageData;
   export default src;
 }
 
 declare module '*.ico' {
-  const src: string;
+  const src: ImageData;
   export default src;
 }
 
 declare module '*.jpg' {
-  const src: string;
+  const src: ImageData;
   export default src;
 }
 
 declare module '*.jpeg' {
-  const src: string;
+  const src: ImageData;
   export default src;
 }
 
 declare module '*.png' {
-  const src: string;
+  const src: ImageData;
   export default src;
 }
 
 declare module '*.webp' {
-    const src: string;
-    export default src;
+  const src: ImageData;
+  export default src;
 }
 
 declare module '*.svg' {

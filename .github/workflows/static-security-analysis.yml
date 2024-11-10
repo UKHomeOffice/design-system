@@ -22,7 +22,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 18
+          node: 22
 
       - name: Scan dependencies
         uses: ./.github/actions/scan-dependencies

@@ -1,7 +1,8 @@
+@use "sass:map";
 @import "@hods/sass-base";
-@import "govuk-frontend/govuk/objects/_main-wrapper";
-@import "govuk-frontend/govuk/objects/_width-container";
-@import "govuk-frontend/govuk/objects/_template";
+@import "govuk-frontend/dist/govuk/objects/main-wrapper";
+@import "govuk-frontend/dist/govuk/objects/width-container";
+@import "govuk-frontend/dist/govuk/objects/template";
 @import "./fonts/roboto.scss";
 
 $hods-secondary-button-colour: #F8F8F8;
@@ -91,9 +92,12 @@ html {
   }
 
   aside {
-    $home-office: map-get($govuk-colours-organisations, "home-office");
+    $home-office: map.get($govuk-colours-organisations, "home-office");
+    $contrast-safe: map.get($home-office, "contrast-safe");
+    $light-colour: map.get($home-office, "colour");
+    $colour: if($contrast-safe, $contrast-safe, $light-colour);
 
-    border-color: map_get($home-office, "colour-websafe");
+    border-color: $colour;
   }
 }
 
