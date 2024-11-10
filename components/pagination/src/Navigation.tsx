@@ -88,7 +88,7 @@ export const Navigation: FC<NavigationProps> = ({
                 aria-label={
                   pages[i] === page
                     ? `Current page, page ${page}`
-                    : `Go to page ${page}`
+                    : `Go to page ${pages[i]}`
                 }
               >
                 {pages[i]}
