@@ -1,9 +1,13 @@
-import { FC, createElement as h } from 'react';
+import { FC, ReactNode, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 
 import '../assets/Highlight.scss';
 
-export const Highlight: FC<StandardProps> = ({
+export type HighlightProps = StandardProps & {
+  children?: ReactNode
+};
+
+export const Highlight: FC<HighlightProps> = ({
   children,
   classBlock,
   classModifiers,

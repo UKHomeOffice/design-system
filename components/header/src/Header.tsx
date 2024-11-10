@@ -24,7 +24,6 @@ export type HeaderProps = StandardProps & {
 
 export const Header: FC<HeaderProps> = ({
   accountHref,
-  children,
   classBlock,
   classModifiers,
   className,

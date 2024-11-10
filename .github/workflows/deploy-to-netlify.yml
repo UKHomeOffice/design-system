@@ -6,7 +6,7 @@ on:
         required: false
         type: string
       node:
-        default: 16
+        default: 22
         required: false
         type: string
       production-branch:
@@ -80,7 +80,7 @@ jobs:
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
           deployment: netlify
-          node: 18
+          node: 22
           smoke: true
 
       - name: Scan service for vulnerabilities

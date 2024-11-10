@@ -11,7 +11,7 @@ const subsection = 'Help users to';
 
 const applyContextualHelp = require('../../../../assets/images/patterns/contextual-help.svg');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>

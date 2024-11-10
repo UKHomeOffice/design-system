@@ -16,8 +16,8 @@
   }
 
   &__content {
-    @include govuk-responsive-padding(4, "top");
     text-align: center;
+    @include govuk-responsive-padding(4, "top");
   }
 }
 

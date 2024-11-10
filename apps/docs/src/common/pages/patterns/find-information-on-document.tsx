@@ -12,7 +12,7 @@ const subsection = 'Ask users for';
 const applyImageInline = require('../../../../assets/images/patterns/image-guidance-inline.svg');
 const applyImageRight = require('../../../../assets/images/patterns/image-guidance-right.svg');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>

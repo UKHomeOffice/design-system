@@ -8,7 +8,7 @@ export const title = 'Discuss on GitHub';
 const description = 'Contribute your ideas, thoughts and evidence';
 const section = 'Contribute';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

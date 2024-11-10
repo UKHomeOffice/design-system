@@ -1,11 +1,14 @@
-import { Children, FC, createElement as h } from 'react';
+'use client';
+
+import { Children, FC, ReactNode, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { useLocation } from '@not-govuk/route-utils';
+import { useLocation } from '@not-govuk/router';
 import { Navigation } from './Navigation';
 
 import '../assets/Pagination.scss';
 
 export type PaginationProps = StandardProps & {
+  children?: ReactNode
   /** Number of items to be shown on each page */
   size?: number
   /** Query parameter to use for the page number */

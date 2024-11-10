@@ -3,41 +3,41 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 import { DocsPage } from '@not-govuk/docs-components';
-import { stories as subpages } from '../component-stories';
+import { useLocation } from '@not-govuk/router';
+import { componentLinks, nameParam, components as subpages } from '../stories';
+import config from '../config';
+
+const siteTitle = config.title;
 
 export const title = 'Components';
-const description = 'The components provided in the Home Office Design System';
+const description = `The components provided in the ${siteTitle}`;
 
-const Page: FC<PageProps> = ({ location }) => {
-  const nameParam = 'name';
-  const componentName = location.query[nameParam];
-  const stories = subpages[componentName];
-  const navItems = Object.keys(subpages).sort().map(v => ({
-    href: `/components?${nameParam}=${encodeURIComponent(subpages[v].default.title)}`,
-    text: v
-  }));
+const Page: FC<PageProps> = () => {
+  const location = useLocation();
+  const subPageName = location.query[nameParam] as unknown as string;
+  const stories = subpages[subPageName];
 
   return (
     <div className="govuk-grid-row">
       <Helmet>
-        <title>{title} - Home Office Design System</title>
+        <title>{title} - {siteTitle}</title>
         <meta name="description" content={description} />
         <meta name="og:title" content={title} />
         <meta name="og:description" content={description} />
         <meta name="og:article:section" content={title} />
       </Helmet>
       <div className="govuk-grid-column-one-quarter">
-        <NavigationMenu items={navItems} />
+        <NavigationMenu items={componentLinks} />
       </div>
       <div className="govuk-grid-column-three-quarters">
         {
           stories ? (
             <Fragment>
               <span className="govuk-caption-xl">{title}</span>
-              <DocsPage siteName="Home Office Design System" stories={stories} />
+              <DocsPage siteName={siteTitle} stories={stories} />
             </Fragment>
           ) : (
-            componentName ? (
+            subPageName ? (
               null // should be a 404!
             ) : (
               <Fragment>

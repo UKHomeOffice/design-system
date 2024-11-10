@@ -9,7 +9,7 @@ const description = 'How to send users effective letters';
 const section = 'Patterns';
 const subsection = 'Send users';
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
 <div className="govuk-grid-row">
   <Helmet>
     <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>

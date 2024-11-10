@@ -15,7 +15,6 @@ export type DateTimeProps = StandardProps & {
 };
 
 export const DateTime: FC<DateTimeProps> = ({
-	children,
 	classBlock,
 	classModifiers,
 	className,

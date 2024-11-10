@@ -9,7 +9,7 @@ module.exports = {
       name: '@not-govuk/storybook-preset',
       options: {
         baseDir: __dirname,
-        tsConfig: '../tsconfig.webpack.json'
+        tsConfig: '../tsconfig.storybook.json'
       }
     },
     '@storybook/addon-a11y/register',

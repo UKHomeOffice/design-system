@@ -1,9 +1,9 @@
-import { ComponentProps, FC, createElement as h } from 'react';
-import { NavigationMenu } from '@not-govuk/navigation-menu';
+import { FC, createElement as h } from 'react';
+import { NavigationMenu, NavigationMenuProps } from '@not-govuk/navigation-menu';
 
 import '../assets/AZNavigation.scss';
 
-export type AZNavigationProps = Omit<ComponentProps<typeof NavigationMenu>, 'items'>;
+export type AZNavigationProps = Omit<NavigationMenuProps, 'items'>;
 
 const items = [
   {

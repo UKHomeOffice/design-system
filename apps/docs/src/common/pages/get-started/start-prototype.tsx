@@ -12,7 +12,7 @@ const subsection = 'Prototyping';
 const applyPrototype0 = require('../../../../assets/images/github-screen01.png');
 const applyPrototype1 = require('../../../../assets/images/terminal-screen01.png');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

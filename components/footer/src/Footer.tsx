@@ -1,4 +1,4 @@
-import { FC, createElement as h } from 'react';
+import { FC, ReactNode, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
 import { A } from '@not-govuk/link';
 
@@ -16,6 +16,7 @@ export type NavigationLink = {
 };
 
 export type FooterProps = StandardProps & {
+  children?: ReactNode
   /** Navigation links */
   navigation?: NavigationLink[]
 };
@@ -31,7 +32,7 @@ export const Footer: FC<FooterProps> = ({
   const classes = classBuilder('hods-footer', classBlock, classModifiers, className);
 
   return (
-    <footer className={classes()} role="contentinfo">
+    <footer className={classes()} role="contentinfo" {...attrs}>
       <div className={classes('inner')}>
         <div className={classes('container') + ' hods-width-container'}>
           <div className={classes('content')}>

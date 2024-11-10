@@ -19,7 +19,7 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "@not-govuk/plop-pack": "^0.8.6",
-    "@not-govuk/plop-pack-internal": "^0.8.6"
+    "@not-govuk/plop-pack": "^0.15.0",
+    "@not-govuk/plop-pack-internal": "^0.15.0"
   }
 }

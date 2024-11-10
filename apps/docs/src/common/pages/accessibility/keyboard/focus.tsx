@@ -14,7 +14,7 @@ const focusImage03 = require('../../../../../assets/images/accessibility/focus-0
 const focusImage04 = require('../../../../../assets/images/accessibility/focus-04.png');
 const focusImage05 = require('../../../../../assets/images/accessibility/focus-05.png');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

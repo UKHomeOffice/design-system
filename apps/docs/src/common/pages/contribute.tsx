@@ -21,7 +21,7 @@ export const menu = (
 export const title = 'Contribute';
 const description = 'How to get involved and contribute to the Home Office Design System'
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

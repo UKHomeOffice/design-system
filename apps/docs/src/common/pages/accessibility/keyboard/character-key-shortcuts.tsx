@@ -11,7 +11,7 @@ export const section = 'Accessibility';
 const tabImage01 = require('../../../../../assets/images/accessibility/tab-01.png');
 const tabImage02 = require('../../../../../assets/images/accessibility/tab-02.png');
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>

@@ -3,10 +3,10 @@
 .hods-pagination {
   &__navigation {
     &__summary {
+      float: right;
       @include govuk-font(16);
       @include govuk-responsive-padding(2, "bottom");
       @include govuk-responsive-padding(2, "top");;
-      float: right;
     }
 
     &__item {
@@ -14,28 +14,28 @@
     }
 
     &__link {
+      text-decoration: none;
       @include govuk-font(16);
       @include govuk-responsive-padding(1, "bottom");
       @include govuk-responsive-padding(1, "top");
       @include govuk-responsive-padding(2, "left");
       @include govuk-responsive-padding(2, "right");
-      text-decoration: none;
 
       &:hover, &:focus {
-        @include govuk-font(16);
         outline: 3px solid govuk-colour("yellow");
+        @include govuk-font(16);
       }
 
       &--current {
+        font-weight: bold;
+        border: none;
+        pointer-events: none;
+        cursor: default;
         @include govuk-font(16);
         @include govuk-responsive-padding(1, "bottom");
         @include govuk-responsive-padding(1, "top");
         @include govuk-responsive-padding(2, "left");
         @include govuk-responsive-padding(2, "right");
-        font-weight: bold;
-        border: none;
-        pointer-events: none;
-        cursor: default;
 
         &:link,
         &:visited,

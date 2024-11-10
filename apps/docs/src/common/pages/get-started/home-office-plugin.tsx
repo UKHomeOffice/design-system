@@ -10,7 +10,7 @@ const section = 'Get started';
 const subsection = 'Prototyping';
 
 
-const Page: FC<PageProps> = ({ location }) => (
+const Page: FC<PageProps> = () => (
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
