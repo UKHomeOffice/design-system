@@ -67,7 +67,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        app: [ 'docs' ]
+        app: [ 'docs', 'next-example' ]
     steps:
 
       - name: Check out repository
@@ -98,7 +98,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        app: [ 'docs' ]
+        app: [ 'docs', 'next-example' ]
         browser: [ 'chromium', 'firefox', 'electron' ]
     steps:
 
