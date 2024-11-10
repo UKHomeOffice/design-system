@@ -1,3 +1,6 @@
 {
-  "extends": "../../tsconfig.webpack.json"
+  "extends": "../../tsconfig.webpack.json",
+  "include": [
+    "src"
+  ]
 }
