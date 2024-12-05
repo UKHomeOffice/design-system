@@ -192,8 +192,6 @@ and a transcript. </p>
 
 <p>Provide sign language interpretation for video that has audio content - when you have identified a need.</p>
 
-<p>You can arrange sign language interpretation services through TheBigWord. Contact <A href="mailto:lauren.brayshaw@thebigword.com">lauren.brayshaw@thebigword.com</A>.</p>
-
 <h2>When you cannot make something accessible</h2>
 
 <p>Tell users when certain accessibility features are not present and why, such as no captions due to the video not having important
@@ -201,11 +199,8 @@ auditory information.</p>
 
 <p>Provide dates for fixes and include these in your accessibility statement.</p>
 
-
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+<h2>Get in touch</h2>
+<p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>

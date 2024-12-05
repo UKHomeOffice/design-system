@@ -125,11 +125,8 @@ const Page: FC<PageProps> = () => (
  <h3>Provide a way for the user to get back to where they were</h3>
  <p>When a user experiences a timeout, provide a way for them to return back to where they were before the timeout occurred. This may not be possible without the user having to re-enter data, though this should be minimised.</p>
 
-
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+ <h2>Get in touch</h2>
+ <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>

@@ -48,10 +48,8 @@ const Page: FC<PageProps> = () => (
       <li><A href="https://accessibility.blog.gov.uk/">Accessibility in government blog</A></li>
     </ul>
 
-    <div className="contact-us">
-      <h2 className="govuk-heading-m">Get in touch</h2>
-      <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-    </div>
+    <h2>Get in touch</h2>
+    <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
