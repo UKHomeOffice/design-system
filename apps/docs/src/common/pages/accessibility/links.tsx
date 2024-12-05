@@ -169,11 +169,8 @@ the link destination, not the image itself.</p>
 
 <p>An example of doing something unexpected is if content opens in a new browser tab or window. If you have to do this you should tell users that this will happen in the link text or with a clearly defined icon.</p>
 
-
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+<h2>Get in touch</h2>
+<p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>

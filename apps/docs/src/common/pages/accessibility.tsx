@@ -174,7 +174,7 @@ const Page: FC<PageProps> = () => (
       different needs and circumstances such as location, health and equipment.</p>
       <p>Delivering accessible and inclusive services is also in line with government standards and our legal
       responsibilities for equality and accessibility.</p>
-      <p>In order to provide consistency for users and product teams, we’ve developed a <A href="/accessibility/standard">Home Office Accessibility Standard</A> that closely aligns to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
+      <p>In order to provide consistency for users and product teams, we’ve developed a <A href="/accessibility/standard">Home Office Accessibility Standard</A> that closely aligns to the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
     </div>
   </div>
 );

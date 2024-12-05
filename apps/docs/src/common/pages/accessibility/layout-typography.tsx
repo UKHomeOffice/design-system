@@ -97,7 +97,7 @@ const Page: FC<PageProps> = () => (
 
 <h3>Fonts</h3>
 
-<p>The Home Office and GOV.UK design systems both use fonts chosen for clarity and readability, so use them if you can. In emails, documents, or third-party products that allow limited customisation, choose a font that is open and clear. Because all users have different needs, there’s no such thing as a fully ‘accessible’ font, but usually it’s better to choose a sans-serif font (such as Arial) over a serif font (such as Times New Roman). </p>
+<p>The Home Office and GOV.UK design systems both use fonts chosen for clarity and readability, so use them if you can. In emails, documents, or third-party products that allow limited customisation, choose a font that is open and clear. Because all users have different needs, there’s no such thing as a fully ‘accessible’ font. </p>
 <br />
 <h3>Styling</h3>
 
@@ -150,10 +150,8 @@ const Page: FC<PageProps> = () => (
   </div>
 </div>
 <br />
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+<h2>Get in touch</h2>
+<p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
