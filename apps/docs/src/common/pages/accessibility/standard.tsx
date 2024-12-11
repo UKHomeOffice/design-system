@@ -27,7 +27,7 @@ const Page: FC<PageProps> = () => (
       Accessibility Standard
     </h1>
     <p>As a public body, the Home Office has a legal responsibility to ensure that the digital services and systems we control are accessible to the widest possible group of people.</p>
-    <p>To provide consistency for users and product teams, we’ve developed a Home Office Accessibility Standard. This closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
+    <p>To provide consistency for users and product teams, we’ve developed a Home Office Accessibility Standard. This closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
   <table>
     <thead className="govuk-table__head">
       <tr className="govuk-table__row">
@@ -107,7 +107,7 @@ const Page: FC<PageProps> = () => (
       </td>
       <td className="govuk-table__cell">
       <p>Where visual headings are used to communicate the structure of a page, they must also be communicated in a way that supports assistive technology users to access this structure.</p>
-      <p>You should use semanatic HTML headings to structure your page. Heads should cascade from H1-H6. Each page must have at least a Level 1 Heading (H1).</p>
+      <p>You should use semanatic HTML headings to structure your page. Headings should cascade from H1-H6. Each page must have at least a Level 1 Heading (H1).</p>
       </td>
     </tr>
     <tr className="govuk-table__row">
@@ -602,10 +602,8 @@ const Page: FC<PageProps> = () => (
       </tbody>
     </table>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+    <h2>Get in touch</h2>
+    <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>

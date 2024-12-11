@@ -57,12 +57,8 @@ const Page: FC<PageProps> = () => (
       <p>Interacting with an element should not automatically move a user to another page or open a popup, unless the user has been informed beforehand. Instead provide a submit to perform an action.</p>
       <p>Sometimes you can get stuck in elements such as carousel content or social media widgets. When this happens and you cannot move out of an element with tab, first try using the esc key. If you continue to be stuck, this is a fault and is known as getting caught in a <A href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html">keyboard trap</A>.</p>
 
-
-
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+      <h2>Get in touch</h2>
+      <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>

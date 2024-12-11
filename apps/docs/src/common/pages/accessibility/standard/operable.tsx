@@ -29,7 +29,7 @@ const Page: FC<PageProps> = () => (
     <p>All interactive components and page navigations must be operable via different input modalities.</p>
     <p>Users should be able to easily navigate around the site and have enough time to interact with the content without discomfort or physical reactions.</p>
     <h2>Index</h2>
-    <h3>Keyboard Accessible</h3>
+    <h3>Keyboard accessible</h3>
     <ul className="plain">
       <li><A href="#rr2.1.1">2.1.1 - Keyboard accessible</A></li>
       <li><A href="#rr2.1.2">2.1.2 - No keyboard trap</A></li>
@@ -55,7 +55,7 @@ const Page: FC<PageProps> = () => (
       <li><A href="#rr2.4.7">2.4.7 - Focus visible</A></li>
       <li><A href="#rr2.4.11">2.4.11 - Focus not obscured</A></li>
     </ul>
-    <h3>Input Modalities</h3>
+    <h3>Input modalities</h3>
     <ul className="plain">
       <li><A href="#rr2.5.1">2.5.1 - Pointer gestures</A></li>
       <li><A href="#rr2.5.2">2.5.2 - Pointer cancellation</A></li>
@@ -65,7 +65,7 @@ const Page: FC<PageProps> = () => (
       <li><A href="#rr2.5.8">2.5.8 - Target size</A></li>
     </ul>
 
-    <h2>Keyboard Accessible</h2>
+    <h2>Keyboard accessible</h2>
     <h3 id="rr2.1.1">2.1.1 - Keyboard accessible</h3>
     <p>It must be possible for someone using a keyboard to complete all tasks in a service.</p>
     <p>This approach will also ensure that users on touch devices that are running assistive technology will also have access to all parts of a service.</p>
@@ -182,7 +182,7 @@ const Page: FC<PageProps> = () => (
 
     <h3 id="rr2.4.1">2.4.1 - Bypass blocks</h3>
     <p>When there is repeated content (like a header) at the top of the page, there must be a way for keyboard users to move focus directly to the start of the main content area of the page.</p>
-    <p>Consider including shortcuts to allow the user to jump between other parts of the content on long pages</p>
+    <p>Consider including shortcuts to allow the user to jump between other parts of the content on long pages.</p>
     <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks">Understanding Success Criterion 2.4.1: Bypass Blocks</A></p>
     <h4>Implementation guidance</h4>
     <p>Provide a ‘Skip to main content’ link close to the start of the page.</p>
@@ -304,10 +304,10 @@ const Page: FC<PageProps> = () => (
     <p>When an interactive element receives keyboard focus, the focus must be easy to see (not entirely hidden behind elements such as cookie banners, sticky headers or footers).</p>
     <p>When implementing content such as headers, footers and banners, make sure page content is shifted accordingly and there is no overlap with the focused element. Alternatively restrict keyboard focus to the banner to prevent user from interacting with the underlying page.</p>
     <h4>How to test with a visual check</h4>
-    <p>If a cookie banner is present, tab around before you dismiss it, to make sure focus indicator does not disappear behind it. Clear your cookie cache to make the banner reappear if necessary.</p>
-    <p>Then tab around the page to make sure focus indicator does not disapear behind other elements, such as sticky headers or footers.</p>
+    <p>If a cookie banner is present, tab around before you dismiss it, to make sure the focus indicator does not disappear behind it. Clear your cookie cache to make the banner reappear if necessary.</p>
+    <p>Then tab around the page to make sure focus indicator does not disappear behind other elements, such as sticky headers or footers.</p>
 
-    <h2>Input Modalities</h2>
+    <h2>Input modalities</h2>
 
     <h3 id="rr2.5.1">2.5.1 - Pointer gestures</h3>
     <p>Any functionality which requires a multipoint or path based gestures has an alternative single pointer, non path-based gesture.</p>
@@ -384,10 +384,8 @@ const Page: FC<PageProps> = () => (
     <p>Use the bookmarklet to check that interactive areas of components are either 24 x 24 CSS pixels, or have at least that much space around them in total to avoid clashing with other interactive areas (<A href="https://adrianroselli.com/2022/05/24x24-pixel-cursor-bookmarklet">24×24 Pixel Cursor Bookmarklet</A>).</p>
     <p>Interactive elements could include buttons, radio buttons, checkboxes and carousel controls.</p>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+    <h2>Get in touch</h2>
+    <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>

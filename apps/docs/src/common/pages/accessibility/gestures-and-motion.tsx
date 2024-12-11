@@ -110,10 +110,8 @@ const Page: FC<PageProps> = () => (
 <p>Activation of any function should occur on the up-event - lifting a finger from the screen or mouse button. Using the click event by default will only trigger the action on release.</p>
 <p>After clicking the mouse or touching the screen, users must be able to cancel the action that would be executed on releasing the mouse button or touch input. This means that if a user selects a control but moves the mouse away from the control before releasing it, the functionality should not be triggered.</p>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+<h2>Get in touch</h2>
+<p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>

@@ -450,8 +450,8 @@ const Page: FC<PageProps> = () => (
         <h3>Widest user need</h3>
         <p>Designing services so as many people as possible, including those with access needs, can use them. </p>
 
-        <h2>Contribute</h2>
-        <p>Get involved with <A href="https://github.com/UKHomeOffice/design-system/discussions">GitHub discussions</A> about our styles, components and patterns.</p>
+        <h2>Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
