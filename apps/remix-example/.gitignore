@@ -1,0 +1,13 @@
+node_modules
+
+/.cache
+/build
+.env
+
+# NotGovUK extras
+.cypress/
+.netlify/
+.serverless/
+dist/
+package-lock.json
+pkg/
