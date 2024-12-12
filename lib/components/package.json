@@ -39,7 +39,7 @@
     "@hods/status-message": "workspace:^0.5.0",
     "@hods/time": "workspace:^0.5.0",
     "@hods/timeline": "workspace:^0.5.0",
-    "@not-govuk/components": "0.15.0"
+    "@not-govuk/components": "0.15.2"
   },
   "devDependencies": {
     "jest": "29.7.0",
