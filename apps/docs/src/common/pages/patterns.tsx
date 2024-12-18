@@ -56,6 +56,10 @@ export const menu = (
         text: 'Get more details'
       },
       {
+        href: '/patterns/long-lists',
+        text: 'Choose from a long list '
+      },
+      {
         href: '/patterns/leave-a-service',
         text: 'Leave a service'
       },
