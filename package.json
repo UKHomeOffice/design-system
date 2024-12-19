@@ -36,8 +36,8 @@
     "@babel/preset-env": "7.26.0",
     "@babel/preset-react": "7.25.9",
     "@babel/preset-typescript": "7.26.0",
-    "@hods/components": "workspace:^0.5.0",
-    "@hods/plop-pack": "workspace:^0.5.0",
+    "@hods/components": "workspace:^0.5.1",
+    "@hods/plop-pack": "workspace:^0.5.1",
     "@mdx-js/react": "1.6.22",
     "@not-govuk/components": "^0.15.2",
     "@not-govuk/docs-components": "^0.15.2",
@@ -78,7 +78,7 @@
     "webpack-hot-middleware": "2.26.1"
   },
   "name": "hods",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "The design system for the UK Home Office.",
   "main": "index.js",
   "repository": {

@@ -1,6 +1,6 @@
 {
   "name": "@hods/date-display",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Displays a date in accordance with Gov style guidance",
   "main": "src/DateDisplay.tsx",
   "sass": "assets/DateDisplay.scss",

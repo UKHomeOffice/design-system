@@ -10,8 +10,8 @@ importers:
       '@babel/preset-env': 7.26.0
       '@babel/preset-react': 7.25.9
       '@babel/preset-typescript': 7.26.0
-      '@hods/components': workspace:^0.5.0
-      '@hods/plop-pack': workspace:^0.5.0
+      '@hods/components': workspace:^0.5.1
+      '@hods/plop-pack': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/components': ^0.15.2
       '@not-govuk/docs-components': ^0.15.2
@@ -102,8 +102,8 @@ importers:
     specifiers:
       '@apollo/client': 3.11.9
       '@graphql-tools/schema': 10.0.7
-      '@hods/components': workspace:^0.5.0
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/components': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.1
       '@not-govuk/anchor-list': ^0.15.2
       '@not-govuk/app-composer': ^0.15.2
       '@not-govuk/app-plop-pack': ^0.15.2
@@ -180,7 +180,7 @@ importers:
 
   apps/next-example:
     specifiers:
-      '@hods/components': workspace:^0.5.0
+      '@hods/components': workspace:^0.5.1
       '@not-govuk/simple-components': ^0.15.2
       '@types/node': 22.9.0
       '@types/react': 18.3.12
@@ -215,7 +215,7 @@ importers:
 
   apps/remix-example:
     specifiers:
-      '@hods/components': workspace:^0.5.0
+      '@hods/components': workspace:^0.5.1
       '@not-govuk/components': ^0.15.2
       '@remix-run/dev': ^2.15.1
       '@remix-run/node': ^2.15.1
@@ -274,7 +274,7 @@ importers:
 
   components/a-z-navigation:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-test-helpers': ^0.15.2
       '@not-govuk/navigation-menu': ^0.15.2
@@ -299,7 +299,7 @@ importers:
 
   components/alert:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.2
       '@not-govuk/component-test-helpers': ^0.15.2
@@ -345,8 +345,8 @@ importers:
 
   components/date-time:
     specifiers:
-      '@hods/date-display': workspace:^0.5.0
-      '@hods/time': workspace:^0.5.0
+      '@hods/date-display': workspace:^0.5.1
+      '@hods/time': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.2
       '@not-govuk/component-test-helpers': ^0.15.2
@@ -370,7 +370,7 @@ importers:
 
   components/expandable-banner:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.2
       '@not-govuk/component-test-helpers': ^0.15.2
@@ -393,7 +393,7 @@ importers:
 
   components/footer:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.2
       '@not-govuk/component-test-helpers': ^0.15.2
@@ -418,7 +418,7 @@ importers:
 
   components/header:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/anchor-list': ^0.15.2
       '@not-govuk/component-helpers': ^0.15.2
@@ -466,7 +466,7 @@ importers:
 
   components/loading-spinner:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.2
       '@not-govuk/component-test-helpers': ^0.15.2
@@ -489,9 +489,9 @@ importers:
 
   components/page:
     specifiers:
-      '@hods/footer': workspace:^0.5.0
-      '@hods/header': workspace:^0.5.0
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/footer': workspace:^0.5.1
+      '@hods/header': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/button': ^0.15.2
       '@not-govuk/button-group': ^0.15.2
@@ -526,7 +526,7 @@ importers:
 
   components/pagination:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/sass-base': workspace:^0.5.1
       '@jest/globals': 29.7.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.2
@@ -557,7 +557,7 @@ importers:
 
   components/status-message:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/anchor-list': ^0.15.2
       '@not-govuk/component-helpers': ^0.15.2
@@ -605,8 +605,8 @@ importers:
 
   components/timeline:
     specifiers:
-      '@hods/date-time': workspace:^0.5.0
-      '@hods/sass-base': workspace:^0.5.0
+      '@hods/date-time': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.1
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.2
       '@not-govuk/component-test-helpers': ^0.15.2
@@ -630,21 +630,21 @@ importers:
 
   lib/components:
     specifiers:
-      '@hods/a-z-navigation': workspace:^0.5.0
-      '@hods/alert': workspace:^0.5.0
-      '@hods/date-display': workspace:^0.5.0
-      '@hods/date-time': workspace:^0.5.0
-      '@hods/expandable-banner': workspace:^0.5.0
-      '@hods/footer': workspace:^0.5.0
-      '@hods/header': workspace:^0.5.0
-      '@hods/highlight': workspace:^0.5.0
-      '@hods/loading-spinner': workspace:^0.5.0
-      '@hods/page': workspace:^0.5.0
-      '@hods/pagination': workspace:^0.5.0
-      '@hods/sass-base': workspace:^0.5.0
-      '@hods/status-message': workspace:^0.5.0
-      '@hods/time': workspace:^0.5.0
-      '@hods/timeline': workspace:^0.5.0
+      '@hods/a-z-navigation': workspace:^0.5.1
+      '@hods/alert': workspace:^0.5.1
+      '@hods/date-display': workspace:^0.5.1
+      '@hods/date-time': workspace:^0.5.1
+      '@hods/expandable-banner': workspace:^0.5.1
+      '@hods/footer': workspace:^0.5.1
+      '@hods/header': workspace:^0.5.1
+      '@hods/highlight': workspace:^0.5.1
+      '@hods/loading-spinner': workspace:^0.5.1
+      '@hods/page': workspace:^0.5.1
+      '@hods/pagination': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.1
+      '@hods/status-message': workspace:^0.5.1
+      '@hods/time': workspace:^0.5.1
+      '@hods/timeline': workspace:^0.5.1
       '@not-govuk/components': 0.15.2
       jest: 29.7.0
       jest-environment-jsdom: 29.7.0
@@ -675,7 +675,7 @@ importers:
 
   lib/create:
     specifiers:
-      '@hods/plop-pack': workspace:^0.5.0
+      '@hods/plop-pack': workspace:^0.5.1
       '@not-govuk/create': ^0.15.2
       '@not-govuk/plop-pack-internal': ^0.15.2
       plop: 3.1.1

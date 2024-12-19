@@ -1,6 +1,6 @@
 {
   "name": "@hods/a-z-navigation",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A component to help users navigate an A to Z.",
   "main": "src/AZNavigation.tsx",
   "sass": "assets/AZNavigation.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.0",
+    "@hods/sass-base": "workspace:^0.5.1",
     "@not-govuk/navigation-menu": "^0.15.2"
   },
   "peerDependencies": {
