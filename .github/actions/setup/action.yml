@@ -18,6 +18,11 @@ runs:
         sudo locale-gen ${{ env.LANG }}
         sudo update-locale LANG=${{ env.LANG }}
 
+    - name: Setup package lock-file
+      shell: bash
+      run: |
+        cp pnpm-lock-committed.yaml pnpm-lock.yaml
+
     - name: Setup PNPM
       uses: pnpm/action-setup@v4.0.0
       with:

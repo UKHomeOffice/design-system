@@ -7,7 +7,7 @@ source_dir = ../..
 target_dir = $(build_dir)/skel
 sources := $(wildcard \
 	$(source_dir)/plopfile.mjs \
-	$(source_dir)/pnpm-lock.yaml \
+	$(source_dir)/pnpm-lock-committed.yaml \
 )
 docs_source_dir = $(build_dir)/apps/template
 docs_target_dir = $(target_dir)/apps/docs
