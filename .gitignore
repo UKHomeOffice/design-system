@@ -3,5 +3,6 @@
 .sastscan.baseline
 coverage/
 node_modules/
+pnpm-lock.yaml
 storybook-static/
 .DS_Store

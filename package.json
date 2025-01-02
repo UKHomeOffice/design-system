@@ -18,6 +18,7 @@
     "libs:publish": "npm run pnpm:libs -- publish --access public",
     "build": "npm run build:storybook",
     "clean": "npm run clean:storybook",
+    "pnpm:devPreinstall": "cp pnpm-lock-committed.yaml pnpm-lock.yaml",
     "preversion": "echo 'Warning: This should only be done on a fresh branch from master.'",
     "version": "bash .npm/version.sh",
     "postversion": "echo 'Done. You should now publish (with `npm run all:publish`), push your branch, push your tags and merge to master.'",
