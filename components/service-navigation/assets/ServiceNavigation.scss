@@ -1,0 +1,39 @@
+@import "@hods/sass-base";
+@import "@not-govuk/service-navigation";
+
+$link_colour: govuk_colour('black');
+
+.hods-service-navigation {
+  background-color: govuk-colour(white);
+
+  .govuk-width-container {
+    border-color: $hods-brand-colour-purple;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    margin-bottom: -1px;
+    @include govuk-responsive-padding(8, "left");
+    @include govuk-responsive-padding(8, "right");
+  }
+
+  .govuk-service-navigation__link {
+    &,
+    &--active,
+    &:not(:hover):not(:focus) {
+      color: $link_colour;
+    }
+  }
+
+  .govuk-service-navigation__list {
+    &__link {
+      &,
+      &--active,
+      &:not(:hover):not(:focus) {
+        color: $link_colour;
+      }
+    }
+
+    &__item {
+      border-color: $hods-brand-colour-purple;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { ServiceNavigation } from '../src/ServiceNavigation';
+import readMe from '../README.md';
+
+<Meta
+  title="Service navigation"
+  component={ ServiceNavigation }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'A component to help users understand that they’re using your service and lets them navigate around your service.',
+    jest: ['ServiceNavigation'],
+    notes: readMe
+  } }
+/>
+
+# Service navigation
+
+Service navigation helps users understand that they’re using your service and lets them navigate around your service.
+
+We alter the styling from the GOV.UK Design System component to better suit the rest of our page design.
+
+Read the [Service navigation guidance on the GOV.UK design system](https://design-system.service.gov.uk/components/service-navigation/).
+
+<Preview withToolbar>
+  <Story name="ServiceNavigation">
+    <ServiceNavigation items={[
+      {
+        href: "/#",
+        text: "Navigation item 1"
+      },
+      {
+        href: "#active",
+        text: "Navigation item 2",
+      },
+      {
+        href: "/#",
+        text: "Navigation item 3"
+      }
+    ]} />
+  </Story>
+</Preview>
+
+<Props of={ ServiceNavigation } />
+
+To use in React, read the [Service navigation documentation from NotGovUK](https://not-gov.uk/components?name=Service%20navigation).
+
+## How to use
+### Showing service name and navigation links
+
+Show navigation links to let users navigate to different parts of your service and find useful links and tools.
+
+<Preview>
+  <Story name="Full">
+    <ServiceNavigation
+      serviceName="Service name"
+      serviceHref="#"
+      items={[
+        {
+          href: "/#",
+          text: "Navigation item 1"
+        },
+        {
+          href: "#active",
+          text: "Navigation item 2",
+        },
+        {
+          href: "/#",
+          text: "Navigation item 3"
+        }
+      ]}
+    />
+  </Story>
+</Preview>
