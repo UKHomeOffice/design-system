@@ -1,0 +1,35 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Subsection } from '../src/Subsection';
+import readMe from '../README.md';
+
+<Meta
+  title="Subsection"
+  component={ Subsection }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'A layout wrapper for subsections within the User-Centred Design Manual.',
+    jest: ['Subsection'],
+    notes: readMe
+  } }
+/>
+
+# Subsection
+
+A layout wrapper for subsections within the User-Centred Design Manual.
+
+<Preview withToolbar>
+  <Story name="Subsection">
+    <Subsection title="My subsection" navigation={[
+      { href: '#', text: 'Current page' },
+      { href: '?one', text: 'One' },
+      { href: '?two', text: 'Two' },
+      { href: '?three', text: 'Three' }
+    ]}>
+      <h1>My page</h1>
+      <p>My content.</p>
+    </Subsection>
+  </Story>
+</Preview>
+
+<Props of={ Subsection } />
+
