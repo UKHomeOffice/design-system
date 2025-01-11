@@ -1,0 +1,175 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Section } from '@hods/ucdm-section';
+import { Subsection } from '@hods/ucdm-subsection';
+import { Button } from '@not-govuk/button';
+import { ButtonGroup } from '@not-govuk/button-group';
+import { Page } from '../src/Page';
+import readMe from '../README.md';
+
+<Meta
+  title="UCDM Page"
+  component={ Page }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'A UCD Manual page with content sandwiched between the header and footer.',
+    jest: ['Page'],
+    notes: readMe
+  } }
+/>
+
+# Page
+
+Use this page template to keep your pages consistent with the rest of internal Home Office services.
+
+For now, this version is just for use on the User-Centred Design Manual.
+
+<Preview withToolbar>
+  <Story name="Page">
+    <Page
+      serviceName="Service name"
+      footerNavigation={[
+        { href: '/feedback', text: 'Feedback' },
+        { href: '/help', text: 'Help' },
+        { href: 'https://gov.uk/', text: 'Gov.UK home' }
+      ]}
+    >
+      <h1>Default page template</h1>
+      <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The main page content has a grey background to reduce eye-strain. Buttons in this section are slightly re-styled, for accessibility reasons.</p>
+      <ButtonGroup>
+        <Button>Save and continue</Button>
+        <Button classModifiers="secondary">Save as draft</Button>
+      </ButtonGroup>
+      <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
+    </Page>
+  </Story>
+</Preview>
+
+<Props of={ Page } />
+
+## How it works
+### Standard page
+
+<Preview>
+  <Story name="Standard">
+    <Page>
+      <h1>Default page template</h1>
+      <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The main page content has a grey background to reduce eye-strain. Buttons in this section are slightly re-styled, for accessibility reasons.</p>
+      <ButtonGroup>
+        <Button>Save and continue</Button>
+        <Button classModifiers="secondary">Save as draft</Button>
+      </ButtonGroup>
+      <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
+    </Page>
+  </Story>
+</Preview>
+
+### Page with navigation links in the header and footer
+
+<Preview>
+  <Story name="Navigation">
+    <Page
+      accountHref="#/my-account"
+      serviceName="Service name"
+      signOutHref="#/auth/sign-out"
+      username="User name"
+      navigation={[
+        { href: '/styles', text: 'Styles' },
+        { href: '/components', text: 'Components' },
+        { href: '/patterns', text: 'Patterns' },
+        { href: '/resources', text: 'Resources' },
+        { href: '/get-involved', text: 'Get involved' }
+      ]}
+      footerNavigation={[
+        { href: '/feedback', text: 'Feedback' },
+        { href: '/help', text: 'Help' },
+        { href: 'https://gov.uk/', text: 'Gov.UK home' }
+      ]}
+      footerContent="Copyright 2020 Crown copyright"
+    >
+      <h1>Default page template</h1>
+      <p>The header inspires trust with the department logo, while the service name helps users understand which service they are using.</p>
+      <p>The footer includes information about the department with relevant links. White background helps to clearly section the main content area.</p>
+    </Page>
+  </Story>
+</Preview>
+
+
+### Realistic
+
+<Preview>
+  <Story name="Realistic">
+    <Page
+      searchAction="https://google.co.uk/search"
+      serviceName="UCD Manual"
+      serviceNameInHeader
+      serviceHref="#"
+      footerNavigation={[
+        { href: 'https://github.com/UKHomeOffice/design-system/', text: 'GitHub' },
+        { href: '/accessibility-statement', text: 'Accessibility statement' },
+        { href: '/sitemap', text: 'Sitemap' },
+        { href: '/feedback', text: 'Feedback' },
+        { href: 'https://design-system.service.gov.uk/', text: 'GOV.UK Design System' }
+      ]}
+      navigation={[
+        { href: '#', text: 'Design and content' },
+        { href: '/user-research', text: 'User research' },
+        { href: '/accessibility', text: 'Accessibility' },
+        { href: '/about', text: 'About' }
+      ]}
+    >
+      <Section title="Design and content" href="#" description="Use the UCD Manual to create consistent services that put users first." navigation={[
+        { href: '#', text: 'Design system' },
+        { href: '/design-and-content/content-style-guide', text: 'Content style guide' },
+        { href: '/design-and-content/professional-standards', text: 'Professional standards and guidance' }
+      ]}>
+        <Subsection title="Design system" navigation={[
+          { href: '#', text: 'Getting started' },
+          { href: '/styles', text: 'Styles' },
+          { href: '/components', text: 'Components' },
+          { href: '/contribute', text: 'Contribute' }
+        ]}>
+        <h1>Getting started</h1>
+        <p>The Home Office design system helps us understand what Home Office services look like and how they should behave. It builds on the <a href="https://design-system.service.gov.uk/">GOV.UK design system</a>.</p>
+        <p>There is an implementation of the design system that's an extension of <a href="https://not-gov.uk/">NotGovUK</a> which implements the GOV.UK design system in React. (See: <a href="https://not-gov.uk/design-decisions">design decisions</a>)</p>
+        <p>You can use the Home Office design system for prototyping and products in production. See <a href="../styles">styles</a> for more information on internal and public facing services.</p>
+        </Subsection>
+      </Section>
+    </Page>
+  </Story>
+</Preview>
+
+
+## Accessibility
+
+If your service uses this component, let us know of any insights you have on accessibility considerations.
+
+## Research
+
+Page is used by:
+
+- Atlas caseworking system
+- Central Operations Platform
+
+Research has shown that a [grey background tint](https://design.homeoffice.gov.uk/styles/colour) behind areas of text reduces eye strain, particularly for services intended for regular and prolonged use.
+
+Testing on our caseworking system called Atlas showed that:
+
+- black text on a stark white background caused the words to 'dance' for dyslexic users and adding a shaded background stopped this from happening
+- people who work night shifts and spend prolonged time on screens complained that stark white screens contributed to eye strain and made it difficult to concentrate
+
+This is supported by advice in the [British Dyslexia Association style guide](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide), which recommends use of dark text on a light (not white) background.
+
+While it's best practice to give users control over exactly how they see things (for example a peach overlay makes reading easier for many dyslexic users), adding a shaded background has benefits for a range of users.
+
+We also know that some of our users work on shared computers, or computers which cannot be adapted to change the colour of the screen – for example, border agents and prison guards.
+
+## Help improve this component
+
+This component needs improving. We need evidence about:
+
+- how to write for this component
+- which services are using this component
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/399), or follow our [contribute guidance](/contribute).
