@@ -9,7 +9,7 @@ code{
 }
 
 .hods-width-container {
-  max-width: $max-width;
+  max-width: $max-width !important;
 
   @media (min-width: 769px) and (max-width: $max-width + 2 * $margin) {
     margin-right: $margin;
