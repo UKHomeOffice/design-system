@@ -1,0 +1,113 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Header } from '../src/Header';
+import readMe from '../README.md';
+
+<Meta
+  title="UCDM Header"
+  component={ Header }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'The page header for the User-Centred Design Manual.',
+    jest: ['Header'],
+    notes: readMe
+  } }
+/>
+
+# Header
+
+The Home Office header shows users that they are on an internal Home Office service and indicates which service they are using.
+
+For now, this version is just for use on the User-Centred Design Manual.
+
+<Preview withToolbar>
+  <Story name="Header">
+    <Header serviceName="Service name" />
+  </Story>
+</Preview>
+
+<Props of={ Header } />
+
+## When to use this component
+You must use the Home Office header if your service:
+- is internal, such as a caseworking system or admin service, and
+- sits on a homeoffice.gov.uk domain
+
+## When not to use this component
+You must not use the Home Office header if your service:
+- is public-facing and transactional, and
+- sits on a gov.uk or service.gov.uk domain
+
+## How it works
+### Standard header
+
+<Preview>
+  <Story name="Standard">
+    <Header />
+  </Story>
+</Preview>
+
+### Header with service name
+
+<Preview>
+  <Story name="ServiceTitle">
+    <Header serviceName="Service name" />
+  </Story>
+</Preview>
+
+### Header with option to sign out
+
+<Preview>
+  <Story name="Sign-out">
+    <Header
+      accountHref="#/my-account"
+      signOutHref="#/auth/sign-out"
+      username="User name"
+    />
+  </Story>
+</Preview>
+
+### Header with search
+
+<Preview>
+  <Story name="Search">
+    <Header
+      searchAction="/search"
+    />
+  </Story>
+</Preview>
+
+### Header with everything
+
+<Preview>
+  <Story name="Everything">
+    <Header
+      accountHref="#/my-account"
+      searchAction="/search"
+      serviceName="Service name"
+      signOutHref="#/auth/sign-out"
+      username="User name"
+    />
+  </Story>
+</Preview>
+
+## Accessibility
+
+If your service uses this component, let us know of any insights you have on accessibility considerations.
+
+## Research
+
+The header is used by:
+
+- Atlas caseworking system
+- Central Operations Platform
+
+If your service uses this component, let us know of any insights you have on research.
+
+## Help improve this component
+
+This component needs improving. We need evidence about:
+
+- how to write for this component
+- which services are using this component
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/373), or follow our [contribute guidance](/contribute).
