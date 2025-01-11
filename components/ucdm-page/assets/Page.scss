@@ -1,0 +1,135 @@
+@use "sass:map";
+@import "@hods/sass-base";
+@import "govuk-frontend/dist/govuk/objects/main-wrapper";
+@import "govuk-frontend/dist/govuk/objects/width-container";
+@import "govuk-frontend/dist/govuk/objects/template";
+@import "./fonts/roboto.css";
+
+$hods-secondary-button-colour: #F8F8F8;
+$hods-secondary-button-hover-colour: govuk-shade($hods-secondary-button-colour, 10%);
+$hods-secondary-button-shadow-colour: govuk-colour("black"); // was: govuk-shade($hods-secondary-button-colour, 40%);
+$hods-secondary-button-text-colour: govuk-colour("black");
+$hods-secondary-button-border-width: 1px;
+
+$button-shadow-size: $govuk-border-width-form-element;
+
+.hods-ucdm-page,
+#story-root,
+#root,
+body,
+html {
+  background-color: #F5F5F5 !important;
+  color: #0b0c0c;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  margin: 0;
+}
+
+.hods-ucdm-page,
+body,
+html {
+  height: 100%;
+}
+
+.hods-ucdm-page {
+  @extend .govuk-template__body;
+  display: flex;
+  flex-direction: column;
+  overflow: initial;
+  flex: 1 0 auto;
+  padding: initial;
+
+  .hods-ucdm-page {
+    height: initial;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    width: 100%;
+
+    // The style of the secondary button needs to change due to the grey background of .ucdm-page
+    .govuk-button--secondary {
+      background-color: $hods-secondary-button-colour;
+      // We make the, now visible, borders smaller
+      border-color: $hods-secondary-button-shadow-colour;
+      border-width: $hods-secondary-button-border-width $hods-secondary-button-border-width 0 $hods-secondary-button-border-width;
+      // Padding must be adjusted to account for new border size
+      padding: calc(govuk-spacing(2) - $hods-secondary-button-border-width)
+               calc(govuk-spacing(2) + $govuk-border-width-form-element - $hods-secondary-button-border-width)
+               calc(govuk-spacing(2) - ($button-shadow-size / 2));
+      box-shadow: 0 $button-shadow-size 0 $hods-secondary-button-shadow-colour;
+
+      &,
+      &:link,
+      &:visited,
+      &:active,
+      &:hover {
+        color: $hods-secondary-button-text-colour;
+      }
+
+      &:hover {
+        background-color: $hods-secondary-button-hover-colour;
+
+        &[disabled] {
+          background-color: $hods-secondary-button-colour;
+        }
+      }
+
+      &:focus {
+        // Must reinstate original border widths and padding
+        border-width: $govuk-border-width-form-element;
+        padding: calc(govuk-spacing(2) - $govuk-border-width-form-element)
+                 govuk-spacing(2)
+                 calc(govuk-spacing(2) - $govuk-border-width-form-element - ($button-shadow-size / 2));
+      }
+    }
+  }
+
+  &__container {
+  }
+
+  &__main {
+    @extend .govuk-main-wrapper;
+  }
+
+  aside {
+    $home-office: map.get($govuk-colours-organisations, "home-office");
+    $contrast-safe: map.get($home-office, "contrast-safe");
+    $light-colour: map.get($home-office, "colour");
+    $colour: if($contrast-safe, $contrast-safe, $light-colour);
+
+    border-color: $colour;
+  }
+
+  //////////////////////////////////////////////////////////////
+
+  &__navigation {
+    &, &.hods-service-navigation {
+      border-color: $govuk-border-colour;
+      border-style: solid;
+      border-width: 0 0 1px 0;
+    }
+
+    .govuk-service-navigation__list {
+      font-weight: bold;
+    }
+
+    &--service-name {
+      .govuk-service-navigation__list {
+        font-weight: normal;
+      }
+    }
+
+    .govuk-width-container {
+      border-color: $hods-brand-colour-purple;
+      border-style: solid;
+      border-width: 0 0 1px 0;
+      margin-bottom: -1px;
+      @include govuk-responsive-padding(8, "left");
+      @include govuk-responsive-padding(8, "right");
+    }
+  }
+}
+
+.hods-width-container {
+  @extend .govuk-width-container;
+}
