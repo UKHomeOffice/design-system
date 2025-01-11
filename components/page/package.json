@@ -1,7 +1,7 @@
 {
   "name": "@hods/page",
   "version": "0.5.1",
-  "description": "HODS' page component.",
+  "description": "A fully Home Office branded page with content sandwiched between the header and footer.",
   "main": "src/Page.tsx",
   "sass": "assets/Page.scss",
   "publishConfig": {
