@@ -1,7 +1,7 @@
 {
   "name": "@hods/header",
   "version": "0.5.1",
-  "description": "HODS' page header.",
+  "description": "A component that shows users whether they are on a Home Office service and which service they are using.",
   "main": "src/Header.tsx",
   "sass": "assets/Header.scss",
   "publishConfig": {
