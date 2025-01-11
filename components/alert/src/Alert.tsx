@@ -1,6 +1,6 @@
 import { FC, ReactNode, createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { InsetText} from '@not-govuk/inset-text';
+import { InsetText } from '@not-govuk/inset-text';
 
 import '../assets/Alert.scss';
 
