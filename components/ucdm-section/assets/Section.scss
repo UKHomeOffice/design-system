@@ -1,0 +1,10 @@
+@import "@hods/sass-base";
+
+.hods-ucdm-section {
+  &__container {
+    @include govuk-responsive-padding(8, "top");
+    @include govuk-responsive-padding(7, "bottom");
+    @include govuk-responsive-padding(8, "left");
+    @include govuk-responsive-padding(8, "right");
+  }
+}
