@@ -193,7 +193,7 @@ const Page: FC<PageProps> = () => (
 
         <h2 className="a-z-header" id="h">H</h2>
          <h3 id="hint-text">hint text</h3>
-        <p>Hint text should not be longer than a sentence. If you need to write more than 1 sentence, use the <A href="https://design-system.service.gov.uk/styles/paragraphs/">paragraphs</A>. Do not use full stops after hint text unless you are updating an existing service that uses full stops inconsistently.</p>
+        <p>Hint text should not be longer than a sentence. If you need to write more than 1 sentence, use <A href="https://design-system.service.gov.uk/styles/paragraphs/">GOV.UK's paragraph style</A>. Do not use full stops after hint text unless you are updating an existing service that uses full stops inconsistently.</p>
         <h3 id="his majesty’s">His Majesty’s</h3>
         <p>Use ‘HM’ rather than ‘His Majesty’s’ in front of the name of the relevant public body. For example, 'HM Revenue & Customs'.</p>
         <h3 id="hm passport office">HM Passport Office</h3>
