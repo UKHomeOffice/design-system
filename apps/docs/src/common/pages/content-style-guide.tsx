@@ -56,7 +56,7 @@ const Page: FC<PageProps> = () => (
         <h3 id="account">account</h3>
         <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
         <h3 id="acronyms">acronyms</h3>
-        <p>Write out an acronym in full the first time you use it on a new page or screen, unless it is well known to your users, like UK, US or NHS. Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. If available, use a tooltip like <A href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown#acronyms">acronym Markdown</A> to make the acronym appear in full as hover text. See more guidance on abbreviations and acronyms in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
+        <p>Write out abbreviations or acronyms in full the first time you use them on a new page or screen, unless your users already know them, like UK or US. Then use the initials. For example, the first time ‘immigration health surcharge (IHS)’ appears on each screen of your service, write it out. On subsequent mentions on the same screen, use ‘IHS’. Refer to <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GDS style guide</A> for more details.</p>
         <h3 id="alter">alter</h3>
         <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
          <h3 id="authorising officer">authorising officer</h3>
@@ -192,6 +192,8 @@ const Page: FC<PageProps> = () => (
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
         <h2 className="a-z-header" id="h">H</h2>
+         <h3 id="hint-text">hint text</h3>
+        <p>Hint text should not be longer than a sentence. If you need to write more than 1 sentence, use <A href="https://design-system.service.gov.uk/styles/paragraphs/">GOV.UK's paragraph style</A>. Do not use full stops after hint text unless you are updating an existing service that uses full stops inconsistently.</p>
         <h3 id="his majesty’s">His Majesty’s</h3>
         <p>Use ‘HM’ rather than ‘His Majesty’s’ in front of the name of the relevant public body. For example, 'HM Revenue & Customs'.</p>
         <h3 id="hm passport office">HM Passport Office</h3>
