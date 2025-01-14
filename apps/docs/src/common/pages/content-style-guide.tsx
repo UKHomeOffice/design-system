@@ -56,7 +56,7 @@ const Page: FC<PageProps> = () => (
         <h3 id="account">account</h3>
         <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
         <h3 id="acronyms">acronyms</h3>
-        <p>Write out abbreviations or acronyms in full the first time you use them on a new page or screen, unless your users already know them, like UK or US. Then use the initials. For example, the first time ‘immigration health surcharge (IHS)’ appears on each screen of your service, write it out. On subsequent mentions on the same screen, use ‘IHS’. Refer to <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GDS style guide</A> for more details</p>
+        <p>Write out abbreviations or acronyms in full the first time you use them on a new page or screen, unless your users already know them, like UK or US. Then use the initials. For example, the first time ‘immigration health surcharge (IHS)’ appears on each screen of your service, write it out. On subsequent mentions on the same screen, use ‘IHS’. Refer to <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GDS style guide</A> for more details.</p>
         <h3 id="alter">alter</h3>
         <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
          <h3 id="authorising officer">authorising officer</h3>
