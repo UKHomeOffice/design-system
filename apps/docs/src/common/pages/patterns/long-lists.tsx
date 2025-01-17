@@ -93,6 +93,7 @@ const Page: FC<PageProps> = () => (
       <div className="govuk-grid-column-one-half">
       <img src={inlineautocomplete} className="image-examples" alt="The letters B and E have been typed into the search field. A drop-down displays the countries that start with B, E in an alphabetical list: Belarus, Belize, Belgium, Benin, Bermuda."/></div>
    </div>
+  
 
       <p>Autocompletes work better when the user knows exactly what entry they are looking for in the list.</p>
       <p>This component can help by:  </p>
