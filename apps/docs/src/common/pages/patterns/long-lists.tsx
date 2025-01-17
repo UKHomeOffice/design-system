@@ -11,9 +11,9 @@ const subsection = 'Help users to';
 
 const autocomplete = require('../../../../assets/images/patterns/list-only-autocomplete.png');
 const inlineautocomplete = require('../../../../assets/images/patterns/inline-autocomplete.png');
-const bothlist = require('../../../../assets/images/patterns/both-lists.png');
-const divide = require('../../../../assets/images/patterns/divide-categories.png');
-const questions = require('../../../../assets/images/patterns/structured-questions.png');
+const bothlist = require('../../../../assets/images/patterns/bothlists2.png');
+const divide = require('../../../../assets/images/patterns/divide-lists.png');
+const questions = require('../../../../assets/images/patterns/structured-questions2.png');
 
 
 const Page: FC<PageProps> = () => (
@@ -86,13 +86,14 @@ const Page: FC<PageProps> = () => (
       <p>list with inline autocomplete</p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
-      <img src={autocomplete} className="image-examples" alt="An example of an interaction to select the document type before uploading the file"/></div>
+      <img src={autocomplete} className="image-examples" alt="The letters B, E, L have been typed into the search field. The autocomplete has completed the word to spell Belarus. All countries starting with B, E, L appear alphabetically in the dropdown: Belarus and Belgium."/></div>
    </div>
       <p>list only autocomplete (also called ‘autosuggests’)</p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
-      <img src={inlineautocomplete} className="image-examples" alt="An example of an interaction to select the document type before uploading the file"/></div>
+      <img src={inlineautocomplete} className="image-examples" alt="The letters B and E have been typed into the search field. A drop-down displays the countries that start with B, E in an alphabetical list: Belarus, Belize, Belgium, Benin, Bermuda."/></div>
    </div>
+
       <p>Autocompletes work better when the user knows exactly what entry they are looking for in the list.</p>
       <p>This component can help by:  </p>
       <ul className="govuk-list govuk-list--bullet">
@@ -126,8 +127,8 @@ const Page: FC<PageProps> = () => (
       <p>The second list is conditionally revealed when option in first list is selected</p>
 
       <div className="govuk-grid-row">
-      <div className="govuk-grid-column-one-half">
-      <img src={divide} className="image-examples" alt="An example of an interaction to select the document type before uploading the file"/></div>
+      <div className="govuk-grid-column-full">
+      <img src={divide} className="image-examples" alt="Two images show how a second list is conditionally revealed when an option in the first list is selected. The first image offers a dropdown to select a country. On the second image, United Kingdom of Great Britain and Northern Ireland has been selected in the country dropdown and a second dropdown has appeared below that, showing options for different UK ports."/></div>
    </div>
 
 
@@ -136,7 +137,7 @@ const Page: FC<PageProps> = () => (
 
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
-      <img src={bothlist} className="image-examples" alt="An example of an interaction to select the document type before uploading the file"/></div>
+      <img src={bothlist} className="image-examples" alt="This image shows how both lists are presented when the screen loads. Two dropdowns are shown, the first for selecting a country and the second for choosing a port."/></div>
    </div>
 
 
@@ -160,8 +161,8 @@ const Page: FC<PageProps> = () => (
       <h3>Structured questions</h3>
 
       <div className="govuk-grid-row">
-    
-      <img src={questions} className="image-examples" alt="An example of an interaction to select the document type before uploading the file"/>
+      <div className="govuk-grid-column-full">
+      <img src={questions} className="image-examples" alt="Numbered boxes with arrows leading to the next one show how questions 1, 2 and 3 are asked consecutively. The questions filter down the options to a shorter list, or even just one option."/></div>
       
    </div>
       <p>Ask a series of questions to guide the user to the best option. </p>
