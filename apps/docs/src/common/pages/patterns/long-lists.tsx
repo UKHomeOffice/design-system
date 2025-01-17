@@ -13,7 +13,7 @@ const autocomplete = require('../../../../assets/images/patterns/list-only-autoc
 const inlineautocomplete = require('../../../../assets/images/patterns/inline-autocomplete.png');
 const bothlist = require('../../../../assets/images/patterns/bothlists2.png');
 const divide = require('../../../../assets/images/patterns/divide-lists.png');
-const questions = require('../../../../assets/images/patterns/structured-questions2.png');
+const questions = require('../../../../assets/images/patterns/structured-questions.png');
 
 
 const Page: FC<PageProps> = () => (
