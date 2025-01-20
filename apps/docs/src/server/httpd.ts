@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import engine, { AuthMethod, Handler, Mode, SessionStore } from '@not-govuk/engine';
+import engine, { AuthMethod, Handler, Mode, cspSelf } from '@not-govuk/engine';
 import config from './config';
 import AppWrap from '../common/app-wrap';
 import ErrorPage from '../common/error-page';
@@ -34,6 +34,7 @@ export const createServer = ({ entrypoints, port }: httpdOptions) => {
       secure: config.cookies.secure
     },
     env: config.env,
+    formAction: ['www.google.co.uk', cspSelf],
     frameAncestors: config.frameAncestors,
     httpd: {
       host: config.httpd.host,
