@@ -1,4 +1,5 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { NavigationMenu } from '@not-govuk/navigation-menu';
 import { Subsection } from '../src/Subsection';
 import readMe from '../README.md';
 
@@ -19,12 +20,14 @@ A layout wrapper for subsections within the User-Centred Design Manual.
 
 <Preview withToolbar>
   <Story name="Subsection">
-    <Subsection title="My subsection" navigation={[
-      { href: '#', text: 'Current page' },
-      { href: '?one', text: 'One' },
-      { href: '?two', text: 'Two' },
-      { href: '?three', text: 'Three' }
-    ]}>
+    <Subsection title="My subsection" side={(
+      <NavigationMenu items={[
+        { href: '#', text: 'Current page' },
+        { href: '?one', text: 'One' },
+        { href: '?two', text: 'Two' },
+        { href: '?three', text: 'Three' }
+      ]} />
+    )}>
       <h1>My page</h1>
       <p>My content.</p>
     </Subsection>
