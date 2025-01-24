@@ -13,7 +13,7 @@ const autocomplete = require('../../../../assets/images/patterns/list-only-autoc
 const inlineautocomplete = require('../../../../assets/images/patterns/inline-autocomplete.png');
 const bothlist = require('../../../../assets/images/patterns/bothlists2.png');
 const divide = require('../../../../assets/images/patterns/divide-lists.png');
-const questions = require('../../../../assets/images/patterns/structured-questions.png');
+const questions = require('../../../../assets/images/patterns/structure-questions2.png');
 
 
 const Page: FC<PageProps> = () => (
@@ -82,19 +82,24 @@ const Page: FC<PageProps> = () => (
       <h3>Autocomplete</h3>
       <p>Autocompletes (also called ‘typeahead’) are a text inputs that suggest options to the user as they type. Results are presented in a dropdown list which users can select from.</p>
     
-      <p>The most common types of autocomplete used in the Home Office are:</p>
-      <p>list with inline autocomplete</p>
+      <p>TThere are two types of autocomplete commonly used in the Home Office: inline autocomplete and list-only autocomplete.  </p>
+      <h4 className="govuk-heading-s">Inline autocomplete</h4>
+      <p>Where the letters B, E, L have been typed into the country search field, the countries starting with those letters appear alphabetically in the dropdown: Belarus and Belgium. The autocomplete has completed the word in the search field to allow you to choose the first option, Belarus. </p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
-      <img src={autocomplete} className="image-examples" alt="The letters B, E, L have been typed into the search field. The autocomplete has completed the word to spell Belarus. All countries starting with B, E, L appear alphabetically in the dropdown: Belarus and Belgium."/></div>
+      <img src={inlineautocomplete} className="image-examples" alt="The letters B, E, L have been typed into the search field. The autocomplete has completed the word to spell Belarus. All countries starting with B, E, L appear alphabetically in the dropdown: Belarus and Belgium."/></div>
    </div>
-      <p>list only autocomplete (also called ‘autosuggests’)</p>
+   <br></br>
+   <br></br>
+   <br></br>
+   <h4 className="govuk-heading-s">list only autocomplete (also called ‘autosuggests’)</h4>
+      <p>When B and E are typed into the search field, the dropdown displays the countries that start with those letters in an alphabetical list: Belarus, Belize, Belgium, Benin, Bermuda. </p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
-      <img src={inlineautocomplete} className="image-examples" alt="The letters B and E have been typed into the search field. A drop-down displays the countries that start with B, E in an alphabetical list: Belarus, Belize, Belgium, Benin, Bermuda."/></div>
+      <img src={autocomplete} className="image-examples" alt="The letters B and E have been typed into the search field. A drop-down displays the countries that start with B, E in an alphabetical list: Belarus, Belize, Belgium, Benin, Bermuda."/></div>
    </div>
-  
-
+  <br></br>
+<br></br>
       <p>Autocompletes work better when the user knows exactly what entry they are looking for in the list.</p>
       <p>This component can help by:  </p>
       <ul className="govuk-list govuk-list--bullet">
@@ -108,6 +113,7 @@ const Page: FC<PageProps> = () => (
         <li>whether your service will find a combination of letters anywhere in an entry</li>
         <li>the order in which you will present options</li>
         <li>doing research with your users to find out whether you need to allow synonyms, for example when choosing a language from a list, entering ‘Deutsch’ or ‘Germany’ will bring up ‘German’ </li>
+        <li>doing research with your users to understand if codes or numbers should be added to help identify the options in the list </li>
         <li>telling the user how many matches have been found</li>
         <li>what happens if there are no results found</li>
         <li>how to show users that they can see the complete list, for example a select arrow</li>
@@ -123,27 +129,32 @@ const Page: FC<PageProps> = () => (
       </ul>
 
       <p>See this summary about<A href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/">autocompletes from the Web Accessibility Initiative (W3C).</A> </p>
-
+      
       <h3>Divide the list into categories</h3>
-      <p>The second list is conditionally revealed when option in first list is selected</p>
+      <p>Divide the data into categories so when users select a category, they are shown only relevant options in the next field.</p>
+      <h4 className="govuk-heading-s">Both lists are shown when screen loads</h4>
+  <p>In this case, the options displayed in the second list are filtered depending on what is selected from the first list. If no option is chosen in the first list, the user can select from the unfiltered range of options in the second list. </p>
+
+<div className="govuk-grid-row">
+<div className="govuk-grid-column-one-half">
+<img src={bothlist} className="image-examples" alt="Two dropdowns are shown onscreen, the first for selecting a country and the second for choosing a port."/></div>
+</div>
+
+<h4 className="govuk-heading-s">Second list is conditionally revealed  </h4>
+<p>The second list is conditionally revealed when an option in the first list is selected.</p>
+<p>In this example, the user selects a country – United Kingdom of Great Britain and Northern Ireland – from a dropdown. A second dropdown then appears below the first, showing options for different UK ports. </p>
 
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-full">
-      <img src={divide} className="image-examples" alt="Two images show how a second list is conditionally revealed when an option in the first list is selected. The first image offers a dropdown to select a country. On the second image, United Kingdom of Great Britain and Northern Ireland has been selected in the country dropdown and a second dropdown has appeared below that, showing options for different UK ports."/></div>
+      <img src={divide} className="image-examples" alt=" Example of the interaction where the second list conditionally revealed."/></div>
    </div>
 
 
 
-      <p>Both lists are shown when screen loads</p>
-
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-one-half">
-      <img src={bothlist} className="image-examples" alt="This image shows how both lists are presented when the screen loads. Two dropdowns are shown, the first for selecting a country and the second for choosing a port."/></div>
-   </div>
+      
 
 
-      <p>In the second example, the options displayed in the second list are filtered depending on what is selected in the first list. If no option is chosen in the first list, the user can select from the unfiltered range of options in the second list. </p>
-      <p>Divide the data into categories so when users select a category, they are shown only relevant options in the next field.</p>
+     
       <p>This approach can:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>prevent mistakes, especially if there are legal consequences to choosing the wrong option </li>
@@ -160,13 +171,13 @@ const Page: FC<PageProps> = () => (
       </ul>
 
       <h3>Structured questions</h3>
-
+      <p>Ask a series of questions to guide the user to the best option. </p>
+<p>Numbered screens show how questions 1, 2 and 3 are asked consecutively. Answering the questions filters down the list to a single option or shorter list.  </p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-full">
-      <img src={questions} className="image-examples" alt="Numbered boxes with arrows leading to the next one show how questions 1, 2 and 3 are asked consecutively. The questions filter down the options to a shorter list, or even just one option."/></div>
+      <img src={questions} className="image-examples" alt="Example of the structured questions interaction."/></div>
       
    </div>
-      <p>Ask a series of questions to guide the user to the best option. </p>
 
       <p>Use this pattern when:</p>
       <ul className="govuk-list govuk-list--bullet">
@@ -192,6 +203,7 @@ const Page: FC<PageProps> = () => (
 
       <p>If your service uses this pattern, let us know of any insights you have
       on accessibility considerations.</p>
+      <br></br>
 
       <h2 className="govuk-heading-l">Research</h2>
      
