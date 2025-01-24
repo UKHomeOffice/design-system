@@ -82,22 +82,23 @@ const Page: FC<PageProps> = () => (
       <h3>Autocomplete</h3>
       <p>Autocompletes (also called ‘typeaheads’) are text inputs that suggest options to the user as they type. Results are presented in a dropdown list which users can select from.</p>
     
-      <p>TThere are two types of autocomplete commonly used in the Home Office: inline autocomplete and list-only autocomplete.  </p>
-      <h4 className="govuk-heading-s">Inline autocomplete</h4>
-      <p>Where the letters B, E, L have been typed into the country search field, the countries starting with those letters appear alphabetically in the dropdown: Belarus and Belgium. The autocomplete has completed the word in the search field to allow you to choose the first option, Belarus. </p>
+      <p>There are two types of autocomplete commonly used in the Home Office: inline autocomplete and list-only autocomplete.  </p>
+      <h4 className="govuk-heading-s">List only autocomplete (also called ‘autosuggests’)</h4>
+      <p>When letters are typed into the input field, the dropdown list displays options that start with those letters. The user selects from the list to complete the field.  </p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
-      <img src={inlineautocomplete} className="image-examples" alt="The letters B, E, L have been typed into the search field. The autocomplete has completed the word to spell Belarus. All countries starting with B, E, L appear alphabetically in the dropdown: Belarus and Belgium."/></div>
+      <img src={autocomplete} className="image-examples" alt="Example of list only autocomplete."/></div>
    </div>
    <br></br>
    <br></br>
    <br></br>
-   <h4 className="govuk-heading-s">list only autocomplete (also called ‘autosuggests’)</h4>
-      <p>When B and E are typed into the search field, the dropdown displays the countries that start with those letters in an alphabetical list: Belarus, Belize, Belgium, Benin, Bermuda. </p>
+   <h4 className="govuk-heading-s">Inline autocomplete</h4>
+      <p>When letters are typed into the input field, the dropdown list displays options that start with those letters. The portion of the first suggestion that has not been typed by the user appears after the cursor in the input field. The user can select the suggestion to complete the field. </p>
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
-      <img src={autocomplete} className="image-examples" alt="The letters B and E have been typed into the search field. A drop-down displays the countries that start with B, E in an alphabetical list: Belarus, Belize, Belgium, Benin, Bermuda."/></div>
+      <img src={inlineautocomplete} className="image-examples" alt="Example of inline autocomplete."/></div>
    </div>
+   
   <br></br>
 <br></br>
       <p>Autocompletes work better when the user knows exactly what entry they are looking for in the list.</p>
@@ -119,6 +120,7 @@ const Page: FC<PageProps> = () => (
         <li>how to show users that they can see the complete list, for example a select arrow</li>
         <li>how users can easily clear what they have entered to see the full list again</li>
         <li>a plan for how you will maintain the accuracy of the list over time</li>
+        <li>how the number of options displayed to the user impacts loading time</li>
       </ul>
 
       <p>See this Department of Education <A href="https://becoming-a-teacher.design-history.education.gov.uk/register-trainee-teachers/autocomplete-improvements/">design history blog on improving autocompletes</A>.</p>
@@ -132,8 +134,9 @@ const Page: FC<PageProps> = () => (
       
       <h3>Divide the list into categories</h3>
       <p>Divide the data into categories so when users select a category, they are shown only relevant options in the next field.</p>
+      <p>There are two ways of doing this: showing all lists when the screen loads or only revealing the next list when a choice has been made</p>
       <h4 className="govuk-heading-s">Both lists are shown when screen loads</h4>
-  <p>In this case, the options displayed in the second list are filtered depending on what is selected from the first list. If no option is chosen in the first list, the user can select from the unfiltered range of options in the second list. </p>
+  <p>In this case, the options displayed in the second list are filtered depending on what is selected from the first list. If no option is chosen in the first list, the user can select from the unfiltered range of options in the second list.</p>
 
 <div className="govuk-grid-row">
 <div className="govuk-grid-column-one-half">
