@@ -37,7 +37,7 @@ const Page: FC<PageProps> = () => (
       </h1>
       
 
-      <p className="govuk-body">Patterns and components to help users choose from long lists.</p>
+      <p className="govuk-body">Help users narrow down their options.</p>
 
      
 
@@ -47,7 +47,7 @@ const Page: FC<PageProps> = () => (
       <p>Use this pattern when</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>a user needs to choose from a list of options</li>
-        <li>there are so many options that they you cannot show them all at the same time</li>
+        <li>there are so many options that you cannot show them all at the same time</li>
         <li>the user may not be familiar with the options in the list</li>
       </ul>
      
@@ -62,9 +62,9 @@ const Page: FC<PageProps> = () => (
         <li>how familiar the users are with the options in the list </li>
         <li>whether users know what option they’re looking for, for example nationality</li>
         <li>how you can help the user reduce their options</li>
-        <li>the risks if the user choses the wrong option</li>
+        <li>the risks if the user chooses the wrong option</li>
         <li>how many options users can select</li>
-        <li>hwhether the list can be pre-filtered by a user's location, role or user type</li>
+        <li>whether the list can be pre-filtered by a user's location, role or user type</li>
         <li>how to order the options to help users find what they’re looking for, for example most common first or alphabetised</li>
       </ul>
 
@@ -76,11 +76,11 @@ const Page: FC<PageProps> = () => (
         <li>format the options in a clear and consistent way </li>
         <li>use familiar language </li>
         <li>add synonym matches, if research findings support this</li>
-        <li>use analytics to understand where lists could be improved <A href="https://becoming-a-teacher.design-history.education.gov.uk/register-trainee-teachers/autocomplete-analytics/">(this example of using analytics to improve autocomplete)</A></li>
+        <li>use analytics to understand where lists could be improved (see this example of <A href="https://becoming-a-teacher.design-history.education.gov.uk/register-trainee-teachers/autocomplete-analytics/"> using analytics to improve autocompletes)</A></li>
       </ul>
 
       <h3>Autocomplete</h3>
-      <p>Autocompletes (also called ‘typeahead’) are a text inputs that suggest options to the user as they type. Results are presented in a dropdown list which users can select from.</p>
+      <p>Autocompletes (also called ‘typeaheads’) are text inputs that suggest options to the user as they type. Results are presented in a dropdown list which users can select from.</p>
     
       <p>TThere are two types of autocomplete commonly used in the Home Office: inline autocomplete and list-only autocomplete.  </p>
       <h4 className="govuk-heading-s">Inline autocomplete</h4>
@@ -121,14 +121,14 @@ const Page: FC<PageProps> = () => (
         <li>a plan for how you will maintain the accuracy of the list over time</li>
       </ul>
 
-      <p>See this Department of Education design history <A href="https://becoming-a-teacher.design-history.education.gov.uk/register-trainee-teachers/autocomplete-improvements/">blog on improving autocompletes.</A> </p>
+      <p>See this Department of Education <A href="https://becoming-a-teacher.design-history.education.gov.uk/register-trainee-teachers/autocomplete-improvements/">design history blog on improving autocompletes</A>.</p>
       <p>For accessibility:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>if a user presses ‘Space’, ‘Enter’ or ‘Tab’ key, the option is set</li>
-        <li>if a user presses ‘Esc’ the current option is retained</li>
+        <li>if a user presses ‘Esc’, the current option is retained</li>
       </ul>
 
-      <p>See this summary about<A href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/">autocompletes from the Web Accessibility Initiative (W3C).</A> </p>
+      <p>See this summary about <A href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/">autocompletes from the Web Accessibility Initiative (W3C)</A>.</p>
       
       <h3>Divide the list into categories</h3>
       <p>Divide the data into categories so when users select a category, they are shown only relevant options in the next field.</p>
@@ -213,7 +213,7 @@ const Page: FC<PageProps> = () => (
       <h2 className="govuk-heading-l">Help us improve this pattern</h2>
       <p>This pattern needs improving. We need evidence about:</p>
       <ul>
-        <li>how to help users choose multiple options and how you will display the options chosen and allow these to be changed or deleted </li>
+        <li>how to help users choose multiple options and how you display the options chosen and allow these to be changed or deleted </li>
         <li>how teams are using autosuggest in their service</li>
         <li>how to make users more confident about their choice</li>
         <li>the usability of autocompletes on mobile devices</li>
