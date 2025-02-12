@@ -196,15 +196,19 @@ const Page: FC<PageProps> = () => (
       
 
       <h2 id="consider-images-or-videos">Consider images or video</h2>
-      <p>In some cases, an image, diagram or video can communicate information more clearly. Research at UK arrival centres found that some people had difficulty finding their way using the text-only signage. To address this issue, designers produced a new signage system using text supported by images.</p>
+      <p>In some cases, an image, diagram or video can communicate information more clearly.</p>
+
+      <p>Research at UK arrival centres found that some people had difficulty finding their way using the text-only signage. To address this issue, Home Office designers produced a new signage system using text supported by images.</p>
        
       <img src={biometricsSign} alt="Sign showing camera and fingerprint icons to explain in different languages how biometric information is taken." className="image-examples" />
       <p></p>
       <p>Make sure you include text alternatives with images for users with visual access needs. </p>
-    
-    <p>Research with vulnerable users on the eVisa service found that most participants, including fluent English speakers, found the written guidance too long and technical. They said the information in the What is an eVisa video was easier to understand.</p>
 
-      
+      <p>Research with vulnerable users for the Home Office's <A href="https://www.gov.uk/guidance/online-immigration-status-evisa">eVisas</A> project revealed that most participants, including fluent English speakers, found the written guidance too long and technical. They said the information in the <A href="https://www.youtube.com/watch?v=54rPXUHuM3I">What is an eVisa?</A> video was easier to understand.</p>
+        
+    
+    
+ 
 
 <h2 id="consider-translation-services">Consider translation services</h2>
         <p>Could your service benefit from having professional translation and interpretation support to make it more accessible? </p> 
