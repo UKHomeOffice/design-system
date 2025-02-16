@@ -32,10 +32,12 @@ export const Section: FC<SectionProps> = ({
 
   return (
     <div {...attrs} className={classes()}>
-      <PageBanner className={classes('banner')} heading={title}>{description}</PageBanner>
-      { !navigation.length ? null : (
-        <ServiceNavigation className={classes('navigation')} items={navigation} serviceName={title} serviceHref={href} />
-      ) }
+      <div className={classes('header')}>
+        <PageBanner className={classes('banner')} heading={title}>{description}</PageBanner>
+        {!navigation.length ? null : (
+          <ServiceNavigation className={classes('navigation')} items={navigation} serviceName={title} serviceHref={href} />
+        )}
+      </div>
       <div className={classes('container', undefined, 'hods-width-container')}>
         {children}
       </div>
