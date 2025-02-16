@@ -52,6 +52,7 @@ const Page: FC<PageProps> = ({ routes }) => {
 
   // Manually remove pages we don't want to show in the sitemap
   const hidden = [
+    ...all.filter(({href}) => href === '/sitemap'),
     ...all.filter(({text}) => text === 'Production'),
     ...all.filter(({text}) => text === 'xxx'),
     ...all.filter(({text}) => text === 'Cookies')
