@@ -5,6 +5,8 @@ import { AnchorList } from '@not-govuk/anchor-list';
 import { A } from '@not-govuk/components';
 import { componentLinks } from '../stories';
 
+import { PageWrap } from './';
+
 export const title = 'Sitemap';
 const description = 'Overview of the Home Office Design System';
 
@@ -85,6 +87,7 @@ const Page: FC<PageProps> = ({ routes }) => {
   const footer = all.filter(e => !categorised.includes(e));
 
   return (
+    <PageWrap>
     <Fragment>
       <Helmet>
         <title>{title} - Home Office Design System</title>
@@ -108,7 +111,7 @@ const Page: FC<PageProps> = ({ routes }) => {
       <h2>Footer</h2>
       <AnchorList classBlock="govuk-list" items={footer} />
     </Fragment>
-
+    </PageWrap>
   );
 };
 

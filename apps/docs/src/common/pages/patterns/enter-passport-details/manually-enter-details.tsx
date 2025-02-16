@@ -4,12 +4,15 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, TextInput, Select } from '@not-govuk/components';
 import { menu } from '../../patterns';
 
+import { PageWrap } from '../../';
+
 export const title = 'Manually enter passport details';
 const description = 'How to ask users to manually enter passport details';
 const section = 'Patterns';
 const subsection = 'Ask users to';
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>
@@ -258,7 +261,7 @@ const Page: FC<PageProps> = () => (
       <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/449">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
     </div>
 </div>
-
+</PageWrap>
 );
 
 export default Page;

@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+import { PageWrap } from './';
+
 export const menu = (
   <Fragment>
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Home Office plugin for GOV.UK prototype</span>
@@ -38,6 +40,7 @@ export const title = 'Get started';
 const description = 'The following introductory guides will help you to get set up';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -90,6 +93,7 @@ const Page: FC<PageProps> = () => (
         <p>Get involved with <A href="https://github.com/UKHomeOffice/design-system/discussions">GitHub discussions</A> about our styles, components and patterns.</p>
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

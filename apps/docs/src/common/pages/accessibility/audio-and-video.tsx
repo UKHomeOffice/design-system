@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 export const title = 'Audio and video';
 const description = 'Accessibility guidance for audio and video content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -204,6 +207,7 @@ auditory information.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

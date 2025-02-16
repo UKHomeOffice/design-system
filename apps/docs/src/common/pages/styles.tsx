@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+import { PageWrap } from './';
+
 export const menu = (
   <Fragment>
     <NavigationMenu items={[
@@ -30,6 +32,7 @@ const ddatEventsImage = require('../../../assets/images/ddat-events.png');
 const policeImage = require('../../../assets/images/police.png');
 
 const Page: FC<PageProps> = ({}) => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -105,6 +108,7 @@ const Page: FC<PageProps> = ({}) => (
       </div>
     </div>
   </div>
+  </PageWrap >
 );
 
 export default Page;

@@ -4,12 +4,15 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'A letter';
 const description = 'How to send users effective letters';
 const section = 'Patterns';
 const subsection = 'Send users';
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>
@@ -197,6 +200,7 @@ const Page: FC<PageProps> = () => (
       <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/377">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
     </div>
 </div>
+</PageWrap>
 
 );
 

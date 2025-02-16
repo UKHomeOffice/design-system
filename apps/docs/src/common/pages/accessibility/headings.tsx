@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const headingImage = require('../../../../assets/images/accessibility/heading-hierarchy.png');
 
 export const title = 'Headings';
@@ -11,6 +13,7 @@ const description = 'Accessibility guidance for headings';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -127,6 +130,7 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

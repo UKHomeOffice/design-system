@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Leave a service';
 const description = 'How to help users to leave a service';
 const section = 'Patterns';
@@ -13,6 +15,7 @@ const applyLeaveHeader = require('../../../../assets/images/patterns/leave-servi
 const applyLeaveInline = require('../../../../assets/images/patterns/leave-service-inline.svg');
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>
@@ -105,6 +108,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
 </div>
+</PageWrap>
 
 
 );

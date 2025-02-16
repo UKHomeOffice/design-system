@@ -3,6 +3,15 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+import config from '../../config';
+
+import { PageWrap } from '../';
+
+export const title = 'Accessibility';
+const longTitle = title;
+const description = 'Information on how to ensure your service is accessible'
+const siteTitle = config.title;
+
 export const menu = (
   <Fragment>
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Page structure</span>
@@ -151,18 +160,15 @@ export const menu = (
   </Fragment>
 );
 
-export const title = 'Accessibility';
-const description = 'Information on how to ensure your service is accessible'
-
 const Page: FC<PageProps> = () => (
+  <PageWrap>
+  <Helmet>
+    <title>{title} - {siteTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="og:title" content={longTitle} />
+    <meta name="og:description" content={description} />
+  </Helmet>
   <div className="govuk-grid-row">
-    <Helmet>
-      <title>{title} - Home Office Design System</title>
-      <meta name="description" content={description} />
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={description} />
-      <meta name="og:article:section" content={title} />
-    </Helmet>
     <div className="govuk-grid-column-one-quarter">
       {menu}
     </div>
@@ -177,6 +183,7 @@ const Page: FC<PageProps> = () => (
       <p>In order to provide consistency for users and product teams, we’ve developed a <A href="/accessibility/standard">Home Office Accessibility Standard</A> that closely aligns to the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

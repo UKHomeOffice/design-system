@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const navigationImage01 = require('../../../../assets/images/accessibility/navigation-01.png');
 const navigationImage03 = require('../../../../assets/images/accessibility/navigation-03.png');
 
@@ -12,6 +14,7 @@ const description = 'Accessibility guidance for page navigation';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -134,6 +137,7 @@ The more content in your main navigation, the more important it is to include a 
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

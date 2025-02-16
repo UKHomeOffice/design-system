@@ -7,6 +7,8 @@ import { useLocation } from '@not-govuk/router';
 import { componentLinks, nameParam, components as subpages } from '../stories';
 import config from '../config';
 
+import { PageWrap } from './';
+
 const siteTitle = config.title;
 
 export const title = 'Components';
@@ -18,6 +20,7 @@ const Page: FC<PageProps> = () => {
   const stories = subpages[subPageName];
 
   return (
+    <PageWrap>
     <div className="govuk-grid-row">
       <Helmet>
         <title>{title} - {siteTitle}</title>
@@ -57,6 +60,7 @@ const Page: FC<PageProps> = () => {
         }
       </div>
     </div>
+    </PageWrap>
   );
 };
 

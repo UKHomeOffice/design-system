@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../styles';
 
+import { PageWrap } from '../';
+
 export const title = 'Images';
 const description = 'Only use images if there’s a real user need';
 const section = 'Styles';
@@ -15,6 +17,7 @@ const applyExample5 = require('../../../../assets/images/example-5.jpg');
 const applyExample6 = require('../../../../assets/images/example-6.jpg');
 
 const Page: FC<PageProps> = ({}) => (
+  <PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>
@@ -121,6 +124,7 @@ const Page: FC<PageProps> = ({}) => (
 
     </div>
 </div>
+  </PageWrap>
 
 
 );

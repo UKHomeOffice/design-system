@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../contribute';
 
+import { PageWrap } from '../';
+
 export const title = 'Discuss on GitHub';
 const description = 'Contribute your ideas, thoughts and evidence';
 const section = 'Contribute';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -47,6 +50,7 @@ const Page: FC<PageProps> = () => (
       </ol>
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;
