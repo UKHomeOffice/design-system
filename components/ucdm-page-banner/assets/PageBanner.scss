@@ -17,5 +17,13 @@
     @extend .govuk-heading-xl;
     color: $hods-brand-colour-purple;
     @include govuk-responsive-margin(3, "bottom");
+
+    @include govuk-media-query($from: mobile, $until: tablet) {
+      max-width: 13em;
+    }
+
+    @include govuk-media-query($from: tablet) {
+      max-width: 13em;
+    }
   }
 }
