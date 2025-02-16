@@ -24,35 +24,39 @@ export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
         },
         {
           href: '/accessibility/interactivity/forms',
-          text: 'Forms'
-        },
-        {
-          href: '/accessibility/interactivity/forms/keyboard',
-          text: '- Keyboard'
+          text: 'Forms',
+          items: [
+            {
+              href: '/accessibility/interactivity/forms/keyboard',
+              text: 'Keyboard'
+            }
+          ]
         },
         {
           href: '/accessibility/interactivity/keyboard',
-          text: 'Keyboard basics'
-        },
-        {
-          href: '/accessibility/interactivity/keyboard/tab-navigation',
-          text: '- Tab navigation'
-        },
-        {
-          href: '/accessibility/interactivity/keyboard/focus',
-          text: '- Focus'
-        },
-        {
-          href: '/accessibility/interactivity/keyboard/skip-to-content',
-          text: '- Skip to content links'
-        },
-        {
-          href: '/accessibility/interactivity/keyboard/character-key-shortcuts',
-          text: '- Character key shortcuts'
-        },
-        {
-          href: '/accessibility/interactivity/keyboard/pointer-gestures',
-          text: '- Pointer gestures'
+          text: 'Keyboard basics',
+          items: [
+            {
+              href: '/accessibility/interactivity/keyboard/tab-navigation',
+              text: 'Tab navigation'
+            },
+            {
+              href: '/accessibility/interactivity/keyboard/focus',
+              text: 'Focus'
+            },
+            {
+              href: '/accessibility/interactivity/keyboard/skip-to-content',
+              text: 'Skip to content links'
+            },
+            {
+              href: '/accessibility/interactivity/keyboard/character-key-shortcuts',
+              text: 'Character key shortcuts'
+            },
+            {
+              href: '/accessibility/interactivity/keyboard/pointer-gestures',
+              text: 'Pointer gestures'
+            }
+          ]
         },
         {
           href: '/accessibility/interactivity/gestures-and-motion',

@@ -43,12 +43,14 @@ export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
           }
         ]} />
         <NavigationMenu items={[
-          { href: '/design-and-content/design-system/styles', text: 'Styles' },
-          { href: '/design-and-content/design-system/styles/colour', text: '- Colour' },
-          { href: '/design-and-content/design-system/styles/images', text: '- Images' },
-          { href: '/design-and-content/design-system/styles/typography', text: '- Typography' },
-          { href: '/design-and-content/design-system/components', text: 'Components' },
-          ...(componentLinksNew.map(({ text, ...rest }) => ({ ...rest, text: '- ' + text }))),
+          { href: '/design-and-content/design-system/styles', text: 'Styles', items: [
+            { href: '/design-and-content/design-system/styles/colour', text: 'Colour' },
+            { href: '/design-and-content/design-system/styles/images', text: 'Images' },
+            { href: '/design-and-content/design-system/styles/typography', text: 'Typography' },
+          ] },
+          { href: '/design-and-content/design-system/components', text: 'Components', items: [
+            ...componentLinksNew
+          ] },
           { href: '/design-and-content/design-system/patterns', text: 'Patterns' }
         ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users for</span>
@@ -122,9 +124,10 @@ export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
           }
         ]} />
         <NavigationMenu items={[
-          { href: '/design-and-content/design-system/contribute', text: 'Contribute' },
-          { href: '/design-and-content/design-system/contribute/discuss-on-github', text: '- Discuss on GitHub' },
-          { href: '/design-and-content/design-system/contribute/working-group', text: '- Design system working group' }
+          { href: '/design-and-content/design-system/contribute', text: 'Contribute', items: [
+            { href: '/design-and-content/design-system/contribute/discuss-on-github', text: 'Discuss on GitHub' },
+            { href: '/design-and-content/design-system/contribute/working-group', text: 'Design system working group' }
+          ] },
         ]} />
       </Fragment>
     }>
