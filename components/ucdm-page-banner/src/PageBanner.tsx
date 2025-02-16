@@ -7,7 +7,7 @@ export type PageBannerProps = StandardProps & {
   /** The contents of the banner */
   children?: ReactNode
   /** The heading of the banner */
-  heading: string
+  heading: ReactNode
 };
 
 export const PageBanner: FC<PageBannerProps> = ({
