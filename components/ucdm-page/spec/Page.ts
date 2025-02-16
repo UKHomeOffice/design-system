@@ -32,6 +32,8 @@ describe('Page', () => {
         { href: '/get-involved', text: 'Get involved' }
       ],
       searchAction: '/search',
+      searchSiteField: 'sitesearch',
+      searchSiteValue: 'example.com',
       serviceName: 'Service name',
       signOutHref: '#/auth/sign-out',
       title: 'Service title',
