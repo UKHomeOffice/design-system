@@ -8,7 +8,7 @@ export type SubsectionProps = StandardProps & {
   /** Elements to be placed in the side bar */
   side?: ReactNode
   /** The title of the subsection */
-  title: string
+  title?: string
 };
 
 export const Subsection: FC<SubsectionProps> = ({
@@ -23,7 +23,6 @@ export const Subsection: FC<SubsectionProps> = ({
   const classes = classBuilder('hods-ucdm-subsection', classBlock, classModifiers, className);
   const main = (
     <main id="main-content" className={classes('main')} role="main">
-      <span className={classes('caption', undefined, 'govuk-caption-xl')}>{title}</span>
       {children}
     </main>
   );
