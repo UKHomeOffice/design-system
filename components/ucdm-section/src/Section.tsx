@@ -1,5 +1,6 @@
 import { FC, ReactNode,  createElement as h } from 'react';
 import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
+import { Head } from '@not-govuk/head';
 import { PageBanner } from '@hods/ucdm-page-banner';
 import { ServiceNavigation, ServiceNavigationProps } from '@hods/service-navigation';
 
@@ -32,6 +33,9 @@ export const Section: FC<SectionProps> = ({
 
   return (
     <div {...attrs} className={classes()}>
+      <Head>
+        <meta name="og:article:section" content={title} />
+      </Head>
       <div className={classes('header')}>
         <PageBanner className={classes('banner')} heading={title}>{description}</PageBanner>
         {!navigation.length ? null : (
