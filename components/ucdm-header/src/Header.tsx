@@ -10,6 +10,10 @@ export type HeaderProps = StandardProps & {
   accountHref?: string
   /** Action HRef for search form */
   searchAction?: string
+  /** Name of the parameter to limit the search to a particular domain */
+  searchSiteField?: string
+  /** Domain name to limit search to */
+  searchSiteValue?: string
   /** Service link URL */
   serviceHref?: string
   /** Service link text */
@@ -28,6 +32,8 @@ export const Header: FC<HeaderProps> = ({
   classModifiers,
   className,
   searchAction,
+  searchSiteField,
+  searchSiteValue,
   serviceHref = '/',
   serviceName,
   signOutHref,
@@ -77,7 +83,8 @@ export const Header: FC<HeaderProps> = ({
         {searchAction && (
           <div className={classes('search')}>
             <form method="get" action={searchAction}>
-              <SearchBox className={classes('search-box')} classModifiers="secondary" />
+              <input type="hidden" name={searchSiteField} value={searchSiteValue} />
+              <SearchBox name="q" className={classes('search-box')} classModifiers="secondary" />
             </form>
           </div>
         )}

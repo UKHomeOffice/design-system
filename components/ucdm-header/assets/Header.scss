@@ -104,7 +104,6 @@
     margin-top: 5px;
     @include govuk-font(19);
 
-
     @include govuk-media-query($from: mobile, $until: tablet) {
       float: none;
     }

@@ -22,6 +22,8 @@ describe('Header', () => {
       ...minimalProps,
       accountHref: '#/my-account',
       searchAction: '/search',
+      searchSiteField: 'sitesearch',
+      searchSiteValue: 'example.com',
       serviceName: 'Service name',
       signOutHref: '#/auth/sign-out',
       username: 'User name'
