@@ -1,7 +1,7 @@
-import { FC, ReactNode, createElement as h } from 'react';
+import { FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
 import { AZNavigation } from '@hods/components';
 import config from '../../../config';
 
@@ -13,18 +13,8 @@ export const title = 'Content style guide';
 const longTitle = title;
 const description = 'How to write content for Home Office services.';
 
-const Page: FC<PageProps> = () => (
-  <SubsectionWrap>
-    <Helmet>
-      <title>{title} - {siteTitle}</title>
-      <meta name="description" content={description} />
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={description} />
-    </Helmet>
-    <h1>
-      <span className="caption">{subsection}</span>
-      {longTitle}
-    </h1>
+export const content = (
+  <Fragment>
     <p>This style guide is specific to the Home Office to help make our language clear and consistent for all our users. Refer to <A href="https://www.gov.uk/guidance/style-guide/a-to-z">the GDS style guide</A> for style, spelling and grammar conventions across GOV.UK.</p>
     <AZNavigation id="a-z-nav" />
     <h2 className="a-z-header" id="a">A</h2>
@@ -33,7 +23,7 @@ const Page: FC<PageProps> = () => (
     <h3 id="account">account</h3>
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
     <h3 id="acronyms">acronyms</h3>
-    <p>Write out an acronym in full the first time you use it on a new page or screen, unless it is well known to your users, like UK, US or NHS. Research has found that some users struggle to remember the meaning of an acronym they saw on a previous screen. For example, write 'biometric residence permit (BRP)' on each screen of your service at first mention and use 'BRP' if it appears again on the same screen. If available, use a tooltip like <A href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown#acronyms">acronym Markdown</A> to make the acronym appear in full as hover text. See more guidance on abbreviations and acronyms in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
+    <p>Write out abbreviations or acronyms in full the first time you use them on a new page or screen, unless your users already know them, like UK or US. Then use the initials. For example, the first time ‘immigration health surcharge (IHS)’ appears on each screen of your service, write it out. On subsequent mentions on the same screen, use ‘IHS’. Refer to <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GDS style guide</A> for more details.</p>
     <h3 id="alter">alter</h3>
     <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
     <h3 id="authorising officer">authorising officer</h3>
@@ -46,11 +36,11 @@ const Page: FC<PageProps> = () => (
     <h3 id="biometric-passport">biometric passport</h3>
     <p>Use 'passport' if the type of passport does not matter. When referring to passports with a chip, use 'biometric passport' instead of 'ePassport'.</p>
     <h3 id="biometrics">biometrics</h3>
-    <p>When using ‘biometrics’ or ‘biometric information’ in public-facing services, explain what it means first. For example, ‘you'll be asked to provide your fingerprints and photo (biometric information)’.</p>
+    <p>When using 'biometrics' or 'biometric information' in public-facing services, explain what it means first. For example, 'you'll be asked to provide your fingerprints and photo (biometric information)'.</p>
     <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
     <p>Lower case. You can use the initials ‘BRP’ after the first full mention.</p>
     <h3 id="biometric residence card">biometric residence card (BRC)</h3>
-    <p>Lower case. You can use the initials ‘BRC’ after the first full mention. Also called a ‘UK residence card’ or ‘EEA biometric residence card’.</p>
+    <p>Lower case. You can use the initials ‘BRC’ after the first full mention. Also called a 'UK residence card' or 'EEA biometric residence card'.</p>
     <h3 id="border force">Border Force</h3>
     <p>Capitalised.</p>
     <h3 id="border control">border control</h3>
@@ -65,6 +55,8 @@ const Page: FC<PageProps> = () => (
     <p>Write 'overseas territories' in lower case.</p>
     <h3 id="british overseas territories citizen">British overseas territories citizen</h3>
     <p>Write 'overseas territories citizen' in lower case.</p>
+    <h3 id="business day">business day</h3>
+    <p>Use 'working day' instead of 'business day' for any day Monday to Friday. Not everyone uses a Monday to Friday workweek, so consider explaining what you mean by working day. For example, 'You will usually get a decision within 2 working days. Working days are Monday to Friday, not including <A href="https://www.gov.uk/bank-holidays">UK public holidays'</A>.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="c">C</h2>
@@ -169,6 +161,8 @@ const Page: FC<PageProps> = () => (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="h">H</h2>
+    <h3 id="hint-text">hint text</h3>
+    <p>Hint text should not be longer than a sentence. If you need to write more than 1 sentence, use <A href="https://design-system.service.gov.uk/styles/paragraphs/">GOV.UK's paragraph style</A>. Do not use full stops after hint text unless you are updating an existing service that uses full stops inconsistently.</p>
     <h3 id="his majesty’s">His Majesty’s</h3>
     <p>Use ‘HM’ rather than ‘His Majesty’s’ in front of the name of the relevant public body. For example, 'HM Revenue & Customs'.</p>
     <h3 id="hm passport office">HM Passport Office</h3>
@@ -334,6 +328,8 @@ const Page: FC<PageProps> = () => (
     <h2 className="a-z-header" id="w">W</h2>
     <h3 id="watchlist">watchlist</h3>
     <p>Lower case and one word.</p>
+    <h3 id="working day">working day</h3>
+    <p>Use 'working day' instead of 'business day' for any day Monday to Friday. Not everyone uses a Monday to Friday workweek, so consider explaining what you mean by working day. For example, 'You will usually get a decision within 2 working days. Working days are Monday to Friday, not including <A href="https://www.gov.uk/bank-holidays">UK public holidays'</A>.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="x">X</h2>
@@ -347,6 +343,22 @@ const Page: FC<PageProps> = () => (
 
     <h2>Help improve this guide</h2>
     <p>To contribute, send your request to <A href="mailto:ucdops@homeoffice.gov.uk">ucdops@homeoffice.gov.uk,</A> or add it to the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
+  </Fragment>
+);
+
+const Page: FC<PageProps> = () => (
+  <SubsectionWrap>
+    <Helmet>
+      <title>{title} - {siteTitle}</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+    </Helmet>
+    <h1>
+      <span className="caption">{subsection}</span>
+      {longTitle}
+    </h1>
+    {content}
   </SubsectionWrap>
 );
 
