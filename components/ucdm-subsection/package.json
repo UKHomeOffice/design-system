@@ -25,7 +25,8 @@
   ],
   "dependencies": {
     "@hods/sass-base": "workspace:^0.5.1",
-    "@not-govuk/component-helpers": "^0.15.8"
+    "@not-govuk/component-helpers": "^0.15.8",
+    "govuk-frontend": "5.7.1"
   },
   "peerDependencies": {
     "@not-govuk/docs-components": "^0.15.8",
