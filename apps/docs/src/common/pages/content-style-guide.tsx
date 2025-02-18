@@ -72,11 +72,11 @@ const Page: FC<PageProps> = () => (
         <h3 id="biometric-passport">biometric passport</h3>
         <p>Use 'passport' if the type of passport does not matter. When referring to passports with a chip, use 'biometric passport' instead of 'ePassport'.</p>
         <h3 id="biometrics">biometrics</h3>
-        <p>When using ‘biometrics’ or ‘biometric information’ in public-facing services, explain what it means first. For example, ‘you'll be asked to provide your fingerprints and photo (biometric information)’.</p>
+        <p>When using 'biometrics' or 'biometric information' in public-facing services, explain what it means first. For example, 'you'll be asked to provide your fingerprints and photo (biometric information)'.</p>
         <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
         <p>Lower case. You can use the initials ‘BRP’ after the first full mention.</p>
         <h3 id="biometric residence card">biometric residence card (BRC)</h3>
-        <p>Lower case. You can use the initials ‘BRC’ after the first full mention. Also called a ‘UK residence card’ or ‘EEA biometric residence card’.</p>
+        <p>Lower case. You can use the initials ‘BRC’ after the first full mention. Also called a 'UK residence card' or 'EEA biometric residence card'.</p>
         <h3 id="border force">Border Force</h3>
         <p>Capitalised.</p>
         <h3 id="border control">border control</h3>
@@ -91,6 +91,8 @@ const Page: FC<PageProps> = () => (
         <p>Write 'overseas territories' in lower case.</p>
         <h3 id="british overseas territories citizen">British overseas territories citizen</h3>
         <p>Write 'overseas territories citizen' in lower case.</p>
+        <h3 id="business day">business day</h3>
+        <p>Use 'working day' instead of 'business day' for any day Monday to Friday. Not everyone uses a Monday to Friday workweek, so consider explaining what you mean by working day. For example, 'You will usually get a decision within 2 working days. Working days are Monday to Friday, not including <A href="https://www.gov.uk/bank-holidays">UK public holidays'</A>.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
         <h2 className="a-z-header" id="c">C</h2>
@@ -362,6 +364,8 @@ const Page: FC<PageProps> = () => (
         <h2 className="a-z-header" id="w">W</h2>
         <h3 id="watchlist">watchlist</h3>
         <p>Lower case and one word.</p>
+        <h3 id="working day">working day</h3>
+        <p>Use 'working day' instead of 'business day' for any day Monday to Friday. Not everyone uses a Monday to Friday workweek, so consider explaining what you mean by working day. For example, 'You will usually get a decision within 2 working days. Working days are Monday to Friday, not including <A href="https://www.gov.uk/bank-holidays">UK public holidays'</A>.</p>
         <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
         <h2 className="a-z-header" id="x">X</h2>
