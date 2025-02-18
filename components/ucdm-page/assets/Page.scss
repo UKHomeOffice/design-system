@@ -85,10 +85,10 @@ html {
   }
 
   &__container {
-  }
-
-  &__main {
-    @extend .govuk-main-wrapper;
+    > main {
+      @extend .govuk-main-wrapper;
+      @extend .govuk-width-container;
+    }
   }
 
   aside {
@@ -99,8 +99,6 @@ html {
 
     border-color: $colour;
   }
-
-  //////////////////////////////////////////////////////////////
 
   &__navigation {
     &, &.hods-service-navigation {
