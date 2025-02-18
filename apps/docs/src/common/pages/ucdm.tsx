@@ -1,4 +1,4 @@
-import { ReactNode, FC, Fragment, createElement as h } from 'react';
+import { ReactNode, FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
@@ -53,7 +53,7 @@ const description = 'The UK Home Office\'s Design System, implemented in React';
 
 const Page: FC<PageProps> = props => (
   <SectionWrap>
-  <Fragment>
+  <main id="main-content" >
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
@@ -106,7 +106,7 @@ const Page: FC<PageProps> = props => (
         </aside>
       </div>
     </div>
-  </Fragment>
+  </main>
   </SectionWrap>
 );
 
