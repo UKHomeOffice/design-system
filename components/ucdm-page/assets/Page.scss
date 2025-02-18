@@ -86,7 +86,6 @@ html {
 
   &__container {
     > main {
-      @extend .govuk-main-wrapper;
       @extend .govuk-width-container;
     }
   }
@@ -98,6 +97,10 @@ html {
     $colour: if($contrast-safe, $contrast-safe, $light-colour);
 
     border-color: $colour;
+  }
+
+  main {
+      @extend .govuk-main-wrapper;
   }
 
   &__navigation {
