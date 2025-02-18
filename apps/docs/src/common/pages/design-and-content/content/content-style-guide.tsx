@@ -23,7 +23,7 @@ export const content = (
     <h3 id="account">account</h3>
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
     <h3 id="acronyms">acronyms</h3>
-    <p>Write out abbreviations or acronyms in full the first time you use them on a new page or screen, unless your users already know them, like UK or US. Then use the initials. For example, the first time ‘immigration health surcharge (IHS)’ appears on each screen of your service, write it out. On subsequent mentions on the same screen, use ‘IHS’. Refer to <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GDS style guide</A> for more details.</p>
+    <p>Write out abbreviations or acronyms in full the first time you use them on a new page or screen, unless your users already know them, like UK or US. Then use the initials. For example, the first time 'immigration health surcharge (IHS)' appears on each screen of your service, write it out. On subsequent mentions on the same screen, use 'IHS'. Refer to <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GDS style guide</A> for more details.</p>
     <h3 id="alter">alter</h3>
     <p>Use 'change' rather than 'alter', 'modify' or 'switch'.</p>
     <h3 id="authorising officer">authorising officer</h3>
@@ -38,9 +38,9 @@ export const content = (
     <h3 id="biometrics">biometrics</h3>
     <p>When using 'biometrics' or 'biometric information' in public-facing services, explain what it means first. For example, 'you'll be asked to provide your fingerprints and photo (biometric information)'.</p>
     <h3 id="biometric residence permit">biometric residence permit (BRP)</h3>
-    <p>Lower case. You can use the initials ‘BRP’ after the first full mention.</p>
+    <p>Lower case. You can use the initials 'BRP' after the first full mention.</p>
     <h3 id="biometric residence card">biometric residence card (BRC)</h3>
-    <p>Lower case. You can use the initials ‘BRC’ after the first full mention. Also called a 'UK residence card' or 'EEA biometric residence card'.</p>
+    <p>Lower case. You can use the initials 'BRC' after the first full mention. Also called a 'UK residence card' or 'EEA biometric residence card'.</p>
     <h3 id="border force">Border Force</h3>
     <p>Capitalised.</p>
     <h3 id="border control">border control</h3>
@@ -63,23 +63,23 @@ export const content = (
     <h3 id="capital letters">capital letters</h3>
     <p>See guidance on capitalisation in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
     <h3 id="casework">casework</h3>
-    <p>Not ‘case work’.</p>
+    <p>Not 'case work'.</p>
     <h3 id="caseworker">caseworker</h3>
-    <p>Not ‘case worker’.</p>
+    <p>Not 'case worker'.</p>
     <h3 id="certificate of sponsorship">certificate of sponsorship (CoS)</h3>
-    <p>Lower case. You can use the acronym ‘CoS’ after the first full mention.</p>
+    <p>Lower case. You can use the acronym 'CoS' after the first full mention.</p>
     <h3 id="check">check</h3>
-    <p>Consider using ‘check’ instead of ‘verify’ if you are asking users to check the accuracy of something. For example, ‘check your answers' or ‘check a passport number'</p>
+    <p>Consider using 'check' instead of 'verify' if you are asking users to check the accuracy of something. For example, 'check your answers' or 'check a passport number'</p>
     <h3 id="clandestine">clandestine</h3>
     <p>Do not refer to people as 'a clandestine' or 'clandestine entrant'. Try to be specific, like 'a person hidden in a vehicle, ship or plane'.</p>
     <h3 id="click">click</h3>
     <p>Use 'select' rather than 'click' or 'tap' because not everyone uses a mouse.</p>
     <h3 id="common travel area">Common Travel Area (CTA)</h3>
-    <p>Capitalised. You can use the initials ‘CTA’ after the first full mention.</p>
+    <p>Capitalised. You can use the initials 'CTA' after the first full mention.</p>
     <h3 id="confirm">confirm</h3>
-    <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status’.</p>
+    <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
     <h3 id="confirmation of acceptance for studies">Confirmation of Acceptance for Studies (CAS)</h3>
-    <p>Capitalised. You can use the acronym ‘CAS’ after the first full mention.</p>
+    <p>Capitalised. You can use the acronym 'CAS' after the first full mention.</p>
     <h3 id="consignee">consignee</h3>
     <p>Consignee is not plain English. Some users confuse 'consignee' with 'consignor'. If you need to use consignee, use it with 'recipient'. For example, recipient (consignee).</p>
     <h3 id="consignor">consignor</h3>
@@ -87,19 +87,19 @@ export const content = (
     <h3 id="contractions">contractions</h3>
     <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users are not fluent in English. Research shows that contractions make content difficult to understand for people with limited fluency. See general guidance on contractions in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
     <h3 id="correct">correct</h3>
-    <p>Use ‘correct’ rather than ‘right’. For example, ‘select the correct settlement route’.</p>
+    <p>Use 'correct' rather than 'right'. For example, 'select the correct settlement route'.</p>
     <h3 id="correspondence">correspondence</h3>
-    <p>Correspondence is not plain English. Try to be specific such as ‘postal address’, ‘contact address’ or ‘email address’. For example, ‘is this the family’s postal address?’</p>
+    <p>Correspondence is not plain English. Try to be specific such as 'postal address', 'contact address' or 'email address'. For example, 'is this the family's postal address?'</p>
     <h3 id="countersignatory">countersignatory</h3>
     <p>'Countersignatory' is not plain English. Instead, try 'the person who can confirm your identity' or 'you must have your application signed by someone else'.</p>
     <h3 id="criminal justice system">criminal justice system</h3>
     <p>Lower case.</p>
     <h3 id="customer">customer</h3>
-    <p>Avoid calling the people who use our services ‘customers’. Keep it simple and use ‘you’. If you need to describe the user, try to be specific, like ‘asylum seeker’, ‘applicant’ or ‘claimant’.</p>
+    <p>Avoid calling the people who use our services 'customers'. Keep it simple and use 'you'. If you need to describe the user, try to be specific, like 'asylum seeker', 'applicant' or 'claimant'.</p>
     <h3 id="customs">customs</h3>
     <p>Use 'customs' rather than 'secondary control'. For example, 'customs regulations' or 'customs allowances'.</p>
     <h3 id="customs officer">customs officer</h3>
-    <p>Use ‘Border Force officer’ rather than 'customs officer' unless you have a specific reason.</p>
+    <p>Use 'Border Force officer' rather than 'customs officer' unless you have a specific reason.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="d">D</h2>
@@ -108,11 +108,11 @@ export const content = (
     <h3 id="dbs adults barred list">DBS adults barred list</h3>
     <p>Use lower case for 'adults barred list'.</p>
     <h3 id="dbs certificate">DBS certificate</h3>
-    <p>Use ‘DBS certificate’ rather than 'DBS disclosure'.</p>
+    <p>Use 'DBS certificate' rather than 'DBS disclosure'.</p>
     <h3 id="dbs checking service">DBS checking service</h3>
-    <p>Use ‘DBS checking service’ rather than 'DBS disclosure service'.</p>
-    <h3 id="dbs children’s barred list">DBS children’s barred list</h3>
-    <p>Use lower case for ‘children’s barred list’.</p>
+    <p>Use 'DBS checking service' rather than 'DBS disclosure service'.</p>
+    <h3 id="dbs children's barred list">DBS children's barred list</h3>
+    <p>Use lower case for 'children's barred list'.</p>
     <h3 id="decision maker">decision maker</h3>
     <p>Lower case.</p>
     <h3 id="decision making unit">decision making unit (DMU)</h3>
@@ -120,13 +120,13 @@ export const content = (
     <h3 id="dependant">dependant</h3>
     <p>Noun. For example, 'a dependant', 'a child dependant' or 'are there any dependants on this application?'.</p>
     <h3 id="dependent">dependent</h3>
-    <p>Adjective. For example, ‘I am dependent on the main applicant’ or ‘dependent children are not required to apply at the same time’.</p>
+    <p>Adjective. For example, 'I am dependent on the main applicant' or 'dependent children are not required to apply at the same time'.</p>
     <h3 id="deportation">deportation</h3>
-    <p>Not a synonym for ‘removal’. ‘Deportation’ is the forced removal of someone for the ‘public good’, usually after being convicted of a criminal offence.</p>
+    <p>Not a synonym for 'removal'. 'Deportation' is the forced removal of someone for the 'public good', usually after being convicted of a criminal offence.</p>
     <h3 id="digital status">digital status</h3>
     <p>Avoid using 'digital status' in public-facing services. Instead use 'eVisa' or 'online immigration status'. For example, 'view and prove your online immigration status (eVisa)'.</p>
     <h3 id="disclosure and barring service">Disclosure and Barring Service (DBS)</h3>
-    <p>Capitalised. You can use the initials ‘DBS’ after the first full mention.</p>
+    <p>Capitalised. You can use the initials 'DBS' after the first full mention.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="e">E</h2>
@@ -163,12 +163,12 @@ export const content = (
     <h2 className="a-z-header" id="h">H</h2>
     <h3 id="hint-text">hint text</h3>
     <p>Hint text should not be longer than a sentence. If you need to write more than 1 sentence, use <A href="https://design-system.service.gov.uk/styles/paragraphs/">GOV.UK's paragraph style</A>. Do not use full stops after hint text unless you are updating an existing service that uses full stops inconsistently.</p>
-    <h3 id="his majesty’s">His Majesty’s</h3>
-    <p>Use ‘HM’ rather than ‘His Majesty’s’ in front of the name of the relevant public body. For example, 'HM Revenue & Customs'.</p>
+    <h3 id="his majesty's">His Majesty's</h3>
+    <p>Use 'HM' rather than 'His Majesty's' in front of the name of the relevant public body. For example, 'HM Revenue & Customs'.</p>
     <h3 id="hm passport office">HM Passport Office</h3>
-    <p>Capitalised. Do not use ‘HMPO’ in public-facing services.</p>
+    <p>Capitalised. Do not use 'HMPO' in public-facing services.</p>
     <h3 id="home office reference number">Home Office reference number</h3>
-    <p>Use lower case for ‘reference number’.</p>
+    <p>Use lower case for 'reference number'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="i">I</h2>
@@ -177,11 +177,11 @@ export const content = (
     <h3 id="immigration bail">immigration bail</h3>
     <p>Lower case.</p>
     <h3 id="immigration health surcharge">immigration health surcharge (IHS)</h3>
-    <p>Lower case. You can use ‘IHS’ after the first full mention.</p>
+    <p>Lower case. You can use 'IHS' after the first full mention.</p>
     <h3 id="immigration officer">immigration officer</h3>
-    <p>Use ‘Border Force officer’ rather than ‘immigration officer’. Only use ‘immigration officer’ if you have a specific reason.</p>
+    <p>Use 'Border Force officer' rather than 'immigration officer'. Only use 'immigration officer' if you have a specific reason.</p>
     <h3 id="immigration rules">Immigration Rules</h3>
-    <p>Capitalised. After first mention, you can refer to ‘the rules’, using lower case.</p>
+    <p>Capitalised. After first mention, you can refer to 'the rules', using lower case.</p>
     <h3 id="inclusive language">inclusive language</h3>
     <p>Read our <A href="https://design.homeoffice.gov.uk/accessibility/inclusive-language">guidance on using inclusive language</A> in the Home Office design system.</p>
     <h3 id="indefinite leave to enter or remain">indefinite leave to enter or remain</h3>
@@ -192,7 +192,7 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="k">K</h2>
-    <h3 id="king’s speech">King’s Speech</h3>
+    <h3 id="king's speech">King's Speech</h3>
     <p>Capitalised.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
@@ -204,14 +204,14 @@ export const content = (
     <h3 id="letter of authority">letter of authority</h3>
     <p>Lower case.</p>
     <h3 id="life in the uk test">Life in the UK Test</h3>
-    <p>Capitalise the ‘L’ and ‘T’. After first mention, you can refer to ‘the test’, using lower case.</p>
+    <p>Capitalise the 'L' and 'T'. After first mention, you can refer to 'the test', using lower case.</p>
     <h3 id="log in">log in</h3>
     <p>Use 'sign in' rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="m">M</h2>
     <h3 id="migrant">migrant</h3>
-    <p>Avoid using 'migrants'. Try to be specific, such as ‘applicant’, ‘claimant’, ‘employee’ or ‘worker’. If you cannot be specific, use ‘people’.</p>
+    <p>Avoid using 'migrants'. Try to be specific, such as 'applicant', 'claimant', 'employee' or 'worker'. If you cannot be specific, use 'people'.</p>
     <h3 id="ministers">ministers</h3>
     <p>See guidance on using titles in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide.</A></p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -225,7 +225,7 @@ export const content = (
 
     <h2 className="a-z-header" id="o">O</h2>
     <h3 id="online status">online status</h3>
-    <p>Avoid using 'online status' or 'digital status' when referring to someone’s immigration status. Use 'online immigration status' instead.</p>
+    <p>Avoid using 'online status' or 'digital status' when referring to someone's immigration status. Use 'online immigration status' instead.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="p">P</h2>
@@ -238,7 +238,7 @@ export const content = (
     <h3 id="permission to stay">permission to stay</h3>
     <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="persons">persons</h3>
-    <p>Use ‘people’ rather than ‘persons’.</p>
+    <p>Use 'people' rather than 'persons'.</p>
     <h3 id="please">please</h3>
     <p>Use 'please' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="points-based system">points-based system</h3>
@@ -268,16 +268,16 @@ export const content = (
     <h3 id="register">register</h3>
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
     <h3 id="right">right</h3>
-    <p>Use ‘correct’ rather than ‘right’. For example, ‘Select the correct settlement route’.</p>
+    <p>Use 'correct' rather than 'right'. For example, 'Select the correct settlement route'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="s">S</h2>
     <h3 id="secondary control">secondary control</h3>
-    <p>Use ‘customs’ rather than 'secondary control'. For example, 'customs regulations' or 'customs allowances'.</p>
+    <p>Use 'customs' rather than 'secondary control'. For example, 'customs regulations' or 'customs allowances'.</p>
     <h3 id="select">select</h3>
-    <p>Use ‘select’ rather than ‘click’ or ‘tap’ because not everyone uses a mouse.</p>
+    <p>Use 'select' rather than 'click' or 'tap' because not everyone uses a mouse.</p>
     <h3 id="senior civil service">senior civil service (SCS)</h3>
-    <p>Lower case. You can use ‘SCS’ after the first full mention.</p>
+    <p>Lower case. You can use 'SCS' after the first full mention.</p>
     <h3 id="settlement">settlement</h3>
     <p>'Indefinite leave to remain' and 'indefinite leave to enter' are officially called 'settlement'. For example, 'apply for UK settlement'.</p>
     <h3 id="set up">set up</h3>
@@ -285,7 +285,7 @@ export const content = (
     <h3 id="sex">sex</h3>
     <p>Find out how to ask users for their sex in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the Home Office sex and gender pattern</A>.</p>
     <h3 id="sign in">sign in</h3>
-    <p>Use 'sign in’ rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
+    <p>Use 'sign in' rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
     <h3 id="sponsor">sponsor</h3>
     <p>Lower case. A company or person sponsoring an individual to work in the UK and supporting their visa application.</p>
     <h3 id="sponsorship reference number">sponsorship reference number</h3>
