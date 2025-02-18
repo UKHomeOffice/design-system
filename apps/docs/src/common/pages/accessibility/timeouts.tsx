@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const applyModalWindow = require('../../../../assets/images/patterns/timeout.svg');
 
 export const title = 'Timeouts';
@@ -11,6 +13,7 @@ const description = 'Accessibility guidance for timeouts';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -130,6 +133,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

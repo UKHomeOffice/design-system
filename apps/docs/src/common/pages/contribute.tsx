@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
+import { PageWrap } from './';
+
 export const menu = (
   <Fragment>
     <NavigationMenu items={[
@@ -22,6 +24,7 @@ export const title = 'Contribute';
 const description = 'How to get involved and contribute to the Home Office Design System'
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -64,7 +67,7 @@ const Page: FC<PageProps> = () => (
     <p>The working group will share updates in the user-centred design community email about proposal decisions and changes to the Home Office design system.</p>
   </div>
   </div>
-
+  </PageWrap>
 );
 
 export default Page;

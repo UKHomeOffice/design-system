@@ -1,0 +1,42 @@
+import { FC, ReactNode, createElement as h } from 'react';
+import { PageProps } from '@not-govuk/app-composer';
+import { A, NavigationMenu } from '@not-govuk/components';
+
+import { Section } from '@hods/ucdm-section';
+import config from '../../config';
+
+import { PageWrap } from '../ucdm';
+
+export const title = 'Community';
+const longTitle = 'User-centred design community';
+const description = 'The user-centred design community in the Home Office';
+const siteTitle = config.title;
+const pageTitle = title + ' - ' + siteTitle;
+
+export const SectionWrap = ({ children }) => (
+  <PageWrap>
+    <Section title={title} href="/community" navigation={[
+      { href: '/community/ucd-ops-team', text: 'Meet UCD Ops' },
+      { href: '/community/training', text: 'Training' },
+      { href: '/community/new-starters', text: 'New starters' },
+      { href: '/community/events', text: 'Events' }
+    ]}>
+      {children}
+    </Section>
+  </PageWrap>
+);
+
+<SectionWrap>
+  <main id="main-content" role="main">
+    <head>
+      <title>{pageTitle}</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+    </head>
+    <h1>{longTitle}</h1>
+
+CONTENT PLACEHOLDER
+
+  </main>
+</SectionWrap>

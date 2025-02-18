@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Information on a document';
 const description = 'How to help users to find information on a document';
 const section = 'Patterns';
@@ -13,6 +15,7 @@ const applyImageInline = require('../../../../assets/images/patterns/image-guida
 const applyImageRight = require('../../../../assets/images/patterns/image-guidance-right.svg');
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>
@@ -104,6 +107,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
 </div>
+</PageWrap>
 
 
 );

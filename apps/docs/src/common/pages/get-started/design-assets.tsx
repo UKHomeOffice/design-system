@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
+import { PageWrap } from '../';
+
 export const title = 'Design assets';
 const description = 'Useful design assets for interaction designers in the Home Office';
 const section = 'Get started';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -61,6 +64,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
 
+  </PageWrap>
 );
 
 export default Page;

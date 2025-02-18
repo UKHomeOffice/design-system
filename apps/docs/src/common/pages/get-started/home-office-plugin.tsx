@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../get-started';
 
+import { PageWrap } from '../';
+
 export const title = 'Add Home Office plugin to GOV.UK prototype';
 const description = 'How to generate a new prototype based on the Home Office design system';
 const section = 'Get started';
@@ -11,6 +13,7 @@ const subsection = 'Prototyping';
 
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -60,6 +63,7 @@ const Page: FC<PageProps> = () => (
       <p className="govuk-body">To contribute, add your ideas to our <A href="https://github.com/UKHomeOffice/design-system/discussions/389">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

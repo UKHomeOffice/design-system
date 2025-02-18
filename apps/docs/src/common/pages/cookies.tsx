@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, Table } from '@not-govuk/components';
 
+import { PageWrap } from './';
+
 const interUI = (
   <A href="https://rsms.me/inter/">InterUI</A>
 );
@@ -11,6 +13,7 @@ const cloudflare = (
 );
 
 const Page: FC<PageProps> = props => (
+  <PageWrap>
   <Fragment>
     <Helmet>
       <title>Cookie - Home Office Design System</title>
@@ -114,6 +117,7 @@ const Page: FC<PageProps> = props => (
       ]}
     />
   </Fragment>
+  </PageWrap>
 );
 
 export default Page;

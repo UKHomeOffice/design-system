@@ -1,0 +1,17 @@
+@import "@hods/sass-base";
+@import "govuk-frontend/dist/govuk/objects/main-wrapper";
+
+.hods-ucdm-subsection {
+  &__main {
+    @extend .govuk-main-wrapper;
+
+    &:first-child {
+      @include govuk-responsive-padding(8, "top");
+    }
+  }
+
+  &__side {
+    @include govuk-responsive-padding(8, "top");
+    @include govuk-responsive-padding(7, "bottom");
+  }
+}

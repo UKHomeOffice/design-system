@@ -1,0 +1,50 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Button } from '@not-govuk/button';
+import readMe from '../README.md';
+
+<Meta
+  title="Button"
+  component={ Button }
+  parameters={ {
+    chromatic: { viewports: [640, 480] },
+    description: 'Extension of GOV.UK design system buttons',
+    jest: ['Button'],
+    notes: readMe
+  } }
+/>
+
+# Button
+
+Read the [button guidance on the GOV.UK design system](https://design-system.service.gov.uk/components/button/).
+
+<Preview withToolbar>
+  <Story name="Button">
+    <Button>
+      Save and continue
+    </Button>
+  </Story>
+</Preview>
+
+To use in React, read the [button documentation from NotGovUK](https://not-gov.uk/components?name=Button).
+
+
+## How to use
+### Secondary button
+
+The style of the secondary button is slightly changed from the GOV.UK design system to improve the contrast with the Home Office grey page background.
+
+<Preview>
+  <Story name="Standard">
+      <Button classModifiers="secondary">
+        Find address
+      </Button>
+  </Story>
+</Preview>
+
+## Help improve this component
+
+This component needs improving. We need evidence about:
+
+- how to use buttons on internal systems
+
+To contribute, add your thoughts and research findings to our [GitHub discussion](https://github.com/UKHomeOffice/design-system/discussions/372), or follow our [contribute guidance](/contribute).

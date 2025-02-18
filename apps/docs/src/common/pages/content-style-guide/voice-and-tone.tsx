@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../content-style-guide'
 
+import { PageWrap } from '../';
+
 export const title = 'Voice and tone';
 const description = 'Voice and tone';
 export const section = 'Content style guide';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -56,6 +59,7 @@ const Page: FC<PageProps> = () => (
       <p>To contribute, join the <A href="https://github.com/UKHomeOffice/design-system/discussions/600">GitHub discussion</A>.</p>
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

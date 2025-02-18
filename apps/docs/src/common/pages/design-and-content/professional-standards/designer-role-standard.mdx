@@ -1,0 +1,29 @@
+import { FC, ReactNode, createElement as h } from 'react';
+import { PageProps } from '@not-govuk/app-composer';
+import { A, NavigationMenu } from '@not-govuk/components';
+
+import config from '../../../config';
+
+import { SubsectionWrap, title as subsection } from './index.mdx';
+
+export const title = 'Designer role standards';
+const longTitle = title;
+const description = 'The definition of the designer role in the Home Office.';
+const siteTitle = config.title;
+const pageTitle = title + ' - ' + siteTitle;
+
+<SubsectionWrap>
+  <head>
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="og:title" content={title} />
+    <meta name="og:description" content={description} />
+  </head>
+  <h1>
+    <span className="caption">{subsection}</span>
+    {longTitle}
+  </h1>
+
+CONTENT PLACEHOLDER
+
+</SubsectionWrap>

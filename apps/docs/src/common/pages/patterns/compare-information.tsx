@@ -5,6 +5,8 @@ import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 import { Highlight } from '@hods/components'
 
+import { PageWrap } from '../';
+
 export const title = 'Compare information';
 const description = 'How to help users to compare information';
 const section = 'Patterns';
@@ -12,6 +14,7 @@ const subsection = 'Help users to';
 
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -144,6 +147,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
   </div>
+</PageWrap>
 
 
 );

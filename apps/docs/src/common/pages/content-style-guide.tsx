@@ -4,12 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 import { AZNavigation } from '@hods/components';
 
+import { PageWrap } from './';
+
 export const title = 'Content style guide';
 const description = 'How to write content for Home Office services.';
 
 export const menu = (
   <Fragment>
-    
+
     <NavigationMenu items={[
       {
         href: '/accessibility/inclusive-language',
@@ -32,6 +34,7 @@ export const menu = (
 );
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <Fragment>
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -375,6 +378,7 @@ const Page: FC<PageProps> = () => (
       </div>
     </div>
   </Fragment>
+  </PageWrap>
 );
 
 export default Page;

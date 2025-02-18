@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const mapImage = require('../../../../assets/images/accessibility/gestures-and-motion.png');
 
 export const title = 'Gestures and motion';
@@ -11,6 +13,7 @@ const description = 'Accessibility guidance for gestures and motion';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -115,6 +118,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

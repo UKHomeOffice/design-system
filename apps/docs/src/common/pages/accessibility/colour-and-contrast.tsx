@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const linksImage01 = require('../../../../assets/images/accessibility/colour-contrast.png');
 
 export const title = 'Colour and contrast';
@@ -11,6 +13,7 @@ const description = 'Accessibility guidance for colour and contrast';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -145,6 +148,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

@@ -1,0 +1,44 @@
+import { FC, ReactNode, createElement as h } from 'react';
+import { PageProps } from '@not-govuk/app-composer';
+import { A, NavigationMenu } from '@not-govuk/components';
+
+import { Subsection } from '@hods/ucdm-subsection';
+import config from '../../../config';
+
+import { SectionWrap, title as section } from '../';
+
+export const title = 'Professional standards and guidance';
+const longTitle = title;
+const description = 'Professional standards and guidance for designers working in the Home Office';
+const siteTitle = config.title;
+const pageTitle = title + ' - ' + siteTitle;
+
+export const SubsectionWrap = ({ children }) => (
+  <SectionWrap>
+    <Subsection title={title} side={
+      <NavigationMenu items={[
+        { href: '/design-and-content/professional-standards/project-on-off-boarding', text: 'Project on/off-boarding' },
+        { href: '/design-and-content/professional-standards/approved-tools', text: 'Approved tools' },
+        { href: '/design-and-content/professional-standards/designer-role-standard', text: 'Designer role standard' }
+      ]} />
+    }>
+      {children}
+    </Subsection>
+  </SectionWrap>
+);
+
+<SubsectionWrap>
+  <head>
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="og:title" content={title} />
+    <meta name="og:description" content={description} />
+  </head>
+  <h1>
+    <span className="caption">{section}</span>
+    {longTitle}
+  </h1>
+
+CONTENT PLACEHOLDER
+
+</SubsectionWrap>

@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../../accessibility'
 
+import { PageWrap } from '../../';
+
 export const title = 'Understandable';
 const description = 'Understandable Accessibility Standard requirements';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -240,6 +243,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

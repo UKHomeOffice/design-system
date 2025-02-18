@@ -1,0 +1,63 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { Section } from '../src/Section';
+import readMe from '../README.md';
+
+<Meta
+  title="Section"
+  component={ Section }
+  parameters={ {
+    chromatic: { viewports: [1280, 360] },
+    description: 'A layout wrapper for sections within the User-Centred Design Manual.',
+    jest: ['Section'],
+    notes: readMe
+  } }
+/>
+
+# Section
+
+A layout wrapper for sections within the User-Centred Design Manual.
+
+<Preview withToolbar>
+  <Story name="Section">
+    <Section title="Design and content" href="#" navigation={[
+      { href: '#', text: 'Design system' },
+      { href: '/design-and-content/content-style-guide', text: 'Content style guide' },
+      { href: '/design-and-content/professional-standards', text: 'Professional standards and guidance' }
+    ]}>
+      My content.
+    </Section>
+  </Story>
+</Preview>
+
+<Props of={ Section } />
+
+
+## How to use
+
+### Provide a description
+
+You can provide a description to be used within the embedded PageBanner.
+
+<Preview>
+  <Story name="Description">
+    <Section title="Design and content" href="#" description="Guidance and standards for designing Home Office services." navigation={[
+      { href: '#', text: 'Design system' },
+      { href: '/design-and-content/content-style-guide', text: 'Content style guide' },
+      { href: '/design-and-content/professional-standards', text: 'Professional standards and guidance' }
+    ]}>
+      My content.
+    </Section>
+  </Story>
+</Preview>
+
+### Homepage
+
+On a home page, you might want to not provide any navigation items.
+
+<Preview>
+  <Story name="Homepage">
+    <Section title="Design and build services that work for everyone" href="#" description="Use the UCD Manual to create consistent services that put users first.">
+      My content.
+    </Section>
+  </Story>
+</Preview>

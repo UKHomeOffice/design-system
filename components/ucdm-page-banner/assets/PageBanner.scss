@@ -1,0 +1,29 @@
+@import "@hods/sass-base";
+@import "govuk-frontend/dist/govuk/core/typography";
+
+.hods-ucdm-page-banner {
+  background-color: govuk-colour('white');
+
+  &__container {
+    @extend .govuk-body-l;
+    margin-bottom: 0;
+    @include govuk-responsive-padding(4, "top");
+    @include govuk-responsive-padding(4, "bottom");
+    @include govuk-responsive-padding(8, "left");
+    @include govuk-responsive-padding(8, "right");
+  }
+
+  &__heading {
+    @extend .govuk-heading-xl;
+    color: $hods-brand-colour-purple;
+    @include govuk-responsive-margin(3, "bottom");
+
+    @include govuk-media-query($from: mobile, $until: tablet) {
+      max-width: 13em;
+    }
+
+    @include govuk-media-query($from: tablet) {
+      max-width: 13em;
+    }
+  }
+}

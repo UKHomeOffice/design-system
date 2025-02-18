@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 export const title = 'Error messages';
 const description = 'Accessibility guidance for error messages';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -257,6 +260,7 @@ You should place keyboard and visual focus at the summary to alert screen reader
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

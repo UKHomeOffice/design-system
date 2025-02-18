@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../content-style-guide'
 
+import { PageWrap } from '../';
+
 export const title = 'Limited English';
 const description = 'Designing for people with limited English';
 export const section = 'Content style guide';
@@ -11,6 +13,7 @@ export const section = 'Content style guide';
 const biometricsSign = require('../../../../assets/images/content-style-guide/Biometrics sign.png');
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -225,6 +228,7 @@ const Page: FC<PageProps> = () => (
       <p>To contribute, join the <A href="https://github.com/UKHomeOffice/design-system/discussions/470">GitHub discussion</A>.</p>
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

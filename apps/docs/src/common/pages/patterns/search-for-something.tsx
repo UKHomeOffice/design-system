@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Search for something';
 const description = 'How to help users to search for something';
 const section = 'Patterns';
@@ -13,6 +15,7 @@ const applySearchNarrow = require('../../../../assets/images/patterns/search-nar
 const applySearchWide= require('../../../../assets/images/patterns/search-wide.svg');
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -132,6 +135,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
   </div>
+</PageWrap>
 
 
 );

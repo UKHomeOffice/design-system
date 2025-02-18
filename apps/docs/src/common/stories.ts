@@ -44,8 +44,10 @@ const buildLink = (page: string, lookup: SubpageLookup) => (v: string) => ({
 
 const buildLinks = (page: string) => (v: SubpageLookup) => Object.keys(v).sort().map(buildLink(page, v));
 const buildComponentLinks = buildLinks('components');
+const buildComponentLinksNew = buildLinks('design-and-content/design-system/components');
 
 export const componentLinks = buildComponentLinks(components);
+export const componentLinksNew = buildComponentLinksNew(components);
 
 export const links =[
   ...componentLinks

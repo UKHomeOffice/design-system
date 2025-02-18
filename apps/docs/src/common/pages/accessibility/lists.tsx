@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const linksImage01 = require('../../../../assets/images/accessibility/links01.png');
 
 export const title = 'Lists';
@@ -11,6 +13,7 @@ const description = 'Accessibility guidance for lists content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -143,6 +146,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;
