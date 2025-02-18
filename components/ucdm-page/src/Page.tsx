@@ -104,7 +104,9 @@ export const Page: FC<PageProps> = ({
       </Head>
       <SkipLink id="skip-link" for="main-content" />
       <Header {...headerProps} className={classes('header')} />
-      <ServiceNavigation className={classes('navigation', serviceName && 'service-name')} items={navigation} serviceName={serviceName} serviceHref={serviceHref} />
+      { !(navigation.length || serviceName) ? null : (
+        <ServiceNavigation className={classes('navigation', serviceName && 'service-name')} items={navigation} serviceName={serviceName} serviceHref={serviceHref} />
+      ) }
       <div className={classes('body')}>
         <div className={classes('container')}>
           {children}
