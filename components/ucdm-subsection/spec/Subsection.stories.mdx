@@ -36,3 +36,73 @@ A layout wrapper for subsections within the User-Centred Design Manual.
 
 <Props of={ Subsection } />
 
+
+## Stories
+
+### Standard
+
+<Preview>
+  <Story name="Standard">
+    <Subsection title="My subsection" side={(
+      <NavigationMenu items={[
+        { href: '#', text: 'Current page' },
+        { href: '?one', text: 'One' },
+        { href: '?two', text: 'Two' },
+        { href: '?three', text: 'Three' }
+      ]} />
+    )}>
+      <h1>My page</h1>
+      <p>My content.</p>
+    </Subsection>
+  </Story>
+</Preview>
+
+
+### Back link
+
+<Preview>
+  <Story name="Back link">
+    <Subsection
+      backHref="#"
+      title="My subsection"
+      side={(
+        <NavigationMenu items={[
+          { href: '#', text: 'Current page' },
+          { href: '?one', text: 'One' },
+          { href: '?two', text: 'Two' },
+          { href: '?three', text: 'Three' }
+        ]} />
+      )}
+    >
+      <h1>My page</h1>
+      <p>My content.</p>
+    </Subsection>
+  </Story>
+</Preview>
+
+
+### Breadcrumbs
+
+<Preview>
+  <Story name="Breadcrumbs">
+    <Subsection
+      breadcrumbs={[
+        { href: '', text: 'Home' },
+        { href: '', text: 'Passports, travel and living abroad' },
+        { href: '', text: 'Travel abroad' },
+      ]}
+      title="My subsection"
+      side={(
+        <NavigationMenu items={[
+          { href: '#', text: 'Current page' },
+          { href: '?one', text: 'One' },
+          { href: '?two', text: 'Two' },
+          { href: '?three', text: 'Three' }
+        ]} />
+      )}
+    >
+      <h1>My page</h1>
+      <p>My content.</p>
+    </Subsection>
+  </Story>
+</Preview>
