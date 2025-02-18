@@ -72,7 +72,6 @@ export const Page: FC<PageProps> = ({
   );
   const headerProps = {
     accountHref,
-    navigation,
     searchAction,
     searchSiteField,
     searchSiteValue,
