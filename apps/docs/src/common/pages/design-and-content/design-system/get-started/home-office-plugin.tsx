@@ -36,9 +36,10 @@ const Page: FC<PageProps> = () => (
     <p>You can use the <A href="https://prototype-kit.service.gov.uk/docs/tutorials-and-guides">GOV.UK tutorials and guides</A> to help build your prototype.</p>
 
     <h2>Header, footer and page background</h2>
-    <p>To change your prototype to by default use the Home Office styling:</p>
+    <p>To change your prototype to by default use the Home Office styling, in <code>app/views/layouts/main.html</code>:</p>
     <ol className="govuk-list govuk-list--number">
-      <li>In <code>app/views/layouts/main.html</code> change:<br /> <code>&#123;% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %&#125;</code> to <br /><code>&#123;% extends "home-office-kit-layout.html" %&#125;</code></li>
+      <li>Change <code>&#123;% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %&#125;</code> to <br /><code>&#123;% extends "home-office-kit-layout.html" %&#125;</code></li>
+      <li>Add the line: <code>{'{% set bodyClasses = \'hods-page\' %\}'}</code></li>
     </ol>
     <h2>Font</h2>
     <p>To change your prototype to use Roboto:</p>
