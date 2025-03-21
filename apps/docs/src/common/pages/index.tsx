@@ -59,6 +59,7 @@ const Page: FC<PageProps> = props => (
           <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 21 March 2025</p>
           <ul className="govuk-!-font-size-16">
             <li>Guidance updated for <A href="/patterns/send-an-email">send users an email</A></li>
+            <li>New pattern for  <A href="/patterns/long-lists">help users to choose from a long list</A></li>
           </ul>
         </aside>
         <aside>

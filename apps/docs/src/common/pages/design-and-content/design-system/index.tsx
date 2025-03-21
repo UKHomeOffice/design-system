@@ -104,6 +104,10 @@ export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
             text: '- Get more details'
           },
           {
+            href: '/design-and-content/design-system/patterns/help-users-to/long-lists',
+            text: '- Choose from a long list'
+          },
+          {
             href: '/design-and-content/design-system/patterns/help-users-to/leave-service',
             text: '- Leave a service'
           },
