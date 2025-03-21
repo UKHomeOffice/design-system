@@ -25,9 +25,7 @@ const Page: FC<PageProps> = props => (
           <h2>Updates</h2>
           <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 8 October 2024</p>
           <ul className="govuk-!-font-size-16">
-            <li>Guidance updated for <A href="/patterns/add-multiple-things">add multiple things pattern</A></li>
-            <li>Added a guide for <A href="/content-style-guide/designing-for-limited-english">designing for people with limited English</A></li>
-            <li>Improved accessibility of our <A href="/components?name=Button">secondary buttons</A></li>
+            <li>New pattern for  <A href="/patterns/long-lists">help users to choose from a long list</A></li>
           </ul>
         </aside>
         <aside>
