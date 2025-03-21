@@ -188,7 +188,7 @@ const Page: FC<PageProps> = () => (
       </ul>
 
       <p>See this summary about <A href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/">autocompletes from the Web Accessibility Initiative (W3C)</A>.</p>
-      </ul> 
+    
 
   
       <p>When using conditionally revealed lists, make sure the second list is next in the tabbing order. </p>
