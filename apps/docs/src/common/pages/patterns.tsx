@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A, NavigationMenu } from '@not-govuk/components';
 
-import { PageWrap } from './';
-
 export const menu = (
   <Fragment>
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users for</span>
@@ -75,6 +73,10 @@ export const menu = (
       {
         href: '/patterns/send-a-letter',
         text: 'A letter'
+      },
+      {
+        href: '/patterns/send-an-email',
+        text: 'An email'
       }
     ]} />
   </Fragment>
@@ -84,7 +86,6 @@ export const title = 'Patterns';
 const description = 'Patterns are best practice design solutions for specific user-focused tasks and page types';
 
 const Page: FC<PageProps> = () => (
-  <PageWrap >
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -105,7 +106,6 @@ const Page: FC<PageProps> = () => (
       As our patterns mature, we will look to contribute them to the GOV.UK system so they can be used more widely.</p>
     </div>
   </div>
-  </PageWrap >
 );
 
 export default Page;
