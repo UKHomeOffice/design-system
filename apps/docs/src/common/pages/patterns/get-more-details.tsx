@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Get more details';
 const description = 'How to help users to get more details on something';
 const section = 'Patterns';
@@ -12,6 +14,7 @@ const subsection = 'Help users to';
 const applyContextualHelp = require('../../../../assets/images/patterns/contextual-help.svg');
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>
@@ -77,6 +80,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
 </div>
+</PageWrap>
 
 
 );

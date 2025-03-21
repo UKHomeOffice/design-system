@@ -1,0 +1,141 @@
+@import "@hods/sass-base";
+
+.hods-ucdm-header {
+  background-color: govuk-colour('white');
+  border-color: $govuk-border-colour;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+
+  &__link, a {
+    text-decoration: none;
+    color: #000;
+
+    &:active, &:hover, &:link, &:visited {
+      color: #000;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &--service-name {
+      @include govuk-font(24);
+    }
+  }
+
+  &__container {
+    border-color: $hods-brand-colour-purple;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    margin-bottom: -1px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include govuk-responsive-padding(8, "left");
+    @include govuk-responsive-padding(8, "right");
+  }
+
+  &__logo {
+    display: block;
+    box-size: border-box;
+    width: auto;
+    height: auto;
+    margin-bottom: 0;
+    line-height: 0;
+    @include govuk-responsive-padding(3, "right");
+
+    @include govuk-media-query($from: mobile, $until: tablet) {
+    }
+    @include govuk-media-query($from: tablet) {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  &__logo-svg {
+    display: inline-block;
+    position: relative;
+    fill: currentcolor;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+
+  &__product-name {
+    display: inline-table;
+    line-height: 1;
+    margin-left: 43px;
+    margin-top: 0;
+
+    @include govuk-media-query($from: mobile, $until: tablet) {
+      margin-left: 0.2em;
+      margin-top: 13px;
+      font-size: 19px;
+    }
+    @include govuk-media-query($from: tablet) {
+      font-size: 21px;
+      margin-left: 0.2em;
+      margin-top: 11px;
+    }
+  }
+
+  &__search {
+    display: block;
+    float: left;
+    margin-top: 5px;
+
+    @include govuk-media-query($from: mobile, $until: tablet) {
+      float: none;
+    }
+
+    @include govuk-media-query($from: tablet) {
+      float: right;
+      margin-top: 0;
+    }
+  }
+
+  &__search-box {
+    margin-bottom: 0;
+  }
+
+  &__account-menu {
+    display: block;
+    float: left;
+    margin-top: 5px;
+    @include govuk-font(19);
+
+    @include govuk-media-query($from: mobile, $until: tablet) {
+      float: none;
+    }
+
+    @include govuk-media-query($from: tablet) {
+      float: right;
+      margin-top: 13px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: #0B0C0C;
+      }
+
+      a:hover {
+        text-decoration: underline!important;
+      }
+    }
+
+    li:first-child {
+      padding-left:0;
+    }
+
+    li {
+      padding-left: 1.5em;
+      list-style: none;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../../accessibility'
 
+import { PageWrap } from '../../';
+
 export const title = 'Pointer gestures';
 const description = 'Accessibility guidance for keyboard content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -29,13 +32,12 @@ const Page: FC<PageProps> = () => (
       <p>These types of elements must also be accessible to keyboard users. If you see pointer gesture elements on a website you should try getting to it with keyboard controls and then see if you can control it by using the arrow keys, or other character controls if required.</p>
       <p>Find out more about WCAG success criteria on <A href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures.html">pointer gestures</A>.</p>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+      <h2>Get in touch</h2>
+      <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

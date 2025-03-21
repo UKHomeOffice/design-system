@@ -1,0 +1,53 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import { PageBanner } from '../src/PageBanner';
+import readMe from '../README.md';
+
+<Meta
+  title="Page banner"
+  component={ PageBanner }
+  parameters={ {
+    chromatic: { viewports: [1280, 360] },
+    description: 'A banner to be displayed at the top of the page, underneath the header.',
+    jest: ['PageBanner'],
+    notes: readMe
+  } }
+/>
+
+# Page banner
+
+A banner to be displayed at the top of the page, underneath the header.
+
+<Preview withToolbar>
+  <Story name="PageBanner">
+    <PageBanner heading="Design and build services that work for everyone">
+      Use the UCD Manual to create consistent services that put users first.
+    </PageBanner>
+  </Story>
+</Preview>
+
+<Props of={ PageBanner } />
+
+
+## Stories
+### Standard
+
+A standard page banner.
+
+<Preview>
+  <Story name="Standard">
+    <PageBanner heading="Design and build services that work for everyone">
+      Use the UCD Manual to create consistent services that put users first.
+    </PageBanner>
+  </Story>
+</Preview>
+
+
+### Heading only
+
+A page banner with only a heading but no description.
+
+<Preview>
+  <Story name="Header only">
+    <PageBanner heading="Design and content" />
+  </Story>
+</Preview>

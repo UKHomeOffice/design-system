@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../../accessibility'
 
+import { PageWrap } from '../../';
+
 export const title = 'Robust';
 const description = 'Robust Accessibility Standard requirements';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -64,13 +67,12 @@ const Page: FC<PageProps> = () => (
     <p>When completing actions that involve a visual status message or information that a user needs to be made aware of, check that the message is announced to screen reader users in a timely manner.</p>
     <p>Note that these messages should not interrupt the screen reader's current activity but should relay the information at a suitable break in the screen reader audio.</p>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+    <h2>Get in touch</h2>
+    <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

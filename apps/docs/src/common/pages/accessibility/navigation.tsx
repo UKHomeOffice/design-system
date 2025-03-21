@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const navigationImage01 = require('../../../../assets/images/accessibility/navigation-01.png');
 const navigationImage03 = require('../../../../assets/images/accessibility/navigation-03.png');
 
@@ -12,6 +14,7 @@ const description = 'Accessibility guidance for page navigation';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -129,14 +132,12 @@ const Page: FC<PageProps> = () => (
 <p>Never use navigation links that operate ‘on focus’ – keyboard-only users will tab through a list of links to find the one they need, and on-focus operation (which takes them to a new page at every tab stop) will prevent them from using your navigation altogether.
 The more content in your main navigation, the more important it is to include a <A href="https://design.homeoffice.gov.uk/accessibility/keyboard/skip-to-content">skip link</A> that lets users quickly move past it if they need to.</p>
 
-
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+<h2>Get in touch</h2>
+<p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

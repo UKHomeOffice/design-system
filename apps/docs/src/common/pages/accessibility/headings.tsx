@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const headingImage = require('../../../../assets/images/accessibility/heading-hierarchy.png');
 
 export const title = 'Headings';
@@ -11,6 +13,7 @@ const description = 'Accessibility guidance for headings';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -121,13 +124,13 @@ Headings are defined by using <code>&lt;h&gt;</code> tags which come in the form
 
 <p>Where sections are broken up with visual design alone, it may be worth adding a screen reader-only heading to help non-visual users navigate these parts of the page. You can do this with a <A href="https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/">‘visually hidden’ style in CSS</A>.</p>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+<h2>Get in touch</h2>
+
+<p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

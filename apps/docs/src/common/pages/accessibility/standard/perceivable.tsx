@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../../accessibility'
 
+import { PageWrap } from '../../';
+
 export const title = 'Perceivable';
 const description = 'Perceivable Accessibility Standard requirements';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -29,7 +32,7 @@ const Page: FC<PageProps> = () => (
     <p>Users must be able to perceive the content.</p>
     <p>Text alternative for non-text content, captions and other alternatives for multimedia should be provided, and content should be adaptable by the user to fit their requirements.</p>
     <h2>Index</h2>
-    <h3>Text Alternatives</h3>
+    <h3>Text alternatives</h3>
     <p><A href="#rr1.1.1">1.1.1 - Non text content</A></p>
 
     <h3>Time based media</h3>
@@ -61,7 +64,7 @@ const Page: FC<PageProps> = () => (
       <li><A href="#rr1.4.13">1.4.13 - Content on hover or focus</A></li>
     </ul>
 
-    <h2>Text Alternatives</h2>
+    <h2>Text alternatives</h2>
 
     <h3 id="rr1.1.1">1.1.1 - Non text content</h3>
     <p>All non-text content like images, charts, icons and infographics, must have an appropriate text equivalent. This ensures that information conveyed by non-text content is available to people who cannot see it, like screen reader users.</p>
@@ -169,7 +172,7 @@ const Page: FC<PageProps> = () => (
 
     <h3 id="rr1.3.1c">1.3.1c - Info and relationships - Headings</h3>
     <p>Where visual headings are used to communicate the structure of a page, they must also be communicated in a way that supports assistive technology users to access this structure.</p>
-    <p>You should use semantic HTML headings to structure your page. Heads should cascade from H1-H6. Each page must have at least a Level 1 Heading (H1).</p>
+    <p>You should use semantic HTML headings to structure your page. Headings should cascade from H1-H6. Each page must have at least a Level 1 Heading (H1).</p>
     <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</A></p>
     <h4>Implementation guidance</h4>
     <p>Use proper HTML markup for headings (&lt;h1&gt; through &lt;h6&gt; elements).</p>
@@ -292,7 +295,7 @@ const Page: FC<PageProps> = () => (
 
     <h3 id="rr1.3.4">1.3.4 - Orientation</h3>
     <p>A page view must not be locked to either horizontal or vertical views only, unless this is essential.</p>
-    <p>There are limited cases where ‘essential’ orientation locking applies. Check with the A&I team for cases.</p>
+    <p>There are limited cases where ‘essential’ orientation locking applies. Check with the Accessibility Assurance team for cases.</p>
     <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/orientation">Understanding Success Criterion 1.3.4: Orientation</A></p>
     <h4>Implementation gudance</h4>
     <p>Let the user view pages in their preferred orientation.</p>
@@ -322,7 +325,7 @@ const Page: FC<PageProps> = () => (
     <h2>Distinguishable</h2>
 
     <h3 id="rr1.4.1">1.4.1 - Use of colour</h3>
-    <p>Information conveyed with colour must also be identifiable from context, labelling, or alternative forms</p>
+    <p>Information conveyed with colour must also be identifiable from context, labelling, or alternative forms.</p>
     <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color">Understanding Success Criterion 1.4.1: Use of Color</A></p>
     <h4>Implementation guidance</h4>
     <p>When rendered in monochrome, information does not disappear.</p>
@@ -335,7 +338,7 @@ const Page: FC<PageProps> = () => (
     <p>Check that all links within the content (not navigation).</p>
 
     <h3 id="rr1.4.2">1.4.2 - Audio control</h3>
-    <p>Audio/video must not play automatically unless the user is pre-warned and can control the audio</p>
+    <p>Audio/video must not play automatically unless the user is pre-warned and can control the audio.</p>
     <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control">Understanding Success Criterion 1.4.2: Audio Control</A></p>
     <h4>Implementation guidance</h4>
     <p>Audio or video content that plays automatically, for example an alert sound, lasts for three seconds or less.</p>
@@ -473,13 +476,12 @@ const Page: FC<PageProps> = () => (
       <li>check that the new content does not disappear until you move the mouse pointer or keyboard focus to the next item on the page</li>
     </ul>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+    <h2>Get in touch</h2>
+    <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

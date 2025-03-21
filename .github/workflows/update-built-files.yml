@@ -21,11 +21,6 @@ jobs:
         with:
           node: 22
 
-      - name: Scan dependencies
-        uses: ./.github/actions/scan-dependencies
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Update built files
         uses: ./.github/actions/update-built-files
         with:

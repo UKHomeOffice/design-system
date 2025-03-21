@@ -3,7 +3,7 @@
 @import "govuk-frontend/dist/govuk/objects/main-wrapper";
 @import "govuk-frontend/dist/govuk/objects/width-container";
 @import "govuk-frontend/dist/govuk/objects/template";
-@import "./fonts/roboto.scss";
+@import "./fonts/roboto.css";
 
 $hods-secondary-button-colour: #F8F8F8;
 $hods-secondary-button-hover-colour: govuk-shade($hods-secondary-button-colour, 10%);

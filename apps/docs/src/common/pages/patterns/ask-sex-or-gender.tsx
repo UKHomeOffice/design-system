@@ -4,12 +4,15 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, Radios, TextInput, Select } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Their sex or gender';
 const description = 'How to ask users for their sex or gender';
 const section = 'Patterns';
 const subsection = 'Ask users for';
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{subsection} {title.toLowerCase()} - Home Office Design System</title>
@@ -125,6 +128,7 @@ const Page: FC<PageProps> = () => (
       <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/347">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
     </div>
 </div>
+</PageWrap>
 
 );
 

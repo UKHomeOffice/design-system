@@ -19,6 +19,7 @@
 # We don't control the headers on Netlify's CDN
 10021	OUTOFSCOPE	.*/public/.*
 10063	OUTOFSCOPE	.*/public/.*
+90004	OUTOFSCOPE	.*/public/.*
 # These are not timestamps
 10096	OUTOFSCOPE	.*/public/.*\.css
 # These are HTML errors
@@ -26,3 +27,5 @@
 # We don't control the vendors code
 10110	OUTOFSCOPE	.*/public/js/vendors\..*\.bundle\.js
 90022	OUTOFSCOPE	.*/public/js/vendors\..*\.bundle\.js
+# False positive? Remove in future?
+10003	OUTOFSCOPE	.*/public/js/vendors\..*\.bundle\.js

@@ -1,0 +1,46 @@
+import { FC, createElement as h } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { PageProps } from '@not-govuk/app-composer';
+import { A } from '@not-govuk/components';
+import config from '../../../../config';
+
+import { SubsectionWrap, title as subsection } from '../';
+import { title as subsubsection } from './';
+
+const siteTitle = config.title;
+
+export const title = 'Skip to content links';
+const longTitle = title;
+const description = 'Accessibility guidance for keyboard content';
+
+const skipImage01 = require('../../../../../../assets/images/accessibility/skip-01.png');
+
+const Page: FC<PageProps> = () => (
+  <SubsectionWrap>
+    <Helmet>
+      <title>{title} - {siteTitle}</title>
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+    </Helmet>
+    <h1>
+      <span className="caption">{subsubsection}</span>
+      {longTitle}
+    </h1>
+    <p>For keyboard users, having to repeatedly move through the same navigation menu every time they start a new page can be frustrating.</p>
+    <p>This is why ‘skip to content’ links exist. The first tab move you make on each page should show a link at the top of the page that says ‘Skip to content’ (or similar) and moves the user to the main part of the page.</p>
+
+    <div className="example" style={{ marginBottom: "2em" }}>
+      <p>To view the skip link component tab to this example, or click inside this example and press tab.</p>
+      <A href="#" className="govuk-skip-link">Skip to main content</A>
+    </div>
+
+    <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
+    <p>Read more on the WCAG success criteria on <A href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</A>.</p>
+
+    <h2>Get in touch</h2>
+    <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
+  </SubsectionWrap>
+);
+
+export default Page;

@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../styles';
 
+import { PageWrap } from '../';
+
 export const title = 'Colour';
 const description = 'Always use the Home Office colour palette';
 const section = 'Styles';
@@ -22,6 +24,7 @@ const colour = (colour: string, whiteText: boolean = false) => ({
 
 
 const Page: FC<PageProps> = ({}) => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -175,6 +178,7 @@ const Page: FC<PageProps> = ({}) => (
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

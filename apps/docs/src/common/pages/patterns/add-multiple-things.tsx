@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Add multiple things';
 const description = 'How to help users to add multiple things';
 const section = 'Patterns';
@@ -13,6 +15,7 @@ const applyAddAnother = require('../../../../assets/images/patterns/add-another.
 const chooseDocumentType = require('../../../../assets/images/patterns/choose-document-type.svg');
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>
@@ -113,6 +116,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
 </div>
+</PageWrap>
 
 
 );

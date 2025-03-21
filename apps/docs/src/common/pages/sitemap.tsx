@@ -5,6 +5,8 @@ import { AnchorList } from '@not-govuk/anchor-list';
 import { A } from '@not-govuk/components';
 import { componentLinks } from '../stories';
 
+import { PageWrap } from './';
+
 export const title = 'Sitemap';
 const description = 'Overview of the Home Office Design System';
 
@@ -40,8 +42,14 @@ const Page: FC<PageProps> = ({ routes }) => {
   ));
   const accessibility = all.filter(({href, text}) => (
     href.split('/')[1] === 'accessibility' && href.split('/')[2] !== undefined && text !== 'xxx'
+    && !href.startsWith('/accessibility/interactivity')
+    && !href.startsWith('/accessibility/page-structure')
+    && !href.startsWith('/accessibility/providing-alternatives')
+    && !href.startsWith('/accessibility/resources/')
+    && !href.startsWith('/accessibility/written-content')
+    && !href.endsWith('-new')
   ));
-  const contribute = all.filter(({href}) => (
+  const contribute = all.filter(({ href }) => (
     href.split('/')[1] === 'contribute' && href.split('/')[2] !== undefined
   ));
 
@@ -50,15 +58,26 @@ const Page: FC<PageProps> = ({ routes }) => {
 
   // Manually remove pages we don't want to show in the sitemap
   const hidden = [
+    ...all.filter(({href}) => href === '/sitemap'),
     ...all.filter(({text}) => text === 'Production'),
     ...all.filter(({text}) => text === 'xxx'),
-    ...all.filter(({text}) => text === 'Cookies')
+    ...all.filter(({text}) => text === 'Cookies'),
+    ...all.filter(({href}) => href.startsWith('/accessibility/interactivity')),
+    ...all.filter(({href}) => href.startsWith('/accessibility/page-structure')),
+    ...all.filter(({href}) => href.startsWith('/accessibility/providing-alternatives')),
+    ...all.filter(({href}) => href.startsWith('/accessibility/resources/')),
+    ...all.filter(({href}) => href.startsWith('/accessibility/written-content')),
+    ...all.filter(({href}) => href.endsWith('-new')),
+    ...all.filter(({href}) => href.startsWith('/community')),
+    ...all.filter(({href}) => href.startsWith('/design-and-content')),
+    ...all.filter(({href}) => href.startsWith('/ucdm')),
+    ...all.filter(({href}) => href.startsWith('/user-research'))
   ];
 
   const getStartedHeader = all.filter(({href}) => ( href === '/get-started' ))[0];
   const stylesHeader = all.filter(({href}) => ( href === '/styles' ))[0];
   const patternsHeader = all.filter(({href}) => ( href === '/patterns' ))[0];
-  const accessibilityHeader = all.filter(({href}) => ( href === '/accessibility' ))[0];
+  const accessibilityHeader = all.filter(({href}) => ( href === '/accessibility/' ))[0];
   const contributeHeader = all.filter(({href}) => ( href === '/contribute' ))[0];
   const componentsHeader = all.filter(({href}) => ( href === '/components' ))[0];
 
@@ -85,6 +104,7 @@ const Page: FC<PageProps> = ({ routes }) => {
   const footer = all.filter(e => !categorised.includes(e));
 
   return (
+    <PageWrap>
     <Fragment>
       <Helmet>
         <title>{title} - Home Office Design System</title>
@@ -108,7 +128,7 @@ const Page: FC<PageProps> = ({ routes }) => {
       <h2>Footer</h2>
       <AnchorList classBlock="govuk-list" items={footer} />
     </Fragment>
-
+    </PageWrap>
   );
 };
 

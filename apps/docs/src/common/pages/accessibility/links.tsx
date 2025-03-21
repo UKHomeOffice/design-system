@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 const linksImage02 = require('../../../../assets/images/accessibility/links02.png');
 const linksImage03 = require('../../../../assets/images/accessibility/links03.png');
 const linksImage04 = require('../../../../assets/images/accessibility/links04.png');
@@ -14,6 +16,7 @@ const description = 'Accessibility guidance for links content';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -169,14 +172,12 @@ the link destination, not the image itself.</p>
 
 <p>An example of doing something unexpected is if content opens in a new browser tab or window. If you have to do this you should tell users that this will happen in the link text or with a clearly defined icon.</p>
 
-
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+<h2>Get in touch</h2>
+<p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

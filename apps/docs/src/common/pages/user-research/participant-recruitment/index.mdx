@@ -1,0 +1,42 @@
+import { FC, ReactNode, createElement as h } from 'react';
+import { PageProps } from '@not-govuk/app-composer';
+import { A, NavigationMenu } from '@not-govuk/components';
+
+import { Subsection } from '@hods/ucdm-subsection';
+import config from '../../../config';
+
+import { SectionWrap, title as section } from '../index.mdx';
+
+export const title = 'Participant recruitment';
+const longTitle = title;
+const description = 'How to recruit participants for user research in the Home Office';
+const siteTitle = config.title;
+const pageTitle = title + ' - ' + siteTitle;
+
+export const SubsectionWrap = ({ children }) => (
+  <SectionWrap>
+    <Subsection title={title} side={
+      <NavigationMenu items={[
+        { href: '/user-research/participant-recruitment', text: 'Home' }
+      ]} />
+    }>
+      {children}
+    </Subsection>
+  </SectionWrap>
+);
+
+<SubsectionWrap>
+  <head>
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="og:title" content={title} />
+    <meta name="og:description" content={description} />
+  </head>
+  <h1>
+    <span className="caption">{section}</span>
+    {longTitle}
+  </h1>
+
+CONTENT PLACEHOLDER
+
+</SubsectionWrap>

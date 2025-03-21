@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../accessibility'
 
+import { PageWrap } from '../';
+
 export const title = 'Leader’s guide to accessibility';
 const description = 'Accessibility guidance for leaders';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -450,11 +453,12 @@ const Page: FC<PageProps> = () => (
         <h3>Widest user need</h3>
         <p>Designing services so as many people as possible, including those with access needs, can use them. </p>
 
-        <h2>Contribute</h2>
-        <p>Get involved with <A href="https://github.com/UKHomeOffice/design-system/discussions">GitHub discussions</A> about our styles, components and patterns.</p>
+        <h2>Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

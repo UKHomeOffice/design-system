@@ -1,6 +1,6 @@
 {
   "name": "@hods/alert",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Alert users to important information.",
   "main": "src/Alert.tsx",
   "sass": "assets/Alert.scss",
@@ -24,12 +24,12 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.0",
-    "@not-govuk/component-helpers": "^0.15.0",
-    "@not-govuk/inset-text": "^0.15.0"
+    "@hods/sass-base": "workspace:^0.5.1",
+    "@not-govuk/component-helpers": "^0.15.8",
+    "@not-govuk/inset-text": "^0.15.8"
   },
   "peerDependencies": {
-    "@not-govuk/docs-components": "^0.15.0",
+    "@not-govuk/docs-components": "^0.15.8",
     "@storybook/addon-docs": "^6.5.16",
     "react": "^18.0.0"
   },
@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@mdx-js/react": "1.6.22",
-    "@not-govuk/component-test-helpers": "^0.15.0",
+    "@not-govuk/component-test-helpers": "^0.15.8",
     "@types/react": "18.3.12",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",

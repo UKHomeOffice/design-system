@@ -1,0 +1,14 @@
+@import "@hods/sass-base";
+
+.hods-ucdm-section {
+  &__header {
+    > :last-child {
+      border-bottom: 1px solid $govuk-border-colour;
+    }
+  }
+
+  &__container {
+    @include govuk-responsive-padding(8, "left");
+    @include govuk-responsive-padding(8, "right");
+  }
+}

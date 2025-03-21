@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../styles';
 
+import { PageWrap } from '../';
+
 export const title = 'Typography';
 const description = 'If your service is on the homeoffice.gov.uk subdomain you should use the Roboto font instead of the GDS Transport font';
 const section = 'Styles';
 
 const Page: FC<PageProps> = ({}) => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -60,6 +63,7 @@ const Page: FC<PageProps> = ({}) => (
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

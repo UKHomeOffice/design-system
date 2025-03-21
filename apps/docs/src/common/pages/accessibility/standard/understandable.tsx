@@ -4,11 +4,14 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../../accessibility'
 
+import { PageWrap } from '../../';
+
 export const title = 'Understandable';
 const description = 'Understandable Accessibility Standard requirements';
 export const section = 'Accessibility';
 
 const Page: FC<PageProps> = () => (
+  <PageWrap>
   <div className="govuk-grid-row">
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -85,7 +88,7 @@ const Page: FC<PageProps> = () => (
     </ul>
 
     <h3 id="rr3.2.2">3.2.2 - On input</h3>
-    <p>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behaviour before using the component</p>
+    <p>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behaviour before using the component.</p>
     <p><A href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Understanding Success Criterion 3.2.2: On Input</A></p>
     <h4>Implementation guidance</h4>
     <p>Do not change the context automatically when a radio button or checkbox is checked/unchecked or an option in a &lt;select&gt; is chosen. Provide an explicit submit/go option.</p>
@@ -235,13 +238,12 @@ const Page: FC<PageProps> = () => (
     <h4>How to test with a manual code check</h4>
     <p>Right click on each form field required to register or login, select ‘Inspect’ and check that an appropriate username, new-password and current-password autocomplete attributes are included in its source code.</p>
 
-<div className="contact-us">
-  <h2 className="govuk-heading-m">Get in touch</h2>
-  <p>If you’ve got a question or suggestion share it on the Home Office DDaT Slack channel #ask-accessibility or email <A href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</A>.</p>
-</div>
+    <h2>Get in touch</h2>
+    <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
 
     </div>
   </div>
+  </PageWrap>
 );
 
 export default Page;

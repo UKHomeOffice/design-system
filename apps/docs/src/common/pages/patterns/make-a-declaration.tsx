@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Declarations';
 const description = 'A declaration allows users to confirm that they have understood or agreed to something before they submit an online form.';
 const section = 'Patterns';
@@ -13,6 +15,7 @@ const applyDeclaration1 = require('../../../../assets/images/patterns/make-a-dec
 const applyDeclaration2 = require('../../../../assets/images/patterns/make-a-declaration-privacy-terms-conditions.png');
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>
@@ -109,6 +112,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
 </div>
+</PageWrap>
 
 
 );

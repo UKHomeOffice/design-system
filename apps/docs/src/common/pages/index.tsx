@@ -1,12 +1,45 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { ReactNode, FC, Fragment, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
+
+import { Page as HODSPage } from '@hods/components';
+
+export const PageWrap: FC<{ children?: ReactNode }> = ({ children }) => {
+  const navigation = [
+    { href: '/get-started', text: 'Get started' },
+    { href: '/styles', text: 'Styles' },
+    { href: '/components', text: 'Components' },
+    { href: '/patterns', text: 'Patterns' },
+    { href: '/content-style-guide', text: 'Content style guide' },
+    { href: '/accessibility', text: 'Accessibility' },
+    { href: '/contribute', text: 'Contribute' }
+  ];
+  const footerNavigation = [
+    { href: 'https://github.com/UKHomeOffice/design-system/', text: 'GitHub' },
+    { href: '/accessibility-statement', text: 'Accessibility statement' },
+    { href: '/sitemap', text: 'Sitemap' },
+    { href: 'https://github.com/UKHomeOffice/design-system/issues/new', text: 'Feedback' },
+    { href: 'https://design-system.service.gov.uk/', text: 'GOV.UK Design System' }
+  ];
+
+  return (
+    <HODSPage
+      footerNavigation={footerNavigation}
+      navigation={navigation}
+      serviceName="Design System"
+      title="Home Office Design System"
+    >
+      {children}
+    </HODSPage>
+  );
+};
 
 export const title = 'Home Office Design System';
 const description = 'The UK Home Office\'s Design System, implemented in React';
 
 const Page: FC<PageProps> = props => (
+  <PageWrap>
   <Fragment>
     <Helmet>
       <title>{title}</title>
@@ -23,8 +56,9 @@ const Page: FC<PageProps> = props => (
       <div className="govuk-grid-column-one-third">
         <aside>
           <h2>Updates</h2>
-          <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 8 October 2024</p>
+          <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 21 March 2025</p>
           <ul className="govuk-!-font-size-16">
+            <li>Guidance updated for <A href="/patterns/send-an-email">send users an email</A></li>
             <li>New pattern for  <A href="/patterns/long-lists">help users to choose from a long list</A></li>
           </ul>
         </aside>
@@ -59,6 +93,7 @@ const Page: FC<PageProps> = props => (
       </div>
     </div>
   </Fragment>
+  </PageWrap>
 );
 
 export default Page;

@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Access a service';
 const description = 'How to help users to access a service';
 const section = 'Patterns';
@@ -14,6 +16,7 @@ const applyAuthenticateReference = require('../../../../assets/images/patterns/a
 const applyAuthenticateTwoFa = require('../../../../assets/images/patterns/authenticate-2fa.svg');
 
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>
@@ -110,8 +113,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
 </div>
-
-
+</PageWrap>
 );
 
 export default Page;

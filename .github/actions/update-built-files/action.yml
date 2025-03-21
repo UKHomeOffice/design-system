@@ -19,7 +19,8 @@ runs:
       shell: bash
       if: ${{ github.event_name == 'push' && github.ref == format('refs/heads/{0}', inputs.baseline-branch) }}
       run: |
-        git add -f pnpm-lock.yaml
-        git add -f reports/.sastscan.baseline
-        git commit -m "[skip ci] Update built files"
-        git push
+        git fetch origin $(git rev-parse --abbrev-ref HEAD)
+        git merge --ff-only
+        cp pnpm-lock.yaml pnpm-lock-committed.yaml
+        git add pnpm-lock-committed.yaml
+        git commit -m "[skip ci] Update built files" && git push || true

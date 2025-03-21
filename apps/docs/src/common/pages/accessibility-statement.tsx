@@ -4,10 +4,13 @@ import { PageProps } from '@not-govuk/app-composer';
 
 import Markdown from '../../../../../docs/accessibility-statement.md';
 
+import { PageWrap } from './';
+
 export const title = 'Accessibility Statement';
 const description = 'The accessibility statement of the Home Office Design System'
 
 const Page: FC<PageProps> = props => (
+  <PageWrap>
   <Fragment>
     <Helmet>
       <title>{title} - Home Office Design System</title>
@@ -17,6 +20,7 @@ const Page: FC<PageProps> = props => (
     </Helmet>
     <Markdown />
   </Fragment>
+  </PageWrap>
 );
 
 export default Page;
