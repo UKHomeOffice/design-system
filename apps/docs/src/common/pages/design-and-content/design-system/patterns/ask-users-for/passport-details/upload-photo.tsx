@@ -7,11 +7,11 @@ import config from '../../../../../../config';
 import { SubsectionWrap, title as subsection } from '../../../';
 
 const siteTitle = config.title;
-
-export const title = 'Take or upload photo of passport';
-const longTitle = title;
-const description = 'How to ask users for passport details';
 const subsubsection = 'Ask users to';
+
+export const title = subsubsection + ' take or upload photo of passport';
+const longTitle = 'Take or upload photo of passport';
+const description = 'How to ask users for passport details';
 
 const Page: FC<PageProps> = () => (
   <SubsectionWrap>

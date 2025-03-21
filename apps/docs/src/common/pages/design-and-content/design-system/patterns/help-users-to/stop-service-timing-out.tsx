@@ -1,17 +1,17 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, DateInput, Details, TextInput, Select } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
 import config from '../../../../../config';
 
 import { SubsectionWrap, title as subsection } from '../../';
 
 const siteTitle = config.title;
-
-export const title = 'Stop a service timing out';
-const longTitle = title;
-const description = 'How to help users to stop a service from timing out';
 const subsubsection = 'Help users to';
+
+export const title = subsubsection + ' stop a service timing out';
+const longTitle = 'Stop a service timing out';
+const description = 'How to help users to stop a service from timing out';
 
 const applyModalWindow = require('../../../../../../../assets/images/patterns/time-out.png');
 
