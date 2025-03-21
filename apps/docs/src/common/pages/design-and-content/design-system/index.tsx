@@ -121,6 +121,10 @@ export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
           {
             href: '/design-and-content/design-system/patterns/send-users/letter',
             text: '- A letter'
+          },
+          {
+            href: '/design-and-content/design-system/patterns/send-users/email',
+            text: '- An email'
           }
         ]} />
         <NavigationMenu items={[
