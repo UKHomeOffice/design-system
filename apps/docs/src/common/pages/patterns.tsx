@@ -75,6 +75,10 @@ export const menu = (
       {
         href: '/patterns/send-a-letter',
         text: 'A letter'
+      },
+      {
+        href: '/patterns/send-an-email',
+        text: 'An email'
       }
     ]} />
   </Fragment>
@@ -105,7 +109,7 @@ const Page: FC<PageProps> = () => (
       As our patterns mature, we will look to contribute them to the GOV.UK system so they can be used more widely.</p>
     </div>
   </div>
-  </PageWrap >
+  </PageWrap>
 );
 
 export default Page;

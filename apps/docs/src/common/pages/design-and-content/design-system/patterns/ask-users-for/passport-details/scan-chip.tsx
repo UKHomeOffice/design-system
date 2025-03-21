@@ -7,11 +7,11 @@ import config from '../../../../../../config';
 import { SubsectionWrap, title as subsection } from '../../../';
 
 const siteTitle = config.title;
-
-export const title = 'Scan the passport chip';
-const longTitle = title;
-const description = 'How to ask users to scan the chip of their passport';
 const subsubsection = 'Ask users to';
+
+export const title = subsubsection + ' scan the passport chip';
+const longTitle = 'Scan the passport chip';
+const description = 'How to ask users to scan the chip of their passport';
 
 const ePassportLogo = require('../../../../../../../../assets/images/patterns/EPassport_logo.svg');
 

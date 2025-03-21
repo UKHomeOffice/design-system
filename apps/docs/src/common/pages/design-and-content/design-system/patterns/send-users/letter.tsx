@@ -7,11 +7,11 @@ import config from '../../../../../config';
 import { SubsectionWrap, title as subsection } from '../../';
 
 const siteTitle = config.title;
-
-export const title = 'A letter';
-const longTitle = title;
-const description = 'How to send users effective letters';
 const subsubsection = 'Send users';
+
+export const title = subsubsection + ' a letter';
+const longTitle = 'A letter';
+const description = 'How to send users effective letters';
 
 const Page: FC<PageProps> = () => (
   <SubsectionWrap>
