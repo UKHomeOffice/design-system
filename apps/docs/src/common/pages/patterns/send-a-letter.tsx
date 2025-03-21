@@ -187,7 +187,14 @@ const Page: FC<PageProps> = () => (
         <li>EU Settlement Scheme</li>
         <li>Home Office HR system</li>
       </ul>
-      <p className="govuk-body">If you have evidence this also works for your users, you can contribute to our backlog.</p>
+      <h3 className="govuk-heading-m>Test insights of the notice of intended prosecution letter</h3>
+    <p className="govuk-body">In 2024, the Home Office redesigned a letter sent by police forces. The research and a national trial found that by redesigning the letter to be easy, attractive, simple and timely:</p>
+<ul className="govuk-list govuk-list--bullet">
+<li>one police force saw an 85% decrease in related phone calls</li>
+<li>across the trial, an average of 62% of responses were returned within 14 days (up from 48%)</li>
+</ul> 
+  
+      <p className="govuk-body">If you have any further evidence, you can <a href="">contribute to our backlog</a>.</p>
 
       <h2 className="govuk-heading-l">Help us improve this pattern</h2>
       <p>This pattern needs improving. We need evidence about:</p>
