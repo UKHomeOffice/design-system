@@ -4,6 +4,8 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 import { menu } from '../patterns';
 
+import { PageWrap } from '../';
+
 export const title = 'Choose from a long list';
 const description = 'How to help users choose from a long list ';
 const section = 'Patterns';
@@ -15,8 +17,8 @@ const bothlist = require('../../../../assets/images/patterns/bothlists2.png');
 const divide = require('../../../../assets/images/patterns/divide-lists.png');
 const questions = require('../../../../assets/images/patterns/structure-questions2.png');
 
-
 const Page: FC<PageProps> = () => (
+<PageWrap>
 <div className="govuk-grid-row">
   <Helmet>
     <title>{title} - Home Office Design System</title>
@@ -218,8 +220,7 @@ const Page: FC<PageProps> = () => (
 
     </div>
 </div>
-
-
+</PageWrap>
 );
 
 export default Page;
