@@ -37,19 +37,20 @@ const Page: FC<PageProps> = () => (
       </h1>
       
 
-      <p className="govuk-body">Help users narrow down their options.</p>
+      <p className="govuk-body">Help users narrow down their options in a long list</p>
 
      
 
       <h2 className="govuk-heading-l">When to use this pattern</h2>
-      <p>Follow this pattern when users need to choose one or more options from a list.</p>
-      <p>What makes a long list will depend on the service. Some services might have thousands of options, while for other services 30 options may be a long list.</p>
-      <p>Use this pattern when</p>
+      <p>Use this pattern when:</p>
       <ul className="govuk-list govuk-list--bullet">
         <li>a user needs to choose from a list of options</li>
         <li>there are so many options that you cannot show them all at the same time</li>
         <li>the user may not be familiar with the options in the list</li>
       </ul>
+      
+      <p>What makes a long list will depend on the service. Some services might have thousands of options, while for other services 30 options may be a long list.</p>
+   
      
       <h2 className="govuk-heading-l">When not to use this pattern</h2>
       <p>Do not use this pattern for filtering a table, as tables present multiple pieces of related information.</p>
@@ -68,7 +69,7 @@ const Page: FC<PageProps> = () => (
         <li>how to order the options to help users find what they’re looking for, for example most common first or alphabetised</li>
       </ul>
 
-      <p>To optimise data in long lists: </p>
+      <p>To improve data in long lists: </p>
       <ul className="govuk-list govuk-list--bullet">
         <li>reduce the number of options as much as possible</li>
         <li>keep the name of each option short</li>
@@ -81,27 +82,8 @@ const Page: FC<PageProps> = () => (
 
       <h3>Autocomplete</h3>
       <p>Autocompletes (also called ‘typeaheads’) are text inputs that suggest options to the user as they type. Results are presented in a dropdown list which users can select from.</p>
-    
-      <p>There are two types of autocomplete commonly used in the Home Office: inline autocomplete and list-only autocomplete.  </p>
-      <h4 className="govuk-heading-s">List only autocomplete (also called ‘autosuggests’)</h4>
-      <p>When letters are typed into the input field, the dropdown list displays options that start with those letters. The user selects from the list to complete the field.  </p>
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-one-half">
-      <img src={autocomplete} className="image-examples" alt="Example of list only autocomplete."/></div>
-   </div>
-   <br></br>
-   <br></br>
-   <br></br>
-   <h4 className="govuk-heading-s">Inline autocomplete</h4>
-      <p>When letters are typed into the input field, the dropdown list displays options that start with those letters. The portion of the first suggestion that has not been typed by the user appears after the cursor in the input field. The user can select the suggestion to complete the field. </p>
-      <div className="govuk-grid-row">
-      <div className="govuk-grid-column-one-half">
-      <img src={inlineautocomplete} className="image-examples" alt="Example of inline autocomplete."/></div>
-   </div>
-   
-  <br></br>
-<br></br>
-      <p>Autocompletes work better when the user knows exactly what entry they are looking for in the list.</p>
+
+      <p>Autocompletes work better when the user knows exactly what option they are looking for in the list.</p>
       <p>This component can help by:  </p>
       <ul className="govuk-list govuk-list--bullet">
         <li>speeding up user input </li>
@@ -111,30 +93,35 @@ const Page: FC<PageProps> = () => (
 
       <p>When using an autocomplete, consider:</p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>whether your service will find a combination of letters anywhere in an entry</li>
+        <li>whether your service will find a combination of letters anywhere in an option</li>
         <li>the order in which you will present options</li>
-        <li>doing research with your users to find out whether you need to allow synonyms, for example when choosing a language from a list, entering ‘Deutsch’ or ‘Germany’ will bring up ‘German’ </li>
+        <li>doing research with your users to find out whether you need to allow synonyms, for example, ‘Deutsch’ or ‘Germany’ could bring up ‘German.’</li>
         <li>doing research with your users to understand if codes or numbers should be added to help identify the options in the list </li>
         <li>telling the user how many matches have been found</li>
         <li>what happens if there are no results found</li>
-        <li>how to show users that they can see the complete list, for example a select arrow</li>
+        <li>how to show users that they can see the complete list, for example an arrow icon within the autocomplete</li>
         <li>how users can easily clear what they have entered to see the full list again</li>
         <li>a plan for how you will maintain the accuracy of the list over time</li>
         <li>how the number of options displayed to the user impacts loading time</li>
       </ul>
 
       <p>See this Department of Education <A href="https://becoming-a-teacher.design-history.education.gov.uk/register-trainee-teachers/autocomplete-improvements/">design history blog on improving autocompletes</A>.</p>
-      <p>For accessibility:</p>
-      <ul className="govuk-list govuk-list--bullet">
-        <li>if a user presses ‘Space’, ‘Enter’ or ‘Tab’ key, the option is set</li>
-        <li>if a user presses ‘Esc’, the current option is retained</li>
-      </ul>
 
-      <p>See this summary about <A href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/">autocompletes from the Web Accessibility Initiative (W3C)</A>.</p>
+
+      <h4 className="govuk-heading-s">List only autocomplete (also called ‘autosuggests’)</h4>
+      <p>When letters are typed into the input field, the dropdown list displays options that start with those letters. The user selects from the list to complete the field.  </p>
+      <div className="govuk-grid-row">
+      <div className="govuk-grid-column-one-half">
+      <img src={autocomplete} className="image-examples" alt="Example of list only autocomplete."/></div>
+   </div>
+   
+  <br></br>
+<br></br>
+     
       
       <h3>Divide the list into categories</h3>
       <p>Divide the data into categories so when users select a category, they are shown only relevant options in the next field.</p>
-      <p>There are two ways of doing this: showing all lists when the screen loads or only revealing the next list when a choice has been made</p>
+      <p>There are 2 ways of doing this: showing all lists when the screen loads or only revealing the next list when a choice has been made</p>
       <h4 className="govuk-heading-s">Both lists are shown when screen loads</h4>
   <p>In this case, the options displayed in the second list are filtered depending on what is selected from the first list. If no option is chosen in the first list, the user can select from the unfiltered range of options in the second list.</p>
 
@@ -144,18 +131,13 @@ const Page: FC<PageProps> = () => (
 </div>
 
 <h4 className="govuk-heading-s">Second list is conditionally revealed  </h4>
-<p>The second list is conditionally revealed when an option in the first list is selected.</p>
+<p>Show the second list when a user selects an option in the first list.</p>
 <p>In this example, the user selects a country – United Kingdom of Great Britain and Northern Ireland – from a dropdown. A second dropdown then appears below the first, showing options for different UK ports. </p>
 
       <div className="govuk-grid-row">
       <div className="govuk-grid-column-full">
       <img src={divide} className="image-examples" alt=" Example of the interaction where the second list conditionally revealed."/></div>
    </div>
-
-
-
-      
-
 
      
       <p>This approach can:</p>
@@ -196,13 +178,20 @@ const Page: FC<PageProps> = () => (
 
       <p>When using autocompletes: </p>
       <ul className="govuk-list govuk-list--bullet">
-        <li>inform the screen reader user that autocomplete is available</li>
-        <li>inform the screen reader user that content has been expanded</li>
-        <li>ensure the first line has the number of results as the user types</li>
-        <li>do not use aria live region </li>
-        <li>inform the user as the number of matches changes</li>
-        <li>collapse list and return focus to the editable field when a selected match is confirmed</li>
+        <li>inform the screen reader user that the autocomplete is available</li>
+        <li>inform the screen reader user when the content has been expanded</li>
+        <li>it may be helpful to include the number of options in the first line as the user types and inform the user as the number of matches changes</li>
+        <li>do not use 'aria live region' </li>
+        <li>collapse the list and return the focus to the editable field when a selected match is confirmed</li>
+        <li>the option in focus in the list is set if a user presses the ‘Space’, ‘Enter’ or ‘Tab’ key</li>
+        <li>if a user presses ‘Esc’, the option in focus is not selected and the dropdown list is closed</li>
+      </ul>
+
+      <p>See this summary about <A href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/">autocompletes from the Web Accessibility Initiative (W3C)</A>.</p>
       </ul> 
+
+  
+      <p>When using conditionally revealed lists, make sure the second list is next in the tabbing order. </p>
 
       <p>If your service uses this pattern, let us know of any insights you have
       on accessibility considerations.</p>
@@ -221,7 +210,8 @@ const Page: FC<PageProps> = () => (
         <li>how to make users more confident about their choice</li>
         <li>the usability of autocompletes on mobile devices</li>
         <li>other patterns that have been successful in services to display long lists to users</li>
-        <li>using the optgroup element for grouping options</li>
+        <li>using the 'optgroup' element for grouping options</li>
+        
       </ul>
 
       <p className="govuk-body">To contribute, add your thoughts and research findings to our <A href="https://github.com/UKHomeOffice/design-system/discussions/401">GitHub discussion</A>, or follow our <A href="/contribute">contribute guidance</A>.</p>
