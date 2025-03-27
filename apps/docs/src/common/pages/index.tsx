@@ -13,7 +13,8 @@ export const PageWrap: FC<{ children?: ReactNode }> = ({ children }) => {
     { href: '/patterns', text: 'Patterns' },
     { href: '/content-style-guide', text: 'Content style guide' },
     { href: '/accessibility', text: 'Accessibility' },
-    { href: '/contribute', text: 'Contribute' }
+    { href: '/contribute', text: 'Contribute' },
+    { href: '/get-involved', text: 'Get involved' }
   ];
   const footerNavigation = [
     { href: 'https://github.com/UKHomeOffice/design-system/', text: 'GitHub' },
