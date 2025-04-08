@@ -82,7 +82,7 @@ const Page: FC<PageProps> = () => (
       <h3 className="govuk-heading-m">Ask users about their sex and gender</h3>
 
       <p className="govuk-body">
-      There may be scenarios where it is important to capture differences between biological sex and gender identity. If you need to do this, you should ask both a sex and gender question to confirm the users’ identity and follow the <A href="https://design-system.service.gov.uk/patterns/equality-information/">GOV.UK pattern</A>.
+      There may be scenarios where it is important to capture differences between biological sex and gender identity. If you need to do this, you should ask both a sex and gender question to confirm the users’ identity and follow the <A href="https://design-system.service.gov.uk/patterns/gender-or-sex/">GOV.UK pattern</A>.
       </p>
 
       <h2 className="govuk-heading-l">How it works</h2>
