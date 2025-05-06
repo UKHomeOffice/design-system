@@ -34,7 +34,7 @@ const Page: FC<PageProps> = () => (
       <p>Tone adapts to the channel and user need.</p>
       <h2 id="home-office-voice">Home Office voice</h2>
         <p>Our voice is:</p>
-        <ul class="govuk-list govuk-list--bullet">
+        <ul className="govuk-list govuk-list--bullet">
         <li>human</li>
         <li>empowering</li>
         <li>respectful</li>
