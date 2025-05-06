@@ -41,31 +41,31 @@ const Page: FC<PageProps> = () => (
         <li>clear</li>
         </ul>	
       <p>Using this voice consistently across our products and services is one of the ways we demonstrate the Home Office values of courage, compassion, respect and collaboration.</p>
-   <table class="govuk-table">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header">Voice</th>
-      <th scope="col" class="govuk-table__header">What this means</th>
-      <th scope="col" class="govuk-table__header">Example</th>
+   <table className="govuk-table">
+  <thead className="govuk-table__head">
+    <tr className="govuk-table__row">
+      <th scope="col" className="govuk-table__header">Voice</th>
+      <th scope="col" className="govuk-table__header">What this means</th>
+      <th scope="col" className="govuk-table__header">Example</th>
     </tr>
   </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
+  <tbody className="govuk-table__body">
+    <tr className="govuk-table__row">
       <td>Human</td>
       <td>Use natural language that the audience understands.</td>
       <td>'You can work, study, and travel in and out of the UK with this permit.' rather than 'It allows employment, education, and unlimited entry/exit.'</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <td>Empowering</td>
       <td>Emphasise what the user can do, using ‘you’ and the active voice.</td>
       <td>'You can prove your English language ability by...' rather than 'You will be assessed on your English language ability'.</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <td>Respectful</td>
       <td>Be inclusive, considerate, and sensitive, instead of accusing or demanding.</td>
       <td>‘It is important that you explain what has happened to you and your family' rather than 'Tell the interviewer everything or it can count against you'.</td>
     </tr>
-    <tr class="govuk-table__row">
+    <tr className="govuk-table__row">
       <td>Clear</td>
       <td>Use clear language and avoid hiding meaning behind jargon or legal language.</td>
       <td>'Give your fingerprints and photo' rather than 'Provide biometric information'.</td>
@@ -76,7 +76,7 @@ const Page: FC<PageProps> = () => (
 <p>Unlike voice, tone can change. We adapt it all the time in spoken communication, for example using a softer tone with children or a more formal tone with our manager.</p>
 <p>It will still be recognisable as the Home Office through the use of our voice, but it will suit the user need and channel.</p>
 <p>Here are some examples from our services:</p>
-      <ul class="govuk-list govuk-list--bullet">
+      <ul className="govuk-list govuk-list--bullet">
 <li>For our case management system, we use a direct tone that focuses on tasks and action rather than explanation: for example, ‘You must check the applicant’s documents’.</li>
 <li>For our HR chat tool, we use a conversational but professional tone which is informal (but not over familiar), polite and helpful: for example, ‘Need to find a colleague’s role and team?’</li>
 <li>When inviting neurodiverse participants to research, we use an empathetic and reassuring tone to create psychological safety.</li>
