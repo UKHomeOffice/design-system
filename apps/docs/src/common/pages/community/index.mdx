@@ -6,6 +6,7 @@ import { Section } from '@hods/ucdm-section';
 import config from '../../config';
 
 import { PageWrap } from '../ucdm';
+import Markdown from '../../../../../../docs/community/README.md';
 
 export const title = 'Community';
 const longTitle = 'User-centred design community';
@@ -34,9 +35,6 @@ export const SectionWrap = ({ children }) => (
       <meta name="og:title" content={title} />
       <meta name="og:description" content={description} />
     </head>
-    <h1>{longTitle}</h1>
-
-CONTENT PLACEHOLDER
-
+    <Markdown />
   </main>
 </SectionWrap>

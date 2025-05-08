@@ -5,6 +5,7 @@ import { A, NavigationMenu } from '@not-govuk/components';
 import config from '../../../config';
 
 import { SubsectionWrap, title as subsection } from './index.mdx';
+import Markdown from '../../../../../../../docs/design-and-content/professional-standards/approved-tools.md';
 
 export const title = 'Approved tools';
 const longTitle = title;
@@ -19,11 +20,6 @@ const pageTitle = title + ' - ' + siteTitle;
     <meta name="og:title" content={title} />
     <meta name="og:description" content={description} />
   </head>
-  <h1>
-    <span className="caption">{subsection}</span>
-    {longTitle}
-  </h1>
-
-CONTENT PLACEHOLDER
-
+  <span className="govuk-caption-xl">{subsection}</span>
+  <Markdown />
 </SubsectionWrap>

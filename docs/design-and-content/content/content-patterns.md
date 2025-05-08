@@ -1,0 +1,4 @@
+Content patterns
+================
+
+CONTENT PLACEHOLDER.
