@@ -6,6 +6,7 @@ import { Subsection } from '@hods/ucdm-subsection';
 import config from '../../../config';
 
 import { SectionWrap, title as section } from '../';
+import Markdown from '../../../../../../../docs/design-and-content/professional-standards/README.md';
 
 export const title = 'Professional standards and guidance';
 const longTitle = title;
@@ -34,11 +35,6 @@ export const SubsectionWrap = ({ children }) => (
     <meta name="og:title" content={title} />
     <meta name="og:description" content={description} />
   </head>
-  <h1>
-    <span className="caption">{section}</span>
-    {longTitle}
-  </h1>
-
-CONTENT PLACEHOLDER
-
+  <span className="govuk-caption-xl">{section}</span>
+  <Markdown />
 </SubsectionWrap>

@@ -7,6 +7,7 @@ import { Subsection } from '@hods/ucdm-subsection';
 import config from '../../../config';
 
 import { SectionWrap, title as section } from '../';
+import Markdown from '../../../../../../../docs/design-and-content/content/README.md';
 
 const siteTitle = config.title;
 
@@ -21,6 +22,10 @@ export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
         {
           href: '/design-and-content/content/content-style-guide',
           text: 'Content style guide'
+        },
+        {
+          href: '/design-and-content/content/content-patterns',
+          text: 'Content patterns'
         },
         {
           href: '/accessibility/written-content/inclusive-language',
@@ -53,11 +58,8 @@ const Page: FC<PageProps> = () => (
       <meta name="og:title" content={title} />
       <meta name="og:description" content={description} />
     </Helmet>
-    <h1>
-      <span className="caption">{section}</span>
-      {longTitle}
-    </h1>
-    <p>CONTENT PLACEHOLDER.</p>
+    <span className="govuk-caption-xl">{section}</span>
+    <Markdown />
   </SubsectionWrap>
 );
 

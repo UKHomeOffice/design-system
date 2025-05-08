@@ -1,10 +1,10 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A } from '@not-govuk/components';
 import config from '../../../config';
 
 import { SubsectionWrap, title as subsection } from './';
+import Markdown from '../../../../../../../docs/design-and-content/content/content-patterns.md';
 
 const siteTitle = config.title;
 
@@ -20,15 +20,9 @@ const Page: FC<PageProps> = () => (
       <meta name="og:title" content={title} />
       <meta name="og:description" content={description} />
     </Helmet>
-    <h1>
-      <span className="caption">{subsection}</span>
-      {longTitle}
-    </h1>
-    <p>CONTENT PLACEHOLDER.</p>
+    <span className="govuk-caption-xl">{subsection}</span>
+    <Markdown />
   </SubsectionWrap>
 );
 
 export default Page;
-  
-
-

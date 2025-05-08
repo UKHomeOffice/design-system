@@ -6,6 +6,7 @@ import { Subsection } from '@hods/ucdm-subsection';
 import config from '../../../config';
 
 import { SectionWrap, title as section } from '../index.mdx';
+import Markdown from '../../../../../../../docs/community/ucd-ops-team/README.md';
 
 export const title = 'UCD Ops';
 const longTitle = 'User-centred design ops';
@@ -32,11 +33,6 @@ export const SubsectionWrap = ({ children }) => (
     <meta name="og:title" content={title} />
     <meta name="og:description" content={description} />
   </head>
-  <h1>
-    <span className="caption">{section}</span>
-    {longTitle}
-  </h1>
-
-CONTENT PLACEHOLDER
-
+  <span className="govuk-caption-xl">{section}</span>
+  <Markdown />
 </SubsectionWrap>
