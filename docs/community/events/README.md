@@ -1,0 +1,4 @@
+Community events
+================
+
+CONTENT PLACEHOLDER.
