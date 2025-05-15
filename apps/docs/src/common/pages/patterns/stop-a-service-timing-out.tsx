@@ -56,20 +56,12 @@ const Page: FC<PageProps> = () => (
       <li>allow the user to close the modal and reset the session time by selecting the primary action button, using ‘Esc’ on the keyboard or using the browser back button</li>
     </ul>
 
-    <h3 className="govuk-heading-m">If the user chooses to continue</h3>
+    <h3 className="govuk-heading-m">If the user chooses to stay signed in</h3>
     <p className="govuk-body">When a user selects to stay signed in:</p>
     <ul className="govuk-list govuk-list--bullet">
       <li>close the warning and allow the user access to the page they were on</li>
       <li>return the keyboard focus to where it was before the warning appeared</li>
       <li>refresh the user’s session - you should not limit the number of times users can extend their session</li>
-    </ul>
-
-    <h3 className="govuk-heading-m">If the user runs out of time</h3>
-    <p className="govuk-body">When a user is timed out:</p>
-    <ul className="govuk-list govuk-list--bullet">
-      <li>redirect the user to a timeout page</li>
-      <li>give them the option to sign back into the service</li>
-      <li>if they choose to sign back in and it makes sense to do so, take them back to the home page or journey they were on</li>
     </ul>
 
     <h3 className="govuk-heading-m">If the user chooses to sign out</h3>
@@ -99,6 +91,54 @@ const Page: FC<PageProps> = () => (
       </button> 
     </div>
 
+    <div class="govuk-!-padding-bottom-6"></div>
+    <h2 className="govuk-heading-l">Time out page</h2>
+    <h3 className="govuk-heading-m">When the user is signed in to a service and runs out of time</h3>
+    <p className="govuk-body">If the user is signed in to a service and runs out of time:</p>
+    <ul className="govuk-list govuk-list--bullet">
+      <li>redirect the user to a timeout page</li>
+      <li>give them the option to sign back into the service</li>
+      <li>if they choose to sign back in and it makes sense to do so, take them back to the home page or journey they were on</li>
+      <li>tell them to sign back in and the next action, such as “start a new session”</li>
+      <li>use “Sign back in” as the button text</li>
+    </ul>
+
+    <div className="app-example">
+      <h2 className="govuk-heading-l">You have been signed out</h2>
+
+      <p className="govuk-body">Anmy information you have not saved or submitted has ben deleted because your session was inactive for 30 minutes. This it to proect your information.</p>
+      <p className="govuk-body">You must sign back in and start a new session.</p>
+      <p className="govuk-body">For more help, email: <a href="">yourservicesupport@homeoffice.gov.uk</a></p>
+
+      <button className="govuk-button" data-module="govuk-button">
+        Sign back in
+      </button> 
+    </div>
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <h3 className="govuk-heading-m">When the user is not signed in to a service and runs out of time:</h3>
+    <p className="govuk-body">If the user is <strong>not</strong> signed in to a service and runs out of time:</p>
+    <ul className="govuk-list govuk-list--bullet">
+      <li>redirect the user to a timeout page</li>
+      <li>if they choose to restart their session, and it makes sense to do so, take them back to the start or GOV.UK page</li>
+      <li>tell them they will need to start again and where from</li>
+      <li>use “Start again” in the button text</li>
+      <li>tell them their progress will not be saved if the time runs out</li>
+    </ul>
+
+    <div className="app-example">
+      <h2 className="govuk-heading-l">Your page has timed out</h2>
+
+      <p className="govuk-body">Any information you have not saved or submitted has ben deleted because your session was inactive for 30 minutes. This it to proect your information.</p>
+      <p className="govuk-body">You must start again.</p>
+      <p className="govuk-body">For more help, email: <a href="">yourservicesupport@homeoffice.gov.uk</a></p>
+
+      <button className="govuk-button" data-module="govuk-button">
+        Start again
+      </button> 
+    </div>
+<div class="govuk-!-padding-bottom-6"></div>
+    
     <h2 className="govuk-heading-l">Accessibility</h2>
     <p className="govuk-body">Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance</A>.</p>
     <p className="govuk-body">Ensure screen readers announce the remaining time - use <code>aria-live="polite"</code> so the hidden countdown does not interrupt other content being read out.</p>
