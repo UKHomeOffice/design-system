@@ -91,7 +91,7 @@ const Page: FC<PageProps> = () => (
       </button> 
     </div>
 
-    <div class="govuk-!-padding-bottom-6"></div>
+   <br></br>
     <h2 className="govuk-heading-l">Time out page</h2>
     <h3 className="govuk-heading-m">When the user is signed in to a service and runs out of time</h3>
     <p className="govuk-body">If the user is signed in to a service and runs out of time:</p>
@@ -114,7 +114,7 @@ const Page: FC<PageProps> = () => (
         Sign back in
       </button> 
     </div>
-    <div class="govuk-!-padding-bottom-6"></div>
+    <br></br>
 
     <h3 className="govuk-heading-m">When the user is not signed in to a service and runs out of time:</h3>
     <p className="govuk-body">If the user is <strong>not</strong> signed in to a service and runs out of time:</p>
@@ -137,7 +137,7 @@ const Page: FC<PageProps> = () => (
         Start again
       </button> 
     </div>
-<div class="govuk-!-padding-bottom-6"></div>
+    <br></br>
     
     <h2 className="govuk-heading-l">Accessibility</h2>
     <p className="govuk-body">Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance</A>.</p>
