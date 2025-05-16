@@ -286,14 +286,16 @@ export const content = (
     <p>Find out how to ask users for their sex in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the Home Office sex and gender pattern</A>.</p>
     <h3 id="sign in">sign in</h3>
     <p>Use 'sign in' rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
-    <h3 id="sponsor">sponsor</h3>
-    <p>Lower case. A company or person sponsoring an individual to work in the UK and supporting their visa application.</p>
-    <h3 id="sponsorship reference number">sponsorship reference number</h3>
-    <p>Lower case.</p>
     <h3 id="sorry">sorry</h3>
     <p>Avoid using 'sorry'. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="sovereign base areas">Sovereign Base Areas</h3>
     <p>Capitalised. You can use 'SBA' after the first full mention.</p>
+    <h3 id="sponsor">sponsor</h3>
+    <p>Lower case. A company or person sponsoring an individual to work in the UK and supporting their visa application.</p>
+    <h3 id="sponsorship reference number">sponsorship reference number</h3>
+    <p>Lower case.</p>
+    <h3 id="spouse">spouse</h3>
+    <p>User research found that spouse is not plain English. Consider using husband or wife instead. For example, 'Do you want to add a husband or wife to your referral?'</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="t">T</h2>
