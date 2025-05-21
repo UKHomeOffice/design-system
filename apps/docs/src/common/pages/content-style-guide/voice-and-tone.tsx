@@ -28,8 +28,7 @@ const Page: FC<PageProps> = () => (
         <span className="caption">{section}</span>
           {title}
       </h1>
-      <p>Voice and tone are essential parts of communication.</p>
-      <p>They play a crucial role in building identity and trust.</p>
+      <p>Voice and tone are essential parts of communication. They play a crucial role in building identity and trust.</p>
       <p>Voice is how we show who we are and is consistent across our products and services.</p>
       <p>Tone adapts to the channel and user need.</p>
       <h2 id="home-office-voice">Home Office voice</h2>
@@ -53,7 +52,7 @@ const Page: FC<PageProps> = () => (
     <tr className="govuk-table__row">
       <td>Human</td>
       <td>Use natural language that the audience understands.</td>
-      <td>'You can work, study, and travel in and out of the UK with this permit.' rather than 'It allows employment, education, and unlimited entry/exit.'</td>
+      <td>'You can work, study, and travel in and out of the UK with this permit' rather than 'It allows employment, education, and unlimited entry/exit.'</td>
     </tr>
     <tr className="govuk-table__row">
       <td>Empowering</td>
