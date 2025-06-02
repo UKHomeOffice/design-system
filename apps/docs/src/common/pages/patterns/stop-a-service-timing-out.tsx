@@ -93,8 +93,8 @@ const Page: FC<PageProps> = () => (
 
    <br></br>
     <h2 className="govuk-heading-l">Time out page</h2>
-    <h3 className="govuk-heading-m">When the user is signed in to a service and runs out of time</h3>
-    <p className="govuk-body">If the user is signed in to a service and runs out of time:</p>
+    <h3 className="govuk-heading-m">When the user is signed in</h3>
+    <p className="govuk-body">If the user <strong> is</strong> signed in to a service and runs out of time:</p>
     <ul className="govuk-list govuk-list--bullet">
       <li>redirect the user to a timeout page</li>
       <li>give them the option to sign back into the service</li>
@@ -106,7 +106,7 @@ const Page: FC<PageProps> = () => (
     <div className="app-example">
       <h2 className="govuk-heading-l">You have been signed out</h2>
 
-      <p className="govuk-body">Anmy information you have not saved or submitted has ben deleted because your session was inactive for 30 minutes. This it to proect your information.</p>
+      <p className="govuk-body">Any information you have not saved or submitted has been deleted because your session was inactive for 30 minutes. This it to protect your information.</p>
       <p className="govuk-body">You must sign back in and start a new session.</p>
       <p className="govuk-body">For more help, email: <a href="">yourservicesupport@homeoffice.gov.uk</a></p>
 
@@ -116,8 +116,8 @@ const Page: FC<PageProps> = () => (
     </div>
     <br></br>
 
-    <h3 className="govuk-heading-m">When the user is not signed in to a service and runs out of time:</h3>
-    <p className="govuk-body">If the user is <strong>not</strong> signed in to a service and runs out of time:</p>
+    <h3 className="govuk-heading-m">When the user is not signed in</h3>
+    <p className="govuk-body">If the user <strong>is not</strong> signed in to a service and runs out of time:</p>
     <ul className="govuk-list govuk-list--bullet">
       <li>redirect the user to a timeout page</li>
       <li>if they choose to restart their session, and it makes sense to do so, take them back to the start or GOV.UK page</li>
@@ -129,7 +129,7 @@ const Page: FC<PageProps> = () => (
     <div className="app-example">
       <h2 className="govuk-heading-l">Your page has timed out</h2>
 
-      <p className="govuk-body">Any information you have not saved or submitted has ben deleted because your session was inactive for 30 minutes. This it to proect your information.</p>
+      <p className="govuk-body">Any information you have not saved or submitted has ben deleted because your session was inactive for 30 minutes. This it to protect your information.</p>
       <p className="govuk-body">You must start again.</p>
       <p className="govuk-body">For more help, email: <a href="">yourservicesupport@homeoffice.gov.uk</a></p>
 
