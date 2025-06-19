@@ -187,8 +187,17 @@ const Page: FC<PageProps> = () => (
         <li>EU Settlement Scheme</li>
         <li>Home Office HR system</li>
       </ul>
-      <h3 className="govuk-heading-m>Test insights of the notice of intended prosecution letter</h3>
-    <p className="govuk-body">In 2024, the Home Office redesigned a letter sent by police forces. The research and a national trial found that by redesigning the letter to be easy, attractive, simple and timely:</p>
+      <h3 className="govuk-heading-m>Improvements to the notice of intended prosecution letter</h3>
+    <p className="govuk-body">In 2024, the Home Office redesigned a letter sent by police forces and tested it through a national trial.</p>
+  <p className="govuk-body">For the new letter the team:
+<ul className="govuk-list govuk-list--bullet">
+<li>attracted the users attention to important information, such as the offence and the action needed</li>
+<li>made the content more concise and clear</li>
+<li>simplified the layout</li>
+<li>made deadlines clear so users could plan their response</li>
+<li>used persuasive language that reinforced values and described what others are doing and would expect the user to do</li>
+  </ul>
+    <p className="govuk-body">The research and national trial found that by redesigning the letter to be easy, attractive, simple and timely:</p>
 <ul className="govuk-list govuk-list--bullet">
 <li>one police force saw an 85% decrease in related phone calls</li>
 <li>across the trial, an average of 62% of responses were returned within 14 days (up from 48%)</li>
