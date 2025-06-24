@@ -189,9 +189,9 @@ const Page: FC<PageProps> = () => (
       </ul>
       <h3 className="govuk-heading-m">Improvements to the notice of intended prosecution letter</h3>
     <p className="govuk-body">In 2024, the Home Office redesigned a letter sent by police forces and tested it through a national trial.</p>
-  <p className="govuk-body">For the new letter the team:
+  <p className="govuk-body">For the new letter, the team:</p>
 <ul className="govuk-list govuk-list--bullet">
-<li>attracted the users attention to important information, such as the offence and the action needed</li>
+<li>drew the users attention to important information, such as the offence and the action needed</li>
 <li>made the content more concise and clear</li>
 <li>simplified the layout</li>
 <li>made deadlines clear so users could plan their response</li>
