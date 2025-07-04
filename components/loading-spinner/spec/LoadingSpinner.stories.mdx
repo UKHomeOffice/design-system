@@ -52,10 +52,9 @@ If you do need a loading screen, ensure that:
 - you agree a maximum loading time that is suitable for the action 
 - content clearly describes what the user is waiting for
 
-To help assistive technology users, ensure your code includes: 
-- aria-live=”polite” 
-- role=”status” 
-- the div is called “loading”
+To enhance accessibility for assistive technology users: 
+- apply role="status" to identify a live region that should be monitored for updates
+- update the content within the live region to notify users of changes
 
 This component only uses HTML and css - it does not use javascript. It does not require users to have javascript enabled.
 
