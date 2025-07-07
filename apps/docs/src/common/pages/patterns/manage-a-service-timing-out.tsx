@@ -4,10 +4,10 @@ import { PageProps } from '@not-govuk/app-composer';
 import { A, DateInput, Details, TextInput, Select } from '@not-govuk/components';
 import { menu } from '../patterns';
 
-import { PageWrap } from '../';
+import { PageWrap } from '..';
 
-export const title = 'Stop a service timing out';
-const description = 'How to help users to stop a service from timing out';
+export const title = 'Manage a service timing out';
+const description = 'How to help users to manage a service time out.';
 const section = 'Patterns';
 const subsection = 'Help users to';
 const applyModalWindow = require('../../../../assets/images/patterns/time-out.png');
@@ -33,7 +33,7 @@ const Page: FC<PageProps> = () => (
       {title}
     </h1>
 
-    <p className="govuk-body">Warn users that they are about to be timed out of a service and explain what happens after they are timed out.</p>
+    <p className="govuk-body">Warn users that they are about to be timed out of a service and help them understand what to do if they are timed out.</p>
     <img src={applyModalWindow} className="image-examples" alt="An example of a modal dialog which warns users the service will time out." />
   
     <h2 className="govuk-heading-l">When to use this pattern</h2>
@@ -106,7 +106,7 @@ const Page: FC<PageProps> = () => (
     <div className="app-example">
       <h2 className="govuk-heading-l">You have been signed out</h2>
 
-      <p className="govuk-body">Any information you have not saved or submitted has been deleted because your session was inactive for 30 minutes. This it to protect your information.</p>
+      <p className="govuk-body">Any information you have not saved or submitted has been deleted because your session was inactive for 30 minutes. This is to protect your information.</p>
       <p className="govuk-body">You must sign back in and start a new session.</p>
       <p className="govuk-body">For more help, email: <a href="">yourservicesupport@homeoffice.gov.uk</a></p>
 
@@ -129,7 +129,7 @@ const Page: FC<PageProps> = () => (
     <div className="app-example">
       <h2 className="govuk-heading-l">Your page has timed out</h2>
 
-      <p className="govuk-body">Any information you have not saved or submitted has ben deleted because your session was inactive for 30 minutes. This it to protect your information.</p>
+      <p className="govuk-body">Any information you have not saved or submitted has been deleted because your session was inactive for 30 minutes. This is to protect your information.</p>
       <p className="govuk-body">You must start again.</p>
       <p className="govuk-body">For more help, email: <a href="">yourservicesupport@homeoffice.gov.uk</a></p>
 
