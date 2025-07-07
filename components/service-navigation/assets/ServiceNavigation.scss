@@ -32,5 +32,10 @@ $link_colour: govuk_colour('black');
     &__item {
       border-color: $hods-brand-colour-purple;
     }
+
+    &__item--active {
+      font-weight: bold;
+    }
+   
   }
 }
