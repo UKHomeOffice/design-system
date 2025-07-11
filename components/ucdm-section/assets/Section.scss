@@ -6,4 +6,8 @@
     @include govuk-responsive-padding(8, "left");
     @include govuk-responsive-padding(8, "right");
   }
+
+  &__navigation .govuk-service-navigation__list__link {
+    text-decoration-thickness: 2px;
+  }
 }
