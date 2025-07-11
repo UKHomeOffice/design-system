@@ -10,7 +10,9 @@ export const title = 'Manage a service timing out';
 const description = 'How to help users to manage a service time out.';
 const section = 'Patterns';
 const subsection = 'Help users to';
-const applyModalWindow = require('../../../../assets/images/patterns/time-out.png');
+const applyModalWindow = require('../../../../assets/images/patterns/model-updated.png');
+const timeoutpagesignedin = require('../../../../assets/images/patterns/timed-out-page-not-signed-in.png');
+const timedoutpagesignedout= require('../../../../assets/images/patterns/signed-in-timeout-page.png');
 
 const Page: FC<PageProps> = () => (
 <PageWrap>
@@ -35,7 +37,7 @@ const Page: FC<PageProps> = () => (
 
     <p className="govuk-body">Warn users that they are about to be timed out of a service and help them understand what to do if they are timed out.</p>
     <img src={applyModalWindow} className="image-examples" alt="An example of a modal dialog which warns users the service will time out." />
-  
+  <br></br><br></br>
     <h2 className="govuk-heading-l">When to use this pattern</h2>
     <p className="govuk-body">Use this pattern if your service automatically ends the user’s session after a period of inactivity.</p>
     <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.</p>
@@ -102,20 +104,11 @@ const Page: FC<PageProps> = () => (
       <li>tell them to sign back in and the next action, such as “start a new session”</li>
       <li>use “Sign back in” as the button text</li>
     </ul>
+    <img src={timeoutpagesignedin} className="image-examples" alt="An example of a time out page when a user is signed in" />
 
-    <div className="app-example">
-      <h2 className="govuk-heading-l">You have been signed out</h2>
 
-      <p className="govuk-body">Any information you have not saved or submitted has been deleted because your session was inactive for 30 minutes. This is to protect your information.</p>
-      <p className="govuk-body">You must sign back in and start a new session.</p>
-      <p className="govuk-body">For more help, email: <a href="">yourservicesupport@homeoffice.gov.uk</a></p>
-
-      <button className="govuk-button" data-module="govuk-button">
-        Sign back in
-      </button> 
-    </div>
-    <br></br>
-
+    <br></br><br></br><br></br><br></br>
+   
     <h3 className="govuk-heading-m">When the user is not signed in</h3>
     <p className="govuk-body">If the user <strong>is not</strong> signed in to a service and runs out of time:</p>
     <ul className="govuk-list govuk-list--bullet">
@@ -125,20 +118,10 @@ const Page: FC<PageProps> = () => (
       <li>use “Start again” in the button text</li>
       <li>tell them their progress will not be saved if the time runs out</li>
     </ul>
+    <img src={timedoutpagesignedout} className="image-examples" alt="An example of a time out page when a user is not signed in" />
 
-    <div className="app-example">
-      <h2 className="govuk-heading-l">Your page has timed out</h2>
+    <br></br><br></br><br></br><br></br>
 
-      <p className="govuk-body">Any information you have not saved or submitted has been deleted because your session was inactive for 30 minutes. This is to protect your information.</p>
-      <p className="govuk-body">You must start again.</p>
-      <p className="govuk-body">For more help, email: <a href="">yourservicesupport@homeoffice.gov.uk</a></p>
-
-      <button className="govuk-button" data-module="govuk-button">
-        Start again
-      </button> 
-    </div>
-    <br></br>
-    
     <h2 className="govuk-heading-l">Accessibility</h2>
     <p className="govuk-body">Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance</A>.</p>
     <p className="govuk-body">Ensure screen readers announce the remaining time - use <code>aria-live="polite"</code> so the hidden countdown does not interrupt other content being read out.</p>
