@@ -3,6 +3,7 @@ run = "npm run start"
 
 [nix]
 channel = "stable-24_05"
+packages = ["run"]
 
 [deployment]
 run = ["sh", "-c", "npm run start"]
