@@ -104,7 +104,7 @@ const Page: FC<PageProps> = () => (
       <li>tell them to sign back in and the next action, such as “start a new session”</li>
       <li>use “Sign back in” as the button text</li>
     </ul>
-    <img src={timeoutpagesignedin} className="image-examples" alt="An example of a time out page when a user is signed in" />
+    <img src={timeoutpagesignedin} className="image-examples" alt="An example of a time out page when a user is signed in to a service." />
 
 
     <br></br><br></br><br></br><br></br>
@@ -118,7 +118,7 @@ const Page: FC<PageProps> = () => (
       <li>use “Start again” in the button text</li>
       <li>tell them their progress will not be saved if the time runs out</li>
     </ul>
-    <img src={timedoutpagesignedout} className="image-examples" alt="An example of a time out page when a user is not signed in" />
+    <img src={timedoutpagesignedout} className="image-examples" alt="An example of a time out page when a user is not signed in to a service." />
 
     <br></br><br></br><br></br><br></br>
 
