@@ -17,8 +17,8 @@ export const LoadingSpinner: FC<LoadingSpinnerProps> = ({
   const classes = classBuilder('hods-loading-spinner', classBlock, classModifiers, className);
 
   return (
-    <div className={classes()} {...attrs}>
-      <div className={classes('spinner')} aria-live="polite" role="status" />
+    <div className={classes()} {...attrs} role="status">
+      <div className={classes('spinner')} />
       <div className={classes('content')}>
         <h1 className='govuk-heading-m'>{children}</h1>
       </div>
