@@ -98,13 +98,13 @@ const Page: FC<PageProps> = () => (
     <h3 className="govuk-heading-m">When the user is signed in</h3>
     <p className="govuk-body">If the user <strong> is</strong> signed in to a service and runs out of time:</p>
     <ul className="govuk-list govuk-list--bullet">
-      <li>redirect the user to a timeout page</li>
+      <li>redirect the user to a time out page</li>
       <li>give them the option to sign back into the service</li>
       <li>if they choose to sign back in and it makes sense to do so, take them back to the home page or journey they were on</li>
       <li>tell them to sign back in and the next action, such as “start a new session”</li>
       <li>use “Sign back in” as the button text</li>
     </ul>
-    <img src={timeoutpagesignedin} className="image-examples" alt="An example of a time out page when a user is signed in to a service." />
+    <img src={timedoutpagesignedout} className="image-examples" alt="An example of a time out page when a user is signed in to a service." />
 
 
     <br></br><br></br><br></br><br></br>
@@ -112,13 +112,13 @@ const Page: FC<PageProps> = () => (
     <h3 className="govuk-heading-m">When the user is not signed in</h3>
     <p className="govuk-body">If the user <strong>is not</strong> signed in to a service and runs out of time:</p>
     <ul className="govuk-list govuk-list--bullet">
-      <li>redirect the user to a timeout page</li>
+      <li>redirect the user to a time out page</li>
       <li>if they choose to restart their session, and it makes sense to do so, take them back to the start or GOV.UK page</li>
       <li>tell them they will need to start again and where from</li>
       <li>use “Start again” in the button text</li>
       <li>tell them their progress will not be saved if the time runs out</li>
     </ul>
-    <img src={timedoutpagesignedout} className="image-examples" alt="An example of a time out page when a user is not signed in to a service." />
+    <img src={timeoutpagesignedin} className="image-examples" alt="An example of a time out page when a user is not signed in to a service." />
 
     <br></br><br></br><br></br><br></br>
 
