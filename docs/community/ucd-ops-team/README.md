@@ -33,7 +33,7 @@ Organises meet ups and UCD training. Manages UCD onboarding and induction, UCD c
 ### User research ethics 
 - Mansoor Mir - Senior User Researcher. Research ethics lead, knowledge management lead, data handling and research insights.
 - Lucy Branford-White - Digital Librarian. Manages research depository and digital development. Responsible for programme recruitment and records.
-<br>
+<br />
 
 ### User research recruitment
 - Venyah Kowalik - Senior User Researcher. Responsible for establishing recruitment contracts with third parties for user research, managing internal and external recruitment panels and supporting with guidance for community research projects.
