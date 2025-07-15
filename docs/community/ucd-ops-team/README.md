@@ -28,7 +28,7 @@ Organises meet ups and UCD training. Manages UCD onboarding and induction, UCD c
 ### Content design 
 
 - Lauren Shiel - Content Designer. Responsible for developing content for the UCD community, including this design system and our SharePoint UCD community intranet hub for staff. Manages content design on UCD wide projects.
-<br>
+<br />
 
 ### User research ethics 
 - Mansoor Mir - Senior User Researcher. Research ethics lead, knowledge management lead, data handling and research insights.
