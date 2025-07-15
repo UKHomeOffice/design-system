@@ -1,7 +1,6 @@
 User research
 =============
 
-# User research 
 User research is essential for user centred design (UCD). 
 
 User research helps us to design and build a service that works well for all our users, including people who do not speak English as their first language and people with lower digital literacy. 
