@@ -1,8 +1,6 @@
 Ethical research and consent
 ============================
 
-
-# Ethical research and consent 
 As a government department, we have a duty to protect the dignity, privacy and safety of our research participants and our user researchers. 
 
 ## Transparency and informed consent 
