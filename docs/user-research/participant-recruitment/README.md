@@ -57,4 +57,4 @@ It’s important that you make people feel comfortable when they come to visit y
 -	leave enough time between sessions 
 -	make sure there is a seat for a helper or interpreter 
 -	reassure people that there are no right or wrong answers and that if something is not working, it is not their fault 
--	make sure that any colleagues who are attending know how to be a considerate observer and give them a copy of the [GDS user researcher tips] (https://github.com/alphagov/govdesign/blob/main/Poster_UserResearchTips.pdf) 
+-	make sure that any colleagues who are attending know how to be a considerate observer and give them a copy of the [GDS user researcher tips](https://github.com/alphagov/govdesign/blob/main/Poster_UserResearchTips.pdf) 
