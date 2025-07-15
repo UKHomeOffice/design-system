@@ -29,7 +29,7 @@ Colleagues can learn more about all these events on our [UCD community hub on th
 ## Other events
 Accessibility Quarterly – 4 sessions per year. Look out for announcements on these sessions on the #accessibility Home Office Slack channel.
 
- <br> 
+ <br />
  
 ## X-Gov events
 - Civil Service Live – annual event taking place during the summer. Look out for details on this event on the Home Office SharePoint intranet site.
