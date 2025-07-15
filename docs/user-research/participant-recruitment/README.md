@@ -40,7 +40,7 @@ The Nielson Norman Group have written guidance on [how many test participants to
 In some cases, particularly in internal (staff) research, users may feel pressured to take part. 
 This may occur if the request for research comes from a line manager or other senior stakeholder.  
 Make sure you explain to users that participation in research is completely voluntary. 
-If you need any further guidance, [visit the UCD community hub on the intranet] (https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/Recruiting-participants.aspx). 
+If you need any further guidance, [visit the UCD community hub on the intranet](https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/Recruiting-participants.aspx). 
 
 ## Inviting and supporting external participants   
 If you are testing with external participants, you will need to complete a Home Office security visitors’ form. [Contact the UCD Ops team] (ucdops@homeoffice.gov.uk) for more details.    
