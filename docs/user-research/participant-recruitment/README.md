@@ -34,7 +34,7 @@ The brief should be enough information to make people interested in signing up, 
 ## Number of participants 
 The number of participants will depend on the type of research method you have chosen. For example, you would typically have 5 participants for usability testing.  
 You should also include at least one person with an access need in each round of research. 
-The Nielson Norman Group have written guidance on [how many test participants to recruit] (https://www.nngroup.com/articles/how-many-test-users/) for a usability study.
+The Nielson Norman Group have written guidance on [how many test participants to recruit](https://www.nngroup.com/articles/how-many-test-users/) for a usability study.
 
 ## Pressure to participate 
 In some cases, particularly in internal (staff) research, users may feel pressured to take part. 
