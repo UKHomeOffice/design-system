@@ -1,8 +1,6 @@
 Participant recruitment
 =======================
 
-
-# User recruitment 
 When you are thinking about recruiting users, the first thing you need to do is define who you want to do research with. This will depend on what you want to find out.  
 
 **For example, you might need to speak to:**
