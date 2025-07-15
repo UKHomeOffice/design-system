@@ -5,11 +5,9 @@ Content patterns are a repeatable piece of text or copy that can be used across 
 
 Any of our content designers can:
  
-•	draft a new content pattern 
-
-•	suggest a new pattern for the content backlog 
-
-•	propose a content section for an existing Home Office design system pattern 
+- draft a new content pattern 
+- suggest a new pattern for the content backlog 
+- propose a content section for an existing Home Office design system pattern 
 
 Content patterns can be:
 
