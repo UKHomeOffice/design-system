@@ -24,7 +24,7 @@ Sessions can be used for a variety of purposes, including:
 
 Colleagues can learn more about all these events on our [UCD community hub on the staff intranet](https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/Staff-events.aspx?csf=1&web=1&share=EZxHcWb_DIdKoR2N0mkQVRIB8903sr6XJqsG7Gn7MGsR-w&e=rSivCt&CID=48fb3e32-ec4a-4c75-a2d2-ae9fea2f36a0). 
 
-<br> 
+<br />
 
 ## Other events
 Accessibility Quarterly – 4 sessions per year. Look out for announcements on these sessions on the #accessibility Home Office Slack channel.
