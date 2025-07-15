@@ -9,8 +9,8 @@ UCD Ops organise the following events to support the UCD Community:
 
 There are also smaller profession meet ups each month, which offer a safe space for sharing and critiquing work. 
 
- <p></p>
- <br> 
+<br />
+<br />
 
 
 ## UCD SkillShare Sessions
