@@ -15,7 +15,7 @@ The team provides guidance, tools, specialised services, training and facilitati
 
 ## Meet the UCD Ops team
 Michael Brazier - Head of UCD. Accountable for standards, recruitment and community across Digital, Data and Technology (DDaT) for UCD.
-<br>
+<br />
 
 ### Community, contracts, management and support 
 - Stephen Mokogwu - UCD Ops Manager.
