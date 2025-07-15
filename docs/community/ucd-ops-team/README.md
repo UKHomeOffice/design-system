@@ -23,7 +23,7 @@ Responsible for usability labs, research incentives, contracts, commercial, tool
 
 - Teri Gate - UCD Community Lead. 
 Organises meet ups and UCD training. Manages UCD onboarding and induction, UCD community engagement, and practice leads.
-<br>
+<br />
 
 ### Content design 
 
