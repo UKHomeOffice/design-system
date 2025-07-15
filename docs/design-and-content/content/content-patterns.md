@@ -7,7 +7,7 @@ Any of our content designers can:
 
 -	draft a new content pattern  
 -	suggest a new pattern for the content backlog  
--	propose a content section for an existing [Home Office design system pattern] (https://design.homeoffice.gov.uk/patterns)
+-	propose a content section for an existing [Home Office design system pattern](https://design.homeoffice.gov.uk/patterns)
 
 
 Content patterns can be: 
