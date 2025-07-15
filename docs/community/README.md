@@ -3,7 +3,7 @@ User-centred design community
 
 
 We have an active UCD community, in which we share knowledge and collaborate. 
-<br>
+<br />
 
 We expect designers and researchers to take part by:
 - attending regular meetings, such as monthly profession team meet ups and UCD quarterly events
