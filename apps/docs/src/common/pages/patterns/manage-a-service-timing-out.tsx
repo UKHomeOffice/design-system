@@ -37,7 +37,7 @@ const Page: FC<PageProps> = () => (
 
     <p className="govuk-body">Warn users that they are about to be timed out of a service and help them understand what to do if they are timed out.</p>
     <img src={applyModalWindow} className="image-examples" alt="An example of a modal dialog which warns users the service will time out." />
-  <br></br><br></br>
+  <br/><br/>
     <h2 className="govuk-heading-l">When to use this pattern</h2>
     <p className="govuk-body">Use this pattern if your service automatically ends the user’s session after a period of inactivity.</p>
     <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.</p>
@@ -107,7 +107,7 @@ const Page: FC<PageProps> = () => (
     <img src={timedoutpagesignedout} className="image-examples" alt="An example of a time out page when a user is signed in to a service." />
 
 
-    <br></br><br></br><br></br><br></br>
+    <br></br><br></br>
    
     <h3 className="govuk-heading-m">When the user is not signed in</h3>
     <p className="govuk-body">If the user <strong>is not</strong> signed in to a service and runs out of time:</p>
