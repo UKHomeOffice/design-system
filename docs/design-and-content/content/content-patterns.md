@@ -17,4 +17,4 @@ Content patterns can be:
 -	text that has been used before – such as text in forms on the GOV.UK website, or the username in an email that will be addressed to them 
 -	part of a common design component – like an address look up or an expiration alert when a user is completing a form on the GOV.UK website 
  
-[Access the design system patterns page] (https://design.homeoffice.gov.uk/patterns) for further details on the patterns we have in the Home Office.  
+[Access the design system patterns page](https://design.homeoffice.gov.uk/patterns) for further details on the patterns we have in the Home Office.  
