@@ -11,7 +11,7 @@ The team provides guidance, tools, specialised services, training and facilitati
 - specialised tools like Sketch, Heroku, Optimal and Screenflow as well as managing any necessary assurance and governance on behalf of the community 
 - specialised services including usability labs, research incentives, ethics board and a design system
 - onboarding, training and facilitating a collaborative and supportive community
-<br>
+<br />
 
 ## Meet the UCD Ops team
 Michael Brazier - Head of UCD. Accountable for standards, recruitment and community across Digital, Data and Technology (DDaT) for UCD.
