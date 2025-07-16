@@ -1,4 +1,4 @@
-User-centred design ops
+UCD Operations
 =======================
 
 ## About UCD Operations
