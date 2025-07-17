@@ -5,7 +5,6 @@ import { A, NavigationMenu } from '@not-govuk/components';
 import { Section } from '@hods/ucdm-section';
 import config from '../../config';
 
-import { PageWrap } from '../ucdm';
 import Markdown from '../../../../../../docs/user-research/README.md';
 
 export const title = 'User research';
@@ -15,15 +14,13 @@ const siteTitle = config.title;
 const pageTitle = title + ' - ' + siteTitle;
 
 export const SectionWrap = ({ children, showBanner }) => (
-  <PageWrap>
-    <Section title={title} href="/user-research" showBanner={showBanner} navigation={[
-      { href: '/user-research/ethics', text: 'Ethical research and consent' },
-      { href: '/user-research/participant-recruitment', text: 'Participant recruitment' },
-      { href: '/user-research/professional-standards', text: 'Professional standards and guidance' }
-    ]}>
-      {children}
-    </Section>
-  </PageWrap>
+  <Section title={title} href="/user-research" showBanner={showBanner} navigation={[
+    { href: '/user-research/ethics', text: 'Ethical research and consent' },
+    { href: '/user-research/participant-recruitment', text: 'Participant recruitment' },
+    { href: '/user-research/professional-standards', text: 'Professional standards and guidance' }
+  ]}>
+    {children}
+  </Section>
 );
 
 <SectionWrap showBanner>

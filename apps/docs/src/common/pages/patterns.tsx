@@ -1,119 +1,23 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Navigate } from 'react-router-dom';
 import { PageProps } from '@not-govuk/app-composer';
-import { A, NavigationMenu } from '@not-govuk/components';
+import { A } from '@not-govuk/components';
 
-import { PageWrap } from './';
-
-export const menu = (
-  <Fragment>
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Ask users for</span>
-    <NavigationMenu items={[
-      {
-        href: '/patterns/make-a-declaration',
-        text: 'Declarations'
-      },
-      {
-        href: '/patterns/find-information-on-document',
-        text: 'Information on a document'
-      },
-      {
-        href: '/patterns/enter-passport-details',
-        text: 'Passport details'
-      },
-      {
-        href: '/patterns/enter-passport-details/scan-passport-chip',
-        text: '- Scan the chip'
-      },
-      {
-        href: '/patterns/enter-passport-details/take-upload-photo',
-        text: '- Take or upload photo'
-      },
-      {
-        href: '/patterns/enter-passport-details/manually-enter-details',
-        text: '- Manually enter details'
-      },
-      {
-        href: '/patterns/ask-sex-or-gender',
-        text: 'Their sex or gender'
-      }
-    ]} />
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Help users to</span>
-    <NavigationMenu items={[
-
-      {
-        href: '/patterns/access-a-service',
-        text: 'Access a service'
-      },
-      {
-        href: '/patterns/add-multiple-things',
-        text: 'Add multiple things'
-      },
-      {
-        href: '/patterns/compare-information',
-        text: 'Compare information'
-      },
-      {
-        href: '/patterns/get-more-details',
-        text: 'Get more details'
-      },
-      {
-        href: '/patterns/long-lists',
-        text: 'Choose from a long list '
-      },
-      {
-        href: '/patterns/leave-a-service',
-        text: 'Leave a service'
-      },
-      {
-        href: '/patterns/search-for-something',
-        text: 'Search for something'
-      },
-      {
-        href: '/patterns/manage-a-service-timing-out',
-        text: 'Manage a service timing out'
-      }
-    ]} />
-    <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Send users</span>
-    <NavigationMenu items={[
-      {
-        href: '/patterns/send-a-letter',
-        text: 'A letter'
-      },
-      {
-        href: '/patterns/send-an-email',
-        text: 'An email'
-      }
-    ]} />
-  </Fragment>
-);
-
-export const title = 'Patterns';
-const description = 'Patterns are best practice design solutions for specific user-focused tasks and page types';
+const newHref = '/design-system/patterns';
+const newURL = 'https://design.homeoffice.gov.uk' + newHref;
 
 const Page: FC<PageProps> = () => (
-  <PageWrap >
-  <div className="govuk-grid-row">
-    <Helmet>
-      <title>{title} - Home Office Design System</title>
-      <meta name="description" content={description} />
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={description} />
-      <meta name="og:article:section" content={title} />
-    </Helmet>
-    <div className="govuk-grid-column-one-quarter">
-      {menu}
-    </div>
-    <div className="govuk-grid-column-three-quarters">
-      <h1>{title}</h1>
-      <p>Patterns are guidance on how to solve certain types of problems. They include
-      examples of successful approaches but are flexible and don’t prescribe exact design solutions.</p>
-      <p>These patterns extend those used across government in the <A href="https://design-system.service.gov.uk/">GOV.UK
-      design system</A>.
-      As our patterns mature, we will look to contribute them to the GOV.UK system so they can be used more widely.</p>
-    </div>
+  <div className="hods-width-container">
+    <main id="main-content">
+      <Helmet>
+        <title>Home Office Design System</title>
+        <link rel="canonical" href={newURL} />
+      </Helmet>
+      This content has been moved to a <A href={newHref}>new location</A>.
+      <Navigate to={newHref} />
+    </main>
   </div>
-  </PageWrap>
 );
 
 export default Page;

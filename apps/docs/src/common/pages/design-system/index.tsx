@@ -5,7 +5,6 @@ import { A } from '@not-govuk/components';
 
 import { Section } from '@hods/ucdm-section';
 
-import { PageWrap } from '../ucdm';
 import config from '../../config';
 
 const siteTitle = config.title;
@@ -15,17 +14,15 @@ const longTitle = 'Home Office Design System';
 const description = 'The UK Home Office\'s Design System, implemented in React';
 
 export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = ({ children, showBanner }) => (
-  <PageWrap>
-    <Section title={title} href="/design-and-content" showBanner={showBanner} navigation={[
-      { href: '/design-system/get-started', text: 'Get started' },
-      { href: '/design-system/styles', text: 'Styles' },
-      { href: '/design-system/components', text: 'Components' },
-      { href: '/design-system/patterns', text: 'Patterns' },
-      { href: '/design-system/contribute', text: 'Contribute' }
-    ]}>
-      {children}
-    </Section>
-  </PageWrap>
+  <Section title={title} href="/design-and-content" showBanner={showBanner} navigation={[
+    { href: '/design-system/get-started', text: 'Get started' },
+    { href: '/design-system/styles', text: 'Styles' },
+    { href: '/design-system/components', text: 'Components' },
+    { href: '/design-system/patterns', text: 'Patterns' },
+    { href: '/design-system/contribute', text: 'Contribute' }
+  ]}>
+    {children}
+  </Section>
 );
 
 const Page: FC<PageProps> = props => (

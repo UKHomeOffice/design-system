@@ -1,4 +1,0 @@
-Consent
-=======
-
-CONTENT PLACEHOLDER.

@@ -1,15 +1,13 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { ErrorPageProps } from '@not-govuk/app-composer';
 
-import { PageWrap } from './pages/';
-
 export const ErrorPage: FC<ErrorPageProps> = ({ title, message }) => (
-  <PageWrap>
-  <Fragment>
-    <h1>{title}</h1>
-    <p>{message}</p>
-  </Fragment>
-  </PageWrap>
+  <div className="hods-width-container">
+    <main id="main-content">
+      <h1>{title}</h1>
+      <p>{message}</p>
+    </main>
+  </div>
 );
 
 export default ErrorPage;
