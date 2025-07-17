@@ -1,42 +1,40 @@
-import { Fragment, FC, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { PageProps } from '@not-govuk/app-composer';
-/* import { Page } from '@hods/components'; */
+import { Page as UCDMPage } from '@hods/ucdm-page';
 
 import './app.scss';
 
-/* export const PageWrap: FC<PageProps> = ({ children }) => {
-*   const navigation = [
-*     { href: '/get-started', text: 'Get started' },
-*     { href: '/styles', text: 'Styles' },
-*     { href: '/components', text: 'Components' },
-*     { href: '/patterns', text: 'Patterns' },
-*     { href: '/content-style-guide', text: 'Content style guide' },
-*     { href: '/accessibility', text: 'Accessibility' },
-*     { href: '/contribute', text: 'Contribute' }
-*   ];
-*   const footerNavigation = [
-*     { href: 'https://github.com/UKHomeOffice/design-system/', text: 'GitHub' },
-*     { href: '/accessibility-statement', text: 'Accessibility statement' },
-*     { href: '/sitemap', text: 'Sitemap' },
-*     { href: 'https://github.com/UKHomeOffice/design-system/issues/new', text: 'Feedback' },
-*     { href: 'https://design-system.service.gov.uk/', text: 'GOV.UK Design System' }
-*   ];
-* 
-*   return (
-*     <Page
-*       footerNavigation={footerNavigation}
-*       navigation={navigation}
-*       serviceName="Design System"
-*       title="Home Office Design System"
-*     >
-*       {children}
-*     </Page>
-*   );
-* }; */
-export const PageWrap: FC<PageProps> = ({ children }) => (
-  <Fragment>
-    {children}
-  </Fragment>
-);
+export const PageWrap: FC<PageProps> = ({ children }) => {
+  const navigation = [
+    { href: '/design-system', text: 'Design system' },
+    { href: '/accessibility', text: 'Accessibility' },
+    { href: '/design-and-content', text: 'Design and content' },
+    { href: '/user-research', text: 'User research' },
+    { href: '/community', text: 'Community' }
+  ];
+  const footerNavigation = [
+    { href: 'https://github.com/UKHomeOffice/design-system/', text: 'GitHub' },
+    { href: '/accessibility-statement', text: 'Accessibility statement' },
+    { href: '/sitemap', text: 'Sitemap' },
+    { href: 'https://github.com/UKHomeOffice/design-system/issues/new', text: 'Feedback' },
+    { href: 'https://design-system.service.gov.uk/', text: 'GOV.UK Design System' }
+  ];
+
+  return (
+    <UCDMPage
+      footerNavigation={footerNavigation}
+      navigation={navigation}
+      searchAction="https://www.google.co.uk/search"
+      searchSiteField="sitesearch"
+      searchSiteValue="design.homeoffice.gov.uk"
+      serviceName="User-Centred Design Manual"
+      serviceNameInHeader
+      serviceHref="/"
+      title="Home Office UCD Manual"
+    >
+      {children}
+    </UCDMPage>
+  );
+};
 
 export default PageWrap;

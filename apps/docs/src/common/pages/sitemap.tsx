@@ -1,11 +1,12 @@
-import { FC, Fragment, createElement as h } from 'react';
+import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
 import { AnchorList } from '@not-govuk/anchor-list';
 import { A } from '@not-govuk/components';
-import { componentLinks } from '../stories';
+import { componentLinksNew } from '../stories';
+import config from '../config';
 
-import { PageWrap } from './';
+const siteTitle = config.title;
 
 export const title = 'Sitemap';
 const description = 'Overview of the Home Office Design System';
@@ -31,72 +32,56 @@ const Page: FC<PageProps> = ({ routes }) => {
   // Create automatic site index & section arrays
   const all: Link[] = routes.map((e: Route) => ({ href: e.href, text: e.title })).sort(compare);
 
-  const getStarted = all.filter(({href, text}) => (
-    href.split('/')[1] === 'get-started' && href.split('/')[2] !== undefined && text !== 'Production'
+  const designSystem = all.filter(({href, text}) => (
+    href.split('/')[1] === 'design-system' && href.split('/')[2] !== undefined && text !== 'Production'
   ));
-  const styles = all.filter(({href}) => (
-    href.split('/')[1] === 'styles' && href.split('/')[2] !== undefined
-  ));
-  const patterns = all.filter(({href}) => (
-    href.split('/')[1] === 'patterns' && href.split('/')[2] !== undefined
-  ));
-  const accessibility = all.filter(({href, text}) => (
+  const accessibility = all.filter(({ href, text }) => (
     href.split('/')[1] === 'accessibility' && href.split('/')[2] !== undefined && text !== 'xxx'
-    && !href.startsWith('/accessibility/interactivity')
-    && !href.startsWith('/accessibility/page-structure')
-    && !href.startsWith('/accessibility/providing-alternatives')
-    && !href.startsWith('/accessibility/resources/')
-    && !href.startsWith('/accessibility/written-content')
-    && !href.endsWith('-new')
   ));
-  const contribute = all.filter(({ href }) => (
-    href.split('/')[1] === 'contribute' && href.split('/')[2] !== undefined
+  const designAndContent = all.filter(({href}) => (
+    href.split('/')[1] === 'design-and-content' && href.split('/')[2] !== undefined
+  ));
+  const userResearch = all.filter(({href}) => (
+    href.split('/')[1] === 'user-research' && href.split('/')[2] !== undefined
+  ));
+  const community = all.filter(({ href }) => (
+    href.split('/')[1] === 'community' && href.split('/')[2] !== undefined
   ));
 
   // Group all component pages (not included in automatic index so no need to remove)
-  const components = componentLinks.sort(compare);
+  const components = componentLinksNew.sort(compare);
 
   // Manually remove pages we don't want to show in the sitemap
   const hidden = [
     ...all.filter(({href}) => href === '/sitemap'),
     ...all.filter(({text}) => text === 'Production'),
     ...all.filter(({text}) => text === 'xxx'),
-    ...all.filter(({text}) => text === 'Cookies'),
-    ...all.filter(({href}) => href.startsWith('/accessibility/interactivity')),
-    ...all.filter(({href}) => href.startsWith('/accessibility/page-structure')),
-    ...all.filter(({href}) => href.startsWith('/accessibility/providing-alternatives')),
-    ...all.filter(({href}) => href.startsWith('/accessibility/resources/')),
-    ...all.filter(({href}) => href.startsWith('/accessibility/written-content')),
-    ...all.filter(({href}) => href.endsWith('-new')),
-    ...all.filter(({href}) => href.startsWith('/community')),
-    ...all.filter(({href}) => href.startsWith('/design-and-content')),
-    ...all.filter(({href}) => href.startsWith('/ucdm')),
-    ...all.filter(({href}) => href.startsWith('/user-research'))
+    ...all.filter(({text}) => text === 'Cookies')
   ];
 
-  const getStartedHeader = all.filter(({href}) => ( href === '/get-started' ))[0];
-  const stylesHeader = all.filter(({href}) => ( href === '/styles' ))[0];
-  const patternsHeader = all.filter(({href}) => ( href === '/patterns' ))[0];
-  const accessibilityHeader = all.filter(({href}) => ( href === '/accessibility/' ))[0];
-  const contributeHeader = all.filter(({href}) => ( href === '/contribute' ))[0];
-  const componentsHeader = all.filter(({href}) => ( href === '/components' ))[0];
+  const designSystemHeader = all.filter(({href}) => ( href === '/design-system/' ))[0];
+  const componentsHeader = all.filter(({ href }) => (href === '/design-system/components'))[0];
+  const accessibilityHeader = all.filter(({ href }) => (href === '/accessibility/'))[0];
+  const designAndContentHeader = all.filter(({ href }) => (href === '/design-and-content/'))[0];
+  const userResearchHeader = all.filter(({ href }) => (href === '/user-research/'))[0];
+  const communityHeader = all.filter(({href}) => ( href === '/community/' ))[0];
 
   const headerPages = [
-    getStartedHeader,
-    stylesHeader,
-    patternsHeader,
+    designSystemHeader,
+    componentsHeader,
     accessibilityHeader,
-    contributeHeader,
-    componentsHeader
+    designAndContentHeader,
+    userResearchHeader,
+    communityHeader
   ];
 
   const categorised = [
-    ...getStarted,
-    ...styles,
-    ...patterns,
-    ...accessibility,
-    ...contribute,
+    ...designSystem,
     ...components,
+    ...accessibility,
+    ...designAndContent,
+    ...userResearch,
+    ...community,
     ...headerPages,
     ...hidden
   ];
@@ -104,31 +89,31 @@ const Page: FC<PageProps> = ({ routes }) => {
   const footer = all.filter(e => !categorised.includes(e));
 
   return (
-    <PageWrap>
-    <Fragment>
-      <Helmet>
-        <title>{title} - Home Office Design System</title>
-        <meta name="description" content={description} />
-        <meta name="og:title" content={title} />
-        <meta name="og:description" content={description} />
-      </Helmet>
-      <h1>{title}</h1>
-      <h2><A href={getStartedHeader.href}>{getStartedHeader.text}</A></h2>
-      <AnchorList classBlock="govuk-list" items={getStarted} />
-      <h2><A href={stylesHeader.href}>{stylesHeader.text}</A></h2>
-      <AnchorList classBlock="govuk-list" items={styles} />
-      <h2><A href={componentsHeader.href}>{componentsHeader.text}</A></h2>
-      <AnchorList classBlock="govuk-list" items={components} />
-      <h2><A href={patternsHeader.href}>{patternsHeader.text}</A></h2>
-      <AnchorList classBlock="govuk-list" items={patterns} />
-      <h2><A href={accessibilityHeader.href}>{accessibilityHeader.text}</A></h2>
-      <AnchorList classBlock="govuk-list" items={accessibility} />
-      <h2><A href={contributeHeader.href}>{contributeHeader.text}</A></h2>
-      <AnchorList classBlock="govuk-list" items={contribute} />
-      <h2>Footer</h2>
-      <AnchorList classBlock="govuk-list" items={footer} />
-    </Fragment>
-    </PageWrap>
+    <div className="hods-width-container">
+      <main id="main-content">
+        <Helmet>
+          <title>{title} - {siteTitle}</title>
+          <meta name="description" content={description} />
+          <meta name="og:title" content={title} />
+          <meta name="og:description" content={description} />
+        </Helmet>
+        <h1>{title}</h1>
+        <h2><A href={designSystemHeader.href}>{designSystemHeader.text}</A></h2>
+        <AnchorList classBlock="govuk-list" items={designSystem} />
+        <h2><A href={componentsHeader.href}>{componentsHeader.text}</A></h2>
+        <AnchorList classBlock="govuk-list" items={components} />
+        <h2><A href={accessibilityHeader.href}>{accessibilityHeader.text}</A></h2>
+        <AnchorList classBlock="govuk-list" items={accessibility} />
+        <h2><A href={designAndContentHeader.href}>{designAndContentHeader.text}</A></h2>
+        <AnchorList classBlock="govuk-list" items={designAndContent} />
+        <h2><A href={userResearchHeader.href}>{userResearchHeader.text}</A></h2>
+        <AnchorList classBlock="govuk-list" items={userResearch} />
+        <h2><A href={communityHeader.href}>{communityHeader.text}</A></h2>
+        <AnchorList classBlock="govuk-list" items={community} />
+        <h2>Footer</h2>
+        <AnchorList classBlock="govuk-list" items={footer} />
+      </main>
+    </div>
   );
 };
 

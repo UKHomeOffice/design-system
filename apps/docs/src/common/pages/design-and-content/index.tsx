@@ -5,21 +5,18 @@ import { A } from '@not-govuk/components';
 
 import { Section } from '@hods/ucdm-section';
 
-import { PageWrap } from '../ucdm';
 import Markdown from '../../../../../../docs/design-and-content/README.md';
 
 export const title = 'Design and content';
 const description = 'Interaction and content design in the Home Office';
 
 export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = ({ children, showBanner }) => (
-  <PageWrap>
-    <Section title={title} href="/design-and-content" showBanner={showBanner} navigation={[
-      { href: '/design-and-content/content', text: 'Content' },
-      { href: '/design-and-content/professional-standards', text: 'Professional standards and guidance' }
-    ]}>
-      {children}
-    </Section>
-  </PageWrap>
+  <Section title={title} href="/design-and-content" showBanner={showBanner} navigation={[
+    { href: '/design-and-content/content', text: 'Content' },
+    { href: '/design-and-content/professional-standards', text: 'Professional standards and guidance' }
+  ]}>
+    {children}
+  </Section>
 );
 
 const Page: FC<PageProps> = props => (

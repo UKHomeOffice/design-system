@@ -5,7 +5,6 @@ import { A, NavigationMenu } from '@not-govuk/components';
 import { Section } from '@hods/ucdm-section';
 import config from '../../config';
 
-import { PageWrap } from '../ucdm';
 import Markdown from '../../../../../../docs/community/README.md';
 
 export const title = 'Community';
@@ -15,16 +14,14 @@ const siteTitle = config.title;
 const pageTitle = title + ' - ' + siteTitle;
 
 export const SectionWrap = ({ children, showBanner }) => (
-  <PageWrap>
-    <Section title={title} href="/community" showBanner={showBanner} navigation={[
-      { href: '/community/ucd-ops-team', text: 'Meet UCD Ops' },
-      { href: '/community/training', text: 'Training' },
-      { href: '/community/new-starters', text: 'New starters' },
-      { href: '/community/events', text: 'Events' }
-    ]}>
-      {children}
-    </Section>
-  </PageWrap>
+  <Section title={title} href="/community" showBanner={showBanner} navigation={[
+    { href: '/community/ucd-ops-team', text: 'Meet UCD Ops' },
+    { href: '/community/training', text: 'Training' },
+    { href: '/community/new-starters', text: 'New starters' },
+    { href: '/community/events', text: 'Events' }
+  ]}>
+    {children}
+  </Section>
 );
 
 <SectionWrap showBanner>
