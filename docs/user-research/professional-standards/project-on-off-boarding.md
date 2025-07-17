@@ -37,7 +37,7 @@ If your colleague isn’t new to the Home Office but has come from a different p
 
 If an employee is leaving the Home Office altogether, their line manager will need to arrange a session with security to formally offboard them.
 
-## Portfolio lead or line manager checklist 
+### Portfolio lead or line manager checklist 
 
 Managers must:  
 -	remove researcher from all delivery team boards  
