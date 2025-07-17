@@ -1,7 +1,7 @@
 Project on-boarding and off-boarding
 ====================================
 
-# Onboarding onto a new project 
+## Onboarding onto a new project 
   
 When you welcome a new user research colleague into your team, point them to this UCD onboarding list to help them settle in. 
 
