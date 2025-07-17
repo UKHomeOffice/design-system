@@ -174,7 +174,7 @@ When designing content and services, we use: 
 
 - [GOV.UK Design System](https://design-system.service.gov.uk/) - common styles, patterns and components used to design government services
 
-- [Home Office Design System](https://design.homeoffice.gov.uk/) - supplements the GOV.UK Design System
+- [Home Office Design System](https://design.homeoffice.gov.uk/design-system) - supplements the GOV.UK Design System
 
 - [Home Office content style guide](https://design.homeoffice.gov.uk/design-and-content/content/content-style-guide) – guide covering specific Home Office to help make our language clear and consistent for all our users
 
