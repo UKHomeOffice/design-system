@@ -146,7 +146,7 @@ Designers work with user researchers at different delivery phases to frame a pro
 
 ## Standards we follow 
 
-We always follow the [government design principles]( https://www.gov.uk/guidance/government-design-principles) in all of our work: 
+We always follow the [government design principles](https://www.gov.uk/guidance/government-design-principles) in all of our work: 
 
 1.	Start with user needs 
 2.	Do less 
