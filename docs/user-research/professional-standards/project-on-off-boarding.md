@@ -5,7 +5,7 @@ Project on-boarding and off-boarding
   
 When you welcome a new user research colleague into your team, point them to this UCD onboarding list to help them settle in. 
 
-## User researcher checklist 
+### User researcher checklist 
 
 -	complete the new starter access form
 -	run through the UCD induction Trello board (if new to the Home Office – you can get access to this by completing the new starter access form)
