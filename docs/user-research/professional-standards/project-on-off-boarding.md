@@ -33,7 +33,7 @@ If your colleague isn’t new to the Home Office but has come from a different p
 -	pair researcher with an informal buddy from the same profession  
 -	arrange mentoring, where appropriate
   
-# Offboarding from a project 
+## Offboarding from a project 
 
 If an employee is leaving the Home Office altogether, their line manager will need to arrange a session with security to formally offboard them.
 
