@@ -8,9 +8,10 @@ import { Section } from '@hods/ucdm-section';
 
 export const PageWrap: FC<{ children?: ReactNode }> = ({ children }) => {
   const navigation = [
+    { href: '/design-system', text: 'Design system' },
+    { href: '/accessibility/index-new', text: 'Accessibility' },
     { href: '/design-and-content', text: 'Design and content' },
     { href: '/user-research', text: 'User research' },
-    { href: '/accessibility/index-new', text: 'Accessibility' },
     { href: '/community', text: 'Community' }
   ];
   const footerNavigation = [
