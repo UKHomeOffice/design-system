@@ -1,5 +1,5 @@
 Designer role standard
-=======================
+======================
 
 ## Working together as a team 
 
