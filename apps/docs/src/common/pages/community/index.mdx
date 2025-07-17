@@ -14,9 +14,9 @@ const description = 'The user-centred design community in the Home Office';
 const siteTitle = config.title;
 const pageTitle = title + ' - ' + siteTitle;
 
-export const SectionWrap = ({ children }) => (
+export const SectionWrap = ({ children, showBanner }) => (
   <PageWrap>
-    <Section title={title} href="/community" navigation={[
+    <Section title={title} href="/community" showBanner={showBanner} navigation={[
       { href: '/community/ucd-ops-team', text: 'Meet UCD Ops' },
       { href: '/community/training', text: 'Training' },
       { href: '/community/new-starters', text: 'New starters' },
@@ -27,7 +27,7 @@ export const SectionWrap = ({ children }) => (
   </PageWrap>
 );
 
-<SectionWrap>
+<SectionWrap showBanner>
   <main id="main-content" role="main">
     <head>
       <title>{pageTitle}</title>

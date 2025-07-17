@@ -27,7 +27,7 @@ You can see a full list of any issues we currently know about in the Non-accessi
 If you need information on this website in a different format like accessible PDF, large print, easy read, audio
 recording or braille:
 -   email ucdops@homeoffice.gov.uk
--   contact us via the methods listed at https://design.homeoffice.gov.uk/contribute
+-   contact us via the methods listed at https://design.homeoffice.gov.uk/design-system/contribute
 
 We'll consider your request and get back to you in 30 days.
 

@@ -12,6 +12,8 @@ export type SectionProps = StandardProps & {
   description?: ReactNode
   /** Links for the navigation  */
   navigation?: Pick<ServiceNavigationProps, 'items'>['items']
+  /** Whether to show the banner */
+  showBanner?: boolean
   /** Title of the section  */
   title: string
   /** URL of the section  */
@@ -25,6 +27,7 @@ export const Section: FC<SectionProps> = ({
   className,
   description = null,
   navigation = [],
+  showBanner = false,
   title,
   href,
   ...attrs
@@ -37,9 +40,11 @@ export const Section: FC<SectionProps> = ({
         <meta name="og:article:section" content={title} />
       </Head>
       <div className={classes('header')}>
-        <PageBanner className={classes('banner')} heading={title}>{description}</PageBanner>
+        {!showBanner ? null : (
+          <PageBanner className={classes('banner')} heading={title}>{description}</PageBanner>
+        )}
         {!navigation.length ? null : (
-          <ServiceNavigation className={classes('navigation')} items={navigation} serviceName={title} serviceHref={href} />
+          <ServiceNavigation className={classes('navigation')} items={navigation} />
         )}
       </div>
       <div className={classes('container', undefined, 'hods-width-container')}>

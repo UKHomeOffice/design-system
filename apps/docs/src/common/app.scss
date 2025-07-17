@@ -166,3 +166,27 @@ li code {
 p {
   max-width: none;
 }
+
+// New home-page
+.display-panel {
+  background-color: govuk-colour('white');
+  position: relative;
+  padding: 40px 20px 20px 20px;
+  margin-bottom: 30px;
+
+  @include govuk-media-query($from: tablet) {
+    min-height: 15em;
+  }
+
+  &:after {
+    display: block;
+    background-color: $hods-brand-colour-purple;
+    content: "";
+    width: auto;
+    height: 3px;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+  }
+}

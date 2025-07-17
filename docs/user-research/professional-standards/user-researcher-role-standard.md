@@ -85,7 +85,7 @@ Build a positive rapport with your users so they ‘feel safe’ to share their 
 If you work within Migration and Borders Technology Portfolio (MBTP), you must comply with the data curators’ guidance and action any requests made by a Data Guru. Raise any potential security breaches with your line manager as soon as they arise. 
 If you are unsure who your local Data Guru is, you can ask on the UK Home Office #ethics or #research Slack channels. 
 
-[Take a look at the Home Office style guide](https://design.homeoffice.gov.uk/content-style-guide) for more information on the words and phrases that you should use when creating content.
+[Take a look at the Home Office style guide](https://design.homeoffice.gov.uk/design-and-content/content/content-style-guide) for more information on the words and phrases that you should use when creating content.
 
 [Read the ethics training and guidance](https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/Submit-an-ethics-submission.aspx) on the UCD community hub.
 
@@ -230,5 +230,5 @@ For MBTP user researchers, there are standard goals in the MBTP UR SharePoint ar
   
 -	[GOV.UK Design System](https://design-system.service.gov.uk/) - common styles, patterns and components used to design government services
   
--	[Home Office Design System](https://design.homeoffice.gov.uk/) – dedicated design system for the Home Office
+-	[Home Office Design System](https://design.homeoffice.gov.uk/design-system) – dedicated design system for the Home Office
 
