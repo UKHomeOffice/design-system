@@ -1,52 +1,23 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Navigate } from 'react-router-dom';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
-import { menu } from '../../accessibility'
 
-import { PageWrap } from '../../';
-
-export const title = 'Skip to content links';
-const description = 'Accessibility guidance for keyboard content';
-export const section = 'Accessibility';
-
-const skipImage01 = require('../../../../../assets/images/accessibility/skip-01.png');
+const newHref = '/accessibility/interactivity/keyboard/skip-to-content';
+const newURL = 'https://design.homeoffice.gov.uk' + newHref;
 
 const Page: FC<PageProps> = () => (
-  <PageWrap>
-  <div className="govuk-grid-row">
-    <Helmet>
-      <title>{title} - Home Office Design System</title>
-      <meta name="description" content={description} />
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={description} />
-      <meta name="og:article:section" content={section} />
-    </Helmet>
-    <div className="govuk-grid-column-one-quarter">
-      {menu}
-    </div>
-    <div className="govuk-grid-column-three-quarters">
-      <h1>
-        <span className="caption">Accessibility</span>
-        ‘Skip to content’ links
-      </h1>
-      <p>For keyboard users, having to repeatedly move through the same navigation menu every time they start a new page can be frustrating.</p>
-      <p>This is why ‘skip to content’ links exist. The first tab move you make on each page should show a link at the top of the page that says ‘Skip to content’ (or similar) and moves the user to the main part of the page.</p>
-
-      <div className="example" style={{marginBottom: "2em"}}>
-        <p>To view the skip link component tab to this example, or click inside this example and press tab.</p>
-        <A href="#" className="govuk-skip-link">Skip to main content</A>
-      </div>
-
-      <p>You can test this by pressing enter on the ‘skip to content’ link and then pressing tab. If your next move focuses the first interactive element further down the page in the main content, you know it is working.</p>
-      <p>Read more on the WCAG success criteria on <A href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypassing blocks of content</A>.</p>
-
-      <h2>Get in touch</h2>
-      <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
-      
+  <div className="hods-width-container">
+    <main id="main-content">
+      <Helmet>
+        <title>Home Office Design System</title>
+        <link rel="canonical" href={newURL} />
+      </Helmet>
+      This content has been moved to a <A href={newHref}>new location</A>.
+      <Navigate to={newHref} />
+    </main>
   </div>
-    </div>
-  </PageWrap>
 );
 
 export default Page;

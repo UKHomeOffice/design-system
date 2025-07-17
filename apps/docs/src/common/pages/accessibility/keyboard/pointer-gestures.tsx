@@ -1,43 +1,23 @@
 import { FC, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Navigate } from 'react-router-dom';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
-import { menu } from '../../accessibility'
 
-import { PageWrap } from '../../';
-
-export const title = 'Pointer gestures';
-const description = 'Accessibility guidance for keyboard content';
-export const section = 'Accessibility';
+const newHref = '/accessibility/interactivity/keyboard/pointer-gestures';
+const newURL = 'https://design.homeoffice.gov.uk' + newHref;
 
 const Page: FC<PageProps> = () => (
-  <PageWrap>
-  <div className="govuk-grid-row">
-    <Helmet>
-      <title>{title} - Home Office Design System</title>
-      <meta name="description" content={description} />
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={description} />
-      <meta name="og:article:section" content={section} />
-    </Helmet>
-    <div className="govuk-grid-column-one-quarter">
-      {menu}
-    </div>
-    <div className="govuk-grid-column-three-quarters">
-      <h1>
-        <span className="caption">Accessibility</span>
-        Pointer gestures
-      </h1>
-      <p>Pointer gestures or path-based gestures are common elements of a website. You may be familiar with elements such as volume sliders, image carousels and swiping content. Each of these elements are controlled by clicking and dragging the content with a mouse in a given direction or a long a given path.</p>
-      <p>These types of elements must also be accessible to keyboard users. If you see pointer gesture elements on a website you should try getting to it with keyboard controls and then see if you can control it by using the arrow keys, or other character controls if required.</p>
-      <p>Find out more about WCAG success criteria on <A href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures.html">pointer gestures</A>.</p>
-
-      <h2>Get in touch</h2>
-      <p>If you’ve got a question or suggestion share it on the UK Home Office Slack channel #ask-accessibility or email <A href="mailto:accessibility@homeoffice.gov.uk">accessibility@homeoffice.gov.uk</A>.</p>
-
-    </div>
+  <div className="hods-width-container">
+    <main id="main-content">
+      <Helmet>
+        <title>Home Office Design System</title>
+        <link rel="canonical" href={newURL} />
+      </Helmet>
+      This content has been moved to a <A href={newHref}>new location</A>.
+      <Navigate to={newHref} />
+    </main>
   </div>
-  </PageWrap>
 );
 
 export default Page;
