@@ -29,9 +29,9 @@ const Page: FC<PageProps> = props => (
   <SectionWrap showBanner>
     <main id="main-content" >
       <Helmet>
-        <title>{title} - {siteTitle}</title>
+        <title>{longTitle} - {siteTitle}</title>
         <meta name="description" content={description} />
-        <meta name="og:title" content={title} />
+        <meta name="og:title" content={longTitle} />
         <meta name="og:description" content={description} />
       </Helmet>
       <div className="govuk-grid-row">
