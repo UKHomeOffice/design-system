@@ -18,8 +18,8 @@ There are also smaller profession meet ups each month, which offer a safe space 
 UCD Skillshare Sessions are new interactive learning events to upskill the UCD community and provide an opportunity for colleagues to share new skills and interests. They are short, informal sessions that are self-led and organised by the community. 
 
 Sessions can be used for a variety of purposes, including: 
--	workshops and interactive sessions
--	presentations from internal or external teams, including playbacks from projects
+- workshops and interactive sessions
+- presentations from internal or external teams, including playbacks from projects
 
 
 Colleagues can learn more about all these events on our [UCD community hub on the staff intranet](https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/Staff-events.aspx?csf=1&web=1&share=EZxHcWb_DIdKoR2N0mkQVRIB8903sr6XJqsG7Gn7MGsR-w&e=rSivCt&CID=48fb3e32-ec4a-4c75-a2d2-ae9fea2f36a0). 
