@@ -70,8 +70,8 @@ export const menu = (
         text: 'Search for something'
       },
       {
-        href: '/patterns/stop-a-service-timing-out',
-        text: 'Stop a service timing out'
+        href: '/patterns/manage-a-service-timing-out',
+        text: 'Manage a service timing out'
       }
     ]} />
     <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Send users</span>

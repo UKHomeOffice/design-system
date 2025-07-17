@@ -116,8 +116,8 @@ export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
             text: '- Search for something'
           },
           {
-            href: '/design-and-content/design-system/patterns/help-users-to/stop-service-timing-out',
-            text: '- Stop a service timing out'
+            href: '/design-and-content/design-system/patterns/help-users-to/manage-service-timing-out',
+            text: '- Manage a service timing out'
           }
         ]} />
         <span className="govuk-caption-m" style={{marginBottom: "1em"}}>Send users</span>
