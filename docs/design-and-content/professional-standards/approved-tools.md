@@ -3,7 +3,7 @@ Approved tools
 
 The tools and software listed below are deemed secure and suitable for use as of July 2025.  
 
-You must not download and install alternatives without approval. If you have any questions about other tools and software not listed, [contact UCD Operations](ucdops@homeoffice.gov.uk) (UCD Ops).
+You must not download and install alternatives without approval. If you have any questions about other tools and software not listed, [contact UCD Operations](mailto:ucdops@homeoffice.gov.uk) (UCD Ops).
 
 ## Design tools 
 
