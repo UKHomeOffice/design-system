@@ -1,5 +1,5 @@
 User researcher role standard
-==============================
+=============================
 
 ## Key responsibilities
 
