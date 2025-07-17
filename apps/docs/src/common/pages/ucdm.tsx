@@ -29,7 +29,7 @@ export const PageWrap: FC<{ children?: ReactNode }> = ({ children }) => {
       searchAction="https://www.google.co.uk/search"
       searchSiteField="sitesearch"
       searchSiteValue="design.homeoffice.gov.uk"
-      serviceName="User-centred Design Manual"
+      serviceName="User-Centred Design Manual"
       serviceNameInHeader
       serviceHref="/ucdm"
       title="Home Office UCD Manual"
