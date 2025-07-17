@@ -45,7 +45,7 @@ Managers must: 
 -	remove from [any approved tools](https://design.homeoffice.gov.uk/user-research/professional-standards/approved-tools) and any project-specific SharePoint groups / folders   
 -	[let UCD Operations know](ucdops@homeoffice.gov.uk) so we can update our records, remove them from our mailing list and, if relevant, remove them from any general Slack and SharePoint groups
   
-## User researcher checklist 
+### User researcher checklist 
 
 Researchers must: 
 -	transfer ownership of any assets such as surveys, etc to your colleagues in your team 
