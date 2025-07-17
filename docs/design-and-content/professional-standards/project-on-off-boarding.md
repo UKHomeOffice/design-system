@@ -1,9 +1,10 @@
 Project on-boarding and off-boarding
 ====================================
 
+## Onboarding to a new project 
 When you welcome a new design colleague into your team, point them to this UCD onboarding list to help them settle in. 
 
-## Designer checklist 
+### Designer checklist 
 
 -	complete the [new starter access form](https://www.homeofficesurveys.homeoffice.gov.uk/s/3OJU4F/) to get access to relevant tools
 -	run through the UCD induction Trello board (if new to the Home Office – you can get access to this by completing the new starter access form)
@@ -16,7 +17,7 @@ When you welcome a new design colleague into your team, point them to this UCD o
 -	get edit access to existing files from team 
 -	share any design assets created (for instance in Figma, Heroku) with your team
   
-## New portfolio checklist 
+### New portfolio checklist 
 
 If your colleague isn’t new to the Home Office but has come from a different portfolio, the portfolio lead or line manager should provide the following, if available: 
 
@@ -30,10 +31,10 @@ If your colleague isn’t new to the Home Office but has come from a different p
 -	pair designer with an informal buddy from the same profession  
 -	arrange mentoring, where appropriate
   
-# Offboarding from a project 
+## Offboarding from a project 
 If an employee is leaving the Home Office altogether, their line manager will need to arrange a session with security to formally offboard them.
 
-## Portfolio lead or line manager checklist 
+### Portfolio lead or line manager checklist 
 
 Managers must:  
 
@@ -42,7 +43,7 @@ Managers must: 
 -	remove from Confluence / Heroku / Mural / and any project-specific SharePoint groups / folders   
 -	[let the UCD Operations team know](mailto:ucdops@homeoffice.gov.uk) that we can update our records, remove them from our mailing list and, if relevant, remove them from any general Slack and SharePoint groups and release their Sketch account
   
-## Designer checklist 
+### Designer checklist 
 
 Designers must: 
 
@@ -57,4 +58,4 @@ Designers must:
   
 Read more about [why you should keep records of service decisions.](https://hodigital.blog.gov.uk/2017/10/27/take-note-why-you-should-keep-records-of-service-decisions/)
 
-If you have any questions or need any help, [email UCD Operations.](ucdops@homeoffice.gov.uk)  
+If you have any questions or need any help, [email UCD Operations.](mailto:ucdops@homeoffice.gov.uk)  
