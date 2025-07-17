@@ -1,8 +1,6 @@
 Project on-boarding and off-boarding
 ====================================
 
-# Onboarding onto a new project 
-  
 When you welcome a new design colleague into your team, point them to this UCD onboarding list to help them settle in. 
 
 ## Designer checklist 
