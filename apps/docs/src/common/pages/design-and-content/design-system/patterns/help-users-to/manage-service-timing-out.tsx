@@ -9,11 +9,13 @@ import { SubsectionWrap, title as subsection } from '../../';
 const siteTitle = config.title;
 const subsubsection = 'Help users to';
 
-export const title = subsubsection + ' stop a service timing out';
-const longTitle = 'Stop a service timing out';
-const description = 'How to help users to stop a service from timing out';
+export const title = subsubsection + ' manage a service timing out';
+const longTitle = 'Manage a service timing out';
+const description = 'How to help users to manage a service time out.';
 
-const applyModalWindow = require('../../../../../../../assets/images/patterns/time-out.png');
+const applyModalWindow = require('../../../../../../../assets/images/patterns/model-updated.png');
+const timeoutpagesignedin = require('../../../../../../../assets/images/patterns/timed-out-page-not-signed-in.png');
+const timedoutpagesignedout= require('../../../../../../../assets/images/patterns/signed-in-timeout-page.png');
 
 const Page: FC<PageProps> = () => (
   <SubsectionWrap>
@@ -27,9 +29,9 @@ const Page: FC<PageProps> = () => (
       <span className="caption">{subsubsection}</span>
       {longTitle}
     </h1>
-    <p className="govuk-body">Warn users that they are about to be timed out of a service and explain what happens after they are timed out.</p>
+    <p className="govuk-body">Warn users that they are about to be timed out of a service and help them understand what to do if they are timed out.</p>
     <img src={applyModalWindow} className="image-examples" alt="An example of a modal dialog which warns users the service will time out." />
-
+    <br /><br />
     <h2 className="govuk-heading-l">When to use this pattern</h2>
     <p className="govuk-body">Use this pattern if your service automatically ends the user’s session after a period of inactivity.</p>
     <p className="govuk-body">Investigate the most appropriate session length for your service, based on the needs of users and security requirements.</p>
@@ -50,20 +52,12 @@ const Page: FC<PageProps> = () => (
       <li>allow the user to close the modal and reset the session time by selecting the primary action button, using ‘Esc’ on the keyboard or using the browser back button</li>
     </ul>
 
-    <h3 className="govuk-heading-m">If the user chooses to continue</h3>
+    <h3 className="govuk-heading-m">If the user chooses to stay signed in</h3>
     <p className="govuk-body">When a user selects to stay signed in:</p>
     <ul className="govuk-list govuk-list--bullet">
       <li>close the warning and allow the user access to the page they were on</li>
       <li>return the keyboard focus to where it was before the warning appeared</li>
       <li>refresh the user’s session - you should not limit the number of times users can extend their session</li>
-    </ul>
-
-    <h3 className="govuk-heading-m">If the user runs out of time</h3>
-    <p className="govuk-body">When a user is timed out:</p>
-    <ul className="govuk-list govuk-list--bullet">
-      <li>redirect the user to a timeout page</li>
-      <li>give them the option to sign back into the service</li>
-      <li>if they choose to sign back in and it makes sense to do so, take them back to the home page or journey they were on</li>
     </ul>
 
     <h3 className="govuk-heading-m">If the user chooses to sign out</h3>
@@ -92,6 +86,35 @@ const Page: FC<PageProps> = () => (
         Stay on this page
       </button>
     </div>
+
+    <br></br>
+    <h2 className="govuk-heading-l">Time out page</h2>
+    <h3 className="govuk-heading-m">When the user is signed in</h3>
+    <p className="govuk-body">If the user <strong> is</strong> signed in to a service and runs out of time:</p>
+    <ul className="govuk-list govuk-list--bullet">
+      <li>redirect the user to a time out page</li>
+      <li>give them the option to sign back into the service</li>
+      <li>if they choose to sign back in and it makes sense to do so, take them back to the home page or journey they were on</li>
+      <li>tell them to sign back in and the next action, such as “start a new session”</li>
+      <li>use “Sign back in” as the button text</li>
+    </ul>
+    <img src={timedoutpagesignedout} className="image-examples" alt="An example of a time out page when a user is signed in to a service." />
+
+
+    <br></br><br></br>
+
+    <h3 className="govuk-heading-m">When the user is not signed in</h3>
+    <p className="govuk-body">If the user <strong>is not</strong> signed in to a service and runs out of time:</p>
+    <ul className="govuk-list govuk-list--bullet">
+      <li>redirect the user to a time out page</li>
+      <li>if they choose to restart their session, and it makes sense to do so, take them back to the start or GOV.UK page</li>
+      <li>tell them they will need to start again and where from</li>
+      <li>use “Start again” in the button text</li>
+      <li>tell them their progress will not be saved if the time runs out</li>
+    </ul>
+    <img src={timeoutpagesignedin} className="image-examples" alt="An example of a time out page when a user is not signed in to a service." />
+
+    <br></br><br></br><br></br><br></br>
 
     <h2 className="govuk-heading-l">Accessibility</h2>
     <p className="govuk-body">Give users an appropriate time to react to a timeout - use the <A href="https://design.homeoffice.gov.uk/accessibility/timeouts">accessibility timeouts and time limits guidance</A>.</p>
