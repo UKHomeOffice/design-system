@@ -17,7 +17,7 @@ When you welcome a new user research colleague into your team, point them to thi
 -	join team Trello boards   
 -	get access to team Slack channels and the wider UCD community Slack channels
   
-## New portfolio checklist 
+### New portfolio checklist 
 
 If your colleague isn’t new to the Home Office but has come from a different portfolio, the portfolio lead or line manager should provide the following, if available: 
 
