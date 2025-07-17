@@ -23,7 +23,7 @@ Sign up with a work email account. Only make private repositories, unless 
 
 -	Home Office plugin – for internal Home Office services
 
-[Download the plugin yourself](https://design.homeoffice.gov.uk/get-started/home-office-plugin)
+[Download the plugin yourself](https://design.homeoffice.gov.uk/design-system/get-started/home-office-plugin)
 
 -	Heroku - for hosting GOV.UK prototypes
 
