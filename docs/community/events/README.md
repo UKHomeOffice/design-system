@@ -31,7 +31,7 @@ Accessibility Quarterly – 4 sessions per year. Look out for announcements on t
 
  <br />
  
-## X-Gov events
+## XGov events
 
 - Civil Service Live – annual event taking place during the summer. Look out for details on this event on the Home Office SharePoint intranet site.
 - Design system day – GOV.UK event. Contact the team to join the [distribution list](mailto:design-system-announcements@digital.cabinet-office.gov.uk).
