@@ -11,10 +11,9 @@ import Markdown from '../../../../../../docs/design-and-content/README.md';
 export const title = 'Design and content';
 const description = 'Interaction and content design in the Home Office';
 
-export const SectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
+export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = ({ children, showBanner }) => (
   <PageWrap>
-    <Section title={title} href="/design-and-content" navigation={[
-      { href: '/design-and-content/design-system', text: 'Design system' },
+    <Section title={title} href="/design-and-content" showBanner={showBanner} navigation={[
       { href: '/design-and-content/content', text: 'Content' },
       { href: '/design-and-content/professional-standards', text: 'Professional standards and guidance' }
     ]}>
@@ -24,7 +23,7 @@ export const SectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
 );
 
 const Page: FC<PageProps> = props => (
-  <SectionWrap>
+  <SectionWrap showBanner>
     <main id="main-content" >
       <Helmet>
         <title>{title}</title>

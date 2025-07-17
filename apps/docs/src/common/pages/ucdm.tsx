@@ -41,9 +41,9 @@ export const PageWrap: FC<{ children?: ReactNode }> = ({ children }) => {
     </UCDMPage>
   );
 };
-export const SectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
+export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = ({ children, showBanner }) => (
   <PageWrap>
-    <Section title="Design and build services that work for everyone" href="#" description="Use the UCD Manual to create consistent services that put users first.">
+    <Section title="Design and build services that work for everyone" href="#" description="Use the UCD Manual to create consistent services that put users first." showBanner={showBanner}>
       {children}
     </Section>
   </PageWrap>
@@ -53,7 +53,7 @@ export const title = 'Home Office Design System';
 const description = 'The UK Home Office\'s Design System, implemented in React';
 
 const Page: FC<PageProps> = props => (
-  <SectionWrap>
+  <SectionWrap showBanner>
   <main id="main-content" >
     <Helmet>
       <title>{title}</title>

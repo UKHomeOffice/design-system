@@ -13,9 +13,9 @@ const longTitle = title;
 const description = 'Information on how to ensure your service is accessible'
 const siteTitle = config.title;
 
-export const SectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
+export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = ({ children, showBanner }) => (
   <PageWrap>
-    <Section title={title} href="/accessibility/index-new" navigation={[
+    <Section title={title} href="/accessibility/index-new" showBanner={showBanner} navigation={[
       { href: '/accessibility/page-structure', text: 'Page structure' },
       { href: '/accessibility/interactivity', text: 'Interactivity' },
       { href: '/accessibility/written-content', text: 'Written content' },
@@ -28,7 +28,7 @@ export const SectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
 );
 
 const Page: FC<PageProps> = () => (
-  <SectionWrap>
+  <SectionWrap showBanner>
     <Helmet>
       <title>{title} - {siteTitle}</title>
       <meta name="description" content={description} />
