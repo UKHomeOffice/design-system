@@ -11,8 +11,8 @@ export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = (
   </Section>
 );
 
-export const title = 'Home Office Design System';
-const description = 'The UK Home Office\'s Design System, implemented in React';
+export const title = 'Home Office User-Centred Design Manual';
+const description = 'The UK Home Office\'s User-Centred Design Manual';
 
 const Page: FC<PageProps> = props => (
   <SectionWrap showBanner>
