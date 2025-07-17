@@ -40,7 +40,7 @@ Managers must: 
 -	remove designer from all delivery team boards  
 -	remove from private team Slack groups and channels  
 -	remove from Confluence / Heroku / Mural / and any project-specific SharePoint groups / folders   
--	[let the UCD Operations team know](ucdops@homeoffice.gov.uk) that we can update our records, remove them from our mailing list and, if relevant, remove them from any general Slack and SharePoint groups and release their Sketch account
+-	[let the UCD Operations team know](mailto:ucdops@homeoffice.gov.uk) that we can update our records, remove them from our mailing list and, if relevant, remove them from any general Slack and SharePoint groups and release their Sketch account
   
 ## Designer checklist 
 
