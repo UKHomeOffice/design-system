@@ -20,7 +20,7 @@ export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = (
 );
 
 const Page: FC<PageProps> = props => (
-  <SectionWrap showBanner>
+  <SectionWrap showBanner={false}>
     <main id="main-content" >
       <Helmet>
         <title>{title}</title>
