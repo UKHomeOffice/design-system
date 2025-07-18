@@ -11,7 +11,7 @@ export const title = 'Design and content';
 const description = 'Interaction and content design in the Home Office';
 
 export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = ({ children, showBanner }) => (
-  <Section title={title} href="/design-and-content" showBanner={showBanner} navigation={[
+  <Section title={title} href="/design-and-content"  showBanner={false} navigation={[
     { href: '/design-and-content/content', text: 'Content' },
     { href: '/design-and-content/professional-standards', text: 'Professional standards and guidance' }
   ]}>

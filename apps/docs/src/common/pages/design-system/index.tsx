@@ -14,7 +14,7 @@ const longTitle = 'Home Office Design System';
 const description = 'The UK Home Office\'s Design System, implemented in React';
 
 export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = ({ children, showBanner }) => (
-  <Section title={title} href="/design-and-content" showBanner={showBanner} navigation={[
+  <Section title={title} href="/design-and-content" showBanner={false} navigation={[
     { href: '/design-system/get-started', text: 'Get started' },
     { href: '/design-system/styles', text: 'Styles' },
     { href: '/design-system/components', text: 'Components' },

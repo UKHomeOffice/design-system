@@ -14,7 +14,7 @@ const siteTitle = config.title;
 const pageTitle = title + ' - ' + siteTitle;
 
 export const SectionWrap = ({ children, showBanner }) => (
-  <Section title={title} href="/user-research" showBanner={showBanner} navigation={[
+  <Section title={title} href="/user-research" showBanner={false} navigation={[
     { href: '/user-research/ethics', text: 'Ethical research and consent' },
     { href: '/user-research/participant-recruitment', text: 'Participant recruitment' },
     { href: '/user-research/professional-standards', text: 'Professional standards and guidance' }
