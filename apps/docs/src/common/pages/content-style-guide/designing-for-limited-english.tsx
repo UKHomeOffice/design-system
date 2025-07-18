@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 import { PageProps } from '@not-govuk/app-composer';
 import { A } from '@not-govuk/components';
 
-const newHref = '';
+const newHref = '/design-system/content/designing-for-limited-english';
 const newURL = 'https://design.homeoffice.gov.uk' + newHref;
 
 const Page: FC<PageProps> = () => (
