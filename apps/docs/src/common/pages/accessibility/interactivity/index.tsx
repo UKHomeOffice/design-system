@@ -89,7 +89,7 @@ const Page: FC<PageProps> = () => (
       <span className="caption">{section}</span>
       {longTitle}
     </h1>
-    <p>CONTENT PLACEHOLDER</p>
+    <p>Learn how to design accessible digital interactions by ensuring clear error messages, user-friendly forms, correct keyboard navigation, inclusive gestures, timely notifications, and considerate timeouts that support all users.</p>
   </SubsectionWrap>
 );
 

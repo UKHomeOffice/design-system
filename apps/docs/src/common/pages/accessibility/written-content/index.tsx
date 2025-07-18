@@ -44,7 +44,7 @@ const Page: FC<PageProps> = () => (
       <span className="caption">{section}</span>
       {longTitle}
     </h1>
-    <p>CONTENT PLACEHOLDER</p>
+    <p>Learn how to write clear, respectful, and accessible content using inclusive language and readability principles that support all users.</p>
   </SubsectionWrap>
 );
 
