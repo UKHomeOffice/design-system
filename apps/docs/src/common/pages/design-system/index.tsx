@@ -45,15 +45,15 @@ const Page: FC<PageProps> = props => (
             <h2>Updates</h2>
             <p className="govuk-body govuk-!-font-size-16" style={{ color: '#626a6e' }}>Last updated 8 October 2024</p>
             <ul className="govuk-!-font-size-16">
-              <li>Guidance updated for <A href="/patterns/add-multiple-things">add multiple things pattern</A></li>
-              <li>Added a guide for <A href="/content-style-guide/designing-for-limited-english">designing for people with limited English</A></li>
+              <li>Guidance updated for <A href="/design-system/patterns/add-multiple-things">add multiple things pattern</A></li>
+              <li>Added a guide for <A href="/design-and-content/content/designing-for-limited-english">designing for people with limited English</A></li>
               <li>Improved accessibility of our <A href="/components?name=Button">secondary buttons</A></li>
             </ul>
           </aside>
           <aside>
             <h2>Content style guide</h2>
             <p className="govuk-body govuk-!-font-size-19">How to write for digital Home Office services.</p>
-            <A className="govuk-body govuk-!-font-size-19" href="/content-style-guide">Browse content style guide</A>
+            <A className="govuk-body govuk-!-font-size-19" href="/design-and-content/content/content-style-guide">Browse content style guide</A>
           </aside>
         </div>
       </div>
@@ -62,21 +62,21 @@ const Page: FC<PageProps> = props => (
           <aside>
             <h2>Styles</h2>
             <p className="govuk-body govuk-!-font-size-19">We apply different styles to our services and products depending domain and type of service.</p>
-            <A className="govuk-body govuk-!-font-size-19" href="/styles">Browse styles</A>
+            <A className="govuk-body govuk-!-font-size-19" href="/design-system/styles">Browse styles</A>
           </aside>
         </div>
         <div className="govuk-grid-column-one-third">
           <aside>
             <h2>Components</h2>
             <p className="govuk-body govuk-!-font-size-19">Components are reusable, ready-made interface elements that can be used in different patterns and layouts.</p>
-            <A className="govuk-body govuk-!-font-size-19" href="/components">Browse components</A>
+            <A className="govuk-body govuk-!-font-size-19" href="/design-system/components">Browse components</A>
           </aside>
         </div>
         <div className="govuk-grid-column-one-third">
           <aside>
             <h2>Patterns</h2>
             <p className="govuk-body govuk-!-font-size-19">Patterns help users complete common tasks, are flexible and don't prescribe exact design solutions.</p>
-            <A className="govuk-body govuk-!-font-size-19" href="/patterns">Browse patterns</A>
+            <A className="govuk-body govuk-!-font-size-19" href="/design-system/patterns">Browse patterns</A>
           </aside>
         </div>
       </div>
