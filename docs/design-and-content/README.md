@@ -1,7 +1,5 @@
-Design and content
+What is user-centred design (UCD) at the Home Office?
 ==================
-
-# What is user-centred design (UCD) at the Home Office?
  
 UCD is where we think about our users and their needs at every stage of a design process. We aim to create simple, clear and joined-up user experiences that help people achieve their goals.
  
@@ -15,5 +13,3 @@ We expect our design and content community to:
 - share and develop design knowledge and skills
  
 UCD is an approach, not a team. Designing for our users should be an approach that the whole delivery team takes. [Visit the HO careers website](https://careers.homeoffice.gov.uk/role/digital-data-and-technology/user-centred-design) to learn more about our UCD careers.
-
-<br />
