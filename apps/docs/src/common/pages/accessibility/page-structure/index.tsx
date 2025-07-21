@@ -60,7 +60,7 @@ const Page: FC<PageProps> = () => (
       <span className="caption">{section}</span>
       {longTitle}
     </h1>
-    <p>CONTENT PLACEHOLDER</p>
+    <p>Learn how to structure content for accessibility and clarity. This section outlines best practices for using headings, layout, links, lists, navigation, and tables to create content that is easy to navigate, understand, and use.</p>
   </SubsectionWrap>
 );
 

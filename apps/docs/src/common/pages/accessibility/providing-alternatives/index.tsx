@@ -52,7 +52,7 @@ const Page: FC<PageProps> = () => (
       <span className="caption">{section}</span>
       {longTitle}
     </h1>
-    <p>CONTENT PLACEHOLDER</p>
+    <p>Learn how to make digital content accessible by providing effective alternatives for audio and video, ensuring sufficient colour contrast, using meaningful image descriptions, and avoiding moving and flashing elements.</p>
   </SubsectionWrap>
 );
 

@@ -28,7 +28,7 @@ const Page: FC<PageProps> = props => (
           <div className="display-panel">
             <h3 className="govuk-heading-m">Design system</h3>
             <p>A library of patterns, styles and components to help you design consistent and accessible digital services.</p>
-            <p><A href="/design-system">View more</A></p>
+            <p><A href="/design-system">Browse Design system</A></p>
           </div>
         </div>
 
@@ -36,7 +36,7 @@ const Page: FC<PageProps> = props => (
           <div className="display-panel">
             <h3 className="govuk-heading-m">Content style guide</h3>
             <p>Find a complete A-Z of words and phrases to help you create consistent content for your service that users can easily understand.</p>
-            <p><A href="/design-and-content/content/content-style-guide">View more</A></p>
+            <p><A href="/design-and-content/content/content-style-guide">Browse Content style guide</A></p>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ const Page: FC<PageProps> = props => (
           <div className="display-panel">
             <h3 className="govuk-heading-m">Home Office accessibility standards</h3>
             <p>Our standard closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.</p>
-            <p><A href="/accessibility/resources/standard">View more</A></p>
+            <p><A href="/accessibility/resources/standard">Browse Home Office accessibility standards</A></p>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ const Page: FC<PageProps> = props => (
           <div className="display-panel">
             <h3 className="govuk-heading-m">User research</h3>
             <p>Understanding our users and their needs is essential when we design services and products. We achieve this through user research.</p>
-            <p><A href="/user-research">View more</A></p>
+            <p><A href="/user-research">Browse User research</A></p>
           </div>
 
         </div>
@@ -64,7 +64,7 @@ const Page: FC<PageProps> = props => (
           <div className="display-panel">
             <h3 className="govuk-heading-m">Community and contribute</h3>
             <p>Do you want to get involved in our work? Anyone can contribute to the design system. Discuss on GitHub, join our working group or review our backlog.</p>
-            <p><A href="/community">View more</A></p>
+            <p><A href="/community">Browse Community and contribute</A></p>
           </div>
 
         </div>
@@ -73,7 +73,7 @@ const Page: FC<PageProps> = props => (
           <div className="display-panel">
             <h3 className="govuk-heading-m">Professional guidance</h3>
             <p>Explore the role guidance, training information and approved tools for our User Centred Design (UCD) community.</p>
-            <p><A href="/design-and-content">View more</A></p>
+            <p><A href="/design-and-content">Browse Professional guidance</A></p>
           </div>
         </div>
 
