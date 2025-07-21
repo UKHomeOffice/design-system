@@ -27,9 +27,9 @@ Colleagues can learn more about all these events on our [UCD community hub on th
 <br />
 
 ## Other events
-Accessibility Quarterly – 4 sessions per year. Look out for announcements on these sessions on the #accessibility Home Office Slack channel.
+Accessibility Quarterly – 4 sessions per year. Look out for announcements on these sessions on the \#accessibility Home Office Slack channel.
 
- <br />
+
  
 ## XGov events
 
