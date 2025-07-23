@@ -31,7 +31,7 @@ This is not an exhaustive list and there are other research methods available. C
 
 1.2 You must have a clear set of [objectives and questions](https://www.gov.uk/service-manual/user-research) as part of your research plan.
  
-1.3 [Contact the UCD Ops team](ucdops@digital.homeoffice.gov.uk) if you have further questions on the systems and tooling used for these methods. 
+1.3 [Contact the UCD Ops team](mailto:ucdops@digital.homeoffice.gov.uk) if you have further questions on the systems and tooling used for these methods. 
 
 ## 2. User selection and recruiting research participants
 
