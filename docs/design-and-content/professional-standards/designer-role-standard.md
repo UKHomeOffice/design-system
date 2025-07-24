@@ -245,7 +245,7 @@ However, when preparing a prototype for user research, you should lean towards t
 
 ### Prototyping in code 
 
-Our designers should be able to work with prototypes in HTML. We use the [GOV.UK prototype kit](https://govuk-prototype-kit.herokuapp.com/docs) for public-facing services, as well as the [Home Office plugin](https://design.homeoffice.gov.uk/get-started) for internal services. 
+Our designers should be able to work with prototypes in HTML. We use the [GOV.UK prototype kit](https://govuk-prototype-kit.herokuapp.com/docs) for public-facing services, as well as the [Home Office plugin](https://design.homeoffice.gov.uk/design-system/get-started/home-office-plugin) for internal services. 
 
 One of the reasons we do this is because HTML prototypes look like real GOV.UK services and can help capture real user needs. 
 
