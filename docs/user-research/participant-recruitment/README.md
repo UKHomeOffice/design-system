@@ -41,7 +41,7 @@ Make sure you explain to users that participation in research is completely volu
 If you need any further guidance, [visit the UCD community hub on the intranet](https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/Recruiting-participants.aspx). 
 
 ## Inviting and supporting external participants   
-If you are testing with external participants, you will need to complete a Home Office security visitors’ form. [Contact the UCD Ops team](ucdops@homeoffice.gov.uk) for more details.    
+If you are testing with external participants, you will need to complete a Home Office security visitors’ form. [Contact the UCD Ops team](mailto:ucdops@homeoffice.gov.uk) for more details.    
 
 All participants will need to be escorted and must bring valid ID (passport, driving licence, NHS card, ID card or birth certificate). Security will not allow a digital version of IDs.  
 
