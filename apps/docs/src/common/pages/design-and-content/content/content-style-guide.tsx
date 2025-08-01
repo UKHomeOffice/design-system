@@ -239,6 +239,8 @@ export const content = (
     <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="persons">persons</h3>
     <p>Use 'people' rather than 'persons'.</p>
+    <h3 id="photo">photo</h3>
+    <p>Use 'photo' rather than 'photograph'. For example, 'take a photo of your document' or 'photo ID'.</p>
     <h3 id="please">please</h3>
     <p>Use 'please' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="points-based system">points-based system</h3>
@@ -284,6 +286,8 @@ export const content = (
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
     <h3 id="sex">sex</h3>
     <p>Find out how to ask users for their sex in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the Home Office sex and gender pattern</A>.</p>
+    <h3 id="sibling">sibling</h3>
+    <p>Sibling is not plain English and may be hard to translate. Use 'brother or sister' instead. To be inclusive of people who do not identify as male or female, explain that this includes people of any gender. Say if this includes half or step brothers or sisters. For example: "This means someone of any gender you share at least one biological or legal parent with."</p>
     <h3 id="sign in">sign in</h3>
     <p>Use 'sign in' rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
     <h3 id="sorry">sorry</h3>
