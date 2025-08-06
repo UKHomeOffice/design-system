@@ -13,6 +13,7 @@ const siteTitle = config.title;
 
 export const SectionWrap: FC<{ children?: ReactNode, showBanner?: boolean }> = ({ children, showBanner }) => (
   <Section title={title} href="/accessibility/index-new" showBanner={showBanner} navigation={[
+    { href: '/accessibility/standard', text: 'Accessibility Standard' },
     { href: '/accessibility/page-structure', text: 'Page structure' },
     { href: '/accessibility/interactivity', text: 'Interactivity' },
     { href: '/accessibility/written-content', text: 'Written content' },
@@ -39,7 +40,7 @@ const Page: FC<PageProps> = () => (
         different needs and circumstances such as location, health and equipment.</p>
       <p>Delivering accessible and inclusive services is also in line with government standards and our legal
         responsibilities for equality and accessibility.</p>
-      <p>In order to provide consistency for users and product teams, we’ve developed a <A href="/accessibility/resources/standard">Home Office Accessibility Standard</A> that closely aligns to the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
+      <p>In order to provide consistency for users and product teams, we’ve developed the <A href="/accessibility/standard">Home Office Accessibility Standard</A> that closely aligns to the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
     </main>
   </SectionWrap>
 );
