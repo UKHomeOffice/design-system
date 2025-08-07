@@ -24,7 +24,7 @@ const Page: FC<PageProps> = () => (
       <span className="caption">{subsection}</span>
       {longTitle}
     </h1>
-<p>You must ensure that you understand and meet user needs.</p>
+    <p>You must ensure that you understand and meet user needs.</p>
     <p>When conducting user research you must include users with disabilities.</p>
     <h2>Index</h2>
     <ul className="plain">
