@@ -1,16 +1,48 @@
-import { FC, createElement as h } from 'react';
+import { FC, ReactNode, createElement as h } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { PageProps } from '@not-govuk/app-composer';
-import { A } from '@not-govuk/components';
-import config from '../../../../config';
+import { A, NavigationMenu } from '@not-govuk/components';
 
-import { SubsectionWrap, title as subsection } from '../index-new';
+import { Subsection } from '@hods/ucdm-subsection';
+import config from '../../../config';
 
-const siteTitle = config.title;
+import { SectionWrap, title as section } from '../';
 
 export const title = 'Accessibility Standard';
 const longTitle = title;
 const description = 'Accessibility Standard';
+const siteTitle = config.title;
+
+export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
+  <SectionWrap>
+    <Subsection title={title} side={
+      <NavigationMenu items={[
+        {
+          href: '/accessibility/standard/perceivable',
+          text: 'Perceivable'
+        },
+        {
+          href: '/accessibility/standard/operable',
+          text: 'Operable'
+        },
+        {
+          href: '/accessibility/standard/understandable',
+          text: 'Understandable'
+        },
+        {
+          href: '/accessibility/standard/robust',
+          text: 'Robust'
+        },
+        {
+          href: '/accessibility/standard/meet-user-needs',
+          text: 'Meet user needs'
+        }
+      ]} />
+    }>
+      {children}
+    </Subsection>
+  </SectionWrap>
+);
 
 const Page: FC<PageProps> = () => (
   <SubsectionWrap>
@@ -21,11 +53,11 @@ const Page: FC<PageProps> = () => (
       <meta name="og:description" content={description} />
     </Helmet>
     <h1>
-      <span className="caption">{subsection}</span>
+      <span className="caption">{section}</span>
       {longTitle}
     </h1>
     <p>As a public body, the Home Office has a legal responsibility to ensure that the digital services and systems we control are accessible to the widest possible group of people.</p>
-    <p>To provide consistency for users and product teams, we’ve developed a Home Office Accessibility Standard. This closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
+    <p>To provide consistency for users and product teams, we’ve developed the Home Office Accessibility Standard. This closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.</p>
     <table>
       <thead className="govuk-table__head">
         <tr className="govuk-table__row">

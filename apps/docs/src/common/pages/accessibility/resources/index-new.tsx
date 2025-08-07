@@ -18,32 +18,6 @@ export const SubsectionWrap: FC<{ children?: ReactNode }> = ({ children }) => (
     <Subsection title={title} side={
       <NavigationMenu items={[
         {
-          href: '/accessibility/resources/standard',
-          text: 'Accessibility standard',
-          items: [
-            {
-              href: '/accessibility/resources/standard/perceivable',
-              text: 'Perceivable'
-            },
-            {
-              href: '/accessibility/resources/standard/operable',
-              text: 'Operable'
-            },
-            {
-              href: '/accessibility/resources/standard/understandable',
-              text: 'Understandable'
-            },
-            {
-              href: '/accessibility/resources/standard/robust',
-              text: 'Robust'
-            },
-            {
-              href: '/accessibility/resources/standard/meet-user-needs',
-              text: 'Meet user needs'
-            }
-          ]
-        },
-        {
           href: '/accessibility/resources/leaders-guide',
           text: 'Leader\'s guide to accessibility'
         }
