@@ -25,13 +25,13 @@
   ],
   "dependencies": {
     "@hods/sass-base": "workspace:^0.5.1",
-    "@not-govuk/back-link": "^0.15.8",
-    "@not-govuk/breadcrumbs": "^0.15.8",
-    "@not-govuk/component-helpers": "^0.15.8",
+    "@not-govuk/back-link": "^0.16.3",
+    "@not-govuk/breadcrumbs": "^0.16.3",
+    "@not-govuk/component-helpers": "^0.16.3",
     "govuk-frontend": "5.7.1"
   },
   "peerDependencies": {
-    "@not-govuk/docs-components": "^0.15.8",
+    "@not-govuk/docs-components": "^0.16.3",
     "@storybook/addon-docs": "^6.5.16",
     "react": "^18.0.0"
   },
@@ -45,8 +45,8 @@
   },
   "devDependencies": {
     "@mdx-js/react": "1.6.22",
-    "@not-govuk/component-test-helpers": "^0.15.8",
-    "@not-govuk/navigation-menu": "^0.15.8",
+    "@not-govuk/component-test-helpers": "^0.16.3",
+    "@not-govuk/navigation-menu": "^0.16.3",
     "@types/react": "18.3.12",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
