@@ -61,7 +61,7 @@ export const content = (
 
     <h2 className="a-z-header" id="c">C</h2>
     <h3 id="capital letters">capital letters</h3>
-    <p>See guidance on capitalisation in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
+    <p>See guidance on capitalisation in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#capitalisation">GOV.UK style guide</A>.</p>
     <h3 id="casework">casework</h3>
     <p>Not 'case work'.</p>
     <h3 id="caseworker">caseworker</h3>
@@ -137,9 +137,9 @@ export const content = (
     <h3 id="electronic travel authorisation">electronic travel authorisation (ETA)</h3>
     <p>Lower case. You can use the acronym 'ETA' after the first full mention.</p>
     <h3 id="email">email</h3>
-    <p>See guidance on email in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
+    <p>See guidance on email in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#eg-etc-ie">GOV.UK style guide</A>.</p>
     <h3 id="email addresses">email addresses</h3>
-    <p>See guidance on email addresses in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
+    <p>See guidance on email addresses in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#email-addresses">GOV.UK style guide</A>.</p>
     <h3 id="enhanced dbs check">enhanced DBS check</h3>
     <p>Use 'enhanced DBS check' rather than 'enhanced disclosure'.</p>
     <h3 id="epassport">ePassport</h3>
@@ -187,14 +187,14 @@ export const content = (
     <h3 id="immigration rules">Immigration Rules</h3>
     <p>Capitalised. After first mention, you can refer to 'the rules', using lower case.</p>
     <h3 id="inclusive language">inclusive language</h3>
-    <p>Read our <A href="https://design.homeoffice.gov.uk/accessibility/inclusive-language">guidance on using inclusive language</A> in the Home Office design system.</p>
+    <p>Read our <A href="https://design.homeoffice.gov.uk/accessibility/written-content/inclusive-language">guidance on using inclusive language</A> in the Home Office design system.</p>
     <h3 id="indefinite leave to enter or remain">indefinite leave to enter or remain</h3>
     <p>'Indefinite leave to enter' and 'indefinite leave to remain' are officially called 'settlement'. For example, 'apply for UK settlement'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="j">J</h2>
     <h3 id="junk emails">junk emails</h3>
-    <p>See guidance on junk and spam emails in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
+    <p>See guidance on junk and spam emails in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#junk-and-spam-emails">GOV.UK style guide</A>.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="k">K</h2>
@@ -219,12 +219,12 @@ export const content = (
     <h3 id="migrant">migrant</h3>
     <p>Avoid using 'migrants'. Try to be specific, such as 'applicant', 'claimant', 'employee' or 'worker'. If you cannot be specific, use 'people'.</p>
     <h3 id="ministers">ministers</h3>
-    <p>See guidance on using titles in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide.</A></p>
+    <p>See guidance on using titles in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#minister">GOV.UK style guide.</A></p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="n">N</h2>
     <h3 id="naturalisation">naturalisation</h3>
-    <p>Naturalisation is a legal process someone goes through to become a <A href="https://design.homeoffice.gov.uk/content-style-guide#british%20citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
+    <p>Naturalisation is a legal process someone goes through to become a <A href="https://design.homeoffice.gov.uk/design-and-content/content/content-style-guide#british citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
     <h3 id="notification">notification</h3>
     <p>Avoid using 'notification' or 'notify'. Try to be specific about contact, such as, 'we will send you an email' or 'how do you want to be contacted?'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -265,7 +265,7 @@ export const content = (
 
     <h2 className="a-z-header" id="q">Q</h2>
     <h3 id="quotes and speech marks">quotes and speech marks</h3>
-    <p>See guidance on quotes and speech marks in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
+    <p>See guidance on quotes and speech marks in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#quotes-speech-marks">GOV.UK style guide</A>.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="r">R</h2>
@@ -291,17 +291,17 @@ export const content = (
     <h3 id="set up">set up</h3>
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
     <h3 id="sex">sex</h3>
-    <p>Find out how to ask users for their sex in <A href="https://design.homeoffice.gov.uk/patterns/ask-sex-or-gender">the Home Office sex and gender pattern</A>.</p>
+    <p>Find out how to ask users for their sex in <A href="https://design.homeoffice.gov.uk/design-system/patterns/ask-users-for/sex-gender">the Home Office sex and gender pattern</A>.</p>
     <h3 id="sibling">sibling</h3>
     <p>Sibling is not plain English and may be hard to translate. Use 'brother or sister' instead. To be inclusive of people who do not identify as male or female, explain that this includes people of any gender. Say if this includes half or step brothers or sisters. For example: "This means someone of any gender you share at least one biological or legal parent with."</p>
     <h3 id="sign in">sign in</h3>
     <p>Use 'sign in' rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p> 
     <h3 id="sorry">sorry</h3>
-    <p>Avoid using 'sorry'. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
+    <p>Avoid using 'sorry'. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces#tone">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="sovereign base areas">Sovereign Base Areas</h3>
     <p>Capitalised. You can use 'SBA' after the first full mention.</p>
     <h3 id="spam emails">spam emails</h3>
-    <p>See guidance on junk and spam emails in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
+    <p>See guidance on junk and spam emails in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#junk-and-spam-emails">GOV.UK style guide</A>.</p>
     <h3 id="sponsor">sponsor</h3>
     <p>Lower case. A company or person sponsoring an individual to work in the UK and supporting their visa application.</p>
     <h3 id="sponsorship reference number">sponsorship reference number</h3>
@@ -312,7 +312,7 @@ export const content = (
 
     <h2 className="a-z-header" id="t">T</h2>
     <h3 id="thank you">thank you</h3>
-    <p>Use 'thank you' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
+    <p>Use 'thank you' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces#tone">Writing for user interfaces</A> on GOV.UK.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="u">U</h2>
