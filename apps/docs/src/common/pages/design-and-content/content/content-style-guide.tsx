@@ -136,6 +136,10 @@ export const content = (
     <p>When using 'eGates' with the public, explain what it means the first time you use it. For example, 'you will have the option of using an eGate (electronic passport gate)'.</p>
     <h3 id="electronic travel authorisation">electronic travel authorisation (ETA)</h3>
     <p>Lower case. You can use the acronym 'ETA' after the first full mention.</p>
+    <h3 id="email">email</h3>
+    <p>See guidance on email in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
+    <h3 id="email addresses">email addresses</h3>
+    <p>See guidance on email addresses in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
     <h3 id="enhanced dbs check">enhanced DBS check</h3>
     <p>Use 'enhanced DBS check' rather than 'enhanced disclosure'.</p>
     <h3 id="epassport">ePassport</h3>
@@ -189,6 +193,8 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="j">J</h2>
+    <h3 id="junk emails">junk emails</h3>
+    <p>See guidance on junk and spam emails in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="k">K</h2>
@@ -289,11 +295,13 @@ export const content = (
     <h3 id="sibling">sibling</h3>
     <p>Sibling is not plain English and may be hard to translate. Use 'brother or sister' instead. To be inclusive of people who do not identify as male or female, explain that this includes people of any gender. Say if this includes half or step brothers or sisters. For example: "This means someone of any gender you share at least one biological or legal parent with."</p>
     <h3 id="sign in">sign in</h3>
-    <p>Use 'sign in' rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p>
+    <p>Use 'sign in' rather than 'log in' or 'login'. Use 'sign in to' rather than 'sign into'.</p> 
     <h3 id="sorry">sorry</h3>
     <p>Avoid using 'sorry'. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="sovereign base areas">Sovereign Base Areas</h3>
     <p>Capitalised. You can use 'SBA' after the first full mention.</p>
+    <h3 id="spam emails">spam emails</h3>
+    <p>See guidance on junk and spam emails in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</A>.</p>
     <h3 id="sponsor">sponsor</h3>
     <p>Lower case. A company or person sponsoring an individual to work in the UK and supporting their visa application.</p>
     <h3 id="sponsorship reference number">sponsorship reference number</h3>
