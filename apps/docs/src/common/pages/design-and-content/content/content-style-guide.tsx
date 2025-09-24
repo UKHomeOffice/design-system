@@ -220,6 +220,8 @@ export const content = (
     <p>Avoid using 'migrants'. Try to be specific, such as 'applicant', 'claimant', 'employee' or 'worker'. If you cannot be specific, use 'people'.</p>
     <h3 id="ministers">ministers</h3>
     <p>See guidance on using titles in the <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#minister">GOV.UK style guide.</A></p>
+    <h3 id="mental health">mental health</h3>
+    <p>See the <A href="https://service-manual.nhs.uk/content/inclusive-content/disabilities-and-conditions#mental-health">NHS Digital content guide</A> for guidance on how to be inclusive when writing about mental health.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="n">N</h2>
@@ -245,6 +247,10 @@ export const content = (
     <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="persons">persons</h3>
     <p>Use 'people' rather than 'persons'.</p>
+    <h3 id="phone">phone</h3>
+    <p>Use 'phone' instead of 'telephone'. If it is important, specify the type of phone. For example:
+      - 'you will need a smartphone to download the app'
+      - 'you will need a mobile phone that can receive text messages'</p>
     <h3 id="photo">photo</h3>
     <p>Use 'photo' rather than 'photograph'. For example, 'take a photo of your document' or 'photo ID'.</p>
     <h3 id="please">please</h3>
@@ -311,6 +317,10 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="t">T</h2>
+    <h3 id="telephone">telephone</h3>
+    <p>Use 'phone' instead of 'telephone'. If it is important, specify the type of phone. For example:
+      - 'you will need a smartphone to download the app'
+      - 'you will need a mobile phone that can receive text messages'</p>
     <h3 id="thank you">thank you</h3>
     <p>Use 'thank you' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces#tone">Writing for user interfaces</A> on GOV.UK.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
