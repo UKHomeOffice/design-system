@@ -249,8 +249,11 @@ export const content = (
     <p>Use 'people' rather than 'persons'.</p>
     <h3 id="phone">phone</h3>
     <p>Use 'phone' instead of 'telephone'. If it is important, specify the type of phone. For example:
-      - 'you will need a smartphone to download the app'
-      - 'you will need a mobile phone that can receive text messages'</p>
+    </p>
+    <ul>
+    <li>you will need a smartphone to download the app</li>
+    <li>you will need a mobile phone that can receive text messages</li>
+    </ul>
     <h3 id="photo">photo</h3>
     <p>Use 'photo' rather than 'photograph'. For example, 'take a photo of your document' or 'photo ID'.</p>
     <h3 id="please">please</h3>
@@ -319,8 +322,11 @@ export const content = (
     <h2 className="a-z-header" id="t">T</h2>
     <h3 id="telephone">telephone</h3>
     <p>Use 'phone' instead of 'telephone'. If it is important, specify the type of phone. For example:
-      - 'you will need a smartphone to download the app'
-      - 'you will need a mobile phone that can receive text messages'</p>
+    </p>
+    <ul>
+    <li>you will need a smartphone to download the app</li>
+    <li>you will need a mobile phone that can receive text messages</li>
+    </ul>
     <h3 id="thank you">thank you</h3>
     <p>Use 'thank you' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces#tone">Writing for user interfaces</A> on GOV.UK.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
