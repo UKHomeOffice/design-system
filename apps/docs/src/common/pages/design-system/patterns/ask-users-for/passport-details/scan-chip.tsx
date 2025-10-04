@@ -39,7 +39,7 @@ const Page: FC<PageProps> = () => (
     <p className="govuk-body">Users can only scan the chip in their passport, if they are using a device with a near field communication (NFC) chip. Phones that can make contactless payments have an NFC chip.</p>
     <p className="govuk-body">For external users, this normally means they need to be using a mobile phone app.</p>
 
-    <p className="govuk-body">To scan the chip, you need the information in the machine-readable zone (MRZ) of the passport. Users should <A href="/patterns/enter-passport-details/take-upload-photo">take or upload a photo</A>.</p>
+    <p className="govuk-body">To scan the chip, you need the information in the machine-readable zone (MRZ) of the passport. Users should <A href="/design-system/patterns/ask-users-for/passport-details/upload-photo">take or upload a photo</A>.</p>
 
     <p className="govuk-body">Scanning the chip in a passport has the highest level of trust. It also collects the largest amount of data, the chip contains:</p>
     <ul className="govuk-list govuk-list--bullet">
@@ -50,7 +50,7 @@ const Page: FC<PageProps> = () => (
 
     <p className="govuk-body">However not all passports have chips, so you’ll need to ask the user whether their passport has a chip or not. You might already know from the context that the passport must have a chip, for example it’s a UK passport from after 2006. To determine whether the passport has a chip, ask the user if the chip symbol is on the front cover (it may be a different colour).</p>
 
-    <p className="govuk-body">Some users with some passports may not be able to tell that their passport has a chip. You should provide an alternative method, such as <A href="/patterns/enter-passport-details/manually-enter-details">manual entry</A>.</p>
+    <p className="govuk-body">Some users with some passports may not be able to tell that their passport has a chip. You should provide an alternative method, such as <A href="/design-system/patterns/ask-users-for/passport-details/enter-details">manual entry</A>.</p>
 
     <div className="app-example">
       <img src={ePassportLogo} />
