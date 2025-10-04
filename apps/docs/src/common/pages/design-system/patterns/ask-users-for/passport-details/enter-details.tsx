@@ -28,7 +28,7 @@ const Page: FC<PageProps> = () => (
     <p className="govuk-body">Users enter passport details in response to a series of questions.</p>
 
     <h2 className="govuk-heading-l">When to use this pattern</h2>
-    <p className="govuk-body">Entering passport details manually can be a source of error. If you need more trust in the data, you could <A href="/patterns/enter-passport-details/take-upload-photo">take or upload photo</A> or <A href="/patterns/enter-passport-details/scan-passport-chip">scan the chip</A>.</p>
+    <p className="govuk-body">Entering passport details manually can be a source of error. If you need more trust in the data, you could <A href="/design-system/patterns/ask-users-for/passport-details/upload-photo">take or upload photo</A> or <A href="/design-system/patterns/ask-users-for/passport-details/scan-chip">scan the chip</A>.</p>
 
     <p className="govuk-body">Consider whether you need all the information, or just a small amount of it, such as the passport number. Depending on your users or journey, you may find evidence for separating over multiple pages or for including on one page.</p>
 

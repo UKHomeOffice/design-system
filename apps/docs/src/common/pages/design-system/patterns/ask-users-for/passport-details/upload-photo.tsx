@@ -32,7 +32,7 @@ const Page: FC<PageProps> = () => (
 
     <p className="govuk-body">This method is less trustworthy than reading directly from the chip, but more trustworthy than manual data entry.</p>
 
-    <p className="govuk-body">You may ask users to take or upload a photo, in order to <A href="/patterns/enter-passport-details/scan-passport-chip">scan the chip</A>.</p>
+    <p className="govuk-body">You may ask users to take or upload a photo, in order to <A href="/design-system/patterns/ask-users-for/passport-details/scan-chip">scan the chip</A>.</p>
 
     <h2 className="govuk-heading-l">How it works</h2>
     <p className="govuk-body">You should explain why they need to take a picture of their passport, and provide some helpful tips. Consider providing in-camera guidance, indicating when the passport is lined up and readable.</p>
