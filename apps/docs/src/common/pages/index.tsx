@@ -42,9 +42,9 @@ const Page: FC<PageProps> = props => (
 
         <div className="govuk-grid-column-one-third">
           <div className="display-panel">
-            <h3 className="govuk-heading-m">Home Office accessibility standards</h3>
-            <p>Our standard closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.</p>
-            <p><A href="/accessibility/resources/standard">Browse Home Office accessibility standards</A></p>
+            <h3 className="govuk-heading-m">Home Office Accessibility Standard</h3>
+            <p>Our standard closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA.</p>
+            <p><A href="/accessibility/standard">Browse Home Office Accessibility Standard</A></p>
           </div>
         </div>
 
