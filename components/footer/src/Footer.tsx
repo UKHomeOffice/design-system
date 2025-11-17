@@ -22,7 +22,7 @@ export type FooterProps = StandardProps & {
 };
 
 export const Footer: FC<FooterProps> = ({
-  children = 'A Home Office Digital, Data and Technology service',
+  children = 'A Home Office Digital service',
   classBlock,
   classModifiers,
   className,
