@@ -85,7 +85,7 @@ export const content = (
     <h3 id="consignor">consignor</h3>
     <p>Consignor is not plain English. Some users confuse 'consignor' with 'consignee'. If you need to use consignor,  use it with 'sender'. For example, sender (consignor).</p>
     <h3 id="contractions">contractions</h3>
-    <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users are not fluent in English. Research shows that contractions make content difficult to understand for people with limited fluency. See general guidance on contractions in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
+    <p>Avoid all contractions, including positive contractions like 'we'll', 'you've' or 'they're', if your users are not fluent in English. Research shows that contractions make content difficult to understand for people with limited English. See general guidance on contractions in <A href="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">the GOV.UK style guide</A>.</p>
     <h3 id="correct">correct</h3>
     <p>Use 'correct' rather than 'right'. For example, 'select the correct settlement route'.</p>
     <h3 id="correspondence">correspondence</h3>
