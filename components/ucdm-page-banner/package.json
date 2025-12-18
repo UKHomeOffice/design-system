@@ -1,6 +1,6 @@
 {
   "name": "@hods/ucdm-page-banner",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A banner to be displayed at the top of the page, underneath the header.",
   "main": "src/PageBanner.tsx",
   "sass": "assets/PageBanner.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.1",
+    "@hods/sass-base": "workspace:^0.5.2",
     "@not-govuk/component-helpers": "^0.15.8",
     "govuk-frontend": "5.7.1"
   },

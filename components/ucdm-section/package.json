@@ -1,6 +1,6 @@
 {
   "name": "@hods/ucdm-section",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A layout wrapper for sections within the UCD Manual.",
   "main": "src/Section.tsx",
   "sass": "assets/Section.scss",
@@ -24,9 +24,9 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.1",
-    "@hods/service-navigation": "workspace:^0.5.1",
-    "@hods/ucdm-page-banner": "workspace:^0.5.1",
+    "@hods/sass-base": "workspace:^0.5.2",
+    "@hods/service-navigation": "workspace:^0.5.2",
+    "@hods/ucdm-page-banner": "workspace:^0.5.2",
     "@not-govuk/component-helpers": "^0.15.8",
     "@not-govuk/head": "^0.15.8"
   },

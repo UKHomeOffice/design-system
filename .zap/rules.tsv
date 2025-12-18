@@ -2,6 +2,9 @@
 10027	IGNORE	(Information Disclosure - Suspicious Comments)
 10031	IGNORE	(User Controllable HTML Element Attribute)
 10099	IGNORE	(Source Code Disclosure - SQL)
+10021	IGNORE	(X-Content-Type-Options Header Missing)
+10063	IGNORE	(Permissions Policy Header Not Set)
+90004	IGNORE	(Insufficient Site Isolation Against Spectre Vulnerability)
 # We deliberately don't cache HTML as it may contain sensitive information
 10049	IGNORE	(Non-Storable Content)
 # Netlify seems to randomly generate these

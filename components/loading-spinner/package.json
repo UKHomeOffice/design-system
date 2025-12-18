@@ -1,6 +1,6 @@
 {
   "name": "@hods/loading-spinner",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A circular rotating loading spinner.",
   "main": "src/LoadingSpinner.tsx",
   "sass": "assets/LoadingSpinner.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.1",
+    "@hods/sass-base": "workspace:^0.5.2",
     "@not-govuk/component-helpers": "^0.15.8"
   },
   "peerDependencies": {
