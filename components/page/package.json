@@ -1,6 +1,6 @@
 {
   "name": "@hods/page",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A fully Home Office branded page with content sandwiched between the header and footer.",
   "main": "src/Page.tsx",
   "sass": "assets/Page.scss",
@@ -24,9 +24,9 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/footer": "workspace:^0.5.1",
-    "@hods/header": "workspace:^0.5.1",
-    "@hods/sass-base": "workspace:^0.5.1",
+    "@hods/footer": "workspace:^0.5.2",
+    "@hods/header": "workspace:^0.5.2",
+    "@hods/sass-base": "workspace:^0.5.2",
     "@not-govuk/button": "^0.15.8",
     "@not-govuk/component-helpers": "^0.15.8",
     "@not-govuk/head": "^0.15.8",

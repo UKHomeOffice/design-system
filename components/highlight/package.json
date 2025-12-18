@@ -1,6 +1,6 @@
 {
   "name": "@hods/highlight",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A component for highlighting words and short pieces of text.",
   "main": "src/Highlight.tsx",
   "sass": "assets/Highlight.scss",

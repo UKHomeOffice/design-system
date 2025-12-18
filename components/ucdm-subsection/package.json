@@ -1,6 +1,6 @@
 {
   "name": "@hods/ucdm-subsection",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A layout wrapper for subsections within the UCD Manual.",
   "main": "src/Subsection.tsx",
   "sass": "assets/Subsection.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.1",
+    "@hods/sass-base": "workspace:^0.5.2",
     "@not-govuk/back-link": "^0.15.8",
     "@not-govuk/breadcrumbs": "^0.15.8",
     "@not-govuk/component-helpers": "^0.15.8",

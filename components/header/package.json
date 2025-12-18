@@ -1,6 +1,6 @@
 {
   "name": "@hods/header",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A component that shows users whether they are on a Home Office service and which service they are using.",
   "main": "src/Header.tsx",
   "sass": "assets/Header.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.1",
+    "@hods/sass-base": "workspace:^0.5.2",
     "@not-govuk/anchor-list": "^0.15.8",
     "@not-govuk/component-helpers": "^0.15.8",
     "@not-govuk/link": "^0.15.8"

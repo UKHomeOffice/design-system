@@ -1,6 +1,6 @@
 {
   "name": "@hods/remix-example",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A Remix application with HODS components.",
   "private": true,
   "sideEffects": false,
@@ -24,7 +24,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@hods/components": "workspace:^0.5.1",
+    "@hods/components": "workspace:^0.5.2",
     "@not-govuk/components": "^0.15.8",
     "@remix-run/node": "^2.15.1",
     "@remix-run/react": "^2.15.1",

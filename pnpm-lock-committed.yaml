@@ -10,8 +10,8 @@ importers:
       '@babel/preset-env': 7.26.0
       '@babel/preset-react': 7.25.9
       '@babel/preset-typescript': 7.26.0
-      '@hods/components': workspace:^0.5.1
-      '@hods/plop-pack': workspace:^0.5.1
+      '@hods/components': workspace:^0.5.2
+      '@hods/plop-pack': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/components': ^0.15.8
       '@not-govuk/docs-components': ^0.15.8
@@ -102,11 +102,11 @@ importers:
     specifiers:
       '@apollo/client': 3.11.9
       '@graphql-tools/schema': 10.0.7
-      '@hods/components': workspace:^0.5.1
-      '@hods/sass-base': workspace:^0.5.1
-      '@hods/ucdm-page': workspace:^0.5.1
-      '@hods/ucdm-section': workspace:^0.5.1
-      '@hods/ucdm-subsection': workspace:^0.5.1
+      '@hods/components': workspace:^0.5.2
+      '@hods/sass-base': workspace:^0.5.2
+      '@hods/ucdm-page': workspace:^0.5.2
+      '@hods/ucdm-section': workspace:^0.5.2
+      '@hods/ucdm-subsection': workspace:^0.5.2
       '@not-govuk/anchor-list': ^0.15.8
       '@not-govuk/app-composer': ^0.15.8
       '@not-govuk/app-plop-pack': ^0.15.8
@@ -186,7 +186,7 @@ importers:
 
   apps/next-example:
     specifiers:
-      '@hods/components': workspace:^0.5.1
+      '@hods/components': workspace:^0.5.2
       '@not-govuk/simple-components': ^0.15.8
       '@types/node': 22.9.0
       '@types/react': 18.3.12
@@ -221,7 +221,7 @@ importers:
 
   apps/remix-example:
     specifiers:
-      '@hods/components': workspace:^0.5.1
+      '@hods/components': workspace:^0.5.2
       '@not-govuk/components': ^0.15.8
       '@remix-run/dev': ^2.15.1
       '@remix-run/node': ^2.15.1
@@ -280,7 +280,7 @@ importers:
 
   components/a-z-navigation:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-test-helpers': ^0.15.8
       '@not-govuk/navigation-menu': ^0.15.8
@@ -305,7 +305,7 @@ importers:
 
   components/alert:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -351,8 +351,8 @@ importers:
 
   components/date-time:
     specifiers:
-      '@hods/date-display': workspace:^0.5.1
-      '@hods/time': workspace:^0.5.1
+      '@hods/date-display': workspace:^0.5.2
+      '@hods/time': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -376,7 +376,7 @@ importers:
 
   components/expandable-banner:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -399,7 +399,7 @@ importers:
 
   components/footer:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -424,7 +424,7 @@ importers:
 
   components/header:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/anchor-list': ^0.15.8
       '@not-govuk/component-helpers': ^0.15.8
@@ -472,7 +472,7 @@ importers:
 
   components/loading-spinner:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -495,9 +495,9 @@ importers:
 
   components/page:
     specifiers:
-      '@hods/footer': workspace:^0.5.1
-      '@hods/header': workspace:^0.5.1
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/footer': workspace:^0.5.2
+      '@hods/header': workspace:^0.5.2
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/button': ^0.15.8
       '@not-govuk/button-group': ^0.15.8
@@ -532,7 +532,7 @@ importers:
 
   components/pagination:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@jest/globals': 29.7.0
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
@@ -563,7 +563,7 @@ importers:
 
   components/service-navigation:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -588,7 +588,7 @@ importers:
 
   components/status-message:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/anchor-list': ^0.15.8
       '@not-govuk/component-helpers': ^0.15.8
@@ -636,8 +636,8 @@ importers:
 
   components/timeline:
     specifiers:
-      '@hods/date-time': workspace:^0.5.1
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/date-time': workspace:^0.5.2
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -661,7 +661,7 @@ importers:
 
   components/ucdm-header:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -688,12 +688,12 @@ importers:
 
   components/ucdm-page:
     specifiers:
-      '@hods/footer': workspace:^0.5.1
-      '@hods/sass-base': workspace:^0.5.1
-      '@hods/service-navigation': workspace:^0.5.1
-      '@hods/ucdm-header': workspace:^0.5.1
-      '@hods/ucdm-section': workspace:^0.5.1
-      '@hods/ucdm-subsection': workspace:^0.5.1
+      '@hods/footer': workspace:^0.5.2
+      '@hods/sass-base': workspace:^0.5.2
+      '@hods/service-navigation': workspace:^0.5.2
+      '@hods/ucdm-header': workspace:^0.5.2
+      '@hods/ucdm-section': workspace:^0.5.2
+      '@hods/ucdm-subsection': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/button': ^0.15.8
       '@not-govuk/button-group': ^0.15.8
@@ -733,7 +733,7 @@ importers:
 
   components/ucdm-page-banner:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -758,9 +758,9 @@ importers:
 
   components/ucdm-section:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
-      '@hods/service-navigation': workspace:^0.5.1
-      '@hods/ucdm-page-banner': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
+      '@hods/service-navigation': workspace:^0.5.2
+      '@hods/ucdm-page-banner': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/component-helpers': ^0.15.8
       '@not-govuk/component-test-helpers': ^0.15.8
@@ -787,7 +787,7 @@ importers:
 
   components/ucdm-subsection:
     specifiers:
-      '@hods/sass-base': workspace:^0.5.1
+      '@hods/sass-base': workspace:^0.5.2
       '@mdx-js/react': 1.6.22
       '@not-govuk/back-link': ^0.15.8
       '@not-govuk/breadcrumbs': ^0.15.8
@@ -818,21 +818,21 @@ importers:
 
   lib/components:
     specifiers:
-      '@hods/a-z-navigation': workspace:^0.5.1
-      '@hods/alert': workspace:^0.5.1
-      '@hods/date-display': workspace:^0.5.1
-      '@hods/date-time': workspace:^0.5.1
-      '@hods/expandable-banner': workspace:^0.5.1
-      '@hods/footer': workspace:^0.5.1
-      '@hods/header': workspace:^0.5.1
-      '@hods/highlight': workspace:^0.5.1
-      '@hods/loading-spinner': workspace:^0.5.1
-      '@hods/page': workspace:^0.5.1
-      '@hods/pagination': workspace:^0.5.1
-      '@hods/sass-base': workspace:^0.5.1
-      '@hods/status-message': workspace:^0.5.1
-      '@hods/time': workspace:^0.5.1
-      '@hods/timeline': workspace:^0.5.1
+      '@hods/a-z-navigation': workspace:^0.5.2
+      '@hods/alert': workspace:^0.5.2
+      '@hods/date-display': workspace:^0.5.2
+      '@hods/date-time': workspace:^0.5.2
+      '@hods/expandable-banner': workspace:^0.5.2
+      '@hods/footer': workspace:^0.5.2
+      '@hods/header': workspace:^0.5.2
+      '@hods/highlight': workspace:^0.5.2
+      '@hods/loading-spinner': workspace:^0.5.2
+      '@hods/page': workspace:^0.5.2
+      '@hods/pagination': workspace:^0.5.2
+      '@hods/sass-base': workspace:^0.5.2
+      '@hods/status-message': workspace:^0.5.2
+      '@hods/time': workspace:^0.5.2
+      '@hods/timeline': workspace:^0.5.2
       '@not-govuk/components': 0.15.8
       jest: 29.7.0
       jest-environment-jsdom: 29.7.0
@@ -863,7 +863,7 @@ importers:
 
   lib/create:
     specifiers:
-      '@hods/plop-pack': workspace:^0.5.1
+      '@hods/plop-pack': workspace:^0.5.2
       '@not-govuk/create': ^0.15.8
       '@not-govuk/plop-pack-internal': ^0.15.8
       plop: 3.1.1
