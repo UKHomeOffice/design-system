@@ -1,6 +1,6 @@
 {
   "name": "@hods/service-navigation",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A component to help users understand that they’re using your service and lets them navigate around your service.",
   "main": "src/ServiceNavigation.tsx",
   "sass": "assets/ServiceNavigation.scss",
@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.1",
+    "@hods/sass-base": "workspace:^0.5.2",
     "@not-govuk/component-helpers": "^0.15.8",
     "@not-govuk/service-navigation": "^0.15.8"
   },
