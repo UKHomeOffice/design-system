@@ -1,0 +1,31 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 3
+    commit-message:
+      prefix: "github-actions"
+    labels:
+      - "dependencies"
+  - package-ecosystem: "pnpm"
+    directories:
+      - "/"
+      - "apps/**"
+      - "components/**"
+      - "components-internal/**"
+      - "lib/**"
+      - "lib-govuk/**"
+      - "packages/**"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "Europe/London"
+    cooldown:
+      default-days: 3
+    commit-message:
+      prefix: "npm"
+    labels:
+      - "dependencies"
