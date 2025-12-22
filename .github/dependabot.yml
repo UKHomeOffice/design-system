@@ -13,12 +13,12 @@ updates:
   - package-ecosystem: "pnpm"
     directories:
       - "/"
-      - "apps/**"
-      - "components/**"
-      - "components-internal/**"
-      - "lib/**"
-      - "lib-govuk/**"
-      - "packages/**"
+      - "apps/*"
+      - "components/*"
+      - "components-internal/*"
+      - "lib/*"
+      - "lib-govuk/*"
+      - "packages/*"
     schedule:
       interval: "daily"
       time: "09:00"
