@@ -223,7 +223,7 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="m">M</h2>
-    <h3 id="maiden name">Maiden name</h3>
+    <h3 id="maiden name">maiden name</h3>
     <p>The term 'maiden name' implies that only women change their family name after marriage, but people of any gender may change their last name for many reasons — not just marriage. Consider using more inclusive terms such as:</p>
     <ul>
     <li>previous last name</li>
