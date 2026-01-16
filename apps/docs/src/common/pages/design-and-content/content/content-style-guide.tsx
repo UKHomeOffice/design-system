@@ -228,7 +228,7 @@ export const content = (
     <ul>
     <li>previous last name</li>
     <li>previous family name</li>
-    <li>name your were given at birth and changed later</li>
+    <li>name you were given at birth and changed later</li>
     <li>name before marriage or civil partnership</li>
     </ul>
     <h3 id="migrant">migrant</h3>
