@@ -176,6 +176,13 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="i">I</h2>
+    <h3 id="identity">identity</h3>
+    <p>Use 'identity' rather than 'ID' because it is plain English and easier to translate. For example, 'prove your identity'. Only use 'ID' when:</p>
+    <ul>
+    <li>you have evidence users understand it</li>
+    <li>you are using it to mean 'identity document'</li>
+    <li>it is an official service name, for example, the <A href="https://www.gov.uk/guidance/using-the-uk-immigration-id-check-app">ID Check app</A></li>  
+    </ul>
     <h3 id="immigration adviser">immigration adviser</h3>
     <p>An immigration expert regulated by the <A href="https://www.gov.uk/government/organisations/office-of-the-immigration-services-commissioner/about">OISC</A> who advises on issues like visas, citizenship, employment, asylum and deportation. Some are qualified to represent clients at immigration tribunals and court hearings.</p>
     <h3 id="immigration bail">immigration bail</h3>
@@ -216,6 +223,14 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="m">M</h2>
+    <h3 id="maiden name">maiden name</h3>
+    <p>The term 'maiden name' implies that only women change their family name after marriage, but people of any gender may change their last name for many reasons — not just marriage. Consider using more inclusive terms such as:</p>
+    <ul>
+    <li>previous last name</li>
+    <li>previous family name</li>
+    <li>name your were given at birth and changed later</li>
+    <li>name before marriage or civil partnership</li>
+    </ul>
     <h3 id="migrant">migrant</h3>
     <p>Avoid using 'migrants'. Try to be specific, such as 'applicant', 'claimant', 'employee' or 'worker'. If you cannot be specific, use 'people'.</p>
     <h3 id="ministers">ministers</h3>
@@ -350,7 +365,7 @@ export const content = (
     <h3 id="verify">verify</h3>
     <p>Consider using 'check' instead of 'verify' if you are asking users to check the accuracy of something. For example, 'check your answers' or 'check a passport number'.</p>
     <h3 id="visa">visa</h3>
-    <p>Use 'visa' rather than terms like 'route'. For example, use 'graduate visa' rather than 'graduate route'.</p>
+    <p>Use 'visa' rather than 'route'. For example, use 'Graduate visa' rather than 'Graduate route'. Always capitalise the full name of the visa but keep the word 'visa' lower case. For example, 'Skilled Worker visa' or 'Standard Visitor visa'.</p>
     <h3 id="visa application centre">visa application centre (VAC)</h3>
     <p>Visa application centres (VAC) are located outside the UK whereas UKVCAS service points are in the UK. Use upper case when referring to UK VACs, as in 'find a UK Visa Application Centre'. Do not use 'visa section', 'visa processing post' or 'visa issuing office'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
