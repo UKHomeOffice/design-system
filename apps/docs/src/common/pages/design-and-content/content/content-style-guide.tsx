@@ -55,6 +55,8 @@ export const content = (
     <p>Write 'overseas territories' in lower case.</p>
     <h3 id="british overseas territories citizen">British overseas territories citizen</h3>
     <p>Write 'overseas territories citizen' in lower case.</p>
+    <h3 id="british passport">British passport</h3>
+    <p>Avoid using 'UK passport'. The official term for a passport issued by HMPO is a 'British passport'.</p>
     <h3 id="business day">business day</h3>
     <p>Use 'working day' instead of 'business day' for any day Monday to Friday. Not everyone uses a Monday to Friday workweek, so consider explaining what you mean by working day. For example, 'You will usually get a decision within 2 working days. Working days are Monday to Friday, not including <A href="https://www.gov.uk/bank-holidays">UK public holidays'</A>.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -347,6 +349,8 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="u">U</h2>
+    <h3 id="UK passport">UK passport</h3>
+    <p>Avoid using 'UK passport'. The official term for a passport issued by HMPO is a 'British passport'.</p>
     <h3 id="uk residence card">UK residence card</h3>
     <p>Lower case. Also called a 'biometric residence card (BRC)' or 'EEA biometric residence card'.</p>
     <h3 id="uk visa and citizenship application services">UK Visa and Citizenship Application Services (UKVCAS)</h3>
