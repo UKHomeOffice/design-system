@@ -24,7 +24,7 @@ const Page: FC<PageProps> = ({}) => (
       <span className="caption">{subsection}</span>
       {longTitle}
     </h1>
-    <p className="lede"><A href="https://design-system.service.gov.uk/styles/typography/">GDS Transport</A>, the typeface used on GOV.UK, is restricted by license for use on gov.uk domains. Internal services can't use GDS Transport and should instead use the open source <A href="https://fonts.google.com/specimen/Roboto#standard-styles">Roboto</A> typeface.</p>
+    <p className="lede"><a href="https://design-system.service.gov.uk/styles/typeface/" target="_blank">GDS Transport</a> (opens in a new tab), the typeface used on GOV.UK, is restricted by license for use on gov.uk domains. Internal services can't use GDS Transport and should instead use the open source <A href="https://fonts.google.com/specimen/Roboto#standard-styles">Roboto</A> typeface.</p>
     <p className="lede">Roboto is similar to Helvetica and Arial but is optimised for screens, making it easier to read online.</p>
 
     <section>
