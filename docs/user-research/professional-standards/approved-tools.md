@@ -5,7 +5,7 @@ Approved tools
 
 The tools and software listed below are deemed secure and suitable for use as of July 2025.  
 
-You must not download and install alternatives without approval. For any questions on other tools and software not listed, [contact UCD Operations.](ucdops@homeoffice.gov.uk)
+You must not download and install alternatives without approval. For any questions on other tools and software not listed, [contact UCD Operations.](mailto:ucdops@homeoffice.gov.uk)
 
 -	collaboration - Slack, Microsoft Teams, SharePoint
 - [User research library](https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/UR-library.aspx) – a repository of insights from across Digital, Data and Technology (DDaT) 
@@ -16,4 +16,4 @@ You must not download and install alternatives without approval. For any�
 -	external transcription - [Amazon Web Services](https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/Language-services.aspx)
 -	external interpreter/translation -  [Home Office Interpreter Language Service Unit (ILSU) and The Big Word](https://homeofficegovuk.sharepoint.com/sites/UCDcommunityHub/SitePages/Language-services.aspx)
 
-Ask your line manager or [contact UCD Operations](ucdops@homeoffice.gov.uk) if you need any further information on these tools.
+Ask your line manager or [contact UCD Operations](mailto:ucdops@homeoffice.gov.uk) if you need any further information on these tools.

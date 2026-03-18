@@ -95,7 +95,7 @@ const Page: FC<PageProps> = () => (
     <h3>Download the dependencies</h3>
     <p>Run <code>npm install</code> to download the dependencies to make your prototype work. These are stored in the <code>node_modules</code> folder. They are specific to this prototype and do not affect any of your other prototypes.</p>
 
-    <h3>View the prototype locally</h3>
+    <h3 id="view-prototype-locally">View the prototype locally</h3>
     <p>In terminal, enter:</p>
     <pre><code>
       npm run dev

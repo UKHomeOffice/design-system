@@ -125,7 +125,7 @@ const Page: FC<PageProps> = () => (
 
     <h3 id="tools">Readability tools</h3>
     <ul>
-      <li><A href="https://govspeak-preview.herokuapp.com">Govspeak preview</A> – use is a simplified ‘markup‘ language based on Markdown, to help format content for GOV.UK</li>
+      <li><A href="https://govspeak-preview.publishing.service.gov.uk/">Govspeak preview</A> – use is a simplified ‘markup‘ language based on Markdown, to help format content for GOV.UK</li>
       <li><A href="https://www.grammarly.com">Grammarly</A> – writing assistant</li>
       <li><A href="https://www.webfx.com/tools/read-able/">Readablel (webfx.com)</A> – readability test tool </li>
       <li><A href="https://rewordify.com/">Rewordify.com</A> -  online software that improves reading, learning, and teaching </li>
