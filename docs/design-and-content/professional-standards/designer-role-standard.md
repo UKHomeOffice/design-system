@@ -180,7 +180,7 @@ When designing content and services, we use: 
 
 ## Accessibility  
 
-When designing services we must ensure they are usable by all and meet accessibility requirements. This means that we must adhere [to the Home Office accessibility standard.](https://design.homeoffice.gov.uk/accessibility/resources/standard) 
+When designing services we must ensure they are usable by all and meet accessibility requirements. This means that we must adhere [to the Home Office accessibility standard.](https://design.homeoffice.gov.uk/accessibility/standard) 
 
 ## Best practice guidance 
 
