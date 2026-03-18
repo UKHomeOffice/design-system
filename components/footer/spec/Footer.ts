@@ -17,9 +17,11 @@ describe('Footer', () => {
     beforeEach(async() => {
       render(h(Footer, {
         navigation: [
-          { href: '/feedback', text: 'Feedback' },
-          { href: '/help', text: 'Help' },
-          { href: 'https://gov.uk/', text: 'Gov.UK home' }
+          { href: '/design-system', text: 'Design system' },
+          { href: '/accessibility', text: 'Accessibility' },
+          { href: '/design-and-content', text: 'Design and content' },
+          { href: '/user-research', text: 'User research' },
+          { href: '/community', text: 'Community' }
         ]
       }, 'Custom content.'));
     });
