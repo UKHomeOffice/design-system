@@ -53,7 +53,7 @@ const Page: FC<PageProps> = () => (
     <p><A href="https://github.com/UKHomeOffice/design-system/discussions">Check if there are any open discussions</A> about your suggestion on the design system GitHub.</p>
     <h3>2. Create a new discussion</h3>
     <p>If there is not a discussion, <A href="https://github.com/UKHomeOffice/design-system/discussions/new">start a new discussion</A> on GitHub. Select ‘ideas’ from the ‘select category’ list when starting to create the discussion.</p>
-    <p>For help, use our <A href="./discuss-on-github">GitHub guide</A> or ask the <A href="./design-system-working-group">working group</A>.</p>
+    <p>For help, use our <A href="./design-system/contribute/discuss-on-github">GitHub guide</A> or ask the <A href="./design-system/contribute/working-group">working group</A>.</p>
     <p>When discussing a proposal for a new component, try to explain why it should be included in our design system. If you can, include screenshots and research findings.</p>
     <h3>3. Share the discussion</h3>
     <p>Let the user-centred design and accessibility community know that you have posted a new discussion and ask their comments.</p>
@@ -63,7 +63,7 @@ const Page: FC<PageProps> = () => (
     <p>Use the comments to make a suggestion for an improvement or a new entry.</p>
     <p>Contact <A href="mailto:ucdops@homeoffice.gov.uk">ucdops@homeoffice.gov.uk</A> if you'd like feedback on your discussion or for the design system working group to review it.</p>
     <h3>5. Updating the design system</h3>
-    <p>The <A href="./design-system-working-group">design system working group</A> regularly assess discussions using the <A href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribute criteria</A>.</p>
+    <p>The <A href="./design-system/contribute/working-group">design system working group</A> regularly assess discussions using the <A href="https://design-system.service.gov.uk/community/contribution-criteria/">GOV.UK design system contribute criteria</A>.</p>
     <p>If the pattern or component is  ready to be published, the working group will then raise an issue and progress this work further.</p>
     <p>The working group will share updates in the user-centred design community email about proposal decisions and changes to the Home Office design system.</p>
   </SubsectionWrap>
