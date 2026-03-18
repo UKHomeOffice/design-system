@@ -47,7 +47,7 @@ describe('Page', () => {
     it('contains the footer content', async () => expect(screen.getByRole('contentinfo')).toHaveTextContent('Custom'));
     it('contains the footer navigation', async () => expect(screen.getByRole('contentinfo')).toHaveTextContent('Feedback'));
     it('contains the service name', async () => expect(screen.getByRole('banner')).toHaveTextContent('Service name'));
-    it('contains the navigation links', async () => expect(screen.getByRole('banner')).toHaveTextContent('Components'));
+    it('contains the navigation links', async () => expect(screen.getByRole('banner')).toHaveTextContent('Design system'));
     it('contains the sign-out link', async () => expect(screen.getByRole('banner')).toHaveTextContent('Sign out'));
   });
 });
