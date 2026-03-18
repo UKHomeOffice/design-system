@@ -86,7 +86,7 @@ documentation to [Netlify].
 
 
 [set up your project]: ./get-started
-[pnpm]: https://pnpm.js.org/
+[pnpm]: https://pnpm.io
 [Applications]: https://not-govuk/
 [Libraries]: https://not-govuk/
 [Components]: https://not-govuk/
@@ -95,7 +95,7 @@ documentation to [Netlify].
 [components/]: ./components/
 [pnpm-workspaces.yaml]: ./pnpm-workspaces.yaml
 [plopfile.js]: ./plopfile.js
-[install pnpm]: https://pnpm.js.org/en/installation
+[install pnpm]: https://pnpm.io/installation
 [PLOP]: https://plopjs.com/
 [documentation application]: ./apps/docs
 [GitHub Actions]: https://github.com/features/actions
