@@ -277,6 +277,8 @@ export const content = (
     <p>Use 'please' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="points-based system">points-based system</h3>
     <p>Lower case and hyphenate 'points-based'.</p>
+    <h3 id="poise">POISE</h3>
+    <p>Stands for Planned Office Information System Environment, the Home Office's internal computer system. Use POISE, not Poise. You do not need to write it out in full.</p>
     <h3 id="police national computer">Police National Computer (PNC)</h3>
     <p>Upper case. You can use 'PNC' after the first full mention.</p>
     <h3 id="postal">postal</h3>
