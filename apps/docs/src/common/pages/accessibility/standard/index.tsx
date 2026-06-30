@@ -536,7 +536,7 @@ const Page: FC<PageProps> = () => (
             <A href="/accessibility/standard/understandable#rr3.3.3">3.3.3 - Error suggestions</A>
           </td>
           <td className="govuk-table__cell">
-            <p>When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field. Password fields should allow a user to view and check the entry.</p>
+            <p>When an error is detected, suggestions for correcting the issue must be provided unless the suggestion compromises security.</p>
           </td>
         </tr>
         <tr className="govuk-table__row">
