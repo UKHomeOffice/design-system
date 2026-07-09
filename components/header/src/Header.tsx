@@ -53,13 +53,23 @@ export const Header: FC<HeaderProps> = ({
             </div>
           ) }
           { signOutHref && (
-            <div className={classes('account-menu')}>
-              <ul>
-                <li><A classBlock="hods-header__link" href={accountHref}>{username}</A></li>
-                <li><A classBlock="hods-header__link" href={signOutHref}>{signOutText}</A></li>
-              </ul>
-            </div>
-          ) }
+      <div className={classes('account-menu')}>
+        <ul>
+          <li>
+            {accountHref ? (
+              <A classBlock="hods-header__link" href={accountHref}>{username}</A>
+              ) : (<p className="hods-header__link">{username}</p>
+              )}
+          </li>
+          <li>
+            {signOutHref ? (
+              <A classBlock="hods-header__link" href={signOutHref}>{signOutText}</A>
+            ) : (<p className="hods-header__link">{signOutText}</p>
+            )}
+          </li>
+        </ul>
+      </div>
+    ) }
         </div>
         { navigation && (
           <nav className={classes('navigation')}>
