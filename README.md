@@ -91,8 +91,8 @@ We publish our documentation site when pushing to the `master` branch.
 [apps/]: ./apps/
 [lib/]: ./lib/
 [components/]: ./components/
-[pnpm-workspaces.yaml]: ./pnpm-workspaces.yaml
-[plopfile.js]: ./plopfile.js
+[pnpm-workspaces.yaml]: ./pnpm-workspace.yaml
+[plopfile.js]: ./plopfile.mjs
 [install pnpm]: https://pnpm.io/installation
 [PLOP]: https://plopjs.com/
 [documentation application]: ./apps/docs
