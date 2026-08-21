@@ -42,7 +42,7 @@ It is ok to share OneDrive / SharePoint links on Slack without attaching the act
 
 As it is a cloud based solution, some teams may not be able to use it for security reasons – in such cases you should use Sketch. Figma has been assured by the Data Protection Office and Home Office Cyber Security, but so far is only available as a paid account in the Enablers portfolio.
   
--	Slack - submit an IT Now request with digital or POISE email account. Your delivery team will add you to groups and channel
+-	Slack - submit an IT Now request with your digital or POISE email account. Your team will add you to appropriate groups and channels.
   
 -	Trello – self sign up with your digital email account
   
