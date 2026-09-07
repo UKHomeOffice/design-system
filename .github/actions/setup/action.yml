@@ -4,7 +4,7 @@ inputs:
   node:
     description: The version of Node.js to use.
     required: false
-    default: 22
+    default: 24
   frozen-lockfile:
     description: Whether to require a frozen lock-file
     required: false

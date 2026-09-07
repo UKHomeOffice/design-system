@@ -21,7 +21,7 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=24"
   },
   "dependencies": {
     "@hods/components": "workspace:^0.5.2",
