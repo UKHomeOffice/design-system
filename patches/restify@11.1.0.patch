@@ -1,0 +1,31 @@
+diff --git a/lib/server.js b/lib/server.js
+index a5865323df4a55b08b850b5aef7f16d0b0adc83b..d79ef7c9929157c61b96d961e47b31465583ebb0 100644
+--- a/lib/server.js
++++ b/lib/server.js
+@@ -11,7 +11,6 @@ var _ = require('lodash');
+ var assert = require('assert-plus');
+ var errors = require('restify-errors');
+ var mime = require('mime');
+-var spdy = require('spdy');
+ var vasync = require('vasync');
+ 
+ var Chain = require('./chain');
+@@ -28,6 +27,7 @@ var patchResponse = require('./response');
+ 
+ var domain;
+ var http2;
++var spdy;
+ 
+ patchResponse(http.ServerResponse);
+ patchRequest(http.IncomingMessage);
+@@ -187,6 +187,10 @@ function Server(options) {
+     ];
+ 
+     if (options.spdy) {
++        if (!spdy) {
++            spdy = require('spdy');
++        }
++
+         this.spdy = true;
+         this.server = spdy.createServer(options.spdy);
+     } else if (options.http2) {
