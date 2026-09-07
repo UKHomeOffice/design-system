@@ -20,6 +20,6 @@ version="${1}"
 pnpm recursive update "@${name}/*@^${version}"
 
 # Update references in peerDependencies
-sed -i -E "s/\"@(${name})\/([^\"]*)\":([^\"]*)\"[^:]+\"/\"@\1\/\2\":\3\"^${version}\"/g" \
+sed -i '' "s/\"@\(${name}\)\/\([^\"]*\)\":\([^\"]*\)\"[^:]*\"/\"@\1\/\2\":\3\"^${version}\"/g" \
   lib/*/skel/*/package.json* \
   {apps,components,lib}/*/package.json
