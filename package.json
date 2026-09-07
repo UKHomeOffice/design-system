@@ -94,5 +94,10 @@
   "bugs": {
     "url": "https://github.com/UKHomeOffice/design-system/issues"
   },
-  "homepage": "https://github.com/UKHomeOffice/design-system#readme"
+  "homepage": "https://github.com/UKHomeOffice/design-system#readme",
+  "pnpm": {
+    "patchedDependencies": {
+      "restify@11.1.0": "patches/restify@11.1.0.patch"
+    }
+  }
 }
