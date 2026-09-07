@@ -243,12 +243,14 @@ export const content = (
 
     <h2 className="a-z-header" id="n">N</h2>
     <h3 id="naturalisation">naturalisation</h3>
-    <p>Naturalisation is a legal process someone goes through to become a <A href="https://design.homeoffice.gov.uk/design-and-content/content/content-style-guide#british citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
+    <p>Naturalisation is a legal process someone goes through to become a <A href="#british citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
     <h3 id="notification">notification</h3>
     <p>Avoid using 'notification' or 'notify'. Try to be specific about contact, such as, 'we will send you an email' or 'how do you want to be contacted?'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="o">O</h2>
+    <h3 id="online-meeting">online meeting</h3>
+    <p>See <A href="#video-call">video call</A>.</p>
     <h3 id="online status">online status</h3>
     <p>Avoid using 'online status' or 'digital status' when referring to someone's immigration status. Use 'online immigration status' instead.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -297,12 +299,14 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="r">R</h2>
+     <h3 id="rank">rank (police and armed forces)</h3>
+    <p>Capitalise the rank before the name, as in 'Detective Inspector Joan Smith'. Use lower case when it follows the name, as in 'Joan Smith, a detective inspector'.</p>
     <h3 id="refugee">refugee</h3>
     <p>Only use refugee to describe an asylum claimant who has been granted refugee status.</p>
-    <h3 id="rank">rank (police and armed forces)</h3>
-    <p>Capitalise the rank before the name, as in 'Detective Inspector Joan Smith'. Use lower case when it follows the name, as in 'Joan Smith, a detective inspector'.</p>
     <h3 id="register">register</h3>
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
+    <h3 id="remote">remote</h3>
+    <p>See <A href="#video-call">video call</A>.</p>
     <h3 id="right">right</h3>
     <p>Use 'correct' rather than 'right'. For example, 'Select the correct settlement route'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -368,6 +372,8 @@ export const content = (
     <h2 className="a-z-header" id="v">V</h2>
     <h3 id="validate">validate</h3>
     <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
+    <h3 id="video-call">video call</h3>
+    <p>Use 'video call' for meetings or appointments that allow participants to see and hear each other using devices with cameras and screens. For example, 'your appointment will be a video call'. Avoid less specific terms like 'remote', 'virtual meeting', 'online meeting' or 'video conference'.</p>
     <h3 id="verify">verify</h3>
     <p>Consider using 'check' instead of 'verify' if you are asking users to check the accuracy of something. For example, 'check your answers' or 'check a passport number'.</p>
     <h3 id="visa">visa</h3>
