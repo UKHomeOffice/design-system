@@ -6,20 +6,20 @@ Trust these notes first. Search only when this file is incomplete or appears wro
 
 This repository is the Home Office Design System: a pnpm monorepo of React/TypeScript components, supporting libraries, and example/documentation apps that extend the GOV.UK Design System for Home Office services. The workspace currently has about 30 pnpm projects under `apps/**`, `components/**`, and `lib/**`; `pnpm-workspace.yaml` also includes currently absent/future `components-internal/**`, `lib-govuk/**`, and `packages/**` paths.
 
-Primary runtimes/frameworks: Node.js 24, pnpm 7, TypeScript, React 18, Jest 29 with ts-jest, Storybook 6, Webpack 5, Cypress 13, Next.js 15 for `apps/next-example`, and Remix/Vite for `apps/remix-example`. CI uses Ubuntu with Node 22 and 24 for LTS tests, and Node 24 for builds/app checks. The repo has no root lint script; lint exists only in some apps.
+Primary runtimes/frameworks: Node.js 24, pnpm 12.3.4, TypeScript, React 18, Jest 29 with ts-jest, Storybook 6, Webpack 5, Cypress 13, Next.js 15 for `apps/next-example`, and Remix/Vite for `apps/remix-example`. CI uses Ubuntu with Node 22 and 24 for LTS tests, and Node 24 for builds/app checks. The repo has no root lint script; lint exists only in some apps.
 
 ## Setup And Command Order
 
-Always start at the repo root. CI setup copies `pnpm-lock-committed.yaml` to `pnpm-lock.yaml`, installs pnpm `7.33.6`, sets Node from the job matrix, then runs pnpm install. The root `pnpm:devPreinstall` script also performs the lockfile copy.
+Always start at the repo root. CI setup copies `pnpm-lock-committed.yaml` to `pnpm-lock.yaml`, installs pnpm `12.3.4`, sets Node from the job matrix, then runs pnpm install. The root `pnpm:devPreinstall` script also performs the lockfile copy.
 
-Use this bootstrap sequence for cloud-agent work:
+Use this bootstrap sequence for cloud-agent work with pnpm 12.3.4:
 
 ```sh
 cp pnpm-lock-committed.yaml pnpm-lock.yaml
 pnpm install --no-frozen-lockfile
 ```
 
-Validated locally on macOS with Node `v24.19.0`, npm `11.17.0`, pnpm `7.33.7`: `pnpm install --no-frozen-lockfile` completed successfully in about 4 seconds and reported the lockfile was up to date. CI uses pnpm `7.33.6`; use Node 24 for local builds and app checks.
+Validated locally on macOS with Node 24 and pnpm `12.3.4`: `pnpm install --no-frozen-lockfile` completes after approving the repository's dependency build scripts. Use Node 24 for local builds and app checks.
 
 Important lockfile rule: `pnpm-lock-committed.yaml` is the committed source of truth. `pnpm-lock.yaml` is generated/copied during setup and ignored by the `update-built-files` workflow. If dependency or patch metadata changes, update `pnpm-lock-committed.yaml` intentionally.
 

@@ -91,13 +91,9 @@
   ],
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
+  "packageManager": "pnpm@12.3.4",
   "bugs": {
     "url": "https://github.com/UKHomeOffice/design-system/issues"
   },
-  "homepage": "https://github.com/UKHomeOffice/design-system#readme",
-  "pnpm": {
-    "patchedDependencies": {
-      "restify@11.1.0": "patches/restify@11.1.0.patch"
-    }
-  }
+  "homepage": "https://github.com/UKHomeOffice/design-system#readme"
 }
