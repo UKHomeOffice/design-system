@@ -243,14 +243,14 @@ export const content = (
 
     <h2 className="a-z-header" id="n">N</h2>
     <h3 id="naturalisation">naturalisation</h3>
-    <p>Naturalisation is a legal process someone goes through to become a <A href="https://design.homeoffice.gov.uk/design-and-content/content/content-style-guide#british citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
+    <p>Naturalisation is a legal process someone goes through to become a <A href="#british citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
     <h3 id="notification">notification</h3>
     <p>Avoid using 'notification' or 'notify'. Try to be specific about contact, such as, 'we will send you an email' or 'how do you want to be contacted?'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="o">O</h2>
     <h3 id="online-meeting">online meeting</h3>
-    <p>See <A href="https://design.homeoffice.gov.uk/design-and-content/content/content-style-guide#video-call">video call</A>.</p>
+    <p>See <A href="#video-call">video call</A>.</p>
     <h3 id="online status">online status</h3>
     <p>Avoid using 'online status' or 'digital status' when referring to someone's immigration status. Use 'online immigration status' instead.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -306,7 +306,7 @@ export const content = (
     <h3 id="register">register</h3>
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
     <h3 id="remote">remote</h3>
-    <p>See <A href="https://design.homeoffice.gov.uk/design-and-content/content/content-style-guide#video-call">video call</A>.</p>
+    <p>See <A href="#video-call">video call</A>.</p>
     <h3 id="right">right</h3>
     <p>Use 'correct' rather than 'right'. For example, 'Select the correct settlement route'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
