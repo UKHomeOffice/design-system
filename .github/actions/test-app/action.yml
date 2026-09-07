@@ -47,7 +47,7 @@ runs:
         CYPRESS_PROJECT_ID: ${{ inputs.cypress-project-id }}
         CYPRESS_RECORD_KEY: ${{ inputs.cypress-record-key }}
 
-    - uses: actions/upload-artifact@master
+    - uses: actions/upload-artifact@v6
       if: failure()
       with:
         name: screenshots

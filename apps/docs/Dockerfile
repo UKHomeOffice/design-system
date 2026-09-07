@@ -1,4 +1,4 @@
-FROM node:22.11.0-alpine
+FROM node:24-alpine
 
 RUN apk add --no-cache ca-certificates \
  && apk upgrade --no-cache \

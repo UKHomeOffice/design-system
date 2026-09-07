@@ -6,20 +6,20 @@ Trust these notes first. Search only when this file is incomplete or appears wro
 
 This repository is the Home Office Design System: a pnpm monorepo of React/TypeScript components, supporting libraries, and example/documentation apps that extend the GOV.UK Design System for Home Office services. The workspace currently has about 30 pnpm projects under `apps/**`, `components/**`, and `lib/**`; `pnpm-workspace.yaml` also includes currently absent/future `components-internal/**`, `lib-govuk/**`, and `packages/**` paths.
 
-Primary runtimes/frameworks: Node.js, pnpm 7, TypeScript, React 18, Jest 29 with ts-jest, Storybook 6, Webpack 5, Cypress 13, Next.js 15 for `apps/next-example`, and Remix/Vite for `apps/remix-example`. CI uses Ubuntu with Node 18, 20, and 22 for tests, and Node 22 for builds/app checks. The repo has no root lint script; lint exists only in some apps.
+Primary runtimes/frameworks: Node.js 24, pnpm 12.3.4, TypeScript, React 18, Jest 29 with ts-jest, Storybook 6, Webpack 5, Cypress 13, Next.js 15 for `apps/next-example`, and Remix/Vite for `apps/remix-example`. CI uses Ubuntu with Node 22 and 24 for LTS tests, and Node 24 for builds/app checks. The repo has no root lint script; lint exists only in some apps.
 
 ## Setup And Command Order
 
-Always start at the repo root. CI setup copies `pnpm-lock-committed.yaml` to `pnpm-lock.yaml`, installs pnpm `7.33.6`, sets Node from the job matrix, then runs pnpm install. The root `pnpm:devPreinstall` script also performs the lockfile copy.
+Always start at the repo root. CI setup copies `pnpm-lock-committed.yaml` to `pnpm-lock.yaml`, installs pnpm `12.3.4`, sets Node from the job matrix, then runs pnpm install. The root `pnpm:devPreinstall` script also performs the lockfile copy.
 
-Use this bootstrap sequence for cloud-agent work:
+Use this bootstrap sequence for cloud-agent work with pnpm 12.3.4:
 
 ```sh
 cp pnpm-lock-committed.yaml pnpm-lock.yaml
 pnpm install --no-frozen-lockfile
 ```
 
-Validated locally on macOS with Node `v24.19.0`, npm `11.17.0`, pnpm `7.33.7`: `pnpm install --no-frozen-lockfile` completed successfully in about 4 seconds and reported the lockfile was up to date. CI uses pnpm `7.33.6`; prefer Node 22 when choosing one local runtime because app/build jobs use it.
+Validated locally on macOS with Node 24 and pnpm `12.3.4`: `pnpm install --no-frozen-lockfile` completes after approving the repository's dependency build scripts. Use Node 24 for local builds and app checks.
 
 Important lockfile rule: `pnpm-lock-committed.yaml` is the committed source of truth. `pnpm-lock.yaml` is generated/copied during setup and ignored by the `update-built-files` workflow. If dependency or patch metadata changes, update `pnpm-lock-committed.yaml` intentionally.
 
@@ -29,7 +29,7 @@ Run the smallest relevant check first, then broaden if the change touches shared
 
 - Root unit tests: `npm test`. Validated locally: passed 22 suites, 190 tests, 8 skipped, in about 13.5 seconds reported by Jest. Writes `.jest-results.json` and `coverage/`.
 - Single package tests: from a package directory, run `npm test`; component package Jest configs live at `components/<name>/jest.config.js` and extend root config.
-- Library build: `npm run libs:build`. This is the CI command for libraries on Ubuntu/Node 22. On macOS it currently fails in `lib/create` because `lib/create/Makefile` uses GNU `cp --preserve=all`, which BSD `cp` does not support. Prefer validating this in the Linux cloud/CI environment; do not assume the macOS failure means the CI build is broken.
+- Library build: `npm run libs:build`. This is the CI command for libraries on Ubuntu/Node 24. On macOS it currently fails in `lib/create` because `lib/create/Makefile` uses GNU `cp --preserve=all`, which BSD `cp` does not support. Prefer validating this in the Linux cloud/CI environment; do not assume the macOS failure means the CI build is broken.
 - App builds used by CI: `cd apps/docs && npm run build`, `cd apps/next-example && npm run build`, `cd apps/remix-example && npm run build`.
 - Functional tests used by CI: from each app directory run `npm run test:functional:ci`. These start the built app with `start-server-and-test` and then run Cypress. CI runs each app across `chromium`, `firefox`, and `electron`.
 - Focused app unit tests: from an app directory run `npm test`.
@@ -37,7 +37,7 @@ Run the smallest relevant check first, then broaden if the change touches shared
 - Storybook: root `npm run storybook` serves on port 9009; root `npm run build` is `build-storybook`.
 - Docs dev server: `cd apps/docs && npm run dev`, then open `http://localhost:8080`. The root `npm start` intentionally fails and tells you to run an app start command instead.
 
-PR CI is `.github/workflows/change-assurance.yml`: CodeQL static analysis, setup plus `npm test` on Node 18/20/22, `npm run libs:build`, app builds for `docs`, `next-example`, and `remix-example`, then Cypress functional tests for those apps. Push workflows also run Chromatic, Netlify deploy/test for docs, static security analysis/dependency scan, and an update-built-files job on `master`. `.drone.yml` is an older docs deployment path using Node 18 Alpine, pnpm 6.32.3, Docker, make, and Kubernetes.
+PR CI is `.github/workflows/change-assurance.yml`: CodeQL static analysis, setup plus `npm test` on Node 22/24, `npm run libs:build`, app builds for `docs`, `next-example`, and `remix-example`, then Cypress functional tests for those apps. Push workflows also run Chromatic, Netlify deploy/test for docs, static security analysis/dependency scan, and an update-built-files job on `master`. `.drone.yml` is an older docs deployment path using Node 24 Alpine, pnpm 6.32.3, Docker, make, and Kubernetes.
 
 ## Layout And Architecture
 

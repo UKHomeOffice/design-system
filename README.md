@@ -36,7 +36,7 @@ Once you have it installed you can pull down NPM dependencies for the
 entire project by running:
 
 ```shell
-npm install -g pnpm@^7
+npm install -g pnpm@12.3.4
 pnpm install
 ```
 

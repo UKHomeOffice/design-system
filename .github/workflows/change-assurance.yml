@@ -16,7 +16,7 @@ jobs:
     steps:
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Scan code-base
         uses: ./.github/actions/scan-code
@@ -26,11 +26,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ '18', '20', '22' ]
+        node: [ '22', '24' ]
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -50,12 +50,12 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 22
+          node: 24
 
       - name: Build libraries
         run: npm run libs:build
@@ -71,12 +71,12 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 22
+          node: 24
 
       - name: Build
         uses: ./.github/actions/build-app
@@ -84,7 +84,7 @@ jobs:
           app: ${{ matrix.app }}
 
       - name: Save build directory
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: 'build-${{ matrix.app }}'
           path: "${{ matrix.app && format('apps/{0}/', matrix.app) }}dist"
@@ -103,15 +103,15 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node: 22
+          node: 24
 
       - name: Download build directory
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: 'build-${{ matrix.app }}'
           path: "${{ matrix.app && format('apps/{0}/', matrix.app) }}dist"
@@ -123,4 +123,4 @@ jobs:
           browser: ${{ matrix.browser }}
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
-          node: 22
+          node: 24
