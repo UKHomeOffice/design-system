@@ -95,5 +95,9 @@
   "bugs": {
     "url": "https://github.com/UKHomeOffice/design-system/issues"
   },
-  "homepage": "https://github.com/UKHomeOffice/design-system#readme"
+  "homepage": "https://github.com/UKHomeOffice/design-system#readme",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=12.3.4"
+  }
 }
