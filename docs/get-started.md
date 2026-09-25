@@ -91,23 +91,27 @@ wish to use something else.) The others will require some work to set
 them up.
 
 
-#### 6.1. Chromatic
-
-We provide a workflow for publishing your Storybook to the [Chromatic]
-service. This allows you to detect and review any visual changes made to
 your components and so avoid accidental regressions.
-
-1. Sign up and [log in to Chromatic]
-2. Add your project
-3. Take note of your 'project token'
-4. Create a new secret in GitHub called `CHROMATIC_PROJECT_TOKEN` with
-   the value set to the one provided to you by Chromatic.
-
-Once that is done you should be able to detect and review visual changes
 to your components.
+#### 6.1. Playwright visual regression tests
 
-You should consider making these checks mandatory to prevent unauthorised
-changes being merged in to your `master` branch.
+The included visual-regression workflow builds Storybook and uses
+[Playwright] with Chromium to compare representative component screenshots
+against committed baseline images. It runs entirely in GitHub Actions and
+does not need a project token or external visual-testing service.
+
+When an intended visual change is made, update the baselines with:
+
+```shell
+npm run test:visual:update
+```
+
+Review and commit the resulting screenshot changes with the component change.
+The workflow fails for unexpected differences and uploads an HTML report with
+actual and diff screenshots to GitHub Actions.
+
+You should consider making the visual regression check mandatory to prevent
+unintended visual changes being merged into your `master` branch.
 
 
 ### 7. Optional: Set up Continuous Deployment
@@ -150,7 +154,7 @@ mandatory prior to merging:
 
 - 'Unit test'
 - 'Build' (which ensures your apps can be built)
-- 'UI Tests' & 'UI Review' (which protect you against visual regressions)
+- 'Visual regression tests' (which protect you against visual regressions)
 
 
 -- Daniel Martin, August 2020.
@@ -163,8 +167,7 @@ mandatory prior to merging:
 [GitHub]: https://github.com/
 [GitHub Actions]: https://github.com/features/actions
 [Working on your project]: ./working-on-your-project
-[Chromatic]: https://www.chromatic.com/
-[log in to Chromatic]: https://www.chromatic.com/start
+[Playwright]: https://playwright.dev/
 [Netlify]: https://www.netlify.com/
 [log in to Netlify]: https://app.netlify.com/
 [Netlify documentation]: https://docs.netlify.com/
