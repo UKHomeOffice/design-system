@@ -8,7 +8,7 @@ inputs:
   node:
     description: The version of Node.js to use.
     required: false
-    default: 22
+    default: 24
 runs:
   using: composite
   steps:
@@ -18,13 +18,13 @@ runs:
       run: npm test
 
     - name: Upload test results
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v6
       with:
         name: test-results-${{ inputs.node }}
         path: .jest-results.json
 
     - name: Upload coverage report
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v6
       with:
         name: coverage-report-${{ inputs.node }}
         path: coverage

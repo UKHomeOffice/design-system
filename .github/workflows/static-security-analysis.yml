@@ -14,15 +14,13 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Scan code-base
         uses: ./.github/actions/scan-code
 
       - name: Setup
         uses: ./.github/actions/setup
-        with:
-          node: 22
 
       - name: Scan dependencies
         uses: ./.github/actions/scan-dependencies
