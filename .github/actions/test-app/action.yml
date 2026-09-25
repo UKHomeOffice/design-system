@@ -10,45 +10,32 @@ inputs:
   browser:
     required: false
     default: 'chromium'
-  cypress-project-id:
-    required: false
-  cypress-record-key:
-    required: false
-  deployment:
-    required: false
-    default: 'false'
-  node:
-    required: false
-    type: string
-    default: 'unknown'
-  smoke:
-    required: false
-    default: false
 runs:
   using: composite
   steps:
 
-    - name: Setup Firefox
-      uses: browser-actions/setup-firefox@latest
-      if: inputs.browser == 'firefox'
-
-    - name: Setup Chromium
-      uses: browser-actions/setup-chromium@latest
-      if: inputs.browser == 'chromium'
+    - name: Install Playwright browser
+      shell: bash
+      run: npx playwright install --with-deps "${{ inputs.browser }}"
 
     - name: Run functional tests
       shell: bash
       working-directory: "${{ inputs.app && format('apps/{0}', inputs.app) }}"
-      run: "if [[ -z ${CYPRESS_BASE_URL} ]]; then npm run 'test:functional:ci'; else npm run 'test:functional'; fi;"
+      run: "if [[ -z ${PLAYWRIGHT_BASE_URL} ]]; then npm run 'test:functional:ci'; else npm run 'test:functional'; fi;"
       env:
-        CYPRESS_BASE_URL: ${{ inputs.base-url }}
-        CYPRESS_SMOKE: ${{ inputs.smoke }}
-        CYPRESS_FLAGS: '--browser ${{ inputs.browser }} --group "app/${{ inputs.app }},node/${{ inputs.node }},browser/${{ inputs.browser }},deployment/${{ inputs.deployment }}" --tag "app/${{ inputs.app }},node/${{ inputs.node }},browser/${{ inputs.browser }},deployment/${{ inputs.deployment }}"'
-        CYPRESS_PROJECT_ID: ${{ inputs.cypress-project-id }}
-        CYPRESS_RECORD_KEY: ${{ inputs.cypress-record-key }}
+        PLAYWRIGHT_BASE_URL: ${{ inputs.base-url }}
+        PLAYWRIGHT_BROWSER: ${{ inputs.browser }}
 
     - uses: actions/upload-artifact@v6
       if: failure()
       with:
-        name: screenshots
-        path: "${{ inputs.app && format('apps/{0}/', inputs.app) }}.cypress/screenshots"
+        name: playwright-report-${{ inputs.app }}-${{ inputs.browser }}
+        path: playwright-report/
+        if-no-files-found: warn
+
+    - uses: actions/upload-artifact@v6
+      if: failure()
+      with:
+        name: playwright-test-results-${{ inputs.app }}-${{ inputs.browser }}
+        path: test-results/
+        if-no-files-found: warn

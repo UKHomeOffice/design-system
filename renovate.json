@@ -10,13 +10,6 @@
     },
     {
       "matchPackageNames": [
-        "cypress/included",
-        "cypress"
-      ],
-      "groupName": "cypress"
-    },
-    {
-      "matchPackageNames": [
         "@types/babel-jest",
         "@types/jest",
         "@types/ts-jest",

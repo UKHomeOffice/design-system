@@ -27,8 +27,8 @@
     "storybook": "start-storybook -p 9009",
     "build:storybook": "build-storybook",
     "clean:storybook": "rm -rf storybook-static",
-    "test:visual": "npm run build:storybook && playwright test",
-    "test:visual:update": "npm run build:storybook && playwright test --update-snapshots",
+    "test:visual": "npm run build:storybook && playwright test --project=visual",
+    "test:visual:update": "npm run build:storybook && playwright test --project=visual --update-snapshots",
     "test": "jest --coverage --json --outputFile=.jest-results.json"
   },
   "devDependencies": {
