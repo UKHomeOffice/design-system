@@ -30,7 +30,7 @@ the [pnpm-workspaces.yaml] and [plopfile.js].
 
 ## Prerequisites
 
-[Node.js](https://nodejs.org/en/) - for supported versions see engines.node in package.json
+[Node.js](https://nodejs.org/en/) - version 24 or later
 
 ## Getting started
 
