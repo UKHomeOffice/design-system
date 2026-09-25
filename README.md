@@ -52,7 +52,7 @@ To create a new package, simply run:
 npm run create
 ```
 
-This is all orchestrated from the [plopfile.mjs] so you can modify how
+This is all orchestrated from the [plopfile.mjs](./plopfile.mjs) so you can modify how
 it works.
 
 See: [PLOP]
