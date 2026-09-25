@@ -28,6 +28,10 @@ varieties:
 **Note:** If you would like add more varieties you can do so by modifying
 the [pnpm-workspaces.yaml] and [plopfile.js].
 
+## Prerequisites
+
+[Node.js](https://nodejs.org/en/) - for supported versions see engines.node in package.json
+
 ## Getting started
 
 In order to work on this repository you will need to [install pnpm].
@@ -48,7 +52,7 @@ To create a new package, simply run:
 npm run create
 ```
 
-This is all orchestrated from the [plopfile.js] so you can modify how
+This is all orchestrated from the [plopfile.mjs] so you can modify how
 it works.
 
 See: [PLOP]

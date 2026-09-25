@@ -37,7 +37,7 @@ Run the smallest relevant check first, then broaden if the change touches shared
 - Storybook: root `npm run storybook` serves on port 9009; root `npm run build` is `build-storybook`.
 - Docs dev server: `cd apps/docs && npm run dev`, then open `http://localhost:8080`. The root `npm start` intentionally fails and tells you to run an app start command instead.
 
-PR CI is `.github/workflows/change-assurance.yml`: CodeQL static analysis, setup plus `npm test` on Node 22/24, `npm run libs:build`, app builds for `docs`, `next-example`, and `remix-example`, then Cypress functional tests for those apps. Push workflows also run Chromatic, Netlify deploy/test for docs, static security analysis/dependency scan, and an update-built-files job on `master`. `.drone.yml` is an older docs deployment path using Node 24 Alpine, pnpm 6.32.3, Docker, make, and Kubernetes.
+PR CI is `.github/workflows/change-assurance.yml`: CodeQL static analysis, setup plus `npm test` on Node 22/24, `npm run libs:build`, app builds for `docs`, `next-example`, and `remix-example`, then Cypress functional tests for those apps. Push workflows also run Chromatic, Netlify deploy/test for docs, static security analysis/dependency scan, and an update-built-files job on `master`. `.drone.yml` is an older docs deployment path using Node 24 Alpine, pnpm 12.3.4, Docker, make, and Kubernetes.
 
 ## Layout And Architecture
 

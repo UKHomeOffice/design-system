@@ -54,8 +54,6 @@ jobs:
 
       - name: Setup
         uses: ./.github/actions/setup
-        with:
-          node: 24
 
       - name: Build libraries
         run: npm run libs:build
@@ -75,8 +73,6 @@ jobs:
 
       - name: Setup
         uses: ./.github/actions/setup
-        with:
-          node: 24
 
       - name: Build
         uses: ./.github/actions/build-app
@@ -106,9 +102,8 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Setup
+        id: setup
         uses: ./.github/actions/setup
-        with:
-          node: 24
 
       - name: Download build directory
         uses: actions/download-artifact@v7
@@ -123,4 +118,4 @@ jobs:
           browser: ${{ matrix.browser }}
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
-          node: 24
+          node: ${{ steps.setup.outputs.node }}
