@@ -30,7 +30,7 @@ the [pnpm-workspaces.yaml] and [plopfile.js].
 
 ## Prerequisites
 
-[Node.js](https://nodejs.org/en/) - for supported versions see engines.node in package.json
+[Node.js](https://nodejs.org/en/) - version 24 or later
 
 ## Getting started
 
@@ -52,7 +52,7 @@ To create a new package, simply run:
 npm run create
 ```
 
-This is all orchestrated from the [plopfile.mjs] so you can modify how
+This is all orchestrated from the [plopfile.mjs](./plopfile.mjs) so you can modify how
 it works.
 
 See: [PLOP]
