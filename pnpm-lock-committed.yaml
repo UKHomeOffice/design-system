@@ -417,10 +417,6 @@ importers:
         specifier: ^5
         version: 5.9.3
 
-  apps/next-example/dist: {}
-
-  apps/next-example/dist/types: {}
-
   apps/remix-example:
     dependencies:
       '@hods/components':
