@@ -25,8 +25,7 @@ The following sections will assume that you are on a UNIX-derived
 operating system (e.g. Linux, Mac, etc.) and have the following software
 installed on your system:
 
-- Node.js
-- [pnpm]
+- Node.js, including npm
 - (GNU?) Make
 
 
@@ -35,7 +34,7 @@ installed on your system:
 You should first pull the NPM dependencies by running:
 
 ```shell
-pnpm install
+npm ci
 ```
 
 
@@ -97,6 +96,6 @@ See also: [Working on your project]
 [pull request]: https://github.com/UKHomeOffice/hods-poc/pulls
 [issue]: https://github.com/UKHomeOffice/hods-poc/issues
 [get in touch]: https://github.com/UKHomeOffice/hods-poc/issues/new
-[pnpm]: https://pnpm.js.org/en/installation
+[npm workspaces]: https://docs.npmjs.com/cli/v11/using-npm/workspacesen/installation
 [Storybook]: https://storybook.js.org/
 [Working on your project]: ./working-on-your-project

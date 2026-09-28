@@ -54,7 +54,7 @@ If you create a new project you should pull down dependencies at this
 point in order to update your lock-file:
 
 ```shell
-pnpm install
+npm install
 ```
 
 

@@ -46,7 +46,7 @@ Before working on this package you must install its dependencies using
 the following command:
 
 ```shell
-pnpm install
+npm ci
 ```
 
 

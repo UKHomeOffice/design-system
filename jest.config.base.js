@@ -30,9 +30,6 @@ const config = {
       useESM: false
     }]
   },
-  transformIgnorePatterns: [
-    'node_modules/\.pnpm/(?!@)'
-  ],
 };
 
 module.exports = config;

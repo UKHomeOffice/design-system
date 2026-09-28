@@ -21,6 +21,4 @@ runs:
       run: |
         git fetch origin $(git rev-parse --abbrev-ref HEAD)
         git merge --ff-only
-        cp pnpm-lock.yaml pnpm-lock-committed.yaml
-        git add pnpm-lock-committed.yaml
-        git commit -m "[skip ci] Update built files" && git push || true
+        git diff --quiet || (git add -u && git commit -m "[skip ci] Update built files" && git push)
