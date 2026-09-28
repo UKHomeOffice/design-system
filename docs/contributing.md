@@ -96,6 +96,6 @@ See also: [Working on your project]
 [pull request]: https://github.com/UKHomeOffice/hods-poc/pulls
 [issue]: https://github.com/UKHomeOffice/hods-poc/issues
 [get in touch]: https://github.com/UKHomeOffice/hods-poc/issues/new
-[npm workspaces]: https://docs.npmjs.com/cli/v11/using-npm/workspacesen/installation
+[npm workspaces]: https://docs.npmjs.com/cli/v11/using-npm/workspaces
 [Storybook]: https://storybook.js.org/
 [Working on your project]: ./working-on-your-project

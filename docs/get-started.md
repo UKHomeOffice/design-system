@@ -91,8 +91,6 @@ wish to use something else.) The others will require some work to set
 them up.
 
 
-your components and so avoid accidental regressions.
-to your components.
 #### 6.1. Playwright visual regression tests
 
 The included visual-regression workflow builds Storybook and uses
