@@ -1,6 +1,10 @@
 {
   "name": "@hods/pagination",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "Component to allow separating long tables into separate tables",
   "main": "src/Pagination.tsx",
   "sass": "assets/Pagination.scss",

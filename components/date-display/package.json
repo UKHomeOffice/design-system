@@ -1,6 +1,10 @@
 {
   "name": "@hods/date-display",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "Displays a date in accordance with Gov style guidance",
   "main": "src/DateDisplay.tsx",
   "sass": "assets/DateDisplay.scss",

@@ -1,6 +1,10 @@
 {
   "name": "@hods/sass-base",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "The base SASS code for HODS styling.",
   "sass": "src/index.scss",
   "files": [

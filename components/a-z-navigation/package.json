@@ -1,6 +1,10 @@
 {
   "name": "@hods/a-z-navigation",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "A component to help users navigate an A to Z.",
   "main": "src/AZNavigation.tsx",
   "sass": "assets/AZNavigation.scss",

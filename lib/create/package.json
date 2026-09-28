@@ -1,6 +1,10 @@
 {
   "name": "@hods/create",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "A project and prototype initialiser.",
   "main": "plopfile.js",
   "type": "module",
