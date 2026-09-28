@@ -26,7 +26,7 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "engines": {
-    "node": ">=18",
+    "node": ">=24",
     "os": [
       "darwin",
       "linux"
@@ -64,8 +64,8 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-helmet-async": "2.0.5",
-    "react-router": "6.28.0",
-    "react-router-dom": "6.28.0",
+    "react-router": "6.30.4",
+    "react-router-dom": "6.30.4",
     "serverless": "3.39.0",
     "start-server-and-test": "2.0.8",
     "ts-jest": "29.2.5",
