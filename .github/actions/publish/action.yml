@@ -4,6 +4,10 @@ inputs:
   version:
     description: Version to publish
     required: true
+  tag:
+    description: Npm dist-tag to publish under
+    required: false
+    default: latest
 runs:
   using: composite
   steps:
@@ -18,8 +22,9 @@ runs:
       shell: bash
       env:
         VERSION: ${{ inputs.version }}
+        TAG: ${{ inputs.tag }}
       run: |
         npm version "${VERSION}"
-        npm run all:publish
+        npm run libs:publish -- --tag "${TAG}"
         git push
         git push --tags
