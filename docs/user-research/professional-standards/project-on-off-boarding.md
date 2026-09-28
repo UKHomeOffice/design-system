@@ -43,7 +43,7 @@ Managers must: 
 -	remove researcher from all delivery team boards  
 -	remove from private team Slack groups and channels  
 -	remove from [any approved tools](https://design.homeoffice.gov.uk/user-research/professional-standards/approved-tools) and any project-specific SharePoint groups / folders   
--	[let UCD Operations know](ucdops@homeoffice.gov.uk) so we can update our records, remove them from our mailing list and, if relevant, remove them from any general Slack and SharePoint groups
+-	[let UCD Operations know](mailto:ucdops@homeoffice.gov.uk) so we can update our records, remove them from our mailing list and, if relevant, remove them from any general Slack and SharePoint groups
   
 ### User researcher checklist 
 
@@ -55,4 +55,4 @@ Researchers must:
 
 [Read more about why you should keep records of service decisions.](https://hodigital.blog.gov.uk/2017/10/27/take-note-why-you-should-keep-records-of-service-decisions/)
 
-If you have any queries or need any help, [email the UCD Operations team.](ucdops@homeoffice.gov.uk)
+If you have any queries or need any help, [email the UCD Operations team.](mailto:ucdops@homeoffice.gov.uk)

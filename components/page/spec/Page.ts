@@ -20,19 +20,20 @@ describe('Page', () => {
       render(h(Page, {
         accountHref: '#/my-account',
         navigation: [
-          { href: '/styles', text: 'Styles' },
-          { href: '/components', text: 'Components' },
-          { href: '/patterns', text: 'Patterns' },
-          { href: '/resources', text: 'Resources' },
-          { href: '/get-involved', text: 'Get involved' }
+          { href: '/design-system', text: 'Design system' },
+          { href: '/accessibility', text: 'Accessibility' },
+          { href: '/design-and-content', text: 'Design and content' },
+          { href: '/user-research', text: 'User research' },
+          { href: '/community', text: 'Community' }
         ],
         serviceName: 'Service name',
         signOutHref: '#/auth/sign-out',
         title: 'Service title',
         username: 'User name',
         footerNavigation: [
-          { href: '/feedback', text: 'Feedback' },
-          { href: '/help', text: 'Help' },
+          { href: '/accessibility-statement', text: 'Accessibility statement' },
+          { href: 'https://github.com/UKHomeOffice/design-system/issues/new', text: 'Feedback' },
+          { href: '/sitemap', text: 'Sitemap' },
           { href: 'https://gov.uk/', text: 'Gov.UK home' }
         ],
         footerContent: 'Custom'
@@ -46,7 +47,7 @@ describe('Page', () => {
     it('contains the footer content', async () => expect(screen.getByRole('contentinfo')).toHaveTextContent('Custom'));
     it('contains the footer navigation', async () => expect(screen.getByRole('contentinfo')).toHaveTextContent('Feedback'));
     it('contains the service name', async () => expect(screen.getByRole('banner')).toHaveTextContent('Service name'));
-    it('contains the navigation links', async () => expect(screen.getByRole('banner')).toHaveTextContent('Components'));
+    it('contains the navigation links', async () => expect(screen.getByRole('banner')).toHaveTextContent('Design system'));
     it('contains the sign-out link', async () => expect(screen.getByRole('banner')).toHaveTextContent('Sign out'));
   });
 });

@@ -55,6 +55,8 @@ export const content = (
     <p>Write 'overseas territories' in lower case.</p>
     <h3 id="british overseas territories citizen">British overseas territories citizen</h3>
     <p>Write 'overseas territories citizen' in lower case.</p>
+    <h3 id="british passport">British passport</h3>
+    <p>Avoid using 'UK passport'. The official term for a passport issued by HMPO is a 'British passport'.</p>
     <h3 id="business day">business day</h3>
     <p>Use 'working day' instead of 'business day' for any day Monday to Friday. Not everyone uses a Monday to Friday workweek, so consider explaining what you mean by working day. For example, 'You will usually get a decision within 2 working days. Working days are Monday to Friday, not including <A href="https://www.gov.uk/bank-holidays">UK public holidays'</A>.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -176,6 +178,13 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="i">I</h2>
+    <h3 id="identity">identity</h3>
+    <p>Use 'identity' rather than 'ID' because it is plain English and easier to translate. For example, 'prove your identity'. Only use 'ID' when:</p>
+    <ul>
+    <li>you have evidence users understand it</li>
+    <li>you are using it to mean 'identity document'</li>
+    <li>it is an official service name, for example, the <A href="https://www.gov.uk/guidance/using-the-uk-immigration-id-check-app">ID Check app</A></li>  
+    </ul>
     <h3 id="immigration adviser">immigration adviser</h3>
     <p>An immigration expert regulated by the <A href="https://www.gov.uk/government/organisations/office-of-the-immigration-services-commissioner/about">OISC</A> who advises on issues like visas, citizenship, employment, asylum and deportation. Some are qualified to represent clients at immigration tribunals and court hearings.</p>
     <h3 id="immigration bail">immigration bail</h3>
@@ -216,6 +225,14 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="m">M</h2>
+    <h3 id="maiden name">maiden name</h3>
+    <p>The term 'maiden name' implies that only women change their family name after marriage, but people of any gender may change their last name for many reasons — not just marriage. Consider using more inclusive terms such as:</p>
+    <ul>
+    <li>previous last name</li>
+    <li>previous family name</li>
+    <li>name you were given at birth and changed later</li>
+    <li>name before marriage or civil partnership</li>
+    </ul>
     <h3 id="migrant">migrant</h3>
     <p>Avoid using 'migrants'. Try to be specific, such as 'applicant', 'claimant', 'employee' or 'worker'. If you cannot be specific, use 'people'.</p>
     <h3 id="ministers">ministers</h3>
@@ -226,12 +243,14 @@ export const content = (
 
     <h2 className="a-z-header" id="n">N</h2>
     <h3 id="naturalisation">naturalisation</h3>
-    <p>Naturalisation is a legal process someone goes through to become a <A href="https://design.homeoffice.gov.uk/design-and-content/content/content-style-guide#british citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
+    <p>Naturalisation is a legal process someone goes through to become a <A href="#british citizen">British citizen</A>. For example, 'apply for a certificate of naturalisation'.</p>
     <h3 id="notification">notification</h3>
     <p>Avoid using 'notification' or 'notify'. Try to be specific about contact, such as, 'we will send you an email' or 'how do you want to be contacted?'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="o">O</h2>
+    <h3 id="online-meeting">online meeting</h3>
+    <p>See <A href="#video-call">video call</A>.</p>
     <h3 id="online status">online status</h3>
     <p>Avoid using 'online status' or 'digital status' when referring to someone's immigration status. Use 'online immigration status' instead.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -260,6 +279,8 @@ export const content = (
     <p>Use 'please' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="points-based system">points-based system</h3>
     <p>Lower case and hyphenate 'points-based'.</p>
+    <h3 id="poise">POISE</h3>
+    <p>Stands for Planned Office Information System Environment, the Home Office's internal computer system. Use POISE, not Poise. You do not need to write it out in full.</p>
     <h3 id="police national computer">Police National Computer (PNC)</h3>
     <p>Upper case. You can use 'PNC' after the first full mention.</p>
     <h3 id="postal">postal</h3>
@@ -278,12 +299,14 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="r">R</h2>
+     <h3 id="rank">rank (police and armed forces)</h3>
+    <p>Capitalise the rank before the name, as in 'Detective Inspector Joan Smith'. Use lower case when it follows the name, as in 'Joan Smith, a detective inspector'.</p>
     <h3 id="refugee">refugee</h3>
     <p>Only use refugee to describe an asylum claimant who has been granted refugee status.</p>
-    <h3 id="rank">rank (police and armed forces)</h3>
-    <p>Capitalise the rank before the name, as in 'Detective Inspector Joan Smith'. Use lower case when it follows the name, as in 'Joan Smith, a detective inspector'.</p>
     <h3 id="register">register</h3>
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
+    <h3 id="remote">remote</h3>
+    <p>See <A href="#video-call">video call</A>.</p>
     <h3 id="right">right</h3>
     <p>Use 'correct' rather than 'right'. For example, 'Select the correct settlement route'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -332,6 +355,8 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="u">U</h2>
+    <h3 id="UK passport">UK passport</h3>
+    <p>Avoid using 'UK passport'. The official term for a passport issued by HMPO is a 'British passport'.</p>
     <h3 id="uk residence card">UK residence card</h3>
     <p>Lower case. Also called a 'biometric residence card (BRC)' or 'EEA biometric residence card'.</p>
     <h3 id="uk visa and citizenship application services">UK Visa and Citizenship Application Services (UKVCAS)</h3>
@@ -347,10 +372,12 @@ export const content = (
     <h2 className="a-z-header" id="v">V</h2>
     <h3 id="validate">validate</h3>
     <p>Consider using 'confirm' or 'prove' instead of 'validate' if you are asking users to provide additional evidence. For example, 'confirm your identity' or 'prove your status'.</p>
+    <h3 id="video-call">video call</h3>
+    <p>Use 'video call' for meetings or appointments that allow participants to see and hear each other using devices with cameras and screens. For example, 'your appointment will be a video call'. Avoid less specific terms like 'remote', 'virtual meeting', 'online meeting' or 'video conference'.</p>
     <h3 id="verify">verify</h3>
     <p>Consider using 'check' instead of 'verify' if you are asking users to check the accuracy of something. For example, 'check your answers' or 'check a passport number'.</p>
     <h3 id="visa">visa</h3>
-    <p>Use 'visa' rather than terms like 'route'. For example, use 'graduate visa' rather than 'graduate route'.</p>
+    <p>Use 'visa' rather than 'route'. For example, use 'Graduate visa' rather than 'Graduate route'. Always capitalise the full name of the visa but keep the word 'visa' lower case. For example, 'Skilled Worker visa' or 'Standard Visitor visa'.</p>
     <h3 id="visa application centre">visa application centre (VAC)</h3>
     <p>Visa application centres (VAC) are located outside the UK whereas UKVCAS service points are in the UK. Use upper case when referring to UK VACs, as in 'find a UK Visa Application Centre'. Do not use 'visa section', 'visa processing post' or 'visa issuing office'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>

@@ -21,11 +21,11 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=24"
   },
   "dependencies": {
     "@hods/components": "workspace:^0.5.2",
-    "@not-govuk/components": "^0.15.8",
+    "@not-govuk/components": "^0.16.3",
     "@remix-run/node": "^2.15.1",
     "@remix-run/react": "^2.15.1",
     "@remix-run/serve": "^2.15.1",

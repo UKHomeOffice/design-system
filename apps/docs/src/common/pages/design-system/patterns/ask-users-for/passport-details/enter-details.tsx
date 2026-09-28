@@ -110,7 +110,7 @@ const Page: FC<PageProps> = () => (
         <li>XXX - Person of unspecified nationality</li>
       </ul>
 
-      <p className="govuk-body">Source: <A href="https://www.icao.int/publications/pages/publication.aspx?docnum=9303">ICAO, Doc 9303</A>, Part 3, Section 5.</p>
+      <p className="govuk-body">Source: <A href="https://www.icao.int/publications/doc-series/doc-9303">ICAO, Doc 9303</A>, Part 3, Section 5.</p>
 
       <p className="govuk-body">You should replace ‘GBR - United Kingdom of Great Britain and Northern Ireland’ with ‘GBR - British Citizen’. This is because ‘British Citizen’ is displayed on passports with the GBR code in the MRZ and chip.</p>
       <p className="govuk-body">If you already know some are options are impossible, you can remove them. If you are using a nationality field to check eligibility, you should keep all options and explain to the user on the next page why they are not eligible.</p>
@@ -136,7 +136,7 @@ const Page: FC<PageProps> = () => (
     <p className="govuk-body">If your users are not British or from the international organisations that issue travel and identity documents, we recommend using ‘Country of nationality’. This is because all the options will be countries.</p>
 
     <h3 className="govuk-heading-m">Country of issue</h3>
-    <p className="govuk-body">The country of issue field is referred to as the Issuing state or organisation in <A href="https://www.icao.int/publications/pages/publication.aspx?docnum=9303">ICAO, Doc 9303</A>. The standards say that it must be:</p>
+    <p className="govuk-body">The country of issue field is referred to as the Issuing state or organisation in <A href="https://www.icao.int/publications/doc-series/doc-9303">ICAO, Doc 9303</A>. The standards say that it must be:</p>
     <ul className="govuk-list govuk-list--bullet">
       <li>written in out in full at the top of the passport page in English, French or Spanish</li>
       <li>shown as a 3 letter code under Code or Country code (in English, French or Spanish)</li>
@@ -194,7 +194,7 @@ const Page: FC<PageProps> = () => (
         <li>XXX - Person of unspecified nationality</li>
       </ul>
 
-      <p className="govuk-body">Source: <A href="https://www.icao.int/publications/pages/publication.aspx?docnum=9303">ICAO, Doc 9303</A>, Part 3, Section 5.</p>
+      <p className="govuk-body">Source: <A href="https://www.icao.int/publications/doc-series/doc-9303">ICAO, Doc 9303</A>, Part 3, Section 5.</p>
     </Details>
 
     <h3 className="govuk-heading-m">Issue date</h3>

@@ -22,11 +22,11 @@ describe('Header', () => {
       ...minimalProps,
       accountHref: '#/my-account',
       navigation: [
-        { href: '/styles', text: 'Styles' },
-        { href: '/components', text: 'Components' },
-        { href: '/patterns', text: 'Patterns' },
-        { href: '/resources', text: 'Resources' },
-        { href: '/get-involved', text: 'Get involved' }
+        { href: '/design-system', text: 'Design system' },
+        { href: '/accessibility', text: 'Accessibility' },
+        { href: '/design-and-content', text: 'Design and content' },
+        { href: '/user-research', text: 'User research' },
+        { href: '/community', text: 'Community' }
       ],
       serviceName: 'Service name',
       signOutHref: '#/auth/sign-out',

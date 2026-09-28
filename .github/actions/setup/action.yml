@@ -4,10 +4,18 @@ inputs:
   node:
     description: The version of Node.js to use.
     required: false
-    default: 22
+    default: 24
+  pnpm:
+    description: The version of pnpm to use.
+    required: false
+    default: '12.3.4'
   frozen-lockfile:
     description: Whether to require a frozen lock-file
     required: false
+outputs:
+  node:
+    description: The version of Node.js used.
+    value: ${{ steps.setup-outputs.outputs.node }}
 runs:
   using: composite
   steps:
@@ -24,19 +32,19 @@ runs:
         cp pnpm-lock-committed.yaml pnpm-lock.yaml
 
     - name: Setup PNPM
-      uses: pnpm/action-setup@v4.0.0
+      uses: pnpm/action-setup@v6.1.0
       with:
-        version: 7.33.6
+        version: ${{ inputs.pnpm }}
         run_install: false
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v7
       with:
         node-version: ${{ inputs.node }}
         cache: 'pnpm'
 
     - name: Cache Cypress.io
-      uses: actions/cache@v4
+      uses: actions/cache@v6
       env:
         cache-hash: ${{ hashFiles('pnpm-lock.yaml') }}
       with:
@@ -45,16 +53,22 @@ runs:
 
     - name: Pull dependencies
       if: ${{ !inputs.frozen-lockfile || inputs.frozen-lockfile == 'false' }}
-      uses: pnpm/action-setup@v4.0.0
+      uses: pnpm/action-setup@v6.1.0
       with:
-        version: 7.33.6
+        version: ${{ inputs.pnpm }}
         run_install: |
           recursive: true
           args: [--no-frozen-lockfile]
 
     - name: Pull dependencies (frozen lock-file)
       if: ${{ inputs.frozen-lockfile && inputs.frozen-lockfile != 'false' }}
-      uses: pnpm/action-setup@v4.0.0
+      uses: pnpm/action-setup@v6.1.0
       with:
-        version: 7.33.6
+        version: ${{ inputs.pnpm }}
         run_install: true
+
+    - name: Set outputs
+      id: setup-outputs
+      shell: bash
+      run: |
+        echo "node=${{ inputs.node }}" >> "$GITHUB_OUTPUT"

@@ -232,8 +232,8 @@ const Page: FC<PageProps> = () => (
     </ul>
     <h4>Longer:</h4>
     <ul>
-      <li><A href="https://gcs.civilservice.gov.uk/webinars/digital-accessibility-for-government-communicators/">Digital accessibility for government communicators (Government Communication Service, 27 minutes)</A></li>
-      <li><A href="https://gcs.civilservice.gov.uk/webinars/accessibility-essentials-for-government-communicators/">Accessibility essentials for government communicators (Government Communication Service, 56 minutes)</A></li>
+      <li><A href="https://www.communications.gov.uk/webinars/digital-accessibility-for-government-communicators/">Digital accessibility for government communicators (Government Communication Service, 27 minutes)</A></li>
+      <li><A href="https://www.communications.gov.uk/webinars/accessibility-essentials-for-government-communicators/">Accessibility essentials for government communicators (Government Communication Service, 56 minutes)</A></li>
     </ul>
     <h4>In-depth:</h4>
     <p><A href="https://www.edx.org/course/web-accessibility-introduction">Web Accessibility Introduction (edX)</A> is a strong foundation in digital accessibility to make your website and apps work well for people with disabilities and meet international standards. (4 weeks, 4 to 5 hours a week, self-paced)</p>

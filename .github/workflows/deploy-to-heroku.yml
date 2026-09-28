@@ -8,7 +8,7 @@ on:
       node:
         required: false
         type: string
-        default: 22
+        default: 24
     secrets:
       CYPRESS_PROJECT_ID:
         required: false
@@ -27,7 +27,7 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -58,7 +58,7 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -74,7 +74,7 @@ jobs:
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
           deployment: heroku
-          node: 22
+          node: ${{ inputs.node }}
           smoke: true
 
       - name: Scan service for vulnerabilities

@@ -6,7 +6,7 @@ on:
         required: false
         type: string
       node:
-        default: 22
+        default: 24
         required: false
         type: string
       production-branch:
@@ -31,7 +31,7 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -64,7 +64,7 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -80,7 +80,7 @@ jobs:
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
           deployment: netlify
-          node: 22
+          node: ${{ inputs.node }}
           smoke: true
 
       - name: Scan service for vulnerabilities

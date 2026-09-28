@@ -62,7 +62,7 @@ const Page: FC<PageProps> = () => (
         </div>
       </li>
       <li>Save the file.</li>
-      <li>Refresh your web browser and you should see the change. If your prototype is not running, follow View the prototype locally on <A href="start-prototype">set up prototype</A>.</li>
+      <li>Refresh your web browser and you should see the change. If your prototype is not running, follow 'View the prototype locally' on <A href="./design-system/get-started/start-prototype#view-prototype-locally">set up your prototype</A>.</li>
     </ol>
 
     <h2 id="create-or-modify-a-page">Create or modify a page</h2>

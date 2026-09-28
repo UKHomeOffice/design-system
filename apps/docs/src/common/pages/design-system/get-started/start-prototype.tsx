@@ -41,7 +41,7 @@ const Page: FC<PageProps> = () => (
     <p>Windows users should install <A href="https://git-scm.com/download/win">Git Bash (direct download)</A> to use these app-instructions.</p>
     <p>You'll need:</p>
     <ul>
-      <li><A href="https://nodejs.org/en/">Node.js (version 18)</A> - you can use version 16 too</li>
+      <li><A href="https://nodejs.org/en/">Node.js (version 24)</A></li>
       <li>a <A href="https://github.com/">GitHub</A> account</li>
       <li>optionally a <A href="http://heroku.com/">Heroku</A> account, to publish your prototype</li>
       <li>terminal - an application to install, start and stop a prototype. Using a terminal is sometimes called ‘using the command line’</li>
@@ -95,7 +95,7 @@ const Page: FC<PageProps> = () => (
     <h3>Download the dependencies</h3>
     <p>Run <code>npm install</code> to download the dependencies to make your prototype work. These are stored in the <code>node_modules</code> folder. They are specific to this prototype and do not affect any of your other prototypes.</p>
 
-    <h3>View the prototype locally</h3>
+    <h3 id="view-prototype-locally">View the prototype locally</h3>
     <p>In terminal, enter:</p>
     <pre><code>
       npm run dev
