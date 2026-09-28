@@ -15,7 +15,7 @@
     "apps:clean": "npm run pnpm:apps -- run clean",
     "libs:build": "npm run pnpm:libs -- run build",
     "libs:clean": "npm run pnpm:libs -- run clean",
-    "libs:publish": "npm run pnpm:libs -- publish --access public",
+    "libs:publish": "npm publish --workspace=components --workspace=lib --access public",
     "build": "npm run build:storybook",
     "clean": "npm run clean:storybook",
     "pnpm:devPreinstall": "cp pnpm-lock-committed.yaml pnpm-lock.yaml",
@@ -99,5 +99,13 @@
   "engines": {
     "node": ">=22",
     "pnpm": ">=12.3.4"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "components/*",
+    "components-internal/*",
+    "lib/*",
+    "lib-govuk/*",
+    "packages/*"
+  ]
 }
