@@ -12,7 +12,7 @@
     "start": "remix-serve ./dist/server/index.js",
     "test": "npm run test:unit",
     "test:ci": "npm test && npm run test:functional:ci",
-    "test:functional": "PLAYWRIGHT_PROJECT=remix-example playwright test --config=../../playwright.config.ts --project=remix-example",
+    "test:functional": "PLAYWRIGHT_PROJECT=remix-example ../../node_modules/.bin/playwright test --config=../../playwright.config.ts --project=remix-example",
     "test:functional:ci": "npm run test:functional",
     "test:unit": "jest --passWithNoTests",
     "clean": "rm -rf dist",
