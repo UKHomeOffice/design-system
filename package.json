@@ -28,6 +28,8 @@
     "build:storybook": "build-storybook",
     "clean:storybook": "rm -rf storybook-static",
     "test:visual": "npm run build:storybook && playwright test --project=visual",
+    "test:visual:docker": "docker run --platform linux/amd64 --rm --ipc=host -e CI=1 -e LANG=en_GB.UTF-8 -e LANGUAGE=en_GB:en -e LC_ALL=en_GB.UTF-8 -v hods-playwright-pnpm-store:/pnpm/store -v hods-playwright-node-modules:/workspace/node_modules -v \"$PWD\":/workspace -w /workspace mcr.microsoft.com/playwright:v1.51.1-noble bash -lc 'npm install --global pnpm@12.3.4 >/dev/null && pnpm config set store-dir /pnpm/store && cp pnpm-lock-committed.yaml pnpm-lock.yaml && pnpm install --no-frozen-lockfile --prefer-offline && npm run test:visual'",
+    "test:visual:docker:update": "docker run --platform linux/amd64 --rm --ipc=host -e CI=1 -e LANG=en_GB.UTF-8 -e LANGUAGE=en_GB:en -e LC_ALL=en_GB.UTF-8 -v hods-playwright-pnpm-store:/pnpm/store -v hods-playwright-node-modules:/workspace/node_modules -v \"$PWD\":/workspace -w /workspace mcr.microsoft.com/playwright:v1.51.1-noble bash -lc 'npm install --global pnpm@12.3.4 >/dev/null && pnpm config set store-dir /pnpm/store && cp pnpm-lock-committed.yaml pnpm-lock.yaml && pnpm install --no-frozen-lockfile --prefer-offline && npm run build:storybook && npx playwright test --project=visual --update-snapshots'",
     "test:visual:update": "npm run build:storybook && playwright test --project=visual --update-snapshots",
     "test": "jest --coverage --json --outputFile=.jest-results.json"
   },
