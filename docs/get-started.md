@@ -90,6 +90,7 @@ using GitHub. (You will need translate them into another CI system if you
 wish to use something else.) The others will require some work to set
 them up.
 
+Visual regression testing helps you detect and review visual changes made to your components and avoid accidental regressions.
 
 #### 6.1. Playwright visual regression tests
 

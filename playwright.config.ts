@@ -6,7 +6,7 @@ const browserName: 'chromium' | 'firefox' | 'webkit' = process.env.PLAYWRIGHT_BR
   : process.env.PLAYWRIGHT_BROWSER === 'webkit'
     ? 'webkit'
     : 'chromium';
-const baseURL = process.env.PLAYWRIGHT_BASE_URL;
+const baseURL = process.env.PLAYWRIGHT_BASE_URL || undefined;
 
 const appProjects = [
   {
