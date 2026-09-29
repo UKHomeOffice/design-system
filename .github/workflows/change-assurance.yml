@@ -95,7 +95,7 @@ jobs:
     strategy:
       matrix:
         app: [ 'docs', 'next-example', 'remix-example' ]
-        browser: [ 'chromium', 'firefox', 'electron' ]
+        browser: [ 'chromium', 'firefox', 'webkit' ]
     steps:
 
       - name: Check out repository
@@ -116,6 +116,4 @@ jobs:
         with:
           app: ${{ matrix.app }}
           browser: ${{ matrix.browser }}
-          cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
-          cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
           node: ${{ steps.setup.outputs.node }}

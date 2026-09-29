@@ -43,14 +43,6 @@ runs:
         node-version: ${{ inputs.node }}
         cache: 'pnpm'
 
-    - name: Cache Cypress.io
-      uses: actions/cache@v6
-      env:
-        cache-hash: ${{ hashFiles('pnpm-lock.yaml') }}
-      with:
-        path: '~/.cache/Cypress'
-        key: cypress-os_${{ runner.os }}-lock_${{ env.cache-hash }}
-
     - name: Pull dependencies
       if: ${{ !inputs.frozen-lockfile || inputs.frozen-lockfile == 'false' }}
       uses: pnpm/action-setup@v6.1.0

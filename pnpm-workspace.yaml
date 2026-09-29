@@ -13,7 +13,6 @@ allowBuilds:
   aws-sdk: true
   core-js: true
   core-js-pure: true
-  cypress: true
   dtrace-provider: true
   es5-ext: true
   esbuild: true

@@ -10,10 +10,6 @@ on:
         type: string
         default: 24
     secrets:
-      CYPRESS_PROJECT_ID:
-        required: false
-      CYPRESS_RECORD_KEY:
-        required: false
       HEROKU_API_KEY:
         required: true
       HEROKU_APP_NAME:
@@ -54,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [ 'electron' ]
+        browser: [ 'webkit' ]
     steps:
 
       - name: Check out repository
@@ -71,11 +67,6 @@ jobs:
           app: ${{ inputs.app }}
           base-url: https://${{ secrets.HEROKU_APP_NAME }}.herokuapp.com
           browser: ${{ matrix.browser }}
-          cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
-          cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
-          deployment: heroku
-          node: ${{ inputs.node }}
-          smoke: true
 
       - name: Scan service for vulnerabilities
         uses: './.github/actions/scan-app'

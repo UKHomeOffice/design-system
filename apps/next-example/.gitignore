@@ -36,7 +36,6 @@ yarn-error.log*
 next-env.d.ts
 
 # NotGovUK extras
-.cypress/
 .netlify/
 .serverless/
 dist/
