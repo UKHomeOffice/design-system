@@ -44,7 +44,7 @@ export const content = (
     <h3 id="border force">Border Force</h3>
     <p>Capitalised.</p>
     <h3 id="border control">border control</h3>
-    <p>Use 'border control' rather than 'passport control' or 'primary control point'.</p>
+    <p>Use 'border control' or 'passport control' with the general public rather than 'primary control point (PCP)'.</p>
     <h3 id="british citizen">British citizen</h3>
     <p>British citizen is one of <A href="https://www.gov.uk/types-of-british-nationality">6 different types of British nationality</A>. Do not use 'UK citizen'.</p>
     <h3 id="british nationality">British nationality</h3>
