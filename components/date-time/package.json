@@ -24,8 +24,8 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/date-display": "workspace:^0.5.2",
-    "@hods/time": "workspace:^0.5.2",
+    "@hods/date-display": "^0.5.2",
+    "@hods/time": "^0.5.2",
     "@not-govuk/component-helpers": "^0.16.3"
   },
   "peerDependencies": {

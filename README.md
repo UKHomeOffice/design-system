@@ -17,7 +17,7 @@ what's needed.
 
 ## Working on this repository
 
-This project is a monorepo managed via [pnpm]. You can build multiple
+This project is a monorepo managed with [npm workspaces]. You can build multiple
 packages from this one repository. Packages come in the following
 varieties:
 
@@ -26,7 +26,7 @@ varieties:
 - [Components] (found in [components/])
 
 **Note:** If you would like add more varieties you can do so by modifying
-the [pnpm-workspaces.yaml] and [plopfile.js].
+the [package.json] and [plopfile.js].
 
 ## Prerequisites
 
@@ -34,14 +34,13 @@ the [pnpm-workspaces.yaml] and [plopfile.js].
 
 ## Getting started
 
-In order to work on this repository you will need to [install pnpm].
+In order to work on this repository you will need to [install Node.js and npm].
 
 Once you have it installed you can pull down NPM dependencies for the
 entire project by running:
 
 ```shell
-npm install -g pnpm@12.3.4
-pnpm install
+npm ci
 ```
 
 ## Creating a new package
@@ -64,7 +63,7 @@ each other or into our applications. This can be done just as you would install
 any other package:
 
 ```shell
-pnpm install @hods/our-new-package
+npm install @hods/our-new-package
 ```
 
 Under the hood, this will create a symlink so you need not worry about
@@ -88,15 +87,15 @@ We publish our documentation site when pushing to the `master` branch.
 [GOV.UK Design System]: https://design-system.service.gov.uk/
 [contribution guidelines]: https://github.com/UKHomeOffice/design-system/blob/master/CONTRIBUTING.md
 [community backlog]: https://github.com/UKHomeOffice/design-system/projects/1
-[pnpm]: https://pnpm.js.org/
+[npm workspaces]: https://docs.npmjs.com/cli/v11/using-npm/workspaces
 [Applications]: https://not-govuk.netlify.app/
 [Libraries]: https://not-govuk.netlify.app/
 [Components]: https://not-govuk.netlify.app/
 [apps/]: ./apps/
 [lib/]: ./lib/
 [components/]: ./components/
-[pnpm-workspaces.yaml]: ./pnpm-workspaces.yaml
+[package.json]: ./package.json
 [plopfile.js]: ./plopfile.js
-[install pnpm]: https://pnpm.io/installation
+[install Node.js and npm]: https://nodejs.org/en/download
 [PLOP]: https://plopjs.com/
 [documentation application]: ./apps/docs

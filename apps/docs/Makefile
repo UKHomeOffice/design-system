@@ -27,7 +27,7 @@ deps: node-deps
 node-deps: node_modules/.bin/webpack
 
 node_modules/%: package.json
-	pnpm install
+	cd ../.. && npm install
 
 build: dist/server/index.js
 

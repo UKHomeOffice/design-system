@@ -1,7 +1,7 @@
-diff --git a/lib/server.js b/lib/server.js
-index a5865323df4a55b08b850b5aef7f16d0b0adc83b..d79ef7c9929157c61b96d961e47b31465583ebb0 100644
---- a/lib/server.js
-+++ b/lib/server.js
+diff --git a/node_modules/restify/lib/server.js b/node_modules/restify/lib/server.js
+index a586532..d79ef7c 100644
+--- a/node_modules/restify/lib/server.js
++++ b/node_modules/restify/lib/server.js
 @@ -11,7 +11,6 @@ var _ = require('lodash');
  var assert = require('assert-plus');
  var errors = require('restify-errors');

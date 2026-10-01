@@ -1,5 +1,4 @@
 cp = cp -P --preserve=all
-patch_package = sed -Ei 's/"@(hods)\/([^"]+)": "workspace:(.+)"/"@\1\/\2": "\3"/'
 strip_package = jq '{ scripts: .scripts, devDependencies: .devDependencies }'
 build_dir = ./build
 dist_dir = ./dist
@@ -7,7 +6,7 @@ source_dir = ../..
 target_dir = $(build_dir)/skel
 sources := $(wildcard \
 	$(source_dir)/plopfile.mjs \
-	$(source_dir)/pnpm-lock-committed.yaml \
+	$(source_dir)/package-lock.json \
 )
 docs_source_dir = $(build_dir)/apps/template
 docs_target_dir = $(target_dir)/apps/docs
@@ -40,7 +39,6 @@ clean:
 $(dist_dir)/package.base.json: $(source_dir)/package.json
 	mkdir -p '$(@D)'
 	$(strip_package) '$(<)' > '$(@)'
-	$(patch_package) '$(@)'
 
 $(dist_dir)/package.app.json: $(plopfile) $(build_dir)/.github/workflows/change-assurance.yml
 	mkdir -p '$(@D)'

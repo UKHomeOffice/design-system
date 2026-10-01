@@ -4,24 +4,21 @@ Trust these notes first. Search only when this file is incomplete or appears wro
 
 ## Repository Summary
 
-This repository is the Home Office Design System: a pnpm monorepo of React/TypeScript components, supporting libraries, and example/documentation apps that extend the GOV.UK Design System for Home Office services. The workspace currently has about 30 pnpm projects under `apps/**`, `components/**`, and `lib/**`; `pnpm-workspace.yaml` also includes currently absent/future `components-internal/**`, `lib-govuk/**`, and `packages/**` paths.
+This repository is the Home Office Design System: an npm workspaces monorepo of React/TypeScript components, supporting libraries, and example/documentation apps that extend the GOV.UK Design System for Home Office services. The workspace currently has about 30 npm workspace projects under `apps/*`, `components/*`, and `lib/*`; `package.json` also includes currently absent/future `components-internal/*`, `lib-govuk/*`, and `packages/*` paths.
 
-Primary runtimes/frameworks: Node.js 24, pnpm 12.3.4, TypeScript, React 18, Jest 29 with ts-jest, Storybook 6, Webpack 5, Playwright, Next.js 15 for `apps/next-example`, and Remix/Vite for `apps/remix-example`. CI uses Ubuntu with Node 22 and 24 for LTS tests, and Node 24 for builds/app checks. The repo has no root lint script; lint exists only in some apps.
+Primary runtimes/frameworks: Node.js 24, npm workspaces, TypeScript, React 18, Jest 29 with ts-jest, Storybook 6, Webpack 5, Playwright, Next.js 15 for `apps/next-example`, and Remix/Vite for `apps/remix-example`. CI uses Ubuntu with Node 22 and 24 for LTS tests, and Node 24 for builds/app checks. The repo has no root lint script; lint exists only in some apps.
 
 ## Setup And Command Order
 
-Always start at the repo root. CI setup copies `pnpm-lock-committed.yaml` to `pnpm-lock.yaml`, installs pnpm `12.3.4`, sets Node from the job matrix, then runs pnpm install. The root `pnpm:devPreinstall` script also performs the lockfile copy.
+Always start at the repo root. CI setup sets Node from the job matrix, caches npm, then runs `npm install` or `npm ci` when frozen lockfile mode is requested.
 
-Use this bootstrap sequence for cloud-agent work with pnpm 12.3.4:
+Use this bootstrap sequence for local/cloud-agent work:
 
 ```sh
-cp pnpm-lock-committed.yaml pnpm-lock.yaml
-pnpm install --no-frozen-lockfile
+npm ci
 ```
 
-Validated locally on macOS with Node 24 and pnpm `12.3.4`: `pnpm install --no-frozen-lockfile` completes after approving the repository's dependency build scripts. Use Node 24 for local builds and app checks.
-
-Important lockfile rule: `pnpm-lock-committed.yaml` is the committed source of truth. `pnpm-lock.yaml` is generated/copied during setup and ignored by the `update-built-files` workflow. If dependency or patch metadata changes, update `pnpm-lock-committed.yaml` intentionally.
+Important lockfile rule: `package-lock.json` is the committed source of truth. If dependency or patch metadata changes, update `package-lock.json` intentionally.
 
 ## Validation Commands
 
@@ -37,11 +34,11 @@ Run the smallest relevant check first, then broaden if the change touches shared
 - Storybook: root `npm run storybook` serves on port 9009; root `npm run build` is `build-storybook`.
 - Docs dev server: `cd apps/docs && npm run dev`, then open `http://localhost:8080`. The root `npm start` intentionally fails and tells you to run an app start command instead.
 
-PR CI is `.github/workflows/change-assurance.yml`: CodeQL static analysis, setup plus `npm test` on Node 22/24, `npm run libs:build`, app builds for `docs`, `next-example`, and `remix-example`, then Playwright functional tests for those apps. Push workflows also run Playwright visual regression, Netlify deploy/test for docs, static security analysis/dependency scan, and an update-built-files job on `master`. `.drone.yml` is an older docs deployment path using Node 24 Alpine, pnpm 12.3.4, Docker, make, and Kubernetes.
+PR CI is `.github/workflows/change-assurance.yml`: CodeQL static analysis, setup plus `npm test` on Node 22/24, `npm run libs:build`, app builds for `docs`, `next-example`, and `remix-example`, then Playwright functional tests for those apps. Push workflows also run Playwright visual regression, Netlify deploy/test for docs, static security analysis/dependency scan, and an update-built-files job on `master`. `.drone.yml` is an older docs deployment path using Node 24 Alpine, Docker, make, and Kubernetes.
 
 ## Layout And Architecture
 
-- Root files: `package.json`, `pnpm-workspace.yaml`, `pnpm-lock-committed.yaml`, `babel.config.js`, `jest.config.js`, `jest.config.base.js`, `tsconfig*.json`, `playwright.config.ts`, `plopfile.mjs`, `renovate.json`, `README.md`, `CONTRIBUTING.md`, `patches/`, `scripts/`, `.storybook/`, `.jest/`, `.github/`, `.zap/`.
+- Root files: `package.json`, `package-lock.json`, `babel.config.js`, `jest.config.js`, `jest.config.base.js`, `tsconfig*.json`, `playwright.config.ts`, `plopfile.mjs`, `renovate.json`, `README.md`, `CONTRIBUTING.md`, `patches/`, `scripts/`, `.storybook/`, `.jest/`, `.github/`, `.zap/`.
 - `components/<component>/`: publishable React component packages. Common shape is `src/<Component>.tsx`, `assets/<Component>.scss`, `spec/<Component>.ts`, `spec/<Component>.stories.mdx`, local `package.json`, `tsconfig.json`, and `jest.config.js`. Build is usually `tsc`; tests use Jest and `@not-govuk/component-test-helpers`.
 - `lib/components/`: aggregate `@hods/components` package depending on all component packages.
 - `lib/sass-base/`: shared Sass assets. `lib/plop-pack/` and `lib/create/` support package/app scaffolding via Plop and Make.

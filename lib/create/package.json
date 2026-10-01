@@ -21,7 +21,7 @@
     "node": ">=24"
   },
   "dependencies": {
-    "@hods/plop-pack": "workspace:^0.5.2",
+    "@hods/plop-pack": "^0.5.2",
     "@not-govuk/create": "^0.16.3",
     "@not-govuk/plop-pack-internal": "^0.16.3"
   },

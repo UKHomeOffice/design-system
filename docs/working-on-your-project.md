@@ -3,7 +3,7 @@ Working on your project
 
 (Ensure you have first [set up your project].)
 
-Your project is a monorepo managed via [pnpm]. You can build multiple
+Your project is a monorepo managed with [npm workspaces]. You can build multiple
 packages from this one repository. Packages come in the following
 varieties:
 - Applications (found in `[apps/]`)
@@ -11,19 +11,19 @@ varieties:
 - Components (found in `[components/]`)
 
 **Note:** If you would like add more varieties you can do so by modifying
-your `[pnpm-workspaces.yaml]` and `[plopfile.js]`.
+your `[package.json]` and `[plopfile.js]`.
 
 
 Getting started
 ---------------
 
-In order to work on this repository you will need to [install pnpm].
+In order to work on this repository you will need to [install Node.js and npm].
 
 Once you have it installed you can pull down NPM dependencies for the
 entire project by running:
 
 ```shell
-pnpm install
+npm ci
 ```
 
 
@@ -49,7 +49,7 @@ create into each other or into your applications. This can be done just
 as you would install any other package:
 
 ```shell
-pnpm install @{{{ dashCase name }}}/your-new-package
+npm install @{{{ dashCase name }}}/your-new-package
 ```
 
 Under the hood, this will create a symlink so you need not worry about
@@ -86,16 +86,16 @@ documentation to [Netlify].
 
 
 [set up your project]: ./get-started
-[pnpm]: https://pnpm.io
+[npm workspaces]: https://docs.npmjs.com/cli/v11/using-npm/workspaces
 [Applications]: https://not-govuk/
 [Libraries]: https://not-govuk/
 [Components]: https://not-govuk/
 [apps/]: ./apps/
 [lib/]: ./lib/
 [components/]: ./components/
-[pnpm-workspaces.yaml]: ./pnpm-workspaces.yaml
+[package.json]: ./package.json
 [plopfile.js]: ./plopfile.js
-[install pnpm]: https://pnpm.io/installation
+[install Node.js and npm]: https://docs.npmjs.com/cli/v11/commands/npm-ci
 [PLOP]: https://plopjs.com/
 [documentation application]: ./apps/docs
 [GitHub Actions]: https://github.com/features/actions

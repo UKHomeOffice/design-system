@@ -4,7 +4,7 @@ on:
     branches: [ 'master' ]
     paths-ignore:
       - '.sastscan.baseline'
-      - 'pnpm-lock.yaml'
+      - 'package-lock.json'
 jobs:
   common:
     name: Build files

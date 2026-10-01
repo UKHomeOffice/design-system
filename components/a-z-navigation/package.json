@@ -24,7 +24,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/sass-base": "workspace:^0.5.2",
+    "@hods/sass-base": "^0.5.2",
     "@not-govuk/navigation-menu": "^0.16.3"
   },
   "peerDependencies": {

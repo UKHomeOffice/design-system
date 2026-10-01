@@ -24,9 +24,9 @@
     "react-components"
   ],
   "dependencies": {
-    "@hods/footer": "workspace:^0.5.2",
-    "@hods/header": "workspace:^0.5.2",
-    "@hods/sass-base": "workspace:^0.5.2",
+    "@hods/footer": "^0.5.2",
+    "@hods/header": "^0.5.2",
+    "@hods/sass-base": "^0.5.2",
     "@not-govuk/button": "^0.16.3",
     "@not-govuk/component-helpers": "^0.16.3",
     "@not-govuk/head": "^0.16.3",
