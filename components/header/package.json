@@ -1,6 +1,10 @@
 {
   "name": "@hods/header",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "A component that shows users whether they are on a Home Office service and which service they are using.",
   "main": "src/Header.tsx",
   "sass": "assets/Header.scss",

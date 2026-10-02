@@ -1,6 +1,10 @@
 {
   "name": "@hods/status-message",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "An indication to the user that something has changed.",
   "main": "src/StatusMessage.tsx",
   "sass": "assets/StatusMessage.scss",

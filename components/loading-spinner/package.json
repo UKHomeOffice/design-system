@@ -1,6 +1,10 @@
 {
   "name": "@hods/loading-spinner",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "A circular rotating loading spinner.",
   "main": "src/LoadingSpinner.tsx",
   "sass": "assets/LoadingSpinner.scss",

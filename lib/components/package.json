@@ -1,6 +1,10 @@
 {
   "name": "@hods/components",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "All Home Office Design System components.",
   "main": "src/index.ts",
   "sass": "assets/index.scss",

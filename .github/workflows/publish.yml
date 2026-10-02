@@ -5,6 +5,15 @@ on:
       version:
         description: Version to publish
         required: true
+      tag:
+        description: Npm dist-tag to publish under
+        required: false
+        default: latest
+
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
   publish:
     name: Publish packages
@@ -24,5 +33,5 @@ jobs:
       - name: Publish
         uses: ./.github/actions/publish
         with:
-          npm-token: ${{ secrets.NPM_TOKEN }}
           version: ${{ inputs.version }}
+          tag: ${{ inputs.tag }}
