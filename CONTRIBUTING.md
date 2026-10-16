@@ -4,8 +4,8 @@ This design system is for everyone. Its purpose is to extend the [GOV.UK Design 
 
 ## How to contribute
 
-The design system has an open [backlog](https://github.com/UKHomeOffice/design-system/projects/1).
+The design system has an open [backlog](https://github.com/UKHomeOffice/design-system/projects).
 
-Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones. Follow the guidance on how to [make a suggestion](https://design-system.service.gov.uk/contribute)
+Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones. Follow the guidance on how to [make a suggestion](https://design.homeoffice.gov.uk/design-system/contribute)
 
-Contributions first start as [discussions](https://github.com/UKHomeOffice/design-system/discussions), then become [issues](https://github.com/UKHomeOffice/issues) before becoming a [pull request](https://github.com/UKHomeOffice/design-system/pulls).
+Contributions first start as [discussions](https://github.com/UKHomeOffice/design-system/discussions), then become [issues](https://github.com/UKHomeOffice/design-system/issues) before becoming a [pull request](https://github.com/UKHomeOffice/design-system/pulls).
