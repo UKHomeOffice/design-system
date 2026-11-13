@@ -153,6 +153,12 @@ export const content = (
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="f">F</h2>
+    <h3 id="family">family</h3>
+    <p>People do not always define family in the same way. Do not assume users know what you mean by 'family', and be specific about who is included. For example:</p>
+    <ul>
+    <li>'family includes the relationship between an unmarried couple, an adopted child and the adoptive parent, and a foster parent and fostered child'</li>
+    <li>'you will be able to bring certain family members with you to the UK. They are a married or unmarried partner, and any dependent children aged under 18'</li>
+    </ul>
     <h3 id="finger scan">finger scan</h3>
     <p>Not a synonym for 'fingerprint'. Fingers are 'scanned' and the results are called 'fingerprints'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
@@ -198,7 +204,7 @@ export const content = (
     <h3 id="inclusive language">inclusive language</h3>
     <p>Read our <A href="https://design.homeoffice.gov.uk/accessibility/written-content/inclusive-language">guidance on using inclusive language</A> in the Home Office design system.</p>
     <h3 id="indefinite leave to enter or remain">indefinite leave to enter or remain</h3>
-    <p>'Indefinite leave to enter' and 'indefinite leave to remain' are officially called 'settlement'. For example, 'apply for UK settlement'.</p>
+    <p>Use settlement as the plain English term for 'indefinite leave to remain' and 'indefinite leave to enter'. Use both terms together if it helps users understand. For example, 'apply for settlement (indefinite leave to remain)'.</p>
     <a className="back-to-top" href="#a-z-nav">Back to top</a>
 
     <h2 className="a-z-header" id="j">J</h2>
@@ -213,9 +219,9 @@ export const content = (
 
     <h2 className="a-z-header" id="l">L</h2>
     <h3 id="leave to enter">leave to enter</h3>
-    <p>Use 'permission to enter' instead of 'leave to enter' or 'limited leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+    <p>Use 'permission to enter' as the plain English term for 'leave to enter' or 'limited leave to enter'. Use both terms together if it helps users understand. For example, 'apply for permission to enter (leave to enter)'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="leave to remain">leave to remain</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+    <p>Use 'permission to stay' as the plain English term for 'leave to remain' or 'limited leave to remain'. Use both terms together if it helps users understand. For example, 'apply for permission to stay (leave to remain)'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="letter of authority">letter of authority</h3>
     <p>Lower case.</p>
     <h3 id="life in the uk test">Life in the UK Test</h3>
@@ -261,9 +267,9 @@ export const content = (
     <h3 id="people">people</h3>
     <p>Use 'people' as a plural of person, rather than 'persons' or 'individuals'.</p>
     <h3 id="permission to enter">permission to enter</h3>
-    <p>Use 'permission to enter' instead of 'leave to enter' or 'limited leave to enter', which are no longer in official use. For example, 'apply for permission to enter the UK'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+    <p>Use 'permission to enter' as the plain English term for 'leave to enter' or 'limited leave to enter'. Use both terms together if it helps users understand. For example, 'apply for permission to enter (leave to enter)'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="permission to stay">permission to stay</h3>
-    <p>Use 'permission to stay' instead of 'leave to remain' or 'limited leave to remain', which are no longer in official use. For example, 'apply for permission to stay in the UK'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+    <p>Use 'permission to stay' as the plain English term for 'leave to remain' or 'limited leave to remain'. Use both terms together if it helps users understand. For example, 'apply for permission to stay (leave to remain)'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
     <h3 id="persons">persons</h3>
     <p>Use 'people' rather than 'persons'.</p>
     <h3 id="phone">phone</h3>
@@ -274,7 +280,7 @@ export const content = (
     <li>you will need a mobile phone that can receive text messages</li>
     </ul>
     <h3 id="photo">photo</h3>
-    <p>Use 'photo' rather than 'photograph'. For example, 'take a photo of your document' or 'photo ID'.</p>
+    <p>Use 'photo' if you mean a photo taken with a camera. Do not use 'photograph', 'image' or 'picture'.</p>
     <h3 id="please">please</h3>
     <p>Use 'please' sparingly. See guidance in <A href="https://www.gov.uk/service-manual/design/writing-for-user-interfaces">Writing for user interfaces</A> on GOV.UK.</p>
     <h3 id="points-based system">points-based system</h3>
@@ -319,7 +325,7 @@ export const content = (
     <h3 id="senior civil service">senior civil service (SCS)</h3>
     <p>Lower case. You can use 'SCS' after the first full mention.</p>
     <h3 id="settlement">settlement</h3>
-    <p>'Indefinite leave to remain' and 'indefinite leave to enter' are officially called 'settlement'. For example, 'apply for UK settlement'.</p>
+    <p>Use settlement as the plain English term for 'indefinite leave to remain' and 'indefinite leave to enter'. Use both terms together if it helps users understand. For example, 'apply for settlement (indefinite leave to remain)'.</p>
     <h3 id="set up">set up</h3>
     <p>Use 'create' instead of 'register' or 'set up' when you want people to create an account. 'Create an account' tested well in user research and is used by other government departments.</p>
     <h3 id="sex">sex</h3>
