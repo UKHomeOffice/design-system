@@ -9,7 +9,7 @@ runs:
   steps:
 
     - name: Cache vdb
-      uses: actions/cache@v4
+      uses: actions/cache@v6
       with:
         path: |
           ${{ github.workspace }}/vdb
@@ -29,7 +29,7 @@ runs:
         output: reports
 
     - name: Upload scan reports
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v6
       with:
         name: slscan-reports
         path: reports

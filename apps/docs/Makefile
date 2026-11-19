@@ -12,7 +12,7 @@ minor_version != echo "$(patch_version)" | awk -F '.' '{print $$1"."$$2}'
 major_version != echo "$(patch_version)" | awk -F '.' '{print $$1}'
 full_version != echo "$(patch_version)-$${BUILD_NUMBER/%/-}$$(git rev-parse --short HEAD)"
 
-.PHONY: all aws-lambda build clean deploy deps distclean docker docker-clean docker-push docker-test netlify node-deps test unit-test
+.PHONY: all aws-lambda build clean deploy deps distclean docker docker-clean docker-push netlify node-deps test unit-test
 
 all: deps test docker
 
@@ -37,12 +37,8 @@ dist/%: node_modules/.bin/webpack
 docker: build
 	docker build -t '$(DOCKER_IMAGE)' .
 
-docker-test:
-	docker build -t '$(DOCKER_IMAGE)-test' -f 'test.Dockerfile' .
-
 docker-clean:
 	docker rmi -f '$(DOCKER_IMAGE)' || true
-	docker rmi -f '$(DOCKER_IMAGE)-test' || true
 
 docker-push: docker
 	docker tag $(DOCKER_IMAGE) '$(DOCKER_REPO):$(full_version)' && docker push '$(DOCKER_REPO):$(full_version)'

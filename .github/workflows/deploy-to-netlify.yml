@@ -6,7 +6,7 @@ on:
         required: false
         type: string
       node:
-        default: 22
+        default: 24
         required: false
         type: string
       production-branch:
@@ -14,10 +14,6 @@ on:
         required: false
         type: string
     secrets:
-      CYPRESS_PROJECT_ID:
-        required: false
-      CYPRESS_RECORD_KEY:
-        required: false
       NETLIFY_AUTH_TOKEN:
         required: true
       NETLIFY_SITE_ID:
@@ -31,7 +27,7 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -60,11 +56,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [ 'electron' ]
+        browser: [ 'webkit' ]
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -77,11 +73,6 @@ jobs:
           app: ${{ inputs.app }}
           base-url: ${{ needs.build-and-deploy.outputs.deploy-url }}
           browser: ${{ matrix.browser }}
-          cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
-          cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
-          deployment: netlify
-          node: 22
-          smoke: true
 
       - name: Scan service for vulnerabilities
         uses: './.github/actions/scan-app'

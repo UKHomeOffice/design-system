@@ -5,7 +5,6 @@ node_modules
 .env
 
 # NotGovUK extras
-.cypress/
 .netlify/
 .serverless/
 dist/
