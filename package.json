@@ -47,7 +47,7 @@
     "@not-govuk/docs-components": "^0.16.3",
     "@not-govuk/storybook-preset": "^0.16.3",
     "@not-govuk/user-info": "^0.16.3",
-    "@playwright/test": "1.51.1",
+    "@playwright/test": "1.65.1",
     "@storybook/addon-a11y": "6.5.16",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-docs": "6.5.16",
