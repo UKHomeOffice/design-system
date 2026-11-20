@@ -91,7 +91,7 @@ jobs:
     name: Test application
     needs:
       - build-app
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         app: [ 'docs', 'next-example', 'remix-example' ]
