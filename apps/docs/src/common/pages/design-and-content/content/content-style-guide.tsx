@@ -219,9 +219,9 @@ export const content = (
 
     <h2 className="a-z-header" id="l">L</h2>
     <h3 id="leave to enter">leave to enter</h3>
-    <p>Use 'permission to enter' as the plain English term for 'leave to enter' or 'limited leave to enter'. Use both terms together if it helps users understand. For example, 'apply for permission to enter (leave to enter)'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+    <p>Use 'permission to enter' as the plain English term for 'leave to enter' or 'limited leave to enter'. Use both terms together if it helps users understand. For example, 'apply for permission to enter (leave to enter)'. For 'indefinite leave to enter' see <A href="#settlement">settlement</A>.</p>
     <h3 id="leave to remain">leave to remain</h3>
-    <p>Use 'permission to stay' as the plain English term for 'leave to remain' or 'limited leave to remain'. Use both terms together if it helps users understand. For example, 'apply for permission to stay (leave to remain)'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+    <p>Use 'permission to stay' as the plain English term for 'leave to remain' or 'limited leave to remain'. Use both terms together if it helps users understand. For example, 'apply for permission to stay (leave to remain)'. For 'indefinite leave to remain' see <A href="#settlement">settlement</A>.</p>
     <h3 id="letter of authority">letter of authority</h3>
     <p>Lower case.</p>
     <h3 id="life in the uk test">Life in the UK Test</h3>
@@ -267,9 +267,9 @@ export const content = (
     <h3 id="people">people</h3>
     <p>Use 'people' as a plural of person, rather than 'persons' or 'individuals'.</p>
     <h3 id="permission to enter">permission to enter</h3>
-    <p>Use 'permission to enter' as the plain English term for 'leave to enter' or 'limited leave to enter'. Use both terms together if it helps users understand. For example, 'apply for permission to enter (leave to enter)'. For 'indefinite leave to enter' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+    <p>Use 'permission to enter' as the plain English term for 'leave to enter' or 'limited leave to enter'. Use both terms together if it helps users understand. For example, 'apply for permission to enter (leave to enter)'. For 'indefinite leave to enter' see <A href="#settlement">settlement</A>.</p>
     <h3 id="permission to stay">permission to stay</h3>
-    <p>Use 'permission to stay' as the plain English term for 'leave to remain' or 'limited leave to remain'. Use both terms together if it helps users understand. For example, 'apply for permission to stay (leave to remain)'. For 'indefinite leave to remain' see <A href="https://design.homeoffice.gov.uk/content-style-guide#settlement">settlement</A>.</p>
+    <p>Use 'permission to stay' as the plain English term for 'leave to remain' or 'limited leave to remain'. Use both terms together if it helps users understand. For example, 'apply for permission to stay (leave to remain)'. For 'indefinite leave to remain' see <A href="#settlement">settlement</A>.</p>
     <h3 id="persons">persons</h3>
     <p>Use 'people' rather than 'persons'.</p>
     <h3 id="phone">phone</h3>
