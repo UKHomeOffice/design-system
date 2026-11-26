@@ -1,6 +1,10 @@
 {
   "name": "@hods/ucdm-header",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "The page header for the UCD Manual.",
   "main": "src/Header.tsx",
   "sass": "assets/Header.scss",

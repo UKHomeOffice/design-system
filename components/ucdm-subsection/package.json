@@ -1,6 +1,10 @@
 {
   "name": "@hods/ucdm-subsection",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "A layout wrapper for subsections within the UCD Manual.",
   "main": "src/Subsection.tsx",
   "sass": "assets/Subsection.scss",

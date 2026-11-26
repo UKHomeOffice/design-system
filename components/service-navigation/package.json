@@ -1,6 +1,10 @@
 {
   "name": "@hods/service-navigation",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "A component to help users understand that they’re using your service and lets them navigate around your service.",
   "main": "src/ServiceNavigation.tsx",
   "sass": "assets/ServiceNavigation.scss",

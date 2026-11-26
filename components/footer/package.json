@@ -1,6 +1,10 @@
 {
   "name": "@hods/footer",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "HODS' page footer.",
   "main": "src/Footer.tsx",
   "sass": "assets/Footer.scss",

@@ -1,6 +1,10 @@
 {
   "name": "@hods/time",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "Displays a time in accordance with Gov style guidance",
   "main": "src/Time.tsx",
   "sass": "assets/Time.scss",

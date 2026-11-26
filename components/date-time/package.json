@@ -1,6 +1,10 @@
 {
   "name": "@hods/date-time",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "Displays date and time inline with Gov style guidance",
   "main": "src/DateTime.tsx",
   "sass": "assets/DateTime.scss",

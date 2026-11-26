@@ -1,6 +1,10 @@
 {
   "name": "@hods/timeline",
   "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/design-system.git"
+  },
   "description": "A timeline of events",
   "main": "src/Timeline.tsx",
   "sass": "assets/Timeline.scss",
